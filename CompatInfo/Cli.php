@@ -29,6 +29,14 @@ require_once 'PHP/CompatInfo.php';
 /**
  * CLI Script to Check Compatibility of chunk of PHP code
  *
+ * <code>
+ * <?php
+ *     require_once 'PHP/CompatInfo/Cli.php';
+ *     $cli = new PHP_CompatInfo_Cli;
+ *     $cli->run();
+ * ?>
+ * </code>
+ *
  * @package PHP_CompatInfo
  * @author Davey Shafik <davey@php.net>
  * @copyright Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
@@ -160,6 +168,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
             } elseif (isset($this->file)) {
                 $output = $this->_parseFile();
                 echo $output;
+            } else {
+                $this->_printHelp();
             }
         }
      }
