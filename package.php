@@ -3,10 +3,12 @@ require_once 'PEAR/PackageFileManager.php';
 
 unset($_SERVER['PATH_TRANSLATED']); 
 
-$version = '1.0.0RC5';
+$version = '1.0.0';
 $notes = <<<EOT
-Added Request #3656
 Fixed Bug #3657
+- Now unsets all constants that are PHP5 only. This means
+that PHP5 detection on PHP4 is now highly unlikely but that PHP4
+detection should be much better.
 EOT;
 
 $description =<<<EOT
@@ -22,7 +24,7 @@ $result = $package->setOptions(array(
     'summary'           => 'Find out the minimum version and the extensions required for a piece of code to run',
     'description'       => $description,
     'version'           => $version,
-    'state'             => 'beta',
+    'state'             => 'stable',
     'license'           => 'PHP License',
     'ignore'            => array('*entries*','*Template*','*Root*','*Repository*','package.php', 'package.xml', '*.bak', '*src*', '*.tgz', '*pear_media*', 'index.htm', '*tests*'),
 	'filelistgenerator' => 'cvs', // other option is 'file'

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
-<package version="1.0" packagerversion="1.4.0a2">
+<package version="1.0" packagerversion="1.4.0a4">
  <name>PHP_CompatInfo</name>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
  <description>PHP_CompatInfo will parse a file/folder/script/array to find out the minimum
@@ -16,12 +16,14 @@ which shows which functions require which version and CLI output script
   </maintainer>
   </maintainers>
  <release>
-  <version>1.0.0RC5</version>
-  <date>2005-03-05</date>
+  <version>1.0.0</version>
+  <date>2005-03-14</date>
   <license>PHP License</license>
-  <state>beta</state>
-  <notes>Added Request #3656
-Fixed Bug #3657
+  <state>stable</state>
+  <notes>Fixed Bug #3657
+- Now unsets all constants that are PHP5 only. This means
+that PHP5 detection on PHP4 is now highly unlikely but that PHP4
+detection should be much better.
   </notes>
   <deps>
    <dep type="php" rel="ge" version="4.3.0" optional="no"/>
@@ -108,6 +110,17 @@ Fixed Bug #3657
   </filelist>
  </release>
  <changelog>
+   <release>
+    <version>1.0.0</version>
+    <date>2005-03-14</date>
+    <license>PHP License</license>
+    <state>stable</state>
+    <notes>Fixed Bug #3657
+- Now unsets all constants that are PHP5 only. This means
+that PHP5 detection on PHP4 is now highly unlikely but that PHP4
+detection should be much better.
+    </notes>
+   </release>
    <release>
     <version>1.0.0RC5</version>
     <date>2005-03-05</date>
