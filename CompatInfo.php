@@ -80,7 +80,7 @@ class PHP_CompatInfo {
     function parseFile($file, $options = array())
     {
         $options = array_merge(array('debug' => false),$options);
-        if (!$tokens = $this->_tokenize($file)) {
+        if (!($tokens = $this->_tokenize($file))) {
             return false;
         }
         return $this->_parseTokens($tokens,$options);
@@ -104,7 +104,7 @@ class PHP_CompatInfo {
     function  parseString($string, $options = array())
     {
         $options = array_merge(array('debug' => false),$options);
-        if (!$tokens = $this->_tokenize($string,true)) {
+        if (!($tokens = $this->_tokenize($string,true))) {
             return false;
         }
         return $this->_parseTokens($tokens,$options);
@@ -165,7 +165,11 @@ class PHP_CompatInfo {
                 $file_info = pathinfo($file);
                 if (isset($file_info['extension']) && in_array(strtolower($file_info['extension']),$options['file_ext'])) {
                     $tokens = $this->_tokenize($file);
-                    $files[$file] = $this->_parseTokens($tokens,$options);
+                    if ($tokens != false) {
+                        $files[$file] = $this->_parseTokens($tokens,$options);
+                    } else {
+                        return false;
+                    }
                 }
             }
             foreach($files as $file) {
@@ -250,29 +254,39 @@ class PHP_CompatInfo {
                 $pathinfo = pathinfo($file);
                 if (!in_array(strtolower($file),$options['ignore_files']) && in_array($pathinfo['extension'],$options['file_ext'])) {
                     $tokens = $this->_tokenize($file,$options['is_string']);
-                    $files_parsed[$file] = $this->_parseTokens($tokens,$options);
+                    if ($tokens != false) {
+                        $files_parsed[$file] = $this->_parseTokens($tokens,$options);
+                    } else {
+                        $files_parsed[$file] = false;
+                    }
                 } else {
                     $ignored[] = $file;
                 }
             } else {
                 $tokens = $this->_tokenize($file,$options['is_string']);
-                $files_parsed[] = $this->_parseTokens($tokens,$options);
+                if ($tokens != false) {
+                    $files_parsed[] = $this->_parseTokens($tokens,$options);
+                } else {
+                    $files_parsed[] = false;
+                }
             }
         }
 
         foreach($files_parsed as $file) {
-            $cmp = version_compare($latest_version,$file['version']);
-            if ((int)$cmp === -1) {
-                $latest_version = $file['version'];
-            }
-            foreach($file['extensions'] as $ext) {
-                if(!in_array($ext,$extensions)) {
-                    $extensions[] = $ext;
+            if ($file != false) {
+                $cmp = version_compare($latest_version,$file['version']);
+                if ((int)$cmp === -1) {
+                    $latest_version = $file['version'];
                 }
-            }
-            foreach($file['constants'] as $const) {
-                if(!in_array($const,$constants)) {
-                    $constants[] = $const;
+                foreach($file['extensions'] as $ext) {
+                    if(!in_array($ext,$extensions)) {
+                        $extensions[] = $ext;
+                    }
+                }
+                foreach($file['constants'] as $const) {
+                    if(!in_array($const,$constants)) {
+                        $constants[] = $const;
+                    }
                 }
             }
         }
@@ -325,7 +339,9 @@ class PHP_CompatInfo {
                         );
 
         foreach ($php5_tokens as $php5_token => $value) {
-            if (in_array(array($php5_token, $value), $tokens) || in_array(array($php5_token, strtoupper($value)), $tokens) || in_array(array($php5_token, ucfirst($value)), $tokens)) {
+            if (in_array(array($php5_token, $value), $tokens) 
+                || in_array(array($php5_token, strtoupper($value)), $tokens) 
+                || in_array(array($php5_token, ucfirst($value)), $tokens)) {
                 $constants[] = $php5_token;
                 $latest_version = '5.0.0';
                 break;
@@ -420,7 +436,7 @@ class PHP_CompatInfo {
     function _tokenize($input,$is_string = false)
     {
         if ($is_string == false) {
-            $input = file_get_contents($input,1);
+            $input = @file_get_contents($input,1);
             if (is_string($input)) {
                 return token_get_all($input);
             }
