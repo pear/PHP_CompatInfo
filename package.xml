@@ -1,238 +1,264 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
-<package version="1.0">
-  <name>PHP_CompatInfo</name>
-  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
-  <description>PHP_CompatInfo will parse a file/folder/script/array to find out the minimum
+<package version="1.0" packagerversion="1.4.0a1">
+ <name>PHP_CompatInfo</name>       
+ <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
+ <description>PHP_CompatInfo will parse a file/folder/script/array to find out the minimum
 version and extensions required for it to run. Features advanced debug output
-which shows which functions require which version and CLI output script</description>
-  <maintainers>
-    <maintainer>
-      <user>davey</user>
-      <name>Davey Shafik</name>
-      <email>davey@php.net</email>
-      <role>lead</role>
-    </maintainer>
+which shows which functions require which version and CLI output script
+ </description>
+ <maintainers>
+  <maintainer>
+   <user>davey</user>
+   <name>Davey Shafik</name>
+   <email>davey@php.net</email>
+   <role>lead</role>
+  </maintainer>
   </maintainers>
-  <release>
+ <release>
+  <version>1.0.0RC4</version>
+  <date>2005-02-21</date>
+  <license>PHP License</license>
+  <state>beta</state>
+  <notes>Updated the versioning info for better PHP5 support. Be aware that detection of PHP5 scripts on PHP4 is not supposed to work - though it often does work.
+  </notes>
+  <deps>
+   <dep type="php" rel="ge" version="4.3.0" optional="no"/>
+   <dep type="ext" rel="has" optional="no">tokenizer</dep>
+   <dep type="pkg" rel="ge" version="1.0.1" optional="yes">Console_Table</dep>
+   <dep type="pkg" rel="ge" version="1.2" optional="yes">Console_Getopt</dep>
+  </deps>
+  <filelist>
+   <dir name="/" baseinstalldir="PHP">
+    <dir name="CompatInfo">
+     <file role="php" name="Cli.php"/>
+    </dir> <!-- /CompatInfo -->
+    <dir name="data">
+     <file role="php" name="const_array.php"/>
+     <file role="php" name="func_array.php"/>
+    </dir> <!-- /data -->
+    <dir name="docs">
+     <dir name="examples">
+      <file role="doc" name="checkConstants.php"/>
+      <file role="doc" name="Cli.php"/>
+      <file role="doc" name="cliOutput.txt"/>
+      <file role="doc" name="parseArray.php"/>
+      <file role="doc" name="parseDir.php"/>
+      <file role="doc" name="parseFile.php"/>
+      <file role="doc" name="parseString.php"/>
+     </dir> <!-- /docs/examples -->
+     <dir name="media">
+      <file role="doc" name="background.png"/>
+      <file role="doc" name="empty.png"/>
+      <file role="doc" name="pear.gif"/>
+      <file role="doc" name="style.css"/>
+     </dir> <!-- /docs/media -->
+     <dir name="PHP_CompatInfo">
+      <file role="doc" name="PHP_CompatInfo.html"/>
+      <file role="doc" name="_CompatInfo_CompatInfo_php.html"/>
+     </dir> <!-- /docs/PHP_CompatInfo -->
+     <dir name="__examplesource">
+      <file role="doc" name="exsource_ar_PHP_CompatInfo_docs_examples_checkConstants.php_8efdd8263345d16425bc9b6665852893.html"/>
+      <file role="doc" name="exsource_cvs_pear_PHP_CompatInfo_docs_examples_parseDir.php_416b45d76e4c1f31d53ba3389522dac8.html"/>
+      <file role="doc" name="exsource_s_pear_PHP_CompatInfo_docs_examples_parseArray.php_206c617e8eb34e9d6af69a6bc6425ebb.html"/>
+      <file role="doc" name="exsource_vs_pear_PHP_CompatInfo_docs_examples_parseFile.php_27ad3b8bc4838da6b47b9de1c1fece60.html"/>
+      <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseString.php_d7f0c50630c16cc0494bef419d036b25.html"/>
+      <file role="doc" name="exsource__php-cvs_pear_PHP_CompatInfo_docs_examples_Cli.php_64cd9c51ed2c355b8e9b74c68ca4aba3.html"/>
+     </dir> <!-- /docs/__examplesource -->
+     <dir name="__filesource">
+      <file role="doc" name="fsource_PHP_CompatInfo__CompatInfo.php.html"/>
+     </dir> <!-- /docs/__filesource -->
+     <file role="doc" name="classtrees_PHP_CompatInfo.html"/>
+     <file role="doc" name="elementindex.html"/>
+     <file role="doc" name="elementindex_PHP_CompatInfo.html"/>
+     <file role="doc" name="errors.html"/>
+     <file role="doc" name="index.html"/>
+     <file role="doc" name="li_PHP_CompatInfo.html"/>
+    </dir> <!-- /docs -->
+    <dir name="scripts">
+     <file role="php" name="updateVersionInfo.php"/>
+    </dir> <!-- /scripts -->
+    <file role="php" name="CompatInfo.php"/>
+   </dir> <!-- / -->
+  </filelist>
+ </release>
+ <changelog>
+   <release>
+    <version>1.0.0RC4</version>
+    <date>2005-02-21</date>
+    <license>PHP License</license>
+    <state>beta</state>
+    <notes>Updated the versioning info for better PHP5 support. Be aware that detection of PHP5 scripts on PHP4 is not supposed to work - though it often does work.
+    </notes>
+   </release>
+   <release>
     <version>1.0.0RC3</version>
     <date>2005-01-11</date>
     <license>PHP License</license>
     <state>beta</state>
-    <notes>Fixed bug #2771</notes>
-    <deps>
-      <dep type="ext" rel="has" optional="no">tokenizer</dep>
-      <dep type="pkg" rel="ge" version="1.0.1" optional="yes">Console_Table</dep>
-      <dep type="pkg" rel="ge" version="1.2" optional="yes">Console_Getopt</dep>
-      <dep type="php" rel="ge" version="4.3.0" optional="no"/>
-    </deps>
-    <filelist>
-      <dir baseinstalldir="PHP" name="/">
-       <dir name="CompatInfo">
-        <file role="php" name="Cli.php"/>
-       </dir> <!-- CompatInfo -->
-       <dir name="data">
-        <file role="php" name="const_array.php"/>
-        <file role="php" name="func_array.php"/>
-       </dir> <!-- data -->
-       <dir name="docs">
-        <file role="doc" name="classtrees_PHP_CompatInfo.html"/>
-        <file role="doc" name="elementindex.html"/>
-        <file role="doc" name="elementindex_PHP_CompatInfo.html"/>
-        <file role="doc" name="errors.html"/>
-        <file role="doc" name="index.html"/>
-        <file role="doc" name="li_PHP_CompatInfo.html"/>
-        <dir name="examples">
-         <file role="doc" name="checkConstants.php"/>
-         <file role="doc" name="Cli.php"/>
-         <file role="doc" name="cliOutput.txt"/>
-         <file role="doc" name="parseArray.php"/>
-         <file role="doc" name="parseDir.php"/>
-         <file role="doc" name="parseFile.php"/>
-         <file role="doc" name="parseString.php"/>
-        </dir> <!-- docs/examples -->
-        <dir name="media">
-         <file role="doc" name="background.png"/>
-         <file role="doc" name="empty.png"/>
-         <file role="doc" name="pear.gif"/>
-         <file role="doc" name="style.css"/>
-        </dir> <!-- docs/media -->
-        <dir name="PHP_CompatInfo">
-         <file role="doc" name="PHP_CompatInfo.html"/>
-         <file role="doc" name="_CompatInfo_CompatInfo_php.html"/>
-        </dir> <!-- docs/PHP_CompatInfo -->
-        <dir name="__examplesource">
-         <file role="doc" name="exsource_ar_PHP_CompatInfo_docs_examples_checkConstants.php_8efdd8263345d16425bc9b6665852893.html"/>
-         <file role="doc" name="exsource_cvs_pear_PHP_CompatInfo_docs_examples_parseDir.php_416b45d76e4c1f31d53ba3389522dac8.html"/>
-         <file role="doc" name="exsource_s_pear_PHP_CompatInfo_docs_examples_parseArray.php_206c617e8eb34e9d6af69a6bc6425ebb.html"/>
-         <file role="doc" name="exsource_vs_pear_PHP_CompatInfo_docs_examples_parseFile.php_27ad3b8bc4838da6b47b9de1c1fece60.html"/>
-         <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseString.php_d7f0c50630c16cc0494bef419d036b25.html"/>
-         <file role="doc" name="exsource__php-cvs_pear_PHP_CompatInfo_docs_examples_Cli.php_64cd9c51ed2c355b8e9b74c68ca4aba3.html"/>
-        </dir> <!-- docs/__examplesource -->
-        <dir name="__filesource">
-         <file role="doc" name="fsource_PHP_CompatInfo__CompatInfo.php.html"/>
-        </dir> <!-- docs/__filesource -->
-       </dir> <!-- docs -->
-       <dir name="scripts">
-        <file role="data" name="create_array.xsl"/>
-        <file role="data" name="functions.xml"/>
-        <file role="data" name="versions.xml"/>
-       </dir> <!-- scripts -->
-       <file role="php" name="CompatInfo.php"/>
-      </dir> <!-- / -->
-    </filelist>
-  </release>
-  <changelog>
-    <release>
-      <version>1.0.0RC3</version>
-      <date>2005-01-11</date>
-      <license>PHP License</license>
-      <state>beta</state>
-      <notes>Fixed bug #2771</notes>
-    </release>
-    <release>
-      <version>1.0.0RC2</version>
-      <date>2004-08-04</date>
-      <license>PHP License</license>
-      <state>beta</state>
-      <notes>Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
-PHP5 functions no longer marked as '-dev'.</notes>
-    </release>
-    <release>
-      <version>1.0.0RC1</version>
-      <date>2004-06-12</date>
-      <license>PHP License</license>
-      <state>beta</state>
-      <notes>Now doesn't detect foo::bar() or $foo-&gt;bar() as a function call.
-State moved to beta, first RC.</notes>
-    </release>
-    <release>
-      <version>0.8.4</version>
-      <date>2004-05-06</date>
-      <license>PHP License</license>
-      <state>alpha</state>
-      <notes>Fixed more bugs. Thanks to techtonik.</notes>
-    </release>
-    <release>
-      <version>0.8.3</version>
-      <date>2004-04-26</date>
-      <license>PHP License</license>
-      <state>alpha</state>
-      <notes>* Some PHP5 compatibility work done. 
+    <notes>Fixed bug #2771
+    </notes>
+   </release>
+   <release>
+    <version>1.0.0RC2</version>
+    <date>2004-08-04</date>
+    <license>PHP License</license>
+    <state>beta</state>
+    <notes>Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
+PHP5 functions no longer marked as '-dev'.
+    </notes>
+   </release>
+   <release>
+    <version>1.0.0RC1</version>
+    <date>2004-06-12</date>
+    <license>PHP License</license>
+    <state>beta</state>
+    <notes>Now doesn't detect foo::bar() or $foo-&gt;bar() as a function call.
+State moved to beta, first RC.
+    </notes>
+   </release>
+   <release>
+    <version>0.8.4</version>
+    <date>2004-05-06</date>
+    <license>PHP License</license>
+    <state>alpha</state>
+    <notes>Fixed more bugs. Thanks to techtonik.
+    </notes>
+   </release>
+   <release>
+    <version>0.8.3</version>
+    <date>2004-04-26</date>
+    <license>PHP License</license>
+    <state>alpha</state>
+    <notes>* Some PHP5 compatibility work done. 
 * Other small things fixed for integration into PEAR_PackageFileManager.
-* Added file_ext option to parseArray</notes>
-    </release>
-    <release>
-      <version>0.8.2</version>
-      <date>2004-04-24</date>
-      <license>PHP License</license>
-      <state>alpha</state>
-      <notes>Bugs fixed from 0.8.1 (thanks to Jan Schneider again)
+* Added file_ext option to parseArray
+    </notes>
+   </release>
+   <release>
+    <version>0.8.2</version>
+    <date>2004-04-24</date>
+    <license>PHP License</license>
+    <state>alpha</state>
+    <notes>Bugs fixed from 0.8.1 (thanks to Jan Schneider again)
 * Removed Sockets dependency
-* Fixed some more version data</notes>
-    </release>
-    <release>
-      <version>0.8.1</version>
-      <date>2004-04-24</date>
-      <license>PHP License</license>
-      <state>alpha</state>
-      <notes>Bugs fixed from 0.8.0 (thanks to Jan Schneider)
+* Fixed some more version data
+    </notes>
+   </release>
+   <release>
+    <version>0.8.1</version>
+    <date>2004-04-24</date>
+    <license>PHP License</license>
+    <state>alpha</state>
+    <notes>Bugs fixed from 0.8.0 (thanks to Jan Schneider)
 * Added Console_Getopt optional dependency.
 * Fixed Console_Getopt require in CLI.php
 * Fixed some version data
 * Made it possible to use -f=FILE, -fFILE and -f FILE, same with -d in CLI script
-* Added whitespace after the CLI help output</notes>
-    </release>
-    <release>
-      <version>0.8.0</version>
-      <date>2004-04-22</date>
-      <license>PHP License</license>
-      <state>alpha</state>
-      <notes>Added a CLI Output script. An example of using it
+* Added whitespace after the CLI help output
+    </notes>
+   </release>
+   <release>
+    <version>0.8.0</version>
+    <date>2004-04-22</date>
+    <license>PHP License</license>
+    <state>alpha</state>
+    <notes>Added a CLI Output script. An example of using it
 can be found in the examples dir. Moved parseFolder() to parseDir().
-parseFolder() has been aliased to parseDir().</notes>
-    </release>
-    <release>
-      <version>0.7.0</version>
-      <date>2004-04-22</date>
-      <license>PHP License</license>
-      <state>alpha</state>
-      <notes>* First release on PEAR-web.
+parseFolder() has been aliased to parseDir().
+    </notes>
+   </release>
+   <release>
+    <version>0.7.0</version>
+    <date>2004-04-22</date>
+    <license>PHP License</license>
+    <state>alpha</state>
+    <notes>* First release on PEAR-web.
 * Added the ability to ignore files 
 in parseFolder() and parseArray(), and the ability to ignore folders
-in parseFolder(). Added the ability to ignore functions in all public methods.</notes>
-    </release>
-    <release>
-      <version>0.6.1</version>
-      <date>2004-03-05</date>
-      <license>PHP License</license>
-      <state>devel</state>
-      <notes>Ninth package for PEPr, just removed the old PHP_Compatibility docs, no
-change at all to the code.</notes>
-    </release>
-    <release>
-      <version>0.6.0</version>
-      <date>2004-03-05</date>
-      <license>PHP License</license>
-      <state>devel</state>
-      <notes>Eighth package for PEPr - Unified the public method APIs to
-parse*($input,$options); - this is a BC break.</notes>
-    </release>
-    <release>
-      <version>0.5.1</version>
-      <date>2004-03-03</date>
-      <license>PHP License</license>
-      <state>devel</state>
-      <notes>Seventh Package, for PEPr - Fixed a bug where User Defined Functions
+in parseFolder(). Added the ability to ignore functions in all public methods.
+    </notes>
+   </release>
+   <release>
+    <version>0.6.1</version>
+    <date>2004-03-05</date>
+    <license>PHP License</license>
+    <state>devel</state>
+    <notes>Ninth package for PEPr, just removed the old PHP_Compatibility docs, no
+change at all to the code.
+    </notes>
+   </release>
+   <release>
+    <version>0.6.0</version>
+    <date>2004-03-05</date>
+    <license>PHP License</license>
+    <state>devel</state>
+    <notes>Eighth package for PEPr - Unified the public method APIs to
+parse*($input,$options); - this is a BC break.
+    </notes>
+   </release>
+   <release>
+    <version>0.5.1</version>
+    <date>2004-03-03</date>
+    <license>PHP License</license>
+    <state>devel</state>
+    <notes>Seventh Package, for PEPr - Fixed a bug where User Defined Functions
 were checked against base functions, e.g. Math_ComplexOp::add() found
 Mings SWFMovie::add() and caused it to report that the ming extension
-was needed.</notes>
-    </release>
-    <release>
-      <version>0.5.0</version>
-      <date>2004-03-01</date>
-      <license>PHP License</license>
-      <state>devel</state>
-      <notes>Sixth Package, for PEPr - Name changed from PHP_Compatibility to
-PHP_Requires</notes>
-    </release>
-    <release>
-      <version>0.4.1</version>
-      <date>2004-02-27</date>
-      <license>PHP License</license>
-      <state>devel</state>
-      <notes>Fifth Package, for PEPr - $debug now outputs an array for each function
-that contains the name and extension needed.</notes>
-    </release>
-    <release>
-      <version>0.4</version>
-      <date>2004-02-27</date>
-      <license>PHP License</license>
-      <state>devel</state>
-      <notes>Fourth Package, for PEPr - Added parseArray() and the $debug param to 
+was needed.
+    </notes>
+   </release>
+   <release>
+    <version>0.5.0</version>
+    <date>2004-03-01</date>
+    <license>PHP License</license>
+    <state>devel</state>
+    <notes>Sixth Package, for PEPr - Name changed from PHP_Compatibility to
+PHP_Requires
+    </notes>
+   </release>
+   <release>
+    <version>0.4.1</version>
+    <date>2004-02-27</date>
+    <license>PHP License</license>
+    <state>devel</state>
+    <notes>Fifth Package, for PEPr - $debug now outputs an array for each function
+that contains the name and extension needed.
+    </notes>
+   </release>
+   <release>
+    <version>0.4</version>
+    <date>2004-02-27</date>
+    <license>PHP License</license>
+    <state>devel</state>
+    <notes>Fourth Package, for PEPr - Added parseArray() and the $debug param to 
 all public functions, which creates additional return data like 
-$return[$version][] = $function_name.</notes>
-    </release>
-    <release>
-      <version>0.3</version>
-      <date>2004-02-26</date>
-      <license>PHP License</license>
-      <state>devel</state>
-      <notes>Third Package, for PEPr - Checks constants like __FILE__ also;</notes>
-    </release>
-    <release>
-      <version>0.2</version>
-      <date>2004-02-26</date>
-      <license>PHP License</license>
-      <state>devel</state>
-      <notes>Second Package, for PEPr - includes parseScript()</notes>
-    </release>
-    <release>
-      <version>0.1</version>
-      <date>2004-02-20</date>
-      <license>PHP License</license>
-      <state>devel</state>
-      <notes>Initial Package, for PEPr</notes>
-    </release>
-  </changelog>
+$return[$version][] = $function_name.
+    </notes>
+   </release>
+   <release>
+    <version>0.3</version>
+    <date>2004-02-26</date>
+    <license>PHP License</license>
+    <state>devel</state>
+    <notes>Third Package, for PEPr - Checks constants like __FILE__ also;
+    </notes>
+   </release>
+   <release>
+    <version>0.2</version>
+    <date>2004-02-26</date>
+    <license>PHP License</license>
+    <state>devel</state>
+    <notes>Second Package, for PEPr - includes parseScript()
+    </notes>
+   </release>
+   <release>
+    <version>0.1</version>
+    <date>2004-02-20</date>
+    <license>PHP License</license>
+    <state>devel</state>
+    <notes>Initial Package, for PEPr
+    </notes>
+   </release>
+ </changelog>
 </package>

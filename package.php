@@ -1,9 +1,11 @@
 <?php
 require_once 'PEAR/PackageFileManager.php';
 
-$version = '1.0.0RC3';
+unset($_SERVER['PATH_TRANSLATED']); 
+
+$version = '1.0.0RC4';
 $notes = <<<EOT
-Fixed bug #2771
+Updated the versioning info for better PHP5 support. Be aware that detection of PHP5 scripts on PHP4 is not supposed to work - though it often does work.
 EOT;
 
 $description =<<<EOT
@@ -38,7 +40,7 @@ if (PEAR::isError($result)) {
 
 $package->addMaintainer('davey','lead','Davey Shafik','davey@php.net');
 
-$package->detectDependencies();
+$package->addDependency('php', '4.3.0', 'ge', 'php');
 $package->addDependency('tokenizer', '', 'has', 'ext', false);
 $package->addDependency('Console_Table','1.0.1','ge','pkg',true);
 $package->addDependency('Console_Getopt','1.2','ge','pkg',true);
