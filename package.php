@@ -1,11 +1,9 @@
 <?php
 require_once 'PEAR/PackageFileManager.php';
 
-$version = '0.8.3';
+$version = '0.8.4';
 $notes = <<<EOT
-* Some PHP5 compatibility work done. 
-* Other small things fixed for integration into PEAR_PackageFileManager.
-* Added file_ext option to parseArray
+Fixed more bugs. Thanks to techtonik.
 EOT;
 
 $description =<<<EOT

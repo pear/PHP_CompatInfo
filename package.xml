@@ -15,13 +15,11 @@ which shows which functions require which version and CLI output script</descrip
     </maintainer>
   </maintainers>
   <release>
-    <version>0.8.3</version>
-    <date>2004-04-26</date>
+    <version>0.8.4</version>
+    <date>2004-05-06</date>
     <license>PHP License</license>
     <state>alpha</state>
-    <notes>* Some PHP5 compatibility work done. 
-* Other small things fixed for integration into PEAR_PackageFileManager.
-* Added file_ext option to parseArray</notes>
+    <notes>Fixed more bugs. Thanks to techtonik.</notes>
     <deps>
       <dep type="pkg" rel="ge" version="1.0.1" optional="yes">Console_Table</dep>
       <dep type="pkg" rel="ge" version="1.2" optional="yes">Console_Getopt</dep>
@@ -56,6 +54,7 @@ which shows which functions require which version and CLI output script</descrip
         <dir name="media">
          <file role="doc" name="background.png"/>
          <file role="doc" name="empty.png"/>
+         <file role="doc" name="pear.gif"/>
          <file role="doc" name="style.css"/>
         </dir> <!-- docs/media -->
         <dir name="PHP_CompatInfo">
@@ -87,6 +86,13 @@ which shows which functions require which version and CLI output script</descrip
     </filelist>
   </release>
   <changelog>
+    <release>
+      <version>0.8.4</version>
+      <date>2004-05-06</date>
+      <license>PHP License</license>
+      <state>alpha</state>
+      <notes>Fixed more bugs. Thanks to techtonik.</notes>
+    </release>
     <release>
       <version>0.8.3</version>
       <date>2004-04-26</date>
