@@ -11,4 +11,6 @@ $const[T_FUNC_C]['version_init'] = '4.3.0';
 $const[T_FUNC_C]['name'] = '__FUNCTION__';
 $const[T_CLASS_C]['version_init'] = '4.3.0';
 $const[T_CLASS_C]['name'] = '__CLASS__';
+@$const[__METHOD__]['name'] = '__METHOD__';
+@$const[__METHOD__]['version_init'] = '5.0.0';
 ?>

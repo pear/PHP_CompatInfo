@@ -315,6 +315,33 @@ class PHP_CompatInfo {
         $constants = array();
         $constant_names = array();
         $udf = array();
+        
+        /* Check for PHP 5 stuffs */
+        
+        $php5_tokens = @array(
+                        T_ABSTRACT => 'abstract',
+                        T_CATCH => 'catch',
+                        T_FINAL => 'final',
+                        T_INSTANCEOF => 'instanceof',
+                        T_PRIVATE => 'private',
+                        T_PROTECTED => 'protected',
+                        T_PUBLIC => 'public',
+                        T_THROW => 'throw',
+                        T_TRY => 'try',
+                        T_CLONE => 'clone',
+                        T_INTERFACE => 'interface',
+                        T_IMPLEMENTS => 'implements'
+                        );
+
+        foreach ($php5_tokens as $php5_token => $value) {
+            if (in_array(array($php5_token, $value), $tokens) || 
+                    in_array(array($php5_token, strtoupper($value)), $tokens) || 
+                    in_array(array($php5_token, ucfirst($value)), $tokens)) {
+                $latest_version = '5.0.0';
+                break;
+            }
+        }
+        
         $token_count = sizeof($tokens);
         $i = 0;
         while ($i < $token_count) {
@@ -374,7 +401,7 @@ class PHP_CompatInfo {
             }
         }
 
-        ksort($functions_version );
+        ksort($functions_version);
 
         $functions_version['constants'] = $constant_names;
         $functions_version['extensions'] = $extensions;
