@@ -1,12 +1,11 @@
 <?php
 require_once 'PEAR/PackageFileManager.php';
-require_once 'Console/Getopt.php';
 
-$version = '0.8.2';
+$version = '0.8.3';
 $notes = <<<EOT
-Bugs fixed from 0.8.1 (thanks to Jan Schneider again)
-* Removed Sockets dependency
-* Fixed some more version data
+* Some PHP5 compatibility work done. 
+* Other small things fixed for integration into PEAR_PackageFileManager.
+* Added file_ext option to parseArray
 EOT;
 
 $description =<<<EOT
@@ -40,12 +39,14 @@ if (PEAR::isError($result)) {
 
 $package->addMaintainer('davey','lead','Davey Shafik','davey@php.net');
 
-$package->addDependency('php', '4.3.0', 'ge', 'php', false);
-$package->addDependency('tokenizer', '', 'has', 'ext', false);
+/*$package->addDependency('php', '4.3.0', 'ge', 'php', false);
+$package->addDependency('tokenizer', '', 'has', 'ext', false);*/
+$package->addDependency('auto');
 $package->addDependency('Console_Table','1.0.1','ge','pkg',true);
 $package->addDependency('Console_Getopt','1.2','ge','pkg',true);
 
-if ($_SERVER['argv'][1] == 'commit') {
+
+if (isset($_SERVER['argv'][1]) && $_SERVER['argv'][1] == 'commit') {
     $result = $package->writePackageFile();
 } else {
     $result = $package->debugPackageFile();
