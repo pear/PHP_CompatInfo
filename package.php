@@ -2,14 +2,11 @@
 require_once 'PEAR/PackageFileManager.php';
 require_once 'Console/Getopt.php';
 
-$version = '0.8.1';
+$version = '0.8.2';
 $notes = <<<EOT
-Bugs fixed from 0.8.0 (thanks to Jan Schneider)
-* Added Console_Getopt optional dependency.
-* Fixed Console_Getopt require in CLI.php
-* Fixed some version data
-* Made it possible to use -f=FILE, -fFILE and -f FILE, same with -d in CLI script
-* Added whitespace after the CLI help output
+Bugs fixed from 0.8.1 (thanks to Jan Schneider again)
+* Removed Sockets dependency
+* Fixed some more version data
 EOT;
 
 $description =<<<EOT
@@ -45,7 +42,6 @@ $package->addMaintainer('davey','lead','Davey Shafik','davey@php.net');
 
 $package->addDependency('php', '4.3.0', 'ge', 'php', false);
 $package->addDependency('tokenizer', '', 'has', 'ext', false);
-$package->addDependency('sockets', '', 'has', 'ext', false);
 $package->addDependency('Console_Table','1.0.1','ge','pkg',true);
 $package->addDependency('Console_Getopt','1.2','ge','pkg',true);
 

@@ -15,16 +15,13 @@ which shows which functions require which version and CLI output script</descrip
     </maintainer>
   </maintainers>
   <release>
-    <version>0.8.1</version>
-    <date>2004-04-22</date>
+    <version>0.8.2</version>
+    <date>2004-04-24</date>
     <license>PHP License</license>
     <state>alpha</state>
-    <notes>Bugs fixed from 0.8.0 (thanks to Jan Schneider)
-* Added Console_Getopt optional dependency.
-* Fixed Console_Getopt require in CLI.php
-* Fixed some version data
-* Made it possible to use -f=FILE, -fFILE and -f FILE, same with -d in CLI script
-* Added whitespace after the CLI help output</notes>
+    <notes>Bugs fixed from 0.8.1 (thanks to Jan Schneider again)
+* Removed Sockets dependency
+* Fixed some more version data</notes>
     <deps>
       <dep type="php" rel="ge" version="4.3.0" optional="no"/>
       <dep type="ext" rel="has" optional="no">tokenizer</dep>
@@ -92,8 +89,17 @@ which shows which functions require which version and CLI output script</descrip
   </release>
   <changelog>
     <release>
+      <version>0.8.2</version>
+      <date>2004-04-24</date>
+      <license>PHP License</license>
+      <state>alpha</state>
+      <notes>Bugs fixed from 0.8.1 (thanks to Jan Schneider again)
+* Removed Sockets dependency
+* Fixed some more version data</notes>
+    </release>
+    <release>
       <version>0.8.1</version>
-      <date>2004-04-22</date>
+      <date>2004-04-24</date>
       <license>PHP License</license>
       <state>alpha</state>
       <notes>Bugs fixed from 0.8.0 (thanks to Jan Schneider)
