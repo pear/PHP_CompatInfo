@@ -325,9 +325,8 @@ class PHP_CompatInfo {
                         );
 
         foreach ($php5_tokens as $php5_token => $value) {
-            if (in_array(array($php5_token, $value), $tokens) || 
-                    in_array(array($php5_token, strtoupper($value)), $tokens) || 
-                    in_array(array($php5_token, ucfirst($value)), $tokens)) {
+            if (in_array(array($php5_token, $value), $tokens) || in_array(array($php5_token, strtoupper($value)), $tokens) || in_array(array($php5_token, ucfirst($value)), $tokens)) {
+                $constants[] = $php5_token;
                 $latest_version = '5.0.0';
                 break;
             }
@@ -367,7 +366,7 @@ class PHP_CompatInfo {
         foreach($functions as $name) {
             if (isset($GLOBALS['funcs'][$name]) && (!in_array($name,$udf) && (!in_array($name,$options['ignore_functions'])))) {
                 if ($options['debug'] == true) {
-                    $functions_version[$GLOBALS['funcs'][$name]['init']][] = array('function' => $name, 'extension' => $GLOBALS['funcs'][$name]['extension']);
+                    $functions_version[$GLOBALS['funcs'][$name]['init']][] = array('function' => $name, 'extension' => $GLOBALS['funcs'][$name]['ext']);
                 }
                 $cmp = version_compare($latest_version,$GLOBALS['funcs'][$name]['init']);
                 if ((int)$cmp === -1) {
@@ -376,13 +375,13 @@ class PHP_CompatInfo {
                 if ((!empty($GLOBALS['funcs'][$name]['ext'])) && ($GLOBALS['funcs'][$name]['ext'] != 'ext_standard') && ($GLOBALS['funcs'][$name]['ext'] != 'zend'))  {
                     $extension = substr($GLOBALS['funcs'][$name]['ext'],4);
                     if ($extension{0} != '_') {
-                        if(!in_array($ext,$extensions)) {
-                            $extensions[] = $ext;
+                        if(!in_array($extension,$extensions)) {
+                            $extensions[] = $extension;
                         }
                     } else {
-                        $ext = substr($ext, 1);
-                        if(!in_array($ext,$extensions)) {
-                            $extensions[] = $ext;
+                        $ext = substr($extension, 1);
+                        if(!in_array($extension,$extensions)) {
+                            $extensions[] = $extension;
                         }
                     }
                 }
