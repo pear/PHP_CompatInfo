@@ -148,6 +148,7 @@ class PHP_CompatInfo {
         $latest_version = $this->latest_version;
         $extensions = array();
         $constants = array();
+        $ignored = array();
         $default_options = array('file_ext' => array('php','php4','inc','phtml'), 'recurse_dir' => true, 'debug' => false, 'ignore_file' => array(), 'ignore_dirs' => array());
         $options = array_merge($default_options,$options);
 
@@ -155,8 +156,16 @@ class PHP_CompatInfo {
             $folder = substr($folder,0,-1);
         }
         if(is_dir($folder) || is_readable($folder)) {
-            $options['ignore_dirs'] = array_map("strtolower",$options['ignore_dirs']);
-            $options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
+        	if (isset($options['ignores_dirs'])) {
+            	$options['ignore_dirs'] = array_map("strtolower",$options['ignore_dirs']);
+        	} else {
+        		$options['ignore_dirs'] == array();
+        	}
+        	if (isset($options['ignore_files'])) {
+            	$options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
+        	} else {
+        		$options['ignore_files'] = array();
+        	}
             $files_raw = $this->_fileList($folder,$options);
             foreach($files_raw as $file) {
                 if(in_array(strtolower($file),$options['ignore_files'])) {
@@ -295,7 +304,6 @@ class PHP_CompatInfo {
         while ($i < $token_count) {
             $found_func = true;
             if ($tokens[$i][0] == T_FUNCTION) {
-                $t_function = true;
                 $found_func = false;
             }
             while ($found_func == false) {
@@ -317,7 +325,11 @@ class PHP_CompatInfo {
         }
 
         $functions = array_unique($functions);
-        $options['ignore_functions'] = array_map("strtolower",$options['ignore_functions']);
+        if (isset($options['ignore_functions'])) {
+        	$options['ignore_functions'] = array_map("strtolower",$options['ignore_functions']);
+        } else {
+        	$options['ignore_functions'] = array();
+        }
         foreach($functions as $name) {
             if (isset($GLOBALS['funcs'][$name]) && (!in_array($name,$udf) && (!in_array($name,$options['ignore_functions'])))) {
                 if ($options['debug'] == true) {
@@ -398,7 +410,7 @@ class PHP_CompatInfo {
                         $ret[] = $directory . DIRECTORY_SEPARATOR . $entry;
                     }
                     if (is_dir($directory . DIRECTORY_SEPARATOR . $entry) && ($options['recurse_dir'] != false)) {
-                        $tmp = $this->_fileList($directory . DIRECTORY_SEPARATOR . $entry);
+                        $tmp = $this->_fileList($directory . DIRECTORY_SEPARATOR . $entry,$options);
                         if (is_array($tmp)) {
                             foreach($tmp as $ent) {
                                 $ret[] = $ent;
