@@ -15,11 +15,12 @@ which shows which functions require which version and CLI output script</descrip
     </maintainer>
   </maintainers>
   <release>
-    <version>0.8.4</version>
-    <date>2004-05-06</date>
+    <version>1.0.0RC1</version>
+    <date>2004-06-12</date>
     <license>PHP License</license>
-    <state>alpha</state>
-    <notes>Fixed more bugs. Thanks to techtonik.</notes>
+    <state>beta</state>
+    <notes>Now doesn't detect foo::bar() or $foo-&gt;bar() as a function call.
+State moved to beta, first RC.</notes>
     <deps>
       <dep type="pkg" rel="ge" version="1.0.1" optional="yes">Console_Table</dep>
       <dep type="pkg" rel="ge" version="1.2" optional="yes">Console_Getopt</dep>
@@ -59,8 +60,6 @@ which shows which functions require which version and CLI output script</descrip
         </dir> <!-- docs/media -->
         <dir name="PHP_CompatInfo">
          <file role="doc" name="PHP_CompatInfo.html"/>
-         <file role="doc" name="PHP_CompatInfo_Cli.html"/>
-         <file role="doc" name="_CompatInfo_CompatInfo_Cli_php.html"/>
          <file role="doc" name="_CompatInfo_CompatInfo_php.html"/>
         </dir> <!-- docs/PHP_CompatInfo -->
         <dir name="__examplesource">
@@ -73,7 +72,6 @@ which shows which functions require which version and CLI output script</descrip
         </dir> <!-- docs/__examplesource -->
         <dir name="__filesource">
          <file role="doc" name="fsource_PHP_CompatInfo__CompatInfo.php.html"/>
-         <file role="doc" name="fsource_PHP_CompatInfo__CompatInfoCli.php.html"/>
         </dir> <!-- docs/__filesource -->
        </dir> <!-- docs -->
        <dir name="scripts">
@@ -86,6 +84,14 @@ which shows which functions require which version and CLI output script</descrip
     </filelist>
   </release>
   <changelog>
+    <release>
+      <version>1.0.0RC1</version>
+      <date>2004-06-12</date>
+      <license>PHP License</license>
+      <state>beta</state>
+      <notes>Now doesn't detect foo::bar() or $foo-&gt;bar() as a function call.
+State moved to beta, first RC.</notes>
+    </release>
     <release>
       <version>0.8.4</version>
       <date>2004-05-06</date>

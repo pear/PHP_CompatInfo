@@ -1,9 +1,10 @@
 <?php
 require_once 'PEAR/PackageFileManager.php';
 
-$version = '0.8.4';
+$version = '1.0.0RC1';
 $notes = <<<EOT
-Fixed more bugs. Thanks to techtonik.
+Now doesn't detect foo::bar() or \$foo->bar() as a function call.
+State moved to beta, first RC.
 EOT;
 
 $description =<<<EOT
@@ -19,7 +20,7 @@ $result = $package->setOptions(array(
     'summary'           => 'Find out the minimum version and the extensions required for a piece of code to run',
     'description'       => $description,
     'version'           => $version,
-    'state'             => 'alpha',
+    'state'             => 'beta',
     'license'           => 'PHP License',
     'ignore'            => array('*entries*','*Template*','*Root*','*Repository*','package.php', 'package.xml', '*.bak', '*src*', '*.tgz', '*pear_media*', 'index.htm', '*tests*'),
 	'filelistgenerator' => 'cvs', // other option is 'file'
