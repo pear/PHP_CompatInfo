@@ -78,7 +78,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
      */
 
      function __construct() {
-        require_once 'Console/GetOpt.php';
+        require_once 'Console/Getopt.php';
         $opts = Console_Getopt::readPHPArgv();
         $short_opts = 'd:f:hn';
         $long_opts = array('dir=','file=','help','debug','no-recurse');
@@ -105,8 +105,13 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                     $this->dir = str_replace('\\','/',realpath($this->dir));
                     break;
                 case 'd':
-                    $this->dir = substr($option[1],1);
-                    if($this->dir{strlen($this->dir)-1} == '/' || $this->dir{strlen($this->dir)-1} == '\\') {
+                    if ($option[1]{0} == '=') {
+                        $this->dir = substr($option[1],1);
+                    } else {
+                        $this->dir = $option[1];
+                    }
+                    
+                    if ($this->dir{strlen($this->dir)-1} == '/' || $this->dir{strlen($this->dir)-1} == '\\') {
                         $this->dir = substr($this->dir,0,-1);
                     }
                     $this->dir = str_replace('\\','/',realpath($this->dir));
@@ -115,7 +120,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                     $this->file = $option[1];
                     break;
                 case 'f':
-                    $this->file = substr($option[1],1);
+                    if ($option[1]{0} == '=') {
+                        $this->file = substr($option[1],1);
+                    } else {
+                        $this->file = $option[1];
+                    }
                     break;
                 case 'h':
                 case '--help':
@@ -374,6 +383,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
         echo "\n";
         echo 'Usage:' . "\n";
         echo "  " .basename(__FILE__). ' --dir=DIR [--no-recurse] | --file=FILE [--debug] | [--help]';
+        echo "\n";
     }
     
     /**
@@ -385,7 +395,6 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
 
     function _printHelp() {
         $this->_printUsage();
-        echo "\n";
         echo "Commands:\n";
         echo "  --file=FILE (-f) \tParse FILE to get its Compatibility Info";
         echo "\n";
@@ -396,6 +405,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
         echo "  --debug\t\tDisplay Extra (debug) Information when using --file";
         echo "\n";
         echo "  --help (-h) \t\tShow this help";
+        echo "\n";
     }
 }
 
