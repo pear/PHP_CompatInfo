@@ -1,7 +1,7 @@
 <?php
 $GLOBALS['const'] = array (
   'tokens' => 
-  array (
+    array (
     0 => 363,
     1 => 362,
     2 => 361,
@@ -106,5 +106,9 @@ $GLOBALS['const'] = array (
     'name' => 'implements',
   ),
 );
+
+if (!defined('T_CLONE')) {
+    unset($GLOBALS['const']['tokens'][14]);
+}
 
 ?>
