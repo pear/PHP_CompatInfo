@@ -180,7 +180,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
             return;
         }
         $table = new Console_Table();
-        $table->setHeaders(array('File','Version','Extensions','Constants'));
+        $table->setHeaders(array('File','Version','Extensions','Constants/Tokens'));
         if (!isset($info['extensions'][0])) {
             $ext = '';
         } else {
@@ -276,7 +276,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
         }
         $table = new Console_Table();
         if ($this->debug == false) {
-            $table->setHeaders(array('File','Version','Extensions','Constants'));
+            $table->setHeaders(array('File','Version','Extensions','Constants/Tokens'));
             if (!isset($info['extensions'][0])) {
                 $ext = '';
             } else {
@@ -310,7 +310,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                 }
             }
         } else {
-            $table->setHeaders(array('File','Version','Extensions','Constants'));
+            $table->setHeaders(array('File','Version','Extensions','Constants/Tokens'));
 
             if (!isset($info['extensions'][0])) {
                 $ext = '';
