@@ -39,6 +39,10 @@ $php5_version = '5.0.0';
 require_once 'PHP/data/func_array.php';
 require_once 'PHP/data/const_array.php';
 
+// Seems to be a bug in PHP5RC2, $GLOBALS['const'] not reg'd
+$GLOBALS['const'] = $const;
+$GLOBALS['funcs'] = $funcs;
+
 /**
  * Check Compatibility of chunk of PHP code
  *
@@ -82,7 +86,7 @@ class PHP_CompatInfo {
      * @return Array
      */
 
-    function parseFile($file, $options = null)
+    function parseFile($file, $options = array())
     {
         $options = array_merge(array('debug' => false),$options);
         if (!$tokens = $this->_tokenize($file)) {
@@ -106,7 +110,7 @@ class PHP_CompatInfo {
      * @return Array
      */
 
-    function  parseString($string, $options = null)
+    function  parseString($string, $options = array())
     {
         $options = array_merge(array('debug' => false),$options);
         if (!$tokens = $this->_tokenize($string,true)) {
@@ -144,7 +148,7 @@ class PHP_CompatInfo {
      * @return array
      */
 
-    function parseDir($dir,$options = null)
+    function parseDir($dir,$options = array())
     {
         $files = array();
         $latest_version = $this->latest_version;
@@ -219,7 +223,7 @@ class PHP_CompatInfo {
      * @access public
      */
 
-    function parseFolder($folder,$options) {
+    function parseFolder($folder,$options = array()) {
         return $this->parseDir($folder,$options);
     }
 
@@ -247,22 +251,24 @@ class PHP_CompatInfo {
      * @return array
      */
 
-    function parseArray($files,$options = null) {
+    function parseArray($files,$options = array()) {
         $latest_version = $this->latest_version;
         $extensions = array();
         $constants = array();
-        $options = array_merge(array('is_string' => false,'debug' => false),$options);
+        $options = array_merge(array('file_ext' => array('php','php4','inc','phtml'), 'is_string' => false,'debug' => false, 'ignore_files' => array()),$options);
         $options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
-        foreach($files as $file) {
-            if (!in_array(strtolower($file),$options['ignore_files'])) {
-                $tokens = $this->_tokenize($file,$options['is_string']);
-                if ($options['is_string'] == false) {
+        foreach($files as $file) {                
+            if ($options['is_string'] == false) {
+                $pathinfo = pathinfo($file);
+                if (!in_array(strtolower($file),$options['ignore_files']) && in_array($pathinfo['extension'],$options['file_ext'])) {
+                    $tokens = $this->_tokenize($file,$options['is_string']);
                     $files_parsed[$file] = $this->_parseTokens($tokens,$options);
                 } else {
-                    $files_parsed[] = $this->_parseTokens($tokens,$options);
+                    $ignored[] = $file;
                 }
             } else {
-                $ignored[] = $file;
+                $tokens = $this->_tokenize($file,$options['is_string']);
+                $files_parsed[] = $this->_parseTokens($tokens,$options);
             }
         }
 
@@ -286,7 +292,7 @@ class PHP_CompatInfo {
         $files_parsed['constants'] = $constants;
         $files_parsed['extensions'] = $extensions;
         $files_parsed['version'] = $latest_version;
-        $files_parsed['ignored_files'] = $ignored;
+        $files_parsed['ignored_files'] =  isset($ignored) ? $ignored : array();
         return array_reverse($files_parsed);
     }
 
