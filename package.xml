@@ -15,17 +15,17 @@ which shows which functions require which version and CLI output script</descrip
     </maintainer>
   </maintainers>
   <release>
-    <version>1.0.0RC1</version>
-    <date>2004-06-12</date>
+    <version>1.0.0RC2</version>
+    <date>2004-08-03</date>
     <license>PHP License</license>
     <state>beta</state>
-    <notes>Now doesn't detect foo::bar() or $foo-&gt;bar() as a function call.
-State moved to beta, first RC.</notes>
+    <notes>Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
+PHP5 functions no longer marked as '-dev'.</notes>
     <deps>
+      <dep type="ext" rel="has" optional="no">tokenizer</dep>
       <dep type="pkg" rel="ge" version="1.0.1" optional="yes">Console_Table</dep>
       <dep type="pkg" rel="ge" version="1.2" optional="yes">Console_Getopt</dep>
       <dep type="php" rel="ge" version="4.3.0" optional="no"/>
-      <dep type="ext" rel="has" optional="no">tokenizer</dep>
     </deps>
     <filelist>
       <dir baseinstalldir="PHP" name="/">
@@ -84,6 +84,14 @@ State moved to beta, first RC.</notes>
     </filelist>
   </release>
   <changelog>
+    <release>
+      <version>1.0.0RC2</version>
+      <date>2004-08-03</date>
+      <license>PHP License</license>
+      <state>beta</state>
+      <notes>Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
+PHP5 functions no longer marked as '-dev'.</notes>
+    </release>
     <release>
       <version>1.0.0RC1</version>
       <date>2004-06-12</date>

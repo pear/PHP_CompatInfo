@@ -1,10 +1,10 @@
 <?php
 require_once 'PEAR/PackageFileManager.php';
 
-$version = '1.0.0RC1';
+$version = '1.0.0RC2';
 $notes = <<<EOT
-Now doesn't detect foo::bar() or \$foo->bar() as a function call.
-State moved to beta, first RC.
+Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
+PHP5 functions no longer marked as '-dev'.
 EOT;
 
 $description =<<<EOT
@@ -28,7 +28,8 @@ $result = $package->setOptions(array(
     'changelogoldtonew' => false,
     'baseinstalldir'    => 'PHP',
     'packagedirectory'  => '',
-    'simpleoutput'      => true
+    'simpleoutput'      => true,
+    'cleardependencies' => true,
     ));
 
 if (PEAR::isError($result)) {
@@ -38,9 +39,8 @@ if (PEAR::isError($result)) {
 
 $package->addMaintainer('davey','lead','Davey Shafik','davey@php.net');
 
-/*$package->addDependency('php', '4.3.0', 'ge', 'php', false);
-$package->addDependency('tokenizer', '', 'has', 'ext', false);*/
-$package->addDependency('auto');
+$package->detectDependencies();
+$package->addDependency('tokenizer', '', 'has', 'ext', false);
 $package->addDependency('Console_Table','1.0.1','ge','pkg',true);
 $package->addDependency('Console_Getopt','1.2','ge','pkg',true);
 
