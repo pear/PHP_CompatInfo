@@ -47,7 +47,7 @@ require_once 'PHP/data/const_array.php';
  * @copyright Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
  * @example docs/examples/checkConstants.php Example that shows minimum version with Constants
  * @example docs/examples/parseFile.php Example on how to parse a file
- * @example docs/examples/parseFolder.php Example on how to parse a folder
+ * @example docs/examples/parseDir.php Example on how to parse a folder
  * @example docs/examples/parseArray.php Example on using using parseArray() to parse a script
  * @example docs/examples/parseString.php Example on how to parse a string
  */
@@ -61,7 +61,7 @@ class PHP_CompatInfo {
     var $latest_version = '4.0.0';
 
     /**
-     * @var boolean Toggle parseFolder recursion
+     * @var boolean Toggle parseDir recursion
      */
 
     var $recurse_dir = true;
@@ -115,9 +115,10 @@ class PHP_CompatInfo {
     }
 
     /**
-     * Parse a folder recursively for its Compatibility info
+     * Parse a directory recursively for its Compatibility info
      *
-     * @param string $folder Path of folder to parse
+     * @see PHP_CompatInfo::_fileList()
+     * @param string $dir Path of folder to parse
      * @param array $options Array of user options where:
      *                              'file_ext' Contains an array of file
      *                                         extensions to parse for PHP
@@ -142,7 +143,7 @@ class PHP_CompatInfo {
      * @return array
      */
 
-    function parseFolder($folder,$options = null)
+    function parseDir($dir,$options = null)
     {
         $files = array();
         $latest_version = $this->latest_version;
@@ -152,10 +153,10 @@ class PHP_CompatInfo {
         $default_options = array('file_ext' => array('php','php4','inc','phtml'), 'recurse_dir' => true, 'debug' => false, 'ignore_file' => array(), 'ignore_dirs' => array());
         $options = array_merge($default_options,$options);
 
-        if($folder{strlen($folder)-1} == '/' || $folder{strlen($folder)-1} == '\\') {
-            $folder = substr($folder,0,-1);
+        if($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
+            $dir = substr($dir,0,-1);
         }
-        if(is_dir($folder) || is_readable($folder)) {
+        if(is_dir($dir) && is_readable($dir)) {
         	if (isset($options['ignores_dirs'])) {
             	$options['ignore_dirs'] = array_map("strtolower",$options['ignore_dirs']);
         	} else {
@@ -166,7 +167,7 @@ class PHP_CompatInfo {
         	} else {
         		$options['ignore_files'] = array();
         	}
-            $files_raw = $this->_fileList($folder,$options);
+            $files_raw = $this->_fileList($dir,$options);
             foreach($files_raw as $file) {
                 if(in_array(strtolower($file),$options['ignore_files'])) {
                     $ignored[] = $file;
@@ -208,6 +209,17 @@ class PHP_CompatInfo {
         } else {
             return false;
         }
+    }
+    
+    /**
+     * Alias of parseDir
+     *
+     * @uses PHP_CompatInfo::parseDir()
+     * @access public
+     */
+     
+    function parseFolder($folder,$options) {
+    	$this->parseDir($folder,$options);
     }
 
     /**
