@@ -107,8 +107,25 @@ $GLOBALS['const'] = array (
   ),
 );
 
-if (!defined('T_CLONE')) {
-    unset($GLOBALS['const']['tokens'][14]);
-}
+$php5_only = array(
+                298 => 'T_CLONE',
+                360 => '__METHOD__',
+                343 => 'T_PRIVATE',
+                342 => 'T_PUBLIC',
+                341 => 'T_PROTECTED',
+                338 => 'T_THROW',
+                337 => 'T_CATCH',
+                336 => 'T_TRY',
+                352 => 'T_INTERFACE',
+                345 => 'T_ABSTRACT',
+                288 => 'T_INSTANCEOF',
+                344 => 'T_FINAL',
+                 );
 
+
+if (!defined('T_CLONE')) {
+    foreach ($php5_only as $i => $token) {
+        unset($GLOBALS['const']['tokens'][$i]);
+    }
+}
 ?>
