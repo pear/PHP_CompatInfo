@@ -47,9 +47,10 @@ require_once 'PHP/data/const_array.php';
  * @copyright Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
  * @example docs/examples/checkConstants.php Example that shows minimum version with Constants
  * @example docs/examples/parseFile.php Example on how to parse a file
- * @example docs/examples/parseDir.php Example on how to parse a folder
+ * @example docs/examples/parseDir.php Example on how to parse a directory
  * @example docs/examples/parseArray.php Example on using using parseArray() to parse a script
  * @example docs/examples/parseString.php Example on how to parse a string
+ * @example docs/examples/Cli.php Example of using PHP_CompatInfo_Cli
  */
 
 class PHP_CompatInfo {
@@ -75,7 +76,7 @@ class PHP_CompatInfo {
      *                              to control whether extra
      *                              ouput is shown.
      *                          'ignore_functions' contains an array
-     *                              of functions to ignore when 
+     *                              of functions to ignore when
      *                              calculating the version needed.
      * @access public
      * @return Array
@@ -99,7 +100,7 @@ class PHP_CompatInfo {
      *                              to control whether extra
      *                              ouput is shown.
      *                          'ignore_functions' contains an array
-     *                              of functions to ignore when 
+     *                              of functions to ignore when
      *                              calculating the version needed.
      * @access public
      * @return Array
@@ -137,7 +138,7 @@ class PHP_CompatInfo {
      *                                         Directory names are case
      *                                         insensitive.
      *                          'ignore_functions' contains an array
-     *                                         of functions to ignore when 
+     *                                         of functions to ignore when
      *                                         calculating the version needed.
      * @access public
      * @return array
@@ -157,16 +158,16 @@ class PHP_CompatInfo {
             $dir = substr($dir,0,-1);
         }
         if(is_dir($dir) && is_readable($dir)) {
-        	if (isset($options['ignores_dirs'])) {
-            	$options['ignore_dirs'] = array_map("strtolower",$options['ignore_dirs']);
-        	} else {
-        		$options['ignore_dirs'] == array();
-        	}
-        	if (isset($options['ignore_files'])) {
-            	$options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
-        	} else {
-        		$options['ignore_files'] = array();
-        	}
+            if (isset($options['ignores_dirs'])) {
+                $options['ignore_dirs'] = array_map("strtolower",$options['ignore_dirs']);
+            } else {
+                $options['ignore_dirs'] == array();
+            }
+            if (isset($options['ignore_files'])) {
+                $options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
+            } else {
+                $options['ignore_files'] = array();
+            }
             $files_raw = $this->_fileList($dir,$options);
             foreach($files_raw as $file) {
                 if(in_array(strtolower($file),$options['ignore_files'])) {
@@ -196,7 +197,7 @@ class PHP_CompatInfo {
                 }
             }
 
-            if (sizeof($files) < 1 ) {
+            if (sizeof($files) < 1) {
                 return false;
             }
 
@@ -210,16 +211,16 @@ class PHP_CompatInfo {
             return false;
         }
     }
-    
+
     /**
      * Alias of parseDir
      *
      * @uses PHP_CompatInfo::parseDir()
      * @access public
      */
-     
+
     function parseFolder($folder,$options) {
-    	$this->parseDir($folder,$options);
+        return $this->parseDir($folder,$options);
     }
 
     /**
@@ -233,14 +234,14 @@ class PHP_CompatInfo {
      *                          'debug' contains a boolean
      *                              to control whether extra
      *                              ouput is shown.
-     *                          'is_string' contains a boolean 
+     *                          'is_string' contains a boolean
      *                              which says if the array values
      *                              are strings or file names.
      *                          'ignore_files' contains an array of
      *                                          files to ignore. File
      *                                          names are case sensitive.
      *                          'ignore_functions' contains an array
-     *                                         of functions to ignore when 
+     *                                         of functions to ignore when
      *                                         calculating the version needed.
      * @access public
      * @return array
@@ -338,9 +339,9 @@ class PHP_CompatInfo {
 
         $functions = array_unique($functions);
         if (isset($options['ignore_functions'])) {
-        	$options['ignore_functions'] = array_map("strtolower",$options['ignore_functions']);
+            $options['ignore_functions'] = array_map("strtolower",$options['ignore_functions']);
         } else {
-        	$options['ignore_functions'] = array();
+            $options['ignore_functions'] = array();
         }
         foreach($functions as $name) {
             if (isset($GLOBALS['funcs'][$name]) && (!in_array($name,$udf) && (!in_array($name,$options['ignore_functions'])))) {
