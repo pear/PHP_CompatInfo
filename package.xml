@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
-<package version="1.0" packagerversion="1.4.0a1">
- <name>PHP_CompatInfo</name>       
+<package version="1.0" packagerversion="1.4.0a2">
+ <name>PHP_CompatInfo</name>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
  <description>PHP_CompatInfo will parse a file/folder/script/array to find out the minimum
 version and extensions required for it to run. Features advanced debug output
@@ -16,11 +16,12 @@ which shows which functions require which version and CLI output script
   </maintainer>
   </maintainers>
  <release>
-  <version>1.0.0RC4</version>
-  <date>2005-02-21</date>
+  <version>1.0.0RC5</version>
+  <date>2005-03-05</date>
   <license>PHP License</license>
   <state>beta</state>
-  <notes>Updated the versioning info for better PHP5 support. Be aware that detection of PHP5 scripts on PHP4 is not supposed to work - though it often does work.
+  <notes>Added Request #3656
+Fixed Bug #3657
   </notes>
   <deps>
    <dep type="php" rel="ge" version="4.3.0" optional="no"/>
@@ -83,6 +84,15 @@ which shows which functions require which version and CLI output script
   </filelist>
  </release>
  <changelog>
+   <release>
+    <version>1.0.0RC5</version>
+    <date>2005-03-05</date>
+    <license>PHP License</license>
+    <state>beta</state>
+    <notes>Added Request #3656
+Fixed Bug #3657
+    </notes>
+   </release>
    <release>
     <version>1.0.0RC4</version>
     <date>2005-02-21</date>

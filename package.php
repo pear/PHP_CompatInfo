@@ -3,9 +3,10 @@ require_once 'PEAR/PackageFileManager.php';
 
 unset($_SERVER['PATH_TRANSLATED']); 
 
-$version = '1.0.0RC4';
+$version = '1.0.0RC5';
 $notes = <<<EOT
-Updated the versioning info for better PHP5 support. Be aware that detection of PHP5 scripts on PHP4 is not supposed to work - though it often does work.
+Added Request #3656
+Fixed Bug #3657
 EOT;
 
 $description =<<<EOT
