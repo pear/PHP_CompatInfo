@@ -60,7 +60,6 @@ which shows which functions require which version and CLI output script</descrip
         <dir name="media">
          <file role="doc" name="background.png"/>
          <file role="doc" name="empty.png"/>
-         <file role="doc" name="pear.gif"/>
          <file role="doc" name="style.css"/>
         </dir> <!-- docs/media -->
         <dir name="PHP_CompatInfo">
@@ -68,25 +67,18 @@ which shows which functions require which version and CLI output script</descrip
          <file role="doc" name="PHP_CompatInfo_Cli.html"/>
          <file role="doc" name="_CompatInfo_CompatInfo_Cli_php.html"/>
          <file role="doc" name="_CompatInfo_CompatInfo_php.html"/>
-         <file role="doc" name="_CompatInfo_package_php.html"/>
         </dir> <!-- docs/PHP_CompatInfo -->
         <dir name="__examplesource">
-         <file role="doc" name="exsource_ar_PHP_CompatInfo_docs_examples_checkConstants.php_8efdd8263345d16425bc9b6665852893.html"/>
          <file role="doc" name="exsource_ar_PHP_CompatInfo_docs_examples_checkConstants.php_c6a072914db4deaa7cd737a410135b32.html"/>
          <file role="doc" name="exsource_cvs_pear_PHP_CompatInfo_docs_examples_parseDir.php_016dd77ae5536909b6cd672a8efdb618.html"/>
-         <file role="doc" name="exsource_s_pear_PHP_CompatInfo_docs_examples_parseArray.php_206c617e8eb34e9d6af69a6bc6425ebb.html"/>
          <file role="doc" name="exsource_s_pear_PHP_CompatInfo_docs_examples_parseArray.php_6457c017707e4b52b76abc6ea4887f45.html"/>
-         <file role="doc" name="exsource_vs_pear_PHP_CompatInfo_docs_examples_parseFile.php_27ad3b8bc4838da6b47b9de1c1fece60.html"/>
          <file role="doc" name="exsource_vs_pear_PHP_CompatInfo_docs_examples_parseFile.php_cd91f832407337cc291742c3bc714f56.html"/>
-         <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseFolder.php_59cd49894862a7adc29626160d3ccca8.html"/>
          <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseString.php_9d7bb043f1ace2dccb7d4754cc5b6209.html"/>
-         <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseString.php_d7f0c50630c16cc0494bef419d036b25.html"/>
          <file role="doc" name="exsource__php-cvs_pear_PHP_CompatInfo_docs_examples_Cli.php_1b345c70ae5aff2fa9585ba8448bf2a0.html"/>
         </dir> <!-- docs/__examplesource -->
         <dir name="__filesource">
          <file role="doc" name="fsource_PHP_CompatInfo__CompatInfo.php.html"/>
          <file role="doc" name="fsource_PHP_CompatInfo__CompatInfoCli.php.html"/>
-         <file role="doc" name="fsource_PHP_CompatInfo__package.php.html"/>
         </dir> <!-- docs/__filesource -->
        </dir> <!-- docs -->
        <dir name="scripts">
