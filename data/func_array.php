@@ -1,6885 +1,12071 @@
 <?php
-$funcs['abs']['extension'] = 'ext_standard';
-$funcs['abs']['version_init'] = '4.0.0';
-$funcs['accept_connect']['extension'] = 'ext_sockets';
-$funcs['accept_connect']['version_init'] = '4.0.2';
-$funcs['acos']['extension'] = 'ext_standard';
-$funcs['acos']['version_init'] = '4.0.0';
-$funcs['acosh']['extension'] = 'ext_standard';
-$funcs['acosh']['version_init'] = '4.1.0';
-$funcs['add']['extension'] = 'ext_ming';
-$funcs['add']['version_init'] = '4.0.5';
-$funcs['addaction']['extension'] = 'ext_ming';
-$funcs['addaction']['version_init'] = '4.0.5';
-$funcs['addchars']['extension'] = 'ext_ming';
-$funcs['addchars']['version_init'] = '5.0.0';
-$funcs['addcolor']['extension'] = 'ext_ming';
-$funcs['addcolor']['version_init'] = '4.0.5';
-$funcs['addcslashes']['extension'] = 'ext_standard';
-$funcs['addcslashes']['version_init'] = '4.0.0';
-$funcs['addentry']['extension'] = 'ext_ming';
-$funcs['addentry']['version_init'] = '4.0.5';
-$funcs['addexport']['extension'] = 'ext_ming';
-$funcs['addexport']['version_init'] = '';
-$funcs['addfill']['extension'] = 'ext_ming';
-$funcs['addfill']['version_init'] = '4.0.5';
-$funcs['addfont']['extension'] = 'ext_ming';
-$funcs['addfont']['version_init'] = '';
-$funcs['addshape']['extension'] = 'ext_ming';
-$funcs['addshape']['version_init'] = '4.0.5';
-$funcs['addslashes']['extension'] = 'ext_standard';
-$funcs['addslashes']['version_init'] = '4.0.0';
-$funcs['addsound']['extension'] = 'ext_ming';
-$funcs['addsound']['version_init'] = '';
-$funcs['addstring']['extension'] = 'ext_ming';
-$funcs['addstring']['version_init'] = '4.0.5';
-$funcs['addutf8chars']['extension'] = 'ext_ming';
-$funcs['addutf8chars']['version_init'] = '';
-$funcs['addutf8string']['extension'] = 'ext_ming';
-$funcs['addutf8string']['version_init'] = '';
-$funcs['add_iovec']['extension'] = 'ext_sockets';
-$funcs['add_iovec']['version_init'] = '4.0.2';
-$funcs['aggregate']['extension'] = 'ext_standard';
-$funcs['aggregate']['version_init'] = '4.2.0';
-$funcs['aggregate_info']['extension'] = 'ext_standard';
-$funcs['aggregate_info']['version_init'] = '';
-$funcs['aggregate_methods']['extension'] = 'ext_standard';
-$funcs['aggregate_methods']['version_init'] = '4.2.0';
-$funcs['aggregate_methods_by_list']['extension'] = 'ext_standard';
-$funcs['aggregate_methods_by_list']['version_init'] = '4.2.0';
-$funcs['aggregate_methods_by_regexp']['extension'] = 'ext_standard';
-$funcs['aggregate_methods_by_regexp']['version_init'] = '4.2.0';
-$funcs['aggregate_properties']['extension'] = 'ext_standard';
-$funcs['aggregate_properties']['version_init'] = '4.2.0';
-$funcs['aggregate_properties_by_list']['extension'] = 'ext_standard';
-$funcs['aggregate_properties_by_list']['version_init'] = '4.2.0';
-$funcs['aggregate_properties_by_regexp']['extension'] = 'ext_standard';
-$funcs['aggregate_properties_by_regexp']['version_init'] = '4.2.0';
-$funcs['aggregation_info']['extension'] = 'ext_standard';
-$funcs['aggregation_info']['version_init'] = '4.2.0';
-$funcs['align']['extension'] = 'ext_ming';
-$funcs['align']['version_init'] = '4.0.5';
-$funcs['apache_child_terminate']['extension'] = 'sapi_apache_hooks';
-$funcs['apache_child_terminate']['version_init'] = '4.0.5';
-$funcs['apache_getenv']['extension'] = 'sapi_apache2handler';
-$funcs['apache_getenv']['version_init'] = '4.3.0';
-$funcs['apache_get_modules']['extension'] = 'sapi_apache_hooks';
-$funcs['apache_get_modules']['version_init'] = '4.3.2';
-$funcs['apache_get_version']['extension'] = 'sapi_apache_hooks';
-$funcs['apache_get_version']['version_init'] = '4.3.2';
-$funcs['apache_lookup_uri']['extension'] = 'sapi_apache_hooks';
-$funcs['apache_lookup_uri']['version_init'] = '4.0.0';
-$funcs['apache_note']['extension'] = 'sapi_apache_hooks';
-$funcs['apache_note']['version_init'] = '4.0.0';
-$funcs['apache_request_headers']['extension'] = 'sapi_nsapi';
-$funcs['apache_request_headers']['version_init'] = '4.3.0';
-$funcs['apache_response_headers']['extension'] = 'sapi_nsapi';
-$funcs['apache_response_headers']['version_init'] = '4.3.0';
-$funcs['apache_setenv']['extension'] = 'sapi_apache_hooks';
-$funcs['apache_setenv']['version_init'] = '4.2.0';
-$funcs['apache_sub_req']['extension'] = 'sapi_apache2filter';
-$funcs['apache_sub_req']['version_init'] = '4.0.4';
-$funcs['array_change_key_case']['extension'] = 'ext_standard';
-$funcs['array_change_key_case']['version_init'] = '4.2.0';
-$funcs['array_chunk']['extension'] = 'ext_standard';
-$funcs['array_chunk']['version_init'] = '4.2.0';
-$funcs['array_combine']['extension'] = 'ext_standard';
-$funcs['array_combine']['version_init'] = '5.0.0';
-$funcs['array_count_values']['extension'] = 'ext_standard';
-$funcs['array_count_values']['version_init'] = '4.0.0';
-$funcs['array_diff']['extension'] = 'ext_standard';
-$funcs['array_diff']['version_init'] = '4.0.1';
-$funcs['array_diff_assoc']['extension'] = 'ext_standard';
-$funcs['array_diff_assoc']['version_init'] = '4.3.0';
-$funcs['array_diff_uassoc']['extension'] = 'ext_standard';
-$funcs['array_diff_uassoc']['version_init'] = '';
-$funcs['array_fill']['extension'] = 'ext_standard';
-$funcs['array_fill']['version_init'] = '4.2.0';
-$funcs['array_filter']['extension'] = 'ext_standard';
-$funcs['array_filter']['version_init'] = '4.0.6';
-$funcs['array_flip']['extension'] = 'ext_standard';
-$funcs['array_flip']['version_init'] = '4.0.0';
-$funcs['array_intersect']['extension'] = 'ext_standard';
-$funcs['array_intersect']['version_init'] = '4.0.1';
-$funcs['array_intersect_assoc']['extension'] = 'ext_standard';
-$funcs['array_intersect_assoc']['version_init'] = '4.3.0';
-$funcs['array_intersect_uassoc']['extension'] = 'ext_standard';
-$funcs['array_intersect_uassoc']['version_init'] = '';
-$funcs['array_keys']['extension'] = 'ext_standard';
-$funcs['array_keys']['version_init'] = '4.0.0';
-$funcs['array_key_exists']['extension'] = 'ext_standard';
-$funcs['array_key_exists']['version_init'] = '4.1.0';
-$funcs['array_map']['extension'] = 'ext_standard';
-$funcs['array_map']['version_init'] = '4.0.6';
-$funcs['array_merge']['extension'] = 'ext_standard';
-$funcs['array_merge']['version_init'] = '4.0.0';
-$funcs['array_merge_recursive']['extension'] = 'ext_standard';
-$funcs['array_merge_recursive']['version_init'] = '4.0.1';
-$funcs['array_multisort']['extension'] = 'ext_standard';
-$funcs['array_multisort']['version_init'] = '4.0.0';
-$funcs['array_pad']['extension'] = 'ext_standard';
-$funcs['array_pad']['version_init'] = '4.0.0';
-$funcs['array_pop']['extension'] = 'ext_standard';
-$funcs['array_pop']['version_init'] = '4.0.0';
-$funcs['array_push']['extension'] = 'ext_standard';
-$funcs['array_push']['version_init'] = '4.0.0';
-$funcs['array_rand']['extension'] = 'ext_standard';
-$funcs['array_rand']['version_init'] = '4.0.0';
-$funcs['array_reduce']['extension'] = 'ext_standard';
-$funcs['array_reduce']['version_init'] = '4.0.5';
-$funcs['array_reverse']['extension'] = 'ext_standard';
-$funcs['array_reverse']['version_init'] = '4.0.0';
-$funcs['array_search']['extension'] = 'ext_standard';
-$funcs['array_search']['version_init'] = '4.0.5';
-$funcs['array_shift']['extension'] = 'ext_standard';
-$funcs['array_shift']['version_init'] = '4.0.0';
-$funcs['array_slice']['extension'] = 'ext_standard';
-$funcs['array_slice']['version_init'] = '4.0.0';
-$funcs['array_splice']['extension'] = 'ext_standard';
-$funcs['array_splice']['version_init'] = '4.0.0';
-$funcs['array_sum']['extension'] = 'ext_standard';
-$funcs['array_sum']['version_init'] = '4.0.4';
-$funcs['array_udiff']['extension'] = 'ext_standard';
-$funcs['array_udiff']['version_init'] = '';
-$funcs['array_udiff_assoc']['extension'] = 'ext_standard';
-$funcs['array_udiff_assoc']['version_init'] = '';
-$funcs['array_udiff_uassoc']['extension'] = 'ext_standard';
-$funcs['array_udiff_uassoc']['version_init'] = '';
-$funcs['array_uintersect']['extension'] = 'ext_standard';
-$funcs['array_uintersect']['version_init'] = '';
-$funcs['array_uintersect_assoc']['extension'] = 'ext_standard';
-$funcs['array_uintersect_assoc']['version_init'] = '';
-$funcs['array_uintersect_uassoc']['extension'] = 'ext_standard';
-$funcs['array_uintersect_uassoc']['version_init'] = '';
-$funcs['array_unique']['extension'] = 'ext_standard';
-$funcs['array_unique']['version_init'] = '4.0.1';
-$funcs['array_unshift']['extension'] = 'ext_standard';
-$funcs['array_unshift']['version_init'] = '4.0.0';
-$funcs['array_values']['extension'] = 'ext_standard';
-$funcs['array_values']['version_init'] = '4.0.0';
-$funcs['array_walk']['extension'] = 'ext_standard';
-$funcs['array_walk']['version_init'] = '4.0.0';
-$funcs['array_walk_recursive']['extension'] = 'ext_standard';
-$funcs['array_walk_recursive']['version_init'] = '5.0.0';
-$funcs['arsort']['extension'] = 'ext_standard';
-$funcs['arsort']['version_init'] = '4.0.0';
-$funcs['asin']['extension'] = 'ext_standard';
-$funcs['asin']['version_init'] = '4.0.0';
-$funcs['asinh']['extension'] = 'ext_standard';
-$funcs['asinh']['version_init'] = '4.1.0';
-$funcs['asort']['extension'] = 'ext_standard';
-$funcs['asort']['version_init'] = '4.0.0';
-$funcs['aspell_check']['extension'] = 'ext_aspell';
-$funcs['aspell_check']['version_init'] = '4.0.0';
-$funcs['aspell_check_raw']['extension'] = 'ext_aspell';
-$funcs['aspell_check_raw']['version_init'] = '4.0.0';
-$funcs['aspell_new']['extension'] = 'ext_aspell';
-$funcs['aspell_new']['version_init'] = '4.0.0';
-$funcs['aspell_suggest']['extension'] = 'ext_aspell';
-$funcs['aspell_suggest']['version_init'] = '4.0.0';
-$funcs['assert']['extension'] = 'ext_standard';
-$funcs['assert']['version_init'] = '4.0.0';
-$funcs['assert_options']['extension'] = 'ext_standard';
-$funcs['assert_options']['version_init'] = '4.0.0';
-$funcs['atan']['extension'] = 'ext_standard';
-$funcs['atan']['version_init'] = '4.0.0';
-$funcs['atan2']['extension'] = 'ext_standard';
-$funcs['atan2']['version_init'] = '4.0.0';
-$funcs['atanh']['extension'] = 'ext_standard';
-$funcs['atanh']['version_init'] = '4.1.0';
-$funcs['base64_decode']['extension'] = 'ext_standard';
-$funcs['base64_decode']['version_init'] = '4.0.0';
-$funcs['base64_encode']['extension'] = 'ext_standard';
-$funcs['base64_encode']['version_init'] = '4.0.0';
-$funcs['basename']['extension'] = 'ext_standard';
-$funcs['basename']['version_init'] = '4.0.0';
-$funcs['base_convert']['extension'] = 'ext_standard';
-$funcs['base_convert']['version_init'] = '4.0.0';
-$funcs['bcadd']['extension'] = 'ext_bcmath';
-$funcs['bcadd']['version_init'] = '4.0.0';
-$funcs['bccomp']['extension'] = 'ext_bcmath';
-$funcs['bccomp']['version_init'] = '4.0.0';
-$funcs['bcdiv']['extension'] = 'ext_bcmath';
-$funcs['bcdiv']['version_init'] = '4.0.0';
-$funcs['bcmod']['extension'] = 'ext_bcmath';
-$funcs['bcmod']['version_init'] = '4.0.0';
-$funcs['bcmul']['extension'] = 'ext_bcmath';
-$funcs['bcmul']['version_init'] = '4.0.0';
-$funcs['bcpow']['extension'] = 'ext_bcmath';
-$funcs['bcpow']['version_init'] = '4.0.0';
-$funcs['bcpowmod']['extension'] = 'ext_bcmath';
-$funcs['bcpowmod']['version_init'] = '5.0.0';
-$funcs['bcscale']['extension'] = 'ext_bcmath';
-$funcs['bcscale']['version_init'] = '4.0.0';
-$funcs['bcsqrt']['extension'] = 'ext_bcmath';
-$funcs['bcsqrt']['version_init'] = '4.0.0';
-$funcs['bcsub']['extension'] = 'ext_bcmath';
-$funcs['bcsub']['version_init'] = '4.0.0';
-$funcs['bin2hex']['extension'] = 'ext_standard';
-$funcs['bin2hex']['version_init'] = '4.0.0';
-$funcs['bind']['extension'] = 'ext_sockets';
-$funcs['bind']['version_init'] = '4.0.2';
-$funcs['bindec']['extension'] = 'ext_standard';
-$funcs['bindec']['version_init'] = '4.0.0';
-$funcs['bindtextdomain']['extension'] = 'ext_gettext';
-$funcs['bindtextdomain']['version_init'] = '4.0.0';
-$funcs['bind_textdomain_codeset']['extension'] = 'ext_gettext';
-$funcs['bind_textdomain_codeset']['version_init'] = '4.2.0';
-$funcs['birdstep_autocommit']['extension'] = 'ext_odbc';
-$funcs['birdstep_autocommit']['version_init'] = '4.2.0';
-$funcs['birdstep_close']['extension'] = 'ext_odbc';
-$funcs['birdstep_close']['version_init'] = '4.2.0';
-$funcs['birdstep_commit']['extension'] = 'ext_odbc';
-$funcs['birdstep_commit']['version_init'] = '4.2.0';
-$funcs['birdstep_connect']['extension'] = 'ext_odbc';
-$funcs['birdstep_connect']['version_init'] = '4.2.0';
-$funcs['birdstep_exec']['extension'] = 'ext_odbc';
-$funcs['birdstep_exec']['version_init'] = '4.2.0';
-$funcs['birdstep_fetch']['extension'] = 'ext_odbc';
-$funcs['birdstep_fetch']['version_init'] = '4.2.0';
-$funcs['birdstep_fieldname']['extension'] = 'ext_odbc';
-$funcs['birdstep_fieldname']['version_init'] = '4.2.0';
-$funcs['birdstep_fieldnum']['extension'] = 'ext_odbc';
-$funcs['birdstep_fieldnum']['version_init'] = '4.2.0';
-$funcs['birdstep_freeresult']['extension'] = 'ext_odbc';
-$funcs['birdstep_freeresult']['version_init'] = '4.2.0';
-$funcs['birdstep_off_autocommit']['extension'] = 'ext_odbc';
-$funcs['birdstep_off_autocommit']['version_init'] = '4.2.0';
-$funcs['birdstep_result']['extension'] = 'ext_odbc';
-$funcs['birdstep_result']['version_init'] = '4.2.0';
-$funcs['birdstep_rollback']['extension'] = 'ext_odbc';
-$funcs['birdstep_rollback']['version_init'] = '4.2.0';
-$funcs['build_iovec']['extension'] = 'ext_sockets';
-$funcs['build_iovec']['version_init'] = '4.0.2';
-$funcs['bzclose']['extension'] = 'ext_bz2';
-$funcs['bzclose']['version_init'] = '4.0.4';
-$funcs['bzcompress']['extension'] = 'ext_bz2';
-$funcs['bzcompress']['version_init'] = '4.0.4';
-$funcs['bzdecompress']['extension'] = 'ext_bz2';
-$funcs['bzdecompress']['version_init'] = '4.0.4';
-$funcs['bzerrno']['extension'] = 'ext_bz2';
-$funcs['bzerrno']['version_init'] = '4.0.4';
-$funcs['bzerror']['extension'] = 'ext_bz2';
-$funcs['bzerror']['version_init'] = '4.0.4';
-$funcs['bzerrstr']['extension'] = 'ext_bz2';
-$funcs['bzerrstr']['version_init'] = '4.0.4';
-$funcs['bzflush']['extension'] = 'ext_bz2';
-$funcs['bzflush']['version_init'] = '4.0.4';
-$funcs['bzopen']['extension'] = 'ext_bz2';
-$funcs['bzopen']['version_init'] = '4.0.4';
-$funcs['bzread']['extension'] = 'ext_bz2';
-$funcs['bzread']['version_init'] = '4.0.4';
-$funcs['bzwrite']['extension'] = 'ext_bz2';
-$funcs['bzwrite']['version_init'] = '4.0.4';
-$funcs['call_user_func']['extension'] = 'ext_standard';
-$funcs['call_user_func']['version_init'] = '4.0.0';
-$funcs['call_user_func_array']['extension'] = 'ext_standard';
-$funcs['call_user_func_array']['version_init'] = '4.0.4';
-$funcs['call_user_method']['extension'] = 'ext_standard';
-$funcs['call_user_method']['version_init'] = '4.0.0';
-$funcs['call_user_method_array']['extension'] = 'ext_standard';
-$funcs['call_user_method_array']['version_init'] = '4.0.5';
-$funcs['cal_days_in_month']['extension'] = 'ext_calendar';
-$funcs['cal_days_in_month']['version_init'] = '4.1.0';
-$funcs['cal_from_jd']['extension'] = 'ext_calendar';
-$funcs['cal_from_jd']['version_init'] = '4.1.0';
-$funcs['cal_info']['extension'] = 'ext_calendar';
-$funcs['cal_info']['version_init'] = '4.1.0';
-$funcs['cal_to_jd']['extension'] = 'ext_calendar';
-$funcs['cal_to_jd']['version_init'] = '4.1.0';
-$funcs['ccvs_add']['extension'] = 'ext_ccvs';
-$funcs['ccvs_add']['version_init'] = '4.0.2';
-$funcs['ccvs_auth']['extension'] = 'ext_ccvs';
-$funcs['ccvs_auth']['version_init'] = '4.0.2';
-$funcs['ccvs_command']['extension'] = 'ext_ccvs';
-$funcs['ccvs_command']['version_init'] = '4.0.2';
-$funcs['ccvs_count']['extension'] = 'ext_ccvs';
-$funcs['ccvs_count']['version_init'] = '4.0.2';
-$funcs['ccvs_delete']['extension'] = 'ext_ccvs';
-$funcs['ccvs_delete']['version_init'] = '4.0.2';
-$funcs['ccvs_done']['extension'] = 'ext_ccvs';
-$funcs['ccvs_done']['version_init'] = '4.0.2';
-$funcs['ccvs_init']['extension'] = 'ext_ccvs';
-$funcs['ccvs_init']['version_init'] = '4.0.2';
-$funcs['ccvs_lookup']['extension'] = 'ext_ccvs';
-$funcs['ccvs_lookup']['version_init'] = '4.0.2';
-$funcs['ccvs_new']['extension'] = 'ext_ccvs';
-$funcs['ccvs_new']['version_init'] = '4.0.2';
-$funcs['ccvs_report']['extension'] = 'ext_ccvs';
-$funcs['ccvs_report']['version_init'] = '4.0.2';
-$funcs['ccvs_return']['extension'] = 'ext_ccvs';
-$funcs['ccvs_return']['version_init'] = '4.0.2';
-$funcs['ccvs_reverse']['extension'] = 'ext_ccvs';
-$funcs['ccvs_reverse']['version_init'] = '4.0.2';
-$funcs['ccvs_sale']['extension'] = 'ext_ccvs';
-$funcs['ccvs_sale']['version_init'] = '4.0.2';
-$funcs['ccvs_status']['extension'] = 'ext_ccvs';
-$funcs['ccvs_status']['version_init'] = '4.0.2';
-$funcs['ccvs_textvalue']['extension'] = 'ext_ccvs';
-$funcs['ccvs_textvalue']['version_init'] = '4.0.2';
-$funcs['ccvs_void']['extension'] = 'ext_ccvs';
-$funcs['ccvs_void']['version_init'] = '4.0.2';
-$funcs['ceil']['extension'] = 'ext_standard';
-$funcs['ceil']['version_init'] = '4.0.0';
-$funcs['chdir']['extension'] = 'ext_standard';
-$funcs['chdir']['version_init'] = '4.0.0';
-$funcs['checkdate']['extension'] = 'ext_standard';
-$funcs['checkdate']['version_init'] = '4.0.0';
-$funcs['checkdnsrr']['extension'] = 'ext_standard';
-$funcs['checkdnsrr']['version_init'] = '4.0.0';
-$funcs['chgrp']['extension'] = 'ext_standard';
-$funcs['chgrp']['version_init'] = '4.0.0';
-$funcs['chmod']['extension'] = 'ext_standard';
-$funcs['chmod']['version_init'] = '4.0.0';
-$funcs['chop']['extension'] = 'ext_standard';
-$funcs['chop']['version_init'] = '4.0.0';
-$funcs['chown']['extension'] = 'ext_standard';
-$funcs['chown']['version_init'] = '4.0.0';
-$funcs['chr']['extension'] = 'ext_standard';
-$funcs['chr']['version_init'] = '4.0.0';
-$funcs['chroot']['extension'] = 'ext_standard';
-$funcs['chroot']['version_init'] = '4.0.5';
-$funcs['chunk_split']['extension'] = 'ext_standard';
-$funcs['chunk_split']['version_init'] = '4.0.0';
-$funcs['class_exists']['extension'] = 'zend';
-$funcs['class_exists']['version_init'] = '4.0.0';
-$funcs['clearstatcache']['extension'] = 'ext_standard';
-$funcs['clearstatcache']['version_init'] = '4.0.0';
-$funcs['close']['extension'] = 'ext_standard';
-$funcs['close']['version_init'] = '4.0.0';
-$funcs['closedir']['extension'] = 'ext_standard';
-$funcs['closedir']['version_init'] = '4.0.0';
-$funcs['closelog']['extension'] = 'ext_standard';
-$funcs['closelog']['version_init'] = '4.0.0';
-$funcs['compact']['extension'] = 'ext_standard';
-$funcs['compact']['version_init'] = '4.0.0';
-$funcs['com_addref']['extension'] = 'ext_rpc';
-$funcs['com_addref']['version_init'] = '4.1.0';
-$funcs['com_event_sink']['extension'] = 'ext_rpc';
-$funcs['com_event_sink']['version_init'] = '4.2.3';
-$funcs['com_get']['extension'] = 'ext_rpc';
-$funcs['com_get']['version_init'] = '4.0.0';
-$funcs['COM_invoke']['extension'] = 'ext_rpc';
-$funcs['COM_invoke']['version_init'] = '4.0.0';
-$funcs['com_invoke_ex']['extension'] = 'ext_com';
-$funcs['com_invoke_ex']['version_init'] = '4.3.0';
-$funcs['com_isenum']['extension'] = 'ext_rpc';
-$funcs['com_isenum']['version_init'] = '4.1.0';
-$funcs['COM_load']['extension'] = 'ext_rpc';
-$funcs['COM_load']['version_init'] = '4.0.0';
-$funcs['com_load_typelib']['extension'] = 'ext_rpc';
-$funcs['com_load_typelib']['version_init'] = '4.1.0';
-$funcs['com_message_pump']['extension'] = 'ext_rpc';
-$funcs['com_message_pump']['version_init'] = '4.2.3';
-$funcs['com_print_typeinfo']['extension'] = 'ext_rpc';
-$funcs['com_print_typeinfo']['version_init'] = '4.2.3';
-$funcs['com_propget']['extension'] = 'ext_rpc';
-$funcs['com_propget']['version_init'] = '4.0.0';
-$funcs['com_propput']['extension'] = 'ext_rpc';
-$funcs['com_propput']['version_init'] = '4.0.0';
-$funcs['com_propset']['extension'] = 'ext_rpc';
-$funcs['com_propset']['version_init'] = '4.0.0';
-$funcs['com_release']['extension'] = 'ext_rpc';
-$funcs['com_release']['version_init'] = '4.1.0';
-$funcs['com_set']['extension'] = 'ext_rpc';
-$funcs['com_set']['version_init'] = '4.0.0';
-$funcs['confirm_ctype_compiled']['extension'] = 'ext_ctype';
-$funcs['confirm_ctype_compiled']['version_init'] = '';
-$funcs['confirm_cybermut_compiled']['extension'] = 'ext_cybermut';
-$funcs['confirm_cybermut_compiled']['version_init'] = '4.0.5';
-$funcs['confirm_ncurses_compiled']['extension'] = 'ext_ncurses';
-$funcs['confirm_ncurses_compiled']['version_init'] = '4.1.0';
-$funcs['confirm_zziplib_compiled']['extension'] = 'ext_zziplib';
-$funcs['confirm_zziplib_compiled']['version_init'] = '';
-$funcs['connect']['extension'] = 'ext_sockets';
-$funcs['connect']['version_init'] = '4.0.2';
-$funcs['connection_aborted']['extension'] = 'ext_standard';
-$funcs['connection_aborted']['version_init'] = '4.0.0';
-$funcs['connection_status']['extension'] = 'ext_standard';
-$funcs['connection_status']['version_init'] = '4.0.0';
-$funcs['connection_timeout']['extension'] = 'ext_standard';
-$funcs['connection_timeout']['version_init'] = '4.0.0';
-$funcs['constant']['extension'] = 'ext_standard';
-$funcs['constant']['version_init'] = '4.0.4';
-$funcs['convert_cyr_string']['extension'] = 'ext_standard';
-$funcs['convert_cyr_string']['version_init'] = '4.0.0';
-$funcs['convert_uudecode']['extension'] = 'ext_standard';
-$funcs['convert_uudecode']['version_init'] = '';
-$funcs['convert_uuencode']['extension'] = 'ext_standard';
-$funcs['convert_uuencode']['version_init'] = '';
-$funcs['copy']['extension'] = 'ext_standard';
-$funcs['copy']['version_init'] = '4.0.0';
-$funcs['cos']['extension'] = 'ext_standard';
-$funcs['cos']['version_init'] = '4.0.0';
-$funcs['cosh']['extension'] = 'ext_standard';
-$funcs['cosh']['version_init'] = '4.1.0';
-$funcs['count']['extension'] = 'ext_standard';
-$funcs['count']['version_init'] = '4.0.0';
-$funcs['count_chars']['extension'] = 'ext_standard';
-$funcs['count_chars']['version_init'] = '4.0.0';
-$funcs['cpdf_add_annotation']['extension'] = 'ext_cpdf';
-$funcs['cpdf_add_annotation']['version_init'] = '4.0.0';
-$funcs['cpdf_add_outline']['extension'] = 'ext_cpdf';
-$funcs['cpdf_add_outline']['version_init'] = '4.0.0';
-$funcs['cpdf_arc']['extension'] = 'ext_cpdf';
-$funcs['cpdf_arc']['version_init'] = '4.0.0';
-$funcs['cpdf_begin_text']['extension'] = 'ext_cpdf';
-$funcs['cpdf_begin_text']['version_init'] = '4.0.0';
-$funcs['cpdf_circle']['extension'] = 'ext_cpdf';
-$funcs['cpdf_circle']['version_init'] = '4.0.0';
-$funcs['cpdf_clip']['extension'] = 'ext_cpdf';
-$funcs['cpdf_clip']['version_init'] = '4.0.0';
-$funcs['cpdf_close']['extension'] = 'ext_cpdf';
-$funcs['cpdf_close']['version_init'] = '4.0.0';
-$funcs['cpdf_closepath']['extension'] = 'ext_cpdf';
-$funcs['cpdf_closepath']['version_init'] = '4.0.0';
-$funcs['cpdf_closepath_fill_stroke']['extension'] = 'ext_cpdf';
-$funcs['cpdf_closepath_fill_stroke']['version_init'] = '4.0.0';
-$funcs['cpdf_closepath_stroke']['extension'] = 'ext_cpdf';
-$funcs['cpdf_closepath_stroke']['version_init'] = '4.0.0';
-$funcs['cpdf_continue_text']['extension'] = 'ext_cpdf';
-$funcs['cpdf_continue_text']['version_init'] = '4.0.0';
-$funcs['cpdf_curveto']['extension'] = 'ext_cpdf';
-$funcs['cpdf_curveto']['version_init'] = '4.0.0';
-$funcs['cpdf_end_text']['extension'] = 'ext_cpdf';
-$funcs['cpdf_end_text']['version_init'] = '4.0.0';
-$funcs['cpdf_fill']['extension'] = 'ext_cpdf';
-$funcs['cpdf_fill']['version_init'] = '4.0.0';
-$funcs['cpdf_fill_stroke']['extension'] = 'ext_cpdf';
-$funcs['cpdf_fill_stroke']['version_init'] = '4.0.0';
-$funcs['cpdf_finalize']['extension'] = 'ext_cpdf';
-$funcs['cpdf_finalize']['version_init'] = '4.0.0';
-$funcs['cpdf_finalize_page']['extension'] = 'ext_cpdf';
-$funcs['cpdf_finalize_page']['version_init'] = '4.0.0';
-$funcs['cpdf_global_set_document_limits']['extension'] = 'ext_cpdf';
-$funcs['cpdf_global_set_document_limits']['version_init'] = '4.0.0';
-$funcs['cpdf_import_jpeg']['extension'] = 'ext_cpdf';
-$funcs['cpdf_import_jpeg']['version_init'] = '4.0.0';
-$funcs['cpdf_lineto']['extension'] = 'ext_cpdf';
-$funcs['cpdf_lineto']['version_init'] = '4.0.0';
-$funcs['cpdf_moveto']['extension'] = 'ext_cpdf';
-$funcs['cpdf_moveto']['version_init'] = '4.0.0';
-$funcs['cpdf_newpath']['extension'] = 'ext_cpdf';
-$funcs['cpdf_newpath']['version_init'] = '4.0.0';
-$funcs['cpdf_open']['extension'] = 'ext_cpdf';
-$funcs['cpdf_open']['version_init'] = '4.0.0';
-$funcs['cpdf_output_buffer']['extension'] = 'ext_cpdf';
-$funcs['cpdf_output_buffer']['version_init'] = '4.0.0';
-$funcs['cpdf_page_init']['extension'] = 'ext_cpdf';
-$funcs['cpdf_page_init']['version_init'] = '4.0.0';
-$funcs['cpdf_place_inline_image']['extension'] = 'ext_cpdf';
-$funcs['cpdf_place_inline_image']['version_init'] = '4.0.0';
-$funcs['cpdf_rect']['extension'] = 'ext_cpdf';
-$funcs['cpdf_rect']['version_init'] = '4.0.0';
-$funcs['cpdf_restore']['extension'] = 'ext_cpdf';
-$funcs['cpdf_restore']['version_init'] = '4.0.0';
-$funcs['cpdf_rlineto']['extension'] = 'ext_cpdf';
-$funcs['cpdf_rlineto']['version_init'] = '4.0.0';
-$funcs['cpdf_rmoveto']['extension'] = 'ext_cpdf';
-$funcs['cpdf_rmoveto']['version_init'] = '4.0.0';
-$funcs['cpdf_rotate']['extension'] = 'ext_cpdf';
-$funcs['cpdf_rotate']['version_init'] = '4.0.0';
-$funcs['cpdf_rotate_text']['extension'] = 'ext_cpdf';
-$funcs['cpdf_rotate_text']['version_init'] = '4.0.0';
-$funcs['cpdf_save']['extension'] = 'ext_cpdf';
-$funcs['cpdf_save']['version_init'] = '4.0.0';
-$funcs['cpdf_save_to_file']['extension'] = 'ext_cpdf';
-$funcs['cpdf_save_to_file']['version_init'] = '4.0.0';
-$funcs['cpdf_scale']['extension'] = 'ext_cpdf';
-$funcs['cpdf_scale']['version_init'] = '4.0.0';
-$funcs['cpdf_setdash']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setdash']['version_init'] = '4.0.0';
-$funcs['cpdf_setflat']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setflat']['version_init'] = '4.0.0';
-$funcs['cpdf_setgray']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setgray']['version_init'] = '4.0.0';
-$funcs['cpdf_setgray_fill']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setgray_fill']['version_init'] = '4.0.0';
-$funcs['cpdf_setgray_stroke']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setgray_stroke']['version_init'] = '4.0.0';
-$funcs['cpdf_setlinecap']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setlinecap']['version_init'] = '4.0.0';
-$funcs['cpdf_setlinejoin']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setlinejoin']['version_init'] = '4.0.0';
-$funcs['cpdf_setlinewidth']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setlinewidth']['version_init'] = '4.0.0';
-$funcs['cpdf_setmiterlimit']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setmiterlimit']['version_init'] = '4.0.0';
-$funcs['cpdf_setrgbcolor']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setrgbcolor']['version_init'] = '4.0.0';
-$funcs['cpdf_setrgbcolor_fill']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setrgbcolor_fill']['version_init'] = '4.0.0';
-$funcs['cpdf_setrgbcolor_stroke']['extension'] = 'ext_cpdf';
-$funcs['cpdf_setrgbcolor_stroke']['version_init'] = '4.0.0';
-$funcs['cpdf_set_action_url']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_action_url']['version_init'] = '4.0.0';
-$funcs['cpdf_set_char_spacing']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_char_spacing']['version_init'] = '4.0.0';
-$funcs['cpdf_set_creator']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_creator']['version_init'] = '4.0.0';
-$funcs['cpdf_set_current_page']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_current_page']['version_init'] = '4.0.0';
-$funcs['cpdf_set_font']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_font']['version_init'] = '4.0.0';
-$funcs['cpdf_set_font_directories']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_font_directories']['version_init'] = '4.0.6';
-$funcs['cpdf_set_font_map_file']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_font_map_file']['version_init'] = '4.0.6';
-$funcs['cpdf_set_horiz_scaling']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_horiz_scaling']['version_init'] = '4.0.0';
-$funcs['cpdf_set_keywords']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_keywords']['version_init'] = '4.0.0';
-$funcs['cpdf_set_leading']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_leading']['version_init'] = '4.0.0';
-$funcs['cpdf_set_page_animation']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_page_animation']['version_init'] = '4.0.0';
-$funcs['cpdf_set_subject']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_subject']['version_init'] = '4.0.0';
-$funcs['cpdf_set_text_matrix']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_text_matrix']['version_init'] = '4.0.0';
-$funcs['cpdf_set_text_pos']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_text_pos']['version_init'] = '4.0.0';
-$funcs['cpdf_set_text_rendering']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_text_rendering']['version_init'] = '4.0.0';
-$funcs['cpdf_set_text_rise']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_text_rise']['version_init'] = '4.0.0';
-$funcs['cpdf_set_title']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_title']['version_init'] = '4.0.0';
-$funcs['cpdf_set_viewer_preferences']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_viewer_preferences']['version_init'] = '4.0.0';
-$funcs['cpdf_set_word_spacing']['extension'] = 'ext_cpdf';
-$funcs['cpdf_set_word_spacing']['version_init'] = '4.0.0';
-$funcs['cpdf_show']['extension'] = 'ext_cpdf';
-$funcs['cpdf_show']['version_init'] = '4.0.0';
-$funcs['cpdf_show_xy']['extension'] = 'ext_cpdf';
-$funcs['cpdf_show_xy']['version_init'] = '4.0.0';
-$funcs['cpdf_stringwidth']['extension'] = 'ext_cpdf';
-$funcs['cpdf_stringwidth']['version_init'] = '4.0.0';
-$funcs['cpdf_stroke']['extension'] = 'ext_cpdf';
-$funcs['cpdf_stroke']['version_init'] = '4.0.0';
-$funcs['cpdf_text']['extension'] = 'ext_cpdf';
-$funcs['cpdf_text']['version_init'] = '4.0.0';
-$funcs['cpdf_translate']['extension'] = 'ext_cpdf';
-$funcs['cpdf_translate']['version_init'] = '4.0.0';
-$funcs['crack_check']['extension'] = 'ext_crack';
-$funcs['crack_check']['version_init'] = '4.0.5';
-$funcs['crack_closedict']['extension'] = 'ext_crack';
-$funcs['crack_closedict']['version_init'] = '4.0.5';
-$funcs['crack_getlastmessage']['extension'] = 'ext_crack';
-$funcs['crack_getlastmessage']['version_init'] = '4.0.5';
-$funcs['crack_opendict']['extension'] = 'ext_crack';
-$funcs['crack_opendict']['version_init'] = '4.0.5';
-$funcs['crash']['extension'] = 'zend';
-$funcs['crash']['version_init'] = '4.0.0';
-$funcs['crc32']['extension'] = 'ext_standard';
-$funcs['crc32']['version_init'] = '4.0.1';
-$funcs['create_function']['extension'] = 'zend';
-$funcs['create_function']['version_init'] = '4.0.1';
-$funcs['crypt']['extension'] = 'ext_standard';
-$funcs['crypt']['version_init'] = '4.0.0';
-$funcs['ctype_alnum']['extension'] = 'ext_ctype';
-$funcs['ctype_alnum']['version_init'] = '4.0.4';
-$funcs['ctype_alpha']['extension'] = 'ext_ctype';
-$funcs['ctype_alpha']['version_init'] = '4.0.4';
-$funcs['ctype_cntrl']['extension'] = 'ext_ctype';
-$funcs['ctype_cntrl']['version_init'] = '4.0.4';
-$funcs['ctype_digit']['extension'] = 'ext_ctype';
-$funcs['ctype_digit']['version_init'] = '4.0.4';
-$funcs['ctype_graph']['extension'] = 'ext_ctype';
-$funcs['ctype_graph']['version_init'] = '4.0.4';
-$funcs['ctype_lower']['extension'] = 'ext_ctype';
-$funcs['ctype_lower']['version_init'] = '4.0.4';
-$funcs['ctype_print']['extension'] = 'ext_ctype';
-$funcs['ctype_print']['version_init'] = '4.0.4';
-$funcs['ctype_punct']['extension'] = 'ext_ctype';
-$funcs['ctype_punct']['version_init'] = '4.0.4';
-$funcs['ctype_space']['extension'] = 'ext_ctype';
-$funcs['ctype_space']['version_init'] = '4.0.4';
-$funcs['ctype_upper']['extension'] = 'ext_ctype';
-$funcs['ctype_upper']['version_init'] = '4.0.4';
-$funcs['ctype_xdigit']['extension'] = 'ext_ctype';
-$funcs['ctype_xdigit']['version_init'] = '4.0.4';
-$funcs['curl_close']['extension'] = 'ext_curl';
-$funcs['curl_close']['version_init'] = '4.0.2';
-$funcs['curl_errno']['extension'] = 'ext_curl';
-$funcs['curl_errno']['version_init'] = '4.0.3';
-$funcs['curl_error']['extension'] = 'ext_curl';
-$funcs['curl_error']['version_init'] = '4.0.3';
-$funcs['curl_exec']['extension'] = 'ext_curl';
-$funcs['curl_exec']['version_init'] = '4.0.2';
-$funcs['curl_getinfo']['extension'] = 'ext_curl';
-$funcs['curl_getinfo']['version_init'] = '4.0.4';
-$funcs['curl_init']['extension'] = 'ext_curl';
-$funcs['curl_init']['version_init'] = '4.0.2';
-$funcs['curl_multi_add_handle']['extension'] = 'ext_curl';
-$funcs['curl_multi_add_handle']['version_init'] = '5.0.0';
-$funcs['curl_multi_close']['extension'] = 'ext_curl';
-$funcs['curl_multi_close']['version_init'] = '5.0.0';
-$funcs['curl_multi_exec']['extension'] = 'ext_curl';
-$funcs['curl_multi_exec']['version_init'] = '5.0.0';
-$funcs['curl_multi_getcontent']['extension'] = 'ext_curl';
-$funcs['curl_multi_getcontent']['version_init'] = '5.0.0';
-$funcs['curl_multi_info_read']['extension'] = 'ext_curl';
-$funcs['curl_multi_info_read']['version_init'] = '5.0.0';
-$funcs['curl_multi_init']['extension'] = 'ext_curl';
-$funcs['curl_multi_init']['version_init'] = '5.0.0';
-$funcs['curl_multi_remove_handle']['extension'] = 'ext_curl';
-$funcs['curl_multi_remove_handle']['version_init'] = '5.0.0';
-$funcs['curl_multi_select']['extension'] = 'ext_curl';
-$funcs['curl_multi_select']['version_init'] = '5.0.0';
-$funcs['curl_setopt']['extension'] = 'ext_curl';
-$funcs['curl_setopt']['version_init'] = '4.0.2';
-$funcs['curl_version']['extension'] = 'ext_curl';
-$funcs['curl_version']['version_init'] = '4.0.2';
-$funcs['current']['extension'] = 'ext_standard';
-$funcs['current']['version_init'] = '4.0.0';
-$funcs['cv_add']['extension'] = 'ext_ccvs';
-$funcs['cv_add']['version_init'] = '4.0.2';
-$funcs['cv_auth']['extension'] = 'ext_ccvs';
-$funcs['cv_auth']['version_init'] = '4.0.2';
-$funcs['cv_command']['extension'] = 'ext_ccvs';
-$funcs['cv_command']['version_init'] = '4.0.2';
-$funcs['cv_count']['extension'] = 'ext_ccvs';
-$funcs['cv_count']['version_init'] = '4.0.2';
-$funcs['cv_delete']['extension'] = 'ext_ccvs';
-$funcs['cv_delete']['version_init'] = '4.0.2';
-$funcs['cv_done']['extension'] = 'ext_ccvs';
-$funcs['cv_done']['version_init'] = '4.0.2';
-$funcs['cv_init']['extension'] = 'ext_ccvs';
-$funcs['cv_init']['version_init'] = '4.0.2';
-$funcs['cv_lookup']['extension'] = 'ext_ccvs';
-$funcs['cv_lookup']['version_init'] = '4.0.2';
-$funcs['cv_new']['extension'] = 'ext_ccvs';
-$funcs['cv_new']['version_init'] = '4.0.2';
-$funcs['cv_report']['extension'] = 'ext_ccvs';
-$funcs['cv_report']['version_init'] = '4.0.2';
-$funcs['cv_return']['extension'] = 'ext_ccvs';
-$funcs['cv_return']['version_init'] = '4.0.2';
-$funcs['cv_reverse']['extension'] = 'ext_ccvs';
-$funcs['cv_reverse']['version_init'] = '4.0.2';
-$funcs['cv_sale']['extension'] = 'ext_ccvs';
-$funcs['cv_sale']['version_init'] = '4.0.2';
-$funcs['cv_status']['extension'] = 'ext_ccvs';
-$funcs['cv_status']['version_init'] = '4.0.2';
-$funcs['cv_textvalue']['extension'] = 'ext_ccvs';
-$funcs['cv_textvalue']['version_init'] = '4.0.2';
-$funcs['cv_void']['extension'] = 'ext_ccvs';
-$funcs['cv_void']['version_init'] = '4.0.2';
-$funcs['cybercash_base64_decode']['extension'] = 'ext_cybercash';
-$funcs['cybercash_base64_decode']['version_init'] = '4.0.0';
-$funcs['cybercash_base64_encode']['extension'] = 'ext_cybercash';
-$funcs['cybercash_base64_encode']['version_init'] = '4.0.0';
-$funcs['cybercash_decr']['extension'] = 'ext_cybercash';
-$funcs['cybercash_decr']['version_init'] = '4.0.0';
-$funcs['cybercash_encr']['extension'] = 'ext_cybercash';
-$funcs['cybercash_encr']['version_init'] = '4.0.0';
-$funcs['cybermut_creerformulairecm']['extension'] = 'ext_cybermut';
-$funcs['cybermut_creerformulairecm']['version_init'] = '4.0.5';
-$funcs['cybermut_creerreponsecm']['extension'] = 'ext_cybermut';
-$funcs['cybermut_creerreponsecm']['version_init'] = '4.0.5';
-$funcs['cybermut_testmac']['extension'] = 'ext_cybermut';
-$funcs['cybermut_testmac']['version_init'] = '4.0.5';
-$funcs['cyrus_authenticate']['extension'] = 'ext_cyrus';
-$funcs['cyrus_authenticate']['version_init'] = '4.1.0';
-$funcs['cyrus_bind']['extension'] = 'ext_cyrus';
-$funcs['cyrus_bind']['version_init'] = '4.1.0';
-$funcs['cyrus_close']['extension'] = 'ext_cyrus';
-$funcs['cyrus_close']['version_init'] = '4.1.0';
-$funcs['cyrus_connect']['extension'] = 'ext_cyrus';
-$funcs['cyrus_connect']['version_init'] = '4.1.0';
-$funcs['cyrus_query']['extension'] = 'ext_cyrus';
-$funcs['cyrus_query']['version_init'] = '4.1.0';
-$funcs['cyrus_unbind']['extension'] = 'ext_cyrus';
-$funcs['cyrus_unbind']['version_init'] = '4.1.0';
-$funcs['date']['extension'] = 'ext_standard';
-$funcs['date']['version_init'] = '4.0.0';
-$funcs['date_sunrise']['extension'] = 'ext_standard';
-$funcs['date_sunrise']['version_init'] = '5.0.0';
-$funcs['date_sunset']['extension'] = 'ext_standard';
-$funcs['date_sunset']['version_init'] = '5.0.0';
-$funcs['dav_set_mkcol_handlers']['extension'] = 'ext_dav';
-$funcs['dav_set_mkcol_handlers']['version_init'] = '4.0.0';
-$funcs['dbase_add_record']['extension'] = 'ext_dbase';
-$funcs['dbase_add_record']['version_init'] = '4.0.0';
-$funcs['dbase_close']['extension'] = 'ext_dbase';
-$funcs['dbase_close']['version_init'] = '4.0.0';
-$funcs['dbase_create']['extension'] = 'ext_dbase';
-$funcs['dbase_create']['version_init'] = '4.0.0';
-$funcs['dbase_delete_record']['extension'] = 'ext_dbase';
-$funcs['dbase_delete_record']['version_init'] = '4.0.0';
-$funcs['dbase_get_header_info']['extension'] = 'ext_dbase';
-$funcs['dbase_get_header_info']['version_init'] = '';
-$funcs['dbase_get_record']['extension'] = 'ext_dbase';
-$funcs['dbase_get_record']['version_init'] = '4.0.0';
-$funcs['dbase_get_record_with_names']['extension'] = 'ext_dbase';
-$funcs['dbase_get_record_with_names']['version_init'] = '4.0.0';
-$funcs['dbase_numfields']['extension'] = 'ext_dbase';
-$funcs['dbase_numfields']['version_init'] = '4.0.0';
-$funcs['dbase_numrecords']['extension'] = 'ext_dbase';
-$funcs['dbase_numrecords']['version_init'] = '4.0.0';
-$funcs['dbase_open']['extension'] = 'ext_dbase';
-$funcs['dbase_open']['version_init'] = '4.0.0';
-$funcs['dbase_pack']['extension'] = 'ext_dbase';
-$funcs['dbase_pack']['version_init'] = '4.0.0';
-$funcs['dbase_replace_record']['extension'] = 'ext_dbase';
-$funcs['dbase_replace_record']['version_init'] = '4.0.0';
-$funcs['dba_close']['extension'] = 'ext_dba';
-$funcs['dba_close']['version_init'] = '4.0.0';
-$funcs['dba_delete']['extension'] = 'ext_dba';
-$funcs['dba_delete']['version_init'] = '4.0.0';
-$funcs['dba_exists']['extension'] = 'ext_dba';
-$funcs['dba_exists']['version_init'] = '4.0.0';
-$funcs['dba_fetch']['extension'] = 'ext_dba';
-$funcs['dba_fetch']['version_init'] = '4.0.0';
-$funcs['dba_firstkey']['extension'] = 'ext_dba';
-$funcs['dba_firstkey']['version_init'] = '4.0.0';
-$funcs['dba_handlers']['extension'] = 'ext_dba';
-$funcs['dba_handlers']['version_init'] = '4.3.0';
-$funcs['dba_insert']['extension'] = 'ext_dba';
-$funcs['dba_insert']['version_init'] = '4.0.0';
-$funcs['dba_key_split']['extension'] = 'ext_dba';
-$funcs['dba_key_split']['version_init'] = '';
-$funcs['dba_list']['extension'] = 'ext_dba';
-$funcs['dba_list']['version_init'] = '4.3.0';
-$funcs['dba_nextkey']['extension'] = 'ext_dba';
-$funcs['dba_nextkey']['version_init'] = '4.0.0';
-$funcs['dba_open']['extension'] = 'ext_dba';
-$funcs['dba_open']['version_init'] = '4.0.0';
-$funcs['dba_optimize']['extension'] = 'ext_dba';
-$funcs['dba_optimize']['version_init'] = '4.0.0';
-$funcs['dba_popen']['extension'] = 'ext_dba';
-$funcs['dba_popen']['version_init'] = '4.0.0';
-$funcs['dba_replace']['extension'] = 'ext_dba';
-$funcs['dba_replace']['version_init'] = '4.0.0';
-$funcs['dba_sync']['extension'] = 'ext_dba';
-$funcs['dba_sync']['version_init'] = '4.0.0';
-$funcs['dblist']['extension'] = 'ext_db';
-$funcs['dblist']['version_init'] = '4.0.0';
-$funcs['dbmclose']['extension'] = 'ext_db';
-$funcs['dbmclose']['version_init'] = '4.0.0';
-$funcs['dbmdelete']['extension'] = 'ext_db';
-$funcs['dbmdelete']['version_init'] = '4.0.0';
-$funcs['dbmexists']['extension'] = 'ext_db';
-$funcs['dbmexists']['version_init'] = '4.0.0';
-$funcs['dbmfetch']['extension'] = 'ext_db';
-$funcs['dbmfetch']['version_init'] = '4.0.0';
-$funcs['dbmfirstkey']['extension'] = 'ext_db';
-$funcs['dbmfirstkey']['version_init'] = '4.0.0';
-$funcs['dbminsert']['extension'] = 'ext_db';
-$funcs['dbminsert']['version_init'] = '4.0.0';
-$funcs['dbmnextkey']['extension'] = 'ext_db';
-$funcs['dbmnextkey']['version_init'] = '4.0.0';
-$funcs['dbmopen']['extension'] = 'ext_db';
-$funcs['dbmopen']['version_init'] = '4.0.0';
-$funcs['dbmreplace']['extension'] = 'ext_db';
-$funcs['dbmreplace']['version_init'] = '4.0.0';
-$funcs['dbplus_add']['extension'] = 'ext_dbplus';
-$funcs['dbplus_add']['version_init'] = '4.1.0';
-$funcs['dbplus_aql']['extension'] = 'ext_dbplus';
-$funcs['dbplus_aql']['version_init'] = '4.1.0';
-$funcs['dbplus_chdir']['extension'] = 'ext_dbplus';
-$funcs['dbplus_chdir']['version_init'] = '4.1.0';
-$funcs['dbplus_close']['extension'] = 'ext_dbplus';
-$funcs['dbplus_close']['version_init'] = '4.1.0';
-$funcs['dbplus_curr']['extension'] = 'ext_dbplus';
-$funcs['dbplus_curr']['version_init'] = '4.1.0';
-$funcs['dbplus_errcode']['extension'] = 'ext_dbplus';
-$funcs['dbplus_errcode']['version_init'] = '4.1.0';
-$funcs['dbplus_errno']['extension'] = 'ext_dbplus';
-$funcs['dbplus_errno']['version_init'] = '4.1.0';
-$funcs['dbplus_find']['extension'] = 'ext_dbplus';
-$funcs['dbplus_find']['version_init'] = '4.1.0';
-$funcs['dbplus_first']['extension'] = 'ext_dbplus';
-$funcs['dbplus_first']['version_init'] = '4.1.0';
-$funcs['dbplus_flush']['extension'] = 'ext_dbplus';
-$funcs['dbplus_flush']['version_init'] = '4.1.0';
-$funcs['dbplus_freealllocks']['extension'] = 'ext_dbplus';
-$funcs['dbplus_freealllocks']['version_init'] = '4.1.0';
-$funcs['dbplus_freelock']['extension'] = 'ext_dbplus';
-$funcs['dbplus_freelock']['version_init'] = '4.1.0';
-$funcs['dbplus_freerlocks']['extension'] = 'ext_dbplus';
-$funcs['dbplus_freerlocks']['version_init'] = '4.1.0';
-$funcs['dbplus_getlock']['extension'] = 'ext_dbplus';
-$funcs['dbplus_getlock']['version_init'] = '4.1.0';
-$funcs['dbplus_getunique']['extension'] = 'ext_dbplus';
-$funcs['dbplus_getunique']['version_init'] = '4.1.0';
-$funcs['dbplus_info']['extension'] = 'ext_dbplus';
-$funcs['dbplus_info']['version_init'] = '4.1.0';
-$funcs['dbplus_last']['extension'] = 'ext_dbplus';
-$funcs['dbplus_last']['version_init'] = '4.1.0';
-$funcs['dbplus_next']['extension'] = 'ext_dbplus';
-$funcs['dbplus_next']['version_init'] = '4.1.0';
-$funcs['dbplus_open']['extension'] = 'ext_dbplus';
-$funcs['dbplus_open']['version_init'] = '4.1.0';
-$funcs['dbplus_prev']['extension'] = 'ext_dbplus';
-$funcs['dbplus_prev']['version_init'] = '4.1.0';
-$funcs['dbplus_rchperm']['extension'] = 'ext_dbplus';
-$funcs['dbplus_rchperm']['version_init'] = '4.1.0';
-$funcs['dbplus_rcreate']['extension'] = 'ext_dbplus';
-$funcs['dbplus_rcreate']['version_init'] = '4.1.0';
-$funcs['dbplus_rcrtexact']['extension'] = 'ext_dbplus';
-$funcs['dbplus_rcrtexact']['version_init'] = '4.1.0';
-$funcs['dbplus_rcrtlike']['extension'] = 'ext_dbplus';
-$funcs['dbplus_rcrtlike']['version_init'] = '4.1.0';
-$funcs['dbplus_resolve']['extension'] = 'ext_dbplus';
-$funcs['dbplus_resolve']['version_init'] = '4.1.0';
-$funcs['dbplus_restorepos']['extension'] = 'ext_dbplus';
-$funcs['dbplus_restorepos']['version_init'] = '4.1.0';
-$funcs['dbplus_rkeys']['extension'] = 'ext_dbplus';
-$funcs['dbplus_rkeys']['version_init'] = '4.1.0';
-$funcs['dbplus_ropen']['extension'] = 'ext_dbplus';
-$funcs['dbplus_ropen']['version_init'] = '4.1.0';
-$funcs['dbplus_rquery']['extension'] = 'ext_dbplus';
-$funcs['dbplus_rquery']['version_init'] = '4.1.0';
-$funcs['dbplus_rrename']['extension'] = 'ext_dbplus';
-$funcs['dbplus_rrename']['version_init'] = '4.1.0';
-$funcs['dbplus_rsecindex']['extension'] = 'ext_dbplus';
-$funcs['dbplus_rsecindex']['version_init'] = '4.1.0';
-$funcs['dbplus_runlink']['extension'] = 'ext_dbplus';
-$funcs['dbplus_runlink']['version_init'] = '4.1.0';
-$funcs['dbplus_rzap']['extension'] = 'ext_dbplus';
-$funcs['dbplus_rzap']['version_init'] = '4.1.0';
-$funcs['dbplus_savepos']['extension'] = 'ext_dbplus';
-$funcs['dbplus_savepos']['version_init'] = '4.1.0';
-$funcs['dbplus_setindex']['extension'] = 'ext_dbplus';
-$funcs['dbplus_setindex']['version_init'] = '4.1.0';
-$funcs['dbplus_setindexbynumber']['extension'] = 'ext_dbplus';
-$funcs['dbplus_setindexbynumber']['version_init'] = '4.1.0';
-$funcs['dbplus_sql']['extension'] = 'ext_dbplus';
-$funcs['dbplus_sql']['version_init'] = '4.1.0';
-$funcs['dbplus_tcl']['extension'] = 'ext_dbplus';
-$funcs['dbplus_tcl']['version_init'] = '4.1.0';
-$funcs['dbplus_tremove']['extension'] = 'ext_dbplus';
-$funcs['dbplus_tremove']['version_init'] = '4.1.0';
-$funcs['dbplus_undo']['extension'] = 'ext_dbplus';
-$funcs['dbplus_undo']['version_init'] = '4.1.0';
-$funcs['dbplus_undoprepare']['extension'] = 'ext_dbplus';
-$funcs['dbplus_undoprepare']['version_init'] = '4.1.0';
-$funcs['dbplus_unlockrel']['extension'] = 'ext_dbplus';
-$funcs['dbplus_unlockrel']['version_init'] = '4.1.0';
-$funcs['dbplus_unselect']['extension'] = 'ext_dbplus';
-$funcs['dbplus_unselect']['version_init'] = '4.1.0';
-$funcs['dbplus_update']['extension'] = 'ext_dbplus';
-$funcs['dbplus_update']['version_init'] = '4.1.0';
-$funcs['dbplus_xlockrel']['extension'] = 'ext_dbplus';
-$funcs['dbplus_xlockrel']['version_init'] = '4.1.0';
-$funcs['dbplus_xunlockrel']['extension'] = 'ext_dbplus';
-$funcs['dbplus_xunlockrel']['version_init'] = '4.1.0';
-$funcs['dbx_close']['extension'] = 'ext_dbx';
-$funcs['dbx_close']['version_init'] = '4.0.6';
-$funcs['dbx_cmp_asc']['extension'] = 'ext_dbx';
-$funcs['dbx_cmp_asc']['version_init'] = '';
-$funcs['dbx_cmp_desc']['extension'] = 'ext_dbx';
-$funcs['dbx_cmp_desc']['version_init'] = '';
-$funcs['dbx_compare']['extension'] = 'ext_dbx';
-$funcs['dbx_compare']['version_init'] = '4.1.0';
-$funcs['dbx_connect']['extension'] = 'ext_dbx';
-$funcs['dbx_connect']['version_init'] = '4.0.6';
-$funcs['dbx_error']['extension'] = 'ext_dbx';
-$funcs['dbx_error']['version_init'] = '4.0.6';
-$funcs['dbx_escape_string']['extension'] = 'ext_dbx';
-$funcs['dbx_escape_string']['version_init'] = '4.3.0';
-$funcs['dbx_fetch_row']['extension'] = 'ext_dbx';
-$funcs['dbx_fetch_row']['version_init'] = '';
-$funcs['dbx_query']['extension'] = 'ext_dbx';
-$funcs['dbx_query']['version_init'] = '4.0.6';
-$funcs['dbx_sort']['extension'] = 'ext_dbx';
-$funcs['dbx_sort']['version_init'] = '4.0.6';
-$funcs['db_id_list']['extension'] = 'ext_db';
-$funcs['db_id_list']['version_init'] = '4.3.0';
-$funcs['dcgettext']['extension'] = 'ext_gettext';
-$funcs['dcgettext']['version_init'] = '4.0.0';
-$funcs['dcngettext']['extension'] = 'ext_gettext';
-$funcs['dcngettext']['version_init'] = '4.2.0';
-$funcs['deaggregate']['extension'] = 'ext_standard';
-$funcs['deaggregate']['version_init'] = '4.2.0';
-$funcs['debug_backtrace']['extension'] = 'zend';
-$funcs['debug_backtrace']['version_init'] = '4.3.0';
-$funcs['debug_print_backtrace']['extension'] = 'zend';
-$funcs['debug_print_backtrace']['version_init'] = '5.0.0';
-$funcs['debug_zval_dump']['extension'] = 'ext_standard';
-$funcs['debug_zval_dump']['version_init'] = '4.2.0';
-$funcs['decbin']['extension'] = 'ext_standard';
-$funcs['decbin']['version_init'] = '4.0.0';
-$funcs['dechex']['extension'] = 'ext_standard';
-$funcs['dechex']['version_init'] = '4.0.0';
-$funcs['decoct']['extension'] = 'ext_standard';
-$funcs['decoct']['version_init'] = '4.0.0';
-$funcs['define']['extension'] = 'zend';
-$funcs['define']['version_init'] = '4.0.0';
-$funcs['defined']['extension'] = 'zend';
-$funcs['defined']['version_init'] = '4.0.0';
-$funcs['define_syslog_variables']['extension'] = 'ext_standard';
-$funcs['define_syslog_variables']['version_init'] = '4.0.0';
-$funcs['deg2rad']['extension'] = 'ext_standard';
-$funcs['deg2rad']['version_init'] = '4.0.0';
-$funcs['delete_iovec']['extension'] = 'ext_sockets';
-$funcs['delete_iovec']['version_init'] = '4.0.2';
-$funcs['dgettext']['extension'] = 'ext_gettext';
-$funcs['dgettext']['version_init'] = '4.0.0';
-$funcs['dio_close']['extension'] = 'ext_dio';
-$funcs['dio_close']['version_init'] = '4.2.0';
-$funcs['dio_fcntl']['extension'] = 'ext_dio';
-$funcs['dio_fcntl']['version_init'] = '4.2.0';
-$funcs['dio_open']['extension'] = 'ext_dio';
-$funcs['dio_open']['version_init'] = '4.2.0';
-$funcs['dio_read']['extension'] = 'ext_dio';
-$funcs['dio_read']['version_init'] = '4.2.0';
-$funcs['dio_seek']['extension'] = 'ext_dio';
-$funcs['dio_seek']['version_init'] = '4.2.0';
-$funcs['dio_stat']['extension'] = 'ext_dio';
-$funcs['dio_stat']['version_init'] = '4.2.0';
-$funcs['dio_tcsetattr']['extension'] = 'ext_dio';
-$funcs['dio_tcsetattr']['version_init'] = '4.3.0';
-$funcs['dio_truncate']['extension'] = 'ext_dio';
-$funcs['dio_truncate']['version_init'] = '4.2.0';
-$funcs['dio_write']['extension'] = 'ext_dio';
-$funcs['dio_write']['version_init'] = '4.2.0';
-$funcs['dir']['extension'] = 'ext_standard';
-$funcs['dir']['version_init'] = '4.0.0';
-$funcs['dirname']['extension'] = 'ext_standard';
-$funcs['dirname']['version_init'] = '4.0.0';
-$funcs['diskfreespace']['extension'] = 'ext_standard';
-$funcs['diskfreespace']['version_init'] = '4.0.0';
-$funcs['disk_free_space']['extension'] = 'ext_standard';
-$funcs['disk_free_space']['version_init'] = '4.1.0';
-$funcs['disk_total_space']['extension'] = 'ext_standard';
-$funcs['disk_total_space']['version_init'] = '4.1.0';
-$funcs['display_disabled_function']['extension'] = 'zend';
-$funcs['display_disabled_function']['version_init'] = '4.0.1';
-$funcs['dl']['extension'] = 'ext_standard';
-$funcs['dl']['version_init'] = '4.0.0';
-$funcs['dngettext']['extension'] = 'ext_gettext';
-$funcs['dngettext']['version_init'] = '4.2.0';
-$funcs['dns_check_record']['extension'] = 'ext_standard';
-$funcs['dns_check_record']['version_init'] = '5.0.0';
-$funcs['dns_get_mx']['extension'] = 'ext_standard';
-$funcs['dns_get_mx']['version_init'] = '5.0.0';
-$funcs['dns_get_record']['extension'] = 'ext_standard';
-$funcs['dns_get_record']['version_init'] = '5.0.0';
-$funcs['domxml_add_root']['extension'] = 'ext_domxml';
-$funcs['domxml_add_root']['version_init'] = '4.0.0';
-$funcs['domxml_attributes']['extension'] = 'ext_domxml';
-$funcs['domxml_attributes']['version_init'] = '4.0.0';
-$funcs['domxml_children']['extension'] = 'ext_domxml';
-$funcs['domxml_children']['version_init'] = '4.0.0';
-$funcs['domxml_doc_add_root']['extension'] = 'ext_domxml';
-$funcs['domxml_doc_add_root']['version_init'] = '4.3.0';
-$funcs['domxml_doc_document_element']['extension'] = 'ext_domxml';
-$funcs['domxml_doc_document_element']['version_init'] = '4.3.0';
-$funcs['domxml_doc_get_elements_by_tagname']['extension'] = 'ext_domxml';
-$funcs['domxml_doc_get_elements_by_tagname']['version_init'] = '4.2.1';
-$funcs['domxml_doc_get_element_by_id']['extension'] = 'ext_domxml';
-$funcs['domxml_doc_get_element_by_id']['version_init'] = '4.2.1';
-$funcs['domxml_doc_get_root']['extension'] = 'ext_domxml';
-$funcs['domxml_doc_get_root']['version_init'] = '4.3.0';
-$funcs['domxml_doc_set_root']['extension'] = 'ext_domxml';
-$funcs['domxml_doc_set_root']['version_init'] = '4.3.0';
-$funcs['domxml_doc_validate']['extension'] = 'ext_domxml';
-$funcs['domxml_doc_validate']['version_init'] = '4.3.0';
-$funcs['domxml_doc_xinclude']['extension'] = 'ext_domxml';
-$funcs['domxml_doc_xinclude']['version_init'] = '4.3.0';
-$funcs['domxml_dumpmem']['extension'] = 'ext_domxml';
-$funcs['domxml_dumpmem']['version_init'] = '4.0.0';
-$funcs['domxml_dump_mem']['extension'] = 'ext_domxml';
-$funcs['domxml_dump_mem']['version_init'] = '4.2.0';
-$funcs['domxml_dump_mem_file']['extension'] = 'ext_domxml';
-$funcs['domxml_dump_mem_file']['version_init'] = '4.2.0';
-$funcs['domxml_dump_node']['extension'] = 'ext_domxml';
-$funcs['domxml_dump_node']['version_init'] = '4.2.0';
-$funcs['domxml_elem_get_attribute']['extension'] = 'ext_domxml';
-$funcs['domxml_elem_get_attribute']['version_init'] = '4.1.0';
-$funcs['domxml_elem_set_attribute']['extension'] = 'ext_domxml';
-$funcs['domxml_elem_set_attribute']['version_init'] = '4.1.0';
-$funcs['domxml_getattr']['extension'] = 'ext_domxml';
-$funcs['domxml_getattr']['version_init'] = '4.0.0';
-$funcs['domxml_get_attribute']['extension'] = 'ext_domxml';
-$funcs['domxml_get_attribute']['version_init'] = '4.0.5';
-$funcs['domxml_html_dump_mem']['extension'] = 'ext_domxml';
-$funcs['domxml_html_dump_mem']['version_init'] = '4.2.0';
-$funcs['domxml_new_child']['extension'] = 'ext_domxml';
-$funcs['domxml_new_child']['version_init'] = '4.0.0';
-$funcs['domxml_new_doc']['extension'] = 'ext_domxml';
-$funcs['domxml_new_doc']['version_init'] = '4.2.1';
-$funcs['domxml_new_xmldoc']['extension'] = 'ext_domxml';
-$funcs['domxml_new_xmldoc']['version_init'] = '4.0.0';
-$funcs['domxml_node']['extension'] = 'ext_domxml';
-$funcs['domxml_node']['version_init'] = '4.0.0';
-$funcs['domxml_node_add_namespace']['extension'] = 'ext_domxml';
-$funcs['domxml_node_add_namespace']['version_init'] = '4.3.0';
-$funcs['domxml_node_attributes']['extension'] = 'ext_domxml';
-$funcs['domxml_node_attributes']['version_init'] = '4.1.0';
-$funcs['domxml_node_children']['extension'] = 'ext_domxml';
-$funcs['domxml_node_children']['version_init'] = '4.1.0';
-$funcs['domxml_node_get_content']['extension'] = 'ext_domxml';
-$funcs['domxml_node_get_content']['version_init'] = '4.2.0';
-$funcs['domxml_node_has_attributes']['extension'] = 'ext_domxml';
-$funcs['domxml_node_has_attributes']['version_init'] = '4.2.0';
-$funcs['domxml_node_new_child']['extension'] = 'ext_domxml';
-$funcs['domxml_node_new_child']['version_init'] = '4.1.0';
-$funcs['domxml_node_set_content']['extension'] = 'ext_domxml';
-$funcs['domxml_node_set_content']['version_init'] = '4.1.0';
-$funcs['domxml_node_set_namespace']['extension'] = 'ext_domxml';
-$funcs['domxml_node_set_namespace']['version_init'] = '4.3.0';
-$funcs['domxml_node_unlink_node']['extension'] = 'ext_domxml';
-$funcs['domxml_node_unlink_node']['version_init'] = '4.1.0';
-$funcs['domxml_open_file']['extension'] = 'ext_domxml';
-$funcs['domxml_open_file']['version_init'] = '4.2.1';
-$funcs['domxml_open_mem']['extension'] = 'ext_domxml';
-$funcs['domxml_open_mem']['version_init'] = '4.2.1';
-$funcs['domxml_parser']['extension'] = 'ext_domxml';
-$funcs['domxml_parser']['version_init'] = '4.2.1';
-$funcs['domxml_parser_add_chunk']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_add_chunk']['version_init'] = '4.2.1';
-$funcs['domxml_parser_cdata_section']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_cdata_section']['version_init'] = '4.3.0';
-$funcs['domxml_parser_characters']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_characters']['version_init'] = '4.3.0';
-$funcs['domxml_parser_comment']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_comment']['version_init'] = '4.3.0';
-$funcs['domxml_parser_end']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_end']['version_init'] = '4.2.1';
-$funcs['domxml_parser_end_document']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_end_document']['version_init'] = '4.3.0';
-$funcs['domxml_parser_end_element']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_end_element']['version_init'] = '4.3.0';
-$funcs['domxml_parser_entity_reference']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_entity_reference']['version_init'] = '4.3.0';
-$funcs['domxml_parser_get_document']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_get_document']['version_init'] = '4.3.0';
-$funcs['domxml_parser_namespace_decl']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_namespace_decl']['version_init'] = '4.3.0';
-$funcs['domxml_parser_processing_instruction']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_processing_instruction']['version_init'] = '4.3.0';
-$funcs['domxml_parser_start_document']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_start_document']['version_init'] = '4.3.0';
-$funcs['domxml_parser_start_element']['extension'] = 'ext_domxml';
-$funcs['domxml_parser_start_element']['version_init'] = '4.3.0';
-$funcs['domxml_root']['extension'] = 'ext_domxml';
-$funcs['domxml_root']['version_init'] = '4.0.0';
-$funcs['domxml_setattr']['extension'] = 'ext_domxml';
-$funcs['domxml_setattr']['version_init'] = '4.0.0';
-$funcs['domxml_set_attribute']['extension'] = 'ext_domxml';
-$funcs['domxml_set_attribute']['version_init'] = '4.0.5';
-$funcs['domxml_set_content']['extension'] = 'ext_domxml';
-$funcs['domxml_set_content']['version_init'] = '4.0.4';
-$funcs['domxml_substitute_entities_default']['extension'] = 'ext_domxml';
-$funcs['domxml_substitute_entities_default']['version_init'] = '4.2.0';
-$funcs['domxml_unlink_node']['extension'] = 'ext_domxml';
-$funcs['domxml_unlink_node']['version_init'] = '4.0.5';
-$funcs['domxml_version']['extension'] = 'ext_domxml';
-$funcs['domxml_version']['version_init'] = '4.1.0';
-$funcs['domxml_xmltree']['extension'] = 'ext_domxml';
-$funcs['domxml_xmltree']['version_init'] = '4.2.1';
-$funcs['domxml_xslt_process']['extension'] = 'ext_domxml';
-$funcs['domxml_xslt_process']['version_init'] = '4.2.0';
-$funcs['domxml_xslt_result_dump_file']['extension'] = 'ext_domxml';
-$funcs['domxml_xslt_result_dump_file']['version_init'] = '4.3.0';
-$funcs['domxml_xslt_result_dump_mem']['extension'] = 'ext_domxml';
-$funcs['domxml_xslt_result_dump_mem']['version_init'] = '4.3.0';
-$funcs['domxml_xslt_stylesheet']['extension'] = 'ext_domxml';
-$funcs['domxml_xslt_stylesheet']['version_init'] = '4.2.0';
-$funcs['domxml_xslt_stylesheet_doc']['extension'] = 'ext_domxml';
-$funcs['domxml_xslt_stylesheet_doc']['version_init'] = '4.2.0';
-$funcs['domxml_xslt_stylesheet_file']['extension'] = 'ext_domxml';
-$funcs['domxml_xslt_stylesheet_file']['version_init'] = '4.2.0';
-$funcs['domxml_xslt_version']['extension'] = 'ext_domxml';
-$funcs['domxml_xslt_version']['version_init'] = '4.2.0';
-$funcs['dom_import_simplexml']['extension'] = 'ext_dom';
-$funcs['dom_import_simplexml']['version_init'] = '';
-$funcs['doubleval']['extension'] = 'ext_standard';
-$funcs['doubleval']['version_init'] = '4.0.0';
-$funcs['drawarc']['extension'] = 'ext_ming';
-$funcs['drawarc']['version_init'] = '4.0.5';
-$funcs['drawcircle']['extension'] = 'ext_ming';
-$funcs['drawcircle']['version_init'] = '4.0.5';
-$funcs['drawcubic']['extension'] = 'ext_ming';
-$funcs['drawcubic']['version_init'] = '4.0.5';
-$funcs['drawcubicto']['extension'] = 'ext_ming';
-$funcs['drawcubicto']['version_init'] = '4.0.5';
-$funcs['drawcurve']['extension'] = 'ext_ming';
-$funcs['drawcurve']['version_init'] = '4.0.5';
-$funcs['drawcurveto']['extension'] = 'ext_ming';
-$funcs['drawcurveto']['version_init'] = '4.0.5';
-$funcs['drawglyph']['extension'] = 'ext_ming';
-$funcs['drawglyph']['version_init'] = '4.0.5';
-$funcs['drawline']['extension'] = 'ext_ming';
-$funcs['drawline']['version_init'] = '4.0.5';
-$funcs['drawlineto']['extension'] = 'ext_ming';
-$funcs['drawlineto']['version_init'] = '4.0.5';
-$funcs['each']['extension'] = 'zend';
-$funcs['each']['version_init'] = '4.0.0';
-$funcs['easter_date']['extension'] = 'ext_calendar';
-$funcs['easter_date']['version_init'] = '4.0.0';
-$funcs['easter_days']['extension'] = 'ext_calendar';
-$funcs['easter_days']['version_init'] = '4.0.0';
-$funcs['end']['extension'] = 'ext_standard';
-$funcs['end']['version_init'] = '4.0.0';
-$funcs['endmask']['extension'] = 'ext_ming';
-$funcs['endmask']['version_init'] = '';
-$funcs['ereg']['extension'] = 'ext_standard';
-$funcs['ereg']['version_init'] = '4.0.0';
-$funcs['eregi']['extension'] = 'ext_standard';
-$funcs['eregi']['version_init'] = '4.0.0';
-$funcs['eregi_replace']['extension'] = 'ext_standard';
-$funcs['eregi_replace']['version_init'] = '4.0.0';
-$funcs['ereg_replace']['extension'] = 'ext_standard';
-$funcs['ereg_replace']['version_init'] = '4.0.0';
-$funcs['error_log']['extension'] = 'ext_standard';
-$funcs['error_log']['version_init'] = '4.0.0';
-$funcs['error_reporting']['extension'] = 'zend';
-$funcs['error_reporting']['version_init'] = '4.0.0';
-$funcs['escapeshellarg']['extension'] = 'ext_standard';
-$funcs['escapeshellarg']['version_init'] = '4.0.3';
-$funcs['escapeshellcmd']['extension'] = 'ext_standard';
-$funcs['escapeshellcmd']['version_init'] = '4.0.0';
-$funcs['exec']['extension'] = 'ext_standard';
-$funcs['exec']['version_init'] = '4.0.0';
-$funcs['exif_imagetype']['extension'] = 'ext_exif';
-$funcs['exif_imagetype']['version_init'] = '4.3.0';
-$funcs['exif_read_data']['extension'] = 'ext_exif';
-$funcs['exif_read_data']['version_init'] = '4.2.0';
-$funcs['exif_tagname']['extension'] = 'ext_exif';
-$funcs['exif_tagname']['version_init'] = '4.2.0';
-$funcs['exif_thumbnail']['extension'] = 'ext_exif';
-$funcs['exif_thumbnail']['version_init'] = '4.2.0';
-$funcs['exp']['extension'] = 'ext_standard';
-$funcs['exp']['version_init'] = '4.0.0';
-$funcs['explode']['extension'] = 'ext_standard';
-$funcs['explode']['version_init'] = '4.0.0';
-$funcs['expm1']['extension'] = 'ext_standard';
-$funcs['expm1']['version_init'] = '4.1.0';
-$funcs['export']['extension'] = 'zend';
-$funcs['export']['version_init'] = '';
-$funcs['extension_loaded']['extension'] = 'zend';
-$funcs['extension_loaded']['version_init'] = '4.0.0';
-$funcs['extract']['extension'] = 'ext_standard';
-$funcs['extract']['version_init'] = '4.0.0';
-$funcs['ezmlm_hash']['extension'] = 'ext_standard';
-$funcs['ezmlm_hash']['version_init'] = '4.0.2';
-$funcs['fam_cancel_monitor']['extension'] = 'ext_fam';
-$funcs['fam_cancel_monitor']['version_init'] = '';
-$funcs['fam_close']['extension'] = 'ext_fam';
-$funcs['fam_close']['version_init'] = '';
-$funcs['fam_monitor_collection']['extension'] = 'ext_fam';
-$funcs['fam_monitor_collection']['version_init'] = '';
-$funcs['fam_monitor_directory']['extension'] = 'ext_fam';
-$funcs['fam_monitor_directory']['version_init'] = '';
-$funcs['fam_monitor_file']['extension'] = 'ext_fam';
-$funcs['fam_monitor_file']['version_init'] = '';
-$funcs['fam_next_event']['extension'] = 'ext_fam';
-$funcs['fam_next_event']['version_init'] = '';
-$funcs['fam_open']['extension'] = 'ext_fam';
-$funcs['fam_open']['version_init'] = '';
-$funcs['fam_pending']['extension'] = 'ext_fam';
-$funcs['fam_pending']['version_init'] = '';
-$funcs['fam_resume_monitor']['extension'] = 'ext_fam';
-$funcs['fam_resume_monitor']['version_init'] = '';
-$funcs['fam_suspend_monitor']['extension'] = 'ext_fam';
-$funcs['fam_suspend_monitor']['version_init'] = '';
-$funcs['fbsql']['extension'] = 'ext_fbsql';
-$funcs['fbsql']['version_init'] = '4.0.6';
-$funcs['fbsql_affected_rows']['extension'] = 'ext_fbsql';
-$funcs['fbsql_affected_rows']['version_init'] = '4.0.6';
-$funcs['fbsql_autocommit']['extension'] = 'ext_fbsql';
-$funcs['fbsql_autocommit']['version_init'] = '4.0.6';
-$funcs['fbsql_blob_size']['extension'] = 'ext_fbsql';
-$funcs['fbsql_blob_size']['version_init'] = '4.2.0';
-$funcs['fbsql_clob_size']['extension'] = 'ext_fbsql';
-$funcs['fbsql_clob_size']['version_init'] = '4.2.0';
-$funcs['fbsql_close']['extension'] = 'ext_fbsql';
-$funcs['fbsql_close']['version_init'] = '4.0.6';
-$funcs['fbsql_commit']['extension'] = 'ext_fbsql';
-$funcs['fbsql_commit']['version_init'] = '4.0.6';
-$funcs['fbsql_connect']['extension'] = 'ext_fbsql';
-$funcs['fbsql_connect']['version_init'] = '4.0.6';
-$funcs['fbsql_create_blob']['extension'] = 'ext_fbsql';
-$funcs['fbsql_create_blob']['version_init'] = '4.2.0';
-$funcs['fbsql_create_clob']['extension'] = 'ext_fbsql';
-$funcs['fbsql_create_clob']['version_init'] = '4.2.0';
-$funcs['fbsql_create_db']['extension'] = 'ext_fbsql';
-$funcs['fbsql_create_db']['version_init'] = '4.0.6';
-$funcs['fbsql_database']['extension'] = 'ext_fbsql';
-$funcs['fbsql_database']['version_init'] = '4.0.6';
-$funcs['fbsql_database_password']['extension'] = 'ext_fbsql';
-$funcs['fbsql_database_password']['version_init'] = '4.0.6';
-$funcs['fbsql_data_seek']['extension'] = 'ext_fbsql';
-$funcs['fbsql_data_seek']['version_init'] = '4.0.6';
-$funcs['fbsql_db_query']['extension'] = 'ext_fbsql';
-$funcs['fbsql_db_query']['version_init'] = '4.0.6';
-$funcs['fbsql_db_status']['extension'] = 'ext_fbsql';
-$funcs['fbsql_db_status']['version_init'] = '4.1.0';
-$funcs['fbsql_drop_db']['extension'] = 'ext_fbsql';
-$funcs['fbsql_drop_db']['version_init'] = '4.0.6';
-$funcs['fbsql_errno']['extension'] = 'ext_fbsql';
-$funcs['fbsql_errno']['version_init'] = '4.0.6';
-$funcs['fbsql_error']['extension'] = 'ext_fbsql';
-$funcs['fbsql_error']['version_init'] = '4.0.6';
-$funcs['fbsql_fetch_array']['extension'] = 'ext_fbsql';
-$funcs['fbsql_fetch_array']['version_init'] = '4.0.6';
-$funcs['fbsql_fetch_assoc']['extension'] = 'ext_fbsql';
-$funcs['fbsql_fetch_assoc']['version_init'] = '4.0.6';
-$funcs['fbsql_fetch_field']['extension'] = 'ext_fbsql';
-$funcs['fbsql_fetch_field']['version_init'] = '4.0.6';
-$funcs['fbsql_fetch_lengths']['extension'] = 'ext_fbsql';
-$funcs['fbsql_fetch_lengths']['version_init'] = '4.0.6';
-$funcs['fbsql_fetch_object']['extension'] = 'ext_fbsql';
-$funcs['fbsql_fetch_object']['version_init'] = '4.0.6';
-$funcs['fbsql_fetch_row']['extension'] = 'ext_fbsql';
-$funcs['fbsql_fetch_row']['version_init'] = '4.0.6';
-$funcs['fbsql_field_flags']['extension'] = 'ext_fbsql';
-$funcs['fbsql_field_flags']['version_init'] = '4.0.6';
-$funcs['fbsql_field_len']['extension'] = 'ext_fbsql';
-$funcs['fbsql_field_len']['version_init'] = '4.0.6';
-$funcs['fbsql_field_name']['extension'] = 'ext_fbsql';
-$funcs['fbsql_field_name']['version_init'] = '4.0.6';
-$funcs['fbsql_field_seek']['extension'] = 'ext_fbsql';
-$funcs['fbsql_field_seek']['version_init'] = '4.0.6';
-$funcs['fbsql_field_table']['extension'] = 'ext_fbsql';
-$funcs['fbsql_field_table']['version_init'] = '4.0.6';
-$funcs['fbsql_field_type']['extension'] = 'ext_fbsql';
-$funcs['fbsql_field_type']['version_init'] = '4.0.6';
-$funcs['fbsql_free_result']['extension'] = 'ext_fbsql';
-$funcs['fbsql_free_result']['version_init'] = '4.0.6';
-$funcs['fbsql_get_autostart_info']['extension'] = 'ext_fbsql';
-$funcs['fbsql_get_autostart_info']['version_init'] = '4.1.0';
-$funcs['fbsql_hostname']['extension'] = 'ext_fbsql';
-$funcs['fbsql_hostname']['version_init'] = '4.0.6';
-$funcs['fbsql_insert_id']['extension'] = 'ext_fbsql';
-$funcs['fbsql_insert_id']['version_init'] = '4.0.6';
-$funcs['fbsql_list_dbs']['extension'] = 'ext_fbsql';
-$funcs['fbsql_list_dbs']['version_init'] = '4.0.6';
-$funcs['fbsql_list_fields']['extension'] = 'ext_fbsql';
-$funcs['fbsql_list_fields']['version_init'] = '4.0.6';
-$funcs['fbsql_list_tables']['extension'] = 'ext_fbsql';
-$funcs['fbsql_list_tables']['version_init'] = '4.0.6';
-$funcs['fbsql_next_result']['extension'] = 'ext_fbsql';
-$funcs['fbsql_next_result']['version_init'] = '4.0.6';
-$funcs['fbsql_num_fields']['extension'] = 'ext_fbsql';
-$funcs['fbsql_num_fields']['version_init'] = '4.0.6';
-$funcs['fbsql_num_rows']['extension'] = 'ext_fbsql';
-$funcs['fbsql_num_rows']['version_init'] = '4.0.6';
-$funcs['fbsql_password']['extension'] = 'ext_fbsql';
-$funcs['fbsql_password']['version_init'] = '4.0.6';
-$funcs['fbsql_pconnect']['extension'] = 'ext_fbsql';
-$funcs['fbsql_pconnect']['version_init'] = '4.0.6';
-$funcs['fbsql_query']['extension'] = 'ext_fbsql';
-$funcs['fbsql_query']['version_init'] = '4.0.6';
-$funcs['fbsql_read_blob']['extension'] = 'ext_fbsql';
-$funcs['fbsql_read_blob']['version_init'] = '4.2.0';
-$funcs['fbsql_read_clob']['extension'] = 'ext_fbsql';
-$funcs['fbsql_read_clob']['version_init'] = '4.2.0';
-$funcs['fbsql_result']['extension'] = 'ext_fbsql';
-$funcs['fbsql_result']['version_init'] = '4.0.6';
-$funcs['fbsql_rollback']['extension'] = 'ext_fbsql';
-$funcs['fbsql_rollback']['version_init'] = '4.0.6';
-$funcs['fbsql_select_db']['extension'] = 'ext_fbsql';
-$funcs['fbsql_select_db']['version_init'] = '4.0.6';
-$funcs['fbsql_set_lob_mode']['extension'] = 'ext_fbsql';
-$funcs['fbsql_set_lob_mode']['version_init'] = '4.2.0';
-$funcs['fbsql_set_transaction']['extension'] = 'ext_fbsql';
-$funcs['fbsql_set_transaction']['version_init'] = '4.2.0';
-$funcs['fbsql_start_db']['extension'] = 'ext_fbsql';
-$funcs['fbsql_start_db']['version_init'] = '4.0.6';
-$funcs['fbsql_stop_db']['extension'] = 'ext_fbsql';
-$funcs['fbsql_stop_db']['version_init'] = '4.0.6';
-$funcs['fbsql_tablename']['extension'] = 'ext_fbsql';
-$funcs['fbsql_tablename']['version_init'] = '4.2.0';
-$funcs['fbsql_table_name']['extension'] = 'ext_fbsql';
-$funcs['fbsql_table_name']['version_init'] = '4.2.0';
-$funcs['fbsql_username']['extension'] = 'ext_fbsql';
-$funcs['fbsql_username']['version_init'] = '4.0.6';
-$funcs['fbsql_warnings']['extension'] = 'ext_fbsql';
-$funcs['fbsql_warnings']['version_init'] = '4.0.6';
-$funcs['fclose']['extension'] = 'ext_standard';
-$funcs['fclose']['version_init'] = '4.0.0';
-$funcs['fdf_add_doc_javascript']['extension'] = 'ext_fdf';
-$funcs['fdf_add_doc_javascript']['version_init'] = '4.3.0';
-$funcs['fdf_add_template']['extension'] = 'ext_fdf';
-$funcs['fdf_add_template']['version_init'] = '4.0.0';
-$funcs['fdf_close']['extension'] = 'ext_fdf';
-$funcs['fdf_close']['version_init'] = '4.0.0';
-$funcs['fdf_create']['extension'] = 'ext_fdf';
-$funcs['fdf_create']['version_init'] = '4.0.0';
-$funcs['fdf_enum_values']['extension'] = 'ext_fdf';
-$funcs['fdf_enum_values']['version_init'] = '4.3.0';
-$funcs['fdf_errno']['extension'] = 'ext_fdf';
-$funcs['fdf_errno']['version_init'] = '4.3.0';
-$funcs['fdf_error']['extension'] = 'ext_fdf';
-$funcs['fdf_error']['version_init'] = '4.3.0';
-$funcs['fdf_get_ap']['extension'] = 'ext_fdf';
-$funcs['fdf_get_ap']['version_init'] = '4.3.0';
-$funcs['fdf_get_attachment']['extension'] = 'ext_fdf';
-$funcs['fdf_get_attachment']['version_init'] = '4.3.0';
-$funcs['fdf_get_encoding']['extension'] = 'ext_fdf';
-$funcs['fdf_get_encoding']['version_init'] = '4.3.0';
-$funcs['fdf_get_file']['extension'] = 'ext_fdf';
-$funcs['fdf_get_file']['version_init'] = '4.0.0';
-$funcs['fdf_get_flags']['extension'] = 'ext_fdf';
-$funcs['fdf_get_flags']['version_init'] = '4.3.0';
-$funcs['fdf_get_opt']['extension'] = 'ext_fdf';
-$funcs['fdf_get_opt']['version_init'] = '4.3.0';
-$funcs['fdf_get_status']['extension'] = 'ext_fdf';
-$funcs['fdf_get_status']['version_init'] = '4.0.0';
-$funcs['fdf_get_value']['extension'] = 'ext_fdf';
-$funcs['fdf_get_value']['version_init'] = '4.0.0';
-$funcs['fdf_get_version']['extension'] = 'ext_fdf';
-$funcs['fdf_get_version']['version_init'] = '4.3.0';
-$funcs['fdf_header']['extension'] = 'ext_fdf';
-$funcs['fdf_header']['version_init'] = '4.3.0';
-$funcs['fdf_next_field_name']['extension'] = 'ext_fdf';
-$funcs['fdf_next_field_name']['version_init'] = '4.0.0';
-$funcs['fdf_open']['extension'] = 'ext_fdf';
-$funcs['fdf_open']['version_init'] = '4.0.0';
-$funcs['fdf_open_string']['extension'] = 'ext_fdf';
-$funcs['fdf_open_string']['version_init'] = '4.3.0';
-$funcs['fdf_remove_item']['extension'] = 'ext_fdf';
-$funcs['fdf_remove_item']['version_init'] = '4.3.0';
-$funcs['fdf_save']['extension'] = 'ext_fdf';
-$funcs['fdf_save']['version_init'] = '4.0.0';
-$funcs['fdf_save_string']['extension'] = 'ext_fdf';
-$funcs['fdf_save_string']['version_init'] = '4.3.0';
-$funcs['fdf_set_ap']['extension'] = 'ext_fdf';
-$funcs['fdf_set_ap']['version_init'] = '4.0.0';
-$funcs['fdf_set_encoding']['extension'] = 'ext_fdf';
-$funcs['fdf_set_encoding']['version_init'] = '4.1.0';
-$funcs['fdf_set_file']['extension'] = 'ext_fdf';
-$funcs['fdf_set_file']['version_init'] = '4.0.0';
-$funcs['fdf_set_flags']['extension'] = 'ext_fdf';
-$funcs['fdf_set_flags']['version_init'] = '4.0.2';
-$funcs['fdf_set_javascript_action']['extension'] = 'ext_fdf';
-$funcs['fdf_set_javascript_action']['version_init'] = '4.0.2';
-$funcs['fdf_set_on_import_javascript']['extension'] = 'ext_fdf';
-$funcs['fdf_set_on_import_javascript']['version_init'] = '4.3.0';
-$funcs['fdf_set_opt']['extension'] = 'ext_fdf';
-$funcs['fdf_set_opt']['version_init'] = '4.0.2';
-$funcs['fdf_set_status']['extension'] = 'ext_fdf';
-$funcs['fdf_set_status']['version_init'] = '4.0.0';
-$funcs['fdf_set_submit_form_action']['extension'] = 'ext_fdf';
-$funcs['fdf_set_submit_form_action']['version_init'] = '4.0.2';
-$funcs['fdf_set_target_frame']['extension'] = 'ext_fdf';
-$funcs['fdf_set_target_frame']['version_init'] = '4.3.0';
-$funcs['fdf_set_value']['extension'] = 'ext_fdf';
-$funcs['fdf_set_value']['version_init'] = '4.0.0';
-$funcs['fdf_set_version']['extension'] = 'ext_fdf';
-$funcs['fdf_set_version']['version_init'] = '4.3.0';
-$funcs['fd_alloc']['extension'] = 'ext_sockets';
-$funcs['fd_alloc']['version_init'] = '4.0.2';
-$funcs['fd_clear']['extension'] = 'ext_sockets';
-$funcs['fd_clear']['version_init'] = '4.0.2';
-$funcs['fd_dealloc']['extension'] = 'ext_sockets';
-$funcs['fd_dealloc']['version_init'] = '4.0.2';
-$funcs['fd_isset']['extension'] = 'ext_sockets';
-$funcs['fd_isset']['version_init'] = '4.0.2';
-$funcs['fd_set']['extension'] = 'ext_sockets';
-$funcs['fd_set']['version_init'] = '4.0.2';
-$funcs['fd_zero']['extension'] = 'ext_sockets';
-$funcs['fd_zero']['version_init'] = '4.0.2';
-$funcs['feof']['extension'] = 'ext_standard';
-$funcs['feof']['version_init'] = '4.0.0';
-$funcs['fetch_iovec']['extension'] = 'ext_sockets';
-$funcs['fetch_iovec']['version_init'] = '4.0.2';
-$funcs['fflush']['extension'] = 'ext_standard';
-$funcs['fflush']['version_init'] = '4.0.1';
-$funcs['fgetc']['extension'] = 'ext_standard';
-$funcs['fgetc']['version_init'] = '4.0.0';
-$funcs['fgetcsv']['extension'] = 'ext_standard';
-$funcs['fgetcsv']['version_init'] = '4.0.0';
-$funcs['fgets']['extension'] = 'ext_standard';
-$funcs['fgets']['version_init'] = '4.0.0';
-$funcs['fgetss']['extension'] = 'ext_standard';
-$funcs['fgetss']['version_init'] = '4.0.0';
-$funcs['file']['extension'] = 'ext_standard';
-$funcs['file']['version_init'] = '4.0.0';
-$funcs['fileatime']['extension'] = 'ext_standard';
-$funcs['fileatime']['version_init'] = '4.0.0';
-$funcs['filectime']['extension'] = 'ext_standard';
-$funcs['filectime']['version_init'] = '4.0.0';
-$funcs['filegroup']['extension'] = 'ext_standard';
-$funcs['filegroup']['version_init'] = '4.0.0';
-$funcs['fileinode']['extension'] = 'ext_standard';
-$funcs['fileinode']['version_init'] = '4.0.0';
-$funcs['filemtime']['extension'] = 'ext_standard';
-$funcs['filemtime']['version_init'] = '4.0.0';
-$funcs['fileowner']['extension'] = 'ext_standard';
-$funcs['fileowner']['version_init'] = '4.0.0';
-$funcs['fileperms']['extension'] = 'ext_standard';
-$funcs['fileperms']['version_init'] = '4.0.0';
-$funcs['filepro']['extension'] = 'ext_filepro';
-$funcs['filepro']['version_init'] = '4.0.0';
-$funcs['filepro_fieldcount']['extension'] = 'ext_filepro';
-$funcs['filepro_fieldcount']['version_init'] = '4.0.0';
-$funcs['filepro_fieldname']['extension'] = 'ext_filepro';
-$funcs['filepro_fieldname']['version_init'] = '4.0.0';
-$funcs['filepro_fieldtype']['extension'] = 'ext_filepro';
-$funcs['filepro_fieldtype']['version_init'] = '4.0.0';
-$funcs['filepro_fieldwidth']['extension'] = 'ext_filepro';
-$funcs['filepro_fieldwidth']['version_init'] = '4.0.0';
-$funcs['filepro_retrieve']['extension'] = 'ext_filepro';
-$funcs['filepro_retrieve']['version_init'] = '4.0.0';
-$funcs['filepro_rowcount']['extension'] = 'ext_filepro';
-$funcs['filepro_rowcount']['version_init'] = '4.0.0';
-$funcs['filesize']['extension'] = 'ext_standard';
-$funcs['filesize']['version_init'] = '4.0.0';
-$funcs['filetype']['extension'] = 'ext_standard';
-$funcs['filetype']['version_init'] = '4.0.0';
-$funcs['file_exists']['extension'] = 'ext_standard';
-$funcs['file_exists']['version_init'] = '4.0.0';
-$funcs['file_get_contents']['extension'] = 'ext_standard';
-$funcs['file_get_contents']['version_init'] = '4.3.0';
-$funcs['file_put_contents']['extension'] = 'ext_standard';
-$funcs['file_put_contents']['version_init'] = '5.0.0';
-$funcs['filter']['extension'] = 'ext_standard';
-$funcs['filter']['version_init'] = '5.0.0';
-$funcs['floatval']['extension'] = 'ext_standard';
-$funcs['floatval']['version_init'] = '4.2.0';
-$funcs['flock']['extension'] = 'ext_standard';
-$funcs['flock']['version_init'] = '4.0.0';
-$funcs['floor']['extension'] = 'ext_standard';
-$funcs['floor']['version_init'] = '4.0.0';
-$funcs['flush']['extension'] = 'ext_standard';
-$funcs['flush']['version_init'] = '4.0.0';
-$funcs['fmod']['extension'] = 'ext_standard';
-$funcs['fmod']['version_init'] = '4.2.0';
-$funcs['fnmatch']['extension'] = 'ext_standard';
-$funcs['fnmatch']['version_init'] = '4.3.0';
-$funcs['fopen']['extension'] = 'ext_standard';
-$funcs['fopen']['version_init'] = '4.0.0';
-$funcs['fopenstream']['extension'] = 'ext_standard';
-$funcs['fopenstream']['version_init'] = '4.0.6';
-$funcs['fpassthru']['extension'] = 'ext_standard';
-$funcs['fpassthru']['version_init'] = '4.0.0';
-$funcs['fprintf']['extension'] = 'ext_standard';
-$funcs['fprintf']['version_init'] = '5.0.0';
-$funcs['fputs']['extension'] = 'ext_standard';
-$funcs['fputs']['version_init'] = '4.0.0';
-$funcs['fread']['extension'] = 'ext_standard';
-$funcs['fread']['version_init'] = '4.0.0';
-$funcs['free_iovec']['extension'] = 'ext_sockets';
-$funcs['free_iovec']['version_init'] = '4.0.2';
-$funcs['frenchtojd']['extension'] = 'ext_calendar';
-$funcs['frenchtojd']['version_init'] = '4.0.0';
-$funcs['fribidi_charset_info']['extension'] = 'ext_fribidi';
-$funcs['fribidi_charset_info']['version_init'] = '4.3.0';
-$funcs['fribidi_get_charsets']['extension'] = 'ext_fribidi';
-$funcs['fribidi_get_charsets']['version_init'] = '4.3.0';
-$funcs['fribidi_log2vis']['extension'] = 'ext_fribidi';
-$funcs['fribidi_log2vis']['version_init'] = '4.0.4';
-$funcs['fscanf']['extension'] = 'ext_standard';
-$funcs['fscanf']['version_init'] = '4.0.1';
-$funcs['fseek']['extension'] = 'ext_standard';
-$funcs['fseek']['version_init'] = '4.0.0';
-$funcs['fsockopen']['extension'] = 'ext_standard';
-$funcs['fsockopen']['version_init'] = '4.0.0';
-$funcs['fstat']['extension'] = 'ext_standard';
-$funcs['fstat']['version_init'] = '4.0.0';
-$funcs['ftell']['extension'] = 'ext_standard';
-$funcs['ftell']['version_init'] = '4.0.0';
-$funcs['ftok']['extension'] = 'ext_standard';
-$funcs['ftok']['version_init'] = '4.2.0';
-$funcs['ftp_alloc']['extension'] = 'ext_ftp';
-$funcs['ftp_alloc']['version_init'] = '';
-$funcs['ftp_cdup']['extension'] = 'ext_ftp';
-$funcs['ftp_cdup']['version_init'] = '4.0.0';
-$funcs['ftp_chdir']['extension'] = 'ext_ftp';
-$funcs['ftp_chdir']['version_init'] = '4.0.0';
-$funcs['ftp_chmod']['extension'] = 'ext_ftp';
-$funcs['ftp_chmod']['version_init'] = '5.0.0';
-$funcs['ftp_close']['extension'] = 'ext_ftp';
-$funcs['ftp_close']['version_init'] = '4.2.0';
-$funcs['ftp_connect']['extension'] = 'ext_ftp';
-$funcs['ftp_connect']['version_init'] = '4.0.0';
-$funcs['ftp_delete']['extension'] = 'ext_ftp';
-$funcs['ftp_delete']['version_init'] = '4.0.0';
-$funcs['ftp_exec']['extension'] = 'ext_ftp';
-$funcs['ftp_exec']['version_init'] = '4.0.3';
-$funcs['ftp_fget']['extension'] = 'ext_ftp';
-$funcs['ftp_fget']['version_init'] = '4.0.0';
-$funcs['ftp_fput']['extension'] = 'ext_ftp';
-$funcs['ftp_fput']['version_init'] = '4.0.0';
-$funcs['ftp_get']['extension'] = 'ext_ftp';
-$funcs['ftp_get']['version_init'] = '4.0.0';
-$funcs['ftp_get_option']['extension'] = 'ext_ftp';
-$funcs['ftp_get_option']['version_init'] = '4.2.0';
-$funcs['ftp_login']['extension'] = 'ext_ftp';
-$funcs['ftp_login']['version_init'] = '4.0.0';
-$funcs['ftp_mdtm']['extension'] = 'ext_ftp';
-$funcs['ftp_mdtm']['version_init'] = '4.0.0';
-$funcs['ftp_mkdir']['extension'] = 'ext_ftp';
-$funcs['ftp_mkdir']['version_init'] = '4.0.0';
-$funcs['ftp_nb_continue']['extension'] = 'ext_ftp';
-$funcs['ftp_nb_continue']['version_init'] = '4.3.0';
-$funcs['ftp_nb_fget']['extension'] = 'ext_ftp';
-$funcs['ftp_nb_fget']['version_init'] = '4.3.0';
-$funcs['ftp_nb_fput']['extension'] = 'ext_ftp';
-$funcs['ftp_nb_fput']['version_init'] = '4.3.0';
-$funcs['ftp_nb_get']['extension'] = 'ext_ftp';
-$funcs['ftp_nb_get']['version_init'] = '4.3.0';
-$funcs['ftp_nb_put']['extension'] = 'ext_ftp';
-$funcs['ftp_nb_put']['version_init'] = '4.3.0';
-$funcs['ftp_nlist']['extension'] = 'ext_ftp';
-$funcs['ftp_nlist']['version_init'] = '4.0.0';
-$funcs['ftp_pasv']['extension'] = 'ext_ftp';
-$funcs['ftp_pasv']['version_init'] = '4.0.0';
-$funcs['ftp_put']['extension'] = 'ext_ftp';
-$funcs['ftp_put']['version_init'] = '4.0.0';
-$funcs['ftp_pwd']['extension'] = 'ext_ftp';
-$funcs['ftp_pwd']['version_init'] = '4.0.0';
-$funcs['ftp_quit']['extension'] = 'ext_ftp';
-$funcs['ftp_quit']['version_init'] = '4.0.0';
-$funcs['ftp_raw']['extension'] = 'ext_ftp';
-$funcs['ftp_raw']['version_init'] = '5.0.0';
-$funcs['ftp_rawlist']['extension'] = 'ext_ftp';
-$funcs['ftp_rawlist']['version_init'] = '4.0.0';
-$funcs['ftp_rename']['extension'] = 'ext_ftp';
-$funcs['ftp_rename']['version_init'] = '4.0.0';
-$funcs['ftp_rmdir']['extension'] = 'ext_ftp';
-$funcs['ftp_rmdir']['version_init'] = '4.0.0';
-$funcs['ftp_set_option']['extension'] = 'ext_ftp';
-$funcs['ftp_set_option']['version_init'] = '4.2.0';
-$funcs['ftp_site']['extension'] = 'ext_ftp';
-$funcs['ftp_site']['version_init'] = '4.0.0';
-$funcs['ftp_size']['extension'] = 'ext_ftp';
-$funcs['ftp_size']['version_init'] = '4.0.0';
-$funcs['ftp_ssl_connect']['extension'] = 'ext_ftp';
-$funcs['ftp_ssl_connect']['version_init'] = '4.3.0';
-$funcs['ftp_systype']['extension'] = 'ext_ftp';
-$funcs['ftp_systype']['version_init'] = '4.0.0';
-$funcs['ftruncate']['extension'] = 'ext_standard';
-$funcs['ftruncate']['version_init'] = '4.0.0';
-$funcs['function_exists']['extension'] = 'zend';
-$funcs['function_exists']['version_init'] = '4.0.0';
-$funcs['func_get_arg']['extension'] = 'zend';
-$funcs['func_get_arg']['version_init'] = '4.0.0';
-$funcs['func_get_args']['extension'] = 'zend';
-$funcs['func_get_args']['version_init'] = '4.0.0';
-$funcs['func_num_args']['extension'] = 'zend';
-$funcs['func_num_args']['version_init'] = '4.0.0';
-$funcs['fwrite']['extension'] = 'ext_standard';
-$funcs['fwrite']['version_init'] = '4.0.0';
-$funcs['gd_info']['extension'] = 'ext_gd';
-$funcs['gd_info']['version_init'] = '4.3.0';
-$funcs['getallheaders']['extension'] = 'sapi_nsapi';
-$funcs['getallheaders']['version_init'] = '4.0.0';
-$funcs['getascent']['extension'] = 'ext_ming';
-$funcs['getascent']['version_init'] = '4.0.5';
-$funcs['getcwd']['extension'] = 'ext_standard';
-$funcs['getcwd']['version_init'] = '4.0.0';
-$funcs['getdate']['extension'] = 'ext_standard';
-$funcs['getdate']['version_init'] = '4.0.0';
-$funcs['getdescent']['extension'] = 'ext_ming';
-$funcs['getdescent']['version_init'] = '4.0.5';
-$funcs['getenv']['extension'] = 'ext_standard';
-$funcs['getenv']['version_init'] = '4.0.0';
-$funcs['getheight']['extension'] = 'ext_ming';
-$funcs['getheight']['version_init'] = '4.0.5';
-$funcs['gethostbyaddr']['extension'] = 'ext_standard';
-$funcs['gethostbyaddr']['version_init'] = '4.0.0';
-$funcs['gethostbyname']['extension'] = 'ext_standard';
-$funcs['gethostbyname']['version_init'] = '4.0.0';
-$funcs['gethostbynamel']['extension'] = 'ext_standard';
-$funcs['gethostbynamel']['version_init'] = '4.0.0';
-$funcs['getimagesize']['extension'] = 'ext_standard';
-$funcs['getimagesize']['version_init'] = '4.0.0';
-$funcs['getlastaccess']['extension'] = 'dl_log';
-$funcs['getlastaccess']['version_init'] = '';
-$funcs['getlastbrowser']['extension'] = 'dl_log';
-$funcs['getlastbrowser']['version_init'] = '';
-$funcs['getlastemail']['extension'] = 'dl_log';
-$funcs['getlastemail']['version_init'] = '';
-$funcs['getlasthost']['extension'] = 'dl_log';
-$funcs['getlasthost']['version_init'] = '';
-$funcs['getlastmod']['extension'] = 'ext_standard';
-$funcs['getlastmod']['version_init'] = '4.0.0';
-$funcs['getlastref']['extension'] = 'dl_log';
-$funcs['getlastref']['version_init'] = '';
-$funcs['getleading']['extension'] = 'ext_ming';
-$funcs['getleading']['version_init'] = '4.0.5';
-$funcs['getlogdir']['extension'] = 'dl_log';
-$funcs['getlogdir']['version_init'] = '';
-$funcs['getloghost']['extension'] = 'dl_log';
-$funcs['getloghost']['version_init'] = '';
-$funcs['getmxrr']['extension'] = 'ext_standard';
-$funcs['getmxrr']['version_init'] = '4.0.0';
-$funcs['getmygid']['extension'] = 'ext_standard';
-$funcs['getmygid']['version_init'] = '4.1.0';
-$funcs['getmyinode']['extension'] = 'ext_standard';
-$funcs['getmyinode']['version_init'] = '4.0.0';
-$funcs['getmypid']['extension'] = 'ext_standard';
-$funcs['getmypid']['version_init'] = '4.0.0';
-$funcs['getmyuid']['extension'] = 'ext_standard';
-$funcs['getmyuid']['version_init'] = '4.0.0';
-$funcs['getopt']['extension'] = 'ext_standard';
-$funcs['getopt']['version_init'] = '4.3.0';
-$funcs['getpeername']['extension'] = 'ext_sockets';
-$funcs['getpeername']['version_init'] = '4.0.2';
-$funcs['getprotobyname']['extension'] = 'ext_standard';
-$funcs['getprotobyname']['version_init'] = '4.0.0';
-$funcs['getprotobynumber']['extension'] = 'ext_standard';
-$funcs['getprotobynumber']['version_init'] = '4.0.0';
-$funcs['getrandmax']['extension'] = 'ext_standard';
-$funcs['getrandmax']['version_init'] = '4.0.0';
-$funcs['getrusage']['extension'] = 'ext_standard';
-$funcs['getrusage']['version_init'] = '4.0.0';
-$funcs['getservbyname']['extension'] = 'ext_standard';
-$funcs['getservbyname']['version_init'] = '4.0.0';
-$funcs['getservbyport']['extension'] = 'ext_standard';
-$funcs['getservbyport']['version_init'] = '4.0.0';
-$funcs['getshape']['extension'] = 'ext_ming';
-$funcs['getshape']['version_init'] = '';
-$funcs['getshape1']['extension'] = 'ext_ming';
-$funcs['getshape1']['version_init'] = '4.0.5';
-$funcs['getshape2']['extension'] = 'ext_ming';
-$funcs['getshape2']['version_init'] = '4.0.5';
-$funcs['getsockname']['extension'] = 'ext_sockets';
-$funcs['getsockname']['version_init'] = '4.0.2';
-$funcs['getsockopt']['extension'] = 'ext_sockets';
-$funcs['getsockopt']['version_init'] = '4.0.2';
-$funcs['getstartlogging']['extension'] = 'dl_log';
-$funcs['getstartlogging']['version_init'] = '';
-$funcs['gettext']['extension'] = 'ext_gettext';
-$funcs['gettext']['version_init'] = '4.0.0';
-$funcs['gettimeofday']['extension'] = 'ext_standard';
-$funcs['gettimeofday']['version_init'] = '4.0.0';
-$funcs['gettoday']['extension'] = 'dl_log';
-$funcs['gettoday']['version_init'] = '';
-$funcs['gettotal']['extension'] = 'dl_log';
-$funcs['gettotal']['version_init'] = '';
-$funcs['gettype']['extension'] = 'ext_standard';
-$funcs['gettype']['version_init'] = '4.0.0';
-$funcs['getutf8width']['extension'] = 'ext_ming';
-$funcs['getutf8width']['version_init'] = '5.0.0';
-$funcs['getwidth']['extension'] = 'ext_ming';
-$funcs['getwidth']['version_init'] = '4.0.5';
-$funcs['get_all_headers']['extension'] = 'sapi_apache2filter';
-$funcs['get_all_headers']['version_init'] = '4.0.4';
-$funcs['get_browser']['extension'] = 'ext_standard';
-$funcs['get_browser']['version_init'] = '4.0.0';
-$funcs['get_cfg_var']['extension'] = 'ext_standard';
-$funcs['get_cfg_var']['version_init'] = '4.0.0';
-$funcs['get_class']['extension'] = 'zend';
-$funcs['get_class']['version_init'] = '4.0.0';
-$funcs['get_class_methods']['extension'] = 'zend';
-$funcs['get_class_methods']['version_init'] = '4.0.0';
-$funcs['get_class_vars']['extension'] = 'zend';
-$funcs['get_class_vars']['version_init'] = '4.0.0';
-$funcs['get_current_user']['extension'] = 'ext_standard';
-$funcs['get_current_user']['version_init'] = '4.0.0';
-$funcs['get_declared_classes']['extension'] = 'zend';
-$funcs['get_declared_classes']['version_init'] = '4.0.0';
-$funcs['get_defined_constants']['extension'] = 'zend';
-$funcs['get_defined_constants']['version_init'] = '4.1.0';
-$funcs['get_defined_functions']['extension'] = 'zend';
-$funcs['get_defined_functions']['version_init'] = '4.0.4';
-$funcs['get_defined_vars']['extension'] = 'zend';
-$funcs['get_defined_vars']['version_init'] = '4.0.4';
-$funcs['get_extension_funcs']['extension'] = 'zend';
-$funcs['get_extension_funcs']['version_init'] = '4.0.0';
-$funcs['get_headers']['extension'] = 'ext_standard';
-$funcs['get_headers']['version_init'] = '5.0.0';
-$funcs['get_html_translation_table']['extension'] = 'ext_standard';
-$funcs['get_html_translation_table']['version_init'] = '4.0.0';
-$funcs['get_included_files']['extension'] = 'zend';
-$funcs['get_included_files']['version_init'] = '4.0.0';
-$funcs['get_include_path']['extension'] = 'ext_standard';
-$funcs['get_include_path']['version_init'] = '4.3.0';
-$funcs['get_loaded_extensions']['extension'] = 'zend';
-$funcs['get_loaded_extensions']['version_init'] = '4.0.0';
-$funcs['get_magic_quotes_gpc']['extension'] = 'ext_standard';
-$funcs['get_magic_quotes_gpc']['version_init'] = '4.0.0';
-$funcs['get_magic_quotes_runtime']['extension'] = 'ext_standard';
-$funcs['get_magic_quotes_runtime']['version_init'] = '4.0.0';
-$funcs['get_meta_tags']['extension'] = 'ext_standard';
-$funcs['get_meta_tags']['version_init'] = '4.0.0';
-$funcs['get_object_vars']['extension'] = 'zend';
-$funcs['get_object_vars']['version_init'] = '4.0.0';
-$funcs['get_parent_class']['extension'] = 'zend';
-$funcs['get_parent_class']['version_init'] = '4.0.0';
-$funcs['get_required_files']['extension'] = 'zend';
-$funcs['get_required_files']['version_init'] = '4.0.0';
-$funcs['get_resource_type']['extension'] = 'zend';
-$funcs['get_resource_type']['version_init'] = '4.0.2';
-$funcs['get_rot']['extension'] = 'ext_ming';
-$funcs['get_rot']['version_init'] = '';
-$funcs['get_x']['extension'] = 'ext_ming';
-$funcs['get_x']['version_init'] = '';
-$funcs['get_xscale']['extension'] = 'ext_ming';
-$funcs['get_xscale']['version_init'] = '';
-$funcs['get_xskew']['extension'] = 'ext_ming';
-$funcs['get_xskew']['version_init'] = '';
-$funcs['get_y']['extension'] = 'ext_ming';
-$funcs['get_y']['version_init'] = '';
-$funcs['get_yscale']['extension'] = 'ext_ming';
-$funcs['get_yscale']['version_init'] = '';
-$funcs['get_yskew']['extension'] = 'ext_ming';
-$funcs['get_yskew']['version_init'] = '';
-$funcs['glob']['extension'] = 'ext_standard';
-$funcs['glob']['version_init'] = '4.3.0';
-$funcs['gmdate']['extension'] = 'ext_standard';
-$funcs['gmdate']['version_init'] = '4.0.0';
-$funcs['gmmktime']['extension'] = 'ext_standard';
-$funcs['gmmktime']['version_init'] = '4.0.0';
-$funcs['gmp_abs']['extension'] = 'ext_gmp';
-$funcs['gmp_abs']['version_init'] = '4.0.4';
-$funcs['gmp_add']['extension'] = 'ext_gmp';
-$funcs['gmp_add']['version_init'] = '4.0.4';
-$funcs['gmp_and']['extension'] = 'ext_gmp';
-$funcs['gmp_and']['version_init'] = '4.0.4';
-$funcs['gmp_clrbit']['extension'] = 'ext_gmp';
-$funcs['gmp_clrbit']['version_init'] = '4.0.4';
-$funcs['gmp_cmp']['extension'] = 'ext_gmp';
-$funcs['gmp_cmp']['version_init'] = '4.0.4';
-$funcs['gmp_com']['extension'] = 'ext_gmp';
-$funcs['gmp_com']['version_init'] = '4.0.4';
-$funcs['gmp_div']['extension'] = 'ext_gmp';
-$funcs['gmp_div']['version_init'] = '4.0.4';
-$funcs['gmp_divexact']['extension'] = 'ext_gmp';
-$funcs['gmp_divexact']['version_init'] = '4.0.4';
-$funcs['gmp_div_q']['extension'] = 'ext_gmp';
-$funcs['gmp_div_q']['version_init'] = '4.0.4';
-$funcs['gmp_div_qr']['extension'] = 'ext_gmp';
-$funcs['gmp_div_qr']['version_init'] = '4.0.4';
-$funcs['gmp_div_r']['extension'] = 'ext_gmp';
-$funcs['gmp_div_r']['version_init'] = '4.0.4';
-$funcs['gmp_fact']['extension'] = 'ext_gmp';
-$funcs['gmp_fact']['version_init'] = '4.0.4';
-$funcs['gmp_gcd']['extension'] = 'ext_gmp';
-$funcs['gmp_gcd']['version_init'] = '4.0.4';
-$funcs['gmp_gcdext']['extension'] = 'ext_gmp';
-$funcs['gmp_gcdext']['version_init'] = '4.0.4';
-$funcs['gmp_hamdist']['extension'] = 'ext_gmp';
-$funcs['gmp_hamdist']['version_init'] = '4.0.4';
-$funcs['gmp_init']['extension'] = 'ext_gmp';
-$funcs['gmp_init']['version_init'] = '4.0.4';
-$funcs['gmp_intval']['extension'] = 'ext_gmp';
-$funcs['gmp_intval']['version_init'] = '4.0.4';
-$funcs['gmp_invert']['extension'] = 'ext_gmp';
-$funcs['gmp_invert']['version_init'] = '4.0.4';
-$funcs['gmp_jacobi']['extension'] = 'ext_gmp';
-$funcs['gmp_jacobi']['version_init'] = '4.0.4';
-$funcs['gmp_legendre']['extension'] = 'ext_gmp';
-$funcs['gmp_legendre']['version_init'] = '4.0.4';
-$funcs['gmp_mod']['extension'] = 'ext_gmp';
-$funcs['gmp_mod']['version_init'] = '4.0.4';
-$funcs['gmp_mul']['extension'] = 'ext_gmp';
-$funcs['gmp_mul']['version_init'] = '4.0.4';
-$funcs['gmp_neg']['extension'] = 'ext_gmp';
-$funcs['gmp_neg']['version_init'] = '4.0.4';
-$funcs['gmp_or']['extension'] = 'ext_gmp';
-$funcs['gmp_or']['version_init'] = '4.0.4';
-$funcs['gmp_perfect_square']['extension'] = 'ext_gmp';
-$funcs['gmp_perfect_square']['version_init'] = '4.0.4';
-$funcs['gmp_popcount']['extension'] = 'ext_gmp';
-$funcs['gmp_popcount']['version_init'] = '4.0.4';
-$funcs['gmp_pow']['extension'] = 'ext_gmp';
-$funcs['gmp_pow']['version_init'] = '4.0.4';
-$funcs['gmp_powm']['extension'] = 'ext_gmp';
-$funcs['gmp_powm']['version_init'] = '4.0.4';
-$funcs['gmp_prob_prime']['extension'] = 'ext_gmp';
-$funcs['gmp_prob_prime']['version_init'] = '4.0.4';
-$funcs['gmp_random']['extension'] = 'ext_gmp';
-$funcs['gmp_random']['version_init'] = '4.0.4';
-$funcs['gmp_scan0']['extension'] = 'ext_gmp';
-$funcs['gmp_scan0']['version_init'] = '4.0.4';
-$funcs['gmp_scan1']['extension'] = 'ext_gmp';
-$funcs['gmp_scan1']['version_init'] = '4.0.4';
-$funcs['gmp_setbit']['extension'] = 'ext_gmp';
-$funcs['gmp_setbit']['version_init'] = '4.0.4';
-$funcs['gmp_sign']['extension'] = 'ext_gmp';
-$funcs['gmp_sign']['version_init'] = '4.0.4';
-$funcs['gmp_sqrt']['extension'] = 'ext_gmp';
-$funcs['gmp_sqrt']['version_init'] = '4.0.4';
-$funcs['gmp_sqrtrem']['extension'] = 'ext_gmp';
-$funcs['gmp_sqrtrem']['version_init'] = '4.0.4';
-$funcs['gmp_strval']['extension'] = 'ext_gmp';
-$funcs['gmp_strval']['version_init'] = '4.0.4';
-$funcs['gmp_sub']['extension'] = 'ext_gmp';
-$funcs['gmp_sub']['version_init'] = '4.0.4';
-$funcs['gmp_xor']['extension'] = 'ext_gmp';
-$funcs['gmp_xor']['version_init'] = '4.0.4';
-$funcs['gmstrftime']['extension'] = 'ext_standard';
-$funcs['gmstrftime']['version_init'] = '4.0.0';
-$funcs['gregoriantojd']['extension'] = 'ext_calendar';
-$funcs['gregoriantojd']['version_init'] = '4.0.0';
-$funcs['gzclose']['extension'] = 'ext_zlib';
-$funcs['gzclose']['version_init'] = '4.0.0';
-$funcs['gzcompress']['extension'] = 'ext_zlib';
-$funcs['gzcompress']['version_init'] = '4.0.1';
-$funcs['gzdeflate']['extension'] = 'ext_zlib';
-$funcs['gzdeflate']['version_init'] = '4.0.4';
-$funcs['gzencode']['extension'] = 'ext_zlib';
-$funcs['gzencode']['version_init'] = '4.0.4';
-$funcs['gzeof']['extension'] = 'ext_zlib';
-$funcs['gzeof']['version_init'] = '4.0.0';
-$funcs['gzfile']['extension'] = 'ext_zlib';
-$funcs['gzfile']['version_init'] = '4.0.0';
-$funcs['gzgetc']['extension'] = 'ext_zlib';
-$funcs['gzgetc']['version_init'] = '4.0.0';
-$funcs['gzgets']['extension'] = 'ext_zlib';
-$funcs['gzgets']['version_init'] = '4.0.0';
-$funcs['gzgetss']['extension'] = 'ext_zlib';
-$funcs['gzgetss']['version_init'] = '4.0.0';
-$funcs['gzinflate']['extension'] = 'ext_zlib';
-$funcs['gzinflate']['version_init'] = '4.0.4';
-$funcs['gzopen']['extension'] = 'ext_zlib';
-$funcs['gzopen']['version_init'] = '4.0.0';
-$funcs['gzpassthru']['extension'] = 'ext_zlib';
-$funcs['gzpassthru']['version_init'] = '4.0.0';
-$funcs['gzputs']['extension'] = 'ext_zlib';
-$funcs['gzputs']['version_init'] = '4.0.0';
-$funcs['gzread']['extension'] = 'ext_zlib';
-$funcs['gzread']['version_init'] = '4.0.0';
-$funcs['gzrewind']['extension'] = 'ext_zlib';
-$funcs['gzrewind']['version_init'] = '4.0.0';
-$funcs['gzseek']['extension'] = 'ext_zlib';
-$funcs['gzseek']['version_init'] = '4.0.0';
-$funcs['gztell']['extension'] = 'ext_zlib';
-$funcs['gztell']['version_init'] = '4.0.0';
-$funcs['gzuncompress']['extension'] = 'ext_zlib';
-$funcs['gzuncompress']['version_init'] = '4.0.1';
-$funcs['gzwrite']['extension'] = 'ext_zlib';
-$funcs['gzwrite']['version_init'] = '4.0.0';
-$funcs['handle']['extension'] = 'ext_xslt';
-$funcs['handle']['version_init'] = '4.0.6';
-$funcs['header']['extension'] = 'ext_standard';
-$funcs['header']['version_init'] = '4.0.0';
-$funcs['headers_list']['extension'] = 'ext_standard';
-$funcs['headers_list']['version_init'] = '';
-$funcs['headers_sent']['extension'] = 'ext_standard';
-$funcs['headers_sent']['version_init'] = '4.0.0';
-$funcs['hebrev']['extension'] = 'ext_standard';
-$funcs['hebrev']['version_init'] = '4.0.0';
-$funcs['hebrevc']['extension'] = 'ext_standard';
-$funcs['hebrevc']['version_init'] = '4.0.0';
-$funcs['hexdec']['extension'] = 'ext_standard';
-$funcs['hexdec']['version_init'] = '4.0.0';
-$funcs['highlight_file']['extension'] = 'ext_standard';
-$funcs['highlight_file']['version_init'] = '4.0.0';
-$funcs['highlight_string']['extension'] = 'ext_standard';
-$funcs['highlight_string']['version_init'] = '4.0.0';
-$funcs['htmlentities']['extension'] = 'ext_standard';
-$funcs['htmlentities']['version_init'] = '4.0.0';
-$funcs['htmlspecialchars']['extension'] = 'ext_standard';
-$funcs['htmlspecialchars']['version_init'] = '4.0.0';
-$funcs['html_doc']['extension'] = 'ext_domxml';
-$funcs['html_doc']['version_init'] = '4.2.0';
-$funcs['html_doc_file']['extension'] = 'ext_domxml';
-$funcs['html_doc_file']['version_init'] = '4.2.0';
-$funcs['html_entity_decode']['extension'] = 'ext_standard';
-$funcs['html_entity_decode']['version_init'] = '4.3.0';
-$funcs['http_build_query']['extension'] = 'ext_standard';
-$funcs['http_build_query']['version_init'] = '';
-$funcs['hw_array2objrec']['extension'] = 'ext_hyperwave';
-$funcs['hw_array2objrec']['version_init'] = '4.0.0';
-$funcs['hw_changeobject']['extension'] = 'ext_hyperwave';
-$funcs['hw_changeobject']['version_init'] = '4.0.0';
-$funcs['hw_children']['extension'] = 'ext_hyperwave';
-$funcs['hw_children']['version_init'] = '4.0.0';
-$funcs['hw_childrenobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_childrenobj']['version_init'] = '4.0.0';
-$funcs['hw_close']['extension'] = 'ext_hyperwave';
-$funcs['hw_close']['version_init'] = '4.0.0';
-$funcs['hw_connect']['extension'] = 'ext_hyperwave';
-$funcs['hw_connect']['version_init'] = '4.0.0';
-$funcs['hw_connection_info']['extension'] = 'ext_hyperwave';
-$funcs['hw_connection_info']['version_init'] = '4.0.0';
-$funcs['hw_cp']['extension'] = 'ext_hyperwave';
-$funcs['hw_cp']['version_init'] = '4.0.0';
-$funcs['hw_deleteobject']['extension'] = 'ext_hyperwave';
-$funcs['hw_deleteobject']['version_init'] = '4.0.0';
-$funcs['hw_docbyanchor']['extension'] = 'ext_hyperwave';
-$funcs['hw_docbyanchor']['version_init'] = '4.0.0';
-$funcs['hw_docbyanchorobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_docbyanchorobj']['version_init'] = '4.0.0';
-$funcs['hw_document_attributes']['extension'] = 'ext_hyperwave';
-$funcs['hw_document_attributes']['version_init'] = '4.0.0';
-$funcs['hw_document_bodytag']['extension'] = 'ext_hyperwave';
-$funcs['hw_document_bodytag']['version_init'] = '4.0.0';
-$funcs['hw_document_content']['extension'] = 'ext_hyperwave';
-$funcs['hw_document_content']['version_init'] = '4.0.0';
-$funcs['hw_document_setcontent']['extension'] = 'ext_hyperwave';
-$funcs['hw_document_setcontent']['version_init'] = '4.0.0';
-$funcs['hw_document_size']['extension'] = 'ext_hyperwave';
-$funcs['hw_document_size']['version_init'] = '4.0.0';
-$funcs['hw_dummy']['extension'] = 'ext_hyperwave';
-$funcs['hw_dummy']['version_init'] = '4.0.0';
-$funcs['hw_edittext']['extension'] = 'ext_hyperwave';
-$funcs['hw_edittext']['version_init'] = '4.0.0';
-$funcs['hw_error']['extension'] = 'ext_hyperwave';
-$funcs['hw_error']['version_init'] = '4.0.0';
-$funcs['hw_errormsg']['extension'] = 'ext_hyperwave';
-$funcs['hw_errormsg']['version_init'] = '4.0.0';
-$funcs['hw_free_document']['extension'] = 'ext_hyperwave';
-$funcs['hw_free_document']['version_init'] = '4.0.0';
-$funcs['hw_getanchors']['extension'] = 'ext_hyperwave';
-$funcs['hw_getanchors']['version_init'] = '4.0.0';
-$funcs['hw_getanchorsobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_getanchorsobj']['version_init'] = '4.0.0';
-$funcs['hw_getandlock']['extension'] = 'ext_hyperwave';
-$funcs['hw_getandlock']['version_init'] = '4.0.0';
-$funcs['hw_getcgi']['extension'] = 'ext_hyperwave';
-$funcs['hw_getcgi']['version_init'] = '4.0.0';
-$funcs['hw_getchildcoll']['extension'] = 'ext_hyperwave';
-$funcs['hw_getchildcoll']['version_init'] = '4.0.0';
-$funcs['hw_getchildcollobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_getchildcollobj']['version_init'] = '4.0.0';
-$funcs['hw_getchilddoccoll']['extension'] = 'ext_hyperwave';
-$funcs['hw_getchilddoccoll']['version_init'] = '4.0.0';
-$funcs['hw_getchilddoccollobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_getchilddoccollobj']['version_init'] = '4.0.0';
-$funcs['hw_getobject']['extension'] = 'ext_hyperwave';
-$funcs['hw_getobject']['version_init'] = '4.0.0';
-$funcs['hw_getobjectbyftquery']['extension'] = 'ext_hyperwave';
-$funcs['hw_getobjectbyftquery']['version_init'] = '4.0.4';
-$funcs['hw_getobjectbyftquerycoll']['extension'] = 'ext_hyperwave';
-$funcs['hw_getobjectbyftquerycoll']['version_init'] = '4.0.4';
-$funcs['hw_getobjectbyftquerycollobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_getobjectbyftquerycollobj']['version_init'] = '4.0.4';
-$funcs['hw_getobjectbyftqueryobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_getobjectbyftqueryobj']['version_init'] = '4.0.4';
-$funcs['hw_getobjectbyquery']['extension'] = 'ext_hyperwave';
-$funcs['hw_getobjectbyquery']['version_init'] = '4.0.0';
-$funcs['hw_getobjectbyquerycoll']['extension'] = 'ext_hyperwave';
-$funcs['hw_getobjectbyquerycoll']['version_init'] = '4.0.0';
-$funcs['hw_getobjectbyquerycollobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_getobjectbyquerycollobj']['version_init'] = '4.0.0';
-$funcs['hw_getobjectbyqueryobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_getobjectbyqueryobj']['version_init'] = '4.0.0';
-$funcs['hw_getparents']['extension'] = 'ext_hyperwave';
-$funcs['hw_getparents']['version_init'] = '4.0.0';
-$funcs['hw_getparentsobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_getparentsobj']['version_init'] = '4.0.0';
-$funcs['hw_getrellink']['extension'] = 'ext_hyperwave';
-$funcs['hw_getrellink']['version_init'] = '4.0.0';
-$funcs['hw_getremote']['extension'] = 'ext_hyperwave';
-$funcs['hw_getremote']['version_init'] = '4.0.0';
-$funcs['hw_getremotechildren']['extension'] = 'ext_hyperwave';
-$funcs['hw_getremotechildren']['version_init'] = '4.0.0';
-$funcs['hw_getsrcbydestobj']['extension'] = 'ext_hyperwave';
-$funcs['hw_getsrcbydestobj']['version_init'] = '4.0.0';
-$funcs['hw_gettext']['extension'] = 'ext_hyperwave';
-$funcs['hw_gettext']['version_init'] = '4.0.0';
-$funcs['hw_getusername']['extension'] = 'ext_hyperwave';
-$funcs['hw_getusername']['version_init'] = '4.0.0';
-$funcs['hw_identify']['extension'] = 'ext_hyperwave';
-$funcs['hw_identify']['version_init'] = '4.0.0';
-$funcs['hw_incollections']['extension'] = 'ext_hyperwave';
-$funcs['hw_incollections']['version_init'] = '4.0.0';
-$funcs['hw_info']['extension'] = 'ext_hyperwave';
-$funcs['hw_info']['version_init'] = '4.0.0';
-$funcs['hw_inscoll']['extension'] = 'ext_hyperwave';
-$funcs['hw_inscoll']['version_init'] = '4.0.0';
-$funcs['hw_insdoc']['extension'] = 'ext_hyperwave';
-$funcs['hw_insdoc']['version_init'] = '4.0.0';
-$funcs['hw_insertanchors']['extension'] = 'ext_hyperwave';
-$funcs['hw_insertanchors']['version_init'] = '4.0.4';
-$funcs['hw_insertdocument']['extension'] = 'ext_hyperwave';
-$funcs['hw_insertdocument']['version_init'] = '4.0.0';
-$funcs['hw_insertobject']['extension'] = 'ext_hyperwave';
-$funcs['hw_insertobject']['version_init'] = '4.0.0';
-$funcs['hw_mapid']['extension'] = 'ext_hyperwave';
-$funcs['hw_mapid']['version_init'] = '4.0.0';
-$funcs['hw_modifyobject']['extension'] = 'ext_hyperwave';
-$funcs['hw_modifyobject']['version_init'] = '4.0.0';
-$funcs['hw_mv']['extension'] = 'ext_hyperwave';
-$funcs['hw_mv']['version_init'] = '4.0.0';
-$funcs['hw_new_document']['extension'] = 'ext_hyperwave';
-$funcs['hw_new_document']['version_init'] = '4.0.0';
-$funcs['hw_new_document_from_file']['extension'] = 'ext_hyperwave';
-$funcs['hw_new_document_from_file']['version_init'] = '4.0.5';
-$funcs['hw_objrec2array']['extension'] = 'ext_hyperwave';
-$funcs['hw_objrec2array']['version_init'] = '4.0.0';
-$funcs['hw_output_document']['extension'] = 'ext_hyperwave';
-$funcs['hw_output_document']['version_init'] = '4.0.0';
-$funcs['hw_pconnect']['extension'] = 'ext_hyperwave';
-$funcs['hw_pconnect']['version_init'] = '4.0.0';
-$funcs['hw_pipecgi']['extension'] = 'ext_hyperwave';
-$funcs['hw_pipecgi']['version_init'] = '4.0.0';
-$funcs['hw_pipedocument']['extension'] = 'ext_hyperwave';
-$funcs['hw_pipedocument']['version_init'] = '4.0.0';
-$funcs['hw_root']['extension'] = 'ext_hyperwave';
-$funcs['hw_root']['version_init'] = '4.0.0';
-$funcs['hw_setlinkroot']['extension'] = 'ext_hyperwave';
-$funcs['hw_setlinkroot']['version_init'] = '4.0.0';
-$funcs['hw_stat']['extension'] = 'ext_hyperwave';
-$funcs['hw_stat']['version_init'] = '4.0.0';
-$funcs['hw_unlock']['extension'] = 'ext_hyperwave';
-$funcs['hw_unlock']['version_init'] = '4.0.0';
-$funcs['hw_who']['extension'] = 'ext_hyperwave';
-$funcs['hw_who']['version_init'] = '4.0.0';
-$funcs['hypot']['extension'] = 'ext_standard';
-$funcs['hypot']['version_init'] = '4.1.0';
-$funcs['i18n_convert']['extension'] = 'ext_mbstring';
-$funcs['i18n_convert']['version_init'] = '4.0.6';
-$funcs['i18n_discover_encoding']['extension'] = 'ext_mbstring';
-$funcs['i18n_discover_encoding']['version_init'] = '4.0.6';
-$funcs['i18n_http_input']['extension'] = 'ext_mbstring';
-$funcs['i18n_http_input']['version_init'] = '4.0.6';
-$funcs['i18n_http_output']['extension'] = 'ext_mbstring';
-$funcs['i18n_http_output']['version_init'] = '4.0.6';
-$funcs['i18n_internal_encoding']['extension'] = 'ext_mbstring';
-$funcs['i18n_internal_encoding']['version_init'] = '4.0.6';
-$funcs['i18n_ja_jp_hantozen']['extension'] = 'ext_mbstring';
-$funcs['i18n_ja_jp_hantozen']['version_init'] = '4.0.6';
-$funcs['i18n_mime_header_decode']['extension'] = 'ext_mbstring';
-$funcs['i18n_mime_header_decode']['version_init'] = '4.0.6';
-$funcs['i18n_mime_header_encode']['extension'] = 'ext_mbstring';
-$funcs['i18n_mime_header_encode']['version_init'] = '4.0.6';
-$funcs['ibase_add_user']['extension'] = 'ext_interbase';
-$funcs['ibase_add_user']['version_init'] = '4.2.0';
-$funcs['ibase_affected_rows']['extension'] = 'ext_interbase';
-$funcs['ibase_affected_rows']['version_init'] = '';
-$funcs['ibase_blob_add']['extension'] = 'ext_interbase';
-$funcs['ibase_blob_add']['version_init'] = '4.0.0';
-$funcs['ibase_blob_cancel']['extension'] = 'ext_interbase';
-$funcs['ibase_blob_cancel']['version_init'] = '4.0.0';
-$funcs['ibase_blob_close']['extension'] = 'ext_interbase';
-$funcs['ibase_blob_close']['version_init'] = '4.0.0';
-$funcs['ibase_blob_create']['extension'] = 'ext_interbase';
-$funcs['ibase_blob_create']['version_init'] = '4.0.0';
-$funcs['ibase_blob_echo']['extension'] = 'ext_interbase';
-$funcs['ibase_blob_echo']['version_init'] = '4.0.0';
-$funcs['ibase_blob_get']['extension'] = 'ext_interbase';
-$funcs['ibase_blob_get']['version_init'] = '4.0.0';
-$funcs['ibase_blob_import']['extension'] = 'ext_interbase';
-$funcs['ibase_blob_import']['version_init'] = '4.0.0';
-$funcs['ibase_blob_info']['extension'] = 'ext_interbase';
-$funcs['ibase_blob_info']['version_init'] = '4.0.0';
-$funcs['ibase_blob_open']['extension'] = 'ext_interbase';
-$funcs['ibase_blob_open']['version_init'] = '4.0.0';
-$funcs['ibase_close']['extension'] = 'ext_interbase';
-$funcs['ibase_close']['version_init'] = '4.0.0';
-$funcs['ibase_commit']['extension'] = 'ext_interbase';
-$funcs['ibase_commit']['version_init'] = '4.0.0';
-$funcs['ibase_commit_ret']['extension'] = 'ext_interbase';
-$funcs['ibase_commit_ret']['version_init'] = '';
-$funcs['ibase_connect']['extension'] = 'ext_interbase';
-$funcs['ibase_connect']['version_init'] = '4.0.0';
-$funcs['ibase_delete_user']['extension'] = 'ext_interbase';
-$funcs['ibase_delete_user']['version_init'] = '4.2.0';
-$funcs['ibase_drop_db']['extension'] = 'ext_interbase';
-$funcs['ibase_drop_db']['version_init'] = '';
-$funcs['ibase_errcode']['extension'] = 'ext_interbase';
-$funcs['ibase_errcode']['version_init'] = '';
-$funcs['ibase_errmsg']['extension'] = 'ext_interbase';
-$funcs['ibase_errmsg']['version_init'] = '4.0.0';
-$funcs['ibase_execute']['extension'] = 'ext_interbase';
-$funcs['ibase_execute']['version_init'] = '4.0.0';
-$funcs['ibase_fetch_assoc']['extension'] = 'ext_interbase';
-$funcs['ibase_fetch_assoc']['version_init'] = '4.3.0';
-$funcs['ibase_fetch_object']['extension'] = 'ext_interbase';
-$funcs['ibase_fetch_object']['version_init'] = '4.0.0';
-$funcs['ibase_fetch_row']['extension'] = 'ext_interbase';
-$funcs['ibase_fetch_row']['version_init'] = '4.0.0';
-$funcs['ibase_field_info']['extension'] = 'ext_interbase';
-$funcs['ibase_field_info']['version_init'] = '4.0.0';
-$funcs['ibase_free_event_handler']['extension'] = 'ext_interbase';
-$funcs['ibase_free_event_handler']['version_init'] = '';
-$funcs['ibase_free_query']['extension'] = 'ext_interbase';
-$funcs['ibase_free_query']['version_init'] = '4.0.0';
-$funcs['ibase_free_result']['extension'] = 'ext_interbase';
-$funcs['ibase_free_result']['version_init'] = '4.0.0';
-$funcs['ibase_gen_id']['extension'] = 'ext_interbase';
-$funcs['ibase_gen_id']['version_init'] = '';
-$funcs['ibase_modify_user']['extension'] = 'ext_interbase';
-$funcs['ibase_modify_user']['version_init'] = '4.2.0';
-$funcs['ibase_name_result']['extension'] = 'ext_interbase';
-$funcs['ibase_name_result']['version_init'] = '';
-$funcs['ibase_num_fields']['extension'] = 'ext_interbase';
-$funcs['ibase_num_fields']['version_init'] = '4.0.0';
-$funcs['ibase_num_params']['extension'] = 'ext_interbase';
-$funcs['ibase_num_params']['version_init'] = '';
-$funcs['ibase_num_rows']['extension'] = 'ext_interbase';
-$funcs['ibase_num_rows']['version_init'] = '';
-$funcs['ibase_param_info']['extension'] = 'ext_interbase';
-$funcs['ibase_param_info']['version_init'] = '';
-$funcs['ibase_pconnect']['extension'] = 'ext_interbase';
-$funcs['ibase_pconnect']['version_init'] = '4.0.0';
-$funcs['ibase_prepare']['extension'] = 'ext_interbase';
-$funcs['ibase_prepare']['version_init'] = '4.0.0';
-$funcs['ibase_query']['extension'] = 'ext_interbase';
-$funcs['ibase_query']['version_init'] = '4.0.0';
-$funcs['ibase_rollback']['extension'] = 'ext_interbase';
-$funcs['ibase_rollback']['version_init'] = '4.0.0';
-$funcs['ibase_rollback_ret']['extension'] = 'ext_interbase';
-$funcs['ibase_rollback_ret']['version_init'] = '';
-$funcs['ibase_set_event_handler']['extension'] = 'ext_interbase';
-$funcs['ibase_set_event_handler']['version_init'] = '';
-$funcs['ibase_timefmt']['extension'] = 'ext_interbase';
-$funcs['ibase_timefmt']['version_init'] = '4.0.0';
-$funcs['ibase_trans']['extension'] = 'ext_interbase';
-$funcs['ibase_trans']['version_init'] = '4.0.0';
-$funcs['ibase_wait_event']['extension'] = 'ext_interbase';
-$funcs['ibase_wait_event']['version_init'] = '';
-$funcs['icap_create_calendar']['extension'] = 'ext_icap';
-$funcs['icap_create_calendar']['version_init'] = '4.0.0';
-$funcs['icap_delete_calendar']['extension'] = 'ext_icap';
-$funcs['icap_delete_calendar']['version_init'] = '4.0.0';
-$funcs['icap_delete_event']['extension'] = 'ext_icap';
-$funcs['icap_delete_event']['version_init'] = '4.0.0';
-$funcs['icap_fetch_event']['extension'] = 'ext_icap';
-$funcs['icap_fetch_event']['version_init'] = '4.0.0';
-$funcs['icap_list_alarms']['extension'] = 'ext_icap';
-$funcs['icap_list_alarms']['version_init'] = '4.0.0';
-$funcs['icap_list_events']['extension'] = 'ext_icap';
-$funcs['icap_list_events']['version_init'] = '4.0.0';
-$funcs['icap_open']['extension'] = 'ext_icap';
-$funcs['icap_open']['version_init'] = '4.0.0';
-$funcs['icap_popen']['extension'] = 'ext_icap';
-$funcs['icap_popen']['version_init'] = '4.0.0';
-$funcs['icap_rename_calendar']['extension'] = 'ext_icap';
-$funcs['icap_rename_calendar']['version_init'] = '4.0.0';
-$funcs['icap_reopen']['extension'] = 'ext_icap';
-$funcs['icap_reopen']['version_init'] = '4.0.0';
-$funcs['icap_snooze']['extension'] = 'ext_icap';
-$funcs['icap_snooze']['version_init'] = '4.0.0';
-$funcs['icap_store_event']['extension'] = 'ext_icap';
-$funcs['icap_store_event']['version_init'] = '4.0.0';
-$funcs['iconv']['extension'] = 'ext_iconv';
-$funcs['iconv']['version_init'] = '4.0.5';
-$funcs['iconv_get_encoding']['extension'] = 'ext_iconv';
-$funcs['iconv_get_encoding']['version_init'] = '4.0.5';
-$funcs['iconv_mime_decode']['extension'] = 'ext_iconv';
-$funcs['iconv_mime_decode']['version_init'] = '5.0.0';
-$funcs['iconv_mime_encode']['extension'] = 'ext_iconv';
-$funcs['iconv_mime_encode']['version_init'] = '5.0.0';
-$funcs['iconv_set_encoding']['extension'] = 'ext_iconv';
-$funcs['iconv_set_encoding']['version_init'] = '4.0.5';
-$funcs['iconv_strlen']['extension'] = 'ext_iconv';
-$funcs['iconv_strlen']['version_init'] = '5.0.0';
-$funcs['iconv_strpos']['extension'] = 'ext_iconv';
-$funcs['iconv_strpos']['version_init'] = '5.0.0';
-$funcs['iconv_strrpos']['extension'] = 'ext_iconv';
-$funcs['iconv_strrpos']['version_init'] = '5.0.0';
-$funcs['iconv_substr']['extension'] = 'ext_iconv';
-$funcs['iconv_substr']['version_init'] = '5.0.0';
-$funcs['idate']['extension'] = 'ext_standard';
-$funcs['idate']['version_init'] = '5.0.0';
-$funcs['ifxus_close_slob']['extension'] = 'ext_informix';
-$funcs['ifxus_close_slob']['version_init'] = '4.0.0';
-$funcs['ifxus_create_slob']['extension'] = 'ext_informix';
-$funcs['ifxus_create_slob']['version_init'] = '4.0.0';
-$funcs['ifxus_free_slob']['extension'] = 'ext_informix';
-$funcs['ifxus_free_slob']['version_init'] = '4.0.0';
-$funcs['ifxus_open_slob']['extension'] = 'ext_informix';
-$funcs['ifxus_open_slob']['version_init'] = '4.0.0';
-$funcs['ifxus_read_slob']['extension'] = 'ext_informix';
-$funcs['ifxus_read_slob']['version_init'] = '4.0.0';
-$funcs['ifxus_seek_slob']['extension'] = 'ext_informix';
-$funcs['ifxus_seek_slob']['version_init'] = '4.0.0';
-$funcs['ifxus_tell_slob']['extension'] = 'ext_informix';
-$funcs['ifxus_tell_slob']['version_init'] = '4.0.0';
-$funcs['ifxus_write_slob']['extension'] = 'ext_informix';
-$funcs['ifxus_write_slob']['version_init'] = '4.0.0';
-$funcs['ifx_affected_rows']['extension'] = 'ext_informix';
-$funcs['ifx_affected_rows']['version_init'] = '4.0.0';
-$funcs['ifx_blobinfile_mode']['extension'] = 'ext_informix';
-$funcs['ifx_blobinfile_mode']['version_init'] = '4.0.0';
-$funcs['ifx_byteasvarchar']['extension'] = 'ext_informix';
-$funcs['ifx_byteasvarchar']['version_init'] = '4.0.0';
-$funcs['ifx_close']['extension'] = 'ext_informix';
-$funcs['ifx_close']['version_init'] = '4.0.0';
-$funcs['ifx_connect']['extension'] = 'ext_informix';
-$funcs['ifx_connect']['version_init'] = '4.0.0';
-$funcs['ifx_copy_blob']['extension'] = 'ext_informix';
-$funcs['ifx_copy_blob']['version_init'] = '4.0.0';
-$funcs['ifx_create_blob']['extension'] = 'ext_informix';
-$funcs['ifx_create_blob']['version_init'] = '4.0.0';
-$funcs['ifx_create_char']['extension'] = 'ext_informix';
-$funcs['ifx_create_char']['version_init'] = '4.0.0';
-$funcs['ifx_do']['extension'] = 'ext_informix';
-$funcs['ifx_do']['version_init'] = '4.0.0';
-$funcs['ifx_error']['extension'] = 'ext_informix';
-$funcs['ifx_error']['version_init'] = '4.0.0';
-$funcs['ifx_errormsg']['extension'] = 'ext_informix';
-$funcs['ifx_errormsg']['version_init'] = '4.0.0';
-$funcs['ifx_fetch_row']['extension'] = 'ext_informix';
-$funcs['ifx_fetch_row']['version_init'] = '4.0.0';
-$funcs['ifx_fieldproperties']['extension'] = 'ext_informix';
-$funcs['ifx_fieldproperties']['version_init'] = '4.0.0';
-$funcs['ifx_fieldtypes']['extension'] = 'ext_informix';
-$funcs['ifx_fieldtypes']['version_init'] = '4.0.0';
-$funcs['ifx_free_blob']['extension'] = 'ext_informix';
-$funcs['ifx_free_blob']['version_init'] = '4.0.0';
-$funcs['ifx_free_char']['extension'] = 'ext_informix';
-$funcs['ifx_free_char']['version_init'] = '4.0.0';
-$funcs['ifx_free_result']['extension'] = 'ext_informix';
-$funcs['ifx_free_result']['version_init'] = '4.0.0';
-$funcs['ifx_getsqlca']['extension'] = 'ext_informix';
-$funcs['ifx_getsqlca']['version_init'] = '4.0.0';
-$funcs['ifx_get_blob']['extension'] = 'ext_informix';
-$funcs['ifx_get_blob']['version_init'] = '4.0.0';
-$funcs['ifx_get_char']['extension'] = 'ext_informix';
-$funcs['ifx_get_char']['version_init'] = '4.0.0';
-$funcs['ifx_htmltbl_result']['extension'] = 'ext_informix';
-$funcs['ifx_htmltbl_result']['version_init'] = '4.0.0';
-$funcs['ifx_nullformat']['extension'] = 'ext_informix';
-$funcs['ifx_nullformat']['version_init'] = '4.0.0';
-$funcs['ifx_num_fields']['extension'] = 'ext_informix';
-$funcs['ifx_num_fields']['version_init'] = '4.0.0';
-$funcs['ifx_num_rows']['extension'] = 'ext_informix';
-$funcs['ifx_num_rows']['version_init'] = '4.0.0';
-$funcs['ifx_pconnect']['extension'] = 'ext_informix';
-$funcs['ifx_pconnect']['version_init'] = '4.0.0';
-$funcs['ifx_prepare']['extension'] = 'ext_informix';
-$funcs['ifx_prepare']['version_init'] = '4.0.0';
-$funcs['ifx_query']['extension'] = 'ext_informix';
-$funcs['ifx_query']['version_init'] = '4.0.0';
-$funcs['ifx_textasvarchar']['extension'] = 'ext_informix';
-$funcs['ifx_textasvarchar']['version_init'] = '4.0.0';
-$funcs['ifx_update_blob']['extension'] = 'ext_informix';
-$funcs['ifx_update_blob']['version_init'] = '4.0.0';
-$funcs['ifx_update_char']['extension'] = 'ext_informix';
-$funcs['ifx_update_char']['version_init'] = '4.0.0';
-$funcs['ignore_user_abort']['extension'] = 'ext_standard';
-$funcs['ignore_user_abort']['version_init'] = '4.0.0';
-$funcs['image2wbmp']['extension'] = 'ext_gd';
-$funcs['image2wbmp']['version_init'] = '4.0.5';
-$funcs['imagealphablending']['extension'] = 'ext_gd';
-$funcs['imagealphablending']['version_init'] = '4.0.6';
-$funcs['imageantialias']['extension'] = 'ext_gd';
-$funcs['imageantialias']['version_init'] = '4.3.2';
-$funcs['imagearc']['extension'] = 'ext_gd';
-$funcs['imagearc']['version_init'] = '4.0.0';
-$funcs['imagechar']['extension'] = 'ext_gd';
-$funcs['imagechar']['version_init'] = '4.0.0';
-$funcs['imagecharup']['extension'] = 'ext_gd';
-$funcs['imagecharup']['version_init'] = '4.0.0';
-$funcs['imagecolorallocate']['extension'] = 'ext_gd';
-$funcs['imagecolorallocate']['version_init'] = '4.0.0';
-$funcs['imagecolorallocatealpha']['extension'] = 'ext_gd';
-$funcs['imagecolorallocatealpha']['version_init'] = '4.3.2';
-$funcs['imagecolorat']['extension'] = 'ext_gd';
-$funcs['imagecolorat']['version_init'] = '4.0.0';
-$funcs['imagecolorclosest']['extension'] = 'ext_gd';
-$funcs['imagecolorclosest']['version_init'] = '4.0.0';
-$funcs['imagecolorclosestalpha']['extension'] = 'ext_gd';
-$funcs['imagecolorclosestalpha']['version_init'] = '4.0.6';
-$funcs['imagecolorclosesthwb']['extension'] = 'ext_gd';
-$funcs['imagecolorclosesthwb']['version_init'] = '4.0.1';
-$funcs['imagecolordeallocate']['extension'] = 'ext_gd';
-$funcs['imagecolordeallocate']['version_init'] = '4.0.0';
-$funcs['imagecolorexact']['extension'] = 'ext_gd';
-$funcs['imagecolorexact']['version_init'] = '4.0.0';
-$funcs['imagecolorexactalpha']['extension'] = 'ext_gd';
-$funcs['imagecolorexactalpha']['version_init'] = '4.0.6';
-$funcs['imagecolormatch']['extension'] = 'ext_gd';
-$funcs['imagecolormatch']['version_init'] = '4.3.0';
-$funcs['imagecolorresolve']['extension'] = 'ext_gd';
-$funcs['imagecolorresolve']['version_init'] = '4.0.0';
-$funcs['imagecolorresolvealpha']['extension'] = 'ext_gd';
-$funcs['imagecolorresolvealpha']['version_init'] = '4.0.6';
-$funcs['imagecolorset']['extension'] = 'ext_gd';
-$funcs['imagecolorset']['version_init'] = '4.0.0';
-$funcs['imagecolorsforindex']['extension'] = 'ext_gd';
-$funcs['imagecolorsforindex']['version_init'] = '4.0.0';
-$funcs['imagecolorstotal']['extension'] = 'ext_gd';
-$funcs['imagecolorstotal']['version_init'] = '4.0.0';
-$funcs['imagecolortransparent']['extension'] = 'ext_gd';
-$funcs['imagecolortransparent']['version_init'] = '4.0.0';
-$funcs['imagecopy']['extension'] = 'ext_gd';
-$funcs['imagecopy']['version_init'] = '4.0.0';
-$funcs['imagecopymerge']['extension'] = 'ext_gd';
-$funcs['imagecopymerge']['version_init'] = '4.0.1';
-$funcs['imagecopymergegray']['extension'] = 'ext_gd';
-$funcs['imagecopymergegray']['version_init'] = '4.0.6';
-$funcs['imagecopyresampled']['extension'] = 'ext_gd';
-$funcs['imagecopyresampled']['version_init'] = '4.0.6';
-$funcs['imagecopyresized']['extension'] = 'ext_gd';
-$funcs['imagecopyresized']['version_init'] = '4.0.0';
-$funcs['imagecreate']['extension'] = 'ext_gd';
-$funcs['imagecreate']['version_init'] = '4.0.0';
-$funcs['imagecreatefromgd']['extension'] = 'ext_gd';
-$funcs['imagecreatefromgd']['version_init'] = '4.1.0';
-$funcs['imagecreatefromgd2']['extension'] = 'ext_gd';
-$funcs['imagecreatefromgd2']['version_init'] = '4.1.0';
-$funcs['imagecreatefromgd2part']['extension'] = 'ext_gd';
-$funcs['imagecreatefromgd2part']['version_init'] = '4.1.0';
-$funcs['imagecreatefromgif']['extension'] = 'ext_gd';
-$funcs['imagecreatefromgif']['version_init'] = '4.0.0';
-$funcs['imagecreatefromjpeg']['extension'] = 'ext_gd';
-$funcs['imagecreatefromjpeg']['version_init'] = '4.0.0';
-$funcs['imagecreatefrompng']['extension'] = 'ext_gd';
-$funcs['imagecreatefrompng']['version_init'] = '4.0.0';
-$funcs['imagecreatefromstring']['extension'] = 'ext_gd';
-$funcs['imagecreatefromstring']['version_init'] = '4.0.4';
-$funcs['imagecreatefromwbmp']['extension'] = 'ext_gd';
-$funcs['imagecreatefromwbmp']['version_init'] = '4.0.1';
-$funcs['imagecreatefromxbm']['extension'] = 'ext_gd';
-$funcs['imagecreatefromxbm']['version_init'] = '4.0.1';
-$funcs['imagecreatefromxpm']['extension'] = 'ext_gd';
-$funcs['imagecreatefromxpm']['version_init'] = '4.0.1';
-$funcs['imagecreatetruecolor']['extension'] = 'ext_gd';
-$funcs['imagecreatetruecolor']['version_init'] = '4.0.6';
-$funcs['imagedashedline']['extension'] = 'ext_gd';
-$funcs['imagedashedline']['version_init'] = '4.0.0';
-$funcs['imagedestroy']['extension'] = 'ext_gd';
-$funcs['imagedestroy']['version_init'] = '4.0.0';
-$funcs['imageellipse']['extension'] = 'ext_gd';
-$funcs['imageellipse']['version_init'] = '4.0.6';
-$funcs['imagefill']['extension'] = 'ext_gd';
-$funcs['imagefill']['version_init'] = '4.0.0';
-$funcs['imagefilledarc']['extension'] = 'ext_gd';
-$funcs['imagefilledarc']['version_init'] = '4.0.6';
-$funcs['imagefilledellipse']['extension'] = 'ext_gd';
-$funcs['imagefilledellipse']['version_init'] = '4.0.6';
-$funcs['imagefilledpolygon']['extension'] = 'ext_gd';
-$funcs['imagefilledpolygon']['version_init'] = '4.0.0';
-$funcs['imagefilledrectangle']['extension'] = 'ext_gd';
-$funcs['imagefilledrectangle']['version_init'] = '4.0.0';
-$funcs['imagefilltoborder']['extension'] = 'ext_gd';
-$funcs['imagefilltoborder']['version_init'] = '4.0.0';
-$funcs['imagefilter']['extension'] = 'ext_gd';
-$funcs['imagefilter']['version_init'] = '5.0.0';
-$funcs['imagefontheight']['extension'] = 'ext_gd';
-$funcs['imagefontheight']['version_init'] = '4.0.0';
-$funcs['imagefontwidth']['extension'] = 'ext_gd';
-$funcs['imagefontwidth']['version_init'] = '4.0.0';
-$funcs['imageftbbox']['extension'] = 'ext_gd';
-$funcs['imageftbbox']['version_init'] = '4.1.0';
-$funcs['imagefttext']['extension'] = 'ext_gd';
-$funcs['imagefttext']['version_init'] = '4.1.0';
-$funcs['imagegammacorrect']['extension'] = 'ext_gd';
-$funcs['imagegammacorrect']['version_init'] = '4.0.0';
-$funcs['imagegd']['extension'] = 'ext_gd';
-$funcs['imagegd']['version_init'] = '4.1.0';
-$funcs['imagegd2']['extension'] = 'ext_gd';
-$funcs['imagegd2']['version_init'] = '4.1.0';
-$funcs['imagegif']['extension'] = 'ext_gd';
-$funcs['imagegif']['version_init'] = '4.0.0';
-$funcs['imageinterlace']['extension'] = 'ext_gd';
-$funcs['imageinterlace']['version_init'] = '4.0.0';
-$funcs['imageistruecolor']['extension'] = 'ext_gd';
-$funcs['imageistruecolor']['version_init'] = '4.3.2';
-$funcs['imagejpeg']['extension'] = 'ext_gd';
-$funcs['imagejpeg']['version_init'] = '4.0.0';
-$funcs['imagelayereffect']['extension'] = 'ext_gd';
-$funcs['imagelayereffect']['version_init'] = '4.3.0';
-$funcs['imageline']['extension'] = 'ext_gd';
-$funcs['imageline']['version_init'] = '4.0.0';
-$funcs['imageloadfont']['extension'] = 'ext_gd';
-$funcs['imageloadfont']['version_init'] = '4.0.0';
-$funcs['imagepalettecopy']['extension'] = 'ext_gd';
-$funcs['imagepalettecopy']['version_init'] = '4.0.1';
-$funcs['imagepng']['extension'] = 'ext_gd';
-$funcs['imagepng']['version_init'] = '4.0.0';
-$funcs['imagepolygon']['extension'] = 'ext_gd';
-$funcs['imagepolygon']['version_init'] = '4.0.0';
-$funcs['imagepsbbox']['extension'] = 'ext_gd';
-$funcs['imagepsbbox']['version_init'] = '4.0.0';
-$funcs['imagepscopyfont']['extension'] = 'ext_gd';
-$funcs['imagepscopyfont']['version_init'] = '4.0.0';
-$funcs['imagepsencodefont']['extension'] = 'ext_gd';
-$funcs['imagepsencodefont']['version_init'] = '4.0.0';
-$funcs['imagepsextendfont']['extension'] = 'ext_gd';
-$funcs['imagepsextendfont']['version_init'] = '4.0.0';
-$funcs['imagepsfreefont']['extension'] = 'ext_gd';
-$funcs['imagepsfreefont']['version_init'] = '4.0.0';
-$funcs['imagepsloadfont']['extension'] = 'ext_gd';
-$funcs['imagepsloadfont']['version_init'] = '4.0.0';
-$funcs['imagepsslantfont']['extension'] = 'ext_gd';
-$funcs['imagepsslantfont']['version_init'] = '4.0.0';
-$funcs['imagepstext']['extension'] = 'ext_gd';
-$funcs['imagepstext']['version_init'] = '4.0.0';
-$funcs['imagerectangle']['extension'] = 'ext_gd';
-$funcs['imagerectangle']['version_init'] = '4.0.0';
-$funcs['imagerotate']['extension'] = 'ext_gd';
-$funcs['imagerotate']['version_init'] = '4.3.0';
-$funcs['imagesavealpha']['extension'] = 'ext_gd';
-$funcs['imagesavealpha']['version_init'] = '4.3.2';
-$funcs['imagesetbrush']['extension'] = 'ext_gd';
-$funcs['imagesetbrush']['version_init'] = '4.0.6';
-$funcs['imagesetpixel']['extension'] = 'ext_gd';
-$funcs['imagesetpixel']['version_init'] = '4.0.0';
-$funcs['imagesetstyle']['extension'] = 'ext_gd';
-$funcs['imagesetstyle']['version_init'] = '4.0.6';
-$funcs['imagesetthickness']['extension'] = 'ext_gd';
-$funcs['imagesetthickness']['version_init'] = '4.0.6';
-$funcs['imagesettile']['extension'] = 'ext_gd';
-$funcs['imagesettile']['version_init'] = '4.0.6';
-$funcs['imagestring']['extension'] = 'ext_gd';
-$funcs['imagestring']['version_init'] = '4.0.0';
-$funcs['imagestringup']['extension'] = 'ext_gd';
-$funcs['imagestringup']['version_init'] = '4.0.0';
-$funcs['imagesx']['extension'] = 'ext_gd';
-$funcs['imagesx']['version_init'] = '4.0.0';
-$funcs['imagesy']['extension'] = 'ext_gd';
-$funcs['imagesy']['version_init'] = '4.0.0';
-$funcs['imagetruecolortopalette']['extension'] = 'ext_gd';
-$funcs['imagetruecolortopalette']['version_init'] = '4.0.6';
-$funcs['imagettfbbox']['extension'] = 'ext_gd';
-$funcs['imagettfbbox']['version_init'] = '4.0.0';
-$funcs['imagettftext']['extension'] = 'ext_gd';
-$funcs['imagettftext']['version_init'] = '4.0.0';
-$funcs['imagetypes']['extension'] = 'ext_gd';
-$funcs['imagetypes']['version_init'] = '4.0.2';
-$funcs['imagewbmp']['extension'] = 'ext_gd';
-$funcs['imagewbmp']['version_init'] = '4.0.1';
-$funcs['imagexbm']['extension'] = 'ext_gd';
-$funcs['imagexbm']['version_init'] = '';
-$funcs['image_type_to_mime_type']['extension'] = 'ext_standard';
-$funcs['image_type_to_mime_type']['version_init'] = '4.3.0';
-$funcs['imap_8bit']['extension'] = 'ext_imap';
-$funcs['imap_8bit']['version_init'] = '4.0.0';
-$funcs['imap_alerts']['extension'] = 'ext_imap';
-$funcs['imap_alerts']['version_init'] = '4.0.0';
-$funcs['imap_append']['extension'] = 'ext_imap';
-$funcs['imap_append']['version_init'] = '4.0.0';
-$funcs['imap_base64']['extension'] = 'ext_imap';
-$funcs['imap_base64']['version_init'] = '4.0.0';
-$funcs['imap_binary']['extension'] = 'ext_imap';
-$funcs['imap_binary']['version_init'] = '4.0.0';
-$funcs['imap_body']['extension'] = 'ext_imap';
-$funcs['imap_body']['version_init'] = '4.0.0';
-$funcs['imap_bodystruct']['extension'] = 'ext_imap';
-$funcs['imap_bodystruct']['version_init'] = '4.0.0';
-$funcs['imap_check']['extension'] = 'ext_imap';
-$funcs['imap_check']['version_init'] = '4.0.0';
-$funcs['imap_clearflag_full']['extension'] = 'ext_imap';
-$funcs['imap_clearflag_full']['version_init'] = '4.0.0';
-$funcs['imap_close']['extension'] = 'ext_imap';
-$funcs['imap_close']['version_init'] = '4.0.0';
-$funcs['imap_create']['extension'] = 'ext_imap';
-$funcs['imap_create']['version_init'] = '4.0.0';
-$funcs['imap_createmailbox']['extension'] = 'ext_imap';
-$funcs['imap_createmailbox']['version_init'] = '4.0.0';
-$funcs['imap_delete']['extension'] = 'ext_imap';
-$funcs['imap_delete']['version_init'] = '4.0.0';
-$funcs['imap_deletemailbox']['extension'] = 'ext_imap';
-$funcs['imap_deletemailbox']['version_init'] = '4.0.0';
-$funcs['imap_errors']['extension'] = 'ext_imap';
-$funcs['imap_errors']['version_init'] = '4.0.0';
-$funcs['imap_expunge']['extension'] = 'ext_imap';
-$funcs['imap_expunge']['version_init'] = '4.0.0';
-$funcs['imap_fetchbody']['extension'] = 'ext_imap';
-$funcs['imap_fetchbody']['version_init'] = '4.0.0';
-$funcs['imap_fetchheader']['extension'] = 'ext_imap';
-$funcs['imap_fetchheader']['version_init'] = '4.0.0';
-$funcs['imap_fetchstructure']['extension'] = 'ext_imap';
-$funcs['imap_fetchstructure']['version_init'] = '4.0.0';
-$funcs['imap_fetchtext']['extension'] = 'ext_imap';
-$funcs['imap_fetchtext']['version_init'] = '4.0.0';
-$funcs['imap_fetch_overview']['extension'] = 'ext_imap';
-$funcs['imap_fetch_overview']['version_init'] = '4.0.0';
-$funcs['imap_getacl']['extension'] = 'ext_imap';
-$funcs['imap_getacl']['version_init'] = '5.0.0';
-$funcs['imap_getmailboxes']['extension'] = 'ext_imap';
-$funcs['imap_getmailboxes']['version_init'] = '4.0.0';
-$funcs['imap_getsubscribed']['extension'] = 'ext_imap';
-$funcs['imap_getsubscribed']['version_init'] = '4.0.0';
-$funcs['imap_get_quota']['extension'] = 'ext_imap';
-$funcs['imap_get_quota']['version_init'] = '4.0.5';
-$funcs['imap_get_quotaroot']['extension'] = 'ext_imap';
-$funcs['imap_get_quotaroot']['version_init'] = '4.3.0';
-$funcs['imap_header']['extension'] = 'ext_imap';
-$funcs['imap_header']['version_init'] = '4.0.0';
-$funcs['imap_headerinfo']['extension'] = 'ext_imap';
-$funcs['imap_headerinfo']['version_init'] = '4.0.0';
-$funcs['imap_headers']['extension'] = 'ext_imap';
-$funcs['imap_headers']['version_init'] = '4.0.0';
-$funcs['imap_last_error']['extension'] = 'ext_imap';
-$funcs['imap_last_error']['version_init'] = '4.0.0';
-$funcs['imap_list']['extension'] = 'ext_imap';
-$funcs['imap_list']['version_init'] = '4.0.0';
-$funcs['imap_listmailbox']['extension'] = 'ext_imap';
-$funcs['imap_listmailbox']['version_init'] = '4.0.0';
-$funcs['imap_listsubscribed']['extension'] = 'ext_imap';
-$funcs['imap_listsubscribed']['version_init'] = '4.0.0';
-$funcs['imap_lsub']['extension'] = 'ext_imap';
-$funcs['imap_lsub']['version_init'] = '4.0.0';
-$funcs['imap_mail']['extension'] = 'ext_imap';
-$funcs['imap_mail']['version_init'] = '4.0.0';
-$funcs['imap_mailboxmsginfo']['extension'] = 'ext_imap';
-$funcs['imap_mailboxmsginfo']['version_init'] = '4.0.0';
-$funcs['imap_mail_compose']['extension'] = 'ext_imap';
-$funcs['imap_mail_compose']['version_init'] = '4.0.0';
-$funcs['imap_mail_copy']['extension'] = 'ext_imap';
-$funcs['imap_mail_copy']['version_init'] = '4.0.0';
-$funcs['imap_mail_move']['extension'] = 'ext_imap';
-$funcs['imap_mail_move']['version_init'] = '4.0.0';
-$funcs['imap_mime_header_decode']['extension'] = 'ext_imap';
-$funcs['imap_mime_header_decode']['version_init'] = '4.0.0';
-$funcs['imap_msgno']['extension'] = 'ext_imap';
-$funcs['imap_msgno']['version_init'] = '4.0.0';
-$funcs['imap_num_msg']['extension'] = 'ext_imap';
-$funcs['imap_num_msg']['version_init'] = '4.0.0';
-$funcs['imap_num_recent']['extension'] = 'ext_imap';
-$funcs['imap_num_recent']['version_init'] = '4.0.0';
-$funcs['imap_open']['extension'] = 'ext_imap';
-$funcs['imap_open']['version_init'] = '4.0.0';
-$funcs['imap_ping']['extension'] = 'ext_imap';
-$funcs['imap_ping']['version_init'] = '4.0.0';
-$funcs['imap_popen']['extension'] = 'ext_imap';
-$funcs['imap_popen']['version_init'] = '4.0.0';
-$funcs['imap_qprint']['extension'] = 'ext_imap';
-$funcs['imap_qprint']['version_init'] = '4.0.0';
-$funcs['imap_rename']['extension'] = 'ext_imap';
-$funcs['imap_rename']['version_init'] = '4.0.0';
-$funcs['imap_renamemailbox']['extension'] = 'ext_imap';
-$funcs['imap_renamemailbox']['version_init'] = '4.0.0';
-$funcs['imap_reopen']['extension'] = 'ext_imap';
-$funcs['imap_reopen']['version_init'] = '4.0.0';
-$funcs['imap_rfc822_parse_adrlist']['extension'] = 'ext_imap';
-$funcs['imap_rfc822_parse_adrlist']['version_init'] = '4.0.0';
-$funcs['imap_rfc822_parse_headers']['extension'] = 'ext_imap';
-$funcs['imap_rfc822_parse_headers']['version_init'] = '4.0.0';
-$funcs['imap_rfc822_write_address']['extension'] = 'ext_imap';
-$funcs['imap_rfc822_write_address']['version_init'] = '4.0.0';
-$funcs['imap_scan']['extension'] = 'ext_imap';
-$funcs['imap_scan']['version_init'] = '4.0.0';
-$funcs['imap_scanmailbox']['extension'] = 'ext_imap';
-$funcs['imap_scanmailbox']['version_init'] = '4.0.0';
-$funcs['imap_search']['extension'] = 'ext_imap';
-$funcs['imap_search']['version_init'] = '4.0.0';
-$funcs['imap_setacl']['extension'] = 'ext_imap';
-$funcs['imap_setacl']['version_init'] = '4.1.0';
-$funcs['imap_setflag_full']['extension'] = 'ext_imap';
-$funcs['imap_setflag_full']['version_init'] = '4.0.0';
-$funcs['imap_set_quota']['extension'] = 'ext_imap';
-$funcs['imap_set_quota']['version_init'] = '4.0.5';
-$funcs['imap_sort']['extension'] = 'ext_imap';
-$funcs['imap_sort']['version_init'] = '4.0.0';
-$funcs['imap_status']['extension'] = 'ext_imap';
-$funcs['imap_status']['version_init'] = '4.0.0';
-$funcs['imap_subscribe']['extension'] = 'ext_imap';
-$funcs['imap_subscribe']['version_init'] = '4.0.0';
-$funcs['imap_thread']['extension'] = 'ext_imap';
-$funcs['imap_thread']['version_init'] = '4.1.0';
-$funcs['imap_timeout']['extension'] = 'ext_imap';
-$funcs['imap_timeout']['version_init'] = '4.3.3';
-$funcs['imap_uid']['extension'] = 'ext_imap';
-$funcs['imap_uid']['version_init'] = '4.0.0';
-$funcs['imap_undelete']['extension'] = 'ext_imap';
-$funcs['imap_undelete']['version_init'] = '4.0.0';
-$funcs['imap_unsubscribe']['extension'] = 'ext_imap';
-$funcs['imap_unsubscribe']['version_init'] = '4.0.0';
-$funcs['imap_utf7_decode']['extension'] = 'ext_imap';
-$funcs['imap_utf7_decode']['version_init'] = '4.0.0';
-$funcs['imap_utf7_encode']['extension'] = 'ext_imap';
-$funcs['imap_utf7_encode']['version_init'] = '4.0.0';
-$funcs['imap_utf8']['extension'] = 'ext_imap';
-$funcs['imap_utf8']['version_init'] = '4.0.0';
-$funcs['implode']['extension'] = 'ext_standard';
-$funcs['implode']['version_init'] = '4.0.0';
-$funcs['importchar']['extension'] = 'ext_ming';
-$funcs['importchar']['version_init'] = '';
-$funcs['importfont']['extension'] = 'ext_ming';
-$funcs['importfont']['version_init'] = '';
-$funcs['import_request_variables']['extension'] = 'ext_standard';
-$funcs['import_request_variables']['version_init'] = '4.1.0';
-$funcs['ingres_autocommit']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_autocommit']['version_init'] = '4.0.2';
-$funcs['ingres_close']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_close']['version_init'] = '4.0.2';
-$funcs['ingres_commit']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_commit']['version_init'] = '4.0.2';
-$funcs['ingres_connect']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_connect']['version_init'] = '4.0.2';
-$funcs['ingres_fetch_array']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_fetch_array']['version_init'] = '4.0.2';
-$funcs['ingres_fetch_object']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_fetch_object']['version_init'] = '4.0.2';
-$funcs['ingres_fetch_row']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_fetch_row']['version_init'] = '4.0.2';
-$funcs['ingres_field_length']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_field_length']['version_init'] = '4.0.2';
-$funcs['ingres_field_name']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_field_name']['version_init'] = '4.0.2';
-$funcs['ingres_field_nullable']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_field_nullable']['version_init'] = '4.0.2';
-$funcs['ingres_field_precision']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_field_precision']['version_init'] = '4.0.2';
-$funcs['ingres_field_scale']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_field_scale']['version_init'] = '4.0.2';
-$funcs['ingres_field_type']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_field_type']['version_init'] = '4.0.2';
-$funcs['ingres_num_fields']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_num_fields']['version_init'] = '4.0.2';
-$funcs['ingres_num_rows']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_num_rows']['version_init'] = '4.0.2';
-$funcs['ingres_pconnect']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_pconnect']['version_init'] = '4.0.2';
-$funcs['ingres_query']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_query']['version_init'] = '4.0.2';
-$funcs['ingres_rollback']['extension'] = 'ext_ingres_ii';
-$funcs['ingres_rollback']['version_init'] = '4.0.2';
-$funcs['ini_alter']['extension'] = 'ext_standard';
-$funcs['ini_alter']['version_init'] = '4.0.0';
-$funcs['ini_get']['extension'] = 'ext_standard';
-$funcs['ini_get']['version_init'] = '4.0.0';
-$funcs['ini_get_all']['extension'] = 'ext_standard';
-$funcs['ini_get_all']['version_init'] = '4.2.0';
-$funcs['ini_restore']['extension'] = 'ext_standard';
-$funcs['ini_restore']['version_init'] = '4.0.0';
-$funcs['ini_set']['extension'] = 'ext_standard';
-$funcs['ini_set']['version_init'] = '4.0.0';
-$funcs['intval']['extension'] = 'ext_standard';
-$funcs['intval']['version_init'] = '4.0.0';
-$funcs['in_array']['extension'] = 'ext_standard';
-$funcs['in_array']['version_init'] = '4.0.0';
-$funcs['ip2long']['extension'] = 'ext_standard';
-$funcs['ip2long']['version_init'] = '4.0.0';
-$funcs['iptcembed']['extension'] = 'ext_standard';
-$funcs['iptcembed']['version_init'] = '4.0.0';
-$funcs['iptcparse']['extension'] = 'ext_standard';
-$funcs['iptcparse']['version_init'] = '4.0.0';
-$funcs['ircg_channel_mode']['extension'] = 'ext_ircg';
-$funcs['ircg_channel_mode']['version_init'] = '4.0.5';
-$funcs['ircg_disconnect']['extension'] = 'ext_ircg';
-$funcs['ircg_disconnect']['version_init'] = '4.0.4';
-$funcs['ircg_eval_ecmascript_params']['extension'] = 'ext_ircg';
-$funcs['ircg_eval_ecmascript_params']['version_init'] = '4.3.0';
-$funcs['ircg_fetch_error_msg']['extension'] = 'ext_ircg';
-$funcs['ircg_fetch_error_msg']['version_init'] = '4.1.0';
-$funcs['ircg_get_username']['extension'] = 'ext_ircg';
-$funcs['ircg_get_username']['version_init'] = '4.1.0';
-$funcs['ircg_html_encode']['extension'] = 'ext_ircg';
-$funcs['ircg_html_encode']['version_init'] = '4.0.5';
-$funcs['ircg_ignore_add']['extension'] = 'ext_ircg';
-$funcs['ircg_ignore_add']['version_init'] = '4.0.5';
-$funcs['ircg_ignore_del']['extension'] = 'ext_ircg';
-$funcs['ircg_ignore_del']['version_init'] = '4.0.5';
-$funcs['ircg_invite']['extension'] = 'ext_ircg';
-$funcs['ircg_invite']['version_init'] = '4.3.3';
-$funcs['ircg_is_conn_alive']['extension'] = 'ext_ircg';
-$funcs['ircg_is_conn_alive']['version_init'] = '4.0.5';
-$funcs['ircg_join']['extension'] = 'ext_ircg';
-$funcs['ircg_join']['version_init'] = '4.0.4';
-$funcs['ircg_kick']['extension'] = 'ext_ircg';
-$funcs['ircg_kick']['version_init'] = '4.0.5';
-$funcs['ircg_list']['extension'] = 'ext_ircg';
-$funcs['ircg_list']['version_init'] = '4.3.3';
-$funcs['ircg_lookup_format_messages']['extension'] = 'ext_ircg';
-$funcs['ircg_lookup_format_messages']['version_init'] = '4.0.5';
-$funcs['ircg_lusers']['extension'] = 'ext_ircg';
-$funcs['ircg_lusers']['version_init'] = '4.3.3';
-$funcs['ircg_msg']['extension'] = 'ext_ircg';
-$funcs['ircg_msg']['version_init'] = '4.0.4';
-$funcs['ircg_names']['extension'] = 'ext_ircg';
-$funcs['ircg_names']['version_init'] = '4.3.3';
-$funcs['ircg_nick']['extension'] = 'ext_ircg';
-$funcs['ircg_nick']['version_init'] = '4.0.5';
-$funcs['ircg_nickname_escape']['extension'] = 'ext_ircg';
-$funcs['ircg_nickname_escape']['version_init'] = '4.0.6';
-$funcs['ircg_nickname_unescape']['extension'] = 'ext_ircg';
-$funcs['ircg_nickname_unescape']['version_init'] = '4.0.6';
-$funcs['ircg_notice']['extension'] = 'ext_ircg';
-$funcs['ircg_notice']['version_init'] = '4.0.5';
-$funcs['ircg_oper']['extension'] = 'ext_ircg';
-$funcs['ircg_oper']['version_init'] = '4.3.3';
-$funcs['ircg_part']['extension'] = 'ext_ircg';
-$funcs['ircg_part']['version_init'] = '4.0.4';
-$funcs['ircg_pconnect']['extension'] = 'ext_ircg';
-$funcs['ircg_pconnect']['version_init'] = '4.0.4';
-$funcs['ircg_register_format_messages']['extension'] = 'ext_ircg';
-$funcs['ircg_register_format_messages']['version_init'] = '4.0.5';
-$funcs['ircg_set_current']['extension'] = 'ext_ircg';
-$funcs['ircg_set_current']['version_init'] = '4.0.4';
-$funcs['ircg_set_file']['extension'] = 'ext_ircg';
-$funcs['ircg_set_file']['version_init'] = '4.2.0';
-$funcs['ircg_set_on_die']['extension'] = 'ext_ircg';
-$funcs['ircg_set_on_die']['version_init'] = '4.2.0';
-$funcs['ircg_set_on_read_data']['extension'] = 'ext_ircg';
-$funcs['ircg_set_on_read_data']['version_init'] = '5.0.0';
-$funcs['ircg_topic']['extension'] = 'ext_ircg';
-$funcs['ircg_topic']['version_init'] = '4.0.5';
-$funcs['ircg_who']['extension'] = 'ext_ircg';
-$funcs['ircg_who']['version_init'] = '4.3.3';
-$funcs['ircg_whois']['extension'] = 'ext_ircg';
-$funcs['ircg_whois']['version_init'] = '4.0.5';
-$funcs['is_a']['extension'] = 'zend';
-$funcs['is_a']['version_init'] = '4.2.0';
-$funcs['is_array']['extension'] = 'ext_standard';
-$funcs['is_array']['version_init'] = '4.0.0';
-$funcs['is_bool']['extension'] = 'ext_standard';
-$funcs['is_bool']['version_init'] = '4.0.0';
-$funcs['is_callable']['extension'] = 'ext_standard';
-$funcs['is_callable']['version_init'] = '4.0.6';
-$funcs['is_dir']['extension'] = 'ext_standard';
-$funcs['is_dir']['version_init'] = '4.0.0';
-$funcs['is_double']['extension'] = 'ext_standard';
-$funcs['is_double']['version_init'] = '4.0.0';
-$funcs['is_executable']['extension'] = 'ext_standard';
-$funcs['is_executable']['version_init'] = '4.0.0';
-$funcs['is_file']['extension'] = 'ext_standard';
-$funcs['is_file']['version_init'] = '4.0.0';
-$funcs['is_finite']['extension'] = 'ext_standard';
-$funcs['is_finite']['version_init'] = '4.2.0';
-$funcs['is_float']['extension'] = 'ext_standard';
-$funcs['is_float']['version_init'] = '4.0.0';
-$funcs['is_infinite']['extension'] = 'ext_standard';
-$funcs['is_infinite']['version_init'] = '4.2.0';
-$funcs['is_int']['extension'] = 'ext_standard';
-$funcs['is_int']['version_init'] = '4.0.0';
-$funcs['is_integer']['extension'] = 'ext_standard';
-$funcs['is_integer']['version_init'] = '4.0.0';
-$funcs['is_link']['extension'] = 'ext_standard';
-$funcs['is_link']['version_init'] = '4.0.0';
-$funcs['is_long']['extension'] = 'ext_standard';
-$funcs['is_long']['version_init'] = '4.0.0';
-$funcs['is_nan']['extension'] = 'ext_standard';
-$funcs['is_nan']['version_init'] = '4.2.0';
-$funcs['is_null']['extension'] = 'ext_standard';
-$funcs['is_null']['version_init'] = '4.0.4';
-$funcs['is_numeric']['extension'] = 'ext_standard';
-$funcs['is_numeric']['version_init'] = '4.0.0';
-$funcs['is_object']['extension'] = 'ext_standard';
-$funcs['is_object']['version_init'] = '4.0.0';
-$funcs['is_readable']['extension'] = 'ext_standard';
-$funcs['is_readable']['version_init'] = '4.0.0';
-$funcs['is_real']['extension'] = 'ext_standard';
-$funcs['is_real']['version_init'] = '4.0.0';
-$funcs['is_resource']['extension'] = 'ext_standard';
-$funcs['is_resource']['version_init'] = '4.0.0';
-$funcs['is_scalar']['extension'] = 'ext_standard';
-$funcs['is_scalar']['version_init'] = '4.0.5';
-$funcs['is_string']['extension'] = 'ext_standard';
-$funcs['is_string']['version_init'] = '4.0.0';
-$funcs['is_subclass_of']['extension'] = 'zend';
-$funcs['is_subclass_of']['version_init'] = '4.0.0';
-$funcs['is_uploaded_file']['extension'] = 'ext_standard';
-$funcs['is_uploaded_file']['version_init'] = '4.0.3';
-$funcs['is_writable']['extension'] = 'ext_standard';
-$funcs['is_writable']['version_init'] = '4.0.0';
-$funcs['is_writeable']['extension'] = 'ext_standard';
-$funcs['is_writeable']['version_init'] = '4.0.0';
-$funcs['java_last_exception_clear']['extension'] = 'ext_rpc';
-$funcs['java_last_exception_clear']['version_init'] = '4.0.2';
-$funcs['java_last_exception_get']['extension'] = 'ext_rpc';
-$funcs['java_last_exception_get']['version_init'] = '4.0.2';
-$funcs['jddayofweek']['extension'] = 'ext_calendar';
-$funcs['jddayofweek']['version_init'] = '4.0.0';
-$funcs['jdmonthname']['extension'] = 'ext_calendar';
-$funcs['jdmonthname']['version_init'] = '4.0.0';
-$funcs['jdtofrench']['extension'] = 'ext_calendar';
-$funcs['jdtofrench']['version_init'] = '4.0.0';
-$funcs['jdtogregorian']['extension'] = 'ext_calendar';
-$funcs['jdtogregorian']['version_init'] = '4.0.0';
-$funcs['jdtojewish']['extension'] = 'ext_calendar';
-$funcs['jdtojewish']['version_init'] = '4.0.0';
-$funcs['jdtojulian']['extension'] = 'ext_calendar';
-$funcs['jdtojulian']['version_init'] = '4.0.0';
-$funcs['jdtounix']['extension'] = 'ext_calendar';
-$funcs['jdtounix']['version_init'] = '4.0.0';
-$funcs['jewishtojd']['extension'] = 'ext_calendar';
-$funcs['jewishtojd']['version_init'] = '4.0.0';
-$funcs['join']['extension'] = 'ext_standard';
-$funcs['join']['version_init'] = '4.0.0';
-$funcs['jpeg2wbmp']['extension'] = 'ext_gd';
-$funcs['jpeg2wbmp']['version_init'] = '4.0.5';
-$funcs['juliantojd']['extension'] = 'ext_calendar';
-$funcs['juliantojd']['version_init'] = '4.0.0';
-$funcs['key']['extension'] = 'ext_standard';
-$funcs['key']['version_init'] = '4.0.0';
-$funcs['key_exists']['extension'] = 'ext_standard';
-$funcs['key_exists']['version_init'] = '4.0.6';
-$funcs['krsort']['extension'] = 'ext_standard';
-$funcs['krsort']['version_init'] = '4.0.0';
-$funcs['ksort']['extension'] = 'ext_standard';
-$funcs['ksort']['version_init'] = '4.0.0';
-$funcs['labelframe']['extension'] = 'ext_ming';
-$funcs['labelframe']['version_init'] = '4.0.5';
-$funcs['lcg_value']['extension'] = 'ext_standard';
-$funcs['lcg_value']['version_init'] = '4.0.0';
-$funcs['ldap_8859_to_t61']['extension'] = 'ext_ldap';
-$funcs['ldap_8859_to_t61']['version_init'] = '4.0.2';
-$funcs['ldap_add']['extension'] = 'ext_ldap';
-$funcs['ldap_add']['version_init'] = '4.0.0';
-$funcs['ldap_bind']['extension'] = 'ext_ldap';
-$funcs['ldap_bind']['version_init'] = '4.0.0';
-$funcs['ldap_close']['extension'] = 'ext_ldap';
-$funcs['ldap_close']['version_init'] = '4.0.0';
-$funcs['ldap_compare']['extension'] = 'ext_ldap';
-$funcs['ldap_compare']['version_init'] = '4.0.2';
-$funcs['ldap_connect']['extension'] = 'ext_ldap';
-$funcs['ldap_connect']['version_init'] = '4.0.0';
-$funcs['ldap_count_entries']['extension'] = 'ext_ldap';
-$funcs['ldap_count_entries']['version_init'] = '4.0.0';
-$funcs['ldap_delete']['extension'] = 'ext_ldap';
-$funcs['ldap_delete']['version_init'] = '4.0.0';
-$funcs['ldap_dn2ufn']['extension'] = 'ext_ldap';
-$funcs['ldap_dn2ufn']['version_init'] = '4.0.0';
-$funcs['ldap_err2str']['extension'] = 'ext_ldap';
-$funcs['ldap_err2str']['version_init'] = '4.0.0';
-$funcs['ldap_errno']['extension'] = 'ext_ldap';
-$funcs['ldap_errno']['version_init'] = '4.0.0';
-$funcs['ldap_error']['extension'] = 'ext_ldap';
-$funcs['ldap_error']['version_init'] = '4.0.0';
-$funcs['ldap_explode_dn']['extension'] = 'ext_ldap';
-$funcs['ldap_explode_dn']['version_init'] = '4.0.0';
-$funcs['ldap_first_attribute']['extension'] = 'ext_ldap';
-$funcs['ldap_first_attribute']['version_init'] = '4.0.0';
-$funcs['ldap_first_entry']['extension'] = 'ext_ldap';
-$funcs['ldap_first_entry']['version_init'] = '4.0.0';
-$funcs['ldap_first_reference']['extension'] = 'ext_ldap';
-$funcs['ldap_first_reference']['version_init'] = '4.0.5';
-$funcs['ldap_free_result']['extension'] = 'ext_ldap';
-$funcs['ldap_free_result']['version_init'] = '4.0.0';
-$funcs['ldap_get_attributes']['extension'] = 'ext_ldap';
-$funcs['ldap_get_attributes']['version_init'] = '4.0.0';
-$funcs['ldap_get_dn']['extension'] = 'ext_ldap';
-$funcs['ldap_get_dn']['version_init'] = '4.0.0';
-$funcs['ldap_get_entries']['extension'] = 'ext_ldap';
-$funcs['ldap_get_entries']['version_init'] = '4.0.0';
-$funcs['ldap_get_option']['extension'] = 'ext_ldap';
-$funcs['ldap_get_option']['version_init'] = '4.0.4';
-$funcs['ldap_get_values']['extension'] = 'ext_ldap';
-$funcs['ldap_get_values']['version_init'] = '4.0.0';
-$funcs['ldap_get_values_len']['extension'] = 'ext_ldap';
-$funcs['ldap_get_values_len']['version_init'] = '4.0.0';
-$funcs['ldap_list']['extension'] = 'ext_ldap';
-$funcs['ldap_list']['version_init'] = '4.0.0';
-$funcs['ldap_modify']['extension'] = 'ext_ldap';
-$funcs['ldap_modify']['version_init'] = '4.0.0';
-$funcs['ldap_mod_add']['extension'] = 'ext_ldap';
-$funcs['ldap_mod_add']['version_init'] = '4.0.0';
-$funcs['ldap_mod_del']['extension'] = 'ext_ldap';
-$funcs['ldap_mod_del']['version_init'] = '4.0.0';
-$funcs['ldap_mod_replace']['extension'] = 'ext_ldap';
-$funcs['ldap_mod_replace']['version_init'] = '4.0.0';
-$funcs['ldap_next_attribute']['extension'] = 'ext_ldap';
-$funcs['ldap_next_attribute']['version_init'] = '4.0.0';
-$funcs['ldap_next_entry']['extension'] = 'ext_ldap';
-$funcs['ldap_next_entry']['version_init'] = '4.0.0';
-$funcs['ldap_next_reference']['extension'] = 'ext_ldap';
-$funcs['ldap_next_reference']['version_init'] = '4.0.5';
-$funcs['ldap_parse_reference']['extension'] = 'ext_ldap';
-$funcs['ldap_parse_reference']['version_init'] = '4.0.5';
-$funcs['ldap_parse_result']['extension'] = 'ext_ldap';
-$funcs['ldap_parse_result']['version_init'] = '4.0.5';
-$funcs['ldap_read']['extension'] = 'ext_ldap';
-$funcs['ldap_read']['version_init'] = '4.0.0';
-$funcs['ldap_rename']['extension'] = 'ext_ldap';
-$funcs['ldap_rename']['version_init'] = '4.0.5';
-$funcs['ldap_sasl_bind']['extension'] = 'ext_ldap';
-$funcs['ldap_sasl_bind']['version_init'] = '';
-$funcs['ldap_search']['extension'] = 'ext_ldap';
-$funcs['ldap_search']['version_init'] = '4.0.0';
-$funcs['ldap_set_option']['extension'] = 'ext_ldap';
-$funcs['ldap_set_option']['version_init'] = '4.0.4';
-$funcs['ldap_set_rebind_proc']['extension'] = 'ext_ldap';
-$funcs['ldap_set_rebind_proc']['version_init'] = '4.2.0';
-$funcs['ldap_sort']['extension'] = 'ext_ldap';
-$funcs['ldap_sort']['version_init'] = '4.2.0';
-$funcs['ldap_start_tls']['extension'] = 'ext_ldap';
-$funcs['ldap_start_tls']['version_init'] = '4.2.0';
-$funcs['ldap_t61_to_8859']['extension'] = 'ext_ldap';
-$funcs['ldap_t61_to_8859']['version_init'] = '4.0.2';
-$funcs['ldap_unbind']['extension'] = 'ext_ldap';
-$funcs['ldap_unbind']['version_init'] = '4.0.0';
-$funcs['leak']['extension'] = 'zend';
-$funcs['leak']['version_init'] = '4.0.0';
-$funcs['levenshtein']['extension'] = 'ext_standard';
-$funcs['levenshtein']['version_init'] = '4.0.1';
-$funcs['libxml_set_streams_context']['extension'] = 'ext_libxml';
-$funcs['libxml_set_streams_context']['version_init'] = '';
-$funcs['link']['extension'] = 'ext_standard';
-$funcs['link']['version_init'] = '4.0.0';
-$funcs['linkinfo']['extension'] = 'ext_standard';
-$funcs['linkinfo']['version_init'] = '4.0.0';
-$funcs['listen']['extension'] = 'ext_sockets';
-$funcs['listen']['version_init'] = '4.0.2';
-$funcs['localeconv']['extension'] = 'ext_standard';
-$funcs['localeconv']['version_init'] = '4.0.5';
-$funcs['localtime']['extension'] = 'ext_standard';
-$funcs['localtime']['version_init'] = '4.0.0';
-$funcs['log']['extension'] = 'ext_standard';
-$funcs['log']['version_init'] = '4.0.0';
-$funcs['log10']['extension'] = 'ext_standard';
-$funcs['log10']['version_init'] = '4.0.0';
-$funcs['log1p']['extension'] = 'ext_standard';
-$funcs['log1p']['version_init'] = '4.1.0';
-$funcs['logas']['extension'] = 'dl_log';
-$funcs['logas']['version_init'] = '';
-$funcs['long2ip']['extension'] = 'ext_standard';
-$funcs['long2ip']['version_init'] = '4.0.0';
-$funcs['loopcount']['extension'] = 'ext_ming';
-$funcs['loopcount']['version_init'] = '';
-$funcs['loopinpoint']['extension'] = 'ext_ming';
-$funcs['loopinpoint']['version_init'] = '';
-$funcs['loopoutpoint']['extension'] = 'ext_ming';
-$funcs['loopoutpoint']['version_init'] = '';
-$funcs['lstat']['extension'] = 'ext_standard';
-$funcs['lstat']['version_init'] = '4.0.0';
-$funcs['ltrim']['extension'] = 'ext_standard';
-$funcs['ltrim']['version_init'] = '4.0.0';
-$funcs['magic_quotes_runtime']['extension'] = 'ext_standard';
-$funcs['magic_quotes_runtime']['version_init'] = '4.0.0';
-$funcs['mail']['extension'] = 'ext_standard';
-$funcs['mail']['version_init'] = '4.0.0';
-$funcs['mailparse_determine_best_xfer_encoding']['extension'] = 'ext_mailparse';
-$funcs['mailparse_determine_best_xfer_encoding']['version_init'] = '4.1.0';
-$funcs['mailparse_msg_create']['extension'] = 'ext_mailparse';
-$funcs['mailparse_msg_create']['version_init'] = '4.1.0';
-$funcs['mailparse_msg_extract_part']['extension'] = 'ext_mailparse';
-$funcs['mailparse_msg_extract_part']['version_init'] = '4.1.0';
-$funcs['mailparse_msg_extract_part_file']['extension'] = 'ext_mailparse';
-$funcs['mailparse_msg_extract_part_file']['version_init'] = '4.1.0';
-$funcs['mailparse_msg_free']['extension'] = 'ext_mailparse';
-$funcs['mailparse_msg_free']['version_init'] = '4.1.0';
-$funcs['mailparse_msg_get_part']['extension'] = 'ext_mailparse';
-$funcs['mailparse_msg_get_part']['version_init'] = '4.1.0';
-$funcs['mailparse_msg_get_part_data']['extension'] = 'ext_mailparse';
-$funcs['mailparse_msg_get_part_data']['version_init'] = '4.1.0';
-$funcs['mailparse_msg_get_structure']['extension'] = 'ext_mailparse';
-$funcs['mailparse_msg_get_structure']['version_init'] = '4.1.0';
-$funcs['mailparse_msg_parse']['extension'] = 'ext_mailparse';
-$funcs['mailparse_msg_parse']['version_init'] = '4.1.0';
-$funcs['mailparse_msg_parse_file']['extension'] = 'ext_mailparse';
-$funcs['mailparse_msg_parse_file']['version_init'] = '4.1.0';
-$funcs['mailparse_rfc822_parse_addresses']['extension'] = 'ext_mailparse';
-$funcs['mailparse_rfc822_parse_addresses']['version_init'] = '4.1.0';
-$funcs['mailparse_stream_encode']['extension'] = 'ext_mailparse';
-$funcs['mailparse_stream_encode']['version_init'] = '4.1.0';
-$funcs['max']['extension'] = 'ext_standard';
-$funcs['max']['version_init'] = '4.0.0';
-$funcs['mbereg']['extension'] = 'ext_mbstring';
-$funcs['mbereg']['version_init'] = '4.2.0';
-$funcs['mberegi']['extension'] = 'ext_mbstring';
-$funcs['mberegi']['version_init'] = '4.2.0';
-$funcs['mberegi_replace']['extension'] = 'ext_mbstring';
-$funcs['mberegi_replace']['version_init'] = '4.2.0';
-$funcs['mbereg_match']['extension'] = 'ext_mbstring';
-$funcs['mbereg_match']['version_init'] = '4.2.0';
-$funcs['mbereg_replace']['extension'] = 'ext_mbstring';
-$funcs['mbereg_replace']['version_init'] = '4.2.0';
-$funcs['mbereg_search']['extension'] = 'ext_mbstring';
-$funcs['mbereg_search']['version_init'] = '4.2.0';
-$funcs['mbereg_search_getpos']['extension'] = 'ext_mbstring';
-$funcs['mbereg_search_getpos']['version_init'] = '4.2.0';
-$funcs['mbereg_search_getregs']['extension'] = 'ext_mbstring';
-$funcs['mbereg_search_getregs']['version_init'] = '4.2.0';
-$funcs['mbereg_search_init']['extension'] = 'ext_mbstring';
-$funcs['mbereg_search_init']['version_init'] = '4.2.0';
-$funcs['mbereg_search_pos']['extension'] = 'ext_mbstring';
-$funcs['mbereg_search_pos']['version_init'] = '4.2.0';
-$funcs['mbereg_search_regs']['extension'] = 'ext_mbstring';
-$funcs['mbereg_search_regs']['version_init'] = '4.2.0';
-$funcs['mbereg_search_setpos']['extension'] = 'ext_mbstring';
-$funcs['mbereg_search_setpos']['version_init'] = '4.2.0';
-$funcs['mbregex_encoding']['extension'] = 'ext_mbstring';
-$funcs['mbregex_encoding']['version_init'] = '4.2.0';
-$funcs['mbsplit']['extension'] = 'ext_mbstring';
-$funcs['mbsplit']['version_init'] = '4.2.0';
-$funcs['mbstrcut']['extension'] = 'ext_mbstring';
-$funcs['mbstrcut']['version_init'] = '4.0.6';
-$funcs['mbstrlen']['extension'] = 'ext_mbstring';
-$funcs['mbstrlen']['version_init'] = '4.0.6';
-$funcs['mbstrpos']['extension'] = 'ext_mbstring';
-$funcs['mbstrpos']['version_init'] = '4.0.6';
-$funcs['mbstrrpos']['extension'] = 'ext_mbstring';
-$funcs['mbstrrpos']['version_init'] = '4.0.6';
-$funcs['mbsubstr']['extension'] = 'ext_mbstring';
-$funcs['mbsubstr']['version_init'] = '4.0.6';
-$funcs['mb_convert_case']['extension'] = 'ext_mbstring';
-$funcs['mb_convert_case']['version_init'] = '4.3.0';
-$funcs['mb_convert_encoding']['extension'] = 'ext_mbstring';
-$funcs['mb_convert_encoding']['version_init'] = '4.0.6';
-$funcs['mb_convert_kana']['extension'] = 'ext_mbstring';
-$funcs['mb_convert_kana']['version_init'] = '4.0.6';
-$funcs['mb_convert_variables']['extension'] = 'ext_mbstring';
-$funcs['mb_convert_variables']['version_init'] = '4.0.6';
-$funcs['mb_decode_mimeheader']['extension'] = 'ext_mbstring';
-$funcs['mb_decode_mimeheader']['version_init'] = '4.0.6';
-$funcs['mb_decode_numericentity']['extension'] = 'ext_mbstring';
-$funcs['mb_decode_numericentity']['version_init'] = '4.0.6';
-$funcs['mb_detect_encoding']['extension'] = 'ext_mbstring';
-$funcs['mb_detect_encoding']['version_init'] = '4.0.6';
-$funcs['mb_detect_order']['extension'] = 'ext_mbstring';
-$funcs['mb_detect_order']['version_init'] = '4.0.6';
-$funcs['mb_encode_mimeheader']['extension'] = 'ext_mbstring';
-$funcs['mb_encode_mimeheader']['version_init'] = '4.0.6';
-$funcs['mb_encode_numericentity']['extension'] = 'ext_mbstring';
-$funcs['mb_encode_numericentity']['version_init'] = '4.0.6';
-$funcs['mb_ereg']['extension'] = 'ext_mbstring';
-$funcs['mb_ereg']['version_init'] = '4.2.0';
-$funcs['mb_eregi']['extension'] = 'ext_mbstring';
-$funcs['mb_eregi']['version_init'] = '4.2.0';
-$funcs['mb_eregi_replace']['extension'] = 'ext_mbstring';
-$funcs['mb_eregi_replace']['version_init'] = '4.2.0';
-$funcs['mb_ereg_match']['extension'] = 'ext_mbstring';
-$funcs['mb_ereg_match']['version_init'] = '4.2.0';
-$funcs['mb_ereg_replace']['extension'] = 'ext_mbstring';
-$funcs['mb_ereg_replace']['version_init'] = '4.2.0';
-$funcs['mb_ereg_search']['extension'] = 'ext_mbstring';
-$funcs['mb_ereg_search']['version_init'] = '4.2.0';
-$funcs['mb_ereg_search_getpos']['extension'] = 'ext_mbstring';
-$funcs['mb_ereg_search_getpos']['version_init'] = '4.2.0';
-$funcs['mb_ereg_search_getregs']['extension'] = 'ext_mbstring';
-$funcs['mb_ereg_search_getregs']['version_init'] = '4.2.0';
-$funcs['mb_ereg_search_init']['extension'] = 'ext_mbstring';
-$funcs['mb_ereg_search_init']['version_init'] = '4.2.0';
-$funcs['mb_ereg_search_pos']['extension'] = 'ext_mbstring';
-$funcs['mb_ereg_search_pos']['version_init'] = '4.2.0';
-$funcs['mb_ereg_search_regs']['extension'] = 'ext_mbstring';
-$funcs['mb_ereg_search_regs']['version_init'] = '4.2.0';
-$funcs['mb_ereg_search_setpos']['extension'] = 'ext_mbstring';
-$funcs['mb_ereg_search_setpos']['version_init'] = '4.2.0';
-$funcs['mb_get_info']['extension'] = 'ext_mbstring';
-$funcs['mb_get_info']['version_init'] = '4.2.0';
-$funcs['mb_http_input']['extension'] = 'ext_mbstring';
-$funcs['mb_http_input']['version_init'] = '4.0.6';
-$funcs['mb_http_output']['extension'] = 'ext_mbstring';
-$funcs['mb_http_output']['version_init'] = '4.0.6';
-$funcs['mb_internal_encoding']['extension'] = 'ext_mbstring';
-$funcs['mb_internal_encoding']['version_init'] = '4.0.6';
-$funcs['mb_language']['extension'] = 'ext_mbstring';
-$funcs['mb_language']['version_init'] = '4.0.6';
-$funcs['mb_output_handler']['extension'] = 'ext_mbstring';
-$funcs['mb_output_handler']['version_init'] = '4.0.6';
-$funcs['mb_parse_str']['extension'] = 'ext_mbstring';
-$funcs['mb_parse_str']['version_init'] = '4.0.6';
-$funcs['mb_preferred_mime_name']['extension'] = 'ext_mbstring';
-$funcs['mb_preferred_mime_name']['version_init'] = '4.0.6';
-$funcs['mb_regex_encoding']['extension'] = 'ext_mbstring';
-$funcs['mb_regex_encoding']['version_init'] = '4.2.0';
-$funcs['mb_regex_set_options']['extension'] = 'ext_mbstring';
-$funcs['mb_regex_set_options']['version_init'] = '4.3.0';
-$funcs['mb_send_mail']['extension'] = 'ext_mbstring';
-$funcs['mb_send_mail']['version_init'] = '4.0.6';
-$funcs['mb_split']['extension'] = 'ext_mbstring';
-$funcs['mb_split']['version_init'] = '4.2.0';
-$funcs['mb_strcut']['extension'] = 'ext_mbstring';
-$funcs['mb_strcut']['version_init'] = '4.0.6';
-$funcs['mb_strimwidth']['extension'] = 'ext_mbstring';
-$funcs['mb_strimwidth']['version_init'] = '4.0.6';
-$funcs['mb_strlen']['extension'] = 'ext_mbstring';
-$funcs['mb_strlen']['version_init'] = '4.0.6';
-$funcs['mb_strpos']['extension'] = 'ext_mbstring';
-$funcs['mb_strpos']['version_init'] = '4.0.6';
-$funcs['mb_strrpos']['extension'] = 'ext_mbstring';
-$funcs['mb_strrpos']['version_init'] = '4.0.6';
-$funcs['mb_strtolower']['extension'] = 'ext_mbstring';
-$funcs['mb_strtolower']['version_init'] = '4.3.0';
-$funcs['mb_strtoupper']['extension'] = 'ext_mbstring';
-$funcs['mb_strtoupper']['version_init'] = '4.3.0';
-$funcs['mb_strwidth']['extension'] = 'ext_mbstring';
-$funcs['mb_strwidth']['version_init'] = '4.0.6';
-$funcs['mb_substitute_character']['extension'] = 'ext_mbstring';
-$funcs['mb_substitute_character']['version_init'] = '4.0.6';
-$funcs['mb_substr']['extension'] = 'ext_mbstring';
-$funcs['mb_substr']['version_init'] = '4.0.6';
-$funcs['mb_substr_count']['extension'] = 'ext_mbstring';
-$funcs['mb_substr_count']['version_init'] = '4.3.0';
-$funcs['mcal_append_event']['extension'] = 'ext_mcal';
-$funcs['mcal_append_event']['version_init'] = '4.0.0';
-$funcs['mcal_close']['extension'] = 'ext_mcal';
-$funcs['mcal_close']['version_init'] = '4.0.0';
-$funcs['mcal_create_calendar']['extension'] = 'ext_mcal';
-$funcs['mcal_create_calendar']['version_init'] = '4.0.0';
-$funcs['mcal_date_compare']['extension'] = 'ext_mcal';
-$funcs['mcal_date_compare']['version_init'] = '4.0.0';
-$funcs['mcal_date_valid']['extension'] = 'ext_mcal';
-$funcs['mcal_date_valid']['version_init'] = '4.0.0';
-$funcs['mcal_days_in_month']['extension'] = 'ext_mcal';
-$funcs['mcal_days_in_month']['version_init'] = '4.0.0';
-$funcs['mcal_day_of_week']['extension'] = 'ext_mcal';
-$funcs['mcal_day_of_week']['version_init'] = '4.0.0';
-$funcs['mcal_day_of_year']['extension'] = 'ext_mcal';
-$funcs['mcal_day_of_year']['version_init'] = '4.0.0';
-$funcs['mcal_delete_calendar']['extension'] = 'ext_mcal';
-$funcs['mcal_delete_calendar']['version_init'] = '4.0.0';
-$funcs['mcal_delete_event']['extension'] = 'ext_mcal';
-$funcs['mcal_delete_event']['version_init'] = '4.0.0';
-$funcs['mcal_event_add_attribute']['extension'] = 'ext_mcal';
-$funcs['mcal_event_add_attribute']['version_init'] = '4.0.0';
-$funcs['mcal_event_init']['extension'] = 'ext_mcal';
-$funcs['mcal_event_init']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_alarm']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_alarm']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_category']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_category']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_class']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_class']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_description']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_description']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_end']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_end']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_recur_daily']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_recur_daily']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_recur_monthly_mday']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_recur_monthly_mday']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_recur_monthly_wday']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_recur_monthly_wday']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_recur_none']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_recur_none']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_recur_weekly']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_recur_weekly']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_recur_yearly']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_recur_yearly']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_start']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_start']['version_init'] = '4.0.0';
-$funcs['mcal_event_set_title']['extension'] = 'ext_mcal';
-$funcs['mcal_event_set_title']['version_init'] = '4.0.0';
-$funcs['mcal_fetch_current_stream_event']['extension'] = 'ext_mcal';
-$funcs['mcal_fetch_current_stream_event']['version_init'] = '4.0.0';
-$funcs['mcal_fetch_event']['extension'] = 'ext_mcal';
-$funcs['mcal_fetch_event']['version_init'] = '4.0.0';
-$funcs['mcal_is_leap_year']['extension'] = 'ext_mcal';
-$funcs['mcal_is_leap_year']['version_init'] = '4.0.0';
-$funcs['mcal_list_alarms']['extension'] = 'ext_mcal';
-$funcs['mcal_list_alarms']['version_init'] = '4.0.0';
-$funcs['mcal_list_events']['extension'] = 'ext_mcal';
-$funcs['mcal_list_events']['version_init'] = '4.0.0';
-$funcs['mcal_next_recurrence']['extension'] = 'ext_mcal';
-$funcs['mcal_next_recurrence']['version_init'] = '4.0.0';
-$funcs['mcal_open']['extension'] = 'ext_mcal';
-$funcs['mcal_open']['version_init'] = '4.0.0';
-$funcs['mcal_popen']['extension'] = 'ext_mcal';
-$funcs['mcal_popen']['version_init'] = '4.0.0';
-$funcs['mcal_rename_calendar']['extension'] = 'ext_mcal';
-$funcs['mcal_rename_calendar']['version_init'] = '4.0.0';
-$funcs['mcal_reopen']['extension'] = 'ext_mcal';
-$funcs['mcal_reopen']['version_init'] = '4.0.0';
-$funcs['mcal_snooze']['extension'] = 'ext_mcal';
-$funcs['mcal_snooze']['version_init'] = '4.0.0';
-$funcs['mcal_store_event']['extension'] = 'ext_mcal';
-$funcs['mcal_store_event']['version_init'] = '4.0.0';
-$funcs['mcal_time_valid']['extension'] = 'ext_mcal';
-$funcs['mcal_time_valid']['version_init'] = '4.0.0';
-$funcs['mcal_week_of_year']['extension'] = 'ext_mcal';
-$funcs['mcal_week_of_year']['version_init'] = '4.0.0';
-$funcs['mcrypt_cbc']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_cbc']['version_init'] = '4.0.0';
-$funcs['mcrypt_cfb']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_cfb']['version_init'] = '4.0.0';
-$funcs['mcrypt_create_iv']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_create_iv']['version_init'] = '4.0.0';
-$funcs['mcrypt_decrypt']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_decrypt']['version_init'] = '4.0.2';
-$funcs['mcrypt_ecb']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_ecb']['version_init'] = '4.0.0';
-$funcs['mcrypt_encrypt']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_encrypt']['version_init'] = '4.0.2';
-$funcs['mcrypt_enc_get_algorithms_name']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_enc_get_algorithms_name']['version_init'] = '4.0.2';
-$funcs['mcrypt_enc_get_block_size']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_enc_get_block_size']['version_init'] = '4.0.2';
-$funcs['mcrypt_enc_get_iv_size']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_enc_get_iv_size']['version_init'] = '4.0.2';
-$funcs['mcrypt_enc_get_key_size']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_enc_get_key_size']['version_init'] = '4.0.2';
-$funcs['mcrypt_enc_get_modes_name']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_enc_get_modes_name']['version_init'] = '4.0.2';
-$funcs['mcrypt_enc_get_supported_key_sizes']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_enc_get_supported_key_sizes']['version_init'] = '4.0.2';
-$funcs['mcrypt_enc_is_block_algorithm']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_enc_is_block_algorithm']['version_init'] = '4.0.2';
-$funcs['mcrypt_enc_is_block_algorithm_mode']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_enc_is_block_algorithm_mode']['version_init'] = '4.0.2';
-$funcs['mcrypt_enc_is_block_mode']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_enc_is_block_mode']['version_init'] = '4.0.2';
-$funcs['mcrypt_enc_self_test']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_enc_self_test']['version_init'] = '4.0.2';
-$funcs['mcrypt_generic']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_generic']['version_init'] = '4.0.2';
-$funcs['mcrypt_generic_deinit']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_generic_deinit']['version_init'] = '4.1.1';
-$funcs['mcrypt_generic_end']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_generic_end']['version_init'] = '4.0.2';
-$funcs['mcrypt_generic_init']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_generic_init']['version_init'] = '4.0.2';
-$funcs['mcrypt_get_block_size']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_get_block_size']['version_init'] = '4.0.0';
-$funcs['mcrypt_get_cipher_name']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_get_cipher_name']['version_init'] = '4.0.0';
-$funcs['mcrypt_get_iv_size']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_get_iv_size']['version_init'] = '4.0.2';
-$funcs['mcrypt_get_key_size']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_get_key_size']['version_init'] = '4.0.0';
-$funcs['mcrypt_list_algorithms']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_list_algorithms']['version_init'] = '4.0.2';
-$funcs['mcrypt_list_modes']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_list_modes']['version_init'] = '4.0.2';
-$funcs['mcrypt_module_close']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_module_close']['version_init'] = '4.0.2';
-$funcs['mcrypt_module_get_algo_block_size']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_module_get_algo_block_size']['version_init'] = '4.0.2';
-$funcs['mcrypt_module_get_algo_key_size']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_module_get_algo_key_size']['version_init'] = '4.0.2';
-$funcs['mcrypt_module_get_supported_key_sizes']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_module_get_supported_key_sizes']['version_init'] = '4.0.2';
-$funcs['mcrypt_module_is_block_algorithm']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_module_is_block_algorithm']['version_init'] = '4.0.2';
-$funcs['mcrypt_module_is_block_algorithm_mode']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_module_is_block_algorithm_mode']['version_init'] = '4.0.2';
-$funcs['mcrypt_module_is_block_mode']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_module_is_block_mode']['version_init'] = '4.0.2';
-$funcs['mcrypt_module_open']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_module_open']['version_init'] = '4.0.2';
-$funcs['mcrypt_module_self_test']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_module_self_test']['version_init'] = '4.0.2';
-$funcs['mcrypt_ofb']['extension'] = 'ext_mcrypt';
-$funcs['mcrypt_ofb']['version_init'] = '4.0.0';
-$funcs['mcve_adduser']['extension'] = 'ext_mcve';
-$funcs['mcve_adduser']['version_init'] = '4.2.0';
-$funcs['mcve_adduserarg']['extension'] = 'ext_mcve';
-$funcs['mcve_adduserarg']['version_init'] = '4.2.0';
-$funcs['mcve_bt']['extension'] = 'ext_mcve';
-$funcs['mcve_bt']['version_init'] = '4.2.0';
-$funcs['mcve_checkstatus']['extension'] = 'ext_mcve';
-$funcs['mcve_checkstatus']['version_init'] = '4.2.0';
-$funcs['mcve_chkpwd']['extension'] = 'ext_mcve';
-$funcs['mcve_chkpwd']['version_init'] = '4.2.0';
-$funcs['mcve_chngpwd']['extension'] = 'ext_mcve';
-$funcs['mcve_chngpwd']['version_init'] = '4.2.0';
-$funcs['mcve_completeauthorizations']['extension'] = 'ext_mcve';
-$funcs['mcve_completeauthorizations']['version_init'] = '4.2.0';
-$funcs['mcve_connect']['extension'] = 'ext_mcve';
-$funcs['mcve_connect']['version_init'] = '4.2.0';
-$funcs['mcve_connectionerror']['extension'] = 'ext_mcve';
-$funcs['mcve_connectionerror']['version_init'] = '4.3.0';
-$funcs['mcve_deleteresponse']['extension'] = 'ext_mcve';
-$funcs['mcve_deleteresponse']['version_init'] = '4.2.0';
-$funcs['mcve_deletetrans']['extension'] = 'ext_mcve';
-$funcs['mcve_deletetrans']['version_init'] = '4.3.0';
-$funcs['mcve_deleteusersetup']['extension'] = 'ext_mcve';
-$funcs['mcve_deleteusersetup']['version_init'] = '4.2.0';
-$funcs['mcve_deluser']['extension'] = 'ext_mcve';
-$funcs['mcve_deluser']['version_init'] = '4.2.0';
-$funcs['mcve_destroyconn']['extension'] = 'ext_mcve';
-$funcs['mcve_destroyconn']['version_init'] = '4.2.0';
-$funcs['mcve_destroyengine']['extension'] = 'ext_mcve';
-$funcs['mcve_destroyengine']['version_init'] = '4.2.0';
-$funcs['mcve_disableuser']['extension'] = 'ext_mcve';
-$funcs['mcve_disableuser']['version_init'] = '4.2.0';
-$funcs['mcve_edituser']['extension'] = 'ext_mcve';
-$funcs['mcve_edituser']['version_init'] = '4.2.0';
-$funcs['mcve_enableuser']['extension'] = 'ext_mcve';
-$funcs['mcve_enableuser']['version_init'] = '4.2.0';
-$funcs['mcve_force']['extension'] = 'ext_mcve';
-$funcs['mcve_force']['version_init'] = '4.2.0';
-$funcs['mcve_getcell']['extension'] = 'ext_mcve';
-$funcs['mcve_getcell']['version_init'] = '4.2.0';
-$funcs['mcve_getcellbynum']['extension'] = 'ext_mcve';
-$funcs['mcve_getcellbynum']['version_init'] = '4.2.0';
-$funcs['mcve_getcommadelimited']['extension'] = 'ext_mcve';
-$funcs['mcve_getcommadelimited']['version_init'] = '4.2.0';
-$funcs['mcve_getheader']['extension'] = 'ext_mcve';
-$funcs['mcve_getheader']['version_init'] = '4.2.0';
-$funcs['mcve_getuserarg']['extension'] = 'ext_mcve';
-$funcs['mcve_getuserarg']['version_init'] = '4.2.0';
-$funcs['mcve_getuserparam']['extension'] = 'ext_mcve';
-$funcs['mcve_getuserparam']['version_init'] = '4.3.0';
-$funcs['mcve_gft']['extension'] = 'ext_mcve';
-$funcs['mcve_gft']['version_init'] = '4.2.0';
-$funcs['mcve_gl']['extension'] = 'ext_mcve';
-$funcs['mcve_gl']['version_init'] = '4.2.0';
-$funcs['mcve_gut']['extension'] = 'ext_mcve';
-$funcs['mcve_gut']['version_init'] = '4.2.0';
-$funcs['mcve_initconn']['extension'] = 'ext_mcve';
-$funcs['mcve_initconn']['version_init'] = '4.2.0';
-$funcs['mcve_initengine']['extension'] = 'ext_mcve';
-$funcs['mcve_initengine']['version_init'] = '4.2.0';
-$funcs['mcve_initusersetup']['extension'] = 'ext_mcve';
-$funcs['mcve_initusersetup']['version_init'] = '4.2.0';
-$funcs['mcve_iscommadelimited']['extension'] = 'ext_mcve';
-$funcs['mcve_iscommadelimited']['version_init'] = '4.2.0';
-$funcs['mcve_liststats']['extension'] = 'ext_mcve';
-$funcs['mcve_liststats']['version_init'] = '4.2.0';
-$funcs['mcve_listusers']['extension'] = 'ext_mcve';
-$funcs['mcve_listusers']['version_init'] = '4.2.0';
-$funcs['mcve_maxconntimeout']['extension'] = 'ext_mcve';
-$funcs['mcve_maxconntimeout']['version_init'] = '4.3.0';
-$funcs['mcve_monitor']['extension'] = 'ext_mcve';
-$funcs['mcve_monitor']['version_init'] = '4.2.0';
-$funcs['mcve_numcolumns']['extension'] = 'ext_mcve';
-$funcs['mcve_numcolumns']['version_init'] = '4.2.0';
-$funcs['mcve_numrows']['extension'] = 'ext_mcve';
-$funcs['mcve_numrows']['version_init'] = '4.2.0';
-$funcs['mcve_override']['extension'] = 'ext_mcve';
-$funcs['mcve_override']['version_init'] = '4.2.0';
-$funcs['mcve_parsecommadelimited']['extension'] = 'ext_mcve';
-$funcs['mcve_parsecommadelimited']['version_init'] = '4.2.0';
-$funcs['mcve_ping']['extension'] = 'ext_mcve';
-$funcs['mcve_ping']['version_init'] = '4.3.0';
-$funcs['mcve_preauth']['extension'] = 'ext_mcve';
-$funcs['mcve_preauth']['version_init'] = '4.2.0';
-$funcs['mcve_preauthcompletion']['extension'] = 'ext_mcve';
-$funcs['mcve_preauthcompletion']['version_init'] = '4.2.0';
-$funcs['mcve_qc']['extension'] = 'ext_mcve';
-$funcs['mcve_qc']['version_init'] = '4.2.0';
-$funcs['mcve_responseparam']['extension'] = 'ext_mcve';
-$funcs['mcve_responseparam']['version_init'] = '4.3.0';
-$funcs['mcve_return']['extension'] = 'ext_mcve';
-$funcs['mcve_return']['version_init'] = '4.2.0';
-$funcs['mcve_returncode']['extension'] = 'ext_mcve';
-$funcs['mcve_returncode']['version_init'] = '4.2.0';
-$funcs['mcve_returnstatus']['extension'] = 'ext_mcve';
-$funcs['mcve_returnstatus']['version_init'] = '4.2.0';
-$funcs['mcve_sale']['extension'] = 'ext_mcve';
-$funcs['mcve_sale']['version_init'] = '4.2.0';
-$funcs['mcve_setblocking']['extension'] = 'ext_mcve';
-$funcs['mcve_setblocking']['version_init'] = '4.3.0';
-$funcs['mcve_setdropfile']['extension'] = 'ext_mcve';
-$funcs['mcve_setdropfile']['version_init'] = '4.2.0';
-$funcs['mcve_setip']['extension'] = 'ext_mcve';
-$funcs['mcve_setip']['version_init'] = '4.2.0';
-$funcs['mcve_setssl']['extension'] = 'ext_mcve';
-$funcs['mcve_setssl']['version_init'] = '4.2.0';
-$funcs['mcve_setssl_files']['extension'] = 'ext_mcve';
-$funcs['mcve_setssl_files']['version_init'] = '4.3.3';
-$funcs['mcve_settimeout']['extension'] = 'ext_mcve';
-$funcs['mcve_settimeout']['version_init'] = '4.2.0';
-$funcs['mcve_settle']['extension'] = 'ext_mcve';
-$funcs['mcve_settle']['version_init'] = '4.2.0';
-$funcs['mcve_text_avs']['extension'] = 'ext_mcve';
-$funcs['mcve_text_avs']['version_init'] = '4.3.0';
-$funcs['mcve_text_code']['extension'] = 'ext_mcve';
-$funcs['mcve_text_code']['version_init'] = '4.3.0';
-$funcs['mcve_text_cv']['extension'] = 'ext_mcve';
-$funcs['mcve_text_cv']['version_init'] = '4.3.0';
-$funcs['mcve_transactionauth']['extension'] = 'ext_mcve';
-$funcs['mcve_transactionauth']['version_init'] = '4.2.0';
-$funcs['mcve_transactionavs']['extension'] = 'ext_mcve';
-$funcs['mcve_transactionavs']['version_init'] = '4.2.0';
-$funcs['mcve_transactionbatch']['extension'] = 'ext_mcve';
-$funcs['mcve_transactionbatch']['version_init'] = '4.2.0';
-$funcs['mcve_transactioncv']['extension'] = 'ext_mcve';
-$funcs['mcve_transactioncv']['version_init'] = '4.2.0';
-$funcs['mcve_transactionid']['extension'] = 'ext_mcve';
-$funcs['mcve_transactionid']['version_init'] = '4.2.0';
-$funcs['mcve_transactionitem']['extension'] = 'ext_mcve';
-$funcs['mcve_transactionitem']['version_init'] = '4.2.0';
-$funcs['mcve_transactionssent']['extension'] = 'ext_mcve';
-$funcs['mcve_transactionssent']['version_init'] = '4.2.0';
-$funcs['mcve_transactiontext']['extension'] = 'ext_mcve';
-$funcs['mcve_transactiontext']['version_init'] = '4.2.0';
-$funcs['mcve_transinqueue']['extension'] = 'ext_mcve';
-$funcs['mcve_transinqueue']['version_init'] = '4.2.0';
-$funcs['mcve_transnew']['extension'] = 'ext_mcve';
-$funcs['mcve_transnew']['version_init'] = '4.3.0';
-$funcs['mcve_transparam']['extension'] = 'ext_mcve';
-$funcs['mcve_transparam']['version_init'] = '4.3.0';
-$funcs['mcve_transsend']['extension'] = 'ext_mcve';
-$funcs['mcve_transsend']['version_init'] = '4.3.0';
-$funcs['mcve_ub']['extension'] = 'ext_mcve';
-$funcs['mcve_ub']['version_init'] = '4.2.0';
-$funcs['mcve_uwait']['extension'] = 'ext_mcve';
-$funcs['mcve_uwait']['version_init'] = '4.3.0';
-$funcs['mcve_verifyconnection']['extension'] = 'ext_mcve';
-$funcs['mcve_verifyconnection']['version_init'] = '4.3.0';
-$funcs['mcve_verifysslcert']['extension'] = 'ext_mcve';
-$funcs['mcve_verifysslcert']['version_init'] = '4.3.0';
-$funcs['mcve_void']['extension'] = 'ext_mcve';
-$funcs['mcve_void']['version_init'] = '4.2.0';
-$funcs['md5']['extension'] = 'ext_standard';
-$funcs['md5']['version_init'] = '4.0.0';
-$funcs['md5_file']['extension'] = 'ext_standard';
-$funcs['md5_file']['version_init'] = '4.2.0';
-$funcs['mdecrypt_generic']['extension'] = 'ext_mcrypt';
-$funcs['mdecrypt_generic']['version_init'] = '4.0.2';
-$funcs['memory_get_usage']['extension'] = 'ext_standard';
-$funcs['memory_get_usage']['version_init'] = '4.3.2';
-$funcs['metaphone']['extension'] = 'ext_standard';
-$funcs['metaphone']['version_init'] = '4.0.0';
-$funcs['method_exists']['extension'] = 'zend';
-$funcs['method_exists']['version_init'] = '4.0.0';
-$funcs['mhash']['extension'] = 'ext_mhash';
-$funcs['mhash']['version_init'] = '4.0.0';
-$funcs['mhash_count']['extension'] = 'ext_mhash';
-$funcs['mhash_count']['version_init'] = '4.0.0';
-$funcs['mhash_get_block_size']['extension'] = 'ext_mhash';
-$funcs['mhash_get_block_size']['version_init'] = '4.0.0';
-$funcs['mhash_get_hash_name']['extension'] = 'ext_mhash';
-$funcs['mhash_get_hash_name']['version_init'] = '4.0.0';
-$funcs['mhash_keygen_s2k']['extension'] = 'ext_mhash';
-$funcs['mhash_keygen_s2k']['version_init'] = '4.0.4';
-$funcs['microtime']['extension'] = 'ext_standard';
-$funcs['microtime']['version_init'] = '4.0.0';
-$funcs['mime_content_type']['extension'] = 'ext_mime_magic';
-$funcs['mime_content_type']['version_init'] = '4.3.0';
-$funcs['min']['extension'] = 'ext_standard';
-$funcs['min']['version_init'] = '4.0.0';
-$funcs['ming_setcubicthreshold']['extension'] = 'ext_ming';
-$funcs['ming_setcubicthreshold']['version_init'] = '4.0.5';
-$funcs['ming_setscale']['extension'] = 'ext_ming';
-$funcs['ming_setscale']['version_init'] = '4.0.5';
-$funcs['ming_useconstants']['extension'] = 'ext_ming';
-$funcs['ming_useconstants']['version_init'] = '';
-$funcs['ming_useswfversion']['extension'] = 'ext_ming';
-$funcs['ming_useswfversion']['version_init'] = '4.2.0';
-$funcs['mkdir']['extension'] = 'ext_standard';
-$funcs['mkdir']['version_init'] = '4.0.0';
-$funcs['mktime']['extension'] = 'ext_standard';
-$funcs['mktime']['version_init'] = '4.0.0';
-$funcs['money_format']['extension'] = 'ext_standard';
-$funcs['money_format']['version_init'] = '4.3.0';
-$funcs['mono_method_call']['extension'] = 'ext_mono';
-$funcs['mono_method_call']['version_init'] = '';
-$funcs['mono_method_find']['extension'] = 'ext_mono';
-$funcs['mono_method_find']['version_init'] = '';
-$funcs['move']['extension'] = 'ext_ming';
-$funcs['move']['version_init'] = '4.0.5';
-$funcs['movepen']['extension'] = 'ext_ming';
-$funcs['movepen']['version_init'] = '4.0.5';
-$funcs['movepento']['extension'] = 'ext_ming';
-$funcs['movepento']['version_init'] = '4.0.5';
-$funcs['moveto']['extension'] = 'ext_ming';
-$funcs['moveto']['version_init'] = '4.0.5';
-$funcs['move_uploaded_file']['extension'] = 'ext_standard';
-$funcs['move_uploaded_file']['version_init'] = '4.0.3';
-$funcs['msession_call']['extension'] = 'ext_msession';
-$funcs['msession_call']['version_init'] = '4.2.0';
-$funcs['msession_connect']['extension'] = 'ext_msession';
-$funcs['msession_connect']['version_init'] = '4.2.0';
-$funcs['msession_count']['extension'] = 'ext_msession';
-$funcs['msession_count']['version_init'] = '4.2.0';
-$funcs['msession_create']['extension'] = 'ext_msession';
-$funcs['msession_create']['version_init'] = '4.2.0';
-$funcs['msession_ctl']['extension'] = 'ext_msession';
-$funcs['msession_ctl']['version_init'] = '4.3.0';
-$funcs['msession_destroy']['extension'] = 'ext_msession';
-$funcs['msession_destroy']['version_init'] = '4.2.0';
-$funcs['msession_disconnect']['extension'] = 'ext_msession';
-$funcs['msession_disconnect']['version_init'] = '4.2.0';
-$funcs['msession_exec']['extension'] = 'ext_msession';
-$funcs['msession_exec']['version_init'] = '5.0.0';
-$funcs['msession_find']['extension'] = 'ext_msession';
-$funcs['msession_find']['version_init'] = '4.2.0';
-$funcs['msession_get']['extension'] = 'ext_msession';
-$funcs['msession_get']['version_init'] = '4.2.0';
-$funcs['msession_get_array']['extension'] = 'ext_msession';
-$funcs['msession_get_array']['version_init'] = '4.2.0';
-$funcs['msession_get_data']['extension'] = 'ext_msession';
-$funcs['msession_get_data']['version_init'] = '4.2.0';
-$funcs['msession_inc']['extension'] = 'ext_msession';
-$funcs['msession_inc']['version_init'] = '4.2.0';
-$funcs['msession_list']['extension'] = 'ext_msession';
-$funcs['msession_list']['version_init'] = '4.2.0';
-$funcs['msession_listvar']['extension'] = 'ext_msession';
-$funcs['msession_listvar']['version_init'] = '4.2.0';
-$funcs['msession_lock']['extension'] = 'ext_msession';
-$funcs['msession_lock']['version_init'] = '4.2.0';
-$funcs['msession_ping']['extension'] = 'ext_msession';
-$funcs['msession_ping']['version_init'] = '5.0.0';
-$funcs['msession_plugin']['extension'] = 'ext_msession';
-$funcs['msession_plugin']['version_init'] = '4.2.0';
-$funcs['msession_randstr']['extension'] = 'ext_msession';
-$funcs['msession_randstr']['version_init'] = '4.2.0';
-$funcs['msession_set']['extension'] = 'ext_msession';
-$funcs['msession_set']['version_init'] = '4.2.0';
-$funcs['msession_set_array']['extension'] = 'ext_msession';
-$funcs['msession_set_array']['version_init'] = '4.2.0';
-$funcs['msession_set_data']['extension'] = 'ext_msession';
-$funcs['msession_set_data']['version_init'] = '4.2.0';
-$funcs['msession_timeout']['extension'] = 'ext_msession';
-$funcs['msession_timeout']['version_init'] = '4.2.0';
-$funcs['msession_uniq']['extension'] = 'ext_msession';
-$funcs['msession_uniq']['version_init'] = '4.2.0';
-$funcs['msession_unlock']['extension'] = 'ext_msession';
-$funcs['msession_unlock']['version_init'] = '4.2.0';
-$funcs['msg_get_queue']['extension'] = 'ext_sysvmsg';
-$funcs['msg_get_queue']['version_init'] = '4.3.0';
-$funcs['msg_receive']['extension'] = 'ext_sysvmsg';
-$funcs['msg_receive']['version_init'] = '4.3.0';
-$funcs['msg_remove_queue']['extension'] = 'ext_sysvmsg';
-$funcs['msg_remove_queue']['version_init'] = '4.3.0';
-$funcs['msg_send']['extension'] = 'ext_sysvmsg';
-$funcs['msg_send']['version_init'] = '4.3.0';
-$funcs['msg_set_queue']['extension'] = 'ext_sysvmsg';
-$funcs['msg_set_queue']['version_init'] = '4.3.0';
-$funcs['msg_stat_queue']['extension'] = 'ext_sysvmsg';
-$funcs['msg_stat_queue']['version_init'] = '4.3.0';
-$funcs['msql']['extension'] = 'ext_msql';
-$funcs['msql']['version_init'] = '4.0.0';
-$funcs['msql_affected_rows']['extension'] = 'ext_msql';
-$funcs['msql_affected_rows']['version_init'] = '4.0.0';
-$funcs['msql_close']['extension'] = 'ext_msql';
-$funcs['msql_close']['version_init'] = '4.0.0';
-$funcs['msql_connect']['extension'] = 'ext_msql';
-$funcs['msql_connect']['version_init'] = '4.0.0';
-$funcs['msql_createdb']['extension'] = 'ext_msql';
-$funcs['msql_createdb']['version_init'] = '4.0.0';
-$funcs['msql_create_db']['extension'] = 'ext_msql';
-$funcs['msql_create_db']['version_init'] = '4.0.0';
-$funcs['msql_data_seek']['extension'] = 'ext_msql';
-$funcs['msql_data_seek']['version_init'] = '4.0.0';
-$funcs['msql_dbname']['extension'] = 'ext_msql';
-$funcs['msql_dbname']['version_init'] = '4.0.0';
-$funcs['msql_db_query']['extension'] = 'ext_msql';
-$funcs['msql_db_query']['version_init'] = '4.0.0';
-$funcs['msql_dropdb']['extension'] = 'ext_msql';
-$funcs['msql_dropdb']['version_init'] = '4.0.0';
-$funcs['msql_drop_db']['extension'] = 'ext_msql';
-$funcs['msql_drop_db']['version_init'] = '4.0.0';
-$funcs['msql_error']['extension'] = 'ext_msql';
-$funcs['msql_error']['version_init'] = '4.0.0';
-$funcs['msql_fetch_array']['extension'] = 'ext_msql';
-$funcs['msql_fetch_array']['version_init'] = '4.0.0';
-$funcs['msql_fetch_field']['extension'] = 'ext_msql';
-$funcs['msql_fetch_field']['version_init'] = '4.0.0';
-$funcs['msql_fetch_object']['extension'] = 'ext_msql';
-$funcs['msql_fetch_object']['version_init'] = '4.0.0';
-$funcs['msql_fetch_row']['extension'] = 'ext_msql';
-$funcs['msql_fetch_row']['version_init'] = '4.0.0';
-$funcs['msql_fieldflags']['extension'] = 'ext_msql';
-$funcs['msql_fieldflags']['version_init'] = '4.0.0';
-$funcs['msql_fieldlen']['extension'] = 'ext_msql';
-$funcs['msql_fieldlen']['version_init'] = '4.0.0';
-$funcs['msql_fieldname']['extension'] = 'ext_msql';
-$funcs['msql_fieldname']['version_init'] = '4.0.0';
-$funcs['msql_fieldtable']['extension'] = 'ext_msql';
-$funcs['msql_fieldtable']['version_init'] = '4.0.0';
-$funcs['msql_fieldtype']['extension'] = 'ext_msql';
-$funcs['msql_fieldtype']['version_init'] = '4.0.0';
-$funcs['msql_field_flags']['extension'] = 'ext_msql';
-$funcs['msql_field_flags']['version_init'] = '4.0.0';
-$funcs['msql_field_len']['extension'] = 'ext_msql';
-$funcs['msql_field_len']['version_init'] = '4.0.0';
-$funcs['msql_field_name']['extension'] = 'ext_msql';
-$funcs['msql_field_name']['version_init'] = '4.0.0';
-$funcs['msql_field_seek']['extension'] = 'ext_msql';
-$funcs['msql_field_seek']['version_init'] = '4.0.0';
-$funcs['msql_field_table']['extension'] = 'ext_msql';
-$funcs['msql_field_table']['version_init'] = '4.0.0';
-$funcs['msql_field_type']['extension'] = 'ext_msql';
-$funcs['msql_field_type']['version_init'] = '4.0.0';
-$funcs['msql_freeresult']['extension'] = 'ext_msql';
-$funcs['msql_freeresult']['version_init'] = '4.0.0';
-$funcs['msql_free_result']['extension'] = 'ext_msql';
-$funcs['msql_free_result']['version_init'] = '4.0.0';
-$funcs['msql_listdbs']['extension'] = 'ext_msql';
-$funcs['msql_listdbs']['version_init'] = '4.0.0';
-$funcs['msql_listfields']['extension'] = 'ext_msql';
-$funcs['msql_listfields']['version_init'] = '4.0.0';
-$funcs['msql_listtables']['extension'] = 'ext_msql';
-$funcs['msql_listtables']['version_init'] = '4.0.0';
-$funcs['msql_list_dbs']['extension'] = 'ext_msql';
-$funcs['msql_list_dbs']['version_init'] = '4.0.0';
-$funcs['msql_list_fields']['extension'] = 'ext_msql';
-$funcs['msql_list_fields']['version_init'] = '4.0.0';
-$funcs['msql_list_tables']['extension'] = 'ext_msql';
-$funcs['msql_list_tables']['version_init'] = '4.0.0';
-$funcs['msql_numfields']['extension'] = 'ext_msql';
-$funcs['msql_numfields']['version_init'] = '4.0.0';
-$funcs['msql_numrows']['extension'] = 'ext_msql';
-$funcs['msql_numrows']['version_init'] = '4.0.0';
-$funcs['msql_num_fields']['extension'] = 'ext_msql';
-$funcs['msql_num_fields']['version_init'] = '4.0.0';
-$funcs['msql_num_rows']['extension'] = 'ext_msql';
-$funcs['msql_num_rows']['version_init'] = '4.0.0';
-$funcs['msql_pconnect']['extension'] = 'ext_msql';
-$funcs['msql_pconnect']['version_init'] = '4.0.0';
-$funcs['msql_query']['extension'] = 'ext_msql';
-$funcs['msql_query']['version_init'] = '4.0.0';
-$funcs['msql_regcase']['extension'] = 'ext_msql';
-$funcs['msql_regcase']['version_init'] = '4.0.0';
-$funcs['msql_result']['extension'] = 'ext_msql';
-$funcs['msql_result']['version_init'] = '4.0.0';
-$funcs['msql_selectdb']['extension'] = 'ext_msql';
-$funcs['msql_selectdb']['version_init'] = '4.0.0';
-$funcs['msql_select_db']['extension'] = 'ext_msql';
-$funcs['msql_select_db']['version_init'] = '4.0.0';
-$funcs['msql_tablename']['extension'] = 'ext_msql';
-$funcs['msql_tablename']['version_init'] = '4.0.0';
-$funcs['mssql_affected_rows']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_affected_rows']['version_init'] = '4.0.0';
-$funcs['mssql_bind']['extension'] = 'ext_mssql';
-$funcs['mssql_bind']['version_init'] = '4.1.0';
-$funcs['mssql_close']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_close']['version_init'] = '4.0.0';
-$funcs['mssql_connect']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_connect']['version_init'] = '4.0.0';
-$funcs['mssql_data_seek']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_data_seek']['version_init'] = '4.0.0';
-$funcs['mssql_deadlock_retry_count']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_deadlock_retry_count']['version_init'] = '4.3.0';
-$funcs['mssql_execute']['extension'] = 'ext_mssql';
-$funcs['mssql_execute']['version_init'] = '4.1.0';
-$funcs['mssql_fetch_array']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_fetch_array']['version_init'] = '4.0.0';
-$funcs['mssql_fetch_assoc']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_fetch_assoc']['version_init'] = '4.2.0';
-$funcs['mssql_fetch_batch']['extension'] = 'ext_mssql';
-$funcs['mssql_fetch_batch']['version_init'] = '4.0.4';
-$funcs['mssql_fetch_field']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_fetch_field']['version_init'] = '4.0.0';
-$funcs['mssql_fetch_object']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_fetch_object']['version_init'] = '4.0.0';
-$funcs['mssql_Fetch_object']['extension'] = 'ext_sybase';
-$funcs['mssql_Fetch_object']['version_init'] = '4.0.0';
-$funcs['mssql_fetch_row']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_fetch_row']['version_init'] = '4.0.0';
-$funcs['mssql_field_length']['extension'] = 'ext_mssql';
-$funcs['mssql_field_length']['version_init'] = '4.0.0';
-$funcs['mssql_field_name']['extension'] = 'ext_mssql';
-$funcs['mssql_field_name']['version_init'] = '4.0.0';
-$funcs['mssql_field_seek']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_field_seek']['version_init'] = '4.0.0';
-$funcs['mssql_field_type']['extension'] = 'ext_mssql';
-$funcs['mssql_field_type']['version_init'] = '4.0.0';
-$funcs['mssql_free_result']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_free_result']['version_init'] = '4.0.0';
-$funcs['mssql_free_statement']['extension'] = 'ext_mssql';
-$funcs['mssql_free_statement']['version_init'] = '4.3.2';
-$funcs['mssql_get_last_message']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_get_last_message']['version_init'] = '4.0.0';
-$funcs['mssql_guid_string']['extension'] = 'ext_mssql';
-$funcs['mssql_guid_string']['version_init'] = '4.1.0';
-$funcs['mssql_init']['extension'] = 'ext_mssql';
-$funcs['mssql_init']['version_init'] = '4.1.0';
-$funcs['mssql_min_client_severity']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_min_client_severity']['version_init'] = '4.0.0';
-$funcs['mssql_min_error_severity']['extension'] = 'ext_sybase';
-$funcs['mssql_min_error_severity']['version_init'] = '4.0.0';
-$funcs['mssql_min_message_severity']['extension'] = 'ext_sybase';
-$funcs['mssql_min_message_severity']['version_init'] = '4.0.0';
-$funcs['mssql_min_server_severity']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_min_server_severity']['version_init'] = '4.0.0';
-$funcs['mssql_next_result']['extension'] = 'ext_mssql';
-$funcs['mssql_next_result']['version_init'] = '4.0.5';
-$funcs['mssql_num_fields']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_num_fields']['version_init'] = '4.0.0';
-$funcs['mssql_num_rows']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_num_rows']['version_init'] = '4.0.0';
-$funcs['mssql_pconnect']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_pconnect']['version_init'] = '4.0.0';
-$funcs['mssql_query']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_query']['version_init'] = '4.0.0';
-$funcs['mssql_result']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_result']['version_init'] = '4.0.0';
-$funcs['mssql_rows_affected']['extension'] = 'ext_mssql';
-$funcs['mssql_rows_affected']['version_init'] = '4.0.4';
-$funcs['mssql_select_db']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_select_db']['version_init'] = '4.0.0';
-$funcs['mssql_set_message_handler']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_set_message_handler']['version_init'] = '4.3.0';
-$funcs['mssql_unbuffered_query']['extension'] = 'ext_sybase_ct';
-$funcs['mssql_unbuffered_query']['version_init'] = '4.3.0';
-$funcs['mt_getrandmax']['extension'] = 'ext_standard';
-$funcs['mt_getrandmax']['version_init'] = '4.0.0';
-$funcs['mt_rand']['extension'] = 'ext_standard';
-$funcs['mt_rand']['version_init'] = '4.0.0';
-$funcs['mt_srand']['extension'] = 'ext_standard';
-$funcs['mt_srand']['version_init'] = '4.0.0';
-$funcs['multcolor']['extension'] = 'ext_ming';
-$funcs['multcolor']['version_init'] = '4.0.5';
-$funcs['muscat_close']['extension'] = 'ext_muscat';
-$funcs['muscat_close']['version_init'] = '4.0.5';
-$funcs['muscat_get']['extension'] = 'ext_muscat';
-$funcs['muscat_get']['version_init'] = '4.0.5';
-$funcs['muscat_give']['extension'] = 'ext_muscat';
-$funcs['muscat_give']['version_init'] = '4.0.5';
-$funcs['muscat_setup']['extension'] = 'ext_muscat';
-$funcs['muscat_setup']['version_init'] = '4.0.5';
-$funcs['muscat_setup_net']['extension'] = 'ext_muscat';
-$funcs['muscat_setup_net']['version_init'] = '4.0.5';
-$funcs['mysql']['extension'] = 'ext_mysql';
-$funcs['mysql']['version_init'] = '4.0.0';
-$funcs['mysqli_affected_rows']['extension'] = 'ext_mysqli';
-$funcs['mysqli_affected_rows']['version_init'] = '';
-$funcs['mysqli_autocommit']['extension'] = 'ext_mysqli';
-$funcs['mysqli_autocommit']['version_init'] = '';
-$funcs['mysqli_bind_param']['extension'] = 'ext_mysqli';
-$funcs['mysqli_bind_param']['version_init'] = '';
-$funcs['mysqli_bind_result']['extension'] = 'ext_mysqli';
-$funcs['mysqli_bind_result']['version_init'] = '';
-$funcs['mysqli_change_user']['extension'] = 'ext_mysqli';
-$funcs['mysqli_change_user']['version_init'] = '';
-$funcs['mysqli_character_set_name']['extension'] = 'ext_mysqli';
-$funcs['mysqli_character_set_name']['version_init'] = '';
-$funcs['mysqli_client_encoding']['extension'] = 'ext_mysqli';
-$funcs['mysqli_client_encoding']['version_init'] = '';
-$funcs['mysqli_close']['extension'] = 'ext_mysqli';
-$funcs['mysqli_close']['version_init'] = '';
-$funcs['mysqli_commit']['extension'] = 'ext_mysqli';
-$funcs['mysqli_commit']['version_init'] = '';
-$funcs['mysqli_connect']['extension'] = 'ext_mysqli';
-$funcs['mysqli_connect']['version_init'] = '';
-$funcs['mysqli_connect_errno']['extension'] = 'ext_mysqli';
-$funcs['mysqli_connect_errno']['version_init'] = '';
-$funcs['mysqli_connect_error']['extension'] = 'ext_mysqli';
-$funcs['mysqli_connect_error']['version_init'] = '';
-$funcs['mysqli_data_seek']['extension'] = 'ext_mysqli';
-$funcs['mysqli_data_seek']['version_init'] = '';
-$funcs['mysqli_debug']['extension'] = 'ext_mysqli';
-$funcs['mysqli_debug']['version_init'] = '';
-$funcs['mysqli_disable_reads_from_master']['extension'] = 'ext_mysqli';
-$funcs['mysqli_disable_reads_from_master']['version_init'] = '';
-$funcs['mysqli_disable_rpl_parse']['extension'] = 'ext_mysqli';
-$funcs['mysqli_disable_rpl_parse']['version_init'] = '';
-$funcs['mysqli_dump_debug_info']['extension'] = 'ext_mysqli';
-$funcs['mysqli_dump_debug_info']['version_init'] = '';
-$funcs['mysqli_embedded_connect']['extension'] = 'ext_mysqli';
-$funcs['mysqli_embedded_connect']['version_init'] = '';
-$funcs['mysqli_enable_reads_from_master']['extension'] = 'ext_mysqli';
-$funcs['mysqli_enable_reads_from_master']['version_init'] = '';
-$funcs['mysqli_enable_rpl_parse']['extension'] = 'ext_mysqli';
-$funcs['mysqli_enable_rpl_parse']['version_init'] = '';
-$funcs['mysqli_errno']['extension'] = 'ext_mysqli';
-$funcs['mysqli_errno']['version_init'] = '';
-$funcs['mysqli_error']['extension'] = 'ext_mysqli';
-$funcs['mysqli_error']['version_init'] = '';
-$funcs['mysqli_escape_string']['extension'] = 'ext_mysqli';
-$funcs['mysqli_escape_string']['version_init'] = '';
-$funcs['mysqli_execute']['extension'] = 'ext_mysqli';
-$funcs['mysqli_execute']['version_init'] = '';
-$funcs['mysqli_fetch']['extension'] = 'ext_mysqli';
-$funcs['mysqli_fetch']['version_init'] = '';
-$funcs['mysqli_fetch_array']['extension'] = 'ext_mysqli';
-$funcs['mysqli_fetch_array']['version_init'] = '';
-$funcs['mysqli_fetch_assoc']['extension'] = 'ext_mysqli';
-$funcs['mysqli_fetch_assoc']['version_init'] = '';
-$funcs['mysqli_fetch_field']['extension'] = 'ext_mysqli';
-$funcs['mysqli_fetch_field']['version_init'] = '';
-$funcs['mysqli_fetch_fields']['extension'] = 'ext_mysqli';
-$funcs['mysqli_fetch_fields']['version_init'] = '';
-$funcs['mysqli_fetch_field_direct']['extension'] = 'ext_mysqli';
-$funcs['mysqli_fetch_field_direct']['version_init'] = '';
-$funcs['mysqli_fetch_lengths']['extension'] = 'ext_mysqli';
-$funcs['mysqli_fetch_lengths']['version_init'] = '';
-$funcs['mysqli_fetch_object']['extension'] = 'ext_mysqli';
-$funcs['mysqli_fetch_object']['version_init'] = '';
-$funcs['mysqli_fetch_row']['extension'] = 'ext_mysqli';
-$funcs['mysqli_fetch_row']['version_init'] = '';
-$funcs['mysqli_field_count']['extension'] = 'ext_mysqli';
-$funcs['mysqli_field_count']['version_init'] = '';
-$funcs['mysqli_field_seek']['extension'] = 'ext_mysqli';
-$funcs['mysqli_field_seek']['version_init'] = '';
-$funcs['mysqli_field_tell']['extension'] = 'ext_mysqli';
-$funcs['mysqli_field_tell']['version_init'] = '';
-$funcs['mysqli_free_result']['extension'] = 'ext_mysqli';
-$funcs['mysqli_free_result']['version_init'] = '';
-$funcs['mysqli_get_client_info']['extension'] = 'ext_mysqli';
-$funcs['mysqli_get_client_info']['version_init'] = '';
-$funcs['mysqli_get_host_info']['extension'] = 'ext_mysqli';
-$funcs['mysqli_get_host_info']['version_init'] = '';
-$funcs['mysqli_get_metadata']['extension'] = 'ext_mysqli';
-$funcs['mysqli_get_metadata']['version_init'] = '';
-$funcs['mysqli_get_proto_info']['extension'] = 'ext_mysqli';
-$funcs['mysqli_get_proto_info']['version_init'] = '';
-$funcs['mysqli_get_server_info']['extension'] = 'ext_mysqli';
-$funcs['mysqli_get_server_info']['version_init'] = '';
-$funcs['mysqli_get_server_version']['extension'] = 'ext_mysqli';
-$funcs['mysqli_get_server_version']['version_init'] = '';
-$funcs['mysqli_info']['extension'] = 'ext_mysqli';
-$funcs['mysqli_info']['version_init'] = '';
-$funcs['mysqli_init']['extension'] = 'ext_mysqli';
-$funcs['mysqli_init']['version_init'] = '';
-$funcs['mysqli_insert_id']['extension'] = 'ext_mysqli';
-$funcs['mysqli_insert_id']['version_init'] = '';
-$funcs['mysqli_kill']['extension'] = 'ext_mysqli';
-$funcs['mysqli_kill']['version_init'] = '';
-$funcs['mysqli_master_query']['extension'] = 'ext_mysqli';
-$funcs['mysqli_master_query']['version_init'] = '';
-$funcs['mysqli_num_fields']['extension'] = 'ext_mysqli';
-$funcs['mysqli_num_fields']['version_init'] = '';
-$funcs['mysqli_num_rows']['extension'] = 'ext_mysqli';
-$funcs['mysqli_num_rows']['version_init'] = '';
-$funcs['mysqli_options']['extension'] = 'ext_mysqli';
-$funcs['mysqli_options']['version_init'] = '';
-$funcs['mysqli_param_count']['extension'] = 'ext_mysqli';
-$funcs['mysqli_param_count']['version_init'] = '';
-$funcs['mysqli_ping']['extension'] = 'ext_mysqli';
-$funcs['mysqli_ping']['version_init'] = '';
-$funcs['mysqli_prepare']['extension'] = 'ext_mysqli';
-$funcs['mysqli_prepare']['version_init'] = '';
-$funcs['mysqli_profiler']['extension'] = 'ext_mysqli';
-$funcs['mysqli_profiler']['version_init'] = '';
-$funcs['mysqli_query']['extension'] = 'ext_mysqli';
-$funcs['mysqli_query']['version_init'] = '';
-$funcs['mysqli_read_query_result']['extension'] = 'ext_mysqli';
-$funcs['mysqli_read_query_result']['version_init'] = '';
-$funcs['mysqli_real_connect']['extension'] = 'ext_mysqli';
-$funcs['mysqli_real_connect']['version_init'] = '';
-$funcs['mysqli_real_escape_string']['extension'] = 'ext_mysqli';
-$funcs['mysqli_real_escape_string']['version_init'] = '';
-$funcs['mysqli_real_query']['extension'] = 'ext_mysqli';
-$funcs['mysqli_real_query']['version_init'] = '';
-$funcs['mysqli_reload']['extension'] = 'ext_mysqli';
-$funcs['mysqli_reload']['version_init'] = '';
-$funcs['mysqli_rollback']['extension'] = 'ext_mysqli';
-$funcs['mysqli_rollback']['version_init'] = '';
-$funcs['mysqli_rpl_parse_enabled']['extension'] = 'ext_mysqli';
-$funcs['mysqli_rpl_parse_enabled']['version_init'] = '';
-$funcs['mysqli_rpl_probe']['extension'] = 'ext_mysqli';
-$funcs['mysqli_rpl_probe']['version_init'] = '';
-$funcs['mysqli_rpl_query_type']['extension'] = 'ext_mysqli';
-$funcs['mysqli_rpl_query_type']['version_init'] = '';
-$funcs['mysqli_select_db']['extension'] = 'ext_mysqli';
-$funcs['mysqli_select_db']['version_init'] = '';
-$funcs['mysqli_send_long_data']['extension'] = 'ext_mysqli';
-$funcs['mysqli_send_long_data']['version_init'] = '';
-$funcs['mysqli_send_query']['extension'] = 'ext_mysqli';
-$funcs['mysqli_send_query']['version_init'] = '';
-$funcs['mysqli_server_end']['extension'] = 'ext_mysqli';
-$funcs['mysqli_server_end']['version_init'] = '';
-$funcs['mysqli_server_init']['extension'] = 'ext_mysqli';
-$funcs['mysqli_server_init']['version_init'] = '';
-$funcs['mysqli_set_opt']['extension'] = 'ext_mysqli';
-$funcs['mysqli_set_opt']['version_init'] = '';
-$funcs['mysqli_slave_query']['extension'] = 'ext_mysqli';
-$funcs['mysqli_slave_query']['version_init'] = '';
-$funcs['mysqli_sqlstate']['extension'] = 'ext_mysqli';
-$funcs['mysqli_sqlstate']['version_init'] = '';
-$funcs['mysqli_ssl_set']['extension'] = 'ext_mysqli';
-$funcs['mysqli_ssl_set']['version_init'] = '';
-$funcs['mysqli_stat']['extension'] = 'ext_mysqli';
-$funcs['mysqli_stat']['version_init'] = '';
-$funcs['mysqli_stmt_affected_rows']['extension'] = 'ext_mysqli';
-$funcs['mysqli_stmt_affected_rows']['version_init'] = '';
-$funcs['mysqli_stmt_close']['extension'] = 'ext_mysqli';
-$funcs['mysqli_stmt_close']['version_init'] = '';
-$funcs['mysqli_stmt_data_seek']['extension'] = 'ext_mysqli';
-$funcs['mysqli_stmt_data_seek']['version_init'] = '';
-$funcs['mysqli_stmt_errno']['extension'] = 'ext_mysqli';
-$funcs['mysqli_stmt_errno']['version_init'] = '';
-$funcs['mysqli_stmt_error']['extension'] = 'ext_mysqli';
-$funcs['mysqli_stmt_error']['version_init'] = '';
-$funcs['mysqli_stmt_num_rows']['extension'] = 'ext_mysqli';
-$funcs['mysqli_stmt_num_rows']['version_init'] = '';
-$funcs['mysqli_stmt_sqlstate']['extension'] = 'ext_mysqli';
-$funcs['mysqli_stmt_sqlstate']['version_init'] = '';
-$funcs['mysqli_stmt_store_result']['extension'] = 'ext_mysqli';
-$funcs['mysqli_stmt_store_result']['version_init'] = '';
-$funcs['mysqli_store_result']['extension'] = 'ext_mysqli';
-$funcs['mysqli_store_result']['version_init'] = '';
-$funcs['mysqli_thread_id']['extension'] = 'ext_mysqli';
-$funcs['mysqli_thread_id']['version_init'] = '';
-$funcs['mysqli_thread_safe']['extension'] = 'ext_mysqli';
-$funcs['mysqli_thread_safe']['version_init'] = '';
-$funcs['mysqli_use_result']['extension'] = 'ext_mysqli';
-$funcs['mysqli_use_result']['version_init'] = '';
-$funcs['mysqli_warning_count']['extension'] = 'ext_mysqli';
-$funcs['mysqli_warning_count']['version_init'] = '';
-$funcs['mysql_affected_rows']['extension'] = 'ext_mysql';
-$funcs['mysql_affected_rows']['version_init'] = '4.0.0';
-$funcs['mysql_client_encoding']['extension'] = 'ext_mysql';
-$funcs['mysql_client_encoding']['version_init'] = '4.3.0';
-$funcs['mysql_close']['extension'] = 'ext_mysql';
-$funcs['mysql_close']['version_init'] = '4.0.0';
-$funcs['mysql_connect']['extension'] = 'ext_mysql';
-$funcs['mysql_connect']['version_init'] = '4.0.0';
-$funcs['mysql_createdb']['extension'] = 'ext_mysql';
-$funcs['mysql_createdb']['version_init'] = '4.0.0';
-$funcs['mysql_create_db']['extension'] = 'ext_mysql';
-$funcs['mysql_create_db']['version_init'] = '4.0.0';
-$funcs['mysql_data_seek']['extension'] = 'ext_mysql';
-$funcs['mysql_data_seek']['version_init'] = '4.0.0';
-$funcs['mysql_dbname']['extension'] = 'ext_mysql';
-$funcs['mysql_dbname']['version_init'] = '4.0.0';
-$funcs['mysql_db_name']['extension'] = 'ext_mysql';
-$funcs['mysql_db_name']['version_init'] = '4.0.0';
-$funcs['mysql_db_query']['extension'] = 'ext_mysql';
-$funcs['mysql_db_query']['version_init'] = '4.0.0';
-$funcs['mysql_dropdb']['extension'] = 'ext_mysql';
-$funcs['mysql_dropdb']['version_init'] = '4.0.0';
-$funcs['mysql_drop_db']['extension'] = 'ext_mysql';
-$funcs['mysql_drop_db']['version_init'] = '4.0.0';
-$funcs['mysql_errno']['extension'] = 'ext_mysql';
-$funcs['mysql_errno']['version_init'] = '4.0.0';
-$funcs['mysql_error']['extension'] = 'ext_mysql';
-$funcs['mysql_error']['version_init'] = '4.0.0';
-$funcs['mysql_escape_string']['extension'] = 'ext_mysql';
-$funcs['mysql_escape_string']['version_init'] = '4.0.3';
-$funcs['mysql_fetch_array']['extension'] = 'ext_mysql';
-$funcs['mysql_fetch_array']['version_init'] = '4.0.0';
-$funcs['mysql_fetch_assoc']['extension'] = 'ext_mysql';
-$funcs['mysql_fetch_assoc']['version_init'] = '4.0.3';
-$funcs['mysql_fetch_field']['extension'] = 'ext_mysql';
-$funcs['mysql_fetch_field']['version_init'] = '4.0.0';
-$funcs['mysql_fetch_lengths']['extension'] = 'ext_mysql';
-$funcs['mysql_fetch_lengths']['version_init'] = '4.0.0';
-$funcs['mysql_fetch_object']['extension'] = 'ext_mysql';
-$funcs['mysql_fetch_object']['version_init'] = '4.0.0';
-$funcs['mysql_fetch_row']['extension'] = 'ext_mysql';
-$funcs['mysql_fetch_row']['version_init'] = '4.0.0';
-$funcs['mysql_fieldflags']['extension'] = 'ext_mysql';
-$funcs['mysql_fieldflags']['version_init'] = '4.0.0';
-$funcs['mysql_fieldlen']['extension'] = 'ext_mysql';
-$funcs['mysql_fieldlen']['version_init'] = '4.0.0';
-$funcs['mysql_fieldname']['extension'] = 'ext_mysql';
-$funcs['mysql_fieldname']['version_init'] = '4.0.0';
-$funcs['mysql_fieldtable']['extension'] = 'ext_mysql';
-$funcs['mysql_fieldtable']['version_init'] = '4.0.0';
-$funcs['mysql_fieldtype']['extension'] = 'ext_mysql';
-$funcs['mysql_fieldtype']['version_init'] = '4.0.0';
-$funcs['mysql_field_flags']['extension'] = 'ext_mysql';
-$funcs['mysql_field_flags']['version_init'] = '4.0.0';
-$funcs['mysql_field_len']['extension'] = 'ext_mysql';
-$funcs['mysql_field_len']['version_init'] = '4.0.0';
-$funcs['mysql_field_name']['extension'] = 'ext_mysql';
-$funcs['mysql_field_name']['version_init'] = '4.0.0';
-$funcs['mysql_field_seek']['extension'] = 'ext_mysql';
-$funcs['mysql_field_seek']['version_init'] = '4.0.0';
-$funcs['mysql_field_table']['extension'] = 'ext_mysql';
-$funcs['mysql_field_table']['version_init'] = '4.0.0';
-$funcs['mysql_field_type']['extension'] = 'ext_mysql';
-$funcs['mysql_field_type']['version_init'] = '4.0.0';
-$funcs['mysql_freeresult']['extension'] = 'ext_mysql';
-$funcs['mysql_freeresult']['version_init'] = '4.0.0';
-$funcs['mysql_free_result']['extension'] = 'ext_mysql';
-$funcs['mysql_free_result']['version_init'] = '4.0.0';
-$funcs['mysql_get_client_info']['extension'] = 'ext_mysql';
-$funcs['mysql_get_client_info']['version_init'] = '4.0.5';
-$funcs['mysql_get_host_info']['extension'] = 'ext_mysql';
-$funcs['mysql_get_host_info']['version_init'] = '4.0.5';
-$funcs['mysql_get_proto_info']['extension'] = 'ext_mysql';
-$funcs['mysql_get_proto_info']['version_init'] = '4.0.5';
-$funcs['mysql_get_server_info']['extension'] = 'ext_mysql';
-$funcs['mysql_get_server_info']['version_init'] = '4.0.5';
-$funcs['mysql_info']['extension'] = 'ext_mysql';
-$funcs['mysql_info']['version_init'] = '4.3.0';
-$funcs['mysql_insert_id']['extension'] = 'ext_mysql';
-$funcs['mysql_insert_id']['version_init'] = '4.0.0';
-$funcs['mysql_listdbs']['extension'] = 'ext_mysql';
-$funcs['mysql_listdbs']['version_init'] = '4.0.0';
-$funcs['mysql_listfields']['extension'] = 'ext_mysql';
-$funcs['mysql_listfields']['version_init'] = '4.0.0';
-$funcs['mysql_listtables']['extension'] = 'ext_mysql';
-$funcs['mysql_listtables']['version_init'] = '4.0.0';
-$funcs['mysql_list_dbs']['extension'] = 'ext_mysql';
-$funcs['mysql_list_dbs']['version_init'] = '4.0.0';
-$funcs['mysql_list_fields']['extension'] = 'ext_mysql';
-$funcs['mysql_list_fields']['version_init'] = '4.0.0';
-$funcs['mysql_list_processes']['extension'] = 'ext_mysql';
-$funcs['mysql_list_processes']['version_init'] = '4.3.0';
-$funcs['mysql_list_tables']['extension'] = 'ext_mysql';
-$funcs['mysql_list_tables']['version_init'] = '4.0.0';
-$funcs['mysql_numfields']['extension'] = 'ext_mysql';
-$funcs['mysql_numfields']['version_init'] = '4.0.0';
-$funcs['mysql_numrows']['extension'] = 'ext_mysql';
-$funcs['mysql_numrows']['version_init'] = '4.0.0';
-$funcs['mysql_num_fields']['extension'] = 'ext_mysql';
-$funcs['mysql_num_fields']['version_init'] = '4.0.0';
-$funcs['mysql_num_rows']['extension'] = 'ext_mysql';
-$funcs['mysql_num_rows']['version_init'] = '4.0.0';
-$funcs['mysql_pconnect']['extension'] = 'ext_mysql';
-$funcs['mysql_pconnect']['version_init'] = '4.0.0';
-$funcs['mysql_ping']['extension'] = 'ext_mysql';
-$funcs['mysql_ping']['version_init'] = '4.3.0';
-$funcs['mysql_query']['extension'] = 'ext_mysql';
-$funcs['mysql_query']['version_init'] = '4.0.0';
-$funcs['mysql_real_escape_string']['extension'] = 'ext_mysql';
-$funcs['mysql_real_escape_string']['version_init'] = '4.3.0';
-$funcs['mysql_result']['extension'] = 'ext_mysql';
-$funcs['mysql_result']['version_init'] = '4.0.0';
-$funcs['mysql_selectdb']['extension'] = 'ext_mysql';
-$funcs['mysql_selectdb']['version_init'] = '4.0.0';
-$funcs['mysql_select_db']['extension'] = 'ext_mysql';
-$funcs['mysql_select_db']['version_init'] = '4.0.0';
-$funcs['mysql_stat']['extension'] = 'ext_mysql';
-$funcs['mysql_stat']['version_init'] = '4.3.0';
-$funcs['mysql_tablename']['extension'] = 'ext_mysql';
-$funcs['mysql_tablename']['version_init'] = '4.0.0';
-$funcs['mysql_table_name']['extension'] = 'ext_mysql';
-$funcs['mysql_table_name']['version_init'] = '4.3.0';
-$funcs['mysql_thread_id']['extension'] = 'ext_mysql';
-$funcs['mysql_thread_id']['version_init'] = '4.3.0';
-$funcs['mysql_unbuffered_query']['extension'] = 'ext_mysql';
-$funcs['mysql_unbuffered_query']['version_init'] = '4.0.6';
-$funcs['natcasesort']['extension'] = 'ext_standard';
-$funcs['natcasesort']['version_init'] = '4.0.0';
-$funcs['natsort']['extension'] = 'ext_standard';
-$funcs['natsort']['version_init'] = '4.0.0';
-$funcs['ncurses_addch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_addch']['version_init'] = '4.1.0';
-$funcs['ncurses_addchnstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_addchnstr']['version_init'] = '4.2.0';
-$funcs['ncurses_addchstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_addchstr']['version_init'] = '4.2.0';
-$funcs['ncurses_addnstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_addnstr']['version_init'] = '4.2.0';
-$funcs['ncurses_addstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_addstr']['version_init'] = '4.2.0';
-$funcs['ncurses_assume_default_colors']['extension'] = 'ext_ncurses';
-$funcs['ncurses_assume_default_colors']['version_init'] = '4.2.0';
-$funcs['ncurses_attroff']['extension'] = 'ext_ncurses';
-$funcs['ncurses_attroff']['version_init'] = '4.1.0';
-$funcs['ncurses_attron']['extension'] = 'ext_ncurses';
-$funcs['ncurses_attron']['version_init'] = '4.1.0';
-$funcs['ncurses_attrset']['extension'] = 'ext_ncurses';
-$funcs['ncurses_attrset']['version_init'] = '4.1.0';
-$funcs['ncurses_baudrate']['extension'] = 'ext_ncurses';
-$funcs['ncurses_baudrate']['version_init'] = '4.1.0';
-$funcs['ncurses_beep']['extension'] = 'ext_ncurses';
-$funcs['ncurses_beep']['version_init'] = '4.1.0';
-$funcs['ncurses_bkgd']['extension'] = 'ext_ncurses';
-$funcs['ncurses_bkgd']['version_init'] = '4.1.0';
-$funcs['ncurses_bkgdset']['extension'] = 'ext_ncurses';
-$funcs['ncurses_bkgdset']['version_init'] = '4.1.0';
-$funcs['ncurses_border']['extension'] = 'ext_ncurses';
-$funcs['ncurses_border']['version_init'] = '4.2.0';
-$funcs['ncurses_bottom_panel']['extension'] = 'ext_ncurses';
-$funcs['ncurses_bottom_panel']['version_init'] = '4.3.0';
-$funcs['ncurses_can_change_color']['extension'] = 'ext_ncurses';
-$funcs['ncurses_can_change_color']['version_init'] = '4.1.0';
-$funcs['ncurses_cbreak']['extension'] = 'ext_ncurses';
-$funcs['ncurses_cbreak']['version_init'] = '4.1.0';
-$funcs['ncurses_clear']['extension'] = 'ext_ncurses';
-$funcs['ncurses_clear']['version_init'] = '4.1.0';
-$funcs['ncurses_clrtobot']['extension'] = 'ext_ncurses';
-$funcs['ncurses_clrtobot']['version_init'] = '4.1.0';
-$funcs['ncurses_clrtoeol']['extension'] = 'ext_ncurses';
-$funcs['ncurses_clrtoeol']['version_init'] = '4.1.0';
-$funcs['ncurses_color_content']['extension'] = 'ext_ncurses';
-$funcs['ncurses_color_content']['version_init'] = '4.3.0';
-$funcs['ncurses_color_set']['extension'] = 'ext_ncurses';
-$funcs['ncurses_color_set']['version_init'] = '4.1.0';
-$funcs['ncurses_curs_set']['extension'] = 'ext_ncurses';
-$funcs['ncurses_curs_set']['version_init'] = '4.1.0';
-$funcs['ncurses_define_key']['extension'] = 'ext_ncurses';
-$funcs['ncurses_define_key']['version_init'] = '4.2.0';
-$funcs['ncurses_def_prog_mode']['extension'] = 'ext_ncurses';
-$funcs['ncurses_def_prog_mode']['version_init'] = '4.1.0';
-$funcs['ncurses_def_shell_mode']['extension'] = 'ext_ncurses';
-$funcs['ncurses_def_shell_mode']['version_init'] = '4.1.0';
-$funcs['ncurses_delay_output']['extension'] = 'ext_ncurses';
-$funcs['ncurses_delay_output']['version_init'] = '4.1.0';
-$funcs['ncurses_delch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_delch']['version_init'] = '4.1.0';
-$funcs['ncurses_deleteln']['extension'] = 'ext_ncurses';
-$funcs['ncurses_deleteln']['version_init'] = '4.1.0';
-$funcs['ncurses_delwin']['extension'] = 'ext_ncurses';
-$funcs['ncurses_delwin']['version_init'] = '4.1.0';
-$funcs['ncurses_del_panel']['extension'] = 'ext_ncurses';
-$funcs['ncurses_del_panel']['version_init'] = '4.3.0';
-$funcs['ncurses_doupdate']['extension'] = 'ext_ncurses';
-$funcs['ncurses_doupdate']['version_init'] = '4.1.0';
-$funcs['ncurses_echo']['extension'] = 'ext_ncurses';
-$funcs['ncurses_echo']['version_init'] = '4.1.0';
-$funcs['ncurses_echochar']['extension'] = 'ext_ncurses';
-$funcs['ncurses_echochar']['version_init'] = '4.1.0';
-$funcs['ncurses_end']['extension'] = 'ext_ncurses';
-$funcs['ncurses_end']['version_init'] = '4.1.0';
-$funcs['ncurses_erase']['extension'] = 'ext_ncurses';
-$funcs['ncurses_erase']['version_init'] = '4.1.0';
-$funcs['ncurses_erasechar']['extension'] = 'ext_ncurses';
-$funcs['ncurses_erasechar']['version_init'] = '4.1.0';
-$funcs['ncurses_filter']['extension'] = 'ext_ncurses';
-$funcs['ncurses_filter']['version_init'] = '4.1.0';
-$funcs['ncurses_flash']['extension'] = 'ext_ncurses';
-$funcs['ncurses_flash']['version_init'] = '4.1.0';
-$funcs['ncurses_flushinp']['extension'] = 'ext_ncurses';
-$funcs['ncurses_flushinp']['version_init'] = '4.1.0';
-$funcs['ncurses_getch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_getch']['version_init'] = '4.1.0';
-$funcs['ncurses_getmaxyx']['extension'] = 'ext_ncurses';
-$funcs['ncurses_getmaxyx']['version_init'] = '4.3.0';
-$funcs['ncurses_getmouse']['extension'] = 'ext_ncurses';
-$funcs['ncurses_getmouse']['version_init'] = '4.2.0';
-$funcs['ncurses_getyx']['extension'] = 'ext_ncurses';
-$funcs['ncurses_getyx']['version_init'] = '4.3.0';
-$funcs['ncurses_halfdelay']['extension'] = 'ext_ncurses';
-$funcs['ncurses_halfdelay']['version_init'] = '4.1.0';
-$funcs['ncurses_has_colors']['extension'] = 'ext_ncurses';
-$funcs['ncurses_has_colors']['version_init'] = '4.1.0';
-$funcs['ncurses_has_ic']['extension'] = 'ext_ncurses';
-$funcs['ncurses_has_ic']['version_init'] = '4.1.0';
-$funcs['ncurses_has_il']['extension'] = 'ext_ncurses';
-$funcs['ncurses_has_il']['version_init'] = '4.1.0';
-$funcs['ncurses_has_key']['extension'] = 'ext_ncurses';
-$funcs['ncurses_has_key']['version_init'] = '4.1.0';
-$funcs['ncurses_hide_panel']['extension'] = 'ext_ncurses';
-$funcs['ncurses_hide_panel']['version_init'] = '4.3.0';
-$funcs['ncurses_hline']['extension'] = 'ext_ncurses';
-$funcs['ncurses_hline']['version_init'] = '4.2.0';
-$funcs['ncurses_inch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_inch']['version_init'] = '4.1.0';
-$funcs['ncurses_init']['extension'] = 'ext_ncurses';
-$funcs['ncurses_init']['version_init'] = '4.1.0';
-$funcs['ncurses_init_color']['extension'] = 'ext_ncurses';
-$funcs['ncurses_init_color']['version_init'] = '4.2.0';
-$funcs['ncurses_init_pair']['extension'] = 'ext_ncurses';
-$funcs['ncurses_init_pair']['version_init'] = '4.1.0';
-$funcs['ncurses_insch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_insch']['version_init'] = '4.1.0';
-$funcs['ncurses_insdelln']['extension'] = 'ext_ncurses';
-$funcs['ncurses_insdelln']['version_init'] = '4.1.0';
-$funcs['ncurses_insertln']['extension'] = 'ext_ncurses';
-$funcs['ncurses_insertln']['version_init'] = '4.1.0';
-$funcs['ncurses_insstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_insstr']['version_init'] = '4.2.0';
-$funcs['ncurses_instr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_instr']['version_init'] = '4.2.0';
-$funcs['ncurses_isendwin']['extension'] = 'ext_ncurses';
-$funcs['ncurses_isendwin']['version_init'] = '4.1.0';
-$funcs['ncurses_keyok']['extension'] = 'ext_ncurses';
-$funcs['ncurses_keyok']['version_init'] = '4.2.0';
-$funcs['ncurses_keypad']['extension'] = 'ext_ncurses';
-$funcs['ncurses_keypad']['version_init'] = '4.2.0';
-$funcs['ncurses_killchar']['extension'] = 'ext_ncurses';
-$funcs['ncurses_killchar']['version_init'] = '4.1.0';
-$funcs['ncurses_longname']['extension'] = 'ext_ncurses';
-$funcs['ncurses_longname']['version_init'] = '4.2.0';
-$funcs['ncurses_meta']['extension'] = 'ext_ncurses';
-$funcs['ncurses_meta']['version_init'] = '4.3.0';
-$funcs['ncurses_mouseinterval']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mouseinterval']['version_init'] = '4.1.0';
-$funcs['ncurses_mousemask']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mousemask']['version_init'] = '4.2.0';
-$funcs['ncurses_mouse_trafo']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mouse_trafo']['version_init'] = '4.2.0';
-$funcs['ncurses_move']['extension'] = 'ext_ncurses';
-$funcs['ncurses_move']['version_init'] = '4.1.0';
-$funcs['ncurses_move_panel']['extension'] = 'ext_ncurses';
-$funcs['ncurses_move_panel']['version_init'] = '4.3.0';
-$funcs['ncurses_mvaddch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvaddch']['version_init'] = '4.2.0';
-$funcs['ncurses_mvaddchnstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvaddchnstr']['version_init'] = '4.2.0';
-$funcs['ncurses_mvaddchstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvaddchstr']['version_init'] = '4.2.0';
-$funcs['ncurses_mvaddnstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvaddnstr']['version_init'] = '4.2.0';
-$funcs['ncurses_mvaddstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvaddstr']['version_init'] = '4.2.0';
-$funcs['ncurses_mvcur']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvcur']['version_init'] = '4.2.0';
-$funcs['ncurses_mvdelch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvdelch']['version_init'] = '4.2.0';
-$funcs['ncurses_mvgetch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvgetch']['version_init'] = '4.2.0';
-$funcs['ncurses_mvhline']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvhline']['version_init'] = '4.2.0';
-$funcs['ncurses_mvinch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvinch']['version_init'] = '4.2.0';
-$funcs['ncurses_mvwaddstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_mvwaddstr']['version_init'] = '4.2.0';
-$funcs['ncurses_napms']['extension'] = 'ext_ncurses';
-$funcs['ncurses_napms']['version_init'] = '4.1.0';
-$funcs['ncurses_newpad']['extension'] = 'ext_ncurses';
-$funcs['ncurses_newpad']['version_init'] = '4.3.0';
-$funcs['ncurses_newwin']['extension'] = 'ext_ncurses';
-$funcs['ncurses_newwin']['version_init'] = '4.1.0';
-$funcs['ncurses_new_panel']['extension'] = 'ext_ncurses';
-$funcs['ncurses_new_panel']['version_init'] = '4.3.0';
-$funcs['ncurses_nl']['extension'] = 'ext_ncurses';
-$funcs['ncurses_nl']['version_init'] = '4.1.0';
-$funcs['ncurses_nocbreak']['extension'] = 'ext_ncurses';
-$funcs['ncurses_nocbreak']['version_init'] = '4.1.0';
-$funcs['ncurses_noecho']['extension'] = 'ext_ncurses';
-$funcs['ncurses_noecho']['version_init'] = '4.1.0';
-$funcs['ncurses_nonl']['extension'] = 'ext_ncurses';
-$funcs['ncurses_nonl']['version_init'] = '4.1.0';
-$funcs['ncurses_noqiflush']['extension'] = 'ext_ncurses';
-$funcs['ncurses_noqiflush']['version_init'] = '4.1.0';
-$funcs['ncurses_noraw']['extension'] = 'ext_ncurses';
-$funcs['ncurses_noraw']['version_init'] = '4.1.0';
-$funcs['ncurses_pair_content']['extension'] = 'ext_ncurses';
-$funcs['ncurses_pair_content']['version_init'] = '4.3.0';
-$funcs['ncurses_panel_above']['extension'] = 'ext_ncurses';
-$funcs['ncurses_panel_above']['version_init'] = '4.3.0';
-$funcs['ncurses_panel_below']['extension'] = 'ext_ncurses';
-$funcs['ncurses_panel_below']['version_init'] = '4.3.0';
-$funcs['ncurses_panel_window']['extension'] = 'ext_ncurses';
-$funcs['ncurses_panel_window']['version_init'] = '4.3.0';
-$funcs['ncurses_pnoutrefresh']['extension'] = 'ext_ncurses';
-$funcs['ncurses_pnoutrefresh']['version_init'] = '4.3.0';
-$funcs['ncurses_prefresh']['extension'] = 'ext_ncurses';
-$funcs['ncurses_prefresh']['version_init'] = '4.3.0';
-$funcs['ncurses_putp']['extension'] = 'ext_ncurses';
-$funcs['ncurses_putp']['version_init'] = '4.2.0';
-$funcs['ncurses_qiflush']['extension'] = 'ext_ncurses';
-$funcs['ncurses_qiflush']['version_init'] = '4.1.0';
-$funcs['ncurses_raw']['extension'] = 'ext_ncurses';
-$funcs['ncurses_raw']['version_init'] = '4.1.0';
-$funcs['ncurses_refresh']['extension'] = 'ext_ncurses';
-$funcs['ncurses_refresh']['version_init'] = '4.1.0';
-$funcs['ncurses_replace_panel']['extension'] = 'ext_ncurses';
-$funcs['ncurses_replace_panel']['version_init'] = '4.3.0';
-$funcs['ncurses_resetty']['extension'] = 'ext_ncurses';
-$funcs['ncurses_resetty']['version_init'] = '4.1.0';
-$funcs['ncurses_reset_prog_mode']['extension'] = 'ext_ncurses';
-$funcs['ncurses_reset_prog_mode']['version_init'] = '4.3.0';
-$funcs['ncurses_reset_shell_mode']['extension'] = 'ext_ncurses';
-$funcs['ncurses_reset_shell_mode']['version_init'] = '4.3.0';
-$funcs['ncurses_savetty']['extension'] = 'ext_ncurses';
-$funcs['ncurses_savetty']['version_init'] = '4.1.0';
-$funcs['ncurses_scrl']['extension'] = 'ext_ncurses';
-$funcs['ncurses_scrl']['version_init'] = '4.1.0';
-$funcs['ncurses_scr_dump']['extension'] = 'ext_ncurses';
-$funcs['ncurses_scr_dump']['version_init'] = '4.2.0';
-$funcs['ncurses_scr_init']['extension'] = 'ext_ncurses';
-$funcs['ncurses_scr_init']['version_init'] = '4.2.0';
-$funcs['ncurses_scr_restore']['extension'] = 'ext_ncurses';
-$funcs['ncurses_scr_restore']['version_init'] = '4.2.0';
-$funcs['ncurses_scr_set']['extension'] = 'ext_ncurses';
-$funcs['ncurses_scr_set']['version_init'] = '4.2.0';
-$funcs['ncurses_show_panel']['extension'] = 'ext_ncurses';
-$funcs['ncurses_show_panel']['version_init'] = '4.3.0';
-$funcs['ncurses_slk_attr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_attr']['version_init'] = '4.1.0';
-$funcs['ncurses_slk_attroff']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_attroff']['version_init'] = '4.1.0';
-$funcs['ncurses_slk_attron']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_attron']['version_init'] = '4.1.0';
-$funcs['ncurses_slk_attrset']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_attrset']['version_init'] = '4.1.0';
-$funcs['ncurses_slk_clear']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_clear']['version_init'] = '4.1.0';
-$funcs['ncurses_slk_color']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_color']['version_init'] = '4.1.0';
-$funcs['ncurses_slk_init']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_init']['version_init'] = '4.1.0';
-$funcs['ncurses_slk_noutrefresh']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_noutrefresh']['version_init'] = '4.1.0';
-$funcs['ncurses_slk_refresh']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_refresh']['version_init'] = '4.1.0';
-$funcs['ncurses_slk_restore']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_restore']['version_init'] = '4.1.0';
-$funcs['ncurses_slk_set']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_set']['version_init'] = '4.2.0';
-$funcs['ncurses_slk_touch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_slk_touch']['version_init'] = '4.1.0';
-$funcs['ncurses_standend']['extension'] = 'ext_ncurses';
-$funcs['ncurses_standend']['version_init'] = '4.1.0';
-$funcs['ncurses_standout']['extension'] = 'ext_ncurses';
-$funcs['ncurses_standout']['version_init'] = '4.1.0';
-$funcs['ncurses_start_color']['extension'] = 'ext_ncurses';
-$funcs['ncurses_start_color']['version_init'] = '4.1.0';
-$funcs['ncurses_termattrs']['extension'] = 'ext_ncurses';
-$funcs['ncurses_termattrs']['version_init'] = '4.1.0';
-$funcs['ncurses_termname']['extension'] = 'ext_ncurses';
-$funcs['ncurses_termname']['version_init'] = '4.2.0';
-$funcs['ncurses_timeout']['extension'] = 'ext_ncurses';
-$funcs['ncurses_timeout']['version_init'] = '4.1.0';
-$funcs['ncurses_top_panel']['extension'] = 'ext_ncurses';
-$funcs['ncurses_top_panel']['version_init'] = '4.3.0';
-$funcs['ncurses_typeahead']['extension'] = 'ext_ncurses';
-$funcs['ncurses_typeahead']['version_init'] = '4.1.0';
-$funcs['ncurses_ungetch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_ungetch']['version_init'] = '4.1.0';
-$funcs['ncurses_ungetmouse']['extension'] = 'ext_ncurses';
-$funcs['ncurses_ungetmouse']['version_init'] = '4.2.0';
-$funcs['ncurses_update_panels']['extension'] = 'ext_ncurses';
-$funcs['ncurses_update_panels']['version_init'] = '4.3.0';
-$funcs['ncurses_use_default_colors']['extension'] = 'ext_ncurses';
-$funcs['ncurses_use_default_colors']['version_init'] = '4.1.0';
-$funcs['ncurses_use_env']['extension'] = 'ext_ncurses';
-$funcs['ncurses_use_env']['version_init'] = '4.1.0';
-$funcs['ncurses_use_extended_names']['extension'] = 'ext_ncurses';
-$funcs['ncurses_use_extended_names']['version_init'] = '4.1.0';
-$funcs['ncurses_vidattr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_vidattr']['version_init'] = '4.1.0';
-$funcs['ncurses_vline']['extension'] = 'ext_ncurses';
-$funcs['ncurses_vline']['version_init'] = '4.2.0';
-$funcs['ncurses_waddch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_waddch']['version_init'] = '4.3.0';
-$funcs['ncurses_waddstr']['extension'] = 'ext_ncurses';
-$funcs['ncurses_waddstr']['version_init'] = '4.2.0';
-$funcs['ncurses_wattroff']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wattroff']['version_init'] = '4.3.0';
-$funcs['ncurses_wattron']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wattron']['version_init'] = '4.3.0';
-$funcs['ncurses_wattrset']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wattrset']['version_init'] = '4.3.0';
-$funcs['ncurses_wborder']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wborder']['version_init'] = '4.3.0';
-$funcs['ncurses_wclear']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wclear']['version_init'] = '4.2.0';
-$funcs['ncurses_wcolor_set']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wcolor_set']['version_init'] = '4.2.0';
-$funcs['ncurses_werase']['extension'] = 'ext_ncurses';
-$funcs['ncurses_werase']['version_init'] = '4.3.0';
-$funcs['ncurses_wgetch']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wgetch']['version_init'] = '4.2.0';
-$funcs['ncurses_whline']['extension'] = 'ext_ncurses';
-$funcs['ncurses_whline']['version_init'] = '4.3.0';
-$funcs['ncurses_wmouse_trafo']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wmouse_trafo']['version_init'] = '4.2.0';
-$funcs['ncurses_wmove']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wmove']['version_init'] = '4.2.0';
-$funcs['ncurses_wnoutrefresh']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wnoutrefresh']['version_init'] = '4.2.0';
-$funcs['ncurses_wrefresh']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wrefresh']['version_init'] = '4.2.0';
-$funcs['ncurses_wstandend']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wstandend']['version_init'] = '4.3.0';
-$funcs['ncurses_wstandout']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wstandout']['version_init'] = '4.3.0';
-$funcs['ncurses_wvline']['extension'] = 'ext_ncurses';
-$funcs['ncurses_wvline']['version_init'] = '4.3.0';
-$funcs['new_xmldoc']['extension'] = 'ext_domxml';
-$funcs['new_xmldoc']['version_init'] = '4.0.0';
-$funcs['next']['extension'] = 'ext_standard';
-$funcs['next']['version_init'] = '4.0.0';
-$funcs['nextframe']['extension'] = 'ext_ming';
-$funcs['nextframe']['version_init'] = '4.0.5';
-$funcs['ngettext']['extension'] = 'ext_gettext';
-$funcs['ngettext']['version_init'] = '4.2.0';
-$funcs['nl2br']['extension'] = 'ext_standard';
-$funcs['nl2br']['version_init'] = '4.0.0';
-$funcs['nl_langinfo']['extension'] = 'ext_standard';
-$funcs['nl_langinfo']['version_init'] = '4.1.0';
-$funcs['nomultiple']['extension'] = 'ext_ming';
-$funcs['nomultiple']['version_init'] = '';
-$funcs['notes_body']['extension'] = 'ext_notes';
-$funcs['notes_body']['version_init'] = '4.0.5';
-$funcs['notes_copy_db']['extension'] = 'ext_notes';
-$funcs['notes_copy_db']['version_init'] = '4.0.5';
-$funcs['notes_create_db']['extension'] = 'ext_notes';
-$funcs['notes_create_db']['version_init'] = '4.0.5';
-$funcs['notes_create_note']['extension'] = 'ext_notes';
-$funcs['notes_create_note']['version_init'] = '4.0.5';
-$funcs['notes_drop_db']['extension'] = 'ext_notes';
-$funcs['notes_drop_db']['version_init'] = '4.0.5';
-$funcs['notes_find_note']['extension'] = 'ext_notes';
-$funcs['notes_find_note']['version_init'] = '4.0.5';
-$funcs['notes_header_info']['extension'] = 'ext_notes';
-$funcs['notes_header_info']['version_init'] = '4.0.5';
-$funcs['notes_list_msgs']['extension'] = 'ext_notes';
-$funcs['notes_list_msgs']['version_init'] = '4.0.5';
-$funcs['notes_mark_read']['extension'] = 'ext_notes';
-$funcs['notes_mark_read']['version_init'] = '4.0.5';
-$funcs['notes_mark_unread']['extension'] = 'ext_notes';
-$funcs['notes_mark_unread']['version_init'] = '4.0.5';
-$funcs['notes_nav_create']['extension'] = 'ext_notes';
-$funcs['notes_nav_create']['version_init'] = '4.0.5';
-$funcs['notes_search']['extension'] = 'ext_notes';
-$funcs['notes_search']['version_init'] = '4.0.5';
-$funcs['notes_unread']['extension'] = 'ext_notes';
-$funcs['notes_unread']['version_init'] = '4.0.5';
-$funcs['notes_version']['extension'] = 'ext_notes';
-$funcs['notes_version']['version_init'] = '4.0.5';
-$funcs['nsapi_request_headers']['extension'] = 'sapi_nsapi';
-$funcs['nsapi_request_headers']['version_init'] = '4.3.3';
-$funcs['nsapi_response_headers']['extension'] = 'sapi_nsapi';
-$funcs['nsapi_response_headers']['version_init'] = '4.3.3';
-$funcs['nsapi_virtual']['extension'] = 'sapi_nsapi';
-$funcs['nsapi_virtual']['version_init'] = '4.3.3';
-$funcs['number_format']['extension'] = 'ext_standard';
-$funcs['number_format']['version_init'] = '4.0.0';
-$funcs['ob_clean']['extension'] = 'ext_standard';
-$funcs['ob_clean']['version_init'] = '4.2.0';
-$funcs['ob_end_clean']['extension'] = 'ext_standard';
-$funcs['ob_end_clean']['version_init'] = '4.0.0';
-$funcs['ob_end_flush']['extension'] = 'ext_standard';
-$funcs['ob_end_flush']['version_init'] = '4.0.0';
-$funcs['ob_flush']['extension'] = 'ext_standard';
-$funcs['ob_flush']['version_init'] = '4.2.0';
-$funcs['ob_get_clean']['extension'] = 'ext_standard';
-$funcs['ob_get_clean']['version_init'] = '4.3.0';
-$funcs['ob_get_contents']['extension'] = 'ext_standard';
-$funcs['ob_get_contents']['version_init'] = '4.0.0';
-$funcs['ob_get_flush']['extension'] = 'ext_standard';
-$funcs['ob_get_flush']['version_init'] = '4.3.0';
-$funcs['ob_get_length']['extension'] = 'ext_standard';
-$funcs['ob_get_length']['version_init'] = '4.0.2';
-$funcs['ob_get_level']['extension'] = 'ext_standard';
-$funcs['ob_get_level']['version_init'] = '4.2.0';
-$funcs['ob_get_status']['extension'] = 'ext_standard';
-$funcs['ob_get_status']['version_init'] = '4.2.0';
-$funcs['ob_gzhandler']['extension'] = 'ext_zlib';
-$funcs['ob_gzhandler']['version_init'] = '4.0.4';
-$funcs['ob_iconv_handler']['extension'] = 'ext_iconv';
-$funcs['ob_iconv_handler']['version_init'] = '4.0.5';
-$funcs['ob_implicit_flush']['extension'] = 'ext_standard';
-$funcs['ob_implicit_flush']['version_init'] = '4.0.0';
-$funcs['ob_list_handlers']['extension'] = 'ext_standard';
-$funcs['ob_list_handlers']['version_init'] = '4.3.0';
-$funcs['ob_start']['extension'] = 'ext_standard';
-$funcs['ob_start']['version_init'] = '4.0.0';
-$funcs['ocibindbyname']['extension'] = 'ext_oci8';
-$funcs['ocibindbyname']['version_init'] = '4.0.0';
-$funcs['ocicancel']['extension'] = 'ext_oci8';
-$funcs['ocicancel']['version_init'] = '4.0.0';
-$funcs['ocicollappend']['extension'] = 'ext_oci8';
-$funcs['ocicollappend']['version_init'] = '4.0.6';
-$funcs['ocicollassign']['extension'] = 'ext_oci8';
-$funcs['ocicollassign']['version_init'] = '4.0.6';
-$funcs['ocicollassignelem']['extension'] = 'ext_oci8';
-$funcs['ocicollassignelem']['version_init'] = '4.0.6';
-$funcs['ocicollgetelem']['extension'] = 'ext_oci8';
-$funcs['ocicollgetelem']['version_init'] = '4.0.6';
-$funcs['ocicollmax']['extension'] = 'ext_oci8';
-$funcs['ocicollmax']['version_init'] = '4.0.6';
-$funcs['ocicollsize']['extension'] = 'ext_oci8';
-$funcs['ocicollsize']['version_init'] = '4.0.6';
-$funcs['ocicolltrim']['extension'] = 'ext_oci8';
-$funcs['ocicolltrim']['version_init'] = '4.0.6';
-$funcs['ocicolumnisnull']['extension'] = 'ext_oci8';
-$funcs['ocicolumnisnull']['version_init'] = '4.0.0';
-$funcs['ocicolumnname']['extension'] = 'ext_oci8';
-$funcs['ocicolumnname']['version_init'] = '4.0.0';
-$funcs['ocicolumnprecision']['extension'] = 'ext_oci8';
-$funcs['ocicolumnprecision']['version_init'] = '4.0.0';
-$funcs['ocicolumnscale']['extension'] = 'ext_oci8';
-$funcs['ocicolumnscale']['version_init'] = '4.0.0';
-$funcs['ocicolumnsize']['extension'] = 'ext_oci8';
-$funcs['ocicolumnsize']['version_init'] = '4.0.0';
-$funcs['ocicolumntype']['extension'] = 'ext_oci8';
-$funcs['ocicolumntype']['version_init'] = '4.0.0';
-$funcs['ocicolumntyperaw']['extension'] = 'ext_oci8';
-$funcs['ocicolumntyperaw']['version_init'] = '4.0.0';
-$funcs['ocicommit']['extension'] = 'ext_oci8';
-$funcs['ocicommit']['version_init'] = '4.0.0';
-$funcs['ocidefinebyname']['extension'] = 'ext_oci8';
-$funcs['ocidefinebyname']['version_init'] = '4.0.0';
-$funcs['ocierror']['extension'] = 'ext_oci8';
-$funcs['ocierror']['version_init'] = '4.0.0';
-$funcs['ociexecute']['extension'] = 'ext_oci8';
-$funcs['ociexecute']['version_init'] = '4.0.0';
-$funcs['ocifetch']['extension'] = 'ext_oci8';
-$funcs['ocifetch']['version_init'] = '4.0.0';
-$funcs['ocifetchinto']['extension'] = 'ext_oci8';
-$funcs['ocifetchinto']['version_init'] = '4.0.0';
-$funcs['ocifetchstatement']['extension'] = 'ext_oci8';
-$funcs['ocifetchstatement']['version_init'] = '4.0.0';
-$funcs['ocifreecoll']['extension'] = 'ext_oci8';
-$funcs['ocifreecoll']['version_init'] = '';
-$funcs['ocifreecollection']['extension'] = 'ext_oci8';
-$funcs['ocifreecollection']['version_init'] = '4.1.0';
-$funcs['ocifreecursor']['extension'] = 'ext_oci8';
-$funcs['ocifreecursor']['version_init'] = '4.0.0';
-$funcs['ocifreedesc']['extension'] = 'ext_oci8';
-$funcs['ocifreedesc']['version_init'] = '4.0.0';
-$funcs['ocifreestatement']['extension'] = 'ext_oci8';
-$funcs['ocifreestatement']['version_init'] = '4.0.0';
-$funcs['ociinternaldebug']['extension'] = 'ext_oci8';
-$funcs['ociinternaldebug']['version_init'] = '4.0.0';
-$funcs['ociloadlob']['extension'] = 'ext_oci8';
-$funcs['ociloadlob']['version_init'] = '4.0.0';
-$funcs['ocilogoff']['extension'] = 'ext_oci8';
-$funcs['ocilogoff']['version_init'] = '4.0.0';
-$funcs['ocilogon']['extension'] = 'ext_oci8';
-$funcs['ocilogon']['version_init'] = '4.0.0';
-$funcs['ocinewcollection']['extension'] = 'ext_oci8';
-$funcs['ocinewcollection']['version_init'] = '4.0.6';
-$funcs['ocinewcursor']['extension'] = 'ext_oci8';
-$funcs['ocinewcursor']['version_init'] = '4.0.0';
-$funcs['ocinewdescriptor']['extension'] = 'ext_oci8';
-$funcs['ocinewdescriptor']['version_init'] = '4.0.0';
-$funcs['ocinlogon']['extension'] = 'ext_oci8';
-$funcs['ocinlogon']['version_init'] = '4.0.0';
-$funcs['ocinumcols']['extension'] = 'ext_oci8';
-$funcs['ocinumcols']['version_init'] = '4.0.0';
-$funcs['ociparse']['extension'] = 'ext_oci8';
-$funcs['ociparse']['version_init'] = '4.0.0';
-$funcs['ocipasswordchange']['extension'] = 'ext_oci8';
-$funcs['ocipasswordchange']['version_init'] = '4.3.2';
-$funcs['ociplogon']['extension'] = 'ext_oci8';
-$funcs['ociplogon']['version_init'] = '4.0.0';
-$funcs['ociresult']['extension'] = 'ext_oci8';
-$funcs['ociresult']['version_init'] = '4.0.0';
-$funcs['ocirollback']['extension'] = 'ext_oci8';
-$funcs['ocirollback']['version_init'] = '4.0.0';
-$funcs['ocirowcount']['extension'] = 'ext_oci8';
-$funcs['ocirowcount']['version_init'] = '4.0.0';
-$funcs['ocisavelob']['extension'] = 'ext_oci8';
-$funcs['ocisavelob']['version_init'] = '4.0.0';
-$funcs['ocisavelobfile']['extension'] = 'ext_oci8';
-$funcs['ocisavelobfile']['version_init'] = '4.0.0';
-$funcs['ociserverversion']['extension'] = 'ext_oci8';
-$funcs['ociserverversion']['version_init'] = '4.0.0';
-$funcs['ocisetprefetch']['extension'] = 'ext_oci8';
-$funcs['ocisetprefetch']['version_init'] = '4.0.0';
-$funcs['ocistatementtype']['extension'] = 'ext_oci8';
-$funcs['ocistatementtype']['version_init'] = '4.0.0';
-$funcs['ociwritelobtofile']['extension'] = 'ext_oci8';
-$funcs['ociwritelobtofile']['version_init'] = '4.0.0';
-$funcs['octdec']['extension'] = 'ext_standard';
-$funcs['octdec']['version_init'] = '4.0.0';
-$funcs['odbc_autocommit']['extension'] = 'ext_odbc';
-$funcs['odbc_autocommit']['version_init'] = '4.0.0';
-$funcs['odbc_binmode']['extension'] = 'ext_odbc';
-$funcs['odbc_binmode']['version_init'] = '4.0.0';
-$funcs['odbc_close']['extension'] = 'ext_odbc';
-$funcs['odbc_close']['version_init'] = '4.0.0';
-$funcs['odbc_close_all']['extension'] = 'ext_odbc';
-$funcs['odbc_close_all']['version_init'] = '4.0.0';
-$funcs['odbc_columnprivileges']['extension'] = 'ext_odbc';
-$funcs['odbc_columnprivileges']['version_init'] = '4.0.0';
-$funcs['odbc_columns']['extension'] = 'ext_odbc';
-$funcs['odbc_columns']['version_init'] = '4.0.0';
-$funcs['odbc_commit']['extension'] = 'ext_odbc';
-$funcs['odbc_commit']['version_init'] = '4.0.0';
-$funcs['odbc_connect']['extension'] = 'ext_odbc';
-$funcs['odbc_connect']['version_init'] = '4.0.0';
-$funcs['odbc_cursor']['extension'] = 'ext_odbc';
-$funcs['odbc_cursor']['version_init'] = '4.0.0';
-$funcs['odbc_data_source']['extension'] = 'ext_odbc';
-$funcs['odbc_data_source']['version_init'] = '4.3.0';
-$funcs['odbc_do']['extension'] = 'ext_odbc';
-$funcs['odbc_do']['version_init'] = '4.0.0';
-$funcs['odbc_error']['extension'] = 'ext_odbc';
-$funcs['odbc_error']['version_init'] = '4.0.5';
-$funcs['odbc_errormsg']['extension'] = 'ext_odbc';
-$funcs['odbc_errormsg']['version_init'] = '4.0.5';
-$funcs['odbc_exec']['extension'] = 'ext_odbc';
-$funcs['odbc_exec']['version_init'] = '4.0.0';
-$funcs['odbc_execute']['extension'] = 'ext_odbc';
-$funcs['odbc_execute']['version_init'] = '4.0.0';
-$funcs['odbc_fetch_array']['extension'] = 'ext_odbc';
-$funcs['odbc_fetch_array']['version_init'] = '4.0.2';
-$funcs['odbc_fetch_into']['extension'] = 'ext_odbc';
-$funcs['odbc_fetch_into']['version_init'] = '4.0.0';
-$funcs['odbc_fetch_object']['extension'] = 'ext_odbc';
-$funcs['odbc_fetch_object']['version_init'] = '4.0.2';
-$funcs['odbc_fetch_row']['extension'] = 'ext_odbc';
-$funcs['odbc_fetch_row']['version_init'] = '4.0.0';
-$funcs['odbc_field_len']['extension'] = 'ext_odbc';
-$funcs['odbc_field_len']['version_init'] = '4.0.0';
-$funcs['odbc_field_name']['extension'] = 'ext_odbc';
-$funcs['odbc_field_name']['version_init'] = '4.0.0';
-$funcs['odbc_field_num']['extension'] = 'ext_odbc';
-$funcs['odbc_field_num']['version_init'] = '4.0.0';
-$funcs['odbc_field_precision']['extension'] = 'ext_odbc';
-$funcs['odbc_field_precision']['version_init'] = '4.0.0';
-$funcs['odbc_field_scale']['extension'] = 'ext_odbc';
-$funcs['odbc_field_scale']['version_init'] = '4.0.0';
-$funcs['odbc_field_type']['extension'] = 'ext_odbc';
-$funcs['odbc_field_type']['version_init'] = '4.0.0';
-$funcs['odbc_foreignkeys']['extension'] = 'ext_odbc';
-$funcs['odbc_foreignkeys']['version_init'] = '4.0.0';
-$funcs['odbc_free_result']['extension'] = 'ext_odbc';
-$funcs['odbc_free_result']['version_init'] = '4.0.0';
-$funcs['odbc_gettypeinfo']['extension'] = 'ext_odbc';
-$funcs['odbc_gettypeinfo']['version_init'] = '4.0.0';
-$funcs['odbc_longreadlen']['extension'] = 'ext_odbc';
-$funcs['odbc_longreadlen']['version_init'] = '4.0.0';
-$funcs['odbc_next_result']['extension'] = 'ext_odbc';
-$funcs['odbc_next_result']['version_init'] = '4.0.5';
-$funcs['odbc_num_fields']['extension'] = 'ext_odbc';
-$funcs['odbc_num_fields']['version_init'] = '4.0.0';
-$funcs['odbc_num_rows']['extension'] = 'ext_odbc';
-$funcs['odbc_num_rows']['version_init'] = '4.0.0';
-$funcs['odbc_pconnect']['extension'] = 'ext_odbc';
-$funcs['odbc_pconnect']['version_init'] = '4.0.0';
-$funcs['odbc_prepare']['extension'] = 'ext_odbc';
-$funcs['odbc_prepare']['version_init'] = '4.0.0';
-$funcs['odbc_primarykeys']['extension'] = 'ext_odbc';
-$funcs['odbc_primarykeys']['version_init'] = '4.0.0';
-$funcs['odbc_procedurecolumns']['extension'] = 'ext_odbc';
-$funcs['odbc_procedurecolumns']['version_init'] = '4.0.0';
-$funcs['odbc_procedures']['extension'] = 'ext_odbc';
-$funcs['odbc_procedures']['version_init'] = '4.0.0';
-$funcs['odbc_result']['extension'] = 'ext_odbc';
-$funcs['odbc_result']['version_init'] = '4.0.0';
-$funcs['odbc_result_all']['extension'] = 'ext_odbc';
-$funcs['odbc_result_all']['version_init'] = '4.0.0';
-$funcs['odbc_rollback']['extension'] = 'ext_odbc';
-$funcs['odbc_rollback']['version_init'] = '4.0.0';
-$funcs['odbc_setoption']['extension'] = 'ext_odbc';
-$funcs['odbc_setoption']['version_init'] = '4.0.0';
-$funcs['odbc_specialcolumns']['extension'] = 'ext_odbc';
-$funcs['odbc_specialcolumns']['version_init'] = '4.0.0';
-$funcs['odbc_statistics']['extension'] = 'ext_odbc';
-$funcs['odbc_statistics']['version_init'] = '4.0.0';
-$funcs['odbc_tableprivileges']['extension'] = 'ext_odbc';
-$funcs['odbc_tableprivileges']['version_init'] = '4.0.0';
-$funcs['odbc_tables']['extension'] = 'ext_odbc';
-$funcs['odbc_tables']['version_init'] = '4.0.0';
-$funcs['onclose']['extension'] = 'ext_standard';
-$funcs['onclose']['version_init'] = '5.0.0';
-$funcs['oncreate']['extension'] = 'ext_standard';
-$funcs['oncreate']['version_init'] = '5.0.0';
-$funcs['opendir']['extension'] = 'ext_standard';
-$funcs['opendir']['version_init'] = '4.0.0';
-$funcs['openlog']['extension'] = 'ext_standard';
-$funcs['openlog']['version_init'] = '4.0.0';
-$funcs['openssl_csr_export']['extension'] = 'ext_openssl';
-$funcs['openssl_csr_export']['version_init'] = '4.2.0';
-$funcs['openssl_csr_export_to_file']['extension'] = 'ext_openssl';
-$funcs['openssl_csr_export_to_file']['version_init'] = '4.2.0';
-$funcs['openssl_csr_new']['extension'] = 'ext_openssl';
-$funcs['openssl_csr_new']['version_init'] = '4.2.0';
-$funcs['openssl_csr_sign']['extension'] = 'ext_openssl';
-$funcs['openssl_csr_sign']['version_init'] = '4.2.0';
-$funcs['openssl_error_string']['extension'] = 'ext_openssl';
-$funcs['openssl_error_string']['version_init'] = '4.0.6';
-$funcs['openssl_free_key']['extension'] = 'ext_openssl';
-$funcs['openssl_free_key']['version_init'] = '4.0.4';
-$funcs['openssl_free_x509']['extension'] = 'ext_openssl';
-$funcs['openssl_free_x509']['version_init'] = '4.0.4';
-$funcs['openssl_get_privatekey']['extension'] = 'ext_openssl';
-$funcs['openssl_get_privatekey']['version_init'] = '4.0.4';
-$funcs['openssl_get_publickey']['extension'] = 'ext_openssl';
-$funcs['openssl_get_publickey']['version_init'] = '4.0.4';
-$funcs['openssl_open']['extension'] = 'ext_openssl';
-$funcs['openssl_open']['version_init'] = '4.0.4';
-$funcs['openssl_pkcs7_decrypt']['extension'] = 'ext_openssl';
-$funcs['openssl_pkcs7_decrypt']['version_init'] = '4.0.6';
-$funcs['openssl_pkcs7_encrypt']['extension'] = 'ext_openssl';
-$funcs['openssl_pkcs7_encrypt']['version_init'] = '4.0.6';
-$funcs['openssl_pkcs7_sign']['extension'] = 'ext_openssl';
-$funcs['openssl_pkcs7_sign']['version_init'] = '4.0.6';
-$funcs['openssl_pkcs7_verify']['extension'] = 'ext_openssl';
-$funcs['openssl_pkcs7_verify']['version_init'] = '4.0.6';
-$funcs['openssl_pkey_export']['extension'] = 'ext_openssl';
-$funcs['openssl_pkey_export']['version_init'] = '4.2.0';
-$funcs['openssl_pkey_export_to_file']['extension'] = 'ext_openssl';
-$funcs['openssl_pkey_export_to_file']['version_init'] = '4.2.0';
-$funcs['openssl_pkey_free']['extension'] = 'ext_openssl';
-$funcs['openssl_pkey_free']['version_init'] = '4.2.0';
-$funcs['openssl_pkey_get_private']['extension'] = 'ext_openssl';
-$funcs['openssl_pkey_get_private']['version_init'] = '4.2.0';
-$funcs['openssl_pkey_get_public']['extension'] = 'ext_openssl';
-$funcs['openssl_pkey_get_public']['version_init'] = '4.2.0';
-$funcs['openssl_pkey_new']['extension'] = 'ext_openssl';
-$funcs['openssl_pkey_new']['version_init'] = '4.2.0';
-$funcs['openssl_private_decrypt']['extension'] = 'ext_openssl';
-$funcs['openssl_private_decrypt']['version_init'] = '4.0.6';
-$funcs['openssl_private_encrypt']['extension'] = 'ext_openssl';
-$funcs['openssl_private_encrypt']['version_init'] = '4.0.6';
-$funcs['openssl_public_decrypt']['extension'] = 'ext_openssl';
-$funcs['openssl_public_decrypt']['version_init'] = '4.0.6';
-$funcs['openssl_public_encrypt']['extension'] = 'ext_openssl';
-$funcs['openssl_public_encrypt']['version_init'] = '4.0.6';
-$funcs['openssl_read_publickey']['extension'] = 'ext_openssl';
-$funcs['openssl_read_publickey']['version_init'] = '4.0.4';
-$funcs['openssl_read_x509']['extension'] = 'ext_openssl';
-$funcs['openssl_read_x509']['version_init'] = '4.0.4';
-$funcs['openssl_seal']['extension'] = 'ext_openssl';
-$funcs['openssl_seal']['version_init'] = '4.0.4';
-$funcs['openssl_sign']['extension'] = 'ext_openssl';
-$funcs['openssl_sign']['version_init'] = '4.0.4';
-$funcs['openssl_verify']['extension'] = 'ext_openssl';
-$funcs['openssl_verify']['version_init'] = '4.0.4';
-$funcs['openssl_x509_checkpurpose']['extension'] = 'ext_openssl';
-$funcs['openssl_x509_checkpurpose']['version_init'] = '4.0.6';
-$funcs['openssl_x509_check_private_key']['extension'] = 'ext_openssl';
-$funcs['openssl_x509_check_private_key']['version_init'] = '4.2.0';
-$funcs['openssl_x509_export']['extension'] = 'ext_openssl';
-$funcs['openssl_x509_export']['version_init'] = '4.2.0';
-$funcs['openssl_x509_export_to_file']['extension'] = 'ext_openssl';
-$funcs['openssl_x509_export_to_file']['version_init'] = '4.2.0';
-$funcs['openssl_x509_free']['extension'] = 'ext_openssl';
-$funcs['openssl_x509_free']['version_init'] = '4.0.6';
-$funcs['openssl_x509_parse']['extension'] = 'ext_openssl';
-$funcs['openssl_x509_parse']['version_init'] = '4.0.6';
-$funcs['openssl_x509_read']['extension'] = 'ext_openssl';
-$funcs['openssl_x509_read']['version_init'] = '4.0.6';
-$funcs['open_listen_sock']['extension'] = 'ext_sockets';
-$funcs['open_listen_sock']['version_init'] = '4.0.2';
-$funcs['ora_bind']['extension'] = 'ext_oracle';
-$funcs['ora_bind']['version_init'] = '4.0.0';
-$funcs['ora_close']['extension'] = 'ext_oracle';
-$funcs['ora_close']['version_init'] = '4.0.0';
-$funcs['ora_columnname']['extension'] = 'ext_oracle';
-$funcs['ora_columnname']['version_init'] = '4.0.0';
-$funcs['ora_columnsize']['extension'] = 'ext_oracle';
-$funcs['ora_columnsize']['version_init'] = '4.0.0';
-$funcs['ora_columntype']['extension'] = 'ext_oracle';
-$funcs['ora_columntype']['version_init'] = '4.0.0';
-$funcs['ora_commit']['extension'] = 'ext_oracle';
-$funcs['ora_commit']['version_init'] = '4.0.0';
-$funcs['ora_commitoff']['extension'] = 'ext_oracle';
-$funcs['ora_commitoff']['version_init'] = '4.0.0';
-$funcs['ora_commiton']['extension'] = 'ext_oracle';
-$funcs['ora_commiton']['version_init'] = '4.0.0';
-$funcs['ora_do']['extension'] = 'ext_oracle';
-$funcs['ora_do']['version_init'] = '4.0.0';
-$funcs['ora_error']['extension'] = 'ext_oracle';
-$funcs['ora_error']['version_init'] = '4.0.0';
-$funcs['ora_errorcode']['extension'] = 'ext_oracle';
-$funcs['ora_errorcode']['version_init'] = '4.0.0';
-$funcs['ora_exec']['extension'] = 'ext_oracle';
-$funcs['ora_exec']['version_init'] = '4.0.0';
-$funcs['ora_fetch']['extension'] = 'ext_oracle';
-$funcs['ora_fetch']['version_init'] = '4.0.0';
-$funcs['ora_fetch_into']['extension'] = 'ext_oracle';
-$funcs['ora_fetch_into']['version_init'] = '4.0.0';
-$funcs['ora_getcolumn']['extension'] = 'ext_oracle';
-$funcs['ora_getcolumn']['version_init'] = '4.0.0';
-$funcs['ora_logoff']['extension'] = 'ext_oracle';
-$funcs['ora_logoff']['version_init'] = '4.0.0';
-$funcs['ora_logon']['extension'] = 'ext_oracle';
-$funcs['ora_logon']['version_init'] = '4.0.0';
-$funcs['ora_numcols']['extension'] = 'ext_oracle';
-$funcs['ora_numcols']['version_init'] = '4.0.0';
-$funcs['ora_numrows']['extension'] = 'ext_oracle';
-$funcs['ora_numrows']['version_init'] = '4.0.0';
-$funcs['ora_open']['extension'] = 'ext_oracle';
-$funcs['ora_open']['version_init'] = '4.0.0';
-$funcs['ora_parse']['extension'] = 'ext_oracle';
-$funcs['ora_parse']['version_init'] = '4.0.0';
-$funcs['ora_plogon']['extension'] = 'ext_oracle';
-$funcs['ora_plogon']['version_init'] = '4.0.0';
-$funcs['ora_rollback']['extension'] = 'ext_oracle';
-$funcs['ora_rollback']['version_init'] = '4.0.0';
-$funcs['orbit_caught_exception']['extension'] = 'ext_satellite';
-$funcs['orbit_caught_exception']['version_init'] = '4.0.3';
-$funcs['orbit_exception_id']['extension'] = 'ext_satellite';
-$funcs['orbit_exception_id']['version_init'] = '4.0.3';
-$funcs['orbit_exception_value']['extension'] = 'ext_satellite';
-$funcs['orbit_exception_value']['version_init'] = '4.0.3';
-$funcs['orbit_get_repository_id']['extension'] = 'ext_satellite';
-$funcs['orbit_get_repository_id']['version_init'] = '4.0.3';
-$funcs['orbit_load_idl']['extension'] = 'ext_satellite';
-$funcs['orbit_load_idl']['version_init'] = '4.0.3';
-$funcs['ord']['extension'] = 'ext_standard';
-$funcs['ord']['version_init'] = '4.0.0';
-$funcs['output']['extension'] = 'ext_ming';
-$funcs['output']['version_init'] = '4.0.5';
-$funcs['output_add_rewrite_var']['extension'] = 'ext_standard';
-$funcs['output_add_rewrite_var']['version_init'] = '4.3.0';
-$funcs['output_reset_rewrite_vars']['extension'] = 'ext_standard';
-$funcs['output_reset_rewrite_vars']['version_init'] = '4.3.0';
-$funcs['overload']['extension'] = 'ext_overload';
-$funcs['overload']['version_init'] = '4.2.0';
-$funcs['ovrimos_close']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_close']['version_init'] = '4.0.3';
-$funcs['ovrimos_close_all']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_close_all']['version_init'] = '4.0.3';
-$funcs['ovrimos_commit']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_commit']['version_init'] = '4.0.3';
-$funcs['ovrimos_connect']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_connect']['version_init'] = '4.0.3';
-$funcs['ovrimos_cursor']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_cursor']['version_init'] = '4.0.3';
-$funcs['ovrimos_do']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_do']['version_init'] = '';
-$funcs['ovrimos_exec']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_exec']['version_init'] = '4.0.3';
-$funcs['ovrimos_execute']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_execute']['version_init'] = '4.0.3';
-$funcs['ovrimos_fetch_into']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_fetch_into']['version_init'] = '4.0.3';
-$funcs['ovrimos_fetch_row']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_fetch_row']['version_init'] = '4.0.3';
-$funcs['ovrimos_field_len']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_field_len']['version_init'] = '4.0.3';
-$funcs['ovrimos_field_name']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_field_name']['version_init'] = '4.0.3';
-$funcs['ovrimos_field_num']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_field_num']['version_init'] = '4.0.3';
-$funcs['ovrimos_field_type']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_field_type']['version_init'] = '4.0.3';
-$funcs['ovrimos_free_result']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_free_result']['version_init'] = '4.0.3';
-$funcs['ovrimos_longreadlen']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_longreadlen']['version_init'] = '4.0.3';
-$funcs['ovrimos_num_fields']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_num_fields']['version_init'] = '4.0.3';
-$funcs['ovrimos_num_rows']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_num_rows']['version_init'] = '4.0.3';
-$funcs['ovrimos_prepare']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_prepare']['version_init'] = '4.0.3';
-$funcs['ovrimos_result']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_result']['version_init'] = '4.0.3';
-$funcs['ovrimos_result_all']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_result_all']['version_init'] = '4.0.3';
-$funcs['ovrimos_rollback']['extension'] = 'ext_ovrimos';
-$funcs['ovrimos_rollback']['version_init'] = '4.0.3';
-$funcs['pack']['extension'] = 'ext_standard';
-$funcs['pack']['version_init'] = '4.0.0';
-$funcs['parse_ini_file']['extension'] = 'ext_standard';
-$funcs['parse_ini_file']['version_init'] = '4.0.0';
-$funcs['parse_str']['extension'] = 'ext_standard';
-$funcs['parse_str']['version_init'] = '4.0.0';
-$funcs['parse_url']['extension'] = 'ext_standard';
-$funcs['parse_url']['version_init'] = '4.0.0';
-$funcs['passthru']['extension'] = 'ext_standard';
-$funcs['passthru']['version_init'] = '4.0.0';
-$funcs['pathinfo']['extension'] = 'ext_standard';
-$funcs['pathinfo']['version_init'] = '4.0.3';
-$funcs['pclose']['extension'] = 'ext_standard';
-$funcs['pclose']['version_init'] = '4.0.0';
-$funcs['pcntl_alarm']['extension'] = 'ext_pcntl';
-$funcs['pcntl_alarm']['version_init'] = '4.3.0';
-$funcs['pcntl_exec']['extension'] = 'ext_pcntl';
-$funcs['pcntl_exec']['version_init'] = '4.2.0';
-$funcs['pcntl_fork']['extension'] = 'ext_pcntl';
-$funcs['pcntl_fork']['version_init'] = '4.1.0';
-$funcs['pcntl_getpriority']['extension'] = 'ext_pcntl';
-$funcs['pcntl_getpriority']['version_init'] = '5.0.0';
-$funcs['pcntl_setpriority']['extension'] = 'ext_pcntl';
-$funcs['pcntl_setpriority']['version_init'] = '5.0.0';
-$funcs['pcntl_signal']['extension'] = 'ext_pcntl';
-$funcs['pcntl_signal']['version_init'] = '4.1.0';
-$funcs['pcntl_wait']['extension'] = 'ext_pcntl';
-$funcs['pcntl_wait']['version_init'] = '';
-$funcs['pcntl_waitpid']['extension'] = 'ext_pcntl';
-$funcs['pcntl_waitpid']['version_init'] = '4.1.0';
-$funcs['pcntl_wexitstatus']['extension'] = 'ext_pcntl';
-$funcs['pcntl_wexitstatus']['version_init'] = '4.1.0';
-$funcs['pcntl_wifexited']['extension'] = 'ext_pcntl';
-$funcs['pcntl_wifexited']['version_init'] = '4.1.0';
-$funcs['pcntl_wifsignaled']['extension'] = 'ext_pcntl';
-$funcs['pcntl_wifsignaled']['version_init'] = '4.1.0';
-$funcs['pcntl_wifstopped']['extension'] = 'ext_pcntl';
-$funcs['pcntl_wifstopped']['version_init'] = '4.1.0';
-$funcs['pcntl_wstopsig']['extension'] = 'ext_pcntl';
-$funcs['pcntl_wstopsig']['version_init'] = '4.1.0';
-$funcs['pcntl_wtermsig']['extension'] = 'ext_pcntl';
-$funcs['pcntl_wtermsig']['version_init'] = '4.1.0';
-$funcs['pdf_add_annotation']['extension'] = 'ext_pdf';
-$funcs['pdf_add_annotation']['version_init'] = '4.0.0';
-$funcs['pdf_add_bookmark']['extension'] = 'ext_pdf';
-$funcs['pdf_add_bookmark']['version_init'] = '4.0.1';
-$funcs['pdf_add_launchlink']['extension'] = 'ext_pdf';
-$funcs['pdf_add_launchlink']['version_init'] = '4.0.5';
-$funcs['pdf_add_locallink']['extension'] = 'ext_pdf';
-$funcs['pdf_add_locallink']['version_init'] = '4.0.5';
-$funcs['pdf_add_note']['extension'] = 'ext_pdf';
-$funcs['pdf_add_note']['version_init'] = '4.0.5';
-$funcs['pdf_add_outline']['extension'] = 'ext_pdf';
-$funcs['pdf_add_outline']['version_init'] = '4.0.0';
-$funcs['pdf_add_pdflink']['extension'] = 'ext_pdf';
-$funcs['pdf_add_pdflink']['version_init'] = '4.0.0';
-$funcs['pdf_add_thumbnail']['extension'] = 'ext_pdf';
-$funcs['pdf_add_thumbnail']['version_init'] = '4.0.5';
-$funcs['pdf_add_weblink']['extension'] = 'ext_pdf';
-$funcs['pdf_add_weblink']['version_init'] = '4.0.0';
-$funcs['pdf_arc']['extension'] = 'ext_pdf';
-$funcs['pdf_arc']['version_init'] = '4.0.0';
-$funcs['pdf_arcn']['extension'] = 'ext_pdf';
-$funcs['pdf_arcn']['version_init'] = '4.0.5';
-$funcs['pdf_attach_file']['extension'] = 'ext_pdf';
-$funcs['pdf_attach_file']['version_init'] = '4.0.5';
-$funcs['pdf_begin_page']['extension'] = 'ext_pdf';
-$funcs['pdf_begin_page']['version_init'] = '4.0.0';
-$funcs['pdf_begin_pattern']['extension'] = 'ext_pdf';
-$funcs['pdf_begin_pattern']['version_init'] = '4.0.5';
-$funcs['pdf_begin_template']['extension'] = 'ext_pdf';
-$funcs['pdf_begin_template']['version_init'] = '4.0.5';
-$funcs['pdf_circle']['extension'] = 'ext_pdf';
-$funcs['pdf_circle']['version_init'] = '4.0.0';
-$funcs['pdf_clip']['extension'] = 'ext_pdf';
-$funcs['pdf_clip']['version_init'] = '4.0.0';
-$funcs['pdf_close']['extension'] = 'ext_pdf';
-$funcs['pdf_close']['version_init'] = '4.0.0';
-$funcs['pdf_closepath']['extension'] = 'ext_pdf';
-$funcs['pdf_closepath']['version_init'] = '4.0.0';
-$funcs['pdf_closepath_fill_stroke']['extension'] = 'ext_pdf';
-$funcs['pdf_closepath_fill_stroke']['version_init'] = '4.0.0';
-$funcs['pdf_closepath_stroke']['extension'] = 'ext_pdf';
-$funcs['pdf_closepath_stroke']['version_init'] = '4.0.0';
-$funcs['pdf_close_image']['extension'] = 'ext_pdf';
-$funcs['pdf_close_image']['version_init'] = '4.0.0';
-$funcs['pdf_close_pdi']['extension'] = 'ext_pdf';
-$funcs['pdf_close_pdi']['version_init'] = '4.0.5';
-$funcs['pdf_close_pdi_page']['extension'] = 'ext_pdf';
-$funcs['pdf_close_pdi_page']['version_init'] = '4.0.5';
-$funcs['pdf_concat']['extension'] = 'ext_pdf';
-$funcs['pdf_concat']['version_init'] = '4.0.5';
-$funcs['pdf_continue_text']['extension'] = 'ext_pdf';
-$funcs['pdf_continue_text']['version_init'] = '4.0.0';
-$funcs['pdf_curveto']['extension'] = 'ext_pdf';
-$funcs['pdf_curveto']['version_init'] = '4.0.0';
-$funcs['pdf_delete']['extension'] = 'ext_pdf';
-$funcs['pdf_delete']['version_init'] = '4.0.5';
-$funcs['pdf_endpath']['extension'] = 'ext_pdf';
-$funcs['pdf_endpath']['version_init'] = '4.0.0';
-$funcs['pdf_end_page']['extension'] = 'ext_pdf';
-$funcs['pdf_end_page']['version_init'] = '4.0.0';
-$funcs['pdf_end_pattern']['extension'] = 'ext_pdf';
-$funcs['pdf_end_pattern']['version_init'] = '4.0.5';
-$funcs['pdf_end_template']['extension'] = 'ext_pdf';
-$funcs['pdf_end_template']['version_init'] = '4.0.5';
-$funcs['pdf_fill']['extension'] = 'ext_pdf';
-$funcs['pdf_fill']['version_init'] = '4.0.0';
-$funcs['pdf_fill_stroke']['extension'] = 'ext_pdf';
-$funcs['pdf_fill_stroke']['version_init'] = '4.0.0';
-$funcs['pdf_findfont']['extension'] = 'ext_pdf';
-$funcs['pdf_findfont']['version_init'] = '4.0.5';
-$funcs['pdf_get_buffer']['extension'] = 'ext_pdf';
-$funcs['pdf_get_buffer']['version_init'] = '4.0.5';
-$funcs['pdf_get_font']['extension'] = 'ext_pdf';
-$funcs['pdf_get_font']['version_init'] = '4.0.0';
-$funcs['pdf_get_fontname']['extension'] = 'ext_pdf';
-$funcs['pdf_get_fontname']['version_init'] = '4.0.0';
-$funcs['pdf_get_fontsize']['extension'] = 'ext_pdf';
-$funcs['pdf_get_fontsize']['version_init'] = '4.0.0';
-$funcs['pdf_get_image_height']['extension'] = 'ext_pdf';
-$funcs['pdf_get_image_height']['version_init'] = '4.0.0';
-$funcs['pdf_get_image_width']['extension'] = 'ext_pdf';
-$funcs['pdf_get_image_width']['version_init'] = '4.0.0';
-$funcs['pdf_get_majorversion']['extension'] = 'ext_pdf';
-$funcs['pdf_get_majorversion']['version_init'] = '4.2.0';
-$funcs['pdf_get_minorversion']['extension'] = 'ext_pdf';
-$funcs['pdf_get_minorversion']['version_init'] = '4.2.0';
-$funcs['pdf_get_parameter']['extension'] = 'ext_pdf';
-$funcs['pdf_get_parameter']['version_init'] = '4.0.1';
-$funcs['pdf_get_pdi_parameter']['extension'] = 'ext_pdf';
-$funcs['pdf_get_pdi_parameter']['version_init'] = '4.0.5';
-$funcs['pdf_get_pdi_value']['extension'] = 'ext_pdf';
-$funcs['pdf_get_pdi_value']['version_init'] = '4.0.5';
-$funcs['pdf_get_value']['extension'] = 'ext_pdf';
-$funcs['pdf_get_value']['version_init'] = '4.0.1';
-$funcs['pdf_initgraphics']['extension'] = 'ext_pdf';
-$funcs['pdf_initgraphics']['version_init'] = '4.0.5';
-$funcs['pdf_lineto']['extension'] = 'ext_pdf';
-$funcs['pdf_lineto']['version_init'] = '4.0.0';
-$funcs['pdf_makespotcolor']['extension'] = 'ext_pdf';
-$funcs['pdf_makespotcolor']['version_init'] = '4.0.5';
-$funcs['pdf_moveto']['extension'] = 'ext_pdf';
-$funcs['pdf_moveto']['version_init'] = '4.0.0';
-$funcs['pdf_new']['extension'] = 'ext_pdf';
-$funcs['pdf_new']['version_init'] = '4.0.5';
-$funcs['pdf_open']['extension'] = 'ext_pdf';
-$funcs['pdf_open']['version_init'] = '4.0.0';
-$funcs['pdf_open_ccitt']['extension'] = 'ext_pdf';
-$funcs['pdf_open_ccitt']['version_init'] = '4.0.5';
-$funcs['pdf_open_file']['extension'] = 'ext_pdf';
-$funcs['pdf_open_file']['version_init'] = '4.0.5';
-$funcs['pdf_open_gif']['extension'] = 'ext_pdf';
-$funcs['pdf_open_gif']['version_init'] = '4.0.0';
-$funcs['pdf_open_image']['extension'] = 'ext_pdf';
-$funcs['pdf_open_image']['version_init'] = '4.0.5';
-$funcs['pdf_open_image_file']['extension'] = 'ext_pdf';
-$funcs['pdf_open_image_file']['version_init'] = '4.0.0';
-$funcs['pdf_open_jpeg']['extension'] = 'ext_pdf';
-$funcs['pdf_open_jpeg']['version_init'] = '4.0.0';
-$funcs['pdf_open_memory_image']['extension'] = 'ext_pdf';
-$funcs['pdf_open_memory_image']['version_init'] = '4.0.0';
-$funcs['pdf_open_pdi']['extension'] = 'ext_pdf';
-$funcs['pdf_open_pdi']['version_init'] = '4.0.5';
-$funcs['pdf_open_pdi_page']['extension'] = 'ext_pdf';
-$funcs['pdf_open_pdi_page']['version_init'] = '4.0.5';
-$funcs['pdf_open_png']['extension'] = 'ext_pdf';
-$funcs['pdf_open_png']['version_init'] = '4.0.0';
-$funcs['pdf_open_tiff']['extension'] = 'ext_pdf';
-$funcs['pdf_open_tiff']['version_init'] = '4.0.0';
-$funcs['pdf_place_image']['extension'] = 'ext_pdf';
-$funcs['pdf_place_image']['version_init'] = '4.0.0';
-$funcs['pdf_place_pdi_page']['extension'] = 'ext_pdf';
-$funcs['pdf_place_pdi_page']['version_init'] = '4.0.6';
-$funcs['pdf_rect']['extension'] = 'ext_pdf';
-$funcs['pdf_rect']['version_init'] = '4.0.0';
-$funcs['pdf_restore']['extension'] = 'ext_pdf';
-$funcs['pdf_restore']['version_init'] = '4.0.0';
-$funcs['pdf_rotate']['extension'] = 'ext_pdf';
-$funcs['pdf_rotate']['version_init'] = '4.0.0';
-$funcs['pdf_save']['extension'] = 'ext_pdf';
-$funcs['pdf_save']['version_init'] = '4.0.0';
-$funcs['pdf_scale']['extension'] = 'ext_pdf';
-$funcs['pdf_scale']['version_init'] = '4.0.0';
-$funcs['pdf_setcolor']['extension'] = 'ext_pdf';
-$funcs['pdf_setcolor']['version_init'] = '4.0.5';
-$funcs['pdf_setdash']['extension'] = 'ext_pdf';
-$funcs['pdf_setdash']['version_init'] = '4.0.0';
-$funcs['pdf_setflat']['extension'] = 'ext_pdf';
-$funcs['pdf_setflat']['version_init'] = '4.0.0';
-$funcs['pdf_setfont']['extension'] = 'ext_pdf';
-$funcs['pdf_setfont']['version_init'] = '4.0.5';
-$funcs['pdf_setgray']['extension'] = 'ext_pdf';
-$funcs['pdf_setgray']['version_init'] = '4.0.0';
-$funcs['pdf_setgray_fill']['extension'] = 'ext_pdf';
-$funcs['pdf_setgray_fill']['version_init'] = '4.0.0';
-$funcs['pdf_setgray_stroke']['extension'] = 'ext_pdf';
-$funcs['pdf_setgray_stroke']['version_init'] = '4.0.0';
-$funcs['pdf_setlinecap']['extension'] = 'ext_pdf';
-$funcs['pdf_setlinecap']['version_init'] = '4.0.0';
-$funcs['pdf_setlinejoin']['extension'] = 'ext_pdf';
-$funcs['pdf_setlinejoin']['version_init'] = '4.0.0';
-$funcs['pdf_setlinewidth']['extension'] = 'ext_pdf';
-$funcs['pdf_setlinewidth']['version_init'] = '4.0.0';
-$funcs['pdf_setmatrix']['extension'] = 'ext_pdf';
-$funcs['pdf_setmatrix']['version_init'] = '4.0.5';
-$funcs['pdf_setmiterlimit']['extension'] = 'ext_pdf';
-$funcs['pdf_setmiterlimit']['version_init'] = '4.0.0';
-$funcs['pdf_setpolydash']['extension'] = 'ext_pdf';
-$funcs['pdf_setpolydash']['version_init'] = '4.0.5';
-$funcs['pdf_setrgbcolor']['extension'] = 'ext_pdf';
-$funcs['pdf_setrgbcolor']['version_init'] = '4.0.0';
-$funcs['pdf_setrgbcolor_fill']['extension'] = 'ext_pdf';
-$funcs['pdf_setrgbcolor_fill']['version_init'] = '4.0.0';
-$funcs['pdf_setrgbcolor_stroke']['extension'] = 'ext_pdf';
-$funcs['pdf_setrgbcolor_stroke']['version_init'] = '4.0.0';
-$funcs['pdf_set_border_color']['extension'] = 'ext_pdf';
-$funcs['pdf_set_border_color']['version_init'] = '4.0.0';
-$funcs['pdf_set_border_dash']['extension'] = 'ext_pdf';
-$funcs['pdf_set_border_dash']['version_init'] = '4.0.1';
-$funcs['pdf_set_border_style']['extension'] = 'ext_pdf';
-$funcs['pdf_set_border_style']['version_init'] = '4.0.0';
-$funcs['pdf_set_char_spacing']['extension'] = 'ext_pdf';
-$funcs['pdf_set_char_spacing']['version_init'] = '4.0.0';
-$funcs['pdf_set_duration']['extension'] = 'ext_pdf';
-$funcs['pdf_set_duration']['version_init'] = '4.0.0';
-$funcs['pdf_set_font']['extension'] = 'ext_pdf';
-$funcs['pdf_set_font']['version_init'] = '4.0.0';
-$funcs['pdf_set_horiz_scaling']['extension'] = 'ext_pdf';
-$funcs['pdf_set_horiz_scaling']['version_init'] = '4.0.0';
-$funcs['pdf_set_info']['extension'] = 'ext_pdf';
-$funcs['pdf_set_info']['version_init'] = '4.0.1';
-$funcs['pdf_set_info_author']['extension'] = 'ext_pdf';
-$funcs['pdf_set_info_author']['version_init'] = '4.0.0';
-$funcs['pdf_set_info_creator']['extension'] = 'ext_pdf';
-$funcs['pdf_set_info_creator']['version_init'] = '4.0.0';
-$funcs['pdf_set_info_keywords']['extension'] = 'ext_pdf';
-$funcs['pdf_set_info_keywords']['version_init'] = '4.0.0';
-$funcs['pdf_set_info_subject']['extension'] = 'ext_pdf';
-$funcs['pdf_set_info_subject']['version_init'] = '4.0.0';
-$funcs['pdf_set_info_title']['extension'] = 'ext_pdf';
-$funcs['pdf_set_info_title']['version_init'] = '4.0.0';
-$funcs['pdf_set_leading']['extension'] = 'ext_pdf';
-$funcs['pdf_set_leading']['version_init'] = '4.0.0';
-$funcs['pdf_set_parameter']['extension'] = 'ext_pdf';
-$funcs['pdf_set_parameter']['version_init'] = '4.0.0';
-$funcs['pdf_set_text_pos']['extension'] = 'ext_pdf';
-$funcs['pdf_set_text_pos']['version_init'] = '4.0.0';
-$funcs['pdf_set_text_rendering']['extension'] = 'ext_pdf';
-$funcs['pdf_set_text_rendering']['version_init'] = '4.0.0';
-$funcs['pdf_set_text_rise']['extension'] = 'ext_pdf';
-$funcs['pdf_set_text_rise']['version_init'] = '4.0.0';
-$funcs['pdf_set_transition']['extension'] = 'ext_pdf';
-$funcs['pdf_set_transition']['version_init'] = '4.0.0';
-$funcs['pdf_set_value']['extension'] = 'ext_pdf';
-$funcs['pdf_set_value']['version_init'] = '4.0.1';
-$funcs['pdf_set_word_spacing']['extension'] = 'ext_pdf';
-$funcs['pdf_set_word_spacing']['version_init'] = '4.0.0';
-$funcs['pdf_show']['extension'] = 'ext_pdf';
-$funcs['pdf_show']['version_init'] = '4.0.0';
-$funcs['pdf_show_boxed']['extension'] = 'ext_pdf';
-$funcs['pdf_show_boxed']['version_init'] = '4.0.0';
-$funcs['pdf_show_xy']['extension'] = 'ext_pdf';
-$funcs['pdf_show_xy']['version_init'] = '4.0.0';
-$funcs['pdf_skew']['extension'] = 'ext_pdf';
-$funcs['pdf_skew']['version_init'] = '4.0.0';
-$funcs['pdf_stringwidth']['extension'] = 'ext_pdf';
-$funcs['pdf_stringwidth']['version_init'] = '4.0.0';
-$funcs['pdf_stroke']['extension'] = 'ext_pdf';
-$funcs['pdf_stroke']['version_init'] = '4.0.0';
-$funcs['pdf_translate']['extension'] = 'ext_pdf';
-$funcs['pdf_translate']['version_init'] = '4.0.0';
-$funcs['pfpro_cleanup']['extension'] = 'ext_pfpro';
-$funcs['pfpro_cleanup']['version_init'] = '4.0.2';
-$funcs['pfpro_init']['extension'] = 'ext_pfpro';
-$funcs['pfpro_init']['version_init'] = '4.0.2';
-$funcs['pfpro_process']['extension'] = 'ext_pfpro';
-$funcs['pfpro_process']['version_init'] = '4.0.2';
-$funcs['pfpro_process_raw']['extension'] = 'ext_pfpro';
-$funcs['pfpro_process_raw']['version_init'] = '4.0.2';
-$funcs['pfpro_version']['extension'] = 'ext_pfpro';
-$funcs['pfpro_version']['version_init'] = '4.0.2';
-$funcs['pfsockopen']['extension'] = 'ext_standard';
-$funcs['pfsockopen']['version_init'] = '4.0.0';
-$funcs['pg_affected_rows']['extension'] = 'ext_pgsql';
-$funcs['pg_affected_rows']['version_init'] = '4.2.0';
-$funcs['pg_cancel_query']['extension'] = 'ext_pgsql';
-$funcs['pg_cancel_query']['version_init'] = '4.2.0';
-$funcs['pg_clientencoding']['extension'] = 'ext_pgsql';
-$funcs['pg_clientencoding']['version_init'] = '4.0.2';
-$funcs['pg_client_encoding']['extension'] = 'ext_pgsql';
-$funcs['pg_client_encoding']['version_init'] = '4.0.3';
-$funcs['pg_close']['extension'] = 'ext_pgsql';
-$funcs['pg_close']['version_init'] = '4.0.0';
-$funcs['pg_cmdtuples']['extension'] = 'ext_pgsql';
-$funcs['pg_cmdtuples']['version_init'] = '4.0.0';
-$funcs['pg_connect']['extension'] = 'ext_pgsql';
-$funcs['pg_connect']['version_init'] = '4.0.0';
-$funcs['pg_connection_busy']['extension'] = 'ext_pgsql';
-$funcs['pg_connection_busy']['version_init'] = '4.2.0';
-$funcs['pg_connection_reset']['extension'] = 'ext_pgsql';
-$funcs['pg_connection_reset']['version_init'] = '4.2.0';
-$funcs['pg_connection_status']['extension'] = 'ext_pgsql';
-$funcs['pg_connection_status']['version_init'] = '4.2.0';
-$funcs['pg_convert']['extension'] = 'ext_pgsql';
-$funcs['pg_convert']['version_init'] = '4.3.0';
-$funcs['pg_copy_from']['extension'] = 'ext_pgsql';
-$funcs['pg_copy_from']['version_init'] = '4.2.0';
-$funcs['pg_copy_to']['extension'] = 'ext_pgsql';
-$funcs['pg_copy_to']['version_init'] = '4.2.0';
-$funcs['pg_dbname']['extension'] = 'ext_pgsql';
-$funcs['pg_dbname']['version_init'] = '4.0.0';
-$funcs['pg_delete']['extension'] = 'ext_pgsql';
-$funcs['pg_delete']['version_init'] = '4.3.0';
-$funcs['pg_end_copy']['extension'] = 'ext_pgsql';
-$funcs['pg_end_copy']['version_init'] = '4.0.3';
-$funcs['pg_errormessage']['extension'] = 'ext_pgsql';
-$funcs['pg_errormessage']['version_init'] = '4.0.0';
-$funcs['pg_escape_bytea']['extension'] = 'ext_pgsql';
-$funcs['pg_escape_bytea']['version_init'] = '4.2.0';
-$funcs['pg_escape_string']['extension'] = 'ext_pgsql';
-$funcs['pg_escape_string']['version_init'] = '4.2.0';
-$funcs['pg_exec']['extension'] = 'ext_pgsql';
-$funcs['pg_exec']['version_init'] = '4.0.0';
-$funcs['pg_fetch_all']['extension'] = 'ext_pgsql';
-$funcs['pg_fetch_all']['version_init'] = '4.3.0';
-$funcs['pg_fetch_array']['extension'] = 'ext_pgsql';
-$funcs['pg_fetch_array']['version_init'] = '4.0.0';
-$funcs['pg_fetch_assoc']['extension'] = 'ext_pgsql';
-$funcs['pg_fetch_assoc']['version_init'] = '4.3.0';
-$funcs['pg_fetch_object']['extension'] = 'ext_pgsql';
-$funcs['pg_fetch_object']['version_init'] = '4.0.0';
-$funcs['pg_fetch_result']['extension'] = 'ext_pgsql';
-$funcs['pg_fetch_result']['version_init'] = '4.2.0';
-$funcs['pg_fetch_row']['extension'] = 'ext_pgsql';
-$funcs['pg_fetch_row']['version_init'] = '4.0.0';
-$funcs['pg_fieldisnull']['extension'] = 'ext_pgsql';
-$funcs['pg_fieldisnull']['version_init'] = '4.0.0';
-$funcs['pg_fieldname']['extension'] = 'ext_pgsql';
-$funcs['pg_fieldname']['version_init'] = '4.0.0';
-$funcs['pg_fieldnum']['extension'] = 'ext_pgsql';
-$funcs['pg_fieldnum']['version_init'] = '4.0.0';
-$funcs['pg_fieldprtlen']['extension'] = 'ext_pgsql';
-$funcs['pg_fieldprtlen']['version_init'] = '4.0.0';
-$funcs['pg_fieldsize']['extension'] = 'ext_pgsql';
-$funcs['pg_fieldsize']['version_init'] = '4.0.0';
-$funcs['pg_fieldtype']['extension'] = 'ext_pgsql';
-$funcs['pg_fieldtype']['version_init'] = '4.0.0';
-$funcs['pg_field_is_null']['extension'] = 'ext_pgsql';
-$funcs['pg_field_is_null']['version_init'] = '4.2.0';
-$funcs['pg_field_name']['extension'] = 'ext_pgsql';
-$funcs['pg_field_name']['version_init'] = '4.2.0';
-$funcs['pg_field_num']['extension'] = 'ext_pgsql';
-$funcs['pg_field_num']['version_init'] = '4.2.0';
-$funcs['pg_field_prtlen']['extension'] = 'ext_pgsql';
-$funcs['pg_field_prtlen']['version_init'] = '4.2.0';
-$funcs['pg_field_size']['extension'] = 'ext_pgsql';
-$funcs['pg_field_size']['version_init'] = '4.2.0';
-$funcs['pg_field_type']['extension'] = 'ext_pgsql';
-$funcs['pg_field_type']['version_init'] = '4.2.0';
-$funcs['pg_freeresult']['extension'] = 'ext_pgsql';
-$funcs['pg_freeresult']['version_init'] = '4.0.0';
-$funcs['pg_free_result']['extension'] = 'ext_pgsql';
-$funcs['pg_free_result']['version_init'] = '4.2.0';
-$funcs['pg_getlastoid']['extension'] = 'ext_pgsql';
-$funcs['pg_getlastoid']['version_init'] = '4.0.0';
-$funcs['pg_get_notify']['extension'] = 'ext_pgsql';
-$funcs['pg_get_notify']['version_init'] = '4.3.0';
-$funcs['pg_get_pid']['extension'] = 'ext_pgsql';
-$funcs['pg_get_pid']['version_init'] = '4.3.0';
-$funcs['pg_get_result']['extension'] = 'ext_pgsql';
-$funcs['pg_get_result']['version_init'] = '4.2.0';
-$funcs['pg_host']['extension'] = 'ext_pgsql';
-$funcs['pg_host']['version_init'] = '4.0.0';
-$funcs['pg_insert']['extension'] = 'ext_pgsql';
-$funcs['pg_insert']['version_init'] = '4.3.0';
-$funcs['pg_last_error']['extension'] = 'ext_pgsql';
-$funcs['pg_last_error']['version_init'] = '4.2.0';
-$funcs['pg_last_notice']['extension'] = 'ext_pgsql';
-$funcs['pg_last_notice']['version_init'] = '4.0.6';
-$funcs['pg_last_oid']['extension'] = 'ext_pgsql';
-$funcs['pg_last_oid']['version_init'] = '4.2.0';
-$funcs['pg_loclose']['extension'] = 'ext_pgsql';
-$funcs['pg_loclose']['version_init'] = '4.0.0';
-$funcs['pg_locreate']['extension'] = 'ext_pgsql';
-$funcs['pg_locreate']['version_init'] = '4.0.0';
-$funcs['pg_loexport']['extension'] = 'ext_pgsql';
-$funcs['pg_loexport']['version_init'] = '4.0.1';
-$funcs['pg_loimport']['extension'] = 'ext_pgsql';
-$funcs['pg_loimport']['version_init'] = '4.0.1';
-$funcs['pg_loopen']['extension'] = 'ext_pgsql';
-$funcs['pg_loopen']['version_init'] = '4.0.0';
-$funcs['pg_loread']['extension'] = 'ext_pgsql';
-$funcs['pg_loread']['version_init'] = '4.0.0';
-$funcs['pg_loreadall']['extension'] = 'ext_pgsql';
-$funcs['pg_loreadall']['version_init'] = '4.0.0';
-$funcs['pg_lounlink']['extension'] = 'ext_pgsql';
-$funcs['pg_lounlink']['version_init'] = '4.0.0';
-$funcs['pg_lowrite']['extension'] = 'ext_pgsql';
-$funcs['pg_lowrite']['version_init'] = '4.0.0';
-$funcs['pg_lo_close']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_close']['version_init'] = '4.2.0';
-$funcs['pg_lo_create']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_create']['version_init'] = '4.2.0';
-$funcs['pg_lo_export']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_export']['version_init'] = '4.2.0';
-$funcs['pg_lo_import']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_import']['version_init'] = '4.2.0';
-$funcs['pg_lo_open']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_open']['version_init'] = '4.2.0';
-$funcs['pg_lo_read']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_read']['version_init'] = '4.2.0';
-$funcs['pg_lo_read_all']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_read_all']['version_init'] = '4.2.0';
-$funcs['pg_lo_seek']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_seek']['version_init'] = '4.2.0';
-$funcs['pg_lo_tell']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_tell']['version_init'] = '4.2.0';
-$funcs['pg_lo_unlink']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_unlink']['version_init'] = '4.2.0';
-$funcs['pg_lo_write']['extension'] = 'ext_pgsql';
-$funcs['pg_lo_write']['version_init'] = '4.2.0';
-$funcs['pg_meta_data']['extension'] = 'ext_pgsql';
-$funcs['pg_meta_data']['version_init'] = '4.3.0';
-$funcs['pg_numfields']['extension'] = 'ext_pgsql';
-$funcs['pg_numfields']['version_init'] = '4.0.0';
-$funcs['pg_numrows']['extension'] = 'ext_pgsql';
-$funcs['pg_numrows']['version_init'] = '4.0.0';
-$funcs['pg_num_fields']['extension'] = 'ext_pgsql';
-$funcs['pg_num_fields']['version_init'] = '4.2.0';
-$funcs['pg_num_rows']['extension'] = 'ext_pgsql';
-$funcs['pg_num_rows']['version_init'] = '4.2.0';
-$funcs['pg_options']['extension'] = 'ext_pgsql';
-$funcs['pg_options']['version_init'] = '4.0.0';
-$funcs['pg_parameter_status']['extension'] = 'ext_pgsql';
-$funcs['pg_parameter_status']['version_init'] = '';
-$funcs['pg_pconnect']['extension'] = 'ext_pgsql';
-$funcs['pg_pconnect']['version_init'] = '4.0.0';
-$funcs['pg_ping']['extension'] = 'ext_pgsql';
-$funcs['pg_ping']['version_init'] = '4.3.0';
-$funcs['pg_port']['extension'] = 'ext_pgsql';
-$funcs['pg_port']['version_init'] = '4.0.0';
-$funcs['pg_put_line']['extension'] = 'ext_pgsql';
-$funcs['pg_put_line']['version_init'] = '4.0.3';
-$funcs['pg_query']['extension'] = 'ext_pgsql';
-$funcs['pg_query']['version_init'] = '4.2.0';
-$funcs['pg_result']['extension'] = 'ext_pgsql';
-$funcs['pg_result']['version_init'] = '4.0.0';
-$funcs['pg_result_error']['extension'] = 'ext_pgsql';
-$funcs['pg_result_error']['version_init'] = '4.2.0';
-$funcs['pg_result_seek']['extension'] = 'ext_pgsql';
-$funcs['pg_result_seek']['version_init'] = '4.3.0';
-$funcs['pg_result_status']['extension'] = 'ext_pgsql';
-$funcs['pg_result_status']['version_init'] = '4.2.0';
-$funcs['pg_select']['extension'] = 'ext_pgsql';
-$funcs['pg_select']['version_init'] = '4.3.0';
-$funcs['pg_send_query']['extension'] = 'ext_pgsql';
-$funcs['pg_send_query']['version_init'] = '4.2.0';
-$funcs['pg_setclientencoding']['extension'] = 'ext_pgsql';
-$funcs['pg_setclientencoding']['version_init'] = '4.0.2';
-$funcs['pg_set_client_encoding']['extension'] = 'ext_pgsql';
-$funcs['pg_set_client_encoding']['version_init'] = '4.0.3';
-$funcs['pg_trace']['extension'] = 'ext_pgsql';
-$funcs['pg_trace']['version_init'] = '4.0.1';
-$funcs['pg_tty']['extension'] = 'ext_pgsql';
-$funcs['pg_tty']['version_init'] = '4.0.0';
-$funcs['pg_unescape_bytea']['extension'] = 'ext_pgsql';
-$funcs['pg_unescape_bytea']['version_init'] = '4.3.0';
-$funcs['pg_untrace']['extension'] = 'ext_pgsql';
-$funcs['pg_untrace']['version_init'] = '4.0.1';
-$funcs['pg_update']['extension'] = 'ext_pgsql';
-$funcs['pg_update']['version_init'] = '4.3.0';
-$funcs['pg_version']['extension'] = 'ext_pgsql';
-$funcs['pg_version']['version_init'] = '';
-$funcs['phpcredits']['extension'] = 'ext_standard';
-$funcs['phpcredits']['version_init'] = '4.0.0';
-$funcs['phpinfo']['extension'] = 'ext_standard';
-$funcs['phpinfo']['version_init'] = '4.0.0';
-$funcs['phpversion']['extension'] = 'ext_standard';
-$funcs['phpversion']['version_init'] = '4.0.0';
-$funcs['php_egg_logo_guid']['extension'] = 'ext_standard';
-$funcs['php_egg_logo_guid']['version_init'] = '5.0.0';
-$funcs['php_ini_scanned_files']['extension'] = 'ext_standard';
-$funcs['php_ini_scanned_files']['version_init'] = '4.3.0';
-$funcs['php_logo_guid']['extension'] = 'ext_standard';
-$funcs['php_logo_guid']['version_init'] = '4.0.0';
-$funcs['php_real_logo_guid']['extension'] = 'ext_standard';
-$funcs['php_real_logo_guid']['version_init'] = '5.0.0';
-$funcs['php_sapi_name']['extension'] = 'ext_standard';
-$funcs['php_sapi_name']['version_init'] = '4.0.1';
-$funcs['php_uname']['extension'] = 'ext_standard';
-$funcs['php_uname']['version_init'] = '4.0.2';
-$funcs['pi']['extension'] = 'ext_standard';
-$funcs['pi']['version_init'] = '4.0.0';
-$funcs['png2wbmp']['extension'] = 'ext_gd';
-$funcs['png2wbmp']['version_init'] = '4.0.5';
-$funcs['popen']['extension'] = 'ext_standard';
-$funcs['popen']['version_init'] = '4.0.0';
-$funcs['pos']['extension'] = 'ext_standard';
-$funcs['pos']['version_init'] = '4.0.0';
-$funcs['posix_ctermid']['extension'] = 'ext_posix';
-$funcs['posix_ctermid']['version_init'] = '4.0.0';
-$funcs['posix_errno']['extension'] = 'ext_posix';
-$funcs['posix_errno']['version_init'] = '4.2.0';
-$funcs['posix_getcwd']['extension'] = 'ext_posix';
-$funcs['posix_getcwd']['version_init'] = '4.0.0';
-$funcs['posix_getegid']['extension'] = 'ext_posix';
-$funcs['posix_getegid']['version_init'] = '4.0.0';
-$funcs['posix_geteuid']['extension'] = 'ext_posix';
-$funcs['posix_geteuid']['version_init'] = '4.0.0';
-$funcs['posix_getgid']['extension'] = 'ext_posix';
-$funcs['posix_getgid']['version_init'] = '4.0.0';
-$funcs['posix_getgrgid']['extension'] = 'ext_posix';
-$funcs['posix_getgrgid']['version_init'] = '4.0.0';
-$funcs['posix_getgrnam']['extension'] = 'ext_posix';
-$funcs['posix_getgrnam']['version_init'] = '4.0.0';
-$funcs['posix_getgroups']['extension'] = 'ext_posix';
-$funcs['posix_getgroups']['version_init'] = '4.0.0';
-$funcs['posix_getlogin']['extension'] = 'ext_posix';
-$funcs['posix_getlogin']['version_init'] = '4.0.0';
-$funcs['posix_getpgid']['extension'] = 'ext_posix';
-$funcs['posix_getpgid']['version_init'] = '4.0.0';
-$funcs['posix_getpgrp']['extension'] = 'ext_posix';
-$funcs['posix_getpgrp']['version_init'] = '4.0.0';
-$funcs['posix_getpid']['extension'] = 'ext_posix';
-$funcs['posix_getpid']['version_init'] = '4.0.0';
-$funcs['posix_getppid']['extension'] = 'ext_posix';
-$funcs['posix_getppid']['version_init'] = '4.0.0';
-$funcs['posix_getpwnam']['extension'] = 'ext_posix';
-$funcs['posix_getpwnam']['version_init'] = '4.0.0';
-$funcs['posix_getpwuid']['extension'] = 'ext_posix';
-$funcs['posix_getpwuid']['version_init'] = '4.0.0';
-$funcs['posix_getrlimit']['extension'] = 'ext_posix';
-$funcs['posix_getrlimit']['version_init'] = '4.0.0';
-$funcs['posix_getsid']['extension'] = 'ext_posix';
-$funcs['posix_getsid']['version_init'] = '4.0.0';
-$funcs['posix_getuid']['extension'] = 'ext_posix';
-$funcs['posix_getuid']['version_init'] = '4.0.0';
-$funcs['posix_get_last_error']['extension'] = 'ext_posix';
-$funcs['posix_get_last_error']['version_init'] = '4.2.0';
-$funcs['posix_isatty']['extension'] = 'ext_posix';
-$funcs['posix_isatty']['version_init'] = '4.0.0';
-$funcs['posix_kill']['extension'] = 'ext_posix';
-$funcs['posix_kill']['version_init'] = '4.0.0';
-$funcs['posix_mkfifo']['extension'] = 'ext_posix';
-$funcs['posix_mkfifo']['version_init'] = '4.0.0';
-$funcs['posix_setegid']['extension'] = 'ext_posix';
-$funcs['posix_setegid']['version_init'] = '4.0.2';
-$funcs['posix_seteuid']['extension'] = 'ext_posix';
-$funcs['posix_seteuid']['version_init'] = '4.0.2';
-$funcs['posix_setgid']['extension'] = 'ext_posix';
-$funcs['posix_setgid']['version_init'] = '4.0.0';
-$funcs['posix_setpgid']['extension'] = 'ext_posix';
-$funcs['posix_setpgid']['version_init'] = '4.0.0';
-$funcs['posix_setsid']['extension'] = 'ext_posix';
-$funcs['posix_setsid']['version_init'] = '4.0.0';
-$funcs['posix_setuid']['extension'] = 'ext_posix';
-$funcs['posix_setuid']['version_init'] = '4.0.0';
-$funcs['posix_strerror']['extension'] = 'ext_posix';
-$funcs['posix_strerror']['version_init'] = '4.2.0';
-$funcs['posix_times']['extension'] = 'ext_posix';
-$funcs['posix_times']['version_init'] = '4.0.0';
-$funcs['posix_ttyname']['extension'] = 'ext_posix';
-$funcs['posix_ttyname']['version_init'] = '4.0.0';
-$funcs['posix_uname']['extension'] = 'ext_posix';
-$funcs['posix_uname']['version_init'] = '4.0.0';
-$funcs['pow']['extension'] = 'ext_standard';
-$funcs['pow']['version_init'] = '4.0.0';
-$funcs['preg_grep']['extension'] = 'ext_pcre';
-$funcs['preg_grep']['version_init'] = '4.0.0';
-$funcs['preg_match']['extension'] = 'ext_pcre';
-$funcs['preg_match']['version_init'] = '4.0.0';
-$funcs['preg_match_all']['extension'] = 'ext_pcre';
-$funcs['preg_match_all']['version_init'] = '4.0.0';
-$funcs['preg_quote']['extension'] = 'ext_pcre';
-$funcs['preg_quote']['version_init'] = '4.0.0';
-$funcs['preg_replace']['extension'] = 'ext_pcre';
-$funcs['preg_replace']['version_init'] = '4.0.0';
-$funcs['preg_replace_callback']['extension'] = 'ext_pcre';
-$funcs['preg_replace_callback']['version_init'] = '4.0.5';
-$funcs['preg_split']['extension'] = 'ext_pcre';
-$funcs['preg_split']['version_init'] = '4.0.0';
-$funcs['prev']['extension'] = 'ext_standard';
-$funcs['prev']['version_init'] = '4.0.0';
-$funcs['printf']['extension'] = 'ext_standard';
-$funcs['printf']['version_init'] = '4.0.0';
-$funcs['print_r']['extension'] = 'ext_standard';
-$funcs['print_r']['version_init'] = '4.0.0';
-$funcs['proc_close']['extension'] = 'ext_standard';
-$funcs['proc_close']['version_init'] = '4.3.0';
-$funcs['proc_get_status']['extension'] = 'ext_standard';
-$funcs['proc_get_status']['version_init'] = '5.0.0';
-$funcs['proc_nice']['extension'] = 'ext_standard';
-$funcs['proc_nice']['version_init'] = '5.0.0';
-$funcs['proc_open']['extension'] = 'ext_standard';
-$funcs['proc_open']['version_init'] = '4.3.0';
-$funcs['proc_terminate']['extension'] = 'ext_standard';
-$funcs['proc_terminate']['version_init'] = '5.0.0';
-$funcs['pspell_add_to_personal']['extension'] = 'ext_pspell';
-$funcs['pspell_add_to_personal']['version_init'] = '4.0.2';
-$funcs['pspell_add_to_session']['extension'] = 'ext_pspell';
-$funcs['pspell_add_to_session']['version_init'] = '4.0.2';
-$funcs['pspell_check']['extension'] = 'ext_pspell';
-$funcs['pspell_check']['version_init'] = '4.0.2';
-$funcs['pspell_clear_session']['extension'] = 'ext_pspell';
-$funcs['pspell_clear_session']['version_init'] = '4.0.2';
-$funcs['pspell_config_create']['extension'] = 'ext_pspell';
-$funcs['pspell_config_create']['version_init'] = '4.0.2';
-$funcs['pspell_config_ignore']['extension'] = 'ext_pspell';
-$funcs['pspell_config_ignore']['version_init'] = '4.0.2';
-$funcs['pspell_config_mode']['extension'] = 'ext_pspell';
-$funcs['pspell_config_mode']['version_init'] = '4.0.2';
-$funcs['pspell_config_personal']['extension'] = 'ext_pspell';
-$funcs['pspell_config_personal']['version_init'] = '4.0.2';
-$funcs['pspell_config_repl']['extension'] = 'ext_pspell';
-$funcs['pspell_config_repl']['version_init'] = '4.0.2';
-$funcs['pspell_config_runtogether']['extension'] = 'ext_pspell';
-$funcs['pspell_config_runtogether']['version_init'] = '4.0.2';
-$funcs['pspell_config_save_repl']['extension'] = 'ext_pspell';
-$funcs['pspell_config_save_repl']['version_init'] = '4.0.2';
-$funcs['pspell_new']['extension'] = 'ext_pspell';
-$funcs['pspell_new']['version_init'] = '4.0.2';
-$funcs['pspell_new_config']['extension'] = 'ext_pspell';
-$funcs['pspell_new_config']['version_init'] = '4.0.2';
-$funcs['pspell_new_personal']['extension'] = 'ext_pspell';
-$funcs['pspell_new_personal']['version_init'] = '4.0.2';
-$funcs['pspell_save_wordlist']['extension'] = 'ext_pspell';
-$funcs['pspell_save_wordlist']['version_init'] = '4.0.2';
-$funcs['pspell_store_replacement']['extension'] = 'ext_pspell';
-$funcs['pspell_store_replacement']['version_init'] = '4.0.2';
-$funcs['pspell_suggest']['extension'] = 'ext_pspell';
-$funcs['pspell_suggest']['version_init'] = '4.0.2';
-$funcs['putenv']['extension'] = 'ext_standard';
-$funcs['putenv']['version_init'] = '4.0.0';
-$funcs['qdom_error']['extension'] = 'ext_qtdom';
-$funcs['qdom_error']['version_init'] = '4.0.5';
-$funcs['qdom_tree']['extension'] = 'ext_qtdom';
-$funcs['qdom_tree']['version_init'] = '4.0.4';
-$funcs['quoted_printable_decode']['extension'] = 'ext_standard';
-$funcs['quoted_printable_decode']['version_init'] = '4.0.0';
-$funcs['quotemeta']['extension'] = 'ext_standard';
-$funcs['quotemeta']['version_init'] = '4.0.0';
-$funcs['rad2deg']['extension'] = 'ext_standard';
-$funcs['rad2deg']['version_init'] = '4.0.0';
-$funcs['rand']['extension'] = 'ext_standard';
-$funcs['rand']['version_init'] = '4.0.0';
-$funcs['range']['extension'] = 'ext_standard';
-$funcs['range']['version_init'] = '4.0.0';
-$funcs['rawurldecode']['extension'] = 'ext_standard';
-$funcs['rawurldecode']['version_init'] = '4.0.0';
-$funcs['rawurlencode']['extension'] = 'ext_standard';
-$funcs['rawurlencode']['version_init'] = '4.0.0';
-$funcs['read']['extension'] = 'ext_standard';
-$funcs['read']['version_init'] = '4.0.0';
-$funcs['readdir']['extension'] = 'ext_standard';
-$funcs['readdir']['version_init'] = '4.0.0';
-$funcs['readfile']['extension'] = 'ext_standard';
-$funcs['readfile']['version_init'] = '4.0.0';
-$funcs['readgzfile']['extension'] = 'ext_zlib';
-$funcs['readgzfile']['version_init'] = '4.0.0';
-$funcs['readline']['extension'] = 'ext_readline';
-$funcs['readline']['version_init'] = '4.0.0';
-$funcs['readline_add_history']['extension'] = 'ext_readline';
-$funcs['readline_add_history']['version_init'] = '4.0.0';
-$funcs['readline_clear_history']['extension'] = 'ext_readline';
-$funcs['readline_clear_history']['version_init'] = '4.0.0';
-$funcs['readline_completion_function']['extension'] = 'ext_readline';
-$funcs['readline_completion_function']['version_init'] = '4.0.0';
-$funcs['readline_info']['extension'] = 'ext_readline';
-$funcs['readline_info']['version_init'] = '4.0.0';
-$funcs['readline_list_history']['extension'] = 'ext_readline';
-$funcs['readline_list_history']['version_init'] = '4.0.0';
-$funcs['readline_read_history']['extension'] = 'ext_readline';
-$funcs['readline_read_history']['version_init'] = '4.0.0';
-$funcs['readline_write_history']['extension'] = 'ext_readline';
-$funcs['readline_write_history']['version_init'] = '4.0.0';
-$funcs['readlink']['extension'] = 'ext_standard';
-$funcs['readlink']['version_init'] = '4.0.0';
-$funcs['readv']['extension'] = 'ext_sockets';
-$funcs['readv']['version_init'] = '4.0.2';
-$funcs['read_exif_data']['extension'] = 'ext_exif';
-$funcs['read_exif_data']['version_init'] = '4.0.1';
-$funcs['realpath']['extension'] = 'ext_standard';
-$funcs['realpath']['version_init'] = '4.0.0';
-$funcs['recode']['extension'] = 'ext_recode';
-$funcs['recode']['version_init'] = '4.0.0';
-$funcs['recode_file']['extension'] = 'ext_recode';
-$funcs['recode_file']['version_init'] = '4.0.0';
-$funcs['recode_string']['extension'] = 'ext_recode';
-$funcs['recode_string']['version_init'] = '4.0.0';
-$funcs['recv']['extension'] = 'ext_sockets';
-$funcs['recv']['version_init'] = '4.0.2';
-$funcs['recvfrom']['extension'] = 'ext_sockets';
-$funcs['recvfrom']['version_init'] = '4.0.2';
-$funcs['recvmsg']['extension'] = 'ext_sockets';
-$funcs['recvmsg']['version_init'] = '4.0.2';
-$funcs['register_shutdown_function']['extension'] = 'ext_standard';
-$funcs['register_shutdown_function']['version_init'] = '4.0.0';
-$funcs['register_tick_function']['extension'] = 'ext_standard';
-$funcs['register_tick_function']['version_init'] = '4.0.3';
-$funcs['remove']['extension'] = 'ext_ming';
-$funcs['remove']['version_init'] = '4.0.5';
-$funcs['rename']['extension'] = 'ext_standard';
-$funcs['rename']['version_init'] = '4.0.0';
-$funcs['reset']['extension'] = 'ext_standard';
-$funcs['reset']['version_init'] = '4.0.0';
-$funcs['restore_error_handler']['extension'] = 'zend';
-$funcs['restore_error_handler']['version_init'] = '4.0.1';
-$funcs['restore_exception_handler']['extension'] = 'zend';
-$funcs['restore_exception_handler']['version_init'] = '';
-$funcs['restore_include_path']['extension'] = 'ext_standard';
-$funcs['restore_include_path']['version_init'] = '4.3.0';
-$funcs['rewind']['extension'] = 'ext_standard';
-$funcs['rewind']['version_init'] = '4.0.0';
-$funcs['rewinddir']['extension'] = 'ext_standard';
-$funcs['rewinddir']['version_init'] = '4.0.0';
-$funcs['rmdir']['extension'] = 'ext_standard';
-$funcs['rmdir']['version_init'] = '4.0.0';
-$funcs['rotate']['extension'] = 'ext_ming';
-$funcs['rotate']['version_init'] = '4.0.5';
-$funcs['rotateto']['extension'] = 'ext_ming';
-$funcs['rotateto']['version_init'] = '4.0.5';
-$funcs['round']['extension'] = 'ext_standard';
-$funcs['round']['version_init'] = '4.0.0';
-$funcs['rsort']['extension'] = 'ext_standard';
-$funcs['rsort']['version_init'] = '4.0.0';
-$funcs['rtrim']['extension'] = 'ext_standard';
-$funcs['rtrim']['version_init'] = '4.0.0';
-$funcs['satellite_caught_exception']['extension'] = 'ext_satellite';
-$funcs['satellite_caught_exception']['version_init'] = '4.0.3';
-$funcs['satellite_exception_id']['extension'] = 'ext_satellite';
-$funcs['satellite_exception_id']['version_init'] = '4.0.3';
-$funcs['satellite_exception_value']['extension'] = 'ext_satellite';
-$funcs['satellite_exception_value']['version_init'] = '4.0.3';
-$funcs['satellite_get_repository_id']['extension'] = 'ext_satellite';
-$funcs['satellite_get_repository_id']['version_init'] = '4.0.3';
-$funcs['satellite_load_idl']['extension'] = 'ext_satellite';
-$funcs['satellite_load_idl']['version_init'] = '4.0.3';
-$funcs['satellite_object_to_string']['extension'] = 'ext_satellite';
-$funcs['satellite_object_to_string']['version_init'] = '4.1.0';
-$funcs['save']['extension'] = 'ext_ming';
-$funcs['save']['version_init'] = '4.0.5';
-$funcs['savetofile']['extension'] = 'ext_ming';
-$funcs['savetofile']['version_init'] = '4.0.5';
-$funcs['scale']['extension'] = 'ext_ming';
-$funcs['scale']['version_init'] = '4.0.5';
-$funcs['scaleto']['extension'] = 'ext_ming';
-$funcs['scaleto']['version_init'] = '4.0.5';
-$funcs['scandir']['extension'] = 'ext_standard';
-$funcs['scandir']['version_init'] = '5.0.0';
-$funcs['select']['extension'] = 'ext_sockets';
-$funcs['select']['version_init'] = '4.0.2';
-$funcs['sem_acquire']['extension'] = 'ext_sysvsem';
-$funcs['sem_acquire']['version_init'] = '4.0.0';
-$funcs['sem_get']['extension'] = 'ext_sysvsem';
-$funcs['sem_get']['version_init'] = '4.0.0';
-$funcs['sem_release']['extension'] = 'ext_sysvsem';
-$funcs['sem_release']['version_init'] = '4.0.0';
-$funcs['sem_remove']['extension'] = 'ext_sysvsem';
-$funcs['sem_remove']['version_init'] = '4.1.0';
-$funcs['send']['extension'] = 'ext_sockets';
-$funcs['send']['version_init'] = '4.0.2';
-$funcs['sendmsg']['extension'] = 'ext_sockets';
-$funcs['sendmsg']['version_init'] = '4.0.2';
-$funcs['sendto']['extension'] = 'ext_sockets';
-$funcs['sendto']['version_init'] = '4.0.2';
-$funcs['serialize']['extension'] = 'ext_standard';
-$funcs['serialize']['version_init'] = '4.0.0';
-$funcs['session_cache_expire']['extension'] = 'ext_session';
-$funcs['session_cache_expire']['version_init'] = '4.2.0';
-$funcs['session_cache_limiter']['extension'] = 'ext_session';
-$funcs['session_cache_limiter']['version_init'] = '4.0.3';
-$funcs['session_commit']['extension'] = 'ext_session';
-$funcs['session_commit']['version_init'] = '';
-$funcs['session_decode']['extension'] = 'ext_session';
-$funcs['session_decode']['version_init'] = '4.0.0';
-$funcs['session_destroy']['extension'] = 'ext_session';
-$funcs['session_destroy']['version_init'] = '4.0.0';
-$funcs['session_encode']['extension'] = 'ext_session';
-$funcs['session_encode']['version_init'] = '4.0.0';
-$funcs['session_get_cookie_params']['extension'] = 'ext_session';
-$funcs['session_get_cookie_params']['version_init'] = '4.0.0';
-$funcs['session_id']['extension'] = 'ext_session';
-$funcs['session_id']['version_init'] = '4.0.0';
-$funcs['session_is_registered']['extension'] = 'ext_session';
-$funcs['session_is_registered']['version_init'] = '4.0.0';
-$funcs['session_module_name']['extension'] = 'ext_session';
-$funcs['session_module_name']['version_init'] = '4.0.0';
-$funcs['session_name']['extension'] = 'ext_session';
-$funcs['session_name']['version_init'] = '4.0.0';
-$funcs['session_regenerate_id']['extension'] = 'ext_session';
-$funcs['session_regenerate_id']['version_init'] = '4.3.2';
-$funcs['session_register']['extension'] = 'ext_session';
-$funcs['session_register']['version_init'] = '4.0.0';
-$funcs['session_save_path']['extension'] = 'ext_session';
-$funcs['session_save_path']['version_init'] = '4.0.0';
-$funcs['session_set_cookie_params']['extension'] = 'ext_session';
-$funcs['session_set_cookie_params']['version_init'] = '4.0.0';
-$funcs['session_set_save_handler']['extension'] = 'ext_session';
-$funcs['session_set_save_handler']['version_init'] = '4.0.0';
-$funcs['session_start']['extension'] = 'ext_session';
-$funcs['session_start']['version_init'] = '4.0.0';
-$funcs['session_unregister']['extension'] = 'ext_session';
-$funcs['session_unregister']['version_init'] = '4.0.0';
-$funcs['session_unset']['extension'] = 'ext_session';
-$funcs['session_unset']['version_init'] = '4.0.0';
-$funcs['session_write_close']['extension'] = 'ext_session';
-$funcs['session_write_close']['version_init'] = '4.0.4';
-$funcs['setaction']['extension'] = 'ext_ming';
-$funcs['setaction']['version_init'] = '4.0.5';
-$funcs['setbackground']['extension'] = 'ext_ming';
-$funcs['setbackground']['version_init'] = '4.0.5';
-$funcs['setbounds']['extension'] = 'ext_ming';
-$funcs['setbounds']['version_init'] = '4.0.5';
-$funcs['setcolor']['extension'] = 'ext_ming';
-$funcs['setcolor']['version_init'] = '4.0.5';
-$funcs['setcookie']['extension'] = 'ext_standard';
-$funcs['setcookie']['version_init'] = '4.0.0';
-$funcs['setdepth']['extension'] = 'ext_ming';
-$funcs['setdepth']['version_init'] = '4.0.5';
-$funcs['setdimension']['extension'] = 'ext_ming';
-$funcs['setdimension']['version_init'] = '4.0.5';
-$funcs['setdown']['extension'] = 'ext_ming';
-$funcs['setdown']['version_init'] = '4.0.5';
-$funcs['setfont']['extension'] = 'ext_ming';
-$funcs['setfont']['version_init'] = '4.0.5';
-$funcs['setframes']['extension'] = 'ext_ming';
-$funcs['setframes']['version_init'] = '4.0.5';
-$funcs['setheight']['extension'] = 'ext_ming';
-$funcs['setheight']['version_init'] = '4.0.5';
-$funcs['sethit']['extension'] = 'ext_ming';
-$funcs['sethit']['version_init'] = '4.0.5';
-$funcs['setindentation']['extension'] = 'ext_ming';
-$funcs['setindentation']['version_init'] = '4.0.5';
-$funcs['setleftfill']['extension'] = 'ext_ming';
-$funcs['setleftfill']['version_init'] = '4.0.5';
-$funcs['setleftmargin']['extension'] = 'ext_ming';
-$funcs['setleftmargin']['version_init'] = '4.0.5';
-$funcs['setline']['extension'] = 'ext_ming';
-$funcs['setline']['version_init'] = '4.0.5';
-$funcs['setlinespacing']['extension'] = 'ext_ming';
-$funcs['setlinespacing']['version_init'] = '4.0.5';
-$funcs['setlocale']['extension'] = 'ext_standard';
-$funcs['setlocale']['version_init'] = '4.0.0';
-$funcs['setmargins']['extension'] = 'ext_ming';
-$funcs['setmargins']['version_init'] = '4.0.5';
-$funcs['setmasklevel']['extension'] = 'ext_ming';
-$funcs['setmasklevel']['version_init'] = '';
-$funcs['setmatrix']['extension'] = 'ext_ming';
-$funcs['setmatrix']['version_init'] = '4.0.5';
-$funcs['setmenu']['extension'] = 'ext_ming';
-$funcs['setmenu']['version_init'] = '';
-$funcs['setname']['extension'] = 'ext_ming';
-$funcs['setname']['version_init'] = '4.0.5';
-$funcs['setover']['extension'] = 'ext_ming';
-$funcs['setover']['version_init'] = '4.0.5';
-$funcs['setpadding']['extension'] = 'ext_ming';
-$funcs['setpadding']['version_init'] = '';
-$funcs['setrate']['extension'] = 'ext_ming';
-$funcs['setrate']['version_init'] = '4.0.5';
-$funcs['setratio']['extension'] = 'ext_ming';
-$funcs['setratio']['version_init'] = '4.0.5';
-$funcs['setrawcookie']['extension'] = 'ext_standard';
-$funcs['setrawcookie']['version_init'] = '';
-$funcs['setrightfill']['extension'] = 'ext_ming';
-$funcs['setrightfill']['version_init'] = '4.0.5';
-$funcs['setrightmargin']['extension'] = 'ext_ming';
-$funcs['setrightmargin']['version_init'] = '4.0.5';
-$funcs['setsockopt']['extension'] = 'ext_sockets';
-$funcs['setsockopt']['version_init'] = '4.0.2';
-$funcs['setspacing']['extension'] = 'ext_ming';
-$funcs['setspacing']['version_init'] = '4.0.5';
-$funcs['settype']['extension'] = 'ext_standard';
-$funcs['settype']['version_init'] = '4.0.0';
-$funcs['setup']['extension'] = 'ext_ming';
-$funcs['setup']['version_init'] = '4.0.5';
-$funcs['set_content']['extension'] = 'ext_domxml';
-$funcs['set_content']['version_init'] = '4.1.0';
-$funcs['set_error_handler']['extension'] = 'zend';
-$funcs['set_error_handler']['version_init'] = '4.0.1';
-$funcs['set_exception_handler']['extension'] = 'zend';
-$funcs['set_exception_handler']['version_init'] = '';
-$funcs['set_file_buffer']['extension'] = 'ext_standard';
-$funcs['set_file_buffer']['version_init'] = '4.0.1';
-$funcs['set_include_path']['extension'] = 'ext_standard';
-$funcs['set_include_path']['version_init'] = '4.3.0';
-$funcs['set_iovec']['extension'] = 'ext_sockets';
-$funcs['set_iovec']['version_init'] = '4.0.2';
-$funcs['set_magic_quotes_runtime']['extension'] = 'ext_standard';
-$funcs['set_magic_quotes_runtime']['version_init'] = '4.0.0';
-$funcs['set_nonblock']['extension'] = 'ext_sockets';
-$funcs['set_nonblock']['version_init'] = '4.0.2';
-$funcs['set_socket_blocking']['extension'] = 'ext_standard';
-$funcs['set_socket_blocking']['version_init'] = '4.0.0';
-$funcs['set_time_limit']['extension'] = 'ext_standard';
-$funcs['set_time_limit']['version_init'] = '4.0.0';
-$funcs['set_user_error_handler']['extension'] = 'zend';
-$funcs['set_user_error_handler']['version_init'] = '';
-$funcs['sha1']['extension'] = 'ext_standard';
-$funcs['sha1']['version_init'] = '4.3.0';
-$funcs['sha1_file']['extension'] = 'ext_standard';
-$funcs['sha1_file']['version_init'] = '4.3.0';
-$funcs['shell_exec']['extension'] = 'ext_standard';
-$funcs['shell_exec']['version_init'] = '4.0.0';
-$funcs['shmop_close']['extension'] = 'ext_shmop';
-$funcs['shmop_close']['version_init'] = '4.0.4';
-$funcs['shmop_delete']['extension'] = 'ext_shmop';
-$funcs['shmop_delete']['version_init'] = '4.0.4';
-$funcs['shmop_open']['extension'] = 'ext_shmop';
-$funcs['shmop_open']['version_init'] = '4.0.4';
-$funcs['shmop_read']['extension'] = 'ext_shmop';
-$funcs['shmop_read']['version_init'] = '4.0.4';
-$funcs['shmop_size']['extension'] = 'ext_shmop';
-$funcs['shmop_size']['version_init'] = '4.0.4';
-$funcs['shmop_write']['extension'] = 'ext_shmop';
-$funcs['shmop_write']['version_init'] = '4.0.4';
-$funcs['shm_attach']['extension'] = 'ext_sysvshm';
-$funcs['shm_attach']['version_init'] = '4.0.0';
-$funcs['shm_close']['extension'] = 'ext_shmop';
-$funcs['shm_close']['version_init'] = '';
-$funcs['shm_delete']['extension'] = 'ext_shmop';
-$funcs['shm_delete']['version_init'] = '';
-$funcs['shm_detach']['extension'] = 'ext_sysvshm';
-$funcs['shm_detach']['version_init'] = '4.0.0';
-$funcs['shm_get_var']['extension'] = 'ext_sysvshm';
-$funcs['shm_get_var']['version_init'] = '4.0.0';
-$funcs['shm_open']['extension'] = 'ext_shmop';
-$funcs['shm_open']['version_init'] = '';
-$funcs['shm_put_var']['extension'] = 'ext_sysvshm';
-$funcs['shm_put_var']['version_init'] = '4.0.0';
-$funcs['shm_read']['extension'] = 'ext_shmop';
-$funcs['shm_read']['version_init'] = '';
-$funcs['shm_remove']['extension'] = 'ext_sysvshm';
-$funcs['shm_remove']['version_init'] = '4.0.0';
-$funcs['shm_remove_var']['extension'] = 'ext_sysvshm';
-$funcs['shm_remove_var']['version_init'] = '4.0.0';
-$funcs['shm_size']['extension'] = 'ext_shmop';
-$funcs['shm_size']['version_init'] = '';
-$funcs['shm_write']['extension'] = 'ext_shmop';
-$funcs['shm_write']['version_init'] = '';
-$funcs['show_source']['extension'] = 'ext_standard';
-$funcs['show_source']['version_init'] = '4.0.0';
-$funcs['shuffle']['extension'] = 'ext_standard';
-$funcs['shuffle']['version_init'] = '4.0.0';
-$funcs['shutdown']['extension'] = 'ext_sockets';
-$funcs['shutdown']['version_init'] = '4.0.2';
-$funcs['signal']['extension'] = 'ext_sockets';
-$funcs['signal']['version_init'] = '4.0.2';
-$funcs['similar_text']['extension'] = 'ext_standard';
-$funcs['similar_text']['version_init'] = '4.0.0';
-$funcs['simplexml_import_dom']['extension'] = 'ext_simplexml';
-$funcs['simplexml_import_dom']['version_init'] = '';
-$funcs['simplexml_load_file']['extension'] = 'ext_simplexml';
-$funcs['simplexml_load_file']['version_init'] = '';
-$funcs['simplexml_load_string']['extension'] = 'ext_simplexml';
-$funcs['simplexml_load_string']['version_init'] = '';
-$funcs['sin']['extension'] = 'ext_standard';
-$funcs['sin']['version_init'] = '4.0.0';
-$funcs['sinh']['extension'] = 'ext_standard';
-$funcs['sinh']['version_init'] = '4.1.0';
-$funcs['sizeof']['extension'] = 'ext_standard';
-$funcs['sizeof']['version_init'] = '4.0.0';
-$funcs['skewx']['extension'] = 'ext_ming';
-$funcs['skewx']['version_init'] = '4.0.5';
-$funcs['skewxto']['extension'] = 'ext_ming';
-$funcs['skewxto']['version_init'] = '4.0.5';
-$funcs['skewy']['extension'] = 'ext_ming';
-$funcs['skewy']['version_init'] = '4.0.5';
-$funcs['skewyto']['extension'] = 'ext_ming';
-$funcs['skewyto']['version_init'] = '4.0.5';
-$funcs['sleep']['extension'] = 'ext_standard';
-$funcs['sleep']['version_init'] = '4.0.0';
-$funcs['smfi_addheader']['extension'] = 'sapi_milter';
-$funcs['smfi_addheader']['version_init'] = '';
-$funcs['smfi_addrcpt']['extension'] = 'sapi_milter';
-$funcs['smfi_addrcpt']['version_init'] = '';
-$funcs['smfi_chgheader']['extension'] = 'sapi_milter';
-$funcs['smfi_chgheader']['version_init'] = '';
-$funcs['smfi_delrcpt']['extension'] = 'sapi_milter';
-$funcs['smfi_delrcpt']['version_init'] = '';
-$funcs['smfi_getsymval']['extension'] = 'sapi_milter';
-$funcs['smfi_getsymval']['version_init'] = '';
-$funcs['smfi_replacebody']['extension'] = 'sapi_milter';
-$funcs['smfi_replacebody']['version_init'] = '';
-$funcs['smfi_setflags']['extension'] = 'sapi_milter';
-$funcs['smfi_setflags']['version_init'] = '';
-$funcs['smfi_setreply']['extension'] = 'sapi_milter';
-$funcs['smfi_setreply']['version_init'] = '';
-$funcs['smfi_settimeout']['extension'] = 'sapi_milter';
-$funcs['smfi_settimeout']['version_init'] = '';
-$funcs['snmp3_get']['extension'] = 'ext_snmp';
-$funcs['snmp3_get']['version_init'] = '4.3.0';
-$funcs['snmp3_getnext']['extension'] = 'ext_snmp';
-$funcs['snmp3_getnext']['version_init'] = '';
-$funcs['snmp3_real_walk']['extension'] = 'ext_snmp';
-$funcs['snmp3_real_walk']['version_init'] = '4.3.0';
-$funcs['snmp3_set']['extension'] = 'ext_snmp';
-$funcs['snmp3_set']['version_init'] = '4.3.0';
-$funcs['snmp3_walk']['extension'] = 'ext_snmp';
-$funcs['snmp3_walk']['version_init'] = '4.3.0';
-$funcs['snmpget']['extension'] = 'ext_snmp';
-$funcs['snmpget']['version_init'] = '4.0.0';
-$funcs['snmpgetnext']['extension'] = 'ext_snmp';
-$funcs['snmpgetnext']['version_init'] = '';
-$funcs['snmprealwalk']['extension'] = 'ext_snmp';
-$funcs['snmprealwalk']['version_init'] = '4.0.0';
-$funcs['snmpset']['extension'] = 'ext_snmp';
-$funcs['snmpset']['version_init'] = '4.0.0';
-$funcs['snmpwalk']['extension'] = 'ext_snmp';
-$funcs['snmpwalk']['version_init'] = '4.0.0';
-$funcs['snmpwalkoid']['extension'] = 'ext_snmp';
-$funcs['snmpwalkoid']['version_init'] = '4.0.0';
-$funcs['snmp_get_quick_print']['extension'] = 'ext_snmp';
-$funcs['snmp_get_quick_print']['version_init'] = '4.0.0';
-$funcs['snmp_get_valueretrieval']['extension'] = 'ext_snmp';
-$funcs['snmp_get_valueretrieval']['version_init'] = '4.3.3';
-$funcs['snmp_read_mib']['extension'] = 'ext_snmp';
-$funcs['snmp_read_mib']['version_init'] = '';
-$funcs['snmp_set_enum_print']['extension'] = 'ext_snmp';
-$funcs['snmp_set_enum_print']['version_init'] = '4.3.0';
-$funcs['snmp_set_oid_numeric_print']['extension'] = 'ext_snmp';
-$funcs['snmp_set_oid_numeric_print']['version_init'] = '4.3.0';
-$funcs['snmp_set_quick_print']['extension'] = 'ext_snmp';
-$funcs['snmp_set_quick_print']['version_init'] = '4.0.0';
-$funcs['snmp_set_valueretrieval']['extension'] = 'ext_snmp';
-$funcs['snmp_set_valueretrieval']['version_init'] = '4.3.3';
-$funcs['socket']['extension'] = 'ext_sockets';
-$funcs['socket']['version_init'] = '4.0.2';
-$funcs['socketpair']['extension'] = 'ext_sockets';
-$funcs['socketpair']['version_init'] = '4.0.2';
-$funcs['socket_accept']['extension'] = 'ext_sockets';
-$funcs['socket_accept']['version_init'] = '4.1.0';
-$funcs['socket_bind']['extension'] = 'ext_sockets';
-$funcs['socket_bind']['version_init'] = '4.1.0';
-$funcs['socket_clear_error']['extension'] = 'ext_sockets';
-$funcs['socket_clear_error']['version_init'] = '4.2.0';
-$funcs['socket_close']['extension'] = 'ext_sockets';
-$funcs['socket_close']['version_init'] = '4.1.0';
-$funcs['socket_connect']['extension'] = 'ext_sockets';
-$funcs['socket_connect']['version_init'] = '4.1.0';
-$funcs['socket_create']['extension'] = 'ext_sockets';
-$funcs['socket_create']['version_init'] = '4.1.0';
-$funcs['socket_create_listen']['extension'] = 'ext_sockets';
-$funcs['socket_create_listen']['version_init'] = '4.1.0';
-$funcs['socket_create_pair']['extension'] = 'ext_sockets';
-$funcs['socket_create_pair']['version_init'] = '4.1.0';
-$funcs['socket_fd_alloc']['extension'] = 'ext_sockets';
-$funcs['socket_fd_alloc']['version_init'] = '4.1.0';
-$funcs['socket_fd_clear']['extension'] = 'ext_sockets';
-$funcs['socket_fd_clear']['version_init'] = '4.1.0';
-$funcs['socket_fd_free']['extension'] = 'ext_sockets';
-$funcs['socket_fd_free']['version_init'] = '4.1.0';
-$funcs['socket_fd_isset']['extension'] = 'ext_sockets';
-$funcs['socket_fd_isset']['version_init'] = '4.1.0';
-$funcs['socket_fd_set']['extension'] = 'ext_sockets';
-$funcs['socket_fd_set']['version_init'] = '4.1.0';
-$funcs['socket_fd_zero']['extension'] = 'ext_sockets';
-$funcs['socket_fd_zero']['version_init'] = '4.1.0';
-$funcs['socket_getopt']['extension'] = 'ext_sockets';
-$funcs['socket_getopt']['version_init'] = '4.1.0';
-$funcs['socket_getpeername']['extension'] = 'ext_sockets';
-$funcs['socket_getpeername']['version_init'] = '4.1.0';
-$funcs['socket_getsockname']['extension'] = 'ext_sockets';
-$funcs['socket_getsockname']['version_init'] = '4.1.0';
-$funcs['socket_get_option']['extension'] = 'ext_sockets';
-$funcs['socket_get_option']['version_init'] = '4.3.0';
-$funcs['socket_get_status']['extension'] = 'ext_standard';
-$funcs['socket_get_status']['version_init'] = '4.0.0';
-$funcs['socket_iovec_add']['extension'] = 'ext_sockets';
-$funcs['socket_iovec_add']['version_init'] = '4.1.0';
-$funcs['socket_iovec_alloc']['extension'] = 'ext_sockets';
-$funcs['socket_iovec_alloc']['version_init'] = '4.1.0';
-$funcs['socket_iovec_delete']['extension'] = 'ext_sockets';
-$funcs['socket_iovec_delete']['version_init'] = '4.1.0';
-$funcs['socket_iovec_fetch']['extension'] = 'ext_sockets';
-$funcs['socket_iovec_fetch']['version_init'] = '4.1.0';
-$funcs['socket_iovec_free']['extension'] = 'ext_sockets';
-$funcs['socket_iovec_free']['version_init'] = '4.1.0';
-$funcs['socket_iovec_set']['extension'] = 'ext_sockets';
-$funcs['socket_iovec_set']['version_init'] = '4.1.0';
-$funcs['socket_last_error']['extension'] = 'ext_sockets';
-$funcs['socket_last_error']['version_init'] = '4.1.0';
-$funcs['socket_listen']['extension'] = 'ext_sockets';
-$funcs['socket_listen']['version_init'] = '4.1.0';
-$funcs['socket_read']['extension'] = 'ext_sockets';
-$funcs['socket_read']['version_init'] = '4.1.0';
-$funcs['socket_readv']['extension'] = 'ext_sockets';
-$funcs['socket_readv']['version_init'] = '4.1.0';
-$funcs['socket_recv']['extension'] = 'ext_sockets';
-$funcs['socket_recv']['version_init'] = '4.1.0';
-$funcs['socket_recvfrom']['extension'] = 'ext_sockets';
-$funcs['socket_recvfrom']['version_init'] = '4.1.0';
-$funcs['socket_recvmsg']['extension'] = 'ext_sockets';
-$funcs['socket_recvmsg']['version_init'] = '4.1.0';
-$funcs['socket_select']['extension'] = 'ext_sockets';
-$funcs['socket_select']['version_init'] = '4.1.0';
-$funcs['socket_send']['extension'] = 'ext_sockets';
-$funcs['socket_send']['version_init'] = '4.1.0';
-$funcs['socket_sendmsg']['extension'] = 'ext_sockets';
-$funcs['socket_sendmsg']['version_init'] = '4.1.0';
-$funcs['socket_sendto']['extension'] = 'ext_sockets';
-$funcs['socket_sendto']['version_init'] = '4.1.0';
-$funcs['socket_setopt']['extension'] = 'ext_sockets';
-$funcs['socket_setopt']['version_init'] = '4.1.0';
-$funcs['socket_set_block']['extension'] = 'ext_sockets';
-$funcs['socket_set_block']['version_init'] = '4.2.0';
-$funcs['socket_set_blocking']['extension'] = 'ext_standard';
-$funcs['socket_set_blocking']['version_init'] = '4.0.0';
-$funcs['socket_set_nonblock']['extension'] = 'ext_sockets';
-$funcs['socket_set_nonblock']['version_init'] = '4.1.0';
-$funcs['socket_set_option']['extension'] = 'ext_sockets';
-$funcs['socket_set_option']['version_init'] = '4.3.0';
-$funcs['socket_set_timeout']['extension'] = 'ext_standard';
-$funcs['socket_set_timeout']['version_init'] = '4.0.0';
-$funcs['socket_shutdown']['extension'] = 'ext_sockets';
-$funcs['socket_shutdown']['version_init'] = '4.1.0';
-$funcs['socket_strerror']['extension'] = 'ext_sockets';
-$funcs['socket_strerror']['version_init'] = '4.1.0';
-$funcs['socket_write']['extension'] = 'ext_sockets';
-$funcs['socket_write']['version_init'] = '4.1.0';
-$funcs['socket_writev']['extension'] = 'ext_sockets';
-$funcs['socket_writev']['version_init'] = '4.1.0';
-$funcs['sort']['extension'] = 'ext_standard';
-$funcs['sort']['version_init'] = '4.0.0';
-$funcs['soundex']['extension'] = 'ext_standard';
-$funcs['soundex']['version_init'] = '4.0.0';
-$funcs['split']['extension'] = 'ext_standard';
-$funcs['split']['version_init'] = '4.0.0';
-$funcs['spliti']['extension'] = 'ext_standard';
-$funcs['spliti']['version_init'] = '4.0.1';
-$funcs['sprintf']['extension'] = 'ext_standard';
-$funcs['sprintf']['version_init'] = '4.0.0';
-$funcs['sqlite_array_query']['extension'] = 'ext_sqlite';
-$funcs['sqlite_array_query']['version_init'] = '';
-$funcs['sqlite_busy_timeout']['extension'] = 'ext_sqlite';
-$funcs['sqlite_busy_timeout']['version_init'] = '';
-$funcs['sqlite_changes']['extension'] = 'ext_sqlite';
-$funcs['sqlite_changes']['version_init'] = '';
-$funcs['sqlite_close']['extension'] = 'ext_sqlite';
-$funcs['sqlite_close']['version_init'] = '';
-$funcs['sqlite_column']['extension'] = 'ext_sqlite';
-$funcs['sqlite_column']['version_init'] = '';
-$funcs['sqlite_create_aggregate']['extension'] = 'ext_sqlite';
-$funcs['sqlite_create_aggregate']['version_init'] = '';
-$funcs['sqlite_create_function']['extension'] = 'ext_sqlite';
-$funcs['sqlite_create_function']['version_init'] = '';
-$funcs['sqlite_current']['extension'] = 'ext_sqlite';
-$funcs['sqlite_current']['version_init'] = '';
-$funcs['sqlite_error_string']['extension'] = 'ext_sqlite';
-$funcs['sqlite_error_string']['version_init'] = '';
-$funcs['sqlite_escape_string']['extension'] = 'ext_sqlite';
-$funcs['sqlite_escape_string']['version_init'] = '';
-$funcs['sqlite_factory']['extension'] = 'ext_sqlite';
-$funcs['sqlite_factory']['version_init'] = '';
-$funcs['sqlite_fetch_all']['extension'] = 'ext_sqlite';
-$funcs['sqlite_fetch_all']['version_init'] = '';
-$funcs['sqlite_fetch_array']['extension'] = 'ext_sqlite';
-$funcs['sqlite_fetch_array']['version_init'] = '';
-$funcs['sqlite_fetch_object']['extension'] = 'ext_sqlite';
-$funcs['sqlite_fetch_object']['version_init'] = '';
-$funcs['sqlite_fetch_single']['extension'] = 'ext_sqlite';
-$funcs['sqlite_fetch_single']['version_init'] = '';
-$funcs['sqlite_fetch_string']['extension'] = 'ext_sqlite';
-$funcs['sqlite_fetch_string']['version_init'] = '';
-$funcs['sqlite_field_name']['extension'] = 'ext_sqlite';
-$funcs['sqlite_field_name']['version_init'] = '';
-$funcs['sqlite_has_more']['extension'] = 'ext_sqlite';
-$funcs['sqlite_has_more']['version_init'] = '';
-$funcs['sqlite_has_prev']['extension'] = 'ext_sqlite';
-$funcs['sqlite_has_prev']['version_init'] = '';
-$funcs['sqlite_last_error']['extension'] = 'ext_sqlite';
-$funcs['sqlite_last_error']['version_init'] = '';
-$funcs['sqlite_last_insert_rowid']['extension'] = 'ext_sqlite';
-$funcs['sqlite_last_insert_rowid']['version_init'] = '';
-$funcs['sqlite_libencoding']['extension'] = 'ext_sqlite';
-$funcs['sqlite_libencoding']['version_init'] = '';
-$funcs['sqlite_libversion']['extension'] = 'ext_sqlite';
-$funcs['sqlite_libversion']['version_init'] = '';
-$funcs['sqlite_next']['extension'] = 'ext_sqlite';
-$funcs['sqlite_next']['version_init'] = '';
-$funcs['sqlite_num_fields']['extension'] = 'ext_sqlite';
-$funcs['sqlite_num_fields']['version_init'] = '';
-$funcs['sqlite_num_rows']['extension'] = 'ext_sqlite';
-$funcs['sqlite_num_rows']['version_init'] = '';
-$funcs['sqlite_open']['extension'] = 'ext_sqlite';
-$funcs['sqlite_open']['version_init'] = '';
-$funcs['sqlite_popen']['extension'] = 'ext_sqlite';
-$funcs['sqlite_popen']['version_init'] = '';
-$funcs['sqlite_prev']['extension'] = 'ext_sqlite';
-$funcs['sqlite_prev']['version_init'] = '';
-$funcs['sqlite_query']['extension'] = 'ext_sqlite';
-$funcs['sqlite_query']['version_init'] = '';
-$funcs['sqlite_rewind']['extension'] = 'ext_sqlite';
-$funcs['sqlite_rewind']['version_init'] = '';
-$funcs['sqlite_seek']['extension'] = 'ext_sqlite';
-$funcs['sqlite_seek']['version_init'] = '';
-$funcs['sqlite_single_query']['extension'] = 'ext_sqlite';
-$funcs['sqlite_single_query']['version_init'] = '';
-$funcs['sqlite_udf_decode_binary']['extension'] = 'ext_sqlite';
-$funcs['sqlite_udf_decode_binary']['version_init'] = '';
-$funcs['sqlite_udf_encode_binary']['extension'] = 'ext_sqlite';
-$funcs['sqlite_udf_encode_binary']['version_init'] = '';
-$funcs['sqlite_unbuffered_query']['extension'] = 'ext_sqlite';
-$funcs['sqlite_unbuffered_query']['version_init'] = '';
-$funcs['sql_regcase']['extension'] = 'ext_standard';
-$funcs['sql_regcase']['version_init'] = '4.0.0';
-$funcs['sqrt']['extension'] = 'ext_standard';
-$funcs['sqrt']['version_init'] = '4.0.0';
-$funcs['srand']['extension'] = 'ext_standard';
-$funcs['srand']['version_init'] = '4.0.0';
-$funcs['sscanf']['extension'] = 'ext_standard';
-$funcs['sscanf']['version_init'] = '4.0.1';
-$funcs['startsound']['extension'] = 'ext_ming';
-$funcs['startsound']['version_init'] = '5.0.0';
-$funcs['stat']['extension'] = 'ext_standard';
-$funcs['stat']['version_init'] = '4.0.0';
-$funcs['stopsound']['extension'] = 'ext_ming';
-$funcs['stopsound']['version_init'] = '5.0.0';
-$funcs['strcasecmp']['extension'] = 'zend';
-$funcs['strcasecmp']['version_init'] = '4.0.0';
-$funcs['strchr']['extension'] = 'ext_standard';
-$funcs['strchr']['version_init'] = '4.0.0';
-$funcs['strcmp']['extension'] = 'zend';
-$funcs['strcmp']['version_init'] = '4.0.0';
-$funcs['strcoll']['extension'] = 'ext_standard';
-$funcs['strcoll']['version_init'] = '4.0.5';
-$funcs['strcspn']['extension'] = 'ext_standard';
-$funcs['strcspn']['version_init'] = '4.0.0';
-$funcs['streammp3']['extension'] = 'ext_ming';
-$funcs['streammp3']['version_init'] = '4.0.5';
-$funcs['stream_bucket_append']['extension'] = 'ext_standard';
-$funcs['stream_bucket_append']['version_init'] = '5.0.0';
-$funcs['stream_bucket_make_writeable']['extension'] = 'ext_standard';
-$funcs['stream_bucket_make_writeable']['version_init'] = '5.0.0';
-$funcs['stream_bucket_new']['extension'] = 'ext_standard';
-$funcs['stream_bucket_new']['version_init'] = '5.0.0';
-$funcs['stream_bucket_prepend']['extension'] = 'ext_standard';
-$funcs['stream_bucket_prepend']['version_init'] = '5.0.0';
-$funcs['stream_context_create']['extension'] = 'ext_standard';
-$funcs['stream_context_create']['version_init'] = '4.3.0';
-$funcs['stream_context_get_options']['extension'] = 'ext_standard';
-$funcs['stream_context_get_options']['version_init'] = '4.3.0';
-$funcs['stream_context_set_option']['extension'] = 'ext_standard';
-$funcs['stream_context_set_option']['version_init'] = '4.3.0';
-$funcs['stream_context_set_params']['extension'] = 'ext_standard';
-$funcs['stream_context_set_params']['version_init'] = '4.3.0';
-$funcs['stream_copy_to_stream']['extension'] = 'ext_standard';
-$funcs['stream_copy_to_stream']['version_init'] = '5.0.0';
-$funcs['stream_filter_append']['extension'] = 'ext_standard';
-$funcs['stream_filter_append']['version_init'] = '4.3.0';
-$funcs['stream_filter_prepend']['extension'] = 'ext_standard';
-$funcs['stream_filter_prepend']['version_init'] = '4.3.0';
-$funcs['stream_filter_register']['extension'] = 'ext_standard';
-$funcs['stream_filter_register']['version_init'] = '5.0.0';
-$funcs['stream_get_contents']['extension'] = 'ext_standard';
-$funcs['stream_get_contents']['version_init'] = '';
-$funcs['stream_get_filters']['extension'] = 'ext_standard';
-$funcs['stream_get_filters']['version_init'] = '5.0.0';
-$funcs['stream_get_line']['extension'] = 'ext_standard';
-$funcs['stream_get_line']['version_init'] = '5.0.0';
-$funcs['stream_get_meta_data']['extension'] = 'ext_standard';
-$funcs['stream_get_meta_data']['version_init'] = '4.3.0';
-$funcs['stream_get_transports']['extension'] = 'ext_standard';
-$funcs['stream_get_transports']['version_init'] = '5.0.0';
-$funcs['stream_get_wrappers']['extension'] = 'ext_standard';
-$funcs['stream_get_wrappers']['version_init'] = '5.0.0';
-$funcs['stream_register_wrapper']['extension'] = 'ext_standard';
-$funcs['stream_register_wrapper']['version_init'] = '4.3.0';
-$funcs['stream_select']['extension'] = 'ext_standard';
-$funcs['stream_select']['version_init'] = '4.3.0';
-$funcs['stream_set_blocking']['extension'] = 'ext_standard';
-$funcs['stream_set_blocking']['version_init'] = '4.3.0';
-$funcs['stream_set_timeout']['extension'] = 'ext_standard';
-$funcs['stream_set_timeout']['version_init'] = '4.3.0';
-$funcs['stream_set_write_buffer']['extension'] = 'ext_standard';
-$funcs['stream_set_write_buffer']['version_init'] = '4.3.0';
-$funcs['stream_socket_accept']['extension'] = 'ext_standard';
-$funcs['stream_socket_accept']['version_init'] = '5.0.0';
-$funcs['stream_socket_client']['extension'] = 'ext_standard';
-$funcs['stream_socket_client']['version_init'] = '5.0.0';
-$funcs['stream_socket_get_name']['extension'] = 'ext_standard';
-$funcs['stream_socket_get_name']['version_init'] = '5.0.0';
-$funcs['stream_socket_server']['extension'] = 'ext_standard';
-$funcs['stream_socket_server']['version_init'] = '5.0.0';
-$funcs['stream_wrapper_register']['extension'] = 'ext_standard';
-$funcs['stream_wrapper_register']['version_init'] = '4.3.2';
-$funcs['strerror']['extension'] = 'ext_sockets';
-$funcs['strerror']['version_init'] = '4.0.2';
-$funcs['strftime']['extension'] = 'ext_standard';
-$funcs['strftime']['version_init'] = '4.0.0';
-$funcs['stripcslashes']['extension'] = 'ext_standard';
-$funcs['stripcslashes']['version_init'] = '4.0.0';
-$funcs['stripos']['extension'] = 'ext_standard';
-$funcs['stripos']['version_init'] = '5.0.0';
-$funcs['stripslashes']['extension'] = 'ext_standard';
-$funcs['stripslashes']['version_init'] = '4.0.0';
-$funcs['strip_tags']['extension'] = 'ext_standard';
-$funcs['strip_tags']['version_init'] = '4.0.0';
-$funcs['stristr']['extension'] = 'ext_standard';
-$funcs['stristr']['version_init'] = '4.0.0';
-$funcs['strlen']['extension'] = 'zend';
-$funcs['strlen']['version_init'] = '4.0.0';
-$funcs['strnatcasecmp']['extension'] = 'ext_standard';
-$funcs['strnatcasecmp']['version_init'] = '4.0.0';
-$funcs['strnatcmp']['extension'] = 'ext_standard';
-$funcs['strnatcmp']['version_init'] = '4.0.0';
-$funcs['strncasecmp']['extension'] = 'zend';
-$funcs['strncasecmp']['version_init'] = '4.0.2';
-$funcs['strncmp']['extension'] = 'zend';
-$funcs['strncmp']['version_init'] = '4.0.0';
-$funcs['strpbrk']['extension'] = 'ext_standard';
-$funcs['strpbrk']['version_init'] = '5.0.0';
-$funcs['strpos']['extension'] = 'ext_standard';
-$funcs['strpos']['version_init'] = '4.0.0';
-$funcs['strrchr']['extension'] = 'ext_standard';
-$funcs['strrchr']['version_init'] = '4.0.0';
-$funcs['strrev']['extension'] = 'ext_standard';
-$funcs['strrev']['version_init'] = '4.0.0';
-$funcs['strripos']['extension'] = 'ext_standard';
-$funcs['strripos']['version_init'] = '5.0.0';
-$funcs['strrpos']['extension'] = 'ext_standard';
-$funcs['strrpos']['version_init'] = '4.0.0';
-$funcs['strspn']['extension'] = 'ext_standard';
-$funcs['strspn']['version_init'] = '4.0.0';
-$funcs['strstr']['extension'] = 'ext_standard';
-$funcs['strstr']['version_init'] = '4.0.0';
-$funcs['strtok']['extension'] = 'ext_standard';
-$funcs['strtok']['version_init'] = '4.0.0';
-$funcs['strtolower']['extension'] = 'ext_standard';
-$funcs['strtolower']['version_init'] = '4.0.0';
-$funcs['strtotime']['extension'] = 'ext_standard';
-$funcs['strtotime']['version_init'] = '4.0.0';
-$funcs['strtoupper']['extension'] = 'ext_standard';
-$funcs['strtoupper']['version_init'] = '4.0.0';
-$funcs['strtr']['extension'] = 'ext_standard';
-$funcs['strtr']['version_init'] = '4.0.0';
-$funcs['strval']['extension'] = 'ext_standard';
-$funcs['strval']['version_init'] = '4.0.0';
-$funcs['str_ireplace']['extension'] = 'ext_standard';
-$funcs['str_ireplace']['version_init'] = '5.0.0';
-$funcs['str_pad']['extension'] = 'ext_standard';
-$funcs['str_pad']['version_init'] = '4.0.1';
-$funcs['str_repeat']['extension'] = 'ext_standard';
-$funcs['str_repeat']['version_init'] = '4.0.0';
-$funcs['str_replace']['extension'] = 'ext_standard';
-$funcs['str_replace']['version_init'] = '4.0.0';
-$funcs['str_rot13']['extension'] = 'ext_standard';
-$funcs['str_rot13']['version_init'] = '4.2.0';
-$funcs['str_shuffle']['extension'] = 'ext_standard';
-$funcs['str_shuffle']['version_init'] = '4.3.0';
-$funcs['str_split']['extension'] = 'ext_standard';
-$funcs['str_split']['version_init'] = '5.0.0';
-$funcs['str_word_count']['extension'] = 'ext_standard';
-$funcs['str_word_count']['version_init'] = '4.3.0';
-$funcs['substr']['extension'] = 'ext_standard';
-$funcs['substr']['version_init'] = '4.0.0';
-$funcs['substr_compare']['extension'] = 'ext_standard';
-$funcs['substr_compare']['version_init'] = '';
-$funcs['substr_count']['extension'] = 'ext_standard';
-$funcs['substr_count']['version_init'] = '4.0.0';
-$funcs['substr_replace']['extension'] = 'ext_standard';
-$funcs['substr_replace']['version_init'] = '4.0.0';
-$funcs['swfaction']['extension'] = 'ext_ming';
-$funcs['swfaction']['version_init'] = '4.0.5';
-$funcs['swfbitmap']['extension'] = 'ext_ming';
-$funcs['swfbitmap']['version_init'] = '4.0.5';
-$funcs['swfbutton']['extension'] = 'ext_ming';
-$funcs['swfbutton']['version_init'] = '4.0.5';
-$funcs['swfbutton_keypress']['extension'] = 'ext_ming';
-$funcs['swfbutton_keypress']['version_init'] = '4.0.5';
-$funcs['swffill']['extension'] = 'ext_ming';
-$funcs['swffill']['version_init'] = '4.0.5';
-$funcs['swffont']['extension'] = 'ext_ming';
-$funcs['swffont']['version_init'] = '4.0.5';
-$funcs['swfgradient']['extension'] = 'ext_ming';
-$funcs['swfgradient']['version_init'] = '4.0.5';
-$funcs['swfmorph']['extension'] = 'ext_ming';
-$funcs['swfmorph']['version_init'] = '4.0.5';
-$funcs['swfmovie']['extension'] = 'ext_ming';
-$funcs['swfmovie']['version_init'] = '4.0.5';
-$funcs['swfshape']['extension'] = 'ext_ming';
-$funcs['swfshape']['version_init'] = '4.0.5';
-$funcs['swfsound']['extension'] = 'ext_ming';
-$funcs['swfsound']['version_init'] = '';
-$funcs['swfsprite']['extension'] = 'ext_ming';
-$funcs['swfsprite']['version_init'] = '4.0.5';
-$funcs['swftext']['extension'] = 'ext_ming';
-$funcs['swftext']['version_init'] = '4.0.5';
-$funcs['swftextfield']['extension'] = 'ext_ming';
-$funcs['swftextfield']['version_init'] = '4.0.5';
-$funcs['swf_actiongeturl']['extension'] = 'ext_swf';
-$funcs['swf_actiongeturl']['version_init'] = '4.0.0';
-$funcs['swf_actiongotoframe']['extension'] = 'ext_swf';
-$funcs['swf_actiongotoframe']['version_init'] = '4.0.0';
-$funcs['swf_actiongotolabel']['extension'] = 'ext_swf';
-$funcs['swf_actiongotolabel']['version_init'] = '4.0.0';
-$funcs['swf_actionnextframe']['extension'] = 'ext_swf';
-$funcs['swf_actionnextframe']['version_init'] = '4.0.0';
-$funcs['swf_actionplay']['extension'] = 'ext_swf';
-$funcs['swf_actionplay']['version_init'] = '4.0.0';
-$funcs['swf_actionprevframe']['extension'] = 'ext_swf';
-$funcs['swf_actionprevframe']['version_init'] = '4.0.0';
-$funcs['swf_actionsettarget']['extension'] = 'ext_swf';
-$funcs['swf_actionsettarget']['version_init'] = '4.0.0';
-$funcs['swf_actionstop']['extension'] = 'ext_swf';
-$funcs['swf_actionstop']['version_init'] = '4.0.0';
-$funcs['swf_actiontogglequality']['extension'] = 'ext_swf';
-$funcs['swf_actiontogglequality']['version_init'] = '4.0.0';
-$funcs['swf_actionwaitforframe']['extension'] = 'ext_swf';
-$funcs['swf_actionwaitforframe']['version_init'] = '4.0.0';
-$funcs['swf_addbuttonrecord']['extension'] = 'ext_swf';
-$funcs['swf_addbuttonrecord']['version_init'] = '4.0.0';
-$funcs['swf_addcolor']['extension'] = 'ext_swf';
-$funcs['swf_addcolor']['version_init'] = '4.0.0';
-$funcs['swf_closefile']['extension'] = 'ext_swf';
-$funcs['swf_closefile']['version_init'] = '4.0.0';
-$funcs['swf_definebitmap']['extension'] = 'ext_swf';
-$funcs['swf_definebitmap']['version_init'] = '4.0.0';
-$funcs['swf_definefont']['extension'] = 'ext_swf';
-$funcs['swf_definefont']['version_init'] = '4.0.0';
-$funcs['swf_defineline']['extension'] = 'ext_swf';
-$funcs['swf_defineline']['version_init'] = '4.0.0';
-$funcs['swf_definepoly']['extension'] = 'ext_swf';
-$funcs['swf_definepoly']['version_init'] = '4.0.0';
-$funcs['swf_definerect']['extension'] = 'ext_swf';
-$funcs['swf_definerect']['version_init'] = '4.0.0';
-$funcs['swf_definetext']['extension'] = 'ext_swf';
-$funcs['swf_definetext']['version_init'] = '4.0.0';
-$funcs['swf_endbutton']['extension'] = 'ext_swf';
-$funcs['swf_endbutton']['version_init'] = '4.0.0';
-$funcs['swf_enddoaction']['extension'] = 'ext_swf';
-$funcs['swf_enddoaction']['version_init'] = '4.0.0';
-$funcs['swf_endshape']['extension'] = 'ext_swf';
-$funcs['swf_endshape']['version_init'] = '4.0.0';
-$funcs['swf_endsymbol']['extension'] = 'ext_swf';
-$funcs['swf_endsymbol']['version_init'] = '4.0.0';
-$funcs['swf_fontsize']['extension'] = 'ext_swf';
-$funcs['swf_fontsize']['version_init'] = '4.0.0';
-$funcs['swf_fontslant']['extension'] = 'ext_swf';
-$funcs['swf_fontslant']['version_init'] = '4.0.0';
-$funcs['swf_fonttracking']['extension'] = 'ext_swf';
-$funcs['swf_fonttracking']['version_init'] = '4.0.0';
-$funcs['swf_getbitmapinfo']['extension'] = 'ext_swf';
-$funcs['swf_getbitmapinfo']['version_init'] = '4.0.0';
-$funcs['swf_getfontinfo']['extension'] = 'ext_swf';
-$funcs['swf_getfontinfo']['version_init'] = '4.0.0';
-$funcs['swf_getframe']['extension'] = 'ext_swf';
-$funcs['swf_getframe']['version_init'] = '4.0.0';
-$funcs['swf_labelframe']['extension'] = 'ext_swf';
-$funcs['swf_labelframe']['version_init'] = '4.0.0';
-$funcs['swf_lookat']['extension'] = 'ext_swf';
-$funcs['swf_lookat']['version_init'] = '4.0.0';
-$funcs['swf_modifyobject']['extension'] = 'ext_swf';
-$funcs['swf_modifyobject']['version_init'] = '4.0.0';
-$funcs['swf_mulcolor']['extension'] = 'ext_swf';
-$funcs['swf_mulcolor']['version_init'] = '4.0.0';
-$funcs['swf_nextid']['extension'] = 'ext_swf';
-$funcs['swf_nextid']['version_init'] = '4.0.0';
-$funcs['swf_oncondition']['extension'] = 'ext_swf';
-$funcs['swf_oncondition']['version_init'] = '4.0.0';
-$funcs['swf_openfile']['extension'] = 'ext_swf';
-$funcs['swf_openfile']['version_init'] = '4.0.0';
-$funcs['swf_ortho']['extension'] = 'ext_swf';
-$funcs['swf_ortho']['version_init'] = '4.0.1';
-$funcs['swf_ortho2']['extension'] = 'ext_swf';
-$funcs['swf_ortho2']['version_init'] = '4.0.0';
-$funcs['swf_perspective']['extension'] = 'ext_swf';
-$funcs['swf_perspective']['version_init'] = '4.0.0';
-$funcs['swf_placeobject']['extension'] = 'ext_swf';
-$funcs['swf_placeobject']['version_init'] = '4.0.0';
-$funcs['swf_polarview']['extension'] = 'ext_swf';
-$funcs['swf_polarview']['version_init'] = '4.0.0';
-$funcs['swf_popmatrix']['extension'] = 'ext_swf';
-$funcs['swf_popmatrix']['version_init'] = '4.0.0';
-$funcs['swf_posround']['extension'] = 'ext_swf';
-$funcs['swf_posround']['version_init'] = '4.0.0';
-$funcs['swf_pushmatrix']['extension'] = 'ext_swf';
-$funcs['swf_pushmatrix']['version_init'] = '4.0.0';
-$funcs['swf_removeobject']['extension'] = 'ext_swf';
-$funcs['swf_removeobject']['version_init'] = '4.0.0';
-$funcs['swf_rotate']['extension'] = 'ext_swf';
-$funcs['swf_rotate']['version_init'] = '4.0.0';
-$funcs['swf_scale']['extension'] = 'ext_swf';
-$funcs['swf_scale']['version_init'] = '4.0.0';
-$funcs['swf_setfont']['extension'] = 'ext_swf';
-$funcs['swf_setfont']['version_init'] = '4.0.0';
-$funcs['swf_setframe']['extension'] = 'ext_swf';
-$funcs['swf_setframe']['version_init'] = '4.0.0';
-$funcs['swf_shapearc']['extension'] = 'ext_swf';
-$funcs['swf_shapearc']['version_init'] = '4.0.0';
-$funcs['swf_shapecurveto']['extension'] = 'ext_swf';
-$funcs['swf_shapecurveto']['version_init'] = '4.0.0';
-$funcs['swf_shapecurveto3']['extension'] = 'ext_swf';
-$funcs['swf_shapecurveto3']['version_init'] = '4.0.0';
-$funcs['swf_shapefillbitmapclip']['extension'] = 'ext_swf';
-$funcs['swf_shapefillbitmapclip']['version_init'] = '4.0.0';
-$funcs['swf_shapefillbitmaptile']['extension'] = 'ext_swf';
-$funcs['swf_shapefillbitmaptile']['version_init'] = '4.0.0';
-$funcs['swf_shapefilloff']['extension'] = 'ext_swf';
-$funcs['swf_shapefilloff']['version_init'] = '4.0.0';
-$funcs['swf_shapefillsolid']['extension'] = 'ext_swf';
-$funcs['swf_shapefillsolid']['version_init'] = '4.0.0';
-$funcs['swf_shapelinesolid']['extension'] = 'ext_swf';
-$funcs['swf_shapelinesolid']['version_init'] = '4.0.0';
-$funcs['swf_shapelineto']['extension'] = 'ext_swf';
-$funcs['swf_shapelineto']['version_init'] = '4.0.0';
-$funcs['swf_shapemoveto']['extension'] = 'ext_swf';
-$funcs['swf_shapemoveto']['version_init'] = '4.0.0';
-$funcs['swf_showframe']['extension'] = 'ext_swf';
-$funcs['swf_showframe']['version_init'] = '4.0.0';
-$funcs['swf_startbutton']['extension'] = 'ext_swf';
-$funcs['swf_startbutton']['version_init'] = '4.0.0';
-$funcs['swf_startdoaction']['extension'] = 'ext_swf';
-$funcs['swf_startdoaction']['version_init'] = '4.0.0';
-$funcs['swf_startshape']['extension'] = 'ext_swf';
-$funcs['swf_startshape']['version_init'] = '4.0.0';
-$funcs['swf_startsymbol']['extension'] = 'ext_swf';
-$funcs['swf_startsymbol']['version_init'] = '4.0.0';
-$funcs['swf_textwidth']['extension'] = 'ext_swf';
-$funcs['swf_textwidth']['version_init'] = '4.0.0';
-$funcs['swf_translate']['extension'] = 'ext_swf';
-$funcs['swf_translate']['version_init'] = '4.0.0';
-$funcs['swf_viewport']['extension'] = 'ext_swf';
-$funcs['swf_viewport']['version_init'] = '4.0.0';
-$funcs['sybase_affected_rows']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_affected_rows']['version_init'] = '4.0.0';
-$funcs['sybase_close']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_close']['version_init'] = '4.0.0';
-$funcs['sybase_connect']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_connect']['version_init'] = '4.0.0';
-$funcs['sybase_data_seek']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_data_seek']['version_init'] = '4.0.0';
-$funcs['sybase_deadlock_retry_count']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_deadlock_retry_count']['version_init'] = '4.3.0';
-$funcs['sybase_fetch_array']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_fetch_array']['version_init'] = '4.0.0';
-$funcs['sybase_fetch_assoc']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_fetch_assoc']['version_init'] = '4.3.0';
-$funcs['sybase_fetch_field']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_fetch_field']['version_init'] = '4.0.0';
-$funcs['sybase_fetch_object']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_fetch_object']['version_init'] = '4.0.0';
-$funcs['sybase_fetch_row']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_fetch_row']['version_init'] = '4.0.0';
-$funcs['sybase_field_seek']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_field_seek']['version_init'] = '4.0.0';
-$funcs['sybase_free_result']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_free_result']['version_init'] = '4.0.0';
-$funcs['sybase_get_last_message']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_get_last_message']['version_init'] = '4.0.0';
-$funcs['sybase_min_client_severity']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_min_client_severity']['version_init'] = '4.0.0';
-$funcs['sybase_min_error_severity']['extension'] = 'ext_sybase';
-$funcs['sybase_min_error_severity']['version_init'] = '4.0.0';
-$funcs['sybase_min_message_severity']['extension'] = 'ext_sybase';
-$funcs['sybase_min_message_severity']['version_init'] = '4.0.0';
-$funcs['sybase_min_server_severity']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_min_server_severity']['version_init'] = '4.0.0';
-$funcs['sybase_num_fields']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_num_fields']['version_init'] = '4.0.0';
-$funcs['sybase_num_rows']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_num_rows']['version_init'] = '4.0.0';
-$funcs['sybase_pconnect']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_pconnect']['version_init'] = '4.0.0';
-$funcs['sybase_query']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_query']['version_init'] = '4.0.0';
-$funcs['sybase_result']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_result']['version_init'] = '4.0.0';
-$funcs['sybase_select_db']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_select_db']['version_init'] = '4.0.0';
-$funcs['sybase_set_message_handler']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_set_message_handler']['version_init'] = '4.3.0';
-$funcs['sybase_unbuffered_query']['extension'] = 'ext_sybase_ct';
-$funcs['sybase_unbuffered_query']['version_init'] = '4.3.0';
-$funcs['symlink']['extension'] = 'ext_standard';
-$funcs['symlink']['version_init'] = '4.0.0';
-$funcs['syslog']['extension'] = 'ext_standard';
-$funcs['syslog']['version_init'] = '4.0.0';
-$funcs['system']['extension'] = 'ext_standard';
-$funcs['system']['version_init'] = '4.0.0';
-$funcs['tan']['extension'] = 'ext_standard';
-$funcs['tan']['version_init'] = '4.0.0';
-$funcs['tanh']['extension'] = 'ext_standard';
-$funcs['tanh']['version_init'] = '4.1.0';
-$funcs['tempnam']['extension'] = 'ext_standard';
-$funcs['tempnam']['version_init'] = '4.0.0';
-$funcs['textdomain']['extension'] = 'ext_gettext';
-$funcs['textdomain']['version_init'] = '4.0.0';
-$funcs['time']['extension'] = 'ext_standard';
-$funcs['time']['version_init'] = '4.0.0';
-$funcs['time_nanosleep']['extension'] = 'ext_standard';
-$funcs['time_nanosleep']['version_init'] = '';
-$funcs['tmpfile']['extension'] = 'ext_standard';
-$funcs['tmpfile']['version_init'] = '4.0.0';
-$funcs['token_get_all']['extension'] = 'ext_tokenizer';
-$funcs['token_get_all']['version_init'] = '4.2.0';
-$funcs['token_name']['extension'] = 'ext_tokenizer';
-$funcs['token_name']['version_init'] = '4.2.0';
-$funcs['touch']['extension'] = 'ext_standard';
-$funcs['touch']['version_init'] = '4.0.0';
-$funcs['trigger_error']['extension'] = 'zend';
-$funcs['trigger_error']['version_init'] = '4.0.1';
-$funcs['trim']['extension'] = 'ext_standard';
-$funcs['trim']['version_init'] = '4.0.0';
-$funcs['uasort']['extension'] = 'ext_standard';
-$funcs['uasort']['version_init'] = '4.0.0';
-$funcs['ucfirst']['extension'] = 'ext_standard';
-$funcs['ucfirst']['version_init'] = '4.0.0';
-$funcs['ucwords']['extension'] = 'ext_standard';
-$funcs['ucwords']['version_init'] = '4.0.0';
-$funcs['udm_add_search_limit']['extension'] = 'ext_mnogosearch';
-$funcs['udm_add_search_limit']['version_init'] = '4.0.5';
-$funcs['udm_alloc_agent']['extension'] = 'ext_mnogosearch';
-$funcs['udm_alloc_agent']['version_init'] = '4.0.5';
-$funcs['udm_alloc_agent_array']['extension'] = 'ext_mnogosearch';
-$funcs['udm_alloc_agent_array']['version_init'] = '4.3.3';
-$funcs['udm_api_version']['extension'] = 'ext_mnogosearch';
-$funcs['udm_api_version']['version_init'] = '4.0.5';
-$funcs['udm_cat_list']['extension'] = 'ext_mnogosearch';
-$funcs['udm_cat_list']['version_init'] = '4.0.6';
-$funcs['udm_cat_path']['extension'] = 'ext_mnogosearch';
-$funcs['udm_cat_path']['version_init'] = '4.0.6';
-$funcs['udm_check_charset']['extension'] = 'ext_mnogosearch';
-$funcs['udm_check_charset']['version_init'] = '4.2.0';
-$funcs['udm_check_stored']['extension'] = 'ext_mnogosearch';
-$funcs['udm_check_stored']['version_init'] = '4.2.0';
-$funcs['udm_clear_search_limits']['extension'] = 'ext_mnogosearch';
-$funcs['udm_clear_search_limits']['version_init'] = '4.0.5';
-$funcs['udm_close_stored']['extension'] = 'ext_mnogosearch';
-$funcs['udm_close_stored']['version_init'] = '4.2.0';
-$funcs['udm_crc32']['extension'] = 'ext_mnogosearch';
-$funcs['udm_crc32']['version_init'] = '4.2.0';
-$funcs['udm_errno']['extension'] = 'ext_mnogosearch';
-$funcs['udm_errno']['version_init'] = '4.0.5';
-$funcs['udm_error']['extension'] = 'ext_mnogosearch';
-$funcs['udm_error']['version_init'] = '4.0.5';
-$funcs['udm_find']['extension'] = 'ext_mnogosearch';
-$funcs['udm_find']['version_init'] = '4.0.5';
-$funcs['udm_free_agent']['extension'] = 'ext_mnogosearch';
-$funcs['udm_free_agent']['version_init'] = '4.0.5';
-$funcs['udm_free_ispell_data']['extension'] = 'ext_mnogosearch';
-$funcs['udm_free_ispell_data']['version_init'] = '4.0.5';
-$funcs['udm_free_res']['extension'] = 'ext_mnogosearch';
-$funcs['udm_free_res']['version_init'] = '4.0.5';
-$funcs['udm_get_doc_count']['extension'] = 'ext_mnogosearch';
-$funcs['udm_get_doc_count']['version_init'] = '4.0.5';
-$funcs['udm_get_res_field']['extension'] = 'ext_mnogosearch';
-$funcs['udm_get_res_field']['version_init'] = '4.0.5';
-$funcs['udm_get_res_field_ex']['extension'] = 'ext_mnogosearch';
-$funcs['udm_get_res_field_ex']['version_init'] = '4.3.3';
-$funcs['udm_get_res_param']['extension'] = 'ext_mnogosearch';
-$funcs['udm_get_res_param']['version_init'] = '4.0.5';
-$funcs['udm_hash32']['extension'] = 'ext_mnogosearch';
-$funcs['udm_hash32']['version_init'] = '4.3.3';
-$funcs['udm_load_ispell_data']['extension'] = 'ext_mnogosearch';
-$funcs['udm_load_ispell_data']['version_init'] = '4.0.5';
-$funcs['udm_make_excerpt']['extension'] = 'ext_mnogosearch';
-$funcs['udm_make_excerpt']['version_init'] = '4.3.0';
-$funcs['udm_open_stored']['extension'] = 'ext_mnogosearch';
-$funcs['udm_open_stored']['version_init'] = '4.2.0';
-$funcs['udm_parse_query_string']['extension'] = 'ext_mnogosearch';
-$funcs['udm_parse_query_string']['version_init'] = '4.3.0';
-$funcs['udm_set_agent_param']['extension'] = 'ext_mnogosearch';
-$funcs['udm_set_agent_param']['version_init'] = '4.0.5';
-$funcs['udm_set_agent_param_ex']['extension'] = 'ext_mnogosearch';
-$funcs['udm_set_agent_param_ex']['version_init'] = '4.3.3';
-$funcs['uksort']['extension'] = 'ext_standard';
-$funcs['uksort']['version_init'] = '4.0.0';
-$funcs['umask']['extension'] = 'ext_standard';
-$funcs['umask']['version_init'] = '4.0.0';
-$funcs['uniqid']['extension'] = 'ext_standard';
-$funcs['uniqid']['version_init'] = '4.0.0';
-$funcs['unixtojd']['extension'] = 'ext_calendar';
-$funcs['unixtojd']['version_init'] = '4.0.0';
-$funcs['unlink']['extension'] = 'ext_standard';
-$funcs['unlink']['version_init'] = '4.0.0';
-$funcs['unpack']['extension'] = 'ext_standard';
-$funcs['unpack']['version_init'] = '4.0.0';
-$funcs['unregister_tick_function']['extension'] = 'ext_standard';
-$funcs['unregister_tick_function']['version_init'] = '4.0.3';
-$funcs['unserialize']['extension'] = 'ext_standard';
-$funcs['unserialize']['version_init'] = '4.0.0';
-$funcs['urldecode']['extension'] = 'ext_standard';
-$funcs['urldecode']['version_init'] = '4.0.0';
-$funcs['urlencode']['extension'] = 'ext_standard';
-$funcs['urlencode']['version_init'] = '4.0.0';
-$funcs['user_error']['extension'] = 'zend';
-$funcs['user_error']['version_init'] = '4.0.0';
-$funcs['usleep']['extension'] = 'ext_standard';
-$funcs['usleep']['version_init'] = '4.0.0';
-$funcs['usort']['extension'] = 'ext_standard';
-$funcs['usort']['version_init'] = '4.0.0';
-$funcs['utf8_decode']['extension'] = 'ext_xml';
-$funcs['utf8_decode']['version_init'] = '4.0.0';
-$funcs['utf8_encode']['extension'] = 'ext_xml';
-$funcs['utf8_encode']['version_init'] = '4.0.0';
-$funcs['variant_abs']['extension'] = 'ext_com_dotnet';
-$funcs['variant_abs']['version_init'] = '';
-$funcs['variant_add']['extension'] = 'ext_com_dotnet';
-$funcs['variant_add']['version_init'] = '';
-$funcs['variant_and']['extension'] = 'ext_com_dotnet';
-$funcs['variant_and']['version_init'] = '';
-$funcs['variant_cast']['extension'] = 'ext_com_dotnet';
-$funcs['variant_cast']['version_init'] = '';
-$funcs['variant_cat']['extension'] = 'ext_com_dotnet';
-$funcs['variant_cat']['version_init'] = '';
-$funcs['variant_cmp']['extension'] = 'ext_com_dotnet';
-$funcs['variant_cmp']['version_init'] = '';
-$funcs['variant_date_from_timestamp']['extension'] = 'ext_com_dotnet';
-$funcs['variant_date_from_timestamp']['version_init'] = '';
-$funcs['variant_date_to_timestamp']['extension'] = 'ext_com_dotnet';
-$funcs['variant_date_to_timestamp']['version_init'] = '';
-$funcs['variant_div']['extension'] = 'ext_com_dotnet';
-$funcs['variant_div']['version_init'] = '';
-$funcs['variant_eqv']['extension'] = 'ext_com_dotnet';
-$funcs['variant_eqv']['version_init'] = '';
-$funcs['variant_fix']['extension'] = 'ext_com_dotnet';
-$funcs['variant_fix']['version_init'] = '';
-$funcs['variant_get_type']['extension'] = 'ext_com_dotnet';
-$funcs['variant_get_type']['version_init'] = '';
-$funcs['variant_idiv']['extension'] = 'ext_com_dotnet';
-$funcs['variant_idiv']['version_init'] = '';
-$funcs['variant_imp']['extension'] = 'ext_com_dotnet';
-$funcs['variant_imp']['version_init'] = '';
-$funcs['variant_int']['extension'] = 'ext_com_dotnet';
-$funcs['variant_int']['version_init'] = '';
-$funcs['variant_mod']['extension'] = 'ext_com_dotnet';
-$funcs['variant_mod']['version_init'] = '';
-$funcs['variant_mul']['extension'] = 'ext_com_dotnet';
-$funcs['variant_mul']['version_init'] = '';
-$funcs['variant_neg']['extension'] = 'ext_com_dotnet';
-$funcs['variant_neg']['version_init'] = '';
-$funcs['variant_not']['extension'] = 'ext_com_dotnet';
-$funcs['variant_not']['version_init'] = '';
-$funcs['variant_or']['extension'] = 'ext_com_dotnet';
-$funcs['variant_or']['version_init'] = '';
-$funcs['variant_pow']['extension'] = 'ext_com_dotnet';
-$funcs['variant_pow']['version_init'] = '';
-$funcs['variant_round']['extension'] = 'ext_com_dotnet';
-$funcs['variant_round']['version_init'] = '';
-$funcs['variant_set']['extension'] = 'ext_com_dotnet';
-$funcs['variant_set']['version_init'] = '';
-$funcs['variant_set_type']['extension'] = 'ext_com_dotnet';
-$funcs['variant_set_type']['version_init'] = '';
-$funcs['variant_sub']['extension'] = 'ext_com_dotnet';
-$funcs['variant_sub']['version_init'] = '';
-$funcs['variant_xor']['extension'] = 'ext_com_dotnet';
-$funcs['variant_xor']['version_init'] = '';
-$funcs['var_dump']['extension'] = 'ext_standard';
-$funcs['var_dump']['version_init'] = '4.0.0';
-$funcs['var_export']['extension'] = 'ext_standard';
-$funcs['var_export']['version_init'] = '4.2.0';
-$funcs['velocis_autocommit']['extension'] = 'ext_odbc';
-$funcs['velocis_autocommit']['version_init'] = '4.0.0';
-$funcs['velocis_close']['extension'] = 'ext_odbc';
-$funcs['velocis_close']['version_init'] = '4.0.0';
-$funcs['velocis_commit']['extension'] = 'ext_odbc';
-$funcs['velocis_commit']['version_init'] = '4.0.0';
-$funcs['velocis_connect']['extension'] = 'ext_odbc';
-$funcs['velocis_connect']['version_init'] = '4.0.0';
-$funcs['velocis_exec']['extension'] = 'ext_odbc';
-$funcs['velocis_exec']['version_init'] = '4.0.0';
-$funcs['velocis_fetch']['extension'] = 'ext_odbc';
-$funcs['velocis_fetch']['version_init'] = '4.0.0';
-$funcs['velocis_fieldname']['extension'] = 'ext_odbc';
-$funcs['velocis_fieldname']['version_init'] = '4.0.0';
-$funcs['velocis_fieldnum']['extension'] = 'ext_odbc';
-$funcs['velocis_fieldnum']['version_init'] = '4.0.0';
-$funcs['velocis_freeresult']['extension'] = 'ext_odbc';
-$funcs['velocis_freeresult']['version_init'] = '4.0.0';
-$funcs['velocis_off_autocommit']['extension'] = 'ext_odbc';
-$funcs['velocis_off_autocommit']['version_init'] = '4.0.0';
-$funcs['velocis_result']['extension'] = 'ext_odbc';
-$funcs['velocis_result']['version_init'] = '4.0.0';
-$funcs['velocis_rollback']['extension'] = 'ext_odbc';
-$funcs['velocis_rollback']['version_init'] = '4.0.0';
-$funcs['version_compare']['extension'] = 'ext_standard';
-$funcs['version_compare']['version_init'] = '4.1.0';
-$funcs['vfprintf']['extension'] = 'ext_standard';
-$funcs['vfprintf']['version_init'] = '5.0.0';
-$funcs['virtual']['extension'] = 'sapi_nsapi';
-$funcs['virtual']['version_init'] = '4.0.0';
-$funcs['vm_addalias']['extension'] = 'dl_vmailmgr';
-$funcs['vm_addalias']['version_init'] = '';
-$funcs['vm_adduser']['extension'] = 'dl_vmailmgr';
-$funcs['vm_adduser']['version_init'] = '';
-$funcs['vm_delalias']['extension'] = 'dl_vmailmgr';
-$funcs['vm_delalias']['version_init'] = '';
-$funcs['vm_deluser']['extension'] = 'dl_vmailmgr';
-$funcs['vm_deluser']['version_init'] = '';
-$funcs['vm_passwd']['extension'] = 'dl_vmailmgr';
-$funcs['vm_passwd']['version_init'] = '';
-$funcs['vpopmail_add_alias_domain']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_add_alias_domain']['version_init'] = '4.0.5';
-$funcs['vpopmail_add_alias_domain_ex']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_add_alias_domain_ex']['version_init'] = '4.0.5';
-$funcs['vpopmail_add_domain']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_add_domain']['version_init'] = '4.0.5';
-$funcs['vpopmail_add_domain_ex']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_add_domain_ex']['version_init'] = '4.0.5';
-$funcs['vpopmail_add_user']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_add_user']['version_init'] = '4.0.5';
-$funcs['vpopmail_alias_add']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_alias_add']['version_init'] = '4.1.0';
-$funcs['vpopmail_alias_del']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_alias_del']['version_init'] = '4.1.0';
-$funcs['vpopmail_alias_del_domain']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_alias_del_domain']['version_init'] = '4.1.0';
-$funcs['vpopmail_alias_get']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_alias_get']['version_init'] = '4.1.0';
-$funcs['vpopmail_alias_get_all']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_alias_get_all']['version_init'] = '4.1.0';
-$funcs['vpopmail_auth_user']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_auth_user']['version_init'] = '4.0.5';
-$funcs['vpopmail_del_domain']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_del_domain']['version_init'] = '4.0.5';
-$funcs['vpopmail_del_domain_ex']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_del_domain_ex']['version_init'] = '4.0.5';
-$funcs['vpopmail_del_user']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_del_user']['version_init'] = '4.0.5';
-$funcs['vpopmail_error']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_error']['version_init'] = '4.0.5';
-$funcs['vpopmail_passwd']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_passwd']['version_init'] = '4.0.5';
-$funcs['vpopmail_set_user_quota']['extension'] = 'ext_vpopmail';
-$funcs['vpopmail_set_user_quota']['version_init'] = '4.0.5';
-$funcs['vprintf']['extension'] = 'ext_standard';
-$funcs['vprintf']['version_init'] = '4.1.0';
-$funcs['vsprintf']['extension'] = 'ext_standard';
-$funcs['vsprintf']['version_init'] = '4.1.0';
-$funcs['w32api_deftype']['extension'] = 'ext_w32api';
-$funcs['w32api_deftype']['version_init'] = '4.2.0';
-$funcs['w32api_init_dtype']['extension'] = 'ext_w32api';
-$funcs['w32api_init_dtype']['version_init'] = '4.2.0';
-$funcs['w32api_invoke_function']['extension'] = 'ext_w32api';
-$funcs['w32api_invoke_function']['version_init'] = '4.2.0';
-$funcs['w32api_register_function']['extension'] = 'ext_w32api';
-$funcs['w32api_register_function']['version_init'] = '4.2.0';
-$funcs['w32api_set_call_method']['extension'] = 'ext_w32api';
-$funcs['w32api_set_call_method']['version_init'] = '4.2.0';
-$funcs['wddx_add_vars']['extension'] = 'ext_wddx';
-$funcs['wddx_add_vars']['version_init'] = '4.0.0';
-$funcs['wddx_deserialize']['extension'] = 'ext_wddx';
-$funcs['wddx_deserialize']['version_init'] = '4.0.0';
-$funcs['wddx_packet_end']['extension'] = 'ext_wddx';
-$funcs['wddx_packet_end']['version_init'] = '4.0.0';
-$funcs['wddx_packet_start']['extension'] = 'ext_wddx';
-$funcs['wddx_packet_start']['version_init'] = '4.0.0';
-$funcs['wddx_serialize_value']['extension'] = 'ext_wddx';
-$funcs['wddx_serialize_value']['version_init'] = '4.0.0';
-$funcs['wddx_serialize_vars']['extension'] = 'ext_wddx';
-$funcs['wddx_serialize_vars']['version_init'] = '4.0.0';
-$funcs['wordwrap']['extension'] = 'ext_standard';
-$funcs['wordwrap']['version_init'] = '4.0.2';
-$funcs['write']['extension'] = 'ext_sockets';
-$funcs['write']['version_init'] = '4.0.2';
-$funcs['writeexports']['extension'] = 'ext_ming';
-$funcs['writeexports']['version_init'] = '';
-$funcs['writev']['extension'] = 'ext_sockets';
-$funcs['writev']['version_init'] = '4.0.2';
-$funcs['xmldoc']['extension'] = 'ext_domxml';
-$funcs['xmldoc']['version_init'] = '4.0.0';
-$funcs['xmldocfile']['extension'] = 'ext_domxml';
-$funcs['xmldocfile']['version_init'] = '4.0.0';
-$funcs['xmlrpc_decode']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_decode']['version_init'] = '4.1.0';
-$funcs['xmlrpc_decode_request']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_decode_request']['version_init'] = '4.1.0';
-$funcs['xmlrpc_encode']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_encode']['version_init'] = '4.1.0';
-$funcs['xmlrpc_encode_request']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_encode_request']['version_init'] = '4.1.0';
-$funcs['xmlrpc_get_type']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_get_type']['version_init'] = '4.1.0';
-$funcs['xmlrpc_is_fault']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_is_fault']['version_init'] = '4.3.0';
-$funcs['xmlrpc_parse_method_descriptions']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_parse_method_descriptions']['version_init'] = '4.1.0';
-$funcs['xmlrpc_server_add_introspection_data']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_server_add_introspection_data']['version_init'] = '4.1.0';
-$funcs['xmlrpc_server_call_method']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_server_call_method']['version_init'] = '4.1.0';
-$funcs['xmlrpc_server_create']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_server_create']['version_init'] = '4.1.0';
-$funcs['xmlrpc_server_destroy']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_server_destroy']['version_init'] = '4.1.0';
-$funcs['xmlrpc_server_register_introspection_callback']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_server_register_introspection_callback']['version_init'] = '4.1.0';
-$funcs['xmlrpc_server_register_method']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_server_register_method']['version_init'] = '4.1.0';
-$funcs['xmlrpc_set_type']['extension'] = 'ext_xmlrpc';
-$funcs['xmlrpc_set_type']['version_init'] = '4.1.0';
-$funcs['xmltree']['extension'] = 'ext_domxml';
-$funcs['xmltree']['version_init'] = '4.0.0';
-$funcs['xml_error_string']['extension'] = 'ext_xml';
-$funcs['xml_error_string']['version_init'] = '4.0.0';
-$funcs['xml_get_current_byte_index']['extension'] = 'ext_xml';
-$funcs['xml_get_current_byte_index']['version_init'] = '4.0.0';
-$funcs['xml_get_current_column_number']['extension'] = 'ext_xml';
-$funcs['xml_get_current_column_number']['version_init'] = '4.0.0';
-$funcs['xml_get_current_line_number']['extension'] = 'ext_xml';
-$funcs['xml_get_current_line_number']['version_init'] = '4.0.0';
-$funcs['xml_get_error_code']['extension'] = 'ext_xml';
-$funcs['xml_get_error_code']['version_init'] = '4.0.0';
-$funcs['xml_parse']['extension'] = 'ext_xml';
-$funcs['xml_parse']['version_init'] = '4.0.0';
-$funcs['xml_parser_create']['extension'] = 'ext_xml';
-$funcs['xml_parser_create']['version_init'] = '4.0.0';
-$funcs['xml_parser_create_ns']['extension'] = 'ext_xml';
-$funcs['xml_parser_create_ns']['version_init'] = '4.0.5';
-$funcs['xml_parser_free']['extension'] = 'ext_xml';
-$funcs['xml_parser_free']['version_init'] = '4.0.0';
-$funcs['xml_parser_get_option']['extension'] = 'ext_xml';
-$funcs['xml_parser_get_option']['version_init'] = '4.0.0';
-$funcs['xml_parser_set_option']['extension'] = 'ext_xml';
-$funcs['xml_parser_set_option']['version_init'] = '4.0.0';
-$funcs['xml_parse_into_struct']['extension'] = 'ext_xml';
-$funcs['xml_parse_into_struct']['version_init'] = '4.0.0';
-$funcs['xml_set_character_data_handler']['extension'] = 'ext_xml';
-$funcs['xml_set_character_data_handler']['version_init'] = '4.0.0';
-$funcs['xml_set_default_handler']['extension'] = 'ext_xml';
-$funcs['xml_set_default_handler']['version_init'] = '4.0.0';
-$funcs['xml_set_element_handler']['extension'] = 'ext_xml';
-$funcs['xml_set_element_handler']['version_init'] = '4.0.0';
-$funcs['xml_set_end_namespace_decl_handler']['extension'] = 'ext_xml';
-$funcs['xml_set_end_namespace_decl_handler']['version_init'] = '4.0.5';
-$funcs['xml_set_external_entity_ref_handler']['extension'] = 'ext_xml';
-$funcs['xml_set_external_entity_ref_handler']['version_init'] = '4.0.0';
-$funcs['xml_set_notation_decl_handler']['extension'] = 'ext_xml';
-$funcs['xml_set_notation_decl_handler']['version_init'] = '4.0.0';
-$funcs['xml_set_object']['extension'] = 'ext_xml';
-$funcs['xml_set_object']['version_init'] = '4.0.0';
-$funcs['xml_set_processing_instruction_handler']['extension'] = 'ext_xml';
-$funcs['xml_set_processing_instruction_handler']['version_init'] = '4.0.0';
-$funcs['xml_set_start_namespace_decl_handler']['extension'] = 'ext_xml';
-$funcs['xml_set_start_namespace_decl_handler']['version_init'] = '4.0.5';
-$funcs['xml_set_unparsed_entity_decl_handler']['extension'] = 'ext_xml';
-$funcs['xml_set_unparsed_entity_decl_handler']['version_init'] = '4.0.0';
-$funcs['xpath_eval']['extension'] = 'ext_domxml';
-$funcs['xpath_eval']['version_init'] = '4.0.4';
-$funcs['xpath_eval_expression']['extension'] = 'ext_domxml';
-$funcs['xpath_eval_expression']['version_init'] = '4.0.4';
-$funcs['xpath_new_context']['extension'] = 'ext_domxml';
-$funcs['xpath_new_context']['version_init'] = '4.0.4';
-$funcs['xpath_register_ns']['extension'] = 'ext_domxml';
-$funcs['xpath_register_ns']['version_init'] = '4.2.0';
-$funcs['xpath_register_ns_auto']['extension'] = 'ext_domxml';
-$funcs['xpath_register_ns_auto']['version_init'] = '';
-$funcs['xptr_eval']['extension'] = 'ext_domxml';
-$funcs['xptr_eval']['version_init'] = '4.0.4';
-$funcs['xptr_new_context']['extension'] = 'ext_domxml';
-$funcs['xptr_new_context']['version_init'] = '4.0.4';
-$funcs['xslt_backend_info']['extension'] = 'ext_xslt';
-$funcs['xslt_backend_info']['version_init'] = '4.3.0';
-$funcs['xslt_backend_name']['extension'] = 'ext_xslt';
-$funcs['xslt_backend_name']['version_init'] = '4.3.0';
-$funcs['xslt_backend_version']['extension'] = 'ext_xslt';
-$funcs['xslt_backend_version']['version_init'] = '4.3.0';
-$funcs['xslt_closelog']['extension'] = 'ext_sablot';
-$funcs['xslt_closelog']['version_init'] = '4.0.3';
-$funcs['xslt_create']['extension'] = 'ext_xslt';
-$funcs['xslt_create']['version_init'] = '4.0.3';
-$funcs['xslt_errno']['extension'] = 'ext_xslt';
-$funcs['xslt_errno']['version_init'] = '4.0.3';
-$funcs['xslt_error']['extension'] = 'ext_xslt';
-$funcs['xslt_error']['version_init'] = '4.0.3';
-$funcs['xslt_fetch_result']['extension'] = 'ext_sablot';
-$funcs['xslt_fetch_result']['version_init'] = '4.0.3';
-$funcs['xslt_free']['extension'] = 'ext_xslt';
-$funcs['xslt_free']['version_init'] = '4.0.3';
-$funcs['xslt_getopt']['extension'] = 'ext_xslt';
-$funcs['xslt_getopt']['version_init'] = '4.3.0';
-$funcs['xslt_openlog']['extension'] = 'ext_sablot';
-$funcs['xslt_openlog']['version_init'] = '4.0.3';
-$funcs['xslt_output_begintransform']['extension'] = 'ext_sablot';
-$funcs['xslt_output_begintransform']['version_init'] = '4.0.3';
-$funcs['xslt_output_endtransform']['extension'] = 'ext_sablot';
-$funcs['xslt_output_endtransform']['version_init'] = '4.0.3';
-$funcs['xslt_process']['extension'] = 'ext_xslt';
-$funcs['xslt_process']['version_init'] = '4.0.3';
-$funcs['xslt_run']['extension'] = 'ext_sablot';
-$funcs['xslt_run']['version_init'] = '4.0.3';
-$funcs['xslt_setopt']['extension'] = 'ext_xslt';
-$funcs['xslt_setopt']['version_init'] = '4.3.0';
-$funcs['xslt_set_base']['extension'] = 'ext_xslt';
-$funcs['xslt_set_base']['version_init'] = '4.0.5';
-$funcs['xslt_set_encoding']['extension'] = 'ext_xslt';
-$funcs['xslt_set_encoding']['version_init'] = '4.0.5';
-$funcs['xslt_set_error_handler']['extension'] = 'ext_xslt';
-$funcs['xslt_set_error_handler']['version_init'] = '4.0.4';
-$funcs['xslt_set_log']['extension'] = 'ext_xslt';
-$funcs['xslt_set_log']['version_init'] = '4.0.6';
-$funcs['xslt_set_object']['extension'] = 'ext_xslt';
-$funcs['xslt_set_object']['version_init'] = '4.3.0';
-$funcs['xslt_set_sax_handler']['extension'] = 'ext_sablot';
-$funcs['xslt_set_sax_handler']['version_init'] = '4.0.3';
-$funcs['xslt_set_sax_handlers']['extension'] = 'ext_xslt';
-$funcs['xslt_set_sax_handlers']['version_init'] = '4.0.6';
-$funcs['xslt_set_scheme_handler']['extension'] = 'ext_sablot';
-$funcs['xslt_set_scheme_handler']['version_init'] = '4.0.5';
-$funcs['xslt_set_scheme_handlers']['extension'] = 'ext_xslt';
-$funcs['xslt_set_scheme_handlers']['version_init'] = '4.0.6';
-$funcs['xslt_transform']['extension'] = 'ext_sablot';
-$funcs['xslt_transform']['version_init'] = '4.0.3';
-$funcs['yaz_addinfo']['extension'] = 'ext_yaz';
-$funcs['yaz_addinfo']['version_init'] = '4.0.1';
-$funcs['yaz_ccl_conf']['extension'] = 'ext_yaz';
-$funcs['yaz_ccl_conf']['version_init'] = '4.0.5';
-$funcs['yaz_ccl_parse']['extension'] = 'ext_yaz';
-$funcs['yaz_ccl_parse']['version_init'] = '4.0.5';
-$funcs['yaz_close']['extension'] = 'ext_yaz';
-$funcs['yaz_close']['version_init'] = '4.0.1';
-$funcs['yaz_connect']['extension'] = 'ext_yaz';
-$funcs['yaz_connect']['version_init'] = '4.0.1';
-$funcs['yaz_database']['extension'] = 'ext_yaz';
-$funcs['yaz_database']['version_init'] = '4.0.6';
-$funcs['yaz_element']['extension'] = 'ext_yaz';
-$funcs['yaz_element']['version_init'] = '4.0.1';
-$funcs['yaz_errno']['extension'] = 'ext_yaz';
-$funcs['yaz_errno']['version_init'] = '4.0.1';
-$funcs['yaz_error']['extension'] = 'ext_yaz';
-$funcs['yaz_error']['version_init'] = '4.0.1';
-$funcs['yaz_es_result']['extension'] = 'ext_yaz';
-$funcs['yaz_es_result']['version_init'] = '4.2.0';
-$funcs['yaz_get_option']['extension'] = 'ext_yaz';
-$funcs['yaz_get_option']['version_init'] = '5.0.0';
-$funcs['yaz_hits']['extension'] = 'ext_yaz';
-$funcs['yaz_hits']['version_init'] = '4.0.1';
-$funcs['yaz_itemorder']['extension'] = 'ext_yaz';
-$funcs['yaz_itemorder']['version_init'] = '4.0.5';
-$funcs['yaz_present']['extension'] = 'ext_yaz';
-$funcs['yaz_present']['version_init'] = '4.0.5';
-$funcs['yaz_range']['extension'] = 'ext_yaz';
-$funcs['yaz_range']['version_init'] = '4.0.1';
-$funcs['yaz_record']['extension'] = 'ext_yaz';
-$funcs['yaz_record']['version_init'] = '4.0.1';
-$funcs['yaz_scan']['extension'] = 'ext_yaz';
-$funcs['yaz_scan']['version_init'] = '4.0.5';
-$funcs['yaz_scan_result']['extension'] = 'ext_yaz';
-$funcs['yaz_scan_result']['version_init'] = '4.0.5';
-$funcs['yaz_schema']['extension'] = 'ext_yaz';
-$funcs['yaz_schema']['version_init'] = '4.2.0';
-$funcs['yaz_search']['extension'] = 'ext_yaz';
-$funcs['yaz_search']['version_init'] = '4.0.1';
-$funcs['yaz_set_option']['extension'] = 'ext_yaz';
-$funcs['yaz_set_option']['version_init'] = '5.0.0';
-$funcs['yaz_sort']['extension'] = 'ext_yaz';
-$funcs['yaz_sort']['version_init'] = '4.1.0';
-$funcs['yaz_syntax']['extension'] = 'ext_yaz';
-$funcs['yaz_syntax']['version_init'] = '4.0.1';
-$funcs['yaz_wait']['extension'] = 'ext_yaz';
-$funcs['yaz_wait']['version_init'] = '4.0.1';
-$funcs['yp_all']['extension'] = 'ext_yp';
-$funcs['yp_all']['version_init'] = '4.0.6';
-$funcs['yp_cat']['extension'] = 'ext_yp';
-$funcs['yp_cat']['version_init'] = '4.0.6';
-$funcs['yp_errno']['extension'] = 'ext_yp';
-$funcs['yp_errno']['version_init'] = '4.0.6';
-$funcs['yp_err_string']['extension'] = 'ext_yp';
-$funcs['yp_err_string']['version_init'] = '4.0.6';
-$funcs['yp_first']['extension'] = 'ext_yp';
-$funcs['yp_first']['version_init'] = '4.0.0';
-$funcs['yp_get_default_domain']['extension'] = 'ext_yp';
-$funcs['yp_get_default_domain']['version_init'] = '4.0.0';
-$funcs['yp_master']['extension'] = 'ext_yp';
-$funcs['yp_master']['version_init'] = '4.0.0';
-$funcs['yp_match']['extension'] = 'ext_yp';
-$funcs['yp_match']['version_init'] = '4.0.0';
-$funcs['yp_next']['extension'] = 'ext_yp';
-$funcs['yp_next']['version_init'] = '4.0.0';
-$funcs['yp_order']['extension'] = 'ext_yp';
-$funcs['yp_order']['version_init'] = '4.0.0';
-$funcs['zend_logo_guid']['extension'] = 'ext_standard';
-$funcs['zend_logo_guid']['version_init'] = '4.0.0';
-$funcs['zend_test_func']['extension'] = 'zend';
-$funcs['zend_test_func']['version_init'] = '4.0.1';
-$funcs['zend_thread_id']['extension'] = 'zend';
-$funcs['zend_thread_id']['version_init'] = '';
-$funcs['zend_version']['extension'] = 'zend';
-$funcs['zend_version']['version_init'] = '4.0.0';
-$funcs['zip_close']['extension'] = 'ext_zip';
-$funcs['zip_close']['version_init'] = '4.1.0';
-$funcs['zip_entry_close']['extension'] = 'ext_zip';
-$funcs['zip_entry_close']['version_init'] = '4.1.0';
-$funcs['zip_entry_compressedsize']['extension'] = 'ext_zip';
-$funcs['zip_entry_compressedsize']['version_init'] = '4.1.0';
-$funcs['zip_entry_compressionmethod']['extension'] = 'ext_zip';
-$funcs['zip_entry_compressionmethod']['version_init'] = '4.1.0';
-$funcs['zip_entry_filesize']['extension'] = 'ext_zip';
-$funcs['zip_entry_filesize']['version_init'] = '4.1.0';
-$funcs['zip_entry_name']['extension'] = 'ext_zip';
-$funcs['zip_entry_name']['version_init'] = '4.1.0';
-$funcs['zip_entry_open']['extension'] = 'ext_zip';
-$funcs['zip_entry_open']['version_init'] = '4.1.0';
-$funcs['zip_entry_read']['extension'] = 'ext_zip';
-$funcs['zip_entry_read']['version_init'] = '4.1.0';
-$funcs['zip_open']['extension'] = 'ext_zip';
-$funcs['zip_open']['version_init'] = '4.1.0';
-$funcs['zip_read']['extension'] = 'ext_zip';
-$funcs['zip_read']['version_init'] = '4.1.0';
-$funcs['zlib_get_coding_type']['extension'] = 'ext_zlib';
-$funcs['zlib_get_coding_type']['version_init'] = '4.3.2';
-$funcs['zzip_close']['extension'] = 'ext_zziplib';
-$funcs['zzip_close']['version_init'] = '4.0.5';
-$funcs['zzip_closedir']['extension'] = 'ext_zziplib';
-$funcs['zzip_closedir']['version_init'] = '4.0.5';
-$funcs['zzip_entry_compressedsize']['extension'] = 'ext_zziplib';
-$funcs['zzip_entry_compressedsize']['version_init'] = '4.0.5';
-$funcs['zzip_entry_compressionmethod']['extension'] = 'ext_zziplib';
-$funcs['zzip_entry_compressionmethod']['version_init'] = '4.0.5';
-$funcs['zzip_entry_filesize']['extension'] = 'ext_zziplib';
-$funcs['zzip_entry_filesize']['version_init'] = '4.0.5';
-$funcs['zzip_entry_name']['extension'] = 'ext_zziplib';
-$funcs['zzip_entry_name']['version_init'] = '4.0.5';
-$funcs['zzip_open']['extension'] = 'ext_zziplib';
-$funcs['zzip_open']['version_init'] = '4.0.5';
-$funcs['zzip_opendir']['extension'] = 'ext_zziplib';
-$funcs['zzip_opendir']['version_init'] = '4.0.5';
-$funcs['zzip_read']['extension'] = 'ext_zziplib';
-$funcs['zzip_read']['version_init'] = '4.0.5';
-$funcs['zzip_readdir']['extension'] = 'ext_zziplib';
-$funcs['zzip_readdir']['version_init'] = '4.0.5';
-$funcs['_']['extension'] = 'ext_gettext';
-$funcs['_']['version_init'] = '4.0.0';
-$funcs['com_invoke']['extension'] = '';
-$funcs['com_invoke']['version_init'] = '4.0.6';
-$funcs['com_load']['extension'] = '';
-$funcs['com_load']['version_init'] = '4.0.6';
-
+# This file is generated!
+$funcs = array (
+  'swf_ortho' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'swf_ortho2' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_perspective' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_openfile' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_oncondition' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_modifyobject' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_mulcolor' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_nextid' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_placeobject' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_polarview' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_scale' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_setfont' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_setframe' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_rotate' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_removeobject' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_popmatrix' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_posround' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_pushmatrix' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_lookat' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_labelframe' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_definepoly' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_definerect' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_definetext' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_defineline' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_definefont' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_addcolor' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_closefile' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_definebitmap' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_endbutton' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_enddoaction' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_getbitmapinfo' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_getfontinfo' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_getframe' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_fonttracking' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_fontslant' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_endshape' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_endsymbol' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_fontsize' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_shapearc' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_shapecurveto' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'udm_alloc_agent' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_alloc_agent_array' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_api_version' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_add_search_limit' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'trigger_error' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'zend',
+  ),
+  'tanh' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'token_get_all' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_tokenizer',
+  ),
+  'token_name' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_tokenizer',
+  ),
+  'udm_cat_list' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_cat_path' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_errno' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_error' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_find' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_crc32' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_close_stored' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'udm_check_charset' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_check_stored' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'udm_clear_search_limits' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'sybase_unbuffered_query' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sybase_ct',
+  ),
+  'sybase_set_message_handler' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sybase_ct',
+  ),
+  'swf_shapelinesolid' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_shapelineto' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_shapemoveto' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_shapefillsolid' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_shapefilloff' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_shapecurveto3' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_shapefillbitmapclip' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_shapefillbitmaptile' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_showframe' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_startbutton' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_viewport' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'sybase_deadlock_retry_count' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sybase_ct',
+  ),
+  'sybase_fetch_assoc' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sybase_ct',
+  ),
+  'swf_translate' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_textwidth' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_startdoaction' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_startshape' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_startsymbol' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_addbuttonrecord' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_actionwaitforframe' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'socket_writev' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'spliti' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'sscanf' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'socket_write' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_strerror' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_set_option' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_set_timeout' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'socket_shutdown' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'strcoll' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_standard',
+  ),
+  'streammp3' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'stream_filter_prepend' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_get_meta_data' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_register_wrapper' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_filter_append' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_context_set_params' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_context_create' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_context_get_options' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_context_set_option' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'socket_set_nonblock' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_set_blocking' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'socket_last_error' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_listen' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_read' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_iovec_set' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_iovec_free' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_iovec_alloc' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_iovec_delete' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_iovec_fetch' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_readv' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_recv' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_sendto' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_setopt' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_set_block' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_sendmsg' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_send' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_recvfrom' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_recvmsg' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_select' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'stream_select' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_set_blocking' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'swfshape' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swfsprite' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swftext' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swfmovie' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swfmorph' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swffill' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swffont' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swfgradient' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swftextfield' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swf_actiongeturl' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_actionsettarget' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_actionstop' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_actiontogglequality' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_actionprevframe' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_actionplay' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_actiongotoframe' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_actiongotolabel' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swf_actionnextframe' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'swfbutton_keypress' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swfbutton' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'strnatcasecmp' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'strnatcmp' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'strncasecmp' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'zend',
+  ),
+  'stripcslashes' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'strerror' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'stream_set_timeout' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_set_write_buffer' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_wrapper_register' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'ext_standard',
+  ),
+  'strncmp' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'str_pad' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'substr_replace' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'swfaction' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'swfbitmap' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'substr_count' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'str_word_count' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'str_repeat' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'str_rot13' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'str_shuffle' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'udm_free_agent' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_free_ispell_data' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'yaz_errno' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'yaz_error' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'yaz_es_result' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'yaz_element' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'yaz_database' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'yaz_ccl_parse' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'yaz_close' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'yaz_connect' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'yaz_hits' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'yaz_itemorder' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'yaz_schema' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'yaz_search' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'yaz_sort' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'yaz_scan_result' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'yaz_scan' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'yaz_present' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'yaz_range' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'yaz_record' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'yaz_ccl_conf' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'yaz_addinfo' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'xslt_process' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_run' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_setopt' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'xslt_output_endtransform' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_output_begintransform' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_free' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_getopt' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'xslt_openlog' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_set_base' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'xslt_set_encoding' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'xslt_set_scheme_handler' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'xslt_set_scheme_handlers' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'xslt_transform' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_set_sax_handlers' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'xslt_set_sax_handler' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_set_error_handler' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'xslt_set_log' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'xslt_set_object' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'yaz_syntax' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'yaz_wait' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'zzip_opendir' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'zzip_read' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'zzip_readdir' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'zzip_open' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'zzip_entry_name' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'zzip_entry_compressedsize' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'zzip_entry_compressionmethod' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'zzip_entry_filesize' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'affected_rows' => 
+  array (
+    'init' => '5.0.0',
+  ),
+  'array_combine' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_uintersect' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_uintersect_assoc' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_uintersect_uassoc' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_udiff_uassoc' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_udiff_assoc' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_diff_uassoc' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_intersect_uassoc' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_udiff' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'zzip_closedir' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'zzip_close' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'zend_test_func' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'zend',
+  ),
+  'zend_version' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'zip_close' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'zend_logo_guid' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'yp_err_string' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_yp',
+  ),
+  'yp_all' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_yp',
+  ),
+  'yp_cat' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_yp',
+  ),
+  'yp_errno' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_yp',
+  ),
+  'zip_entry_close' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'zip_entry_compressedsize' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'zip_open' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'zip_read' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'zlib_get_coding_type' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'ext_zlib',
+  ),
+  'zip_entry_read' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'zip_entry_open' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'zip_entry_compressionmethod' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'zip_entry_filesize' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'zip_entry_name' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'xslt_fetch_result' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_error' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'vpopmail_alias_get' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'vpopmail_alias_get_all' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'vpopmail_auth_user' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'vpopmail_alias_del_domain' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'vpopmail_alias_del' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'vpopmail_add_domain_ex' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'vpopmail_add_user' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'vpopmail_alias_add' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'vpopmail_del_domain' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'vpopmail_del_domain_ex' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'vsprintf' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'w32api_deftype' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'w32api_init_dtype' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'vprintf' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'vpopmail_set_user_quota' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'vpopmail_del_user' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'vpopmail_error' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'vpopmail_passwd' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'vpopmail_add_domain' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'vpopmail_add_alias_domain_ex' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'udm_hash32' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_load_ispell_data' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_make_excerpt' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_get_res_param' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_get_res_field_ex' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_free_res' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_get_doc_count' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_get_res_field' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_open_stored' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'udm_parse_query_string' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'var_export' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'version_compare' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'vpopmail_add_alias_domain' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'user_error' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'unregister_tick_function' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_standard',
+  ),
+  'udm_set_agent_param' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'udm_set_agent_param_ex' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_mnogosearch',
+  ),
+  'unixtojd' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_calendar',
+  ),
+  'w32api_invoke_function' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'w32api_register_function' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'xml_set_start_namespace_decl_handler' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_xml',
+  ),
+  'xpath_eval' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'xpath_eval_expression' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'xml_set_object' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_xml',
+  ),
+  'xml_set_end_namespace_decl_handler' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_xml',
+  ),
+  'xmlrpc_set_type' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmltree' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'xml_parser_create_ns' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_xml',
+  ),
+  'xpath_new_context' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'xpath_register_ns' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'xslt_closelog' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_create' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_errno' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'xslt_backend_version' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'xslt_backend_name' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'xptr_eval' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'xptr_new_context' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'xslt_backend_info' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'xmlrpc_server_register_method' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmlrpc_server_register_introspection_callback' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmldocfile' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'xmlrpc_decode' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmlrpc_decode_request' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmldoc' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'writev' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'w32api_set_call_method' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'wordwrap' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_standard',
+  ),
+  'write' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'xmlrpc_encode' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmlrpc_encode_request' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmlrpc_server_call_method' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmlrpc_server_create' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmlrpc_server_destroy' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmlrpc_server_add_introspection_data' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmlrpc_parse_method_descriptions' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmlrpc_get_type' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'xmlrpc_is_fault' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_xmlrpc',
+  ),
+  'socket_iovec_add' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_get_status' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'pg_fetch_result' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_field_is_null' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_field_name' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_fetch_assoc' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_fetch_all' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_end_copy' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_escape_bytea' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_escape_string' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_field_num' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_field_prtlen' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_get_result' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_insert' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_last_error' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_get_pid' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_get_notify' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_field_size' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_field_type' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_free_result' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_delete' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_copy_to' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pdf_skew' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'pfpro_cleanup' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pfpro',
+  ),
+  'pfpro_init' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pfpro',
+  ),
+  'pdf_show_boxed' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'pdf_set_value' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'pdf_set_border_dash' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'pdf_set_info' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'pdf_set_parameter' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'pfpro_process' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pfpro',
+  ),
+  'pfpro_process_raw' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pfpro',
+  ),
+  'pg_connection_status' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_convert' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_copy_from' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_connection_reset' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_connection_busy' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pfpro_version' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pfpro',
+  ),
+  'pg_affected_rows' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_cancel_query' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_last_notice' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_last_oid' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_unescape_bytea' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_untrace' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_update' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_trace' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_send_query' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_result_seek' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_result_status' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_select' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'phpcredits' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'php_ini_scanned_files' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'posix_get_last_error' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_posix',
+  ),
+  'posix_setegid' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_posix',
+  ),
+  'posix_seteuid' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_posix',
+  ),
+  'posix_errno' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_posix',
+  ),
+  'png2wbmp' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_gd',
+  ),
+  'php_logo_guid' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'php_sapi_name' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'php_uname' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_standard',
+  ),
+  'pg_result_error' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_query' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_import' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_open' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_read' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_export' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_create' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_loexport' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_loimport' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_close' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_read_all' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_seek' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_num_rows' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_ping' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_put_line' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_num_fields' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_meta_data' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_tell' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_unlink' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_lo_write' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pdf_setpolydash' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_setmatrix' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'ovrimos_rollback' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'parse_ini_file' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'pathinfo' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_standard',
+  ),
+  'ovrimos_result_all' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_result' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_num_fields' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_num_rows' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_prepare' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'pcntl_alarm' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pcntl_exec' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pcntl_wifsignaled' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pcntl_wifstopped' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pcntl_wstopsig' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pcntl_wifexited' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pcntl_wexitstatus' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pcntl_fork' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pcntl_signal' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pcntl_waitpid' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'ovrimos_longreadlen' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_free_result' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_close' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_close_all' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'ovrimos_commit' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'overload' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'output_reset_rewrite_vars' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'orbit_load_idl' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'output' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'output_add_rewrite_var' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'ovrimos_connect' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_cursor' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_field_name' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_field_num' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_field_type' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_field_len' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_fetch_row' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_exec' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_execute' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'ovrimos_fetch_into' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ovrimos',
+  ),
+  'pcntl_wtermsig' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pdf_add_bookmark' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'pdf_initgraphics' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_makespotcolor' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_new' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_get_value' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'pdf_get_pdi_value' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_get_minorversion' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'pdf_get_parameter' => 
+  array (
+    'init' => '4.0.1',
+  ),
+  'pdf_get_pdi_parameter' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_open_ccitt' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_open_file' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_place_pdi_page' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'pdf_setcolor' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_setfont' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_open_tiff' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'pdf_open_png' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'pdf_open_image' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_open_pdi' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_open_pdi_page' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_get_majorversion' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'pdf_get_fontsize' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'pdf_attach_file' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_begin_pattern' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_begin_template' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_arcn' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_add_thumbnail' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_add_launchlink' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_add_locallink' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_add_note' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_close_pdi' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_close_pdi_page' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_get_buffer' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_get_font' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'pdf_get_fontname' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'pdf_findfont' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_end_template' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_concat' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_delete' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'pdf_end_pattern' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'posix_strerror' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_posix',
+  ),
+  'preg_grep' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_pcre',
+  ),
+  'setspacing' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setup' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'set_content' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'setsockopt' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'setrightmargin' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setrate' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setratio' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setrightfill' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'set_error_handler' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'zend',
+  ),
+  'set_include_path' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'shell_exec' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'shmop_close' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_shmop',
+  ),
+  'shmop_delete' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_shmop',
+  ),
+  'sha1_file' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'sha1' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'set_iovec' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'set_nonblock' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'set_user_error_handler' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'setover' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setname' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setdimension' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setdown' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setfont' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setdepth' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setcolor' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setaction' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setbackground' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setbounds' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setframes' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setheight' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setlinespacing' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setmargins' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setmatrix' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setline' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setleftmargin' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'sethit' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setindentation' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'setleftfill' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'shmop_open' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_shmop',
+  ),
+  'shmop_read' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_shmop',
+  ),
+  'socket_create' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_create_listen' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_create_pair' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_connect' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_close' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_accept' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_bind' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_clear_error' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_fd_alloc' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_fd_clear' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_getpeername' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_getsockname' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_get_option' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_getopt' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_fd_zero' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_fd_free' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_fd_isset' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_fd_set' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'socketpair' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'socket' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'sinh' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'skewx' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'skewxto' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'signal' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'shutdown' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'shmop_size' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_shmop',
+  ),
+  'shmop_write' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_shmop',
+  ),
+  'show_source' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'skewy' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'skewyto' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'snmp_set_enum_print' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_snmp',
+  ),
+  'snmp_set_oid_numeric_print' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_snmp',
+  ),
+  'snmp_set_valueretrieval' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_snmp',
+  ),
+  'snmp_get_valueretrieval' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_snmp',
+  ),
+  'snmp3_walk' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_snmp',
+  ),
+  'snmp3_get' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_snmp',
+  ),
+  'snmp3_real_walk' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_snmp',
+  ),
+  'snmp3_set' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_snmp',
+  ),
+  'session_write_close' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_session',
+  ),
+  'session_unset' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'readline_add_history' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_readline',
+  ),
+  'readline_clear_history' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_readline',
+  ),
+  'readline_completion_function' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_readline',
+  ),
+  'readline' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_readline',
+  ),
+  'read' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'pspell_suggest' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'qdom_error' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'qdom_tree' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'readline_info' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_readline',
+  ),
+  'readline_list_history' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_readline',
+  ),
+  'recode' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_recode',
+  ),
+  'recv' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'recvfrom' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'realpath' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'read_exif_data' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_exif',
+  ),
+  'readline_read_history' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_readline',
+  ),
+  'readline_write_history' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_readline',
+  ),
+  'readv' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'pspell_store_replacement' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_save_wordlist' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_add_to_session' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_check' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_clear_session' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_add_to_personal' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'proc_open' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'preg_replace_callback' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_pcre',
+  ),
+  'print_r' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'proc_close' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'pspell_config_create' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_config_ignore' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_new' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_new_config' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_new_personal' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_config_save_repl' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_config_runtogether' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_config_mode' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_config_personal' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_config_repl' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pspell',
+  ),
+  'recvmsg' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'register_tick_function' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_standard',
+  ),
+  'session_encode' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_get_cookie_params' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_id' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_destroy' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_decode' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'sendto' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'session_cache_expire' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_session',
+  ),
+  'session_cache_limiter' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_session',
+  ),
+  'session_is_registered' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_module_name' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_set_save_handler' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_start' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_unregister' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_set_cookie_params' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_save_path' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_name' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'session_regenerate_id' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'ext_session',
+  ),
+  'session_register' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_session',
+  ),
+  'sendmsg' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'send' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'satellite_caught_exception' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'satellite_exception_id' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'satellite_exception_value' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'rotateto' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'rotate' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'remove' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'restore_error_handler' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'zend',
+  ),
+  'restore_include_path' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'satellite_get_repository_id' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'satellite_load_idl' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'scaleto' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'select' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'sem_remove' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sysvsem',
+  ),
+  'scale' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'savetofile' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'satellite_object_to_string' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'save' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'array_walk_recursive' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'autocommit' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'tidy_get_html' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_get_html_ver' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_get_output' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_get_head' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_get_error_buffer' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_getopt' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_get_body' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_get_config' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_get_release' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_get_root' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_repair_file' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_repair_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_warning_count' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_parse_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_parse_file' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_get_status' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_is_xhtml' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_is_xml' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_error_count' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_diagnose' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'stream_socket_recvfrom' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_socket_sendto' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_socket_server' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_socket_get_name' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_socket_client' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_get_transports' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_get_wrappers' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_socket_accept' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stripos' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'strpbrk' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'tidy_access_count' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_clean_repair' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'tidy_config_count' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'thread_safe' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'substr_compare' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'strripos' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'str_ireplace' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'str_split' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'time_nanosleep' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'use_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'variant_sub' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_xor' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'vfprintf' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'variant_set_type' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_set' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_or' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_pow' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_round' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'yaz_es' => 
+  array (
+    'init' => '5.0.0',
+  ),
+  'yaz_get_option' => 
+  array (
+    'init' => '5.0.0',
+  ),
+  'fbsql_set_characterset' => 
+  array (
+    'ext' => 'ext_fbsql',
+    'init' => '5-dev',
+  ),
+  'fbird_add_user' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_affected_rows' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbsql_rows_fetched' => 
+  array (
+    'ext' => 'ext_fbsql',
+    'init' => '5-dev',
+  ),
+  'com_get_active_object' => 
+  array (
+    'ext' => 'ext_com_dotnet',
+    'init' => '5-dev',
+  ),
+  'yaz_set_option' => 
+  array (
+    'init' => '5.0.0',
+  ),
+  'zend_thread_id' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'zend',
+  ),
+  'interface_exists' => 
+  array (
+    'ext' => 'zend',
+    'init' => '5-dev',
+  ),
+  'variant_not' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_neg' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_cat' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_cmp' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_date_from_timestamp' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_cast' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_and' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'use_soap_error_handler' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_soap',
+  ),
+  'variant_abs' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_add' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_date_to_timestamp' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_div' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_int' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_mod' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_mul' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_imp' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_idiv' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_eqv' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_fix' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'variant_get_type' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'stream_get_line' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_get_filters' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'snmp_read_mib' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_snmp',
+  ),
+  'soap_encode_to_xml' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_soap',
+  ),
+  'soap_encode_to_zval' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_soap',
+  ),
+  'snmpgetnext' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_snmp',
+  ),
+  'snmp3_getnext' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_snmp',
+  ),
+  'smfi_setflags' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'sapi_milter',
+  ),
+  'smfi_setreply' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'sapi_milter',
+  ),
+  'smfi_settimeout' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'sapi_milter',
+  ),
+  'spl_classes' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_spl',
+  ),
+  'sqlite_array_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_create_function' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_current' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_error_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_create_aggregate' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_column' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_busy_timeout' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_changes' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_close' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'smfi_replacebody' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'sapi_milter',
+  ),
+  'smfi_getsymval' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'sapi_milter',
+  ),
+  'send_long_data' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'session_commit' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_session',
+  ),
+  'setrawcookie' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'select_db' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'scandir' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'rpl_parse_enabled' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'rpl_probe' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'rpl_query_type' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'set_exception_handler' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'zend',
+  ),
+  'set_opt' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'smfi_addrcpt' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'sapi_milter',
+  ),
+  'smfi_chgheader' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'sapi_milter',
+  ),
+  'smfi_delrcpt' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'sapi_milter',
+  ),
+  'smfi_addheader' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'sapi_milter',
+  ),
+  'slave_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'simplexml_import_dom' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_simplexml',
+  ),
+  'simplexml_load_file' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_simplexml',
+  ),
+  'simplexml_load_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_simplexml',
+  ),
+  'sqlite_escape_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_factory' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_unbuffered_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_valid' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'ssl_set' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'sqlite_udf_encode_binary' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_udf_decode_binary' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_rewind' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_seek' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_single_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'stmt' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'stmt_init' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'stream_copy_to_stream' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_filter_register' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_get_contents' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_bucket_prepend' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_bucket_new' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'store_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'stream_bucket_append' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'stream_bucket_make_writeable' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'sqlite_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_prev' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_field_name' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_has_more' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_single' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_object' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_all' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_array' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_column_types' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_has_prev' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_last_error' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_num_rows' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_open' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_popen' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_num_fields' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_next' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_last_insert_rowid' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_libencoding' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_libversion' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'fbird_backup' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_blob_add' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'm_transactionauth' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transactionavs' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transactionbatch' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_text_cv' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_text_code' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_settimeout' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_settle' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_text_avs' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transactioncv' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transactionid' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transparam' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transsend' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_ub' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transnew' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transinqueue' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transactionitem' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transactionssent' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_transactiontext' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_setssl_files' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_setssl' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_parsecommadelimited' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_ping' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_preauth' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_override' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_numrows' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_maxconntimeout' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_monitor' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_numcolumns' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_preauthcompletion' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_qc' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_setblocking' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_setdropfile' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_setip' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_sale' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_returnstatus' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_responseparam' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_return' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_returncode' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_uwait' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_verifyconnection' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'array_diff_ukey' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'array_intersect_key' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'array_intersect_ukey' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'array_diff_key' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'sqlite_exec' => 
+  array (
+    'ext' => 'ext_sqlite',
+    'init' => '5-dev',
+  ),
+  '__soapCall' => 
+  array (
+    'ext' => 'ext_soap',
+    'init' => '5-dev',
+  ),
+  'iterator_count' => 
+  array (
+    'ext' => 'ext_spl',
+    'init' => '5-dev',
+  ),
+  'iterator_to_array' => 
+  array (
+    'ext' => 'ext_spl',
+    'init' => '5-dev',
+  ),
+  'fputcsv' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'inet_ntop' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'stream_wrapper_restore' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'stream_wrapper_unregister' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'strptime' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'stream_socket_pair' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'stream_socket_enable_crypto' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'inet_pton' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'stream_context_get_default' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'stream_filter_remove' => 
+  array (
+    'ext' => 'ext_standard',
+    'init' => '5-dev',
+  ),
+  'confirm_extname_compiled' => 
+  array (
+    'ext' => 'ext_skeleton',
+    'init' => '5-dev',
+  ),
+  'readline_redisplay' => 
+  array (
+    'ext' => 'ext_readline',
+    'init' => '5-dev',
+  ),
+  'attr_set' => 
+  array (
+    'ext' => 'ext_mysqli',
+    'init' => '5-dev',
+  ),
+  'mysqli_set_local_infile_default' => 
+  array (
+    'ext' => 'ext_mysqli',
+    'init' => '5-dev',
+  ),
+  'mysqli_set_local_infile_handler' => 
+  array (
+    'ext' => 'ext_mysqli',
+    'init' => '5-dev',
+  ),
+  'attr_get' => 
+  array (
+    'ext' => 'ext_mysqli',
+    'init' => '5-dev',
+  ),
+  'udm_store_doc_cgi' => 
+  array (
+    'ext' => 'ext_mnogosearch',
+    'init' => '5-dev',
+  ),
+  'm_verifysslcert' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_void' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'udm_get_agent_param_ex' => 
+  array (
+    'ext' => 'ext_mnogosearch',
+    'init' => '5-dev',
+  ),
+  'mysqli_stmt_attr_get' => 
+  array (
+    'ext' => 'ext_mysqli',
+    'init' => '5-dev',
+  ),
+  'mysqli_stmt_attr_set' => 
+  array (
+    'ext' => 'ext_mysqli',
+    'init' => '5-dev',
+  ),
+  'readline_callback_handler_remove' => 
+  array (
+    'ext' => 'ext_readline',
+    'init' => '5-dev',
+  ),
+  'readline_callback_read_char' => 
+  array (
+    'ext' => 'ext_readline',
+    'init' => '5-dev',
+  ),
+  'readline_on_new_line' => 
+  array (
+    'ext' => 'ext_readline',
+    'init' => '5-dev',
+  ),
+  'readline_callback_handler_install' => 
+  array (
+    'ext' => 'ext_readline',
+    'init' => '5-dev',
+  ),
+  'set_local_infile_handler' => 
+  array (
+    'ext' => 'ext_mysqli',
+    'init' => '5-dev',
+  ),
+  'mysqli_stmt_field_count' => 
+  array (
+    'ext' => 'ext_mysqli',
+    'init' => '5-dev',
+  ),
+  'mysqli_stmt_insert_id' => 
+  array (
+    'ext' => 'ext_mysqli',
+    'init' => '5-dev',
+  ),
+  'set_local_infile_default' => 
+  array (
+    'ext' => 'ext_mysqli',
+    'init' => '5-dev',
+  ),
+  'm_listusers' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_liststats' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'fbird_gen_id' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_maintain_db' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_modify_user' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_free_result' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_free_query' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_fetch_row' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_field_info' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_free_event_handler' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_name_result' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_num_fields' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_query' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_restore' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_rollback' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_prepare' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_pconnect' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_num_params' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_num_rows' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_param_info' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_fetch_object' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_fetch_assoc' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_blob_import' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_blob_info' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_blob_open' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_blob_get' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_blob_echo' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_blob_cancel' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_blob_close' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_blob_create' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_close' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_commit' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_errcode' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_errmsg' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_execute' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_drop_db' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_delete_user' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_commit_ret' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_connect' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_db_info' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_rollback_ret' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_server_info' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'm_getcell' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_getcellbynum' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_getcommadelimited' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_force' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_enableuser' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_destroyengine' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_disableuser' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_edituser' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_getheader' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_getuserarg' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_initengine' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_initusersetup' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_iscommadelimited' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_initconn' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_gut' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_getuserparam' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_gft' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_gl' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_destroyconn' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_deluser' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_adduser' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_adduserarg' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_bt' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'fbird_wait_event' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_trans' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_service_attach' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_service_detach' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'fbird_set_event_handler' => 
+  array (
+    'ext' => 'ext_interbase',
+    'init' => '5-dev',
+  ),
+  'm_checkstatus' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_chkpwd' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_deleteresponse' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_deletetrans' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_deleteusersetup' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_connectionerror' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_connect' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_chngpwd' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'm_completeauthorizations' => 
+  array (
+    'ext' => 'ext_mcve',
+    'init' => '5-dev',
+  ),
+  'rollback' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'result_metadata' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'imagexbm' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_gd',
+  ),
+  'imap_getacl' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_imap',
+  ),
+  'init' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'imagefilter' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_gd',
+  ),
+  'idate' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'iconv_strpos' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_iconv',
+  ),
+  'iconv_strrpos' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_iconv',
+  ),
+  'iconv_substr' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_iconv',
+  ),
+  'ircg_set_on_read_data' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_ircg',
+  ),
+  'is_soap_fault' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_soap',
+  ),
+  'ming_keypress' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_ming',
+  ),
+  'ming_useconstants' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_ming',
+  ),
+  'mono_method_call' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mono',
+  ),
+  'mb_list_encodings' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mbstring',
+  ),
+  'master_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'kill' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'ldap_sasl_bind' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_ldap',
+  ),
+  'libxml_set_streams_context' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_libxml',
+  ),
+  'iconv_strlen' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_iconv',
+  ),
+  'iconv_mime_encode' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_iconv',
+  ),
+  'ibase_name_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_num_params' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_num_rows' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_maintain_db' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_gen_id' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_drop_db' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_errcode' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_free_event_handler' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_param_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_restore' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_wait_event' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'iconv_mime_decode' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_iconv',
+  ),
+  'iconv_mime_decode_headers' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_iconv',
+  ),
+  'ibase_set_event_handler' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_service_detach' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_rollback_ret' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_server_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_service_attach' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'mono_method_find' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mono',
+  ),
+  'more_results' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_error' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_escape_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_execute' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_errno' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_enable_rpl_parse' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_dump_debug_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_embedded_connect' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_enable_reads_from_master' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_fetch' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_fetch_array' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_fetch_object' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_fetch_row' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_field_count' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_fetch_lengths' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_fetch_field_direct' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_fetch_assoc' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_fetch_field' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_fetch_fields' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_disable_rpl_parse' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_disable_reads_from_master' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_autocommit' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_bind_param' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_bind_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_affected_rows' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'msession_exec' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_ping' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_msession',
+  ),
+  'multi_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_change_user' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_character_set_name' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_connect_error' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_data_seek' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_debug' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_connect_errno' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_connect' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_client_encoding' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_close' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_commit' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'ibase_db_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_commit_ret' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'dba_key_split' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_dba',
+  ),
+  'dbx_fetch_row' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_dbx',
+  ),
+  'debug' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'dbase_get_header_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_dbase',
+  ),
+  'date_sunset' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'curl_multi_select' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_curl',
+  ),
+  'data_seek' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'date_sunrise' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'debug_print_backtrace' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'zend',
+  ),
+  'disable_reads_from_master' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'dump_debug_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'enable_reads_from_master' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'enable_rpl_parse' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'dom_import_simplexml' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_dom',
+  ),
+  'dns_get_record' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'disable_rpl_parse' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'dns_check_record' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'dns_get_mx' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'curl_multi_remove_handle' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_curl',
+  ),
+  'curl_multi_init' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_curl',
+  ),
+  'class_implements' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_spl',
+  ),
+  'class_parents' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_spl',
+  ),
+  'client_encoding' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'character_set_name' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'change_user' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'bcpowmod' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_bcmath',
+  ),
+  'bind_param' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'bind_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'commit' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'com_create_guid' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'curl_multi_exec' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_curl',
+  ),
+  'curl_multi_getcontent' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_curl',
+  ),
+  'curl_multi_info_read' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_curl',
+  ),
+  'curl_multi_close' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_curl',
+  ),
+  'curl_multi_add_handle' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_curl',
+  ),
+  'convert_uudecode' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'convert_uuencode' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'curl_copy_handle' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_curl',
+  ),
+  'escape_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'execute' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'free' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'free_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'ftp_alloc' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_ftp',
+  ),
+  'fprintf' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'filter' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'field_count' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'field_seek' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'file_put_contents' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ftp_chmod' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_ftp',
+  ),
+  'ftp_raw' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_ftp',
+  ),
+  'http_build_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ibase_affected_rows' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_backup' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_interbase',
+  ),
+  'headers_list' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'get_server_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'get_client_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'get_declared_interfaces' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'zend',
+  ),
+  'get_headers' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'fetch_row' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'fetch_object' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'fam_monitor_file' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fam',
+  ),
+  'fam_next_event' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fam',
+  ),
+  'fam_open' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fam',
+  ),
+  'fam_monitor_directory' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fam',
+  ),
+  'fam_monitor_collection' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fam',
+  ),
+  'export' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'zend',
+  ),
+  'fam_cancel_monitor' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fam',
+  ),
+  'fam_close' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fam',
+  ),
+  'fam_pending' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fam',
+  ),
+  'fam_resume_monitor' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fam',
+  ),
+  'fetch_field' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'fetch_fields' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'fetch_field_direct' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'fetch_assoc' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'fetch_array' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'fam_suspend_monitor' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fam',
+  ),
+  'fbsql_set_password' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fetch' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_field_seek' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_field_tell' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'oci_lob_copy' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_eof' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_erase' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_append' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_internal_debug' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_free_cursor' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_free_descriptor' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_free_statement' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_export' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_flush' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_save' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_size' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_tell' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_rewind' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_read' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_import' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_is_equal' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_load' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_free_collection' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_field_type_raw' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_execute' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_fetch' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_fetch_all' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_error' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_define_by_name' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_collection_trim' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_commit' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_connect' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_fetch_array' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_fetch_assoc' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_field_scale' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_field_size' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_field_type' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_field_precision' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_field_name' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_fetch_object' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_fetch_row' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_field_is_null' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_truncate' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_lob_write' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'php_strip_whitespace' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ping' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'prepare' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'php_real_logo_guid' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'php_egg_logo_guid' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'pg_parameter_status' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_version' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_pgsql',
+  ),
+  'php_check_syntax' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'proc_get_status' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'proc_nice' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'real_escape_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'real_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'restore_exception_handler' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'zend',
+  ),
+  'real_connect' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'proc_terminate' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'pspell_config_data_dir' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_pspell',
+  ),
+  'pspell_config_dict_dir' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_pspell',
+  ),
+  'pcntl_wait' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'pcntl_setpriority' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'oci_num_rows' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_parse' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_password_change' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_num_fields' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_new_descriptor' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_new_collection' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_new_connect' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_new_cursor' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_pconnect' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'onCreate' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'options' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'pcntl_getpriority' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_pcntl',
+  ),
+  'onClose' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'oci_statement_type' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_rollback' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_server_version' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_set_prefetch' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_collection_size' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_collection_max' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'mysqli_real_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_report' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_rollback' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_real_escape_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_real_connect' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_ping' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_prepare' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_rpl_parse_enabled' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_rpl_probe' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_server_init' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_set_opt' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_slave_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_server_end' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_send_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_rpl_query_type' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_select_db' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_send_long_data' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_param_count' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_options' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_get_proto_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_get_server_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_get_server_version' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_get_metadata' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_get_host_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_free_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_get_client_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_get_client_version' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_init' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_next_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_num_fields' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_num_rows' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_multi_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_more_results' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_insert_id' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_kill' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_master_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_sqlstate' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_ssl_set' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_warning_count' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'next_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'num_rows' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_use_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_thread_safe' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_store_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_store_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_thread_id' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'ob_tidyhandler' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_tidy',
+  ),
+  'ocigetbufferinglob' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_collection_assign' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_collection_element_assign' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_collection_element_get' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_collection_append' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_close' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'ocisetbufferinglob' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_bind_by_name' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'oci_cancel' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'mysqli_stmt_sqlstate' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_send_long_data' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_data_seek' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_errno' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_error' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_close' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_bind_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stat' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_affected_rows' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_bind_param' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_execute' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_fetch' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_prepare' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_reset' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_result_metadata' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_param_count' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_num_rows' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_free_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'mysqli_stmt_init' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_mysqli',
+  ),
+  'orbit_get_repository_id' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'orbit_exception_value' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'fdf_enum_values' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_errno' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_error' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_add_doc_javascript' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fbsql_warnings' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_tablename' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_table_name' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_username' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fdf_get_ap' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_get_attachment' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_open_string' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_remove_item' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_save_string' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_header' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_get_version' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_get_encoding' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_get_flags' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_get_opt' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fbsql_stop_db' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_start_db' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_next_result' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_num_fields' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_num_rows' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_list_tables' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_list_fields' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_hostname' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_insert_id' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_list_dbs' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_password' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_pconnect' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_select_db' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_set_lob_mode' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_set_transaction' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_rollback' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_result' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_query' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_read_blob' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_read_clob' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fdf_set_encoding' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_set_flags' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_fdf',
+  ),
+  'ftok' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'ftp_close' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ftp',
+  ),
+  'ftp_exec' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_ftp',
+  ),
+  'fstat' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'fscanf' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'fribidi_charset_info' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'fribidi_get_charsets' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'fribidi_log2vis' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'ftp_get_option' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ftp',
+  ),
+  'ftp_nb_continue' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ftp',
+  ),
+  'ftp_ssl_connect' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ftp',
+  ),
+  'ftruncate' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'func_get_arg' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'ftp_set_option' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ftp',
+  ),
+  'ftp_nb_put' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ftp',
+  ),
+  'ftp_nb_fget' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ftp',
+  ),
+  'ftp_nb_fput' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ftp',
+  ),
+  'ftp_nb_get' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ftp',
+  ),
+  'free_iovec' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'fopenstream' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'fdf_set_version' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fd_alloc' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'fd_clear' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'fdf_set_target_frame' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_set_submit_form_action' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_set_javascript_action' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_set_on_import_javascript' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_fdf',
+  ),
+  'fdf_set_opt' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_fdf',
+  ),
+  'fd_dealloc' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'fd_isset' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'floatval' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'fmod' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'fnmatch' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'file_get_contents' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'fflush' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'fd_set' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'fd_zero' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'fetch_iovec' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'fbsql_get_autostart_info' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_free_result' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'domxml_xslt_process' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'domxml_xslt_result_dump_file' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_xslt_result_dump_mem' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_xmltree' => 
+  array (
+    'init' => '4.2.1',
+  ),
+  'domxml_version' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'domxml_set_content' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'domxml_substitute_entities_default' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'domxml_unlink_node' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'domxml_xslt_stylesheet' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'domxml_xslt_stylesheet_doc' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'drawcubicto' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'drawcurve' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'drawcurveto' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'drawcubic' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'drawcircle' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'domxml_xslt_stylesheet_file' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'domxml_xslt_version' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'drawarc' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'domxml_set_attribute' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'domxml_setattr' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'domxml_parser_cdata_section' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_parser_characters' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_parser_comment' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_parser_add_chunk' => 
+  array (
+    'init' => '4.2.1',
+  ),
+  'domxml_parser' => 
+  array (
+    'init' => '4.2.1',
+  ),
+  'domxml_node_unlink_node' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'domxml_open_file' => 
+  array (
+    'init' => '4.2.1',
+  ),
+  'domxml_open_mem' => 
+  array (
+    'init' => '4.2.1',
+  ),
+  'domxml_parser_end' => 
+  array (
+    'init' => '4.2.1',
+  ),
+  'domxml_parser_end_document' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_parser_start_document' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_parser_start_element' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_root' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'domxml_parser_processing_instruction' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_parser_namespace_decl' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_parser_end_element' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_parser_entity_reference' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_parser_get_document' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'drawglyph' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'drawline' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'fbsql_error' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_fetch_array' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_fetch_assoc' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_errno' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_drop_db' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_data_seek' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_db_query' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_db_status' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_fetch_field' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_fetch_lengths' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_field_seek' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_field_table' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_field_type' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_field_name' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_field_len' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_fetch_object' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_fetch_row' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_field_flags' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_database_password' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_database' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'exif_thumbnail' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_exif',
+  ),
+  'expm1' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'fbsql' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'exif_tagname' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_exif',
+  ),
+  'exif_read_data' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_exif',
+  ),
+  'drawlineto' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'escapeshellarg' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_standard',
+  ),
+  'exif_imagetype' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_exif',
+  ),
+  'fbsql_affected_rows' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_autocommit' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_create_blob' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_create_clob' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_create_db' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_connect' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_commit' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_blob_size' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_clob_size' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_fbsql',
+  ),
+  'fbsql_close' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_fbsql',
+  ),
+  'func_get_args' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'func_num_args' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'ibase_fetch_assoc' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_modify_user' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_interbase',
+  ),
+  'icap_create_calendar' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'ibase_delete_user' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_interbase',
+  ),
+  'ibase_add_user' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_interbase',
+  ),
+  'i18n_ja_jp_hantozen' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'i18n_mime_header_decode' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'i18n_mime_header_encode' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'icap_delete_calendar' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'icap_delete_event' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'icap_rename_calendar' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'icap_reopen' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'icap_snooze' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'icap_popen' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'icap_open' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'icap_fetch_event' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'icap_list_alarms' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'icap_list_events' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'i18n_internal_encoding' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'i18n_http_output' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'html_doc_file' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'html_entity_decode' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'hw_document_setcontent' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'html_doc' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'highlight_string' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'gzuncompress' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_zlib',
+  ),
+  'handle' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'highlight_file' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'hw_getobjectbyftquery' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'hw_getobjectbyftquerycoll' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'i18n_convert' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'i18n_discover_encoding' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'i18n_http_input' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'hypot' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'hw_new_document_from_file' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'hw_getobjectbyftquerycollobj' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'hw_getobjectbyftqueryobj' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'hw_insertanchors' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'icap_store_event' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'iconv' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_iconv',
+  ),
+  'imageftbbox' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_gd',
+  ),
+  'imagefttext' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_gd',
+  ),
+  'imagegd' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_gd',
+  ),
+  'imagefilledellipse' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagefilledarc' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagecreatefromxpm' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_gd',
+  ),
+  'imagecreatetruecolor' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imageellipse' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagegd2' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_gd',
+  ),
+  'imageistruecolor' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'ext_gd',
+  ),
+  'imagesetstyle' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagesetthickness' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagesettile' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagesetbrush' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagesavealpha' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'ext_gd',
+  ),
+  'imagelayereffect' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_gd',
+  ),
+  'imagepalettecopy' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_gd',
+  ),
+  'imagerotate' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_gd',
+  ),
+  'imagecreatefromxbm' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_gd',
+  ),
+  'imagecreatefromwbmp' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_gd',
+  ),
+  'imagecolorallocatealpha' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'ext_gd',
+  ),
+  'imagecolorclosestalpha' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagecolorclosesthwb' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_gd',
+  ),
+  'imageantialias' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'ext_gd',
+  ),
+  'imagealphablending' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'iconv_get_encoding' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_iconv',
+  ),
+  'iconv_set_encoding' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_iconv',
+  ),
+  'image2wbmp' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_gd',
+  ),
+  'imagecolorexactalpha' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagecolormatch' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_gd',
+  ),
+  'imagecreatefromgd2' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_gd',
+  ),
+  'imagecreatefromgd2part' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_gd',
+  ),
+  'imagecreatefromstring' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gd',
+  ),
+  'imagecreatefromgd' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_gd',
+  ),
+  'imagecopyresampled' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagecolorresolvealpha' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'imagecopymerge' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_gd',
+  ),
+  'imagecopymergegray' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'gzinflate' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_zlib',
+  ),
+  'gzencode' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_zlib',
+  ),
+  'get_defined_vars' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'zend',
+  ),
+  'get_extension_funcs' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'get_html_translation_table' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'get_defined_functions' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'zend',
+  ),
+  'get_defined_constants' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'zend',
+  ),
+  'get_class_methods' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'get_class_vars' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'get_declared_classes' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'get_included_files' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'get_include_path' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'glob' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'gmp_abs' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_add' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'get_resource_type' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'zend',
+  ),
+  'get_required_files' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'get_loaded_extensions' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'get_object_vars' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'get_parent_class' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'get_class' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'get_all_headers' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'getleading' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'getmygid' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'getopt' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'getheight' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'getdescent' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'gd_info' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_gd',
+  ),
+  'getascent' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'getcwd' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'getpeername' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'getprotobyname' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'getsockname' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'getsockopt' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'getwidth' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'getshape2' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'getshape1' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'getprotobynumber' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'getservbyname' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'getservbyport' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'gmp_and' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_clrbit' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_prob_prime' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_random' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_scan0' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_powm' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_pow' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_or' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_perfect_square' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_popcount' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_scan1' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_setbit' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_xor' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gzcompress' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_zlib',
+  ),
+  'gzdeflate' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_zlib',
+  ),
+  'gmp_sub' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_strval' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_sign' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_sqrt' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_sqrtrem' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_neg' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_mul' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_div_qr' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_div_r' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_fact' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_div_q' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_divexact' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_cmp' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_com' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_div' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_gcd' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_gcdext' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_jacobi' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_legendre' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_mod' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_invert' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_intval' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_hamdist' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'gmp_init' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_gmp',
+  ),
+  'domxml_node_set_namespace' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_node_set_content' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'bzflush' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_bz2',
+  ),
+  'bzopen' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_bz2',
+  ),
+  'bzread' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_bz2',
+  ),
+  'bzerrstr' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_bz2',
+  ),
+  'bzerror' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_bz2',
+  ),
+  'bzcompress' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_bz2',
+  ),
+  'bzdecompress' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_bz2',
+  ),
+  'bzerrno' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_bz2',
+  ),
+  'bzwrite' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_bz2',
+  ),
+  'call_user_func_array' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_standard',
+  ),
+  'ccvs_add' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_auth' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_command' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cal_to_jd' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_calendar',
+  ),
+  'cal_info' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_calendar',
+  ),
+  'call_user_method_array' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_standard',
+  ),
+  'cal_days_in_month' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_calendar',
+  ),
+  'cal_from_jd' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_calendar',
+  ),
+  'bzclose' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_bz2',
+  ),
+  'build_iovec' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'bind_textdomain_codeset' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_gettext',
+  ),
+  'birdstep_autocommit' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'birdstep_close' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'bind' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'atanh' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'asinh' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'assert' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'assert_options' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'birdstep_commit' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'birdstep_connect' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'birdstep_off_autocommit' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'birdstep_result' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'birdstep_rollback' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'birdstep_freeresult' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'birdstep_fieldnum' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'birdstep_exec' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'birdstep_fetch' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'birdstep_fieldname' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_odbc',
+  ),
+  'ccvs_count' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_delete' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'confirm_ctype_compiled' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'confirm_cybermut_compiled' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'confirm_ncurses_compiled' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'com_release' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'com_print_typeinfo' => 
+  array (
+    'init' => '4.2.3',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'COM_load' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'com_load_typelib' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'com_message_pump' => 
+  array (
+    'init' => '4.2.3',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'confirm_zziplib_compiled' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'connect' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mysqli',
+  ),
+  'cpdf_set_font_map_file' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_cpdf',
+  ),
+  'crack_check' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'crack_closedict' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'cpdf_set_font_directories' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_cpdf',
+  ),
+  'cpdf_global_set_document_limits' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_cpdf',
+  ),
+  'constant' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_standard',
+  ),
+  'cosh' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'count_chars' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'com_isenum' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'com_invoke_ex' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'ccvs_return' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_reverse' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_sale' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_report' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_new' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_done' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_init' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_lookup' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_status' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ccvs_textvalue' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'com_addref' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'com_event_sink' => 
+  array (
+    'init' => '4.2.3',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'COM_invoke' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'compact' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'close' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mysqli',
+  ),
+  'ccvs_void' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'chroot' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_standard',
+  ),
+  'class_exists' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'array_values' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_unshift' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'addaction' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'addcolor' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'addcslashes' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'add' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'acosh' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'vm_deluser' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'vm_passwd' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'accept_connect' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'addentry' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'addfill' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'aggregate_methods_by_list' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'aggregate_methods_by_regexp' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'aggregate_properties' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'aggregate_methods' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'aggregate' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'addshape' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'addstring' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'add_iovec' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'vm_delalias' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'vm_adduser' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'getlastref' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'getlogdir' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'getloghost' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'getlasthost' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'getlastemail' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'encrypt' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'getlastaccess' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'getlastbrowser' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'getstartlogging' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'gettoday' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'pg_setclientencoding' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_set_client_encoding' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_pgsql',
+  ),
+  'vm_addalias' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'pg_client_encoding' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_pgsql',
+  ),
+  'pg_clientencoding' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_pgsql',
+  ),
+  'gettotal' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'imagetypes' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_gd',
+  ),
+  'logas' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'aggregate_properties_by_list' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'aggregate_properties_by_regexp' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'array_multisort' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_pad' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_pop' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_merge_recursive' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'array_merge' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_keys' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_key_exists' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_map' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_standard',
+  ),
+  'array_push' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_rand' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_splice' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_sum' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_standard',
+  ),
+  'array_unique' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'array_slice' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_shift' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_reduce' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_standard',
+  ),
+  'array_reverse' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_search' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_standard',
+  ),
+  'array_intersect_assoc' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_intersect' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'apache_get_version' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'sapi_apache',
+  ),
+  'apache_request_headers' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'sapi_apache',
+  ),
+  'apache_response_headers' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'sapi_apache',
+  ),
+  'apache_get_modules' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'sapi_apache',
+  ),
+  'apache_getenv' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'sapi_apache2filter',
+  ),
+  'aggregation_info' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'align' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'apache_child_terminate' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'sapi_apache',
+  ),
+  'apache_setenv' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'sapi_apache',
+  ),
+  'apache_sub_req' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'array_fill' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_filter' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_standard',
+  ),
+  'array_flip' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_diff_assoc' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_diff' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'array_change_key_case' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_chunk' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'array_count_values' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'crack_getlastmessage' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'crack_opendict' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'dbx_error' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_dbx',
+  ),
+  'dbx_escape_string' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_dbx',
+  ),
+  'dbx_query' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_dbx',
+  ),
+  'dbx_connect' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_dbx',
+  ),
+  'dbx_compare' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_dbx',
+  ),
+  'dbx_close' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_dbx',
+  ),
+  'dbx_cmp_asc' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'dbx_cmp_desc' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'dbx_sort' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_dbx',
+  ),
+  'db_id_list' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'dio_close' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_dio',
+  ),
+  'dio_fcntl' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_dio',
+  ),
+  'dio_open' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_dio',
+  ),
+  'delete_iovec' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'debug_zval_dump' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'dcngettext' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_gettext',
+  ),
+  'deaggregate' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'debug_backtrace' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'zend',
+  ),
+  'dbplus_xunlockrel' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_xlockrel' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_runlink' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_rzap' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_savepos' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_rsecindex' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_rrename' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_rkeys' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_ropen' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_rquery' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_setindex' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_setindexbynumber' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_unlockrel' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_unselect' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_update' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_undoprepare' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_undo' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_sql' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_tcl' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_tremove' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dio_read' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_dio',
+  ),
+  'dio_seek' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_dio',
+  ),
+  'domxml_getattr' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'domxml_get_attribute' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'domxml_html_dump_mem' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'domxml_elem_set_attribute' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'domxml_elem_get_attribute' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'domxml_dump_mem' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'domxml_dump_mem_file' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'domxml_dump_node' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'domxml_new_child' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'domxml_new_doc' => 
+  array (
+    'init' => '4.2.1',
+  ),
+  'domxml_node_get_content' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'domxml_node_has_attributes' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'domxml_node_new_child' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'domxml_node_children' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'domxml_node_attributes' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'domxml_new_xmldoc' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'domxml_node' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'domxml_node_add_namespace' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_dumpmem' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'domxml_doc_xinclude' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'disk_total_space' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'display_disabled_function' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'zend',
+  ),
+  'dngettext' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_gettext',
+  ),
+  'disk_free_space' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'dio_write' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_dio',
+  ),
+  'dio_stat' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_dio',
+  ),
+  'dio_tcsetattr' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_dio',
+  ),
+  'dio_truncate' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_dio',
+  ),
+  'domxml_add_root' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'domxml_attributes' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'domxml_doc_get_root' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_doc_set_root' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_doc_validate' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_doc_get_element_by_id' => 
+  array (
+    'init' => '4.2.1',
+  ),
+  'domxml_doc_get_elements_by_tagname' => 
+  array (
+    'init' => '4.2.1',
+  ),
+  'domxml_children' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'domxml_doc_add_root' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'domxml_doc_document_element' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'dbplus_restorepos' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_resolve' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'cv_count' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_delete' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_done' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_command' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_auth' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'curl_setopt' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_curl',
+  ),
+  'curl_version' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_curl',
+  ),
+  'cv_add' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_init' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_lookup' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_status' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_textvalue' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_void' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_sale' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_reverse' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_new' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_report' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'cv_return' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'curl_init' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_curl',
+  ),
+  'curl_getinfo' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_curl',
+  ),
+  'ctype_cntrl' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'ctype_digit' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'ctype_graph' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'ctype_alpha' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'ctype_alnum' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'crash' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'crc32' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'ext_standard',
+  ),
+  'create_function' => 
+  array (
+    'init' => '4.0.1',
+    'ext' => 'zend',
+  ),
+  'ctype_lower' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'ctype_print' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'curl_errno' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_curl',
+  ),
+  'curl_error' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_curl',
+  ),
+  'curl_exec' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_curl',
+  ),
+  'curl_close' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_curl',
+  ),
+  'ctype_xdigit' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'ctype_punct' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'ctype_space' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'ctype_upper' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ctype',
+  ),
+  'cybercash_base64_decode' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'cybercash_base64_encode' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'dbplus_freelock' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_freerlocks' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_getlock' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_freealllocks' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_flush' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_errno' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_find' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_first' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_getunique' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_info' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_rcreate' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_rcrtexact' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_rcrtlike' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_rchperm' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_prev' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_last' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_next' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_open' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_errcode' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_curr' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'cyrus_authenticate' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'cyrus_bind' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'cyrus_close' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'cybermut_testmac' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'cybermut_creerreponsecm' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'cybercash_decr' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'cybercash_encr' => 
+  array (
+    'init' => '4.2.3',
+  ),
+  'cybermut_creerformulairecm' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'cyrus_connect' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'cyrus_query' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_aql' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_chdir' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_close' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dbplus_add' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dba_list' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_dba',
+  ),
+  'cyrus_unbind' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'dba_handlers' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_dba',
+  ),
+  'imagetruecolortopalette' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_gd',
+  ),
+  'image_type_to_mime_type' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'ncurses_instr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_isendwin' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_keyok' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_insstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_insertln' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_init_pair' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_insch' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_insdelln' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_keypad' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_killchar' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_move' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_move_panel' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvaddch' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mouse_trafo' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mousemask' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_longname' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_meta' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mouseinterval' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_init_color' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_init' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_flushinp' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_getch' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_getmaxyx' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_flash' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_filter' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_end' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_erase' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_erasechar' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_getmouse' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_getyx' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_hide_panel' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_hline' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_inch' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_has_key' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_has_il' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_halfdelay' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_has_colors' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_has_ic' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvaddchnstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvaddchstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_qiflush' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_raw' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_refresh' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_putp' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_prefresh' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_panel_below' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_panel_window' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_pnoutrefresh' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_replace_panel' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_resetty' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_scr_init' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_scr_restore' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_scr_set' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_scr_dump' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_scrl' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_reset_prog_mode' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_reset_shell_mode' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_savetty' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_panel_above' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_pair_content' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvhline' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvinch' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvwaddstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvgetch' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvdelch' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvaddnstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvaddstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvcur' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_napms' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_newpad' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_nonl' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_noqiflush' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_noraw' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_noecho' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_nocbreak' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_newwin' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_new_panel' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_nl' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_echochar' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_echo' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'muscat_get' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'muscat_give' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'muscat_setup' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'muscat_close' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'multcolor' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'mssql_rows_affected' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_mssql',
+  ),
+  'mssql_set_message_handler' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sybase_ct',
+  ),
+  'mssql_unbuffered_query' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sybase_ct',
+  ),
+  'muscat_setup_net' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'mysql_client_encoding' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_get_server_info' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_info' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_list_processes' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_get_proto_info' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_get_host_info' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_escape_string' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_fetch_assoc' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_get_client_info' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mysql',
+  ),
+  'mssql_next_result' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_mssql',
+  ),
+  'mssql_init' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_mssql',
+  ),
+  'msg_receive' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sysvmsg',
+  ),
+  'msg_remove_queue' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sysvmsg',
+  ),
+  'msg_send' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sysvmsg',
+  ),
+  'msg_get_queue' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sysvmsg',
+  ),
+  'msession_unlock' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_set_data' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_timeout' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_uniq' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msg_set_queue' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sysvmsg',
+  ),
+  'msg_stat_queue' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sysvmsg',
+  ),
+  'mssql_Fetch_object' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'mssql_free_statement' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'ext_mssql',
+  ),
+  'mssql_guid_string' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_mssql',
+  ),
+  'mssql_fetch_batch' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_mssql',
+  ),
+  'mssql_fetch_assoc' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mssql',
+  ),
+  'mssql_bind' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_mssql',
+  ),
+  'mssql_deadlock_retry_count' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_sybase_ct',
+  ),
+  'mssql_execute' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_mssql',
+  ),
+  'mysql_ping' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_real_escape_string' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mysql',
+  ),
+  'ncurses_clrtoeol' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_color_content' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_color_set' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_clrtobot' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_clear' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_bottom_panel' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_can_change_color' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_cbreak' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_curs_set' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_define_key' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_delwin' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_del_panel' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_doupdate' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_deleteln' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_delch' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_def_prog_mode' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_def_shell_mode' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_delay_output' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_border' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_bkgdset' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'natsort' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ncurses_addch' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_addchnstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'natcasesort' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'mysql_unbuffered_query' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_stat' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_table_name' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mysql',
+  ),
+  'mysql_thread_id' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mysql',
+  ),
+  'ncurses_addchstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_addnstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_baudrate' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_beep' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_bkgd' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_attrset' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_attron' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_addstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_assume_default_colors' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_attroff' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_show_panel' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_attr' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'odbc_errormsg' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_fetch_array' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_fetch_object' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_error' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_data_source' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_odbc',
+  ),
+  'ociwritelobtofile' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'odbc_columnprivileges' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_columns' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_field_precision' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_field_scale' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_procedures' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_specialcolumns' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_statistics' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_procedurecolumns' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_primarykeys' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_foreignkeys' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_gettypeinfo' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'odbc_next_result' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_odbc',
+  ),
+  'ocisavelobfile' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'ocisavelob' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'ocicollgetelem' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_oci8',
+  ),
+  'ocicollmax' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_oci8',
+  ),
+  'ocicollsize' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_oci8',
+  ),
+  'ocicollassignelem' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_oci8',
+  ),
+  'ocicollassign' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'ob_list_handlers' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'ob_start' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ocicollappend' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_oci8',
+  ),
+  'ocicolltrim' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_oci8',
+  ),
+  'ocicolumnprecision' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'ociloadlob' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'ocinewcollection' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_oci8',
+  ),
+  'ocipasswordchange' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'ext_oci8',
+  ),
+  'ocifreedesc' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'ocifreecollection' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_oci8',
+  ),
+  'ocicolumnscale' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'ocicolumntyperaw' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_oci8',
+  ),
+  'ocifreecoll' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'odbc_tableprivileges' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_odbc',
+  ),
+  'openssl_csr_export' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_seal' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_sign' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_verify' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_read_x509' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'openssl_read_publickey' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'openssl_private_encrypt' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_public_decrypt' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_public_encrypt' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_x509_checkpurpose' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_x509_check_private_key' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'open_listen_sock' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'orbit_caught_exception' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'orbit_exception_id' => 
+  array (
+    'init' => '4.0.3',
+  ),
+  'openssl_x509_read' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_x509_parse' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_x509_export' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_x509_export_to_file' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_x509_free' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_private_decrypt' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_new' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_free_x509' => 
+  array (
+    'init' => '4.0.4',
+  ),
+  'openssl_get_privatekey' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_get_publickey' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_free_key' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_error_string' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_csr_export_to_file' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_csr_new' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_csr_sign' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_open' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkcs7_decrypt' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_free' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_get_private' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_get_public' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_export_to_file' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_export' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkcs7_encrypt' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkcs7_sign' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkcs7_verify' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'ob_implicit_flush' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ob_iconv_handler' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_iconv',
+  ),
+  'ncurses_vidattr' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_vline' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_waddch' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_use_extended_names' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_use_env' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_ungetmouse' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_update_panels' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_use_default_colors' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_waddstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wattroff' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_werase' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wgetch' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_whline' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wcolor_set' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wclear' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wattron' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wattrset' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wborder' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_ungetch' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_typeahead' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_init' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_noutrefresh' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_refresh' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_color' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_clear' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_attroff' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_attron' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_attrset' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_restore' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_set' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_termname' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_timeout' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_top_panel' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_termattrs' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_start_color' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_touch' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_standend' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_standout' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wmouse_trafo' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wmove' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'nsapi_response_headers' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'sapi_nsapi',
+  ),
+  'nsapi_virtual' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'sapi_nsapi',
+  ),
+  'ob_clean' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'nsapi_request_headers' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'sapi_nsapi',
+  ),
+  'notes_version' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_nav_create' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_search' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_unread' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'ob_end_clean' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ob_end_flush' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ob_get_level' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'ob_get_status' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'ob_gzhandler' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_zlib',
+  ),
+  'ob_get_length' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_standard',
+  ),
+  'ob_get_flush' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'ob_flush' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'ob_get_clean' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'ob_get_contents' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'notes_mark_unread' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_mark_read' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'new_xmldoc' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'nextframe' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'ngettext' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_gettext',
+  ),
+  'ncurses_wvline' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wstandout' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wnoutrefresh' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wrefresh' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wstandend' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'nl_langinfo' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'notes_body' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_find_note' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_header_info' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_list_msgs' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_drop_db' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_create_note' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_copy_db' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'notes_create_db' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'msession_set_array' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_set' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'mailparse_msg_extract_part_file' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'mailparse_msg_free' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'mailparse_msg_get_part' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'mailparse_msg_extract_part' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'mailparse_msg_create' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'log1p' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'long2ip' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'mailparse_determine_best_xfer_encoding' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'mailparse_msg_get_part_data' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'mailparse_msg_get_structure' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'mberegi' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mberegi_replace' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbereg_match' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbereg' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mailparse_stream_encode' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'mailparse_msg_parse' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'mailparse_msg_parse_file' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'mailparse_rfc822_parse_addresses' => 
+  array (
+    'init' => '4.1.0',
+  ),
+  'localtime' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'localeconv' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_standard',
+  ),
+  'ldap_compare' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ldap',
+  ),
+  'ldap_first_reference' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ldap',
+  ),
+  'ldap_get_option' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ldap',
+  ),
+  'ldap_8859_to_t61' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ldap',
+  ),
+  'lcg_value' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'jpeg2wbmp' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_gd',
+  ),
+  'key_exists' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_standard',
+  ),
+  'labelframe' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'ldap_next_reference' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ldap',
+  ),
+  'ldap_parse_reference' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ldap',
+  ),
+  'ldap_start_tls' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ldap',
+  ),
+  'ldap_t61_to_8859' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ldap',
+  ),
+  'listen' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ldap_sort' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ldap',
+  ),
+  'ldap_set_rebind_proc' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ldap',
+  ),
+  'ldap_parse_result' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ldap',
+  ),
+  'ldap_rename' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ldap',
+  ),
+  'ldap_set_option' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ldap',
+  ),
+  'mbereg_replace' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbereg_search' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_eregi_replace' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_ereg_match' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_ereg_replace' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_eregi' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_ereg' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_detect_order' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_encode_mimeheader' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_encode_numericentity' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_ereg_search' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_ereg_search_getpos' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_get_info' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_http_input' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_http_output' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_ereg_search_setpos' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_ereg_search_regs' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_ereg_search_getregs' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_ereg_search_init' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_ereg_search_pos' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_detect_encoding' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_decode_numericentity' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mbereg_search_setpos' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbregex_encoding' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbsplit' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbereg_search_regs' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbereg_search_pos' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbereg_search_getpos' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbereg_search_getregs' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbereg_search_init' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mbstrcut' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'mbstrlen' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'mb_convert_kana' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_convert_variables' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_decode_mimeheader' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_convert_encoding' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_convert_case' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mbstring',
+  ),
+  'mbstrpos' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'mbstrrpos' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'mbsubstr' => 
+  array (
+    'init' => '4.0.6',
+  ),
+  'jdtounix' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_calendar',
+  ),
+  'java_last_exception_get' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'ingres_rollback' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ini_alter' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ini_get' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ingres_query' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_pconnect' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_field_type' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_num_fields' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_num_rows' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ini_get_all' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'ini_restore' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ircg_eval_ecmascript_params' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_fetch_error_msg' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_get_username' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_disconnect' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_channel_mode' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'ini_set' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'in_array' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ip2long' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ingres_field_scale' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_field_precision' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'imap_thread' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_imap',
+  ),
+  'imap_timeout' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_imap',
+  ),
+  'import_request_variables' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_standard',
+  ),
+  'imap_set_quota' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_imap',
+  ),
+  'imap_setacl' => 
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_imap',
+  ),
+  'imap_get_quota' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_imap',
+  ),
+  'imap_get_quotaroot' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_imap',
+  ),
+  'imap_rfc822_parse_headers' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_imap',
+  ),
+  'ingres_autocommit' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_close' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_field_length' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_field_name' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_field_nullable' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_fetch_row' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_fetch_object' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_commit' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_connect' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ingres_fetch_array' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_ingres_ii',
+  ),
+  'ircg_html_encode' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_ignore_add' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'is_a' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'zend',
+  ),
+  'is_bool' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'is_callable' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_standard',
+  ),
+  'ircg_whois' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_who' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_set_file' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_set_on_die' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_topic' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'is_finite' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'is_infinite' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'is_subclass_of' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'is_writable' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'java_last_exception_clear' => 
+  array (
+    'init' => '4.0.2',
+  ),
+  'is_scalar' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_standard',
+  ),
+  'is_resource' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'is_nan' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'is_null' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_standard',
+  ),
+  'is_numeric' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'ircg_set_current' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_register_format_messages' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_list' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_lookup_format_messages' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_lusers' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_kick' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_join' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_ignore_del' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_invite' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_is_conn_alive' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_msg' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_names' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_oper' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_part' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_pconnect' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_notice' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_nickname_unescape' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_nick' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ircg',
+  ),
+  'ircg_nickname_escape' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_ircg',
+  ),
+  'mb_internal_encoding' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_language' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mcve_text_avs' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_text_code' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_text_cv' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_settle' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_settimeout' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_setip' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_setssl' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_setssl_files' => 
+  array (
+    'init' => '4.3.3',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transactionauth' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transactionavs' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transactiontext' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transinqueue' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transnew' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transactionssent' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transactionitem' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transactionbatch' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transactioncv' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transactionid' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_setdropfile' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_setblocking' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_numcolumns' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_numrows' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_override' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_monitor' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_maxconntimeout' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_iscommadelimited' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_liststats' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_listusers' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_parsecommadelimited' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_ping' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_returncode' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_returnstatus' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_sale' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_return' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_responseparam' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_preauth' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_preauthcompletion' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_qc' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transparam' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_transsend' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'msession_ctl' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_destroy' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_disconnect' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_create' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_count' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'move_uploaded_file' => 
+  array (
+    'init' => '4.0.3',
+    'ext' => 'ext_standard',
+  ),
+  'msession_call' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_connect' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_find' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_get' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_lock' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_plugin' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_randstr' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_listvar' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_list' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_get_array' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_get_data' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'msession_inc' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_msession',
+  ),
+  'moveto' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'movepento' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'md5_file' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_standard',
+  ),
+  'mdecrypt_generic' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'memory_get_usage' => 
+  array (
+    'init' => '4.3.2',
+    'ext' => 'ext_standard',
+  ),
+  'mcve_void' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_verifysslcert' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_ub' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_uwait' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_verifyconnection' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'metaphone' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'method_exists' => 
+  array (
+    'init' => '4.0.0',
+    'ext' => 'zend',
+  ),
+  'money_format' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_standard',
+  ),
+  'move' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'movepen' => 
+  array (
+    'init' => '4.0.5',
+  ),
+  'ming_useswfversion' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ming',
+  ),
+  'ming_setscale' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ming',
+  ),
+  'mhash_keygen_s2k' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_mhash',
+  ),
+  'mime_content_type' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mime_magic',
+  ),
+  'ming_setcubicthreshold' => 
+  array (
+    'init' => '4.0.5',
+    'ext' => 'ext_ming',
+  ),
+  'mcve_initusersetup' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_initengine' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcrypt_enc_get_key_size' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_enc_get_modes_name' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_enc_get_supported_key_sizes' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_enc_get_iv_size' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_enc_get_block_size' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_decrypt' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_encrypt' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_enc_get_algorithms_name' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_enc_is_block_algorithm' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_enc_is_block_algorithm_mode' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_generic_init' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_get_iv_size' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_list_algorithms' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_generic_end' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_generic_deinit' => 
+  array (
+    'init' => '4.1.1',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_enc_is_block_mode' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_enc_self_test' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_generic' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcal_week_of_year' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'mcal_append_event' => 
+  array (
+    'init' => '4.0.0',
+  ),
+  'mb_send_mail' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_split' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_strcut' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_regex_set_options' => 
+  array (
+    'init' => '4.3.0',
+  ),
+  'mb_regex_encoding' => 
+  array (
+    'init' => '4.2.0',
+  ),
+  'mb_output_handler' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_parse_str' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_preferred_mime_name' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_strimwidth' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_strlen' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_substitute_character' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_substr' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_substr_count' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_strwidth' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_strtoupper' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_strpos' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_strrpos' => 
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_strtolower' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mbstring',
+  ),
+  'mcrypt_list_modes' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_module_close' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcve_edituser' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_enableuser' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_force' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_disableuser' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_destroyengine' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_deleteusersetup' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_deluser' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_destroyconn' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_getcell' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_getcellbynum' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_gl' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_gut' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_initconn' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_gft' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_getuserparam' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_getcommadelimited' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_getheader' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_getuserarg' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_deletetrans' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_deleteresponse' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcrypt_module_is_block_mode' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_module_open' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_module_self_test' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_module_is_block_algorithm_mode' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_module_is_block_algorithm' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_module_get_algo_block_size' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_module_get_algo_key_size' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcrypt_module_get_supported_key_sizes' => 
+  array (
+    'init' => '4.0.2',
+    'ext' => 'ext_mcrypt',
+  ),
+  'mcve_adduser' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_adduserarg' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_completeauthorizations' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_connect' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_connectionerror' => 
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_chngpwd' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_chkpwd' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_bt' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'mcve_checkstatus' => 
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_mcve',
+  ),
+  'decrypt' => 
+  array (
+    'init' => '4.0.0',
+  ),
+)
 ?>
