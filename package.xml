@@ -106,6 +106,7 @@ detection should be much better.
      <file role="php" name="updateVersionInfo.php"/>
     </dir> <!-- /scripts -->
     <file role="php" name="CompatInfo.php"/>
+    <file role="data" name="package2.xml"/>
    </dir> <!-- / -->
   </filelist>
  </release>
