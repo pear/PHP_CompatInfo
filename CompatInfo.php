@@ -155,23 +155,16 @@ class PHP_CompatInfo {
         $extensions = array();
         $constants = array();
         $ignored = array();
-        $default_options = array('file_ext' => array('php','php4','inc','phtml'), 'recurse_dir' => true, 'debug' => false, 'ignore_file' => array(), 'ignore_dirs' => array());
+        $default_options = array('file_ext' => array('php','php4','inc','phtml'), 'recurse_dir' => true, 'debug' => false, 'ignore_files' => array(), 'ignore_dirs' => array());
         $options = array_merge($default_options,$options);
-
-        if($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
-            $dir = substr($dir,0,-1);
-        }
+        
         if(is_dir($dir) && is_readable($dir)) {
-            if (isset($options['ignores_dirs'])) {
-                $options['ignore_dirs'] = array_map("strtolower",$options['ignore_dirs']);
-            } else {
-                $options['ignore_dirs'] == array();
+            if($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
+                $dir = substr($dir,0,-1);
             }
-            if (isset($options['ignore_files'])) {
-                $options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
-            } else {
-                $options['ignore_files'] = array();
-            }
+            array_map('strtolower', $options['file_ext']);
+            array_map('strtolower', $options['ignore_files']);
+            array_map('strtolower', $options['ignore_dirs']);
             $files_raw = $this->_fileList($dir,$options);
             foreach($files_raw as $file) {
                 if(in_array(strtolower($file),$options['ignore_files'])) {
@@ -179,7 +172,7 @@ class PHP_CompatInfo {
                     continue;
                 }
                 $file_info = pathinfo($file);
-                if (isset($file_info['extension']) && in_array($file_info['extension'],$options['file_ext'])) {
+                if (isset($file_info['extension']) && in_array(strtolower($file_info['extension']),$options['file_ext'])) {
                     $tokens = $this->_tokenize($file);
                     $files[$file] = $this->_parseTokens($tokens,$options);
                 }
