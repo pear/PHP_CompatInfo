@@ -2,11 +2,14 @@
 require_once 'PEAR/PackageFileManager.php';
 require_once 'Console/Getopt.php';
 
-$version = '0.8.0';
+$version = '0.8.1';
 $notes = <<<EOT
-Added a CLI Output script. An example of using it
-can be found in the examples dir. Moved parseFolder() to parseDir().
-parseFolder() has been aliased to parseDir().
+Bugs fixed from 0.8.0 (thanks to Jan Schneider)
+* Added Console_Getopt optional dependency.
+* Fixed Console_Getopt require in CLI.php
+* Fixed some version data
+* Made it possible to use -f=FILE, -fFILE and -f FILE, same with -d in CLI script
+* Added whitespace after the CLI help output
 EOT;
 
 $description =<<<EOT
@@ -25,7 +28,7 @@ $result = $package->setOptions(array(
     'state'             => 'alpha',
     'license'           => 'PHP License',
     'ignore'            => array('*entries*','*Template*','*Root*','*Repository*','package.php', 'package.xml', '*.bak', '*src*', '*.tgz', '*pear_media*', 'index.htm', '*tests*'),
-	'filelistgenerator' => 'file',
+	'filelistgenerator' => 'cvs', // other option is 'file'
     'notes'             => $notes,
     'changelogoldtonew' => false,
     'baseinstalldir'    => 'PHP',
@@ -44,6 +47,7 @@ $package->addDependency('php', '4.3.0', 'ge', 'php', false);
 $package->addDependency('tokenizer', '', 'has', 'ext', false);
 $package->addDependency('sockets', '', 'has', 'ext', false);
 $package->addDependency('Console_Table','1.0.1','ge','pkg',true);
+$package->addDependency('Console_Getopt','1.2','ge','pkg',true);
 
 if ($_SERVER['argv'][1] == 'commit') {
     $result = $package->writePackageFile();

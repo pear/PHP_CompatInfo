@@ -15,18 +15,22 @@ which shows which functions require which version and CLI output script</descrip
     </maintainer>
   </maintainers>
   <release>
-    <version>0.8.0</version>
+    <version>0.8.1</version>
     <date>2004-04-22</date>
     <license>PHP License</license>
     <state>alpha</state>
-    <notes>Added a CLI Output script. An example of using it
-can be found in the examples dir. Moved parseFolder() to parseDir().
-parseFolder() has been aliased to parseDir().</notes>
+    <notes>Bugs fixed from 0.8.0 (thanks to Jan Schneider)
+* Added Console_Getopt optional dependency.
+* Fixed Console_Getopt require in CLI.php
+* Fixed some version data
+* Made it possible to use -f=FILE, -fFILE and -f FILE, same with -d in CLI script
+* Added whitespace after the CLI help output</notes>
     <deps>
       <dep type="php" rel="ge" version="4.3.0" optional="no"/>
       <dep type="ext" rel="has" optional="no">tokenizer</dep>
       <dep type="ext" rel="has" optional="no">sockets</dep>
       <dep type="pkg" rel="ge" version="1.0.1" optional="yes">Console_Table</dep>
+      <dep type="pkg" rel="ge" version="1.2" optional="yes">Console_Getopt</dep>
     </deps>
     <filelist>
       <dir baseinstalldir="PHP" name="/">
@@ -56,6 +60,7 @@ parseFolder() has been aliased to parseDir().</notes>
         <dir name="media">
          <file role="doc" name="background.png"/>
          <file role="doc" name="empty.png"/>
+         <file role="doc" name="pear.gif"/>
          <file role="doc" name="style.css"/>
         </dir> <!-- docs/media -->
         <dir name="PHP_CompatInfo">
@@ -66,11 +71,16 @@ parseFolder() has been aliased to parseDir().</notes>
          <file role="doc" name="_CompatInfo_package_php.html"/>
         </dir> <!-- docs/PHP_CompatInfo -->
         <dir name="__examplesource">
+         <file role="doc" name="exsource_ar_PHP_CompatInfo_docs_examples_checkConstants.php_8efdd8263345d16425bc9b6665852893.html"/>
          <file role="doc" name="exsource_ar_PHP_CompatInfo_docs_examples_checkConstants.php_c6a072914db4deaa7cd737a410135b32.html"/>
          <file role="doc" name="exsource_cvs_pear_PHP_CompatInfo_docs_examples_parseDir.php_016dd77ae5536909b6cd672a8efdb618.html"/>
+         <file role="doc" name="exsource_s_pear_PHP_CompatInfo_docs_examples_parseArray.php_206c617e8eb34e9d6af69a6bc6425ebb.html"/>
          <file role="doc" name="exsource_s_pear_PHP_CompatInfo_docs_examples_parseArray.php_6457c017707e4b52b76abc6ea4887f45.html"/>
+         <file role="doc" name="exsource_vs_pear_PHP_CompatInfo_docs_examples_parseFile.php_27ad3b8bc4838da6b47b9de1c1fece60.html"/>
          <file role="doc" name="exsource_vs_pear_PHP_CompatInfo_docs_examples_parseFile.php_cd91f832407337cc291742c3bc714f56.html"/>
+         <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseFolder.php_59cd49894862a7adc29626160d3ccca8.html"/>
          <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseString.php_9d7bb043f1ace2dccb7d4754cc5b6209.html"/>
+         <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseString.php_d7f0c50630c16cc0494bef419d036b25.html"/>
          <file role="doc" name="exsource__php-cvs_pear_PHP_CompatInfo_docs_examples_Cli.php_1b345c70ae5aff2fa9585ba8448bf2a0.html"/>
         </dir> <!-- docs/__examplesource -->
         <dir name="__filesource">
@@ -89,6 +99,18 @@ parseFolder() has been aliased to parseDir().</notes>
     </filelist>
   </release>
   <changelog>
+    <release>
+      <version>0.8.1</version>
+      <date>2004-04-22</date>
+      <license>PHP License</license>
+      <state>alpha</state>
+      <notes>Bugs fixed from 0.8.0 (thanks to Jan Schneider)
+* Added Console_Getopt optional dependency.
+* Fixed Console_Getopt require in CLI.php
+* Fixed some version data
+* Made it possible to use -f=FILE, -fFILE and -f FILE, same with -d in CLI script
+* Added whitespace after the CLI help output</notes>
+    </release>
     <release>
       <version>0.8.0</version>
       <date>2004-04-22</date>
