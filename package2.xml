@@ -18,7 +18,7 @@ which shows which functions require which version and CLI output script
   <active>yes</active>
  </lead>
  <date>2005-03-14</date>
- <time>08:37:27</time>
+ <time>08:40:39</time>
  <version>
   <release>1.0.0</release>
   <api>1.0.0</api>
@@ -109,6 +109,7 @@ detection should be much better.
     <file baseinstalldir="PHP" name="updateVersionInfo.php" role="php" />
    </dir> <!-- /scripts -->
    <file baseinstalldir="PHP" name="CompatInfo.php" role="php" />
+   <file baseinstalldir="PHP" name="package2.xml" role="data" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
