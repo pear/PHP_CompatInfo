@@ -5,7 +5,8 @@ require_once 'Console/Getopt.php';
 $version = '0.8.0';
 $notes = <<<EOT
 Added a CLI Output script. An example of using it
-can be found in the examples dir.
+can be found in the examples dir. Moved parseFolder() to parseDir().
+parseFolder() has been aliased to parseDir().
 EOT;
 
 $description =<<<EOT
@@ -23,8 +24,8 @@ $result = $package->setOptions(array(
     'version'           => $version,
     'state'             => 'alpha',
     'license'           => 'PHP License',
-    'ignore'            => array('package.php', 'package.xml', '*.bak', '*src*', '*.tgz', '*pear_media*', 'index.htm', '*tests*'),
-	'filelistgenerator' => 'cvs',
+    'ignore'            => array('*entries*','*Template*','*Root*','*Repository*','package.php', 'package.xml', '*.bak', '*src*', '*.tgz', '*pear_media*', 'index.htm', '*tests*'),
+	'filelistgenerator' => 'file',
     'notes'             => $notes,
     'changelogoldtonew' => false,
     'baseinstalldir'    => 'PHP',
