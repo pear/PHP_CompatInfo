@@ -47,7 +47,7 @@ require_once 'PHP/data/const_array.php';
  * @copyright Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
  * @example docs/examples/checkConstants.php Example that shows minimum version with Constants
  * @example docs/examples/parseFile.php Example on how to parse a file
- * @example docs/examples/parseDir.php Example on how to parse a folder
+ * @example docs/examples/parseFolder.php Example on how to parse a folder
  * @example docs/examples/parseArray.php Example on using using parseArray() to parse a script
  * @example docs/examples/parseString.php Example on how to parse a string
  */
@@ -61,7 +61,7 @@ class PHP_CompatInfo {
     var $latest_version = '4.0.0';
 
     /**
-     * @var boolean Toggle parseDir recursion
+     * @var boolean Toggle parseFolder recursion
      */
 
     var $recurse_dir = true;
@@ -115,10 +115,9 @@ class PHP_CompatInfo {
     }
 
     /**
-     * Parse a directory recursively for its Compatibility info
+     * Parse a folder recursively for its Compatibility info
      *
-     * @see PHP_CompatInfo::_fileList()
-     * @param string $dir Path of folder to parse
+     * @param string $folder Path of folder to parse
      * @param array $options Array of user options where:
      *                              'file_ext' Contains an array of file
      *                                         extensions to parse for PHP
@@ -143,31 +142,22 @@ class PHP_CompatInfo {
      * @return array
      */
 
-    function parseDir($dir,$options = null)
+    function parseFolder($folder,$options = null)
     {
         $files = array();
         $latest_version = $this->latest_version;
         $extensions = array();
         $constants = array();
-        $ignored = array();
         $default_options = array('file_ext' => array('php','php4','inc','phtml'), 'recurse_dir' => true, 'debug' => false, 'ignore_file' => array(), 'ignore_dirs' => array());
         $options = array_merge($default_options,$options);
 
-        if($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
-            $dir = substr($dir,0,-1);
+        if($folder{strlen($folder)-1} == '/' || $folder{strlen($folder)-1} == '\\') {
+            $folder = substr($folder,0,-1);
         }
-        if(is_dir($dir) && is_readable($dir)) {
-        	if (isset($options['ignores_dirs'])) {
-            	$options['ignore_dirs'] = array_map("strtolower",$options['ignore_dirs']);
-        	} else {
-        		$options['ignore_dirs'] == array();
-        	}
-        	if (isset($options['ignore_files'])) {
-            	$options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
-        	} else {
-        		$options['ignore_files'] = array();
-        	}
-            $files_raw = $this->_fileList($dir,$options);
+        if(is_dir($folder) || is_readable($folder)) {
+            $options['ignore_dirs'] = array_map("strtolower",$options['ignore_dirs']);
+            $options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
+            $files_raw = $this->_fileList($folder,$options);
             foreach($files_raw as $file) {
                 if(in_array(strtolower($file),$options['ignore_files'])) {
                     $ignored[] = $file;
@@ -209,17 +199,6 @@ class PHP_CompatInfo {
         } else {
             return false;
         }
-    }
-    
-    /**
-     * Alias of parseDir
-     *
-     * @uses PHP_CompatInfo::parseDir()
-     * @access public
-     */
-     
-    function parseFolder($folder,$options) {
-    	$this->parseDir($folder,$options);
     }
 
     /**
@@ -316,6 +295,7 @@ class PHP_CompatInfo {
         while ($i < $token_count) {
             $found_func = true;
             if ($tokens[$i][0] == T_FUNCTION) {
+                $t_function = true;
                 $found_func = false;
             }
             while ($found_func == false) {
@@ -337,11 +317,7 @@ class PHP_CompatInfo {
         }
 
         $functions = array_unique($functions);
-        if (isset($options['ignore_functions'])) {
-        	$options['ignore_functions'] = array_map("strtolower",$options['ignore_functions']);
-        } else {
-        	$options['ignore_functions'] = array();
-        }
+        $options['ignore_functions'] = array_map("strtolower",$options['ignore_functions']);
         foreach($functions as $name) {
             if (isset($GLOBALS['funcs'][$name]) && (!in_array($name,$udf) && (!in_array($name,$options['ignore_functions'])))) {
                 if ($options['debug'] == true) {
@@ -422,7 +398,7 @@ class PHP_CompatInfo {
                         $ret[] = $directory . DIRECTORY_SEPARATOR . $entry;
                     }
                     if (is_dir($directory . DIRECTORY_SEPARATOR . $entry) && ($options['recurse_dir'] != false)) {
-                        $tmp = $this->_fileList($directory . DIRECTORY_SEPARATOR . $entry,$options);
+                        $tmp = $this->_fileList($directory . DIRECTORY_SEPARATOR . $entry);
                         if (is_array($tmp)) {
                             foreach($tmp as $ent) {
                                 $ret[] = $ent;
