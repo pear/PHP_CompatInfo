@@ -30,55 +30,59 @@ which shows which functions require which version and CLI output script</descrip
     </deps>
     <filelist>
       <dir baseinstalldir="PHP" name="/">
-       <dir name="edia">
-        <file role="data" name="background.png"/>
-        <file role="data" name="empty.png"/>
-        <file role="data" name="style.css"/>
-       </dir> <!-- edia -->
-       <dir name="HP_CompatInfo">
-        <file role="doc" name="PHP_CompatInfo.html"/>
-        <file role="doc" name="PHP_CompatInfo_Cli.html"/>
-        <file role="doc" name="_CompatInfo_CompatInfo_Cli_php.html"/>
-        <file role="doc" name="_CompatInfo_CompatInfo_php.html"/>
-       </dir> <!-- HP_CompatInfo -->
-       <dir name="Info">
+       <dir name="CompatInfo">
         <file role="php" name="Cli.php"/>
-       </dir> <!-- Info -->
-       <dir name="s">
+       </dir> <!-- CompatInfo -->
+       <dir name="data">
+        <file role="php" name="const_array.php"/>
+        <file role="php" name="func_array.php"/>
+       </dir> <!-- data -->
+       <dir name="docs">
+        <file role="doc" name="classtrees_PHP_CompatInfo.html"/>
+        <file role="doc" name="elementindex.html"/>
+        <file role="doc" name="elementindex_PHP_CompatInfo.html"/>
+        <file role="doc" name="errors.html"/>
+        <file role="doc" name="index.html"/>
+        <file role="doc" name="li_PHP_CompatInfo.html"/>
+        <dir name="examples">
+         <file role="doc" name="checkConstants.php"/>
+         <file role="doc" name="Cli.php"/>
+         <file role="doc" name="cliOutput.txt"/>
+         <file role="doc" name="parseArray.php"/>
+         <file role="doc" name="parseDir.php"/>
+         <file role="doc" name="parseFile.php"/>
+         <file role="doc" name="parseString.php"/>
+        </dir> <!-- docs/examples -->
+        <dir name="media">
+         <file role="doc" name="background.png"/>
+         <file role="doc" name="empty.png"/>
+         <file role="doc" name="style.css"/>
+        </dir> <!-- docs/media -->
+        <dir name="PHP_CompatInfo">
+         <file role="doc" name="PHP_CompatInfo.html"/>
+         <file role="doc" name="PHP_CompatInfo_Cli.html"/>
+         <file role="doc" name="_CompatInfo_CompatInfo_Cli_php.html"/>
+         <file role="doc" name="_CompatInfo_CompatInfo_php.html"/>
+        </dir> <!-- docs/PHP_CompatInfo -->
+        <dir name="__examplesource">
+         <file role="doc" name="exsource_ar_PHP_CompatInfo_docs_examples_checkConstants.php_8efdd8263345d16425bc9b6665852893.html"/>
+         <file role="doc" name="exsource_cvs_pear_PHP_CompatInfo_docs_examples_parseDir.php_416b45d76e4c1f31d53ba3389522dac8.html"/>
+         <file role="doc" name="exsource_s_pear_PHP_CompatInfo_docs_examples_parseArray.php_206c617e8eb34e9d6af69a6bc6425ebb.html"/>
+         <file role="doc" name="exsource_vs_pear_PHP_CompatInfo_docs_examples_parseFile.php_27ad3b8bc4838da6b47b9de1c1fece60.html"/>
+         <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseString.php_d7f0c50630c16cc0494bef419d036b25.html"/>
+         <file role="doc" name="exsource__php-cvs_pear_PHP_CompatInfo_docs_examples_Cli.php_64cd9c51ed2c355b8e9b74c68ca4aba3.html"/>
+        </dir> <!-- docs/__examplesource -->
+        <dir name="__filesource">
+         <file role="doc" name="fsource_PHP_CompatInfo__CompatInfo.php.html"/>
+         <file role="doc" name="fsource_PHP_CompatInfo__CompatInfoCli.php.html"/>
+        </dir> <!-- docs/__filesource -->
+       </dir> <!-- docs -->
+       <dir name="scripts">
         <file role="data" name="create_array.xsl"/>
         <file role="data" name="functions.xml"/>
         <file role="data" name="versions.xml"/>
-       </dir> <!-- s -->
-       <dir name="xamples">
-        <file role="php" name="checkConstants.php"/>
-        <file role="php" name="Cli.php"/>
-        <file role="data" name="cliOutput.txt"/>
-        <file role="php" name="parseArray.php"/>
-        <file role="php" name="parseDir.php"/>
-        <file role="php" name="parseFile.php"/>
-        <file role="php" name="parseString.php"/>
-       </dir> <!-- xamples -->
-       <dir name="_examplesource">
-        <file role="doc" name="exsource_ar_PHP_CompatInfo_docs_examples_checkConstants.php_8efdd8263345d16425bc9b6665852893.html"/>
-        <file role="doc" name="exsource_cvs_pear_PHP_CompatInfo_docs_examples_parseDir.php_416b45d76e4c1f31d53ba3389522dac8.html"/>
-        <file role="doc" name="exsource_s_pear_PHP_CompatInfo_docs_examples_parseArray.php_206c617e8eb34e9d6af69a6bc6425ebb.html"/>
-        <file role="doc" name="exsource_vs_pear_PHP_CompatInfo_docs_examples_parseFile.php_27ad3b8bc4838da6b47b9de1c1fece60.html"/>
-        <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseString.php_d7f0c50630c16cc0494bef419d036b25.html"/>
-        <file role="doc" name="exsource__php-cvs_pear_PHP_CompatInfo_docs_examples_Cli.php_64cd9c51ed2c355b8e9b74c68ca4aba3.html"/>
-       </dir> <!-- _examplesource -->
-       <dir name="_filesource">
-        <file role="doc" name="fsource_PHP_CompatInfo__CompatInfo.php.html"/>
-        <file role="doc" name="fsource_PHP_CompatInfo__CompatInfoCli.php.html"/>
-       </dir> <!-- _filesource -->
-       <file role="doc" name="classtrees_PHP_CompatInfo.html"/>
+       </dir> <!-- scripts -->
        <file role="php" name="CompatInfo.php"/>
-       <file role="php" name="const_array.php"/>
-       <file role="doc" name="elementindex.html"/>
-       <file role="doc" name="elementindex_PHP_CompatInfo.html"/>
-       <file role="doc" name="errors.html"/>
-       <file role="php" name="func_array.php"/>
-       <file role="doc" name="index.html"/>
-       <file role="doc" name="li_PHP_CompatInfo.html"/>
       </dir> <!-- / -->
     </filelist>
   </release>
@@ -94,7 +98,7 @@ which shows which functions require which version and CLI output script</descrip
     </release>
     <release>
       <version>0.8.2</version>
-      <date>2004-04-26</date>
+      <date>2004-04-24</date>
       <license>PHP License</license>
       <state>alpha</state>
       <notes>Bugs fixed from 0.8.1 (thanks to Jan Schneider again)
