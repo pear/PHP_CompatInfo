@@ -1,10 +1,9 @@
 <?php
 require_once 'PEAR/PackageFileManager.php';
 
-$version = '1.0.0RC2';
+$version = '1.0.0RC3';
 $notes = <<<EOT
-Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
-PHP5 functions no longer marked as '-dev'.
+Fixed bug #2771
 EOT;
 
 $description =<<<EOT

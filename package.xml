@@ -15,12 +15,11 @@ which shows which functions require which version and CLI output script</descrip
     </maintainer>
   </maintainers>
   <release>
-    <version>1.0.0RC2</version>
-    <date>2004-08-03</date>
+    <version>1.0.0RC3</version>
+    <date>2005-01-11</date>
     <license>PHP License</license>
     <state>beta</state>
-    <notes>Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
-PHP5 functions no longer marked as '-dev'.</notes>
+    <notes>Fixed bug #2771</notes>
     <deps>
       <dep type="ext" rel="has" optional="no">tokenizer</dep>
       <dep type="pkg" rel="ge" version="1.0.1" optional="yes">Console_Table</dep>
@@ -85,8 +84,15 @@ PHP5 functions no longer marked as '-dev'.</notes>
   </release>
   <changelog>
     <release>
+      <version>1.0.0RC3</version>
+      <date>2005-01-11</date>
+      <license>PHP License</license>
+      <state>beta</state>
+      <notes>Fixed bug #2771</notes>
+    </release>
+    <release>
       <version>1.0.0RC2</version>
-      <date>2004-08-03</date>
+      <date>2004-08-04</date>
       <license>PHP License</license>
       <state>beta</state>
       <notes>Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
