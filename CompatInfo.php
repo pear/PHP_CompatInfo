@@ -383,8 +383,13 @@ class PHP_CompatInfo {
                     $latest_version = $GLOBALS['funcs'][$name]['version_init'];
                 }
                 if ((!empty($GLOBALS['funcs'][$name]['extension'])) && ($GLOBALS['funcs'][$name]['extension'] != 'ext_standard') && ($GLOBALS['funcs'][$name]['extension'] != 'zend'))  {
-                    if(!in_array(substr($GLOBALS['funcs'][$name]['extension'],4),$extensions)) {
-                        $extensions[] = substr($GLOBALS['funcs'][$name]['extension'],4);
+                    if(!in_array(substr($GLOBALS['funcs'][$name]['extension'],4),$extensions) || !in_array(substr($GLOBALS['funcs'][$name]['extension'], 5),$extensions)) {
+                        $extension = substr($GLOBALS['funcs'][$name]['extension'],4);
+                        if ($extension{0} != '_') {
+                            $extensions[] = $extension;
+                        } else {
+                            $extensions[] = substr($extension, 1);
+                        }
                     }
                 }
             }
