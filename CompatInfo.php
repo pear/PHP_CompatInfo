@@ -330,7 +330,7 @@ class PHP_CompatInfo {
                 }
             }
             if ($tokens[$i][0] == T_STRING) {
-                if (isset($tokens[$i + 1]) && ($tokens[$i + 1][0] == '(')) {
+                if (isset($tokens[$i + 1]) && ($tokens[$i + 1][0] == '(') && ($tokens[$i - 1][0] != T_DOUBLE_COLON) && ($tokens[$i - 1][0] != T_OBJECT_OPERATOR)) {
                     $functions[] = $tokens[$i][1];
                 }
             }
