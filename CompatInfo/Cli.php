@@ -24,6 +24,8 @@
  * @category PHP
  */
  
+require_once 'PHP/CompatInfo.php';
+ 
 /**
  * CLI Script to Check Compatibility of chunk of PHP code
  *
@@ -32,13 +34,11 @@
  * @copyright Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
  */
  
-class PHP_CompatInfo_Cli {
+class PHP_CompatInfo_Cli extends PHP_CompatInfo {
 	
 	var $opts = array();
 	
 	var $error = false;
-	
-	var $compat;
 	
 	var $file;
 	
@@ -52,7 +52,6 @@ class PHP_CompatInfo_Cli {
 	 
 	 function __construct() {
 	 	require_once 'Console/GetOpt.php';
-	 	$stdin = new Console_Getopt();
 	 	$opts = Console_Getopt::readPHPArgv();
 	 	$short_opts = 'd:f:hi';
 	 	$long_opts = array('dir=','file=','help','debug');
@@ -63,8 +62,6 @@ class PHP_CompatInfo_Cli {
 	 		$this->error = true;
 	 		return;
 	 	}
-	 	require_once 'PHP/CompatInfo.php';
-	 	$this->compat = new PHP_CompatInfo();
 		foreach ($this->opts[0] as $option) {
 			switch ($option[0]) {
 				case '--debug':
@@ -72,15 +69,15 @@ class PHP_CompatInfo_Cli {
 					break;
 				case '--dir':
 					$this->dir = $option[1];
-					$this->_parseFolder();
 					break;
 				case 'd':
 					$this->dir = substr($option[1],1);
-					$this->_parseFolder();
 					break;
 				case '--file':
-				case 'f':
 					$this->file = $option[1];
+					break;
+				case 'f':
+					$this->file = substr($option[1],1);
 					break;
 			}
 		}
@@ -102,6 +99,13 @@ class PHP_CompatInfo_Cli {
 	 	if ($this->error == true) {
 	 		echo $this->opts->message;
 	 		$this->_printUsage();
+	 	} else {
+	 		if (isset($this->dir)) {
+	 			$output = $this->_parseFolder();
+	 		} elseif (isset($this->file)) {
+	 			$output = $this->_parseFile();
+	 		}
+	 		echo $output;
 	 	}
 	 }
 	 
@@ -114,7 +118,7 @@ class PHP_CompatInfo_Cli {
 	  
 	  function _parseFolder() {
 	  	require_once 'Console/Table.php';
-	  	$info = $this->compat->parseFolder($this->dir,array('debug' => $this->debug));
+	  	$info = $this->parseFolder($this->dir,array('debug' => $this->debug));
 	  	if ($info == false) {
 	  		echo 'Failed opening directory. Please check your spelling and try again.';
 	  		$this->_printUsage();
@@ -135,7 +139,7 @@ class PHP_CompatInfo_Cli {
 	  							$table->addRow(array($file_name,$function,$version,''));
 	  						}
 	  					}
-	  					$table->addRow($file_name,'',$file['version'],'');
+	  					$$table->addRow($file_name,'',$file['version'],'');
 	  					foreach ($file['extensions'] as $ext) {
 	  						$table->addRow($file_name,'','',$ext);
 	  					}
@@ -144,6 +148,120 @@ class PHP_CompatInfo_Cli {
 	  		}
 	  	}
 	}
+	
+	/**
+	 * Parse File Input
+	 *
+	 * @access private
+	 * @return boolean|string Returns Boolean False on fail
+	 */
+	 
+	function _parseFile() {
+		require_once 'Console/Table.php';
+		$info = $this->parseFile($this->file,array('debug' => $this->debug));
+		if ($info == false) {
+	  		echo 'Failed opening file. Please check your spelling and try again.';
+	  		$this->_printUsage();
+	  		return false;
+		}
+		$table = new Console_Table();
+		if ($this->debug == false) {
+			$table->setHeaders(array('File','Version','Extensions','Constants'));
+			if (!isset($info['extensions'][0])) {
+				$ext = '';
+			} else {
+				$ext = array_shift($info['extensions']);
+			}
+			
+			if (!isset($info['constants'][0])) {
+				$const = '';
+			} else {
+				$const = array_shift($info['constants']);
+			}
+				
+			$table->addRow(array($this->file,$info['version'],$ext,$const));
+			if (sizeof($info['extensions']) >= sizeof($info['constants'])) {
+				foreach ($info['extensions'] as $i => $ext) {
+					if (isset($info['constants'][$i])) {
+						$const = $info['constants'][$i];
+					} else {
+						$const = '';
+					}
+					$table->addRow(array('','',$ext,$const));
+				}
+			} else {
+				foreach ($info['constants'] as $i => $const) {
+					if (isset($info['extensions'][$i])) {
+						$ext = $info['extensions'][$i];
+					} else {
+						$ext = '';
+					}
+					$table->addRow(array('','',$ext,$const));
+				}
+			}
+		} else {
+			$table->setHeaders(array('File','Version','Extensions','Constants'));
+			
+			if (!isset($info['extensions'][0])) {
+				$ext = '';
+			} else {
+				$ext = array_shift($info['extensions']);
+			}
+			
+			if (!isset($info['constants'][0])) {
+				$const = '';
+			} else {
+				$const = array_shift($info['constants']);
+			}
+			
+			$table->addRow(array($this->file,$info['version'],$ext,$const));
+			
+			if (sizeof($info['extensions']) >= sizeof($info['constants'])) {
+				foreach ($info['extensions'] as $i => $ext) {
+					if (isset($info['constants'][$i])) {
+						$const = $info['constants'][$i];
+					} else {
+						$const = '';
+					}
+					$table->addRow(array('','',$ext,$const));
+				}
+			} else {
+				foreach ($info['constants'] as $i => $const) {
+					if (isset($info['extensions'][$i])) {
+						$ext = $info['extensions'][$i];
+					} else {
+						$ext = '';
+					}
+					$table->addRow(array('','',$ext,$const));
+				}
+			}
+		}
+		
+		$output = $table->getTable();
+		
+		$output .= "\nDebug:\n\n";
+		
+		$table = new Console_Table();
+		
+		$table->setHeaders(array('Version','Function','Extension'));
+		
+		unset($info['version']);
+		unset($info['constants']);
+		unset($info['extensions']);
+		
+		foreach ($info as $version => $functions) {
+			foreach ($functions as $func) {
+				$table->addRow(array($version,$func['function'],$func['extension']));
+			}
+		}
+		
+		$output .= $table->getTable();
+		
+		//var_dump($info);
+		
+		return $output;
+	}
+		
 	
 	function _printUsage() {
 		echo "\n";
