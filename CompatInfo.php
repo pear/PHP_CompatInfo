@@ -16,7 +16,7 @@
 // | Authors: Davey Shafik <davey@php.net>                                |
 // +----------------------------------------------------------------------+
 //
-// $Id:
+// $Id$
 
 /**
  * Check Compatibility of chunk of PHP code
@@ -74,9 +74,9 @@ class PHP_CompatInfo {
      *                          'debug' contains a boolean
      *                              to control whether extra
      *                              ouput is shown.
-	 *                          'ignore_functions' contains an array
-	 *                              of functions to ignore when 
-	 *                              calculating the version needed.
+     *                          'ignore_functions' contains an array
+     *                              of functions to ignore when 
+     *                              calculating the version needed.
      * @access public
      * @return Array
      */
@@ -98,9 +98,9 @@ class PHP_CompatInfo {
      *                          'debug' contains a boolean
      *                              to control whether extra
      *                              ouput is shown.
-	 *                          'ignore_functions' contains an array
-	 *                              of functions to ignore when 
-	 *                              calculating the version needed.
+     *                          'ignore_functions' contains an array
+     *                              of functions to ignore when 
+     *                              calculating the version needed.
      * @access public
      * @return Array
      */
@@ -135,9 +135,9 @@ class PHP_CompatInfo {
      *                                         directories to ignore.
      *                                         Directory names are case
      *                                         insensitive.
-	 *                          'ignore_functions' contains an array
-	 *                                         of functions to ignore when 
-	 *                                         calculating the version needed.
+     *                          'ignore_functions' contains an array
+     *                                         of functions to ignore when 
+     *                                         calculating the version needed.
      * @access public
      * @return array
      */
@@ -155,15 +155,15 @@ class PHP_CompatInfo {
             $folder = substr($folder,0,-1);
         }
         if(is_dir($folder) || is_readable($folder)) {
-			$options['ignore_dirs'] = array_map("strtolower",$options['ignore_dirs']);
-			$options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
+            $options['ignore_dirs'] = array_map("strtolower",$options['ignore_dirs']);
+            $options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
             $files_raw = $this->_fileList($folder,$options);
             foreach($files_raw as $file) {
-				if(in_array(strtolower($file),$options['ignore_files'])) {
-					$ignored[] = $file;
-					continue;
-				}
-				$file_info = pathinfo($file);
+                if(in_array(strtolower($file),$options['ignore_files'])) {
+                    $ignored[] = $file;
+                    continue;
+                }
+                $file_info = pathinfo($file);
                 if (isset($file_info['extension']) && in_array($file_info['extension'],$options['file_ext'])) {
                     $tokens = $this->_tokenize($file);
                     $files[$file] = $this->_parseTokens($tokens,$options);
@@ -193,7 +193,7 @@ class PHP_CompatInfo {
             $files['constants'] = $constants;
             $files['extensions'] = $extensions;
             $files['version'] = $latest_version;
-			$files['ignored_files'] = $ignored;
+            $files['ignored_files'] = $ignored;
 
             return array_reverse($files);
         } else {
@@ -218,9 +218,9 @@ class PHP_CompatInfo {
      *                          'ignore_files' contains an array of
      *                                          files to ignore. File
      *                                          names are case sensitive.
-	 *                          'ignore_functions' contains an array
-	 *                                         of functions to ignore when 
-	 *                                         calculating the version needed.
+     *                          'ignore_functions' contains an array
+     *                                         of functions to ignore when 
+     *                                         calculating the version needed.
      * @access public
      * @return array
      */
@@ -230,7 +230,7 @@ class PHP_CompatInfo {
         $extensions = array();
         $constants = array();
         $options = array_merge(array('is_string' => false,'debug' => false),$options);
-		$options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
+        $options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
         foreach($files as $file) {
             if (!in_array(strtolower($file),$options['ignore_files'])) {
                 $tokens = $this->_tokenize($file,$options['is_string']);
@@ -240,7 +240,7 @@ class PHP_CompatInfo {
                     $files_parsed[] = $this->_parseTokens($tokens,$options);
                 }
             } else {
-            	$ignored[] = $file;
+                $ignored[] = $file;
             }
         }
 
@@ -264,7 +264,7 @@ class PHP_CompatInfo {
         $files_parsed['constants'] = $constants;
         $files_parsed['extensions'] = $extensions;
         $files_parsed['version'] = $latest_version;
-		$files_parsed['ignored_files'] = $ignored;
+        $files_parsed['ignored_files'] = $ignored;
         return array_reverse($files_parsed);
     }
 
@@ -317,7 +317,7 @@ class PHP_CompatInfo {
         }
 
         $functions = array_unique($functions);
-		$options['ignore_functions'] = array_map("strtolower",$options['ignore_functions']);
+        $options['ignore_functions'] = array_map("strtolower",$options['ignore_functions']);
         foreach($functions as $name) {
             if (isset($GLOBALS['funcs'][$name]) && (!in_array($name,$udf) && (!in_array($name,$options['ignore_functions'])))) {
                 if ($options['debug'] == true) {
