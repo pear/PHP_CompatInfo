@@ -33,433 +33,460 @@
 
 <h1 align="center">Source for file CompatInfo.php</h1>
 <p>Documentation is available at <a href="../PHP_CompatInfo/_CompatInfo_CompatInfo_php.html">CompatInfo.php</a></p>
-<code><pre><ol><li><a name="a1"></a><strong>&lt;?php</strong></li>
-<li><a name="a2"></a><font color="green">/* vim: set expandtab tabstop=4 shiftwidth=4: */</font></li>
-<li><a name="a3"></a><font color="green">// +----------------------------------------------------------------------+</font></li>
-<li><a name="a4"></a><font color="green">// | PHP version 4                                                        |</font></li>
-<li><a name="a5"></a><font color="green">// +----------------------------------------------------------------------+</font></li>
-<li><a name="a6"></a><font color="green">// | Copyright (c) 1997-2004 The PHP Group                                |</font></li>
-<li><a name="a7"></a><font color="green">// +----------------------------------------------------------------------+</font></li>
-<li><a name="a8"></a><font color="green">// | This source file is subject to version 3.0 of the PHP license,       |</font></li>
-<li><a name="a9"></a><font color="green">// | that is bundled with this package in the file LICENSE, and is        |</font></li>
-<li><a name="a10"></a><font color="green">// | available through the world-wide-web at the following url:           |</font></li>
-<li><a name="a11"></a><font color="green">// | http://www.php.net/license/3_0.txt.                                  |</font></li>
-<li><a name="a12"></a><font color="green">// | If you did not receive a copy of the PHP license and are unable to   |</font></li>
-<li><a name="a13"></a><font color="green">// | obtain it through the world-wide-web, please send a note to          |</font></li>
-<li><a name="a14"></a><font color="green">// | license@php.net so we can mail you a copy immediately.               |</font></li>
-<li><a name="a15"></a><font color="green">// +----------------------------------------------------------------------+</font></li>
-<li><a name="a16"></a><font color="green">// | Authors: Davey Shafik &lt;davey@php.net&gt;                                |</font></li>
-<li><a name="a17"></a><font color="green">// +----------------------------------------------------------------------+</font></li>
-<li><a name="a18"></a><font color="green">//</font></li>
-<li><a name="a19"></a><font color="green">// $Id:</font></li>
+<div class="php">
+<div class="listing"><pre><ol><li><a name="a1"></a><span class="src-php">&lt;?php</span></li>
+<li><a name="a2"></a><span class="src-comm">/* vim: set expandtab tabstop=4 shiftwidth=4: */</span></li>
+<li><a name="a3"></a><span class="src-comm">// +----------------------------------------------------------------------+</span></li>
+<li><a name="a4"></a><span class="src-comm">// | PHP version 4                                                        |</span></li>
+<li><a name="a5"></a><span class="src-comm">// +----------------------------------------------------------------------+</span></li>
+<li><a name="a6"></a><span class="src-comm">// | Copyright (c) 1997-2004 The PHP Group                                |</span></li>
+<li><a name="a7"></a><span class="src-comm">// +----------------------------------------------------------------------+</span></li>
+<li><a name="a8"></a><span class="src-comm">// | This source file is subject to version 3.0 of the PHP license,       |</span></li>
+<li><a name="a9"></a><span class="src-comm">// | that is bundled with this package in the file LICENSE, and is        |</span></li>
+<li><a name="a10"></a><span class="src-comm">// | available through the world-wide-web at the following url:           |</span></li>
+<li><a name="a11"></a><span class="src-comm">// | http://www.php.net/license/3_0.txt.                                  |</span></li>
+<li><a name="a12"></a><span class="src-comm">// | If you did not receive a copy of the PHP license and are unable to   |</span></li>
+<li><a name="a13"></a><span class="src-comm">// | obtain it through the world-wide-web, please send a note to          |</span></li>
+<li><a name="a14"></a><span class="src-comm">// | license@php.net so we can mail you a copy immediately.               |</span></li>
+<li><a name="a15"></a><span class="src-comm">// +----------------------------------------------------------------------+</span></li>
+<li><a name="a16"></a><span class="src-comm">// | Authors: Davey Shafik &lt;davey@php.net&gt;                                |</span></li>
+<li><a name="a17"></a><span class="src-comm">// +----------------------------------------------------------------------+</span></li>
+<li><a name="a18"></a><span class="src-comm">//</span></li>
+<li><a name="a19"></a><span class="src-comm">// $Id$</span></li>
 <li><a name="a20"></a>&nbsp;</li>
 <li><a name="a19"></a>&nbsp;</li>
 <li><a name="a20"></a>&nbsp;</li>
-<li><a name="a21"></a><font color="#009999">/**</font></li>
-<li><a name="a22"></a><font color="#009999"> * Check Compatibility of chunk of PHP code</font></li>
-<li><a name="a23"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@package</font></strong><font color="#009999"> PHP_CompatInfo</font></li>
-<li><a name="a24"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@category</font></strong><font color="#009999"> PHP</font></li>
-<li><a name="a25"></a><font color="#009999"> */</font></li>
+<li><a name="a21"></a><span class="src-doc">/**</span></li>
+<li><a name="a22"></a><span class="src-doc"> * Check Compatibility of chunk of PHP code</span></li>
+<li><a name="a23"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@package</span><span class="src-doc"> PHP_CompatInfo</span></li>
+<li><a name="a24"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@category</span><span class="src-doc"> PHP</span></li>
+<li><a name="a25"></a><span class="src-doc"> */</span></li>
 <li><a name="a26"></a>&nbsp;</li>
-<li><a name="a27"></a><font color="#009999">/**</font></li>
-<li><a name="a28"></a><font color="#009999"> * Current PHP4 Version (used for -dev version)</font></li>
-<li><a name="a29"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@global </font></strong><em>string </em><strong>$php4_version </strong></li>
-<li><a name="a30"></a><font color="#009999"> */</font></li>
-<li><a name="a31"></a><strong>$php4_version </strong>= <font color="#66cccc">'4.3.5'</font>;</li>
+<li><a name="a27"></a><span class="src-doc">/**</span></li>
+<li><a name="a28"></a><span class="src-doc"> * Current PHP4 Version (used for -dev version)</span></li>
+<li><a name="a29"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@global </span><span class="src-doc-type">string </span><span class="src-doc-var">$php4_version </span></li>
+<li><a name="a30"></a><span class="src-doc"> */</span></li>
+<li><a name="a31"></a><span class="src-var">$php4_version </span>= <span class="src-str">'4.3.5'</span><span class="src-sym">;</span></li>
 <li><a name="a32"></a>&nbsp;</li>
-<li><a name="a33"></a><font color="#009999">/**</font></li>
-<li><a name="a34"></a><font color="#009999"> * Current PHP5 Version (used for -dev version)</font></li>
-<li><a name="a35"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@global </font></strong><em>string </em><strong>$php5_version </strong></li>
-<li><a name="a36"></a><font color="#009999"> */</font></li>
-<li><a name="a37"></a><strong>$php5_version </strong>= <font color="#66cccc">'5.0.0'</font>;</li>
+<li><a name="a33"></a><span class="src-doc">/**</span></li>
+<li><a name="a34"></a><span class="src-doc"> * Current PHP5 Version (used for -dev version)</span></li>
+<li><a name="a35"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@global </span><span class="src-doc-type">string </span><span class="src-doc-var">$php5_version </span></li>
+<li><a name="a36"></a><span class="src-doc"> */</span></li>
+<li><a name="a37"></a><span class="src-var">$php5_version </span>= <span class="src-str">'5.0.0'</span><span class="src-sym">;</span></li>
 <li><a name="a38"></a>&nbsp;</li>
-<li><a name="a39"></a><font color="blue">require_once </font><font color="#66cccc">'PHP/data/func_array.php'</font>;</li>
-<li><a name="a40"></a><font color="blue">require_once </font><font color="#66cccc">'PHP/data/const_array.php'</font>;</li>
+<li><a name="a39"></a><span class="src-inc">require_once </span><span class="src-str">'PHP/data/func_array.php'</span><span class="src-sym">;</span></li>
+<li><a name="a40"></a><span class="src-inc">require_once </span><span class="src-str">'PHP/data/const_array.php'</span><span class="src-sym">;</span></li>
 <li><a name="a41"></a>&nbsp;</li>
-<li><a name="a42"></a><font color="#009999">/**</font></li>
-<li><a name="a43"></a><font color="#009999"> * Check Compatibility of chunk of PHP code</font></li>
-<li><a name="a44"></a><font color="#009999"> *</font></li>
-<li><a name="a45"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@package</font></strong><font color="#009999"> PHP_CompatInfo</font></li>
-<li><a name="a46"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@author</font></strong><font color="#009999"> Davey Shafik &lt;davey@php.net&gt;</font></li>
-<li><a name="a47"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@copyright</font></strong><font color="#009999"> Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.</font></li>
-<li><a name="a48"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@example</font></strong><font color="#009999"> docs/examples/checkConstants.php Example that shows minimum version with Constants</font></li>
-<li><a name="a49"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@example</font></strong><font color="#009999"> docs/examples/parseFile.php Example on how to parse a file</font></li>
-<li><a name="a50"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@example</font></strong><font color="#009999"> docs/examples/parseFolder.php Example on how to parse a folder</font></li>
-<li><a name="a51"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@example</font></strong><font color="#009999"> docs/examples/parseArray.php Example on using using parseArray() to parse a script</font></li>
-<li><a name="a52"></a><font color="#009999"> * </font><strong><font color = "#0099FF">@example</font></strong><font color="#009999"> docs/examples/parseString.php Example on how to parse a string</font></li>
-<li><a name="a53"></a><font color="#009999"> */</font></li>
-<li><a name="a54"></a>&nbsp;</li>
-<li><a name="a55"></a><font color="blue">class </font><a href="../PHP_CompatInfo/PHP_CompatInfo.html">PHP_CompatInfo</a> <strong>{</strong></li>
-<li><a name="a56"></a>&nbsp;</li>
-<li><a name="a57"></a>    <font color="#009999">/**</font></li>
-<li><a name="a58"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@var </font></strong><em>string </em><font color="#009999">Earliest version of PHP to use</font></li>
-<li><a name="a59"></a><font color="#009999">     */</font></li>
-<li><a name="a60"></a>&nbsp;</li>
-<li><a name="a61"></a>    <font color="blue">var </font><a href="../PHP_CompatInfo/PHP_CompatInfo.html#var$latest_version">$latest_version</a> = <font color="#66cccc">'4.0.0'</font>;</li>
-<li><a name="a62"></a>&nbsp;</li>
-<li><a name="a63"></a>    <font color="#009999">/**</font></li>
-<li><a name="a64"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@var </font></strong><em>boolean </em><font color="#009999">Toggle parseFolder recursion</font></li>
-<li><a name="a65"></a><font color="#009999">     */</font></li>
-<li><a name="a66"></a>&nbsp;</li>
-<li><a name="a67"></a>    <font color="blue">var </font><a href="../PHP_CompatInfo/PHP_CompatInfo.html#var$recurse_dir">$recurse_dir</a> = true;</li>
-<li><a name="a68"></a>&nbsp;</li>
-<li><a name="a69"></a>    <font color="#009999">/**</font></li>
-<li><a name="a70"></a><font color="#009999">     * Parse a file for its Compatibility info</font></li>
-<li><a name="a71"></a><font color="#009999">     *</font></li>
-<li><a name="a72"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>string </em><strong>$file </strong><font color="#009999">Path of File to parse</font></li>
-<li><a name="a73"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>array </em><strong>$options </strong><font color="#009999">An array of options where:</font></li>
-<li><a name="a74"></a><font color="#009999">     *                           'debug' contains a boolean</font></li>
-<li><a name="a75"></a><font color="#009999">     *                               to control whether extra</font></li>
-<li><a name="a76"></a><font color="#009999">     *                               ouput is shown.</font></li>
-<li><a name="a77"></a><font color="#009999">	 *                           'ignore_functions' contains an array</font></li>
-<li><a name="a78"></a><font color="#009999">	 *                               of functions to ignore when</font></li>
-<li><a name="a79"></a><font color="#009999">	 *                               calculating the version needed.</font></li>
-<li><a name="a80"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@access</font></strong><font color="#009999"> public</font></li>
-<li><a name="a81"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@return </font></strong><em>Array </em></li>
-<li><a name="a82"></a><font color="#009999">     */</font></li>
-<li><a name="a83"></a>&nbsp;</li>
-<li><a name="a84"></a>    <font color="blue">function </font><a href="../PHP_CompatInfo/PHP_CompatInfo.html#methodparseFile">parseFile</a><strong>(</strong><strong>$file</strong><strong>, </strong><strong>$options </strong>= null<strong>)</strong></li>
-<li><a name="a85"></a>    <strong>{</strong></li>
-<li><a name="a86"></a>        <strong>$options </strong>= <a href="http://www.php.net/array_merge">array_merge</a><strong>(</strong>array<strong>(</strong><font color="#66cccc">'debug' </font>=&gt; false<strong>)</strong><strong>,</strong><strong>$options</strong><strong>)</strong>;</li>
-<li><a name="a87"></a>        <font color="blue">if </font><strong>(</strong><strong>!</strong><strong>$tokens </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_tokenize">_tokenize</a><strong>(</strong><strong>$file</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a88"></a>            <font color="blue">return </font>false;</li>
-<li><a name="a89"></a>        <strong>}</strong></li>
-<li><a name="a90"></a>        <font color="blue">return </font><strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><strong>(</strong><strong>$tokens</strong><strong>,</strong><strong>$options</strong><strong>)</strong>;</li>
-<li><a name="a91"></a>    <strong>}</strong></li>
-<li><a name="a92"></a>&nbsp;</li>
-<li><a name="a93"></a>    <font color="#009999">/**</font></li>
-<li><a name="a94"></a><font color="#009999">     * Parse a string for its Compatibility info</font></li>
-<li><a name="a95"></a><font color="#009999">     *</font></li>
-<li><a name="a96"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>string </em><strong>$string </strong><font color="#009999">PHP Code to parses</font></li>
-<li><a name="a97"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>array </em><strong>$options </strong><font color="#009999">An array of options where:</font></li>
-<li><a name="a98"></a><font color="#009999">     *                           'debug' contains a boolean</font></li>
-<li><a name="a99"></a><font color="#009999">     *                               to control whether extra</font></li>
-<li><a name="a100"></a><font color="#009999">     *                               ouput is shown.</font></li>
-<li><a name="a101"></a><font color="#009999">	 *                           'ignore_functions' contains an array</font></li>
-<li><a name="a102"></a><font color="#009999">	 *                               of functions to ignore when</font></li>
-<li><a name="a103"></a><font color="#009999">	 *                               calculating the version needed.</font></li>
-<li><a name="a104"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@access</font></strong><font color="#009999"> public</font></li>
-<li><a name="a105"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@return </font></strong><em>Array </em></li>
-<li><a name="a106"></a><font color="#009999">     */</font></li>
-<li><a name="a107"></a>&nbsp;</li>
-<li><a name="a108"></a>    <font color="blue">function  </font><a href="../PHP_CompatInfo/PHP_CompatInfo.html#methodparseString">parseString</a><strong>(</strong><strong>$string</strong><strong>, </strong><strong>$options </strong>= null<strong>)</strong></li>
-<li><a name="a109"></a>    <strong>{</strong></li>
-<li><a name="a110"></a>        <strong>$options </strong>= <a href="http://www.php.net/array_merge">array_merge</a><strong>(</strong>array<strong>(</strong><font color="#66cccc">'debug' </font>=&gt; false<strong>)</strong><strong>,</strong><strong>$options</strong><strong>)</strong>;</li>
-<li><a name="a111"></a>        <font color="blue">if </font><strong>(</strong><strong>!</strong><strong>$tokens </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_tokenize">_tokenize</a><strong>(</strong><strong>$string</strong><strong>,</strong>true<strong>)) </strong><strong>{</strong></li>
-<li><a name="a112"></a>            <font color="blue">return </font>false;</li>
-<li><a name="a113"></a>        <strong>}</strong></li>
-<li><a name="a114"></a>        <font color="blue">return </font><strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><strong>(</strong><strong>$tokens</strong><strong>,</strong><strong>$options</strong><strong>)</strong>;</li>
-<li><a name="a115"></a>    <strong>}</strong></li>
-<li><a name="a116"></a>&nbsp;</li>
-<li><a name="a117"></a>    <font color="#009999">/**</font></li>
-<li><a name="a118"></a><font color="#009999">     * Parse a folder recursively for its Compatibility info</font></li>
-<li><a name="a119"></a><font color="#009999">     *</font></li>
-<li><a name="a120"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>string </em><strong>$folder </strong><font color="#009999">Path of folder to parse</font></li>
-<li><a name="a121"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>array </em><strong>$options </strong><font color="#009999">Array of user options where:</font></li>
-<li><a name="a122"></a><font color="#009999">     *                               'file_ext' Contains an array of file</font></li>
-<li><a name="a123"></a><font color="#009999">     *                                          extensions to parse for PHP</font></li>
-<li><a name="a124"></a><font color="#009999">     *                                          code. Default: php, php4,</font></li>
-<li><a name="a125"></a><font color="#009999">     *                                          inc, phtml</font></li>
-<li><a name="a126"></a><font color="#009999">     *                               'recurse_dir' Boolean on whether to</font></li>
-<li><a name="a127"></a><font color="#009999">     *                                          recursively find files</font></li>
-<li><a name="a128"></a><font color="#009999">     *                               'debug' contains a boolean</font></li>
-<li><a name="a129"></a><font color="#009999">     *                                          to control whether extra</font></li>
-<li><a name="a130"></a><font color="#009999">     *                                          ouput is shown.</font></li>
-<li><a name="a131"></a><font color="#009999">     *                               'ignore_files' contains an array of</font></li>
-<li><a name="a132"></a><font color="#009999">     *                                          files to ignore. File</font></li>
-<li><a name="a133"></a><font color="#009999">     *                                          names are case insensitive.</font></li>
-<li><a name="a134"></a><font color="#009999">     *                               'ignore_dirs' contains an array of</font></li>
-<li><a name="a135"></a><font color="#009999">     *                                          directories to ignore.</font></li>
-<li><a name="a136"></a><font color="#009999">     *                                          Directory names are case</font></li>
-<li><a name="a137"></a><font color="#009999">     *                                          insensitive.</font></li>
-<li><a name="a138"></a><font color="#009999">	 *                           'ignore_functions' contains an array</font></li>
-<li><a name="a139"></a><font color="#009999">	 *                                          of functions to ignore when</font></li>
-<li><a name="a140"></a><font color="#009999">	 *                                          calculating the version needed.</font></li>
-<li><a name="a141"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@access</font></strong><font color="#009999"> public</font></li>
-<li><a name="a142"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@return </font></strong><em>array </em></li>
-<li><a name="a143"></a><font color="#009999">     */</font></li>
-<li><a name="a144"></a>&nbsp;</li>
-<li><a name="a145"></a>    <font color="blue">function </font><a href="../PHP_CompatInfo/PHP_CompatInfo.html#methodparseFolder">parseFolder</a><strong>(</strong><strong>$folder</strong><strong>,</strong><strong>$options </strong>= null<strong>)</strong></li>
-<li><a name="a146"></a>    <strong>{</strong></li>
-<li><a name="a147"></a>        <strong>$files </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a148"></a>        <strong>$latest_version </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#var$latest_version">latest_version</a>;</li>
-<li><a name="a149"></a>        <strong>$extensions </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a150"></a>        <strong>$constants </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a151"></a>        <strong>$default_options </strong>= array<strong>(</strong><font color="#66cccc">'file_ext' </font>=&gt; array<strong>(</strong><font color="#66cccc">'php'</font><strong>,</strong><font color="#66cccc">'php4'</font><strong>,</strong><font color="#66cccc">'inc'</font><strong>,</strong><font color="#66cccc">'phtml'</font><strong>)</strong><strong>, </strong><font color="#66cccc">'recurse_dir' </font>=&gt; true<strong>, </strong><font color="#66cccc">'debug' </font>=&gt; false<strong>, </strong><font color="#66cccc">'ignore_file' </font>=&gt; array<strong>(</strong><strong>)</strong><strong>, </strong><font color="#66cccc">'ignore_dirs' </font>=&gt; array<strong>(</strong><strong>))</strong>;</li>
-<li><a name="a152"></a>        <strong>$options </strong>= <a href="http://www.php.net/array_merge">array_merge</a><strong>(</strong><strong>$default_options</strong><strong>,</strong><strong>$options</strong><strong>)</strong>;</li>
-<li><a name="a153"></a>&nbsp;</li>
-<li><a name="a154"></a>        <font color="blue">if</font><strong>(</strong><strong>$folder</strong><strong>{</strong><a href="http://www.php.net/strlen">strlen</a><strong>(</strong><strong>$folder</strong><strong>)</strong>-1<strong>} </strong>== <font color="#66cccc">'/' </font>|| <strong>$folder</strong><strong>{</strong><a href="http://www.php.net/strlen">strlen</a><strong>(</strong><strong>$folder</strong><strong>)</strong>-1<strong>} </strong>== <font color="#66cccc">'\\'</font><strong>) </strong><strong>{</strong></li>
-<li><a name="a155"></a>            <strong>$folder </strong>= <a href="http://www.php.net/substr">substr</a><strong>(</strong><strong>$folder</strong><strong>,</strong>0<strong>,</strong>-1<strong>)</strong>;</li>
-<li><a name="a156"></a>        <strong>}</strong></li>
-<li><a name="a157"></a>        <font color="blue">if</font><strong>(</strong><a href="http://www.php.net/is_dir">is_dir</a><strong>(</strong><strong>$folder</strong><strong>) </strong>|| <a href="http://www.php.net/is_readable">is_readable</a><strong>(</strong><strong>$folder</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a158"></a>            <strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_dirs'</font><strong>] </strong>= <a href="http://www.php.net/array_map">array_map</a><strong>(</strong><font color="#66cccc">&quot;strtolower&quot;</font><strong>,</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_dirs'</font><strong>]</strong><strong>)</strong>;</li>
-<li><a name="a159"></a>            <strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_files'</font><strong>] </strong>= <a href="http://www.php.net/array_map">array_map</a><strong>(</strong><font color="#66cccc">&quot;strtolower&quot;</font><strong>,</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_files'</font><strong>]</strong><strong>)</strong>;</li>
-<li><a name="a160"></a>            <strong>$files_raw </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_fileList">_fileList</a><strong>(</strong><strong>$folder</strong><strong>,</strong><strong>$options</strong><strong>)</strong>;</li>
-<li><a name="a161"></a>            <font color="blue">foreach</font><strong>(</strong><strong>$files_raw </strong>as <strong>$file</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a162"></a>                <font color="blue">if</font><strong>(</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><a href="http://www.php.net/strtolower">strtolower</a><strong>(</strong><strong>$file</strong><strong>)</strong><strong>,</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_files'</font><strong>]</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a163"></a>                    <strong>$ignored</strong><strong>[</strong><strong>] </strong>= <strong>$file</strong>;</li>
-<li><a name="a164"></a>                    continue;</li>
-<li><a name="a165"></a>                <strong>}</strong></li>
-<li><a name="a166"></a>                <strong>$file_info </strong>= <a href="http://www.php.net/pathinfo">pathinfo</a><strong>(</strong><strong>$file</strong><strong>)</strong>;</li>
-<li><a name="a167"></a>                <font color="blue">if </font><strong>(</strong>isset<strong>(</strong><strong>$file_info</strong><strong>[</strong><font color="#66cccc">'extension'</font><strong>]</strong><strong>) </strong>&amp;&amp; <a href="http://www.php.net/in_array">in_array</a><strong>(</strong><strong>$file_info</strong><strong>[</strong><font color="#66cccc">'extension'</font><strong>]</strong><strong>,</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'file_ext'</font><strong>]</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a168"></a>                    <strong>$tokens </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_tokenize">_tokenize</a><strong>(</strong><strong>$file</strong><strong>)</strong>;</li>
-<li><a name="a169"></a>                    <strong>$files</strong><strong>[</strong><strong>$file</strong><strong>] </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><strong>(</strong><strong>$tokens</strong><strong>,</strong><strong>$options</strong><strong>)</strong>;</li>
-<li><a name="a170"></a>                <strong>}</strong></li>
-<li><a name="a171"></a>            <strong>}</strong></li>
-<li><a name="a172"></a>            <font color="blue">foreach</font><strong>(</strong><strong>$files </strong>as <strong>$file</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a173"></a>                <strong>$cmp </strong>= <a href="http://www.php.net/version_compare">version_compare</a><strong>(</strong><strong>$latest_version</strong><strong>,</strong><strong>$file</strong><strong>[</strong><font color="#66cccc">'version'</font><strong>]</strong><strong>)</strong>;</li>
-<li><a name="a174"></a>                <font color="blue">if </font><strong>(</strong>(int)<strong>$cmp </strong>=== -1<strong>) </strong><strong>{</strong></li>
-<li><a name="a175"></a>                    <strong>$latest_version </strong>= <strong>$file</strong><strong>[</strong><font color="#66cccc">'version'</font><strong>]</strong>;</li>
-<li><a name="a176"></a>                <strong>}</strong></li>
-<li><a name="a177"></a>                <font color="blue">foreach</font><strong>(</strong><strong>$file</strong><strong>[</strong><font color="#66cccc">'extensions'</font><strong>] </strong>as <strong>$ext</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a178"></a>                    <font color="blue">if</font><strong>(</strong><strong>!</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><strong>$ext</strong><strong>,</strong><strong>$extensions</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a179"></a>                        <strong>$extensions</strong><strong>[</strong><strong>] </strong>= <strong>$ext</strong>;</li>
-<li><a name="a180"></a>                    <strong>}</strong></li>
-<li><a name="a181"></a>                <strong>}</strong></li>
-<li><a name="a182"></a>                <font color="blue">foreach </font><strong>(</strong><strong>$file</strong><strong>[</strong><font color="#66cccc">'constants'</font><strong>] </strong>as <strong>$const</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a183"></a>                    <font color="blue">if</font><strong>(</strong><strong>!</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><strong>$const</strong><strong>,</strong><strong>$constants</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a184"></a>                        <strong>$constants</strong><strong>[</strong><strong>] </strong>= <strong>$const</strong>;</li>
-<li><a name="a185"></a>                    <strong>}</strong></li>
-<li><a name="a186"></a>                <strong>}</strong></li>
-<li><a name="a187"></a>            <strong>}</strong></li>
-<li><a name="a188"></a>&nbsp;</li>
-<li><a name="a189"></a>            <font color="blue">if </font><strong>(</strong><a href="http://www.php.net/sizeof">sizeof</a><strong>(</strong><strong>$files</strong><strong>) </strong>&lt; 1 <strong>) </strong><strong>{</strong></li>
-<li><a name="a190"></a>                <font color="blue">return </font>false;</li>
-<li><a name="a191"></a>            <strong>}</strong></li>
-<li><a name="a192"></a>&nbsp;</li>
-<li><a name="a193"></a>            <strong>$files</strong><strong>[</strong><font color="#66cccc">'constants'</font><strong>] </strong>= <strong>$constants</strong>;</li>
-<li><a name="a194"></a>            <strong>$files</strong><strong>[</strong><font color="#66cccc">'extensions'</font><strong>] </strong>= <strong>$extensions</strong>;</li>
-<li><a name="a195"></a>            <strong>$files</strong><strong>[</strong><font color="#66cccc">'version'</font><strong>] </strong>= <strong>$latest_version</strong>;</li>
-<li><a name="a196"></a>            <strong>$files</strong><strong>[</strong><font color="#66cccc">'ignored_files'</font><strong>] </strong>= <strong>$ignored</strong>;</li>
-<li><a name="a197"></a>&nbsp;</li>
-<li><a name="a198"></a>            <font color="blue">return </font><a href="http://www.php.net/array_reverse">array_reverse</a><strong>(</strong><strong>$files</strong><strong>)</strong>;</li>
-<li><a name="a199"></a>        <strong>} </strong>else <strong>{</strong></li>
-<li><a name="a200"></a>            <font color="blue">return </font>false;</li>
-<li><a name="a201"></a>        <strong>}</strong></li>
-<li><a name="a202"></a>    <strong>}</strong></li>
+<li><a name="a42"></a><span class="src-doc">/**</span></li>
+<li><a name="a43"></a><span class="src-doc"> * Check Compatibility of chunk of PHP code</span></li>
+<li><a name="a44"></a><span class="src-doc"> *</span></li>
+<li><a name="a45"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@package</span><span class="src-doc"> PHP_CompatInfo</span></li>
+<li><a name="a46"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@author</span><span class="src-doc"> Davey Shafik &lt;davey@php.net&gt;</span></li>
+<li><a name="a47"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@copyright</span><span class="src-doc"> Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.</span></li>
+<li><a name="a48"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@example</span><span class="src-doc"> docs/examples/checkConstants.php Example that shows minimum version with Constants</span></li>
+<li><a name="a49"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@example</span><span class="src-doc"> docs/examples/parseFile.php Example on how to parse a file</span></li>
+<li><a name="a50"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@example</span><span class="src-doc"> docs/examples/parseDir.php Example on how to parse a directory</span></li>
+<li><a name="a51"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@example</span><span class="src-doc"> docs/examples/parseArray.php Example on using using parseArray() to parse a script</span></li>
+<li><a name="a52"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@example</span><span class="src-doc"> docs/examples/parseString.php Example on how to parse a string</span></li>
+<li><a name="a53"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@example</span><span class="src-doc"> docs/examples/Cli.php Example of using PHP_CompatInfo_Cli</span></li>
+<li><a name="a54"></a><span class="src-doc"> */</span></li>
+<li><a name="a55"></a>&nbsp;</li>
+<li><a name="a56"></a><span class="src-key">class </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html">PHP_CompatInfo</a> <span class="src-sym">{</span></li>
+<li><a name="a57"></a>&nbsp;</li>
+<li><a name="a58"></a>    <span class="src-doc">/**</span></li>
+<li><a name="a59"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@var </span><span class="src-doc-type">string </span><span class="src-doc">Earliest version of PHP to use</span></li>
+<li><a name="a60"></a><span class="src-doc">     */</span></li>
+<li><a name="a61"></a>&nbsp;</li>
+<li><a name="a62"></a>    <span class="src-key">var </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#var$latest_version">$latest_version</a> = <span class="src-str">'4.0.0'</span><span class="src-sym">;</span></li>
+<li><a name="a63"></a>&nbsp;</li>
+<li><a name="a64"></a>    <span class="src-doc">/**</span></li>
+<li><a name="a65"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@var </span><span class="src-doc-type">boolean </span><span class="src-doc">Toggle parseDir recursion</span></li>
+<li><a name="a66"></a><span class="src-doc">     */</span></li>
+<li><a name="a67"></a>&nbsp;</li>
+<li><a name="a68"></a>    <span class="src-key">var </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#var$recurse_dir">$recurse_dir</a> = <span class="src-id">true</span><span class="src-sym">;</span></li>
+<li><a name="a69"></a>&nbsp;</li>
+<li><a name="a70"></a>    <span class="src-doc">/**</span></li>
+<li><a name="a71"></a><span class="src-doc">     * Parse a file for its Compatibility info</span></li>
+<li><a name="a72"></a><span class="src-doc">     *</span></li>
+<li><a name="a73"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">string </span><span class="src-doc-var">$file </span><span class="src-doc">Path of File to parse</span></li>
+<li><a name="a74"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">array </span><span class="src-doc-var">$options </span><span class="src-doc">An array of options where:</span></li>
+<li><a name="a75"></a><span class="src-doc">     *                           'debug' contains a boolean</span></li>
+<li><a name="a76"></a><span class="src-doc">     *                               to control whether extra</span></li>
+<li><a name="a77"></a><span class="src-doc">     *                               ouput is shown.</span></li>
+<li><a name="a78"></a><span class="src-doc">     *                           'ignore_functions' contains an array</span></li>
+<li><a name="a79"></a><span class="src-doc">     *                               of functions to ignore when</span></li>
+<li><a name="a80"></a><span class="src-doc">     *                               calculating the version needed.</span></li>
+<li><a name="a81"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> public</span></li>
+<li><a name="a82"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@return </span><span class="src-doc-type">Array </span></li>
+<li><a name="a83"></a><span class="src-doc">     */</span></li>
+<li><a name="a84"></a>&nbsp;</li>
+<li><a name="a85"></a>    <span class="src-key">function </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#methodparseFile">parseFile</a><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">, </span><span class="src-var">$options </span>= <span class="src-id">null</span><span class="src-sym">)</span></li>
+<li><a name="a86"></a>    <span class="src-sym">{</span></li>
+<li><a name="a87"></a>        <span class="src-var">$options </span>= <a href="http://www.php.net/array_merge">array_merge</a><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'debug' </span>=&gt; <span class="src-id">false</span><span class="src-sym">)</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a88"></a>        <span class="src-key">if </span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-var">$tokens </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_tokenize">_tokenize</a><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a89"></a>            <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a90"></a>        <span class="src-sym">}</span></li>
+<li><a name="a91"></a>        <span class="src-key">return </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a92"></a>    <span class="src-sym">}</span></li>
+<li><a name="a93"></a>&nbsp;</li>
+<li><a name="a94"></a>    <span class="src-doc">/**</span></li>
+<li><a name="a95"></a><span class="src-doc">     * Parse a string for its Compatibility info</span></li>
+<li><a name="a96"></a><span class="src-doc">     *</span></li>
+<li><a name="a97"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">string </span><span class="src-doc-var">$string </span><span class="src-doc">PHP Code to parses</span></li>
+<li><a name="a98"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">array </span><span class="src-doc-var">$options </span><span class="src-doc">An array of options where:</span></li>
+<li><a name="a99"></a><span class="src-doc">     *                           'debug' contains a boolean</span></li>
+<li><a name="a100"></a><span class="src-doc">     *                               to control whether extra</span></li>
+<li><a name="a101"></a><span class="src-doc">     *                               ouput is shown.</span></li>
+<li><a name="a102"></a><span class="src-doc">     *                           'ignore_functions' contains an array</span></li>
+<li><a name="a103"></a><span class="src-doc">     *                               of functions to ignore when</span></li>
+<li><a name="a104"></a><span class="src-doc">     *                               calculating the version needed.</span></li>
+<li><a name="a105"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> public</span></li>
+<li><a name="a106"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@return </span><span class="src-doc-type">Array </span></li>
+<li><a name="a107"></a><span class="src-doc">     */</span></li>
+<li><a name="a108"></a>&nbsp;</li>
+<li><a name="a109"></a>    <span class="src-key">function  </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#methodparseString">parseString</a><span class="src-sym">(</span><span class="src-var">$string</span><span class="src-sym">, </span><span class="src-var">$options </span>= <span class="src-id">null</span><span class="src-sym">)</span></li>
+<li><a name="a110"></a>    <span class="src-sym">{</span></li>
+<li><a name="a111"></a>        <span class="src-var">$options </span>= <a href="http://www.php.net/array_merge">array_merge</a><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'debug' </span>=&gt; <span class="src-id">false</span><span class="src-sym">)</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a112"></a>        <span class="src-key">if </span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-var">$tokens </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_tokenize">_tokenize</a><span class="src-sym">(</span><span class="src-var">$string</span><span class="src-sym">,</span><span class="src-id">true</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a113"></a>            <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a114"></a>        <span class="src-sym">}</span></li>
+<li><a name="a115"></a>        <span class="src-key">return </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a116"></a>    <span class="src-sym">}</span></li>
+<li><a name="a117"></a>&nbsp;</li>
+<li><a name="a118"></a>    <span class="src-doc">/**</span></li>
+<li><a name="a119"></a><span class="src-doc">     * Parse a directory recursively for its Compatibility info</span></li>
+<li><a name="a120"></a><span class="src-doc">     *</span></li>
+<li><a name="a121"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@see</span><span class="src-doc"> PHP_CompatInfo::_fileList()</span></li>
+<li><a name="a122"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">string </span><span class="src-doc-var">$dir </span><span class="src-doc">Path of folder to parse</span></li>
+<li><a name="a123"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">array </span><span class="src-doc-var">$options </span><span class="src-doc">Array of user options where:</span></li>
+<li><a name="a124"></a><span class="src-doc">     *                               'file_ext' Contains an array of file</span></li>
+<li><a name="a125"></a><span class="src-doc">     *                                          extensions to parse for PHP</span></li>
+<li><a name="a126"></a><span class="src-doc">     *                                          code. Default: php, php4,</span></li>
+<li><a name="a127"></a><span class="src-doc">     *                                          inc, phtml</span></li>
+<li><a name="a128"></a><span class="src-doc">     *                               'recurse_dir' Boolean on whether to</span></li>
+<li><a name="a129"></a><span class="src-doc">     *                                          recursively find files</span></li>
+<li><a name="a130"></a><span class="src-doc">     *                               'debug' contains a boolean</span></li>
+<li><a name="a131"></a><span class="src-doc">     *                                          to control whether extra</span></li>
+<li><a name="a132"></a><span class="src-doc">     *                                          ouput is shown.</span></li>
+<li><a name="a133"></a><span class="src-doc">     *                               'ignore_files' contains an array of</span></li>
+<li><a name="a134"></a><span class="src-doc">     *                                          files to ignore. File</span></li>
+<li><a name="a135"></a><span class="src-doc">     *                                          names are case insensitive.</span></li>
+<li><a name="a136"></a><span class="src-doc">     *                               'ignore_dirs' contains an array of</span></li>
+<li><a name="a137"></a><span class="src-doc">     *                                          directories to ignore.</span></li>
+<li><a name="a138"></a><span class="src-doc">     *                                          Directory names are case</span></li>
+<li><a name="a139"></a><span class="src-doc">     *                                          insensitive.</span></li>
+<li><a name="a140"></a><span class="src-doc">     *                           'ignore_functions' contains an array</span></li>
+<li><a name="a141"></a><span class="src-doc">     *                                          of functions to ignore when</span></li>
+<li><a name="a142"></a><span class="src-doc">     *                                          calculating the version needed.</span></li>
+<li><a name="a143"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> public</span></li>
+<li><a name="a144"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@return </span><span class="src-doc-type">array </span></li>
+<li><a name="a145"></a><span class="src-doc">     */</span></li>
+<li><a name="a146"></a>&nbsp;</li>
+<li><a name="a147"></a>    <span class="src-key">function </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#methodparseDir">parseDir</a><span class="src-sym">(</span><span class="src-var">$dir</span><span class="src-sym">,</span><span class="src-var">$options </span>= <span class="src-id">null</span><span class="src-sym">)</span></li>
+<li><a name="a148"></a>    <span class="src-sym">{</span></li>
+<li><a name="a149"></a>        <span class="src-var">$files </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a150"></a>        <span class="src-var">$latest_version </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#var$latest_version">latest_version</a><span class="src-sym">;</span></li>
+<li><a name="a151"></a>        <span class="src-var">$extensions </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a152"></a>        <span class="src-var">$constants </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a153"></a>        <span class="src-var">$ignored </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a154"></a>        <span class="src-var">$default_options </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'file_ext' </span>=&gt; <span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'php'</span><span class="src-sym">,</span><span class="src-str">'php4'</span><span class="src-sym">,</span><span class="src-str">'inc'</span><span class="src-sym">,</span><span class="src-str">'phtml'</span><span class="src-sym">)</span><span class="src-sym">, </span><span class="src-str">'recurse_dir' </span>=&gt; <span class="src-id">true</span><span class="src-sym">, </span><span class="src-str">'debug' </span>=&gt; <span class="src-id">false</span><span class="src-sym">, </span><span class="src-str">'ignore_file' </span>=&gt; <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">, </span><span class="src-str">'ignore_dirs' </span>=&gt; <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">))</span><span class="src-sym">;</span></li>
+<li><a name="a155"></a>        <span class="src-var">$options </span>= <a href="http://www.php.net/array_merge">array_merge</a><span class="src-sym">(</span><span class="src-var">$default_options</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a156"></a>&nbsp;</li>
+<li><a name="a157"></a>        <span class="src-key">if</span><span class="src-sym">(</span><span class="src-var">$dir</span><span class="src-sym">{</span><a href="http://www.php.net/strlen">strlen</a><span class="src-sym">(</span><span class="src-var">$dir</span><span class="src-sym">)</span>-<span class="src-num">1</span><span class="src-sym">} </span>== <span class="src-str">'/' </span>|| <span class="src-var">$dir</span><span class="src-sym">{</span><a href="http://www.php.net/strlen">strlen</a><span class="src-sym">(</span><span class="src-var">$dir</span><span class="src-sym">)</span>-<span class="src-num">1</span><span class="src-sym">} </span>== <span class="src-str">'\\'</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a158"></a>            <span class="src-var">$dir </span>= <a href="http://www.php.net/substr">substr</a><span class="src-sym">(</span><span class="src-var">$dir</span><span class="src-sym">,</span><span class="src-num">0</span><span class="src-sym">,</span>-<span class="src-num">1</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a159"></a>        <span class="src-sym">}</span></li>
+<li><a name="a160"></a>        <span class="src-key">if</span><span class="src-sym">(</span><a href="http://www.php.net/is_dir">is_dir</a><span class="src-sym">(</span><span class="src-var">$dir</span><span class="src-sym">) </span>&amp;&amp; <a href="http://www.php.net/is_readable">is_readable</a><span class="src-sym">(</span><span class="src-var">$dir</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a161"></a>            <span class="src-key">if </span><span class="src-sym">(</span>isset<span class="src-sym">(</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignores_dirs'</span><span class="src-sym">]</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a162"></a>                <span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_dirs'</span><span class="src-sym">] </span>= <a href="http://www.php.net/array_map">array_map</a><span class="src-sym">(</span><span class="src-str">&quot;strtolower&quot;</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_dirs'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a163"></a>            <span class="src-sym">} </span><span class="src-key">else </span><span class="src-sym">{</span></li>
+<li><a name="a164"></a>                <span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_dirs'</span><span class="src-sym">] </span>== <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a165"></a>            <span class="src-sym">}</span></li>
+<li><a name="a166"></a>            <span class="src-key">if </span><span class="src-sym">(</span>isset<span class="src-sym">(</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_files'</span><span class="src-sym">]</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a167"></a>                <span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_files'</span><span class="src-sym">] </span>= <a href="http://www.php.net/array_map">array_map</a><span class="src-sym">(</span><span class="src-str">&quot;strtolower&quot;</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_files'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a168"></a>            <span class="src-sym">} </span><span class="src-key">else </span><span class="src-sym">{</span></li>
+<li><a name="a169"></a>                <span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_files'</span><span class="src-sym">] </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a170"></a>            <span class="src-sym">}</span></li>
+<li><a name="a171"></a>            <span class="src-var">$files_raw </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_fileList">_fileList</a><span class="src-sym">(</span><span class="src-var">$dir</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a172"></a>            <span class="src-key">foreach</span><span class="src-sym">(</span><span class="src-var">$files_raw </span><span class="src-key">as </span><span class="src-var">$file</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a173"></a>                <span class="src-key">if</span><span class="src-sym">(</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><a href="http://www.php.net/strtolower">strtolower</a><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">)</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_files'</span><span class="src-sym">]</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a174"></a>                    <span class="src-var">$ignored</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$file</span><span class="src-sym">;</span></li>
+<li><a name="a175"></a>                    <span class="src-key">continue</span><span class="src-sym">;</span></li>
+<li><a name="a176"></a>                <span class="src-sym">}</span></li>
+<li><a name="a177"></a>                <span class="src-var">$file_info </span>= <a href="http://www.php.net/pathinfo">pathinfo</a><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a178"></a>                <span class="src-key">if </span><span class="src-sym">(</span>isset<span class="src-sym">(</span><span class="src-var">$file_info</span><span class="src-sym">[</span><span class="src-str">'extension'</span><span class="src-sym">]</span><span class="src-sym">) </span>&amp;&amp; <a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><span class="src-var">$file_info</span><span class="src-sym">[</span><span class="src-str">'extension'</span><span class="src-sym">]</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'file_ext'</span><span class="src-sym">]</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a179"></a>                    <span class="src-var">$tokens </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_tokenize">_tokenize</a><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a180"></a>                    <span class="src-var">$files</span><span class="src-sym">[</span><span class="src-var">$file</span><span class="src-sym">] </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a181"></a>                <span class="src-sym">}</span></li>
+<li><a name="a182"></a>            <span class="src-sym">}</span></li>
+<li><a name="a183"></a>            <span class="src-key">foreach</span><span class="src-sym">(</span><span class="src-var">$files </span><span class="src-key">as </span><span class="src-var">$file</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a184"></a>                <span class="src-var">$cmp </span>= <a href="http://www.php.net/version_compare">version_compare</a><span class="src-sym">(</span><span class="src-var">$latest_version</span><span class="src-sym">,</span><span class="src-var">$file</span><span class="src-sym">[</span><span class="src-str">'version'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a185"></a>                <span class="src-key">if </span><span class="src-sym">(</span>(int)<span class="src-var">$cmp </span>=== -<span class="src-num">1</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a186"></a>                    <span class="src-var">$latest_version </span>= <span class="src-var">$file</span><span class="src-sym">[</span><span class="src-str">'version'</span><span class="src-sym">]</span><span class="src-sym">;</span></li>
+<li><a name="a187"></a>                <span class="src-sym">}</span></li>
+<li><a name="a188"></a>                <span class="src-key">foreach</span><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">[</span><span class="src-str">'extensions'</span><span class="src-sym">] </span><span class="src-key">as </span><span class="src-var">$ext</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a189"></a>                    <span class="src-key">if</span><span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><span class="src-var">$ext</span><span class="src-sym">,</span><span class="src-var">$extensions</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a190"></a>                        <span class="src-var">$extensions</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$ext</span><span class="src-sym">;</span></li>
+<li><a name="a191"></a>                    <span class="src-sym">}</span></li>
+<li><a name="a192"></a>                <span class="src-sym">}</span></li>
+<li><a name="a193"></a>                <span class="src-key">foreach </span><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">[</span><span class="src-str">'constants'</span><span class="src-sym">] </span><span class="src-key">as </span><span class="src-var">$const</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a194"></a>                    <span class="src-key">if</span><span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><span class="src-var">$const</span><span class="src-sym">,</span><span class="src-var">$constants</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a195"></a>                        <span class="src-var">$constants</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$const</span><span class="src-sym">;</span></li>
+<li><a name="a196"></a>                    <span class="src-sym">}</span></li>
+<li><a name="a197"></a>                <span class="src-sym">}</span></li>
+<li><a name="a198"></a>            <span class="src-sym">}</span></li>
+<li><a name="a199"></a>&nbsp;</li>
+<li><a name="a200"></a>            <span class="src-key">if </span><span class="src-sym">(</span><a href="http://www.php.net/sizeof">sizeof</a><span class="src-sym">(</span><span class="src-var">$files</span><span class="src-sym">) </span>&lt; <span class="src-num">1</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a201"></a>                <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a202"></a>            <span class="src-sym">}</span></li>
 <li><a name="a203"></a>&nbsp;</li>
-<li><a name="a204"></a>    <font color="#009999">/**</font></li>
-<li><a name="a205"></a><font color="#009999">     * Parse an Array of Files</font></li>
-<li><a name="a206"></a><font color="#009999">     *</font></li>
-<li><a name="a207"></a><font color="#009999">     * You can parse an array of Files or Strings, to parse</font></li>
-<li><a name="a208"></a><font color="#009999">     * strings, $options['is_string'] must be set to true</font></li>
-<li><a name="a209"></a><font color="#009999">     *</font></li>
-<li><a name="a210"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>array </em><strong>$files </strong><font color="#009999">Array of file names or code strings</font></li>
-<li><a name="a211"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>array </em><strong>$options </strong><font color="#009999">An array of options where:</font></li>
-<li><a name="a212"></a><font color="#009999">     *                           'debug' contains a boolean</font></li>
-<li><a name="a213"></a><font color="#009999">     *                               to control whether extra</font></li>
-<li><a name="a214"></a><font color="#009999">     *                               ouput is shown.</font></li>
-<li><a name="a215"></a><font color="#009999">     *                           'is_string' contains a boolean</font></li>
-<li><a name="a216"></a><font color="#009999">     *                               which says if the array values</font></li>
-<li><a name="a217"></a><font color="#009999">     *                               are strings or file names.</font></li>
-<li><a name="a218"></a><font color="#009999">     *                           'ignore_files' contains an array of</font></li>
-<li><a name="a219"></a><font color="#009999">     *                                           files to ignore. File</font></li>
-<li><a name="a220"></a><font color="#009999">     *                                           names are case sensitive.</font></li>
-<li><a name="a221"></a><font color="#009999">	 *                           'ignore_functions' contains an array</font></li>
-<li><a name="a222"></a><font color="#009999">	 *                                          of functions to ignore when</font></li>
-<li><a name="a223"></a><font color="#009999">	 *                                          calculating the version needed.</font></li>
-<li><a name="a224"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@access</font></strong><font color="#009999"> public</font></li>
-<li><a name="a225"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@return </font></strong><em>array </em></li>
-<li><a name="a226"></a><font color="#009999">     */</font></li>
-<li><a name="a227"></a>&nbsp;</li>
-<li><a name="a228"></a>    <font color="blue">function </font><a href="../PHP_CompatInfo/PHP_CompatInfo.html#methodparseArray">parseArray</a><strong>(</strong><strong>$files</strong><strong>,</strong><strong>$options </strong>= null<strong>) </strong><strong>{</strong></li>
-<li><a name="a229"></a>        <strong>$latest_version </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#var$latest_version">latest_version</a>;</li>
-<li><a name="a230"></a>        <strong>$extensions </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a231"></a>        <strong>$constants </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a232"></a>        <strong>$options </strong>= <a href="http://www.php.net/array_merge">array_merge</a><strong>(</strong>array<strong>(</strong><font color="#66cccc">'is_string' </font>=&gt; false<strong>,</strong><font color="#66cccc">'debug' </font>=&gt; false<strong>)</strong><strong>,</strong><strong>$options</strong><strong>)</strong>;</li>
-<li><a name="a233"></a>        <strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_files'</font><strong>] </strong>= <a href="http://www.php.net/array_map">array_map</a><strong>(</strong><font color="#66cccc">&quot;strtolower&quot;</font><strong>,</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_files'</font><strong>]</strong><strong>)</strong>;</li>
-<li><a name="a234"></a>        <font color="blue">foreach</font><strong>(</strong><strong>$files </strong>as <strong>$file</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a235"></a>            <font color="blue">if </font><strong>(</strong><strong>!</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><a href="http://www.php.net/strtolower">strtolower</a><strong>(</strong><strong>$file</strong><strong>)</strong><strong>,</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_files'</font><strong>]</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a236"></a>                <strong>$tokens </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_tokenize">_tokenize</a><strong>(</strong><strong>$file</strong><strong>,</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'is_string'</font><strong>]</strong><strong>)</strong>;</li>
-<li><a name="a237"></a>                <font color="blue">if </font><strong>(</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'is_string'</font><strong>] </strong>== false<strong>) </strong><strong>{</strong></li>
-<li><a name="a238"></a>                    <strong>$files_parsed</strong><strong>[</strong><strong>$file</strong><strong>] </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><strong>(</strong><strong>$tokens</strong><strong>,</strong><strong>$options</strong><strong>)</strong>;</li>
-<li><a name="a239"></a>                <strong>} </strong>else <strong>{</strong></li>
-<li><a name="a240"></a>                    <strong>$files_parsed</strong><strong>[</strong><strong>] </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><strong>(</strong><strong>$tokens</strong><strong>,</strong><strong>$options</strong><strong>)</strong>;</li>
-<li><a name="a241"></a>                <strong>}</strong></li>
-<li><a name="a242"></a>            <strong>} </strong>else <strong>{</strong></li>
-<li><a name="a243"></a>                <strong>$ignored</strong><strong>[</strong><strong>] </strong>= <strong>$file</strong>;</li>
-<li><a name="a244"></a>            <strong>}</strong></li>
-<li><a name="a245"></a>        <strong>}</strong></li>
-<li><a name="a246"></a>&nbsp;</li>
-<li><a name="a247"></a>        <font color="blue">foreach</font><strong>(</strong><strong>$files_parsed </strong>as <strong>$file</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a248"></a>            <strong>$cmp </strong>= <a href="http://www.php.net/version_compare">version_compare</a><strong>(</strong><strong>$latest_version</strong><strong>,</strong><strong>$file</strong><strong>[</strong><font color="#66cccc">'version'</font><strong>]</strong><strong>)</strong>;</li>
-<li><a name="a249"></a>            <font color="blue">if </font><strong>(</strong>(int)<strong>$cmp </strong>=== -1<strong>) </strong><strong>{</strong></li>
-<li><a name="a250"></a>                <strong>$latest_version </strong>= <strong>$file</strong><strong>[</strong><font color="#66cccc">'version'</font><strong>]</strong>;</li>
-<li><a name="a251"></a>            <strong>}</strong></li>
-<li><a name="a252"></a>            <font color="blue">foreach</font><strong>(</strong><strong>$file</strong><strong>[</strong><font color="#66cccc">'extensions'</font><strong>] </strong>as <strong>$ext</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a253"></a>                <font color="blue">if</font><strong>(</strong><strong>!</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><strong>$ext</strong><strong>,</strong><strong>$extensions</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a254"></a>                    <strong>$extensions</strong><strong>[</strong><strong>] </strong>= <strong>$ext</strong>;</li>
-<li><a name="a255"></a>                <strong>}</strong></li>
-<li><a name="a256"></a>            <strong>}</strong></li>
-<li><a name="a257"></a>            <font color="blue">foreach</font><strong>(</strong><strong>$file</strong><strong>[</strong><font color="#66cccc">'constants'</font><strong>] </strong>as <strong>$const</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a258"></a>                <font color="blue">if</font><strong>(</strong><strong>!</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><strong>$const</strong><strong>,</strong><strong>$constants</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a259"></a>                    <strong>$constants</strong><strong>[</strong><strong>] </strong>= <strong>$const</strong>;</li>
-<li><a name="a260"></a>                <strong>}</strong></li>
-<li><a name="a261"></a>            <strong>}</strong></li>
-<li><a name="a262"></a>        <strong>}</strong></li>
-<li><a name="a263"></a>&nbsp;</li>
-<li><a name="a264"></a>        <strong>$files_parsed</strong><strong>[</strong><font color="#66cccc">'constants'</font><strong>] </strong>= <strong>$constants</strong>;</li>
-<li><a name="a265"></a>        <strong>$files_parsed</strong><strong>[</strong><font color="#66cccc">'extensions'</font><strong>] </strong>= <strong>$extensions</strong>;</li>
-<li><a name="a266"></a>        <strong>$files_parsed</strong><strong>[</strong><font color="#66cccc">'version'</font><strong>] </strong>= <strong>$latest_version</strong>;</li>
-<li><a name="a267"></a>        <strong>$files_parsed</strong><strong>[</strong><font color="#66cccc">'ignored_files'</font><strong>] </strong>= <strong>$ignored</strong>;</li>
-<li><a name="a268"></a>        <font color="blue">return </font><a href="http://www.php.net/array_reverse">array_reverse</a><strong>(</strong><strong>$files_parsed</strong><strong>)</strong>;</li>
-<li><a name="a269"></a>    <strong>}</strong></li>
-<li><a name="a270"></a>&nbsp;</li>
-<li><a name="a271"></a>    <font color="#009999">/**</font></li>
-<li><a name="a272"></a><font color="#009999">     * Parse the given Tokens</font></li>
-<li><a name="a273"></a><font color="#009999">     *</font></li>
-<li><a name="a274"></a><font color="#009999">     * The tokens are those returned by</font></li>
-<li><a name="a275"></a><font color="#009999">     * token_get_all() which is nicely</font></li>
-<li><a name="a276"></a><font color="#009999">     * wrapped in PHP_CompatInfo::_tokenize</font></li>
-<li><a name="a277"></a><font color="#009999">     *</font></li>
-<li><a name="a278"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>array </em><strong>$tokens </strong><font color="#009999">Array of PHP Tokens</font></li>
-<li><a name="a279"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>boolean </em><strong>$debug </strong><font color="#009999">Show Extra Output</font></li>
-<li><a name="a280"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@access</font></strong><font color="#009999"> private</font></li>
-<li><a name="a281"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@return </font></strong><em>array </em></li>
-<li><a name="a282"></a><font color="#009999">     */</font></li>
-<li><a name="a283"></a>&nbsp;</li>
-<li><a name="a284"></a>    <font color="blue">function </font><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><strong>(</strong><strong>$tokens</strong><strong>, </strong><strong>$options</strong><strong>)</strong></li>
-<li><a name="a285"></a>    <strong>{</strong></li>
-<li><a name="a286"></a>        <strong>$functions </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a287"></a>        <strong>$functions_version </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a288"></a>        <strong>$latest_version </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#var$latest_version">latest_version</a>;</li>
-<li><a name="a289"></a>        <strong>$extensions </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a290"></a>        <strong>$constants </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a291"></a>        <strong>$constant_names </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a292"></a>        <strong>$udf </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a293"></a>        <strong>$token_count </strong>= <a href="http://www.php.net/sizeof">sizeof</a><strong>(</strong><strong>$tokens</strong><strong>)</strong>;</li>
-<li><a name="a294"></a>        <strong>$i </strong>= 0;</li>
-<li><a name="a295"></a>        while <strong>(</strong><strong>$i </strong>&lt; <strong>$token_count</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a296"></a>            <strong>$found_func </strong>= true;</li>
-<li><a name="a297"></a>            <font color="blue">if </font><strong>(</strong><strong>$tokens</strong><strong>[</strong><strong>$i</strong><strong>]</strong><strong>[</strong>0<strong>] </strong>== T_FUNCTION<strong>) </strong><strong>{</strong></li>
-<li><a name="a298"></a>                <strong>$t_function </strong>= true;</li>
-<li><a name="a299"></a>                <strong>$found_func </strong>= false;</li>
-<li><a name="a300"></a>            <strong>}</strong></li>
-<li><a name="a301"></a>            while <strong>(</strong><strong>$found_func </strong>== false<strong>) </strong><strong>{</strong></li>
-<li><a name="a302"></a>                <strong>$i </strong>+= 1;</li>
-<li><a name="a303"></a>                <font color="blue">if </font><strong>(</strong><strong>$tokens</strong><strong>[</strong><strong>$i</strong><strong>]</strong><strong>[</strong>0<strong>] </strong>== T_STRING<strong>) </strong><strong>{</strong></li>
-<li><a name="a304"></a>                    <strong>$found_func </strong>= true;</li>
-<li><a name="a305"></a>                    <strong>$udf</strong><strong>[</strong><strong>] </strong>= <strong>$tokens</strong><strong>[</strong><strong>$i</strong><strong>]</strong><strong>[</strong>1<strong>]</strong>;</li>
-<li><a name="a306"></a>                <strong>}</strong></li>
-<li><a name="a307"></a>            <strong>}</strong></li>
-<li><a name="a308"></a>            <font color="blue">if </font><strong>(</strong><strong>$tokens</strong><strong>[</strong><strong>$i</strong><strong>]</strong><strong>[</strong>0<strong>] </strong>== T_STRING<strong>) </strong><strong>{</strong></li>
-<li><a name="a309"></a>                <font color="blue">if </font><strong>(</strong>isset<strong>(</strong><strong>$tokens</strong><strong>[</strong><strong>$i </strong>+ 1<strong>]</strong><strong>) </strong>&amp;&amp; <strong>(</strong><strong>$tokens</strong><strong>[</strong><strong>$i </strong>+ 1<strong>]</strong><strong>[</strong>0<strong>] </strong>== <font color="#66cccc">'('</font><strong>)) </strong><strong>{</strong></li>
-<li><a name="a310"></a>                    <strong>$functions</strong><strong>[</strong><strong>] </strong>= <strong>$tokens</strong><strong>[</strong><strong>$i</strong><strong>]</strong><strong>[</strong>1<strong>]</strong>;</li>
-<li><a name="a311"></a>                <strong>}</strong></li>
-<li><a name="a312"></a>            <strong>}</strong></li>
-<li><a name="a313"></a>            <font color="blue">if </font><strong>(</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><strong>$tokens</strong><strong>[</strong><strong>$i</strong><strong>]</strong><strong>[</strong>0<strong>]</strong><strong>,</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'const'</font><strong>]</strong><strong>[</strong><font color="#66cccc">'tokens'</font><strong>]</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a314"></a>                <strong>$constants</strong><strong>[</strong><strong>] </strong>= <strong>$tokens</strong><strong>[</strong><strong>$i</strong><strong>]</strong><strong>[</strong>0<strong>]</strong>;</li>
-<li><a name="a315"></a>            <strong>}</strong></li>
-<li><a name="a316"></a>            <strong>$i </strong>+= 1;</li>
-<li><a name="a317"></a>        <strong>}</strong></li>
-<li><a name="a318"></a>&nbsp;</li>
-<li><a name="a319"></a>        <strong>$functions </strong>= <a href="http://www.php.net/array_unique">array_unique</a><strong>(</strong><strong>$functions</strong><strong>)</strong>;</li>
-<li><a name="a320"></a>        <strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_functions'</font><strong>] </strong>= <a href="http://www.php.net/array_map">array_map</a><strong>(</strong><font color="#66cccc">&quot;strtolower&quot;</font><strong>,</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_functions'</font><strong>]</strong><strong>)</strong>;</li>
-<li><a name="a321"></a>        <font color="blue">foreach</font><strong>(</strong><strong>$functions </strong>as <strong>$name</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a322"></a>            <font color="blue">if </font><strong>(</strong>isset<strong>(</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'funcs'</font><strong>]</strong><strong>[</strong><strong>$name</strong><strong>]</strong><strong>) </strong>&amp;&amp; <strong>(</strong><strong>!</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><strong>$name</strong><strong>,</strong><strong>$udf</strong><strong>) </strong>&amp;&amp; <strong>(</strong><strong>!</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><strong>$name</strong><strong>,</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_functions'</font><strong>]</strong><strong>)))) </strong><strong>{</strong></li>
-<li><a name="a323"></a>                <font color="blue">if </font><strong>(</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'debug'</font><strong>] </strong>== true<strong>) </strong><strong>{</strong></li>
-<li><a name="a324"></a>                    <strong>$functions_version</strong><strong>[</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'funcs'</font><strong>]</strong><strong>[</strong><strong>$name</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'version_init'</font><strong>]]</strong><strong>[</strong><strong>] </strong>= array<strong>(</strong><font color="#66cccc">'function' </font>=&gt; <strong>$name</strong><strong>, </strong><font color="#66cccc">'extension' </font>=&gt; <strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'funcs'</font><strong>]</strong><strong>[</strong><strong>$name</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'extension'</font><strong>]</strong><strong>)</strong>;</li>
-<li><a name="a325"></a>                <strong>}</strong></li>
-<li><a name="a326"></a>                <strong>$cmp </strong>= <a href="http://www.php.net/version_compare">version_compare</a><strong>(</strong><strong>$latest_version</strong><strong>,</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'funcs'</font><strong>]</strong><strong>[</strong><strong>$name</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'version_init'</font><strong>]</strong><strong>)</strong>;</li>
-<li><a name="a327"></a>                <font color="blue">if </font><strong>(</strong>(int)<strong>$cmp </strong>=== -1<strong>) </strong><strong>{</strong></li>
-<li><a name="a328"></a>                    <strong>$latest_version </strong>= <strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'funcs'</font><strong>]</strong><strong>[</strong><strong>$name</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'version_init'</font><strong>]</strong>;</li>
-<li><a name="a329"></a>                <strong>}</strong></li>
-<li><a name="a330"></a>                <font color="blue">if </font><strong>((</strong><strong>!</strong>empty<strong>(</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'funcs'</font><strong>]</strong><strong>[</strong><strong>$name</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'extension'</font><strong>]</strong><strong>)) </strong>&amp;&amp; <strong>(</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'funcs'</font><strong>]</strong><strong>[</strong><strong>$name</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'extension'</font><strong>] </strong>!= <font color="#66cccc">'ext_standard'</font><strong>) </strong>&amp;&amp; <strong>(</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'funcs'</font><strong>]</strong><strong>[</strong><strong>$name</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'extension'</font><strong>] </strong>!= <font color="#66cccc">'zend'</font><strong>))  </strong><strong>{</strong></li>
-<li><a name="a331"></a>                    <font color="blue">if</font><strong>(</strong><strong>!</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><a href="http://www.php.net/substr">substr</a><strong>(</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'funcs'</font><strong>]</strong><strong>[</strong><strong>$name</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'extension'</font><strong>]</strong><strong>,</strong>4<strong>)</strong><strong>,</strong><strong>$extensions</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a332"></a>                        <strong>$extensions</strong><strong>[</strong><strong>] </strong>= <a href="http://www.php.net/substr">substr</a><strong>(</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'funcs'</font><strong>]</strong><strong>[</strong><strong>$name</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'extension'</font><strong>]</strong><strong>,</strong>4<strong>)</strong>;</li>
-<li><a name="a333"></a>                    <strong>}</strong></li>
-<li><a name="a334"></a>                <strong>}</strong></li>
-<li><a name="a335"></a>            <strong>}</strong></li>
-<li><a name="a336"></a>        <strong>}</strong></li>
-<li><a name="a337"></a>&nbsp;</li>
-<li><a name="a338"></a>        <strong>$constants </strong>= <a href="http://www.php.net/array_unique">array_unique</a><strong>(</strong><strong>$constants</strong><strong>)</strong>;</li>
-<li><a name="a339"></a>        <font color="blue">foreach</font><strong>(</strong><strong>$constants </strong>as <strong>$constant</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a340"></a>            <strong>$cmp </strong>= <a href="http://www.php.net/version_compare">version_compare</a><strong>(</strong><strong>$latest_version</strong><strong>,</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'const'</font><strong>]</strong><strong>[</strong><strong>$constant</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'version_init'</font><strong>]</strong><strong>)</strong>;</li>
-<li><a name="a341"></a>            <font color="blue">if </font><strong>(</strong>(int)<strong>$cmp </strong>=== -1<strong>) </strong><strong>{</strong></li>
-<li><a name="a342"></a>                <strong>$latest_version </strong>= <strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'const'</font><strong>]</strong><strong>[</strong><strong>$constant</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'version_init'</font><strong>]</strong>;</li>
-<li><a name="a343"></a>            <strong>}</strong></li>
-<li><a name="a344"></a>            <font color="blue">if</font><strong>(</strong><strong>!</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'const'</font><strong>]</strong><strong>[</strong><strong>$constant</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'name'</font><strong>]</strong><strong>,</strong><strong>$constant_names</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a345"></a>                <strong>$constant_names</strong><strong>[</strong><strong>] </strong>= <strong>$GLOBALS</strong><strong>[</strong><font color="#66cccc">'const'</font><strong>]</strong><strong>[</strong><strong>$constant</strong><strong>]</strong><strong>[</strong><font color="#66cccc">'name'</font><strong>]</strong>;</li>
-<li><a name="a346"></a>            <strong>}</strong></li>
-<li><a name="a347"></a>        <strong>}</strong></li>
-<li><a name="a348"></a>&nbsp;</li>
-<li><a name="a349"></a>        <a href="http://www.php.net/ksort">ksort</a><strong>(</strong><strong>$functions_version </strong><strong>)</strong>;</li>
-<li><a name="a350"></a>&nbsp;</li>
-<li><a name="a351"></a>        <strong>$functions_version</strong><strong>[</strong><font color="#66cccc">'constants'</font><strong>] </strong>= <strong>$constant_names</strong>;</li>
-<li><a name="a352"></a>        <strong>$functions_version</strong><strong>[</strong><font color="#66cccc">'extensions'</font><strong>] </strong>= <strong>$extensions</strong>;</li>
-<li><a name="a353"></a>        <strong>$functions_version</strong><strong>[</strong><font color="#66cccc">'version'</font><strong>] </strong>= <strong>$latest_version</strong>;</li>
-<li><a name="a354"></a>        <strong>$functions_version </strong>= <a href="http://www.php.net/array_reverse">array_reverse</a><strong>(</strong><strong>$functions_version</strong><strong>)</strong>;</li>
-<li><a name="a355"></a>        <font color="blue">return </font><strong>$functions_version</strong>;</li>
-<li><a name="a356"></a>    <strong>}</strong></li>
-<li><a name="a357"></a>&nbsp;</li>
-<li><a name="a358"></a>    <font color="#009999">/**</font></li>
-<li><a name="a359"></a><font color="#009999">     * Token a file or string</font></li>
-<li><a name="a360"></a><font color="#009999">     *</font></li>
-<li><a name="a361"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>string </em><strong>$input </strong><font color="#009999">Filename or PHP code</font></li>
-<li><a name="a362"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>boolean </em><strong>$is_string </strong><font color="#009999">Whether or note the input is a string</font></li>
-<li><a name="a363"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@access</font></strong><font color="#009999"> private</font></li>
-<li><a name="a364"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@return </font></strong><em>array </em></li>
-<li><a name="a365"></a><font color="#009999">     */</font></li>
-<li><a name="a366"></a>&nbsp;</li>
-<li><a name="a367"></a>    <font color="blue">function </font><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_tokenize">_tokenize</a><strong>(</strong><strong>$input</strong><strong>,</strong><strong>$is_string </strong>= false<strong>)</strong></li>
-<li><a name="a368"></a>    <strong>{</strong></li>
-<li><a name="a369"></a>        <font color="blue">if </font><strong>(</strong><strong>$is_string </strong>== false<strong>) </strong><strong>{</strong></li>
-<li><a name="a370"></a>            <strong>$input </strong>= <a href="http://www.php.net/file_get_contents">file_get_contents</a><strong>(</strong><strong>$input</strong><strong>,</strong>1<strong>)</strong>;</li>
-<li><a name="a371"></a>            <font color="blue">if </font><strong>(</strong><a href="http://www.php.net/is_string">is_string</a><strong>(</strong><strong>$input</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a372"></a>                <font color="blue">return </font><a href="http://www.php.net/token_get_all">token_get_all</a><strong>(</strong><strong>$input</strong><strong>)</strong>;</li>
-<li><a name="a373"></a>            <strong>}</strong></li>
-<li><a name="a374"></a>            <font color="blue">return </font>false;</li>
-<li><a name="a375"></a>        <strong>} </strong>else <strong>{</strong></li>
-<li><a name="a376"></a>            <font color="blue">return </font><a href="http://www.php.net/token_get_all">token_get_all</a><strong>(</strong><strong>$input</strong><strong>)</strong>;</li>
-<li><a name="a377"></a>        <strong>}</strong></li>
-<li><a name="a378"></a>    <strong>}</strong></li>
-<li><a name="a379"></a>&nbsp;</li>
-<li><a name="a380"></a>    <font color="#009999">/**</font></li>
-<li><a name="a381"></a><font color="#009999">     * Retrieve a listing of every file in $directory and</font></li>
-<li><a name="a382"></a><font color="#009999">     * all subdirectories. Taken from PEAR_PackageFileManager_File</font></li>
-<li><a name="a383"></a><font color="#009999">     *</font></li>
-<li><a name="a384"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@param </font></strong><em>string </em><strong>$directory </strong><font color="#009999">full path to the directory you want the list of</font></li>
-<li><a name="a385"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@access</font></strong><font color="#009999"> private</font></li>
-<li><a name="a386"></a><font color="#009999">     * </font><strong><font color = "#0099FF">@return </font></strong><em>array </em><font color="#009999">list of files in a directory</font></li>
-<li><a name="a387"></a><font color="#009999">     */</font></li>
-<li><a name="a388"></a>&nbsp;</li>
-<li><a name="a389"></a>    <font color="blue">function </font><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_fileList">_fileList</a><strong>(</strong><strong>$directory</strong><strong>,</strong><strong>$options</strong><strong>)</strong></li>
-<li><a name="a390"></a>    <strong>{</strong></li>
-<li><a name="a391"></a>        <strong>$ret </strong>= false;</li>
-<li><a name="a392"></a>        <font color="blue">if </font><strong>(</strong><strong>@</strong><a href="http://www.php.net/is_dir">is_dir</a><strong>(</strong><strong>$directory</strong><strong>) </strong>&amp;&amp; <strong>(</strong><strong>!</strong><a href="http://www.php.net/in_array">in_array</a><strong>(</strong><a href="http://www.php.net/strtolower">strtolower</a><strong>(</strong><strong>$directory</strong><strong>)</strong><strong>,</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'ignore_dirs'</font><strong>]</strong><strong>))) </strong><strong>{</strong></li>
-<li><a name="a393"></a>            <strong>$ret </strong>= array<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a394"></a>            <strong>$d </strong>= <strong>@</strong><a href="http://www.php.net/dir">dir</a><strong>(</strong><strong>$directory</strong><strong>)</strong>;</li>
-<li><a name="a395"></a>            while<strong>(</strong><strong>$d </strong>&amp;&amp; <strong>$entry</strong>=<strong>$d</strong><strong>-&gt;</strong>read<strong>(</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a396"></a>                <font color="blue">if </font><strong>(</strong><strong>$entry</strong><strong>{</strong>0<strong>} </strong>!= <font color="#66cccc">'.'</font><strong>) </strong><strong>{</strong></li>
-<li><a name="a397"></a>                    <font color="blue">if </font><strong>(</strong><a href="http://www.php.net/is_file">is_file</a><strong>(</strong><strong>$directory </strong>. DIRECTORY_SEPARATOR . <strong>$entry</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a398"></a>                        <strong>$ret</strong><strong>[</strong><strong>] </strong>= <strong>$directory </strong>. DIRECTORY_SEPARATOR . <strong>$entry</strong>;</li>
-<li><a name="a399"></a>                    <strong>}</strong></li>
-<li><a name="a400"></a>                    <font color="blue">if </font><strong>(</strong><a href="http://www.php.net/is_dir">is_dir</a><strong>(</strong><strong>$directory </strong>. DIRECTORY_SEPARATOR . <strong>$entry</strong><strong>) </strong>&amp;&amp; <strong>(</strong><strong>$options</strong><strong>[</strong><font color="#66cccc">'recurse_dir'</font><strong>] </strong>!= false<strong>)) </strong><strong>{</strong></li>
-<li><a name="a401"></a>                        <strong>$tmp </strong>= <strong>$this</strong><strong>-&gt;</strong><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_fileList">_fileList</a><strong>(</strong><strong>$directory </strong>. DIRECTORY_SEPARATOR . <strong>$entry</strong><strong>)</strong>;</li>
-<li><a name="a402"></a>                        <font color="blue">if </font><strong>(</strong><a href="http://www.php.net/is_array">is_array</a><strong>(</strong><strong>$tmp</strong><strong>)) </strong><strong>{</strong></li>
-<li><a name="a403"></a>                            <font color="blue">foreach</font><strong>(</strong><strong>$tmp </strong>as <strong>$ent</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a404"></a>                                <strong>$ret</strong><strong>[</strong><strong>] </strong>= <strong>$ent</strong>;</li>
-<li><a name="a405"></a>                            <strong>}</strong></li>
-<li><a name="a406"></a>                        <strong>}</strong></li>
-<li><a name="a407"></a>                    <strong>}</strong></li>
-<li><a name="a408"></a>                <strong>}</strong></li>
-<li><a name="a409"></a>            <strong>}</strong></li>
-<li><a name="a410"></a>            <font color="blue">if </font><strong>(</strong><strong>$d</strong><strong>) </strong><strong>{</strong></li>
-<li><a name="a411"></a>                <strong>$d</strong><strong>-&gt;</strong>close<strong>(</strong><strong>)</strong>;</li>
-<li><a name="a412"></a>            <strong>}</strong></li>
-<li><a name="a413"></a>        <strong>} </strong>else <strong>{</strong></li>
-<li><a name="a414"></a>            <font color="blue">return </font>false;</li>
-<li><a name="a415"></a>        <strong>}</strong></li>
-<li><a name="a416"></a>&nbsp;</li>
-<li><a name="a417"></a>        <font color="blue">return </font><strong>$ret</strong>;</li>
-<li><a name="a418"></a>    <strong>}</strong></li>
-<li><a name="a419"></a><strong>}</strong></li>
-<li><a name="a420"></a>&nbsp;</li>
-<li><a name="a421"></a><strong>?&gt;</strong></li>
-</ol></pre></code>
+<li><a name="a204"></a>            <span class="src-var">$files</span><span class="src-sym">[</span><span class="src-str">'constants'</span><span class="src-sym">] </span>= <span class="src-var">$constants</span><span class="src-sym">;</span></li>
+<li><a name="a205"></a>            <span class="src-var">$files</span><span class="src-sym">[</span><span class="src-str">'extensions'</span><span class="src-sym">] </span>= <span class="src-var">$extensions</span><span class="src-sym">;</span></li>
+<li><a name="a206"></a>            <span class="src-var">$files</span><span class="src-sym">[</span><span class="src-str">'version'</span><span class="src-sym">] </span>= <span class="src-var">$latest_version</span><span class="src-sym">;</span></li>
+<li><a name="a207"></a>            <span class="src-var">$files</span><span class="src-sym">[</span><span class="src-str">'ignored_files'</span><span class="src-sym">] </span>= <span class="src-var">$ignored</span><span class="src-sym">;</span></li>
+<li><a name="a208"></a>&nbsp;</li>
+<li><a name="a209"></a>            <span class="src-key">return </span><a href="http://www.php.net/array_reverse">array_reverse</a><span class="src-sym">(</span><span class="src-var">$files</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a210"></a>        <span class="src-sym">} </span><span class="src-key">else </span><span class="src-sym">{</span></li>
+<li><a name="a211"></a>            <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a212"></a>        <span class="src-sym">}</span></li>
+<li><a name="a213"></a>    <span class="src-sym">}</span></li>
+<li><a name="a214"></a>&nbsp;</li>
+<li><a name="a215"></a>    <span class="src-doc">/**</span></li>
+<li><a name="a216"></a><span class="src-doc">     * Alias of parseDir</span></li>
+<li><a name="a217"></a><span class="src-doc">     *</span></li>
+<li><a name="a218"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@uses</span><span class="src-doc"> PHP_CompatInfo::parseDir()</span></li>
+<li><a name="a219"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> public</span></li>
+<li><a name="a220"></a><span class="src-doc">     */</span></li>
+<li><a name="a221"></a>&nbsp;</li>
+<li><a name="a222"></a>    <span class="src-key">function </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#methodparseFolder">parseFolder</a><span class="src-sym">(</span><span class="src-var">$folder</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a223"></a>        <span class="src-key">return </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#methodparseDir">parseDir</a><span class="src-sym">(</span><span class="src-var">$folder</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a224"></a>    <span class="src-sym">}</span></li>
+<li><a name="a225"></a>&nbsp;</li>
+<li><a name="a226"></a>    <span class="src-doc">/**</span></li>
+<li><a name="a227"></a><span class="src-doc">     * Parse an Array of Files</span></li>
+<li><a name="a228"></a><span class="src-doc">     *</span></li>
+<li><a name="a229"></a><span class="src-doc">     * You can parse an array of Files or Strings, to parse</span></li>
+<li><a name="a230"></a><span class="src-doc">     * strings, $options['is_string'] must be set to true</span></li>
+<li><a name="a231"></a><span class="src-doc">     *</span></li>
+<li><a name="a232"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">array </span><span class="src-doc-var">$files </span><span class="src-doc">Array of file names or code strings</span></li>
+<li><a name="a233"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">array </span><span class="src-doc-var">$options </span><span class="src-doc">An array of options where:</span></li>
+<li><a name="a234"></a><span class="src-doc">     *                           'debug' contains a boolean</span></li>
+<li><a name="a235"></a><span class="src-doc">     *                               to control whether extra</span></li>
+<li><a name="a236"></a><span class="src-doc">     *                               ouput is shown.</span></li>
+<li><a name="a237"></a><span class="src-doc">     *                           'is_string' contains a boolean</span></li>
+<li><a name="a238"></a><span class="src-doc">     *                               which says if the array values</span></li>
+<li><a name="a239"></a><span class="src-doc">     *                               are strings or file names.</span></li>
+<li><a name="a240"></a><span class="src-doc">     *                           'ignore_files' contains an array of</span></li>
+<li><a name="a241"></a><span class="src-doc">     *                                           files to ignore. File</span></li>
+<li><a name="a242"></a><span class="src-doc">     *                                           names are case sensitive.</span></li>
+<li><a name="a243"></a><span class="src-doc">     *                           'ignore_functions' contains an array</span></li>
+<li><a name="a244"></a><span class="src-doc">     *                                          of functions to ignore when</span></li>
+<li><a name="a245"></a><span class="src-doc">     *                                          calculating the version needed.</span></li>
+<li><a name="a246"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> public</span></li>
+<li><a name="a247"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@return </span><span class="src-doc-type">array </span></li>
+<li><a name="a248"></a><span class="src-doc">     */</span></li>
+<li><a name="a249"></a>&nbsp;</li>
+<li><a name="a250"></a>    <span class="src-key">function </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#methodparseArray">parseArray</a><span class="src-sym">(</span><span class="src-var">$files</span><span class="src-sym">,</span><span class="src-var">$options </span>= <span class="src-id">null</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a251"></a>        <span class="src-var">$latest_version </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#var$latest_version">latest_version</a><span class="src-sym">;</span></li>
+<li><a name="a252"></a>        <span class="src-var">$extensions </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a253"></a>        <span class="src-var">$constants </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a254"></a>        <span class="src-var">$options </span>= <a href="http://www.php.net/array_merge">array_merge</a><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'is_string' </span>=&gt; <span class="src-id">false</span><span class="src-sym">,</span><span class="src-str">'debug' </span>=&gt; <span class="src-id">false</span><span class="src-sym">)</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a255"></a>        <span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_files'</span><span class="src-sym">] </span>= <a href="http://www.php.net/array_map">array_map</a><span class="src-sym">(</span><span class="src-str">&quot;strtolower&quot;</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_files'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a256"></a>        <span class="src-key">foreach</span><span class="src-sym">(</span><span class="src-var">$files </span><span class="src-key">as </span><span class="src-var">$file</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a257"></a>            <span class="src-key">if </span><span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><a href="http://www.php.net/strtolower">strtolower</a><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">)</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_files'</span><span class="src-sym">]</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a258"></a>                <span class="src-var">$tokens </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_tokenize">_tokenize</a><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'is_string'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a259"></a>                <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'is_string'</span><span class="src-sym">] </span>== <span class="src-id">false</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a260"></a>                    <span class="src-var">$files_parsed</span><span class="src-sym">[</span><span class="src-var">$file</span><span class="src-sym">] </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a261"></a>                <span class="src-sym">} </span><span class="src-key">else </span><span class="src-sym">{</span></li>
+<li><a name="a262"></a>                    <span class="src-var">$files_parsed</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a263"></a>                <span class="src-sym">}</span></li>
+<li><a name="a264"></a>            <span class="src-sym">} </span><span class="src-key">else </span><span class="src-sym">{</span></li>
+<li><a name="a265"></a>                <span class="src-var">$ignored</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$file</span><span class="src-sym">;</span></li>
+<li><a name="a266"></a>            <span class="src-sym">}</span></li>
+<li><a name="a267"></a>        <span class="src-sym">}</span></li>
+<li><a name="a268"></a>&nbsp;</li>
+<li><a name="a269"></a>        <span class="src-key">foreach</span><span class="src-sym">(</span><span class="src-var">$files_parsed </span><span class="src-key">as </span><span class="src-var">$file</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a270"></a>            <span class="src-var">$cmp </span>= <a href="http://www.php.net/version_compare">version_compare</a><span class="src-sym">(</span><span class="src-var">$latest_version</span><span class="src-sym">,</span><span class="src-var">$file</span><span class="src-sym">[</span><span class="src-str">'version'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a271"></a>            <span class="src-key">if </span><span class="src-sym">(</span>(int)<span class="src-var">$cmp </span>=== -<span class="src-num">1</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a272"></a>                <span class="src-var">$latest_version </span>= <span class="src-var">$file</span><span class="src-sym">[</span><span class="src-str">'version'</span><span class="src-sym">]</span><span class="src-sym">;</span></li>
+<li><a name="a273"></a>            <span class="src-sym">}</span></li>
+<li><a name="a274"></a>            <span class="src-key">foreach</span><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">[</span><span class="src-str">'extensions'</span><span class="src-sym">] </span><span class="src-key">as </span><span class="src-var">$ext</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a275"></a>                <span class="src-key">if</span><span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><span class="src-var">$ext</span><span class="src-sym">,</span><span class="src-var">$extensions</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a276"></a>                    <span class="src-var">$extensions</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$ext</span><span class="src-sym">;</span></li>
+<li><a name="a277"></a>                <span class="src-sym">}</span></li>
+<li><a name="a278"></a>            <span class="src-sym">}</span></li>
+<li><a name="a279"></a>            <span class="src-key">foreach</span><span class="src-sym">(</span><span class="src-var">$file</span><span class="src-sym">[</span><span class="src-str">'constants'</span><span class="src-sym">] </span><span class="src-key">as </span><span class="src-var">$const</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a280"></a>                <span class="src-key">if</span><span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><span class="src-var">$const</span><span class="src-sym">,</span><span class="src-var">$constants</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a281"></a>                    <span class="src-var">$constants</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$const</span><span class="src-sym">;</span></li>
+<li><a name="a282"></a>                <span class="src-sym">}</span></li>
+<li><a name="a283"></a>            <span class="src-sym">}</span></li>
+<li><a name="a284"></a>        <span class="src-sym">}</span></li>
+<li><a name="a285"></a>&nbsp;</li>
+<li><a name="a286"></a>        <span class="src-var">$files_parsed</span><span class="src-sym">[</span><span class="src-str">'constants'</span><span class="src-sym">] </span>= <span class="src-var">$constants</span><span class="src-sym">;</span></li>
+<li><a name="a287"></a>        <span class="src-var">$files_parsed</span><span class="src-sym">[</span><span class="src-str">'extensions'</span><span class="src-sym">] </span>= <span class="src-var">$extensions</span><span class="src-sym">;</span></li>
+<li><a name="a288"></a>        <span class="src-var">$files_parsed</span><span class="src-sym">[</span><span class="src-str">'version'</span><span class="src-sym">] </span>= <span class="src-var">$latest_version</span><span class="src-sym">;</span></li>
+<li><a name="a289"></a>        <span class="src-var">$files_parsed</span><span class="src-sym">[</span><span class="src-str">'ignored_files'</span><span class="src-sym">] </span>= <span class="src-var">$ignored</span><span class="src-sym">;</span></li>
+<li><a name="a290"></a>        <span class="src-key">return </span><a href="http://www.php.net/array_reverse">array_reverse</a><span class="src-sym">(</span><span class="src-var">$files_parsed</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a291"></a>    <span class="src-sym">}</span></li>
+<li><a name="a292"></a>&nbsp;</li>
+<li><a name="a293"></a>    <span class="src-doc">/**</span></li>
+<li><a name="a294"></a><span class="src-doc">     * Parse the given Tokens</span></li>
+<li><a name="a295"></a><span class="src-doc">     *</span></li>
+<li><a name="a296"></a><span class="src-doc">     * The tokens are those returned by</span></li>
+<li><a name="a297"></a><span class="src-doc">     * token_get_all() which is nicely</span></li>
+<li><a name="a298"></a><span class="src-doc">     * wrapped in PHP_CompatInfo::_tokenize</span></li>
+<li><a name="a299"></a><span class="src-doc">     *</span></li>
+<li><a name="a300"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">array </span><span class="src-doc-var">$tokens </span><span class="src-doc">Array of PHP Tokens</span></li>
+<li><a name="a301"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">boolean </span><span class="src-doc-var">$debug </span><span class="src-doc">Show Extra Output</span></li>
+<li><a name="a302"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> private</span></li>
+<li><a name="a303"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@return </span><span class="src-doc-type">array </span></li>
+<li><a name="a304"></a><span class="src-doc">     */</span></li>
+<li><a name="a305"></a>&nbsp;</li>
+<li><a name="a306"></a>    <span class="src-key">function </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_parseTokens">_parseTokens</a><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">, </span><span class="src-var">$options</span><span class="src-sym">)</span></li>
+<li><a name="a307"></a>    <span class="src-sym">{</span></li>
+<li><a name="a308"></a>        <span class="src-var">$functions </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a309"></a>        <span class="src-var">$functions_version </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a310"></a>        <span class="src-var">$latest_version </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#var$latest_version">latest_version</a><span class="src-sym">;</span></li>
+<li><a name="a311"></a>        <span class="src-var">$extensions </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a312"></a>        <span class="src-var">$constants </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a313"></a>        <span class="src-var">$constant_names </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a314"></a>        <span class="src-var">$udf </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a315"></a>        <span class="src-var">$token_count </span>= <a href="http://www.php.net/sizeof">sizeof</a><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a316"></a>        <span class="src-var">$i </span>= <span class="src-num">0</span><span class="src-sym">;</span></li>
+<li><a name="a317"></a>        <span class="src-key">while </span><span class="src-sym">(</span><span class="src-var">$i </span>&lt; <span class="src-var">$token_count</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a318"></a>            <span class="src-var">$found_func </span>= <span class="src-id">true</span><span class="src-sym">;</span></li>
+<li><a name="a319"></a>            <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">[</span><span class="src-var">$i</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-num">0</span><span class="src-sym">] </span>== <span class="src-id">T_FUNCTION</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a320"></a>                <span class="src-var">$found_func </span>= <span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a321"></a>            <span class="src-sym">}</span></li>
+<li><a name="a322"></a>            <span class="src-key">while </span><span class="src-sym">(</span><span class="src-var">$found_func </span>== <span class="src-id">false</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a323"></a>                <span class="src-var">$i </span>+= <span class="src-num">1</span><span class="src-sym">;</span></li>
+<li><a name="a324"></a>                <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">[</span><span class="src-var">$i</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-num">0</span><span class="src-sym">] </span>== <span class="src-id">T_STRING</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a325"></a>                    <span class="src-var">$found_func </span>= <span class="src-id">true</span><span class="src-sym">;</span></li>
+<li><a name="a326"></a>                    <span class="src-var">$udf</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$tokens</span><span class="src-sym">[</span><span class="src-var">$i</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-num">1</span><span class="src-sym">]</span><span class="src-sym">;</span></li>
+<li><a name="a327"></a>                <span class="src-sym">}</span></li>
+<li><a name="a328"></a>            <span class="src-sym">}</span></li>
+<li><a name="a329"></a>            <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">[</span><span class="src-var">$i</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-num">0</span><span class="src-sym">] </span>== <span class="src-id">T_STRING</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a330"></a>                <span class="src-key">if </span><span class="src-sym">(</span>isset<span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">[</span><span class="src-var">$i </span>+ <span class="src-num">1</span><span class="src-sym">]</span><span class="src-sym">) </span>&amp;&amp; <span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">[</span><span class="src-var">$i </span>+ <span class="src-num">1</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-num">0</span><span class="src-sym">] </span>== <span class="src-str">'('</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a331"></a>                    <span class="src-var">$functions</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$tokens</span><span class="src-sym">[</span><span class="src-var">$i</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-num">1</span><span class="src-sym">]</span><span class="src-sym">;</span></li>
+<li><a name="a332"></a>                <span class="src-sym">}</span></li>
+<li><a name="a333"></a>            <span class="src-sym">}</span></li>
+<li><a name="a334"></a>            <span class="src-key">if </span><span class="src-sym">(</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><span class="src-var">$tokens</span><span class="src-sym">[</span><span class="src-var">$i</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-num">0</span><span class="src-sym">]</span><span class="src-sym">,</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'const'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'tokens'</span><span class="src-sym">]</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a335"></a>                <span class="src-var">$constants</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$tokens</span><span class="src-sym">[</span><span class="src-var">$i</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-num">0</span><span class="src-sym">]</span><span class="src-sym">;</span></li>
+<li><a name="a336"></a>            <span class="src-sym">}</span></li>
+<li><a name="a337"></a>            <span class="src-var">$i </span>+= <span class="src-num">1</span><span class="src-sym">;</span></li>
+<li><a name="a338"></a>        <span class="src-sym">}</span></li>
+<li><a name="a339"></a>&nbsp;</li>
+<li><a name="a340"></a>        <span class="src-var">$functions </span>= <a href="http://www.php.net/array_unique">array_unique</a><span class="src-sym">(</span><span class="src-var">$functions</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a341"></a>        <span class="src-key">if </span><span class="src-sym">(</span>isset<span class="src-sym">(</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_functions'</span><span class="src-sym">]</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a342"></a>            <span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_functions'</span><span class="src-sym">] </span>= <a href="http://www.php.net/array_map">array_map</a><span class="src-sym">(</span><span class="src-str">&quot;strtolower&quot;</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_functions'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a343"></a>        <span class="src-sym">} </span><span class="src-key">else </span><span class="src-sym">{</span></li>
+<li><a name="a344"></a>            <span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_functions'</span><span class="src-sym">] </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a345"></a>        <span class="src-sym">}</span></li>
+<li><a name="a346"></a>        <span class="src-key">foreach</span><span class="src-sym">(</span><span class="src-var">$functions </span><span class="src-key">as </span><span class="src-var">$name</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a347"></a>            <span class="src-key">if </span><span class="src-sym">(</span>isset<span class="src-sym">(</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'funcs'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$name</span><span class="src-sym">]</span><span class="src-sym">) </span>&amp;&amp; <span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><span class="src-var">$name</span><span class="src-sym">,</span><span class="src-var">$udf</span><span class="src-sym">) </span>&amp;&amp; <span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><span class="src-var">$name</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_functions'</span><span class="src-sym">]</span><span class="src-sym">)))) </span><span class="src-sym">{</span></li>
+<li><a name="a348"></a>                <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'debug'</span><span class="src-sym">] </span>== <span class="src-id">true</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a349"></a>                    <span class="src-var">$functions_version</span><span class="src-sym">[</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'funcs'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$name</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'version_init'</span><span class="src-sym">]]</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'function' </span>=&gt; <span class="src-var">$name</span><span class="src-sym">, </span><span class="src-str">'extension' </span>=&gt; <span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'funcs'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$name</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'extension'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a350"></a>                <span class="src-sym">}</span></li>
+<li><a name="a351"></a>                <span class="src-var">$cmp </span>= <a href="http://www.php.net/version_compare">version_compare</a><span class="src-sym">(</span><span class="src-var">$latest_version</span><span class="src-sym">,</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'funcs'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$name</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'version_init'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a352"></a>                <span class="src-key">if </span><span class="src-sym">(</span>(int)<span class="src-var">$cmp </span>=== -<span class="src-num">1</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a353"></a>                    <span class="src-var">$latest_version </span>= <span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'funcs'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$name</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'version_init'</span><span class="src-sym">]</span><span class="src-sym">;</span></li>
+<li><a name="a354"></a>                <span class="src-sym">}</span></li>
+<li><a name="a355"></a>                <span class="src-key">if </span><span class="src-sym">((</span><span class="src-sym">!</span><span class="src-key">empty</span><span class="src-sym">(</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'funcs'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$name</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'extension'</span><span class="src-sym">]</span><span class="src-sym">)) </span>&amp;&amp; <span class="src-sym">(</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'funcs'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$name</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'extension'</span><span class="src-sym">] </span>!= <span class="src-str">'ext_standard'</span><span class="src-sym">) </span>&amp;&amp; <span class="src-sym">(</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'funcs'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$name</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'extension'</span><span class="src-sym">] </span>!= <span class="src-str">'zend'</span><span class="src-sym">))  </span><span class="src-sym">{</span></li>
+<li><a name="a356"></a>                    <span class="src-key">if</span><span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><a href="http://www.php.net/substr">substr</a><span class="src-sym">(</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'funcs'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$name</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'extension'</span><span class="src-sym">]</span><span class="src-sym">,</span><span class="src-num">4</span><span class="src-sym">)</span><span class="src-sym">,</span><span class="src-var">$extensions</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a357"></a>                        <span class="src-var">$extensions</span><span class="src-sym">[</span><span class="src-sym">] </span>= <a href="http://www.php.net/substr">substr</a><span class="src-sym">(</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'funcs'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$name</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'extension'</span><span class="src-sym">]</span><span class="src-sym">,</span><span class="src-num">4</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a358"></a>                    <span class="src-sym">}</span></li>
+<li><a name="a359"></a>                <span class="src-sym">}</span></li>
+<li><a name="a360"></a>            <span class="src-sym">}</span></li>
+<li><a name="a361"></a>        <span class="src-sym">}</span></li>
+<li><a name="a362"></a>&nbsp;</li>
+<li><a name="a363"></a>        <span class="src-var">$constants </span>= <a href="http://www.php.net/array_unique">array_unique</a><span class="src-sym">(</span><span class="src-var">$constants</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a364"></a>        <span class="src-key">foreach</span><span class="src-sym">(</span><span class="src-var">$constants </span><span class="src-key">as </span><span class="src-var">$constant</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a365"></a>            <span class="src-var">$cmp </span>= <a href="http://www.php.net/version_compare">version_compare</a><span class="src-sym">(</span><span class="src-var">$latest_version</span><span class="src-sym">,</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'const'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$constant</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'version_init'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a366"></a>            <span class="src-key">if </span><span class="src-sym">(</span>(int)<span class="src-var">$cmp </span>=== -<span class="src-num">1</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a367"></a>                <span class="src-var">$latest_version </span>= <span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'const'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$constant</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'version_init'</span><span class="src-sym">]</span><span class="src-sym">;</span></li>
+<li><a name="a368"></a>            <span class="src-sym">}</span></li>
+<li><a name="a369"></a>            <span class="src-key">if</span><span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'const'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$constant</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'name'</span><span class="src-sym">]</span><span class="src-sym">,</span><span class="src-var">$constant_names</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a370"></a>                <span class="src-var">$constant_names</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$GLOBALS</span><span class="src-sym">[</span><span class="src-str">'const'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$constant</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'name'</span><span class="src-sym">]</span><span class="src-sym">;</span></li>
+<li><a name="a371"></a>            <span class="src-sym">}</span></li>
+<li><a name="a372"></a>        <span class="src-sym">}</span></li>
+<li><a name="a373"></a>&nbsp;</li>
+<li><a name="a374"></a>        <a href="http://www.php.net/ksort">ksort</a><span class="src-sym">(</span><span class="src-var">$functions_version </span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a375"></a>&nbsp;</li>
+<li><a name="a376"></a>        <span class="src-var">$functions_version</span><span class="src-sym">[</span><span class="src-str">'constants'</span><span class="src-sym">] </span>= <span class="src-var">$constant_names</span><span class="src-sym">;</span></li>
+<li><a name="a377"></a>        <span class="src-var">$functions_version</span><span class="src-sym">[</span><span class="src-str">'extensions'</span><span class="src-sym">] </span>= <span class="src-var">$extensions</span><span class="src-sym">;</span></li>
+<li><a name="a378"></a>        <span class="src-var">$functions_version</span><span class="src-sym">[</span><span class="src-str">'version'</span><span class="src-sym">] </span>= <span class="src-var">$latest_version</span><span class="src-sym">;</span></li>
+<li><a name="a379"></a>        <span class="src-var">$functions_version </span>= <a href="http://www.php.net/array_reverse">array_reverse</a><span class="src-sym">(</span><span class="src-var">$functions_version</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a380"></a>        <span class="src-key">return </span><span class="src-var">$functions_version</span><span class="src-sym">;</span></li>
+<li><a name="a381"></a>    <span class="src-sym">}</span></li>
+<li><a name="a382"></a>&nbsp;</li>
+<li><a name="a383"></a>    <span class="src-doc">/**</span></li>
+<li><a name="a384"></a><span class="src-doc">     * Token a file or string</span></li>
+<li><a name="a385"></a><span class="src-doc">     *</span></li>
+<li><a name="a386"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">string </span><span class="src-doc-var">$input </span><span class="src-doc">Filename or PHP code</span></li>
+<li><a name="a387"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">boolean </span><span class="src-doc-var">$is_string </span><span class="src-doc">Whether or note the input is a string</span></li>
+<li><a name="a388"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> private</span></li>
+<li><a name="a389"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@return </span><span class="src-doc-type">array </span></li>
+<li><a name="a390"></a><span class="src-doc">     */</span></li>
+<li><a name="a391"></a>&nbsp;</li>
+<li><a name="a392"></a>    <span class="src-key">function </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_tokenize">_tokenize</a><span class="src-sym">(</span><span class="src-var">$input</span><span class="src-sym">,</span><span class="src-var">$is_string </span>= <span class="src-id">false</span><span class="src-sym">)</span></li>
+<li><a name="a393"></a>    <span class="src-sym">{</span></li>
+<li><a name="a394"></a>        <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$is_string </span>== <span class="src-id">false</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a395"></a>            <span class="src-var">$input </span>= <a href="http://www.php.net/file_get_contents">file_get_contents</a><span class="src-sym">(</span><span class="src-var">$input</span><span class="src-sym">,</span><span class="src-num">1</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a396"></a>            <span class="src-key">if </span><span class="src-sym">(</span><a href="http://www.php.net/is_string">is_string</a><span class="src-sym">(</span><span class="src-var">$input</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a397"></a>                <span class="src-key">return </span><a href="http://www.php.net/token_get_all">token_get_all</a><span class="src-sym">(</span><span class="src-var">$input</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a398"></a>            <span class="src-sym">}</span></li>
+<li><a name="a399"></a>            <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a400"></a>        <span class="src-sym">} </span><span class="src-key">else </span><span class="src-sym">{</span></li>
+<li><a name="a401"></a>            <span class="src-key">return </span><a href="http://www.php.net/token_get_all">token_get_all</a><span class="src-sym">(</span><span class="src-var">$input</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a402"></a>        <span class="src-sym">}</span></li>
+<li><a name="a403"></a>    <span class="src-sym">}</span></li>
+<li><a name="a404"></a>&nbsp;</li>
+<li><a name="a405"></a>    <span class="src-doc">/**</span></li>
+<li><a name="a406"></a><span class="src-doc">     * Retrieve a listing of every file in $directory and</span></li>
+<li><a name="a407"></a><span class="src-doc">     * all subdirectories. Taken from PEAR_PackageFileManager_File</span></li>
+<li><a name="a408"></a><span class="src-doc">     *</span></li>
+<li><a name="a409"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">string </span><span class="src-doc-var">$directory </span><span class="src-doc">full path to the directory you want the list of</span></li>
+<li><a name="a410"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> private</span></li>
+<li><a name="a411"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@return </span><span class="src-doc-type">array </span><span class="src-doc">list of files in a directory</span></li>
+<li><a name="a412"></a><span class="src-doc">     */</span></li>
+<li><a name="a413"></a>&nbsp;</li>
+<li><a name="a414"></a>    <span class="src-key">function </span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_fileList">_fileList</a><span class="src-sym">(</span><span class="src-var">$directory</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span></li>
+<li><a name="a415"></a>    <span class="src-sym">{</span></li>
+<li><a name="a416"></a>        <span class="src-var">$ret </span>= <span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a417"></a>        <span class="src-key">if </span><span class="src-sym">(</span><span class="src-sym">@</span><a href="http://www.php.net/is_dir">is_dir</a><span class="src-sym">(</span><span class="src-var">$directory</span><span class="src-sym">) </span>&amp;&amp; <span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(</span><a href="http://www.php.net/strtolower">strtolower</a><span class="src-sym">(</span><span class="src-var">$directory</span><span class="src-sym">)</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'ignore_dirs'</span><span class="src-sym">]</span><span class="src-sym">))) </span><span class="src-sym">{</span></li>
+<li><a name="a418"></a>            <span class="src-var">$ret </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a419"></a>            <span class="src-var">$d </span>= <span class="src-sym">@</span><a href="http://www.php.net/dir">dir</a><span class="src-sym">(</span><span class="src-var">$directory</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a420"></a>            <span class="src-key">while</span><span class="src-sym">(</span><span class="src-var">$d </span>&amp;&amp; <span class="src-var">$entry</span>=<span class="src-var">$d</span><span class="src-sym">-&gt;</span><span class="src-id">read</span><span class="src-sym">(</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a421"></a>                <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$entry</span><span class="src-sym">{</span><span class="src-num">0</span><span class="src-sym">} </span>!= <span class="src-str">'.'</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a422"></a>                    <span class="src-key">if </span><span class="src-sym">(</span><a href="http://www.php.net/is_file">is_file</a><span class="src-sym">(</span><span class="src-var">$directory </span>. <span class="src-id">DIRECTORY_SEPARATOR </span>. <span class="src-var">$entry</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a423"></a>                        <span class="src-var">$ret</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$directory </span>. <span class="src-id">DIRECTORY_SEPARATOR </span>. <span class="src-var">$entry</span><span class="src-sym">;</span></li>
+<li><a name="a424"></a>                    <span class="src-sym">}</span></li>
+<li><a name="a425"></a>                    <span class="src-key">if </span><span class="src-sym">(</span><a href="http://www.php.net/is_dir">is_dir</a><span class="src-sym">(</span><span class="src-var">$directory </span>. <span class="src-id">DIRECTORY_SEPARATOR </span>. <span class="src-var">$entry</span><span class="src-sym">) </span>&amp;&amp; <span class="src-sym">(</span><span class="src-var">$options</span><span class="src-sym">[</span><span class="src-str">'recurse_dir'</span><span class="src-sym">] </span>!= <span class="src-id">false</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a426"></a>                        <span class="src-var">$tmp </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PHP_CompatInfo/PHP_CompatInfo.html#method_fileList">_fileList</a><span class="src-sym">(</span><span class="src-var">$directory </span>. <span class="src-id">DIRECTORY_SEPARATOR </span>. <span class="src-var">$entry</span><span class="src-sym">,</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a427"></a>                        <span class="src-key">if </span><span class="src-sym">(</span><a href="http://www.php.net/is_array">is_array</a><span class="src-sym">(</span><span class="src-var">$tmp</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li><a name="a428"></a>                            <span class="src-key">foreach</span><span class="src-sym">(</span><span class="src-var">$tmp </span><span class="src-key">as </span><span class="src-var">$ent</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a429"></a>                                <span class="src-var">$ret</span><span class="src-sym">[</span><span class="src-sym">] </span>= <span class="src-var">$ent</span><span class="src-sym">;</span></li>
+<li><a name="a430"></a>                            <span class="src-sym">}</span></li>
+<li><a name="a431"></a>                        <span class="src-sym">}</span></li>
+<li><a name="a432"></a>                    <span class="src-sym">}</span></li>
+<li><a name="a433"></a>                <span class="src-sym">}</span></li>
+<li><a name="a434"></a>            <span class="src-sym">}</span></li>
+<li><a name="a435"></a>            <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$d</span><span class="src-sym">) </span><span class="src-sym">{</span></li>
+<li><a name="a436"></a>                <span class="src-var">$d</span><span class="src-sym">-&gt;</span><span class="src-id">close</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a437"></a>            <span class="src-sym">}</span></li>
+<li><a name="a438"></a>        <span class="src-sym">} </span><span class="src-key">else </span><span class="src-sym">{</span></li>
+<li><a name="a439"></a>            <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a440"></a>        <span class="src-sym">}</span></li>
+<li><a name="a441"></a>&nbsp;</li>
+<li><a name="a442"></a>        <span class="src-key">return </span><span class="src-var">$ret</span><span class="src-sym">;</span></li>
+<li><a name="a443"></a>    <span class="src-sym">}</span></li>
+<li><a name="a444"></a><span class="src-sym">}</span></li>
+<li><a name="a445"></a>&nbsp;</li>
+<li><a name="a446"></a><span class="src-php">?&gt;</span></li>
+</ol></pre></div>
+</div>
         <div class="credit">
 		    <hr />
-		    Documentation generated on Tue,  9 Mar 2004 18:21:04 +0000 by <a href="http://www.phpdoc.org">phpDocumentor 1.3.0RC2</a>. PEAR Logo Copyright &#0169;  PHP Group 2004.
+		    Documentation generated on Thu, 22 Apr 2004 03:23:52 +0100 by <a href="http://www.phpdoc.org">phpDocumentor 1.3.0RC3</a>
 	      </div>
       </td></tr></table>
     </td>
