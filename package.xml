@@ -21,7 +21,7 @@ which shows which functions require which version</description>
     <state>alpha</state>
     <notes>* First release on PEAR-web.
 * Added the ability to ignore files 
-in parseFolder() and parseArray, and the ability to ignore folders
+in parseFolder() and parseArray(), and the ability to ignore folders
 in parseFolder(). Added the ability to ignore functions in all public methods.</notes>
     <deps>
       <dep type="php" rel="ge" version="4.3.0" optional="no"/>
@@ -86,7 +86,7 @@ in parseFolder(). Added the ability to ignore functions in all public methods.</
       <state>alpha</state>
       <notes>* First release on PEAR-web.
 * Added the ability to ignore files 
-in parseFolder() and parseArray, and the ability to ignore folders
+in parseFolder() and parseArray(), and the ability to ignore folders
 in parseFolder(). Added the ability to ignore functions in all public methods.</notes>
     </release>
     <release>

@@ -6,7 +6,7 @@ $version = '0.7.0';
 $notes = <<<EOT
 * First release on PEAR-web.
 * Added the ability to ignore files 
-in parseFolder() and parseArray, and the ability to ignore folders
+in parseFolder() and parseArray(), and the ability to ignore folders
 in parseFolder(). Added the ability to ignore functions in all public methods.
 EOT;
 
@@ -26,6 +26,7 @@ $result = $package->setOptions(array(
     'state'             => 'alpha',
     'license'           => 'PHP License',
     'ignore'            => array('package.php', 'package.xml', '*.bak', '*src*', '*.tgz', '*pear_media*', 'index.htm', '*tests*'),
+	'filelistgenerator' => 'cvs',
     'notes'             => $notes,
     'changelogoldtonew' => false,
     'baseinstalldir'    => 'PHP',
