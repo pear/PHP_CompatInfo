@@ -235,6 +235,10 @@ class PHP_CompatInfo {
      *
      * @param array $files Array of file names or code strings
      * @param array $options An array of options where:
+     *                          'file_ext' Contains an array of file
+     *                              extensions to parse for PHP
+     *                              code. Default: php, php4,
+     *                              inc, phtml
      *                          'debug' contains a boolean
      *                              to control whether extra
      *                              ouput is shown.
