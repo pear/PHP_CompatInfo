@@ -2,18 +2,16 @@
 require_once 'PEAR/PackageFileManager.php';
 require_once 'Console/Getopt.php';
 
-$version = '0.7.0';
+$version = '0.8.0';
 $notes = <<<EOT
-* First release on PEAR-web.
-* Added the ability to ignore files 
-in parseFolder() and parseArray(), and the ability to ignore folders
-in parseFolder(). Added the ability to ignore functions in all public methods.
+Added a CLI Output script. An example of using it
+can be found in the examples dir.
 EOT;
 
 $description =<<<EOT
 PHP_CompatInfo will parse a file/folder/script/array to find out the minimum
 version and extensions required for it to run. Features advanced debug output
-which shows which functions require which version
+which shows which functions require which version and CLI output script
 EOT;
 
 $package = new PEAR_PackageFileManager();
@@ -44,6 +42,7 @@ $package->addMaintainer('davey','lead','Davey Shafik','davey@php.net');
 $package->addDependency('php', '4.3.0', 'ge', 'php', false);
 $package->addDependency('tokenizer', '', 'has', 'ext', false);
 $package->addDependency('sockets', '', 'has', 'ext', false);
+$package->addDependency('Console_Table','1.0.1','ge','pkg',true);
 
 if ($_SERVER['argv'][1] == 'commit') {
     $result = $package->writePackageFile();
