@@ -23,25 +23,16 @@
  * @package PHP_CompatInfo
  * @category PHP
  */
-
+ 
 /**
- * Current PHP4 Version (used for -dev version)
- * @global string $php4_version
+ * An array of function init versions and extension
  */
-$php4_version = '4.3.6';
-
-/**
- * Current PHP5 Version (used for -dev version)
- * @global string $php5_version
- */
-$php5_version = '5.0.0';
-
 require_once 'PHP/data/func_array.php';
-require_once 'PHP/data/const_array.php';
 
-// Seems to be a bug in PHP5RC2, $GLOBALS['const'] not reg'd
-$GLOBALS['const'] = $const;
-$GLOBALS['funcs'] = $funcs;
+/**
+ * An array of constants and their init versions
+ */
+require_once 'PHP/data/const_array.php';
 
 /**
  * Check Compatibility of chunk of PHP code
@@ -330,7 +321,7 @@ class PHP_CompatInfo {
                         T_TRY => 'try',
                         T_CLONE => 'clone',
                         T_INTERFACE => 'interface',
-                        T_IMPLEMENTS => 'implements'
+                        T_IMPLEMENTS => 'implements',
                         );
 
         foreach ($php5_tokens as $php5_token => $value) {
@@ -376,19 +367,22 @@ class PHP_CompatInfo {
         foreach($functions as $name) {
             if (isset($GLOBALS['funcs'][$name]) && (!in_array($name,$udf) && (!in_array($name,$options['ignore_functions'])))) {
                 if ($options['debug'] == true) {
-                    $functions_version[$GLOBALS['funcs'][$name]['version_init']][] = array('function' => $name, 'extension' => $GLOBALS['funcs'][$name]['extension']);
+                    $functions_version[$GLOBALS['funcs'][$name]['init']][] = array('function' => $name, 'extension' => $GLOBALS['funcs'][$name]['extension']);
                 }
-                $cmp = version_compare($latest_version,$GLOBALS['funcs'][$name]['version_init']);
+                $cmp = version_compare($latest_version,$GLOBALS['funcs'][$name]['init']);
                 if ((int)$cmp === -1) {
-                    $latest_version = $GLOBALS['funcs'][$name]['version_init'];
+                    $latest_version = $GLOBALS['funcs'][$name]['init'];
                 }
-                if ((!empty($GLOBALS['funcs'][$name]['extension'])) && ($GLOBALS['funcs'][$name]['extension'] != 'ext_standard') && ($GLOBALS['funcs'][$name]['extension'] != 'zend'))  {
-                    if(!in_array(substr($GLOBALS['funcs'][$name]['extension'],4),$extensions) || !in_array(substr($GLOBALS['funcs'][$name]['extension'], 5),$extensions)) {
-                        $extension = substr($GLOBALS['funcs'][$name]['extension'],4);
-                        if ($extension{0} != '_') {
-                            $extensions[] = $extension;
-                        } else {
-                            $extensions[] = substr($extension, 1);
+                if ((!empty($GLOBALS['funcs'][$name]['ext'])) && ($GLOBALS['funcs'][$name]['ext'] != 'ext_standard') && ($GLOBALS['funcs'][$name]['ext'] != 'zend'))  {
+                    $extension = substr($GLOBALS['funcs'][$name]['ext'],4);
+                    if ($extension{0} != '_') {
+                        if(!in_array($ext,$extensions)) {
+                            $extensions[] = $ext;
+                        }
+                    } else {
+                        $ext = substr($ext, 1);
+                        if(!in_array($ext,$extensions)) {
+                            $extensions[] = $ext;
                         }
                     }
                 }
@@ -397,9 +391,9 @@ class PHP_CompatInfo {
 
         $constants = array_unique($constants);
         foreach($constants as $constant) {
-            $cmp = version_compare($latest_version,$GLOBALS['const'][$constant]['version_init']);
+            $cmp = version_compare($latest_version,$GLOBALS['const'][$constant]['init']);
             if ((int)$cmp === -1) {
-                $latest_version = $GLOBALS['const'][$constant]['version_init'];
+                $latest_version = $GLOBALS['const'][$constant]['init'];
             }
             if(!in_array($GLOBALS['const'][$constant]['name'],$constant_names)) {
                 $constant_names[] = $GLOBALS['const'][$constant]['name'];
