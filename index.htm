@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+/**
+ * $RCSfile$
+ * Copyright: David Shafik and Synaptic Media
+ * Began: 2004/03/02 02:19:28
+ * Desc: PHP_Requires Info page
+ * Version number: 1.0
+ * E-Mail: davey@synapticmedia.net
+ * URL: www.synapticmedia.net
+ * Build: $Revision$
+ * Modified: $Date$
+ */
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>PHP_CompatInfo</title>
+		<meta name="Author" content="" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	</head>
+	<body>
+		<h1>PHP_CompatInfo</h1>
+		<h2>PHP_Compatibility has been Renamed to <span style="text-decoration: line-through">PHP_Requires</span> PHP_CompatInfo</h2>
+		<h3><a href="PHP_CompatInfo-0.7.0.tgz">PHP_CompatInfo 0.7.0</a></h3>
+		<p>
+			Added <code>ignore_files</code> to both <a href="docs/PHP_CompatInfo/PHP_CompatInfo.html#methodparseFolder">parseFolder()</a>
+			and <a href="docs/PHP_CompatInfo/PHP_CompatInfo.html#methodparseArray">parseArray()</a> and <code>ignore_folders</code> to
+			<a href="docs/PHP_CompatInfo/PHP_CompatInfo.html#methodparseFolder">parseFolder()</a> - these options are BOTH case <strong>in</strong>sensitive.
+		</p>
+		<p>
+			Added <code>ignore_functions</code> to <strong>all</strong> public methods.
+		</p>
+		<p>
+			<strong><a href="PHP_CompatInfo-0.7.0.tgz">Download PHP_CompatInfo 0.7.0 now!</a></strong>
+		</p>
+		<h3><a href="PHP_Requires-0.6.0.tgz">PHP_Requires 0.6.0</a></h3>
+		<p>
+			Unified the public method API, all public methods now have the format
+			parse*($input,$options); - this is much neater and allows for easier
+			enhancement. <strong>This does break backwards compatibility.</strong>
+		</p>
+		<h3><a href="PHP_Requires-0.5.1.tgz">PHP_Requires 0.5.1</a></h3>
+		<p>
+			Fixed a bug where User Defined Functions
+			were checked against base functions, e.g. Math_ComplexOp::add() found
+			Mings SWFMovie::add() and caused it to report that the ming extension
+			was needed. <em>Thanks to Jesus M. Castagnetto for pointing this out</em>.
+		</p>
+		<h3><a href="PHP_Requires-0.5.0.tgz">PHP_Requires 0.5.0</a></h3>
+		<p>
+			PEAR Package, version number incremented from the last PHP_Compatibility
+			version number - now version 0.5.0. The name change is the <strong>only</strong>
+			change in this package, except that the <strong>sockets extension</strong>
+			is required by the <em><a href="package.xml">package.xml</a></em>
+			(it was needed before but the package.xml did not state this).
+		</p>
+		<h3><a href="docs">Documentation</a></h3>
+		<p>
+			Generated Documentation, created with <strong><a href="http://pear.php.net/package/PhpDocumentor">PhpDocumentor</a></strong>.
+			<a href="docs">See Full Documentation</a>.
+		</p>
+		<h4>Examples</h4>
+		<h5>Parsing a File</h5></li>
+		<p>
+			The <a href="docs/PHP_CompatInfo/PHP_CompatInfo.html#methodparseFile">parseFile()</a> method
+			can be used to parse a script contained in a <strong>single</strong> file.
+		</p>
+		<h6>Files</h6>
+		<ul>
+			<li>
+				<a href="docs/__examplesource/exsource_vs_pear_PHP_CompatInfo_docs_examples_parseFile.php_27ad3b8bc4838da6b47b9de1c1fece60.html">Source</a>
+			</li>
+			<li>
+				<a href="docs/examples/parseFile.php">Output</a>
+			</li>
+		</ul>
+		<h6>Parsing a String</h6>
+		<p>
+			The <a href="docs/PHP_CompatInfo/PHP_CompatInfo.html#methodparseString">parseString()</a> method
+			can be used to parse a <strong>string</strong> containing valid PHP code.
+		</p>
+		<ul>
+			<li>
+				<a href="docs/__examplesource/exsource__pear_PHP_CompatInfo_docs_examples_parseString.php_d7f0c50630c16cc0494bef419d036b25.html">Source</a>
+			</li>
+			<li>
+				<a href="docs/examples/parseString.php">Output</a>
+			</li>
+		</ul>
+		<h6>Parsing a Folder</h6>
+		<p>
+			The <a href="docs/PHP_CompatInfo/PHP_CompatInfo.html#methodparseFolder">parseFolder()</a> method
+			can be used to parse all the files in a directory recursively <em>(optional)</em>.
+		</p>
+		<ul>
+			<li>
+				<a href="docs/__examplesource/exsource__pear_PHP_CompatInfo_docs_examples_parseFolder.php_59cd49894862a7adc29626160d3ccca8.html">Source</a>
+			</li>
+			<li>
+				<a href="docs/examples/parseFolder.php">Output</a>
+			</li>
+		</ul>
+		<h6>Parsing an Array</h6>
+		<p>
+			The <a href="docs/PHP_CompatInfo/PHP_CompatInfo.html#methodparseArray">parseArray()</a> method
+			can be used to parse an array of <strong>files</strong> or <strong>strings</strong>.
+		</p>
+		<p>
+			The example below shows how you can use <a href="http://php.net/get_included_files">get_included_files()</a>
+			to parse a script in its entirety.
+		</p>
+		<ul>
+			<li>
+				<a href="docs/__examplesource/exsource_s_pear_PHP_CompatInfo_docs_examples_parseArray.php_206c617e8eb34e9d6af69a6bc6425ebb.html">Source</a>
+			</li>
+			<li>
+				<a href="docs/examples/parseArray.php">Output</a>
+			</li>
+		</ul>
+		<h3>To-Do</h3>
+		<ul>
+			<li style="text-decoration: line-through;">Unify API for each method to parse*($input,$options);</li>
+			<li>Implement PEAR_Error handling</li>
+		</ul>
+	</body>
+</html>

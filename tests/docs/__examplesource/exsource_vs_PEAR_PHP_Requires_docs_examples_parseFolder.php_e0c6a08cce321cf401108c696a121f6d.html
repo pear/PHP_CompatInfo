@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Example on how to parse a folder</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">PHP_Requires</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_PHP_Requires.html" class="menu">class tree: PHP_Requires</a> ]
+		  [ <a href="../elementindex_PHP_Requires.html" class="menu">index: PHP_Requires</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_PHP_Requires.html">PHP_Requires</a><br />
+            <br /><br />
+                  
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Example on how to parse a folder</h1>
+<pre><br />1     <strong>&lt;?php</strong><br />2     <br />3     <font color="green">/* Get the Compatibility info for an entire folder (recursive) */</font><br />4     <br />5     <font color="blue">require_once</font> <font color="#66cccc">'PHP/Requires.php'</font>;<br />6     <br />7     <strong>$requires</strong> = new <a href="../PHP_Requires/PHP_Requires.html">PHP_Requires</a>;<br />8     <br />9     <strong>$folder</strong> = <a href="http://www.php.net/dirname">dirname</a><strong>(</strong>__FILE__<strong>)</strong>;<br />10    <br />11    <strong>$options</strong> = array<strong>(</strong><font color="#66cccc">'file_ext'</font> =&gt; array<strong>(</strong><font color="#66cccc">'php3'</font><strong>,</strong><font color="#66cccc">'php'</font><strong>)</strong><strong>)</strong>;<br />12    <br />13    <a href="http://www.php.net/var_dump">var_dump</a><strong>(</strong><strong>$requires</strong><strong>-&gt;</strong><a href="../PHP_Requires/PHP_Requires.html#methodparseFolder">parseFolder</a><strong>(</strong><strong>$folder</strong><strong>,</strong><strong>$options</strong><strong>)</strong><strong>)</strong>;<br />14    <strong>?&gt;</strong></pre>
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Thu,  4 Mar 2004 19:24:04 +0000 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
