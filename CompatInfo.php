@@ -28,7 +28,7 @@
  * Current PHP4 Version (used for -dev version)
  * @global string $php4_version
  */
-$php4_version = '4.3.5';
+$php4_version = '4.3.6';
 
 /**
  * Current PHP5 Version (used for -dev version)
