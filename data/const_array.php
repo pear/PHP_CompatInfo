@@ -1,6 +1,6 @@
 <?php
 $GLOBALS['const'] = array (
-  'tokens' => 
+  'tokens' =>
     array (
     0 => 363,
     1 => 362,
@@ -20,87 +20,87 @@ $GLOBALS['const'] = array (
     15 => 352,
     16 => 354,
   ),
-  363 => 
+  '__FILE__' =>
   array (
     'init' => '4.0.0',
     'name' => '__FILE__',
   ),
-  362 => 
+  '__LINE__' =>
   array (
     'init' => '4.0.0',
     'name' => '__LINE__',
   ),
-  361 => 
+  '__FUNCTION__' =>
   array (
     'init' => '4.3.0',
     'name' => '__FUNCTION__',
   ),
-  359 => 
+  '__CLASS__' =>
   array (
     'init' => '4.3.0',
     'name' => '__CLASS__',
   ),
-  360 => 
+  '__METHOD__' =>
   array (
     'name' => '__METHOD__',
     'init' => '5.0.0',
   ),
-  345 => 
+  'abstract' =>
   array (
     'init' => '5.0.0',
     'name' => 'abstract',
   ),
-  337 => 
+  'catch' =>
   array (
     'init' => '5.0.0',
     'name' => 'catch',
   ),
-  344 => 
+  'final' =>
   array (
     'init' => '5.0.0',
     'name' => 'final',
   ),
-  288 => 
+  'instanceof' =>
   array (
     'init' => '5.0.0',
     'name' => 'instanceof',
   ),
-  343 => 
+  'private' =>
   array (
     'init' => '5.0.0',
     'name' => 'private',
   ),
-  342 => 
+  'protected' =>
   array (
     'init' => '5.0.0',
     'name' => 'protected',
   ),
-  341 => 
+  'public' =>
   array (
     'init' => '5.0.0',
     'name' => 'public',
   ),
-  338 => 
+  'throw' =>
   array (
     'init' => '5.0.0',
     'name' => 'throw',
   ),
-  336 => 
+  'try' =>
   array (
     'init' => '5.0.0',
     'name' => 'try',
   ),
-  298 => 
+  'clone' =>
   array (
     'init' => '5.0.0',
     'name' => 'clone',
   ),
-  352 => 
+  'interface' =>
   array (
     'init' => '5.0.0',
     'name' => 'interface',
   ),
-  354 => 
+  'implements' =>
   array (
     'init' => '5.0.0',
     'name' => 'implements',
