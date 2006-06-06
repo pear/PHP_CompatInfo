@@ -23,7 +23,7 @@
  * @package PHP_CompatInfo
  * @category PHP
  */
- 
+
 /**
  * An array of function init versions and extension
  */
@@ -148,7 +148,7 @@ class PHP_CompatInfo {
         $ignored = array();
         $default_options = array('file_ext' => array('php','php4','inc','phtml'), 'recurse_dir' => true, 'debug' => false, 'ignore_files' => array(), 'ignore_dirs' => array());
         $options = array_merge($default_options,$options);
-        
+
         if(is_dir($dir) && is_readable($dir)) {
             if($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
                 $dir = substr($dir,0,-1);
@@ -249,7 +249,7 @@ class PHP_CompatInfo {
         $constants = array();
         $options = array_merge(array('file_ext' => array('php','php4','inc','phtml'), 'is_string' => false,'debug' => false, 'ignore_files' => array()),$options);
         $options['ignore_files'] = array_map("strtolower",$options['ignore_files']);
-        foreach($files as $file) {                
+        foreach($files as $file) {
             if ($options['is_string'] == false) {
                 $pathinfo = pathinfo($file);
                 if (!in_array(strtolower($file),$options['ignore_files']) && in_array($pathinfo['extension'],$options['file_ext'])) {
@@ -320,9 +320,9 @@ class PHP_CompatInfo {
         $constants = array();
         $constant_names = array();
         $udf = array();
-        
+
         /* Check for PHP 5 stuffs */
-        
+
         $php5_tokens = @array(
                         T_ABSTRACT => 'abstract',
                         T_CATCH => 'catch',
@@ -339,36 +339,45 @@ class PHP_CompatInfo {
                         );
 
         foreach ($php5_tokens as $php5_token => $value) {
-            if (in_array(array($php5_token, $value), $tokens) 
-                || in_array(array($php5_token, strtoupper($value)), $tokens) 
+            if (in_array(array($php5_token, $value), $tokens)
+                || in_array(array($php5_token, strtoupper($value)), $tokens)
                 || in_array(array($php5_token, ucfirst($value)), $tokens)) {
                 $constants[] = $php5_token;
                 $latest_version = '5.0.0';
                 break;
             }
         }
-        
+
         $token_count = sizeof($tokens);
         $i = 0;
         while ($i < $token_count) {
             $found_func = true;
-            if ($tokens[$i][0] == T_FUNCTION) {
+            if (is_array($tokens[$i]) && (token_name($tokens[$i][0]) == 'T_FUNCTION')) {
                 $found_func = false;
             }
             while ($found_func == false) {
                 $i += 1;
-                if ($tokens[$i][0] == T_STRING) {
+                if (is_array($tokens[$i]) && (token_name($tokens[$i][0]) == 'T_STRING')) {
                     $found_func = true;
                     $udf[] = $tokens[$i][1];
                 }
             }
-            if ($tokens[$i][0] == T_STRING) {
-                if (isset($tokens[$i + 1]) && ($tokens[$i + 1][0] == '(') && ($tokens[$i - 1][0] != T_DOUBLE_COLON) && ($tokens[$i - 1][0] != T_OBJECT_OPERATOR)) {
+            if (is_array($tokens[$i]) && (token_name($tokens[$i][0]) == 'T_STRING')) {
+                if (isset($tokens[$i + 1]) && ($tokens[$i + 1][0] == '(') &&
+                    (is_array($tokens[$i - 1])) &&
+                    (token_name($tokens[$i - 1][0]) != 'T_DOUBLE_COLON') &&
+                    (token_name($tokens[$i - 1][0]) != 'T_OBJECT_OPERATOR')) {
                     $functions[] = $tokens[$i][1];
                 }
             }
-            if (in_array($tokens[$i][0],$GLOBALS['const']['tokens'])) {
-                $constants[] = $tokens[$i][0];
+            if (is_array($tokens[$i])) {
+                if (in_array(token_name($tokens[$i][0]),$GLOBALS['const'])) {
+                    $constants[] = token_name($tokens[$i][0]);
+                }
+            } else {
+                if (in_array($tokens[$i][0], $GLOBALS['const'])) {
+                    $constants[] = $tokens[$i][0];
+                }
             }
             $i += 1;
         }
