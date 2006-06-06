@@ -155,9 +155,9 @@ class PHP_CompatInfo
             if ($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
                 $dir = substr($dir, 0, -1);
             }
-            array_map('strtolower', $options['file_ext']);
-            array_map('strtolower', $options['ignore_files']);
-            array_map('strtolower', $options['ignore_dirs']);
+            $options['file_ext'] = array_map('strtolower', $options['file_ext']);
+            $options['ignore_files'] = array_map('strtolower', $options['ignore_files']);
+            $options['ignore_dirs'] = array_map('strtolower', $options['ignore_dirs']);
             $files_raw = $this->_fileList($dir,$options);
             foreach($files_raw as $file) {
                 if (in_array(strtolower($file), $options['ignore_files'])) {
