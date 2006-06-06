@@ -1,30 +1,27 @@
 <?php
-/* vim: set expandtab tabstop=4 shiftwidth=4: */
-// +----------------------------------------------------------------------+
-// | PHP version 4                                                        |
-// +----------------------------------------------------------------------+
-// | Copyright (c) 1997-2004 The PHP Group                                |
-// +----------------------------------------------------------------------+
-// | This source file is subject to version 3.0 of the PHP license,       |
-// | that is bundled with this package in the file LICENSE, and is        |
-// | available through the world-wide-web at the following url:           |
-// | http://www.php.net/license/3_0.txt.                                  |
-// | If you did not receive a copy of the PHP license and are unable to   |
-// | obtain it through the world-wide-web, please send a note to          |
-// | license@php.net so we can mail you a copy immediately.               |
-// +----------------------------------------------------------------------+
-// | Authors: Davey Shafik <davey@php.net>                                |
-// +----------------------------------------------------------------------+
-//
-// $Id$
-
 /**
  * CLI Script to Check Compatibility of chunk of PHP code
- * @package PHP_CompatInfo
- * @category PHP
+ *
+ * PHP versions 4 and 5
+ *
+ * LICENSE: This source file is subject to version 3.01 of the PHP license
+ * that is available through the world-wide-web at the following URI:
+ * http://www.php.net/license/3_01.txt.  If you did not receive a copy of
+ * the PHP License and are unable to obtain it through the web, please
+ * send a note to license@php.net so we can mail you a copy immediately.
+ *
+ * @category   PHP
+ * @package    PHP_CompatInfo
+ * @author     Davey Shafik <davey@php.net>
+ * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version    CVS: $Id$
+ * @link       http://pear.php.net/package/PHP_CompatInfo
+ * @since      File available since Release 0.8.0
  */
 
 require_once 'PHP/CompatInfo.php';
+require_once 'Console/Getopt.php';
+require_once 'Console/Table.php';
 
 /**
  * CLI Script to Check Compatibility of chunk of PHP code
@@ -37,10 +34,16 @@ require_once 'PHP/CompatInfo.php';
  * ?>
  * </code>
  *
- * @package PHP_CompatInfo
- * @author Davey Shafik <davey@php.net>
- * @copyright Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
  * @example docs/examples/Cli.php Example of using PHP_CompatInfo_Cli
+ *
+ * @category   PHP
+ * @package    PHP_CompatInfo
+ * @author     Davey Shafik <davey@php.net>
+ * @copyright  Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
+ * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version    Release: @package_version@
+ * @link       http://pear.php.net/package/PHP_CompatInfo
+ * @since      Class available since Release 0.8.0
  */
 
 class PHP_CompatInfo_Cli extends PHP_CompatInfo {
@@ -48,50 +51,42 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
     /**
      * @var array Current CLI Flags
      */
-
     var $opts = array();
 
     /**
      * @var boolean Whether an error has occured
      */
-
     var $error = false;
 
     /**
      * @var string File to be Processed
      */
-
     var $file;
 
     /**
      * @var string Directory to be Processed
      */
-
     var $dir;
 
     /**
      * @var boolean Whether to show debug output
      */
-
     var $debug;
 
     /**
      * @var boolean Whether to recurse directories when using --dir or -d
      */
-
     var $recurse = true;
 
     /**
      * Constructor
      */
-
-     function __construct() {
-        require_once 'Console/Getopt.php';
+     function __construct()
+     {
         $opts = Console_Getopt::readPHPArgv();
         $short_opts = 'd:f:hn';
         $long_opts = array('dir=','file=','help','debug','no-recurse');
-        $this->opts = Console_Getopt::getopt($opts,$short_opts,$long_opts);
-        require_once 'PEAR.php';
+        $this->opts = Console_Getopt::getopt($opts, $short_opts, $long_opts);
         if (PEAR::isError($this->opts)) {
             $this->error = true;
             return;
@@ -107,29 +102,31 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                     break;
                 case '--dir':
                     $this->dir = $option[1];
-                    if($this->dir{strlen($this->dir)-1} == '/' || $this->dir{strlen($this->dir)-1} == '\\') {
-                        $this->dir = substr($this->dir,0,-1);
+                    if ($this->dir{strlen($this->dir)-1} == '/' ||
+                        $this->dir{strlen($this->dir)-1} == '\\') {
+                        $this->dir = substr($this->dir, 0, -1);
                     }
-                    $this->dir = str_replace('\\','/',realpath($this->dir));
+                    $this->dir = str_replace('\\', '/', realpath($this->dir));
                     break;
                 case 'd':
                     if ($option[1]{0} == '=') {
-                        $this->dir = substr($option[1],1);
+                        $this->dir = substr($option[1], 1);
                     } else {
                         $this->dir = $option[1];
                     }
-                    
-                    if ($this->dir{strlen($this->dir)-1} == '/' || $this->dir{strlen($this->dir)-1} == '\\') {
-                        $this->dir = substr($this->dir,0,-1);
+
+                    if ($this->dir{strlen($this->dir)-1} == '/' ||
+                        $this->dir{strlen($this->dir)-1} == '\\') {
+                        $this->dir = substr($this->dir, 0, -1);
                     }
-                    $this->dir = str_replace('\\','/',realpath($this->dir));
+                    $this->dir = str_replace('\\', '/', realpath($this->dir));
                     break;
                 case '--file':
                     $this->file = $option[1];
                     break;
                 case 'f':
                     if ($option[1]{0} == '=') {
-                        $this->file = substr($option[1],1);
+                        $this->file = substr($option[1], 1);
                     } else {
                         $this->file = $option[1];
                     }
@@ -145,8 +142,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
      /**
       * PHP4 Compatible Constructor
       */
-
-     function PHP_CompatInfo_Cli() {
+     function PHP_CompatInfo_Cli()
+     {
         $this->__construct();
      }
 
@@ -156,8 +153,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
       * @access public
       * @return void
       */
-
-     function run() {
+     function run()
+     {
         if ($this->error == true) {
             echo $this->opts->message;
             $this->_printUsage();
@@ -180,10 +177,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
       * @access private
       * @return boolean|string Returns Boolean False on fail
       */
-
-      function _parseDir() {
-        require_once 'Console/Table.php';
-        $info = $this->parseDir($this->dir,array('debug' => $this->debug,'recurse_dir' => $this->recurse));
+      function _parseDir()
+      {
+        $info = $this->parseDir($this->dir,
+            array('debug' => $this->debug, 'recurse_dir' => $this->recurse)
+            );
         if ($info == false) {
             echo 'Failed opening directory ("' .$this->dir. '"). Please check your spelling and try again.';
             $this->_printUsage();
@@ -202,8 +200,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
         } else {
             $const = array_shift($info['constants']);
         }
-        $dir = str_replace(array('\\','/'),DIRECTORY_SEPARATOR,$this->dir);
-        $table->addRow(array($dir.DIRECTORY_SEPARATOR. '*',$info['version'],$ext,$const));
+        $dir = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $this->dir);
+        $table->addRow(array($dir . DIRECTORY_SEPARATOR . '*', $info['version'], $ext, $const));
         if (sizeof($info['extensions']) >= sizeof($info['constants'])) {
             foreach ($info['extensions'] as $i => $ext) {
                 if (isset($info['constants'][$i])) {
@@ -211,7 +209,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                 } else {
                     $const = '';
                 }
-                $table->addRow(array('','',$ext,$const));
+                $table->addRow(array('', '', $ext, $const));
             }
         } else {
             foreach ($info['constants'] as $i => $const) {
@@ -220,7 +218,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                 } else {
                     $ext = '';
                 }
-                $table->addRow(array('','',$ext,$const));
+                $table->addRow(array('', '', $ext, $const));
             }
         }
         unset($info['version']);
@@ -243,8 +241,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
             } else {
                 $const = array_shift($info['constants']);
             }
-            $key = str_replace(array('\\','/'),DIRECTORY_SEPARATOR,$file);
-            $table->addRow(array($file,$info['version'],$ext,$const));
+            $key = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $file);
+            $table->addRow(array($file, $info['version'], $ext, $const));
             if (sizeof($info['extensions']) >= sizeof($info['constants'])) {
                 foreach ($info['extensions'] as $i => $ext) {
                     if (isset($info['constants'][$i])) {
@@ -252,7 +250,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                     } else {
                         $const = '';
                     }
-                    $table->addRow(array('','',$ext,$const));
+                    $table->addRow(array('', '', $ext, $const));
                 }
             } else {
                 foreach ($info['constants'] as $i => $const) {
@@ -261,7 +259,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                     } else {
                         $ext = '';
                     }
-                    $table->addRow(array('','',$ext,$const));
+                    $table->addRow(array('', '', $ext, $const));
                 }
             }
         }
@@ -275,10 +273,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
      * @access private
      * @return boolean|string Returns Boolean False on fail
      */
-
-    function _parseFile() {
-        require_once 'Console/Table.php';
-        $info = $this->parseFile($this->file,array('debug' => $this->debug));
+    function _parseFile()
+    {
+        $info = $this->parseFile($this->file, array('debug' => $this->debug));
         if ($info == false) {
             echo 'Failed opening file. Please check your spelling and try again.';
             $this->_printUsage();
@@ -299,7 +296,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                 $const = array_shift($info['constants']);
             }
 
-            $table->addRow(array($this->file,$info['version'],$ext,$const));
+            $table->addRow(array($this->file, $info['version'], $ext, $const));
             if (sizeof($info['extensions']) >= sizeof($info['constants'])) {
                 foreach ($info['extensions'] as $i => $ext) {
                     if (isset($info['constants'][$i])) {
@@ -307,7 +304,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                     } else {
                         $const = '';
                     }
-                    $table->addRow(array('','',$ext,$const));
+                    $table->addRow(array('', '', $ext, $const));
                 }
             } else {
                 foreach ($info['constants'] as $i => $const) {
@@ -316,7 +313,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                     } else {
                         $ext = '';
                     }
-                    $table->addRow(array('','',$ext,$const));
+                    $table->addRow(array('', '', $ext, $const));
                 }
             }
         } else {
@@ -334,7 +331,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                 $const = array_shift($info['constants']);
             }
 
-            $table->addRow(array($this->file,$info['version'],$ext,$const));
+            $table->addRow(array($this->file, $info['version'], $ext, $const));
 
             if (sizeof($info['extensions']) >= sizeof($info['constants'])) {
                 foreach ($info['extensions'] as $i => $ext) {
@@ -343,7 +340,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                     } else {
                         $const = '';
                     }
-                    $table->addRow(array('','',$ext,$const));
+                    $table->addRow(array('', '', $ext, $const));
                 }
             } else {
                 foreach ($info['constants'] as $i => $const) {
@@ -352,7 +349,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
                     } else {
                         $ext = '';
                     }
-                    $table->addRow(array('','',$ext,$const));
+                    $table->addRow(array('', '', $ext, $const));
                 }
             }
         }
@@ -372,7 +369,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
 
             foreach ($info as $version => $functions) {
                 foreach ($functions as $func) {
-                    $table->addRow(array($version,$func['function'],$func['extension']));
+                    $table->addRow(array($version, $func['function'], $func['extension']));
                 }
             }
 
@@ -388,22 +385,22 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
      * @access private
      * @return void
      */
-    
-    function _printUsage() {
+    function _printUsage()
+    {
         echo "\n";
         echo 'Usage:' . "\n";
         echo "  " .basename(__FILE__). ' --dir=DIR [--no-recurse] | --file=FILE [--debug] | [--help]';
         echo "\n";
     }
-    
+
     /**
      * Show full help information
      *
      * @access private
      * @return void
      */
-
-    function _printHelp() {
+    function _printHelp()
+    {
         $this->_printUsage();
         echo "Commands:\n";
         echo "  --file=FILE (-f) \tParse FILE to get its Compatibility Info";
@@ -418,5 +415,4 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo {
         echo "\n";
     }
 }
-
 ?>
