@@ -34,10 +34,14 @@ if (count($sess) == 0) {
                 $info = &$reg->getPackage($package, $channel);
                 if (is_object($info)) {
                     $name = $info->getPackage();
+                    $version = $info->getVersion();
+                    $release_state = $info->getState();
                 } else {
                     $name = $info['package'];
+                    $version = $info['version'];
+                    $release_state = $info['state'];
                 }
-                $sess['packages'][$channel][] = $name;
+                $sess['packages'][$channel][] = "$name $version ($release_state)";
             }
         } else {
             $sess['packages'][$channel] = array();
@@ -53,7 +57,12 @@ if (count($sess) == 0) {
     $names[''] = array();
     foreach($sess['packages'] as $c => $p) {
         if (count($p)) {
-            $names[$c] = array_combine($p, $p);
+            $l = array();
+            foreach($p as $k) {
+                list($n, $v, $s) = explode(' ', $k);
+                $l[] = $n;
+            }
+            $names[$c] = array_combine($l, $p);
         } else {
             $names[$c] = array();
         }
