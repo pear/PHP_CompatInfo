@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
-<package version="1.0" packagerversion="1.4.0a4">
+<package version="1.0" packagerversion="1.4.9">
  <name>PHP_CompatInfo</name>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
  <description>PHP_CompatInfo will parse a file/folder/script/array to find out the minimum
@@ -14,19 +14,35 @@ which shows which functions require which version and CLI output script
    <email>davey@php.net</email>
    <role>lead</role>
   </maintainer>
+  <maintainer>
+   <user>farell</user>
+   <name>Laurent Laville</name>
+   <email>pear@laurent-laville.org</email>
+   <role>lead</role>
+  </maintainer>
   </maintainers>
  <release>
-  <version>1.0.0</version>
-  <date>2005-03-14</date>
-  <license>PHP License</license>
+  <version>1.0.1</version>
+  <date>2006-06-12</date>
+  <license>PHP License 3.0</license>
   <state>stable</state>
-  <notes>Fixed Bug #3657
-- Now unsets all constants that are PHP5 only. This means
-that PHP5 detection on PHP4 is now highly unlikely but that PHP4
-detection should be much better.
+  <notes>* bug fixes
+- bug #4789 : error in packaged file structure
+- bug #4942 : fixing my own bug (my == techtonik)
+- bug #7813 : wrong PHP minimum version detection
+
+* news
+- a web frontend (docs/examples/ci_frontend.php) that will help everybody
+to check their PEAR packages installation.
+- cleansweep on un-necessary files included into bundle
+- Laurent Laville become a new leader to help Davey
+
+* improvements
+- PHP minimum is set to 4.2.0 (4.3.0 required by release 1.0.0 is not necessary)
+- PEAR installer is set up to 1.4.3 due to a serious vulnerability found on Nov 4, 2005.
   </notes>
   <deps>
-   <dep type="php" rel="ge" version="4.3.0" optional="no"/>
+   <dep type="php" rel="ge" version="4.2.0" optional="no"/>
    <dep type="ext" rel="has" optional="no">tokenizer</dep>
    <dep type="pkg" rel="ge" version="1.0.1" optional="yes">Console_Table</dep>
    <dep type="pkg" rel="ge" version="1.2" optional="yes">Console_Getopt</dep>
@@ -35,14 +51,13 @@ detection should be much better.
    <dir name="/" baseinstalldir="PHP">
     <dir name="CompatInfo">
      <file role="php" name="Cli.php"/>
-    </dir> <!-- /CompatInfo -->
-    <dir name="data">
      <file role="php" name="const_array.php"/>
      <file role="php" name="func_array.php"/>
-    </dir> <!-- /data -->
+    </dir> <!-- /CompatInfo -->
     <dir name="docs">
      <dir name="examples">
       <file role="doc" name="checkConstants.php"/>
+      <file role="doc" name="ci_frontend.php"/>
       <file role="doc" name="Cli.php"/>
       <file role="doc" name="cliOutput.txt"/>
       <file role="doc" name="parseArray.php"/>
@@ -50,67 +65,36 @@ detection should be much better.
       <file role="doc" name="parseFile.php"/>
       <file role="doc" name="parseString.php"/>
      </dir> <!-- /docs/examples -->
-     <dir name="media">
-      <file role="doc" name="background.png"/>
-      <file role="doc" name="empty.png"/>
-      <file role="doc" name="style.css"/>
-     </dir> <!-- /docs/media -->
-     <dir name="PHP_CompatInfo">
-      <file role="doc" name="PHP_CompatInfo.html"/>
-      <file role="doc" name="PHP_CompatInfo_Cli.html"/>
-      <file role="doc" name="_CompatInfo_CompatInfo_Cli_php.html"/>
-      <file role="doc" name="_CompatInfo_CompatInfo_php.html"/>
-      <file role="doc" name="_CompatInfo_data_const_array_php.html"/>
-      <file role="doc" name="_CompatInfo_data_func_array_php.html"/>
-      <file role="doc" name="_CompatInfo_data_token_array_php.html"/>
-      <file role="doc" name="_CompatInfo_docs_examples_checkConstants_php.html"/>
-      <file role="doc" name="_CompatInfo_docs_examples_Cli_php.html"/>
-      <file role="doc" name="_CompatInfo_docs_examples_parseArray_php.html"/>
-      <file role="doc" name="_CompatInfo_docs_examples_parseDir_php.html"/>
-      <file role="doc" name="_CompatInfo_docs_examples_parseFile_php.html"/>
-      <file role="doc" name="_CompatInfo_docs_examples_parseString_php.html"/>
-      <file role="doc" name="_CompatInfo_package_php.html"/>
-      <file role="doc" name="_CompatInfo_scripts_updateVersionInfo_php.html"/>
-     </dir> <!-- /docs/PHP_CompatInfo -->
-     <dir name="__examplesource">
-      <file role="doc" name="exsource_ar_PHP_CompatInfo_docs_examples_checkConstants.php_cb2bb84fe2e617c3585b861431bf7b91.html"/>
-      <file role="doc" name="exsource_cvs_pear_PHP_CompatInfo_docs_examples_parseDir.php_58b8884c168f5711b2067a637f8b9d99.html"/>
-      <file role="doc" name="exsource_s_pear_PHP_CompatInfo_docs_examples_parseArray.php_e8985f384f5d7ebe7d4a6377c9a484bf.html"/>
-      <file role="doc" name="exsource_vs_pear_PHP_CompatInfo_docs_examples_parseFile.php_0bae5aabc7473b93eabd04e4cce4a70c.html"/>
-      <file role="doc" name="exsource__pear_PHP_CompatInfo_docs_examples_parseString.php_8f8087f701e8c04f5b215035957e357c.html"/>
-      <file role="doc" name="exsource__php-cvs_pear_PHP_CompatInfo_docs_examples_Cli.php_4570e866d6e54d3b460127e2df0f2ab7.html"/>
-     </dir> <!-- /docs/__examplesource -->
-     <dir name="__filesource">
-      <file role="doc" name="fsource_PHP_CompatInfo__CompatInfo.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__CompatInfoCli.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__dataconst_array.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__datafunc_array.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__datatoken_array.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__docsexamplescheckConstants.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__docsexamplesCli.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__docsexamplesparseArray.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__docsexamplesparseDir.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__docsexamplesparseFile.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__docsexamplesparseString.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__package.php.html"/>
-      <file role="doc" name="fsource_PHP_CompatInfo__scriptsupdateVersionInfo.php.html"/>
-     </dir> <!-- /docs/__filesource -->
-     <file role="doc" name="classtrees_PHP_CompatInfo.html"/>
-     <file role="doc" name="elementindex.html"/>
-     <file role="doc" name="elementindex_PHP_CompatInfo.html"/>
-     <file role="doc" name="errors.html"/>
-     <file role="doc" name="index.html"/>
-     <file role="doc" name="li_PHP_CompatInfo.html"/>
     </dir> <!-- /docs -->
-    <dir name="scripts">
-     <file role="php" name="updateVersionInfo.php"/>
-    </dir> <!-- /scripts -->
-    <file role="php" name="CompatInfo.php"/>
+    <file role="php" name="CompatInfo.php">
+     <replace from="@package_version@" to="version" type="package-info"/>
+    </file>
     <file role="data" name="package2.xml"/>
    </dir> <!-- / -->
   </filelist>
  </release>
  <changelog>
+   <release>
+    <version>1.0.1</version>
+    <date>2006-06-12</date>
+    <license>PHP License 3.0</license>
+    <state>stable</state>
+    <notes>* bug fixes
+- bug #4789 : error in packaged file structure
+- bug #4942 : fixing my own bug (my == techtonik)
+- bug #7813 : wrong PHP minimum version detection
+
+* news
+- a web frontend (docs/examples/ci_frontend.php) that will help everybody
+to check their PEAR packages installation.
+- cleansweep on un-necessary files included into bundle
+- Laurent Laville become a new leader to help Davey
+
+* improvements
+- PHP minimum is set to 4.2.0 (4.3.0 required by release 1.0.0 is not necessary)
+- PEAR installer is set up to 1.4.3 due to a serious vulnerability found on Nov 4, 2005.
+    </notes>
+   </release>
    <release>
     <version>1.0.0</version>
     <date>2005-03-14</date>
@@ -153,7 +137,7 @@ Fixed Bug #3657
     <license>PHP License</license>
     <state>beta</state>
     <notes>Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
-PHP5 functions no longer marked as '-dev'.
+PHP5 functions no longer marked as &apos;-dev&apos;.
     </notes>
    </release>
    <release>
@@ -161,7 +145,7 @@ PHP5 functions no longer marked as '-dev'.
     <date>2004-06-12</date>
     <license>PHP License</license>
     <state>beta</state>
-    <notes>Now doesn't detect foo::bar() or $foo-&gt;bar() as a function call.
+    <notes>Now doesn&apos;t detect foo::bar() or $foo-&gt;bar() as a function call.
 State moved to beta, first RC.
     </notes>
    </release>
@@ -178,7 +162,7 @@ State moved to beta, first RC.
     <date>2004-04-26</date>
     <license>PHP License</license>
     <state>alpha</state>
-    <notes>* Some PHP5 compatibility work done. 
+    <notes>* Some PHP5 compatibility work done.
 * Other small things fixed for integration into PEAR_PackageFileManager.
 * Added file_ext option to parseArray
     </notes>
@@ -222,7 +206,7 @@ parseFolder() has been aliased to parseDir().
     <license>PHP License</license>
     <state>alpha</state>
     <notes>* First release on PEAR-web.
-* Added the ability to ignore files 
+* Added the ability to ignore files
 in parseFolder() and parseArray(), and the ability to ignore folders
 in parseFolder(). Added the ability to ignore functions in all public methods.
     </notes>
@@ -279,8 +263,8 @@ that contains the name and extension needed.
     <date>2004-02-27</date>
     <license>PHP License</license>
     <state>devel</state>
-    <notes>Fourth Package, for PEPr - Added parseArray() and the $debug param to 
-all public functions, which creates additional return data like 
+    <notes>Fourth Package, for PEPr - Added parseArray() and the $debug param to
+all public functions, which creates additional return data like
 $return[$version][] = $function_name.
     </notes>
    </release>
