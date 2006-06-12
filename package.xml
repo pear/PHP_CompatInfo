@@ -69,7 +69,6 @@ to check their PEAR packages installation.
     <file role="php" name="CompatInfo.php">
      <replace from="@package_version@" to="version" type="package-info"/>
     </file>
-    <file role="data" name="package2.xml"/>
    </dir> <!-- / -->
   </filelist>
  </release>
