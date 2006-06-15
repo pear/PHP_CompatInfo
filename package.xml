@@ -22,24 +22,18 @@ which shows which functions require which version and CLI output script
   </maintainer>
   </maintainers>
  <release>
-  <version>1.0.1</version>
-  <date>2006-06-12</date>
+  <version>1.0.2</version>
+  <date>2006-06-16</date>
   <license>PHP License 3.0</license>
   <state>stable</state>
   <notes>* bug fixes
-- bug #4789 : error in packaged file structure
-- bug #4942 : fixing my own bug (my == techtonik)
-- bug #7813 : wrong PHP minimum version detection
-
-* news
-- a web frontend (docs/examples/ci_frontend.php) that will help everybody
-to check their PEAR packages installation.
-- cleansweep on un-necessary files included into bundle
-- Laurent Laville become a new leader to help Davey
+- Bug #6581 : Functions missing in func_array.php
 
 * improvements
-- PHP minimum is set to 4.2.0 (4.3.0 required by release 1.0.0 is not necessary)
-- PEAR installer is set up to 1.4.3 due to a serious vulnerability found on Nov 4, 2005.
+- PHP 3 functions are now supported
+- functions and extensions bases were refreshed with latest versions of
+  . http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.19
+  . http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35
   </notes>
   <deps>
    <dep type="php" rel="ge" version="4.2.0" optional="no"/>
@@ -73,6 +67,21 @@ to check their PEAR packages installation.
   </filelist>
  </release>
  <changelog>
+   <release>
+    <version>1.0.2</version>
+    <date>2006-06-16</date>
+    <license>PHP License 3.0</license>
+    <state>stable</state>
+    <notes>* bug fixes
+- Bug #6581 : Functions missing in func_array.php
+
+* improvements
+- PHP 3 functions are now supported
+- functions and extensions bases were refreshed with latest versions of
+  . http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.19
+  . http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35
+    </notes>
+   </release>
    <release>
     <version>1.0.1</version>
     <date>2006-06-12</date>

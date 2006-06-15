@@ -18,9 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>pear@laurent-laville.org</email>
   <active>yes</active>
  </lead>
- <date>2006-06-12</date>
+ <date>2006-06-16</date>
+ <time>00:47:24</time>
  <version>
-  <release>1.0.1</release>
+  <release>1.0.2</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -29,19 +30,13 @@ which shows which functions require which version and CLI output script</descrip
  </stability>
  <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
  <notes>* bug fixes
-- bug #4789 : error in packaged file structure
-- bug #4942 : fixing my own bug (my == techtonik)
-- bug #7813 : wrong PHP minimum version detection
-
-* news
-- a web frontend (docs/examples/ci_frontend.php) that will help everybody
-to check their PEAR packages installation.
-- cleansweep on un-necessary files included into bundle
-- Laurent Laville become a new leader to help Davey
+- Bug #6581 : Functions missing in func_array.php
 
 * improvements
-- PHP minimum is set to 4.2.0 (4.3.0 required by release 1.0.0 is not necessary)
-- PEAR installer is set up to 1.4.3 due to a serious vulnerability found on Nov 4, 2005.
+- PHP 3 functions are now supported
+- functions and extensions bases were refreshed with latest versions of
+  . http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.19
+  . http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -96,6 +91,27 @@ to check their PEAR packages installation.
  <changelog>
   <release>
    <version>
+    <release>1.0.2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2006-06-16</date>
+   <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
+   <notes>* bug fixes
+- Bug #6581 : Functions missing in func_array.php
+
+* improvements
+- PHP 3 functions are now supported
+- functions and extensions bases were refreshed with latest versions of
+  . http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.19
+  . http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.0.1</release>
     <api>1.0.0</api>
    </version>
@@ -118,8 +134,7 @@ to check their PEAR packages installation.
 
 * improvements
 - PHP minimum is set to 4.2.0 (4.3.0 required by release 1.0.0 is not necessary)
-- PEAR installer is set up to 1.4.3 due to a serious vulnerability found on Nov 4, 2005.
-   </notes>
+- PEAR installer is set up to 1.4.3 due to a serious vulnerability found on Nov 4, 2005.</notes>
   </release>
   <release>
    <version>
