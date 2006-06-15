@@ -1,5 +1,9 @@
 <?php
-$GLOBALS['const'] = array (
+/**
+ * Constants
+ * @global array $GLOBALS['_PHP_COMPATINFO_CONST']
+ */
+$GLOBALS['_PHP_COMPATINFO_CONST'] = array (
   'tokens' =>
     array (
     0 => 363,
@@ -125,7 +129,7 @@ $php5_only = array(
 
 if (!defined('T_CLONE')) {
     foreach ($php5_only as $i => $token) {
-        unset($GLOBALS['const']['tokens'][$i]);
+        unset($GLOBALS['_PHP_COMPATINFO_CONST']['tokens'][$i]);
     }
 }
 ?>
