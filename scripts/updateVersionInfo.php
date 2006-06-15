@@ -20,9 +20,6 @@ $xml = simplexml_load_file('D:\php\pear\PHP_CompatInfo\scripts\version.xml');
 foreach ($xml->function as $function) {
     $name = (string) $function['name'];
     $version = false;
-    if (!isset($funcs[$name]['ext'])) {
-        $funcs[$name]['ext'] = ' ';
-    }
     if (preg_match('/= (\d\.\d\.\d)/', (string) $function['from'], $matches)) {
         $funcs[$name]['init'] = $matches[1];
         continue;
