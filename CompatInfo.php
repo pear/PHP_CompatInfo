@@ -54,7 +54,7 @@ class PHP_CompatInfo
     /**
      * @var string Earliest version of PHP to use
      */
-    var $latest_version = '4.0.0';
+    var $latest_version = '3.0.0';
 
     /**
      * @var boolean Toggle parseDir recursion
@@ -372,11 +372,14 @@ class PHP_CompatInfo
                 }
             }
             if (is_array($tokens[$i]) && (token_name($tokens[$i][0]) == 'T_STRING')) {
-                if (isset($tokens[$i + 1]) && ($tokens[$i + 1][0] == '(') &&
-                    (is_array($tokens[$i - 1])) &&
-                    (token_name($tokens[$i - 1][0]) != 'T_DOUBLE_COLON') &&
-                    (token_name($tokens[$i - 1][0]) != 'T_OBJECT_OPERATOR')) {
-                    $functions[] = $tokens[$i][1];
+                if (isset($tokens[$i + 1]) && ($tokens[$i + 1][0] == '(')) {
+                    if ((is_array($tokens[$i - 1])) &&
+                       (token_name($tokens[$i - 1][0]) != 'T_DOUBLE_COLON') &&
+                       (token_name($tokens[$i - 1][0]) != 'T_OBJECT_OPERATOR')) {
+                        $functions[] = $tokens[$i][1];
+                    } elseif (!is_array($tokens[$i - 1])) {
+                        $functions[] = $tokens[$i][1];
+                    }
                 }
             }
             if (is_array($tokens[$i])) {
@@ -407,14 +410,14 @@ class PHP_CompatInfo
                         );
                 }
                 $cmp = version_compare($latest_version, $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['init']);
-                if ((int)$cmp === -1) {
+                if ($cmp === -1) {
                     $latest_version = $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['init'];
                 }
                 if ((!empty($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'])) &&
                     ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'ext_standard') &&
                     ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'zend'))  {
                     $extension = substr($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'], 4);
-                    if ($extension{0} != '_') {
+                    if ($extension{0} != ' ') {
                         if (!in_array($extension, $extensions)) {
                             $extensions[] = $extension;
                         }
