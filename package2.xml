@@ -272,7 +272,7 @@ State moved to beta, first RC.</notes>
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2004-04-24</date>
+   <date>2004-04-22</date>
    <license uri="http://www.php.net/license">PHP License</license>
    <notes>Bugs fixed from 0.8.0 (thanks to Jan Schneider)
 * Added Console_Getopt optional dependency.
@@ -305,7 +305,7 @@ parseFolder() has been aliased to parseDir().</notes>
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2004-04-22</date>
+   <date>2004-03-09</date>
    <license uri="http://www.php.net/license">PHP License</license>
    <notes>* First release on PEAR-web.
 * Added the ability to ignore files

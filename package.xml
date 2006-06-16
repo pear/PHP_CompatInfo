@@ -187,7 +187,7 @@ State moved to beta, first RC.
    </release>
    <release>
     <version>0.8.1</version>
-    <date>2004-04-24</date>
+    <date>2004-04-22</date>
     <license>PHP License</license>
     <state>alpha</state>
     <notes>Bugs fixed from 0.8.0 (thanks to Jan Schneider)
@@ -210,7 +210,7 @@ parseFolder() has been aliased to parseDir().
    </release>
    <release>
     <version>0.7.0</version>
-    <date>2004-04-22</date>
+    <date>2004-03-09</date>
     <license>PHP License</license>
     <state>alpha</state>
     <notes>* First release on PEAR-web.
