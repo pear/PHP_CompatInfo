@@ -53,11 +53,13 @@ class PHP_CompatInfo
 {
     /**
      * @var string Earliest version of PHP to use
+     * @since  0.7.0
      */
     var $latest_version = '3.0.0';
 
     /**
      * @var boolean Toggle parseDir recursion
+     * @since  0.7.0
      */
     var $recurse_dir = true;
 
@@ -74,6 +76,7 @@ class PHP_CompatInfo
      *                              calculating the version needed.
      * @access public
      * @return Array
+     * @since  0.7.0
      */
     function parseFile($file, $options = array())
     {
@@ -97,6 +100,7 @@ class PHP_CompatInfo
      *                              calculating the version needed.
      * @access public
      * @return Array
+     * @since  0.7.0
      */
     function  parseString($string, $options = array())
     {
@@ -134,6 +138,7 @@ class PHP_CompatInfo
      *                                         calculating the version needed.
      * @access public
      * @return array
+     * @since  0.8.0
      */
     function parseDir($dir, $options = array())
     {
@@ -212,6 +217,7 @@ class PHP_CompatInfo
      *
      * @uses PHP_CompatInfo::parseDir()
      * @access public
+     * @since  0.7.0
      */
     function parseFolder($folder, $options = array())
     {
@@ -244,6 +250,7 @@ class PHP_CompatInfo
      *                                         calculating the version needed.
      * @access public
      * @return array
+     * @since  0.7.0
      */
     function parseArray($files,$options = array())
     {
@@ -320,6 +327,7 @@ class PHP_CompatInfo
      * @param boolean $debug Show Extra Output
      * @access private
      * @return array
+     * @since  0.7.0
      */
     function _parseTokens($tokens, $options)
     {
@@ -351,9 +359,8 @@ class PHP_CompatInfo
             if (in_array(array($php5_token, $value), $tokens)
                 || in_array(array($php5_token, strtoupper($value)), $tokens)
                 || in_array(array($php5_token, ucfirst($value)), $tokens)) {
-                $constants[] = $php5_token;
+                $constants[] = $value;
                 $latest_version = '5.0.0';
-                break;
             }
         }
 
@@ -458,6 +465,7 @@ class PHP_CompatInfo
      * @param boolean $is_string Whether or note the input is a string
      * @access private
      * @return array
+     * @since  0.7.0
      */
     function _tokenize($input, $is_string = false)
     {
@@ -479,6 +487,7 @@ class PHP_CompatInfo
      * @param string $directory full path to the directory you want the list of
      * @access private
      * @return array list of files in a directory
+     * @since  0.7.0
      */
     function _fileList($directory,$options)
     {
