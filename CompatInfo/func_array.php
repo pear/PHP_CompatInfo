@@ -51,112 +51,113 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'PHP3_UDOBC_CLOSE_ALL' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_AUTOCOMMIT' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_BINMODE' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_CLOSE' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_COMMIT' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_CONNECT' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_CURSOR' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_DO' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_EXECUTE' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_FETCH_INTO' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_FETCH_ROW' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_FIELD_LEN' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_FIELD_NAME' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_FIELD_NUM' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.5',
   ),
   'PHP3_UODBC_FIELD_TYPE' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_FREE_RESULT' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_LONGREADLEN' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_NUM_FIELDS' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_NUM_ROWS' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_PCONNECT' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_PREPARE' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_RESULT' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_RESULT_ALL' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_ROLLBACK' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   'PHP3_UODBC_SETOPTION' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
   ),
   '_' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_gettext',
   ),
   '__soapCall' => 
   array (
-    'init' => '5.0.2',
+    'init' => '5.0.0',
     'ext' => 'ext_soap',
   ),
   'abs' => 
@@ -167,6 +168,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'accept_connect' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'acos' => 
   array (
@@ -175,7 +177,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'acosh' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ada_afetch' => 
@@ -248,19 +250,20 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'add' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'add_iovec' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'addaction' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'addcolor' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'addcslashes' => 
   array (
@@ -269,15 +272,15 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'addentry' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'addfill' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'addshape' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'addslashes' => 
   array (
@@ -286,105 +289,107 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'addstring' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'aggregate' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'aggregate_methods' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'aggregate_methods_by_list' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'aggregate_methods_by_regexp' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'aggregate_properties' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'aggregate_properties_by_list' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'aggregate_properties_by_regexp' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'aggregation_info' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'alarm' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.11',
   ),
   'align' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'apache_child_terminate' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'sapi_apache',
   ),
   'apache_get_modules' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'sapi_apache',
   ),
   'apache_get_version' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'sapi_apache',
   ),
   'apache_getenv' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'sapi_apache2filter',
   ),
   'apache_lookup_uri' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'sapi_apache',
   ),
   'apache_note' => 
   array (
-    'init' => '3.0.2',
+    'init' => '3.0.0',
     'ext' => 'sapi_apache',
   ),
   'apache_request_headers' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'sapi_apache',
   ),
   'apache_response_headers' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'sapi_apache',
   ),
   'apache_setenv' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'sapi_apache',
   ),
   'apache_sub_req' => 
   array (
     'init' => '4.0.4',
+    'end' => '4.1.2',
   ),
   'array_change_key_case' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_chunk' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_combine' => 
@@ -399,17 +404,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_diff' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_diff_assoc' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_diff_key' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'array_diff_uassoc' => 
@@ -419,17 +424,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_diff_ukey' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'array_fill' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_filter' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_flip' => 
@@ -439,17 +444,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_intersect' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_intersect_assoc' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_intersect_key' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'array_intersect_uassoc' => 
@@ -459,12 +464,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_intersect_ukey' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'array_key_exists' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_keys' => 
@@ -474,7 +479,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_map' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_merge' => 
@@ -484,7 +489,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_merge_recursive' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_multisort' => 
@@ -504,7 +509,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_product' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'array_push' => 
   array (
@@ -518,7 +523,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_reduce' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_reverse' => 
@@ -528,7 +533,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_search' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_shift' => 
@@ -548,7 +553,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_sum' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_udiff' => 
@@ -583,7 +588,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_unique' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'array_unshift' => 
@@ -598,7 +603,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'array_walk' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'array_walk_recursive' => 
@@ -613,7 +618,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ascii2ebcdic' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'asin' => 
   array (
@@ -622,7 +627,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'asinh' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'asort' => 
@@ -632,19 +637,19 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'aspell_check' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'aspell_check_raw' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'aspell_new' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'aspell_suggest' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'assert' => 
   array (
@@ -663,12 +668,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'atan2' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'atanh' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'attr_get' => 
@@ -698,7 +703,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'base_convert' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'basename' => 
@@ -758,12 +763,13 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'bin2hex' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'bind' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'bind_param' => 
   array (
@@ -777,7 +783,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'bind_textdomain_codeset' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gettext',
   ),
   'bindec' => 
@@ -787,226 +793,243 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'bindtextdomain' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_gettext',
   ),
   'birdstep_autocommit' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_close' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_commit' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_connect' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_exec' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_fetch' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_fieldname' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_fieldnum' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_freeresult' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_off_autocommit' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_result' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'birdstep_rollback' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'build_iovec' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'bzclose' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_bz2',
   ),
   'bzcompress' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_bz2',
   ),
   'bzdecompress' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_bz2',
   ),
   'bzerrno' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_bz2',
   ),
   'bzerror' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_bz2',
   ),
   'bzerrstr' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_bz2',
   ),
   'bzflush' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_bz2',
   ),
   'bzopen' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_bz2',
   ),
   'bzread' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_bz2',
   ),
   'bzwrite' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_bz2',
   ),
   'cal_days_in_month' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_calendar',
   ),
   'cal_from_jd' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_calendar',
   ),
   'cal_info' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_calendar',
   ),
   'cal_to_jd' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_calendar',
   ),
   'call_user_func' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'call_user_func_array' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'call_user_method' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'call_user_method_array' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ccvs_add' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_auth' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_command' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_count' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_delete' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_done' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_init' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_lookup' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_new' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_report' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_return' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_reverse' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_sale' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_status' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_textvalue' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ccvs_void' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'ceil' => 
   array (
@@ -1020,7 +1043,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'character_set_name' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
   'chdir' => 
@@ -1065,12 +1088,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'chroot' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'chunk_split' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'class_exists' => 
@@ -1101,6 +1124,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'close' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
     'ext' => 'ext_mysqli',
   ),
   'closedir' => 
@@ -1115,7 +1139,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'com_addref' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'com_create_guid' => 
   array (
@@ -1124,12 +1148,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'com_event_sink' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
     'ext' => 'ext_com_dotnet',
   ),
   'com_get' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'com_get_active_object' => 
   array (
@@ -1138,54 +1162,54 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'com_invoke' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'com_invoke_ex' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
   ),
   'com_isenum' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'com_load' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'com_load_typelib' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_com_dotnet',
   ),
   'com_message_pump' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
     'ext' => 'ext_com_dotnet',
   ),
   'com_print_typeinfo' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
     'ext' => 'ext_com_dotnet',
   ),
   'com_propget' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'com_propput' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'com_propset' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'com_release' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'com_set' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'commit' => 
   array (
@@ -1200,47 +1224,51 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'confirm_ctype_compiled' => 
   array (
     'init' => '4.0.0',
+    'end' => '4.0.4',
   ),
   'confirm_cybermut_compiled' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.0.6',
   ),
   'confirm_extname_compiled' => 
   array (
-    'init' => '4.3.8',
+    'init' => '4.0.0',
     'ext' => 'ext_skeleton',
   ),
   'confirm_ncurses_compiled' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
   ),
   'connect' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
     'ext' => 'ext_mysqli',
   ),
   'connection_aborted' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'connection_status' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'connection_timeout' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'constant' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'convert_cyr_string' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'convert_uudecode' => 
@@ -1265,7 +1293,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'cosh' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'count' => 
@@ -1280,394 +1308,397 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'cpdf_add_annotation' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_add_outline' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_arc' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_begin_text' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_circle' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_clip' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_close' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_closepath' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_closepath_fill_stroke' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_closepath_stroke' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_continue_text' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_curveto' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_end_text' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_fill' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_fill_stroke' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_finalize' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_finalize_page' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_get_buffer' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.8',
   ),
   'cpdf_global_set_document_limits' => 
   array (
-    'init' => '5.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cpdf_import_jpeg' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_lineto' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_moveto' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_newpath' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_open' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_output_buffer' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_page_init' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_place_inline_image' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_rect' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_restore' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_rlineto' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_rmoveto' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_rotate' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_rotate_text' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_save' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_save_to_file' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_scale' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_action_url' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_annotation' => 
   array (
-    'init' => '3.0.0',
+    'init' => '3.0.9',
+    'end' => '3.0.11',
   ),
   'cpdf_set_char_spacing' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_creator' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_current_page' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_font' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_font_directories' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_font_map_file' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_horiz_scaling' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_keywords' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_leading' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_page_animation' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_subject' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_text_matrix' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_text_pos' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_text_rendering' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_text_rise' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_title' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_transition' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.8',
   ),
   'cpdf_set_viewer_preferences' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_set_word_spacing' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setdash' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setflat' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setgray' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setgray_fill' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setgray_stroke' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setlinecap' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setlinejoin' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setlinewidth' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setmiterlimit' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setrgbcolor' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setrgbcolor_fill' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_setrgbcolor_stroke' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_show' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_show_xy' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_stringwidth' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_stroke' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_text' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'cpdf_translate' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'crack_check' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'crack_closedict' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'crack_getlastmessage' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'crack_opendict' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'crash' => 
@@ -1677,12 +1708,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'crc32' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'create_function' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'crypt' => 
@@ -1692,62 +1723,62 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ctype_alnum' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'ctype_alpha' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'ctype_cntrl' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'ctype_digit' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'ctype_graph' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'ctype_lower' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'ctype_print' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'ctype_punct' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'ctype_space' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'ctype_upper' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'ctype_xdigit' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ctype',
   ),
   'curl_close' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_curl',
   ),
   'curl_copy_handle' => 
@@ -1757,27 +1788,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'curl_errno' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_curl',
   ),
   'curl_error' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_curl',
   ),
   'curl_exec' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_curl',
   ),
   'curl_getinfo' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_curl',
   ),
   'curl_init' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_curl',
   ),
   'curl_multi_add_handle' => 
@@ -1822,7 +1853,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'curl_setopt' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_curl',
   ),
   'curl_setopt_array' => 
@@ -1831,7 +1862,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'curl_version' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_curl',
   ),
   'current' => 
@@ -1842,130 +1873,149 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'cv_add' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_auth' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_command' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_count' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_delete' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_done' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_init' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_lookup' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_new' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_report' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_return' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_reverse' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_sale' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_status' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_textvalue' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cv_void' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.2.3',
   ),
   'cybercash_base64_decode' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cybercash_base64_encode' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cybercash_decr' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cybercash_encr' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cybermut_creerformulairecm' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'cybermut_creerreponsecm' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'cybermut_testmac' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'cyrus_authenticate' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cyrus_bind' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cyrus_close' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cyrus_connect' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cyrus_query' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'cyrus_unbind' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'data_seek' => 
@@ -1980,19 +2030,19 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'date_create' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'date_default_timezone_get' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'date_default_timezone_set' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'date_format' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'date_format_locale' => 
   array (
@@ -2000,11 +2050,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'date_modify' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'date_offset_get' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'date_sunrise' => 
   array (
@@ -2018,54 +2068,54 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'date_timezone_get' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'date_timezone_set' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'dav_set_mkcol_handlers' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
   ),
   'db_id_list' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'dba_close' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_delete' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_exists' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_fetch' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_firstkey' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_handlers' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_insert' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_key_split' => 
@@ -2075,37 +2125,37 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'dba_list' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_nextkey' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_open' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_optimize' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_popen' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_replace' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dba_sync' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_dba',
   ),
   'dbase_add_record' => 
@@ -2140,7 +2190,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'dbase_get_record_with_names' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
   'dbase_numfields' => 
@@ -2165,7 +2215,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'dbase_replace_record' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
   'dblist' => 
@@ -2221,294 +2271,342 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'dbplus_add' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_aql' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_chdir' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_close' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_curr' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_errcode' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_errno' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_find' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_first' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_flush' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_freealllocks' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_freelock' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_freerlocks' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_getlock' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_getunique' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_info' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_last' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_next' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_open' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_prev' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_rchperm' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_rcreate' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_rcrtexact' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_rcrtlike' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_resolve' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_restorepos' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_rkeys' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_ropen' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_rquery' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_rrename' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_rsecindex' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_runlink' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_rzap' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_savepos' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_setindex' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_setindexbynumber' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_sql' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_tcl' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_tremove' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_undo' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_undoprepare' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_unlockrel' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_unselect' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_update' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_xlockrel' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbplus_xunlockrel' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'dbx_close' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_dbx',
   ),
   'dbx_cmp_asc' => 
   array (
     'init' => '4.0.0',
+    'end' => '4.0.6',
   ),
   'dbx_cmp_desc' => 
   array (
     'init' => '4.0.0',
+    'end' => '4.0.6',
   ),
   'dbx_compare' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_dbx',
   ),
   'dbx_connect' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_dbx',
   ),
   'dbx_error' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_dbx',
   ),
   'dbx_escape_string' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_dbx',
   ),
   'dbx_fetch_row' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_dbx',
   ),
   'dbx_query' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_dbx',
   ),
   'dbx_sort' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_dbx',
   ),
   'dcgettext' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_gettext',
   ),
   'dcngettext' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gettext',
   ),
   'deaggregate' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'debug' => 
   array (
@@ -2517,7 +2615,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'debug_backtrace' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'debug_print_backtrace' => 
@@ -2527,7 +2625,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'debug_zval_dump' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'debugger_off' => 
@@ -2574,61 +2672,62 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'deg2rad' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'delete_iovec' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'dgettext' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_gettext',
   ),
   'dio_close' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'dio_fcntl' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'dio_open' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'dio_read' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'dio_seek' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'dio_stat' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'dio_tcsetattr' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'dio_truncate' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'dio_write' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'dir' => 
@@ -2653,22 +2752,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'disk_free_space' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'disk_total_space' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'diskfreespace' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'display_disabled_function' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'dl' => 
@@ -2678,7 +2777,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'dngettext' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gettext',
   ),
   'dns_check_record' => 
@@ -2718,57 +2817,57 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'domxml_doc_add_root' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_doc_document_element' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_doc_get_element_by_id' => 
   array (
-    'init' => '4.2.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_doc_get_elements_by_tagname' => 
   array (
-    'init' => '4.2.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_doc_get_root' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_doc_set_root' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_doc_validate' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_doc_xinclude' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_dump_mem' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_dump_mem_file' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_dump_node' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_dumpmem' => 
@@ -2778,17 +2877,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'domxml_elem_get_attribute' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_elem_set_attribute' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_get_attribute' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_getattr' => 
@@ -2798,7 +2897,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'domxml_html_dump_mem' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_new_child' => 
@@ -2808,7 +2907,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'domxml_new_doc' => 
   array (
-    'init' => '4.2.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_new_xmldoc' => 
@@ -2823,127 +2922,127 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'domxml_node_add_namespace' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_node_attributes' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_node_children' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_node_get_content' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_node_has_attributes' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_node_new_child' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_node_set_content' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_node_set_namespace' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_node_unlink_node' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_open_file' => 
   array (
-    'init' => '4.2.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_open_mem' => 
   array (
-    'init' => '4.2.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser' => 
   array (
-    'init' => '4.2.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_add_chunk' => 
   array (
-    'init' => '4.2.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_cdata_section' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_characters' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_comment' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_end' => 
   array (
-    'init' => '4.2.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_end_document' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_end_element' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_entity_reference' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_get_document' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_namespace_decl' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_processing_instruction' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_start_document' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_parser_start_element' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_root' => 
@@ -2953,12 +3052,13 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'domxml_set_attribute' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_set_content' => 
   array (
     'init' => '4.0.4',
+    'end' => '4.0.6',
   ),
   'domxml_setattr' => 
   array (
@@ -2967,57 +3067,57 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'domxml_substitute_entities_default' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_unlink_node' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_version' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_xmltree' => 
   array (
-    'init' => '4.2.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_xslt_process' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_xslt_result_dump_file' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_xslt_result_dump_mem' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_xslt_stylesheet' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_xslt_stylesheet_doc' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_xslt_stylesheet_file' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'domxml_xslt_version' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'doubleval' => 
@@ -3027,39 +3127,39 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'drawarc' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'drawcircle' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'drawcubic' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'drawcubicto' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'drawcurve' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'drawcurveto' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'drawglyph' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'drawline' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'drawlineto' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'dump_debug_info' => 
   array (
@@ -3073,26 +3173,26 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'easter_date' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
   'easter_days' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
   'ebcdic2ascii' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'embedded_server_end' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
   'embedded_server_start' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
   'enable_reads_from_master' => 
@@ -3151,7 +3251,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'escapeshellarg' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'escapeshellcmd' => 
@@ -3171,22 +3271,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'exif_imagetype' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_exif',
   ),
   'exif_read_data' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_exif',
   ),
   'exif_tagname' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_exif',
   ),
   'exif_thumbnail' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_exif',
   ),
   'exp' => 
@@ -3201,7 +3301,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'expm1' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'export' => 
@@ -3210,67 +3310,67 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'extension_loaded' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'zend',
   ),
   'extract' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'ezmlm_hash' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'fam_cancel_monitor' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
   'fam_close' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
   'fam_monitor_collection' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
   'fam_monitor_directory' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
   'fam_monitor_file' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
   'fam_next_event' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
   'fam_open' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
   'fam_pending' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
   'fam_resume_monitor' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
   'fam_suspend_monitor' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
   'fbird_add_user' => 
@@ -3520,262 +3620,262 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'fbsql' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_affected_rows' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_autocommit' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_blob_size' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_clob_size' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_close' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_commit' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_connect' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_create_blob' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_create_clob' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_create_db' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_data_seek' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_database' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_database_password' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_db_query' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_db_status' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_drop_db' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_errno' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_error' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_fetch_array' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_fetch_assoc' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_fetch_field' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_fetch_lengths' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_fetch_object' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_fetch_row' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_field_flags' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_field_len' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_field_name' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_field_seek' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_field_table' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_field_type' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_free_result' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_get_autostart_info' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_hostname' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_insert_id' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_list_dbs' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_list_fields' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_list_tables' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_next_result' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_num_fields' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_num_rows' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_password' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_pconnect' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_query' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_read_blob' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_read_clob' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_result' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_rollback' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_rows_fetched' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_select_db' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_set_characterset' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_set_lob_mode' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_set_password' => 
@@ -3785,37 +3885,37 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'fbsql_set_transaction' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_start_db' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_stop_db' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_table_name' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_tablename' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_username' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fbsql_warnings' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_fbsql',
   ),
   'fclose' => 
@@ -3826,200 +3926,206 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fd_alloc' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'fd_clear' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'fd_dealloc' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'fd_isset' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'fd_set' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'fd_zero' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'fdf_add_doc_javascript' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_add_template' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_close' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_create' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_enum_values' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_errno' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_error' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_get_ap' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_get_attachment' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_get_encoding' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_get_file' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_get_flags' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_get_opt' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_get_status' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_get_value' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_get_version' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_header' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_next_field_name' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_open' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_open_string' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_remove_item' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_save' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_save_string' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_ap' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_encoding' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_file' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_flags' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_javascript_action' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_on_import_javascript' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_opt' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_status' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_submit_form_action' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_target_frame' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_value' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_fdf',
   ),
   'fdf_set_version' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_fdf',
   ),
   'feof' => 
@@ -4060,6 +4166,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fetch_iovec' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'fetch_object' => 
   array (
@@ -4073,7 +4180,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'fflush' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'fgetc' => 
@@ -4083,7 +4190,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'fgetcsv' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'fgets' => 
@@ -4118,7 +4225,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'file_get_contents' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'file_put_contents' => 
@@ -4213,12 +4320,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'floatval' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'flock' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'floor' => 
@@ -4233,12 +4340,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'fmod' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'fnmatch' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'fopen' => 
@@ -4249,10 +4356,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fopenstream' => 
   array (
     'init' => '4.0.6',
+    'end' => '4.2.3',
   ),
   'format' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'fpassthru' => 
   array (
@@ -4266,7 +4374,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'fputcsv' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'fputs' => 
@@ -4287,6 +4395,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'free_iovec' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'free_result' => 
   array (
@@ -4295,7 +4404,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'freemagick' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'frenchtojd' => 
   array (
@@ -4304,22 +4413,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'fribidi_charset_info' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'fribidi_get_charsets' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'fribidi_log2vis' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'fscanf' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'fseek' => 
@@ -4344,7 +4453,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ftok' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ftp_alloc' => 
@@ -4354,12 +4463,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ftp_cdup' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_chdir' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_chmod' => 
@@ -4369,107 +4478,107 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ftp_close' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_connect' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_delete' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_exec' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_fget' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_fput' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_get' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_get_option' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_login' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_mdtm' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_mkdir' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_nb_continue' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_nb_fget' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_nb_fput' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_nb_get' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_nb_put' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_nlist' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_pasv' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_put' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_pwd' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_quit' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_raw' => 
@@ -4479,42 +4588,42 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ftp_rawlist' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_rename' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_rmdir' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_set_option' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_site' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_size' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_ssl_connect' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftp_systype' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ftp',
   ),
   'ftruncate' => 
@@ -4539,7 +4648,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'function_exists' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'zend',
   ),
   'fwrite' => 
@@ -4549,32 +4658,33 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'gamma_correct_tag' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'gd_info' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'getName' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'getOffset' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'getTimezone' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'getTransistions' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'get_all_headers' => 
   array (
     'init' => '4.0.4',
+    'end' => '4.1.2',
   ),
   'get_browser' => 
   array (
@@ -4588,7 +4698,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'get_charset' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'get_class' => 
   array (
@@ -4627,17 +4737,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'get_defined_constants' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'get_defined_functions' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'get_defined_vars' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'get_extension_funcs' => 
@@ -4657,7 +4767,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'get_include_path' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'get_included_files' => 
@@ -4672,17 +4782,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'get_magic_quotes_gpc' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'get_magic_quotes_runtime' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'get_meta_tags' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'get_object_vars' => 
@@ -4702,7 +4812,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'get_resource_type' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'get_server_info' => 
@@ -4712,7 +4822,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'get_warnings' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
   'getallheaders' => 
@@ -4722,7 +4832,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'getascent' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'getcwd' => 
   array (
@@ -4736,7 +4846,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'getdescent' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'getenv' => 
   array (
@@ -4745,7 +4855,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'getheight' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'gethostbyaddr' => 
   array (
@@ -4794,7 +4904,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'getleading' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'getlogdir' => 
   array (
@@ -4811,7 +4921,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'getmygid' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'getmyiid' => 
@@ -4835,12 +4945,13 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'getopt' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'getpeername' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'getprotobyname' => 
   array (
@@ -4859,7 +4970,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'getrusage' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'getservbyname' => 
@@ -4874,19 +4985,21 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'getshape1' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'getshape2' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'getsockname' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'getsockopt' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'getstartlogging' => 
   array (
@@ -4894,12 +5007,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'gettext' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_gettext',
   ),
   'gettimeofday' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'gettoday' => 
@@ -4917,11 +5030,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'getwidth' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'glob' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'gmdate' => 
@@ -4936,202 +5049,202 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'gmp_abs' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_add' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_and' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_clrbit' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_cmp' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_com' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_div' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_div_q' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_div_qr' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_div_r' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_divexact' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_fact' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_gcd' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_gcdext' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_hamdist' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_init' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_intval' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_invert' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_jacobi' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_legendre' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_mod' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_mul' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_neg' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_or' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_perfect_square' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_popcount' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_pow' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_powm' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_prob_prime' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_random' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_scan0' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_scan1' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_setbit' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_sign' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_sqrt' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_sqrtrem' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_strval' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_sub' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmp_xor' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gmp',
   ),
   'gmstrftime' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'gregoriantojd' => 
@@ -5146,17 +5259,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'gzcompress' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_zlib',
   ),
   'gzdeflate' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_zlib',
   ),
   'gzencode' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_zlib',
   ),
   'gzeof' => 
@@ -5186,7 +5299,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'gzinflate' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_zlib',
   ),
   'gzopen' => 
@@ -5226,7 +5339,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'gzuncompress' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_zlib',
   ),
   'gzwrite' => 
@@ -5237,6 +5350,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'handle' => 
   array (
     'init' => '4.0.0',
+    'end' => '4.0.6',
   ),
   'header' => 
   array (
@@ -5250,7 +5364,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'headers_sent' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'hebrev' => 
@@ -5280,17 +5394,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'html_doc' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'html_doc_file' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'html_entity_decode' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'htmlentities' => 
@@ -5305,7 +5419,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'htmlspecialchars_decode' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'http_build_query' => 
   array (
@@ -5314,72 +5428,72 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'hw_array2objrec' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_changeobject' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_children' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_childrenobj' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_close' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_connect' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_connection_info' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_cp' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_deleteobject' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_docbyanchor' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_docbyanchorobj' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_document_attributes' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_document_bodytag' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_document_content' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_document_setcontent' => 
@@ -5389,338 +5503,338 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'hw_document_size' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_documentattributes' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'hw_documentbodytag' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'hw_documentcontent' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
   ),
   'hw_documentsetcontent' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
   ),
   'hw_documentsize' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'hw_dummy' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_edittext' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_error' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_errormsg' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_free_document' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getanchors' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getanchorsobj' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getandlock' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getcgi' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getchildcoll' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getchildcollobj' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getchilddoccoll' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getchilddoccollobj' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getobject' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getobjectbyftquery' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'hw_getobjectbyftquerycoll' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'hw_getobjectbyftquerycollobj' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'hw_getobjectbyftqueryobj' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'hw_getobjectbyquery' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getobjectbyquerycoll' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getobjectbyquerycollobj' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getobjectbyqueryobj' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getparents' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getparentsobj' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getrellink' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getremote' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getremotechildren' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getsrcbydestobj' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_gettext' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_getusername' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_identify' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_incollections' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_info' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_inscoll' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_insdoc' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_insertanchors' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'hw_insertdocument' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_insertobject' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_mapid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_modifyobject' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_mv' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_new_document' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_new_document_from_file' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'hw_objrec2array' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_output_document' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_outputdocument' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
   ),
   'hw_pconnect' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_pipecgi' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_pipedocument' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_root' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_setlinkroot' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_stat' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_unlock' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hw_who' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'hypot' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'i18n_convert' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'i18n_discover_encoding' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'i18n_http_input' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'i18n_http_output' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'i18n_internal_encoding' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'i18n_ja_jp_hantozen' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'i18n_mime_header_decode' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'i18n_mime_header_encode' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'ibase_add_user' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_affected_rows' => 
@@ -5736,60 +5850,61 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ibase_bind' => 
   array (
     'init' => '3.0.6',
+    'end' => '3.0.7',
   ),
   'ibase_blob_add' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_blob_cancel' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_blob_close' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_blob_create' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_blob_echo' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_blob_get' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_blob_import' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_blob_info' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_blob_open' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_close' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_commit' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_commit_ret' => 
@@ -5799,7 +5914,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ibase_connect' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_db_info' => 
@@ -5809,7 +5924,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ibase_delete_user' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_drop_db' => 
@@ -5824,32 +5939,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ibase_errmsg' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_execute' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_fetch_assoc' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_fetch_object' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_fetch_row' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_field_info' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_free_event_handler' => 
@@ -5859,12 +5974,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ibase_free_query' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_free_result' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_gen_id' => 
@@ -5879,7 +5994,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ibase_modify_user' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_name_result' => 
@@ -5889,7 +6004,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ibase_num_fields' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_num_params' => 
@@ -5909,17 +6024,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ibase_pconnect' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_prepare' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_query' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_restore' => 
@@ -5929,7 +6044,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ibase_rollback' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_rollback_ret' => 
@@ -5959,11 +6074,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ibase_timefmt' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
   ),
   'ibase_trans' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_interbase',
   ),
   'ibase_wait_event' => 
@@ -5973,60 +6088,60 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'icap_create_calendar' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_delete_calendar' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_delete_event' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_fetch_event' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_list_alarms' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_list_events' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_open' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_popen' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_rename_calendar' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_reopen' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_snooze' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'icap_store_event' => 
   array (
-    'init' => '4.2.3',
+    'init' => '4.0.0',
   ),
   'iconv' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_iconv',
   ),
   'iconv_get_encoding' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_iconv',
   ),
   'iconv_mime_decode' => 
@@ -6046,7 +6161,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'iconv_set_encoding' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_iconv',
   ),
   'iconv_strlen' => 
@@ -6084,233 +6199,237 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ifx_affected_rows' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_blobinfile_mode' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_byteasvarchar' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_close' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_connect' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_copy_blob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_create_blob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_create_char' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_create_db' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.3',
   ),
   'ifx_do' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_drop_db' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.3',
   ),
   'ifx_error' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_errormsg' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_fetch_object' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.3',
   ),
   'ifx_fetch_row' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_fieldproperties' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_fieldtypes' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_free_blob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_free_char' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_free_result' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_get_blob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_get_char' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_getsqlca' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_htmltbl_result' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_nullformat' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_num_fields' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_num_rows' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_pconnect' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_prepare' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_query' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_result' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.3',
   ),
   'ifx_textasvarchar' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_update_blob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifx_update_char' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifxus_close_slob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifxus_create_slob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifxus_free_slob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifxus_open_slob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifxus_read_slob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifxus_seek_slob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifxus_tell_slob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ifxus_write_slob' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_informix',
   ),
   'ignore_user_abort' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'image2wbmp' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'image_type_to_mime_type' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'imagealphablending' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imageantialias' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagearc' => 
@@ -6335,7 +6454,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagecolorallocatealpha' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecolorat' => 
@@ -6350,17 +6469,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagecolorclosestalpha' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecolorclosesthwb' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecolordeallocate' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecolorexact' => 
@@ -6370,22 +6489,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagecolorexactalpha' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecolormatch' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecolorresolve' => 
   array (
-    'init' => '3.0.2',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecolorresolvealpha' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecolorset' => 
@@ -6410,26 +6529,26 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imageconvolution' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'imagecopy' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecopymerge' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecopymergegray' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecopyresampled' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecopyresized' => 
@@ -6444,17 +6563,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagecreatefromgd' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecreatefromgd2' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecreatefromgd2part' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecreatefromgif' => 
@@ -6464,37 +6583,37 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagecreatefromjpeg' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecreatefrompng' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecreatefromstring' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecreatefromwbmp' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecreatefromxbm' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecreatefromxpm' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagecreatetruecolor' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagedashedline' => 
@@ -6509,7 +6628,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imageellipse' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagefill' => 
@@ -6519,12 +6638,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagefilledarc' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagefilledellipse' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagefilledpolygon' => 
@@ -6559,27 +6678,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imageftbbox' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagefttext' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagegammacorrect' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagegd' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagegd2' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagegif' => 
@@ -6594,17 +6713,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imageistruecolor' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagejpeg' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagelayereffect' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imageline' => 
@@ -6619,12 +6738,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagepalettecopy' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagepng' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagepolygon' => 
@@ -6634,42 +6753,42 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagepsbbox' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagepscopyfont' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagepsencodefont' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagepsextendfont' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagepsfreefont' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagepsloadfont' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagepsslantfont' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagepstext' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagerectangle' => 
@@ -6679,17 +6798,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagerotate' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagesavealpha' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagesetbrush' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagesetpixel' => 
@@ -6699,17 +6818,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagesetstyle' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagesetthickness' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagesettile' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagestring' => 
@@ -6734,12 +6853,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagetruecolortopalette' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'imagettfbbox' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagettftext' => 
@@ -6749,12 +6868,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imagetypes' => 
   array (
-    'init' => '4.0.2',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagewbmp' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
   'imagexbm' => 
@@ -6769,7 +6888,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_alerts' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_append' => 
@@ -6784,7 +6903,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_binary' => 
   array (
-    'init' => '3.0.2',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_body' => 
@@ -6794,7 +6913,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_bodystruct' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_check' => 
@@ -6804,7 +6923,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_clearflag_full' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_close' => 
@@ -6814,7 +6933,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_create' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_createmailbox' => 
@@ -6834,7 +6953,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_errors' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_expunge' => 
@@ -6844,7 +6963,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_fetch_overview' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_fetchbody' => 
@@ -6854,7 +6973,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_fetchheader' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_fetchstructure' => 
@@ -6864,17 +6983,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_fetchtext' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_get_quota' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_get_quotaroot' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_getacl' => 
@@ -6884,12 +7003,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_getmailboxes' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_getsubscribed' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_header' => 
@@ -6909,12 +7028,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_last_error' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_list' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_listmailbox' => 
@@ -6929,17 +7048,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_lsub' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_mail' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_mail_compose' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_mail_copy' => 
@@ -6954,17 +7073,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_mailboxmsginfo' => 
   array (
-    'init' => '3.0.2',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_mime_header_decode' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_msgno' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_num_msg' => 
@@ -6989,7 +7108,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_popen' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imap_qprint' => 
   array (
@@ -6998,7 +7117,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_rename' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_renamemailbox' => 
@@ -7013,7 +7132,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_rfc822_parse_adrlist' => 
   array (
-    'init' => '3.0.2',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_rfc822_parse_headers' => 
@@ -7023,12 +7142,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_rfc822_write_address' => 
   array (
-    'init' => '3.0.2',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_scan' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_scanmailbox' => 
@@ -7038,32 +7157,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_search' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_set_quota' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_setacl' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_setflag_full' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_sort' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_status' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_subscribe' => 
@@ -7073,17 +7192,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_thread' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_timeout' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_uid' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_undelete' => 
@@ -7098,17 +7217,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'imap_utf7_decode' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_utf7_encode' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'imap_utf8' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
   'implode' => 
@@ -7118,76 +7237,76 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'import_request_variables' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'imsp_abook_create' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_delete' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_deleteent' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_expand' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_fetch' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_find' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_getlist' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_lock' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_rename' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_search' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_store' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_abook_unlock' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_close' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_open' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_option_get' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_option_set' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'imsp_option_unset' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'in_array' => 
   array (
@@ -7196,102 +7315,102 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'inet_ntop' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'inet_pton' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'ingres_autocommit' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_close' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_commit' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_connect' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_fetch_array' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_fetch_object' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_fetch_row' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_field_length' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_field_name' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_field_nullable' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_field_precision' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_field_scale' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_field_type' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_num_fields' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_num_rows' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_pconnect' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_query' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ingres_rollback' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ingres_ii',
   ),
   'ini_alter' => 
@@ -7306,7 +7425,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ini_get_all' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ini_restore' => 
@@ -7326,7 +7445,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'interface_exists' => 
   array (
-    'init' => '5.0.2',
+    'init' => '5.0.0',
     'ext' => 'zend',
   ),
   'intval' => 
@@ -7341,177 +7460,177 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'iptcembed' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'iptcparse' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'ircg_channel_mode' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_disconnect' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_eval_ecmascript_params' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_fetch_error_msg' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_get_username' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_html_encode' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_ignore_add' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_ignore_del' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_invite' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_is_conn_alive' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_join' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_kick' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_list' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_lookup_format_messages' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_lusers' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_msg' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_names' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_nick' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_nickname_escape' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_nickname_unescape' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_notice' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_oper' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_part' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_pconnect' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_register_format_messages' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_set_current' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_set_file' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_set_on_die' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_set_on_read_data' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_topic' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_who' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'ircg_whois' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ircg',
   ),
   'is_a' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'is_array' => 
@@ -7534,7 +7653,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'is_callable' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'is_dir' => 
@@ -7559,7 +7678,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'is_finite' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'is_float' => 
@@ -7569,7 +7688,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'is_infinite' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'is_int' => 
@@ -7594,12 +7713,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'is_nan' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'is_null' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'is_numeric' => 
@@ -7629,7 +7748,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'is_scalar' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'is_soap_fault' => 
@@ -7653,7 +7772,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'is_uploaded_file' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'is_writable' => 
@@ -7668,22 +7787,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'iterator_count' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
   'iterator_to_array' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
   'java_last_exception_clear' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'java_last_exception_get' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'jddayofweek' => 
@@ -7733,7 +7852,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'jpeg2wbmp' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'juliantojd' => 
@@ -7748,7 +7867,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'key_exists' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'kill' => 
@@ -7758,7 +7877,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'krsort' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'ksort' => 
@@ -7768,7 +7887,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'labelframe' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'lcg_value' => 
   array (
@@ -7777,7 +7896,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ldap_8859_to_t61' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_add' => 
@@ -7797,7 +7916,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ldap_compare' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_connect' => 
@@ -7822,17 +7941,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ldap_err2str' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_errno' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_error' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_explode_dn' => 
@@ -7852,12 +7971,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ldap_first_reference' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_free_entry' => 
   array (
-    'init' => '3.0.2',
+    'init' => '3.0.0',
   ),
   'ldap_free_result' => 
   array (
@@ -7881,7 +8000,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ldap_get_option' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_get_values' => 
@@ -7891,7 +8010,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ldap_get_values_len' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_list' => 
@@ -7901,17 +8020,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ldap_mod_add' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_mod_del' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_mod_replace' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_modify' => 
@@ -7931,17 +8050,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ldap_next_reference' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_parse_reference' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_parse_result' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_read' => 
@@ -7951,7 +8070,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ldap_rename' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_sasl_bind' => 
@@ -7966,31 +8085,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ldap_set_option' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_set_rebind_proc' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_sort' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_start_tls' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_str2err' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.12',
   ),
   'ldap_t61_to_8859' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_ldap',
   ),
   'ldap_unbind' => 
@@ -8005,22 +8125,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'levenshtein' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'libxml_clear_errors' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_libxml',
   ),
   'libxml_get_errors' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_libxml',
   ),
   'libxml_get_last_error' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_libxml',
   ),
   'libxml_set_streams_context' => 
@@ -8030,7 +8150,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'libxml_use_internal_errors' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_libxml',
   ),
   'link' => 
@@ -8046,10 +8166,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'listen' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'localeconv' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'localtime' => 
@@ -8069,7 +8190,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'log1p' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'logas' => 
@@ -8083,7 +8204,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'lstat' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'ltrim' => 
@@ -8093,398 +8214,398 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'm_adduser' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_adduserarg' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_bt' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_checkstatus' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_chkpwd' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_chngpwd' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_completeauthorizations' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_connect' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_connectionerror' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_deleteresponse' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_deletetrans' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_deleteusersetup' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_deluser' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_destroyconn' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_destroyengine' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_disableuser' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_edituser' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_enableuser' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_force' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_getcell' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_getcellbynum' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_getcommadelimited' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_getheader' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_getuserarg' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_getuserparam' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_gft' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_gl' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_gut' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_initconn' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_initengine' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_initusersetup' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_iscommadelimited' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_liststats' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_listusers' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_maxconntimeout' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_monitor' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_numcolumns' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_numrows' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_override' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_parsecommadelimited' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_ping' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_preauth' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_preauthcompletion' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_qc' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_responsekeys' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'm_responseparam' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_return' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_returncode' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_returnstatus' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_sale' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_setblocking' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_setdropfile' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_setip' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_setssl' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_setssl_cafile' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'm_setssl_files' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_settimeout' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_settle' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_text_avs' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_text_code' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_text_cv' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transactionauth' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transactionavs' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transactionbatch' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transactioncv' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transactionid' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transactionitem' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transactionssent' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transactiontext' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transinqueue' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transkeyval' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'm_transnew' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transparam' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_transsend' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_ub' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_uwait' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_validateidentifier' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'm_verifyconnection' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_verifysslcert' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'm_void' => 
   array (
-    'init' => '4.3.9',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'magic_quotes_runtime' => 
@@ -8494,7 +8615,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'magickdebug' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'mail' => 
   array (
@@ -8504,61 +8625,73 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'mailparse_determine_best_xfer_encoding' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_msg_create' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_msg_extract_part' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_msg_extract_part_file' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_msg_free' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_msg_get_part' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_msg_get_part_data' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_msg_get_structure' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_msg_parse' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_msg_parse_file' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_rfc822_parse_addresses' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'mailparse_stream_encode' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'master_query' => 
@@ -8573,125 +8706,125 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mb_convert_case' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_convert_encoding' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_convert_kana' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_convert_variables' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_decode_mimeheader' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_decode_numericentity' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_detect_encoding' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_detect_order' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_encode_mimeheader' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_encode_numericentity' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_ereg' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_ereg_match' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_ereg_replace' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_ereg_search' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_ereg_search_getpos' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_ereg_search_getregs' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_ereg_search_init' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_ereg_search_pos' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_ereg_search_regs' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_ereg_search_setpos' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_eregi' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_eregi_replace' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_get_info' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_http_input' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_http_output' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_internal_encoding' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_language' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_list_encodings' => 
@@ -8701,166 +8834,166 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mb_output_handler' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_parse_str' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_preferred_mime_name' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_regex_encoding' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_regex_set_options' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
   ),
   'mb_send_mail' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_split' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mb_strcut' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_strimwidth' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_strlen' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_strpos' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_strrpos' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_strtolower' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_strtoupper' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_strwidth' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_substitute_character' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_substr' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mb_substr_count' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mbstring',
   ),
   'mbereg' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbereg_match' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbereg_replace' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbereg_search' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbereg_search_getpos' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbereg_search_getregs' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbereg_search_init' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbereg_search_pos' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbereg_search_regs' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbereg_search_setpos' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mberegi' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mberegi_replace' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbregex_encoding' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbsplit' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'mbstrcut' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'mbstrlen' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'mbstrpos' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'mbstrrpos' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'mbsubstr' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'mcal_append_event' => 
   array (
@@ -8869,195 +9002,195 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mcal_close' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_create_calendar' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_date_compare' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_date_valid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_day_of_week' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_day_of_year' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_days_in_month' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_delete_calendar' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_delete_event' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_add_attribute' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_init' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_alarm' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_category' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_class' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_description' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_end' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_end_now' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'mcal_event_set_recur_daily' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_recur_monthly_mday' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_recur_monthly_wday' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_recur_none' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_recur_weekly' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_recur_yearly' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_start' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_event_set_start_now' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'mcal_event_set_title' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_fetch_current_stream_event' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_fetch_event' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_is_leap_year' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_list_alarms' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_list_events' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_next_recurrence' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_open' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_popen' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_rename_calendar' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_reopen' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_snooze' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_store_event' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_time_valid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'mcal_week_of_year' => 
@@ -9067,578 +9200,578 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mck_base64_decode' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'mck_base64_encode' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'mck_decr' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'mck_encr' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'mcrypt_cbc' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_cfb' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_create_iv' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_decrypt' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_ecb' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_enc_get_algorithms_name' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_enc_get_block_size' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_enc_get_iv_size' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_enc_get_key_size' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_enc_get_modes_name' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_enc_get_supported_key_sizes' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_enc_is_block_algorithm' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_enc_is_block_algorithm_mode' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_enc_is_block_mode' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_enc_self_test' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_encrypt' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_generic' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_generic_deinit' => 
   array (
-    'init' => '4.1.1',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_generic_end' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_generic_init' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_get_block_size' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_get_cipher_name' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_get_iv_size' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_get_key_size' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_list_algorithms' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_list_modes' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_module_close' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_module_get_algo_block_size' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_module_get_algo_key_size' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_module_get_supported_key_sizes' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_module_is_block_algorithm' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_module_is_block_algorithm_mode' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_module_is_block_mode' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_module_open' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_module_self_test' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcrypt_ofb' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'mcve_adduser' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_adduserarg' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_bt' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_checkstatus' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_chkpwd' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_chngpwd' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_completeauthorizations' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_connect' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_connectionerror' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_deleteresponse' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_deletetrans' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_deleteusersetup' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_deluser' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_destroyconn' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_destroyengine' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_disableuser' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_edituser' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_enableuser' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_force' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_getcell' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_getcellbynum' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_getcommadelimited' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_getheader' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_getuserarg' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_getuserparam' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_gft' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_gl' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_gut' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_initconn' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_initengine' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_initusersetup' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_iscommadelimited' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_liststats' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_listusers' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_maxconntimeout' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_monitor' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_numcolumns' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_numrows' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_override' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_parsecommadelimited' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_ping' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_preauth' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_preauthcompletion' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_qc' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_responseparam' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_return' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_returncode' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_returnstatus' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_sale' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_setblocking' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_setdropfile' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_setip' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_setssl' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_setssl_files' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_settimeout' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_settle' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_text_avs' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_text_code' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_text_cv' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transactionauth' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transactionavs' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transactionbatch' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transactioncv' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transactionid' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transactionitem' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transactionssent' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transactiontext' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transinqueue' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transnew' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transparam' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_transsend' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_ub' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_uwait' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_verifyconnection' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_verifysslcert' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'mcve_void' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mcve',
   ),
   'md5' => 
@@ -9648,17 +9781,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'md5_file' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'mdecrypt_generic' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mcrypt',
   ),
   'memory_get_usage' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'metaphone' => 
@@ -9673,27 +9806,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mhash' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_mhash',
   ),
   'mhash_count' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_mhash',
   ),
   'mhash_get_block_size' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_mhash',
   ),
   'mhash_get_hash_name' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_mhash',
   ),
   'mhash_keygen_s2k' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_mhash',
   ),
   'microtime' => 
@@ -9703,7 +9836,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mime_content_type' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mime_magic',
   ),
   'min' => 
@@ -9718,12 +9851,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ming_setcubicthreshold' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ming',
   ),
   'ming_setscale' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_ming',
   ),
   'ming_useconstants' => 
@@ -9733,7 +9866,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ming_useswfversion' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ming',
   ),
   'mkdir' => 
@@ -9748,11 +9881,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'modify' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'money_format' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'mono_method_call' => 
@@ -9772,58 +9905,58 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'move' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'move_uploaded_file' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'movepen' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'movepento' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'moveto' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'msession_call' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_connect' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_count' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_create' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_ctl' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_destroy' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_disconnect' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_exec' => 
@@ -9833,42 +9966,42 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'msession_find' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_get' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_get_array' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_get_data' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_inc' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_list' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_listvar' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_lock' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_ping' => 
@@ -9878,72 +10011,72 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'msession_plugin' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_randstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_set' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_set_array' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_set_data' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_timeout' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_uniq' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msession_unlock' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_msession',
   ),
   'msg_get_queue' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sysvmsg',
   ),
   'msg_receive' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sysvmsg',
   ),
   'msg_remove_queue' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sysvmsg',
   ),
   'msg_send' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sysvmsg',
   ),
   'msg_set_queue' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sysvmsg',
   ),
   'msg_stat_queue' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sysvmsg',
   ),
   'msql' => 
@@ -9953,7 +10086,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'msql_affected_rows' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
   'msql_close' => 
@@ -10028,17 +10161,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'msql_field_flags' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
   'msql_field_len' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
   'msql_field_name' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
   'msql_field_seek' => 
@@ -10048,12 +10181,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'msql_field_table' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
   'msql_field_type' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
   'msql_fieldflags' => 
@@ -10178,12 +10311,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mssql_affected_rows' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
   'mssql_bind' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_close' => 
@@ -10203,12 +10336,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mssql_deadlock_retry_count' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sybase_ct',
   ),
   'mssql_execute' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_fetch_array' => 
@@ -10218,12 +10351,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mssql_fetch_assoc' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_fetch_batch' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_fetch_field' => 
@@ -10243,12 +10376,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mssql_field_length' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_field_name' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_field_seek' => 
@@ -10258,7 +10391,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mssql_field_type' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_free_result' => 
@@ -10268,7 +10401,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mssql_free_statement' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_get_last_message' => 
@@ -10278,12 +10411,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mssql_guid_string' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_init' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_min_client_severity' => 
@@ -10308,7 +10441,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mssql_next_result' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_num_fields' => 
@@ -10338,7 +10471,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mssql_rows_affected' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_mssql',
   ),
   'mssql_select_db' => 
@@ -10348,32 +10481,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mssql_set_message_handler' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sybase_ct',
   ),
   'mssql_unbuffered_query' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sybase_ct',
   ),
   'mt_getrandmax' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'mt_rand' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'mt_srand' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'multcolor' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'multi_query' => 
   array (
@@ -10383,26 +10516,31 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'muscat_close' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'muscat_get' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'muscat_give' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'muscat_setup' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'muscat_setup_net' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'mysql' => 
@@ -10417,11 +10555,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysql_change_user' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'mysql_client_encoding' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_close' => 
@@ -10451,7 +10589,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysql_db_name' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_db_query' => 
@@ -10486,7 +10624,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysql_escape_string' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_fetch_array' => 
@@ -10496,7 +10634,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysql_fetch_assoc' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_fetch_field' => 
@@ -10586,27 +10724,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysql_get_client_info' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_get_host_info' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_get_proto_info' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_get_server_info' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_info' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_insert_id' => 
@@ -10626,7 +10764,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysql_list_processes' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_list_tables' => 
@@ -10676,7 +10814,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysql_ping' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_query' => 
@@ -10686,7 +10824,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysql_real_escape_string' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_result' => 
@@ -10706,12 +10844,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysql_stat' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_table_name' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_tablename' => 
@@ -10721,17 +10859,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysql_thread_id' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysql_unbuffered_query' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mysql',
   ),
   'mysqli' => 
   array (
-    'init' => '5.0.1',
+    'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
   'mysqli_affected_rows' => 
@@ -10821,16 +10959,16 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysqli_embedded_connect' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
   ),
   'mysqli_embedded_server_end' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
   'mysqli_embedded_server_start' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
   'mysqli_enable_reads_from_master' => 
@@ -10930,7 +11068,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysqli_get_charset' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'mysqli_get_client_info' => 
   array (
@@ -10969,7 +11107,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysqli_get_warnings' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'mysqli_info' => 
   array (
@@ -11103,15 +11241,15 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysqli_server_end' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
   ),
   'mysqli_server_init' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
   ),
   'mysqli_set_charset' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'mysqli_set_local_infile_default' => 
   array (
@@ -11215,7 +11353,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'mysqli_stmt_get_warnings' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'mysqli_stmt_init' => 
   array (
@@ -11304,797 +11442,797 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ncurses_addch' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_addchnstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_addchstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_addnstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_addstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_assume_default_colors' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_attroff' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_attron' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_attrset' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_baudrate' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_beep' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_bkgd' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_bkgdset' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_border' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_bottom_panel' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_can_change_color' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_cbreak' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_clear' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_clrtobot' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_clrtoeol' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_color_content' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_color_set' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_curs_set' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_def_prog_mode' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_def_shell_mode' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_define_key' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_del_panel' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_delay_output' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_delch' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_deleteln' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_delwin' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_doupdate' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_echo' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_echochar' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_end' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_erase' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_erasechar' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_filter' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_flash' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_flushinp' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_getch' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_getmaxyx' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_getmouse' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_getyx' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_halfdelay' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_has_colors' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_has_ic' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_has_il' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_has_key' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_hide_panel' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_hline' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_inch' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_init' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_init_color' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_init_pair' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_insch' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_insdelln' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_insertln' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_insstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_instr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_isendwin' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_keyok' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_keypad' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_killchar' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_longname' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_meta' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mouse_trafo' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mouseinterval' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mousemask' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_move' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_move_panel' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvaddch' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvaddchnstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvaddchstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvaddnstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvaddstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvcur' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvdelch' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvgetch' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvhline' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvinch' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_mvwaddstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_napms' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_new_panel' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_newpad' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_newwin' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_nl' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_nocbreak' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_noecho' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_nonl' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_noqiflush' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_noraw' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_pair_content' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_panel_above' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_panel_below' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_panel_window' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_pnoutrefresh' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_prefresh' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_putp' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_qiflush' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_raw' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_refresh' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_replace_panel' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_reset_prog_mode' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_reset_shell_mode' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_resetty' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_savetty' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_scr_dump' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_scr_init' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_scr_restore' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_scr_set' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_scrl' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_show_panel' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_attr' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_attroff' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_attron' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_attrset' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_clear' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_color' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_init' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_noutrefresh' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_refresh' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_restore' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_set' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_slk_touch' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_standend' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_standout' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_start_color' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_termattrs' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_termname' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_timeout' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_top_panel' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_typeahead' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_ungetch' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_ungetmouse' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_update_panels' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_use_default_colors' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_use_env' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_use_extended_names' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_vidattr' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_vline' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_waddch' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_waddstr' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wattroff' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wattron' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wattrset' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wborder' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wclear' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wcolor_set' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_werase' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wgetch' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_whline' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wmouse_trafo' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wmove' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wnoutrefresh' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wrefresh' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wstandend' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wstandout' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'ncurses_wvline' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_ncurses',
   ),
   'new_xmldoc' => 
@@ -12114,11 +12252,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'nextframe' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'ngettext' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_gettext',
   ),
   'nl2br' => 
@@ -12128,92 +12266,92 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'nl_langinfo' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'notes_body' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_copy_db' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_create_db' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_create_note' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_drop_db' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_find_note' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_header_info' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_list_msgs' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_mark_read' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_mark_unread' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_nav_create' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_search' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_unread' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'notes_version' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'nsapi_request_headers' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'sapi_nsapi',
   ),
   'nsapi_response_headers' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'sapi_nsapi',
   ),
   'nsapi_virtual' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'sapi_nsapi',
   ),
   'num_rows' => 
@@ -12228,7 +12366,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ob_clean' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ob_end_clean' => 
@@ -12243,12 +12381,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ob_flush' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ob_get_clean' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ob_get_contents' => 
@@ -12258,32 +12396,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ob_get_flush' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ob_get_length' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ob_get_level' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ob_get_status' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ob_gzhandler' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_zlib',
   ),
   'ob_iconv_handler' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_iconv',
   ),
   'ob_implicit_flush' => 
@@ -12293,7 +12431,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ob_list_handlers' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ob_start' => 
@@ -12623,56 +12761,56 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ocibindbyname' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicancel' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicollappend' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicollassign' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
   ),
   'ocicollassignelem' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicollgetelem' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicollmax' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicollsize' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicolltrim' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicolumnisnull' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicolumnname' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicolumnprecision' => 
@@ -12687,12 +12825,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ocicolumnsize' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicolumntype' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocicolumntyperaw' => 
@@ -12702,51 +12840,52 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ocicommit' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocidefinebyname' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocierror' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ociexecute' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocifetch' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocifetchinto' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocifetchstatement' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocifreecoll' => 
   array (
     'init' => '4.0.0',
+    'end' => '4.0.6',
   ),
   'ocifreecollection' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocifreecursor' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocifreedesc' => 
@@ -12756,11 +12895,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ocifreedescriptor' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'ocifreestatement' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocigetbufferinglob' => 
@@ -12770,12 +12909,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ociinternaldebug' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ociloaddesc' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'ociloadlob' => 
   array (
@@ -12784,76 +12923,76 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ocilogoff' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocilogon' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocinewcollection' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocinewcursor' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocinewdescriptor' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocinlogon' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocinumcols' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ociparse' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocipasswordchange' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
   'ociplogon' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ociresult' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocirollback' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocirowcount' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocisavedesc' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'ocisavedescfile' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'ocisavelob' => 
   array (
@@ -12867,7 +13006,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ociserverversion' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocisetbufferinglob' => 
@@ -12877,21 +13016,23 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ocisetprefetch' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocistatementtype' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
     'ext' => 'ext_oci8',
   ),
   'ocitest' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.4',
   ),
   'ocitest2' => 
   array (
     'init' => '3.0.0',
+    'end' => '3.0.4',
   ),
   'ociwritelobtofile' => 
   array (
@@ -12905,22 +13046,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'odbc_autocommit' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_binmode' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_close' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_close_all' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_columnprivileges' => 
@@ -12935,82 +13076,82 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'odbc_commit' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_connect' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_cursor' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_data_source' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_do' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_error' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_errormsg' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_exec' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_execute' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_fetch_array' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_fetch_into' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_fetch_object' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_fetch_row' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_field_len' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_field_name' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_field_num' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_field_precision' => 
@@ -13025,7 +13166,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'odbc_field_type' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_foreignkeys' => 
@@ -13035,7 +13176,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'odbc_free_result' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_gettypeinfo' => 
@@ -13045,32 +13186,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'odbc_longreadlen' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_next_result' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_num_fields' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_num_rows' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_pconnect' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_prepare' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_primarykeys' => 
@@ -13090,22 +13231,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'odbc_result' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_result_all' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_rollback' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_setoption' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'odbc_specialcolumns' => 
@@ -13125,7 +13266,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'odbc_tables' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
   'onClose' => 
@@ -13141,6 +13282,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'open_listen_sock' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'opendir' => 
   array (
@@ -13154,179 +13296,182 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'openssl_csr_export' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_csr_export_to_file' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_csr_new' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_csr_sign' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_error_string' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_free_key' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_free_x509' => 
   array (
     'init' => '4.0.4',
+    'end' => '4.0.5',
   ),
   'openssl_get_privatekey' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_get_publickey' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_open' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_pkcs7_decrypt' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_pkcs7_encrypt' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_pkcs7_sign' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_pkcs7_verify' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_pkey_export' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_pkey_export_to_file' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_pkey_free' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_pkey_get_private' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_pkey_get_public' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_pkey_new' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_private_decrypt' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_private_encrypt' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_public_decrypt' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_public_encrypt' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_read_publickey' => 
   array (
     'init' => '4.0.4',
+    'end' => '4.0.5',
   ),
   'openssl_read_x509' => 
   array (
     'init' => '4.0.4',
+    'end' => '4.0.5',
   ),
   'openssl_seal' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_sign' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_verify' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_x509_check_private_key' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_x509_checkpurpose' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_x509_export' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_x509_export_to_file' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_x509_free' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_x509_parse' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'openssl_x509_read' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_openssl',
   ),
   'options' => 
@@ -13336,142 +13481,147 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ora_bind' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_close' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_columnname' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_columnsize' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_columntype' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_commit' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_commitoff' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_commiton' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_do' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_error' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_errorcode' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_exec' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_fetch' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_fetch_into' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_getcolumn' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_logoff' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_logon' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_numcols' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_numrows' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_open' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_parse' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_plogon' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'ora_rollback' => 
   array (
-    'init' => '5.1.0',
+    'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
   'orbit_caught_exception' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'orbit_exception_id' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'orbit_exception_value' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'orbit_get_repository_id' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'orbit_load_idl' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'ord' => 
@@ -13481,129 +13631,131 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'output' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'output_add_rewrite_var' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'output_reset_rewrite_vars' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'overload' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'ovrimos_close' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_close_all' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.0.6',
   ),
   'ovrimos_commit' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_connect' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_cursor' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_do' => 
   array (
-    'init' => '3.0.0',
+    'init' => '4.0.0',
+    'end' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_exec' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_execute' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_fetch_into' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_fetch_row' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_field_len' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_field_name' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_field_num' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_field_type' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_free_result' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_longreadlen' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_num_fields' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_num_rows' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_prepare' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_result' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_result_all' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'ovrimos_rollback' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_ovrimos',
   ),
   'pack' => 
@@ -13633,7 +13785,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pathinfo' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'pclose' => 
@@ -13643,17 +13795,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pcntl_alarm' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pcntl_exec' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pcntl_fork' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pcntl_getpriority' => 
@@ -13668,7 +13820,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pcntl_signal' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pcntl_wait' => 
@@ -13678,221 +13830,221 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pcntl_waitpid' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pcntl_wexitstatus' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pcntl_wifexited' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pcntl_wifsignaled' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pcntl_wifstopped' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pcntl_wstopsig' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pcntl_wtermsig' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pcntl',
   ),
   'pdf_add_annotation' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_add_bookmark' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_add_launchlink' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_add_locallink' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_add_note' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_add_outline' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_add_pdflink' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_add_thumbnail' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_add_weblink' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_arc' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_arcn' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_attach_file' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_begin_page' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_begin_pattern' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_begin_template' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_circle' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_clip' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_close' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_close_image' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_close_pdi' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_close_pdi_page' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_closepath' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_closepath_fill_stroke' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_closepath_stroke' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_concat' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_continue_text' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_curveto' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_delete' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_end_page' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_end_pattern' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_end_template' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_endpath' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_execute_image' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'pdf_fill' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_fill_stroke' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_findfont' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_get_buffer' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_get_font' => 
@@ -13912,96 +14064,96 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pdf_get_image_height' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_get_image_width' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_get_info' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
   ),
   'pdf_get_majorversion' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_get_minorversion' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_get_parameter' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_get_pdi_parameter' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_get_pdi_value' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_get_value' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_initgraphics' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_lineto' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_makespotcolor' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_moveto' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_new' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_open' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_open_ccitt' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_open_file' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_open_gif' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_open_image' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_open_image_file' => 
@@ -14011,22 +14163,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pdf_open_jpeg' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_open_memory_image' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_open_pdi' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_open_pdi_page' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_open_png' => 
@@ -14041,111 +14193,111 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pdf_place_image' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_place_pdi_page' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_put_image' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'pdf_rect' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_restore' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_rotate' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_save' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_scale' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_border_color' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_border_dash' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_set_border_style' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_char_spacing' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_duration' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_font' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_horiz_scaling' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_info' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_set_info_author' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_info_creator' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_info_keywords' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_info_subject' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_info_title' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_leading' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_parameter' => 
@@ -14155,121 +14307,121 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pdf_set_text_matrix' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
   ),
   'pdf_set_text_pos' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_text_rendering' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_text_rise' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_transition' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_set_value' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_set_word_spacing' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setcolor' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_setdash' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setflat' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setfont' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_setgray' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setgray_fill' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setgray_stroke' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setlinecap' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setlinejoin' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setlinewidth' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setmatrix' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_setmiterlimit' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setpolydash' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'pdf_setrgbcolor' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setrgbcolor_fill' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_setrgbcolor_stroke' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_show' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_show_boxed' => 
@@ -14279,7 +14431,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pdf_show_xy' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_skew' => 
@@ -14289,72 +14441,72 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pdf_stringwidth' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_stroke' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdf_translate' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'pdo_drivers' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => ' ',
   ),
   'pfpro_cleanup' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pfpro',
   ),
   'pfpro_init' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pfpro',
   ),
   'pfpro_process' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pfpro',
   ),
   'pfpro_process_raw' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pfpro',
   ),
   'pfpro_version' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pfpro',
   ),
   'pfsockopen' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'pg_affected_rows' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_cancel_query' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_client_encoding' => 
   array (
-    'init' => '4.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_clientencoding' => 
   array (
-    'init' => '4.0.2',
+    'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_close' => 
@@ -14374,32 +14526,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_connection_busy' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_connection_reset' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_connection_status' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_convert' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_copy_from' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_copy_to' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_dbname' => 
@@ -14409,12 +14561,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_delete' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_end_copy' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_errormessage' => 
@@ -14424,12 +14576,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_escape_bytea' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_escape_string' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_exec' => 
@@ -14439,75 +14591,75 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_execute' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pg_fetch_all' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_fetch_all_columns' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pg_fetch_array' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_fetch_assoc' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_fetch_object' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_fetch_result' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_fetch_row' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_field_is_null' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_field_name' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_field_num' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_field_prtlen' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_field_size' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_field_type' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_field_type_oid' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_fieldisnull' => 
@@ -14542,7 +14694,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_free_result' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_freeresult' => 
@@ -14552,17 +14704,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_get_notify' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_get_pid' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_get_result' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_getlastoid' => 
@@ -14577,77 +14729,77 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_insert' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_last_error' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_last_notice' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_last_oid' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_close' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_create' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_export' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_import' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_open' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_read' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_read_all' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_seek' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_tell' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_unlink' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_lo_write' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_loclose' => 
@@ -14662,12 +14814,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_loexport' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_loimport' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_loopen' => 
@@ -14697,17 +14849,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_meta_data' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_num_fields' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_num_rows' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_numfields' => 
@@ -14737,7 +14889,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_ping' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_port' => 
@@ -14747,21 +14899,21 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_prepare' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pg_put_line' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_query' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_query_params' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pg_result' => 
   array (
@@ -14770,67 +14922,67 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_result_error' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_result_error_field' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pg_result_seek' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_result_status' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_select' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_send_execute' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pg_send_prepare' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pg_send_query' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_send_query_params' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pg_set_client_encoding' => 
   array (
-    'init' => '4.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_set_error_verbosity' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pg_setclientencoding' => 
   array (
-    'init' => '4.0.2',
+    'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_trace' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_transaction_status' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pg_tty' => 
   array (
@@ -14839,17 +14991,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pg_unescape_bytea' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_untrace' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_update' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_pgsql',
   ),
   'pg_version' => 
@@ -14859,7 +15011,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'php_check_syntax' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'php_egg_logo_guid' => 
@@ -14869,7 +15021,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'php_ini_scanned_files' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'php_logo_guid' => 
@@ -14884,7 +15036,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'php_sapi_name' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'php_strip_whitespace' => 
@@ -14894,7 +15046,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'php_uname' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'phpcredits' => 
@@ -14924,7 +15076,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'png2wbmp' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_gd',
   ),
   'popen' => 
@@ -14939,176 +15091,176 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'posix_access' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_ctermid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_errno' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_get_last_error' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getcwd' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getegid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_geteuid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getgid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getgrgid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getgrnam' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getgroups' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getlogin' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getpgid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getpgrp' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getpid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getppid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getpwnam' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getpwuid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getrlimit' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getsid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_getuid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_isatty' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_kill' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_mkfifo' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_mknod' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'posix_setegid' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_seteuid' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_setgid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_setpgid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_setsid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_setuid' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_strerror' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_times' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_ttyname' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'posix_uname' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_posix',
   ),
   'pow' => 
@@ -15123,32 +15275,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'preg_match' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_pcre',
   ),
   'preg_match_all' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_pcre',
   ),
   'preg_quote' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_pcre',
   ),
   'preg_replace' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_pcre',
   ),
   'preg_replace_callback' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_pcre',
   ),
   'preg_split' => 
   array (
-    'init' => '3.0.9',
+    'init' => '3.0.0',
     'ext' => 'ext_pcre',
   ),
   'prepare' => 
@@ -15173,7 +15325,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'proc_close' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'proc_get_status' => 
@@ -15188,7 +15340,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'proc_open' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'proc_terminate' => 
@@ -15198,31 +15350,31 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'property_exists' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'pspell_add_to_personal' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_add_to_session' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_check' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_clear_session' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_config_create' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_config_data_dir' => 
@@ -15237,62 +15389,62 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'pspell_config_ignore' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_config_mode' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_config_personal' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_config_repl' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_config_runtogether' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_config_save_repl' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_new' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_new_config' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_new_personal' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_save_wordlist' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_store_replacement' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'pspell_suggest' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_pspell',
   ),
   'putenv' => 
@@ -15302,12 +15454,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'qdom_error' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'qdom_tree' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'query' => 
@@ -15317,7 +15469,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'quoted_printable_decode' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'quotemeta' => 
@@ -15327,7 +15479,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'rad2deg' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'rand' => 
@@ -15337,7 +15489,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'range' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'rawurldecode' => 
@@ -15353,10 +15505,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'read' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'read_exif_data' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_exif',
   ),
   'readdir' => 
@@ -15386,17 +15539,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'readline_callback_handler_install' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_readline',
   ),
   'readline_callback_handler_remove' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_readline',
   ),
   'readline_callback_read_char' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_readline',
   ),
   'readline_clear_history' => 
@@ -15421,7 +15574,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'readline_on_new_line' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_readline',
   ),
   'readline_read_history' => 
@@ -15431,7 +15584,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'readline_redisplay' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_readline',
   ),
   'readline_write_history' => 
@@ -15446,11 +15599,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'readmagick' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'readv' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'real_connect' => 
   array (
@@ -15479,39 +15633,42 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'recode_file' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_recode',
   ),
   'recode_string' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_recode',
   ),
   'recv' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'recvfrom' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'recvmsg' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'register_shutdown_function' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'register_tick_function' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'remove' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'rename' => 
@@ -15526,7 +15683,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'restore_error_handler' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'restore_exception_handler' => 
@@ -15536,7 +15693,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'restore_include_path' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'result_metadata' => 
@@ -15570,11 +15727,11 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'rotate' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'rotateto' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'round' => 
   array (
@@ -15583,7 +15740,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'rpc_call' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
   ),
   'rpl_parse_enabled' => 
   array (
@@ -15613,56 +15770,62 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'satellite_caught_exception' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'satellite_exception_id' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'satellite_exception_value' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'satellite_get_repository_id' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'satellite_load_idl' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'satellite_object_to_string' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
     'ext' => ' ',
   ),
   'save' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'savemagick' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'savetofile' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'scale' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'scalemagick' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'scaleto' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'scandir' => 
   array (
@@ -15672,6 +15835,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'select' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'select_db' => 
   array (
@@ -15680,27 +15844,28 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'sem_acquire' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sysvsem',
   ),
   'sem_get' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sysvsem',
   ),
   'sem_release' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sysvsem',
   ),
   'sem_remove' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sysvsem',
   ),
   'send' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'send_long_data' => 
   array (
@@ -15710,14 +15875,16 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'sendmsg' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'sendto' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'serialize' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'sesam_affected_rows' => 
@@ -15802,17 +15969,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'session_cache_expire' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
   'session_cache_limiter' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
   'session_commit' => 
   array (
-    'init' => '4.3.1',
+    'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
   'session_decode' => 
@@ -15857,7 +16024,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'session_regenerate_id' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
   'session_register' => 
@@ -15897,25 +16064,25 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'session_write_close' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
   'setTimezone' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'set_charset' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'set_content' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'set_error_handler' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'set_exception_handler' => 
@@ -15925,17 +16092,18 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'set_file_buffer' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'set_include_path' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'set_iovec' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'set_local_infile_default' => 
   array (
@@ -15949,12 +16117,13 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'set_magic_quotes_runtime' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'set_nonblock' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'set_opt' => 
   array (
@@ -15981,19 +16150,19 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'setaction' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setbackground' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setbounds' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setcolor' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setcookie' => 
   array (
@@ -16002,51 +16171,51 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'setdepth' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setdimension' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setdown' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setfont' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setframes' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setheight' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'sethit' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setindentation' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setleftfill' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setleftmargin' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setline' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setlinespacing' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setlocale' => 
   array (
@@ -16055,27 +16224,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'setmargins' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setmatrix' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setname' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setover' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setrate' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setratio' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setrawcookie' => 
   array (
@@ -16084,19 +16253,20 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'setrightfill' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setrightmargin' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'setsockopt' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'setspacing' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'settype' => 
   array (
@@ -16105,16 +16275,16 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'setup' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'sha1' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'sha1_file' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'shell_exec' => 
@@ -16124,86 +16294,92 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'shm_attach' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sysvshm',
   ),
   'shm_close' => 
   array (
-    'init' => '3.0.0',
+    'init' => '4.0.0',
+    'end' => '4.0.3',
   ),
   'shm_delete' => 
   array (
-    'init' => '3.0.0',
+    'init' => '4.0.0',
+    'end' => '4.0.3',
   ),
   'shm_detach' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sysvshm',
   ),
   'shm_get_var' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sysvshm',
   ),
   'shm_open' => 
   array (
-    'init' => '3.0.0',
+    'init' => '4.0.0',
+    'end' => '4.0.3',
   ),
   'shm_put_var' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sysvshm',
   ),
   'shm_read' => 
   array (
-    'init' => '3.0.0',
+    'init' => '4.0.0',
+    'end' => '4.0.3',
   ),
   'shm_remove' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sysvshm',
   ),
   'shm_remove_var' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sysvshm',
   ),
   'shm_size' => 
   array (
-    'init' => '3.0.0',
+    'init' => '4.0.0',
+    'end' => '4.0.3',
   ),
   'shm_write' => 
   array (
-    'init' => '3.0.0',
+    'init' => '4.0.0',
+    'end' => '4.0.3',
   ),
   'shmop_close' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_shmop',
   ),
   'shmop_delete' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_shmop',
   ),
   'shmop_open' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_shmop',
   ),
   'shmop_read' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_shmop',
   ),
   'shmop_size' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_shmop',
   ),
   'shmop_write' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => 'ext_shmop',
   ),
   'short_tags' => 
@@ -16217,20 +16393,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'shuffle' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'shutdown' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'signal' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'similar_text' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'simplexml_import_dom' => 
@@ -16255,7 +16433,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'sinh' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'sizeof' => 
@@ -16265,19 +16443,19 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'skewx' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'skewxto' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'skewy' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'skewyto' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'slave_query' => 
   array (
@@ -16336,27 +16514,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'snmp2_get' => 
   array (
-    'init' => '4.3.1',
+    'init' => '4.0.0',
   ),
   'snmp2_getnext' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
   ),
   'snmp2_real_walk' => 
   array (
-    'init' => '4.3.1',
+    'init' => '4.0.0',
   ),
   'snmp2_set' => 
   array (
-    'init' => '4.3.1',
+    'init' => '4.0.0',
   ),
   'snmp2_walk' => 
   array (
-    'init' => '4.3.1',
+    'init' => '4.0.0',
   ),
   'snmp3_get' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmp3_getnext' => 
@@ -16366,27 +16544,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'snmp3_real_walk' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmp3_set' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmp3_walk' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmp_get_quick_print' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmp_get_valueretrieval' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmp_read_mib' => 
@@ -16396,22 +16574,22 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'snmp_set_enum_print' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmp_set_oid_numeric_print' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmp_set_quick_print' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmp_set_valueretrieval' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmpget' => 
@@ -16426,12 +16604,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'snmprealwalk' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmpset' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_snmp',
   ),
   'snmpwalk' => 
@@ -16441,7 +16619,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'snmpwalkoid' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_snmp',
   ),
   'soap_encode_to_xml' => 
@@ -16457,74 +16635,81 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'socket' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'socket_accept' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_bind' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_clear_error' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_close' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_connect' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_create' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_create_listen' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_create_pair' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_fd_alloc' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
   ),
   'socket_fd_clear' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
   ),
   'socket_fd_free' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
   ),
   'socket_fd_isset' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
   ),
   'socket_fd_set' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
   ),
   'socket_fd_zero' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.1.2',
   ),
   'socket_get_option' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_get_status' => 
@@ -16534,98 +16719,98 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'socket_getopt' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_getpeername' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_getsockname' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_iovec_add' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'socket_iovec_alloc' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'socket_iovec_delete' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'socket_iovec_fetch' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'socket_iovec_free' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'socket_iovec_set' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'socket_last_error' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_listen' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_read' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_readv' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'socket_recv' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_recvfrom' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_recvmsg' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'socket_select' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_send' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_sendmsg' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'socket_sendto' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_set_block' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_set_blocking' => 
@@ -16635,12 +16820,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'socket_set_nonblock' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_set_option' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_set_timeout' => 
@@ -16650,31 +16835,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'socket_setopt' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_shutdown' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_strerror' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_write' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sockets',
   ),
   'socket_writev' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
   ),
   'socketpair' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'solid_close' => 
   array (
@@ -16732,32 +16918,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'spl_autoload' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
   'spl_autoload_call' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
   'spl_autoload_extensions' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
   'spl_autoload_functions' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
   'spl_autoload_register' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
   'spl_autoload_unregister' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
   'spl_classes' => 
@@ -16772,7 +16958,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'spliti' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'sprintf' => 
@@ -16787,36 +16973,36 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'sqlconnect' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'sqldisconnect' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'sqlexecdirect' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'sqlfetch' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'sqlfree' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
   ),
   'sqlgetdata' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'sqlite2_create_function' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => ' ',
   ),
   'sqlite_array_query' => 
@@ -17016,7 +17202,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'sqlrowcount' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'sqrt' => 
@@ -17031,7 +17217,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'sscanf' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'ssl_set' => 
@@ -17066,7 +17252,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'str_pad' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'str_repeat' => 
@@ -17076,17 +17262,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'str_replace' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'str_rot13' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'str_shuffle' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'str_split' => 
@@ -17096,12 +17282,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'str_word_count' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'strcasecmp' => 
   array (
-    'init' => '3.0.2',
+    'init' => '3.0.0',
     'ext' => 'zend',
   ),
   'strchr' => 
@@ -17116,12 +17302,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'strcoll' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'strcspn' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_bucket_append' => 
@@ -17146,27 +17332,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'stream_context_create' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_context_get_default' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_context_get_options' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_context_set_option' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_context_set_params' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_copy_to_stream' => 
@@ -17176,12 +17362,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'stream_filter_append' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_filter_prepend' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_filter_register' => 
@@ -17191,7 +17377,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'stream_filter_remove' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_get_contents' => 
@@ -17211,7 +17397,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'stream_get_meta_data' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_get_transports' => 
@@ -17226,27 +17412,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'stream_register_wrapper' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_select' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_set_blocking' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_set_timeout' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_set_write_buffer' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_socket_accept' => 
@@ -17261,7 +17447,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'stream_socket_enable_crypto' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_socket_get_name' => 
@@ -17271,7 +17457,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'stream_socket_pair' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_socket_recvfrom' => 
@@ -17291,26 +17477,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'stream_wrapper_register' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_wrapper_restore' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'stream_wrapper_unregister' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'streammp3' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'strerror' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'strftime' => 
   array (
@@ -17319,7 +17506,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'strip_tags' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'stripcslashes' => 
@@ -17339,7 +17526,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'stristr' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'strlen' => 
@@ -17359,7 +17546,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'strncasecmp' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'strncmp' => 
@@ -17379,7 +17566,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'strptime' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
   'strrchr' => 
@@ -17404,7 +17591,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'strspn' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'strstr' => 
@@ -17424,7 +17611,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'strtotime' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'strtoupper' => 
@@ -17644,7 +17831,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'swf_ortho' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'swf_ortho2' => 
@@ -17799,59 +17986,59 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'swfaction' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swfbitmap' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swfbutton' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swfbutton_keypress' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swffill' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swffont' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swfgradient' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swfmorph' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swfmovie' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swfshape' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swfsprite' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swftext' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'swftextfield' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
   ),
   'sybase_affected_rows' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
   'sybase_close' => 
@@ -17871,7 +18058,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'sybase_deadlock_retry_count' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sybase_ct',
   ),
   'sybase_fetch_array' => 
@@ -17881,7 +18068,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'sybase_fetch_assoc' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sybase_ct',
   ),
   'sybase_fetch_field' => 
@@ -17966,12 +18153,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'sybase_set_message_handler' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sybase_ct',
   ),
   'sybase_unbuffered_query' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_sybase_ct',
   ),
   'symlink' => 
@@ -17996,7 +18183,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'tanh' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'tempnam' => 
@@ -18006,7 +18193,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'textdomain' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_gettext',
   ),
   'thread_safe' => 
@@ -18071,7 +18258,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'tidy_get_opt_doc' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'tidy_get_output' => 
   array (
@@ -18145,45 +18332,45 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'time_sleep_until' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'timezone_abbreviations_list' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'timezone_identifiers_list' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'timezone_name_get' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'timezone_offset_get' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'timezone_open' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'timezone_transistions_get' => 
   array (
-    'init' => '5.1.0',
+    'init' => '5.0.0',
   ),
   'tmpfile' => 
   array (
-    'init' => '3.0.1',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'token_get_all' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_tokenizer',
   ),
   'token_name' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_tokenizer',
   ),
   'touch' => 
@@ -18193,7 +18380,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'trigger_error' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'trim' => 
@@ -18203,7 +18390,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'uasort' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'ucfirst' => 
@@ -18213,159 +18400,159 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'ucwords' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'udm_add_search_limit' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_alloc_agent' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_alloc_agent_array' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_api_version' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_cat_list' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_cat_path' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_check_charset' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_check_stored' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'udm_clear_search_limits' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_close_stored' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'udm_crc32' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_errno' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_error' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_find' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_free_agent' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_free_ispell_data' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_free_res' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_get_agent_param_ex' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_get_doc_count' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_get_res_field' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_get_res_field_ex' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_get_res_param' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_hash32' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_load_ispell_data' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_make_excerpt' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_open_stored' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
   ),
   'udm_parse_query_string' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_set_agent_param' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_set_agent_param_ex' => 
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'udm_store_doc_cgi' => 
   array (
-    'init' => '5.0.4',
+    'init' => '5.0.0',
     'ext' => 'ext_mnogosearch',
   ),
   'uksort' => 
   array (
-    'init' => '3.0.4',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'umask' => 
@@ -18403,12 +18590,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'unregister_tick_function' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'unserialize' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'urldecode' => 
@@ -18443,27 +18630,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'usort' => 
   array (
-    'init' => '3.0.3',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'utf8_decode' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'utf8_encode' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'var_dump' => 
   array (
-    'init' => '3.0.5',
+    'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
   'var_export' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'var_inspect' => 
@@ -18662,7 +18849,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'version_compare' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'vfprintf' => 
@@ -18698,257 +18885,281 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'vpopmail_add_alias_domain' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_add_alias_domain_ex' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_add_domain' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_add_domain_ex' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_add_user' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_alias_add' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_alias_del' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_alias_del_domain' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_alias_get' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_alias_get_all' => 
   array (
     'init' => '4.1.0',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_auth_user' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_del_domain' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_del_domain_ex' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_del_user' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_error' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_passwd' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vpopmail_set_user_quota' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.2.3',
     'ext' => ' ',
   ),
   'vprintf' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'vsprintf' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'w32api_deftype' => 
   array (
     'init' => '4.2.0',
+    'end' => '4.2.3',
   ),
   'w32api_init_dtype' => 
   array (
     'init' => '4.2.0',
+    'end' => '4.2.3',
   ),
   'w32api_invoke_function' => 
   array (
     'init' => '4.2.0',
+    'end' => '4.2.3',
   ),
   'w32api_register_function' => 
   array (
     'init' => '4.2.0',
+    'end' => '4.2.3',
   ),
   'w32api_set_call_method' => 
   array (
     'init' => '4.2.0',
+    'end' => '4.2.3',
   ),
   'wddx_add_vars' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_wddx',
   ),
   'wddx_deserialize' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_wddx',
   ),
   'wddx_packet_end' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_wddx',
   ),
   'wddx_packet_start' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_wddx',
   ),
   'wddx_serialize' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'wddx_serialize_value' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_wddx',
   ),
   'wddx_serialize_vars' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => 'ext_wddx',
   ),
   'wddx_unserialize' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
   ),
   'wordwrap' => 
   array (
-    'init' => '4.0.2',
+    'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
   'write' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'writev' => 
   array (
     'init' => '4.0.2',
+    'end' => '4.0.6',
   ),
   'xml_error_string' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_get_current_byte_index' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_get_current_column_number' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_get_current_line_number' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_get_error_code' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_parse' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_parse_into_struct' => 
   array (
-    'init' => '3.0.8',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_parser_create' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_parser_create_ns' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_parser_free' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_parser_get_option' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_parser_set_option' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_set_character_data_handler' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_set_default_handler' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_set_element_handler' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_set_end_namespace_decl_handler' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_set_external_entity_ref_handler' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_set_notation_decl_handler' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_set_object' => 
@@ -18958,17 +19169,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'xml_set_processing_instruction_handler' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_set_start_namespace_decl_handler' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => 'ext_xml',
   ),
   'xml_set_unparsed_entity_decl_handler' => 
   array (
-    'init' => '3.0.6',
+    'init' => '3.0.0',
     'ext' => 'ext_xml',
   ),
   'xmldoc' => 
@@ -18983,72 +19194,72 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'xmlrpc_decode' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_decode_request' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_encode' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_encode_request' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_get_type' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_is_fault' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_parse_method_descriptions' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_server_add_introspection_data' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_server_call_method' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_server_create' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_server_destroy' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_server_register_introspection_callback' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_server_register_method' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmlrpc_set_type' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => 'ext_xmlrpc',
   ),
   'xmltree' => 
@@ -19058,313 +19269,322 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'xpath_eval' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xpath_eval_expression' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xpath_new_context' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xpath_register_ns' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xptr_eval' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xptr_new_context' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_backend_info' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_backend_name' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_backend_version' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_closelog' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.0.6',
   ),
   'xslt_create' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_errno' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_error' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_fetch_result' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.0.6',
   ),
   'xslt_free' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_getopt' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_openlog' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.0.6',
   ),
   'xslt_output_begintransform' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.0.6',
   ),
   'xslt_output_endtransform' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.0.6',
   ),
   'xslt_process' => 
   array (
-    'init' => '4.0.3',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_run' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.0.6',
   ),
   'xslt_set_base' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_set_encoding' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_set_error_handler' => 
   array (
-    'init' => '4.0.4',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_set_log' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_set_object' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_set_sax_handler' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.0.6',
   ),
   'xslt_set_sax_handlers' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_set_scheme_handler' => 
   array (
     'init' => '4.0.5',
+    'end' => '4.0.6',
   ),
   'xslt_set_scheme_handlers' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_setopt' => 
   array (
-    'init' => '4.3.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'xslt_transform' => 
   array (
     'init' => '4.0.3',
+    'end' => '4.0.6',
   ),
   'yaz_addinfo' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_ccl_conf' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_ccl_parse' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_close' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_connect' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_database' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_element' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_errno' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_error' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_es_result' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_hits' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_itemorder' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_present' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_range' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_record' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_scan' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_scan_result' => 
   array (
-    'init' => '4.0.5',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_schema' => 
   array (
-    'init' => '4.2.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_search' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_sort' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_syntax' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yaz_wait' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yp_all' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yp_cat' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yp_err_string' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yp_errno' => 
   array (
-    'init' => '4.0.6',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'yp_first' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'yp_get_default_domain' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'yp_master' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'yp_match' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'yp_next' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'yp_order' => 
   array (
-    'init' => '3.0.7',
+    'init' => '3.0.0',
     'ext' => ' ',
   ),
   'zend_logo_guid' => 
@@ -19374,7 +19594,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'zend_test_func' => 
   array (
-    'init' => '4.0.1',
+    'init' => '4.0.0',
     'ext' => 'zend',
   ),
   'zend_thread_id' => 
@@ -19389,57 +19609,57 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   ),
   'zip_close' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'zip_entry_close' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'zip_entry_compressedsize' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'zip_entry_compressionmethod' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'zip_entry_filesize' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'zip_entry_name' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'zip_entry_open' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'zip_entry_read' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'zip_open' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'zip_read' => 
   array (
-    'init' => '4.1.0',
+    'init' => '4.0.0',
     'ext' => ' ',
   ),
   'zlib_get_coding_type' => 
   array (
-    'init' => '4.3.2',
+    'init' => '4.0.0',
     'ext' => 'ext_zlib',
   ),
   'hwapi_attribute_key' => 
