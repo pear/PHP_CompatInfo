@@ -21,7 +21,7 @@ $version_pattern = '\d+(?:\.\d+)*(?:[a-zA-Z]+\d*)?';
 
 foreach ($xml->function as $function) {
     $name = (string) $function['name'];
-    $version = false;
+    $from = (string) $function['from'];
 
     /**
      * Match strings like :
@@ -29,9 +29,9 @@ foreach ($xml->function as $function) {
      *  "PHP 5 &gt;= 5.1.0RC1"                  for date_modify
      *  "PHP 3 &gt;= 3.0.7, PHP 4 &lt;= 4.2.3"  for aspell_check
      */
-    if (preg_match('/&gt;= ('.$version_pattern.')/', (string) $function['from'], $matches)) {
+    if (preg_match('/>= ('.$version_pattern.')/', $from, $matches)) {
         $funcs[$name]['init'] = $matches[1];
-        if (preg_match('/&lt;= ('.$version_pattern.')/', (string) $function['from'], $matches)) {
+        if (preg_match('/<= ('.$version_pattern.')/', $from, $matches)) {
             $funcs[$name]['end'] = $matches[1];
         }
         continue;
@@ -40,14 +40,14 @@ foreach ($xml->function as $function) {
      * Match string like :
      *  "PHP 5 &lt;= 5.0.4"    for php_check_syntax
      */
-    } elseif (preg_match('/&lt;= ('.$version_pattern.')/', (string) $function['from'], $matches)) {
+    } elseif (preg_match('/<= ('.$version_pattern.')/', $from, $matches)) {
         $funcs[$name]['end'] = $matches[1];
 
     /**
      * Match string like :
      *  "4.0.2 - 4.0.6 only"    for accept_connect
      */
-    } elseif (preg_match('/('.$version_pattern.') - ('.$version_pattern.') only/', (string) $function['from'], $matches)) {
+    } elseif (preg_match('/('.$version_pattern.') - ('.$version_pattern.') only/', $from, $matches)) {
         $funcs[$name]['init'] = $matches[1];
         $funcs[$name]['end']  = $matches[2];
         continue;
@@ -57,7 +57,7 @@ foreach ($xml->function as $function) {
      *  "PHP 33.0.5 only"    for PHP3_UODBC_FIELD_NUM
      *  "PHP 44.0.6 only"    for ocifreecoll
      */
-    } elseif (preg_match('/PHP (\d)('.$version_pattern.') only/', (string) $function['from'], $matches)) {
+    } elseif (preg_match('/PHP (\d)('.$version_pattern.') only/', $from, $matches)) {
         $funcs[$name]['init'] = $matches[1] .'.0.0';
         $funcs[$name]['end']  = $matches[2];
         continue;
