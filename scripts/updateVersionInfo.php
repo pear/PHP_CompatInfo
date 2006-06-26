@@ -17,28 +17,63 @@
 
 $xml = simplexml_load_file('D:\php\pear\PHP_CompatInfo\scripts\version.xml');
 
+$version_pattern = '\d+(?:\.\d+)*(?:[a-zA-Z]+\d*)?';
+
 foreach ($xml->function as $function) {
     $name = (string) $function['name'];
     $version = false;
-    if (preg_match('/= (\d\.\d\.\d)/', (string) $function['from'], $matches)) {
+
+    /**
+     * Match strings like :
+     *  "PHP 3 &gt;= 3.0.7, PHP 4, PHP 5"       for _
+     *  "PHP 5 &gt;= 5.1.0RC1"                  for date_modify
+     *  "PHP 3 &gt;= 3.0.7, PHP 4 &lt;= 4.2.3"  for aspell_check
+     */
+    if (preg_match('/&gt;= ('.$version_pattern.')/', (string) $function['from'], $matches)) {
         $funcs[$name]['init'] = $matches[1];
+        if (preg_match('/&lt;= ('.$version_pattern.')/', (string) $function['from'], $matches)) {
+            $funcs[$name]['end'] = $matches[1];
+        }
         continue;
-    } elseif (preg_match('/(\d\.\d\.\d) - (\d\.\d\.\d) only/', (string) $function['from'], $matches)) {
+
+    /**
+     * Match string like :
+     *  "PHP 5 &lt;= 5.0.4"    for php_check_syntax
+     */
+    } elseif (preg_match('/&lt;= ('.$version_pattern.')/', (string) $function['from'], $matches)) {
+        $funcs[$name]['end'] = $matches[1];
+
+    /**
+     * Match string like :
+     *  "4.0.2 - 4.0.6 only"    for accept_connect
+     */
+    } elseif (preg_match('/('.$version_pattern.') - ('.$version_pattern.') only/', (string) $function['from'], $matches)) {
         $funcs[$name]['init'] = $matches[1];
+        $funcs[$name]['end']  = $matches[2];
         continue;
-    } else {
-        if (strpos($function['from'], '3') !== FALSE) {
-            $funcs[$name]['init'] = "3.0.0";
-            continue;
-        }
-        if (strpos($function['from'], '4') !== FALSE) {
-            $funcs[$name]['init'] = "4.0.0";
-            continue;
-        }
-        if (strpos($function['from'], '5') !== FALSE) {
-            $funcs[$name]['init'] = "5.0.0";
-            continue;
-        }
+
+    /**
+     * Match string like :
+     *  "PHP 33.0.5 only"    for PHP3_UODBC_FIELD_NUM
+     *  "PHP 44.0.6 only"    for ocifreecoll
+     */
+    } elseif (preg_match('/PHP (\d)('.$version_pattern.') only/', (string) $function['from'], $matches)) {
+        $funcs[$name]['init'] = $matches[1] .'.0.0';
+        $funcs[$name]['end']  = $matches[2];
+        continue;
+    }
+
+    if (strpos($function['from'], 'PHP 3') !== FALSE) {
+        $funcs[$name]['init'] = "3.0.0";
+        continue;
+    }
+    if (strpos($function['from'], 'PHP 4') !== FALSE) {
+        $funcs[$name]['init'] = "4.0.0";
+        continue;
+    }
+    if (strpos($function['from'], 'PHP 5') !== FALSE) {
+        $funcs[$name]['init'] = "5.0.0";
+        continue;
     }
 }
 
