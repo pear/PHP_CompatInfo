@@ -58,6 +58,11 @@ class PHP_CompatInfo
     var $latest_version = '3.0.0';
 
     /**
+     * @var string Last version of PHP to use
+     */
+    var $earliest_version = '';
+
+    /**
      * @var boolean Toggle parseDir recursion
      * @since  0.7.0
      */
@@ -102,7 +107,7 @@ class PHP_CompatInfo
      * @return Array
      * @since  0.7.0
      */
-    function  parseString($string, $options = array())
+    function parseString($string, $options = array())
     {
         $options = array_merge(array('debug' => false), $options);
         if (!($tokens = $this->_tokenize($string, true))) {
@@ -144,6 +149,7 @@ class PHP_CompatInfo
     {
         $files = array();
         $latest_version = $this->latest_version;
+        $earliest_version = $this->earliest_version;
         $extensions = array();
         $constants = array();
         $ignored = array();
@@ -182,8 +188,14 @@ class PHP_CompatInfo
             }
             foreach($files as $file) {
                 $cmp = version_compare($latest_version, $file['version']);
-                if ((int)$cmp === -1) {
+                if ($cmp === -1) {
                     $latest_version = $file['version'];
+                }
+                if ($file['max_version'] != '') {
+                    $cmp = version_compare($earliest_version, $file['max_version']);
+                    if ($earliest_version == '' || $cmp === 1) {
+                        $earliest_version = $file['max_version'];
+                    }
                 }
                 foreach($file['extensions'] as $ext) {
                     if (!in_array($ext, $extensions)) {
@@ -204,9 +216,10 @@ class PHP_CompatInfo
             $files['constants'] = $constants;
             $files['extensions'] = $extensions;
             $files['version'] = $latest_version;
+            $files['max_version'] = $earliest_version;
             $files['ignored_files'] = $ignored;
-
-            return array_reverse($files);
+            $files = array_reverse($files);
+            return $files;
         } else {
             return false;
         }
@@ -255,6 +268,7 @@ class PHP_CompatInfo
     function parseArray($files,$options = array())
     {
         $latest_version = $this->latest_version;
+        $earliest_version = $this->earliest_version;
         $extensions = array();
         $constants = array();
         $options = array_merge(
@@ -293,8 +307,14 @@ class PHP_CompatInfo
         foreach($files_parsed as $file) {
             if ($file != false) {
                 $cmp = version_compare($latest_version, $file['version']);
-                if ((int)$cmp === -1) {
+                if ($cmp === -1) {
                     $latest_version = $file['version'];
+                }
+                if ($file['max_version'] != '') {
+                    $cmp = version_compare($earliest_version, $file['max_version']);
+                    if ($earliest_version == '' || $cmp === 1) {
+                        $earliest_version = $file['max_version'];
+                    }
                 }
                 foreach($file['extensions'] as $ext) {
                     if (!in_array($ext, $extensions)) {
@@ -312,8 +332,10 @@ class PHP_CompatInfo
         $files_parsed['constants'] = $constants;
         $files_parsed['extensions'] = $extensions;
         $files_parsed['version'] = $latest_version;
+        $files_parsed['max_version'] = $earliest_version;
         $files_parsed['ignored_files'] =  isset($ignored) ? $ignored : array();
-        return array_reverse($files_parsed);
+        $files_parsed = array_reverse($files_parsed);
+        return $files_parsed;
     }
 
     /**
@@ -334,6 +356,7 @@ class PHP_CompatInfo
         $functions = array();
         $functions_version = array();
         $latest_version = $this->latest_version;
+        $earliest_version = $this->earliest_version;
         $extensions = array();
         $constants = array();
         $constant_names = array();
@@ -420,6 +443,12 @@ class PHP_CompatInfo
                 if ($cmp === -1) {
                     $latest_version = $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['init'];
                 }
+                if (array_key_exists('end', $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name])) {
+                    $cmp = version_compare($earliest_version, $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['end']);
+                    if ($earliest_version == '' || $cmp === 1) {
+                        $earliest_version = $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['end'];
+                    }
+                }
                 if ((!empty($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'])) &&
                     ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'ext_standard') &&
                     ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'zend'))  {
@@ -441,8 +470,14 @@ class PHP_CompatInfo
         $constants = array_unique($constants);
         foreach($constants as $constant) {
             $cmp = version_compare($latest_version, $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['init']);
-            if ((int)$cmp === -1) {
+            if ($cmp === -1) {
                 $latest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['init'];
+            }
+            if (array_key_exists('end', $GLOBALS['_PHP_COMPATINFO_CONST'][$constant])) {
+                $cmp = version_compare($earliest_version, $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['end']);
+                if ($earliest_version == '' || $cmp === 1) {
+                    $earliest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$name]['end'];
+                }
             }
             if (!in_array($GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['name'], $constant_names)) {
                 $constant_names[] = $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['name'];
@@ -454,6 +489,7 @@ class PHP_CompatInfo
         $functions_version['constants'] = $constant_names;
         $functions_version['extensions'] = $extensions;
         $functions_version['version'] = $latest_version;
+        $functions_version['max_version'] = $earliest_version;
         $functions_version = array_reverse($functions_version);
         return $functions_version;
     }
