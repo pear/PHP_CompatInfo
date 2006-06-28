@@ -22,18 +22,20 @@ which shows which functions require which version and CLI output script
   </maintainer>
   </maintainers>
  <release>
-  <version>1.0.2</version>
-  <date>2006-06-16</date>
+  <version>1.1.0</version>
+  <date>2006-06-28</date>
   <license>PHP License 3.0</license>
   <state>stable</state>
   <notes>* bug fixes
-- Bug #6581 : Functions missing in func_array.php
+- Bug #8058 : php 5 T_* constants undefined when running on php 4
 
-* improvements
-- PHP 3 functions are now supported
-- functions and extensions bases were refreshed with latest versions of
-  . http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.19
-  . http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35
+* news
+- Request #6056 : Add support for reporting max PHP version
+
+  Array result have now a new entry key &apos;max_version&apos; that will give
+  the max PHP version you should have to run script(s) parsed.
+
+  Don&apos;t forget to have a look on usage example (tests/checkMax.php)
   </notes>
   <deps>
    <dep type="php" rel="ge" version="4.2.0" optional="no"/>
@@ -51,6 +53,7 @@ which shows which functions require which version and CLI output script
     <dir name="docs">
      <dir name="examples">
       <file role="doc" name="checkConstants.php"/>
+      <file role="doc" name="checkPHP5.php"/>
       <file role="doc" name="ci_frontend.php"/>
       <file role="doc" name="Cli.php"/>
       <file role="doc" name="cliOutput.txt"/>
@@ -60,6 +63,10 @@ which shows which functions require which version and CLI output script
       <file role="doc" name="parseString.php"/>
      </dir> <!-- /docs/examples -->
     </dir> <!-- /docs -->
+    <dir name="tests">
+     <file role="doc" name="checkMax.php"/>
+     <file role="doc" name="sample_req6056.php"/>
+    </dir> <!-- /tests -->
     <file role="php" name="CompatInfo.php">
      <replace from="@package_version@" to="version" type="package-info"/>
     </file>
@@ -67,6 +74,23 @@ which shows which functions require which version and CLI output script
   </filelist>
  </release>
  <changelog>
+   <release>
+    <version>1.1.0</version>
+    <date>2006-06-28</date>
+    <license>PHP License 3.0</license>
+    <state>stable</state>
+    <notes>* bug fixes
+- Bug #8058 : php 5 T_* constants undefined when running on php 4
+
+* news
+- Request #6056 : Add support for reporting max PHP version
+
+  Array result have now a new entry key &apos;max_version&apos; that will give
+  the max PHP version you should have to run script(s) parsed.
+
+  Don&apos;t forget to have a look on usage example (tests/checkMax.php)
+    </notes>
+   </release>
    <release>
     <version>1.0.2</version>
     <date>2006-06-16</date>
