@@ -353,6 +353,8 @@ class PHP_CompatInfo
      */
     function _parseTokens($tokens, $options)
     {
+        static $akeys;
+
         $functions = array();
         $functions_version = array();
         $latest_version = $this->latest_version;
@@ -361,31 +363,6 @@ class PHP_CompatInfo
         $constants = array();
         $constant_names = array();
         $udf = array();
-
-        /* Check for PHP 5 stuffs */
-        $php5_tokens = array(
-                        T_ABSTRACT => 'abstract',
-                        T_CATCH => 'catch',
-                        T_FINAL => 'final',
-                        T_INSTANCEOF => 'instanceof',
-                        T_PRIVATE => 'private',
-                        T_PROTECTED => 'protected',
-                        T_PUBLIC => 'public',
-                        T_THROW => 'throw',
-                        T_TRY => 'try',
-                        T_CLONE => 'clone',
-                        T_INTERFACE => 'interface',
-                        T_IMPLEMENTS => 'implements',
-                        );
-
-        foreach ($php5_tokens as $php5_token => $value) {
-            if (in_array(array($php5_token, $value), $tokens)
-                || in_array(array($php5_token, strtoupper($value)), $tokens)
-                || in_array(array($php5_token, ucfirst($value)), $tokens)) {
-                $constants[] = $value;
-                $latest_version = '5.0.0';
-            }
-        }
 
         $token_count = sizeof($tokens);
         $i = 0;
@@ -413,12 +390,14 @@ class PHP_CompatInfo
                 }
             }
             if (is_array($tokens[$i])) {
-                if (in_array(token_name($tokens[$i][0]), $GLOBALS['_PHP_COMPATINFO_CONST'])) {
-                    $constants[] = token_name($tokens[$i][0]);
+                if (!isset($akeys)) {
+                    // build contents one time only (static variable)
+                    $akeys = array_keys($GLOBALS['_PHP_COMPATINFO_CONST']);
                 }
-            } else {
-                if (in_array($tokens[$i][0], $GLOBALS['_PHP_COMPATINFO_CONST'])) {
-                    $constants[] = $tokens[$i][0];
+                $found = array_search($tokens[$i][1], $akeys);
+                if ($found) {
+                    $constants[] = $tokens[$i][1];
+                    $latest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$tokens[$i][1]]['init'];
                 }
             }
             $i += 1;
