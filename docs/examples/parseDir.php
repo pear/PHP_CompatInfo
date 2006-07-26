@@ -13,8 +13,7 @@ require_once 'PHP/CompatInfo.php';
 
 $info = new PHP_CompatInfo();
 
-$folder = dirname(__FILE__);
-
+$folder  = dirname(__FILE__);
 $options = array(
     'file_ext' => array('php3', 'php'),
     'ignore_files' => array(__FILE__)

@@ -13,5 +13,6 @@ require_once 'PHP/CompatInfo.php';
 
 $info = new PHP_CompatInfo();
 
-var_dump($info->parseString('<?php $file = file_get_contents(__FILE__); $tokens = token_get_all($file); ?>'));
+$res = $info->parseString('<?php $file = file_get_contents(__FILE__); $tokens = token_get_all($file); ?>');
+var_dump($res);
 ?>

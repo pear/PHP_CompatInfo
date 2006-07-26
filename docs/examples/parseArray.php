@@ -14,8 +14,7 @@ require_once 'PEAR.php';
 
 $info = new PHP_CompatInfo();
 
-$files = get_included_files();
-
+$files   = get_included_files();
 $options = array(
     'debug' => false,
     'ignore_files' => array($files[0]),

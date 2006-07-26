@@ -12,7 +12,7 @@ require_once 'HTML/QuickForm.php';
 require_once 'HTML/QuickForm/advmultiselect.php';
 
 if (version_compare(phpversion(), '5.0.0', '<')) {
-    require_once 'PHP/Compat.php';
+    include_once 'PHP/Compat.php';
     PHP_Compat::loadFunction('array_combine');
 }
 
@@ -27,18 +27,18 @@ if (count($sess) == 0) {
 
     // PEAR packages installed from each channel
     $allpackages = $reg->listAllPackages();
-    foreach($allpackages as $channel => $packages) {
+    foreach ($allpackages as $channel => $packages) {
         if ($packages) {
             sort($packages, SORT_ASC);
             foreach ($packages as $package) {
                 $info = &$reg->getPackage($package, $channel);
                 if (is_object($info)) {
-                    $name = $info->getPackage();
-                    $version = $info->getVersion();
+                    $name          = $info->getPackage();
+                    $version       = $info->getVersion();
                     $release_state = $info->getState();
                 } else {
-                    $name = $info['package'];
-                    $version = $info['version'];
+                    $name          = $info['package'];
+                    $version       = $info['version'];
                     $release_state = $info['state'];
                 }
                 $sess['packages'][$channel][] = "$name $version ($release_state)";
@@ -55,10 +55,10 @@ if (count($sess) == 0) {
 
     // packages
     $names[''] = array();
-    foreach($sess['packages'] as $c => $p) {
+    foreach ($sess['packages'] as $c => $p) {
         if (count($p)) {
             $l = array();
-            foreach($p as $k) {
+            foreach ($p as $k) {
                 list($n, $v, $s) = explode(' ', $k);
                 $l[] = $n;
             }
@@ -103,7 +103,7 @@ $safe = $form->getSubmitValues();
 
 if (isset($safe['filelist'])) {
     $package = &$reg->getPackage($safe['package'][1], $safe['package'][0]);
-    $files = array();
+    $files   = array();
 
     $filelist = $package->getFilelist();
     foreach ($filelist as $name => $atts) {
@@ -228,7 +228,7 @@ if ($form->validate()) {
     } else {
         if (isset($safe['process'])) {
 
-            require_once 'PHP/CompatInfo.php';
+            include_once 'PHP/CompatInfo.php';
 
             $info = new PHP_CompatInfo();
 

@@ -44,7 +44,7 @@ class Template implements iTemplate
 
     public function getHtml($template)
     {
-        foreach($this->vars as $name => $value) {
+        foreach ($this->vars as $name => $value) {
             $template = str_replace('{' . $name . '}', $value, $template);
         }
         return $template;
@@ -94,7 +94,7 @@ class BaseClass
 
 $info = new PHP_CompatInfo();
 
-$file = __FILE__;
+$file    = __FILE__;
 $options = array('debug' => true);
 
 var_dump($info->parseFile($file, $options));
