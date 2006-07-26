@@ -46,8 +46,8 @@ require_once 'Console/Table.php';
  * @since      Class available since Release 0.8.0
  */
 
-class PHP_CompatInfo_Cli extends PHP_CompatInfo {
-
+class PHP_CompatInfo_Cli extends PHP_CompatInfo
+{
     /**
      * @var array Current CLI Flags
      */
