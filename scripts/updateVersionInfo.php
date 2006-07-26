@@ -13,9 +13,9 @@
  * @ignore
  */
 
-@include_once 'D:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php';
+@require_once 'C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php';
 
-$xml = simplexml_load_file('D:\php\pear\PHP_CompatInfo\scripts\version.xml');
+$xml = simplexml_load_file('C:\php\pear\PHP_CompatInfo\scripts\version.xml');
 
 $version_pattern = '\d+(?:\.\d+)*(?:[a-zA-Z]+\d*)?';
 
@@ -36,55 +36,55 @@ foreach ($xml->function as $function) {
         }
         continue;
 
-    /**
-     * Match string like :
-     *  "PHP 5 &lt;= 5.0.4"    for php_check_syntax
-     */
+        /**
+         * Match string like :
+         *  "PHP 5 &lt;= 5.0.4"    for php_check_syntax
+         */
     } elseif (preg_match('/<= ('.$version_pattern.')/', $from, $matches)) {
         $funcs[$name]['end'] = $matches[1];
 
-    /**
-     * Match string like :
-     *  "4.0.2 - 4.0.6 only"    for accept_connect
-     */
+        /**
+         * Match string like :
+         *  "4.0.2 - 4.0.6 only"    for accept_connect
+         */
     } elseif (preg_match('/('.$version_pattern.') - ('.$version_pattern.') only/', $from, $matches)) {
         $funcs[$name]['init'] = $matches[1];
         $funcs[$name]['end']  = $matches[2];
         continue;
 
-    /**
-     * Match string like :
-     *  "PHP 33.0.5 only"    for PHP3_UODBC_FIELD_NUM
-     *  "PHP 44.0.6 only"    for ocifreecoll
-     */
+        /**
+         * Match string like :
+         *  "PHP 33.0.5 only"    for PHP3_UODBC_FIELD_NUM
+         *  "PHP 44.0.6 only"    for ocifreecoll
+         */
     } elseif (preg_match('/PHP (\d)('.$version_pattern.') only/', $from, $matches)) {
         $funcs[$name]['init'] = $matches[1] .'.0.0';
         $funcs[$name]['end']  = $matches[2];
         continue;
     }
 
-    if (strpos($function['from'], 'PHP 3') !== FALSE) {
+    if (strpos($function['from'], 'PHP 3') !== false) {
         $funcs[$name]['init'] = "3.0.0";
         continue;
     }
-    if (strpos($function['from'], 'PHP 4') !== FALSE) {
+    if (strpos($function['from'], 'PHP 4') !== false) {
         $funcs[$name]['init'] = "4.0.0";
         continue;
     }
-    if (strpos($function['from'], 'PHP 5') !== FALSE) {
+    if (strpos($function['from'], 'PHP 5') !== false) {
         $funcs[$name]['init'] = "5.0.0";
         continue;
     }
 }
 
-$txt = file('D:\php\pear\PHP_CompatInfo\scripts\funclist.txt');
+$txt = file('C:\php\pear\PHP_CompatInfo\scripts\funclist.txt');
 
-$i = 0;
+$i     = 0;
 $limit = count($txt);
 
 while ($i < $limit) {
-    if (strpos($txt[$i], '#') !== FALSE) {
-        if (strpos(strtolower($txt[$i]), 'zend') !== FALSE) {
+    if (strpos($txt[$i], '#') !== false) {
+        if (strpos(strtolower($txt[$i]), 'zend') !== false) {
             $module = 'zend';
         } else {
             $found = preg_match('@# php-src/(ext|sapi)/(.*?)/.*@', $txt[$i], $matches);
@@ -96,7 +96,7 @@ while ($i < $limit) {
         }
         $i += 1;
         while ($i < $limit) {
-            if (strpos($txt[$i], '#') === FALSE) {
+            if (strpos($txt[$i], '#') === false) {
                 $name = trim($txt[$i]);
                 if (empty($name)) {
                     break;
@@ -119,7 +119,7 @@ foreach ($funcs as $key => $function) {
 
 unset($funcs[""]);
 
-file_put_contents('D:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php',
+file_put_contents('C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php',
 "<?php
 # This file is generated!
 \$GLOBALS['_PHP_COMPATINFO_FUNCS'] = " .var_export($funcs, true). "

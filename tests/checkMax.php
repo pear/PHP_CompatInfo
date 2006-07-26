@@ -14,7 +14,7 @@ require_once 'PHP/CompatInfo.php';
 $info = new PHP_CompatInfo();
 
 $file = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'sample_req6056.php';
-$arr = array($file, __FILE__);
+$arr  = array($file, __FILE__);
 
 $options = array('debug' => true);
 
@@ -24,7 +24,7 @@ echo 'PHP min = ' . $res['version'] . "<br />\n";
 if ($res['max_version'] != '') {
     echo 'PHP max = ' . $res['max_version'] . "<br />\n";
 
-    foreach($arr as $file) {
+    foreach ($arr as $file) {
         $min = $res[$file]['version'];
         $max = $res[$file]['max_version'];
         if (($max != '') && (version_compare($min, $max) === 1)) {
