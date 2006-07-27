@@ -13,7 +13,10 @@
  * @ignore
  */
 
-@require_once 'C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php';
+$GLOBALS['_PHP_COMPATINFO_FUNCS'] = array();
+$funcs =& $GLOBALS['_PHP_COMPATINFO_FUNCS'];
+
+@include_once 'C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php';
 
 $xml = simplexml_load_file('C:\php\pear\PHP_CompatInfo\scripts\version.xml');
 
@@ -64,15 +67,15 @@ foreach ($xml->function as $function) {
     }
 
     if (strpos($function['from'], 'PHP 3') !== false) {
-        $funcs[$name]['init'] = "3.0.0";
+        $funcs[$name]['init'] = '3.0.0';
         continue;
     }
     if (strpos($function['from'], 'PHP 4') !== false) {
-        $funcs[$name]['init'] = "4.0.0";
+        $funcs[$name]['init'] = '4.0.0';
         continue;
     }
     if (strpos($function['from'], 'PHP 5') !== false) {
-        $funcs[$name]['init'] = "5.0.0";
+        $funcs[$name]['init'] = '5.0.0';
         continue;
     }
 }
@@ -84,6 +87,12 @@ $limit = count($txt);
 
 while ($i < $limit) {
     if (strpos($txt[$i], '#') !== false) {
+        // bypass the start comment tag that identify PECL extensions
+        // and avoid to lose the Net_Gopher ext/func
+        if (strpos(strtolower($txt[$i]), 'pecl stuff') !== false) {
+            $i += 1;
+        }
+
         if (strpos(strtolower($txt[$i]), 'zend') !== false) {
             $module = 'zend';
         } else {
@@ -91,18 +100,37 @@ while ($i < $limit) {
             if ($found) {
                 $module = $matches[1] .'_'. $matches[2];
             } else {
-                $module = ' ';
+                $found = preg_match('@# (pecl)/(.*?)/.*@', $txt[$i], $matches);
+                if ($found) {
+                    $module = $matches[1] .'_'. $matches[2];
+                } else {
+                    $module = ' ';
+                }
             }
         }
         $i += 1;
+        $skip = false;
         while ($i < $limit) {
             if (strpos($txt[$i], '#') === false) {
                 $name = trim($txt[$i]);
                 if (empty($name)) {
                     break;
                 }
-                if (!isset($funcs[$name]['ext'])) {
-                    $funcs[$name]['ext'] = $module;
+                if ($skip === false) {
+                    if (!isset($funcs[$name]['ext'])) {
+                        $funcs[$name]['ext'] = $module;
+                    }
+                } else {
+                    // removed only extension methods
+                    // and not basic functions of standard extension (like 'reset' on array)
+                    if (version_compare($funcs[$name]['init'], '5.0.0', 'ge')) {
+                        unset($funcs[$name]);
+                    }
+                }
+            } else {
+                // DO NOT KEEP extension methods
+                if (strpos($txt[$i], '_methods[]') !== false) {
+                    $skip = true;
                 }
             }
             $i += 1;
@@ -113,7 +141,11 @@ while ($i < $limit) {
 
 foreach ($funcs as $key => $function) {
     if (!isset($function['init']) || ($function['init'] == '')) {
-        $funcs[$key]['init'] = '5-dev';
+        if (substr($funcs[$key]['ext'], 0, 4) == 'pecl') {
+            $funcs[$key]['init'] = '4-dev';
+        } else {
+            $funcs[$key]['init'] = '5-dev';
+        }
     }
 }
 
@@ -121,7 +153,16 @@ unset($funcs[""]);
 
 file_put_contents('C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php',
 "<?php
-# This file is generated!
+/**
+ * This file was generated for PHP_CompatInfo 1.1.1 or better
+ *
+ * @version    \$Id$
+ * @author     Davey Shafik <davey@php.net>
+ * @author     Laurent Laville <pear@laurent-laville.org>
+ * @package    PHP_CompatInfo
+ * @ignore
+ */
+
 \$GLOBALS['_PHP_COMPATINFO_FUNCS'] = " .var_export($funcs, true). "
 ?>");
 ?>
