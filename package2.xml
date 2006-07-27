@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.4.9" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.4.10" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>PHP_CompatInfo</name>
  <channel>pear.php.net</channel>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>pear@laurent-laville.org</email>
   <active>yes</active>
  </lead>
- <date>2006-06-28</date>
- <time>22:37:35</time>
+ <date>2006-07-27</date>
+ <time>19:01:44</time>
  <version>
-  <release>1.1.0</release>
+  <release>1.1.1</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -29,17 +29,18 @@ which shows which functions require which version and CLI output script</descrip
   <api>stable</api>
  </stability>
  <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
- <notes>* bug fixes
-- Bug #8058 : php 5 T_* constants undefined when running on php 4
+ <notes>* bugs
+- old Bug #2771 that was back alive : substr($var,4) not working for sapi_ extensions
 
-* news
-- Request #6056 : Add support for reporting max PHP version
+* improvements
+- PECL extension are now really identified.
+  With php version when available, otherwise with &apos;4-dev&apos;
+  With pecl extension name in &apos;ext&apos; key of result array
+- all PHP extensions are now better supported.
+  methods were removed from &apos;func_array.php&apos; file
 
-  Array result have now a new entry key &apos;max_version&apos; that will give
-  the max PHP version you should have to run script(s) parsed.
-
-  Don&apos;t forget to have a look on usage example (tests/checkMax.php)
- </notes>
+* Quality Assurance
+- &apos;func_array.php&apos; and &apos;const_array.php&apos; files have now header comment block</notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
    <dir name="CompatInfo">
@@ -98,6 +99,30 @@ which shows which functions require which version and CLI output script</descrip
  <changelog>
   <release>
    <version>
+    <release>1.1.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2006-07-27</date>
+   <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
+   <notes>* bugs
+- old Bug #2771 that was back alive : substr($var,4) not working for sapi_ extensions
+
+* improvements
+- PECL extension are now really identified.
+  With php version when available, otherwise with &apos;4-dev&apos;
+  With pecl extension name in &apos;ext&apos; key of result array
+- all PHP extensions are now better supported.
+  methods were removed from &apos;func_array.php&apos; file
+
+* Quality Assurance
+- &apos;func_array.php&apos; and &apos;const_array.php&apos; files have now header comment block</notes>
+  </release>
+  <release>
+   <version>
     <release>1.1.0</release>
     <api>1.0.0</api>
    </version>
@@ -116,8 +141,7 @@ which shows which functions require which version and CLI output script</descrip
   Array result have now a new entry key &apos;max_version&apos; that will give
   the max PHP version you should have to run script(s) parsed.
 
-  Don&apos;t forget to have a look on usage example (tests/checkMax.php)
-   </notes>
+  Don&apos;t forget to have a look on usage example (tests/checkMax.php)</notes>
   </release>
   <release>
    <version>
