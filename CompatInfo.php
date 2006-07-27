@@ -432,12 +432,12 @@ class PHP_CompatInfo
                     ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'ext_standard') &&
                     ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'zend')) {
                     $extension = substr($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'], 4);
-                    if ($extension{0} != ' ') {
+                    if ($extension{0} != '_') {
                         if (!in_array($extension, $extensions)) {
                             $extensions[] = $extension;
                         }
                     } else {
-                        $ext = substr($extension, 1);
+                        $extension = substr($extension, 1);
                         if (!in_array($extension, $extensions)) {
                             $extensions[] = $extension;
                         }
