@@ -1,5 +1,14 @@
 <?php
-# This file is generated!
+/**
+ * This file was generated for PHP_CompatInfo 1.1.1 or better
+ *
+ * @version    $Id$
+ * @author     Davey Shafik <davey@php.net>
+ * @author     Laurent Laville <pear@laurent-laville.org>
+ * @package    PHP_CompatInfo
+ * @ignore
+ */
+
 $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'array' => 
   array (
@@ -704,21 +713,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'attr_get' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'attr_set' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'autocommit' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'base64_decode' => 
   array (
     'init' => '3.0.0',
@@ -798,16 +792,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
-  ),
-  'bind_param' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'bind_result' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'bind_textdomain_codeset' => 
   array (
@@ -1064,17 +1048,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'change_user' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'character_set_name' => 
-  array (
-    'end' => '5.0.4',
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'chdir' => 
   array (
     'init' => '3.0.0',
@@ -1145,16 +1118,10 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'client_encoding' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'close' => 
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
-    'ext' => 'ext_mysqli',
   ),
   'closedir' => 
   array (
@@ -1240,11 +1207,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '3.0.3',
   ),
-  'commit' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'compact' => 
   array (
     'init' => '4.0.0',
@@ -1274,7 +1236,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
-    'ext' => 'ext_mysqli',
   ),
   'connection_aborted' => 
   array (
@@ -1340,103 +1301,103 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '3.0.12',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_add_outline' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_arc' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_begin_text' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_circle' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_clip' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_close' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_closepath' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_closepath_fill_stroke' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_closepath_stroke' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_continue_text' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_curveto' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_end_text' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_fill' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_fill_stroke' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_finalize' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_finalize_page' => 
   array (
     'init' => '3.0.10',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_get_buffer' => 
   array (
@@ -1447,115 +1408,115 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.0.4',
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_import_jpeg' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_lineto' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_moveto' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_newpath' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_open' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_output_buffer' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_page_init' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_place_inline_image' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_rect' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_restore' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_rlineto' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_rmoveto' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_rotate' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_rotate_text' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_save' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_save_to_file' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_scale' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_action_url' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_annotation' => 
   array (
@@ -1566,97 +1527,97 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_creator' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_current_page' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_font' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_font_directories' => 
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_font_map_file' => 
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_horiz_scaling' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_keywords' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_leading' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_page_animation' => 
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_subject' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_text_matrix' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_text_pos' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_text_rendering' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_text_rise' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_title' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_transition' => 
   array (
@@ -1667,141 +1628,141 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_set_word_spacing' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setdash' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setflat' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setgray' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setgray_fill' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setgray_stroke' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setlinecap' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setlinejoin' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setlinewidth' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setmiterlimit' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setrgbcolor' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setrgbcolor_fill' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_setrgbcolor_stroke' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_show' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_show_xy' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_stringwidth' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_stroke' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_text' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'cpdf_translate' => 
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_cpdf',
   ),
   'crack_check' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_crack',
   ),
   'crack_closedict' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_crack',
   ),
   'crack_getlastmessage' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_crack',
   ),
   'crack_opendict' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_crack',
   ),
   'crash' => 
   array (
@@ -2056,78 +2017,73 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_cybercash',
   ),
   'cybercash_base64_encode' => 
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_cybercash',
   ),
   'cybercash_decr' => 
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_cybercash',
   ),
   'cybercash_encr' => 
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_cybercash',
   ),
   'cybermut_creerformulairecm' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_cybermut',
   ),
   'cybermut_creerreponsecm' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_cybermut',
   ),
   'cybermut_testmac' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_cybermut',
   ),
   'cyrus_authenticate' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_cyrus',
   ),
   'cyrus_bind' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_cyrus',
   ),
   'cyrus_close' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_cyrus',
   ),
   'cyrus_connect' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_cyrus',
   ),
   'cyrus_query' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_cyrus',
   ),
   'cyrus_unbind' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
-  ),
-  'data_seek' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
+    'ext' => 'pecl_cyrus',
   ),
   'date' => 
   array (
@@ -2188,7 +2144,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'db_id_list' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dba_close' => 
   array (
@@ -2328,328 +2284,328 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'dblist' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dbmclose' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dbmdelete' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dbmexists' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dbmfetch' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dbmfirstkey' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dbminsert' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dbmnextkey' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dbmopen' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dbmreplace' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_db',
   ),
   'dbplus_add' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_aql' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_chdir' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_close' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_curr' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_errcode' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_errno' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_find' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_first' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_flush' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_freealllocks' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_freelock' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_freerlocks' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_getlock' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_getunique' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_info' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_last' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_next' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_open' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_prev' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_rchperm' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_rcreate' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_rcrtexact' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_rcrtlike' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_resolve' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_restorepos' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_rkeys' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_ropen' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_rquery' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_rrename' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_rsecindex' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_runlink' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_rzap' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_savepos' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_setindex' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_setindexbynumber' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_sql' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_tcl' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_tremove' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_undo' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_undoprepare' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_unlockrel' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_unselect' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_update' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_xlockrel' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbplus_xunlockrel' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_dbplus',
   ),
   'dbx_close' => 
   array (
@@ -2722,11 +2678,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'deaggregate' => 
   array (
     'init' => '4.2.0',
-  ),
-  'debug' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'debug_backtrace' => 
   array (
@@ -2804,55 +2755,55 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_dio',
   ),
   'dio_fcntl' => 
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_dio',
   ),
   'dio_open' => 
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_dio',
   ),
   'dio_read' => 
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_dio',
   ),
   'dio_seek' => 
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_dio',
   ),
   'dio_stat' => 
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_dio',
   ),
   'dio_tcsetattr' => 
   array (
     'init' => '4.3.0',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_dio',
   ),
   'dio_truncate' => 
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_dio',
   ),
   'dio_write' => 
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_dio',
   ),
   'dir' => 
   array (
@@ -2863,16 +2814,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
-  ),
-  'disable_reads_from_master' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'disable_rpl_parse' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'disk_free_space' => 
   array (
@@ -2927,257 +2868,257 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'domxml_add_root' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_attributes' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_children' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_doc_add_root' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_doc_document_element' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_doc_get_element_by_id' => 
   array (
     'init' => '4.2.1',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_doc_get_elements_by_tagname' => 
   array (
     'init' => '4.2.1',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_doc_get_root' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_doc_set_root' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_doc_validate' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_doc_xinclude' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_dump_mem' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_dump_mem_file' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_dump_node' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_dumpmem' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_elem_get_attribute' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_elem_set_attribute' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_get_attribute' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_getattr' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_html_dump_mem' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_new_child' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_new_doc' => 
   array (
     'init' => '4.2.1',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_new_xmldoc' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_node' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_node_add_namespace' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_node_attributes' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_node_children' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_node_get_content' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_node_has_attributes' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_node_new_child' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_node_set_content' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_node_set_namespace' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_node_unlink_node' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_open_file' => 
   array (
     'init' => '4.2.1',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_open_mem' => 
   array (
     'init' => '4.2.1',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser' => 
   array (
     'init' => '4.2.1',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_add_chunk' => 
   array (
     'init' => '4.2.1',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_cdata_section' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_characters' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_comment' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_end' => 
   array (
     'init' => '4.2.1',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_end_document' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_end_element' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_entity_reference' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_get_document' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_namespace_decl' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_processing_instruction' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_start_document' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_parser_start_element' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_root' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_set_attribute' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_set_content' => 
   array (
@@ -3187,62 +3128,62 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'domxml_setattr' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_substitute_entities_default' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_unlink_node' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_version' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_xmltree' => 
   array (
     'init' => '4.2.1',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_xslt_process' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_xslt_result_dump_file' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_xslt_result_dump_mem' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_xslt_stylesheet' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_xslt_stylesheet_doc' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_xslt_stylesheet_file' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'domxml_xslt_version' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'doubleval' => 
   array (
@@ -3285,11 +3226,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.5',
   ),
-  'dump_debug_info' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'each' => 
   array (
     'init' => '3.0.0',
@@ -3308,26 +3244,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ebcdic2ascii' => 
   array (
     'init' => '3.0.17',
-  ),
-  'embedded_server_end' => 
-  array (
-    'init' => '5.1.0RC1',
-    'ext' => 'ext_mysqli',
-  ),
-  'embedded_server_start' => 
-  array (
-    'init' => '5.1.0RC1',
-    'ext' => 'ext_mysqli',
-  ),
-  'enable_reads_from_master' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'enable_rpl_parse' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'encrypt' => 
   array (
@@ -3368,11 +3284,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '3.0.0',
     'ext' => 'zend',
   ),
-  'escape_string' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'escapeshellarg' => 
   array (
     'init' => '4.0.3',
@@ -3387,11 +3298,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
-  ),
-  'execute' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'exif_imagetype' => 
   array (
@@ -4267,50 +4173,10 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fetch' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'fetch_array' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'fetch_assoc' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'fetch_field' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'fetch_field_direct' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'fetch_fields' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'fetch_iovec' => 
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
-  ),
-  'fetch_object' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'fetch_row' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'fflush' => 
   array (
@@ -4336,16 +4202,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
-  ),
-  'field_count' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'field_seek' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'file' => 
   array (
@@ -4521,20 +4377,10 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'free' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'free_iovec' => 
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
-  ),
-  'free_result' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'freemagick' => 
   array (
@@ -4548,17 +4394,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fribidi_charset_info' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_fribidi',
   ),
   'fribidi_get_charsets' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_fribidi',
   ),
   'fribidi_log2vis' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_fribidi',
   ),
   'fscanf' => 
   array (
@@ -4849,11 +4695,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_client_info' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'get_current_user' => 
   array (
     'init' => '3.0.0',
@@ -4948,16 +4789,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.2',
     'ext' => 'zend',
-  ),
-  'get_server_info' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'get_warnings' => 
-  array (
-    'init' => '5.1.0RC1',
-    'ext' => 'ext_mysqli',
   ),
   'getallheaders' => 
   array (
@@ -5529,12 +5360,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'html_doc' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'html_doc_file' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'html_entity_decode' => 
   array (
@@ -5563,82 +5394,82 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'hw_array2objrec' => 
   array (
     'init' => '3.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_changeobject' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_children' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_childrenobj' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_close' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_connect' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_connection_info' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_cp' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_deleteobject' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_docbyanchor' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_docbyanchorobj' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_document_attributes' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_document_bodytag' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_document_content' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_document_setcontent' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_document_size' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_documentattributes' => 
   array (
@@ -5663,227 +5494,227 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'hw_dummy' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_edittext' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_error' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_errormsg' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_free_document' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getanchors' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getanchorsobj' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getandlock' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getcgi' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getchildcoll' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getchildcollobj' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getchilddoccoll' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getchilddoccollobj' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getobject' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getobjectbyftquery' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getobjectbyftquerycoll' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getobjectbyftquerycollobj' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getobjectbyftqueryobj' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getobjectbyquery' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getobjectbyquerycoll' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getobjectbyquerycollobj' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getobjectbyqueryobj' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getparents' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getparentsobj' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getrellink' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getremote' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getremotechildren' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getsrcbydestobj' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_gettext' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_getusername' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_identify' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_incollections' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_info' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_inscoll' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_insdoc' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_insertanchors' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_insertdocument' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_insertobject' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_mapid' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_modifyobject' => 
   array (
     'init' => '3.0.7',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_mv' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_new_document' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_new_document_from_file' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_objrec2array' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_output_document' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_outputdocument' => 
   array (
@@ -5892,42 +5723,42 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'hw_pconnect' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_pipecgi' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_pipedocument' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_root' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_setlinkroot' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_stat' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_unlock' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hw_who' => 
   array (
     'init' => '3.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_hyperwave',
   ),
   'hypot' => 
   array (
@@ -7603,11 +7434,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'init' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'interface_exists' => 
   array (
     'init' => '5.0.2',
@@ -7995,12 +7821,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'java_last_exception_clear' => 
   array (
     'init' => '4.0.2',
-    'ext' => ' ',
+    'ext' => 'pecl_rpc',
   ),
   'java_last_exception_get' => 
   array (
     'init' => '4.0.2',
-    'ext' => ' ',
+    'ext' => 'pecl_rpc',
   ),
   'jddayofweek' => 
   array (
@@ -8066,11 +7892,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.6',
     'ext' => 'ext_standard',
-  ),
-  'kill' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'krsort' => 
   array (
@@ -8824,78 +8645,61 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_msg_create' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_msg_extract_part' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_msg_extract_part_file' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_msg_free' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_msg_get_part' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_msg_get_part_data' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_msg_get_structure' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_msg_parse' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_msg_parse_file' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_rfc822_parse_addresses' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
   ),
   'mailparse_stream_encode' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
-  ),
-  'master_query' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'max' => 
   array (
@@ -9196,87 +9000,87 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'mcal_append_event' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_close' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_create_calendar' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_date_compare' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_date_valid' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_day_of_week' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_day_of_year' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_days_in_month' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_delete_calendar' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_delete_event' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_add_attribute' => 
   array (
     'init' => '3.0.15',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_init' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_alarm' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_category' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_class' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_description' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_end' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_end_now' => 
   array (
@@ -9285,37 +9089,37 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'mcal_event_set_recur_daily' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_recur_monthly_mday' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_recur_monthly_wday' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_recur_none' => 
   array (
     'init' => '3.0.15',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_recur_weekly' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_recur_yearly' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_start' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_event_set_start_now' => 
   array (
@@ -9324,77 +9128,77 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'mcal_event_set_title' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_fetch_current_stream_event' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_fetch_event' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_is_leap_year' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_list_alarms' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_list_events' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_next_recurrence' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_open' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_popen' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_rename_calendar' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_reopen' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_snooze' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_store_event' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_time_valid' => 
   array (
     'init' => '3.0.13',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mcal_week_of_year' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_mcal',
   ),
   'mck_base64_decode' => 
   array (
@@ -10096,11 +9900,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '5.0.0',
     'ext' => 'ext_mono',
   ),
-  'more_results' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'move' => 
   array (
     'init' => '4.0.5',
@@ -10706,40 +10505,35 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.5',
   ),
-  'multi_query' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'muscat_close' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_muscat',
   ),
   'muscat_get' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_muscat',
   ),
   'muscat_give' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_muscat',
   ),
   'muscat_setup' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_muscat',
   ),
   'muscat_setup_net' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_muscat',
   ),
   'mysql' => 
   array (
@@ -11064,11 +10858,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mysql',
-  ),
-  'mysqli' => 
-  array (
-    'init' => '5.0.1',
-    'ext' => 'ext_mysqli',
   ),
   'mysqli_affected_rows' => 
   array (
@@ -12439,17 +12228,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'new_xmldoc' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'next' => 
   array (
     'init' => '3.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'next_result' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
+    'ext' => 'ext_standard',
   ),
   'nextframe' => 
   array (
@@ -12473,72 +12257,72 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'notes_body' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_copy_db' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_create_db' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_create_note' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_drop_db' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_find_note' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_header_info' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_list_msgs' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_mark_read' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_mark_unread' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_nav_create' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_search' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_unread' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'notes_version' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_notes',
   ),
   'nsapi_request_headers' => 
   array (
@@ -12554,11 +12338,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.3.3',
     'ext' => 'sapi_nsapi',
-  ),
-  'num_rows' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'number_format' => 
   array (
@@ -13675,11 +13454,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.6',
     'ext' => 'ext_openssl',
   ),
-  'options' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'ora_bind' => 
   array (
     'end' => '5.1.0RC1',
@@ -13822,31 +13596,31 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'orbit_exception_id' => 
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'orbit_exception_value' => 
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'orbit_get_repository_id' => 
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'orbit_load_idl' => 
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'ord' => 
   array (
@@ -14090,162 +13864,162 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'pdf_add_annotation' => 
   array (
     'init' => '3.0.12',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_add_bookmark' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_add_launchlink' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_add_locallink' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_add_note' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_add_outline' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_add_pdflink' => 
   array (
     'init' => '3.0.12',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_add_thumbnail' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_add_weblink' => 
   array (
     'init' => '3.0.12',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_arc' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_arcn' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_attach_file' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_begin_page' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_begin_pattern' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_begin_template' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_circle' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_clip' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_close' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_close_image' => 
   array (
     'init' => '3.0.7',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_close_pdi' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_close_pdi_page' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_closepath' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_closepath_fill_stroke' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_closepath_stroke' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_concat' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_continue_text' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_curveto' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_delete' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_end_page' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_end_pattern' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_end_template' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_endpath' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_execute_image' => 
   array (
@@ -14254,47 +14028,47 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'pdf_fill' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_fill_stroke' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_findfont' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_buffer' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_font' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_fontname' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_fontsize' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_image_height' => 
   array (
     'init' => '3.0.12',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_image_width' => 
   array (
     'init' => '3.0.12',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_info' => 
   array (
@@ -14303,127 +14077,127 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'pdf_get_majorversion' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_minorversion' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_parameter' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_pdi_parameter' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_pdi_value' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_get_value' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_initgraphics' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_lineto' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_makespotcolor' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_moveto' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_new' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_ccitt' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_file' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_gif' => 
   array (
     'init' => '3.0.7',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_image' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_image_file' => 
   array (
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_jpeg' => 
   array (
     'init' => '3.0.7',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_memory_image' => 
   array (
     'init' => '3.0.10',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_pdi' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_pdi_page' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_png' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_open_tiff' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_place_image' => 
   array (
     'init' => '3.0.7',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_place_pdi_page' => 
   array (
     'init' => '4.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_put_image' => 
   array (
@@ -14432,102 +14206,102 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'pdf_rect' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_restore' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_rotate' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_save' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_scale' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_border_color' => 
   array (
     'init' => '3.0.12',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_border_dash' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_border_style' => 
   array (
     'init' => '3.0.12',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_char_spacing' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_duration' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_font' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_horiz_scaling' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_info' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_info_author' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_info_creator' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_info_keywords' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_info_subject' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_info_title' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_leading' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_parameter' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_text_matrix' => 
   array (
@@ -14536,152 +14310,152 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'pdf_set_text_pos' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_text_rendering' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_text_rise' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_transition' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_value' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_set_word_spacing' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setcolor' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setdash' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setflat' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setfont' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setgray' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setgray_fill' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setgray_stroke' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setlinecap' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setlinejoin' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setlinewidth' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setmatrix' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setmiterlimit' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setpolydash' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setrgbcolor' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setrgbcolor_fill' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_setrgbcolor_stroke' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_show' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_show_boxed' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_show_xy' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_skew' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_stringwidth' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_stroke' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdf_translate' => 
   array (
     'init' => '3.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_pdf',
   ),
   'pdo_drivers' => 
   array (
     'init' => '5.1.0RC1',
-    'ext' => ' ',
+    'ext' => 'pecl_pdo',
   ),
   'pfpro_cleanup' => 
   array (
@@ -15294,11 +15068,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'ping' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'png2wbmp' => 
   array (
     'init' => '4.0.5',
@@ -15528,11 +15297,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '3.0.9',
     'ext' => 'ext_pcre',
   ),
-  'prepare' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'prev' => 
   array (
     'init' => '3.0.0',
@@ -15680,17 +15444,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'qdom_error' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_qtdom',
   ),
   'qdom_tree' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
-  ),
-  'query' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
+    'ext' => 'pecl_qtdom',
   ),
   'quoted_printable_decode' => 
   array (
@@ -15831,21 +15590,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'real_connect' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'real_escape_string' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'real_query' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'realpath' => 
   array (
     'init' => '4.0.0',
@@ -15894,7 +15638,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'remove' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
   ),
   'rename' => 
   array (
@@ -15904,7 +15647,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'reset' => 
   array (
     'init' => '3.0.0',
-    'ext' => 'ext_mysqli',
+    'ext' => 'ext_standard',
   ),
   'restore_error_handler' => 
   array (
@@ -15921,11 +15664,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'result_metadata' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'rewind' => 
   array (
     'init' => '3.0.0',
@@ -15940,11 +15678,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
-  ),
-  'rollback' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'rot13' => 
   array (
@@ -15967,21 +15700,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '3.0.8',
   ),
-  'rpl_parse_enabled' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'rpl_probe' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'rpl_query_type' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'rsort' => 
   array (
     'init' => '3.0.0',
@@ -15996,37 +15714,37 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'satellite_exception_id' => 
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'satellite_exception_value' => 
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'satellite_get_repository_id' => 
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'satellite_load_idl' => 
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'satellite_object_to_string' => 
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
-    'ext' => ' ',
+    'ext' => 'pecl_satellite',
   ),
   'save' => 
   array (
@@ -16062,11 +15780,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'select_db' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'sem_acquire' => 
   array (
     'init' => '3.0.6',
@@ -16091,11 +15804,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
-  ),
-  'send_long_data' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'sendmsg' => 
   array (
@@ -16303,7 +16011,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'set_content' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'set_error_handler' => 
   array (
@@ -16330,16 +16038,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'set_local_infile_default' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'set_local_infile_handler' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'set_magic_quotes_runtime' => 
   array (
     'init' => '3.0.6',
@@ -16349,11 +16047,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
-  ),
-  'set_opt' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'set_socket_blocking' => 
   array (
@@ -16682,11 +16375,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'skewyto' => 
   array (
     'init' => '4.0.5',
-  ),
-  'slave_query' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'sleep' => 
   array (
@@ -17201,25 +16889,25 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_picosql',
   ),
   'sqldisconnect' => 
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_picosql',
   ),
   'sqlexecdirect' => 
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_picosql',
   ),
   'sqlfetch' => 
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_picosql',
   ),
   'sqlfree' => 
   array (
@@ -17230,12 +16918,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
-    'ext' => ' ',
-  ),
-  'sqlite2_create_function' => 
-  array (
-    'init' => '5.1.0RC1',
-    'ext' => ' ',
+    'ext' => 'pecl_picosql',
   ),
   'sqlite_array_query' => 
   array (
@@ -17266,11 +16949,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '5.0.0',
     'ext' => 'ext_sqlite',
-  ),
-  'sqlite_create_function' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_pdo_sqlite',
   ),
   'sqlite_current' => 
   array (
@@ -17436,7 +17114,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_picosql',
   ),
   'sqrt' => 
   array (
@@ -17453,30 +17131,10 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'ssl_set' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'stat' => 
   array (
     'init' => '3.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'stmt' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'stmt_init' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
-  'store_result' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
+    'ext' => 'ext_standard',
   ),
   'str_ireplace' => 
   array (
@@ -17885,337 +17543,337 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'swf_actiongeturl' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_actiongotoframe' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_actiongotolabel' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_actionnextframe' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_actionplay' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_actionprevframe' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_actionsettarget' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_actionstop' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_actiontogglequality' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_actionwaitforframe' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_addbuttonrecord' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_addcolor' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_closefile' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_definebitmap' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_definefont' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_defineline' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_definepoly' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_definerect' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_definetext' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_endbutton' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_enddoaction' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_endshape' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_endsymbol' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_fontsize' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_fontslant' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_fonttracking' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_getbitmapinfo' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_getfontinfo' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_getframe' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_labelframe' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_lookat' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_modifyobject' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_mulcolor' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_nextid' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_oncondition' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_openfile' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_ortho' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_ortho2' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_perspective' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_placeobject' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_polarview' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_popmatrix' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_posround' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_pushmatrix' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_removeobject' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_rotate' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_scale' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_setfont' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_setframe' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_shapearc' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_shapecurveto' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_shapecurveto3' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_shapefillbitmapclip' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_shapefillbitmaptile' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_shapefilloff' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_shapefillsolid' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_shapelinesolid' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_shapelineto' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_shapemoveto' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_showframe' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_startbutton' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_startdoaction' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_startshape' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_startsymbol' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_textwidth' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_translate' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swf_viewport' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_swf',
   ),
   'swfaction' => 
   array (
@@ -18428,11 +18086,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '3.0.7',
     'ext' => 'ext_gettext',
-  ),
-  'thread_safe' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
   ),
   'tidy_access_count' => 
   array (
@@ -18868,11 +18521,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'use_result' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_mysqli',
-  ),
   'use_soap_error_handler' => 
   array (
     'init' => '5.0.0',
@@ -19146,103 +18794,103 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_add_alias_domain_ex' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_add_domain' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_add_domain_ex' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_add_user' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_alias_add' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_alias_del' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_alias_del_domain' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_alias_get' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_alias_get_all' => 
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_auth_user' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_del_domain' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_del_domain_ex' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_del_user' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_error' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_passwd' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vpopmail_set_user_quota' => 
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
-    'ext' => ' ',
+    'ext' => 'pecl_vpopmail',
   ),
   'vprintf' => 
   array (
@@ -19445,12 +19093,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xmldoc' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'xmldocfile' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'xmlrpc_decode' => 
   array (
@@ -19525,52 +19173,52 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xmltree' => 
   array (
     'init' => '4.0.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'xpath_eval' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'xpath_eval_expression' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'xpath_new_context' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'xpath_register_ns' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'xptr_eval' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'xptr_new_context' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_domxml',
   ),
   'xslt_backend_info' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_backend_name' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_backend_version' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_closelog' => 
   array (
@@ -19580,17 +19228,17 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xslt_create' => 
   array (
     'init' => '4.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_errno' => 
   array (
     'init' => '4.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_error' => 
   array (
     'init' => '4.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_fetch_result' => 
   array (
@@ -19600,12 +19248,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xslt_free' => 
   array (
     'init' => '4.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_getopt' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_openlog' => 
   array (
@@ -19625,7 +19273,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xslt_process' => 
   array (
     'init' => '4.0.3',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_run' => 
   array (
@@ -19635,27 +19283,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xslt_set_base' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_set_encoding' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_set_error_handler' => 
   array (
     'init' => '4.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_set_log' => 
   array (
     'init' => '4.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_set_object' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_set_sax_handler' => 
   array (
@@ -19665,7 +19313,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xslt_set_sax_handlers' => 
   array (
     'init' => '4.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_set_scheme_handler' => 
   array (
@@ -19675,12 +19323,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xslt_set_scheme_handlers' => 
   array (
     'init' => '4.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_setopt' => 
   array (
     'init' => '4.3.0',
-    'ext' => ' ',
+    'ext' => 'pecl_xslt',
   ),
   'xslt_transform' => 
   array (
@@ -19690,172 +19338,172 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'yaz_addinfo' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_ccl_conf' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_ccl_parse' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_close' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_connect' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_database' => 
   array (
     'init' => '4.0.6',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_element' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_errno' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_error' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_es_result' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_hits' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_itemorder' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_present' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_range' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_record' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_scan' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_scan_result' => 
   array (
     'init' => '4.0.5',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_schema' => 
   array (
     'init' => '4.2.0',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_search' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_sort' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_syntax' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yaz_wait' => 
   array (
     'init' => '4.0.1',
-    'ext' => ' ',
+    'ext' => 'pecl_yaz',
   ),
   'yp_all' => 
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_yp',
   ),
   'yp_cat' => 
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_yp',
   ),
   'yp_err_string' => 
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_yp',
   ),
   'yp_errno' => 
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_yp',
   ),
   'yp_first' => 
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_yp',
   ),
   'yp_get_default_domain' => 
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_yp',
   ),
   'yp_master' => 
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_yp',
   ),
   'yp_match' => 
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_yp',
   ),
   'yp_next' => 
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_yp',
   ),
   'yp_order' => 
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
-    'ext' => ' ',
+    'ext' => 'pecl_yp',
   ),
   'zend_logo_guid' => 
   array (
@@ -19880,52 +19528,52 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'zip_close' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_zip',
   ),
   'zip_entry_close' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_zip',
   ),
   'zip_entry_compressedsize' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_zip',
   ),
   'zip_entry_compressionmethod' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_zip',
   ),
   'zip_entry_filesize' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_zip',
   ),
   'zip_entry_name' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_zip',
   ),
   'zip_entry_open' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_zip',
   ),
   'zip_entry_read' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_zip',
   ),
   'zip_open' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_zip',
   ),
   'zip_read' => 
   array (
     'init' => '4.1.0',
-    'ext' => ' ',
+    'ext' => 'pecl_zip',
   ),
   'zlib_get_coding_type' => 
   array (
@@ -20087,8195 +19735,7630 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  '__construct' => 
+  'sqlite_create_function' => 
   array (
-    'ext' => 'ext_mysqli',
+    'ext' => 'ext_sqlite',
     'init' => '5-dev',
   ),
   'gopher_parsedir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_Net_Gopher',
+    'init' => '4-dev',
   ),
   'adt_graph_adjacency_list' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_adjacency_lists' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_clone' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_edge_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_insert_edge' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_insert_vertex' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_is_adjacent' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_remove_edge' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_remove_vertex' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_graph_vertex_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_heap_clone' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_heap_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_heap_extract' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_heap_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_heap_insert' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_heap_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_queue_clone' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_queue_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_queue_extract' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_queue_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_queue_insert' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_queue_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_queue_peek' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_clone' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_difference' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_insert' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_intersect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_is_equal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_is_member' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_is_subset' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_remove' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_set_union' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_stack_clone' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_stack_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_stack_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_stack_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_stack_pop' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_stack_push' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_clone' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_insert' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_insert_left' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_insert_right' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_insert_root' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_is_branch_end' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_is_leaf' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_left' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_remove' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_remove_left' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_remove_right' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_right' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_root' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_search' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'adt_tree_traverse' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_adt',
+    'init' => '4-dev',
   ),
   'apc_cache_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apc',
+    'init' => '4-dev',
   ),
   'apc_clear_cache' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apc',
+    'init' => '4-dev',
   ),
   'apc_define_constants' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apc',
+    'init' => '4-dev',
   ),
   'apc_delete' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apc',
+    'init' => '4-dev',
   ),
   'apc_fetch' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apc',
+    'init' => '4-dev',
   ),
   'apc_load_constants' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apc',
+    'init' => '4-dev',
   ),
   'apc_sma_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apc',
+    'init' => '4-dev',
   ),
   'apc_store' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apc',
+    'init' => '4-dev',
   ),
   'apd_breakpoint' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apd',
+    'init' => '4-dev',
   ),
   'apd_continue' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apd',
+    'init' => '4-dev',
   ),
   'apd_echo' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apd',
+    'init' => '4-dev',
   ),
   'apd_set_browser_trace' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apd',
+    'init' => '4-dev',
   ),
   'apd_set_pprof_trace' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apd',
+    'init' => '4-dev',
   ),
   'apd_set_session_trace_socket' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apd',
+    'init' => '4-dev',
   ),
   'override_function' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apd',
+    'init' => '4-dev',
   ),
   'rename_function' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_apd',
+    'init' => '4-dev',
   ),
   'bcompiler_load' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_load_exe' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_parse_class' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_read' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_write_class' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_write_constant' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_write_exe_footer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_write_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_write_footer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_write_function' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_write_functions_from_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_write_header' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'bcompiler_write_included_filename' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_bcompiler',
+    'init' => '4-dev',
   ),
   'blenc_encrypt' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_blenc',
+    'init' => '4-dev',
   ),
   'chasen' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_chasen',
+    'init' => '4-dev',
   ),
   'chasen_split' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_chasen',
+    'init' => '4-dev',
   ),
   'classkit_aggregate_methods' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_classkit',
+    'init' => '4-dev',
   ),
   'classkit_doc_comments' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_classkit',
+    'init' => '4-dev',
   ),
   'classkit_import' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_classkit',
+    'init' => '4-dev',
   ),
   'classkit_method_add' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_classkit',
+    'init' => '4-dev',
   ),
   'classkit_method_copy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_classkit',
+    'init' => '4-dev',
   ),
   'classkit_method_redefine' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_classkit',
+    'init' => '4-dev',
   ),
   'classkit_method_remove' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_classkit',
+    'init' => '4-dev',
   ),
   'classkit_method_rename' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_classkit',
+    'init' => '4-dev',
   ),
   'colorer_direct_markup' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_colorer',
+    'init' => '4-dev',
   ),
   'colorer_highlight_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_colorer',
+    'init' => '4-dev',
   ),
   'colorer_highlight_file_cb' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_colorer',
+    'init' => '4-dev',
   ),
   'colorer_highlight_string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_colorer',
+    'init' => '4-dev',
   ),
   'colorer_highlight_string_cb' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_colorer',
+    'init' => '4-dev',
   ),
   'colorer_hrd_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_colorer',
+    'init' => '4-dev',
   ),
   'colorer_list_types' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_colorer',
+    'init' => '4-dev',
   ),
   'colorer_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_colorer',
+    'init' => '4-dev',
   ),
   'colorer_type' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_colorer',
+    'init' => '4-dev',
   ),
   'colorer_version' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_colorer',
+    'init' => '4-dev',
   ),
   'cvsclient_connect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_cvsclient',
+    'init' => '4-dev',
   ),
   'cvsclient_log' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_cvsclient',
+    'init' => '4-dev',
   ),
   'cvsclient_login' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_cvsclient',
+    'init' => '4-dev',
   ),
   'cvsclient_retrieve' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_cvsclient',
+    'init' => '4-dev',
   ),
   'daffodildb_affected_row' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_autocommit' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_column_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_commit' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_connect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_errormsg' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_execute' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_fetch_array' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_fetch_assoc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_fetch_row' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_field_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_free_resultset' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'daffodildb_rollback' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_daffodildb',
+    'init' => '4-dev',
   ),
   'date_add_days' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_add_months' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_add_weeks' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_add_years' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_clamp' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_compare' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_days_between' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_array' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_day' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_day_of_year' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_days_in_month' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_easter' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_first_dow' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_isoweek_of_year' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_julian' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_last_dow' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_month' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_to_last_month_day' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_to_next_weekday' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_to_prev_week_day' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_to_week' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_to_weekday' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_to_weekday_in_same_week' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_week_of_year' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_weekday' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_weeks_of_year' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_get_year' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_is_leap_year' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_new_dmy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_new_julian' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_new_now' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_order' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_day' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_dmy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_first_dow' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_julian' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_last_dow' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_month' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_to_last_month_day' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_to_next_weekday' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_to_prev_week_day' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_to_week' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_to_weekday' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_to_weekday_in_same_week' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_set_year' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_strftime' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_sub_days' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_sub_months' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_sub_weeks' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_sub_years' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_valid' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_valid_dmy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'date_valid_julian' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_date',
+    'init' => '4-dev',
   ),
   'dazuko_exclude_path' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_fetch_result' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_fetch_thread' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_flush_result' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_get_access' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_include_path' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_module_loaded' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_register' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_remove_paths' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_return_access' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_set_accessmask' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_thread_exclude_path' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_thread_get_access' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_thread_include_path' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_thread_register' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_thread_remove_paths' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_thread_return_access' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_thread_set_accessmask' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_thread_unregister' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'dazuko_unregister' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_dazuko',
+    'init' => '4-dev',
   ),
   'xpath_register_ns_auto' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_domxml',
+    'init' => '4-dev',
   ),
   'eci_cleanup' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_command' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_command_float_arg' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_error' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_init' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_last_error' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_last_float' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_last_integer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_last_long_integer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_last_string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_last_string_list_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'eci_last_string_list_item' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ecasound',
+    'init' => '4-dev',
   ),
   'enchant_broker_describe' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_broker_dict_exists' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_broker_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_broker_free_dict' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_broker_get_error' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_broker_init' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_broker_request_dict' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_broker_request_pwl_dict' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_broker_set_ordering' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_dict_add_to_personal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_dict_add_to_session' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_dict_check' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_dict_describe' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_dict_get_error' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_dict_is_in_session' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_dict_quick_check' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_dict_store_replacement' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'enchant_dict_suggest' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_enchant',
+    'init' => '4-dev',
   ),
   'esmtp_errno' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'esmtp_starttls_set_password_cb' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'esmtp_strerror' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'esmtp_version' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'Esmtp_Session' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'add_message' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'auth_set_context' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'enumerate_messages' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'esmtp_session' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'etrn_add_node' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'etrn_enumerate_nodes' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'get_application_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'option_require_all_recipients' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_application_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_eventcb' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_hostname' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_monitorcb' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_server' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_timeout' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'start_session' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'starttls_enable' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   '8bitmime_set_body' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'add_recipient' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'deliverby_set_mode' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'dsn_set_envid' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'dsn_set_ret' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'enumerate_recipients' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'reset_status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'reverse_path_status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_header' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_header_option' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_message_fp' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_message_str' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_messagecb' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_resent_headers' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_reverse_path' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'size_set_estimate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'transfer_status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'check_complete' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'dsn_set_notify' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'dsn_set_orcpt' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'Esmtp_Auth' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'client_enabled' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'esmtp_auth' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'get_ssf' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'mechanism_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'response' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_external_id' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_interact_cb' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_mechanism' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_mechanism_flags' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'set_mechanism_ssf' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_esmtp',
+    'init' => '4-dev',
   ),
   'event_deschedule' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_dispatch' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_handle_signal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_have_events' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_init' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_pending' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_priority_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_schedule' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
   ),
   'event_timeout' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_event',
+    'init' => '4-dev',
+  ),
+  '__construct' => 
+  array (
+    'ext' => 'pecl_ffi',
+    'init' => '4-dev',
   ),
   'finfo_buffer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_fileinfo',
+    'init' => '4-dev',
   ),
   'finfo_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_fileinfo',
+    'init' => '4-dev',
   ),
   'finfo_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_fileinfo',
+    'init' => '4-dev',
   ),
   'finfo_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_fileinfo',
+    'init' => '4-dev',
   ),
   'finfo_set_flags' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_fileinfo',
+    'init' => '4-dev',
   ),
   'freeimage_appendpage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_brightness' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_clone' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_closemultibitmap' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_colorquantize' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_composite' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_contrast' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_convertto16bits555' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_convertto16bits565' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_convertto24bits' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_convertto32bits' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_convertto8bits' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_copy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_deletepage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_dither' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_fifsupportsreading' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_fifsupportswriting' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_fliphorizontal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_flipvertical' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_gamma' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getbpp' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getcolorsused' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getcopyrightmessage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getdibsize' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getfifcount' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getfifdescription' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getfifextensionlist' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getfiffromfilename' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getfiffromformat' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getfiffrommime' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getfifregexpr' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getfiletype' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getformatfromfif' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getheight' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getimagetype' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getlasterror' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getline' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getlockedpagenumbers' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getpagecount' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getpitch' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getversion' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_getwidth' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_insertpage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_invert' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_ispluginenabled' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_load' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_lockpage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_movepage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_openmultibitmap' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_paste' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_rescale' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_rotate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_rotateex' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_save' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_setpluginenabled' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_threshold' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'freeimage_unlockpage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_freeimage',
+    'init' => '4-dev',
   ),
   'html_parser_comment_handler' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_html_parse',
+    'init' => '4-dev',
   ),
   'html_parser_create' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_html_parse',
+    'init' => '4-dev',
   ),
   'html_parser_data_handler' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_html_parse',
+    'init' => '4-dev',
   ),
   'html_parser_endtag_handler' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_html_parse',
+    'init' => '4-dev',
   ),
   'html_parser_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_html_parse',
+    'init' => '4-dev',
   ),
   'html_parser_parse' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_html_parse',
+    'init' => '4-dev',
   ),
   'html_parser_starttag_handler' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_html_parse',
+    'init' => '4-dev',
   ),
   'http_absolute_uri' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_auth_basic' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_auth_basic_cb' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_cache_etag' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_cache_last_modified' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_chunked_decode' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_date' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_get_request_headers' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_head' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_match_etag' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_match_modified' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_negotiate_charset' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_negotiate_language' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_parse_headers' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_post_array' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_post_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_redirect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_send_content_disposition' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_send_content_type' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_send_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_send_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_send_last_modified' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_send_status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_send_stream' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_split_response' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'http_test' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'ob_httpetaghandler' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_http',
+    'init' => '4-dev',
   ),
   'id3_get_frame_long_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_id3',
+    'init' => '4-dev',
   ),
   'id3_get_frame_short_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_id3',
+    'init' => '4-dev',
   ),
   'id3_get_genre_id' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_id3',
+    'init' => '4-dev',
   ),
   'id3_get_genre_list' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_id3',
+    'init' => '4-dev',
   ),
   'id3_get_genre_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_id3',
+    'init' => '4-dev',
   ),
   'id3_get_tag' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_id3',
+    'init' => '4-dev',
   ),
   'id3_get_version' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_id3',
+    'init' => '4-dev',
   ),
   'id3_remove_tag' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_id3',
+    'init' => '4-dev',
   ),
   'id3_set_tag' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_id3',
+    'init' => '4-dev',
   ),
   'idn_to_ascii' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_idn',
+    'init' => '4-dev',
   ),
   'idn_to_utf8' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_idn',
+    'init' => '4-dev',
   ),
   'iis_add_server' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_addserver' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_continue_server' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_continue_service' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_delete_virtual_path' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_enum_servers' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_get_dir_security' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_get_error' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_get_script_map' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_get_server_by_comment' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_get_server_by_path' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_get_server_rights' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_get_server_status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_get_service_state' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_get_virtual_path' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_getdirsecurity' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_getscriptmap' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_getserverbycomment' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_getserverbypath' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_getserverright' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_getservicestate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_pause_server' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_remove_server' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_removeserver' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_set_app_settings' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_set_dir_security' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_set_script_map' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_set_server_rights' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_set_virtual_path' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_setappsettings' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_setdirsecurity' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_setscriptmap' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_setserverright' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_start_server' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_start_service' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_startserver' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_startservice' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_stop_server' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_stop_service' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_stopserver' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'iis_stopservice' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_iisfunc',
+    'init' => '4-dev',
   ),
   'imagick_add_resource' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_begindraw' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_blob2image' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_blur' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_border' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_charcoal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_chop' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_clonehandle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_composite' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_contrast' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_convert' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_copy_crop' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_copy_morph' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_copy_resize' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_copy_rotate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_copy_sample' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_copy_shear' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_crop' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_despeckle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_destroyhandle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_drawannotation' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_drawarc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_drawcircle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_drawellipse' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_drawline' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_drawpoint' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_drawrectangle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_dump' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_edge' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_emboss' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_enhance' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_equalize' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_error' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_faileddescription' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_failedreason' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_first' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_flatten' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_flip' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_flop' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_frame' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_gamma' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_gaussianblur' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getcanvas' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getcolorspace' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getdpix' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getdpiy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getheight' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getimagedepth' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getimagefromlist' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getimagetype' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getlistindex' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getlistsize' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getmagick' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getmimetype' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getnumbercolors' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_getwidth' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_goto' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_image2blob' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_implode' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_init' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_iserror' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_isgrayimage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_isimagesequal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_ismonochromeimage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_isopaqueimage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_ispaletteimage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_level' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_list_magickinfo' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_magnify' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_medianfilter' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_minify' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_modulate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_mosaic' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_motionblur' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_negate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_newimagelist' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_next' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_normalize' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_oilpaint' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_ordereddither' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_poplist' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_prev' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_profile' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_pushlist' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_raise' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_read' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_readimage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_reducenoise' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_resize' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_rgbtransform' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_roll' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_rotate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_sample' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_scale' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_set_image_comment' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_set_image_quality' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_setcompressionquality' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_setcompressiontype' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_setdpi' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_setfillcolor' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_setfillopacity' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_setfontface' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_setfontsize' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_setfontstyle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_shade' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_sharpen' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_shear' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_solarize' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_spread' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_swirl' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_threshold' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_transformrgb' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_transparent' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_unsharpmask' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_wave' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_write' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_writeimage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_writeimages' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'imagick_zoom' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_imagick',
+    'init' => '4-dev',
   ),
   'intercept_add' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_intercept',
+    'init' => '4-dev',
   ),
   'ixs_catalog_exists' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ixsfunc',
+    'init' => '4-dev',
   ),
   'ixs_create_catalog' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ixsfunc',
+    'init' => '4-dev',
   ),
   'ixs_create_scope' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ixsfunc',
+    'init' => '4-dev',
   ),
   'ixs_remove_scope' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ixsfunc',
+    'init' => '4-dev',
   ),
   'ixscatalogexists' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ixsfunc',
+    'init' => '4-dev',
   ),
   'ixscreatecatalog' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ixsfunc',
+    'init' => '4-dev',
   ),
   'ixscreatescope' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ixsfunc',
+    'init' => '4-dev',
   ),
   'ixsremovescope' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ixsfunc',
+    'init' => '4-dev',
   ),
   'kadm5_chpass_principal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kadm5',
+    'init' => '4-dev',
   ),
   'kadm5_create_principal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kadm5',
+    'init' => '4-dev',
   ),
   'kadm5_delete_principal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kadm5',
+    'init' => '4-dev',
   ),
   'kadm5_destroy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kadm5',
+    'init' => '4-dev',
   ),
   'kadm5_flush' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kadm5',
+    'init' => '4-dev',
   ),
   'kadm5_get_policies' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kadm5',
+    'init' => '4-dev',
   ),
   'kadm5_get_principal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kadm5',
+    'init' => '4-dev',
   ),
   'kadm5_get_principals' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kadm5',
+    'init' => '4-dev',
   ),
   'kadm5_init_with_password' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kadm5',
+    'init' => '4-dev',
   ),
   'kadm5_modify_principal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kadm5',
+    'init' => '4-dev',
   ),
   'kakasi' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kakasi',
+    'init' => '4-dev',
   ),
   'kakasi_arsort' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kakasi',
+    'init' => '4-dev',
   ),
   'kakasi_arsorti' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kakasi',
+    'init' => '4-dev',
   ),
   'kakasi_asort' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kakasi',
+    'init' => '4-dev',
   ),
   'kakasi_asorti' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kakasi',
+    'init' => '4-dev',
   ),
   'kakasi_split' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_kakasi',
+    'init' => '4-dev',
   ),
   'exif_data_get_entry' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_libexif',
+    'init' => '4-dev',
   ),
   'exif_data_new_from_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_libexif',
+    'init' => '4-dev',
   ),
   'exif_entry_get_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_libexif',
+    'init' => '4-dev',
   ),
   'exif_format_get_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_libexif',
+    'init' => '4-dev',
   ),
   'exif_format_get_size' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_libexif',
+    'init' => '4-dev',
   ),
   'exif_tag_get_description' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_libexif',
+    'init' => '4-dev',
   ),
   'exif_tag_get_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_libexif',
+    'init' => '4-dev',
   ),
   'exif_tag_get_title' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_libexif',
+    'init' => '4-dev',
   ),
   'lzf_compress' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_lzf',
+    'init' => '4-dev',
   ),
   'lzf_decompress' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_lzf',
+    'init' => '4-dev',
   ),
   'lzf_optimized_for' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'add_child' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'enum_uue' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'extract_body' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'extract_headers' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'extract_uue' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'get_child' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'get_child_count' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'get_parent' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'mimemessage' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'mailparse_msg_extract_whole_part_file' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'mailparse_test' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'mailparse_uudecode_all' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_affected_rows' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_autocommit' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_bind_param' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_bind_result' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_change_user' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_character_set_name' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_client_encoding' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_close' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_close_long_data' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_commit' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_connect' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_connect_errno' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_connect_error' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_data_seek' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_debug' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_disable_reads_from_master' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_disable_rpl_parse' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_dump_debug_info' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_embedded_connect' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_enable_reads_from_master' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_enable_rpl_parse' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_errno' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_error' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_escape_string' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_execute' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_fetch' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_fetch_array' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_fetch_assoc' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_fetch_field' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_fetch_field_direct' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_fetch_fields' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_fetch_lengths' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_fetch_object' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_fetch_row' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_field_count' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_field_seek' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_field_tell' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_free_result' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_get_client_info' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_get_client_version' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_get_host_info' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_get_metadata' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_get_proto_info' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_get_server_info' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_get_server_version' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_info' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_init' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_insert_id' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_kill' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_master_query' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_more_results' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_multi_query' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_next_result' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_num_fields' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_num_rows' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_options' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_param_count' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_ping' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_prepare' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_query' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_real_connect' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_real_escape_string' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_real_query' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_report' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_rollback' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_rpl_parse_enabled' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_rpl_probe' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_rpl_query_type' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_select_db' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_send_long_data' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_send_query' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_server_end' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_server_init' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_set_opt' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_sqlstate' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_ssl_set' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stat' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_affected_rows' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_bind_param' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_bind_result' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_close' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_close_long_data' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_data_seek' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_errno' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_error' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_execute' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_fetch' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_free_result' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_init' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_num_rows' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_param_count' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_prepare' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_reset' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_result_metadata' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_send_long_data' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_sqlstate' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_stmt_store_result' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_store_result' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_thread_id' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_use_result' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
-  ),
-  'maxdb_warning_count' => 
-  array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_lzf',
+    'init' => '4-dev',
   ),
   'mdb_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_fetch_assoc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_fetch_row' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_num_fields' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_num_rows' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_rewind' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_table_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_table_fields' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_table_indexes' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_table_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_tables' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_type_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'mdb_version' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mdbtools',
+    'init' => '4-dev',
   ),
   'memcache_add' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_connect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_debug' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_decrement' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_delete' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_flush' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_get_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_get_version' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_increment' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_pconnect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_replace' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'memcache_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_memcache',
+    'init' => '4-dev',
   ),
   'mqseries_back' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'mqseries_begin' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'mqseries_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'mqseries_cmit' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'mqseries_conn' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'mqseries_disc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'mqseries_error' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'mqseries_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'mqseries_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'mqseries_put' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'mqseries_strerror' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_mqseries',
+    'init' => '4-dev',
   ),
   'nmz_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_codeconv_query' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_fetch_date' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_fetch_field' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_fetch_score' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_free_result' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_get_idx_hitnumlist' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_get_idx_totalhitnum' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_get_idxname' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_get_idxnum' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_get_lang' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_get_lang_ctype' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_get_maxhit' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_get_maxmatch' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_get_querytoken' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_is_lang_ja' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_num_hits' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_result_date' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_result_field' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_result_score' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_search' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_set_debugmode' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_set_lang' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_set_loggingmode' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_set_maxhit' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_set_maxmatch' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_set_sortmethod' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'nmz_set_sortorder' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_namazu',
+    'init' => '4-dev',
   ),
   'netools_device_enum' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_netools',
+    'init' => '4-dev',
   ),
   'netools_hostname_to_mac' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_netools',
+    'init' => '4-dev',
   ),
   'netools_ip_to_mac' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_netools',
+    'init' => '4-dev',
   ),
   'newt_bell' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_button' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_button_bar' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_button_barv' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_centered_window' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_get_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_set_flags' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_set_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_add_array' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_add_item' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_find_item' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_get_current' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_get_entry_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_get_multi_selection' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_get_selection' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_multi' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_set_current' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_set_entry' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_set_entry_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_checkbox_tree_set_width' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_clear_key_buffer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_cls' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_compact_button' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_component_add_callback' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_component_takes_focus' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_create_grid' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_cursor_off' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_cursor_on' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_delay' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_draw_form' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_draw_root_text' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_entry' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_entry_get_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_entry_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_entry_set_filter' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_entry_set_flags' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_finished' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_add_component' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_add_components' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_add_hot_key' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_destroy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_get_current' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_run' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_set_background' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_set_current' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_set_height' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_set_size' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_set_timer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_set_width' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_form_watch_fd' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_get_screen_size' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_add_components_to_form' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_basic_window' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_destroy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_get_size' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_h_close_stacked' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_h_stacked' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_place' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_set_field' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_simple_window' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_v_close_stacked' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_v_stacked' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_wrapped_window' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_grid_wrapped_window_at' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_init' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_label' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_label_set_text' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_add_entry' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_append_entry' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_clear' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_clear_selection' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_delete_entry' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_get_current' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_get_entry' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_get_selection' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_insert_entry' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_item_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_select_item' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_set_current' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_set_current_by_key' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_set_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_set_entry' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listbox_set_width' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listitem' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listitem_get_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_listitem_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_open_window' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_pop_help_line' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_pop_window' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_push_help_line' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_radio_get_current' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_radiobutton' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_redraw_help_line' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_reflow_text' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_refresh' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_resize_screen' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_resume' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_run_form' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_scale' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_scale_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_scrollbar_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_set_colors' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_set_help_callback' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_set_suspend_callback' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_suspend' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_textbox' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_textbox_get_num_lines' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_textbox_reflowed' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_textbox_set_height' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_textbox_set_text' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_vertical_scrollbar' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_wait_for_key' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_win_choice' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_win_entries' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_win_menu' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_win_message' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_win_messagev' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'newt_win_ternary' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_newt',
+    'init' => '4-dev',
   ),
   'ntuser_getdomaincontroller' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ntuser',
+    'init' => '4-dev',
   ),
   'ntuser_getusergroups' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ntuser',
+    'init' => '4-dev',
   ),
   'ntuser_getuserinfo' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ntuser',
+    'init' => '4-dev',
   ),
   'ntuser_getuserlist' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ntuser',
+    'init' => '4-dev',
   ),
   'openal_buffer_create' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_buffer_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_buffer_destroy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_buffer_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_buffer_loadwav' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_context_create' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_context_current' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_context_destroy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_context_process' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_context_suspend' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_device_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_device_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_listener_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_listener_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_source_create' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_source_destroy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_source_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_source_pause' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_source_play' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_source_rewind' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_source_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_source_stop' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'openal_stream' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_openal',
+    'init' => '4-dev',
   ),
   'ds_add_attribute' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_add_attribute_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_add_child_pid_to_reference' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_close_dir_node' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_close_dir_service' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_close_record' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_continue_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_create_record' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_create_record_and_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_data_buffer_alloc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_data_buffer_dealloc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_delete_record' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_dir_errstr' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_dir_status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_do_attribute_value_search' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_do_dir_node_auth' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_find_dir_nodes' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_flush_record' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_get_dir_node_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_get_dir_node_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_get_dir_node_list' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_get_record_attr_value_by_id' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_get_record_attr_value_by_index' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_get_record_attribute_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_get_record_list' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_get_record_reference_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_get_separator' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_is_dir_service_running' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_open_dir_node' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_open_dir_service' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_open_dir_service_proxy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_open_record' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_release_continue_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_remove_attribute' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_remove_attribute_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_set_record_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_set_record_type' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_set_separator' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'ds_verify_dir_ref_num' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_opendirectory',
+    'init' => '4-dev',
   ),
   'optimizer_debug_compile' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_optimizer',
+    'init' => '4-dev',
   ),
   'px_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_create_fp' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_delete' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_get_field' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_get_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_get_parameter' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_get_record' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_get_schema' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_get_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_numfields' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_numrecords' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_open_fp' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_put_record' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_set_blob_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_set_parameter' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_set_tablename' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_set_targetencoding' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_set_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'px_timestamp2string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_paradox',
+    'init' => '4-dev',
   ),
   'parsekit_compile_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_parsekit',
+    'init' => '4-dev',
   ),
   'parsekit_compile_string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_parsekit',
+    'init' => '4-dev',
   ),
   'parsekit_func_arginfo' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_parsekit',
+    'init' => '4-dev',
   ),
   'parsekit_opcode_flags' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_parsekit',
+    'init' => '4-dev',
   ),
   'parsekit_opcode_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_parsekit',
+    'init' => '4-dev',
   ),
   'pdf_activate_item' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_add_nameddest' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_begin_document' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_begin_font' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_begin_glyph' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_begin_item' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_begin_layer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_begin_page_ext' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_create_action' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_create_annotation' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_create_bookmark' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_create_field' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_create_fieldgroup' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_create_gstate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_create_pvf' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_create_textflow' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_define_layer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_delete_pvf' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_delete_textflow' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_encoding_set_char' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_end_document' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_end_font' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_end_glyph' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_end_item' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_end_layer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_end_page_ext' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_fill_imageblock' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_fill_pdfblock' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_fill_textblock' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_fit_image' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_fit_pdi_page' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_fit_textflow' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_fit_textline' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_get_apiname' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_get_errmsg' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_get_errnum' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_info_textflow' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_load_font' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_load_iccprofile' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_load_image' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_process_pdi' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_resume_page' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_set_gstate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_set_layer_dependency' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_setdashpattern' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_shading' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_shading_pattern' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_shfill' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_suspend_page' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_utf16_to_utf8' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'pdf_utf8_to_utf16' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pdf',
+    'init' => '4-dev',
   ),
   'philter_encode' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_philter',
+    'init' => '4-dev',
   ),
   'confirm_phpdoc_compiled' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_phpdoc',
+    'init' => '4-dev',
   ),
   'phpdoc_xml_from_string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_phpdoc',
+    'init' => '4-dev',
   ),
   'delete_taghkey' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'delete_timestamp_struct' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'new_taghkey' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'new_timestamp_struct' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'regclosekey' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'regopenkeyex' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'regqueryvalueex' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlallocconnect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlallocenv' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlallocstmt' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlbindcol' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlbindparameter' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlbrowseconnect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlcancel' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlcolattributes' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlcolumnprivileges' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlcolumns' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqldatasources' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqldescribecol' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqldescribeparam' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqldriverconnect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqldrivers' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlerror' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlexecute' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlextendedfetch' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlforeignkeys' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlfreeconnect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlfreeenv' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlfreestmt' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlgetconnectoption' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlgetcursorname' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlgetfunctions' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlgetinfo' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlgetstmtoption' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlgettypeinfo' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlmoreresults' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlnativesql' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlnumparams' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlnumresultcols' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlparamdata' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlparamoptions' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlprepare' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlprimarykeys' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlprocedurecolumns' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlprocedures' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlputdata' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlsetconnectoption' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlsetcursorname' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlsetparam' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlsetpos' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlsetscrolloptions' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlsetstmtoption' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlspecialcolumns' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqlstatistics' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqltableprivileges' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqltables' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'sqltransact' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'taghkey_fp_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'taghkey_fp_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'taghkey_sec_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'taghkey_sec_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_day_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_day_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_fraction_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_fraction_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_hour_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_hour_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_minute_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_minute_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_month_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_month_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_second_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_second_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_year_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'timestamp_struct_year_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_picosql',
+    'init' => '4-dev',
   ),
   'pop3_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'pop3_delete_message' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'pop3_get_account_size' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'pop3_get_message' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'pop3_get_message_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'pop3_get_message_header' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'pop3_get_message_ids' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'pop3_get_message_size' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'pop3_get_message_sizes' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'pop3_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'pop3_undelete' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_pop3',
+    'init' => '4-dev',
   ),
   'printer_abort' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_create_brush' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_create_dc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_create_font' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_create_pen' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_delete_brush' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_delete_dc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_delete_font' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_delete_pen' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_draw_bmp' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_draw_chord' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_draw_elipse' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_draw_line' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_draw_pie' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_draw_rectangle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_draw_roundrect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_draw_text' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_end_doc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_end_page' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_get_option' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_list' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_logical_fontheight' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_select_brush' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_select_font' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_select_pen' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_set_option' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_start_doc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_start_page' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'printer_write' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_printer',
+    'init' => '4-dev',
   ),
   'ps_add_bookmark' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_add_launchlink' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_add_locallink' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_add_note' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_add_pdflink' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_add_weblink' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_arc' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_begin_page' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_begin_pattern' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_begin_template' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_circle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_clip' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_close_image' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_closepath' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_closepath_stroke' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_continue_text' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_curveto' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_delete' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_end_page' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_end_pattern' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_end_template' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_fill' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_fill_stroke' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_findfont' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_get_buffer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_get_parameter' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_get_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_hyphenate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_lineto' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_makespotcolor' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_moveto' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_open_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_open_image' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_open_image_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_open_memory_image' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_place_image' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_rect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_restore' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_rotate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_save' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_scale' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_set_border_color' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_set_border_dash' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_set_border_style' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_set_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_set_parameter' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_set_text_pos' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_set_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_setcolor' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_setdash' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_setflat' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_setfont' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_setlinecap' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_setlinejoin' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_setlinewidth' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_setmiterlimit' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_setoverprintmode' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_setpolydash' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_shading' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_shading_pattern' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_shfill' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_show' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_show2' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_show_boxed' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_show_xy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_show_xy2' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_string_geometry' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_stringwidth' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_stroke' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_symbol' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_symbol_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_symbol_width' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'ps_translate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ps',
+    'init' => '4-dev',
   ),
   'py_call' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_python',
+    'init' => '4-dev',
   ),
   'py_eval' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_python',
+    'init' => '4-dev',
   ),
   'py_import' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_python',
+    'init' => '4-dev',
   ),
   'py_path' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_python',
+    'init' => '4-dev',
   ),
   'py_path_append' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_python',
+    'init' => '4-dev',
   ),
   'py_path_prepend' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_python',
+    'init' => '4-dev',
   ),
   'radius_acct_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_add_server' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_auth_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_config' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_create_request' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_cvt_addr' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_cvt_int' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_cvt_string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_demangle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_demangle_mppe_key' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_get_attr' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_get_vendor_attr' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_put_addr' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_put_attr' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_put_int' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_put_string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_put_vendor_addr' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_put_vendor_attr' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_put_vendor_int' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_put_vendor_string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_request_authenticator' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_send_request' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_server_secret' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'radius_strerror' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_radius',
+    'init' => '4-dev',
   ),
   'rar_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_rar',
+    'init' => '4-dev',
   ),
   'rar_entry_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_rar',
+    'init' => '4-dev',
   ),
   'rar_list' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_rar',
+    'init' => '4-dev',
   ),
   'rar_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_rar',
+    'init' => '4-dev',
   ),
   'sasl_checkpass' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_client_init' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_client_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_client_start' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_client_step' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_decode' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_encode' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_errdetail' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_errstring' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_listmech' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_server_init' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_server_new' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_server_start' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_server_step' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'sasl_version' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sasl',
+    'init' => '4-dev',
   ),
   'session_pgsql_add_error' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_session_pgsql',
+    'init' => '4-dev',
   ),
   'session_pgsql_get_error' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_session_pgsql',
+    'init' => '4-dev',
   ),
   'session_pgsql_get_field' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_session_pgsql',
+    'init' => '4-dev',
   ),
   'session_pgsql_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_session_pgsql',
+    'init' => '4-dev',
   ),
   'session_pgsql_reset' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_session_pgsql',
+    'init' => '4-dev',
   ),
   'session_pgsql_set_field' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_session_pgsql',
+    'init' => '4-dev',
   ),
   'session_pgsql_status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_session_pgsql',
+    'init' => '4-dev',
   ),
   'scvs_checkout' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_commit' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_diff' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_get_auth_method' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_get_compression_level' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_get_cvsroot' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_get_host' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_get_module_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_get_username' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_get_working_dir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_login' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_set_auth_method' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_set_compression_level' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_set_cvsroot' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_set_host' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_set_module_name' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_set_username' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_set_working_dir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'scvs_update' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_simple_cvs',
+    'init' => '4-dev',
   ),
   'smbc_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_closedir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_create' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_lseek' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_mkdir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_opendir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_read' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_readdir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_rename' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_rewinddir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_rmdir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_set_auth' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_unlink' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smbc_write' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smbc',
+    'init' => '4-dev',
   ),
   'smtp_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smtp',
+    'init' => '4-dev',
   ),
   'smtp_cmd_data' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smtp',
+    'init' => '4-dev',
   ),
   'smtp_cmd_mail' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smtp',
+    'init' => '4-dev',
   ),
   'smtp_cmd_rcpt' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smtp',
+    'init' => '4-dev',
   ),
   'smtp_connect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_smtp',
+    'init' => '4-dev',
   ),
   'sndfile_buffer_create' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_buffer_free' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_buffer_get_pcm_at' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_buffer_set_pcm_at' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_buffer_size' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_buffer_type' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_command' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_convert_array2buffer' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_convert_buffer2array' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_eof' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_error_code' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_error_str' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_format_check' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_get_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_get_string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_read_double' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_read_int' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_readf_double' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_readf_int' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_rewind' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_seek' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_set_string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_write_double' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_write_int' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_writef_double' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'sndfile_writef_int' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_sndfile',
+    'init' => '4-dev',
   ),
   'calcul_hmac' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_spplus',
+    'init' => '4-dev',
   ),
   'calculhmac' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_spplus',
+    'init' => '4-dev',
   ),
   'nthmac' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_spplus',
+    'init' => '4-dev',
   ),
   'signeurlpaiement' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_spplus',
+    'init' => '4-dev',
   ),
   'spread_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_spread',
+    'init' => '4-dev',
   ),
   'spread_connect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_spread',
+    'init' => '4-dev',
   ),
   'spread_error' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_spread',
+    'init' => '4-dev',
   ),
   'spread_join' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_spread',
+    'init' => '4-dev',
   ),
   'spread_multicast' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_spread',
+    'init' => '4-dev',
   ),
   'spread_receive' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_spread',
+    'init' => '4-dev',
   ),
   'ssh2_auth_hostbased_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_auth_none' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_auth_password' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_auth_pubkey_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_connect' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_exec' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_fetch_stream' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_fingerprint' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_forward_accept' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_forward_listen' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_methods_negotiated' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_scp_recv' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_scp_send' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_sftp' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_sftp_lstat' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_sftp_mkdir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_sftp_readlink' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_sftp_realpath' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_sftp_rename' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_sftp_rmdir' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_sftp_stat' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_sftp_symlink' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_sftp_unlink' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_shell' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'ssh2_tunnel' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_ssh2',
+    'init' => '4-dev',
   ),
   'sg_cpu_diff' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_cpu_percent_usage' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_cpu_totals' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_diskio_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_diskio_stats_diff' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_general_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_load_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_memory_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_network_iface_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_network_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_network_stats_diff' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_page_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_page_stats_diff' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_process_count' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_process_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_swap_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'sg_user_stats' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_statgrab',
+    'init' => '4-dev',
   ),
   'stats_cdf_beta' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_binomial' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_cauchy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_chisquare' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_exponential' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_f' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_gamma' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_laplace' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_logistic' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_negative_binomial' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_noncentral_chisquare' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_noncentral_f' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_noncentral_t' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_normal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_poisson' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_t' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_uniform' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_cdf_weibull' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_beta' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_cauchy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_chisquare' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_exponential' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_f' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_gamma' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_laplace' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_logistic' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_normal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_pmf_binomial' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_pmf_hypergeometric' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_pmf_negative_binomial' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_pmf_poisson' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_t' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_uniform' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_dens_weibull' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_beta' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_chisquare' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_exponential' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_f' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_funiform' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_gamma' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_ipoisson' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_iuniform' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_noncenral_f' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_noncentral_chisquare' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_noncentral_t' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_normal' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_gen_t' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_getsd' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_ibinomial' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_ibinomial_negative' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_ignlgi' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_phrase_to_seeds' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_ranf' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_rand_setall' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_stat_binomial_coef' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_stat_correlation' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_stat_factorial' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_stat_independent_t' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_stat_innerproduct' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_stat_paired_t' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_stat_percentile' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'stats_stat_powersum' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_stats',
+    'init' => '4-dev',
   ),
   'tclink_getversion' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_tclink',
+    'init' => '4-dev',
   ),
   'tclink_send' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_tclink',
+    'init' => '4-dev',
   ),
   'tcpwrap_check' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_tcpwrap',
+    'init' => '4-dev',
   ),
   'thread_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_threads',
+    'init' => '4-dev',
   ),
   'thread_include' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_threads',
+    'init' => '4-dev',
   ),
   'thread_lock' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_threads',
+    'init' => '4-dev',
   ),
   'thread_lock_try' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_threads',
+    'init' => '4-dev',
   ),
   'thread_mutex_destroy' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_threads',
+    'init' => '4-dev',
   ),
   'thread_mutex_init' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_threads',
+    'init' => '4-dev',
   ),
   'thread_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_threads',
+    'init' => '4-dev',
   ),
   'thread_start' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_threads',
+    'init' => '4-dev',
   ),
   'thread_unlock' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_threads',
+    'init' => '4-dev',
   ),
   'transliterate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_translit',
+    'init' => '4-dev',
   ),
   'transliterate_filters_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_translit',
+    'init' => '4-dev',
   ),
   'uuid_compare' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_uuid',
+    'init' => '4-dev',
   ),
   'uuid_create' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_uuid',
+    'init' => '4-dev',
   ),
   'uuid_is_null' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_uuid',
+    'init' => '4-dev',
   ),
   'uuid_is_valid' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_uuid',
+    'init' => '4-dev',
   ),
   'uuid_mac' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_uuid',
+    'init' => '4-dev',
   ),
   'uuid_time' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_uuid',
+    'init' => '4-dev',
   ),
   'uuid_type' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_uuid',
+    'init' => '4-dev',
   ),
   'uuid_variant' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_uuid',
+    'init' => '4-dev',
   ),
   'valkyrie_reload_config' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_valkyrie',
+    'init' => '4-dev',
   ),
   'valkyrie_validate' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_valkyrie',
+    'init' => '4-dev',
   ),
   'win32_scheduler_delete_task' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32scheduler',
+    'init' => '4-dev',
   ),
   'win32_scheduler_enum_tasks' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32scheduler',
+    'init' => '4-dev',
   ),
   'win32_scheduler_get_task_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32scheduler',
+    'init' => '4-dev',
   ),
   'win32_scheduler_run' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32scheduler',
+    'init' => '4-dev',
   ),
   'win32_scheduler_set_task_info' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32scheduler',
+    'init' => '4-dev',
   ),
   'win32_create_service' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32service',
+    'init' => '4-dev',
   ),
   'win32_delete_service' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32service',
+    'init' => '4-dev',
   ),
   'win32_get_last_control_message' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32service',
+    'init' => '4-dev',
   ),
   'win32_set_service_status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32service',
+    'init' => '4-dev',
   ),
   'win32_start_service_ctrl_dispatcher' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32service',
+    'init' => '4-dev',
   ),
   'reg_close_key' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'reg_create_key' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'reg_enum_key' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'reg_enum_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'reg_get_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'reg_open_key' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'reg_set_value' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'res_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'res_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'res_list' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'res_list_type' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'res_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'res_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'win_beep' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'win_browse_file' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'win_browse_folder' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'win_create_link' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'win_message_box' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'win_play_wav' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'win_shell_execute' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_win32std',
+    'init' => '4-dev',
   ),
   'xattr_get' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xattr',
+    'init' => '4-dev',
   ),
   'xattr_list' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xattr',
+    'init' => '4-dev',
   ),
   'xattr_remove' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xattr',
+    'init' => '4-dev',
   ),
   'xattr_set' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xattr',
+    'init' => '4-dev',
   ),
   'xattr_supported' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xattr',
+    'init' => '4-dev',
   ),
   'xdiff_file_diff' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xdiff',
+    'init' => '4-dev',
   ),
   'xdiff_file_diff_binary' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xdiff',
+    'init' => '4-dev',
   ),
   'xdiff_file_merge3' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xdiff',
+    'init' => '4-dev',
   ),
   'xdiff_file_patch' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xdiff',
+    'init' => '4-dev',
   ),
   'xdiff_file_patch_binary' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xdiff',
+    'init' => '4-dev',
   ),
   'xdiff_string_diff' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xdiff',
+    'init' => '4-dev',
   ),
   'xdiff_string_diff_binary' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xdiff',
+    'init' => '4-dev',
   ),
   'xdiff_string_merge3' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xdiff',
+    'init' => '4-dev',
   ),
   'xdiff_string_patch' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xdiff',
+    'init' => '4-dev',
   ),
   'xdiff_string_patch_binary' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xdiff',
+    'init' => '4-dev',
   ),
   'xmgrace_close' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmgrace',
+    'init' => '4-dev',
   ),
   'xmgrace_command' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmgrace',
+    'init' => '4-dev',
   ),
   'xmgrace_flush' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmgrace',
+    'init' => '4-dev',
   ),
   'xmgrace_is_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmgrace',
+    'init' => '4-dev',
   ),
   'xmgrace_open' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmgrace',
+    'init' => '4-dev',
   ),
   'xmlwriter_end_attribute' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_end_cdata' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_end_comment' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_end_document' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_end_dtd' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_end_dtd_element' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_end_element' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_end_pi' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_flush' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_open_memory' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_open_uri' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_output_memory' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_set_indent' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_set_indent_string' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_start_attribute' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_start_attribute_ns' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_start_cdata' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_start_comment' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_start_document' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_start_dtd' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_start_dtd_element' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_start_element' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_start_element_ns' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_start_pi' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_text' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_write_attribute' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_write_cdata' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_write_comment' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_write_dtd' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_write_element' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_write_element_ns' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmlwriter_write_pi' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmlwriter',
+    'init' => '4-dev',
   ),
   'xmms_add' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_clear' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_current' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_delete' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_eq_win' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_is_repeat' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_is_running' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_is_shuffle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_main_win' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_next' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_pause' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_pl_win' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_play' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_playlist' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_playlist_length' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_playlist_pos' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_prev' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_quit' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_repeat' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_shuffle' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_skin' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_start' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_status' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_stop' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_time' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_url' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_version' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'xmms_volume' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_xmms',
+    'init' => '4-dev',
   ),
   'yaz_es' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_yaz',
+    'init' => '4-dev',
   ),
   'yaz_get_option' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_yaz',
+    'init' => '4-dev',
   ),
   'yaz_set_option' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_yaz',
+    'init' => '4-dev',
   ),
   'zeroconf_browse_service' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_zeroconf',
+    'init' => '4-dev',
   ),
   'zeroconf_browse_session_create' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_zeroconf',
+    'init' => '4-dev',
   ),
   'zeroconf_browse_session_process' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_zeroconf',
+    'init' => '4-dev',
   ),
   'zeroconf_get_all_services' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_zeroconf',
+    'init' => '4-dev',
   ),
   'zeroconf_register_service' => 
   array (
-    'ext' => ' ',
-    'init' => '5-dev',
+    'ext' => 'pecl_zeroconf',
+    'init' => '4-dev',
   ),
 )
 ?>
