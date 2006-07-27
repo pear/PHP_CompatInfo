@@ -1,8 +1,15 @@
 <?php
 /**
- * Constants
- * @global array $GLOBALS['_PHP_COMPATINFO_CONST']
+ * Constants for PHP_CompatInfo 1.1.1 or better
+ *
+ * @global     array $GLOBALS['_PHP_COMPATINFO_CONST']
+ * @version    $Id$
+ * @author     Davey Shafik <davey@php.net>
+ * @author     Laurent Laville <pear@laurent-laville.org>
+ * @package    PHP_CompatInfo
+ * @ignore
  */
+
 $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
   '__FILE__' =>
   array (
