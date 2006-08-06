@@ -383,9 +383,9 @@ class PHP_CompatInfo
                     if ((is_array($tokens[$i - 1])) &&
                        (token_name($tokens[$i - 1][0]) != 'T_DOUBLE_COLON') &&
                        (token_name($tokens[$i - 1][0]) != 'T_OBJECT_OPERATOR')) {
-                        $functions[] = $tokens[$i][1];
+                        $functions[] = strtolower($tokens[$i][1]);
                     } elseif (!is_array($tokens[$i - 1])) {
-                        $functions[] = $tokens[$i][1];
+                        $functions[] = strtolower($tokens[$i][1]);
                     }
                 }
             }
@@ -394,10 +394,11 @@ class PHP_CompatInfo
                     // build contents one time only (static variable)
                     $akeys = array_keys($GLOBALS['_PHP_COMPATINFO_CONST']);
                 }
-                $found = array_search($tokens[$i][1], $akeys);
-                if ($found) {
-                    $constants[] = $tokens[$i][1];
-                    $latest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$tokens[$i][1]]['init'];
+                $const = strtoupper($tokens[$i][1]);
+                $found = array_search($const, $akeys);
+                if ($found !== false) {
+                    $constants[] = $const;
+                    $latest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$const]['init'];
                 }
             }
             $i += 1;
