@@ -22,22 +22,15 @@ which shows which functions require which version and CLI output script
   </maintainer>
   </maintainers>
  <release>
-  <version>1.1.1</version>
-  <date>2006-07-27</date>
+  <version>1.1.2</version>
+  <date>2006-08-06</date>
   <license>PHP License 3.0</license>
   <state>stable</state>
   <notes>* bugs
-- old Bug #2771 that was back alive : substr($var,4) not working for sapi_ extensions
+fixed bug notice to me by Markus Zapke-Gruendemann (thanks to him)
+related to script case sensitive problem.
 
-* improvements
-- PECL extension are now really identified.
-  With php version when available, otherwise with &apos;4-dev&apos;
-  With pecl extension name in &apos;ext&apos; key of result array
-- all PHP extensions are now better supported.
-  methods were removed from &apos;func_array.php&apos; file
-
-* Quality Assurance
-- &apos;func_array.php&apos; and &apos;const_array.php&apos; files have now header comment block
+Now all scripts and extensions code used may be write in lowercase, uppercase, or mixed.
   </notes>
   <deps>
    <dep type="php" rel="ge" version="4.2.0" optional="no"/>
@@ -76,6 +69,18 @@ which shows which functions require which version and CLI output script
   </filelist>
  </release>
  <changelog>
+   <release>
+    <version>1.1.2</version>
+    <date>2006-08-06</date>
+    <license>PHP License 3.0</license>
+    <state>stable</state>
+    <notes>* bugs
+fixed bug notice to me by Markus Zapke-Gruendemann (thanks to him)
+related to script case sensitive problem.
+
+Now all scripts and extensions code used may be write in lowercase, uppercase, or mixed.
+    </notes>
+   </release>
    <release>
     <version>1.1.1</version>
     <date>2006-07-27</date>

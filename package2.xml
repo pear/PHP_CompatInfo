@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>pear@laurent-laville.org</email>
   <active>yes</active>
  </lead>
- <date>2006-07-27</date>
- <time>19:01:44</time>
+ <date>2006-08-06</date>
+ <time>18:42:35</time>
  <version>
-  <release>1.1.1</release>
+  <release>1.1.2</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -30,17 +30,12 @@ which shows which functions require which version and CLI output script</descrip
  </stability>
  <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
  <notes>* bugs
-- old Bug #2771 that was back alive : substr($var,4) not working for sapi_ extensions
+fixed bug notice to me by Markus Zapke-Gruendemann (thanks to him)
+related to script case sensitive problem.
 
-* improvements
-- PECL extension are now really identified.
-  With php version when available, otherwise with &apos;4-dev&apos;
-  With pecl extension name in &apos;ext&apos; key of result array
-- all PHP extensions are now better supported.
-  methods were removed from &apos;func_array.php&apos; file
+Now all scripts and extensions code used may be write in lowercase, uppercase, or mixed.
 
-* Quality Assurance
-- &apos;func_array.php&apos; and &apos;const_array.php&apos; files have now header comment block</notes>
+ </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
    <dir name="CompatInfo">
@@ -97,6 +92,25 @@ which shows which functions require which version and CLI output script</descrip
  </dependencies>
  <phprelease />
  <changelog>
+  <release>
+   <version>
+    <release>1.1.2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2006-08-06</date>
+   <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
+   <notes>* bugs
+fixed bug notice to me by Markus Zapke-Gruendemann (thanks to him)
+related to script case sensitive problem.
+
+Now all scripts and extensions code used may be write in lowercase, uppercase, or mixed.
+
+   </notes>
+  </release>
   <release>
    <version>
     <release>1.1.1</release>
