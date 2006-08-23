@@ -357,6 +357,7 @@ class PHP_CompatInfo
      * @param  string|boolean   $max     (optional) PHP maximal version
      * @return array            An array of php function names to ignore
      * @access public
+     * @static
      * @since  1.2.0
      */
     function loadVersion($min, $max = false)
