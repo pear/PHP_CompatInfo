@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
-<package version="1.0" packagerversion="1.4.10">
+<package version="1.0" packagerversion="1.4.11">
  <name>PHP_CompatInfo</name>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
  <description>PHP_CompatInfo will parse a file/folder/script/array to find out the minimum
@@ -22,15 +22,17 @@ which shows which functions require which version and CLI output script
   </maintainer>
   </maintainers>
  <release>
-  <version>1.1.2</version>
-  <date>2006-08-06</date>
+  <version>1.2.0</version>
+  <date>2006-08-23</date>
   <license>PHP License 3.0</license>
   <state>stable</state>
-  <notes>* bugs
-fixed bug notice to me by Markus Zapke-Gruendemann (thanks to him)
-related to script case sensitive problem.
+  <notes>* news
+- add &quot;ignore_constants&quot; option to ignore an array of contants when calculating the version needed.
+- add loadVersion() method to retrieve easily the functions list of a PHP version (or subset)
+See also script &quot;docs\examples\ignorePHP5implements.php&quot; that demonstrates this new feature.
 
-Now all scripts and extensions code used may be write in lowercase, uppercase, or mixed.
+* Quality Assurance
+- more PEAR CS with code indentation, and phpdoc tag comment
   </notes>
   <deps>
    <dep type="php" rel="ge" version="4.2.0" optional="no"/>
@@ -52,6 +54,7 @@ Now all scripts and extensions code used may be write in lowercase, uppercase, o
       <file role="doc" name="ci_frontend.php"/>
       <file role="doc" name="Cli.php"/>
       <file role="doc" name="cliOutput.txt"/>
+      <file role="doc" name="ignorePHP5implements.php"/>
       <file role="doc" name="parseArray.php"/>
       <file role="doc" name="parseDir.php"/>
       <file role="doc" name="parseFile.php"/>
@@ -69,6 +72,20 @@ Now all scripts and extensions code used may be write in lowercase, uppercase, o
   </filelist>
  </release>
  <changelog>
+   <release>
+    <version>1.2.0</version>
+    <date>2006-08-23</date>
+    <license>PHP License 3.0</license>
+    <state>stable</state>
+    <notes>* news
+- add &quot;ignore_constants&quot; option to ignore an array of contants when calculating the version needed.
+- add loadVersion() method to retrieve easily the functions list of a PHP version (or subset)
+See also script &quot;docs\examples\ignorePHP5implements.php&quot; that demonstrates this new feature.
+
+* Quality Assurance
+- more PEAR CS with code indentation, and phpdoc tag comment
+    </notes>
+   </release>
    <release>
     <version>1.1.2</version>
     <date>2006-08-06</date>
