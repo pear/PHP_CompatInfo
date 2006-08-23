@@ -79,6 +79,9 @@ class PHP_CompatInfo
      *                          'ignore_functions' contains an array
      *                              of functions to ignore when
      *                              calculating the version needed.
+     *                          'ignore_constants' contains an array
+     *                              of constants to ignore when
+     *                              calculating the version needed.
      * @access public
      * @return Array
      * @since  0.7.0
@@ -102,6 +105,9 @@ class PHP_CompatInfo
      *                              ouput is shown.
      *                          'ignore_functions' contains an array
      *                              of functions to ignore when
+     *                              calculating the version needed.
+     *                          'ignore_constants' contains an array
+     *                              of constants to ignore when
      *                              calculating the version needed.
      * @access public
      * @return Array
@@ -141,6 +147,9 @@ class PHP_CompatInfo
      *                          'ignore_functions' contains an array
      *                                         of functions to ignore when
      *                                         calculating the version needed.
+     *                          'ignore_constants' contains an array
+     *                                         of constants to ignore when
+     *                                         calculating the version needed.
      * @access public
      * @return array
      * @since  0.8.0
@@ -160,7 +169,7 @@ class PHP_CompatInfo
             'ignore_files' => array(),
             'ignore_dirs' => array()
             );
-        $options = array_merge($default_options,$options);
+        $options = array_merge($default_options, $options);
 
         if (is_dir($dir) && is_readable($dir)) {
             if ($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
@@ -169,7 +178,7 @@ class PHP_CompatInfo
             $options['file_ext'] = array_map('strtolower', $options['file_ext']);
             $options['ignore_files'] = array_map('strtolower', $options['ignore_files']);
             $options['ignore_dirs'] = array_map('strtolower', $options['ignore_dirs']);
-            $files_raw = $this->_fileList($dir,$options);
+            $files_raw = $this->_fileList($dir, $options);
             foreach ($files_raw as $file) {
                 if (in_array(strtolower($file), $options['ignore_files'])) {
                     $ignored[] = $file;
@@ -261,6 +270,9 @@ class PHP_CompatInfo
      *                          'ignore_functions' contains an array
      *                                         of functions to ignore when
      *                                         calculating the version needed.
+     *                          'ignore_constants' contains an array
+     *                              of constants to ignore when
+     *                              calculating the version needed.
      * @access public
      * @return array
      * @since  0.7.0
@@ -273,7 +285,7 @@ class PHP_CompatInfo
         $constants = array();
         $options = array_merge(
             array(
-                'file_ext' => array('php','php4','inc','phtml'),
+                'file_ext' => array('php', 'php4', 'inc', 'phtml'),
                 'is_string' => false,
                 'debug' => false,
                 'ignore_files' => array()
@@ -339,6 +351,36 @@ class PHP_CompatInfo
     }
 
     /**
+     * Load components list for a PHP version or subset
+     *
+     * @param  string           $min     PHP minimal version
+     * @param  string|boolean   $max     (optional) PHP maximal version
+     * @return array            An array of php function names to ignore
+     * @access public
+     * @since  1.2.0
+     */
+    function loadVersion($min, $max = false)
+    {
+        $keys = array();
+        foreach ($GLOBALS['_PHP_COMPATINFO_FUNCS'] as $func => $arr) {
+            $keep = false;
+            if (version_compare($arr['init'], $min) < 0) {
+                continue;
+            }
+            if ($max) {
+                $end = (isset($arr['end'])) ? $arr['end'] : $arr['init'];
+
+                if (version_compare($end, $max) < 1) {
+                    $keys[] = $func;
+                }
+            } else {
+                $keys[] = $func;
+            }
+        }
+        return $keys;
+    }
+
+    /**
      * Parse the given Tokens
      *
      * The tokens are those returned by
@@ -363,6 +405,12 @@ class PHP_CompatInfo
         $constants = array();
         $constant_names = array();
         $udf = array();
+
+        if (isset($options['ignore_constants'])) {
+            $options['ignore_constants'] = array_map('strtoupper', $options['ignore_constants']);
+        } else {
+            $options['ignore_constants'] = array();
+        }
 
         $token_count = sizeof($tokens);
         $i = 0;
@@ -396,7 +444,7 @@ class PHP_CompatInfo
                 }
                 $const = strtoupper($tokens[$i][1]);
                 $found = array_search($const, $akeys);
-                if ($found !== false) {
+                if ($found !== false && !in_array($const, $options['ignore_constants'])) {
                     $constants[] = $const;
                     $latest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$const]['init'];
                 }
