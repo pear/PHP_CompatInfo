@@ -13,6 +13,7 @@
  * @category   PHP
  * @package    PHP_CompatInfo
  * @author     Davey Shafik <davey@php.net>
+ * @author     Laurent Laville <pear@laurent-laville.org>
  * @license    http://www.php.net/license/3_01.txt  PHP License 3.0
  * @version    CVS: $Id$
  * @link       http://pear.php.net/package/PHP_CompatInfo
@@ -39,6 +40,7 @@ require_once 'Console/Table.php';
  * @category   PHP
  * @package    PHP_CompatInfo
  * @author     Davey Shafik <davey@php.net>
+ * @author     Laurent Laville <pear@laurent-laville.org>
  * @copyright  Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
  * @license    http://www.php.net/license/3_0.txt  PHP License 3.0
  * @version    Release: @package_version@
@@ -50,39 +52,46 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 {
     /**
      * @var array Current CLI Flags
+     * @since  0.8.0
      */
     var $opts = array();
 
     /**
      * @var boolean Whether an error has occured
+     * @since  0.8.0
      */
     var $error = false;
 
     /**
      * @var string File to be Processed
+     * @since  0.8.0
      */
     var $file;
 
     /**
      * @var string Directory to be Processed
+     * @since  0.8.0
      */
     var $dir;
 
     /**
      * @var boolean Whether to show debug output
+     * @since  0.8.0
      */
     var $debug;
 
     /**
      * @var boolean Whether to recurse directories when using --dir or -d
+     * @since  0.8.0
      */
     var $recurse = true;
 
     /**
-     * Constructor
+     * ZE2 Constructor
+     * @since  0.8.0
      */
-     function __construct()
-     {
+    function __construct()
+    {
         $opts = Console_Getopt::readPHPArgv();
         $short_opts = 'd:f:hn';
         $long_opts = array('dir=','file=','help','debug','no-recurse');
@@ -137,58 +146,61 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                     break;
             }
         }
-     }
+    }
 
-     /**
-      * PHP4 Compatible Constructor
-      */
-     function PHP_CompatInfo_Cli()
-     {
+    /**
+     * ZE1 PHP4 Compatible Constructor
+     * @since  0.8.0
+     */
+    function PHP_CompatInfo_Cli()
+    {
         $this->__construct();
-     }
+    }
 
-     /**
-      * Run the CLI Script
-      *
-      * @access public
-      * @return void
-      */
-     function run()
-     {
-        if ($this->error == true) {
+    /**
+     * Run the CLI Script
+     *
+     * @return void
+     * @access public
+     * @since  0.8.0
+     */
+    function run()
+    {
+        if ($this->error === true) {
             echo $this->opts->message;
             $this->_printUsage();
         } else {
             if (isset($this->dir)) {
-                $output = $this->_parseDir();
-                echo $output;
+                $this->_parseDir();
             } elseif (isset($this->file)) {
-                $output = $this->_parseFile();
-                echo $output;
+                $this->_parseFile();
             } else {
                 $this->_printHelp();
             }
         }
-     }
+    }
 
-     /**
-      * Parse Directory Input
-      *
-      * @access private
-      * @return boolean|string Returns Boolean False on fail
-      */
-      function _parseDir()
-      {
+    /**
+     * Parse Directory Input
+     *
+     * @return void
+     * @access private
+     * @since  0.8.0
+     */
+    function _parseDir()
+    {
         $info = $this->parseDir($this->dir,
             array('debug' => $this->debug, 'recurse_dir' => $this->recurse)
             );
-        if ($info == false) {
-            echo 'Failed opening directory ("' .$this->dir. '"). Please check your spelling and try again.';
+        if ($info === false) {
+            echo 'No valid files into directory "' . $this->dir
+               . '". Please check your spelling and try again.'
+               . "\n";
             $this->_printUsage();
             return;
         }
         $table = new Console_Table();
-        $table->setHeaders(array('File','Version','Extensions','Constants/Tokens'));
+        $table->setHeaders(array('File', 'Version', 'Extensions', 'Constants/Tokens'));
         if (!isset($info['extensions'][0])) {
             $ext = '';
         } else {
@@ -221,6 +233,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 $table->addRow(array('', '', $ext, $const));
             }
         }
+        unset($info['max_version']);
         unset($info['version']);
         unset($info['extensions']);
         unset($info['constants']);
@@ -230,6 +243,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         unset($info['ignored_files']);
 
         foreach ($info as $file => $info) {
+            if ($info === false) {
+                continue;  // skip this (invalid) file
+            }
             if (!isset($info['extensions'][0])) {
                 $ext = '';
             } else {
@@ -264,22 +280,26 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             }
         }
 
-        return $table->getTable();
+        $output = $table->getTable();
+        echo $output;
     }
 
     /**
      * Parse File Input
      *
+     * @return void
      * @access private
-     * @return boolean|string Returns Boolean False on fail
+     * @since  0.8.0
      */
     function _parseFile()
     {
         $info = $this->parseFile($this->file, array('debug' => $this->debug));
-        if ($info == false) {
-            echo 'Failed opening file. Please check your spelling and try again.';
+        if ($info === false) {
+            echo 'Failed opening file "' . $this->file
+               . '". Please check your spelling and try again.'
+               . "\n";
             $this->_printUsage();
-            return false;
+            return;
         }
         $table = new Console_Table();
         if ($this->debug == false) {
@@ -376,14 +396,15 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $output .= $table->getTable();
         }
 
-        return $output;
+        echo $output;
     }
 
     /**
      * Show basic Usage
      *
-     * @access private
      * @return void
+     * @access private
+     * @since  0.8.0
      */
     function _printUsage()
     {
@@ -396,8 +417,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     /**
      * Show full help information
      *
-     * @access private
      * @return void
+     * @access private
+     * @since  0.8.0
      */
     function _printHelp()
     {
