@@ -145,6 +145,7 @@ class PHP_CompatInfo
      */
     function parseDir($dir, $options = array())
     {
+        $files_valid = 0;
         $files_parsed = array();
         $latest_version = $this->latest_version;
         $earliest_version = $this->earliest_version;
@@ -152,7 +153,7 @@ class PHP_CompatInfo
         $constants = array();
         $ignored = array();
         $default_options = array(
-            'file_ext' => array('php','php4','inc','phtml'),
+            'file_ext' => array('php', 'php4', 'inc', 'phtml'),
             'recurse_dir' => true,
             'debug' => false,
             'ignore_files' => array(),
@@ -179,6 +180,7 @@ class PHP_CompatInfo
                     $tokens = $this->_tokenize($file);
                     if (is_array($tokens) && count($tokens) > 0) {
                         $files_parsed[$file] = $this->_parseTokens($tokens, $options);
+                        $files_valid++;
                     } else {
                         $files_parsed[$file] = false;
                     }
@@ -210,7 +212,7 @@ class PHP_CompatInfo
                 }
             }
 
-            if (sizeof($files_parsed) < 1) {
+            if (count($files_parsed) == 0 || $files_valid == 0) {
                 return false;
             }
 
@@ -259,7 +261,7 @@ class PHP_CompatInfo
      *  - 'is_string'        Contains a boolean which says if the array values
      *                       are strings or file names.
      * @access public
-     * @return array
+     * @return array|false
      * @since  0.7.0
      */
     function parseArray($files, $options = array())
@@ -279,7 +281,7 @@ class PHP_CompatInfo
             $options);
         $options['ignore_files'] = array_map('strtolower', $options['ignore_files']);
         foreach ($files as $file) {
-            if ($options['is_string'] == false) {
+            if ($options['is_string'] === false) {
                 $pathinfo = pathinfo($file);
                 if (!in_array(strtolower($file), $options['ignore_files']) &&
                      in_array($pathinfo['extension'], $options['file_ext'])) {
