@@ -13,6 +13,7 @@
  * @category   PHP
  * @package    PHP_CompatInfo
  * @author     Davey Shafik <davey@php.net>
+ * @author     Laurent Laville <pear@laurent-laville.org>
  * @license    http://www.php.net/license/3_0.txt  PHP License 3.0
  * @version    CVS: $Id$
  * @link       http://pear.php.net/package/PHP_CompatInfo
@@ -42,6 +43,7 @@ require_once 'PHP/CompatInfo/const_array.php';
  * @category   PHP
  * @package    PHP_CompatInfo
  * @author     Davey Shafik <davey@php.net>
+ * @author     Laurent Laville <pear@laurent-laville.org>
  * @copyright  Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
  * @license    http://www.php.net/license/3_0.txt  PHP License 3.0
  * @version    Release: @package_version@
@@ -71,17 +73,14 @@ class PHP_CompatInfo
     /**
      * Parse a file for its Compatibility info
      *
-     * @param string $file Path of File to parse
-     * @param array $options An array of options where:
-     *                          'debug' contains a boolean
-     *                              to control whether extra
-     *                              ouput is shown.
-     *                          'ignore_functions' contains an array
-     *                              of functions to ignore when
-     *                              calculating the version needed.
-     *                          'ignore_constants' contains an array
-     *                              of constants to ignore when
-     *                              calculating the version needed.
+     * @param  string $file    Path of File to parse
+     * @param  array  $options An array of options where:
+     *  - 'debug'            Contains a boolean to control whether
+     *                       extra ouput is shown.
+     *  - 'ignore_functions' Contains an array of functions to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_constants' Contains an array of constants to ignore
+     *                       when calculating the version needed.
      * @access public
      * @return Array
      * @since  0.7.0
@@ -89,26 +88,24 @@ class PHP_CompatInfo
     function parseFile($file, $options = array())
     {
         $options = array_merge(array('debug' => false), $options);
-        if (!($tokens = $this->_tokenize($file))) {
-            return false;
+        $tokens = $this->_tokenize($file);
+        if (is_array($tokens) && count($tokens) > 0) {
+            return $this->_parseTokens($tokens, $options);
         }
-        return $this->_parseTokens($tokens, $options);
+        return false;
     }
 
     /**
      * Parse a string for its Compatibility info
      *
-     * @param string $string PHP Code to parses
-     * @param array $options An array of options where:
-     *                          'debug' contains a boolean
-     *                              to control whether extra
-     *                              ouput is shown.
-     *                          'ignore_functions' contains an array
-     *                              of functions to ignore when
-     *                              calculating the version needed.
-     *                          'ignore_constants' contains an array
-     *                              of constants to ignore when
-     *                              calculating the version needed.
+     * @param  string $string  PHP Code to parses
+     * @param  array  $options An array of options where:
+     *  - 'debug'            Contains a boolean to control whether
+     *                       extra ouput is shown.
+     *  - 'ignore_functions' Contains an array of functions to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_constants' Contains an array of constants to ignore
+     *                       when calculating the version needed.
      * @access public
      * @return Array
      * @since  0.7.0
@@ -116,47 +113,39 @@ class PHP_CompatInfo
     function parseString($string, $options = array())
     {
         $options = array_merge(array('debug' => false), $options);
-        if (!($tokens = $this->_tokenize($string, true))) {
-            return false;
+        $tokens = $this->_tokenize($string, true);
+        if (is_array($tokens) && count($tokens) > 0) {
+            return $this->_parseTokens($tokens, $options);
         }
-        return $this->_parseTokens($tokens, $options);
+        return false;
     }
 
     /**
      * Parse a directory recursively for its Compatibility info
      *
      * @see PHP_CompatInfo::_fileList()
-     * @param string $dir Path of folder to parse
-     * @param array $options Array of user options where:
-     *                              'file_ext' Contains an array of file
-     *                                         extensions to parse for PHP
-     *                                         code. Default: php, php4,
-     *                                         inc, phtml
-     *                              'recurse_dir' Boolean on whether to
-     *                                         recursively find files
-     *                              'debug' contains a boolean
-     *                                         to control whether extra
-     *                                         ouput is shown.
-     *                              'ignore_files' contains an array of
-     *                                         files to ignore. File
-     *                                         names are case insensitive.
-     *                              'ignore_dirs' contains an array of
-     *                                         directories to ignore.
-     *                                         Directory names are case
-     *                                         insensitive.
-     *                          'ignore_functions' contains an array
-     *                                         of functions to ignore when
-     *                                         calculating the version needed.
-     *                          'ignore_constants' contains an array
-     *                                         of constants to ignore when
-     *                                         calculating the version needed.
+     * @param  string $dir     Path of folder to parse
+     * @param  array  $options An array of options where:
+     *  - 'file_ext'         Contains an array of file extensions to parse
+     *                       for PHP code. Default: php, php4, inc, phtml
+     *  - 'recurse_dir'      Boolean on whether to recursively find files
+     *  - 'debug'            Contains a boolean to control whether
+     *                       extra ouput is shown.
+     *  - 'ignore_functions' Contains an array of functions to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_constants' Contains an array of constants to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_files'     Contains an array of files to ignore.
+     *                       File names are case insensitive.
+     *  - 'ignore_dirs'      Contains an array of directories to ignore.
+     *                       Directory names are case insensitive.
      * @access public
      * @return array
      * @since  0.8.0
      */
     function parseDir($dir, $options = array())
     {
-        $files = array();
+        $files_parsed = array();
         $latest_version = $this->latest_version;
         $earliest_version = $this->earliest_version;
         $extensions = array();
@@ -188,14 +177,17 @@ class PHP_CompatInfo
                 if (isset($file_info['extension']) &&
                     in_array(strtolower($file_info['extension']), $options['file_ext'])) {
                     $tokens = $this->_tokenize($file);
-                    if ($tokens != false) {
-                        $files[$file] = $this->_parseTokens($tokens, $options);
+                    if (is_array($tokens) && count($tokens) > 0) {
+                        $files_parsed[$file] = $this->_parseTokens($tokens, $options);
                     } else {
-                        return false;
+                        $files_parsed[$file] = false;
                     }
                 }
             }
-            foreach ($files as $file) {
+            foreach ($files_parsed as $file) {
+                if ($file === false) {
+                    continue;  // skip this file
+                }
                 $cmp = version_compare($latest_version, $file['version']);
                 if ($cmp === -1) {
                     $latest_version = $file['version'];
@@ -218,17 +210,17 @@ class PHP_CompatInfo
                 }
             }
 
-            if (sizeof($files) < 1) {
+            if (sizeof($files_parsed) < 1) {
                 return false;
             }
 
-            $files['constants'] = $constants;
-            $files['extensions'] = $extensions;
-            $files['version'] = $latest_version;
-            $files['max_version'] = $earliest_version;
-            $files['ignored_files'] = $ignored;
-            $files = array_reverse($files);
-            return $files;
+            $files_parsed['constants'] = $constants;
+            $files_parsed['extensions'] = $extensions;
+            $files_parsed['version'] = $latest_version;
+            $files_parsed['max_version'] = $earliest_version;
+            $files_parsed['ignored_files'] = $ignored;
+            $files_parsed = array_reverse($files_parsed);
+            return $files_parsed;
         } else {
             return false;
         }
@@ -252,33 +244,27 @@ class PHP_CompatInfo
      * You can parse an array of Files or Strings, to parse
      * strings, $options['is_string'] must be set to true
      *
-     * @param array $files Array of file names or code strings
-     * @param array $options An array of options where:
-     *                          'file_ext' Contains an array of file
-     *                              extensions to parse for PHP
-     *                              code. Default: php, php4,
-     *                              inc, phtml
-     *                          'debug' contains a boolean
-     *                              to control whether extra
-     *                              ouput is shown.
-     *                          'is_string' contains a boolean
-     *                              which says if the array values
-     *                              are strings or file names.
-     *                          'ignore_files' contains an array of
-     *                                          files to ignore. File
-     *                                          names are case sensitive.
-     *                          'ignore_functions' contains an array
-     *                                         of functions to ignore when
-     *                                         calculating the version needed.
-     *                          'ignore_constants' contains an array
-     *                              of constants to ignore when
-     *                              calculating the version needed.
+     * @param  array $files   Array of file names or code strings
+     * @param  array $options An array of options where:
+     *  - 'file_ext'         Contains an array of file extensions to parse
+     *                       for PHP code. Default: php, php4, inc, phtml
+     *  - 'debug'            Contains a boolean to control whether
+     *                       extra ouput is shown.
+     *  - 'ignore_functions' Contains an array of functions to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_constants' Contains an array of constants to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_files'     Contains an array of files to ignore.
+     *                       File names are case insensitive.
+     *  - 'is_string'        Contains a boolean which says if the array values
+     *                       are strings or file names.
      * @access public
      * @return array
      * @since  0.7.0
      */
-    function parseArray($files,$options = array())
+    function parseArray($files, $options = array())
     {
+        $files_parsed = array();
         $latest_version = $this->latest_version;
         $earliest_version = $this->earliest_version;
         $extensions = array();
@@ -298,7 +284,7 @@ class PHP_CompatInfo
                 if (!in_array(strtolower($file), $options['ignore_files']) &&
                      in_array($pathinfo['extension'], $options['file_ext'])) {
                     $tokens = $this->_tokenize($file, $options['is_string']);
-                    if ($tokens != false) {
+                    if (is_array($tokens) && count($tokens) > 0) {
                         $files_parsed[$file] = $this->_parseTokens($tokens, $options);
                     } else {
                         $files_parsed[$file] = false;
@@ -308,7 +294,7 @@ class PHP_CompatInfo
                 }
             } else {
                 $tokens = $this->_tokenize($file, $options['is_string']);
-                if ($tokens != false) {
+                if (is_array($tokens) && count($tokens) > 0) {
                     $files_parsed[] = $this->_parseTokens($tokens, $options);
                 } else {
                     $files_parsed[] = false;
@@ -317,26 +303,27 @@ class PHP_CompatInfo
         }
 
         foreach ($files_parsed as $file) {
-            if ($file != false) {
-                $cmp = version_compare($latest_version, $file['version']);
-                if ($cmp === -1) {
-                    $latest_version = $file['version'];
+            if ($file === false) {
+                continue;  // skip this file
+            }
+            $cmp = version_compare($latest_version, $file['version']);
+            if ($cmp === -1) {
+                $latest_version = $file['version'];
+            }
+            if ($file['max_version'] != '') {
+                $cmp = version_compare($earliest_version, $file['max_version']);
+                if ($earliest_version == '' || $cmp === 1) {
+                    $earliest_version = $file['max_version'];
                 }
-                if ($file['max_version'] != '') {
-                    $cmp = version_compare($earliest_version, $file['max_version']);
-                    if ($earliest_version == '' || $cmp === 1) {
-                        $earliest_version = $file['max_version'];
-                    }
+            }
+            foreach ($file['extensions'] as $ext) {
+                if (!in_array($ext, $extensions)) {
+                    $extensions[] = $ext;
                 }
-                foreach ($file['extensions'] as $ext) {
-                    if (!in_array($ext, $extensions)) {
-                        $extensions[] = $ext;
-                    }
-                }
-                foreach ($file['constants'] as $const) {
-                    if (!in_array($const, $constants)) {
-                        $constants[] = $const;
-                    }
+            }
+            foreach ($file['constants'] as $const) {
+                if (!in_array($const, $constants)) {
+                    $constants[] = $const;
                 }
             }
         }
@@ -529,12 +516,12 @@ class PHP_CompatInfo
      * @param string $input Filename or PHP code
      * @param boolean $is_string Whether or note the input is a string
      * @access private
-     * @return array
+     * @return array|false
      * @since  0.7.0
      */
     function _tokenize($input, $is_string = false)
     {
-        if ($is_string == false) {
+        if ($is_string === false) {
             $input = @file_get_contents($input, true);
             if (is_string($input)) {
                 return token_get_all($input);
