@@ -201,38 +201,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         }
         $table = new Console_Table();
         $table->setHeaders(array('File', 'Version', 'Extensions', 'Constants/Tokens'));
-        if (!isset($info['extensions'][0])) {
-            $ext = '';
-        } else {
-            $ext = array_shift($info['extensions']);
-        }
 
-        if (!isset($info['constants'][0])) {
-            $const = '';
-        } else {
-            $const = array_shift($info['constants']);
-        }
+        $ext   = implode("\r\n", $info['extensions']);
+        $const = implode("\r\n", $info['constants']);
+
         $dir = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $this->dir);
         $table->addRow(array($dir . DIRECTORY_SEPARATOR . '*', $info['version'], $ext, $const));
-        if (sizeof($info['extensions']) >= sizeof($info['constants'])) {
-            foreach ($info['extensions'] as $i => $ext) {
-                if (isset($info['constants'][$i])) {
-                    $const = $info['constants'][$i];
-                } else {
-                    $const = '';
-                }
-                $table->addRow(array('', '', $ext, $const));
-            }
-        } else {
-            foreach ($info['constants'] as $i => $const) {
-                if (isset($info['extensions'][$i])) {
-                    $ext = $info['extensions'][$i];
-                } else {
-                    $ext = '';
-                }
-                $table->addRow(array('', '', $ext, $const));
-            }
-        }
+        $table->addSeparator();
+
         unset($info['max_version']);
         unset($info['version']);
         unset($info['extensions']);
@@ -246,38 +222,12 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             if ($info === false) {
                 continue;  // skip this (invalid) file
             }
-            if (!isset($info['extensions'][0])) {
-                $ext = '';
-            } else {
-                $ext = array_shift($info['extensions']);
-            }
+            $ext   = implode("\r\n", $info['extensions']);
+            $const = implode("\r\n", $info['constants']);
 
-            if (!isset($info['constants'][0])) {
-                $const = '';
-            } else {
-                $const = array_shift($info['constants']);
-            }
-            $key = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $file);
+            $file = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $file);
             $table->addRow(array($file, $info['version'], $ext, $const));
-            if (sizeof($info['extensions']) >= sizeof($info['constants'])) {
-                foreach ($info['extensions'] as $i => $ext) {
-                    if (isset($info['constants'][$i])) {
-                        $const = $info['constants'][$i];
-                    } else {
-                        $const = '';
-                    }
-                    $table->addRow(array('', '', $ext, $const));
-                }
-            } else {
-                foreach ($info['constants'] as $i => $const) {
-                    if (isset($info['extensions'][$i])) {
-                        $ext = $info['extensions'][$i];
-                    } else {
-                        $ext = '';
-                    }
-                    $table->addRow(array('', '', $ext, $const));
-                }
-            }
+            $table->addSeparator();
         }
 
         $output = $table->getTable();
@@ -302,87 +252,23 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             return;
         }
         $table = new Console_Table();
-        if ($this->debug == false) {
-            $table->setHeaders(array('File','Version','Extensions','Constants/Tokens'));
-            if (!isset($info['extensions'][0])) {
-                $ext = '';
-            } else {
-                $ext = array_shift($info['extensions']);
-            }
+        $table->setHeaders(array('File', 'Version', 'Extensions', 'Constants/Tokens'));
 
-            if (!isset($info['constants'][0])) {
-                $const = '';
-            } else {
-                $const = array_shift($info['constants']);
-            }
+        $ext   = implode("\r\n", $info['extensions']);
+        $const = implode("\r\n", $info['constants']);
 
-            $table->addRow(array($this->file, $info['version'], $ext, $const));
-            if (sizeof($info['extensions']) >= sizeof($info['constants'])) {
-                foreach ($info['extensions'] as $i => $ext) {
-                    if (isset($info['constants'][$i])) {
-                        $const = $info['constants'][$i];
-                    } else {
-                        $const = '';
-                    }
-                    $table->addRow(array('', '', $ext, $const));
-                }
-            } else {
-                foreach ($info['constants'] as $i => $const) {
-                    if (isset($info['extensions'][$i])) {
-                        $ext = $info['extensions'][$i];
-                    } else {
-                        $ext = '';
-                    }
-                    $table->addRow(array('', '', $ext, $const));
-                }
-            }
-        } else {
-            $table->setHeaders(array('File','Version','Extensions','Constants/Tokens'));
-
-            if (!isset($info['extensions'][0])) {
-                $ext = '';
-            } else {
-                $ext = array_shift($info['extensions']);
-            }
-
-            if (!isset($info['constants'][0])) {
-                $const = '';
-            } else {
-                $const = array_shift($info['constants']);
-            }
-
-            $table->addRow(array($this->file, $info['version'], $ext, $const));
-
-            if (sizeof($info['extensions']) >= sizeof($info['constants'])) {
-                foreach ($info['extensions'] as $i => $ext) {
-                    if (isset($info['constants'][$i])) {
-                        $const = $info['constants'][$i];
-                    } else {
-                        $const = '';
-                    }
-                    $table->addRow(array('', '', $ext, $const));
-                }
-            } else {
-                foreach ($info['constants'] as $i => $const) {
-                    if (isset($info['extensions'][$i])) {
-                        $ext = $info['extensions'][$i];
-                    } else {
-                        $ext = '';
-                    }
-                    $table->addRow(array('', '', $ext, $const));
-                }
-            }
-        }
+        $table->addRow(array($this->file, $info['version'], $ext, $const));
 
         $output = $table->getTable();
 
-        if ($this->debug == true) {
+        if ($this->debug === true) {
             $output .= "\nDebug:\n\n";
 
             $table = new Console_Table();
 
-            $table->setHeaders(array('Version','Function','Extension'));
+            $table->setHeaders(array('Version', 'Function', 'Extension'));
 
+            unset($info['max_version']);
             unset($info['version']);
             unset($info['constants']);
             unset($info['extensions']);
