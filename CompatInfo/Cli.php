@@ -207,7 +207,6 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
         $dir = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $this->dir);
         $table->addRow(array($dir . DIRECTORY_SEPARATOR . '*', $info['version'], $ext, $const));
-        $table->addSeparator();
 
         unset($info['max_version']);
         unset($info['version']);
@@ -226,8 +225,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $const = implode("\r\n", $info['constants']);
 
             $file = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $file);
-            $table->addRow(array($file, $info['version'], $ext, $const));
             $table->addSeparator();
+            $table->addRow(array($file, $info['version'], $ext, $const));
         }
 
         $output = $table->getTable();
