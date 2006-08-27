@@ -140,10 +140,6 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                         $this->file = $option[1];
                     }
                     break;
-                case 'h':
-                case '--help':
-                    $this->_printHelp();
-                    break;
             }
         }
     }
