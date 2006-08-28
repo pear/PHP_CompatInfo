@@ -197,6 +197,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         }
         $table = new Console_Table();
         $table->setHeaders(array('File', 'Version', 'Extensions', 'Constants/Tokens'));
+        $filter = array(&$this, '_splitFilename');
+        $table->addFilter(0, $filter);
 
         $ext   = implode("\r\n", $info['extensions']);
         $const = implode("\r\n", $info['constants']);
@@ -248,6 +250,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         }
         $table = new Console_Table();
         $table->setHeaders(array('File', 'Version', 'Extensions', 'Constants/Tokens'));
+        $filter = array(&$this, '_splitFilename');
+        $table->addFilter(0, $filter);
 
         $ext   = implode("\r\n", $info['extensions']);
         $const = implode("\r\n", $info['constants']);
@@ -278,6 +282,47 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         }
 
         echo $output;
+    }
+
+    /**
+     * The Console_Table filter callback limits output to 80 columns.
+     *
+     * @param  string $data  content of filename column (0)
+     * @return string
+     * @access private
+     * @since  1.3.0
+     */
+    function _splitFilename($data)
+    {
+        $str = '';
+        if (strlen($data) > 0) {
+            $sep = DIRECTORY_SEPARATOR;
+            $arr = explode($sep, $data);
+            $imax = count($arr);
+            $limit = 0;
+            $base = basename($data);
+            $base_length = 27 - strlen($base) - strlen($sep);
+
+            for ($i = 0; $i < $imax; $i++) {
+                if ($limit + strlen($arr[$i]) <= $base_length) {
+                    $s = $arr[$i] . $sep;
+                    $str .= $s;
+                    $limit = $limit + strlen($s);
+                } else {
+                    if ($this->split) {
+                        $str .= "\r\n" . $arr[$i] . $sep;
+                        $limit = 0;
+                    } else {
+                        $str .= '[...]' . $sep . $base;
+                        break;
+                    }
+                }
+            }
+            if (substr($str, -1) == $sep) {
+                $str = substr($str, 0, -1);
+            }
+        }
+        return $str;
     }
 
     /**
