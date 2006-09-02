@@ -14,9 +14,9 @@ rem @category   PHP
 rem @package    PHP_CompatInfo
 rem @author     Laurent Laville <pear@laurent-laville.org>
 rem @license    http://www.php.net/license/3_0.txt  PHP License 3.0
-rem @version    CVS: $Id: compatinfo.bat,v 1.1 2006-08-27 16:32:26 farell Exp $
+rem @version    CVS: $Id: compatinfo.bat,v 1.2 2006-09-02 09:43:49 farell Exp $
 rem @link       http://pear.php.net/package/PHP_CompatInfo
 rem @since      File available since Release 1.3.0
 
-@php_bin@ -d include_path="@php_dir@" -f @php_dir@/PHP/CompatInfo/pcicmd.php -- %1 %2 %3
+"@php_bin@" -d include_path="@php_dir@" -f "@php_dir@/PHP/CompatInfo/pcicmd.php" -- %1 %2 %3
 
