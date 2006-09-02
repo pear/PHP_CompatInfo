@@ -271,14 +271,12 @@ class PHP_CompatInfo
         $earliest_version = $this->earliest_version;
         $extensions = array();
         $constants = array();
-        $options = array_merge(
-            array(
-                'file_ext' => array('php', 'php4', 'inc', 'phtml'),
-                'is_string' => false,
-                'debug' => false,
-                'ignore_files' => array()
-                ),
-            $options);
+        $options = array_merge(array(
+            'file_ext' => array('php', 'php4', 'inc', 'phtml'),
+            'is_string' => false,
+            'debug' => false,
+            'ignore_files' => array()
+            ), $options);
         $options['ignore_files'] = array_map('strtolower', $options['ignore_files']);
         foreach ($files as $file) {
             if ($options['is_string'] === false) {
