@@ -87,11 +87,32 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     var $recurse = true;
 
     /**
+     * @var boolean Whether usage was already printed or not
+     * @since  1.3.1
+     */
+    var $usage = false;
+
+    /**
+     * @var int filename column size (max length)
+     * @since  1.3.1
+     */
+    var $split;
+
+    /**
+     * @var string  string to indicate that filename continue on next line
+     * @since  1.3.1
+     */
+    var $glue;
+
+    /**
      * ZE2 Constructor
      * @since  0.8.0
      */
-    function __construct()
+    function __construct($split = null, $glue = null)
     {
+        $this->split = (isset($split) && is_int($split)) ? $split : 32;
+        $this->glue  = (isset($glue) && is_string($glue)) ? $glue : '(+)';
+
         $opts = Console_Getopt::readPHPArgv();
         $short_opts = 'd:f:hn';
         $long_opts = array('dir=','file=','help','debug','no-recurse');
@@ -140,6 +161,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                         $this->file = $option[1];
                     }
                     break;
+                case 'h':
+                case '--help':
+                    $this->_printHelp();
+                    break;
             }
         }
     }
@@ -148,9 +173,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      * ZE1 PHP4 Compatible Constructor
      * @since  0.8.0
      */
-    function PHP_CompatInfo_Cli()
+    function PHP_CompatInfo_Cli($split = null, $glue = null)
     {
-        $this->__construct();
+        $this->__construct($split, $glue);
     }
 
     /**
@@ -170,8 +195,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 $this->_parseDir();
             } elseif (isset($this->file)) {
                 $this->_parseFile();
-            } else {
-                $this->_printHelp();
+            } elseif ($this->usage === false) {
+                $this->_printUsage();
             }
         }
     }
@@ -186,8 +211,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     function _parseDir()
     {
         $info = $this->parseDir($this->dir,
-            array('debug' => $this->debug, 'recurse_dir' => $this->recurse)
-            );
+            array('debug' => $this->debug, 'recurse_dir' => $this->recurse));
         if ($info === false) {
             echo 'No valid files into directory "' . $this->dir
                . '". Please check your spelling and try again.'
@@ -196,7 +220,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             return;
         }
         $table = new Console_Table();
-        $table->setHeaders(array('File', 'Version', 'Extensions', 'Constants/Tokens'));
+        $table->setHeaders(array('Path', 'Version', 'Extensions', 'Constants/Tokens'));
         $filter = array(&$this, '_splitFilename');
         $table->addFilter(0, $filter);
 
@@ -297,29 +321,21 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $str = '';
         if (strlen($data) > 0) {
             $sep = DIRECTORY_SEPARATOR;
-            $arr = explode($sep, $data);
-            $imax = count($arr);
-            $limit = 0;
             $base = basename($data);
-            $base_length = 27 - strlen($base) - strlen($sep);
+            $padding = $this->split - strlen($this->glue);
 
-            for ($i = 0; $i < $imax; $i++) {
-                if ($limit + strlen($arr[$i]) <= $base_length) {
-                    $s = $arr[$i] . $sep;
-                    $str .= $s;
-                    $limit = $limit + strlen($s);
-                } else {
-                    if ($this->split) {
-                        $str .= "\r\n" . $arr[$i] . $sep;
-                        $limit = 0;
-                    } else {
-                        $str .= '[...]' . $sep . $base;
-                        break;
-                    }
-                }
-            }
-            if (substr($str, -1) == $sep) {
-                $str = substr($str, 0, -1);
+            $dir = str_replace(array('\\', '/'), $sep, $this->dir);
+            $str = str_replace($dir, '[...]', dirname($data)) . $sep;
+
+            if (strlen($str) + strlen($base) > $this->split) {
+                 $str = str_pad($str, $padding) . $this->glue . "\r\n";
+                 if (strlen($base) > $this->split) {
+                     $str .= '[*]' . substr($base, (3 - $this->split)) ;
+                 } else {
+                     $str .= substr($base, -1 * $padding) ;
+                 }
+            } else {
+                 $str .= $base;
             }
         }
         return $str;
@@ -334,6 +350,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _printUsage()
     {
+        $this->usage = true;
         echo "\n";
         echo 'Usage:' . "\n";
         echo "  " .basename(__FILE__). ' --dir=DIR [--no-recurse] | --file=FILE [--debug] | [--help]';
