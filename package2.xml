@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>pear@laurent-laville.org</email>
   <active>yes</active>
  </lead>
- <date>2006-08-30</date>
- <time>18:48:17</time>
+ <date>2006-09-02</date>
+ <time>12:08:36</time>
  <version>
-  <release>1.3.0</release>
+  <release>1.3.1</release>
   <api>1.3.0</api>
  </version>
  <stability>
@@ -30,16 +30,17 @@ which shows which functions require which version and CLI output script</descrip
  </stability>
  <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
  <notes>* bugs
-- fixed bug #8559 : fails to scan if finds empty file in path
-- CLI version of PHP_CompatInfo won&apos;t print help usage more than once now
-- CLI version of PHP_CompatInfo is now compatible with Console_Table separator and multi-line cells support (requires version 1.0.4 or better)
+- fixed bug #8604 : notice undefined property (with CLI version)
 
 * news
-- a launcher for windows user (compatinfo.bat) to run the CLI version of PHP_CompatInfo.
+- add two custom options to beautify output
+  . split filename to 32 char max (limit full console_table to 80 columns)
+    it can be reduce or expand
+  . glue is a string to indicates that filename is splitted into multiline
+    (any string length and char is allow)
 
 * improvements
-- better render of PHP_CompatInfo_CLI output by using Console_Table separator.
-- PHP_CompatInfo_CLI output is limited to 80 columns
+- windows script launcher for CLI version is now protected for blanks into  directory name. Something like &quot;C:\Program Files\&quot;
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -57,6 +58,7 @@ which shows which functions require which version and CLI output script</descrip
      <file name="checkPHP5.php" role="doc" />
      <file name="ci_frontend.php" role="doc" />
      <file name="cliOutput.txt" role="doc" />
+     <file name="cliCustom.php" role="doc" />
      <file name="ignorePHP5implements.php" role="doc" />
      <file name="parseArray.php" role="doc" />
      <file name="parseDir.php" role="doc" />
@@ -123,6 +125,31 @@ which shows which functions require which version and CLI output script</descrip
  <changelog>
   <release>
    <version>
+    <release>1.3.1</release>
+    <api>1.3.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2006-09-02</date>
+   <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
+   <notes>* bugs
+- fixed bug #8604 : notice undefined property (with CLI version)
+
+* news
+- add two custom options to beautify output
+  . split filename to 32 char max (limit full console_table to 80 columns)
+    it can be reduce or expand
+  . glue is a string to indicates that filename is splitted into multiline
+    (any string length and char is allow)
+
+* improvements
+- windows script launcher for CLI version is now protected for blanks into  directory name. Something like &quot;C:\Program Files\&quot;
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.3.0</release>
     <api>1.3.0</api>
    </version>
@@ -142,7 +169,6 @@ which shows which functions require which version and CLI output script</descrip
 
 * improvements
 - better render of PHP_CompatInfo_CLI output by using Console_Table separator.</notes>
-- PHP_CompatInfo_CLI output is limited to 80 columns
   </release>
   <release>
    <version>
