@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>pear@laurent-laville.org</email>
   <active>yes</active>
  </lead>
- <date>2006-09-02</date>
- <time>12:08:36</time>
+ <date>2006-09-09</date>
+ <time>16:46:03</time>
  <version>
-  <release>1.3.1</release>
+  <release>1.3.2</release>
   <api>1.3.0</api>
  </version>
  <stability>
@@ -30,17 +30,11 @@ which shows which functions require which version and CLI output script</descrip
  </stability>
  <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
  <notes>* bugs
-- fixed bug #8604 : notice undefined property (with CLI version)
+fixed &quot;_splitfilename&quot; console_table filter callback to works fine (limit to 80 cols) both with dir and only one file to parse.
 
 * news
-- add two custom options to beautify output
-  . split filename to 32 char max (limit full console_table to 80 columns)
-    it can be reduce or expand
-  . glue is a string to indicates that filename is splitted into multiline
-    (any string length and char is allow)
+stop using/generating package.xml 1.0 (that means you should have at least PEAR 1.4.0)
 
-* improvements
-- windows script launcher for CLI version is now protected for blanks into  directory name. Something like &quot;C:\Program Files\&quot;
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -57,8 +51,8 @@ which shows which functions require which version and CLI output script</descrip
      <file name="checkConstants.php" role="doc" />
      <file name="checkPHP5.php" role="doc" />
      <file name="ci_frontend.php" role="doc" />
-     <file name="cliOutput.txt" role="doc" />
      <file name="cliCustom.php" role="doc" />
+     <file name="cliOutput.txt" role="doc" />
      <file name="ignorePHP5implements.php" role="doc" />
      <file name="parseArray.php" role="doc" />
      <file name="parseDir.php" role="doc" />
@@ -125,6 +119,25 @@ which shows which functions require which version and CLI output script</descrip
  <changelog>
   <release>
    <version>
+    <release>1.3.2</release>
+    <api>1.3.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2006-09-09</date>
+   <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
+   <notes>* bugs
+fixed &quot;_splitfilename&quot; console_table filter callback to works fine (limit to 80 cols) both with dir and only one file to parse.
+
+* news
+stop using/generating package.xml 1.0 (that means you should have at least PEAR 1.4.0)
+
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.3.1</release>
     <api>1.3.0</api>
    </version>
@@ -145,8 +158,7 @@ which shows which functions require which version and CLI output script</descrip
     (any string length and char is allow)
 
 * improvements
-- windows script launcher for CLI version is now protected for blanks into  directory name. Something like &quot;C:\Program Files\&quot;
-   </notes>
+- windows script launcher for CLI version is now protected for blanks into  directory name. Something like &quot;C:\Program Files\&quot;</notes>
   </release>
   <release>
    <version>
