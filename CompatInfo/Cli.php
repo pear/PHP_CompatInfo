@@ -324,7 +324,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $base = basename($data);
             $padding = $this->split - strlen($this->glue);
 
-            $dir = str_replace(array('\\', '/'), $sep, $this->dir);
+            if (isset($this->dir)) {
+                $dir = str_replace(array('\\', '/'), $sep, $this->dir);
+            } else {
+                $dir = str_replace(array('\\', '/'), $sep, dirname($data));
+            }
             $str = str_replace($dir, '[...]', dirname($data)) . $sep;
 
             if (strlen($str) + strlen($base) > $this->split) {
