@@ -399,6 +399,21 @@ class PHP_CompatInfo
         } else {
             $options['ignore_constants'] = array();
         }
+        if (isset($options['ignore_extensions'])) {
+            $options['ignore_extensions'] = array_map('strtolower', $options['ignore_extensions']);
+        } else {
+            $options['ignore_extensions'] = array();
+        }
+        if (isset($options['ignore_versions'][0])) {
+            $min_ver = $options['ignore_versions'][0];
+        } else {
+            $min_ver = false;
+        }
+        if (isset($options['ignore_versions'][1])) {
+            $max_ver = $options['ignore_versions'][1];
+        } else {
+            $max_ver = false;
+        }
 
         $token_count = sizeof($tokens);
         $i = 0;
@@ -433,8 +448,11 @@ class PHP_CompatInfo
                 $const = strtoupper($tokens[$i][1]);
                 $found = array_search($const, $akeys);
                 if ($found !== false && !in_array($const, $options['ignore_constants'])) {
-                    $constants[] = $const;
-                    $latest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$const]['init'];
+                    if (!PHP_CompatInfo::_ignore($GLOBALS['_PHP_COMPATINFO_CONST'][$const]['init'],
+                        $min_ver, $max_ver)) {
+                        $constants[] = $const;
+                        $latest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$const]['init'];
+                    }
                 }
             }
             $i += 1;
@@ -447,8 +465,34 @@ class PHP_CompatInfo
             $options['ignore_functions'] = array();
         }
         foreach ($functions as $name) {
-            if (isset($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]) && (!in_array($name, $udf) &&
-                (!in_array($name, $options['ignore_functions'])))) {
+            if (!isset($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name])) {
+                continue;  // skip this unknown function
+            }
+
+            // retrieve if available the extension name
+            if ((isset($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'])) &&
+                ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'ext_standard') &&
+                ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'zend')) {
+                $extension = substr($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'], 4);
+                if ($extension{0} == '_') {
+                    $extension = substr($extension, 1);
+                }
+            } else {
+                $extension = false;
+            }
+
+            if ((!in_array($name, $udf))
+                && (!in_array($name, $options['ignore_functions']))) {
+
+                if ($extension && in_array($extension, $options['ignore_extensions'])) {
+                    continue;  // skip this extension function
+                }
+
+                if (PHP_CompatInfo::_ignore($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['init'],
+                    $min_ver, $max_ver)) {
+                    continue;  // skip this function version
+                }
+
                 if ($options['debug'] == true) {
                     $functions_version[$GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['init']][] = array(
                         'function' => $name,
@@ -465,26 +509,20 @@ class PHP_CompatInfo
                         $earliest_version = $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['end'];
                     }
                 }
-                if ((!empty($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'])) &&
-                    ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'ext_standard') &&
-                    ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'zend')) {
-                    $extension = substr($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'], 4);
-                    if ($extension{0} != '_') {
-                        if (!in_array($extension, $extensions)) {
-                            $extensions[] = $extension;
-                        }
-                    } else {
-                        $extension = substr($extension, 1);
-                        if (!in_array($extension, $extensions)) {
-                            $extensions[] = $extension;
-                        }
-                    }
+
+                if ($extension && !in_array($extension, $extensions)) {
+                    $extensions[] = $extension;
                 }
             }
         }
 
         $constants = array_unique($constants);
         foreach ($constants as $constant) {
+            if (PHP_CompatInfo::_ignore($GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['init'],
+                $min_ver, $max_ver)) {
+                continue;  // skip this constant version
+            }
+
             $cmp = version_compare($latest_version, $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['init']);
             if ($cmp === -1) {
                 $latest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['init'];
@@ -508,6 +546,27 @@ class PHP_CompatInfo
         $functions_version['max_version'] = $earliest_version;
         $functions_version = array_reverse($functions_version);
         return $functions_version;
+    }
+
+    /**
+     * @access private
+     * @return boolean True to ignore function/constant, false otherwise
+     * @since  1.4.0
+     */
+    function _ignore($init, $min_ver, $max_ver)
+    {
+        if ($min_ver) {
+            $cmp = version_compare($init, $min_ver);
+            if ($max_ver && $cmp >= 0) {
+                $cmp = version_compare($init, $max_ver);
+                if ($cmp < 1) {
+                    return true;
+                }
+            } elseif ($cmp === 0) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
