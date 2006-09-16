@@ -81,6 +81,10 @@ class PHP_CompatInfo
      *                       when calculating the version needed.
      *  - 'ignore_constants' Contains an array of constants to ignore
      *                       when calculating the version needed.
+     *  - 'ignore_extensions' Contains an array of php extensions to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_versions'  Contains an array of php versions to ignore
+     *                       when calculating the version needed.
      * @access public
      * @return Array
      * @since  0.7.0
@@ -105,6 +109,10 @@ class PHP_CompatInfo
      *  - 'ignore_functions' Contains an array of functions to ignore
      *                       when calculating the version needed.
      *  - 'ignore_constants' Contains an array of constants to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_extensions' Contains an array of php extensions to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_versions'  Contains an array of php versions to ignore
      *                       when calculating the version needed.
      * @access public
      * @return Array
@@ -139,6 +147,10 @@ class PHP_CompatInfo
      *                       File names are case insensitive.
      *  - 'ignore_dirs'      Contains an array of directories to ignore.
      *                       Directory names are case insensitive.
+     *  - 'ignore_extensions' Contains an array of php extensions to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_versions'  Contains an array of php versions to ignore
+     *                       when calculating the version needed.
      * @access public
      * @return array
      * @since  0.8.0
@@ -260,6 +272,10 @@ class PHP_CompatInfo
      *                       File names are case insensitive.
      *  - 'is_string'        Contains a boolean which says if the array values
      *                       are strings or file names.
+     *  - 'ignore_extensions' Contains an array of php extensions to ignore
+     *                       when calculating the version needed.
+     *  - 'ignore_versions'  Contains an array of php versions to ignore
+     *                       when calculating the version needed.
      * @access public
      * @return array|false
      * @since  0.7.0
@@ -549,9 +565,16 @@ class PHP_CompatInfo
     }
 
     /**
+     * Checks if function which has $init version should be keep
+     * or ignore (version is between $min_ver and $max_ver).
+     *
+     * @param  string $init     version of current function
+     * @param  string $min_ver  minimum version of function to ignore
+     * @param  string $max_ver  maximum version of function to ignore
      * @access private
      * @return boolean True to ignore function/constant, false otherwise
      * @since  1.4.0
+     * @static
      */
     function _ignore($init, $min_ver, $max_ver)
     {
