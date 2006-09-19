@@ -243,7 +243,9 @@ class PHP_CompatInfo
     /**
      * Alias of parseDir
      *
-     * @uses PHP_CompatInfo::parseDir()
+     * @param  string $folder  Path of folder to parse
+     * @param  array  $options An array of options
+     * @uses   PHP_CompatInfo::parseDir()
      * @access public
      * @since  0.7.0
      */
