@@ -21,7 +21,7 @@
  */
 
 require_once 'PHP/CompatInfo.php';
-require_once 'Console/Getopt.php';
+require_once 'Console/Getargs.php';
 require_once 'Console/Table.php';
 
 /**
@@ -57,10 +57,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     var $opts = array();
 
     /**
-     * @var boolean Whether an error has occured
+     * @var string  error message
      * @since  0.8.0
      */
-    var $error = false;
+    var $error;
 
     /**
      * @var string File to be Processed
@@ -75,24 +75,6 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     var $dir;
 
     /**
-     * @var boolean Whether to show debug output
-     * @since  0.8.0
-     */
-    var $debug;
-
-    /**
-     * @var boolean Whether to recurse directories when using --dir or -d
-     * @since  0.8.0
-     */
-    var $recurse = true;
-
-    /**
-     * @var boolean Whether usage was already printed or not
-     * @since  1.3.1
-     */
-    var $usage = false;
-
-    /**
      * @var int filename column size (max length)
      * @since  1.3.1
      */
@@ -105,6 +87,18 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     var $glue;
 
     /**
+     * @var object  Console_Getargs instance
+     * @since  1.4.0
+     */
+    var $args;
+
+    /**
+     * @var array Current parser options
+     * @since  1.4.0
+     */
+    var $options = array();
+
+    /**
      * ZE2 Constructor
      * @since  0.8.0
      */
@@ -113,58 +107,176 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $this->split = (isset($split) && is_int($split)) ? $split : 32;
         $this->glue  = (isset($glue) && is_string($glue)) ? $glue : '(+)';
 
-        $opts = Console_Getopt::readPHPArgv();
-        $short_opts = 'd:f:hn';
-        $long_opts = array('dir=','file=','help','debug','no-recurse');
-        $this->opts = Console_Getopt::getopt($opts, $short_opts, $long_opts);
-        if (PEAR::isError($this->opts)) {
-            $this->error = true;
+        $this->opts = array(
+            'dir' =>
+                array('short' => 'd',
+                      'desc'  => 'Parse DIR to get its compatibility info',
+                      'min'   => 1 , 'max' => 1),
+            'file' =>
+                array('short' => 'f',
+                      'desc' => 'Parse FILE to get its compatibility info',
+                      'min'   => 1 , 'max' => 1),
+            'verbose' =>
+                array('short'   => 'v',
+                      'desc'    => 'Set the verbose level',
+                      'default' => 1,
+                      'min'     => 0 , 'max' => 1),
+            'no-recurse' =>
+                array('short' => 'n',
+                      'desc'  => 'Do not recursively parse files when using --dir',
+                      'max'   => 0),
+            'ignore-files' =>
+                array('short'   => 'if',
+                      'desc'    => 'Data file name which contains a list of '
+                                 . 'file to ignore',
+                      'default' => 'files.txt',
+                      'min'     => 0 , 'max' => 1),
+            'ignore-dirs' =>
+                array('short'   => 'id',
+                      'desc'    => 'Data file name which contains a list of '
+                                 . 'directory to ignore',
+                      'default' => 'dirs.txt',
+                      'min'     => 0 , 'max' => 1),
+            'ignore-functions' =>
+                array('short'   => 'in',
+                      'desc'    => 'Data file name which contains a list of '
+                                 . 'php function to ignore',
+                      'default' => 'functions.txt',
+                      'min'     => 0 , 'max' => 1),
+            'ignore-constants' =>
+                array('short'   => 'ic',
+                      'desc'    => 'Data file name which contains a list of '
+                                 . 'php constant to ignore',
+                      'default' => 'constants.txt',
+                      'min'     => 0 , 'max' => 1),
+            'ignore-extensions' =>
+                array('short'   => 'ie',
+                      'desc'    => 'Data file name which contains a list of '
+                                 . 'php extension to ignore',
+                      'default' => 'extensions.txt',
+                      'min'     => 0 , 'max' => 1),
+            'ignore-versions' =>
+                array('short'   => 'iv',
+                      'desc'    => 'PHP versions - functions to exclude '
+                                 . 'when parsing source code',
+                      'min'     => 1 , 'max' => 2),
+            'help' =>
+                array('short' => 'h',
+                      'desc'  => 'Show this help',
+                      'max'   => 0),
+        );
+        $this->args = & Console_Getargs::factory($this->opts);
+        if (PEAR::isError($this->args)) {
+            if ($this->args->getCode() === CONSOLE_GETARGS_HELP) {
+                $this->error = '';
+            } else {
+                $this->error = $this->args->getMessage();
+            }
             return;
         }
-        foreach ($this->opts[0] as $option) {
-            switch ($option[0]) {
-                case '--no-recurse':
-                case 'n':
-                    $this->recurse = false;
-                    break;
-                case '--debug':
-                    $this->debug = true;
-                    break;
-                case '--dir':
-                    $this->dir = $option[1];
-                    if ($this->dir{strlen($this->dir)-1} == '/' ||
-                        $this->dir{strlen($this->dir)-1} == '\\') {
-                        $this->dir = substr($this->dir, 0, -1);
-                    }
-                    $this->dir = str_replace('\\', '/', realpath($this->dir));
-                    break;
-                case 'd':
-                    if ($option[1]{0} == '=') {
-                        $this->dir = substr($option[1], 1);
-                    } else {
-                        $this->dir = $option[1];
-                    }
 
-                    if ($this->dir{strlen($this->dir)-1} == '/' ||
-                        $this->dir{strlen($this->dir)-1} == '\\') {
-                        $this->dir = substr($this->dir, 0, -1);
-                    }
-                    $this->dir = str_replace('\\', '/', realpath($this->dir));
-                    break;
-                case '--file':
-                    $this->file = $option[1];
-                    break;
-                case 'f':
-                    if ($option[1]{0} == '=') {
-                        $this->file = substr($option[1], 1);
-                    } else {
-                        $this->file = $option[1];
-                    }
-                    break;
-                case 'h':
-                case '--help':
-                    $this->_printHelp();
-                    break;
+        // debug
+        if ($this->args->isDefined('v')) {
+            $v = $this->args->getValue('v');
+            if ($v > 3) {
+                $this->options['debug'] = true;
+            }
+        }
+
+        // no-recurse
+        if ($this->args->isDefined('n')) {
+            $this->options['recurse_dir'] = false;
+        }
+
+        // dir
+        if ($this->args->isDefined('d')) {
+            $d = $this->args->getValue('d');
+            if (file_exists($d)) {
+                if ($d{strlen($d)-1} == '/' || $d{strlen($d)-1} == '\\') {
+                    $d = substr($d, 0, -1);
+                }
+                $this->dir = str_replace('\\', '/', realpath($d));
+            } else {
+                $this->error = 'Failed opening directory "' . $d
+                     . '". Please check your spelling and try again.';
+                return;
+            }
+        }
+
+        // file
+        if ($this->args->isDefined('f')) {
+            $f = $this->args->getValue('f');
+            if (file_exists($f)) {
+                $this->file = $f;
+            } else {
+                $this->error = 'Failed opening file "' . $f
+                     . '". Please check your spelling and try again.';
+                return;
+            }
+        }
+
+        // ignore-files
+        $if = $this->args->getValue('if');
+        if (isset($if)) {
+            if (file_exists($if)) {
+                $this->options['ignore_files'] = file($if);
+            } else {
+                $this->error = 'Failed opening file "' . $if
+                     . '" (ignore-files option). '
+                     . 'Please check your spelling and try again.';
+                return;
+            }
+        }
+
+        // ignore-dirs
+        $id = $this->args->getValue('id');
+        if (isset($id)) {
+            if (file_exists($id)) {
+                $this->options['ignore_dirs'] = file($id);
+            } else {
+                $this->error = 'Failed opening file "' . $id
+                     . '" (ignore-dirs option). '
+                     . 'Please check your spelling and try again.';
+                return;
+            }
+        }
+
+        // ignore-functions
+        $in = $this->args->getValue('in');
+        if (isset($in)) {
+            if (file_exists($in)) {
+                $this->options['ignore_functions'] = file($in);
+            } else {
+                $this->error = 'Failed opening file "' . $in
+                     . '" (ignore-functions option). '
+                     . 'Please check your spelling and try again.';
+                return;
+            }
+        }
+
+        // ignore-constants
+        $ic = $this->args->getValue('ic');
+        if (isset($ic)) {
+            if (file_exists($ic)) {
+                $this->options['ignore_constants'] = file($ic);
+            } else {
+                $this->error = 'Failed opening file "' . $ic
+                     . '" (ignore-constants option). '
+                     . 'Please check your spelling and try again.';
+                return;
+            }
+        }
+
+        // ignore-extensions
+        $ie = $this->args->getValue('ie');
+        if (isset($ie)) {
+            if (file_exists($ie)) {
+                $this->options['ignore_extensions'] = file($ie);
+            } else {
+                $this->error = 'Failed opening file "' . $ie
+                     . '" (ignore-extensions option). '
+                     . 'Please check your spelling and try again.';
+                return;
             }
         }
     }
@@ -187,16 +299,13 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function run()
     {
-        if ($this->error === true) {
-            echo $this->opts->message;
-            $this->_printUsage();
+        if (isset($this->error)) {
+            $this->_printUsage($this->error);
         } else {
             if (isset($this->dir)) {
                 $this->_parseDir();
             } elseif (isset($this->file)) {
                 $this->_parseFile();
-            } elseif ($this->usage === false) {
-                $this->_printUsage();
             }
         }
     }
@@ -210,13 +319,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _parseDir()
     {
-        $info = $this->parseDir($this->dir,
-            array('debug' => $this->debug, 'recurse_dir' => $this->recurse));
+        $info = $this->parseDir($this->dir, $this->options);
         if ($info === false) {
-            echo 'No valid files into directory "' . $this->dir
-               . '". Please check your spelling and try again.'
-               . "\n";
-            $this->_printUsage();
+            $err = 'No valid files into directory "' . $this->dir
+               . '". Please check your spelling and try again.';
+            $this->_printUsage($err);
             return;
         }
         $table = new Console_Table();
@@ -252,6 +359,52 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         }
 
         $output = $table->getTable();
+
+        // verbose level
+        $v = $this->args->getValue('v');
+
+        // command line resume
+        if ($v & 1) {
+            $output .= "\nCommand Line resume :\n\n";
+
+            $table = new Console_Table();
+            $table->setHeaders(array('Option', 'Value'));
+
+            $opts = $this->args->getValues();
+            if (is_array($opts)) {
+                foreach($opts as $key => $raw) {
+                    $contents = array($key, $raw);
+                    $table->addRow($contents);
+                }
+            }
+
+            $output .= $table->getTable();
+        }
+
+        // parser options resume
+        if ($v & 2) {
+            $output .= "\nParser options :\n\n";
+
+            $table = new Console_Table();
+            $table->setHeaders(array('Option', 'Value'));
+
+            $opts = $this->options;
+            if (is_array($opts)) {
+                foreach($opts as $key => $raw) {
+                    if ($key == 'debug' || $key == 'recurse_dir') {
+                        $raw = ($raw === true) ? 'TRUE' : 'FALSE';
+                    }
+                    if (is_array($raw)) {
+                        $raw = implode("\r\n", $raw);
+                    }
+                    $contents = array($key, $raw);
+                    $table->addRow($contents);
+                }
+            }
+
+            $output .= $table->getTable();
+        }
+
         echo $output;
     }
 
@@ -264,12 +417,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _parseFile()
     {
-        $info = $this->parseFile($this->file, array('debug' => $this->debug));
+        $info = $this->parseFile($this->file, $this->options);
         if ($info === false) {
-            echo 'Failed opening file "' . $this->file
-               . '". Please check your spelling and try again.'
-               . "\n";
-            $this->_printUsage();
+            $err = 'Failed opening file "' . $this->file
+               . '". Please check your spelling and try again.';
+            $this->_printUsage($err);
             return;
         }
         $table = new Console_Table();
@@ -284,11 +436,56 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
         $output = $table->getTable();
 
-        if ($this->debug === true) {
+        // verbose level
+        $v = $this->args->getValue('v');
+
+        // command line resume
+        if ($v & 1) {
+            $output .= "\nCommand Line resume :\n\n";
+
+            $table = new Console_Table();
+            $table->setHeaders(array('Option', 'Value'));
+
+            $opts = $this->args->getValues();
+            if (is_array($opts)) {
+                foreach($opts as $key => $raw) {
+                    $contents = array($key, $raw);
+                    $table->addRow($contents);
+                }
+            }
+
+            $output .= $table->getTable();
+        }
+
+        // parser options resume
+        if ($v & 2) {
+            $output .= "\nParser options :\n\n";
+
+            $table = new Console_Table();
+            $table->setHeaders(array('Option', 'Value'));
+
+            $opts = $this->options;
+            if (is_array($opts)) {
+                foreach($opts as $key => $raw) {
+                    if ($key == 'debug' || $key == 'recurse_dir') {
+                        $raw = ($raw === true) ? 'TRUE' : 'FALSE';
+                    }
+                    if (is_array($raw)) {
+                        $raw = implode("\r\n", $raw);
+                    }
+                    $contents = array($key, $raw);
+                    $table->addRow($contents);
+                }
+            }
+
+            $output .= $table->getTable();
+        }
+
+        // extra information
+        if ($v & 4) {
             $output .= "\nDebug:\n\n";
 
             $table = new Console_Table();
-
             $table->setHeaders(array('Version', 'Function', 'Extension'));
 
             unset($info['max_version']);
@@ -346,42 +543,16 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     }
 
     /**
-     * Show basic Usage
-     *
-     * @return void
-     * @access private
-     * @since  0.8.0
-     */
-    function _printUsage()
-    {
-        $this->usage = true;
-        echo "\n";
-        echo 'Usage:' . "\n";
-        echo "  " .basename(__FILE__). ' --dir=DIR [--no-recurse] | --file=FILE [--debug] | [--help]';
-        echo "\n";
-    }
-
-    /**
      * Show full help information
      *
      * @return void
      * @access private
      * @since  0.8.0
      */
-    function _printHelp()
+    function _printUsage($footer = '')
     {
-        $this->_printUsage();
-        echo "Commands:\n";
-        echo "  --file=FILE (-f) \tParse FILE to get its Compatibility Info";
-        echo "\n";
-        echo "  --dir=DIR (-d) \tParse DIR to get its Compatibility Info";
-        echo "\n";
-        echo "  --no-recurse (-n) \tDo not Recursively parse files when using --dir";
-        echo "\n";
-        echo "  --debug\t\tDisplay Extra (debug) Information when using --file";
-        echo "\n";
-        echo "  --help (-h) \t\tShow this help";
-        echo "\n";
+        $header = 'Usage: ' . basename($_SERVER['SCRIPT_NAME']) . " [options]\n\n";
+        echo Console_Getargs::getHelp($this->opts, $header, "\n$footer\n", 78, 2)."\n";
     }
 }
 ?>
