@@ -284,6 +284,15 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 return;
             }
         }
+
+        // ignore-versions
+        $iv = $this->args->getValue('iv');
+        if (isset($iv)) {
+            if (!is_array($iv)) {
+                $iv = array($iv);
+            }
+            $this->options['ignore_versions'] = $iv;
+        }
     }
 
     /**
@@ -378,6 +387,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $opts = $this->args->getValues();
             if (is_array($opts)) {
                 foreach($opts as $key => $raw) {
+                    if (is_array($raw)) {
+                        $raw = implode(', ', $raw);
+                    }
                     $contents = array($key, $raw);
                     $table->addRow($contents);
                 }
@@ -454,6 +466,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $opts = $this->args->getValues();
             if (is_array($opts)) {
                 foreach($opts as $key => $raw) {
+                    if (is_array($raw)) {
+                        $raw = implode(', ', $raw);
+                    }
                     $contents = array($key, $raw);
                     $table->addRow($contents);
                 }
