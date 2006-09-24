@@ -219,7 +219,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $if = $this->args->getValue('if');
         if (isset($if)) {
             if (file_exists($if)) {
-                $this->options['ignore_files'] = file($if);
+                $options = file($if);
+                $this->options['ignore_files'] = array_map('rtrim', $options);
             } else {
                 $this->error = 'Failed opening file "' . $if
                      . '" (ignore-files option). '
@@ -232,7 +233,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $id = $this->args->getValue('id');
         if (isset($id)) {
             if (file_exists($id)) {
-                $this->options['ignore_dirs'] = file($id);
+                $options = file($id);
+                $this->options['ignore_dirs'] = array_map('rtrim', $options);
             } else {
                 $this->error = 'Failed opening file "' . $id
                      . '" (ignore-dirs option). '
@@ -245,7 +247,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $in = $this->args->getValue('in');
         if (isset($in)) {
             if (file_exists($in)) {
-                $this->options['ignore_functions'] = file($in);
+                $options = file($in);
+                $this->options['ignore_functions'] = array_map('rtrim', $options);
             } else {
                 $this->error = 'Failed opening file "' . $in
                      . '" (ignore-functions option). '
@@ -258,7 +261,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $ic = $this->args->getValue('ic');
         if (isset($ic)) {
             if (file_exists($ic)) {
-                $this->options['ignore_constants'] = file($ic);
+                $options = file($ic);
+                $this->options['ignore_constants'] = array_map('rtrim', $options);
             } else {
                 $this->error = 'Failed opening file "' . $ic
                      . '" (ignore-constants option). '
@@ -271,7 +275,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $ie = $this->args->getValue('ie');
         if (isset($ie)) {
             if (file_exists($ie)) {
-                $this->options['ignore_extensions'] = file($ie);
+                $options = file($ie);
+                $this->options['ignore_extensions'] = array_map('rtrim', $options);
             } else {
                 $this->error = 'Failed opening file "' . $ie
                      . '" (ignore-extensions option). '
