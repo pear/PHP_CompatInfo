@@ -23,6 +23,9 @@
 
 require_once 'PHP/CompatInfo.php';
 
+/**
+ * @ignore
+ */
 abstract class AbstractClass
 {
     abstract protected function getValue();
@@ -51,8 +54,9 @@ class Template implements iTemplate
     }
 }
 
-
-
+/**
+ * @ignore
+ */
 class BaseClass
 {
     public $objet1;
