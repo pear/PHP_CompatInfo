@@ -1,0 +1,329 @@
+<html>
+<head>
+   <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
+   <title>Detection of files into a directory</title>
+   <link href="book.css" rel="stylesheet" type="text/css">
+   <meta content="DocBook XSL Stylesheets V1.69.1" name="generator">
+   <link href="index.html" rel="start" title="PHP_CompatInfo Manual">
+   <link href="ch05.html" rel="up" title="Chapter 5. Advanced detection">
+   <link href="ch05.html" rel="prev" title="Chapter 5. Advanced detection">
+   <link href="pt03.html" rel="next" title="Part III. Reference Guide">
+</head>
+<body alink="#0000FF" bgcolor="white" link="#0000FF" text="black" vlink="#840084">
+<table class="pciHeader">
+   <tr>
+      <td><img align="left" alt="PEAR logo" src="img/pearsmall.gif">
+         <h1>PHP_CompatInfo : The Definitive Guide</h1>
+
+         <p>
+         <div class="navheader">
+            <table summary="Navigation header" width="100%">
+               <tr>
+                  <th align="center" colspan="3">Detection of files into a directory</th>
+               </tr>
+               <tr>
+                  <td align="left" width="20%"><a accesskey="p" href="ch05.html">Prev</a> </td>
+                  <th align="center" width="60%">Chapter 5. Advanced detection</th><td align="right" width="20%"> <a accesskey="n" href="pt03.html">Next</a></td>
+               </tr>
+            </table>
+         </div></p>
+      </td>
+   </tr>
+</table>
+<div class="sect1" lang="en"><div class="titlepage"><div><div>
+            <h2 class="title" style="clear: both">
+            <a name="developers.advanced.dir"></a>Detection of files into a directory</h2></div>
+      </div>
+   </div>
+   <div class="toc">
+      <dl><dt><span class="sect2"><a href="ch05s02.html#id4777093">Usage with SAPI</a></span></dt><dt><span class="sect2"><a href="ch05s02.html#id4777350">Usage with CLI</a></span></dt>
+      </dl>
+   </div>
+   <div class="sect2" lang="en"><div class="titlepage"><div><div>
+               <h3 class="title"><a name="id4777093"></a>Usage with SAPI</h3></div>
+         </div>
+      </div>
+
+      <p>If you read analogous 
+      <a href="ch04s02.html" title="Detection of files into a directory">Basic detection</a> chapter, you have certainly noticed that detection of HTML_AJAX 0.5.0 distribution directories gave result PHP 5.0.0. We expect to have PHP minimum 4.2.1 </p>
+
+      <p>Why such version. If we have a look on basic raw result (array) we could found two files with version 5.0.0 : The first one is </p>
+<pre class="screen">
+["c:\pear\html\HTML_Ajax-0.5.0\examples\support\xml.class.php"]=&gt;
+  array(4) {
+    ["max_version"]=&gt;
+    string(0) ""
+    ["version"]=&gt;
+    string(5) "5.0.0"
+    ["extensions"]=&gt;
+    array(1) {
+      [0]=&gt;
+      string(6) "domxml"
+    }
+    ["constants"]=&gt;
+    array(0) {
+    }
+  }
+     </pre>
+
+      <p></p>
+
+      <p>If you have a cursory source review, you will see that this file is an alternative to PHP 4 Dom XML extension with new native PHP 5 class DOMDocument. </p>
+      <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+         <table border="0" summary="Tip">
+            <tr>
+               <td align="center" rowspan="2" valign="top" width="48px"><img alt="[Tip]" src="img/admons/tip.png"></td>
+               <th align="left">Tip</th>
+            </tr>
+            <tr>
+               <td align="left" valign="top"> To solve this situation, you can ignore this optional (example) file, or simply ignore conditional function call to 
+                  <code class="methodname">file_put_contents</code> (came with PHP 4.3.0) 
+<pre class="programlisting">
+        
+&lt;?php
+$options = array('ignore_files' =&gt;
+  array('C:\PEAR\HTML\HTML_AJAX-0.5.0\examples\support\xml.class.php')
+  );
+?&gt;
+        
+       </pre>
+               </td>
+            </tr>
+         </table>
+      </div>
+
+      <p></p>
+
+      <p>The second file is : </p>
+<pre class="screen">
+ ["c:\pear\html\HTML_Ajax-0.5.0\AJAX.php"]=&gt;
+  array(4) {
+    ["max_version"]=&gt;
+    string(0) ""
+    ["version"]=&gt;
+    string(5) "5.0.0"
+    ["extensions"]=&gt;
+    array(3) {
+      [0]=&gt;
+      string(4) "pcre"
+      [1]=&gt;
+      string(4) "curl"
+      [2]=&gt;
+      string(7) "sockets"
+    }
+    ["constants"]=&gt;
+    array(0) {
+    }
+  }
+     </pre>
+
+      <p></p>
+
+      <p>If you have a cursory source review, you will find easily condition code switch around PHP 5 native functions 
+      <code class="methodname">set_exception_handler</code>, and 
+      <code class="methodname">restore_exception_handler</code>. </p>
+      <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+         <table border="0" summary="Tip">
+            <tr>
+               <td align="center" rowspan="2" valign="top" width="48px"><img alt="[Tip]" src="img/admons/tip.png"></td>
+               <th align="left">Tip</th>
+            </tr>
+            <tr>
+               <td align="left" valign="top"> To solve this situation, you only need to ignore these functions with : 
+<pre class="programlisting">
+        
+&lt;?php
+$options = array('ignore_functions' =&gt;
+  array('set_exception_handler', 'restore_exception_handler')
+  );
+?&gt;
+        
+       </pre>
+               </td>
+            </tr>
+         </table>
+      </div>
+
+      <p></p>
+
+      <p></p>
+
+      <p>Even with these two fixes, PHP_CompatInfo still give wrong results. If we continue to check files list, we will find an example script "C:\PEAR\HTML\HTML_AJAX-0.5.0\examples\support\xml.class.php" with native 
+      <code class="methodname">file_get_contents</code> (came with PHP version 4.3.0). </p>
+      <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+         <table border="0" summary="Tip">
+            <tr>
+               <td align="center" rowspan="2" valign="top" width="48px"><img alt="[Tip]" src="img/admons/tip.png"></td>
+               <th align="left">Tip</th>
+            </tr>
+            <tr>
+               <td align="left" valign="top"> Ignore all optional files such as example scripts. 
+               </td>
+            </tr>
+         </table>
+      </div>
+
+      <p>and the main class file (AJAX.php) with two native PHP 4.3.0 functions 
+      <code class="methodname">file_get_contents</code>, and 
+      <code class="methodname">stream_context_create</code>. But to run this chunk of code you need at least PHP 5.0.0, see if-condition few lines backward with 
+      <code class="methodname">version_compare</code>. </p>
+      <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+         <table border="0" summary="Tip">
+            <tr>
+               <td align="center" rowspan="2" valign="top" width="48px"><img alt="[Tip]" src="img/admons/tip.png"></td>
+               <th align="left">Tip</th>
+            </tr>
+            <tr>
+               <td align="left" valign="top"> Ignore both functions 
+                  <code class="methodname">file_get_contents</code>, and 
+                  <code class="methodname">stream_context_create</code>. 
+               </td>
+            </tr>
+         </table>
+      </div>
+
+      <p></p>
+
+      <p></p>
+
+      <p>Here is now the full detection script. </p>
+<pre class="programlisting">
+      
+&lt;?php
+require_once 'PHP/CompatInfo.php';
+
+$info = new PHP_CompatInfo();
+$path_to_dir = 'c:\pear\html\HTML_Ajax-0.5.0';
+$options = array('ignore_functions' =&gt;
+  array('set_exception_handler', 'restore_exception_handler',
+        'file_get_contents', 'stream_context_create'),
+  'ignore_files' =&gt;
+  array('C:\PEAR\HTML\HTML_AJAX-0.5.0\examples\support\xml.class.php')
+  );
+$res = $info-&gt;parseDir($path_to_dir, $options);
+
+echo '&lt;pre&gt;'; var_dump($res); echo '&lt;/pre&gt;';
+?&gt;
+      
+     </pre>
+
+      <p></p>
+
+      <p>And a chunk of raw results we got : </p>
+<pre class="screen">
+array(60) {
+  ["ignored_files"]=&gt;
+  array(1) {
+    [0]=&gt;
+    string(59) "c:\pear\html\HTML_Ajax-0.5.0\examples\support\xml.class.php"
+  }
+  ["max_version"]=&gt;
+  string(0) ""
+  ["version"]=&gt;
+  string(5) "4.2.1"
+  ["extensions"]=&gt;
+  array(6) {
+    [0]=&gt;
+    string(8) "mbstring"
+    [1]=&gt;
+    string(4) "pcre"
+    [2]=&gt;
+    string(6) "domxml"
+    [3]=&gt;
+    string(4) "curl"
+    [4]=&gt;
+    string(7) "sockets"
+    [5]=&gt;
+    string(7) "session"
+  }
+  ["constants"]=&gt;
+  array(1) {
+    [0]=&gt;
+    string(8) "__FILE__"
+  }
+
+  [... more ...]
+
+}
+     </pre>
+
+      <p>It means that we need at least PHP 4.2.1 to run HTML_Ajax 0.5.0 with PHP extensions 
+      <span class="simplelist">mbstring, pcre, domxml, curl, sockets, session</span> loaded. </p>
+   </div>
+   <div class="sect2" lang="en"><div class="titlepage"><div><div>
+               <h3 class="title"><a name="id4777350"></a>Usage with CLI</h3></div>
+         </div>
+      </div>
+
+      <p>If we try again to detect the same distribution untar directory, the command to run will be: </p>
+<pre class="synopsis">
+pcicmd -d c:\pear\html\HTML_Ajax-0.5.0
+       -in \wamp\www\pci\functions.txt
+     </pre>
+
+      <p></p>
+      <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+         <table border="0" summary="Note">
+            <tr>
+               <td align="center" rowspan="2" valign="top" width="48px"><img alt="[Note]" src="img/admons/note.png"></td>
+               <th align="left">Note</th>
+            </tr>
+            <tr>
+               <td align="left" valign="top"> File "functions.txt" contains 5 lines, one for each function to ignore: 
+                  <span class="simplelist">set_exception_handler, restore_exception_handler, file_get_contents, file_put_contents, stream_context_create</span></td>
+            </tr>
+         </table>
+      </div>
+
+      <p>And chunk of results give: </p>
+<pre class="screen">
++----------------------------------+---------+------------+------------------+
+| Path                             | Version | Extensions | Constants/Tokens |
++----------------------------------+---------+------------+------------------+
+| [...]\*                          | 4.2.1   | mbstring   | __FILE__         |
+|                                  |         | pcre       |                  |
+|                                  |         | domxml     |                  |
+|                                  |         | curl       |                  |
+|                                  |         | sockets    |                  |
+|                                  |         | session    |                  |
++----------------------------------+---------+------------+------------------+
+| [...]\examples\xml_usage.php     | 3.0.0   |            |                  |
++----------------------------------+---------+------------+------------------+
+| [...]\examples\xmlserver.php     | 3.0.0   |            |                  |
++----------------------------------+---------+------------+------------------+
+| [...]\examples\tests\        (+) | 3.0.0   |            |                  |
+| test_speed.php                   |         |            |                  |
++----------------------------------+---------+------------+------------------+
+
+[... more ...]
+
++----------------------------------+---------+------------+------------------+
+| [...]\AJAX\Action.php            | 4.0.4   |            |                  |
++----------------------------------+---------+------------+------------------+
+     </pre>
+
+      <p></p>
+   </div>
+</div>
+<table class="pciFooter">
+   <tr>
+      <td align="left">PHP_CompatInfo : The Definitive Guide</td>
+      <td align="right">v 1.4.0 : September 27, 2006</td>
+   </tr>
+</table>
+<div class="navfooter"><hr>
+   <table summary="Navigation footer" width="100%">
+      <tr>
+         <td align="left" width="40%"><a accesskey="p" href="ch05.html">Prev</a> </td>
+         <td align="center" width="20%"><a accesskey="u" href="ch05.html">Up</a></td>
+         <td align="right" width="40%"> <a accesskey="n" href="pt03.html">Next</a></td>
+      </tr>
+      <tr>
+         <td align="left" valign="top" width="40%">Chapter 5. Advanced detection </td>
+         <td align="center" width="20%"><a accesskey="h" href="index.html">Home</a></td>
+         <td align="right" valign="top" width="40%"> Part III. Reference Guide</td>
+      </tr>
+   </table>
+</div>
+</body>
+</html> 

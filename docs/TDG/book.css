@@ -1,0 +1,147 @@
+/*
+    ========================================================
+  ================================================================
+       Stylesheet for DocBook PHP_CompatInfo Manual
+  ================================================================
+    ========================================================
+
+    $Id$
+    author - Laurent Laville <pear@laurent-laville.org> aka farell
+*/
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+div.authorgroup {
+  background-image: url(img/created-with-docbook.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+div.revhistory table, div.revhistory td  {
+  border: none;
+}
+div.revhistory table {
+  background-color: #339900;
+}
+div.revhistory th  {
+  color: #FFF;
+}
+div.revhistory td  {
+  background-color: #EEE;
+}
+
+div.funcsynopsisinfo {
+  background-color: #EEE;
+}
+
+div.example {
+  background-image: url('img/example.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-left: 55px;
+}
+
+pre.programlisting {
+  background-color: #EEE;
+  padding: 1em;
+  border-left: 10px solid darkgray;
+}
+
+div.note, div.tip, div.warning, div.caution, div.important {
+  background-color: lightyellow;
+  border: 2px solid silver;
+}
+
+pre.screen {
+  border: 1px solid darkgray;
+  padding: 1em;
+}
+
+div.screenshot {
+  border: 1px solid darkgray;
+  padding: 1em;
+  text-align: center;
+}
+
+/*
+   Give size to all admonition graphics
+   to allow to fix the PNG behavior for IE 5+ (alpha channel)
+   See also: pngbehavior.htc
+             http://webfx.eae.net/dhtml/pngbehavior/pngbehavior.html
+*/
+div.note img, div.tip img, div.warning img, div.caution img, div.important img {
+  width: 48px;
+  height: 48px;
+  behavior: url("pngbehavior.htc");
+}
+
+
+h1.title {
+  display: none;
+}
+
+h3.editor {
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+p.copyright {
+  color: #006600;
+}
+
+/*
+   callout graphic text-alternative rendering
+*/
+pre.programlisting img {
+  color: white;
+  background-color: black;
+}
+
+table.pciHeader, table.pciFooter {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  spacing: 0;
+  background-color: lightgreen;
+}
+table.pciHeader td {
+  vertical-align: bottom;
+}
+table.pciHeader td h1 {
+  text-align: right;
+}
+table.pciHeader td img {
+  text-align: left;
+}
+table.pciHeader h1 {
+  color: #006600;
+}
+table.pciFooter {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+/* external link */
+a.external {
+  background: transparent url(img/external-link.gif) 4px 4px no-repeat;
+  padding: 1px 0 1px 16px;
+}
+
+/* FAQ list */
+tr.toc dl {
+  font-size: 12px;
+}
+
+tr.question td {
+  padding-top: 1em;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+tr.answer {
+  font-size: 12px;
+}
+
