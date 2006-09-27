@@ -7,35 +7,37 @@
 version and extensions required for it to run. Features advanced debug output
 which shows which functions require which version and CLI output script</description>
  <lead>
-  <name>Davey Shafik</name>
-  <user>davey</user>
-  <email>davey@php.net</email>
-  <active>yes</active>
- </lead>
- <lead>
   <name>Laurent Laville</name>
   <user>farell</user>
   <email>pear@laurent-laville.org</email>
   <active>yes</active>
  </lead>
- <date>2006-09-09</date>
- <time>16:46:03</time>
+ <lead>
+  <name>Davey Shafik</name>
+  <user>davey</user>
+  <email>davey@php.net</email>
+  <active>no</active>
+ </lead>
+ <date>2006-09-27</date>
+ <time>23:12:35</time>
  <version>
-  <release>1.3.2</release>
-  <api>1.3.0</api>
+  <release>1.4.0</release>
+  <api>1.4.0</api>
  </version>
  <stability>
   <release>stable</release>
   <api>stable</api>
  </stability>
  <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
- <notes>* bugs
-fixed &quot;_splitfilename&quot; console_table filter callback to works fine (limit to 80 cols) both with dir and only one file to parse.
+ <notes>* news
+- This version is features completed. The last options added since 1.3.2 are ability to ignore php modules/extensions functions list (&quot;ignore_extensions&quot;) and also to ignore versions php functions list (&quot;ignore_versions&quot;).
 
-* news
-stop using/generating package.xml 1.0 (that means you should have at least PEAR 1.4.0)
+- This package was initiated by Davey Shafik and is now only actively maintained by Laurent Laville.
 
- </notes>
+- pcicmd console command was improved by using Console_Getargs package rather than Console_Getopt. SAPI and CLI version have same features now.
+
+* quality assurance
+fix dependencies (PHP and package)</notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
    <dir name="CompatInfo">
@@ -59,6 +61,45 @@ stop using/generating package.xml 1.0 (that means you should have at least PEAR 
      <file name="parseFile.php" role="doc" />
      <file name="parseString.php" role="doc" />
     </dir> <!-- /docs/examples -->
+    <dir name="TDG">
+     <dir name="img">
+      <dir name="admons">
+       <file name="caution.png" role="doc" />
+       <file name="important.png" role="doc" />
+       <file name="note.png" role="doc" />
+       <file name="tip.png" role="doc" />
+       <file name="warning.png" role="doc" />
+      </dir> <!-- /docs/TDG/img/admons -->
+      <file name="created-with-docbook.png" role="doc" />
+      <file name="external-link.gif" role="doc" />
+      <file name="pearsmall.gif" role="doc" />
+     </dir> <!-- /docs/TDG/img -->
+     <file name="book.css" role="doc" />
+     <file name="ch01.html" role="doc" />
+     <file name="ch01s02.html" role="doc" />
+     <file name="ch01s03.html" role="doc" />
+     <file name="ch02.html" role="doc" />
+     <file name="ch03.html" role="doc" />
+     <file name="ch03s02.html" role="doc" />
+     <file name="ch04.html" role="doc" />
+     <file name="ch04s02.html" role="doc" />
+     <file name="ch05.html" role="doc" />
+     <file name="ch05s02.html" role="doc" />
+     <file name="ch06.html" role="doc" />
+     <file name="ch06s02.html" role="doc" />
+     <file name="ch07.html" role="doc" />
+     <file name="index.html" role="doc" />
+     <file name="pr01.html" role="doc" />
+     <file name="pr01s02.html" role="doc" />
+     <file name="pt01.html" role="doc" />
+     <file name="pt02.html" role="doc" />
+     <file name="pt03.html" role="doc" />
+     <file name="re01.html" role="doc" />
+     <file name="re02.html" role="doc" />
+     <file name="re03.html" role="doc" />
+     <file name="re04.html" role="doc" />
+     <file name="re05.html" role="doc" />
+    </dir> <!-- /docs/TDG -->
    </dir> <!-- /docs -->
    <dir name="scripts">
     <file baseinstalldir="" name="compatinfo.bat" role="script">
@@ -79,7 +120,7 @@ stop using/generating package.xml 1.0 (that means you should have at least PEAR 
  <dependencies>
   <required>
    <php>
-    <min>4.2.0</min>
+    <min>4.3.0</min>
    </php>
    <pearinstaller>
     <min>1.4.3</min>
@@ -95,9 +136,9 @@ stop using/generating package.xml 1.0 (that means you should have at least PEAR 
     <min>1.0.5</min>
    </package>
    <package>
-    <name>Console_Getopt</name>
+    <name>Console_Getargs</name>
     <channel>pear.php.net</channel>
-    <min>1.2</min>
+    <min>1.3.1</min>
    </package>
   </optional>
  </dependencies>
@@ -119,6 +160,27 @@ stop using/generating package.xml 1.0 (that means you should have at least PEAR 
  <changelog>
   <release>
    <version>
+    <release>1.4.0</release>
+    <api>1.4.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2006-09-27</date>
+   <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
+   <notes>* news
+- This version is features completed. The last options added since 1.3.2 are ability to ignore php modules/extensions functions list (&quot;ignore_extensions&quot;) and also to ignore versions php functions list (&quot;ignore_versions&quot;).
+
+- This package was initiated by Davey Shafik and is now only actively maintained by Laurent Laville.
+
+- pcicmd console command was improved by using Console_Getargs package rather than Console_Getopt. SAPI and CLI version have same features now.
+
+* quality assurance
+fix dependencies (PHP and package)</notes>
+  </release>
+  <release>
+   <version>
     <release>1.3.2</release>
     <api>1.3.0</api>
    </version>
@@ -132,9 +194,7 @@ stop using/generating package.xml 1.0 (that means you should have at least PEAR 
 fixed &quot;_splitfilename&quot; console_table filter callback to works fine (limit to 80 cols) both with dir and only one file to parse.
 
 * news
-stop using/generating package.xml 1.0 (that means you should have at least PEAR 1.4.0)
-
-   </notes>
+stop using/generating package.xml 1.0 (that means you should have at least PEAR 1.4.0)</notes>
   </release>
   <release>
    <version>
