@@ -296,6 +296,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             }
             $this->options['ignore_versions'] = $iv;
         }
+
+        // file or directory options are minimum required to work
+        if (!$this->args->isDefined('f') && !$this->args->isDefined('d')) {
+            $this->error = 'ERROR: You must supply at least one file or directory to process';
+        }
     }
 
     /**
