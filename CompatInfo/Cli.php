@@ -4,9 +4,9 @@
  *
  * PHP versions 4 and 5
  *
- * LICENSE: This source file is subject to version 3.0 of the PHP license
+ * LICENSE: This source file is subject to version 3.01 of the PHP license
  * that is available through the world-wide-web at the following URI:
- * http://www.php.net/license/3_0.txt.  If you did not receive a copy of
+ * http://www.php.net/license/3_01.txt.  If you did not receive a copy of
  * the PHP License and are unable to obtain it through the web, please
  * send a note to license@php.net so we can mail you a copy immediately.
  *
@@ -14,7 +14,7 @@
  * @package    PHP_CompatInfo
  * @author     Davey Shafik <davey@php.net>
  * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    http://www.php.net/license/3_01.txt  PHP License 3.0
+ * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
  * @version    CVS: $Id$
  * @link       http://pear.php.net/package/PHP_CompatInfo
  * @since      File available since Release 0.8.0
@@ -42,7 +42,7 @@ require_once 'Console/Table.php';
  * @author     Davey Shafik <davey@php.net>
  * @author     Laurent Laville <pear@laurent-laville.org>
  * @copyright  Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
- * @license    http://www.php.net/license/3_0.txt  PHP License 3.0
+ * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
  * @version    Release: @package_version@
  * @link       http://pear.php.net/package/PHP_CompatInfo
  * @since      Class available since Release 0.8.0
@@ -51,49 +51,49 @@ require_once 'Console/Table.php';
 class PHP_CompatInfo_Cli extends PHP_CompatInfo
 {
     /**
-     * @var array Current CLI Flags
+     * @var    array    Current CLI Flags
      * @since  0.8.0
      */
     var $opts = array();
 
     /**
-     * @var string  error message
+     * @var    string   error message
      * @since  0.8.0
      */
     var $error;
 
     /**
-     * @var string File to be Processed
+     * @var    string   File to be Processed
      * @since  0.8.0
      */
     var $file;
 
     /**
-     * @var string Directory to be Processed
+     * @var    string   Directory to be Processed
      * @since  0.8.0
      */
     var $dir;
 
     /**
-     * @var int filename column size (max length)
+     * @var    int      filename column size (max length)
      * @since  1.3.1
      */
     var $split;
 
     /**
-     * @var string  string to indicate that filename continue on next line
+     * @var    string   string to indicate that filename continue on next line
      * @since  1.3.1
      */
     var $glue;
 
     /**
-     * @var object  Console_Getargs instance
+     * @var    object   Console_Getargs instance
      * @since  1.4.0
      */
     var $args;
 
     /**
-     * @var array Current parser options
+     * @var    array    Current parser options
      * @since  1.4.0
      */
     var $options = array();
@@ -111,11 +111,13 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             'dir' =>
                 array('short' => 'd',
                       'desc'  => 'Parse DIR to get its compatibility info',
-                      'min'   => 1 , 'max' => 1),
+                      'default' => '',
+                      'min'   => 0 , 'max' => 1),
             'file' =>
                 array('short' => 'f',
                       'desc' => 'Parse FILE to get its compatibility info',
-                      'min'   => 1 , 'max' => 1),
+                      'default' => '',
+                      'min'   => 0 , 'max' => 1),
             'verbose' =>
                 array('short'   => 'v',
                       'desc'    => 'Set the verbose level',
@@ -159,7 +161,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 array('short'   => 'iv',
                       'desc'    => 'PHP versions - functions to exclude '
                                  . 'when parsing source code',
-                      'min'     => 1 , 'max' => 2),
+                      'default' => '5.0.0',
+                      'min'     => 0 , 'max' => 2),
             'help' =>
                 array('short' => 'h',
                       'desc'  => 'Show this help',
