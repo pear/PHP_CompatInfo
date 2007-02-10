@@ -3,7 +3,7 @@
  * The functions array script generator.
  *
  * Sources come from :
- * - http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.19&view=markup
+ * - http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.21&view=markup
  * - http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35&view=markup
  *
  * @version    $Id$
