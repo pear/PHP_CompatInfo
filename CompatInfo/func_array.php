@@ -19735,11 +19735,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'sqlite_create_function' => 
-  array (
-    'ext' => 'ext_sqlite',
-    'init' => '5-dev',
-  ),
   'gopher_parsedir' => 
   array (
     'ext' => 'pecl_Net_Gopher',
@@ -27359,6 +27354,15 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'ext' => 'pecl_zeroconf',
     'init' => '4-dev',
+  ),
+  'spl_object_hash' => 
+  array (
+    'init' => '5.2.0',
+  ),
+  'sqlite_create_function' => 
+  array (
+    'ext' => 'ext_sqlite',
+    'init' => '5-dev',
   ),
 )
 ?>
