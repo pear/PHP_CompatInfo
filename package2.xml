@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.4.11" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.5.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>PHP_CompatInfo</name>
  <channel>pear.php.net</channel>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
@@ -18,87 +18,89 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2006-09-27</date>
- <time>23:12:35</time>
+ <date>2007-02-12</date>
+ <time>09:08:04</time>
  <version>
-  <release>1.4.0</release>
+  <release>1.4.1</release>
   <api>1.4.0</api>
  </version>
  <stability>
   <release>stable</release>
   <api>stable</api>
  </stability>
- <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
- <notes>* news
-- This version is features completed. The last options added since 1.3.2 are ability to ignore php modules/extensions functions list (&quot;ignore_extensions&quot;) and also to ignore versions php functions list (&quot;ignore_versions&quot;).
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>* changes
+- upgrade license from PHP 3.0 to 3.01
+- fixed wrong implementation of Console_Getargs feature fixed in version 1.33 (see bug #9252)
+- improve PHP5 detection with a new fresh up-to-date func_array.php file
+(that include the new function &quot;spl_object_hash&quot; came with PHP 5.2.0)
 
-- This package was initiated by Davey Shafik and is now only actively maintained by Laurent Laville.
-
-- pcicmd console command was improved by using Console_Getargs package rather than Console_Getopt. SAPI and CLI version have same features now.
-
-* quality assurance
-fix dependencies (PHP and package)</notes>
+* QA
+- Improve readability (hilighted source code) of User Guide 1.4.1 included in this release
+that cover all versions 1.4.x
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+ </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
    <dir name="CompatInfo">
-    <file name="Cli.php" role="php">
+    <file baseinstalldir="PHP" name="Cli.php" role="php">
      <tasks:replace from="@package_version@" to="version" type="package-info" />
     </file>
-    <file name="const_array.php" role="php" />
-    <file name="func_array.php" role="php" />
-    <file name="pcicmd.php" role="php" />
+    <file baseinstalldir="PHP" name="const_array.php" role="php" />
+    <file baseinstalldir="PHP" name="func_array.php" role="php" />
+    <file baseinstalldir="PHP" name="pcicmd.php" role="php" />
    </dir> <!-- /CompatInfo -->
    <dir name="docs">
     <dir name="examples">
-     <file name="checkConstants.php" role="doc" />
-     <file name="checkPHP5.php" role="doc" />
-     <file name="ci_frontend.php" role="doc" />
-     <file name="cliCustom.php" role="doc" />
-     <file name="cliOutput.txt" role="doc" />
-     <file name="ignorePHP5implements.php" role="doc" />
-     <file name="parseArray.php" role="doc" />
-     <file name="parseDir.php" role="doc" />
-     <file name="parseFile.php" role="doc" />
-     <file name="parseString.php" role="doc" />
+     <file baseinstalldir="PHP" name="checkConstants.php" role="doc" />
+     <file baseinstalldir="PHP" name="checkPHP5.php" role="doc" />
+     <file baseinstalldir="PHP" name="ci_frontend.php" role="doc" />
+     <file baseinstalldir="PHP" name="cliCustom.php" role="doc" />
+     <file baseinstalldir="PHP" name="cliOutput.txt" role="doc" />
+     <file baseinstalldir="PHP" name="ignorePHP5implements.php" role="doc" />
+     <file baseinstalldir="PHP" name="parseArray.php" role="doc" />
+     <file baseinstalldir="PHP" name="parseDir.php" role="doc" />
+     <file baseinstalldir="PHP" name="parseFile.php" role="doc" />
+     <file baseinstalldir="PHP" name="parseString.php" role="doc" />
     </dir> <!-- /docs/examples -->
     <dir name="TDG">
      <dir name="img">
       <dir name="admons">
-       <file name="caution.png" role="doc" />
-       <file name="important.png" role="doc" />
-       <file name="note.png" role="doc" />
-       <file name="tip.png" role="doc" />
-       <file name="warning.png" role="doc" />
+       <file baseinstalldir="PHP" name="caution.png" role="doc" />
+       <file baseinstalldir="PHP" name="important.png" role="doc" />
+       <file baseinstalldir="PHP" name="note.png" role="doc" />
+       <file baseinstalldir="PHP" name="tip.png" role="doc" />
+       <file baseinstalldir="PHP" name="warning.png" role="doc" />
       </dir> <!-- /docs/TDG/img/admons -->
-      <file name="created-with-docbook.png" role="doc" />
-      <file name="external-link.gif" role="doc" />
-      <file name="pearsmall.gif" role="doc" />
+      <file baseinstalldir="PHP" name="created-with-docbook.png" role="doc" />
+      <file baseinstalldir="PHP" name="external-link.gif" role="doc" />
+      <file baseinstalldir="PHP" name="pearsmall.gif" role="doc" />
      </dir> <!-- /docs/TDG/img -->
-     <file name="book.css" role="doc" />
-     <file name="ch01.html" role="doc" />
-     <file name="ch01s02.html" role="doc" />
-     <file name="ch01s03.html" role="doc" />
-     <file name="ch02.html" role="doc" />
-     <file name="ch03.html" role="doc" />
-     <file name="ch03s02.html" role="doc" />
-     <file name="ch04.html" role="doc" />
-     <file name="ch04s02.html" role="doc" />
-     <file name="ch05.html" role="doc" />
-     <file name="ch05s02.html" role="doc" />
-     <file name="ch06.html" role="doc" />
-     <file name="ch06s02.html" role="doc" />
-     <file name="ch07.html" role="doc" />
-     <file name="index.html" role="doc" />
-     <file name="pr01.html" role="doc" />
-     <file name="pr01s02.html" role="doc" />
-     <file name="pt01.html" role="doc" />
-     <file name="pt02.html" role="doc" />
-     <file name="pt03.html" role="doc" />
-     <file name="re01.html" role="doc" />
-     <file name="re02.html" role="doc" />
-     <file name="re03.html" role="doc" />
-     <file name="re04.html" role="doc" />
-     <file name="re05.html" role="doc" />
+     <file baseinstalldir="PHP" name="book.css" role="doc" />
+     <file baseinstalldir="PHP" name="ch01.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch01s02.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch01s03.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch02.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch03.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch03s02.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch04.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch04s02.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch05.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch05s02.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch06.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch06s02.html" role="doc" />
+     <file baseinstalldir="PHP" name="ch07.html" role="doc" />
+     <file baseinstalldir="PHP" name="index.html" role="doc" />
+     <file baseinstalldir="PHP" name="pr01.html" role="doc" />
+     <file baseinstalldir="PHP" name="pr01s02.html" role="doc" />
+     <file baseinstalldir="PHP" name="pt01.html" role="doc" />
+     <file baseinstalldir="PHP" name="pt02.html" role="doc" />
+     <file baseinstalldir="PHP" name="pt03.html" role="doc" />
+     <file baseinstalldir="PHP" name="re01.html" role="doc" />
+     <file baseinstalldir="PHP" name="re02.html" role="doc" />
+     <file baseinstalldir="PHP" name="re03.html" role="doc" />
+     <file baseinstalldir="PHP" name="re04.html" role="doc" />
+     <file baseinstalldir="PHP" name="re05.html" role="doc" />
     </dir> <!-- /docs/TDG -->
    </dir> <!-- /docs -->
    <dir name="scripts">
@@ -109,10 +111,10 @@ fix dependencies (PHP and package)</notes>
     </file>
    </dir> <!-- /scripts -->
    <dir name="tests">
-    <file name="checkMax.php" role="doc" />
-    <file name="sample_req6056.php" role="doc" />
+    <file baseinstalldir="PHP" name="checkMax.php" role="doc" />
+    <file baseinstalldir="PHP" name="sample_req6056.php" role="doc" />
    </dir> <!-- /tests -->
-   <file name="CompatInfo.php" role="php">
+   <file baseinstalldir="PHP" name="CompatInfo.php" role="php">
     <tasks:replace from="@package_version@" to="version" type="package-info" />
    </file>
   </dir> <!-- / -->
@@ -158,6 +160,29 @@ fix dependencies (PHP and package)</notes>
   </filelist>
  </phprelease>
  <changelog>
+  <release>
+   <version>
+    <release>1.4.1</release>
+    <api>1.4.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2007-02-11</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>* changes
+- upgrade license from PHP 3.0 to 3.01
+- fixed wrong implementation of Console_Getargs feature fixed in version 1.33 (see bug #9252)
+- improve PHP5 detection with a new fresh up-to-date func_array.php file
+(that include the new function &quot;spl_object_hash&quot; came with PHP 5.2.0)
+
+* QA
+- Improve readability (hilighted source code) of User Guide 1.4.1 included in this release
+that cover all versions 1.4.x
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+   </notes>
+  </release>
   <release>
    <version>
     <release>1.4.0</release>
