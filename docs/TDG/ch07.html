@@ -1,103 +1,192 @@
-<html>
-<head>
-   <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
-   <title>Chapter 7. CLI - The pcicmd console command </title>
-   <link href="book.css" rel="stylesheet" type="text/css">
-   <meta content="DocBook XSL Stylesheets V1.69.1" name="generator">
-   <link href="index.html" rel="start" title="PHP_CompatInfo Manual">
-   <link href="pt03.html" rel="up" title="Part III. Reference Guide">
-   <link href="ch06s02.html" rel="prev" title="Parser options ">
-</head>
-<body alink="#0000FF" bgcolor="white" link="#0000FF" text="black" vlink="#840084">
-<table class="pciHeader">
-   <tr>
-      <td><img align="left" alt="PEAR logo" src="img/pearsmall.gif">
-         <h1>PHP_CompatInfo : The Definitive Guide</h1>
-
-         <p>
-         <div class="navheader">
-            <table summary="Navigation header" width="100%">
-               <tr>
-                  <th align="center" colspan="3">Chapter 7. CLI - The pcicmd console command </th>
-               </tr>
-               <tr>
-                  <td align="left" width="20%"><a accesskey="p" href="ch06s02.html">Prev</a> </td>
-                  <th align="center" width="60%">Part III. Reference Guide</th><td align="right" width="20%"> </td>
-               </tr>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>
+      Chapter&nbsp;7.&nbsp;CLI - The pcicmd console command
+    </title>
+    <link rel="stylesheet" href="book.css" type="text/css" />
+    <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
+    <link rel="start" href="index.html" title="PHP_CompatInfo Manual" />
+    <link rel="up" href="pt03.html" title=
+    "Part&nbsp;III.&nbsp;Reference Guide" />
+    <link rel="prev" href="ch06s02.html" title="Parser options " />
+<style type="text/css">
+/*<![CDATA[*/
+ body {
+  background-color: white;
+  color: black;
+ }
+ :link { color: #0000FF }
+ :visited { color: #840084 }
+ :active { color: #0000FF }
+ div.c3 {margin-left: 0.5in; margin-right: 0.5in;}
+ h2.c2 {clear: both}
+ p.c1 {font-weight: bold}
+/*]]>*/
+</style>
+  </head>
+  <body>
+    <table class="pciHeader">
+      <tr>
+        <td>
+          <img src="img/pearsmall.gif" align="left" alt="PEAR logo" />
+          <h1>
+            PHP_CompatInfo : The Definitive Guide
+          </h1>
+          <div class="navheader">
+            <table width="100%" summary="Navigation header">
+              <tr>
+                <th colspan="3" align="center">
+                  Chapter&nbsp;7.&nbsp;CLI - The pcicmd console command
+                </th>
+              </tr>
+              <tr>
+                <td width="20%" align="left">
+                  <a accesskey="p" href="ch06s02.html">Prev</a>&nbsp;
+                </td>
+                <th width="60%" align="center">
+                  Part&nbsp;III.&nbsp;Reference Guide
+                </th>
+                <td width="20%" align="right">
+                  &nbsp;
+                </td>
+              </tr>
             </table>
-         </div></p>
-      </td>
-   </tr>
-</table>
-<div class="chapter" lang="en"><div class="titlepage"><div><div>
-            <h2 class="title"><a name="reference.cli"></a>Chapter 7. CLI - The pcicmd console command </h2>
-         </div>
-      </div>
-   </div>
-   <div class="toc">
-
-      <p><b>Table of Contents</b></p>
-      <dl><dt><span class="sect1"><a href="ch07.html#reference.cli.pcicmd.switch">Switchs</a></span></dt>
-         <dd>
-         <dl><dt><span class="sect2"><a href="ch07.html#id4782230">Overview</a></span></dt><dt><span class="sect2"><a href="ch07.html#id4782880">Reference</a></span></dt>
-         </dl></dd>
-      </dl>
-   </div>
-
-   <p>The <span class="bold"><strong>PHP_CompatInfo_Cli</strong></span> class, also known under its wrapper name "pcicmd", get the compatibility info from PHP Command Line Interpreter, on existing script or folder. </p>
-   <div class="sect1" lang="en"><div class="titlepage"><div><div>
-               <h2 class="title" style="clear: both">
-               <a name="reference.cli.pcicmd.switch"></a>Switchs</h2></div>
-         </div>
+          </div><br />
+          <br />
+        </td>
+      </tr>
+    </table>
+    <div class="chapter" lang="en" xml:lang="en">
+      <div class="titlepage">
+        <h2 class="title">
+          <a name="reference.cli" id=
+          "reference.cli"></a>Chapter&nbsp;7.&nbsp;CLI - The pcicmd console
+          command
+        </h2>
       </div>
       <div class="toc">
-         <dl><dt><span class="sect2"><a href="ch07.html#id4782230">Overview</a></span></dt><dt><span class="sect2"><a href="ch07.html#id4782880">Reference</a></span></dt>
-         </dl>
+        <p class="c1">
+          Table of Contents
+        </p>
+        <dl>
+          <dt>
+            <span class="sect1"><a href=
+            "ch07.html#reference.cli.pcicmd.switch">Switchs</a></span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="sect2"><a href=
+                "ch07.html#id4787205">Overview</a></span>
+              </dt>
+              <dt>
+                <span class="sect2"><a href=
+                "ch07.html#id4787855">Reference</a></span>
+              </dt>
+            </dl>
+          </dd>
+        </dl>
       </div>
-      <div class="sect2" lang="en"><div class="titlepage"><div><div>
-                  <h3 class="title"><a name="id4782230"></a>Overview</h3></div>
-            </div>
-         </div>
-
-         <p></p>
-<pre class="synopsis">
+      <p>
+        The <span class="bold"><strong>PHP_CompatInfo_Cli</strong></span>
+        class, also known under its wrapper name "pcicmd", get the
+        compatibility info from PHP Command Line Interpreter, on existing
+        script or folder.
+      </p>
+      <div class="sect1" lang="en" xml:lang="en">
+        <div class="titlepage">
+          <h2 class="title c2">
+            <a name="reference.cli.pcicmd.switch" id=
+            "reference.cli.pcicmd.switch"></a>Switchs
+          </h2>
+        </div>
+        <div class="toc">
+          <dl>
+            <dt>
+              <span class="sect2"><a href=
+              "ch07.html#id4787205">Overview</a></span>
+            </dt>
+            <dt>
+              <span class="sect2"><a href=
+              "ch07.html#id4787855">Reference</a></span>
+            </dt>
+          </dl>
+        </div>
+        <div class="sect2" lang="en" xml:lang="en">
+          <div class="titlepage">
+            <h3 class="title">
+              <a name="id4787205" id="id4787205"></a>Overview
+            </h3>
+          </div>
+          <pre class="synopsis">
 pcicmd [options]  -f FILE | -d DIR
-     </pre>
-
-         <p>Usage is to run pcicmd with at least the <em class="parameter"><code>-f</code></em> (--file) or 
-         <em class="parameter"><code>-d</code></em> (--dir) switch and perharps some additional and optional options. </p>
-      </div>
-      <div class="sect2" lang="en"><div class="titlepage"><div><div>
-                  <h3 class="title"><a name="id4782880"></a>Reference</h3></div>
-            </div>
-         </div>
-
-         <p></p>
-         <div class="variablelist">
-            <dl><dt><span class="term"> <em class="parameter"><code>-d</code></em> | 
-               <em class="parameter"><code>--dir</code></em> </span></dt>
-               <dd>
-
-               <p>Identify the directory to parse to get compatibility info of its files contents. </p></dd>
-               <dt><span class="term"> <em class="parameter"><code>-f</code></em> | 
-               <em class="parameter"><code>--file</code></em> </span></dt>
-               <dd>
-
-               <p>Identify the file name (path) to parse to get compatibility info. </p></dd>
-               <dt><span class="term"> <em class="parameter"><code>-n</code></em> | 
-               <em class="parameter"><code>--no-recurse</code></em> </span></dt>
-               <dd>
-
-               <p>Do not recursively parse files into subdirectories when using 
-               <em class="parameter"><code>--dir</code></em>. </p></dd><dt><span class="term"> 
-               <em class="parameter"><code>-v</code></em> | 
-               <em class="parameter"><code>--verbose</code></em> </span></dt>
-               <dd>
-
-               <p>Set the verbose level. From 0 (no extra information) to 7 (full extra details). </p>
-
-               <p>In level 0, pcicmd give only results related to -d or -f. See first line of the console table. If there are more than one line, next ones are details for each file of a directory/branch. </p>
-<pre class="screen">
+     
+</pre>
+          <p>
+            Usage is to run pcicmd with at least the <em class=
+            "parameter"><code>-f</code></em> (--file) or <em class=
+            "parameter"><code>-d</code></em> (--dir) switch and perharps some
+            additional and optional options.
+          </p>
+        </div>
+        <div class="sect2" lang="en" xml:lang="en">
+          <div class="titlepage">
+            <h3 class="title">
+              <a name="id4787855" id="id4787855"></a>Reference
+            </h3>
+          </div>
+          <div class="variablelist">
+            <dl>
+              <dt>
+                <span class="term"><em class="parameter"><code>-d</code></em> |
+                <em class="parameter"><code>--dir</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Identify the directory to parse to get compatibility info of
+                  its files contents.
+                </p>
+              </dd>
+              <dt>
+                <span class="term"><em class="parameter"><code>-f</code></em> |
+                <em class="parameter"><code>--file</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Identify the file name (path) to parse to get compatibility
+                  info.
+                </p>
+              </dd>
+              <dt>
+                <span class="term"><em class="parameter"><code>-n</code></em> |
+                <em class="parameter"><code>--no-recurse</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Do not recursively parse files into subdirectories when using
+                  <em class="parameter"><code>--dir</code></em>.
+                </p>
+              </dd>
+              <dt>
+                <span class="term"><em class="parameter"><code>-v</code></em> |
+                <em class="parameter"><code>--verbose</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Set the verbose level. From 0 (no extra information) to 7
+                  (full extra details).
+                </p>
+                <p>
+                  In level 0, pcicmd give only results related to -d or -f. See
+                  first line of the console table. If there are more than one
+                  line, next ones are details for each file of a
+                  directory/branch.
+                </p>
+                <pre class="screen">
 +------------------------+---------+------------+------------------+
 | Path                   | Version | Extensions | Constants/Tokens |
 +------------------------+---------+------------+------------------+
@@ -109,17 +198,20 @@ pcicmd [options]  -f FILE | -d DIR
 +------------------------+---------+------------+------------------+
 | [...]\errorHandler.php | 4.3.0   |            |                  |
 +------------------------+---------+------------+------------------+
-         </pre>
-
-               <p></p>
-
-               <p>In level 1, pcicmd give results of level 0 plus a resume of command line arguments. For example </p>
-<pre class="synopsis">
+         
+</pre>
+                <p>
+                  In level 1, pcicmd give results of level 0 plus a resume of
+                  command line arguments. For example
+                </p>
+                <pre class="synopsis">
 pcicmd -v 1 -d \wamp\www\pci
-         </pre>
-
-               <p>give table of level 0 (see previous), plus : </p>
-<pre class="screen">
+         
+</pre>
+                <p>
+                  give table of level 0 (see previous), plus :
+                </p>
+                <pre class="screen">
 Command Line resume :
 
 +---------+---------------+
@@ -128,17 +220,21 @@ Command Line resume :
 | dir     | \wamp\www\pci |
 | verbose | 1             |
 +---------+---------------+
-         </pre>
-
-               <p></p>
-
-               <p>In level 2, pcicmd give results of level 0 plus the list of options PHP_CompatInfo used to parse file or directory. For example </p>
-<pre class="synopsis">
+         
+</pre>
+                <p>
+                  In level 2, pcicmd give results of level 0 plus the list of
+                  options PHP_CompatInfo used to parse file or directory. For
+                  example
+                </p>
+                <pre class="synopsis">
 pcicmd -d \wamp\www\pci -v 2
-         </pre>
-
-               <p>give table of level 0 (see previous), plus : </p>
-<pre class="screen">
+         
+</pre>
+                <p>
+                  give table of level 0 (see previous), plus :
+                </p>
+                <pre class="screen">
 Parser options :
 
 +--------+-------+
@@ -146,31 +242,38 @@ Parser options :
 +--------+-------+
 |        |       |
 +--------+-------+
-         </pre>
-
-               <p></p>
-               <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+         
+</pre>
+                <div class="note c3">
                   <table border="0" summary="Note">
-                     <tr>
-                        <td align="center" rowspan="2" valign="top" width="48px"><img alt="[Note]" src="img/admons/note.png"></td>
-                        <th align="left">Note</th>
-                     </tr>
-                     <tr>
-                        <td align="left" valign="top"> Even when none option are used, the resume table is displayed. 
-                        </td>
-                     </tr>
+                    <tr>
+                      <td rowspan="2" align="center" valign="top" width="48">
+                        <img alt="[Note]" src="img/admons/note.png" />
+                      </td>
+                      <th align="left">
+                        Note
+                      </th>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top">
+                        Even when none option are used, the resume table is
+                        displayed.
+                      </td>
+                    </tr>
                   </table>
-               </div>
-
-               <p></p>
-
-               <p>In level 3, pcicmd give results of level 0, 1 and 2. For example </p>
-<pre class="synopsis">
+                </div>
+                <p>
+                  In level 3, pcicmd give results of level 0, 1 and 2. For
+                  example
+                </p>
+                <pre class="synopsis">
 pcicmd -d \wamp\www\pci -n -v 3
-         </pre>
-
-               <p>give table of level 0 (see previous), plus : </p>
-<pre class="screen">
+         
+</pre>
+                <p>
+                  give table of level 0 (see previous), plus :
+                </p>
+                <pre class="screen">
 Command Line resume :
 
 +------------+---------------+
@@ -188,17 +291,22 @@ Parser options :
 +-------------+-------+
 | recurse_dir | FALSE |
 +-------------+-------+
-         </pre>
-
-               <p></p>
-
-               <p>In level 4, useless when using <em class="parameter"><code>--dir</code></em>, pcicmd give results of level 0 plus a list of functions implemented with their versions. For example </p>
-<pre class="synopsis">
+         
+</pre>
+                <p>
+                  In level 4, useless when using <em class=
+                  "parameter"><code>--dir</code></em>, pcicmd give results of
+                  level 0 plus a list of functions implemented with their
+                  versions. For example
+                </p>
+                <pre class="synopsis">
 pcicmd -f \wamp\www\pci\math.php -v4
-         </pre>
-
-               <p>give : </p>
-<pre class="screen">
+         
+</pre>
+                <p>
+                  give :
+                </p>
+                <pre class="screen">
 +----------------+---------+------------+------------------+
 | File           | Version | Extensions | Constants/Tokens |
 +----------------+---------+------------+------------------+
@@ -214,95 +322,162 @@ Debug:
 | 3.0.9   | preg_match | ext_pcre   |
 | 3.0.0   | bcsub      | ext_bcmath |
 +---------+------------+------------+
-         </pre>
-
-               <p></p>
-
-               <p>Level 5 is equivalent to level 4 + level 1. </p>
-
-               <p>Level 6 is equivalent to level 4 + level 2. </p>
-
-               <p>And finally, level 7 is equivalent to level 4 + level 2 + level 1. </p></dd>
-               <dt><span class="term"> <em class="parameter"><code>-if</code></em> | 
-               <em class="parameter"><code>--ignore-files</code></em> </span></dt>
-               <dd>
-
-               <p>Identify the file name (path) to a text file that contains on each line the name of each file to ignore when parsing a directory/branch. </p></dd>
-               <dt><span class="term"> <em class="parameter"><code>-id</code></em> | 
-               <em class="parameter"><code>--ignore-dirs</code></em> </span></dt>
-               <dd>
-
-               <p>Identify the file name (path) to a text file that contains on each line the name of each sub-directory to ignore when parsing a directory/branch. </p></dd>
-               <dt><span class="term"> <em class="parameter"><code>-in</code></em> | 
-               <em class="parameter"><code>--ignore-functions</code></em> 
-               </span></dt>
-               <dd>
-
-               <p>Identify the file name (path) to a text file that contains on each line the name of each PHP function to ignore when parsing a directory or a single file. </p></dd>
-               <dt><span class="term"> <em class="parameter"><code>-ic</code></em> | 
-               <em class="parameter"><code>--ignore-constants</code></em> 
-               </span></dt>
-               <dd>
-
-               <p>Identify the file name (path) to a text file that contains on each line the name of each PHP constant to ignore when parsing a directory or a single file. </p></dd>
-               <dt><span class="term"> <em class="parameter"><code>-ie</code></em> | 
-               <em class="parameter"><code>--ignore-extensions</code></em> 
-               </span></dt>
-               <dd>
-
-               <p>Identify the file name (path) to a text file that contains on each line the name of each PHP extension to ignore (all extension.functions) when parsing a directory or a single file. </p></dd>
-               <dt><span class="term"> <em class="parameter"><code>-iv</code></em> | 
-               <em class="parameter"><code>--ignore-versions</code></em> 
-               </span></dt>
-               <dd>
-
-               <p>Expect one or two values that identify which PHP version (and all its related functions) to ignore. </p>
-               <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+         
+</pre>
+                <p>
+                  Level 5 is equivalent to level 4 + level 1.
+                </p>
+                <p>
+                  Level 6 is equivalent to level 4 + level 2.
+                </p>
+                <p>
+                  And finally, level 7 is equivalent to level 4 + level 2 +
+                  level 1.
+                </p>
+              </dd>
+              <dt>
+                <span class="term"><em class="parameter"><code>-if</code></em>
+                | <em class="parameter"><code>--ignore-files</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Identify the file name (path) to a text file that contains on
+                  each line the name of each file to ignore when parsing a
+                  directory/branch.
+                </p>
+              </dd>
+              <dt>
+                <span class="term"><em class="parameter"><code>-id</code></em>
+                | <em class="parameter"><code>--ignore-dirs</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Identify the file name (path) to a text file that contains on
+                  each line the name of each sub-directory to ignore when
+                  parsing a directory/branch.
+                </p>
+              </dd>
+              <dt>
+                <span class="term"><em class="parameter"><code>-in</code></em>
+                | <em class=
+                "parameter"><code>--ignore-functions</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Identify the file name (path) to a text file that contains on
+                  each line the name of each PHP function to ignore when
+                  parsing a directory or a single file.
+                </p>
+              </dd>
+              <dt>
+                <span class="term"><em class="parameter"><code>-ic</code></em>
+                | <em class=
+                "parameter"><code>--ignore-constants</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Identify the file name (path) to a text file that contains on
+                  each line the name of each PHP constant to ignore when
+                  parsing a directory or a single file.
+                </p>
+              </dd>
+              <dt>
+                <span class="term"><em class="parameter"><code>-ie</code></em>
+                | <em class=
+                "parameter"><code>--ignore-extensions</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Identify the file name (path) to a text file that contains on
+                  each line the name of each PHP extension to ignore (all
+                  extension.functions) when parsing a directory or a single
+                  file.
+                </p>
+              </dd>
+              <dt>
+                <span class="term"><em class="parameter"><code>-iv</code></em>
+                | <em class=
+                "parameter"><code>--ignore-versions</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Expect one or two values that identify which PHP version (and
+                  all its related functions) to ignore.
+                </p>
+                <div class="tip c3">
                   <table border="0" summary="Tip">
-                     <tr>
-                        <td align="center" rowspan="2" valign="top" width="48px"><img alt="[Tip]" src="img/admons/tip.png"></td>
-                        <th align="left">Tip</th>
-                     </tr>
-                     <tr>
-                        <td align="left" valign="top"> For example: ignore all PHP 5 functions (minor releases 0 thru 2), or only PHP 5.0.0 functions. 
-<pre class="synopsis">
+                    <tr>
+                      <td rowspan="2" align="center" valign="top" width="48">
+                        <img alt="[Tip]" src="img/admons/tip.png" />
+                      </td>
+                      <th align="left">
+                        Tip
+                      </th>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top">
+                        For example: ignore all PHP 5 functions (minor releases
+                        0 thru 2), or only PHP 5.0.0 functions.
+                        <pre class="synopsis">
 pcicmd -f FILE | -d DIR  -iv 5.0.0 5.2.0
 pcicmd -f FILE | -d DIR  -iv 5.0.0
-         </pre>
-                        </td>
-                     </tr>
+         
+</pre>
+                      </td>
+                    </tr>
                   </table>
-               </div></dd><dt><span class="term"> <em class="parameter"><code>-h</code></em> | 
-               <em class="parameter"><code>--help</code></em> </span></dt>
-               <dd>
-
-               <p>Show full help usage with all switchs explained. </p></dd>
+                </div>
+              </dd>
+              <dt>
+                <span class="term"><em class="parameter"><code>-h</code></em> |
+                <em class="parameter"><code>--help</code></em></span>
+              </dt>
+              <dd>
+                <p>
+                  Show full help usage with all switchs explained.
+                </p>
+              </dd>
             </dl>
-         </div>
-
-         <p></p>
+          </div>
+        </div>
       </div>
-   </div>
-</div>
-<table class="pciFooter">
-   <tr>
-      <td align="left">PHP_CompatInfo : The Definitive Guide</td>
-      <td align="right">v 1.4.0 : September 27, 2006</td>
-   </tr>
-</table>
-<div class="navfooter"><hr>
-   <table summary="Navigation footer" width="100%">
+    </div>
+    <table class="pciFooter">
       <tr>
-         <td align="left" width="40%"><a accesskey="p" href="ch06s02.html">Prev</a> </td>
-         <td align="center" width="20%"><a accesskey="u" href="pt03.html">Up</a></td>
-         <td align="right" width="40%"> </td>
+        <td align="left">
+          PHP_CompatInfo : The Definitive Guide
+        </td>
+        <td align="right">
+          v 1.4.1 : February 12, 2007
+        </td>
       </tr>
-      <tr>
-         <td align="left" valign="top" width="40%">Parser options  </td>
-         <td align="center" width="20%"><a accesskey="h" href="index.html">Home</a></td>
-         <td align="right" valign="top" width="40%"> </td>
-      </tr>
-   </table>
-</div>
-</body>
-</html> 
+    </table>
+    <div class="navfooter">
+      <hr />
+      <table width="100%" summary="Navigation footer">
+        <tr>
+          <td width="40%" align="left">
+            <a accesskey="p" href="ch06s02.html">Prev</a>&nbsp;
+          </td>
+          <td width="20%" align="center">
+            <a accesskey="u" href="pt03.html">Up</a>
+          </td>
+          <td width="40%" align="right">
+            &nbsp;
+          </td>
+        </tr>
+        <tr>
+          <td width="40%" align="left" valign="top">
+            Parser options &nbsp;
+          </td>
+          <td width="20%" align="center">
+            <a accesskey="h" href="index.html">Home</a>
+          </td>
+          <td width="40%" align="right" valign="top">
+            &nbsp;
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

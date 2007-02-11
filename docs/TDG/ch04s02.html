@@ -1,72 +1,170 @@
-<html>
-<head>
-   <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
-   <title>Detection of files into a directory</title>
-   <link href="book.css" rel="stylesheet" type="text/css">
-   <meta content="DocBook XSL Stylesheets V1.69.1" name="generator">
-   <link href="index.html" rel="start" title="PHP_CompatInfo Manual">
-   <link href="ch04.html" rel="up" title="Chapter 4. Basic detection">
-   <link href="ch04.html" rel="prev" title="Chapter 4. Basic detection">
-   <link href="ch05.html" rel="next" title="Chapter 5. Advanced detection">
-</head>
-<body alink="#0000FF" bgcolor="white" link="#0000FF" text="black" vlink="#840084">
-<table class="pciHeader">
-   <tr>
-      <td><img align="left" alt="PEAR logo" src="img/pearsmall.gif">
-         <h1>PHP_CompatInfo : The Definitive Guide</h1>
-
-         <p>
-         <div class="navheader">
-            <table summary="Navigation header" width="100%">
-               <tr>
-                  <th align="center" colspan="3">Detection of files into a directory</th>
-               </tr>
-               <tr>
-                  <td align="left" width="20%"><a accesskey="p" href="ch04.html">Prev</a> </td>
-                  <th align="center" width="60%">Chapter 4. Basic detection</th><td align="right" width="20%"> <a accesskey="n" href="ch05.html">Next</a></td>
-               </tr>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>
+      Detection of files into a directory
+    </title>
+    <link rel="stylesheet" href="book.css" type="text/css" />
+    <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
+    <link rel="start" href="index.html" title="PHP_CompatInfo Manual" />
+    <link rel="up" href="ch04.html" title=
+    "Chapter&nbsp;4.&nbsp;Basic detection" />
+    <link rel="prev" href="ch04.html" title=
+    "Chapter&nbsp;4.&nbsp;Basic detection" />
+    <link rel="next" href="ch05.html" title=
+    "Chapter&nbsp;5.&nbsp;Advanced detection" />
+<style type="text/css">
+/*<![CDATA[*/
+ body {
+  background-color: white;
+  color: black;
+ }
+ :link { color: #0000FF }
+ :visited { color: #840084 }
+ :active { color: #0000FF }
+ div.c3 {margin-left: 0.5in; margin-right: 0.5in;}
+ div.c2 {font-family: monospace;}
+ h2.c1 {clear: both}
+/*]]>*/
+</style>
+  </head>
+  <body>
+    <table class="pciHeader">
+      <tr>
+        <td>
+          <img src="img/pearsmall.gif" align="left" alt="PEAR logo" />
+          <h1>
+            PHP_CompatInfo : The Definitive Guide
+          </h1>
+          <div class="navheader">
+            <table width="100%" summary="Navigation header">
+              <tr>
+                <th colspan="3" align="center">
+                  Detection of files into a directory
+                </th>
+              </tr>
+              <tr>
+                <td width="20%" align="left">
+                  <a accesskey="p" href="ch04.html">Prev</a>&nbsp;
+                </td>
+                <th width="60%" align="center">
+                  Chapter&nbsp;4.&nbsp;Basic detection
+                </th>
+                <td width="20%" align="right">
+                  &nbsp;<a accesskey="n" href="ch05.html">Next</a>
+                </td>
+              </tr>
             </table>
-         </div></p>
-      </td>
-   </tr>
-</table>
-<div class="sect1" lang="en"><div class="titlepage"><div><div>
-            <h2 class="title" style="clear: both">
-            <a name="developers.basic.dir"></a>Detection of files into a directory</h2></div>
+          </div><br />
+          <br />
+        </td>
+      </tr>
+    </table>
+    <div class="sect1" lang="en" xml:lang="en">
+      <div class="titlepage">
+        <h2 class="title c1">
+          <a name="developers.basic.dir" id=
+          "developers.basic.dir"></a>Detection of files into a directory
+        </h2>
       </div>
-   </div>
-   <div class="toc">
-      <dl><dt><span class="sect2"><a href="ch04s02.html#id4776288">Usage with SAPI</a></span></dt><dt><span class="sect2"><a href="ch04s02.html#id4776405">Usage with CLI</a></span></dt>
-      </dl>
-   </div>
-   <div class="sect2" lang="en"><div class="titlepage"><div><div>
-               <h3 class="title"><a name="id4776288"></a>Usage with SAPI</h3></div>
-         </div>
+      <div class="toc">
+        <dl>
+          <dt>
+            <span class="sect2"><a href="ch04s02.html#id4781263">Usage with
+            SAPI</a></span>
+          </dt>
+          <dt>
+            <span class="sect2"><a href="ch04s02.html#id4781380">Usage with
+            CLI</a></span>
+          </dt>
+        </dl>
       </div>
-
-      <p>Parsing a full directory, recursively or not, is no more difficult than detect PHP version of a single file. </p>
-
-      <p>This new example is based on auto detection of HTML_AJAX 0.5.0 distribution. As we will see, basic detection is not accurate as it should be. But with some options we can get the real result (PHP min = 4.2.1). </p>
-
-      <p>Here is now the simple detection script. </p>
-<pre class="programlisting">
-      
-&lt;?php
-require_once 'PHP/CompatInfo.php';
-
-$info = new PHP_CompatInfo();
-$path_to_dir = 'c:\pear\html\HTML_Ajax-0.5.0';
-$res = $info-&gt;parseDir($path_to_dir);
-
-echo '&lt;pre&gt;'; var_dump($res); echo '&lt;/pre&gt;';
-?&gt;
-      
-     </pre>
-
-      <p></p>
-
-      <p>And a chunk of raw results we got : </p>
-<pre class="screen">
+      <div class="sect2" lang="en" xml:lang="en">
+        <div class="titlepage">
+          <h3 class="title">
+            <a name="id4781263" id="id4781263"></a>Usage with SAPI
+          </h3>
+        </div>
+        <p>
+          Parsing a full directory, recursively or not, is no more difficult
+          than detect PHP version of a single file.
+        </p>
+        <p>
+          This new example is based on auto detection of HTML_AJAX 0.5.0
+          distribution. As we will see, basic detection is not accurate as it
+          should be. But with some options we can get the real result (PHP min
+          = 4.2.1).
+        </p>
+        <p>
+          Here is now the simple detection script.
+        </p>
+        <div class="php c2">
+          <ol>
+            <li class="li1">
+              <div class="de1">
+                <span class="kw2">&lt;?php</span>
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="kw1">require_once</span> <span class=
+                "st0">'PHP/CompatInfo.php'</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                &nbsp;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="re0">$info</span> = <span class="kw2">new</span>
+                PHP_CompatInfo<span class="br0">(</span><span class=
+                "br0">)</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="re0">$path_to_dir</span> = <span class=
+                "st0">'c:/pear/html/HTML_Ajax-0.5.0'</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="re0">$res</span> = <span class=
+                "re0">$info</span>-&gt;<span class=
+                "me1">parseDir</span><span class="br0">(</span><span class=
+                "re0">$path_to_dir</span><span class="br0">)</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                &nbsp;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="kw3">echo</span> <span class=
+                "st0">'&lt;pre&gt;'</span>; <span class=
+                "kw3">var_dump</span><span class="br0">(</span><span class=
+                "re0">$res</span><span class="br0">)</span>; <span class=
+                "kw3">echo</span> <span class="st0">'&lt;/pre&gt;'</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="kw2">?&gt;</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <p>
+          And a chunk of raw results we got :
+        </p>
+        <pre class="screen">
 array(61) {
   ["ignored_files"]=&gt;
   array(0) {
@@ -112,40 +210,54 @@ array(61) {
   [... more ...]
 
 }
-     </pre>
-
-      <p>It means that we need at least PHP 5.0.0 to run HTML_Ajax 0.5.0 with PHP extensions 
-      <span class="simplelist">mbstring, pcre, domxml, curl, sockets, session</span> loaded. Of course this is not the REAL and TRUE result. We will see later how to fix it and improve accuracy detection. </p>
-
-      <p></p>
-      <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
-         <table border="0" summary="Tip">
+     
+</pre>
+        <p>
+          It means that we need at least PHP 5.0.0 to run HTML_Ajax 0.5.0 with
+          PHP extensions <span class="simplelist">mbstring, pcre, domxml, curl,
+          sockets, session</span> loaded. Of course this is not the REAL and
+          TRUE result. We will see later how to fix it and improve accuracy
+          detection.
+        </p>
+        <div class="tip c3">
+          <table border="0" summary="Tip">
             <tr>
-               <td align="center" rowspan="2" valign="top" width="48px"><img alt="[Tip]" src="img/admons/tip.png"></td>
-               <th align="left">Tip</th>
+              <td rowspan="2" align="center" valign="top" width="48">
+                <img alt="[Tip]" src="img/admons/tip.png" />
+              </td>
+              <th align="left">
+                Tip
+              </th>
             </tr>
             <tr>
-               <td align="left" valign="top"> In raw output, you get for each script parsed the same results as if you run 
-                  <code class="methodname">PHP_CompatInfo::parseFile()</code> for all these files. 
-               </td>
+              <td align="left" valign="top">
+                In raw output, you get for each script parsed the same results
+                as if you run <code class=
+                "methodname">PHP_CompatInfo::parseFile()</code> for all these
+                files.
+              </td>
             </tr>
-         </table>
+          </table>
+        </div>
       </div>
-
-      <p></p>
-   </div>
-   <div class="sect2" lang="en"><div class="titlepage"><div><div>
-               <h3 class="title"><a name="id4776405"></a>Usage with CLI</h3></div>
-         </div>
-      </div>
-
-      <p>If we try again to detect the same distribution untar directory, the command to run will be: </p>
-<pre class="synopsis">
+      <div class="sect2" lang="en" xml:lang="en">
+        <div class="titlepage">
+          <h3 class="title">
+            <a name="id4781380" id="id4781380"></a>Usage with CLI
+          </h3>
+        </div>
+        <p>
+          If we try again to detect the same distribution untar directory, the
+          command to run will be:
+        </p>
+        <pre class="synopsis">
 pcicmd -d c:\pear\html\HTML_Ajax-0.5.0
-     </pre>
-
-      <p>And chunk of results give: </p>
-<pre class="screen">
+     
+</pre>
+        <p>
+          And chunk of results give:
+        </p>
+        <pre class="screen">
 +----------------------------------+---------+------------+------------------+
 | Path                             | Version | Extensions | Constants/Tokens |
 +----------------------------------+---------+------------+------------------+
@@ -172,47 +284,66 @@ pcicmd -d c:\pear\html\HTML_Ajax-0.5.0
 +----------------------------------+---------+------------+------------------+
 | [...]\AJAX\Action.php            | 4.0.4   |            |                  |
 +----------------------------------+---------+------------+------------------+
-     </pre>
-
-      <p></p>
-
-      <p></p>
-      <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
-         <table border="0" summary="Note">
+     
+</pre>
+        <div class="note c3">
+          <table border="0" summary="Note">
             <tr>
-               <td align="center" rowspan="2" valign="top" width="48px"><img alt="[Note]" src="img/admons/note.png"></td>
-               <th align="left">Note</th>
+              <td rowspan="2" align="center" valign="top" width="48">
+                <img alt="[Note]" src="img/admons/note.png" />
+              </td>
+              <th align="left">
+                Note
+              </th>
             </tr>
             <tr>
-               <td align="left" valign="top"> [...] replace the full path to directory given by 
-                  <em class="parameter"><code>-d</code></em> option, while (+) indicates that path to a file has been splitted (to limit output to 80 columns). 
-               </td>
+              <td align="left" valign="top">
+                [...] replace the full path to directory given by <em class=
+                "parameter"><code>-d</code></em> option, while (+) indicates
+                that path to a file has been splitted (to limit output to 80
+                columns).
+              </td>
             </tr>
-         </table>
+          </table>
+        </div>
       </div>
-
-      <p></p>
-   </div>
-</div>
-<table class="pciFooter">
-   <tr>
-      <td align="left">PHP_CompatInfo : The Definitive Guide</td>
-      <td align="right">v 1.4.0 : September 27, 2006</td>
-   </tr>
-</table>
-<div class="navfooter"><hr>
-   <table summary="Navigation footer" width="100%">
+    </div>
+    <table class="pciFooter">
       <tr>
-         <td align="left" width="40%"><a accesskey="p" href="ch04.html">Prev</a> </td>
-         <td align="center" width="20%"><a accesskey="u" href="ch04.html">Up</a></td>
-         <td align="right" width="40%"> <a accesskey="n" href="ch05.html">Next</a></td>
+        <td align="left">
+          PHP_CompatInfo : The Definitive Guide
+        </td>
+        <td align="right">
+          v 1.4.1 : February 12, 2007
+        </td>
       </tr>
-      <tr>
-         <td align="left" valign="top" width="40%">Chapter 4. Basic detection </td>
-         <td align="center" width="20%"><a accesskey="h" href="index.html">Home</a></td>
-         <td align="right" valign="top" width="40%"> Chapter 5. Advanced detection</td>
-      </tr>
-   </table>
-</div>
-</body>
-</html> 
+    </table>
+    <div class="navfooter">
+      <hr />
+      <table width="100%" summary="Navigation footer">
+        <tr>
+          <td width="40%" align="left">
+            <a accesskey="p" href="ch04.html">Prev</a>&nbsp;
+          </td>
+          <td width="20%" align="center">
+            <a accesskey="u" href="ch04.html">Up</a>
+          </td>
+          <td width="40%" align="right">
+            &nbsp;<a accesskey="n" href="ch05.html">Next</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="40%" align="left" valign="top">
+            Chapter&nbsp;4.&nbsp;Basic detection&nbsp;
+          </td>
+          <td width="20%" align="center">
+            <a accesskey="h" href="index.html">Home</a>
+          </td>
+          <td width="40%" align="right" valign="top">
+            &nbsp;Chapter&nbsp;5.&nbsp;Advanced detection
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

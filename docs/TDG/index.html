@@ -1,108 +1,256 @@
-<html>
-<head>
-   <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
-   <title>PHP_CompatInfo Manual</title>
-   <link href="book.css" rel="stylesheet" type="text/css">
-   <meta content="DocBook XSL Stylesheets V1.69.1" name="generator">
-   <link href="index.html" rel="start" title="PHP_CompatInfo Manual">
-   <link href="pr01.html" rel="next" title="Preface">
-</head>
-<body alink="#0000FF" bgcolor="white" link="#0000FF" text="black" vlink="#840084">
-<table class="pciHeader">
-   <tr>
-      <td><img align="left" alt="PEAR logo" src="img/pearsmall.gif">
-         <h1>PHP_CompatInfo : The Definitive Guide</h1>
-
-         <p>
-         <div class="navheader">
-            <table summary="Navigation header" width="100%">
-               <tr>
-                  <th align="center" colspan="3">PHP_CompatInfo Manual</th>
-               </tr>
-               <tr>
-                  <td align="left" width="20%"> </td>
-                  <th align="center" width="60%"> </th><td align="right" width="20%"> <a accesskey="n" href="pr01.html">Next</a></td>
-               </tr>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>
+      PHP_CompatInfo Manual
+    </title>
+    <link rel="stylesheet" href="book.css" type="text/css" />
+    <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
+    <link rel="start" href="index.html" title="PHP_CompatInfo Manual" />
+    <link rel="next" href="pr01.html" title="Preface" />
+<style type="text/css">
+/*<![CDATA[*/
+ body {
+  background-color: white;
+  color: black;
+ }
+ :link { color: #0000FF }
+ :visited { color: #840084 }
+ :active { color: #0000FF }
+ p.c1 {font-weight: bold}
+/*]]>*/
+</style>
+  </head>
+  <body>
+    <table class="pciHeader">
+      <tr>
+        <td>
+          <img src="img/pearsmall.gif" align="left" alt="PEAR logo" />
+          <h1>
+            PHP_CompatInfo : The Definitive Guide
+          </h1>
+          <div class="navheader">
+            <table width="100%" summary="Navigation header">
+              <tr>
+                <th colspan="3" align="center">
+                  PHP_CompatInfo Manual
+                </th>
+              </tr>
+              <tr>
+                <td width="20%" align="left">
+                  &nbsp;
+                </td>
+                <th width="60%" align="center">
+                  &nbsp;
+                </th>
+                <td width="20%" align="right">
+                  &nbsp;<a accesskey="n" href="pr01.html">Next</a>
+                </td>
+              </tr>
             </table>
-         </div></p>
-      </td>
-   </tr>
-</table>
-<div class="book" lang="en"><div class="titlepage"><div><div>
-            <h1 class="title"><a name="pcidoc"></a>PHP_CompatInfo Manual</h1></div>
-         <div>
-            <h2 class="subtitle">First Edition</h2></div>
-         <div><div class="authorgroup">
-               <h4 class="editedby">Edited by</h4>
-               <h3 class="editor"><span class="firstname">Laurent</span> 
-               <span class="surname">Laville</span></h3></div>
-         </div>
-         <div>
-
-            <p class="copyright">Copyright © 2006 Laurent Laville</p></div>
-         <div><div class="legalnotice"><a name="copyright"></a>
-
-               <p>This work is licensed under the Creative Commons Attribution License. To view a copy of this license, visit 
-               <a class="external" href="http://creativecommons.org/licenses/by/2.0/" title="http://creativecommons.org/licenses/by/2.0/">http://creativecommons.org/licenses/by/2.0/</a>. </p>
-            </div>
-         </div>
-         <div><div class="revhistory">
-               <table border="1" summary="Revision history" width="100%">
-                  <tr>
-                     <th align="left" colspan="2" valign="top"><b>Revision History</b></th>
-                  </tr>
-                  <tr>
-                     <td align="left">Revision 1.4.0</td>
-                     <td align="left">September 27, 2006</td>
-                  </tr>
-                  <tr>
-                     <td align="left" colspan="2">The first edition of this Guide is now completed. It cover version 1.4.0 (stable) of PHP_CompatInfo. 
-                     </td>
-                  </tr>
-               </table>
-            </div>
-         </div>
+          </div><br />
+          <br />
+        </td>
+      </tr>
+    </table>
+    <div class="book" lang="en" xml:lang="en">
+      <div class="titlepage">
+        <div>
+          <div>
+            <h1 class="title">
+              <a name="pcidoc" id="pcidoc"></a>PHP_CompatInfo Manual
+            </h1>
+          </div>
+          <div>
+            <h2 class="subtitle">
+              First Edition
+            </h2>
+          </div>
+          <div class="authorgroup">
+            <h4 class="editedby">
+              Edited by
+            </h4>
+            <h3 class="editor">
+              <span class="firstname">Laurent</span> <span class=
+              "surname">Laville</span>
+            </h3>
+          </div>
+          <div>
+            <p class="copyright">
+              Copyright © 2006, 2007 Laurent Laville
+            </p>
+          </div>
+          <div class="legalnotice">
+            <a name="copyright" id="copyright"></a>
+            <p>
+              This work is licensed under the Creative Commons Attribution
+              License. To view a copy of this license, visit <a class=
+              "external" href="http://creativecommons.org/licenses/by/2.0/"
+              title=
+              "http://creativecommons.org/licenses/by/2.0/">http://creativecommons.org/licenses/by/2.0/</a>.
+            </p>
+          </div>
+          <div class="revhistory">
+            <table border="1" width="100%" summary="Revision history">
+              <tr>
+                <th align="left" valign="top" colspan="2">
+                  <b>Revision History</b>
+                </th>
+              </tr>
+              <tr>
+                <td align="left">
+                  Revision 1.4.1
+                </td>
+                <td align="left">
+                  February 12, 2007
+                </td>
+              </tr>
+              <tr>
+                <td align="left" colspan="2">
+                  <div class="itemizedlist">
+                    <ul type="disc">
+                      <li>Readability improved with hilighted source code
+                      (GESHI) and make html W3C strict compliant (with TIDY).
+                      </li>
+                      <li>Copyright bumped to 2007
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">
+                  Revision 1.4.0
+                </td>
+                <td align="left">
+                  September 27, 2006
+                </td>
+              </tr>
+              <tr>
+                <td align="left" colspan="2">
+                  The first edition of this Guide is now completed. It cover
+                  version 1.4.0 (stable) of PHP_CompatInfo.
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <hr />
       </div>
-      <hr></div>
-   <div class="toc">
-
-      <p><b>Table of Contents</b></p>
-      <dl><dt><span class="preface"><a href="pr01.html">Preface</a></span></dt>
-         <dd>
-         <dl><dt><span class="sect1"><a href="pr01.html#preface.structure">Organization of This Book</a></span></dt><dt><span class="sect1"><a href="pr01s02.html">Pre-requisites</a></span></dt>
-         </dl></dd><dt><span class="part"><a href="pt01.html">I. Introduction</a></span></dt>
-         <dd>
-         <dl><dt><span class="chapter"><a href="ch01.html">1. About PHP_CompatInfo</a></span></dt><dt><span class="chapter"><a href="ch02.html">2. FAQ - Frequently Asked Questions</a></span></dt>
-         </dl></dd><dt><span class="part"><a href="pt02.html">II. Getting Started</a></span></dt>
-         <dd>
-         <dl><dt><span class="chapter"><a href="ch03.html">3. Overview</a></span></dt><dt><span class="chapter"><a href="ch04.html">4. Basic detection</a></span></dt><dt><span class="chapter"><a href="ch05.html">5. Advanced detection</a></span></dt>
-         </dl></dd><dt><span class="part"><a href="pt03.html">III. Reference Guide</a></span></dt>
-         <dd>
-         <dl><dt><span class="chapter"><a href="ch06.html">6. API - Application Programming Interface</a></span></dt><dt><span class="chapter"><a href="ch07.html">7. CLI - The pcicmd console command 
-            </a></span></dt>
-         </dl></dd>
-      </dl>
-   </div>
-</div>
-<table class="pciFooter">
-   <tr>
-      <td align="left">PHP_CompatInfo : The Definitive Guide</td>
-      <td align="right">v 1.4.0 : September 27, 2006</td>
-   </tr>
-</table>
-<div class="navfooter"><hr>
-   <table summary="Navigation footer" width="100%">
+      <div class="toc">
+        <p class="c1">
+          Table of Contents
+        </p>
+        <dl>
+          <dt>
+            <span class="preface"><a href="pr01.html">Preface</a></span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="sect1"><a href=
+                "pr01.html#preface.structure">Organization of This
+                Book</a></span>
+              </dt>
+              <dt>
+                <span class="sect1"><a href=
+                "pr01s02.html">Pre-requisites</a></span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="part"><a href="pt01.html">I. Introduction</a></span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="chapter"><a href="ch01.html">1. About
+                PHP_CompatInfo</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="ch02.html">2. FAQ - Frequently
+                Asked Questions</a></span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="part"><a href="pt02.html">II. Getting
+            Started</a></span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="chapter"><a href="ch03.html">3.
+                Overview</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="ch04.html">4. Basic
+                detection</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="ch05.html">5. Advanced
+                detection</a></span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="part"><a href="pt03.html">III. Reference
+            Guide</a></span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="chapter"><a href="ch06.html">6. API - Application
+                Programming Interface</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="ch07.html">7. CLI - The pcicmd
+                console command</a></span>
+              </dt>
+            </dl>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <table class="pciFooter">
       <tr>
-         <td align="left" width="40%"> </td>
-         <td align="center" width="20%"> </td>
-         <td align="right" width="40%"> <a accesskey="n" href="pr01.html">Next</a></td>
+        <td align="left">
+          PHP_CompatInfo : The Definitive Guide
+        </td>
+        <td align="right">
+          v 1.4.1 : February 12, 2007
+        </td>
       </tr>
-      <tr>
-         <td align="left" valign="top" width="40%"> </td>
-         <td align="center" width="20%"> </td>
-         <td align="right" valign="top" width="40%"> Preface</td>
-      </tr>
-   </table>
-</div>
-</body>
-</html> 
+    </table>
+    <div class="navfooter">
+      <hr />
+      <table width="100%" summary="Navigation footer">
+        <tr>
+          <td width="40%" align="left">
+            &nbsp;
+          </td>
+          <td width="20%" align="center">
+            &nbsp;
+          </td>
+          <td width="40%" align="right">
+            &nbsp;<a accesskey="n" href="pr01.html">Next</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="40%" align="left" valign="top">
+            &nbsp;
+          </td>
+          <td width="20%" align="center">
+            &nbsp;
+          </td>
+          <td width="40%" align="right" valign="top">
+            &nbsp;Preface
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
