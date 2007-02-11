@@ -32,13 +32,18 @@ $options = array('filelistgenerator' => 'cvs',
     'simpleoutput' => true,
     'clearcontents' => false,
     'changelogoldtonew' => false,
-    'ignore' => array('package.php', 'index.htm')
+    'ignore' => array('package.php', 'index.htm',
+        'funclist.txt', 'updateVersionInfo.php', 'version.xml')
     );
 
 $p2 = &PEAR_PackageFileManager2::importOptions($packagefile, $options);
 $p2->setPackageType('php');
-$p2->addRelease();
 $p2->generateContents();
+$p2->addRelease();
+$p2->setOSInstallCondition('windows');
+$p2->addInstallAs('scripts/compatinfo.bat', 'compatinfo.bat');
+$p2->addRelease();
+$p2->addIgnoreToRelease('scripts/compatinfo.bat');
 $p2->setReleaseVersion('1.4.1');
 $p2->setAPIVersion('1.4.0');
 $p2->setReleaseStability('stable');
