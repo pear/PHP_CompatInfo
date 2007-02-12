@@ -61,7 +61,7 @@ that cover all versions 1.4.x
   see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
 ');
 $p2->setLicense('PHP License 3.01', 'http://www.php.net/license/3_01.txt');
-$p2->addPackageDepWithChannel('required', 'Console_GetArgs', 'pear.php.net', '1.3.3');
+$p2->addPackageDepWithChannel('optional', 'Console_GetArgs', 'pear.php.net', '1.3.3');
 
 if (isset($_GET['make']) || (isset($_SERVER['argv']) && @$_SERVER['argv'][1] == 'make')) {
     $p2->writePackageFile();
