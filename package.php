@@ -51,6 +51,7 @@ $p2->setAPIStability('stable');
 $p2->setNotes('* changes
 - upgrade license from PHP 3.0 to 3.01
 - fixed wrong implementation of Console_Getargs feature fixed in version 1.33 (see bug #9252)
+- set Console_GetArgs minimum dependency to version 1.3.3
 - improve PHP5 detection with a new fresh up-to-date func_array.php file
 (that include the new function "spl_object_hash" came with PHP 5.2.0)
 
@@ -60,6 +61,7 @@ that cover all versions 1.4.x
   see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
 ');
 $p2->setLicense('PHP License 3.01', 'http://www.php.net/license/3_01.txt');
+$p2->addPackageDepWithChannel('required', 'Console_GetArgs', 'pear.php.net', '1.3.3');
 
 if (isset($_GET['make']) || (isset($_SERVER['argv']) && @$_SERVER['argv'][1] == 'make')) {
     $p2->writePackageFile();
