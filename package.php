@@ -44,24 +44,20 @@ $p2->setOSInstallCondition('windows');
 $p2->addInstallAs('scripts/compatinfo.bat', 'compatinfo.bat');
 $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
-$p2->setReleaseVersion('1.4.1');
+$p2->setReleaseVersion('1.4.2');
 $p2->setAPIVersion('1.4.0');
 $p2->setReleaseStability('stable');
 $p2->setAPIStability('stable');
 $p2->setNotes('* changes
-- upgrade license from PHP 3.0 to 3.01
-- fixed wrong implementation of Console_Getargs feature fixed in version 1.33 (see bug #9252)
-- set Console_GetArgs minimum dependency to version 1.3.3
-- improve PHP5 detection with a new fresh up-to-date func_array.php file
-(that include the new function "spl_object_hash" came with PHP 5.2.0)
+- fixed wrong PHP5 constants detection when tokens used inside strings. (see bug #10100)
 
 * QA
-- Improve readability (hilighted source code) of User Guide 1.4.1 included in this release
-that cover all versions 1.4.x
+- this release include also The Definitive Guide in version 1.4.1 that cover all versions
+until 1.4.2
   see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
 ');
-$p2->setLicense('PHP License 3.01', 'http://www.php.net/license/3_01.txt');
-$p2->addPackageDepWithChannel('optional', 'Console_GetArgs', 'pear.php.net', '1.3.3');
+//$p2->setLicense('PHP License 3.01', 'http://www.php.net/license/3_01.txt');
+//$p2->addPackageDepWithChannel('optional', 'Console_GetArgs', 'pear.php.net', '1.3.3');
 
 if (isset($_GET['make']) || (isset($_SERVER['argv']) && @$_SERVER['argv'][1] == 'make')) {
     $p2->writePackageFile();
