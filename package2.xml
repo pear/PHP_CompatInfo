@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2007-02-12</date>
- <time>11:26:32</time>
+ <date>2007-04-02</date>
+ <time>08:03:24</time>
  <version>
-  <release>1.4.1</release>
+  <release>1.4.2</release>
   <api>1.4.0</api>
  </version>
  <stability>
@@ -30,15 +30,11 @@ which shows which functions require which version and CLI output script</descrip
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
  <notes>* changes
-- upgrade license from PHP 3.0 to 3.01
-- fixed wrong implementation of Console_Getargs feature fixed in version 1.33 (see bug #9252)
-- set Console_GetArgs minimum dependency to version 1.3.3
-- improve PHP5 detection with a new fresh up-to-date func_array.php file
-(that include the new function &quot;spl_object_hash&quot; came with PHP 5.2.0)
+- fixed wrong PHP5 constants detection when tokens used inside strings. (see bug #10100)
 
 * QA
-- Improve readability (hilighted source code) of User Guide 1.4.1 included in this release
-that cover all versions 1.4.x
+- this release include also The Definitive Guide in version 1.4.1 that cover all versions
+until 1.4.2
   see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
  </notes>
  <contents>
@@ -163,6 +159,26 @@ that cover all versions 1.4.x
  <changelog>
   <release>
    <version>
+    <release>1.4.2</release>
+    <api>1.4.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2007-03-31</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>* changes
+- fixed wrong PHP5 constants detection when tokens used inside strings. (see bug #10100)
+
+* QA
+- this release include also The Definitive Guide in version 1.4.1 that cover all versions
+until 1.4.2
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.4.1</release>
     <api>1.4.0</api>
    </version>
@@ -182,8 +198,7 @@ that cover all versions 1.4.x
 * QA
 - Improve readability (hilighted source code) of User Guide 1.4.1 included in this release
 that cover all versions 1.4.x
-  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
-   </notes>
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.</notes>
   </release>
   <release>
    <version>
