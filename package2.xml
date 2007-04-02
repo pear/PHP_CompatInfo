@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2007-04-02</date>
+ <date>2007-04-03</date>
  <time>08:03:24</time>
  <version>
-  <release>1.4.2</release>
+  <release>1.4.3</release>
   <api>1.4.0</api>
  </version>
  <stability>
@@ -30,11 +30,11 @@ which shows which functions require which version and CLI output script</descrip
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
  <notes>* changes
-- fixed wrong PHP5 constants detection when tokens used inside strings. (see bug #10100)
+- fully fix for wrong PHP5 constants detection when tokens used inside strings. (see bug #10100)
 
 * QA
 - this release include also The Definitive Guide in version 1.4.1 that cover all versions
-until 1.4.2
+until 1.4.3
   see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
  </notes>
  <contents>
@@ -159,6 +159,26 @@ until 1.4.2
  <changelog>
   <release>
    <version>
+    <release>1.4.3</release>
+    <api>1.4.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2007-04-03</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>* changes
+- fully fix for wrong PHP5 constants detection when tokens used inside strings. (see bug #10100)
+
+* QA
+- this release include also The Definitive Guide in version 1.4.1 that cover all versions
+until 1.4.3
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.4.2</release>
     <api>1.4.0</api>
    </version>
@@ -166,7 +186,7 @@ until 1.4.2
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2007-03-31</date>
+   <date>2007-04-02</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
    <notes>* changes
 - fixed wrong PHP5 constants detection when tokens used inside strings. (see bug #10100)
@@ -174,8 +194,7 @@ until 1.4.2
 * QA
 - this release include also The Definitive Guide in version 1.4.1 that cover all versions
 until 1.4.2
-  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
-   </notes>
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.</notes>
   </release>
   <release>
    <version>
