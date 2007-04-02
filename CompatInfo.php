@@ -466,7 +466,7 @@ class PHP_CompatInfo
                 $const = strtoupper($tokens[$i][1]);
                 $found = array_search($const, $akeys);
                 if ($found !== false) {
-                    if (is_string($tokens[$i-1]) || (token_name($tokens[$i][0]) == 'T_ENCAPSED_AND_WHITESPACE')) {
+                    if (is_string($tokens[$i-1]) || (token_name($tokens[$i-1][0]) == 'T_ENCAPSED_AND_WHITESPACE')) {
                         // PHP 5 constant tokens found into a string
                     } else {
                         if (!in_array($const, $options['ignore_constants'])) {
