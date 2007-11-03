@@ -10,14 +10,14 @@
  * the PHP License and are unable to obtain it through the web, please
  * send a note to license@php.net so we can mail you a copy immediately.
  *
- * @category   PHP
- * @package    PHP_CompatInfo
- * @author     Davey Shafik <davey@php.net>
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
- * @version    CVS: $Id$
- * @link       http://pear.php.net/package/PHP_CompatInfo
- * @since      File available since Release 0.7.0
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Davey Shafik <davey@php.net>
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version  CVS: $Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
+ * @since    File available since Release 0.7.0
  */
 
 /**
@@ -33,22 +33,28 @@ require_once 'PHP/CompatInfo/const_array.php';
 /**
  * Check Compatibility of chunk of PHP code
  *
- * @example docs/examples/checkConstants.php Example that shows minimum version with Constants
- * @example docs/examples/parseFile.php Example on how to parse a file
- * @example docs/examples/parseDir.php Example on how to parse a directory
- * @example docs/examples/parseArray.php Example on using using parseArray() to parse a script
- * @example docs/examples/parseString.php Example on how to parse a string
- * @example docs/examples/Cli.php Example of using PHP_CompatInfo_Cli
+ * @example docs/examples/checkConstants.php
+ *          Example that shows minimum version with Constants
+ * @example docs/examples/parseFile.php
+ *          Example on how to parse a file
+ * @example docs/examples/parseDir.php
+ *          Example on how to parse a directory
+ * @example docs/examples/parseArray.php
+ *          Example on using using parseArray() to parse a script
+ * @example docs/examples/parseString.php
+ *          Example on how to parse a string
+ * @example docs/examples/Cli.php
+ *          Example of using PHP_CompatInfo_Cli
  *
- * @category   PHP
- * @package    PHP_CompatInfo
- * @author     Davey Shafik <davey@php.net>
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @copyright  Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
- * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
- * @version    Release: @package_version@
- * @link       http://pear.php.net/package/PHP_CompatInfo
- * @since      Class available since Release 0.7.0
+ * @category  PHP
+ * @package   PHP_CompatInfo
+ * @author    Davey Shafik <davey@php.net>
+ * @author    Laurent Laville <pear@laurent-laville.org>
+ * @copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
+ * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version   Release: @package_version@
+ * @link      http://pear.php.net/package/PHP_CompatInfo
+ * @since     Class available since Release 0.7.0
  */
 
 class PHP_CompatInfo
@@ -73,8 +79,8 @@ class PHP_CompatInfo
     /**
      * Parse a file for its Compatibility info
      *
-     * @param  string $file    Path of File to parse
-     * @param  array  $options An array of options where:
+     * @param string $file    Path of File to parse
+     * @param array  $options An array of options where:
      *  - 'debug'            Contains a boolean to control whether
      *                       extra ouput is shown.
      *  - 'ignore_functions' Contains an array of functions to ignore
@@ -85,6 +91,7 @@ class PHP_CompatInfo
      *                       when calculating the version needed.
      *  - 'ignore_versions'  Contains an array of php versions to ignore
      *                       when calculating the version needed.
+     *
      * @access public
      * @return Array
      * @since  0.7.0
@@ -102,8 +109,8 @@ class PHP_CompatInfo
     /**
      * Parse a string for its Compatibility info
      *
-     * @param  string $string  PHP Code to parses
-     * @param  array  $options An array of options where:
+     * @param string $string  PHP Code to parses
+     * @param array  $options An array of options where:
      *  - 'debug'            Contains a boolean to control whether
      *                       extra ouput is shown.
      *  - 'ignore_functions' Contains an array of functions to ignore
@@ -114,6 +121,7 @@ class PHP_CompatInfo
      *                       when calculating the version needed.
      *  - 'ignore_versions'  Contains an array of php versions to ignore
      *                       when calculating the version needed.
+     *
      * @access public
      * @return Array
      * @since  0.7.0
@@ -131,9 +139,8 @@ class PHP_CompatInfo
     /**
      * Parse a directory recursively for its Compatibility info
      *
-     * @see PHP_CompatInfo::_fileList()
-     * @param  string $dir     Path of folder to parse
-     * @param  array  $options An array of options where:
+     * @param string $dir     Path of folder to parse
+     * @param array  $options An array of options where:
      *  - 'file_ext'         Contains an array of file extensions to parse
      *                       for PHP code. Default: php, php4, inc, phtml
      *  - 'recurse_dir'      Boolean on whether to recursively find files
@@ -151,9 +158,11 @@ class PHP_CompatInfo
      *                       when calculating the version needed.
      *  - 'ignore_versions'  Contains an array of php versions to ignore
      *                       when calculating the version needed.
+     *
      * @access public
      * @return array
      * @since  0.8.0
+     * @see PHP_CompatInfo::_fileList()
      */
     function parseDir($dir, $options = array())
     {
@@ -243,10 +252,12 @@ class PHP_CompatInfo
     /**
      * Alias of parseDir
      *
-     * @param  string $folder  Path of folder to parse
-     * @param  array  $options An array of options
+     * @param string $folder  Path of folder to parse
+     * @param array  $options An array of options
+     *
      * @uses   PHP_CompatInfo::parseDir()
      * @access public
+     * @return array
      * @since  0.7.0
      */
     function parseFolder($folder, $options = array())
@@ -260,8 +271,8 @@ class PHP_CompatInfo
      * You can parse an array of Files or Strings, to parse
      * strings, $options['is_string'] must be set to true
      *
-     * @param  array $files   Array of file names or code strings
-     * @param  array $options An array of options where:
+     * @param array $files   Array of file names or code strings
+     * @param array $options An array of options where:
      *  - 'file_ext'         Contains an array of file extensions to parse
      *                       for PHP code. Default: php, php4, inc, phtml
      *  - 'debug'            Contains a boolean to control whether
@@ -278,6 +289,7 @@ class PHP_CompatInfo
      *                       when calculating the version needed.
      *  - 'ignore_versions'  Contains an array of php versions to ignore
      *                       when calculating the version needed.
+     *
      * @access public
      * @return array|false
      * @since  0.7.0
@@ -358,8 +370,9 @@ class PHP_CompatInfo
     /**
      * Load components list for a PHP version or subset
      *
-     * @param  string           $min     PHP minimal version
-     * @param  string|boolean   $max     (optional) PHP maximal version
+     * @param string         $min PHP minimal version
+     * @param string|boolean $max (optional) PHP maximal version
+     *
      * @return array            An array of php function names to ignore
      * @access public
      * @static
@@ -393,8 +406,9 @@ class PHP_CompatInfo
      * token_get_all() which is nicely
      * wrapped in PHP_CompatInfo::_tokenize
      *
-     * @param  array   $tokens Array of PHP Tokens
-     * @param  boolean $debug  Show Extra Output
+     * @param array   $tokens  Array of PHP Tokens
+     * @param boolean $options Show Extra Output
+     *
      * @access private
      * @return array
      * @since  0.7.0
@@ -576,9 +590,10 @@ class PHP_CompatInfo
      * Checks if function which has $init version should be keep
      * or ignore (version is between $min_ver and $max_ver).
      *
-     * @param  string $init     version of current function
-     * @param  string $min_ver  minimum version of function to ignore
-     * @param  string $max_ver  maximum version of function to ignore
+     * @param string $init    version of current function
+     * @param string $min_ver minimum version of function to ignore
+     * @param string $max_ver maximum version of function to ignore
+     *
      * @access private
      * @return boolean True to ignore function/constant, false otherwise
      * @since  1.4.0
@@ -603,8 +618,9 @@ class PHP_CompatInfo
     /**
      * Token a file or string
      *
-     * @param  string  $input     Filename or PHP code
-     * @param  boolean $is_string Whether or note the input is a string
+     * @param string  $input     Filename or PHP code
+     * @param boolean $is_string Whether or note the input is a string
+     *
      * @access private
      * @return array|false
      * @since  0.7.0
@@ -626,12 +642,14 @@ class PHP_CompatInfo
      * Retrieve a listing of every file in $directory and
      * all subdirectories. Taken from PEAR_PackageFileManager_File
      *
-     * @param  string $directory full path to the directory you want the list of
+     * @param string $directory full path to the directory you want the list of
+     * @param array  $options   array of public config. options
+     *
      * @access private
      * @return array list of files in a directory
      * @since  0.7.0
      */
-    function _fileList($directory,$options)
+    function _fileList($directory, $options)
     {
         $ret = false;
         if (@is_dir($directory) &&
