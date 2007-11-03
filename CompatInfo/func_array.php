@@ -2,27364 +2,27369 @@
 /**
  * This file was generated for PHP_CompatInfo 1.1.1 or better
  *
- * @version    $Id$
- * @author     Davey Shafik <davey@php.net>
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @package    PHP_CompatInfo
+ * PHP versions 4 and 5
+ *
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Davey Shafik <davey@php.net>
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version  CVS: $Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
  * @ignore
  */
 
 $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
-  'array' => 
+  'array' =>
   array (
     'init' => '3.0.0',
   ),
-  'die' => 
+  'die' =>
   array (
     'init' => '3.0.0',
   ),
-  'echo' => 
+  'echo' =>
   array (
     'init' => '3.0.0',
   ),
-  'empty' => 
+  'empty' =>
   array (
     'init' => '3.0.0',
   ),
-  'eval' => 
+  'eval' =>
   array (
     'init' => '3.0.0',
   ),
-  'exit' => 
+  'exit' =>
   array (
     'init' => '3.0.0',
   ),
-  'isset' => 
+  'isset' =>
   array (
     'init' => '3.0.0',
   ),
-  'list' => 
+  'list' =>
   array (
     'init' => '3.0.0',
   ),
-  'print' => 
+  'print' =>
   array (
     'init' => '3.0.0',
   ),
-  'unset' => 
+  'unset' =>
   array (
     'init' => '3.0.0',
   ),
-  'COM_invoke' => 
+  'COM_invoke' =>
   array (
     'init' => '4.0.0',
   ),
-  'COM_load' => 
+  'COM_load' =>
   array (
     'init' => '4.0.0',
   ),
-  'PHP3_UDOBC_CLOSE_ALL' => 
+  'PHP3_UDOBC_CLOSE_ALL' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_AUTOCOMMIT' => 
+  'PHP3_UODBC_AUTOCOMMIT' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_BINMODE' => 
+  'PHP3_UODBC_BINMODE' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_CLOSE' => 
+  'PHP3_UODBC_CLOSE' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_COMMIT' => 
+  'PHP3_UODBC_COMMIT' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_CONNECT' => 
+  'PHP3_UODBC_CONNECT' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_CURSOR' => 
+  'PHP3_UODBC_CURSOR' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_DO' => 
+  'PHP3_UODBC_DO' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_EXECUTE' => 
+  'PHP3_UODBC_EXECUTE' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_FETCH_INTO' => 
+  'PHP3_UODBC_FETCH_INTO' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_FETCH_ROW' => 
+  'PHP3_UODBC_FETCH_ROW' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_FIELD_LEN' => 
+  'PHP3_UODBC_FIELD_LEN' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_FIELD_NAME' => 
+  'PHP3_UODBC_FIELD_NAME' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_FIELD_NUM' => 
+  'PHP3_UODBC_FIELD_NUM' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.5',
   ),
-  'PHP3_UODBC_FIELD_TYPE' => 
+  'PHP3_UODBC_FIELD_TYPE' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_FREE_RESULT' => 
+  'PHP3_UODBC_FREE_RESULT' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_LONGREADLEN' => 
+  'PHP3_UODBC_LONGREADLEN' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_NUM_FIELDS' => 
+  'PHP3_UODBC_NUM_FIELDS' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_NUM_ROWS' => 
+  'PHP3_UODBC_NUM_ROWS' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_PCONNECT' => 
+  'PHP3_UODBC_PCONNECT' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_PREPARE' => 
+  'PHP3_UODBC_PREPARE' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_RESULT' => 
+  'PHP3_UODBC_RESULT' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_RESULT_ALL' => 
+  'PHP3_UODBC_RESULT_ALL' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_ROLLBACK' => 
+  'PHP3_UODBC_ROLLBACK' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  'PHP3_UODBC_SETOPTION' => 
+  'PHP3_UODBC_SETOPTION' =>
   array (
     'end' => '3.0.5',
     'init' => '3.0.0',
   ),
-  '_' => 
+  '_' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_gettext',
   ),
-  '__soapCall' => 
+  '__soapCall' =>
   array (
     'init' => '5.0.2',
     'ext' => 'ext_soap',
   ),
-  'abs' => 
+  'abs' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'accept_connect' => 
+  'accept_connect' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'acos' => 
+  'acos' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'acosh' => 
+  'acosh' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'ada_afetch' => 
+  'ada_afetch' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_autocommit' => 
+  'ada_autocommit' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_close' => 
+  'ada_close' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_closeall' => 
+  'ada_closeall' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_commit' => 
+  'ada_commit' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_connect' => 
+  'ada_connect' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_exec' => 
+  'ada_exec' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_fetchrow' => 
+  'ada_fetchrow' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_fieldlen' => 
+  'ada_fieldlen' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_fieldname' => 
+  'ada_fieldname' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_fieldtype' => 
+  'ada_fieldtype' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_freeresult' => 
+  'ada_freeresult' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_numfields' => 
+  'ada_numfields' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_numrows' => 
+  'ada_numrows' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_result' => 
+  'ada_result' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_resultall' => 
+  'ada_resultall' =>
   array (
     'init' => '3.0.0',
   ),
-  'ada_rollback' => 
+  'ada_rollback' =>
   array (
     'init' => '3.0.0',
   ),
-  'add' => 
+  'add' =>
   array (
     'init' => '4.0.5',
   ),
-  'add_iovec' => 
+  'add_iovec' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'addaction' => 
+  'addaction' =>
   array (
     'init' => '4.0.5',
   ),
-  'addcolor' => 
+  'addcolor' =>
   array (
     'init' => '4.0.5',
   ),
-  'addcslashes' => 
+  'addcslashes' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'addentry' => 
+  'addentry' =>
   array (
     'init' => '4.0.5',
   ),
-  'addfill' => 
+  'addfill' =>
   array (
     'init' => '4.0.5',
   ),
-  'addshape' => 
+  'addshape' =>
   array (
     'init' => '4.0.5',
   ),
-  'addslashes' => 
+  'addslashes' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'addstring' => 
+  'addstring' =>
   array (
     'init' => '4.0.5',
   ),
-  'aggregate' => 
+  'aggregate' =>
   array (
     'init' => '4.2.0',
   ),
-  'aggregate_methods' => 
+  'aggregate_methods' =>
   array (
     'init' => '4.2.0',
   ),
-  'aggregate_methods_by_list' => 
+  'aggregate_methods_by_list' =>
   array (
     'init' => '4.2.0',
   ),
-  'aggregate_methods_by_regexp' => 
+  'aggregate_methods_by_regexp' =>
   array (
     'init' => '4.2.0',
   ),
-  'aggregate_properties' => 
+  'aggregate_properties' =>
   array (
     'init' => '4.2.0',
   ),
-  'aggregate_properties_by_list' => 
+  'aggregate_properties_by_list' =>
   array (
     'init' => '4.2.0',
   ),
-  'aggregate_properties_by_regexp' => 
+  'aggregate_properties_by_regexp' =>
   array (
     'init' => '4.2.0',
   ),
-  'aggregation_info' => 
+  'aggregation_info' =>
   array (
     'init' => '4.2.0',
   ),
-  'alarm' => 
+  'alarm' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.11',
   ),
-  'align' => 
+  'align' =>
   array (
     'init' => '4.0.5',
   ),
-  'apache_child_terminate' => 
+  'apache_child_terminate' =>
   array (
     'init' => '4.0.5',
     'ext' => 'sapi_apache',
   ),
-  'apache_get_modules' => 
+  'apache_get_modules' =>
   array (
     'init' => '4.3.2',
     'ext' => 'sapi_apache',
   ),
-  'apache_get_version' => 
+  'apache_get_version' =>
   array (
     'init' => '4.3.2',
     'ext' => 'sapi_apache',
   ),
-  'apache_getenv' => 
+  'apache_getenv' =>
   array (
     'init' => '4.3.0',
     'ext' => 'sapi_apache2filter',
   ),
-  'apache_lookup_uri' => 
+  'apache_lookup_uri' =>
   array (
     'init' => '3.0.4',
     'ext' => 'sapi_apache',
   ),
-  'apache_note' => 
+  'apache_note' =>
   array (
     'init' => '3.0.2',
     'ext' => 'sapi_apache',
   ),
-  'apache_request_headers' => 
+  'apache_request_headers' =>
   array (
     'init' => '4.3.0',
     'ext' => 'sapi_apache',
   ),
-  'apache_response_headers' => 
+  'apache_response_headers' =>
   array (
     'init' => '4.3.0',
     'ext' => 'sapi_apache',
   ),
-  'apache_setenv' => 
+  'apache_setenv' =>
   array (
     'init' => '4.2.0',
     'ext' => 'sapi_apache',
   ),
-  'apache_sub_req' => 
+  'apache_sub_req' =>
   array (
     'init' => '4.0.4',
     'end' => '4.1.2',
   ),
-  'array_change_key_case' => 
+  'array_change_key_case' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'array_chunk' => 
+  'array_chunk' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'array_combine' => 
+  'array_combine' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_count_values' => 
+  'array_count_values' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_diff' => 
+  'array_diff' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'array_diff_assoc' => 
+  'array_diff_assoc' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'array_diff_key' => 
+  'array_diff_key' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'array_diff_uassoc' => 
+  'array_diff_uassoc' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_diff_ukey' => 
+  'array_diff_ukey' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'array_fill' => 
+  'array_fill' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'array_filter' => 
+  'array_filter' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_standard',
   ),
-  'array_flip' => 
+  'array_flip' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_intersect' => 
+  'array_intersect' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'array_intersect_assoc' => 
+  'array_intersect_assoc' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'array_intersect_key' => 
+  'array_intersect_key' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'array_intersect_uassoc' => 
+  'array_intersect_uassoc' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_intersect_ukey' => 
+  'array_intersect_ukey' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'array_key_exists' => 
+  'array_key_exists' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'array_keys' => 
+  'array_keys' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_map' => 
+  'array_map' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_standard',
   ),
-  'array_merge' => 
+  'array_merge' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_merge_recursive' => 
+  'array_merge_recursive' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'array_multisort' => 
+  'array_multisort' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_pad' => 
+  'array_pad' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_pop' => 
+  'array_pop' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_product' => 
+  'array_product' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'array_push' => 
+  'array_push' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_rand' => 
+  'array_rand' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_reduce' => 
+  'array_reduce' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_standard',
   ),
-  'array_reverse' => 
+  'array_reverse' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_search' => 
+  'array_search' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_standard',
   ),
-  'array_shift' => 
+  'array_shift' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_slice' => 
+  'array_slice' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_splice' => 
+  'array_splice' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_sum' => 
+  'array_sum' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_standard',
   ),
-  'array_udiff' => 
+  'array_udiff' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_udiff_assoc' => 
+  'array_udiff_assoc' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_udiff_uassoc' => 
+  'array_udiff_uassoc' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_uintersect' => 
+  'array_uintersect' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_uintersect_assoc' => 
+  'array_uintersect_assoc' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_uintersect_uassoc' => 
+  'array_uintersect_uassoc' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_unique' => 
+  'array_unique' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'array_unshift' => 
+  'array_unshift' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_values' => 
+  'array_values' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'array_walk' => 
+  'array_walk' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_standard',
   ),
-  'array_walk_recursive' => 
+  'array_walk_recursive' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'arsort' => 
+  'arsort' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'ascii2ebcdic' => 
+  'ascii2ebcdic' =>
   array (
     'init' => '3.0.17',
   ),
-  'asin' => 
+  'asin' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'asinh' => 
+  'asinh' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'asort' => 
+  'asort' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'aspell_check' => 
+  'aspell_check' =>
   array (
     'init' => '3.0.7',
     'end' => '4.2.3',
   ),
-  'aspell_check_raw' => 
+  'aspell_check_raw' =>
   array (
     'init' => '3.0.7',
     'end' => '4.2.3',
   ),
-  'aspell_new' => 
+  'aspell_new' =>
   array (
     'init' => '3.0.7',
     'end' => '4.2.3',
   ),
-  'aspell_suggest' => 
+  'aspell_suggest' =>
   array (
     'init' => '3.0.7',
     'end' => '4.2.3',
   ),
-  'assert' => 
+  'assert' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'assert_options' => 
+  'assert_options' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'atan' => 
+  'atan' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'atan2' => 
+  'atan2' =>
   array (
     'init' => '3.0.5',
     'ext' => 'ext_standard',
   ),
-  'atanh' => 
+  'atanh' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'base64_decode' => 
+  'base64_decode' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'base64_encode' => 
+  'base64_encode' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'base_convert' => 
+  'base_convert' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'basename' => 
+  'basename' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'bcadd' => 
+  'bcadd' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_bcmath',
   ),
-  'bccomp' => 
+  'bccomp' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_bcmath',
   ),
-  'bcdiv' => 
+  'bcdiv' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_bcmath',
   ),
-  'bcmod' => 
+  'bcmod' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_bcmath',
   ),
-  'bcmul' => 
+  'bcmul' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_bcmath',
   ),
-  'bcpow' => 
+  'bcpow' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_bcmath',
   ),
-  'bcpowmod' => 
+  'bcpowmod' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_bcmath',
   ),
-  'bcscale' => 
+  'bcscale' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_bcmath',
   ),
-  'bcsqrt' => 
+  'bcsqrt' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_bcmath',
   ),
-  'bcsub' => 
+  'bcsub' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_bcmath',
   ),
-  'bin2hex' => 
+  'bin2hex' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_standard',
   ),
-  'bind' => 
+  'bind' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'bind_textdomain_codeset' => 
+  'bind_textdomain_codeset' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_gettext',
   ),
-  'bindec' => 
+  'bindec' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'bindtextdomain' => 
+  'bindtextdomain' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_gettext',
   ),
-  'birdstep_autocommit' => 
+  'birdstep_autocommit' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_close' => 
+  'birdstep_close' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_commit' => 
+  'birdstep_commit' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_connect' => 
+  'birdstep_connect' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_exec' => 
+  'birdstep_exec' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_fetch' => 
+  'birdstep_fetch' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_fieldname' => 
+  'birdstep_fieldname' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_fieldnum' => 
+  'birdstep_fieldnum' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_freeresult' => 
+  'birdstep_freeresult' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_off_autocommit' => 
+  'birdstep_off_autocommit' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_result' => 
+  'birdstep_result' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'birdstep_rollback' => 
+  'birdstep_rollback' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_odbc',
   ),
-  'build_iovec' => 
+  'build_iovec' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'bzclose' => 
+  'bzclose' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_bz2',
   ),
-  'bzcompress' => 
+  'bzcompress' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_bz2',
   ),
-  'bzdecompress' => 
+  'bzdecompress' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_bz2',
   ),
-  'bzerrno' => 
+  'bzerrno' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_bz2',
   ),
-  'bzerror' => 
+  'bzerror' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_bz2',
   ),
-  'bzerrstr' => 
+  'bzerrstr' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_bz2',
   ),
-  'bzflush' => 
+  'bzflush' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_bz2',
   ),
-  'bzopen' => 
+  'bzopen' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_bz2',
   ),
-  'bzread' => 
+  'bzread' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_bz2',
   ),
-  'bzwrite' => 
+  'bzwrite' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_bz2',
   ),
-  'cal_days_in_month' => 
+  'cal_days_in_month' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_calendar',
   ),
-  'cal_from_jd' => 
+  'cal_from_jd' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_calendar',
   ),
-  'cal_info' => 
+  'cal_info' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_calendar',
   ),
-  'cal_to_jd' => 
+  'cal_to_jd' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_calendar',
   ),
-  'call_user_func' => 
+  'call_user_func' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_standard',
   ),
-  'call_user_func_array' => 
+  'call_user_func_array' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_standard',
   ),
-  'call_user_method' => 
+  'call_user_method' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_standard',
   ),
-  'call_user_method_array' => 
+  'call_user_method_array' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_standard',
   ),
-  'ccvs_add' => 
+  'ccvs_add' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_auth' => 
+  'ccvs_auth' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_command' => 
+  'ccvs_command' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_count' => 
+  'ccvs_count' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_delete' => 
+  'ccvs_delete' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_done' => 
+  'ccvs_done' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_init' => 
+  'ccvs_init' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_lookup' => 
+  'ccvs_lookup' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_new' => 
+  'ccvs_new' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_report' => 
+  'ccvs_report' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_return' => 
+  'ccvs_return' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_reverse' => 
+  'ccvs_reverse' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_sale' => 
+  'ccvs_sale' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_status' => 
+  'ccvs_status' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_textvalue' => 
+  'ccvs_textvalue' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ccvs_void' => 
+  'ccvs_void' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'ceil' => 
+  'ceil' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'chdir' => 
+  'chdir' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'checkdate' => 
+  'checkdate' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'checkdnsrr' => 
+  'checkdnsrr' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'chgrp' => 
+  'chgrp' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'chmod' => 
+  'chmod' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'chop' => 
+  'chop' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'chown' => 
+  'chown' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'chr' => 
+  'chr' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'chroot' => 
+  'chroot' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_standard',
   ),
-  'chunk_split' => 
+  'chunk_split' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'class_exists' => 
+  'class_exists' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'class_implements' => 
+  'class_implements' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
-  'class_parents' => 
+  'class_parents' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
-  'clearstatcache' => 
+  'clearstatcache' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'close' => 
+  'close' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'closedir' => 
+  'closedir' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'closelog' => 
+  'closelog' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'com_addref' => 
+  'com_addref' =>
   array (
     'init' => '4.1.0',
   ),
-  'com_create_guid' => 
+  'com_create_guid' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'com_event_sink' => 
+  'com_event_sink' =>
   array (
     'init' => '4.2.3',
     'ext' => 'ext_com_dotnet',
   ),
-  'com_get' => 
+  'com_get' =>
   array (
     'init' => '3.0.3',
   ),
-  'com_get_active_object' => 
+  'com_get_active_object' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'com_invoke' => 
+  'com_invoke' =>
   array (
     'init' => '3.0.3',
   ),
-  'com_invoke_ex' => 
+  'com_invoke_ex' =>
   array (
     'init' => '4.3.0',
   ),
-  'com_isenum' => 
+  'com_isenum' =>
   array (
     'init' => '4.1.0',
   ),
-  'com_load' => 
+  'com_load' =>
   array (
     'init' => '3.0.3',
   ),
-  'com_load_typelib' => 
+  'com_load_typelib' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'com_message_pump' => 
+  'com_message_pump' =>
   array (
     'init' => '4.2.3',
     'ext' => 'ext_com_dotnet',
   ),
-  'com_print_typeinfo' => 
+  'com_print_typeinfo' =>
   array (
     'init' => '4.2.3',
     'ext' => 'ext_com_dotnet',
   ),
-  'com_propget' => 
+  'com_propget' =>
   array (
     'init' => '3.0.3',
   ),
-  'com_propput' => 
+  'com_propput' =>
   array (
     'init' => '3.0.3',
   ),
-  'com_propset' => 
+  'com_propset' =>
   array (
     'init' => '3.0.3',
   ),
-  'com_release' => 
+  'com_release' =>
   array (
     'init' => '4.1.0',
   ),
-  'com_set' => 
+  'com_set' =>
   array (
     'init' => '3.0.3',
   ),
-  'compact' => 
+  'compact' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'confirm_ctype_compiled' => 
+  'confirm_ctype_compiled' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.4',
   ),
-  'confirm_cybermut_compiled' => 
+  'confirm_cybermut_compiled' =>
   array (
     'init' => '4.0.5',
     'end' => '4.0.6',
   ),
-  'confirm_extname_compiled' => 
+  'confirm_extname_compiled' =>
   array (
     'init' => '4.3.8',
     'ext' => 'ext_skeleton',
   ),
-  'confirm_ncurses_compiled' => 
+  'confirm_ncurses_compiled' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'connect' => 
+  'connect' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'connection_aborted' => 
+  'connection_aborted' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'connection_status' => 
+  'connection_status' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'connection_timeout' => 
+  'connection_timeout' =>
   array (
     'init' => '3.0.7',
     'end' => '4.0.4',
   ),
-  'constant' => 
+  'constant' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_standard',
   ),
-  'convert_cyr_string' => 
+  'convert_cyr_string' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'convert_uudecode' => 
+  'convert_uudecode' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'convert_uuencode' => 
+  'convert_uuencode' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'copy' => 
+  'copy' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'cos' => 
+  'cos' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'cosh' => 
+  'cosh' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'count' => 
+  'count' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'count_chars' => 
+  'count_chars' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'cpdf_add_annotation' => 
+  'cpdf_add_annotation' =>
   array (
     'init' => '3.0.12',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_add_outline' => 
+  'cpdf_add_outline' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_arc' => 
+  'cpdf_arc' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_begin_text' => 
+  'cpdf_begin_text' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_circle' => 
+  'cpdf_circle' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_clip' => 
+  'cpdf_clip' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_close' => 
+  'cpdf_close' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_closepath' => 
+  'cpdf_closepath' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_closepath_fill_stroke' => 
+  'cpdf_closepath_fill_stroke' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_closepath_stroke' => 
+  'cpdf_closepath_stroke' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_continue_text' => 
+  'cpdf_continue_text' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_curveto' => 
+  'cpdf_curveto' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_end_text' => 
+  'cpdf_end_text' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_fill' => 
+  'cpdf_fill' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_fill_stroke' => 
+  'cpdf_fill_stroke' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_finalize' => 
+  'cpdf_finalize' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_finalize_page' => 
+  'cpdf_finalize_page' =>
   array (
     'init' => '3.0.10',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_get_buffer' => 
+  'cpdf_get_buffer' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.8',
   ),
-  'cpdf_global_set_document_limits' => 
+  'cpdf_global_set_document_limits' =>
   array (
     'end' => '5.0.4',
     'init' => '4.0.0',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_import_jpeg' => 
+  'cpdf_import_jpeg' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_lineto' => 
+  'cpdf_lineto' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_moveto' => 
+  'cpdf_moveto' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_newpath' => 
+  'cpdf_newpath' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_open' => 
+  'cpdf_open' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_output_buffer' => 
+  'cpdf_output_buffer' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_page_init' => 
+  'cpdf_page_init' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_place_inline_image' => 
+  'cpdf_place_inline_image' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_rect' => 
+  'cpdf_rect' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_restore' => 
+  'cpdf_restore' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_rlineto' => 
+  'cpdf_rlineto' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_rmoveto' => 
+  'cpdf_rmoveto' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_rotate' => 
+  'cpdf_rotate' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_rotate_text' => 
+  'cpdf_rotate_text' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_save' => 
+  'cpdf_save' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_save_to_file' => 
+  'cpdf_save_to_file' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_scale' => 
+  'cpdf_scale' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_action_url' => 
+  'cpdf_set_action_url' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_annotation' => 
+  'cpdf_set_annotation' =>
   array (
     'init' => '3.0.9',
     'end' => '3.0.11',
   ),
-  'cpdf_set_char_spacing' => 
+  'cpdf_set_char_spacing' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_creator' => 
+  'cpdf_set_creator' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_current_page' => 
+  'cpdf_set_current_page' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_font' => 
+  'cpdf_set_font' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_font_directories' => 
+  'cpdf_set_font_directories' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_font_map_file' => 
+  'cpdf_set_font_map_file' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_horiz_scaling' => 
+  'cpdf_set_horiz_scaling' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_keywords' => 
+  'cpdf_set_keywords' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_leading' => 
+  'cpdf_set_leading' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_page_animation' => 
+  'cpdf_set_page_animation' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_subject' => 
+  'cpdf_set_subject' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_text_matrix' => 
+  'cpdf_set_text_matrix' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_text_pos' => 
+  'cpdf_set_text_pos' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_text_rendering' => 
+  'cpdf_set_text_rendering' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_text_rise' => 
+  'cpdf_set_text_rise' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_title' => 
+  'cpdf_set_title' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_transition' => 
+  'cpdf_set_transition' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.8',
   ),
-  'cpdf_set_viewer_preferences' => 
+  'cpdf_set_viewer_preferences' =>
   array (
     'init' => '3.0.9',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_set_word_spacing' => 
+  'cpdf_set_word_spacing' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setdash' => 
+  'cpdf_setdash' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setflat' => 
+  'cpdf_setflat' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setgray' => 
+  'cpdf_setgray' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setgray_fill' => 
+  'cpdf_setgray_fill' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setgray_stroke' => 
+  'cpdf_setgray_stroke' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setlinecap' => 
+  'cpdf_setlinecap' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setlinejoin' => 
+  'cpdf_setlinejoin' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setlinewidth' => 
+  'cpdf_setlinewidth' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setmiterlimit' => 
+  'cpdf_setmiterlimit' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setrgbcolor' => 
+  'cpdf_setrgbcolor' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setrgbcolor_fill' => 
+  'cpdf_setrgbcolor_fill' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_setrgbcolor_stroke' => 
+  'cpdf_setrgbcolor_stroke' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_show' => 
+  'cpdf_show' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_show_xy' => 
+  'cpdf_show_xy' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_stringwidth' => 
+  'cpdf_stringwidth' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_stroke' => 
+  'cpdf_stroke' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_text' => 
+  'cpdf_text' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'cpdf_translate' => 
+  'cpdf_translate' =>
   array (
     'init' => '3.0.8',
     'end' => '5.0.4',
     'ext' => 'pecl_cpdf',
   ),
-  'crack_check' => 
+  'crack_check' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_crack',
   ),
-  'crack_closedict' => 
+  'crack_closedict' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_crack',
   ),
-  'crack_getlastmessage' => 
+  'crack_getlastmessage' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_crack',
   ),
-  'crack_opendict' => 
+  'crack_opendict' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_crack',
   ),
-  'crash' => 
+  'crash' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'crc32' => 
+  'crc32' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'create_function' => 
+  'create_function' =>
   array (
     'init' => '4.0.1',
     'ext' => 'zend',
   ),
-  'crypt' => 
+  'crypt' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'ctype_alnum' => 
+  'ctype_alnum' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'ctype_alpha' => 
+  'ctype_alpha' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'ctype_cntrl' => 
+  'ctype_cntrl' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'ctype_digit' => 
+  'ctype_digit' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'ctype_graph' => 
+  'ctype_graph' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'ctype_lower' => 
+  'ctype_lower' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'ctype_print' => 
+  'ctype_print' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'ctype_punct' => 
+  'ctype_punct' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'ctype_space' => 
+  'ctype_space' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'ctype_upper' => 
+  'ctype_upper' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'ctype_xdigit' => 
+  'ctype_xdigit' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ctype',
   ),
-  'curl_close' => 
+  'curl_close' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_curl',
   ),
-  'curl_copy_handle' => 
+  'curl_copy_handle' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_curl',
   ),
-  'curl_errno' => 
+  'curl_errno' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_curl',
   ),
-  'curl_error' => 
+  'curl_error' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_curl',
   ),
-  'curl_exec' => 
+  'curl_exec' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_curl',
   ),
-  'curl_getinfo' => 
+  'curl_getinfo' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_curl',
   ),
-  'curl_init' => 
+  'curl_init' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_curl',
   ),
-  'curl_multi_add_handle' => 
+  'curl_multi_add_handle' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_curl',
   ),
-  'curl_multi_close' => 
+  'curl_multi_close' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_curl',
   ),
-  'curl_multi_exec' => 
+  'curl_multi_exec' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_curl',
   ),
-  'curl_multi_getcontent' => 
+  'curl_multi_getcontent' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_curl',
   ),
-  'curl_multi_info_read' => 
+  'curl_multi_info_read' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_curl',
   ),
-  'curl_multi_init' => 
+  'curl_multi_init' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_curl',
   ),
-  'curl_multi_remove_handle' => 
+  'curl_multi_remove_handle' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_curl',
   ),
-  'curl_multi_select' => 
+  'curl_multi_select' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_curl',
   ),
-  'curl_setopt' => 
+  'curl_setopt' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_curl',
   ),
-  'curl_setopt_array' => 
+  'curl_setopt_array' =>
   array (
     'init' => '5.0.0',
   ),
-  'curl_version' => 
+  'curl_version' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_curl',
   ),
-  'current' => 
+  'current' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'cv_add' => 
+  'cv_add' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_auth' => 
+  'cv_auth' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_command' => 
+  'cv_command' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_count' => 
+  'cv_count' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_delete' => 
+  'cv_delete' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_done' => 
+  'cv_done' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_init' => 
+  'cv_init' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_lookup' => 
+  'cv_lookup' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_new' => 
+  'cv_new' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_report' => 
+  'cv_report' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_return' => 
+  'cv_return' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_reverse' => 
+  'cv_reverse' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_sale' => 
+  'cv_sale' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_status' => 
+  'cv_status' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_textvalue' => 
+  'cv_textvalue' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cv_void' => 
+  'cv_void' =>
   array (
     'init' => '4.0.2',
     'end' => '4.2.3',
   ),
-  'cybercash_base64_decode' => 
+  'cybercash_base64_decode' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
     'ext' => 'pecl_cybercash',
   ),
-  'cybercash_base64_encode' => 
+  'cybercash_base64_encode' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
     'ext' => 'pecl_cybercash',
   ),
-  'cybercash_decr' => 
+  'cybercash_decr' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
     'ext' => 'pecl_cybercash',
   ),
-  'cybercash_encr' => 
+  'cybercash_encr' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
     'ext' => 'pecl_cybercash',
   ),
-  'cybermut_creerformulairecm' => 
+  'cybermut_creerformulairecm' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_cybermut',
   ),
-  'cybermut_creerreponsecm' => 
+  'cybermut_creerreponsecm' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_cybermut',
   ),
-  'cybermut_testmac' => 
+  'cybermut_testmac' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_cybermut',
   ),
-  'cyrus_authenticate' => 
+  'cyrus_authenticate' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_cyrus',
   ),
-  'cyrus_bind' => 
+  'cyrus_bind' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_cyrus',
   ),
-  'cyrus_close' => 
+  'cyrus_close' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_cyrus',
   ),
-  'cyrus_connect' => 
+  'cyrus_connect' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_cyrus',
   ),
-  'cyrus_query' => 
+  'cyrus_query' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_cyrus',
   ),
-  'cyrus_unbind' => 
+  'cyrus_unbind' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_cyrus',
   ),
-  'date' => 
+  'date' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'date_create' => 
+  'date_create' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'date_default_timezone_get' => 
+  'date_default_timezone_get' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'date_default_timezone_set' => 
+  'date_default_timezone_set' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'date_format' => 
+  'date_format' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'date_format_locale' => 
+  'date_format_locale' =>
   array (
     'init' => '5.0.0',
   ),
-  'date_modify' => 
+  'date_modify' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'date_offset_get' => 
+  'date_offset_get' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'date_sunrise' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_standard',
-  ),
-  'date_sunset' => 
+  'date_sunrise' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'date_timezone_get' => 
+  'date_sunset' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'date_timezone_get' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'date_timezone_set' => 
+  'date_timezone_set' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'dav_set_mkcol_handlers' => 
+  'dav_set_mkcol_handlers' =>
   array (
     'init' => '3.0.6',
     'end' => '4.0.4',
   ),
-  'db_id_list' => 
+  'db_id_list' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_db',
   ),
-  'dba_close' => 
+  'dba_close' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_delete' => 
+  'dba_delete' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_exists' => 
+  'dba_exists' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_fetch' => 
+  'dba_fetch' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_firstkey' => 
+  'dba_firstkey' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_handlers' => 
+  'dba_handlers' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_dba',
   ),
-  'dba_insert' => 
+  'dba_insert' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_key_split' => 
+  'dba_key_split' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_dba',
   ),
-  'dba_list' => 
+  'dba_list' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_dba',
   ),
-  'dba_nextkey' => 
+  'dba_nextkey' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_open' => 
+  'dba_open' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_optimize' => 
+  'dba_optimize' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_popen' => 
+  'dba_popen' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_replace' => 
+  'dba_replace' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dba_sync' => 
+  'dba_sync' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_dba',
   ),
-  'dbase_add_record' => 
+  'dbase_add_record' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
-  'dbase_close' => 
+  'dbase_close' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
-  'dbase_create' => 
+  'dbase_create' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
-  'dbase_delete_record' => 
+  'dbase_delete_record' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
-  'dbase_get_header_info' => 
+  'dbase_get_header_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_dbase',
   ),
-  'dbase_get_record' => 
+  'dbase_get_record' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
-  'dbase_get_record_with_names' => 
+  'dbase_get_record_with_names' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_dbase',
   ),
-  'dbase_numfields' => 
+  'dbase_numfields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
-  'dbase_numrecords' => 
+  'dbase_numrecords' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
-  'dbase_open' => 
+  'dbase_open' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
-  'dbase_pack' => 
+  'dbase_pack' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_dbase',
   ),
-  'dbase_replace_record' => 
+  'dbase_replace_record' =>
   array (
     'init' => '3.0.11',
     'ext' => 'ext_dbase',
   ),
-  'dblist' => 
+  'dblist' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_db',
   ),
-  'dbmclose' => 
+  'dbmclose' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_db',
   ),
-  'dbmdelete' => 
+  'dbmdelete' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_db',
   ),
-  'dbmexists' => 
+  'dbmexists' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_db',
   ),
-  'dbmfetch' => 
+  'dbmfetch' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_db',
   ),
-  'dbmfirstkey' => 
+  'dbmfirstkey' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_db',
   ),
-  'dbminsert' => 
+  'dbminsert' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_db',
   ),
-  'dbmnextkey' => 
+  'dbmnextkey' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_db',
   ),
-  'dbmopen' => 
+  'dbmopen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_db',
   ),
-  'dbmreplace' => 
+  'dbmreplace' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_db',
   ),
-  'dbplus_add' => 
+  'dbplus_add' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_aql' => 
+  'dbplus_aql' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_chdir' => 
+  'dbplus_chdir' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_close' => 
+  'dbplus_close' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_curr' => 
+  'dbplus_curr' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_errcode' => 
+  'dbplus_errcode' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_errno' => 
+  'dbplus_errno' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_find' => 
+  'dbplus_find' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_first' => 
+  'dbplus_first' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_flush' => 
+  'dbplus_flush' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_freealllocks' => 
+  'dbplus_freealllocks' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_freelock' => 
+  'dbplus_freelock' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_freerlocks' => 
+  'dbplus_freerlocks' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_getlock' => 
+  'dbplus_getlock' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_getunique' => 
+  'dbplus_getunique' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_info' => 
+  'dbplus_info' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_last' => 
+  'dbplus_last' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_next' => 
+  'dbplus_next' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_open' => 
+  'dbplus_open' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_prev' => 
+  'dbplus_prev' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_rchperm' => 
+  'dbplus_rchperm' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_rcreate' => 
+  'dbplus_rcreate' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_rcrtexact' => 
+  'dbplus_rcrtexact' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_rcrtlike' => 
+  'dbplus_rcrtlike' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_resolve' => 
+  'dbplus_resolve' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_restorepos' => 
+  'dbplus_restorepos' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_rkeys' => 
+  'dbplus_rkeys' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_ropen' => 
+  'dbplus_ropen' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_rquery' => 
+  'dbplus_rquery' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_rrename' => 
+  'dbplus_rrename' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_rsecindex' => 
+  'dbplus_rsecindex' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_runlink' => 
+  'dbplus_runlink' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_rzap' => 
+  'dbplus_rzap' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_savepos' => 
+  'dbplus_savepos' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_setindex' => 
+  'dbplus_setindex' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_setindexbynumber' => 
+  'dbplus_setindexbynumber' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_sql' => 
+  'dbplus_sql' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_tcl' => 
+  'dbplus_tcl' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_tremove' => 
+  'dbplus_tremove' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_undo' => 
+  'dbplus_undo' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_undoprepare' => 
+  'dbplus_undoprepare' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_unlockrel' => 
+  'dbplus_unlockrel' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_unselect' => 
+  'dbplus_unselect' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_update' => 
+  'dbplus_update' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_xlockrel' => 
+  'dbplus_xlockrel' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbplus_xunlockrel' => 
+  'dbplus_xunlockrel' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_dbplus',
   ),
-  'dbx_close' => 
+  'dbx_close' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'ext_dbx',
   ),
-  'dbx_cmp_asc' => 
+  'dbx_cmp_asc' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.6',
   ),
-  'dbx_cmp_desc' => 
+  'dbx_cmp_desc' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.6',
   ),
-  'dbx_compare' => 
+  'dbx_compare' =>
   array (
     'init' => '4.1.0',
     'end' => '5.0.4',
     'ext' => 'ext_dbx',
   ),
-  'dbx_connect' => 
+  'dbx_connect' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'ext_dbx',
   ),
-  'dbx_error' => 
+  'dbx_error' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'ext_dbx',
   ),
-  'dbx_escape_string' => 
+  'dbx_escape_string' =>
   array (
     'init' => '4.3.0',
     'end' => '5.0.4',
     'ext' => 'ext_dbx',
   ),
-  'dbx_fetch_row' => 
+  'dbx_fetch_row' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_dbx',
   ),
-  'dbx_query' => 
+  'dbx_query' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'ext_dbx',
   ),
-  'dbx_sort' => 
+  'dbx_sort' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'ext_dbx',
   ),
-  'dcgettext' => 
+  'dcgettext' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_gettext',
   ),
-  'dcngettext' => 
+  'dcngettext' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_gettext',
   ),
-  'deaggregate' => 
+  'deaggregate' =>
   array (
     'init' => '4.2.0',
   ),
-  'debug_backtrace' => 
+  'debug_backtrace' =>
   array (
     'init' => '4.3.0',
     'ext' => 'zend',
   ),
-  'debug_print_backtrace' => 
+  'debug_print_backtrace' =>
   array (
     'init' => '5.0.0',
     'ext' => 'zend',
   ),
-  'debug_zval_dump' => 
+  'debug_zval_dump' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'debugger_off' => 
+  'debugger_off' =>
   array (
     'init' => '3.0.0',
   ),
-  'debugger_on' => 
+  'debugger_on' =>
   array (
     'init' => '3.0.0',
   ),
-  'decbin' => 
-  array (
-    'init' => '3.0.0',
-    'ext' => 'ext_standard',
-  ),
-  'dechex' => 
+  'decbin' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'decoct' => 
+  'dechex' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'decrypt' => 
+  'decoct' =>
+  array (
+    'init' => '3.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'decrypt' =>
   array (
     'init' => '3.0.0',
   ),
-  'define' => 
+  'define' =>
   array (
     'init' => '3.0.0',
     'ext' => 'zend',
   ),
-  'define_syslog_variables' => 
+  'define_syslog_variables' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'defined' => 
+  'defined' =>
   array (
     'init' => '3.0.0',
     'ext' => 'zend',
   ),
-  'deg2rad' => 
+  'deg2rad' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_standard',
   ),
-  'delete_iovec' => 
+  'delete_iovec' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'dgettext' => 
+  'dgettext' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_gettext',
   ),
-  'dio_close' => 
+  'dio_close' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'pecl_dio',
   ),
-  'dio_fcntl' => 
+  'dio_fcntl' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'pecl_dio',
   ),
-  'dio_open' => 
+  'dio_open' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'pecl_dio',
   ),
-  'dio_read' => 
+  'dio_read' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'pecl_dio',
   ),
-  'dio_seek' => 
+  'dio_seek' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'pecl_dio',
   ),
-  'dio_stat' => 
+  'dio_stat' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'pecl_dio',
   ),
-  'dio_tcsetattr' => 
+  'dio_tcsetattr' =>
   array (
     'init' => '4.3.0',
     'end' => '5.0.4',
     'ext' => 'pecl_dio',
   ),
-  'dio_truncate' => 
+  'dio_truncate' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'pecl_dio',
   ),
-  'dio_write' => 
+  'dio_write' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'pecl_dio',
   ),
-  'dir' => 
+  'dir' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'dirname' => 
+  'dirname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'disk_free_space' => 
+  'disk_free_space' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'disk_total_space' => 
+  'disk_total_space' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'diskfreespace' => 
+  'diskfreespace' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'display_disabled_function' => 
+  'display_disabled_function' =>
   array (
     'init' => '4.0.1',
     'ext' => 'zend',
   ),
-  'dl' => 
+  'dl' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'dngettext' => 
+  'dngettext' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_gettext',
   ),
-  'dns_check_record' => 
+  'dns_check_record' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'dns_get_mx' => 
+  'dns_get_mx' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'dns_get_record' => 
+  'dns_get_record' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'dom_import_simplexml' => 
+  'dom_import_simplexml' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_dom',
   ),
-  'domxml_add_root' => 
+  'domxml_add_root' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_attributes' => 
+  'domxml_attributes' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_children' => 
+  'domxml_children' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_doc_add_root' => 
+  'domxml_doc_add_root' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_doc_document_element' => 
+  'domxml_doc_document_element' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_doc_get_element_by_id' => 
+  'domxml_doc_get_element_by_id' =>
   array (
     'init' => '4.2.1',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_doc_get_elements_by_tagname' => 
+  'domxml_doc_get_elements_by_tagname' =>
   array (
     'init' => '4.2.1',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_doc_get_root' => 
+  'domxml_doc_get_root' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_doc_set_root' => 
+  'domxml_doc_set_root' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_doc_validate' => 
+  'domxml_doc_validate' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_doc_xinclude' => 
+  'domxml_doc_xinclude' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_dump_mem' => 
+  'domxml_dump_mem' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_dump_mem_file' => 
+  'domxml_dump_mem_file' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_dump_node' => 
+  'domxml_dump_node' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_dumpmem' => 
+  'domxml_dumpmem' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_elem_get_attribute' => 
+  'domxml_elem_get_attribute' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_elem_set_attribute' => 
+  'domxml_elem_set_attribute' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_get_attribute' => 
+  'domxml_get_attribute' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_getattr' => 
+  'domxml_getattr' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_html_dump_mem' => 
+  'domxml_html_dump_mem' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_new_child' => 
+  'domxml_new_child' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_new_doc' => 
+  'domxml_new_doc' =>
   array (
     'init' => '4.2.1',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_new_xmldoc' => 
+  'domxml_new_xmldoc' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_node' => 
+  'domxml_node' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_node_add_namespace' => 
+  'domxml_node_add_namespace' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_node_attributes' => 
+  'domxml_node_attributes' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_node_children' => 
+  'domxml_node_children' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_node_get_content' => 
+  'domxml_node_get_content' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_node_has_attributes' => 
+  'domxml_node_has_attributes' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_node_new_child' => 
+  'domxml_node_new_child' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_node_set_content' => 
+  'domxml_node_set_content' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_node_set_namespace' => 
+  'domxml_node_set_namespace' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_node_unlink_node' => 
+  'domxml_node_unlink_node' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_open_file' => 
+  'domxml_open_file' =>
   array (
     'init' => '4.2.1',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_open_mem' => 
+  'domxml_open_mem' =>
   array (
     'init' => '4.2.1',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser' => 
+  'domxml_parser' =>
   array (
     'init' => '4.2.1',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_add_chunk' => 
+  'domxml_parser_add_chunk' =>
   array (
     'init' => '4.2.1',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_cdata_section' => 
+  'domxml_parser_cdata_section' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_characters' => 
+  'domxml_parser_characters' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_comment' => 
+  'domxml_parser_comment' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_end' => 
+  'domxml_parser_end' =>
   array (
     'init' => '4.2.1',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_end_document' => 
+  'domxml_parser_end_document' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_end_element' => 
+  'domxml_parser_end_element' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_entity_reference' => 
+  'domxml_parser_entity_reference' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_get_document' => 
+  'domxml_parser_get_document' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_namespace_decl' => 
+  'domxml_parser_namespace_decl' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_processing_instruction' => 
+  'domxml_parser_processing_instruction' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_start_document' => 
+  'domxml_parser_start_document' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_parser_start_element' => 
+  'domxml_parser_start_element' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_root' => 
+  'domxml_root' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_set_attribute' => 
+  'domxml_set_attribute' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_set_content' => 
+  'domxml_set_content' =>
   array (
     'init' => '4.0.4',
     'end' => '4.0.6',
   ),
-  'domxml_setattr' => 
+  'domxml_setattr' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_substitute_entities_default' => 
+  'domxml_substitute_entities_default' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_unlink_node' => 
+  'domxml_unlink_node' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_version' => 
+  'domxml_version' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_xmltree' => 
+  'domxml_xmltree' =>
   array (
     'init' => '4.2.1',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_xslt_process' => 
+  'domxml_xslt_process' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_xslt_result_dump_file' => 
+  'domxml_xslt_result_dump_file' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_xslt_result_dump_mem' => 
+  'domxml_xslt_result_dump_mem' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_xslt_stylesheet' => 
+  'domxml_xslt_stylesheet' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_xslt_stylesheet_doc' => 
+  'domxml_xslt_stylesheet_doc' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_xslt_stylesheet_file' => 
+  'domxml_xslt_stylesheet_file' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'domxml_xslt_version' => 
+  'domxml_xslt_version' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'doubleval' => 
+  'doubleval' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'drawarc' => 
+  'drawarc' =>
   array (
     'init' => '4.0.5',
   ),
-  'drawcircle' => 
+  'drawcircle' =>
   array (
     'init' => '4.0.5',
   ),
-  'drawcubic' => 
+  'drawcubic' =>
   array (
     'init' => '4.0.5',
   ),
-  'drawcubicto' => 
+  'drawcubicto' =>
   array (
     'init' => '4.0.5',
   ),
-  'drawcurve' => 
+  'drawcurve' =>
   array (
     'init' => '4.0.5',
   ),
-  'drawcurveto' => 
+  'drawcurveto' =>
   array (
     'init' => '4.0.5',
   ),
-  'drawglyph' => 
+  'drawglyph' =>
   array (
     'init' => '4.0.5',
   ),
-  'drawline' => 
+  'drawline' =>
   array (
     'init' => '4.0.5',
   ),
-  'drawlineto' => 
+  'drawlineto' =>
   array (
     'init' => '4.0.5',
   ),
-  'each' => 
+  'each' =>
   array (
     'init' => '3.0.0',
     'ext' => 'zend',
   ),
-  'easter_date' => 
+  'easter_date' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_calendar',
   ),
-  'easter_days' => 
+  'easter_days' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_calendar',
   ),
-  'ebcdic2ascii' => 
+  'ebcdic2ascii' =>
   array (
     'init' => '3.0.17',
   ),
-  'encrypt' => 
+  'encrypt' =>
   array (
     'init' => '3.0.0',
   ),
-  'end' => 
-  array (
-    'init' => '3.0.0',
-    'ext' => 'ext_standard',
-  ),
-  'ereg' => 
+  'end' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'ereg_replace' => 
+  'ereg' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'eregi' => 
+  'ereg_replace' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'eregi_replace' => 
+  'eregi' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'error_log' => 
+  'eregi_replace' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'error_reporting' => 
+  'error_log' =>
+  array (
+    'init' => '3.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'error_reporting' =>
   array (
     'init' => '3.0.0',
     'ext' => 'zend',
   ),
-  'escapeshellarg' => 
+  'escapeshellarg' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_standard',
   ),
-  'escapeshellcmd' => 
+  'escapeshellcmd' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'exec' => 
+  'exec' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'exif_imagetype' => 
+  'exif_imagetype' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_exif',
   ),
-  'exif_read_data' => 
+  'exif_read_data' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_exif',
   ),
-  'exif_tagname' => 
+  'exif_tagname' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_exif',
   ),
-  'exif_thumbnail' => 
+  'exif_thumbnail' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_exif',
   ),
-  'exp' => 
+  'exp' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'explode' => 
+  'explode' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'expm1' => 
+  'expm1' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'export' => 
+  'export' =>
   array (
     'init' => '5.0.0',
   ),
-  'extension_loaded' => 
+  'extension_loaded' =>
   array (
     'init' => '3.0.10',
     'ext' => 'zend',
   ),
-  'extract' => 
+  'extract' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'ezmlm_hash' => 
+  'ezmlm_hash' =>
   array (
     'init' => '3.0.17',
     'ext' => 'ext_standard',
   ),
-  'fam_cancel_monitor' => 
+  'fam_cancel_monitor' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
-  'fam_close' => 
+  'fam_close' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
-  'fam_monitor_collection' => 
+  'fam_monitor_collection' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
-  'fam_monitor_directory' => 
+  'fam_monitor_directory' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
-  'fam_monitor_file' => 
+  'fam_monitor_file' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
-  'fam_next_event' => 
+  'fam_next_event' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
-  'fam_open' => 
+  'fam_open' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
-  'fam_pending' => 
+  'fam_pending' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
-  'fam_resume_monitor' => 
+  'fam_resume_monitor' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
-  'fam_suspend_monitor' => 
+  'fam_suspend_monitor' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_fam',
   ),
-  'fbird_add_user' => 
+  'fbird_add_user' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_affected_rows' => 
+  'fbird_affected_rows' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_backup' => 
+  'fbird_backup' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_blob_add' => 
+  'fbird_blob_add' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_blob_cancel' => 
+  'fbird_blob_cancel' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_blob_close' => 
+  'fbird_blob_close' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_blob_create' => 
+  'fbird_blob_create' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_blob_echo' => 
+  'fbird_blob_echo' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_blob_get' => 
+  'fbird_blob_get' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_blob_import' => 
+  'fbird_blob_import' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_blob_info' => 
+  'fbird_blob_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_blob_open' => 
+  'fbird_blob_open' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_close' => 
+  'fbird_close' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_commit' => 
+  'fbird_commit' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_commit_ret' => 
+  'fbird_commit_ret' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_connect' => 
+  'fbird_connect' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_db_info' => 
+  'fbird_db_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_delete_user' => 
+  'fbird_delete_user' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_drop_db' => 
+  'fbird_drop_db' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_errcode' => 
+  'fbird_errcode' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_errmsg' => 
+  'fbird_errmsg' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_execute' => 
+  'fbird_execute' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_fetch_assoc' => 
+  'fbird_fetch_assoc' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_fetch_object' => 
+  'fbird_fetch_object' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_fetch_row' => 
+  'fbird_fetch_row' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_field_info' => 
+  'fbird_field_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_free_event_handler' => 
+  'fbird_free_event_handler' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_free_query' => 
+  'fbird_free_query' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_free_result' => 
+  'fbird_free_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_gen_id' => 
+  'fbird_gen_id' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_maintain_db' => 
+  'fbird_maintain_db' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_modify_user' => 
+  'fbird_modify_user' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_name_result' => 
+  'fbird_name_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_num_fields' => 
+  'fbird_num_fields' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_num_params' => 
+  'fbird_num_params' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_num_rows' => 
+  'fbird_num_rows' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_param_info' => 
+  'fbird_param_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_pconnect' => 
+  'fbird_pconnect' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_prepare' => 
+  'fbird_prepare' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_query' => 
+  'fbird_query' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_restore' => 
+  'fbird_restore' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_rollback' => 
+  'fbird_rollback' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_rollback_ret' => 
+  'fbird_rollback_ret' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_server_info' => 
+  'fbird_server_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_service_attach' => 
+  'fbird_service_attach' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_service_detach' => 
+  'fbird_service_detach' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_set_event_handler' => 
+  'fbird_set_event_handler' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_trans' => 
+  'fbird_trans' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbird_wait_event' => 
+  'fbird_wait_event' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'fbsql' => 
+  'fbsql' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_affected_rows' => 
+  'fbsql_affected_rows' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_autocommit' => 
+  'fbsql_autocommit' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_blob_size' => 
+  'fbsql_blob_size' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_clob_size' => 
+  'fbsql_clob_size' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_close' => 
+  'fbsql_close' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_commit' => 
+  'fbsql_commit' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_connect' => 
+  'fbsql_connect' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_create_blob' => 
+  'fbsql_create_blob' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_create_clob' => 
+  'fbsql_create_clob' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_create_db' => 
+  'fbsql_create_db' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_data_seek' => 
+  'fbsql_data_seek' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_database' => 
+  'fbsql_database' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_database_password' => 
+  'fbsql_database_password' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_db_query' => 
+  'fbsql_db_query' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_db_status' => 
+  'fbsql_db_status' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_drop_db' => 
+  'fbsql_drop_db' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_errno' => 
+  'fbsql_errno' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_error' => 
+  'fbsql_error' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_fetch_array' => 
+  'fbsql_fetch_array' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_fetch_assoc' => 
+  'fbsql_fetch_assoc' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_fetch_field' => 
+  'fbsql_fetch_field' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_fetch_lengths' => 
+  'fbsql_fetch_lengths' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_fetch_object' => 
+  'fbsql_fetch_object' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_fetch_row' => 
+  'fbsql_fetch_row' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_field_flags' => 
+  'fbsql_field_flags' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_field_len' => 
+  'fbsql_field_len' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_field_name' => 
+  'fbsql_field_name' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_field_seek' => 
+  'fbsql_field_seek' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_field_table' => 
+  'fbsql_field_table' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_field_type' => 
+  'fbsql_field_type' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_free_result' => 
+  'fbsql_free_result' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_get_autostart_info' => 
+  'fbsql_get_autostart_info' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_hostname' => 
+  'fbsql_hostname' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_insert_id' => 
+  'fbsql_insert_id' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_list_dbs' => 
+  'fbsql_list_dbs' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_list_fields' => 
+  'fbsql_list_fields' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_list_tables' => 
+  'fbsql_list_tables' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_next_result' => 
+  'fbsql_next_result' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_num_fields' => 
+  'fbsql_num_fields' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_num_rows' => 
+  'fbsql_num_rows' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_password' => 
+  'fbsql_password' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_pconnect' => 
+  'fbsql_pconnect' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_query' => 
+  'fbsql_query' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_read_blob' => 
+  'fbsql_read_blob' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_read_clob' => 
+  'fbsql_read_clob' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_result' => 
+  'fbsql_result' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_rollback' => 
+  'fbsql_rollback' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_rows_fetched' => 
+  'fbsql_rows_fetched' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_select_db' => 
+  'fbsql_select_db' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_set_characterset' => 
+  'fbsql_set_characterset' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_set_lob_mode' => 
+  'fbsql_set_lob_mode' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_set_password' => 
+  'fbsql_set_password' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_set_transaction' => 
+  'fbsql_set_transaction' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_start_db' => 
+  'fbsql_start_db' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_stop_db' => 
+  'fbsql_stop_db' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_table_name' => 
+  'fbsql_table_name' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_tablename' => 
+  'fbsql_tablename' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_username' => 
+  'fbsql_username' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fbsql_warnings' => 
+  'fbsql_warnings' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_fbsql',
   ),
-  'fclose' => 
+  'fclose' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fd_alloc' => 
+  'fd_alloc' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'fd_clear' => 
+  'fd_clear' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'fd_dealloc' => 
+  'fd_dealloc' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'fd_isset' => 
+  'fd_isset' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'fd_set' => 
+  'fd_set' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'fd_zero' => 
+  'fd_zero' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'fdf_add_doc_javascript' => 
+  'fdf_add_doc_javascript' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_add_template' => 
+  'fdf_add_template' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_fdf',
   ),
-  'fdf_close' => 
+  'fdf_close' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_create' => 
+  'fdf_create' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_enum_values' => 
+  'fdf_enum_values' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_errno' => 
+  'fdf_errno' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_error' => 
+  'fdf_error' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_get_ap' => 
+  'fdf_get_ap' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_get_attachment' => 
+  'fdf_get_attachment' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_get_encoding' => 
+  'fdf_get_encoding' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_get_file' => 
+  'fdf_get_file' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_get_flags' => 
+  'fdf_get_flags' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_get_opt' => 
+  'fdf_get_opt' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_get_status' => 
+  'fdf_get_status' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_get_value' => 
+  'fdf_get_value' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_get_version' => 
+  'fdf_get_version' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_header' => 
+  'fdf_header' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_next_field_name' => 
+  'fdf_next_field_name' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_open' => 
+  'fdf_open' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_open_string' => 
+  'fdf_open_string' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_remove_item' => 
+  'fdf_remove_item' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_save' => 
+  'fdf_save' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_save_string' => 
+  'fdf_save_string' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_ap' => 
+  'fdf_set_ap' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_encoding' => 
+  'fdf_set_encoding' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_file' => 
+  'fdf_set_file' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_flags' => 
+  'fdf_set_flags' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_javascript_action' => 
+  'fdf_set_javascript_action' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_on_import_javascript' => 
+  'fdf_set_on_import_javascript' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_opt' => 
+  'fdf_set_opt' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_status' => 
+  'fdf_set_status' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_submit_form_action' => 
+  'fdf_set_submit_form_action' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_target_frame' => 
+  'fdf_set_target_frame' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_value' => 
+  'fdf_set_value' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_fdf',
   ),
-  'fdf_set_version' => 
+  'fdf_set_version' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_fdf',
   ),
-  'feof' => 
+  'feof' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fetch_iovec' => 
+  'fetch_iovec' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'fflush' => 
+  'fflush' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'fgetc' => 
+  'fgetc' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fgetcsv' => 
+  'fgetcsv' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_standard',
   ),
-  'fgets' => 
+  'fgets' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fgetss' => 
+  'fgetss' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'file' => 
+  'file' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'file_exists' => 
+  'file_exists' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'file_get_contents' => 
+  'file_get_contents' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'file_put_contents' => 
+  'file_put_contents' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'fileatime' => 
+  'fileatime' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'filectime' => 
+  'filectime' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'filegroup' => 
+  'filegroup' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fileinode' => 
+  'fileinode' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'filemtime' => 
+  'filemtime' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fileowner' => 
+  'fileowner' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fileperms' => 
+  'fileperms' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'filepro' => 
+  'filepro' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_filepro',
   ),
-  'filepro_fieldcount' => 
+  'filepro_fieldcount' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_filepro',
   ),
-  'filepro_fieldname' => 
+  'filepro_fieldname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_filepro',
   ),
-  'filepro_fieldtype' => 
+  'filepro_fieldtype' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_filepro',
   ),
-  'filepro_fieldwidth' => 
+  'filepro_fieldwidth' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_filepro',
   ),
-  'filepro_retrieve' => 
+  'filepro_retrieve' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_filepro',
   ),
-  'filepro_rowcount' => 
+  'filepro_rowcount' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_filepro',
   ),
-  'filesize' => 
+  'filesize' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'filetype' => 
+  'filetype' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'filter' => 
+  'filter' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'floatval' => 
+  'floatval' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'flock' => 
+  'flock' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'floor' => 
+  'floor' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'flush' => 
+  'flush' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fmod' => 
+  'fmod' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'fnmatch' => 
+  'fnmatch' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'fopen' => 
+  'fopen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fopenstream' => 
+  'fopenstream' =>
   array (
     'init' => '4.0.6',
     'end' => '4.2.3',
   ),
-  'format' => 
+  'format' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'fpassthru' => 
+  'fpassthru' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fprintf' => 
+  'fprintf' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'fputcsv' => 
+  'fputcsv' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'fputs' => 
+  'fputs' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fread' => 
+  'fread' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'free_iovec' => 
+  'free_iovec' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'freemagick' => 
+  'freemagick' =>
   array (
     'init' => '3.0.7',
   ),
-  'frenchtojd' => 
+  'frenchtojd' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
-  'fribidi_charset_info' => 
+  'fribidi_charset_info' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_fribidi',
   ),
-  'fribidi_get_charsets' => 
+  'fribidi_get_charsets' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_fribidi',
   ),
-  'fribidi_log2vis' => 
+  'fribidi_log2vis' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_fribidi',
   ),
-  'fscanf' => 
+  'fscanf' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'fseek' => 
+  'fseek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fsockopen' => 
+  'fsockopen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'fstat' => 
+  'fstat' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ftell' => 
+  'ftell' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'ftok' => 
+  'ftok' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'ftp_alloc' => 
+  'ftp_alloc' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_cdup' => 
+  'ftp_cdup' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_chdir' => 
+  'ftp_chdir' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_chmod' => 
+  'ftp_chmod' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_close' => 
+  'ftp_close' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_connect' => 
+  'ftp_connect' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_delete' => 
+  'ftp_delete' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_exec' => 
+  'ftp_exec' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ftp',
   ),
-  'ftp_fget' => 
+  'ftp_fget' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_fput' => 
+  'ftp_fput' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_get' => 
+  'ftp_get' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_get_option' => 
+  'ftp_get_option' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_login' => 
+  'ftp_login' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_mdtm' => 
+  'ftp_mdtm' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_mkdir' => 
+  'ftp_mkdir' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_nb_continue' => 
+  'ftp_nb_continue' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_nb_fget' => 
+  'ftp_nb_fget' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_nb_fput' => 
+  'ftp_nb_fput' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_nb_get' => 
+  'ftp_nb_get' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_nb_put' => 
+  'ftp_nb_put' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_nlist' => 
+  'ftp_nlist' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_pasv' => 
+  'ftp_pasv' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_put' => 
+  'ftp_put' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_pwd' => 
+  'ftp_pwd' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_quit' => 
+  'ftp_quit' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_raw' => 
+  'ftp_raw' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_rawlist' => 
+  'ftp_rawlist' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_rename' => 
+  'ftp_rename' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_rmdir' => 
+  'ftp_rmdir' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_set_option' => 
+  'ftp_set_option' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_site' => 
+  'ftp_site' =>
   array (
     'init' => '3.0.15',
     'ext' => 'ext_ftp',
   ),
-  'ftp_size' => 
+  'ftp_size' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftp_ssl_connect' => 
+  'ftp_ssl_connect' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ftp',
   ),
-  'ftp_systype' => 
+  'ftp_systype' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ftp',
   ),
-  'ftruncate' => 
+  'ftruncate' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'func_get_arg' => 
+  'func_get_arg' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'func_get_args' => 
+  'func_get_args' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'func_num_args' => 
+  'func_num_args' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'function_exists' => 
+  'function_exists' =>
   array (
     'init' => '3.0.7',
     'ext' => 'zend',
   ),
-  'fwrite' => 
+  'fwrite' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'gamma_correct_tag' => 
+  'gamma_correct_tag' =>
   array (
     'init' => '3.0.13',
   ),
-  'gd_info' => 
+  'gd_info' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_gd',
   ),
-  'getName' => 
+  'getName' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'getOffset' => 
+  'getOffset' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'getTimezone' => 
+  'getTimezone' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'getTransistions' => 
+  'getTransistions' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'get_all_headers' => 
+  'get_all_headers' =>
   array (
     'init' => '4.0.4',
     'end' => '4.1.2',
   ),
-  'get_browser' => 
+  'get_browser' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'get_cfg_var' => 
+  'get_cfg_var' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'get_charset' => 
+  'get_charset' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'get_class' => 
+  'get_class' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_class_methods' => 
+  'get_class_methods' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_class_vars' => 
+  'get_class_vars' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_current_user' => 
+  'get_current_user' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'get_declared_classes' => 
+  'get_declared_classes' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_declared_interfaces' => 
+  'get_declared_interfaces' =>
   array (
     'init' => '5.0.0',
     'ext' => 'zend',
   ),
-  'get_defined_constants' => 
+  'get_defined_constants' =>
   array (
     'init' => '4.1.0',
     'ext' => 'zend',
   ),
-  'get_defined_functions' => 
+  'get_defined_functions' =>
   array (
     'init' => '4.0.4',
     'ext' => 'zend',
   ),
-  'get_defined_vars' => 
+  'get_defined_vars' =>
   array (
     'init' => '4.0.4',
     'ext' => 'zend',
   ),
-  'get_extension_funcs' => 
+  'get_extension_funcs' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_headers' => 
+  'get_headers' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'get_html_translation_table' => 
+  'get_html_translation_table' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'get_include_path' => 
+  'get_include_path' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'get_included_files' => 
+  'get_included_files' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_loaded_extensions' => 
+  'get_loaded_extensions' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_magic_quotes_gpc' => 
+  'get_magic_quotes_gpc' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'get_magic_quotes_runtime' => 
+  'get_magic_quotes_runtime' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'get_meta_tags' => 
+  'get_meta_tags' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_standard',
   ),
-  'get_object_vars' => 
+  'get_object_vars' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_parent_class' => 
+  'get_parent_class' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_required_files' => 
+  'get_required_files' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'get_resource_type' => 
+  'get_resource_type' =>
   array (
     'init' => '4.0.2',
     'ext' => 'zend',
   ),
-  'getallheaders' => 
+  'getallheaders' =>
   array (
     'init' => '3.0.0',
     'ext' => 'sapi_aolserver',
   ),
-  'getascent' => 
+  'getascent' =>
   array (
     'init' => '4.0.5',
   ),
-  'getcwd' => 
+  'getcwd' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'getdate' => 
+  'getdate' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'getdescent' => 
+  'getdescent' =>
   array (
     'init' => '4.0.5',
   ),
-  'getenv' => 
+  'getenv' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'getheight' => 
+  'getheight' =>
   array (
     'init' => '4.0.5',
   ),
-  'gethostbyaddr' => 
+  'gethostbyaddr' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'gethostbyname' => 
+  'gethostbyname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'gethostbynamel' => 
+  'gethostbynamel' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'getimagesize' => 
+  'getimagesize' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'getlastaccess' => 
+  'getlastaccess' =>
   array (
     'init' => '3.0.0',
   ),
-  'getlastbrowser' => 
+  'getlastbrowser' =>
   array (
     'init' => '3.0.0',
   ),
-  'getlastemail' => 
+  'getlastemail' =>
   array (
     'init' => '3.0.0',
   ),
-  'getlasthost' => 
+  'getlasthost' =>
   array (
     'init' => '3.0.0',
   ),
-  'getlastmod' => 
+  'getlastmod' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'getlastref' => 
+  'getlastref' =>
   array (
     'init' => '3.0.0',
   ),
-  'getleading' => 
+  'getleading' =>
   array (
     'init' => '4.0.5',
   ),
-  'getlogdir' => 
+  'getlogdir' =>
   array (
     'init' => '3.0.0',
   ),
-  'getloghost' => 
+  'getloghost' =>
   array (
     'init' => '3.0.0',
   ),
-  'getmxrr' => 
+  'getmxrr' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'getmygid' => 
+  'getmygid' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'getmyiid' => 
+  'getmyiid' =>
   array (
     'init' => '3.0.0',
   ),
-  'getmyinode' => 
-  array (
-    'init' => '3.0.0',
-    'ext' => 'ext_standard',
-  ),
-  'getmypid' => 
+  'getmyinode' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'getmyuid' => 
+  'getmypid' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'getopt' => 
+  'getmyuid' =>
+  array (
+    'init' => '3.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'getopt' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'getpeername' => 
+  'getpeername' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'getprotobyname' => 
+  'getprotobyname' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'getprotobynumber' => 
+  'getprotobynumber' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'getrandmax' => 
+  'getrandmax' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'getrusage' => 
+  'getrusage' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'getservbyname' => 
+  'getservbyname' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'getservbyport' => 
+  'getservbyport' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'getshape1' => 
+  'getshape1' =>
   array (
     'init' => '4.0.5',
   ),
-  'getshape2' => 
+  'getshape2' =>
   array (
     'init' => '4.0.5',
   ),
-  'getsockname' => 
+  'getsockname' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'getsockopt' => 
+  'getsockopt' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'getstartlogging' => 
+  'getstartlogging' =>
   array (
     'init' => '3.0.0',
   ),
-  'gettext' => 
+  'gettext' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_gettext',
   ),
-  'gettimeofday' => 
+  'gettimeofday' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'gettoday' => 
+  'gettoday' =>
   array (
     'init' => '3.0.0',
   ),
-  'gettotal' => 
+  'gettotal' =>
   array (
     'init' => '3.0.0',
   ),
-  'gettype' => 
+  'gettype' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'getwidth' => 
+  'getwidth' =>
   array (
     'init' => '4.0.5',
   ),
-  'glob' => 
+  'glob' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'gmdate' => 
+  'gmdate' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'gmmktime' => 
+  'gmmktime' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'gmp_abs' => 
+  'gmp_abs' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_add' => 
+  'gmp_add' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_and' => 
+  'gmp_and' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_clrbit' => 
+  'gmp_clrbit' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_cmp' => 
+  'gmp_cmp' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_com' => 
+  'gmp_com' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_div' => 
+  'gmp_div' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_div_q' => 
+  'gmp_div_q' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_div_qr' => 
+  'gmp_div_qr' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_div_r' => 
+  'gmp_div_r' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_divexact' => 
+  'gmp_divexact' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_fact' => 
+  'gmp_fact' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_gcd' => 
+  'gmp_gcd' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_gcdext' => 
+  'gmp_gcdext' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_hamdist' => 
+  'gmp_hamdist' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_init' => 
+  'gmp_init' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_intval' => 
+  'gmp_intval' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_invert' => 
+  'gmp_invert' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_jacobi' => 
+  'gmp_jacobi' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_legendre' => 
+  'gmp_legendre' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_mod' => 
+  'gmp_mod' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_mul' => 
+  'gmp_mul' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_neg' => 
+  'gmp_neg' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_or' => 
+  'gmp_or' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_perfect_square' => 
+  'gmp_perfect_square' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_popcount' => 
+  'gmp_popcount' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_pow' => 
+  'gmp_pow' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_powm' => 
+  'gmp_powm' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_prob_prime' => 
+  'gmp_prob_prime' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_random' => 
+  'gmp_random' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_scan0' => 
+  'gmp_scan0' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_scan1' => 
+  'gmp_scan1' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_setbit' => 
+  'gmp_setbit' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_sign' => 
+  'gmp_sign' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_sqrt' => 
+  'gmp_sqrt' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_sqrtrem' => 
+  'gmp_sqrtrem' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_strval' => 
+  'gmp_strval' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_sub' => 
+  'gmp_sub' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmp_xor' => 
+  'gmp_xor' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gmp',
   ),
-  'gmstrftime' => 
+  'gmstrftime' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_standard',
   ),
-  'gregoriantojd' => 
+  'gregoriantojd' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
-  'gzclose' => 
+  'gzclose' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzcompress' => 
+  'gzcompress' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_zlib',
   ),
-  'gzdeflate' => 
+  'gzdeflate' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_zlib',
   ),
-  'gzencode' => 
+  'gzencode' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_zlib',
   ),
-  'gzeof' => 
+  'gzeof' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzfile' => 
+  'gzfile' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzgetc' => 
+  'gzgetc' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzgets' => 
+  'gzgets' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzgetss' => 
+  'gzgetss' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzinflate' => 
+  'gzinflate' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_zlib',
   ),
-  'gzopen' => 
+  'gzopen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzpassthru' => 
+  'gzpassthru' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzputs' => 
+  'gzputs' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzread' => 
+  'gzread' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzrewind' => 
+  'gzrewind' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzseek' => 
+  'gzseek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gztell' => 
+  'gztell' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'gzuncompress' => 
+  'gzuncompress' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_zlib',
   ),
-  'gzwrite' => 
+  'gzwrite' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'handle' => 
+  'handle' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.6',
   ),
-  'header' => 
+  'header' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'headers_list' => 
+  'headers_list' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'headers_sent' => 
+  'headers_sent' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_standard',
   ),
-  'hebrev' => 
+  'hebrev' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'hebrevc' => 
+  'hebrevc' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'hexdec' => 
+  'hexdec' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'highlight_file' => 
+  'highlight_file' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'highlight_string' => 
+  'highlight_string' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'html_doc' => 
+  'html_doc' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'html_doc_file' => 
+  'html_doc_file' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'html_entity_decode' => 
+  'html_entity_decode' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'htmlentities' => 
+  'htmlentities' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'htmlspecialchars' => 
+  'htmlspecialchars' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'htmlspecialchars_decode' => 
+  'htmlspecialchars_decode' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'http_build_query' => 
+  'http_build_query' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'hw_array2objrec' => 
+  'hw_array2objrec' =>
   array (
     'init' => '3.0.4',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_changeobject' => 
+  'hw_changeobject' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_children' => 
+  'hw_children' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_childrenobj' => 
+  'hw_childrenobj' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_close' => 
+  'hw_close' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_connect' => 
+  'hw_connect' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_connection_info' => 
+  'hw_connection_info' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_cp' => 
+  'hw_cp' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_deleteobject' => 
+  'hw_deleteobject' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_docbyanchor' => 
+  'hw_docbyanchor' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_docbyanchorobj' => 
+  'hw_docbyanchorobj' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_document_attributes' => 
+  'hw_document_attributes' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_document_bodytag' => 
+  'hw_document_bodytag' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_document_content' => 
+  'hw_document_content' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_document_setcontent' => 
+  'hw_document_setcontent' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_document_size' => 
+  'hw_document_size' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_documentattributes' => 
+  'hw_documentattributes' =>
   array (
     'init' => '3.0.3',
   ),
-  'hw_documentbodytag' => 
+  'hw_documentbodytag' =>
   array (
     'init' => '3.0.3',
   ),
-  'hw_documentcontent' => 
+  'hw_documentcontent' =>
   array (
     'init' => '3.0.8',
   ),
-  'hw_documentsetcontent' => 
+  'hw_documentsetcontent' =>
   array (
     'init' => '3.0.8',
   ),
-  'hw_documentsize' => 
+  'hw_documentsize' =>
   array (
     'init' => '3.0.3',
   ),
-  'hw_dummy' => 
-  array (
-    'init' => '3.0.3',
-    'ext' => 'pecl_hyperwave',
-  ),
-  'hw_edittext' => 
+  'hw_dummy' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_error' => 
+  'hw_edittext' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_errormsg' => 
+  'hw_error' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_free_document' => 
+  'hw_errormsg' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getanchors' => 
+  'hw_free_document' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getanchorsobj' => 
+  'hw_getanchors' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getandlock' => 
+  'hw_getanchorsobj' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getcgi' => 
+  'hw_getandlock' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getchildcoll' => 
+  'hw_getcgi' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getchildcollobj' => 
+  'hw_getchildcoll' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getchilddoccoll' => 
+  'hw_getchildcollobj' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getchilddoccollobj' => 
+  'hw_getchilddoccoll' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getobject' => 
+  'hw_getchilddoccollobj' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getobjectbyftquery' => 
+  'hw_getobject' =>
+  array (
+    'init' => '3.0.3',
+    'ext' => 'pecl_hyperwave',
+  ),
+  'hw_getobjectbyftquery' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getobjectbyftquerycoll' => 
+  'hw_getobjectbyftquerycoll' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getobjectbyftquerycollobj' => 
+  'hw_getobjectbyftquerycollobj' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getobjectbyftqueryobj' => 
+  'hw_getobjectbyftqueryobj' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getobjectbyquery' => 
+  'hw_getobjectbyquery' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getobjectbyquerycoll' => 
+  'hw_getobjectbyquerycoll' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getobjectbyquerycollobj' => 
+  'hw_getobjectbyquerycollobj' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getobjectbyqueryobj' => 
+  'hw_getobjectbyqueryobj' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getparents' => 
+  'hw_getparents' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getparentsobj' => 
+  'hw_getparentsobj' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getrellink' => 
+  'hw_getrellink' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getremote' => 
+  'hw_getremote' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getremotechildren' => 
+  'hw_getremotechildren' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getsrcbydestobj' => 
+  'hw_getsrcbydestobj' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_gettext' => 
+  'hw_gettext' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_getusername' => 
+  'hw_getusername' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_identify' => 
+  'hw_identify' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_incollections' => 
+  'hw_incollections' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_info' => 
+  'hw_info' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_inscoll' => 
+  'hw_inscoll' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_insdoc' => 
+  'hw_insdoc' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_insertanchors' => 
+  'hw_insertanchors' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_insertdocument' => 
+  'hw_insertdocument' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_insertobject' => 
+  'hw_insertobject' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_mapid' => 
+  'hw_mapid' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_modifyobject' => 
+  'hw_modifyobject' =>
   array (
     'init' => '3.0.7',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_mv' => 
+  'hw_mv' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_new_document' => 
+  'hw_new_document' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_new_document_from_file' => 
+  'hw_new_document_from_file' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_objrec2array' => 
+  'hw_objrec2array' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_output_document' => 
+  'hw_output_document' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_outputdocument' => 
+  'hw_outputdocument' =>
   array (
     'init' => '3.0.3',
   ),
-  'hw_pconnect' => 
-  array (
-    'init' => '3.0.3',
-    'ext' => 'pecl_hyperwave',
-  ),
-  'hw_pipecgi' => 
+  'hw_pconnect' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_pipedocument' => 
+  'hw_pipecgi' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_root' => 
+  'hw_pipedocument' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_setlinkroot' => 
+  'hw_root' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_stat' => 
+  'hw_setlinkroot' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_unlock' => 
+  'hw_stat' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hw_who' => 
+  'hw_unlock' =>
   array (
     'init' => '3.0.3',
     'ext' => 'pecl_hyperwave',
   ),
-  'hypot' => 
+  'hw_who' =>
+  array (
+    'init' => '3.0.3',
+    'ext' => 'pecl_hyperwave',
+  ),
+  'hypot' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'i18n_convert' => 
+  'i18n_convert' =>
   array (
     'init' => '4.0.6',
   ),
-  'i18n_discover_encoding' => 
+  'i18n_discover_encoding' =>
   array (
     'init' => '4.0.6',
   ),
-  'i18n_http_input' => 
+  'i18n_http_input' =>
   array (
     'init' => '4.0.6',
   ),
-  'i18n_http_output' => 
+  'i18n_http_output' =>
   array (
     'init' => '4.0.6',
   ),
-  'i18n_internal_encoding' => 
+  'i18n_internal_encoding' =>
   array (
     'init' => '4.0.6',
   ),
-  'i18n_ja_jp_hantozen' => 
+  'i18n_ja_jp_hantozen' =>
   array (
     'init' => '4.0.6',
   ),
-  'i18n_mime_header_decode' => 
+  'i18n_mime_header_decode' =>
   array (
     'init' => '4.0.6',
   ),
-  'i18n_mime_header_encode' => 
+  'i18n_mime_header_encode' =>
   array (
     'init' => '4.0.6',
   ),
-  'ibase_add_user' => 
+  'ibase_add_user' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_affected_rows' => 
+  'ibase_affected_rows' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_backup' => 
+  'ibase_backup' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_bind' => 
+  'ibase_bind' =>
   array (
     'init' => '3.0.6',
     'end' => '3.0.7',
   ),
-  'ibase_blob_add' => 
+  'ibase_blob_add' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_blob_cancel' => 
+  'ibase_blob_cancel' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_blob_close' => 
+  'ibase_blob_close' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_blob_create' => 
+  'ibase_blob_create' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_blob_echo' => 
+  'ibase_blob_echo' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_blob_get' => 
+  'ibase_blob_get' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_blob_import' => 
+  'ibase_blob_import' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_blob_info' => 
+  'ibase_blob_info' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_blob_open' => 
+  'ibase_blob_open' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_close' => 
+  'ibase_close' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_interbase',
   ),
-  'ibase_commit' => 
+  'ibase_commit' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_commit_ret' => 
+  'ibase_commit_ret' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_connect' => 
+  'ibase_connect' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_interbase',
   ),
-  'ibase_db_info' => 
+  'ibase_db_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_delete_user' => 
+  'ibase_delete_user' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_drop_db' => 
+  'ibase_drop_db' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_errcode' => 
+  'ibase_errcode' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_errmsg' => 
+  'ibase_errmsg' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_execute' => 
+  'ibase_execute' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_interbase',
   ),
-  'ibase_fetch_assoc' => 
+  'ibase_fetch_assoc' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_fetch_object' => 
+  'ibase_fetch_object' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_fetch_row' => 
+  'ibase_fetch_row' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_interbase',
   ),
-  'ibase_field_info' => 
+  'ibase_field_info' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_free_event_handler' => 
+  'ibase_free_event_handler' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_free_query' => 
+  'ibase_free_query' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_interbase',
   ),
-  'ibase_free_result' => 
+  'ibase_free_result' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_interbase',
   ),
-  'ibase_gen_id' => 
+  'ibase_gen_id' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_maintain_db' => 
+  'ibase_maintain_db' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_modify_user' => 
+  'ibase_modify_user' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_name_result' => 
+  'ibase_name_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_num_fields' => 
+  'ibase_num_fields' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_num_params' => 
+  'ibase_num_params' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_num_rows' => 
+  'ibase_num_rows' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_param_info' => 
+  'ibase_param_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_pconnect' => 
+  'ibase_pconnect' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_interbase',
   ),
-  'ibase_prepare' => 
+  'ibase_prepare' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_interbase',
   ),
-  'ibase_query' => 
+  'ibase_query' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_interbase',
   ),
-  'ibase_restore' => 
+  'ibase_restore' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_rollback' => 
+  'ibase_rollback' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_rollback_ret' => 
+  'ibase_rollback_ret' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_server_info' => 
+  'ibase_server_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_service_attach' => 
+  'ibase_service_attach' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_service_detach' => 
+  'ibase_service_detach' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_set_event_handler' => 
+  'ibase_set_event_handler' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'ibase_timefmt' => 
+  'ibase_timefmt' =>
   array (
     'init' => '3.0.6',
   ),
-  'ibase_trans' => 
+  'ibase_trans' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_interbase',
   ),
-  'ibase_wait_event' => 
+  'ibase_wait_event' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_interbase',
   ),
-  'icap_create_calendar' => 
+  'icap_create_calendar' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_delete_calendar' => 
+  'icap_delete_calendar' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_delete_event' => 
+  'icap_delete_event' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_fetch_event' => 
+  'icap_fetch_event' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_list_alarms' => 
+  'icap_list_alarms' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_list_events' => 
+  'icap_list_events' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_open' => 
+  'icap_open' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_popen' => 
+  'icap_popen' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_rename_calendar' => 
+  'icap_rename_calendar' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_reopen' => 
+  'icap_reopen' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_snooze' => 
+  'icap_snooze' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'icap_store_event' => 
+  'icap_store_event' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
   ),
-  'iconv' => 
+  'iconv' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_iconv',
   ),
-  'iconv_get_encoding' => 
+  'iconv_get_encoding' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_iconv',
   ),
-  'iconv_mime_decode' => 
+  'iconv_mime_decode' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_iconv',
   ),
-  'iconv_mime_decode_headers' => 
+  'iconv_mime_decode_headers' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_iconv',
   ),
-  'iconv_mime_encode' => 
+  'iconv_mime_encode' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_iconv',
   ),
-  'iconv_set_encoding' => 
+  'iconv_set_encoding' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_iconv',
   ),
-  'iconv_strlen' => 
+  'iconv_strlen' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_iconv',
   ),
-  'iconv_strpos' => 
+  'iconv_strpos' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_iconv',
   ),
-  'iconv_strrpos' => 
+  'iconv_strrpos' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_iconv',
   ),
-  'iconv_substr' => 
+  'iconv_substr' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_iconv',
   ),
-  'icu_loc_get_default' => 
+  'icu_loc_get_default' =>
   array (
     'init' => '5.0.0',
   ),
-  'icu_loc_set_default' => 
+  'icu_loc_set_default' =>
   array (
     'init' => '5.0.0',
   ),
-  'idate' => 
+  'idate' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'ifx_affected_rows' => 
+  'ifx_affected_rows' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_blobinfile_mode' => 
+  'ifx_blobinfile_mode' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_byteasvarchar' => 
+  'ifx_byteasvarchar' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_close' => 
+  'ifx_close' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_connect' => 
+  'ifx_connect' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_copy_blob' => 
+  'ifx_copy_blob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_create_blob' => 
+  'ifx_create_blob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_create_char' => 
+  'ifx_create_char' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_informix',
   ),
-  'ifx_create_db' => 
+  'ifx_create_db' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.3',
   ),
-  'ifx_do' => 
+  'ifx_do' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_drop_db' => 
+  'ifx_drop_db' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.3',
   ),
-  'ifx_error' => 
+  'ifx_error' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_errormsg' => 
+  'ifx_errormsg' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_fetch_object' => 
+  'ifx_fetch_object' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.3',
   ),
-  'ifx_fetch_row' => 
+  'ifx_fetch_row' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_fieldproperties' => 
+  'ifx_fieldproperties' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_fieldtypes' => 
+  'ifx_fieldtypes' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_free_blob' => 
+  'ifx_free_blob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_free_char' => 
+  'ifx_free_char' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_informix',
   ),
-  'ifx_free_result' => 
+  'ifx_free_result' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_get_blob' => 
+  'ifx_get_blob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_get_char' => 
+  'ifx_get_char' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_informix',
   ),
-  'ifx_getsqlca' => 
+  'ifx_getsqlca' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_informix',
   ),
-  'ifx_htmltbl_result' => 
+  'ifx_htmltbl_result' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_nullformat' => 
+  'ifx_nullformat' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_num_fields' => 
+  'ifx_num_fields' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_num_rows' => 
+  'ifx_num_rows' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_pconnect' => 
+  'ifx_pconnect' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_prepare' => 
+  'ifx_prepare' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_query' => 
+  'ifx_query' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_informix',
   ),
-  'ifx_result' => 
+  'ifx_result' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.3',
   ),
-  'ifx_textasvarchar' => 
+  'ifx_textasvarchar' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_update_blob' => 
+  'ifx_update_blob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifx_update_char' => 
+  'ifx_update_char' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_informix',
   ),
-  'ifxus_close_slob' => 
+  'ifxus_close_slob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifxus_create_slob' => 
+  'ifxus_create_slob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifxus_free_slob' => 
+  'ifxus_free_slob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifxus_open_slob' => 
+  'ifxus_open_slob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifxus_read_slob' => 
+  'ifxus_read_slob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifxus_seek_slob' => 
+  'ifxus_seek_slob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifxus_tell_slob' => 
+  'ifxus_tell_slob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ifxus_write_slob' => 
+  'ifxus_write_slob' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_informix',
   ),
-  'ignore_user_abort' => 
+  'ignore_user_abort' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'image2wbmp' => 
+  'image2wbmp' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_gd',
   ),
-  'image_type_to_mime_type' => 
+  'image_type_to_mime_type' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'imagealphablending' => 
+  'imagealphablending' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imageantialias' => 
+  'imageantialias' =>
   array (
     'init' => '4.3.2',
     'ext' => 'ext_gd',
   ),
-  'imagearc' => 
+  'imagearc' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagechar' => 
+  'imagechar' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecharup' => 
+  'imagecharup' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecolorallocate' => 
+  'imagecolorallocate' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecolorallocatealpha' => 
+  'imagecolorallocatealpha' =>
   array (
     'init' => '4.3.2',
     'ext' => 'ext_gd',
   ),
-  'imagecolorat' => 
+  'imagecolorat' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecolorclosest' => 
+  'imagecolorclosest' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecolorclosestalpha' => 
+  'imagecolorclosestalpha' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagecolorclosesthwb' => 
+  'imagecolorclosesthwb' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_gd',
   ),
-  'imagecolordeallocate' => 
+  'imagecolordeallocate' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagecolorexact' => 
+  'imagecolorexact' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecolorexactalpha' => 
+  'imagecolorexactalpha' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagecolormatch' => 
+  'imagecolormatch' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_gd',
   ),
-  'imagecolorresolve' => 
+  'imagecolorresolve' =>
   array (
     'init' => '3.0.2',
     'ext' => 'ext_gd',
   ),
-  'imagecolorresolvealpha' => 
+  'imagecolorresolvealpha' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagecolorset' => 
+  'imagecolorset' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecolorsforindex' => 
+  'imagecolorsforindex' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecolorstotal' => 
+  'imagecolorstotal' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecolortransparent' => 
+  'imagecolortransparent' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imageconvolution' => 
+  'imageconvolution' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'imagecopy' => 
+  'imagecopy' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagecopymerge' => 
+  'imagecopymerge' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_gd',
   ),
-  'imagecopymergegray' => 
+  'imagecopymergegray' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagecopyresampled' => 
+  'imagecopyresampled' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagecopyresized' => 
+  'imagecopyresized' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecreate' => 
+  'imagecreate' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecreatefromgd' => 
+  'imagecreatefromgd' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_gd',
   ),
-  'imagecreatefromgd2' => 
+  'imagecreatefromgd2' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_gd',
   ),
-  'imagecreatefromgd2part' => 
+  'imagecreatefromgd2part' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_gd',
   ),
-  'imagecreatefromgif' => 
+  'imagecreatefromgif' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagecreatefromjpeg' => 
+  'imagecreatefromjpeg' =>
   array (
     'init' => '3.0.16',
     'ext' => 'ext_gd',
   ),
-  'imagecreatefrompng' => 
+  'imagecreatefrompng' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_gd',
   ),
-  'imagecreatefromstring' => 
+  'imagecreatefromstring' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_gd',
   ),
-  'imagecreatefromwbmp' => 
+  'imagecreatefromwbmp' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_gd',
   ),
-  'imagecreatefromxbm' => 
+  'imagecreatefromxbm' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_gd',
   ),
-  'imagecreatefromxpm' => 
+  'imagecreatefromxpm' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_gd',
   ),
-  'imagecreatetruecolor' => 
+  'imagecreatetruecolor' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagedashedline' => 
+  'imagedashedline' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagedestroy' => 
+  'imagedestroy' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imageellipse' => 
+  'imageellipse' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagefill' => 
+  'imagefill' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagefilledarc' => 
+  'imagefilledarc' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagefilledellipse' => 
+  'imagefilledellipse' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagefilledpolygon' => 
+  'imagefilledpolygon' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagefilledrectangle' => 
+  'imagefilledrectangle' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagefilltoborder' => 
+  'imagefilltoborder' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagefilter' => 
+  'imagefilter' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagefontheight' => 
+  'imagefontheight' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagefontwidth' => 
+  'imagefontwidth' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imageftbbox' => 
+  'imageftbbox' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_gd',
   ),
-  'imagefttext' => 
+  'imagefttext' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_gd',
   ),
-  'imagegammacorrect' => 
+  'imagegammacorrect' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_gd',
   ),
-  'imagegd' => 
+  'imagegd' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_gd',
   ),
-  'imagegd2' => 
+  'imagegd2' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_gd',
   ),
-  'imagegif' => 
+  'imagegif' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imageinterlace' => 
+  'imageinterlace' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imageistruecolor' => 
+  'imageistruecolor' =>
   array (
     'init' => '4.3.2',
     'ext' => 'ext_gd',
   ),
-  'imagejpeg' => 
+  'imagejpeg' =>
   array (
     'init' => '3.0.16',
     'ext' => 'ext_gd',
   ),
-  'imagelayereffect' => 
+  'imagelayereffect' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_gd',
   ),
-  'imageline' => 
+  'imageline' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imageloadfont' => 
+  'imageloadfont' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagepalettecopy' => 
+  'imagepalettecopy' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_gd',
   ),
-  'imagepng' => 
+  'imagepng' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_gd',
   ),
-  'imagepolygon' => 
+  'imagepolygon' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagepsbbox' => 
+  'imagepsbbox' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_gd',
   ),
-  'imagepscopyfont' => 
+  'imagepscopyfont' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_gd',
   ),
-  'imagepsencodefont' => 
+  'imagepsencodefont' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_gd',
   ),
-  'imagepsextendfont' => 
+  'imagepsextendfont' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_gd',
   ),
-  'imagepsfreefont' => 
+  'imagepsfreefont' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_gd',
   ),
-  'imagepsloadfont' => 
+  'imagepsloadfont' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_gd',
   ),
-  'imagepsslantfont' => 
+  'imagepsslantfont' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_gd',
   ),
-  'imagepstext' => 
+  'imagepstext' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_gd',
   ),
-  'imagerectangle' => 
+  'imagerectangle' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagerotate' => 
+  'imagerotate' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_gd',
   ),
-  'imagesavealpha' => 
+  'imagesavealpha' =>
   array (
     'init' => '4.3.2',
     'ext' => 'ext_gd',
   ),
-  'imagesetbrush' => 
+  'imagesetbrush' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagesetpixel' => 
+  'imagesetpixel' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagesetstyle' => 
+  'imagesetstyle' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagesetthickness' => 
+  'imagesetthickness' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagesettile' => 
+  'imagesettile' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagestring' => 
+  'imagestring' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagestringup' => 
+  'imagestringup' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagesx' => 
+  'imagesx' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagesy' => 
+  'imagesy' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagetruecolortopalette' => 
+  'imagetruecolortopalette' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_gd',
   ),
-  'imagettfbbox' => 
+  'imagettfbbox' =>
   array (
     'init' => '3.0.1',
     'ext' => 'ext_gd',
   ),
-  'imagettftext' => 
+  'imagettftext' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_gd',
   ),
-  'imagetypes' => 
+  'imagetypes' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_gd',
   ),
-  'imagewbmp' => 
+  'imagewbmp' =>
   array (
     'init' => '3.0.15',
     'ext' => 'ext_gd',
   ),
-  'imagexbm' => 
+  'imagexbm' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_gd',
   ),
-  'imap_8bit' => 
+  'imap_8bit' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_alerts' => 
+  'imap_alerts' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_imap',
   ),
-  'imap_append' => 
+  'imap_append' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_base64' => 
+  'imap_base64' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_binary' => 
+  'imap_binary' =>
   array (
     'init' => '3.0.2',
     'ext' => 'ext_imap',
   ),
-  'imap_body' => 
+  'imap_body' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_bodystruct' => 
+  'imap_bodystruct' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_imap',
   ),
-  'imap_check' => 
+  'imap_check' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_clearflag_full' => 
+  'imap_clearflag_full' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_imap',
   ),
-  'imap_close' => 
+  'imap_close' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_create' => 
+  'imap_create' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_imap',
   ),
-  'imap_createmailbox' => 
+  'imap_createmailbox' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_delete' => 
+  'imap_delete' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_deletemailbox' => 
+  'imap_deletemailbox' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_errors' => 
+  'imap_errors' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_imap',
   ),
-  'imap_expunge' => 
+  'imap_expunge' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_fetch_overview' => 
+  'imap_fetch_overview' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_imap',
   ),
-  'imap_fetchbody' => 
+  'imap_fetchbody' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_fetchheader' => 
+  'imap_fetchheader' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_imap',
   ),
-  'imap_fetchstructure' => 
+  'imap_fetchstructure' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_fetchtext' => 
+  'imap_fetchtext' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_imap',
   ),
-  'imap_get_quota' => 
+  'imap_get_quota' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_imap',
   ),
-  'imap_get_quotaroot' => 
+  'imap_get_quotaroot' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_imap',
   ),
-  'imap_getacl' => 
+  'imap_getacl' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_getmailboxes' => 
+  'imap_getmailboxes' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_imap',
   ),
-  'imap_getsubscribed' => 
+  'imap_getsubscribed' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_imap',
   ),
-  'imap_header' => 
+  'imap_header' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_headerinfo' => 
+  'imap_headerinfo' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_headers' => 
+  'imap_headers' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_last_error' => 
+  'imap_last_error' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_imap',
   ),
-  'imap_list' => 
+  'imap_list' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_imap',
   ),
-  'imap_listmailbox' => 
+  'imap_listmailbox' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_listsubscribed' => 
+  'imap_listsubscribed' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_lsub' => 
+  'imap_lsub' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_imap',
   ),
-  'imap_mail' => 
+  'imap_mail' =>
   array (
     'init' => '3.0.14',
     'ext' => 'ext_imap',
   ),
-  'imap_mail_compose' => 
+  'imap_mail_compose' =>
   array (
     'init' => '3.0.5',
     'ext' => 'ext_imap',
   ),
-  'imap_mail_copy' => 
+  'imap_mail_copy' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_mail_move' => 
+  'imap_mail_move' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_mailboxmsginfo' => 
+  'imap_mailboxmsginfo' =>
   array (
     'init' => '3.0.2',
     'ext' => 'ext_imap',
   ),
-  'imap_mime_header_decode' => 
+  'imap_mime_header_decode' =>
   array (
     'init' => '3.0.17',
     'ext' => 'ext_imap',
   ),
-  'imap_msgno' => 
+  'imap_msgno' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_imap',
   ),
-  'imap_num_msg' => 
+  'imap_num_msg' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_num_recent' => 
+  'imap_num_recent' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_open' => 
+  'imap_open' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_ping' => 
+  'imap_ping' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_popen' => 
+  'imap_popen' =>
   array (
     'init' => '3.0.12',
     'end' => '4.2.3',
   ),
-  'imap_qprint' => 
+  'imap_qprint' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_rename' => 
+  'imap_rename' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_imap',
   ),
-  'imap_renamemailbox' => 
+  'imap_renamemailbox' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_reopen' => 
+  'imap_reopen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_rfc822_parse_adrlist' => 
+  'imap_rfc822_parse_adrlist' =>
   array (
     'init' => '3.0.2',
     'ext' => 'ext_imap',
   ),
-  'imap_rfc822_parse_headers' => 
+  'imap_rfc822_parse_headers' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_rfc822_write_address' => 
+  'imap_rfc822_write_address' =>
   array (
     'init' => '3.0.2',
     'ext' => 'ext_imap',
   ),
-  'imap_scan' => 
+  'imap_scan' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_imap',
   ),
-  'imap_scanmailbox' => 
+  'imap_scanmailbox' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_search' => 
+  'imap_search' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_imap',
   ),
-  'imap_set_quota' => 
+  'imap_set_quota' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_imap',
   ),
-  'imap_setacl' => 
+  'imap_setacl' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_imap',
   ),
-  'imap_setflag_full' => 
+  'imap_setflag_full' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_imap',
   ),
-  'imap_sort' => 
+  'imap_sort' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_imap',
   ),
-  'imap_status' => 
+  'imap_status' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_imap',
   ),
-  'imap_subscribe' => 
+  'imap_subscribe' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_thread' => 
+  'imap_thread' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_imap',
   ),
-  'imap_timeout' => 
+  'imap_timeout' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_imap',
   ),
-  'imap_uid' => 
+  'imap_uid' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_imap',
   ),
-  'imap_undelete' => 
+  'imap_undelete' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_unsubscribe' => 
+  'imap_unsubscribe' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_imap',
   ),
-  'imap_utf7_decode' => 
+  'imap_utf7_decode' =>
   array (
     'init' => '3.0.15',
     'ext' => 'ext_imap',
   ),
-  'imap_utf7_encode' => 
+  'imap_utf7_encode' =>
   array (
     'init' => '3.0.15',
     'ext' => 'ext_imap',
   ),
-  'imap_utf8' => 
+  'imap_utf8' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_imap',
   ),
-  'implode' => 
+  'implode' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'import_request_variables' => 
+  'import_request_variables' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'imsp_abook_create' => 
+  'imsp_abook_create' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_delete' => 
+  'imsp_abook_delete' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_deleteent' => 
+  'imsp_abook_deleteent' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_expand' => 
+  'imsp_abook_expand' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_fetch' => 
+  'imsp_abook_fetch' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_find' => 
+  'imsp_abook_find' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_getlist' => 
+  'imsp_abook_getlist' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_lock' => 
+  'imsp_abook_lock' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_rename' => 
+  'imsp_abook_rename' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_search' => 
+  'imsp_abook_search' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_store' => 
+  'imsp_abook_store' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_abook_unlock' => 
+  'imsp_abook_unlock' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_close' => 
+  'imsp_close' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_open' => 
+  'imsp_open' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_option_get' => 
+  'imsp_option_get' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_option_set' => 
+  'imsp_option_set' =>
   array (
     'init' => '3.0.13',
   ),
-  'imsp_option_unset' => 
+  'imsp_option_unset' =>
   array (
     'init' => '3.0.13',
   ),
-  'in_array' => 
+  'in_array' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'inet_ntop' => 
+  'inet_ntop' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'inet_pton' => 
+  'inet_pton' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'ingres_autocommit' => 
+  'ingres_autocommit' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_close' => 
+  'ingres_close' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_commit' => 
+  'ingres_commit' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_connect' => 
+  'ingres_connect' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_fetch_array' => 
+  'ingres_fetch_array' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_fetch_object' => 
+  'ingres_fetch_object' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_fetch_row' => 
+  'ingres_fetch_row' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_field_length' => 
+  'ingres_field_length' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_field_name' => 
+  'ingres_field_name' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_field_nullable' => 
+  'ingres_field_nullable' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_field_precision' => 
+  'ingres_field_precision' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_field_scale' => 
+  'ingres_field_scale' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_field_type' => 
+  'ingres_field_type' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_num_fields' => 
+  'ingres_num_fields' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_num_rows' => 
+  'ingres_num_rows' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_pconnect' => 
+  'ingres_pconnect' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_query' => 
+  'ingres_query' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ingres_rollback' => 
+  'ingres_rollback' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.4',
     'ext' => 'ext_ingres_ii',
   ),
-  'ini_alter' => 
+  'ini_alter' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ini_get' => 
+  'ini_get' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ini_get_all' => 
+  'ini_get_all' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'ini_restore' => 
+  'ini_restore' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ini_set' => 
+  'ini_set' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'interface_exists' => 
+  'interface_exists' =>
   array (
     'init' => '5.0.2',
     'ext' => 'zend',
   ),
-  'intval' => 
+  'intval' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'ip2long' => 
+  'ip2long' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'iptcembed' => 
+  'iptcembed' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'iptcparse' => 
+  'iptcparse' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'ircg_channel_mode' => 
+  'ircg_channel_mode' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_disconnect' => 
+  'ircg_disconnect' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_eval_ecmascript_params' => 
+  'ircg_eval_ecmascript_params' =>
   array (
     'init' => '4.3.0',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_fetch_error_msg' => 
+  'ircg_fetch_error_msg' =>
   array (
     'init' => '4.1.0',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_get_username' => 
+  'ircg_get_username' =>
   array (
     'init' => '4.1.0',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_html_encode' => 
+  'ircg_html_encode' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_ignore_add' => 
+  'ircg_ignore_add' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_ignore_del' => 
+  'ircg_ignore_del' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_invite' => 
+  'ircg_invite' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_is_conn_alive' => 
+  'ircg_is_conn_alive' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_join' => 
+  'ircg_join' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_kick' => 
+  'ircg_kick' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_list' => 
+  'ircg_list' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_lookup_format_messages' => 
+  'ircg_lookup_format_messages' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_lusers' => 
+  'ircg_lusers' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_msg' => 
+  'ircg_msg' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_names' => 
+  'ircg_names' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_nick' => 
+  'ircg_nick' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_nickname_escape' => 
+  'ircg_nickname_escape' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_nickname_unescape' => 
+  'ircg_nickname_unescape' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_notice' => 
+  'ircg_notice' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_oper' => 
+  'ircg_oper' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_part' => 
+  'ircg_part' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_pconnect' => 
+  'ircg_pconnect' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_register_format_messages' => 
+  'ircg_register_format_messages' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_set_current' => 
+  'ircg_set_current' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_set_file' => 
+  'ircg_set_file' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_set_on_die' => 
+  'ircg_set_on_die' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_set_on_read_data' => 
+  'ircg_set_on_read_data' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_ircg',
   ),
-  'ircg_topic' => 
+  'ircg_topic' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_who' => 
+  'ircg_who' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'ircg_whois' => 
+  'ircg_whois' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_ircg',
   ),
-  'is_a' => 
+  'is_a' =>
   array (
     'init' => '4.2.0',
     'ext' => 'zend',
   ),
-  'is_array' => 
+  'is_array' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_binary' => 
+  'is_binary' =>
   array (
     'init' => '5.0.0',
   ),
-  'is_bool' => 
+  'is_bool' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_buffer' => 
+  'is_buffer' =>
   array (
     'init' => '5.0.0',
   ),
-  'is_callable' => 
+  'is_callable' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_standard',
   ),
-  'is_dir' => 
+  'is_dir' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_double' => 
+  'is_double' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_executable' => 
+  'is_executable' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_file' => 
+  'is_file' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_finite' => 
+  'is_finite' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'is_float' => 
+  'is_float' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_infinite' => 
+  'is_infinite' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'is_int' => 
+  'is_int' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_integer' => 
+  'is_integer' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_link' => 
+  'is_link' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_long' => 
+  'is_long' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_nan' => 
+  'is_nan' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'is_null' => 
+  'is_null' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_standard',
   ),
-  'is_numeric' => 
+  'is_numeric' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_object' => 
+  'is_object' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_readable' => 
+  'is_readable' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_real' => 
+  'is_real' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_resource' => 
+  'is_resource' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_scalar' => 
+  'is_scalar' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_standard',
   ),
-  'is_soap_fault' => 
+  'is_soap_fault' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_soap',
   ),
-  'is_string' => 
+  'is_string' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_subclass_of' => 
+  'is_subclass_of' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'is_unicode' => 
+  'is_unicode' =>
   array (
     'init' => '5.0.0',
   ),
-  'is_uploaded_file' => 
+  'is_uploaded_file' =>
   array (
     'init' => '3.0.17',
     'ext' => 'ext_standard',
   ),
-  'is_writable' => 
+  'is_writable' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'is_writeable' => 
+  'is_writeable' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'iterator_count' => 
+  'iterator_count' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_spl',
   ),
-  'iterator_to_array' => 
+  'iterator_to_array' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_spl',
   ),
-  'java_last_exception_clear' => 
+  'java_last_exception_clear' =>
   array (
     'init' => '4.0.2',
     'ext' => 'pecl_rpc',
   ),
-  'java_last_exception_get' => 
+  'java_last_exception_get' =>
   array (
     'init' => '4.0.2',
     'ext' => 'pecl_rpc',
   ),
-  'jddayofweek' => 
+  'jddayofweek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
-  'jdmonthname' => 
+  'jdmonthname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
-  'jdtofrench' => 
+  'jdtofrench' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
-  'jdtogregorian' => 
+  'jdtogregorian' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
-  'jdtojewish' => 
+  'jdtojewish' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
-  'jdtojulian' => 
+  'jdtojulian' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
-  'jdtounix' => 
+  'jdtounix' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_calendar',
   ),
-  'jewishtojd' => 
+  'jewishtojd' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
-  'join' => 
+  'join' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'jpeg2wbmp' => 
+  'jpeg2wbmp' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_gd',
   ),
-  'juliantojd' => 
+  'juliantojd' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_calendar',
   ),
-  'key' => 
+  'key' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'key_exists' => 
+  'key_exists' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_standard',
   ),
-  'krsort' => 
+  'krsort' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_standard',
   ),
-  'ksort' => 
+  'ksort' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'labelframe' => 
+  'labelframe' =>
   array (
     'init' => '4.0.5',
   ),
-  'lcg_value' => 
+  'lcg_value' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ldap_8859_to_t61' => 
+  'ldap_8859_to_t61' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_ldap',
   ),
-  'ldap_add' => 
+  'ldap_add' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_bind' => 
+  'ldap_bind' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_close' => 
+  'ldap_close' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_compare' => 
+  'ldap_compare' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_ldap',
   ),
-  'ldap_connect' => 
+  'ldap_connect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_count_entries' => 
+  'ldap_count_entries' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_delete' => 
+  'ldap_delete' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_dn2ufn' => 
+  'ldap_dn2ufn' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_err2str' => 
+  'ldap_err2str' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ldap',
   ),
-  'ldap_errno' => 
+  'ldap_errno' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_ldap',
   ),
-  'ldap_error' => 
+  'ldap_error' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_ldap',
   ),
-  'ldap_explode_dn' => 
+  'ldap_explode_dn' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_first_attribute' => 
+  'ldap_first_attribute' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_first_entry' => 
+  'ldap_first_entry' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_first_reference' => 
+  'ldap_first_reference' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_ldap',
   ),
-  'ldap_free_entry' => 
+  'ldap_free_entry' =>
   array (
     'end' => '3.0.2',
     'init' => '3.0.0',
   ),
-  'ldap_free_result' => 
+  'ldap_free_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_get_attributes' => 
+  'ldap_get_attributes' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_get_dn' => 
+  'ldap_get_dn' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_get_entries' => 
+  'ldap_get_entries' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_get_option' => 
+  'ldap_get_option' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ldap',
   ),
-  'ldap_get_values' => 
+  'ldap_get_values' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_get_values_len' => 
+  'ldap_get_values_len' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_ldap',
   ),
-  'ldap_list' => 
+  'ldap_list' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_mod_add' => 
+  'ldap_mod_add' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_ldap',
   ),
-  'ldap_mod_del' => 
+  'ldap_mod_del' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_ldap',
   ),
-  'ldap_mod_replace' => 
+  'ldap_mod_replace' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_ldap',
   ),
-  'ldap_modify' => 
+  'ldap_modify' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_next_attribute' => 
+  'ldap_next_attribute' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_next_entry' => 
+  'ldap_next_entry' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_next_reference' => 
+  'ldap_next_reference' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_ldap',
   ),
-  'ldap_parse_reference' => 
+  'ldap_parse_reference' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_ldap',
   ),
-  'ldap_parse_result' => 
+  'ldap_parse_result' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_ldap',
   ),
-  'ldap_read' => 
+  'ldap_read' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_rename' => 
+  'ldap_rename' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_ldap',
   ),
-  'ldap_sasl_bind' => 
+  'ldap_sasl_bind' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_search' => 
+  'ldap_search' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_set_option' => 
+  'ldap_set_option' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_ldap',
   ),
-  'ldap_set_rebind_proc' => 
+  'ldap_set_rebind_proc' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_sort' => 
+  'ldap_sort' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_start_tls' => 
+  'ldap_start_tls' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ldap',
   ),
-  'ldap_str2err' => 
+  'ldap_str2err' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.12',
   ),
-  'ldap_t61_to_8859' => 
+  'ldap_t61_to_8859' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_ldap',
   ),
-  'ldap_unbind' => 
+  'ldap_unbind' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_ldap',
   ),
-  'leak' => 
+  'leak' =>
   array (
     'init' => '3.0.0',
     'ext' => 'zend',
   ),
-  'levenshtein' => 
+  'levenshtein' =>
   array (
     'init' => '3.0.17',
     'ext' => 'ext_standard',
   ),
-  'libxml_clear_errors' => 
+  'libxml_clear_errors' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_libxml',
   ),
-  'libxml_get_errors' => 
+  'libxml_get_errors' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_libxml',
   ),
-  'libxml_get_last_error' => 
+  'libxml_get_last_error' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_libxml',
   ),
-  'libxml_set_streams_context' => 
+  'libxml_set_streams_context' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_libxml',
   ),
-  'libxml_use_internal_errors' => 
+  'libxml_use_internal_errors' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_libxml',
   ),
-  'link' => 
+  'link' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'linkinfo' => 
+  'linkinfo' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'listen' => 
+  'listen' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'localeconv' => 
+  'localeconv' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_standard',
   ),
-  'localtime' => 
+  'localtime' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'log' => 
+  'log' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'log10' => 
+  'log10' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'log1p' => 
+  'log1p' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'logas' => 
+  'logas' =>
   array (
     'init' => '3.0.0',
   ),
-  'long2ip' => 
+  'long2ip' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'lstat' => 
+  'lstat' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_standard',
   ),
-  'ltrim' => 
+  'ltrim' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'm_adduser' => 
+  'm_adduser' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_adduserarg' => 
+  'm_adduserarg' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_bt' => 
+  'm_bt' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_checkstatus' => 
+  'm_checkstatus' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_chkpwd' => 
+  'm_chkpwd' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_chngpwd' => 
+  'm_chngpwd' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_completeauthorizations' => 
+  'm_completeauthorizations' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_connect' => 
+  'm_connect' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_connectionerror' => 
+  'm_connectionerror' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_deleteresponse' => 
+  'm_deleteresponse' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_deletetrans' => 
+  'm_deletetrans' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_deleteusersetup' => 
+  'm_deleteusersetup' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_deluser' => 
+  'm_deluser' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_destroyconn' => 
+  'm_destroyconn' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_destroyengine' => 
+  'm_destroyengine' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_disableuser' => 
+  'm_disableuser' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_edituser' => 
+  'm_edituser' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_enableuser' => 
+  'm_enableuser' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_force' => 
+  'm_force' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_getcell' => 
+  'm_getcell' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_getcellbynum' => 
+  'm_getcellbynum' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_getcommadelimited' => 
+  'm_getcommadelimited' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_getheader' => 
+  'm_getheader' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_getuserarg' => 
+  'm_getuserarg' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_getuserparam' => 
+  'm_getuserparam' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_gft' => 
+  'm_gft' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_gl' => 
+  'm_gl' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_gut' => 
+  'm_gut' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_initconn' => 
+  'm_initconn' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_initengine' => 
+  'm_initengine' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_initusersetup' => 
+  'm_initusersetup' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_iscommadelimited' => 
+  'm_iscommadelimited' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_liststats' => 
+  'm_liststats' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_listusers' => 
+  'm_listusers' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_maxconntimeout' => 
+  'm_maxconntimeout' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_monitor' => 
+  'm_monitor' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_numcolumns' => 
+  'm_numcolumns' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_numrows' => 
+  'm_numrows' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_override' => 
+  'm_override' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_parsecommadelimited' => 
+  'm_parsecommadelimited' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_ping' => 
+  'm_ping' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_preauth' => 
+  'm_preauth' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_preauthcompletion' => 
+  'm_preauthcompletion' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_qc' => 
+  'm_qc' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_responsekeys' => 
-  array (
-    'init' => '5.1.0RC1',
-  ),
-  'm_responseparam' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_return' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_returncode' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_returnstatus' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_sale' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_setblocking' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_setdropfile' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_setip' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_setssl' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_setssl_cafile' => 
+  'm_responsekeys' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'm_setssl_files' => 
+  'm_responseparam' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_settimeout' => 
+  'm_return' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_settle' => 
+  'm_returncode' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_text_avs' => 
+  'm_returnstatus' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_text_code' => 
+  'm_sale' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_text_cv' => 
+  'm_setblocking' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_transactionauth' => 
+  'm_setdropfile' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_transactionavs' => 
+  'm_setip' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_transactionbatch' => 
+  'm_setssl' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_transactioncv' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_transactionid' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_transactionitem' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_transactionssent' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_transactiontext' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_transinqueue' => 
-  array (
-    'init' => '4.3.9',
-    'ext' => 'ext_mcve',
-  ),
-  'm_transkeyval' => 
+  'm_setssl_cafile' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'm_transnew' => 
+  'm_setssl_files' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_transparam' => 
+  'm_settimeout' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_transsend' => 
+  'm_settle' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_ub' => 
+  'm_text_avs' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_uwait' => 
+  'm_text_code' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_validateidentifier' => 
+  'm_text_cv' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_transactionauth' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_transactionavs' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_transactionbatch' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_transactioncv' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_transactionid' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_transactionitem' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_transactionssent' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_transactiontext' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_transinqueue' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_transkeyval' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'm_verifyconnection' => 
+  'm_transnew' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_verifysslcert' => 
+  'm_transparam' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'm_void' => 
+  'm_transsend' =>
   array (
     'init' => '4.3.9',
     'ext' => 'ext_mcve',
   ),
-  'magic_quotes_runtime' => 
+  'm_ub' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_uwait' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_validateidentifier' =>
+  array (
+    'init' => '5.1.0RC1',
+  ),
+  'm_verifyconnection' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_verifysslcert' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'm_void' =>
+  array (
+    'init' => '4.3.9',
+    'ext' => 'ext_mcve',
+  ),
+  'magic_quotes_runtime' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'magickdebug' => 
+  'magickdebug' =>
   array (
     'init' => '3.0.7',
   ),
-  'mail' => 
+  'mail' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'mailparse_determine_best_xfer_encoding' => 
+  'mailparse_determine_best_xfer_encoding' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_msg_create' => 
+  'mailparse_msg_create' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_msg_extract_part' => 
+  'mailparse_msg_extract_part' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_msg_extract_part_file' => 
+  'mailparse_msg_extract_part_file' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_msg_free' => 
+  'mailparse_msg_free' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_msg_get_part' => 
+  'mailparse_msg_get_part' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_msg_get_part_data' => 
+  'mailparse_msg_get_part_data' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_msg_get_structure' => 
+  'mailparse_msg_get_structure' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_msg_parse' => 
+  'mailparse_msg_parse' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_msg_parse_file' => 
+  'mailparse_msg_parse_file' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_rfc822_parse_addresses' => 
+  'mailparse_rfc822_parse_addresses' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'mailparse_stream_encode' => 
+  'mailparse_stream_encode' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'max' => 
+  'max' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'mb_convert_case' => 
+  'mb_convert_case' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mbstring',
   ),
-  'mb_convert_encoding' => 
+  'mb_convert_encoding' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_convert_kana' => 
+  'mb_convert_kana' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_convert_variables' => 
+  'mb_convert_variables' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_decode_mimeheader' => 
+  'mb_decode_mimeheader' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_decode_numericentity' => 
+  'mb_decode_numericentity' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_detect_encoding' => 
+  'mb_detect_encoding' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_detect_order' => 
+  'mb_detect_order' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_encode_mimeheader' => 
+  'mb_encode_mimeheader' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_encode_numericentity' => 
+  'mb_encode_numericentity' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_ereg' => 
+  'mb_ereg' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_ereg_match' => 
+  'mb_ereg_match' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_ereg_replace' => 
+  'mb_ereg_replace' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_ereg_search' => 
+  'mb_ereg_search' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_ereg_search_getpos' => 
+  'mb_ereg_search_getpos' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_ereg_search_getregs' => 
+  'mb_ereg_search_getregs' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_ereg_search_init' => 
+  'mb_ereg_search_init' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_ereg_search_pos' => 
+  'mb_ereg_search_pos' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_ereg_search_regs' => 
+  'mb_ereg_search_regs' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_ereg_search_setpos' => 
+  'mb_ereg_search_setpos' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_eregi' => 
+  'mb_eregi' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_eregi_replace' => 
+  'mb_eregi_replace' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_get_info' => 
+  'mb_get_info' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mbstring',
   ),
-  'mb_http_input' => 
+  'mb_http_input' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_http_output' => 
+  'mb_http_output' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_internal_encoding' => 
+  'mb_internal_encoding' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_language' => 
+  'mb_language' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_list_encodings' => 
+  'mb_list_encodings' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mbstring',
   ),
-  'mb_output_handler' => 
+  'mb_output_handler' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_parse_str' => 
+  'mb_parse_str' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_preferred_mime_name' => 
+  'mb_preferred_mime_name' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_regex_encoding' => 
+  'mb_regex_encoding' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_regex_set_options' => 
+  'mb_regex_set_options' =>
   array (
     'init' => '4.3.0',
   ),
-  'mb_send_mail' => 
+  'mb_send_mail' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_split' => 
+  'mb_split' =>
   array (
     'init' => '4.2.0',
   ),
-  'mb_strcut' => 
+  'mb_strcut' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_strimwidth' => 
+  'mb_strimwidth' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_strlen' => 
+  'mb_strlen' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_strpos' => 
+  'mb_strpos' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_strrpos' => 
+  'mb_strrpos' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mbstring',
   ),
-  'mb_strtolower' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_mbstring',
-  ),
-  'mb_strtoupper' => 
+  'mb_strtolower' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mbstring',
   ),
-  'mb_strwidth' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_mbstring',
-  ),
-  'mb_substitute_character' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_mbstring',
-  ),
-  'mb_substr' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_mbstring',
-  ),
-  'mb_substr_count' => 
+  'mb_strtoupper' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mbstring',
   ),
-  'mbereg' => 
+  'mb_strwidth' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_substitute_character' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_substr' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_mbstring',
+  ),
+  'mb_substr_count' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_mbstring',
+  ),
+  'mbereg' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbereg_match' => 
+  'mbereg_match' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbereg_replace' => 
+  'mbereg_replace' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbereg_search' => 
+  'mbereg_search' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbereg_search_getpos' => 
+  'mbereg_search_getpos' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbereg_search_getregs' => 
+  'mbereg_search_getregs' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbereg_search_init' => 
+  'mbereg_search_init' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbereg_search_pos' => 
+  'mbereg_search_pos' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbereg_search_regs' => 
+  'mbereg_search_regs' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbereg_search_setpos' => 
+  'mbereg_search_setpos' =>
   array (
     'init' => '4.2.0',
   ),
-  'mberegi' => 
+  'mberegi' =>
   array (
     'init' => '4.2.0',
   ),
-  'mberegi_replace' => 
+  'mberegi_replace' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbregex_encoding' => 
+  'mbregex_encoding' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbsplit' => 
+  'mbsplit' =>
   array (
     'init' => '4.2.0',
   ),
-  'mbstrcut' => 
+  'mbstrcut' =>
   array (
     'init' => '4.0.6',
   ),
-  'mbstrlen' => 
+  'mbstrlen' =>
   array (
     'init' => '4.0.6',
   ),
-  'mbstrpos' => 
+  'mbstrpos' =>
   array (
     'init' => '4.0.6',
   ),
-  'mbstrrpos' => 
+  'mbstrrpos' =>
   array (
     'init' => '4.0.6',
   ),
-  'mbsubstr' => 
+  'mbsubstr' =>
   array (
     'init' => '4.0.6',
   ),
-  'mcal_append_event' => 
+  'mcal_append_event' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_close' => 
+  'mcal_close' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_create_calendar' => 
+  'mcal_create_calendar' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_date_compare' => 
+  'mcal_date_compare' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_date_valid' => 
+  'mcal_date_valid' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_day_of_week' => 
+  'mcal_day_of_week' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_day_of_year' => 
+  'mcal_day_of_year' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_days_in_month' => 
+  'mcal_days_in_month' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_delete_calendar' => 
+  'mcal_delete_calendar' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_delete_event' => 
+  'mcal_delete_event' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_add_attribute' => 
+  'mcal_event_add_attribute' =>
   array (
     'init' => '3.0.15',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_init' => 
+  'mcal_event_init' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_alarm' => 
+  'mcal_event_set_alarm' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_category' => 
+  'mcal_event_set_category' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_class' => 
+  'mcal_event_set_class' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_description' => 
+  'mcal_event_set_description' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_end' => 
+  'mcal_event_set_end' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_end_now' => 
+  'mcal_event_set_end_now' =>
   array (
     'init' => '3.0.13',
   ),
-  'mcal_event_set_recur_daily' => 
-  array (
-    'init' => '3.0.13',
-    'ext' => 'pecl_mcal',
-  ),
-  'mcal_event_set_recur_monthly_mday' => 
+  'mcal_event_set_recur_daily' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_recur_monthly_wday' => 
+  'mcal_event_set_recur_monthly_mday' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_recur_none' => 
+  'mcal_event_set_recur_monthly_wday' =>
+  array (
+    'init' => '3.0.13',
+    'ext' => 'pecl_mcal',
+  ),
+  'mcal_event_set_recur_none' =>
   array (
     'init' => '3.0.15',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_recur_weekly' => 
+  'mcal_event_set_recur_weekly' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_recur_yearly' => 
+  'mcal_event_set_recur_yearly' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_start' => 
+  'mcal_event_set_start' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_event_set_start_now' => 
+  'mcal_event_set_start_now' =>
   array (
     'init' => '3.0.13',
   ),
-  'mcal_event_set_title' => 
-  array (
-    'init' => '3.0.13',
-    'ext' => 'pecl_mcal',
-  ),
-  'mcal_fetch_current_stream_event' => 
+  'mcal_event_set_title' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_fetch_event' => 
+  'mcal_fetch_current_stream_event' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_is_leap_year' => 
+  'mcal_fetch_event' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_list_alarms' => 
+  'mcal_is_leap_year' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_list_events' => 
+  'mcal_list_alarms' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_next_recurrence' => 
+  'mcal_list_events' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_open' => 
+  'mcal_next_recurrence' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_popen' => 
+  'mcal_open' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_rename_calendar' => 
+  'mcal_popen' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_reopen' => 
+  'mcal_rename_calendar' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_snooze' => 
+  'mcal_reopen' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_store_event' => 
+  'mcal_snooze' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_time_valid' => 
+  'mcal_store_event' =>
   array (
     'init' => '3.0.13',
     'ext' => 'pecl_mcal',
   ),
-  'mcal_week_of_year' => 
+  'mcal_time_valid' =>
+  array (
+    'init' => '3.0.13',
+    'ext' => 'pecl_mcal',
+  ),
+  'mcal_week_of_year' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_mcal',
   ),
-  'mck_base64_decode' => 
+  'mck_base64_decode' =>
   array (
     'init' => '3.0.7',
   ),
-  'mck_base64_encode' => 
+  'mck_base64_encode' =>
   array (
     'init' => '3.0.7',
   ),
-  'mck_decr' => 
+  'mck_decr' =>
   array (
     'init' => '3.0.7',
   ),
-  'mck_encr' => 
+  'mck_encr' =>
   array (
     'init' => '3.0.7',
   ),
-  'mcrypt_cbc' => 
+  'mcrypt_cbc' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_cfb' => 
+  'mcrypt_cfb' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_create_iv' => 
+  'mcrypt_create_iv' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_decrypt' => 
+  'mcrypt_decrypt' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_ecb' => 
+  'mcrypt_ecb' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_enc_get_algorithms_name' => 
+  'mcrypt_enc_get_algorithms_name' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_enc_get_block_size' => 
+  'mcrypt_enc_get_block_size' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_enc_get_iv_size' => 
+  'mcrypt_enc_get_iv_size' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_enc_get_key_size' => 
+  'mcrypt_enc_get_key_size' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_enc_get_modes_name' => 
+  'mcrypt_enc_get_modes_name' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_enc_get_supported_key_sizes' => 
+  'mcrypt_enc_get_supported_key_sizes' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_enc_is_block_algorithm' => 
+  'mcrypt_enc_is_block_algorithm' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_enc_is_block_algorithm_mode' => 
+  'mcrypt_enc_is_block_algorithm_mode' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_enc_is_block_mode' => 
+  'mcrypt_enc_is_block_mode' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_enc_self_test' => 
+  'mcrypt_enc_self_test' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_encrypt' => 
+  'mcrypt_encrypt' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_generic' => 
+  'mcrypt_generic' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_generic_deinit' => 
+  'mcrypt_generic_deinit' =>
   array (
     'init' => '4.1.1',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_generic_end' => 
+  'mcrypt_generic_end' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_generic_init' => 
+  'mcrypt_generic_init' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_get_block_size' => 
+  'mcrypt_get_block_size' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_get_cipher_name' => 
+  'mcrypt_get_cipher_name' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_get_iv_size' => 
+  'mcrypt_get_iv_size' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_get_key_size' => 
+  'mcrypt_get_key_size' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_list_algorithms' => 
+  'mcrypt_list_algorithms' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_list_modes' => 
+  'mcrypt_list_modes' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_module_close' => 
+  'mcrypt_module_close' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_module_get_algo_block_size' => 
+  'mcrypt_module_get_algo_block_size' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_module_get_algo_key_size' => 
+  'mcrypt_module_get_algo_key_size' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_module_get_supported_key_sizes' => 
+  'mcrypt_module_get_supported_key_sizes' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_module_is_block_algorithm' => 
+  'mcrypt_module_is_block_algorithm' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_module_is_block_algorithm_mode' => 
+  'mcrypt_module_is_block_algorithm_mode' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_module_is_block_mode' => 
+  'mcrypt_module_is_block_mode' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_module_open' => 
+  'mcrypt_module_open' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_module_self_test' => 
+  'mcrypt_module_self_test' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'mcrypt_ofb' => 
+  'mcrypt_ofb' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_mcrypt',
   ),
-  'mcve_adduser' => 
+  'mcve_adduser' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_adduserarg' => 
+  'mcve_adduserarg' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_bt' => 
+  'mcve_bt' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_checkstatus' => 
+  'mcve_checkstatus' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_chkpwd' => 
+  'mcve_chkpwd' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_chngpwd' => 
+  'mcve_chngpwd' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_completeauthorizations' => 
+  'mcve_completeauthorizations' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_connect' => 
+  'mcve_connect' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_connectionerror' => 
+  'mcve_connectionerror' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_deleteresponse' => 
+  'mcve_deleteresponse' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_deletetrans' => 
+  'mcve_deletetrans' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_deleteusersetup' => 
+  'mcve_deleteusersetup' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_deluser' => 
+  'mcve_deluser' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_destroyconn' => 
+  'mcve_destroyconn' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_destroyengine' => 
+  'mcve_destroyengine' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_disableuser' => 
+  'mcve_disableuser' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_edituser' => 
+  'mcve_edituser' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_enableuser' => 
+  'mcve_enableuser' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_force' => 
+  'mcve_force' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_getcell' => 
+  'mcve_getcell' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_getcellbynum' => 
+  'mcve_getcellbynum' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_getcommadelimited' => 
+  'mcve_getcommadelimited' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_getheader' => 
+  'mcve_getheader' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_getuserarg' => 
+  'mcve_getuserarg' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_getuserparam' => 
+  'mcve_getuserparam' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_gft' => 
+  'mcve_gft' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_gl' => 
+  'mcve_gl' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_gut' => 
+  'mcve_gut' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_initconn' => 
+  'mcve_initconn' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_initengine' => 
+  'mcve_initengine' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_initusersetup' => 
+  'mcve_initusersetup' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_iscommadelimited' => 
+  'mcve_iscommadelimited' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_liststats' => 
+  'mcve_liststats' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_listusers' => 
+  'mcve_listusers' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_maxconntimeout' => 
+  'mcve_maxconntimeout' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_monitor' => 
+  'mcve_monitor' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_numcolumns' => 
+  'mcve_numcolumns' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_numrows' => 
+  'mcve_numrows' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_override' => 
+  'mcve_override' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_parsecommadelimited' => 
+  'mcve_parsecommadelimited' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_ping' => 
+  'mcve_ping' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_preauth' => 
+  'mcve_preauth' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_preauthcompletion' => 
+  'mcve_preauthcompletion' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_qc' => 
+  'mcve_qc' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_responseparam' => 
+  'mcve_responseparam' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_return' => 
+  'mcve_return' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_returncode' => 
+  'mcve_returncode' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_returnstatus' => 
+  'mcve_returnstatus' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_sale' => 
+  'mcve_sale' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_setblocking' => 
+  'mcve_setblocking' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_setdropfile' => 
+  'mcve_setdropfile' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_setip' => 
+  'mcve_setip' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_setssl' => 
+  'mcve_setssl' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_setssl_files' => 
+  'mcve_setssl_files' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_mcve',
   ),
-  'mcve_settimeout' => 
+  'mcve_settimeout' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_settle' => 
+  'mcve_settle' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_text_avs' => 
+  'mcve_text_avs' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_text_code' => 
+  'mcve_text_code' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_text_cv' => 
+  'mcve_text_cv' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transactionauth' => 
+  'mcve_transactionauth' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transactionavs' => 
+  'mcve_transactionavs' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transactionbatch' => 
+  'mcve_transactionbatch' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transactioncv' => 
+  'mcve_transactioncv' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transactionid' => 
+  'mcve_transactionid' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transactionitem' => 
+  'mcve_transactionitem' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transactionssent' => 
+  'mcve_transactionssent' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transactiontext' => 
+  'mcve_transactiontext' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transinqueue' => 
+  'mcve_transinqueue' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transnew' => 
+  'mcve_transnew' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transparam' => 
+  'mcve_transparam' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_transsend' => 
+  'mcve_transsend' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_ub' => 
+  'mcve_ub' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_uwait' => 
+  'mcve_uwait' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_verifyconnection' => 
+  'mcve_verifyconnection' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_verifysslcert' => 
+  'mcve_verifysslcert' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mcve',
   ),
-  'mcve_void' => 
+  'mcve_void' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mcve',
   ),
-  'md5' => 
+  'md5' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'md5_file' => 
+  'md5_file' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'mdecrypt_generic' => 
+  'mdecrypt_generic' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_mcrypt',
   ),
-  'memory_get_usage' => 
+  'memory_get_usage' =>
   array (
     'init' => '4.3.2',
     'ext' => 'ext_standard',
   ),
-  'metaphone' => 
+  'metaphone' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'method_exists' => 
+  'method_exists' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'mhash' => 
+  'mhash' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_mhash',
   ),
-  'mhash_count' => 
+  'mhash_count' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_mhash',
   ),
-  'mhash_get_block_size' => 
+  'mhash_get_block_size' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_mhash',
   ),
-  'mhash_get_hash_name' => 
+  'mhash_get_hash_name' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_mhash',
   ),
-  'mhash_keygen_s2k' => 
+  'mhash_keygen_s2k' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_mhash',
   ),
-  'microtime' => 
+  'microtime' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'mime_content_type' => 
+  'mime_content_type' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mime_magic',
   ),
-  'min' => 
+  'min' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'ming_keypress' => 
+  'ming_keypress' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_ming',
   ),
-  'ming_setcubicthreshold' => 
+  'ming_setcubicthreshold' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_ming',
   ),
-  'ming_setscale' => 
+  'ming_setscale' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_ming',
   ),
-  'ming_useconstants' => 
+  'ming_useconstants' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_ming',
   ),
-  'ming_useswfversion' => 
+  'ming_useswfversion' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ming',
   ),
-  'mkdir' => 
+  'mkdir' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'mktime' => 
+  'mktime' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'modify' => 
+  'modify' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'money_format' => 
+  'money_format' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'mono_method_call' => 
+  'mono_method_call' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mono',
   ),
-  'mono_method_find' => 
+  'mono_method_find' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mono',
   ),
-  'move' => 
+  'move' =>
   array (
     'init' => '4.0.5',
   ),
-  'move_uploaded_file' => 
+  'move_uploaded_file' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_standard',
   ),
-  'movepen' => 
+  'movepen' =>
   array (
     'init' => '4.0.5',
   ),
-  'movepento' => 
+  'movepento' =>
   array (
     'init' => '4.0.5',
   ),
-  'moveto' => 
+  'moveto' =>
   array (
     'init' => '4.0.5',
   ),
-  'msession_call' => 
+  'msession_call' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_connect' => 
+  'msession_connect' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_count' => 
+  'msession_count' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_create' => 
+  'msession_create' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_ctl' => 
+  'msession_ctl' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_msession',
   ),
-  'msession_destroy' => 
+  'msession_destroy' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_disconnect' => 
+  'msession_disconnect' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_exec' => 
+  'msession_exec' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_msession',
   ),
-  'msession_find' => 
+  'msession_find' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_get' => 
+  'msession_get' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_get_array' => 
+  'msession_get_array' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_get_data' => 
+  'msession_get_data' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_inc' => 
+  'msession_inc' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_list' => 
+  'msession_list' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_listvar' => 
+  'msession_listvar' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_lock' => 
+  'msession_lock' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_ping' => 
+  'msession_ping' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_msession',
   ),
-  'msession_plugin' => 
+  'msession_plugin' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_randstr' => 
+  'msession_randstr' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_set' => 
+  'msession_set' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_set_array' => 
+  'msession_set_array' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_set_data' => 
+  'msession_set_data' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_timeout' => 
+  'msession_timeout' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_uniq' => 
+  'msession_uniq' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msession_unlock' => 
+  'msession_unlock' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_msession',
   ),
-  'msg_get_queue' => 
+  'msg_get_queue' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sysvmsg',
   ),
-  'msg_receive' => 
+  'msg_receive' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sysvmsg',
   ),
-  'msg_remove_queue' => 
+  'msg_remove_queue' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sysvmsg',
   ),
-  'msg_send' => 
+  'msg_send' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sysvmsg',
   ),
-  'msg_set_queue' => 
+  'msg_set_queue' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sysvmsg',
   ),
-  'msg_stat_queue' => 
+  'msg_stat_queue' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sysvmsg',
   ),
-  'msql' => 
+  'msql' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_affected_rows' => 
+  'msql_affected_rows' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_msql',
   ),
-  'msql_close' => 
+  'msql_close' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_connect' => 
+  'msql_connect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_create_db' => 
+  'msql_create_db' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_createdb' => 
+  'msql_createdb' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_data_seek' => 
+  'msql_data_seek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_db_query' => 
+  'msql_db_query' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_dbname' => 
+  'msql_dbname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_drop_db' => 
+  'msql_drop_db' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_dropdb' => 
+  'msql_dropdb' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_error' => 
+  'msql_error' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_fetch_array' => 
+  'msql_fetch_array' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_fetch_field' => 
+  'msql_fetch_field' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_fetch_object' => 
+  'msql_fetch_object' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_fetch_row' => 
+  'msql_fetch_row' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_field_flags' => 
+  'msql_field_flags' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_msql',
   ),
-  'msql_field_len' => 
+  'msql_field_len' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_msql',
   ),
-  'msql_field_name' => 
+  'msql_field_name' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_msql',
   ),
-  'msql_field_seek' => 
+  'msql_field_seek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_field_table' => 
+  'msql_field_table' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_msql',
   ),
-  'msql_field_type' => 
+  'msql_field_type' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_msql',
   ),
-  'msql_fieldflags' => 
+  'msql_fieldflags' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_fieldlen' => 
+  'msql_fieldlen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_fieldname' => 
+  'msql_fieldname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_fieldtable' => 
+  'msql_fieldtable' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_fieldtype' => 
+  'msql_fieldtype' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_free_result' => 
+  'msql_free_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_freeresult' => 
+  'msql_freeresult' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_list_dbs' => 
+  'msql_list_dbs' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_list_fields' => 
+  'msql_list_fields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_list_tables' => 
+  'msql_list_tables' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_listdbs' => 
+  'msql_listdbs' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_listfields' => 
+  'msql_listfields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_listtables' => 
+  'msql_listtables' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_num_fields' => 
+  'msql_num_fields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_num_rows' => 
+  'msql_num_rows' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_numfields' => 
+  'msql_numfields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_numrows' => 
+  'msql_numrows' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_pconnect' => 
+  'msql_pconnect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_query' => 
+  'msql_query' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_regcase' => 
+  'msql_regcase' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_result' => 
+  'msql_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_select_db' => 
+  'msql_select_db' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_selectdb' => 
+  'msql_selectdb' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'msql_tablename' => 
+  'msql_tablename' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_msql',
   ),
-  'mssql_affected_rows' => 
+  'mssql_affected_rows' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sybase',
   ),
-  'mssql_bind' => 
+  'mssql_bind' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_close' => 
+  'mssql_close' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_connect' => 
+  'mssql_connect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_data_seek' => 
+  'mssql_data_seek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_deadlock_retry_count' => 
+  'mssql_deadlock_retry_count' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'mssql_execute' => 
+  'mssql_execute' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_fetch_array' => 
+  'mssql_fetch_array' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_fetch_assoc' => 
+  'mssql_fetch_assoc' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_fetch_batch' => 
+  'mssql_fetch_batch' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_mssql',
   ),
-  'mssql_fetch_field' => 
+  'mssql_fetch_field' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_fetch_object' => 
+  'mssql_fetch_object' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_fetch_row' => 
+  'mssql_fetch_row' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_field_length' => 
+  'mssql_field_length' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_mssql',
   ),
-  'mssql_field_name' => 
+  'mssql_field_name' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_mssql',
   ),
-  'mssql_field_seek' => 
+  'mssql_field_seek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_field_type' => 
+  'mssql_field_type' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_mssql',
   ),
-  'mssql_free_result' => 
+  'mssql_free_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_free_statement' => 
+  'mssql_free_statement' =>
   array (
     'init' => '4.3.2',
     'ext' => 'ext_mssql',
   ),
-  'mssql_get_last_message' => 
+  'mssql_get_last_message' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_guid_string' => 
+  'mssql_guid_string' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_init' => 
+  'mssql_init' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_min_client_severity' => 
+  'mssql_min_client_severity' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'mssql_min_error_severity' => 
+  'mssql_min_error_severity' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_min_message_severity' => 
+  'mssql_min_message_severity' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_min_server_severity' => 
+  'mssql_min_server_severity' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'mssql_next_result' => 
+  'mssql_next_result' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_mssql',
   ),
-  'mssql_num_fields' => 
+  'mssql_num_fields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_num_rows' => 
+  'mssql_num_rows' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_pconnect' => 
+  'mssql_pconnect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_query' => 
+  'mssql_query' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_result' => 
+  'mssql_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_rows_affected' => 
+  'mssql_rows_affected' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_mssql',
   ),
-  'mssql_select_db' => 
+  'mssql_select_db' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mssql',
   ),
-  'mssql_set_message_handler' => 
+  'mssql_set_message_handler' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'mssql_unbuffered_query' => 
+  'mssql_unbuffered_query' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'mt_getrandmax' => 
+  'mt_getrandmax' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'mt_rand' => 
+  'mt_rand' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'mt_srand' => 
+  'mt_srand' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'multcolor' => 
+  'multcolor' =>
   array (
     'init' => '4.0.5',
   ),
-  'muscat_close' => 
-  array (
-    'init' => '4.0.5',
-    'end' => '4.2.3',
-    'ext' => 'pecl_muscat',
-  ),
-  'muscat_get' => 
+  'muscat_close' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_muscat',
   ),
-  'muscat_give' => 
+  'muscat_get' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_muscat',
   ),
-  'muscat_setup' => 
+  'muscat_give' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_muscat',
   ),
-  'muscat_setup_net' => 
+  'muscat_setup' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_muscat',
   ),
-  'mysql' => 
+  'muscat_setup_net' =>
+  array (
+    'init' => '4.0.5',
+    'end' => '4.2.3',
+    'ext' => 'pecl_muscat',
+  ),
+  'mysql' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_affected_rows' => 
+  'mysql_affected_rows' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_change_user' => 
+  'mysql_change_user' =>
   array (
     'init' => '3.0.13',
   ),
-  'mysql_client_encoding' => 
+  'mysql_client_encoding' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_close' => 
+  'mysql_close' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_connect' => 
+  'mysql_connect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_create_db' => 
+  'mysql_create_db' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_createdb' => 
+  'mysql_createdb' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_data_seek' => 
+  'mysql_data_seek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_db_name' => 
+  'mysql_db_name' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_mysql',
   ),
-  'mysql_db_query' => 
+  'mysql_db_query' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_dbname' => 
+  'mysql_dbname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_drop_db' => 
+  'mysql_drop_db' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_dropdb' => 
+  'mysql_dropdb' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_errno' => 
+  'mysql_errno' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_error' => 
+  'mysql_error' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_escape_string' => 
+  'mysql_escape_string' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fetch_array' => 
+  'mysql_fetch_array' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fetch_assoc' => 
+  'mysql_fetch_assoc' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fetch_field' => 
+  'mysql_fetch_field' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fetch_lengths' => 
+  'mysql_fetch_lengths' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fetch_object' => 
+  'mysql_fetch_object' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fetch_row' => 
+  'mysql_fetch_row' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_field_flags' => 
+  'mysql_field_flags' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_field_len' => 
+  'mysql_field_len' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_field_name' => 
+  'mysql_field_name' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_field_seek' => 
+  'mysql_field_seek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_field_table' => 
+  'mysql_field_table' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_field_type' => 
+  'mysql_field_type' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fieldflags' => 
+  'mysql_fieldflags' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fieldlen' => 
+  'mysql_fieldlen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fieldname' => 
+  'mysql_fieldname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fieldtable' => 
+  'mysql_fieldtable' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_fieldtype' => 
+  'mysql_fieldtype' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_free_result' => 
+  'mysql_free_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_freeresult' => 
+  'mysql_freeresult' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_get_client_info' => 
+  'mysql_get_client_info' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_mysql',
   ),
-  'mysql_get_host_info' => 
+  'mysql_get_host_info' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_mysql',
   ),
-  'mysql_get_proto_info' => 
+  'mysql_get_proto_info' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_mysql',
   ),
-  'mysql_get_server_info' => 
+  'mysql_get_server_info' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_mysql',
   ),
-  'mysql_info' => 
+  'mysql_info' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_insert_id' => 
+  'mysql_insert_id' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_list_dbs' => 
+  'mysql_list_dbs' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_list_fields' => 
+  'mysql_list_fields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_list_processes' => 
+  'mysql_list_processes' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_list_tables' => 
+  'mysql_list_tables' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_listdbs' => 
+  'mysql_listdbs' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_listfields' => 
+  'mysql_listfields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_listtables' => 
+  'mysql_listtables' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_num_fields' => 
+  'mysql_num_fields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_num_rows' => 
+  'mysql_num_rows' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_numfields' => 
+  'mysql_numfields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_numrows' => 
+  'mysql_numrows' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_pconnect' => 
+  'mysql_pconnect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_ping' => 
+  'mysql_ping' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_query' => 
+  'mysql_query' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_real_escape_string' => 
+  'mysql_real_escape_string' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_result' => 
+  'mysql_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_select_db' => 
+  'mysql_select_db' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_selectdb' => 
+  'mysql_selectdb' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_stat' => 
+  'mysql_stat' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_table_name' => 
+  'mysql_table_name' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_tablename' => 
+  'mysql_tablename' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_thread_id' => 
+  'mysql_thread_id' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_mysql',
   ),
-  'mysql_unbuffered_query' => 
+  'mysql_unbuffered_query' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_mysql',
   ),
-  'mysqli_affected_rows' => 
+  'mysqli_affected_rows' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_autocommit' => 
+  'mysqli_autocommit' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_bind_param' => 
+  'mysqli_bind_param' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_bind_result' => 
+  'mysqli_bind_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_change_user' => 
+  'mysqli_change_user' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_character_set_name' => 
+  'mysqli_character_set_name' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_client_encoding' => 
+  'mysqli_client_encoding' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_close' => 
+  'mysqli_close' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_commit' => 
+  'mysqli_commit' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_connect' => 
+  'mysqli_connect' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_connect_errno' => 
+  'mysqli_connect_errno' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_connect_error' => 
+  'mysqli_connect_error' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_data_seek' => 
+  'mysqli_data_seek' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_debug' => 
+  'mysqli_debug' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_disable_reads_from_master' => 
+  'mysqli_disable_reads_from_master' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_disable_rpl_parse' => 
+  'mysqli_disable_rpl_parse' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_dump_debug_info' => 
+  'mysqli_dump_debug_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_embedded_connect' => 
+  'mysqli_embedded_connect' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
   ),
-  'mysqli_embedded_server_end' => 
+  'mysqli_embedded_server_end' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_embedded_server_start' => 
+  'mysqli_embedded_server_start' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_enable_reads_from_master' => 
+  'mysqli_enable_reads_from_master' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_enable_rpl_parse' => 
+  'mysqli_enable_rpl_parse' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_errno' => 
+  'mysqli_errno' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_error' => 
+  'mysqli_error' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_escape_string' => 
+  'mysqli_escape_string' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_execute' => 
+  'mysqli_execute' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_fetch' => 
+  'mysqli_fetch' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_fetch_array' => 
+  'mysqli_fetch_array' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_fetch_assoc' => 
+  'mysqli_fetch_assoc' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_fetch_field' => 
+  'mysqli_fetch_field' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_fetch_field_direct' => 
+  'mysqli_fetch_field_direct' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_fetch_fields' => 
+  'mysqli_fetch_fields' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_fetch_lengths' => 
+  'mysqli_fetch_lengths' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_fetch_object' => 
+  'mysqli_fetch_object' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_fetch_row' => 
+  'mysqli_fetch_row' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_field_count' => 
+  'mysqli_field_count' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_field_seek' => 
+  'mysqli_field_seek' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_field_tell' => 
+  'mysqli_field_tell' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_free_result' => 
+  'mysqli_free_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_get_charset' => 
+  'mysqli_get_charset' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'mysqli_get_client_info' => 
+  'mysqli_get_client_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_get_client_version' => 
+  'mysqli_get_client_version' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_get_host_info' => 
+  'mysqli_get_host_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_get_metadata' => 
+  'mysqli_get_metadata' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_get_proto_info' => 
+  'mysqli_get_proto_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_get_server_info' => 
+  'mysqli_get_server_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_get_server_version' => 
+  'mysqli_get_server_version' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_get_warnings' => 
+  'mysqli_get_warnings' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'mysqli_info' => 
+  'mysqli_info' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_init' => 
+  'mysqli_init' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_insert_id' => 
+  'mysqli_insert_id' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_kill' => 
+  'mysqli_kill' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_master_query' => 
+  'mysqli_master_query' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_more_results' => 
+  'mysqli_more_results' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_multi_query' => 
+  'mysqli_multi_query' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_next_result' => 
+  'mysqli_next_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_num_fields' => 
+  'mysqli_num_fields' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_num_rows' => 
+  'mysqli_num_rows' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_options' => 
+  'mysqli_options' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_param_count' => 
+  'mysqli_param_count' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_ping' => 
+  'mysqli_ping' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_prepare' => 
+  'mysqli_prepare' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_query' => 
+  'mysqli_query' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_real_connect' => 
+  'mysqli_real_connect' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_real_escape_string' => 
+  'mysqli_real_escape_string' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_real_query' => 
+  'mysqli_real_query' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_report' => 
+  'mysqli_report' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_rollback' => 
+  'mysqli_rollback' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_rpl_parse_enabled' => 
+  'mysqli_rpl_parse_enabled' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_rpl_probe' => 
+  'mysqli_rpl_probe' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_rpl_query_type' => 
+  'mysqli_rpl_query_type' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_select_db' => 
+  'mysqli_select_db' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_send_long_data' => 
+  'mysqli_send_long_data' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_send_query' => 
+  'mysqli_send_query' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_server_end' => 
+  'mysqli_server_end' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
   ),
-  'mysqli_server_init' => 
+  'mysqli_server_init' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
   ),
-  'mysqli_set_charset' => 
+  'mysqli_set_charset' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'mysqli_set_local_infile_default' => 
+  'mysqli_set_local_infile_default' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_set_local_infile_handler' => 
+  'mysqli_set_local_infile_handler' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_set_opt' => 
+  'mysqli_set_opt' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_slave_query' => 
+  'mysqli_slave_query' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_sqlstate' => 
+  'mysqli_sqlstate' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_ssl_set' => 
+  'mysqli_ssl_set' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stat' => 
+  'mysqli_stat' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_affected_rows' => 
+  'mysqli_stmt_affected_rows' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_attr_get' => 
+  'mysqli_stmt_attr_get' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_attr_set' => 
+  'mysqli_stmt_attr_set' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_bind_param' => 
+  'mysqli_stmt_bind_param' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_bind_result' => 
+  'mysqli_stmt_bind_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_close' => 
+  'mysqli_stmt_close' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_data_seek' => 
+  'mysqli_stmt_data_seek' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_errno' => 
+  'mysqli_stmt_errno' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_error' => 
+  'mysqli_stmt_error' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_execute' => 
+  'mysqli_stmt_execute' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_fetch' => 
+  'mysqli_stmt_fetch' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_field_count' => 
+  'mysqli_stmt_field_count' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_free_result' => 
+  'mysqli_stmt_free_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_get_warnings' => 
+  'mysqli_stmt_get_warnings' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'mysqli_stmt_init' => 
+  'mysqli_stmt_init' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_insert_id' => 
+  'mysqli_stmt_insert_id' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_num_rows' => 
+  'mysqli_stmt_num_rows' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_param_count' => 
+  'mysqli_stmt_param_count' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_prepare' => 
+  'mysqli_stmt_prepare' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_reset' => 
+  'mysqli_stmt_reset' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_result_metadata' => 
+  'mysqli_stmt_result_metadata' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_send_long_data' => 
+  'mysqli_stmt_send_long_data' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_sqlstate' => 
+  'mysqli_stmt_sqlstate' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_stmt_store_result' => 
+  'mysqli_stmt_store_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_store_result' => 
+  'mysqli_store_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_thread_id' => 
+  'mysqli_thread_id' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_thread_safe' => 
+  'mysqli_thread_safe' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_use_result' => 
+  'mysqli_use_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'mysqli_warning_count' => 
+  'mysqli_warning_count' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_mysqli',
   ),
-  'natcasesort' => 
+  'natcasesort' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'natsort' => 
+  'natsort' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ncurses_addch' => 
+  'ncurses_addch' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_addchnstr' => 
+  'ncurses_addchnstr' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_addchstr' => 
+  'ncurses_addchstr' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_addnstr' => 
+  'ncurses_addnstr' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_addstr' => 
+  'ncurses_addstr' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_assume_default_colors' => 
+  'ncurses_assume_default_colors' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_attroff' => 
+  'ncurses_attroff' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_attron' => 
+  'ncurses_attron' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_attrset' => 
+  'ncurses_attrset' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_baudrate' => 
+  'ncurses_baudrate' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_beep' => 
+  'ncurses_beep' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_bkgd' => 
+  'ncurses_bkgd' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_bkgdset' => 
+  'ncurses_bkgdset' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_border' => 
+  'ncurses_border' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_bottom_panel' => 
+  'ncurses_bottom_panel' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_can_change_color' => 
+  'ncurses_can_change_color' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_cbreak' => 
+  'ncurses_cbreak' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_clear' => 
+  'ncurses_clear' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_clrtobot' => 
+  'ncurses_clrtobot' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_clrtoeol' => 
+  'ncurses_clrtoeol' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_color_content' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_color_set' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_curs_set' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_def_prog_mode' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_def_shell_mode' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_define_key' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_del_panel' => 
+  'ncurses_color_content' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_delay_output' => 
+  'ncurses_color_set' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_delch' => 
+  'ncurses_curs_set' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_deleteln' => 
+  'ncurses_def_prog_mode' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_delwin' => 
+  'ncurses_def_shell_mode' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_doupdate' => 
+  'ncurses_define_key' =>
   array (
-    'init' => '4.1.0',
+    'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_echo' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_echochar' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_end' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_erase' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_erasechar' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_filter' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_flash' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_flushinp' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_getch' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_getmaxyx' => 
+  'ncurses_del_panel' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_getmouse' => 
+  'ncurses_delay_output' =>
   array (
-    'init' => '4.2.0',
+    'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_getyx' => 
+  'ncurses_delch' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_deleteln' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_delwin' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_doupdate' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_echo' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_echochar' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_end' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_erase' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_erasechar' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_filter' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_flash' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_flushinp' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_getch' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_getmaxyx' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_halfdelay' => 
+  'ncurses_getmouse' =>
   array (
-    'init' => '4.1.0',
+    'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_has_colors' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_has_ic' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_has_il' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_has_key' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_hide_panel' => 
+  'ncurses_getyx' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_hline' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_inch' => 
+  'ncurses_halfdelay' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_init' => 
+  'ncurses_has_colors' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_init_color' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_init_pair' => 
+  'ncurses_has_ic' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_insch' => 
+  'ncurses_has_il' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_insdelln' => 
+  'ncurses_has_key' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_insertln' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_insstr' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_instr' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_isendwin' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_keyok' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_keypad' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_killchar' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_longname' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_meta' => 
+  'ncurses_hide_panel' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_mouse_trafo' => 
+  'ncurses_hline' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_mouseinterval' => 
+  'ncurses_inch' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_mousemask' => 
+  'ncurses_init' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_init_color' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_move' => 
+  'ncurses_init_pair' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_move_panel' => 
+  'ncurses_insch' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_insdelln' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_insertln' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_insstr' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_instr' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_isendwin' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_keyok' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_keypad' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_killchar' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_longname' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_meta' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_mvaddch' => 
+  'ncurses_mouse_trafo' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_mvaddchnstr' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_mvaddchstr' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_mvaddnstr' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_mvaddstr' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_mvcur' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_mvdelch' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_mvgetch' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_mvhline' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_mvinch' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_mvwaddstr' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_napms' => 
+  'ncurses_mouseinterval' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_new_panel' => 
+  'ncurses_mousemask' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_move' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_move_panel' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_newpad' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_newwin' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_nl' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_nocbreak' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_noecho' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_nonl' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_noqiflush' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_noraw' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_pair_content' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_panel_above' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_panel_below' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_panel_window' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_pnoutrefresh' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_prefresh' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_putp' => 
+  'ncurses_mvaddch' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_qiflush' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_raw' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_refresh' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_replace_panel' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_reset_prog_mode' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_reset_shell_mode' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_resetty' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_savetty' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_scr_dump' => 
+  'ncurses_mvaddchnstr' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_scr_init' => 
+  'ncurses_mvaddchstr' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_scr_restore' => 
+  'ncurses_mvaddnstr' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_scr_set' => 
+  'ncurses_mvaddstr' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_scrl' => 
+  'ncurses_mvcur' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvdelch' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvgetch' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvhline' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvinch' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_mvwaddstr' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_napms' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_show_panel' => 
+  'ncurses_new_panel' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_slk_attr' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_attroff' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_attron' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_attrset' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_clear' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_color' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_init' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_noutrefresh' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_refresh' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_restore' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_set' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_slk_touch' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_standend' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_standout' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_start_color' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_termattrs' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_termname' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_timeout' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_top_panel' => 
+  'ncurses_newpad' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_typeahead' => 
+  'ncurses_newwin' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_ungetch' => 
+  'ncurses_nl' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_ungetmouse' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_update_panels' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_use_default_colors' => 
+  'ncurses_nocbreak' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_use_env' => 
+  'ncurses_noecho' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_use_extended_names' => 
+  'ncurses_nonl' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_vidattr' => 
+  'ncurses_noqiflush' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_vline' => 
+  'ncurses_noraw' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_pair_content' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_panel_above' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_panel_below' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_panel_window' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_pnoutrefresh' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_prefresh' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_putp' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_waddch' => 
+  'ncurses_qiflush' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_raw' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_refresh' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_replace_panel' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_waddstr' => 
+  'ncurses_reset_prog_mode' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_reset_shell_mode' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_resetty' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_savetty' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_scr_dump' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_wattroff' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_wattron' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_wattrset' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_wborder' => 
-  array (
-    'init' => '4.3.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_wclear' => 
+  'ncurses_scr_init' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_wcolor_set' => 
+  'ncurses_scr_restore' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_werase' => 
+  'ncurses_scr_set' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_scrl' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_show_panel' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_wgetch' => 
+  'ncurses_slk_attr' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_attroff' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_attron' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_attrset' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_clear' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_color' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_init' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_noutrefresh' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_refresh' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_restore' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_slk_set' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_whline' => 
+  'ncurses_slk_touch' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_standend' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_standout' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_start_color' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_termattrs' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_termname' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_timeout' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_top_panel' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_wmouse_trafo' => 
+  'ncurses_typeahead' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_ungetch' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_ungetmouse' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_wmove' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_wnoutrefresh' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_wrefresh' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_ncurses',
-  ),
-  'ncurses_wstandend' => 
+  'ncurses_update_panels' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_wstandout' => 
+  'ncurses_use_default_colors' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_use_env' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_use_extended_names' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_vidattr' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_vline' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_waddch' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'ncurses_wvline' => 
+  'ncurses_waddstr' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wattroff' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_ncurses',
   ),
-  'new_xmldoc' => 
+  'ncurses_wattron' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wattrset' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wborder' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wclear' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wcolor_set' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_werase' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wgetch' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_whline' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wmouse_trafo' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wmove' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wnoutrefresh' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wrefresh' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wstandend' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wstandout' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'ncurses_wvline' =>
+  array (
+    'init' => '4.3.0',
+    'ext' => 'ext_ncurses',
+  ),
+  'new_xmldoc' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'next' => 
+  'next' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'nextframe' => 
+  'nextframe' =>
   array (
     'init' => '4.0.5',
   ),
-  'ngettext' => 
+  'ngettext' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_gettext',
   ),
-  'nl2br' => 
+  'nl2br' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'nl_langinfo' => 
+  'nl_langinfo' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'notes_body' => 
+  'notes_body' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_copy_db' => 
+  'notes_copy_db' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_create_db' => 
+  'notes_create_db' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_create_note' => 
+  'notes_create_note' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_drop_db' => 
+  'notes_drop_db' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_find_note' => 
+  'notes_find_note' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_header_info' => 
+  'notes_header_info' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_list_msgs' => 
+  'notes_list_msgs' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_mark_read' => 
+  'notes_mark_read' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_mark_unread' => 
+  'notes_mark_unread' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_nav_create' => 
+  'notes_nav_create' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_search' => 
+  'notes_search' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_unread' => 
+  'notes_unread' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'notes_version' => 
+  'notes_version' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_notes',
   ),
-  'nsapi_request_headers' => 
+  'nsapi_request_headers' =>
   array (
     'init' => '4.3.3',
     'ext' => 'sapi_nsapi',
   ),
-  'nsapi_response_headers' => 
+  'nsapi_response_headers' =>
   array (
     'init' => '4.3.3',
     'ext' => 'sapi_nsapi',
   ),
-  'nsapi_virtual' => 
+  'nsapi_virtual' =>
   array (
     'init' => '4.3.3',
     'ext' => 'sapi_nsapi',
   ),
-  'number_format' => 
+  'number_format' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'ob_clean' => 
+  'ob_clean' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'ob_end_clean' => 
+  'ob_end_clean' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ob_end_flush' => 
+  'ob_end_flush' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ob_flush' => 
+  'ob_flush' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'ob_get_clean' => 
+  'ob_get_clean' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'ob_get_contents' => 
+  'ob_get_contents' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ob_get_flush' => 
+  'ob_get_flush' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'ob_get_length' => 
+  'ob_get_length' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_standard',
   ),
-  'ob_get_level' => 
+  'ob_get_level' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'ob_get_status' => 
+  'ob_get_status' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'ob_gzhandler' => 
+  'ob_gzhandler' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_zlib',
   ),
-  'ob_iconv_handler' => 
+  'ob_iconv_handler' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_iconv',
   ),
-  'ob_implicit_flush' => 
+  'ob_implicit_flush' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ob_list_handlers' => 
+  'ob_list_handlers' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'ob_start' => 
+  'ob_start' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'ob_tidyhandler' => 
+  'ob_tidyhandler' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'oci_bind_by_name' => 
+  'oci_bind_by_name' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_cancel' => 
+  'oci_cancel' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_close' => 
+  'oci_close' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_collection_append' => 
+  'oci_collection_append' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_collection_assign' => 
+  'oci_collection_assign' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_collection_element_assign' => 
+  'oci_collection_element_assign' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_collection_element_get' => 
+  'oci_collection_element_get' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_collection_max' => 
+  'oci_collection_max' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_collection_size' => 
+  'oci_collection_size' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_collection_trim' => 
+  'oci_collection_trim' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_commit' => 
+  'oci_commit' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_connect' => 
+  'oci_connect' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_define_by_name' => 
+  'oci_define_by_name' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_error' => 
+  'oci_error' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_execute' => 
+  'oci_execute' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_fetch' => 
+  'oci_fetch' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_fetch_all' => 
+  'oci_fetch_all' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_fetch_array' => 
+  'oci_fetch_array' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_fetch_assoc' => 
+  'oci_fetch_assoc' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_fetch_object' => 
+  'oci_fetch_object' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_fetch_row' => 
+  'oci_fetch_row' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_field_is_null' => 
+  'oci_field_is_null' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_field_name' => 
+  'oci_field_name' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_field_precision' => 
+  'oci_field_precision' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_field_scale' => 
+  'oci_field_scale' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_field_size' => 
+  'oci_field_size' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_field_type' => 
+  'oci_field_type' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_field_type_raw' => 
+  'oci_field_type_raw' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_free_collection' => 
+  'oci_free_collection' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_free_cursor' => 
+  'oci_free_cursor' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_free_descriptor' => 
+  'oci_free_descriptor' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_free_statement' => 
+  'oci_free_statement' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_internal_debug' => 
+  'oci_internal_debug' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_append' => 
+  'oci_lob_append' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_copy' => 
+  'oci_lob_copy' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_eof' => 
+  'oci_lob_eof' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_erase' => 
+  'oci_lob_erase' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_export' => 
+  'oci_lob_export' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_flush' => 
+  'oci_lob_flush' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_import' => 
+  'oci_lob_import' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_is_equal' => 
+  'oci_lob_is_equal' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_load' => 
+  'oci_lob_load' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_read' => 
+  'oci_lob_read' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_rewind' => 
+  'oci_lob_rewind' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_save' => 
+  'oci_lob_save' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_size' => 
+  'oci_lob_size' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_tell' => 
+  'oci_lob_tell' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_truncate' => 
+  'oci_lob_truncate' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_lob_write' => 
+  'oci_lob_write' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_new_collection' => 
+  'oci_new_collection' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_new_connect' => 
+  'oci_new_connect' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_new_cursor' => 
+  'oci_new_cursor' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_new_descriptor' => 
+  'oci_new_descriptor' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_num_fields' => 
+  'oci_num_fields' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_num_rows' => 
+  'oci_num_rows' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_parse' => 
+  'oci_parse' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_password_change' => 
+  'oci_password_change' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_pconnect' => 
+  'oci_pconnect' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_result' => 
+  'oci_result' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_rollback' => 
+  'oci_rollback' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_server_version' => 
+  'oci_server_version' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_set_prefetch' => 
+  'oci_set_prefetch' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'oci_statement_type' => 
+  'oci_statement_type' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'ocibindbyname' => 
+  'ocibindbyname' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocicancel' => 
+  'ocicancel' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_oci8',
   ),
-  'ocicollappend' => 
+  'ocicollappend' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_oci8',
   ),
-  'ocicollassign' => 
+  'ocicollassign' =>
   array (
     'init' => '4.0.6',
   ),
-  'ocicollassignelem' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_oci8',
-  ),
-  'ocicollgetelem' => 
+  'ocicollassignelem' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_oci8',
   ),
-  'ocicollmax' => 
+  'ocicollgetelem' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_oci8',
   ),
-  'ocicollsize' => 
+  'ocicollmax' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_oci8',
   ),
-  'ocicolltrim' => 
+  'ocicollsize' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_oci8',
   ),
-  'ocicolumnisnull' => 
+  'ocicolltrim' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_oci8',
+  ),
+  'ocicolumnisnull' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocicolumnname' => 
+  'ocicolumnname' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocicolumnprecision' => 
+  'ocicolumnprecision' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
-  'ocicolumnscale' => 
+  'ocicolumnscale' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
-  'ocicolumnsize' => 
+  'ocicolumnsize' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocicolumntype' => 
+  'ocicolumntype' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocicolumntyperaw' => 
+  'ocicolumntyperaw' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
-  'ocicommit' => 
+  'ocicommit' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_oci8',
   ),
-  'ocidefinebyname' => 
+  'ocidefinebyname' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_oci8',
   ),
-  'ocierror' => 
+  'ocierror' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_oci8',
   ),
-  'ociexecute' => 
+  'ociexecute' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocifetch' => 
+  'ocifetch' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocifetchinto' => 
+  'ocifetchinto' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocifetchstatement' => 
+  'ocifetchstatement' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_oci8',
   ),
-  'ocifreecoll' => 
+  'ocifreecoll' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.6',
   ),
-  'ocifreecollection' => 
+  'ocifreecollection' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_oci8',
   ),
-  'ocifreecursor' => 
+  'ocifreecursor' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_oci8',
   ),
-  'ocifreedesc' => 
+  'ocifreedesc' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
-  'ocifreedescriptor' => 
+  'ocifreedescriptor' =>
   array (
     'init' => '3.0.7',
   ),
-  'ocifreestatement' => 
+  'ocifreestatement' =>
   array (
     'init' => '3.0.5',
     'ext' => 'ext_oci8',
   ),
-  'ocigetbufferinglob' => 
+  'ocigetbufferinglob' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'ociinternaldebug' => 
+  'ociinternaldebug' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ociloaddesc' => 
+  'ociloaddesc' =>
   array (
     'init' => '3.0.7',
   ),
-  'ociloadlob' => 
+  'ociloadlob' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
-  'ocilogoff' => 
+  'ocilogoff' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocilogon' => 
+  'ocilogon' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocinewcollection' => 
+  'ocinewcollection' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_oci8',
   ),
-  'ocinewcursor' => 
+  'ocinewcursor' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_oci8',
   ),
-  'ocinewdescriptor' => 
+  'ocinewdescriptor' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_oci8',
   ),
-  'ocinlogon' => 
+  'ocinlogon' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_oci8',
   ),
-  'ocinumcols' => 
+  'ocinumcols' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ociparse' => 
+  'ociparse' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocipasswordchange' => 
+  'ocipasswordchange' =>
   array (
     'init' => '4.3.2',
     'ext' => 'ext_oci8',
   ),
-  'ociplogon' => 
+  'ociplogon' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_oci8',
   ),
-  'ociresult' => 
+  'ociresult' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocirollback' => 
+  'ocirollback' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_oci8',
   ),
-  'ocirowcount' => 
+  'ocirowcount' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_oci8',
   ),
-  'ocisavedesc' => 
+  'ocisavedesc' =>
   array (
     'init' => '3.0.7',
   ),
-  'ocisavedescfile' => 
+  'ocisavedescfile' =>
   array (
     'init' => '3.0.13',
   ),
-  'ocisavelob' => 
+  'ocisavelob' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
-  'ocisavelobfile' => 
+  'ocisavelobfile' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
-  'ociserverversion' => 
+  'ociserverversion' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_oci8',
   ),
-  'ocisetbufferinglob' => 
+  'ocisetbufferinglob' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_oci8',
   ),
-  'ocisetprefetch' => 
+  'ocisetprefetch' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_oci8',
   ),
-  'ocistatementtype' => 
+  'ocistatementtype' =>
   array (
     'init' => '3.0.5',
     'ext' => 'ext_oci8',
   ),
-  'ocitest' => 
+  'ocitest' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.4',
   ),
-  'ocitest2' => 
+  'ocitest2' =>
   array (
     'init' => '3.0.0',
     'end' => '3.0.4',
   ),
-  'ociwritelobtofile' => 
+  'ociwritelobtofile' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_oci8',
   ),
-  'octdec' => 
+  'octdec' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'odbc_autocommit' => 
+  'odbc_autocommit' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_binmode' => 
+  'odbc_binmode' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_close' => 
+  'odbc_close' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_close_all' => 
+  'odbc_close_all' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_columnprivileges' => 
+  'odbc_columnprivileges' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_columns' => 
+  'odbc_columns' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_commit' => 
+  'odbc_commit' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_connect' => 
+  'odbc_connect' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_cursor' => 
+  'odbc_cursor' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_data_source' => 
+  'odbc_data_source' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_do' => 
+  'odbc_do' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_error' => 
+  'odbc_error' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_odbc',
   ),
-  'odbc_errormsg' => 
+  'odbc_errormsg' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_odbc',
   ),
-  'odbc_exec' => 
+  'odbc_exec' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_execute' => 
+  'odbc_execute' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_fetch_array' => 
+  'odbc_fetch_array' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_odbc',
   ),
-  'odbc_fetch_into' => 
+  'odbc_fetch_into' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_fetch_object' => 
+  'odbc_fetch_object' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_odbc',
   ),
-  'odbc_fetch_row' => 
+  'odbc_fetch_row' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_field_len' => 
+  'odbc_field_len' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_field_name' => 
+  'odbc_field_name' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_field_num' => 
+  'odbc_field_num' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_field_precision' => 
+  'odbc_field_precision' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_field_scale' => 
+  'odbc_field_scale' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_field_type' => 
+  'odbc_field_type' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_foreignkeys' => 
+  'odbc_foreignkeys' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_free_result' => 
+  'odbc_free_result' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_gettypeinfo' => 
+  'odbc_gettypeinfo' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_longreadlen' => 
+  'odbc_longreadlen' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_next_result' => 
+  'odbc_next_result' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_odbc',
   ),
-  'odbc_num_fields' => 
+  'odbc_num_fields' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_num_rows' => 
+  'odbc_num_rows' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_pconnect' => 
+  'odbc_pconnect' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_prepare' => 
+  'odbc_prepare' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_primarykeys' => 
+  'odbc_primarykeys' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_procedurecolumns' => 
+  'odbc_procedurecolumns' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_procedures' => 
+  'odbc_procedures' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_result' => 
+  'odbc_result' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_result_all' => 
+  'odbc_result_all' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_rollback' => 
+  'odbc_rollback' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_setoption' => 
+  'odbc_setoption' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_odbc',
   ),
-  'odbc_specialcolumns' => 
+  'odbc_specialcolumns' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_statistics' => 
+  'odbc_statistics' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_tableprivileges' => 
+  'odbc_tableprivileges' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_odbc',
   ),
-  'odbc_tables' => 
+  'odbc_tables' =>
   array (
     'init' => '3.0.17',
     'ext' => 'ext_odbc',
   ),
-  'onClose' => 
+  'onClose' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'onCreate' => 
+  'onCreate' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'open_listen_sock' => 
+  'open_listen_sock' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'opendir' => 
+  'opendir' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'openlog' => 
+  'openlog' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'openssl_csr_export' => 
+  'openssl_csr_export' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_openssl',
   ),
-  'openssl_csr_export_to_file' => 
+  'openssl_csr_export_to_file' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_openssl',
   ),
-  'openssl_csr_new' => 
+  'openssl_csr_new' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_openssl',
   ),
-  'openssl_csr_sign' => 
+  'openssl_csr_sign' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_openssl',
   ),
-  'openssl_error_string' => 
+  'openssl_error_string' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_openssl',
   ),
-  'openssl_free_key' => 
+  'openssl_free_key' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_openssl',
   ),
-  'openssl_free_x509' => 
-  array (
-    'init' => '4.0.4',
-    'end' => '4.0.5',
-  ),
-  'openssl_get_privatekey' => 
-  array (
-    'init' => '4.0.4',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_get_publickey' => 
-  array (
-    'init' => '4.0.4',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_open' => 
-  array (
-    'init' => '4.0.4',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_pkcs7_decrypt' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_pkcs7_encrypt' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_pkcs7_sign' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_pkcs7_verify' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_pkey_export' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_pkey_export_to_file' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_pkey_free' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_pkey_get_private' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_pkey_get_public' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_pkey_new' => 
-  array (
-    'init' => '4.2.0',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_private_decrypt' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_private_encrypt' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_public_decrypt' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_public_encrypt' => 
-  array (
-    'init' => '4.0.6',
-    'ext' => 'ext_openssl',
-  ),
-  'openssl_read_publickey' => 
+  'openssl_free_x509' =>
   array (
     'init' => '4.0.4',
     'end' => '4.0.5',
   ),
-  'openssl_read_x509' => 
+  'openssl_get_privatekey' =>
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_get_publickey' =>
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_open' =>
+  array (
+    'init' => '4.0.4',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkcs7_decrypt' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkcs7_encrypt' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkcs7_sign' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkcs7_verify' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_export' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_export_to_file' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_free' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_get_private' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_get_public' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_pkey_new' =>
+  array (
+    'init' => '4.2.0',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_private_decrypt' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_private_encrypt' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_public_decrypt' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_public_encrypt' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'ext_openssl',
+  ),
+  'openssl_read_publickey' =>
   array (
     'init' => '4.0.4',
     'end' => '4.0.5',
   ),
-  'openssl_seal' => 
+  'openssl_read_x509' =>
+  array (
+    'init' => '4.0.4',
+    'end' => '4.0.5',
+  ),
+  'openssl_seal' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_openssl',
   ),
-  'openssl_sign' => 
+  'openssl_sign' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_openssl',
   ),
-  'openssl_verify' => 
+  'openssl_verify' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_openssl',
   ),
-  'openssl_x509_check_private_key' => 
+  'openssl_x509_check_private_key' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_openssl',
   ),
-  'openssl_x509_checkpurpose' => 
+  'openssl_x509_checkpurpose' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_openssl',
   ),
-  'openssl_x509_export' => 
+  'openssl_x509_export' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_openssl',
   ),
-  'openssl_x509_export_to_file' => 
+  'openssl_x509_export_to_file' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_openssl',
   ),
-  'openssl_x509_free' => 
+  'openssl_x509_free' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_openssl',
   ),
-  'openssl_x509_parse' => 
+  'openssl_x509_parse' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_openssl',
   ),
-  'openssl_x509_read' => 
+  'openssl_x509_read' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_openssl',
   ),
-  'ora_bind' => 
+  'ora_bind' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_close' => 
+  'ora_close' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_columnname' => 
+  'ora_columnname' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_columnsize' => 
+  'ora_columnsize' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_columntype' => 
+  'ora_columntype' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_commit' => 
+  'ora_commit' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_commitoff' => 
+  'ora_commitoff' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_commiton' => 
+  'ora_commiton' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_do' => 
+  'ora_do' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_error' => 
+  'ora_error' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_errorcode' => 
+  'ora_errorcode' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_exec' => 
+  'ora_exec' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_fetch' => 
+  'ora_fetch' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_fetch_into' => 
+  'ora_fetch_into' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_getcolumn' => 
+  'ora_getcolumn' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_logoff' => 
+  'ora_logoff' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_logon' => 
+  'ora_logon' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_numcols' => 
+  'ora_numcols' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_numrows' => 
+  'ora_numrows' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_open' => 
+  'ora_open' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_parse' => 
+  'ora_parse' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_plogon' => 
+  'ora_plogon' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'ora_rollback' => 
+  'ora_rollback' =>
   array (
     'end' => '5.1.0RC1',
     'init' => '3.0.0',
     'ext' => 'ext_oracle',
   ),
-  'orbit_caught_exception' => 
+  'orbit_caught_exception' =>
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'orbit_exception_id' => 
+  'orbit_exception_id' =>
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'orbit_exception_value' => 
+  'orbit_exception_value' =>
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'orbit_get_repository_id' => 
+  'orbit_get_repository_id' =>
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'orbit_load_idl' => 
+  'orbit_load_idl' =>
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'ord' => 
+  'ord' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'output' => 
+  'output' =>
   array (
     'init' => '4.0.5',
   ),
-  'output_add_rewrite_var' => 
+  'output_add_rewrite_var' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'output_reset_rewrite_vars' => 
+  'output_reset_rewrite_vars' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'overload' => 
+  'overload' =>
   array (
     'init' => '4.2.0',
   ),
-  'ovrimos_close' => 
+  'ovrimos_close' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_close_all' => 
+  'ovrimos_close_all' =>
   array (
     'init' => '4.0.3',
     'end' => '4.0.6',
   ),
-  'ovrimos_commit' => 
+  'ovrimos_commit' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_connect' => 
+  'ovrimos_connect' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_cursor' => 
+  'ovrimos_cursor' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_do' => 
+  'ovrimos_do' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_exec' => 
+  'ovrimos_exec' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_execute' => 
+  'ovrimos_execute' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_fetch_into' => 
+  'ovrimos_fetch_into' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_fetch_row' => 
+  'ovrimos_fetch_row' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_field_len' => 
+  'ovrimos_field_len' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_field_name' => 
+  'ovrimos_field_name' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_field_num' => 
+  'ovrimos_field_num' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_field_type' => 
+  'ovrimos_field_type' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_free_result' => 
+  'ovrimos_free_result' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_longreadlen' => 
+  'ovrimos_longreadlen' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_num_fields' => 
+  'ovrimos_num_fields' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_num_rows' => 
+  'ovrimos_num_rows' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_prepare' => 
+  'ovrimos_prepare' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_result' => 
+  'ovrimos_result' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_result_all' => 
+  'ovrimos_result_all' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'ovrimos_rollback' => 
+  'ovrimos_rollback' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_ovrimos',
   ),
-  'pack' => 
+  'pack' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'parse_ini_file' => 
+  'parse_ini_file' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'parse_str' => 
+  'parse_str' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'parse_url' => 
+  'parse_url' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'passthru' => 
+  'passthru' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'pathinfo' => 
+  'pathinfo' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_standard',
   ),
-  'pclose' => 
+  'pclose' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'pcntl_alarm' => 
+  'pcntl_alarm' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_exec' => 
+  'pcntl_exec' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_fork' => 
+  'pcntl_fork' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_getpriority' => 
+  'pcntl_getpriority' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_setpriority' => 
+  'pcntl_setpriority' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_signal' => 
+  'pcntl_signal' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_wait' => 
+  'pcntl_wait' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_waitpid' => 
+  'pcntl_waitpid' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_wexitstatus' => 
+  'pcntl_wexitstatus' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_wifexited' => 
+  'pcntl_wifexited' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_wifsignaled' => 
+  'pcntl_wifsignaled' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_wifstopped' => 
+  'pcntl_wifstopped' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_wstopsig' => 
+  'pcntl_wstopsig' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_pcntl',
   ),
-  'pcntl_wtermsig' => 
+  'pcntl_wtermsig' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_pcntl',
   ),
-  'pdf_add_annotation' => 
+  'pdf_add_annotation' =>
   array (
     'init' => '3.0.12',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_add_bookmark' => 
+  'pdf_add_bookmark' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_add_launchlink' => 
+  'pdf_add_launchlink' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_add_locallink' => 
+  'pdf_add_locallink' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_add_note' => 
+  'pdf_add_note' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_add_outline' => 
+  'pdf_add_outline' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_add_pdflink' => 
+  'pdf_add_pdflink' =>
   array (
     'init' => '3.0.12',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_add_thumbnail' => 
+  'pdf_add_thumbnail' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_add_weblink' => 
+  'pdf_add_weblink' =>
   array (
     'init' => '3.0.12',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_arc' => 
+  'pdf_arc' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_arcn' => 
+  'pdf_arcn' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_attach_file' => 
+  'pdf_attach_file' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_begin_page' => 
+  'pdf_begin_page' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_begin_pattern' => 
+  'pdf_begin_pattern' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_begin_template' => 
+  'pdf_begin_template' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_circle' => 
+  'pdf_circle' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_clip' => 
+  'pdf_clip' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_close' => 
+  'pdf_close' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_close_image' => 
+  'pdf_close_image' =>
   array (
     'init' => '3.0.7',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_close_pdi' => 
+  'pdf_close_pdi' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_close_pdi_page' => 
+  'pdf_close_pdi_page' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_closepath' => 
+  'pdf_closepath' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_closepath_fill_stroke' => 
+  'pdf_closepath_fill_stroke' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_closepath_stroke' => 
+  'pdf_closepath_stroke' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_concat' => 
+  'pdf_concat' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_continue_text' => 
+  'pdf_continue_text' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_curveto' => 
+  'pdf_curveto' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_delete' => 
+  'pdf_delete' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_end_page' => 
+  'pdf_end_page' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_end_pattern' => 
+  'pdf_end_pattern' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_end_template' => 
+  'pdf_end_template' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_endpath' => 
+  'pdf_endpath' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_execute_image' => 
+  'pdf_execute_image' =>
   array (
     'init' => '3.0.7',
   ),
-  'pdf_fill' => 
+  'pdf_fill' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_fill_stroke' => 
+  'pdf_fill_stroke' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_findfont' => 
+  'pdf_findfont' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_buffer' => 
+  'pdf_get_buffer' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_font' => 
+  'pdf_get_font' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_fontname' => 
+  'pdf_get_fontname' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_fontsize' => 
+  'pdf_get_fontsize' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_image_height' => 
+  'pdf_get_image_height' =>
   array (
     'init' => '3.0.12',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_image_width' => 
+  'pdf_get_image_width' =>
   array (
     'init' => '3.0.12',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_info' => 
+  'pdf_get_info' =>
   array (
     'init' => '3.0.6',
   ),
-  'pdf_get_majorversion' => 
+  'pdf_get_majorversion' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_minorversion' => 
+  'pdf_get_minorversion' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_parameter' => 
+  'pdf_get_parameter' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_pdi_parameter' => 
+  'pdf_get_pdi_parameter' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_pdi_value' => 
+  'pdf_get_pdi_value' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_get_value' => 
+  'pdf_get_value' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_initgraphics' => 
+  'pdf_initgraphics' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_lineto' => 
+  'pdf_lineto' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_makespotcolor' => 
+  'pdf_makespotcolor' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_moveto' => 
+  'pdf_moveto' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_new' => 
+  'pdf_new' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open' => 
+  'pdf_open' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_ccitt' => 
+  'pdf_open_ccitt' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_file' => 
+  'pdf_open_file' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_gif' => 
+  'pdf_open_gif' =>
   array (
     'init' => '3.0.7',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_image' => 
+  'pdf_open_image' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_image_file' => 
+  'pdf_open_image_file' =>
   array (
     'init' => '3.0.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_jpeg' => 
+  'pdf_open_jpeg' =>
   array (
     'init' => '3.0.7',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_memory_image' => 
+  'pdf_open_memory_image' =>
   array (
     'init' => '3.0.10',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_pdi' => 
+  'pdf_open_pdi' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_pdi_page' => 
+  'pdf_open_pdi_page' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_png' => 
+  'pdf_open_png' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_open_tiff' => 
+  'pdf_open_tiff' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_place_image' => 
+  'pdf_place_image' =>
   array (
     'init' => '3.0.7',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_place_pdi_page' => 
+  'pdf_place_pdi_page' =>
   array (
     'init' => '4.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_put_image' => 
+  'pdf_put_image' =>
   array (
     'init' => '3.0.7',
   ),
-  'pdf_rect' => 
+  'pdf_rect' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_restore' => 
+  'pdf_restore' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_rotate' => 
+  'pdf_rotate' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_save' => 
+  'pdf_save' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_scale' => 
+  'pdf_scale' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_border_color' => 
+  'pdf_set_border_color' =>
   array (
     'init' => '3.0.12',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_border_dash' => 
+  'pdf_set_border_dash' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_border_style' => 
+  'pdf_set_border_style' =>
   array (
     'init' => '3.0.12',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_char_spacing' => 
+  'pdf_set_char_spacing' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_duration' => 
+  'pdf_set_duration' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_font' => 
+  'pdf_set_font' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_horiz_scaling' => 
+  'pdf_set_horiz_scaling' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_info' => 
+  'pdf_set_info' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_info_author' => 
+  'pdf_set_info_author' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_info_creator' => 
+  'pdf_set_info_creator' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_info_keywords' => 
+  'pdf_set_info_keywords' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_info_subject' => 
+  'pdf_set_info_subject' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_info_title' => 
+  'pdf_set_info_title' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_leading' => 
+  'pdf_set_leading' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_parameter' => 
+  'pdf_set_parameter' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_text_matrix' => 
+  'pdf_set_text_matrix' =>
   array (
     'init' => '3.0.6',
   ),
-  'pdf_set_text_pos' => 
-  array (
-    'init' => '3.0.6',
-    'ext' => 'pecl_pdf',
-  ),
-  'pdf_set_text_rendering' => 
+  'pdf_set_text_pos' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_text_rise' => 
+  'pdf_set_text_rendering' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_transition' => 
+  'pdf_set_text_rise' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_value' => 
+  'pdf_set_transition' =>
+  array (
+    'init' => '3.0.6',
+    'ext' => 'pecl_pdf',
+  ),
+  'pdf_set_value' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_set_word_spacing' => 
+  'pdf_set_word_spacing' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setcolor' => 
+  'pdf_setcolor' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setdash' => 
+  'pdf_setdash' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setflat' => 
+  'pdf_setflat' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setfont' => 
+  'pdf_setfont' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setgray' => 
+  'pdf_setgray' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setgray_fill' => 
+  'pdf_setgray_fill' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setgray_stroke' => 
+  'pdf_setgray_stroke' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setlinecap' => 
+  'pdf_setlinecap' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setlinejoin' => 
+  'pdf_setlinejoin' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setlinewidth' => 
+  'pdf_setlinewidth' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setmatrix' => 
+  'pdf_setmatrix' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setmiterlimit' => 
+  'pdf_setmiterlimit' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setpolydash' => 
+  'pdf_setpolydash' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setrgbcolor' => 
+  'pdf_setrgbcolor' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setrgbcolor_fill' => 
+  'pdf_setrgbcolor_fill' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_setrgbcolor_stroke' => 
+  'pdf_setrgbcolor_stroke' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_show' => 
+  'pdf_show' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_show_boxed' => 
+  'pdf_show_boxed' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_show_xy' => 
+  'pdf_show_xy' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_skew' => 
+  'pdf_skew' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_stringwidth' => 
+  'pdf_stringwidth' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_stroke' => 
+  'pdf_stroke' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdf_translate' => 
+  'pdf_translate' =>
   array (
     'init' => '3.0.6',
     'ext' => 'pecl_pdf',
   ),
-  'pdo_drivers' => 
+  'pdo_drivers' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'pecl_pdo',
   ),
-  'pfpro_cleanup' => 
+  'pfpro_cleanup' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pfpro',
   ),
-  'pfpro_init' => 
+  'pfpro_init' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pfpro',
   ),
-  'pfpro_process' => 
+  'pfpro_process' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pfpro',
   ),
-  'pfpro_process_raw' => 
+  'pfpro_process_raw' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pfpro',
   ),
-  'pfpro_version' => 
+  'pfpro_version' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pfpro',
   ),
-  'pfsockopen' => 
+  'pfsockopen' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'pg_affected_rows' => 
+  'pg_affected_rows' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_cancel_query' => 
+  'pg_cancel_query' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_client_encoding' => 
+  'pg_client_encoding' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_pgsql',
   ),
-  'pg_clientencoding' => 
+  'pg_clientencoding' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pgsql',
   ),
-  'pg_close' => 
+  'pg_close' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_cmdtuples' => 
+  'pg_cmdtuples' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_connect' => 
+  'pg_connect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_connection_busy' => 
+  'pg_connection_busy' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_connection_reset' => 
+  'pg_connection_reset' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_connection_status' => 
+  'pg_connection_status' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_convert' => 
+  'pg_convert' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_copy_from' => 
+  'pg_copy_from' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_copy_to' => 
+  'pg_copy_to' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_dbname' => 
+  'pg_dbname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_delete' => 
+  'pg_delete' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_end_copy' => 
+  'pg_end_copy' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_pgsql',
   ),
-  'pg_errormessage' => 
+  'pg_errormessage' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_escape_bytea' => 
+  'pg_escape_bytea' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_escape_string' => 
+  'pg_escape_string' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_exec' => 
+  'pg_exec' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_execute' => 
+  'pg_execute' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pg_fetch_all' => 
+  'pg_fetch_all' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fetch_all_columns' => 
+  'pg_fetch_all_columns' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pg_fetch_array' => 
+  'pg_fetch_array' =>
   array (
     'init' => '3.0.1',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fetch_assoc' => 
+  'pg_fetch_assoc' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fetch_object' => 
+  'pg_fetch_object' =>
   array (
     'init' => '3.0.1',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fetch_result' => 
+  'pg_fetch_result' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fetch_row' => 
+  'pg_fetch_row' =>
   array (
     'init' => '3.0.1',
     'ext' => 'ext_pgsql',
   ),
-  'pg_field_is_null' => 
+  'pg_field_is_null' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_field_name' => 
+  'pg_field_name' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_field_num' => 
+  'pg_field_num' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_field_prtlen' => 
+  'pg_field_prtlen' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_field_size' => 
+  'pg_field_size' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_field_type' => 
+  'pg_field_type' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_field_type_oid' => 
+  'pg_field_type_oid' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fieldisnull' => 
+  'pg_fieldisnull' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fieldname' => 
+  'pg_fieldname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fieldnum' => 
+  'pg_fieldnum' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fieldprtlen' => 
+  'pg_fieldprtlen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fieldsize' => 
+  'pg_fieldsize' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_fieldtype' => 
+  'pg_fieldtype' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_free_result' => 
+  'pg_free_result' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_freeresult' => 
+  'pg_freeresult' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_get_notify' => 
+  'pg_get_notify' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_get_pid' => 
+  'pg_get_pid' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_get_result' => 
+  'pg_get_result' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_getlastoid' => 
+  'pg_getlastoid' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_host' => 
+  'pg_host' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_insert' => 
+  'pg_insert' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_last_error' => 
+  'pg_last_error' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_last_notice' => 
+  'pg_last_notice' =>
   array (
     'init' => '4.0.6',
     'ext' => 'ext_pgsql',
   ),
-  'pg_last_oid' => 
+  'pg_last_oid' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_close' => 
+  'pg_lo_close' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_create' => 
+  'pg_lo_create' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_export' => 
+  'pg_lo_export' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_import' => 
+  'pg_lo_import' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_open' => 
+  'pg_lo_open' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_read' => 
+  'pg_lo_read' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_read_all' => 
+  'pg_lo_read_all' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_seek' => 
+  'pg_lo_seek' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_tell' => 
+  'pg_lo_tell' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_unlink' => 
+  'pg_lo_unlink' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lo_write' => 
+  'pg_lo_write' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_loclose' => 
+  'pg_loclose' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_locreate' => 
+  'pg_locreate' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_loexport' => 
+  'pg_loexport' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_pgsql',
   ),
-  'pg_loimport' => 
+  'pg_loimport' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_pgsql',
   ),
-  'pg_loopen' => 
+  'pg_loopen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_loread' => 
+  'pg_loread' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_loreadall' => 
+  'pg_loreadall' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lounlink' => 
+  'pg_lounlink' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_lowrite' => 
+  'pg_lowrite' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_meta_data' => 
+  'pg_meta_data' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_num_fields' => 
+  'pg_num_fields' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_num_rows' => 
+  'pg_num_rows' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_numfields' => 
+  'pg_numfields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_numrows' => 
+  'pg_numrows' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_options' => 
+  'pg_options' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_parameter_status' => 
+  'pg_parameter_status' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_pconnect' => 
+  'pg_pconnect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_ping' => 
+  'pg_ping' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_port' => 
+  'pg_port' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_prepare' => 
+  'pg_prepare' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pg_put_line' => 
+  'pg_put_line' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_pgsql',
   ),
-  'pg_query' => 
+  'pg_query' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_query_params' => 
+  'pg_query_params' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pg_result' => 
+  'pg_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_result_error' => 
+  'pg_result_error' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_result_error_field' => 
+  'pg_result_error_field' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pg_result_seek' => 
+  'pg_result_seek' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_result_status' => 
+  'pg_result_status' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_select' => 
+  'pg_select' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_send_execute' => 
+  'pg_send_execute' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pg_send_prepare' => 
+  'pg_send_prepare' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pg_send_query' => 
+  'pg_send_query' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_send_query_params' => 
+  'pg_send_query_params' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pg_set_client_encoding' => 
+  'pg_set_client_encoding' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_pgsql',
   ),
-  'pg_set_error_verbosity' => 
+  'pg_set_error_verbosity' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pg_setclientencoding' => 
+  'pg_setclientencoding' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pgsql',
   ),
-  'pg_trace' => 
+  'pg_trace' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_pgsql',
   ),
-  'pg_transaction_status' => 
+  'pg_transaction_status' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pg_tty' => 
+  'pg_tty' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_unescape_bytea' => 
+  'pg_unescape_bytea' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_untrace' => 
+  'pg_untrace' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_pgsql',
   ),
-  'pg_update' => 
+  'pg_update' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_pgsql',
   ),
-  'pg_version' => 
+  'pg_version' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_pgsql',
   ),
-  'php_check_syntax' => 
+  'php_check_syntax' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'php_egg_logo_guid' => 
+  'php_egg_logo_guid' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'php_ini_scanned_files' => 
+  'php_ini_scanned_files' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'php_logo_guid' => 
+  'php_logo_guid' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'php_real_logo_guid' => 
+  'php_real_logo_guid' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'php_sapi_name' => 
+  'php_sapi_name' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'php_strip_whitespace' => 
+  'php_strip_whitespace' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'php_uname' => 
+  'php_uname' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_standard',
   ),
-  'phpcredits' => 
+  'phpcredits' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'phpinfo' => 
+  'phpinfo' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'phpversion' => 
+  'phpversion' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'pi' => 
+  'pi' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'png2wbmp' => 
+  'png2wbmp' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_gd',
   ),
-  'popen' => 
+  'popen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'pos' => 
+  'pos' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'posix_access' => 
+  'posix_access' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_posix',
   ),
-  'posix_ctermid' => 
+  'posix_ctermid' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_errno' => 
+  'posix_errno' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_posix',
   ),
-  'posix_get_last_error' => 
+  'posix_get_last_error' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_posix',
   ),
-  'posix_getcwd' => 
+  'posix_getcwd' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_getegid' => 
+  'posix_getegid' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_geteuid' => 
+  'posix_geteuid' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_getgid' => 
+  'posix_getgid' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_getgrgid' => 
+  'posix_getgrgid' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_getgrnam' => 
+  'posix_getgrnam' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_getgroups' => 
+  'posix_getgroups' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_getlogin' => 
+  'posix_getlogin' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_getpgid' => 
+  'posix_getpgid' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_getpgrp' => 
+  'posix_getpgrp' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_getpid' => 
+  'posix_getpid' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_getppid' => 
+  'posix_getppid' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_getpwnam' => 
+  'posix_getpwnam' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_getpwuid' => 
+  'posix_getpwuid' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_getrlimit' => 
+  'posix_getrlimit' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_getsid' => 
+  'posix_getsid' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_getuid' => 
+  'posix_getuid' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'posix_isatty' => 
+  'posix_isatty' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_kill' => 
+  'posix_kill' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_mkfifo' => 
+  'posix_mkfifo' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_mknod' => 
+  'posix_mknod' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'posix_setegid' => 
+  'posix_setegid' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_posix',
   ),
-  'posix_seteuid' => 
+  'posix_seteuid' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_posix',
   ),
-  'posix_setgid' => 
+  'posix_setgid' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_setpgid' => 
+  'posix_setpgid' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_setsid' => 
+  'posix_setsid' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_setuid' => 
+  'posix_setuid' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_strerror' => 
+  'posix_strerror' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_posix',
   ),
-  'posix_times' => 
+  'posix_times' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_ttyname' => 
+  'posix_ttyname' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_posix',
   ),
-  'posix_uname' => 
+  'posix_uname' =>
   array (
     'init' => '3.0.10',
     'ext' => 'ext_posix',
   ),
-  'pow' => 
+  'pow' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'preg_grep' => 
+  'preg_grep' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_pcre',
   ),
-  'preg_match' => 
+  'preg_match' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_pcre',
   ),
-  'preg_match_all' => 
+  'preg_match_all' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_pcre',
   ),
-  'preg_quote' => 
+  'preg_quote' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_pcre',
   ),
-  'preg_replace' => 
+  'preg_replace' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_pcre',
   ),
-  'preg_replace_callback' => 
+  'preg_replace_callback' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_pcre',
   ),
-  'preg_split' => 
+  'preg_split' =>
   array (
     'init' => '3.0.9',
     'ext' => 'ext_pcre',
   ),
-  'prev' => 
+  'prev' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'print_r' => 
+  'print_r' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'printf' => 
+  'printf' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'proc_close' => 
+  'proc_close' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'proc_get_status' => 
+  'proc_get_status' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'proc_nice' => 
+  'proc_nice' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'proc_open' => 
+  'proc_open' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'proc_terminate' => 
+  'proc_terminate' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'property_exists' => 
+  'property_exists' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'pspell_add_to_personal' => 
+  'pspell_add_to_personal' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_add_to_session' => 
+  'pspell_add_to_session' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_check' => 
+  'pspell_check' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_clear_session' => 
+  'pspell_clear_session' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_config_create' => 
+  'pspell_config_create' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_config_data_dir' => 
+  'pspell_config_data_dir' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_pspell',
   ),
-  'pspell_config_dict_dir' => 
+  'pspell_config_dict_dir' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_pspell',
   ),
-  'pspell_config_ignore' => 
+  'pspell_config_ignore' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_config_mode' => 
+  'pspell_config_mode' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_config_personal' => 
+  'pspell_config_personal' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_config_repl' => 
+  'pspell_config_repl' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_config_runtogether' => 
+  'pspell_config_runtogether' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_config_save_repl' => 
+  'pspell_config_save_repl' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_new' => 
+  'pspell_new' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_new_config' => 
+  'pspell_new_config' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_new_personal' => 
+  'pspell_new_personal' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_save_wordlist' => 
+  'pspell_save_wordlist' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_store_replacement' => 
+  'pspell_store_replacement' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'pspell_suggest' => 
+  'pspell_suggest' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_pspell',
   ),
-  'putenv' => 
+  'putenv' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'qdom_error' => 
+  'qdom_error' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_qtdom',
   ),
-  'qdom_tree' => 
+  'qdom_tree' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_qtdom',
   ),
-  'quoted_printable_decode' => 
+  'quoted_printable_decode' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'quotemeta' => 
+  'quotemeta' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'rad2deg' => 
+  'rad2deg' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_standard',
   ),
-  'rand' => 
+  'rand' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'range' => 
+  'range' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_standard',
   ),
-  'rawurldecode' => 
+  'rawurldecode' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'rawurlencode' => 
+  'rawurlencode' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'read' => 
+  'read' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'read_exif_data' => 
+  'read_exif_data' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_exif',
   ),
-  'readdir' => 
+  'readdir' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'readfile' => 
+  'readfile' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'readgzfile' => 
+  'readgzfile' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_zlib',
   ),
-  'readline' => 
+  'readline' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_readline',
   ),
-  'readline_add_history' => 
+  'readline_add_history' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_readline',
   ),
-  'readline_callback_handler_install' => 
+  'readline_callback_handler_install' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_readline',
   ),
-  'readline_callback_handler_remove' => 
+  'readline_callback_handler_remove' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_readline',
   ),
-  'readline_callback_read_char' => 
+  'readline_callback_read_char' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_readline',
   ),
-  'readline_clear_history' => 
+  'readline_clear_history' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_readline',
   ),
-  'readline_completion_function' => 
+  'readline_completion_function' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_readline',
   ),
-  'readline_info' => 
+  'readline_info' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_readline',
   ),
-  'readline_list_history' => 
+  'readline_list_history' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_readline',
   ),
-  'readline_on_new_line' => 
+  'readline_on_new_line' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_readline',
   ),
-  'readline_read_history' => 
+  'readline_read_history' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_readline',
   ),
-  'readline_redisplay' => 
+  'readline_redisplay' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_readline',
   ),
-  'readline_write_history' => 
+  'readline_write_history' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_readline',
   ),
-  'readlink' => 
+  'readlink' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'readmagick' => 
+  'readmagick' =>
   array (
     'init' => '3.0.7',
   ),
-  'readv' => 
+  'readv' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'realpath' => 
+  'realpath' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'recode' => 
+  'recode' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_recode',
   ),
-  'recode_file' => 
+  'recode_file' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_recode',
   ),
-  'recode_string' => 
+  'recode_string' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_recode',
   ),
-  'recv' => 
+  'recv' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'recvfrom' => 
+  'recvfrom' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'recvmsg' => 
+  'recvmsg' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'register_shutdown_function' => 
+  'register_shutdown_function' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_standard',
   ),
-  'register_tick_function' => 
+  'register_tick_function' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_standard',
   ),
-  'remove' => 
+  'remove' =>
   array (
     'init' => '4.0.5',
   ),
-  'rename' => 
+  'rename' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'reset' => 
+  'reset' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'restore_error_handler' => 
+  'restore_error_handler' =>
   array (
     'init' => '4.0.1',
     'ext' => 'zend',
   ),
-  'restore_exception_handler' => 
+  'restore_exception_handler' =>
   array (
     'init' => '5.0.0',
     'ext' => 'zend',
   ),
-  'restore_include_path' => 
+  'restore_include_path' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'rewind' => 
+  'rewind' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'rewinddir' => 
+  'rewinddir' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'rmdir' => 
+  'rmdir' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'rot13' => 
+  'rot13' =>
   array (
     'init' => '3.0.0',
   ),
-  'rotate' => 
+  'rotate' =>
   array (
     'init' => '4.0.5',
   ),
-  'rotateto' => 
+  'rotateto' =>
   array (
     'init' => '4.0.5',
   ),
-  'round' => 
+  'round' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'rpc_call' => 
+  'rpc_call' =>
   array (
     'init' => '3.0.8',
   ),
-  'rsort' => 
+  'rsort' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'rtrim' => 
+  'rtrim' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'satellite_caught_exception' => 
+  'satellite_caught_exception' =>
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'satellite_exception_id' => 
+  'satellite_exception_id' =>
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'satellite_exception_value' => 
+  'satellite_exception_value' =>
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'satellite_get_repository_id' => 
+  'satellite_get_repository_id' =>
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'satellite_load_idl' => 
+  'satellite_load_idl' =>
   array (
     'init' => '4.0.3',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'satellite_object_to_string' => 
+  'satellite_object_to_string' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
     'ext' => 'pecl_satellite',
   ),
-  'save' => 
+  'save' =>
   array (
     'init' => '4.0.5',
   ),
-  'savemagick' => 
+  'savemagick' =>
   array (
     'init' => '3.0.7',
   ),
-  'savetofile' => 
+  'savetofile' =>
   array (
     'init' => '4.0.5',
   ),
-  'scale' => 
+  'scale' =>
   array (
     'init' => '4.0.5',
   ),
-  'scalemagick' => 
+  'scalemagick' =>
   array (
     'init' => '3.0.7',
   ),
-  'scaleto' => 
+  'scaleto' =>
   array (
     'init' => '4.0.5',
   ),
-  'scandir' => 
+  'scandir' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'select' => 
+  'select' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'sem_acquire' => 
+  'sem_acquire' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sysvsem',
   ),
-  'sem_get' => 
+  'sem_get' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sysvsem',
   ),
-  'sem_release' => 
+  'sem_release' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sysvsem',
   ),
-  'sem_remove' => 
+  'sem_remove' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sysvsem',
   ),
-  'send' => 
+  'send' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'sendmsg' => 
+  'sendmsg' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'sendto' => 
+  'sendto' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'serialize' => 
+  'serialize' =>
   array (
     'init' => '3.0.5',
     'ext' => 'ext_standard',
   ),
-  'sesam_affected_rows' => 
+  'sesam_affected_rows' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_commit' => 
+  'sesam_commit' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_connect' => 
+  'sesam_connect' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_debug' => 
+  'sesam_debug' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_diagnostic' => 
+  'sesam_diagnostic' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_disconnect' => 
+  'sesam_disconnect' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_errormsg' => 
+  'sesam_errormsg' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_execimm' => 
+  'sesam_execimm' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_fetch_array' => 
+  'sesam_fetch_array' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_fetch_result' => 
+  'sesam_fetch_result' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_fetch_row' => 
+  'sesam_fetch_row' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_field_array' => 
+  'sesam_field_array' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_field_data' => 
+  'sesam_field_data' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_field_name' => 
+  'sesam_field_name' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_free_result' => 
+  'sesam_free_result' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_num_fields' => 
+  'sesam_num_fields' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_query' => 
+  'sesam_query' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_rollback' => 
+  'sesam_rollback' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_seek_row' => 
+  'sesam_seek_row' =>
   array (
     'init' => '3.0.0',
   ),
-  'sesam_settransaction' => 
+  'sesam_settransaction' =>
   array (
     'init' => '3.0.0',
   ),
-  'session_cache_expire' => 
+  'session_cache_expire' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_session',
   ),
-  'session_cache_limiter' => 
+  'session_cache_limiter' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_session',
   ),
-  'session_commit' => 
+  'session_commit' =>
   array (
     'init' => '4.3.11',
     'ext' => 'ext_session',
   ),
-  'session_decode' => 
+  'session_decode' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_destroy' => 
+  'session_destroy' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_encode' => 
+  'session_encode' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_get_cookie_params' => 
+  'session_get_cookie_params' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_id' => 
+  'session_id' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_is_registered' => 
+  'session_is_registered' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_module_name' => 
+  'session_module_name' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_name' => 
+  'session_name' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_regenerate_id' => 
+  'session_regenerate_id' =>
   array (
     'init' => '4.3.2',
     'ext' => 'ext_session',
   ),
-  'session_register' => 
+  'session_register' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_save_path' => 
+  'session_save_path' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_set_cookie_params' => 
+  'session_set_cookie_params' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_set_save_handler' => 
+  'session_set_save_handler' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_start' => 
+  'session_start' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_unregister' => 
+  'session_unregister' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_unset' => 
+  'session_unset' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_session',
   ),
-  'session_write_close' => 
+  'session_write_close' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_session',
   ),
-  'setTimezone' => 
+  'setTimezone' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'set_charset' => 
+  'set_charset' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'set_content' => 
+  'set_content' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_domxml',
   ),
-  'set_error_handler' => 
+  'set_error_handler' =>
   array (
     'init' => '4.0.1',
     'ext' => 'zend',
   ),
-  'set_exception_handler' => 
+  'set_exception_handler' =>
   array (
     'init' => '5.0.0',
     'ext' => 'zend',
   ),
-  'set_file_buffer' => 
+  'set_file_buffer' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_standard',
   ),
-  'set_include_path' => 
+  'set_include_path' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'set_iovec' => 
+  'set_iovec' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'set_magic_quotes_runtime' => 
+  'set_magic_quotes_runtime' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'set_nonblock' => 
+  'set_nonblock' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'set_socket_blocking' => 
+  'set_socket_blocking' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'set_socket_timeout' => 
+  'set_socket_timeout' =>
   array (
     'init' => '3.0.0',
   ),
-  'set_time_limit' => 
+  'set_time_limit' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'set_user_error_handler' => 
+  'set_user_error_handler' =>
   array (
     'end' => '4.0.0',
     'init' => '4.0.0',
   ),
-  'setaction' => 
+  'setaction' =>
   array (
     'init' => '4.0.5',
   ),
-  'setbackground' => 
+  'setbackground' =>
   array (
     'init' => '4.0.5',
   ),
-  'setbounds' => 
+  'setbounds' =>
   array (
     'init' => '4.0.5',
   ),
-  'setcolor' => 
+  'setcolor' =>
   array (
     'init' => '4.0.5',
   ),
-  'setcookie' => 
+  'setcookie' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'setdepth' => 
+  'setdepth' =>
   array (
     'init' => '4.0.5',
   ),
-  'setdimension' => 
+  'setdimension' =>
   array (
     'init' => '4.0.5',
   ),
-  'setdown' => 
+  'setdown' =>
   array (
     'init' => '4.0.5',
   ),
-  'setfont' => 
+  'setfont' =>
   array (
     'init' => '4.0.5',
   ),
-  'setframes' => 
+  'setframes' =>
   array (
     'init' => '4.0.5',
   ),
-  'setheight' => 
+  'setheight' =>
   array (
     'init' => '4.0.5',
   ),
-  'sethit' => 
+  'sethit' =>
   array (
     'init' => '4.0.5',
   ),
-  'setindentation' => 
+  'setindentation' =>
   array (
     'init' => '4.0.5',
   ),
-  'setleftfill' => 
+  'setleftfill' =>
   array (
     'init' => '4.0.5',
   ),
-  'setleftmargin' => 
+  'setleftmargin' =>
   array (
     'init' => '4.0.5',
   ),
-  'setline' => 
+  'setline' =>
   array (
     'init' => '4.0.5',
   ),
-  'setlinespacing' => 
+  'setlinespacing' =>
   array (
     'init' => '4.0.5',
   ),
-  'setlocale' => 
+  'setlocale' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'setmargins' => 
+  'setmargins' =>
   array (
     'init' => '4.0.5',
   ),
-  'setmatrix' => 
+  'setmatrix' =>
   array (
     'init' => '4.0.5',
   ),
-  'setname' => 
+  'setname' =>
   array (
     'init' => '4.0.5',
   ),
-  'setover' => 
+  'setover' =>
   array (
     'init' => '4.0.5',
   ),
-  'setrate' => 
+  'setrate' =>
   array (
     'init' => '4.0.5',
   ),
-  'setratio' => 
+  'setratio' =>
   array (
     'init' => '4.0.5',
   ),
-  'setrawcookie' => 
+  'setrawcookie' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'setrightfill' => 
+  'setrightfill' =>
   array (
     'init' => '4.0.5',
   ),
-  'setrightmargin' => 
+  'setrightmargin' =>
   array (
     'init' => '4.0.5',
   ),
-  'setsockopt' => 
+  'setsockopt' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'setspacing' => 
+  'setspacing' =>
   array (
     'init' => '4.0.5',
   ),
-  'settype' => 
+  'settype' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'setup' => 
+  'setup' =>
   array (
     'init' => '4.0.5',
   ),
-  'sha1' => 
+  'sha1' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'sha1_file' => 
+  'sha1_file' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'shell_exec' => 
+  'shell_exec' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'shm_attach' => 
+  'shm_attach' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sysvshm',
   ),
-  'shm_close' => 
+  'shm_close' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.3',
   ),
-  'shm_delete' => 
+  'shm_delete' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.3',
   ),
-  'shm_detach' => 
+  'shm_detach' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sysvshm',
   ),
-  'shm_get_var' => 
+  'shm_get_var' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sysvshm',
   ),
-  'shm_open' => 
+  'shm_open' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.3',
   ),
-  'shm_put_var' => 
+  'shm_put_var' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sysvshm',
   ),
-  'shm_read' => 
+  'shm_read' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.3',
   ),
-  'shm_remove' => 
+  'shm_remove' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sysvshm',
   ),
-  'shm_remove_var' => 
+  'shm_remove_var' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sysvshm',
   ),
-  'shm_size' => 
+  'shm_size' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.3',
   ),
-  'shm_write' => 
+  'shm_write' =>
   array (
     'init' => '4.0.0',
     'end' => '4.0.3',
   ),
-  'shmop_close' => 
+  'shmop_close' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_shmop',
   ),
-  'shmop_delete' => 
+  'shmop_delete' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_shmop',
   ),
-  'shmop_open' => 
+  'shmop_open' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_shmop',
   ),
-  'shmop_read' => 
+  'shmop_read' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_shmop',
   ),
-  'shmop_size' => 
+  'shmop_size' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_shmop',
   ),
-  'shmop_write' => 
+  'shmop_write' =>
   array (
     'init' => '4.0.4',
     'ext' => 'ext_shmop',
   ),
-  'short_tags' => 
+  'short_tags' =>
   array (
     'init' => '3.0.0',
   ),
-  'show_source' => 
+  'show_source' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'shuffle' => 
+  'shuffle' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_standard',
   ),
-  'shutdown' => 
+  'shutdown' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'signal' => 
+  'signal' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'similar_text' => 
+  'similar_text' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_standard',
   ),
-  'simplexml_import_dom' => 
+  'simplexml_import_dom' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_simplexml',
   ),
-  'simplexml_load_file' => 
+  'simplexml_load_file' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_simplexml',
   ),
-  'simplexml_load_string' => 
+  'simplexml_load_string' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_simplexml',
   ),
-  'sin' => 
+  'sin' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'sinh' => 
+  'sinh' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'sizeof' => 
+  'sizeof' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'skewx' => 
+  'skewx' =>
   array (
     'init' => '4.0.5',
   ),
-  'skewxto' => 
+  'skewxto' =>
   array (
     'init' => '4.0.5',
   ),
-  'skewy' => 
+  'skewy' =>
   array (
     'init' => '4.0.5',
   ),
-  'skewyto' => 
+  'skewyto' =>
   array (
     'init' => '4.0.5',
   ),
-  'sleep' => 
+  'sleep' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'smfi_addheader' => 
+  'smfi_addheader' =>
   array (
     'init' => '5.0.0',
     'ext' => 'sapi_milter',
   ),
-  'smfi_addrcpt' => 
+  'smfi_addrcpt' =>
   array (
     'init' => '5.0.0',
     'ext' => 'sapi_milter',
   ),
-  'smfi_chgheader' => 
+  'smfi_chgheader' =>
   array (
     'init' => '5.0.0',
     'ext' => 'sapi_milter',
   ),
-  'smfi_delrcpt' => 
+  'smfi_delrcpt' =>
   array (
     'init' => '5.0.0',
     'ext' => 'sapi_milter',
   ),
-  'smfi_getsymval' => 
+  'smfi_getsymval' =>
   array (
     'init' => '5.0.0',
     'ext' => 'sapi_milter',
   ),
-  'smfi_replacebody' => 
+  'smfi_replacebody' =>
   array (
     'init' => '5.0.0',
     'ext' => 'sapi_milter',
   ),
-  'smfi_setflags' => 
+  'smfi_setflags' =>
   array (
     'init' => '5.0.0',
     'ext' => 'sapi_milter',
   ),
-  'smfi_setreply' => 
+  'smfi_setreply' =>
   array (
     'init' => '5.0.0',
     'ext' => 'sapi_milter',
   ),
-  'smfi_settimeout' => 
+  'smfi_settimeout' =>
   array (
     'init' => '5.0.0',
     'ext' => 'sapi_milter',
   ),
-  'snmp2_get' => 
+  'snmp2_get' =>
   array (
     'init' => '4.3.11',
   ),
-  'snmp2_getnext' => 
+  'snmp2_getnext' =>
   array (
     'init' => '5.0.4',
   ),
-  'snmp2_real_walk' => 
+  'snmp2_real_walk' =>
   array (
     'init' => '4.3.11',
   ),
-  'snmp2_set' => 
+  'snmp2_set' =>
   array (
     'init' => '4.3.11',
   ),
-  'snmp2_walk' => 
+  'snmp2_walk' =>
   array (
     'init' => '4.3.11',
   ),
-  'snmp3_get' => 
+  'snmp3_get' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_snmp',
   ),
-  'snmp3_getnext' => 
+  'snmp3_getnext' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_snmp',
   ),
-  'snmp3_real_walk' => 
+  'snmp3_real_walk' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_snmp',
   ),
-  'snmp3_set' => 
+  'snmp3_set' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_snmp',
   ),
-  'snmp3_walk' => 
+  'snmp3_walk' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_snmp',
   ),
-  'snmp_get_quick_print' => 
+  'snmp_get_quick_print' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_snmp',
   ),
-  'snmp_get_valueretrieval' => 
+  'snmp_get_valueretrieval' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_snmp',
   ),
-  'snmp_read_mib' => 
+  'snmp_read_mib' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_snmp',
   ),
-  'snmp_set_enum_print' => 
+  'snmp_set_enum_print' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_snmp',
   ),
-  'snmp_set_oid_numeric_print' => 
+  'snmp_set_oid_numeric_print' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_snmp',
   ),
-  'snmp_set_quick_print' => 
+  'snmp_set_quick_print' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_snmp',
   ),
-  'snmp_set_valueretrieval' => 
+  'snmp_set_valueretrieval' =>
   array (
     'init' => '4.3.3',
     'ext' => 'ext_snmp',
   ),
-  'snmpget' => 
+  'snmpget' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_snmp',
   ),
-  'snmpgetnext' => 
+  'snmpgetnext' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_snmp',
   ),
-  'snmprealwalk' => 
+  'snmprealwalk' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_snmp',
   ),
-  'snmpset' => 
+  'snmpset' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_snmp',
   ),
-  'snmpwalk' => 
+  'snmpwalk' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_snmp',
   ),
-  'snmpwalkoid' => 
+  'snmpwalkoid' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_snmp',
   ),
-  'soap_encode_to_xml' => 
+  'soap_encode_to_xml' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_soap',
   ),
-  'soap_encode_to_zval' => 
+  'soap_encode_to_zval' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_soap',
   ),
-  'socket' => 
+  'socket' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'socket_accept' => 
+  'socket_accept' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_bind' => 
+  'socket_bind' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_clear_error' => 
+  'socket_clear_error' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_close' => 
+  'socket_close' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_connect' => 
+  'socket_connect' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_create' => 
+  'socket_create' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_create_listen' => 
+  'socket_create_listen' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_create_pair' => 
+  'socket_create_pair' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_fd_alloc' => 
+  'socket_fd_alloc' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'socket_fd_clear' => 
+  'socket_fd_clear' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'socket_fd_free' => 
+  'socket_fd_free' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'socket_fd_isset' => 
+  'socket_fd_isset' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'socket_fd_set' => 
+  'socket_fd_set' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'socket_fd_zero' => 
+  'socket_fd_zero' =>
   array (
     'init' => '4.1.0',
     'end' => '4.1.2',
   ),
-  'socket_get_option' => 
+  'socket_get_option' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_get_status' => 
+  'socket_get_status' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'socket_getopt' => 
+  'socket_getopt' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_getpeername' => 
+  'socket_getpeername' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_getsockname' => 
+  'socket_getsockname' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_iovec_add' => 
+  'socket_iovec_add' =>
   array (
     'init' => '4.1.0',
   ),
-  'socket_iovec_alloc' => 
+  'socket_iovec_alloc' =>
   array (
     'init' => '4.1.0',
   ),
-  'socket_iovec_delete' => 
+  'socket_iovec_delete' =>
   array (
     'init' => '4.1.0',
   ),
-  'socket_iovec_fetch' => 
+  'socket_iovec_fetch' =>
   array (
     'init' => '4.1.0',
   ),
-  'socket_iovec_free' => 
+  'socket_iovec_free' =>
   array (
     'init' => '4.1.0',
   ),
-  'socket_iovec_set' => 
+  'socket_iovec_set' =>
   array (
     'init' => '4.1.0',
   ),
-  'socket_last_error' => 
-  array (
-    'init' => '4.1.0',
-    'ext' => 'ext_sockets',
-  ),
-  'socket_listen' => 
+  'socket_last_error' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_read' => 
+  'socket_listen' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_readv' => 
-  array (
-    'init' => '4.1.0',
-  ),
-  'socket_recv' => 
+  'socket_read' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_recvfrom' => 
+  'socket_readv' =>
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_recv' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_recvmsg' => 
-  array (
-    'init' => '4.1.0',
-  ),
-  'socket_select' => 
+  'socket_recvfrom' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_send' => 
+  'socket_recvmsg' =>
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_select' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_sendmsg' => 
-  array (
-    'init' => '4.1.0',
-  ),
-  'socket_sendto' => 
+  'socket_send' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_set_block' => 
+  'socket_sendmsg' =>
+  array (
+    'init' => '4.1.0',
+  ),
+  'socket_sendto' =>
+  array (
+    'init' => '4.1.0',
+    'ext' => 'ext_sockets',
+  ),
+  'socket_set_block' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_set_blocking' => 
+  'socket_set_blocking' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'socket_set_nonblock' => 
+  'socket_set_nonblock' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_set_option' => 
+  'socket_set_option' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_set_timeout' => 
+  'socket_set_timeout' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'socket_setopt' => 
+  'socket_setopt' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_shutdown' => 
+  'socket_shutdown' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_strerror' => 
+  'socket_strerror' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_write' => 
+  'socket_write' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_sockets',
   ),
-  'socket_writev' => 
+  'socket_writev' =>
   array (
     'init' => '4.1.0',
   ),
-  'socketpair' => 
+  'socketpair' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'solid_close' => 
+  'solid_close' =>
   array (
     'init' => '3.0.0',
   ),
-  'solid_connect' => 
+  'solid_connect' =>
   array (
     'init' => '3.0.0',
   ),
-  'solid_exec' => 
+  'solid_exec' =>
   array (
     'init' => '3.0.0',
   ),
-  'solid_fetch_prev' => 
+  'solid_fetch_prev' =>
   array (
     'init' => '3.0.0',
   ),
-  'solid_fetchrow' => 
+  'solid_fetchrow' =>
   array (
     'init' => '3.0.0',
   ),
-  'solid_fieldname' => 
+  'solid_fieldname' =>
   array (
     'init' => '3.0.0',
   ),
-  'solid_fieldnum' => 
+  'solid_fieldnum' =>
   array (
     'init' => '3.0.0',
   ),
-  'solid_freeresult' => 
+  'solid_freeresult' =>
   array (
     'init' => '3.0.0',
   ),
-  'solid_numfields' => 
+  'solid_numfields' =>
   array (
     'init' => '3.0.0',
   ),
-  'solid_numrows' => 
+  'solid_numrows' =>
   array (
     'init' => '3.0.0',
   ),
-  'solid_result' => 
+  'solid_result' =>
   array (
     'init' => '3.0.0',
   ),
-  'sort' => 
-  array (
-    'init' => '3.0.0',
-    'ext' => 'ext_standard',
-  ),
-  'soundex' => 
+  'sort' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'spl_autoload' => 
+  'soundex' =>
+  array (
+    'init' => '3.0.0',
+    'ext' => 'ext_standard',
+  ),
+  'spl_autoload' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_spl',
   ),
-  'spl_autoload_call' => 
+  'spl_autoload_call' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_spl',
   ),
-  'spl_autoload_extensions' => 
+  'spl_autoload_extensions' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_spl',
   ),
-  'spl_autoload_functions' => 
+  'spl_autoload_functions' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_spl',
   ),
-  'spl_autoload_register' => 
+  'spl_autoload_register' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_spl',
   ),
-  'spl_autoload_unregister' => 
+  'spl_autoload_unregister' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_spl',
   ),
-  'spl_classes' => 
+  'spl_classes' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_spl',
   ),
-  'split' => 
+  'split' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'spliti' => 
+  'spliti' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'sprintf' => 
+  'sprintf' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'sql_regcase' => 
+  'sql_regcase' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'sqlconnect' => 
+  'sqlconnect' =>
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
     'ext' => 'pecl_picosql',
   ),
-  'sqldisconnect' => 
+  'sqldisconnect' =>
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
     'ext' => 'pecl_picosql',
   ),
-  'sqlexecdirect' => 
+  'sqlexecdirect' =>
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
     'ext' => 'pecl_picosql',
   ),
-  'sqlfetch' => 
+  'sqlfetch' =>
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
     'ext' => 'pecl_picosql',
   ),
-  'sqlfree' => 
+  'sqlfree' =>
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
   ),
-  'sqlgetdata' => 
-  array (
-    'end' => '3.0.12',
-    'init' => '3.0.0',
-    'ext' => 'pecl_picosql',
-  ),
-  'sqlite_array_query' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_busy_timeout' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_changes' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_close' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_column' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_create_aggregate' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_current' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_error_string' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_escape_string' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_exec' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_factory' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_fetch_all' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_fetch_array' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_fetch_column_types' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_fetch_object' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_fetch_single' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_fetch_string' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_field_name' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_has_more' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_has_prev' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_last_error' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_last_insert_rowid' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_libencoding' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_libversion' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_next' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_num_fields' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_num_rows' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_open' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_popen' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_prev' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_query' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_rewind' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_seek' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_single_query' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_udf_decode_binary' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_udf_encode_binary' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_unbuffered_query' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlite_valid' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_sqlite',
-  ),
-  'sqlrowcount' => 
+  'sqlgetdata' =>
   array (
     'end' => '3.0.12',
     'init' => '3.0.0',
     'ext' => 'pecl_picosql',
   ),
-  'sqrt' => 
+  'sqlite_array_query' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_busy_timeout' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_changes' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_close' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_column' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_create_aggregate' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_current' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_error_string' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_escape_string' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_exec' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_factory' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_all' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_array' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_column_types' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_object' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_single' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_fetch_string' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_field_name' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_has_more' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_has_prev' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_last_error' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_last_insert_rowid' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_libencoding' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_libversion' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_next' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_num_fields' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_num_rows' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_open' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_popen' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_prev' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_query' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_rewind' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_seek' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_single_query' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_udf_decode_binary' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_udf_encode_binary' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_unbuffered_query' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlite_valid' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_sqlite',
+  ),
+  'sqlrowcount' =>
+  array (
+    'end' => '3.0.12',
+    'init' => '3.0.0',
+    'ext' => 'pecl_picosql',
+  ),
+  'sqrt' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'srand' => 
+  'srand' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'sscanf' => 
+  'sscanf' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'stat' => 
+  'stat' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'str_ireplace' => 
+  'str_ireplace' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'str_pad' => 
+  'str_pad' =>
   array (
     'init' => '4.0.1',
     'ext' => 'ext_standard',
   ),
-  'str_repeat' => 
+  'str_repeat' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'str_replace' => 
+  'str_replace' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'str_rot13' => 
+  'str_rot13' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'str_shuffle' => 
+  'str_shuffle' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'str_split' => 
+  'str_split' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'str_word_count' => 
+  'str_word_count' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'strcasecmp' => 
+  'strcasecmp' =>
   array (
     'init' => '3.0.2',
     'ext' => 'zend',
   ),
-  'strchr' => 
+  'strchr' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strcmp' => 
+  'strcmp' =>
   array (
     'init' => '3.0.0',
     'ext' => 'zend',
   ),
-  'strcoll' => 
+  'strcoll' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_standard',
   ),
-  'strcspn' => 
+  'strcspn' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_standard',
   ),
-  'stream_bucket_append' => 
+  'stream_bucket_append' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_bucket_make_writeable' => 
+  'stream_bucket_make_writeable' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_bucket_new' => 
+  'stream_bucket_new' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_bucket_prepend' => 
+  'stream_bucket_prepend' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_context_create' => 
+  'stream_context_create' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_context_get_default' => 
+  'stream_context_get_default' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'stream_context_get_options' => 
+  'stream_context_get_options' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_context_set_option' => 
+  'stream_context_set_option' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_context_set_params' => 
+  'stream_context_set_params' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_copy_to_stream' => 
+  'stream_copy_to_stream' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_filter_append' => 
+  'stream_filter_append' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_filter_prepend' => 
+  'stream_filter_prepend' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_filter_register' => 
+  'stream_filter_register' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_filter_remove' => 
+  'stream_filter_remove' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'stream_get_contents' => 
+  'stream_get_contents' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_get_filters' => 
+  'stream_get_filters' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_get_line' => 
+  'stream_get_line' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_get_meta_data' => 
+  'stream_get_meta_data' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_get_transports' => 
+  'stream_get_transports' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_get_wrappers' => 
+  'stream_get_wrappers' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_register_wrapper' => 
+  'stream_register_wrapper' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_select' => 
+  'stream_select' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_set_blocking' => 
+  'stream_set_blocking' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_set_timeout' => 
+  'stream_set_timeout' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_set_write_buffer' => 
+  'stream_set_write_buffer' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_standard',
   ),
-  'stream_socket_accept' => 
+  'stream_socket_accept' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_socket_client' => 
+  'stream_socket_client' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_socket_enable_crypto' => 
+  'stream_socket_enable_crypto' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'stream_socket_get_name' => 
+  'stream_socket_get_name' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_socket_pair' => 
+  'stream_socket_pair' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'stream_socket_recvfrom' => 
+  'stream_socket_recvfrom' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_socket_sendto' => 
+  'stream_socket_sendto' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_socket_server' => 
+  'stream_socket_server' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stream_wrapper_register' => 
+  'stream_wrapper_register' =>
   array (
     'init' => '4.3.2',
     'ext' => 'ext_standard',
   ),
-  'stream_wrapper_restore' => 
+  'stream_wrapper_restore' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'stream_wrapper_unregister' => 
+  'stream_wrapper_unregister' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'streammp3' => 
+  'streammp3' =>
   array (
     'init' => '4.0.5',
   ),
-  'strerror' => 
+  'strerror' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'strftime' => 
+  'strftime' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strip_tags' => 
+  'strip_tags' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_standard',
   ),
-  'stripcslashes' => 
+  'stripcslashes' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'stripos' => 
+  'stripos' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'stripslashes' => 
+  'stripslashes' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'stristr' => 
+  'stristr' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_standard',
   ),
-  'strlen' => 
+  'strlen' =>
   array (
     'init' => '3.0.0',
     'ext' => 'zend',
   ),
-  'strnatcasecmp' => 
+  'strnatcasecmp' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'strnatcmp' => 
+  'strnatcmp' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'strncasecmp' => 
+  'strncasecmp' =>
   array (
     'init' => '4.0.2',
     'ext' => 'zend',
   ),
-  'strncmp' => 
+  'strncmp' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'strpbrk' => 
+  'strpbrk' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'strpos' => 
+  'strpos' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strptime' => 
+  'strptime' =>
   array (
     'init' => '5.1.0RC1',
     'ext' => 'ext_standard',
   ),
-  'strrchr' => 
+  'strrchr' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strrev' => 
+  'strrev' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strripos' => 
+  'strripos' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'strrpos' => 
+  'strrpos' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strspn' => 
+  'strspn' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_standard',
   ),
-  'strstr' => 
+  'strstr' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strtok' => 
+  'strtok' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strtolower' => 
+  'strtolower' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strtotime' => 
+  'strtotime' =>
   array (
     'init' => '3.0.12',
     'ext' => 'ext_standard',
   ),
-  'strtoupper' => 
+  'strtoupper' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strtr' => 
+  'strtr' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'strval' => 
+  'strval' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'substr' => 
+  'substr' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'substr_compare' => 
+  'substr_compare' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'substr_count' => 
+  'substr_count' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'substr_replace' => 
+  'substr_replace' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'swf_actiongeturl' => 
+  'swf_actiongeturl' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_actiongotoframe' => 
+  'swf_actiongotoframe' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_actiongotolabel' => 
+  'swf_actiongotolabel' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_actionnextframe' => 
+  'swf_actionnextframe' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_actionplay' => 
+  'swf_actionplay' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_actionprevframe' => 
+  'swf_actionprevframe' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_actionsettarget' => 
+  'swf_actionsettarget' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_actionstop' => 
+  'swf_actionstop' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_actiontogglequality' => 
+  'swf_actiontogglequality' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_actionwaitforframe' => 
+  'swf_actionwaitforframe' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_addbuttonrecord' => 
+  'swf_addbuttonrecord' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_addcolor' => 
+  'swf_addcolor' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_closefile' => 
+  'swf_closefile' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_definebitmap' => 
+  'swf_definebitmap' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_definefont' => 
+  'swf_definefont' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_defineline' => 
+  'swf_defineline' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_definepoly' => 
+  'swf_definepoly' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_definerect' => 
+  'swf_definerect' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_definetext' => 
+  'swf_definetext' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_endbutton' => 
+  'swf_endbutton' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_enddoaction' => 
+  'swf_enddoaction' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_endshape' => 
+  'swf_endshape' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_endsymbol' => 
+  'swf_endsymbol' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_fontsize' => 
+  'swf_fontsize' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_fontslant' => 
+  'swf_fontslant' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_fonttracking' => 
+  'swf_fonttracking' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_getbitmapinfo' => 
+  'swf_getbitmapinfo' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_getfontinfo' => 
+  'swf_getfontinfo' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_getframe' => 
+  'swf_getframe' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_labelframe' => 
+  'swf_labelframe' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_lookat' => 
+  'swf_lookat' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_modifyobject' => 
+  'swf_modifyobject' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_mulcolor' => 
+  'swf_mulcolor' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_nextid' => 
+  'swf_nextid' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_oncondition' => 
+  'swf_oncondition' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_openfile' => 
+  'swf_openfile' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_ortho' => 
+  'swf_ortho' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_swf',
   ),
-  'swf_ortho2' => 
+  'swf_ortho2' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_perspective' => 
+  'swf_perspective' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_placeobject' => 
+  'swf_placeobject' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_polarview' => 
+  'swf_polarview' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_popmatrix' => 
+  'swf_popmatrix' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_posround' => 
+  'swf_posround' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_pushmatrix' => 
+  'swf_pushmatrix' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_removeobject' => 
+  'swf_removeobject' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_rotate' => 
+  'swf_rotate' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_scale' => 
+  'swf_scale' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_setfont' => 
+  'swf_setfont' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_setframe' => 
+  'swf_setframe' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_shapearc' => 
+  'swf_shapearc' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_shapecurveto' => 
+  'swf_shapecurveto' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_shapecurveto3' => 
+  'swf_shapecurveto3' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_shapefillbitmapclip' => 
+  'swf_shapefillbitmapclip' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_shapefillbitmaptile' => 
+  'swf_shapefillbitmaptile' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_shapefilloff' => 
+  'swf_shapefilloff' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_shapefillsolid' => 
+  'swf_shapefillsolid' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_shapelinesolid' => 
+  'swf_shapelinesolid' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_shapelineto' => 
+  'swf_shapelineto' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_shapemoveto' => 
+  'swf_shapemoveto' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_showframe' => 
+  'swf_showframe' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_startbutton' => 
+  'swf_startbutton' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_startdoaction' => 
+  'swf_startdoaction' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_startshape' => 
+  'swf_startshape' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_startsymbol' => 
+  'swf_startsymbol' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_textwidth' => 
+  'swf_textwidth' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_translate' => 
+  'swf_translate' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swf_viewport' => 
+  'swf_viewport' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_swf',
   ),
-  'swfaction' => 
+  'swfaction' =>
   array (
     'init' => '4.0.5',
   ),
-  'swfbitmap' => 
+  'swfbitmap' =>
   array (
     'init' => '4.0.5',
   ),
-  'swfbutton' => 
+  'swfbutton' =>
   array (
     'init' => '4.0.5',
   ),
-  'swfbutton_keypress' => 
+  'swfbutton_keypress' =>
   array (
     'init' => '4.0.5',
   ),
-  'swffill' => 
+  'swffill' =>
   array (
     'init' => '4.0.5',
   ),
-  'swffont' => 
+  'swffont' =>
   array (
     'init' => '4.0.5',
   ),
-  'swfgradient' => 
+  'swfgradient' =>
   array (
     'init' => '4.0.5',
   ),
-  'swfmorph' => 
+  'swfmorph' =>
   array (
     'init' => '4.0.5',
   ),
-  'swfmovie' => 
+  'swfmovie' =>
   array (
     'init' => '4.0.5',
   ),
-  'swfshape' => 
+  'swfshape' =>
   array (
     'init' => '4.0.5',
   ),
-  'swfsprite' => 
+  'swfsprite' =>
   array (
     'init' => '4.0.5',
   ),
-  'swftext' => 
+  'swftext' =>
   array (
     'init' => '4.0.5',
   ),
-  'swftextfield' => 
+  'swftextfield' =>
   array (
     'init' => '4.0.5',
   ),
-  'sybase_affected_rows' => 
+  'sybase_affected_rows' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_sybase',
   ),
-  'sybase_close' => 
+  'sybase_close' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_connect' => 
+  'sybase_connect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_data_seek' => 
+  'sybase_data_seek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_deadlock_retry_count' => 
+  'sybase_deadlock_retry_count' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'sybase_fetch_array' => 
+  'sybase_fetch_array' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_fetch_assoc' => 
+  'sybase_fetch_assoc' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'sybase_fetch_field' => 
+  'sybase_fetch_field' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_fetch_object' => 
+  'sybase_fetch_object' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_fetch_row' => 
+  'sybase_fetch_row' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_field_seek' => 
+  'sybase_field_seek' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_free_result' => 
+  'sybase_free_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_get_last_message' => 
+  'sybase_get_last_message' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_min_client_severity' => 
+  'sybase_min_client_severity' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'sybase_min_error_severity' => 
+  'sybase_min_error_severity' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_min_message_severity' => 
+  'sybase_min_message_severity' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_min_server_severity' => 
+  'sybase_min_server_severity' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'sybase_num_fields' => 
+  'sybase_num_fields' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_num_rows' => 
+  'sybase_num_rows' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_pconnect' => 
+  'sybase_pconnect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_query' => 
+  'sybase_query' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_result' => 
+  'sybase_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_select_db' => 
+  'sybase_select_db' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_sybase',
   ),
-  'sybase_set_message_handler' => 
+  'sybase_set_message_handler' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'sybase_unbuffered_query' => 
+  'sybase_unbuffered_query' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_sybase_ct',
   ),
-  'symlink' => 
+  'symlink' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'syslog' => 
+  'syslog' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'system' => 
+  'system' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'tan' => 
+  'tan' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'tanh' => 
+  'tanh' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'tempnam' => 
+  'tempnam' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'textdomain' => 
+  'textdomain' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_gettext',
   ),
-  'tidy_access_count' => 
+  'tidy_access_count' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_clean_repair' => 
+  'tidy_clean_repair' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_config_count' => 
+  'tidy_config_count' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_diagnose' => 
+  'tidy_diagnose' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_error_count' => 
+  'tidy_error_count' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_get_body' => 
+  'tidy_get_body' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_get_config' => 
+  'tidy_get_config' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_get_error_buffer' => 
+  'tidy_get_error_buffer' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_get_head' => 
+  'tidy_get_head' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_get_html' => 
+  'tidy_get_html' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_get_html_ver' => 
+  'tidy_get_html_ver' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_get_opt_doc' => 
+  'tidy_get_opt_doc' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'tidy_get_output' => 
+  'tidy_get_output' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_get_release' => 
+  'tidy_get_release' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_get_root' => 
+  'tidy_get_root' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_get_status' => 
+  'tidy_get_status' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_getopt' => 
+  'tidy_getopt' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_is_xhtml' => 
+  'tidy_is_xhtml' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_is_xml' => 
+  'tidy_is_xml' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_parse_file' => 
+  'tidy_parse_file' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_parse_string' => 
+  'tidy_parse_string' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_repair_file' => 
+  'tidy_repair_file' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_repair_string' => 
+  'tidy_repair_string' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'tidy_warning_count' => 
+  'tidy_warning_count' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_tidy',
   ),
-  'time' => 
+  'time' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'time_nanosleep' => 
+  'time_nanosleep' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'time_sleep_until' => 
+  'time_sleep_until' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'timezone_abbreviations_list' => 
+  'timezone_abbreviations_list' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'timezone_identifiers_list' => 
+  'timezone_identifiers_list' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'timezone_name_get' => 
+  'timezone_name_get' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'timezone_offset_get' => 
+  'timezone_offset_get' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'timezone_open' => 
+  'timezone_open' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'timezone_transistions_get' => 
+  'timezone_transistions_get' =>
   array (
     'init' => '5.1.0RC1',
   ),
-  'tmpfile' => 
+  'tmpfile' =>
   array (
     'init' => '3.0.13',
     'ext' => 'ext_standard',
   ),
-  'token_get_all' => 
+  'token_get_all' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_tokenizer',
   ),
-  'token_name' => 
+  'token_name' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_tokenizer',
   ),
-  'touch' => 
+  'touch' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'trigger_error' => 
+  'trigger_error' =>
   array (
     'init' => '4.0.1',
     'ext' => 'zend',
   ),
-  'trim' => 
+  'trim' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'uasort' => 
+  'uasort' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_standard',
   ),
-  'ucfirst' => 
+  'ucfirst' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'ucwords' => 
+  'ucwords' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_standard',
   ),
-  'udm_add_search_limit' => 
+  'udm_add_search_limit' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_alloc_agent' => 
+  'udm_alloc_agent' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_alloc_agent_array' => 
+  'udm_alloc_agent_array' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_api_version' => 
+  'udm_api_version' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_cat_list' => 
+  'udm_cat_list' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_cat_path' => 
+  'udm_cat_path' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_check_charset' => 
+  'udm_check_charset' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_check_stored' => 
+  'udm_check_stored' =>
   array (
     'init' => '4.2.0',
   ),
-  'udm_clear_search_limits' => 
+  'udm_clear_search_limits' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_close_stored' => 
+  'udm_close_stored' =>
   array (
     'init' => '4.2.0',
   ),
-  'udm_crc32' => 
+  'udm_crc32' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_errno' => 
+  'udm_errno' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_error' => 
+  'udm_error' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_find' => 
+  'udm_find' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_free_agent' => 
+  'udm_free_agent' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_free_ispell_data' => 
+  'udm_free_ispell_data' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_free_res' => 
+  'udm_free_res' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_get_agent_param_ex' => 
+  'udm_get_agent_param_ex' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_get_doc_count' => 
+  'udm_get_doc_count' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_get_res_field' => 
+  'udm_get_res_field' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_get_res_field_ex' => 
+  'udm_get_res_field_ex' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_get_res_param' => 
+  'udm_get_res_param' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_hash32' => 
+  'udm_hash32' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_load_ispell_data' => 
+  'udm_load_ispell_data' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_make_excerpt' => 
+  'udm_make_excerpt' =>
   array (
     'init' => '4.3.0',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_open_stored' => 
+  'udm_open_stored' =>
   array (
     'init' => '4.2.0',
   ),
-  'udm_parse_query_string' => 
+  'udm_parse_query_string' =>
   array (
     'init' => '4.3.0',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_set_agent_param' => 
+  'udm_set_agent_param' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_set_agent_param_ex' => 
+  'udm_set_agent_param_ex' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.4',
     'ext' => 'ext_mnogosearch',
   ),
-  'udm_store_doc_cgi' => 
+  'udm_store_doc_cgi' =>
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
     'ext' => 'ext_mnogosearch',
   ),
-  'uksort' => 
+  'uksort' =>
   array (
     'init' => '3.0.4',
     'ext' => 'ext_standard',
   ),
-  'umask' => 
+  'umask' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'unicode_decode' => 
+  'unicode_decode' =>
   array (
     'init' => '5.0.0',
   ),
-  'unicode_encode' => 
+  'unicode_encode' =>
   array (
     'init' => '5.0.0',
   ),
-  'uniqid' => 
+  'uniqid' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'unixtojd' => 
+  'unixtojd' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_calendar',
   ),
-  'unlink' => 
+  'unlink' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'unpack' => 
+  'unpack' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'unregister_tick_function' => 
+  'unregister_tick_function' =>
   array (
     'init' => '4.0.3',
     'ext' => 'ext_standard',
   ),
-  'unserialize' => 
+  'unserialize' =>
   array (
     'init' => '3.0.5',
     'ext' => 'ext_standard',
   ),
-  'urldecode' => 
+  'urldecode' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'urlencode' => 
+  'urlencode' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'use_soap_error_handler' => 
+  'use_soap_error_handler' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_soap',
   ),
-  'user_error' => 
+  'user_error' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'usleep' => 
+  'usleep' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_standard',
   ),
-  'usort' => 
+  'usort' =>
   array (
     'init' => '3.0.3',
     'ext' => 'ext_standard',
   ),
-  'utf8_decode' => 
+  'utf8_decode' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'utf8_encode' => 
+  'utf8_encode' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'var_dump' => 
+  'var_dump' =>
   array (
     'init' => '3.0.5',
     'ext' => 'ext_standard',
   ),
-  'var_export' => 
+  'var_export' =>
   array (
     'init' => '4.2.0',
     'ext' => 'ext_standard',
   ),
-  'var_inspect' => 
+  'var_inspect' =>
   array (
     'init' => '5.0.0',
   ),
-  'variant_abs' => 
-  array (
-    'init' => '5.0.0',
-    'ext' => 'ext_com_dotnet',
-  ),
-  'variant_add' => 
+  'variant_abs' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_and' => 
+  'variant_add' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_cast' => 
+  'variant_and' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_cat' => 
+  'variant_cast' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_cmp' => 
+  'variant_cat' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_date_from_timestamp' => 
+  'variant_cmp' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_date_to_timestamp' => 
+  'variant_date_from_timestamp' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_div' => 
+  'variant_date_to_timestamp' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_eqv' => 
+  'variant_div' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_fix' => 
+  'variant_eqv' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_get_type' => 
+  'variant_fix' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_idiv' => 
+  'variant_get_type' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_imp' => 
+  'variant_idiv' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_int' => 
+  'variant_imp' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_mod' => 
+  'variant_int' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_mul' => 
+  'variant_mod' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_neg' => 
+  'variant_mul' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_not' => 
+  'variant_neg' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_or' => 
+  'variant_not' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_pow' => 
+  'variant_or' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_round' => 
+  'variant_pow' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_set' => 
+  'variant_round' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_set_type' => 
+  'variant_set' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_sub' => 
+  'variant_set_type' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'variant_xor' => 
+  'variant_sub' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_com_dotnet',
   ),
-  'velocis_autocommit' => 
+  'variant_xor' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'ext_com_dotnet',
+  ),
+  'velocis_autocommit' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_close' => 
+  'velocis_close' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_commit' => 
+  'velocis_commit' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_connect' => 
+  'velocis_connect' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_exec' => 
+  'velocis_exec' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_fetch' => 
+  'velocis_fetch' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_fieldname' => 
+  'velocis_fieldname' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_fieldnum' => 
+  'velocis_fieldnum' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_freeresult' => 
+  'velocis_freeresult' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_off_autocommit' => 
+  'velocis_off_autocommit' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_result' => 
+  'velocis_result' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'velocis_rollback' => 
+  'velocis_rollback' =>
   array (
     'init' => '3.0.0',
     'ext' => 'ext_odbc',
   ),
-  'version_compare' => 
+  'version_compare' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'vfprintf' => 
+  'vfprintf' =>
   array (
     'init' => '5.0.0',
     'ext' => 'ext_standard',
   ),
-  'virtual' => 
+  'virtual' =>
   array (
     'init' => '3.0.0',
     'ext' => 'sapi_apache',
   ),
-  'vm_addalias' => 
+  'vm_addalias' =>
   array (
     'init' => '3.0.0',
   ),
-  'vm_adduser' => 
+  'vm_adduser' =>
   array (
     'init' => '3.0.0',
   ),
-  'vm_delalias' => 
+  'vm_delalias' =>
   array (
     'init' => '3.0.0',
   ),
-  'vm_deluser' => 
+  'vm_deluser' =>
   array (
     'init' => '3.0.0',
   ),
-  'vm_passwd' => 
+  'vm_passwd' =>
   array (
     'init' => '3.0.0',
   ),
-  'vpopmail_add_alias_domain' => 
+  'vpopmail_add_alias_domain' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_add_alias_domain_ex' => 
+  'vpopmail_add_alias_domain_ex' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_add_domain' => 
+  'vpopmail_add_domain' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_add_domain_ex' => 
+  'vpopmail_add_domain_ex' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_add_user' => 
+  'vpopmail_add_user' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_alias_add' => 
+  'vpopmail_alias_add' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_alias_del' => 
+  'vpopmail_alias_del' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_alias_del_domain' => 
+  'vpopmail_alias_del_domain' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_alias_get' => 
+  'vpopmail_alias_get' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_alias_get_all' => 
+  'vpopmail_alias_get_all' =>
   array (
     'init' => '4.1.0',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_auth_user' => 
+  'vpopmail_auth_user' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_del_domain' => 
+  'vpopmail_del_domain' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_del_domain_ex' => 
+  'vpopmail_del_domain_ex' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_del_user' => 
+  'vpopmail_del_user' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_error' => 
+  'vpopmail_error' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_passwd' => 
+  'vpopmail_passwd' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vpopmail_set_user_quota' => 
+  'vpopmail_set_user_quota' =>
   array (
     'init' => '4.0.5',
     'end' => '4.2.3',
     'ext' => 'pecl_vpopmail',
   ),
-  'vprintf' => 
+  'vprintf' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'vsprintf' => 
+  'vsprintf' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_standard',
   ),
-  'w32api_deftype' => 
+  'w32api_deftype' =>
   array (
     'init' => '4.2.0',
     'end' => '4.2.3',
   ),
-  'w32api_init_dtype' => 
+  'w32api_init_dtype' =>
   array (
     'init' => '4.2.0',
     'end' => '4.2.3',
   ),
-  'w32api_invoke_function' => 
+  'w32api_invoke_function' =>
   array (
     'init' => '4.2.0',
     'end' => '4.2.3',
   ),
-  'w32api_register_function' => 
+  'w32api_register_function' =>
   array (
     'init' => '4.2.0',
     'end' => '4.2.3',
   ),
-  'w32api_set_call_method' => 
+  'w32api_set_call_method' =>
   array (
     'init' => '4.2.0',
     'end' => '4.2.3',
   ),
-  'wddx_add_vars' => 
+  'wddx_add_vars' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_wddx',
   ),
-  'wddx_deserialize' => 
+  'wddx_deserialize' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_wddx',
   ),
-  'wddx_packet_end' => 
+  'wddx_packet_end' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_wddx',
   ),
-  'wddx_packet_start' => 
+  'wddx_packet_start' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_wddx',
   ),
-  'wddx_serialize' => 
+  'wddx_serialize' =>
   array (
     'init' => '3.0.7',
   ),
-  'wddx_serialize_value' => 
-  array (
-    'init' => '3.0.7',
-    'ext' => 'ext_wddx',
-  ),
-  'wddx_serialize_vars' => 
+  'wddx_serialize_value' =>
   array (
     'init' => '3.0.7',
     'ext' => 'ext_wddx',
   ),
-  'wddx_unserialize' => 
+  'wddx_serialize_vars' =>
+  array (
+    'init' => '3.0.7',
+    'ext' => 'ext_wddx',
+  ),
+  'wddx_unserialize' =>
   array (
     'init' => '3.0.7',
   ),
-  'wordwrap' => 
+  'wordwrap' =>
   array (
     'init' => '4.0.2',
     'ext' => 'ext_standard',
   ),
-  'write' => 
-  array (
-    'init' => '4.0.2',
-    'end' => '4.0.6',
-  ),
-  'writev' => 
+  'write' =>
   array (
     'init' => '4.0.2',
     'end' => '4.0.6',
   ),
-  'xml_error_string' => 
+  'writev' =>
+  array (
+    'init' => '4.0.2',
+    'end' => '4.0.6',
+  ),
+  'xml_error_string' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_get_current_byte_index' => 
+  'xml_get_current_byte_index' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_get_current_column_number' => 
+  'xml_get_current_column_number' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_get_current_line_number' => 
+  'xml_get_current_line_number' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_get_error_code' => 
+  'xml_get_error_code' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_parse' => 
+  'xml_parse' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_parse_into_struct' => 
+  'xml_parse_into_struct' =>
   array (
     'init' => '3.0.8',
     'ext' => 'ext_xml',
   ),
-  'xml_parser_create' => 
+  'xml_parser_create' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_parser_create_ns' => 
+  'xml_parser_create_ns' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_xml',
   ),
-  'xml_parser_free' => 
+  'xml_parser_free' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_parser_get_option' => 
+  'xml_parser_get_option' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_parser_set_option' => 
+  'xml_parser_set_option' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_set_character_data_handler' => 
+  'xml_set_character_data_handler' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_set_default_handler' => 
+  'xml_set_default_handler' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_set_element_handler' => 
+  'xml_set_element_handler' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_set_end_namespace_decl_handler' => 
+  'xml_set_end_namespace_decl_handler' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_xml',
   ),
-  'xml_set_external_entity_ref_handler' => 
+  'xml_set_external_entity_ref_handler' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_set_notation_decl_handler' => 
+  'xml_set_notation_decl_handler' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_set_object' => 
+  'xml_set_object' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_xml',
   ),
-  'xml_set_processing_instruction_handler' => 
+  'xml_set_processing_instruction_handler' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xml_set_start_namespace_decl_handler' => 
+  'xml_set_start_namespace_decl_handler' =>
   array (
     'init' => '4.0.5',
     'ext' => 'ext_xml',
   ),
-  'xml_set_unparsed_entity_decl_handler' => 
+  'xml_set_unparsed_entity_decl_handler' =>
   array (
     'init' => '3.0.6',
     'ext' => 'ext_xml',
   ),
-  'xmldoc' => 
-  array (
-    'init' => '4.0.0',
-    'ext' => 'pecl_domxml',
-  ),
-  'xmldocfile' => 
+  'xmldoc' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'xmlrpc_decode' => 
+  'xmldocfile' =>
+  array (
+    'init' => '4.0.0',
+    'ext' => 'pecl_domxml',
+  ),
+  'xmlrpc_decode' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_decode_request' => 
+  'xmlrpc_decode_request' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_encode' => 
+  'xmlrpc_encode' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_encode_request' => 
+  'xmlrpc_encode_request' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_get_type' => 
+  'xmlrpc_get_type' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_is_fault' => 
+  'xmlrpc_is_fault' =>
   array (
     'init' => '4.3.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_parse_method_descriptions' => 
+  'xmlrpc_parse_method_descriptions' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_server_add_introspection_data' => 
+  'xmlrpc_server_add_introspection_data' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_server_call_method' => 
+  'xmlrpc_server_call_method' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_server_create' => 
+  'xmlrpc_server_create' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_server_destroy' => 
+  'xmlrpc_server_destroy' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_server_register_introspection_callback' => 
+  'xmlrpc_server_register_introspection_callback' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_server_register_method' => 
+  'xmlrpc_server_register_method' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmlrpc_set_type' => 
+  'xmlrpc_set_type' =>
   array (
     'init' => '4.1.0',
     'ext' => 'ext_xmlrpc',
   ),
-  'xmltree' => 
+  'xmltree' =>
   array (
     'init' => '4.0.0',
     'ext' => 'pecl_domxml',
   ),
-  'xpath_eval' => 
+  'xpath_eval' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_domxml',
   ),
-  'xpath_eval_expression' => 
+  'xpath_eval_expression' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_domxml',
   ),
-  'xpath_new_context' => 
+  'xpath_new_context' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_domxml',
   ),
-  'xpath_register_ns' => 
+  'xpath_register_ns' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_domxml',
   ),
-  'xptr_eval' => 
+  'xptr_eval' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_domxml',
   ),
-  'xptr_new_context' => 
+  'xptr_new_context' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_domxml',
   ),
-  'xslt_backend_info' => 
+  'xslt_backend_info' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_backend_name' => 
+  'xslt_backend_name' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_backend_version' => 
+  'xslt_backend_version' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_closelog' => 
+  'xslt_closelog' =>
   array (
     'init' => '4.0.3',
     'end' => '4.0.6',
   ),
-  'xslt_create' => 
+  'xslt_create' =>
   array (
     'init' => '4.0.3',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_errno' => 
+  'xslt_errno' =>
   array (
     'init' => '4.0.3',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_error' => 
+  'xslt_error' =>
   array (
     'init' => '4.0.3',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_fetch_result' => 
+  'xslt_fetch_result' =>
   array (
     'init' => '4.0.3',
     'end' => '4.0.6',
   ),
-  'xslt_free' => 
+  'xslt_free' =>
   array (
     'init' => '4.0.3',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_getopt' => 
+  'xslt_getopt' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_openlog' => 
+  'xslt_openlog' =>
   array (
     'init' => '4.0.3',
     'end' => '4.0.6',
   ),
-  'xslt_output_begintransform' => 
+  'xslt_output_begintransform' =>
   array (
     'init' => '4.0.3',
     'end' => '4.0.6',
   ),
-  'xslt_output_endtransform' => 
+  'xslt_output_endtransform' =>
   array (
     'init' => '4.0.3',
     'end' => '4.0.6',
   ),
-  'xslt_process' => 
+  'xslt_process' =>
   array (
     'init' => '4.0.3',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_run' => 
+  'xslt_run' =>
   array (
     'init' => '4.0.3',
     'end' => '4.0.6',
   ),
-  'xslt_set_base' => 
+  'xslt_set_base' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_set_encoding' => 
+  'xslt_set_encoding' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_set_error_handler' => 
+  'xslt_set_error_handler' =>
   array (
     'init' => '4.0.4',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_set_log' => 
+  'xslt_set_log' =>
   array (
     'init' => '4.0.6',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_set_object' => 
+  'xslt_set_object' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_set_sax_handler' => 
+  'xslt_set_sax_handler' =>
   array (
     'init' => '4.0.3',
     'end' => '4.0.6',
   ),
-  'xslt_set_sax_handlers' => 
+  'xslt_set_sax_handlers' =>
   array (
     'init' => '4.0.6',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_set_scheme_handler' => 
+  'xslt_set_scheme_handler' =>
   array (
     'init' => '4.0.5',
     'end' => '4.0.6',
   ),
-  'xslt_set_scheme_handlers' => 
+  'xslt_set_scheme_handlers' =>
   array (
     'init' => '4.0.6',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_setopt' => 
+  'xslt_setopt' =>
   array (
     'init' => '4.3.0',
     'ext' => 'pecl_xslt',
   ),
-  'xslt_transform' => 
+  'xslt_transform' =>
   array (
     'init' => '4.0.3',
     'end' => '4.0.6',
   ),
-  'yaz_addinfo' => 
+  'yaz_addinfo' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_ccl_conf' => 
+  'yaz_ccl_conf' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_ccl_parse' => 
+  'yaz_ccl_parse' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_close' => 
+  'yaz_close' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_connect' => 
+  'yaz_connect' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_database' => 
+  'yaz_database' =>
   array (
     'init' => '4.0.6',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_element' => 
+  'yaz_element' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_errno' => 
+  'yaz_errno' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_error' => 
+  'yaz_error' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_es_result' => 
+  'yaz_es_result' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_hits' => 
+  'yaz_hits' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_itemorder' => 
+  'yaz_itemorder' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_present' => 
+  'yaz_present' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_range' => 
+  'yaz_range' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_record' => 
+  'yaz_record' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_scan' => 
+  'yaz_scan' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_scan_result' => 
+  'yaz_scan_result' =>
   array (
     'init' => '4.0.5',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_schema' => 
+  'yaz_schema' =>
   array (
     'init' => '4.2.0',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_search' => 
+  'yaz_search' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_sort' => 
+  'yaz_sort' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_syntax' => 
+  'yaz_syntax' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yaz_wait' => 
+  'yaz_wait' =>
   array (
     'init' => '4.0.1',
     'ext' => 'pecl_yaz',
   ),
-  'yp_all' => 
+  'yp_all' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'pecl_yp',
   ),
-  'yp_cat' => 
+  'yp_cat' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'pecl_yp',
   ),
-  'yp_err_string' => 
+  'yp_err_string' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'pecl_yp',
   ),
-  'yp_errno' => 
+  'yp_errno' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.4',
     'ext' => 'pecl_yp',
   ),
-  'yp_first' => 
+  'yp_first' =>
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
     'ext' => 'pecl_yp',
   ),
-  'yp_get_default_domain' => 
+  'yp_get_default_domain' =>
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
     'ext' => 'pecl_yp',
   ),
-  'yp_master' => 
+  'yp_master' =>
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
     'ext' => 'pecl_yp',
   ),
-  'yp_match' => 
+  'yp_match' =>
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
     'ext' => 'pecl_yp',
   ),
-  'yp_next' => 
+  'yp_next' =>
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
     'ext' => 'pecl_yp',
   ),
-  'yp_order' => 
+  'yp_order' =>
   array (
     'init' => '3.0.7',
     'end' => '5.0.4',
     'ext' => 'pecl_yp',
   ),
-  'zend_logo_guid' => 
+  'zend_logo_guid' =>
   array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
   ),
-  'zend_test_func' => 
+  'zend_test_func' =>
   array (
     'init' => '4.0.1',
     'ext' => 'zend',
   ),
-  'zend_thread_id' => 
+  'zend_thread_id' =>
   array (
     'init' => '5.0.0',
     'ext' => 'zend',
   ),
-  'zend_version' => 
+  'zend_version' =>
   array (
     'init' => '4.0.0',
     'ext' => 'zend',
   ),
-  'zip_close' => 
+  'zip_close' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_zip',
   ),
-  'zip_entry_close' => 
+  'zip_entry_close' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_zip',
   ),
-  'zip_entry_compressedsize' => 
+  'zip_entry_compressedsize' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_zip',
   ),
-  'zip_entry_compressionmethod' => 
+  'zip_entry_compressionmethod' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_zip',
   ),
-  'zip_entry_filesize' => 
+  'zip_entry_filesize' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_zip',
   ),
-  'zip_entry_name' => 
+  'zip_entry_name' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_zip',
   ),
-  'zip_entry_open' => 
+  'zip_entry_open' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_zip',
   ),
-  'zip_entry_read' => 
+  'zip_entry_read' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_zip',
   ),
-  'zip_open' => 
+  'zip_open' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_zip',
   ),
-  'zip_read' => 
+  'zip_read' =>
   array (
     'init' => '4.1.0',
     'ext' => 'pecl_zip',
   ),
-  'zlib_get_coding_type' => 
+  'zlib_get_coding_type' =>
   array (
     'init' => '4.3.2',
     'ext' => 'ext_zlib',
   ),
-  'hwapi_attribute_key' => 
+  'hwapi_attribute_key' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_attribute_langdepvalue' => 
+  'hwapi_attribute_langdepvalue' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_attribute_new' => 
+  'hwapi_attribute_new' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_attribute_value' => 
+  'hwapi_attribute_value' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_attribute_values' => 
+  'hwapi_attribute_values' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_children' => 
+  'hwapi_children' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_content' => 
+  'hwapi_content' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_content_new' => 
+  'hwapi_content_new' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_copy' => 
+  'hwapi_copy' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_dummy' => 
+  'hwapi_dummy' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_find' => 
+  'hwapi_find' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_hgcsp' => 
+  'hwapi_hgcsp' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_identify' => 
+  'hwapi_identify' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_init' => 
+  'hwapi_init' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_link' => 
+  'hwapi_link' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_lock' => 
+  'hwapi_lock' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_move' => 
+  'hwapi_move' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_object' => 
+  'hwapi_object' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_object_assign' => 
+  'hwapi_object_assign' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_object_attreditable' => 
+  'hwapi_object_attreditable' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_object_attribute' => 
+  'hwapi_object_attribute' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_object_count' => 
+  'hwapi_object_count' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_object_insert' => 
+  'hwapi_object_insert' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_object_new' => 
+  'hwapi_object_new' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_object_remove' => 
+  'hwapi_object_remove' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_object_title' => 
+  'hwapi_object_title' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_object_value' => 
+  'hwapi_object_value' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_parents' => 
+  'hwapi_parents' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_remove' => 
+  'hwapi_remove' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_replace' => 
+  'hwapi_replace' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'hwapi_unlock' => 
+  'hwapi_unlock' =>
   array (
     'ext' => 'ext_hwapi',
     'init' => '5-dev',
   ),
-  'gopher_parsedir' => 
+  'gopher_parsedir' =>
   array (
     'ext' => 'pecl_Net_Gopher',
     'init' => '4-dev',
   ),
-  'adt_graph_adjacency_list' => 
+  'adt_graph_adjacency_list' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_adjacency_lists' => 
+  'adt_graph_adjacency_lists' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_clone' => 
+  'adt_graph_clone' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_edge_count' => 
+  'adt_graph_edge_count' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_free' => 
+  'adt_graph_free' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_insert_edge' => 
+  'adt_graph_insert_edge' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_insert_vertex' => 
+  'adt_graph_insert_vertex' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_is_adjacent' => 
+  'adt_graph_is_adjacent' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_new' => 
+  'adt_graph_new' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_remove_edge' => 
+  'adt_graph_remove_edge' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_remove_vertex' => 
+  'adt_graph_remove_vertex' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_graph_vertex_count' => 
+  'adt_graph_vertex_count' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_heap_clone' => 
+  'adt_heap_clone' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_heap_count' => 
+  'adt_heap_count' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_heap_extract' => 
+  'adt_heap_extract' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_heap_free' => 
+  'adt_heap_free' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_heap_insert' => 
+  'adt_heap_insert' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_heap_new' => 
+  'adt_heap_new' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_queue_clone' => 
+  'adt_queue_clone' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_queue_count' => 
+  'adt_queue_count' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_queue_extract' => 
+  'adt_queue_extract' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_queue_free' => 
+  'adt_queue_free' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_queue_insert' => 
+  'adt_queue_insert' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_queue_new' => 
+  'adt_queue_new' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_queue_peek' => 
+  'adt_queue_peek' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_clone' => 
+  'adt_set_clone' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_count' => 
+  'adt_set_count' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_difference' => 
+  'adt_set_difference' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_free' => 
+  'adt_set_free' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_insert' => 
+  'adt_set_insert' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_intersect' => 
+  'adt_set_intersect' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_is_equal' => 
+  'adt_set_is_equal' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_is_member' => 
+  'adt_set_is_member' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_is_subset' => 
+  'adt_set_is_subset' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_new' => 
+  'adt_set_new' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_remove' => 
+  'adt_set_remove' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_set_union' => 
+  'adt_set_union' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_stack_clone' => 
+  'adt_stack_clone' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_stack_count' => 
+  'adt_stack_count' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_stack_free' => 
+  'adt_stack_free' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_stack_new' => 
+  'adt_stack_new' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_stack_pop' => 
+  'adt_stack_pop' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_stack_push' => 
+  'adt_stack_push' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_clone' => 
+  'adt_tree_clone' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_count' => 
+  'adt_tree_count' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_data' => 
+  'adt_tree_data' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_free' => 
+  'adt_tree_free' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_insert' => 
+  'adt_tree_insert' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_insert_left' => 
+  'adt_tree_insert_left' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_insert_right' => 
+  'adt_tree_insert_right' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_insert_root' => 
+  'adt_tree_insert_root' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_is_branch_end' => 
+  'adt_tree_is_branch_end' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_is_leaf' => 
+  'adt_tree_is_leaf' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_left' => 
+  'adt_tree_left' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_new' => 
+  'adt_tree_new' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_remove' => 
+  'adt_tree_remove' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_remove_left' => 
+  'adt_tree_remove_left' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_remove_right' => 
+  'adt_tree_remove_right' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_right' => 
+  'adt_tree_right' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_root' => 
+  'adt_tree_root' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_search' => 
+  'adt_tree_search' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'adt_tree_traverse' => 
+  'adt_tree_traverse' =>
   array (
     'ext' => 'pecl_adt',
     'init' => '4-dev',
   ),
-  'apc_cache_info' => 
+  'apc_cache_info' =>
   array (
     'ext' => 'pecl_apc',
     'init' => '4-dev',
   ),
-  'apc_clear_cache' => 
+  'apc_clear_cache' =>
   array (
     'ext' => 'pecl_apc',
     'init' => '4-dev',
   ),
-  'apc_define_constants' => 
+  'apc_define_constants' =>
   array (
     'ext' => 'pecl_apc',
     'init' => '4-dev',
   ),
-  'apc_delete' => 
+  'apc_delete' =>
   array (
     'ext' => 'pecl_apc',
     'init' => '4-dev',
   ),
-  'apc_fetch' => 
+  'apc_fetch' =>
   array (
     'ext' => 'pecl_apc',
     'init' => '4-dev',
   ),
-  'apc_load_constants' => 
+  'apc_load_constants' =>
   array (
     'ext' => 'pecl_apc',
     'init' => '4-dev',
   ),
-  'apc_sma_info' => 
+  'apc_sma_info' =>
   array (
     'ext' => 'pecl_apc',
     'init' => '4-dev',
   ),
-  'apc_store' => 
+  'apc_store' =>
   array (
     'ext' => 'pecl_apc',
     'init' => '4-dev',
   ),
-  'apd_breakpoint' => 
+  'apd_breakpoint' =>
   array (
     'ext' => 'pecl_apd',
     'init' => '4-dev',
   ),
-  'apd_continue' => 
+  'apd_continue' =>
   array (
     'ext' => 'pecl_apd',
     'init' => '4-dev',
   ),
-  'apd_echo' => 
+  'apd_echo' =>
   array (
     'ext' => 'pecl_apd',
     'init' => '4-dev',
   ),
-  'apd_set_browser_trace' => 
+  'apd_set_browser_trace' =>
   array (
     'ext' => 'pecl_apd',
     'init' => '4-dev',
   ),
-  'apd_set_pprof_trace' => 
+  'apd_set_pprof_trace' =>
   array (
     'ext' => 'pecl_apd',
     'init' => '4-dev',
   ),
-  'apd_set_session_trace_socket' => 
+  'apd_set_session_trace_socket' =>
   array (
     'ext' => 'pecl_apd',
     'init' => '4-dev',
   ),
-  'override_function' => 
+  'override_function' =>
   array (
     'ext' => 'pecl_apd',
     'init' => '4-dev',
   ),
-  'rename_function' => 
+  'rename_function' =>
   array (
     'ext' => 'pecl_apd',
     'init' => '4-dev',
   ),
-  'bcompiler_load' => 
+  'bcompiler_load' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_load_exe' => 
+  'bcompiler_load_exe' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_parse_class' => 
+  'bcompiler_parse_class' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_read' => 
+  'bcompiler_read' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_write_class' => 
+  'bcompiler_write_class' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_write_constant' => 
+  'bcompiler_write_constant' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_write_exe_footer' => 
+  'bcompiler_write_exe_footer' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_write_file' => 
+  'bcompiler_write_file' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_write_footer' => 
+  'bcompiler_write_footer' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_write_function' => 
+  'bcompiler_write_function' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_write_functions_from_file' => 
+  'bcompiler_write_functions_from_file' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_write_header' => 
+  'bcompiler_write_header' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'bcompiler_write_included_filename' => 
+  'bcompiler_write_included_filename' =>
   array (
     'ext' => 'pecl_bcompiler',
     'init' => '4-dev',
   ),
-  'blenc_encrypt' => 
+  'blenc_encrypt' =>
   array (
     'ext' => 'pecl_blenc',
     'init' => '4-dev',
   ),
-  'chasen' => 
+  'chasen' =>
   array (
     'ext' => 'pecl_chasen',
     'init' => '4-dev',
   ),
-  'chasen_split' => 
+  'chasen_split' =>
   array (
     'ext' => 'pecl_chasen',
     'init' => '4-dev',
   ),
-  'classkit_aggregate_methods' => 
+  'classkit_aggregate_methods' =>
   array (
     'ext' => 'pecl_classkit',
     'init' => '4-dev',
   ),
-  'classkit_doc_comments' => 
+  'classkit_doc_comments' =>
   array (
     'ext' => 'pecl_classkit',
     'init' => '4-dev',
   ),
-  'classkit_import' => 
+  'classkit_import' =>
   array (
     'ext' => 'pecl_classkit',
     'init' => '4-dev',
   ),
-  'classkit_method_add' => 
+  'classkit_method_add' =>
   array (
     'ext' => 'pecl_classkit',
     'init' => '4-dev',
   ),
-  'classkit_method_copy' => 
+  'classkit_method_copy' =>
   array (
     'ext' => 'pecl_classkit',
     'init' => '4-dev',
   ),
-  'classkit_method_redefine' => 
+  'classkit_method_redefine' =>
   array (
     'ext' => 'pecl_classkit',
     'init' => '4-dev',
   ),
-  'classkit_method_remove' => 
+  'classkit_method_remove' =>
   array (
     'ext' => 'pecl_classkit',
     'init' => '4-dev',
   ),
-  'classkit_method_rename' => 
+  'classkit_method_rename' =>
   array (
     'ext' => 'pecl_classkit',
     'init' => '4-dev',
   ),
-  'colorer_direct_markup' => 
+  'colorer_direct_markup' =>
   array (
     'ext' => 'pecl_colorer',
     'init' => '4-dev',
   ),
-  'colorer_highlight_file' => 
+  'colorer_highlight_file' =>
   array (
     'ext' => 'pecl_colorer',
     'init' => '4-dev',
   ),
-  'colorer_highlight_file_cb' => 
+  'colorer_highlight_file_cb' =>
   array (
     'ext' => 'pecl_colorer',
     'init' => '4-dev',
   ),
-  'colorer_highlight_string' => 
+  'colorer_highlight_string' =>
   array (
     'ext' => 'pecl_colorer',
     'init' => '4-dev',
   ),
-  'colorer_highlight_string_cb' => 
+  'colorer_highlight_string_cb' =>
   array (
     'ext' => 'pecl_colorer',
     'init' => '4-dev',
   ),
-  'colorer_hrd_name' => 
+  'colorer_hrd_name' =>
   array (
     'ext' => 'pecl_colorer',
     'init' => '4-dev',
   ),
-  'colorer_list_types' => 
+  'colorer_list_types' =>
   array (
     'ext' => 'pecl_colorer',
     'init' => '4-dev',
   ),
-  'colorer_open' => 
+  'colorer_open' =>
   array (
     'ext' => 'pecl_colorer',
     'init' => '4-dev',
   ),
-  'colorer_type' => 
+  'colorer_type' =>
   array (
     'ext' => 'pecl_colorer',
     'init' => '4-dev',
   ),
-  'colorer_version' => 
+  'colorer_version' =>
   array (
     'ext' => 'pecl_colorer',
     'init' => '4-dev',
   ),
-  'cvsclient_connect' => 
+  'cvsclient_connect' =>
   array (
     'ext' => 'pecl_cvsclient',
     'init' => '4-dev',
   ),
-  'cvsclient_log' => 
+  'cvsclient_log' =>
   array (
     'ext' => 'pecl_cvsclient',
     'init' => '4-dev',
   ),
-  'cvsclient_login' => 
+  'cvsclient_login' =>
   array (
     'ext' => 'pecl_cvsclient',
     'init' => '4-dev',
   ),
-  'cvsclient_retrieve' => 
+  'cvsclient_retrieve' =>
   array (
     'ext' => 'pecl_cvsclient',
     'init' => '4-dev',
   ),
-  'daffodildb_affected_row' => 
+  'daffodildb_affected_row' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_autocommit' => 
+  'daffodildb_autocommit' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_close' => 
+  'daffodildb_close' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_column_count' => 
+  'daffodildb_column_count' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_commit' => 
+  'daffodildb_commit' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_connect' => 
+  'daffodildb_connect' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_errormsg' => 
+  'daffodildb_errormsg' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_execute' => 
+  'daffodildb_execute' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_fetch_array' => 
+  'daffodildb_fetch_array' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_fetch_assoc' => 
+  'daffodildb_fetch_assoc' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_fetch_row' => 
+  'daffodildb_fetch_row' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_field_name' => 
+  'daffodildb_field_name' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_free_resultset' => 
+  'daffodildb_free_resultset' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'daffodildb_rollback' => 
+  'daffodildb_rollback' =>
   array (
     'ext' => 'pecl_daffodildb',
     'init' => '4-dev',
   ),
-  'date_add_days' => 
+  'date_add_days' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_add_months' => 
+  'date_add_months' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_add_weeks' => 
+  'date_add_weeks' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_add_years' => 
+  'date_add_years' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_clamp' => 
+  'date_clamp' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_compare' => 
+  'date_compare' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_days_between' => 
+  'date_days_between' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_free' => 
+  'date_free' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_array' => 
+  'date_get_array' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_day' => 
+  'date_get_day' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_day_of_year' => 
+  'date_get_day_of_year' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_days_in_month' => 
+  'date_get_days_in_month' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_easter' => 
+  'date_get_easter' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_first_dow' => 
+  'date_get_first_dow' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_isoweek_of_year' => 
+  'date_get_isoweek_of_year' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_julian' => 
+  'date_get_julian' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_last_dow' => 
+  'date_get_last_dow' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_month' => 
+  'date_get_month' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_to_last_month_day' => 
+  'date_get_to_last_month_day' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_to_next_weekday' => 
+  'date_get_to_next_weekday' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_to_prev_week_day' => 
+  'date_get_to_prev_week_day' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_to_week' => 
+  'date_get_to_week' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_to_weekday' => 
+  'date_get_to_weekday' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_to_weekday_in_same_week' => 
+  'date_get_to_weekday_in_same_week' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_week_of_year' => 
+  'date_get_week_of_year' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_weekday' => 
+  'date_get_weekday' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_weeks_of_year' => 
+  'date_get_weeks_of_year' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_get_year' => 
+  'date_get_year' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_is_leap_year' => 
+  'date_is_leap_year' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_new' => 
+  'date_new' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_new_dmy' => 
+  'date_new_dmy' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_new_julian' => 
+  'date_new_julian' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_new_now' => 
+  'date_new_now' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_order' => 
+  'date_order' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_day' => 
+  'date_set_day' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_dmy' => 
+  'date_set_dmy' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_first_dow' => 
+  'date_set_first_dow' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_julian' => 
+  'date_set_julian' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_last_dow' => 
+  'date_set_last_dow' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_month' => 
+  'date_set_month' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_to_last_month_day' => 
+  'date_set_to_last_month_day' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_to_next_weekday' => 
+  'date_set_to_next_weekday' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_to_prev_week_day' => 
+  'date_set_to_prev_week_day' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_to_week' => 
+  'date_set_to_week' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_to_weekday' => 
+  'date_set_to_weekday' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_to_weekday_in_same_week' => 
+  'date_set_to_weekday_in_same_week' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_set_year' => 
+  'date_set_year' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_strftime' => 
+  'date_strftime' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_sub_days' => 
+  'date_sub_days' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_sub_months' => 
+  'date_sub_months' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_sub_weeks' => 
+  'date_sub_weeks' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_sub_years' => 
+  'date_sub_years' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_valid' => 
+  'date_valid' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_valid_dmy' => 
+  'date_valid_dmy' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'date_valid_julian' => 
+  'date_valid_julian' =>
   array (
     'ext' => 'pecl_date',
     'init' => '4-dev',
   ),
-  'dazuko_exclude_path' => 
+  'dazuko_exclude_path' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_fetch_result' => 
+  'dazuko_fetch_result' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_fetch_thread' => 
+  'dazuko_fetch_thread' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_flush_result' => 
+  'dazuko_flush_result' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_get_access' => 
+  'dazuko_get_access' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_include_path' => 
+  'dazuko_include_path' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_module_loaded' => 
+  'dazuko_module_loaded' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_register' => 
+  'dazuko_register' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_remove_paths' => 
+  'dazuko_remove_paths' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_return_access' => 
+  'dazuko_return_access' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_set_accessmask' => 
+  'dazuko_set_accessmask' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_thread_exclude_path' => 
+  'dazuko_thread_exclude_path' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_thread_get_access' => 
+  'dazuko_thread_get_access' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_thread_include_path' => 
+  'dazuko_thread_include_path' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_thread_register' => 
+  'dazuko_thread_register' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_thread_remove_paths' => 
+  'dazuko_thread_remove_paths' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_thread_return_access' => 
+  'dazuko_thread_return_access' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_thread_set_accessmask' => 
+  'dazuko_thread_set_accessmask' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_thread_unregister' => 
+  'dazuko_thread_unregister' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'dazuko_unregister' => 
+  'dazuko_unregister' =>
   array (
     'ext' => 'pecl_dazuko',
     'init' => '4-dev',
   ),
-  'xpath_register_ns_auto' => 
+  'xpath_register_ns_auto' =>
   array (
     'ext' => 'pecl_domxml',
     'init' => '4-dev',
   ),
-  'eci_cleanup' => 
+  'eci_cleanup' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_command' => 
+  'eci_command' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_command_float_arg' => 
+  'eci_command_float_arg' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_error' => 
+  'eci_error' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_init' => 
+  'eci_init' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_last_error' => 
+  'eci_last_error' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_last_float' => 
+  'eci_last_float' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_last_integer' => 
+  'eci_last_integer' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_last_long_integer' => 
+  'eci_last_long_integer' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_last_string' => 
+  'eci_last_string' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_last_string_list_count' => 
+  'eci_last_string_list_count' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'eci_last_string_list_item' => 
+  'eci_last_string_list_item' =>
   array (
     'ext' => 'pecl_ecasound',
     'init' => '4-dev',
   ),
-  'enchant_broker_describe' => 
+  'enchant_broker_describe' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_broker_dict_exists' => 
+  'enchant_broker_dict_exists' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_broker_free' => 
+  'enchant_broker_free' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_broker_free_dict' => 
+  'enchant_broker_free_dict' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_broker_get_error' => 
+  'enchant_broker_get_error' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_broker_init' => 
+  'enchant_broker_init' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_broker_request_dict' => 
+  'enchant_broker_request_dict' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_broker_request_pwl_dict' => 
+  'enchant_broker_request_pwl_dict' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_broker_set_ordering' => 
+  'enchant_broker_set_ordering' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_dict_add_to_personal' => 
+  'enchant_dict_add_to_personal' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_dict_add_to_session' => 
+  'enchant_dict_add_to_session' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_dict_check' => 
+  'enchant_dict_check' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_dict_describe' => 
+  'enchant_dict_describe' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_dict_get_error' => 
+  'enchant_dict_get_error' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_dict_is_in_session' => 
+  'enchant_dict_is_in_session' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_dict_quick_check' => 
+  'enchant_dict_quick_check' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_dict_store_replacement' => 
+  'enchant_dict_store_replacement' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'enchant_dict_suggest' => 
+  'enchant_dict_suggest' =>
   array (
     'ext' => 'pecl_enchant',
     'init' => '4-dev',
   ),
-  'esmtp_errno' => 
+  'esmtp_errno' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'esmtp_starttls_set_password_cb' => 
+  'esmtp_starttls_set_password_cb' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'esmtp_strerror' => 
+  'esmtp_strerror' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'esmtp_version' => 
+  'esmtp_version' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'Esmtp_Session' => 
+  'Esmtp_Session' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'add_message' => 
+  'add_message' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'auth_set_context' => 
+  'auth_set_context' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'enumerate_messages' => 
+  'enumerate_messages' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'esmtp_session' => 
+  'esmtp_session' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'etrn_add_node' => 
+  'etrn_add_node' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'etrn_enumerate_nodes' => 
+  'etrn_enumerate_nodes' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'get_application_data' => 
+  'get_application_data' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'option_require_all_recipients' => 
+  'option_require_all_recipients' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_application_data' => 
+  'set_application_data' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_eventcb' => 
+  'set_eventcb' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_hostname' => 
+  'set_hostname' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_monitorcb' => 
+  'set_monitorcb' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_server' => 
+  'set_server' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_timeout' => 
+  'set_timeout' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'start_session' => 
+  'start_session' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'starttls_enable' => 
+  'starttls_enable' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  '8bitmime_set_body' => 
+  '8bitmime_set_body' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'add_recipient' => 
+  'add_recipient' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'deliverby_set_mode' => 
+  'deliverby_set_mode' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'dsn_set_envid' => 
+  'dsn_set_envid' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'dsn_set_ret' => 
+  'dsn_set_ret' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'enumerate_recipients' => 
+  'enumerate_recipients' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'reset_status' => 
+  'reset_status' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'reverse_path_status' => 
+  'reverse_path_status' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_header' => 
+  'set_header' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_header_option' => 
+  'set_header_option' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_message_fp' => 
+  'set_message_fp' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_message_str' => 
+  'set_message_str' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_messagecb' => 
+  'set_messagecb' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_resent_headers' => 
+  'set_resent_headers' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_reverse_path' => 
+  'set_reverse_path' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'size_set_estimate' => 
+  'size_set_estimate' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'transfer_status' => 
+  'transfer_status' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'check_complete' => 
+  'check_complete' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'dsn_set_notify' => 
+  'dsn_set_notify' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'dsn_set_orcpt' => 
+  'dsn_set_orcpt' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'status' => 
+  'status' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'Esmtp_Auth' => 
+  'Esmtp_Auth' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'client_enabled' => 
+  'client_enabled' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'esmtp_auth' => 
+  'esmtp_auth' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'get_ssf' => 
+  'get_ssf' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'mechanism_name' => 
+  'mechanism_name' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'response' => 
+  'response' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_external_id' => 
+  'set_external_id' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_interact_cb' => 
+  'set_interact_cb' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_mechanism' => 
+  'set_mechanism' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_mechanism_flags' => 
+  'set_mechanism_flags' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'set_mechanism_ssf' => 
+  'set_mechanism_ssf' =>
   array (
     'ext' => 'pecl_esmtp',
     'init' => '4-dev',
   ),
-  'event_deschedule' => 
+  'event_deschedule' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_dispatch' => 
+  'event_dispatch' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_free' => 
+  'event_free' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_handle_signal' => 
+  'event_handle_signal' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_have_events' => 
+  'event_have_events' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_init' => 
+  'event_init' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_new' => 
+  'event_new' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_pending' => 
+  'event_pending' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_priority_set' => 
+  'event_priority_set' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_schedule' => 
+  'event_schedule' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_set' => 
+  'event_set' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  'event_timeout' => 
+  'event_timeout' =>
   array (
     'ext' => 'pecl_event',
     'init' => '4-dev',
   ),
-  '__construct' => 
+  '__construct' =>
   array (
     'ext' => 'pecl_ffi',
     'init' => '4-dev',
   ),
-  'finfo_buffer' => 
+  'finfo_buffer' =>
   array (
     'ext' => 'pecl_fileinfo',
     'init' => '4-dev',
   ),
-  'finfo_close' => 
+  'finfo_close' =>
   array (
     'ext' => 'pecl_fileinfo',
     'init' => '4-dev',
   ),
-  'finfo_file' => 
+  'finfo_file' =>
   array (
     'ext' => 'pecl_fileinfo',
     'init' => '4-dev',
   ),
-  'finfo_open' => 
+  'finfo_open' =>
   array (
     'ext' => 'pecl_fileinfo',
     'init' => '4-dev',
   ),
-  'finfo_set_flags' => 
+  'finfo_set_flags' =>
   array (
     'ext' => 'pecl_fileinfo',
     'init' => '4-dev',
   ),
-  'freeimage_appendpage' => 
+  'freeimage_appendpage' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_brightness' => 
+  'freeimage_brightness' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_clone' => 
+  'freeimage_clone' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_closemultibitmap' => 
+  'freeimage_closemultibitmap' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_colorquantize' => 
+  'freeimage_colorquantize' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_composite' => 
+  'freeimage_composite' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_contrast' => 
+  'freeimage_contrast' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_convertto16bits555' => 
+  'freeimage_convertto16bits555' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_convertto16bits565' => 
+  'freeimage_convertto16bits565' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_convertto24bits' => 
+  'freeimage_convertto24bits' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_convertto32bits' => 
+  'freeimage_convertto32bits' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_convertto8bits' => 
+  'freeimage_convertto8bits' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_copy' => 
+  'freeimage_copy' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_deletepage' => 
+  'freeimage_deletepage' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_dither' => 
+  'freeimage_dither' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_fifsupportsreading' => 
+  'freeimage_fifsupportsreading' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_fifsupportswriting' => 
+  'freeimage_fifsupportswriting' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_fliphorizontal' => 
+  'freeimage_fliphorizontal' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_flipvertical' => 
+  'freeimage_flipvertical' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_free' => 
+  'freeimage_free' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_gamma' => 
+  'freeimage_gamma' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getbpp' => 
+  'freeimage_getbpp' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getcolorsused' => 
+  'freeimage_getcolorsused' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getcopyrightmessage' => 
+  'freeimage_getcopyrightmessage' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getdibsize' => 
+  'freeimage_getdibsize' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getfifcount' => 
+  'freeimage_getfifcount' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getfifdescription' => 
+  'freeimage_getfifdescription' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getfifextensionlist' => 
+  'freeimage_getfifextensionlist' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getfiffromfilename' => 
+  'freeimage_getfiffromfilename' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getfiffromformat' => 
+  'freeimage_getfiffromformat' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getfiffrommime' => 
+  'freeimage_getfiffrommime' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getfifregexpr' => 
+  'freeimage_getfifregexpr' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getfiletype' => 
+  'freeimage_getfiletype' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getformatfromfif' => 
+  'freeimage_getformatfromfif' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getheight' => 
+  'freeimage_getheight' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getimagetype' => 
+  'freeimage_getimagetype' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getlasterror' => 
+  'freeimage_getlasterror' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getline' => 
+  'freeimage_getline' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getlockedpagenumbers' => 
+  'freeimage_getlockedpagenumbers' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getpagecount' => 
+  'freeimage_getpagecount' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getpitch' => 
+  'freeimage_getpitch' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getversion' => 
+  'freeimage_getversion' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_getwidth' => 
+  'freeimage_getwidth' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_insertpage' => 
+  'freeimage_insertpage' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_invert' => 
+  'freeimage_invert' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_ispluginenabled' => 
+  'freeimage_ispluginenabled' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_load' => 
+  'freeimage_load' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_lockpage' => 
+  'freeimage_lockpage' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_movepage' => 
+  'freeimage_movepage' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_openmultibitmap' => 
+  'freeimage_openmultibitmap' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_paste' => 
+  'freeimage_paste' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_rescale' => 
+  'freeimage_rescale' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_rotate' => 
+  'freeimage_rotate' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_rotateex' => 
+  'freeimage_rotateex' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_save' => 
+  'freeimage_save' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_setpluginenabled' => 
+  'freeimage_setpluginenabled' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_threshold' => 
+  'freeimage_threshold' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'freeimage_unlockpage' => 
+  'freeimage_unlockpage' =>
   array (
     'ext' => 'pecl_freeimage',
     'init' => '4-dev',
   ),
-  'html_parser_comment_handler' => 
+  'html_parser_comment_handler' =>
   array (
     'ext' => 'pecl_html_parse',
     'init' => '4-dev',
   ),
-  'html_parser_create' => 
+  'html_parser_create' =>
   array (
     'ext' => 'pecl_html_parse',
     'init' => '4-dev',
   ),
-  'html_parser_data_handler' => 
+  'html_parser_data_handler' =>
   array (
     'ext' => 'pecl_html_parse',
     'init' => '4-dev',
   ),
-  'html_parser_endtag_handler' => 
+  'html_parser_endtag_handler' =>
   array (
     'ext' => 'pecl_html_parse',
     'init' => '4-dev',
   ),
-  'html_parser_free' => 
+  'html_parser_free' =>
   array (
     'ext' => 'pecl_html_parse',
     'init' => '4-dev',
   ),
-  'html_parser_parse' => 
+  'html_parser_parse' =>
   array (
     'ext' => 'pecl_html_parse',
     'init' => '4-dev',
   ),
-  'html_parser_starttag_handler' => 
+  'html_parser_starttag_handler' =>
   array (
     'ext' => 'pecl_html_parse',
     'init' => '4-dev',
   ),
-  'http_absolute_uri' => 
+  'http_absolute_uri' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_auth_basic' => 
+  'http_auth_basic' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_auth_basic_cb' => 
+  'http_auth_basic_cb' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_cache_etag' => 
+  'http_cache_etag' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_cache_last_modified' => 
+  'http_cache_last_modified' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_chunked_decode' => 
+  'http_chunked_decode' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_date' => 
+  'http_date' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_get' => 
+  'http_get' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_get_request_headers' => 
+  'http_get_request_headers' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_head' => 
+  'http_head' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_match_etag' => 
+  'http_match_etag' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_match_modified' => 
+  'http_match_modified' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_negotiate_charset' => 
+  'http_negotiate_charset' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_negotiate_language' => 
+  'http_negotiate_language' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_parse_headers' => 
+  'http_parse_headers' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_post_array' => 
+  'http_post_array' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_post_data' => 
+  'http_post_data' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_redirect' => 
+  'http_redirect' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_send_content_disposition' => 
+  'http_send_content_disposition' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_send_content_type' => 
+  'http_send_content_type' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_send_data' => 
+  'http_send_data' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_send_file' => 
+  'http_send_file' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_send_last_modified' => 
+  'http_send_last_modified' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_send_status' => 
+  'http_send_status' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_send_stream' => 
+  'http_send_stream' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_split_response' => 
+  'http_split_response' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'http_test' => 
+  'http_test' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'ob_httpetaghandler' => 
+  'ob_httpetaghandler' =>
   array (
     'ext' => 'pecl_http',
     'init' => '4-dev',
   ),
-  'id3_get_frame_long_name' => 
+  'id3_get_frame_long_name' =>
   array (
     'ext' => 'pecl_id3',
     'init' => '4-dev',
   ),
-  'id3_get_frame_short_name' => 
+  'id3_get_frame_short_name' =>
   array (
     'ext' => 'pecl_id3',
     'init' => '4-dev',
   ),
-  'id3_get_genre_id' => 
+  'id3_get_genre_id' =>
   array (
     'ext' => 'pecl_id3',
     'init' => '4-dev',
   ),
-  'id3_get_genre_list' => 
+  'id3_get_genre_list' =>
   array (
     'ext' => 'pecl_id3',
     'init' => '4-dev',
   ),
-  'id3_get_genre_name' => 
+  'id3_get_genre_name' =>
   array (
     'ext' => 'pecl_id3',
     'init' => '4-dev',
   ),
-  'id3_get_tag' => 
+  'id3_get_tag' =>
   array (
     'ext' => 'pecl_id3',
     'init' => '4-dev',
   ),
-  'id3_get_version' => 
+  'id3_get_version' =>
   array (
     'ext' => 'pecl_id3',
     'init' => '4-dev',
   ),
-  'id3_remove_tag' => 
+  'id3_remove_tag' =>
   array (
     'ext' => 'pecl_id3',
     'init' => '4-dev',
   ),
-  'id3_set_tag' => 
+  'id3_set_tag' =>
   array (
     'ext' => 'pecl_id3',
     'init' => '4-dev',
   ),
-  'idn_to_ascii' => 
+  'idn_to_ascii' =>
   array (
     'ext' => 'pecl_idn',
     'init' => '4-dev',
   ),
-  'idn_to_utf8' => 
+  'idn_to_utf8' =>
   array (
     'ext' => 'pecl_idn',
     'init' => '4-dev',
   ),
-  'iis_add_server' => 
+  'iis_add_server' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_addserver' => 
+  'iis_addserver' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_continue_server' => 
+  'iis_continue_server' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_continue_service' => 
+  'iis_continue_service' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_delete_virtual_path' => 
+  'iis_delete_virtual_path' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_enum_servers' => 
+  'iis_enum_servers' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_get_dir_security' => 
+  'iis_get_dir_security' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_get_error' => 
+  'iis_get_error' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_get_script_map' => 
+  'iis_get_script_map' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_get_server_by_comment' => 
+  'iis_get_server_by_comment' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_get_server_by_path' => 
+  'iis_get_server_by_path' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_get_server_rights' => 
+  'iis_get_server_rights' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_get_server_status' => 
+  'iis_get_server_status' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_get_service_state' => 
+  'iis_get_service_state' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_get_virtual_path' => 
+  'iis_get_virtual_path' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_getdirsecurity' => 
+  'iis_getdirsecurity' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_getscriptmap' => 
+  'iis_getscriptmap' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_getserverbycomment' => 
+  'iis_getserverbycomment' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_getserverbypath' => 
+  'iis_getserverbypath' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_getserverright' => 
+  'iis_getserverright' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_getservicestate' => 
+  'iis_getservicestate' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_pause_server' => 
+  'iis_pause_server' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_remove_server' => 
+  'iis_remove_server' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_removeserver' => 
+  'iis_removeserver' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_set_app_settings' => 
+  'iis_set_app_settings' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_set_dir_security' => 
+  'iis_set_dir_security' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_set_script_map' => 
+  'iis_set_script_map' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_set_server_rights' => 
+  'iis_set_server_rights' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_set_virtual_path' => 
+  'iis_set_virtual_path' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_setappsettings' => 
+  'iis_setappsettings' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_setdirsecurity' => 
+  'iis_setdirsecurity' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_setscriptmap' => 
+  'iis_setscriptmap' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_setserverright' => 
+  'iis_setserverright' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_start_server' => 
+  'iis_start_server' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_start_service' => 
+  'iis_start_service' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_startserver' => 
+  'iis_startserver' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_startservice' => 
+  'iis_startservice' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_stop_server' => 
+  'iis_stop_server' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_stop_service' => 
+  'iis_stop_service' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_stopserver' => 
+  'iis_stopserver' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'iis_stopservice' => 
+  'iis_stopservice' =>
   array (
     'ext' => 'pecl_iisfunc',
     'init' => '4-dev',
   ),
-  'imagick_add_resource' => 
+  'imagick_add_resource' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_begindraw' => 
+  'imagick_begindraw' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_blob2image' => 
+  'imagick_blob2image' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_blur' => 
+  'imagick_blur' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_border' => 
+  'imagick_border' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_charcoal' => 
+  'imagick_charcoal' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_chop' => 
+  'imagick_chop' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_clonehandle' => 
+  'imagick_clonehandle' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_composite' => 
+  'imagick_composite' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_contrast' => 
+  'imagick_contrast' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_convert' => 
+  'imagick_convert' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_copy_crop' => 
+  'imagick_copy_crop' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_copy_morph' => 
+  'imagick_copy_morph' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_copy_resize' => 
+  'imagick_copy_resize' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_copy_rotate' => 
+  'imagick_copy_rotate' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_copy_sample' => 
+  'imagick_copy_sample' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_copy_shear' => 
+  'imagick_copy_shear' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_crop' => 
+  'imagick_crop' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_despeckle' => 
+  'imagick_despeckle' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_destroyhandle' => 
+  'imagick_destroyhandle' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_drawannotation' => 
+  'imagick_drawannotation' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_drawarc' => 
+  'imagick_drawarc' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_drawcircle' => 
+  'imagick_drawcircle' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_drawellipse' => 
+  'imagick_drawellipse' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_drawline' => 
+  'imagick_drawline' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_drawpoint' => 
+  'imagick_drawpoint' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_drawrectangle' => 
+  'imagick_drawrectangle' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_dump' => 
+  'imagick_dump' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_edge' => 
+  'imagick_edge' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_emboss' => 
+  'imagick_emboss' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_enhance' => 
+  'imagick_enhance' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_equalize' => 
+  'imagick_equalize' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_error' => 
+  'imagick_error' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_faileddescription' => 
+  'imagick_faileddescription' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_failedreason' => 
+  'imagick_failedreason' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_first' => 
+  'imagick_first' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_flatten' => 
+  'imagick_flatten' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_flip' => 
+  'imagick_flip' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_flop' => 
+  'imagick_flop' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_frame' => 
+  'imagick_frame' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_free' => 
+  'imagick_free' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_gamma' => 
+  'imagick_gamma' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_gaussianblur' => 
+  'imagick_gaussianblur' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getcanvas' => 
+  'imagick_getcanvas' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getcolorspace' => 
+  'imagick_getcolorspace' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getdpix' => 
+  'imagick_getdpix' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getdpiy' => 
+  'imagick_getdpiy' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getheight' => 
+  'imagick_getheight' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getimagedepth' => 
+  'imagick_getimagedepth' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getimagefromlist' => 
+  'imagick_getimagefromlist' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getimagetype' => 
+  'imagick_getimagetype' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getlistindex' => 
+  'imagick_getlistindex' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getlistsize' => 
+  'imagick_getlistsize' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getmagick' => 
+  'imagick_getmagick' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getmimetype' => 
+  'imagick_getmimetype' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getnumbercolors' => 
+  'imagick_getnumbercolors' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_getwidth' => 
+  'imagick_getwidth' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_goto' => 
+  'imagick_goto' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_image2blob' => 
+  'imagick_image2blob' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_implode' => 
+  'imagick_implode' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_init' => 
+  'imagick_init' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_iserror' => 
+  'imagick_iserror' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_isgrayimage' => 
+  'imagick_isgrayimage' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_isimagesequal' => 
+  'imagick_isimagesequal' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_ismonochromeimage' => 
+  'imagick_ismonochromeimage' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_isopaqueimage' => 
+  'imagick_isopaqueimage' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_ispaletteimage' => 
+  'imagick_ispaletteimage' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_level' => 
+  'imagick_level' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_list_magickinfo' => 
+  'imagick_list_magickinfo' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_magnify' => 
+  'imagick_magnify' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_medianfilter' => 
+  'imagick_medianfilter' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_minify' => 
+  'imagick_minify' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_modulate' => 
+  'imagick_modulate' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_mosaic' => 
+  'imagick_mosaic' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_motionblur' => 
+  'imagick_motionblur' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_negate' => 
+  'imagick_negate' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_new' => 
+  'imagick_new' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_newimagelist' => 
+  'imagick_newimagelist' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_next' => 
+  'imagick_next' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_normalize' => 
+  'imagick_normalize' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_oilpaint' => 
+  'imagick_oilpaint' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_ordereddither' => 
+  'imagick_ordereddither' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_poplist' => 
+  'imagick_poplist' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_prev' => 
+  'imagick_prev' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_profile' => 
+  'imagick_profile' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_pushlist' => 
+  'imagick_pushlist' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_raise' => 
+  'imagick_raise' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_read' => 
+  'imagick_read' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_readimage' => 
+  'imagick_readimage' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_reducenoise' => 
+  'imagick_reducenoise' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_resize' => 
+  'imagick_resize' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_rgbtransform' => 
+  'imagick_rgbtransform' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_roll' => 
+  'imagick_roll' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_rotate' => 
+  'imagick_rotate' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_sample' => 
+  'imagick_sample' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_scale' => 
+  'imagick_scale' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_set_image_comment' => 
+  'imagick_set_image_comment' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_set_image_quality' => 
+  'imagick_set_image_quality' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_setcompressionquality' => 
+  'imagick_setcompressionquality' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_setcompressiontype' => 
+  'imagick_setcompressiontype' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_setdpi' => 
+  'imagick_setdpi' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_setfillcolor' => 
+  'imagick_setfillcolor' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_setfillopacity' => 
+  'imagick_setfillopacity' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_setfontface' => 
+  'imagick_setfontface' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_setfontsize' => 
+  'imagick_setfontsize' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_setfontstyle' => 
+  'imagick_setfontstyle' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_shade' => 
+  'imagick_shade' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_sharpen' => 
+  'imagick_sharpen' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_shear' => 
+  'imagick_shear' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_solarize' => 
+  'imagick_solarize' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_spread' => 
+  'imagick_spread' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_swirl' => 
+  'imagick_swirl' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_threshold' => 
+  'imagick_threshold' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_transformrgb' => 
+  'imagick_transformrgb' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_transparent' => 
+  'imagick_transparent' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_unsharpmask' => 
+  'imagick_unsharpmask' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_wave' => 
+  'imagick_wave' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_write' => 
+  'imagick_write' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_writeimage' => 
+  'imagick_writeimage' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_writeimages' => 
+  'imagick_writeimages' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'imagick_zoom' => 
+  'imagick_zoom' =>
   array (
     'ext' => 'pecl_imagick',
     'init' => '4-dev',
   ),
-  'intercept_add' => 
+  'intercept_add' =>
   array (
     'ext' => 'pecl_intercept',
     'init' => '4-dev',
   ),
-  'ixs_catalog_exists' => 
+  'ixs_catalog_exists' =>
   array (
     'ext' => 'pecl_ixsfunc',
     'init' => '4-dev',
   ),
-  'ixs_create_catalog' => 
+  'ixs_create_catalog' =>
   array (
     'ext' => 'pecl_ixsfunc',
     'init' => '4-dev',
   ),
-  'ixs_create_scope' => 
+  'ixs_create_scope' =>
   array (
     'ext' => 'pecl_ixsfunc',
     'init' => '4-dev',
   ),
-  'ixs_remove_scope' => 
+  'ixs_remove_scope' =>
   array (
     'ext' => 'pecl_ixsfunc',
     'init' => '4-dev',
   ),
-  'ixscatalogexists' => 
+  'ixscatalogexists' =>
   array (
     'ext' => 'pecl_ixsfunc',
     'init' => '4-dev',
   ),
-  'ixscreatecatalog' => 
+  'ixscreatecatalog' =>
   array (
     'ext' => 'pecl_ixsfunc',
     'init' => '4-dev',
   ),
-  'ixscreatescope' => 
+  'ixscreatescope' =>
   array (
     'ext' => 'pecl_ixsfunc',
     'init' => '4-dev',
   ),
-  'ixsremovescope' => 
+  'ixsremovescope' =>
   array (
     'ext' => 'pecl_ixsfunc',
     'init' => '4-dev',
   ),
-  'kadm5_chpass_principal' => 
+  'kadm5_chpass_principal' =>
   array (
     'ext' => 'pecl_kadm5',
     'init' => '4-dev',
   ),
-  'kadm5_create_principal' => 
+  'kadm5_create_principal' =>
   array (
     'ext' => 'pecl_kadm5',
     'init' => '4-dev',
   ),
-  'kadm5_delete_principal' => 
+  'kadm5_delete_principal' =>
   array (
     'ext' => 'pecl_kadm5',
     'init' => '4-dev',
   ),
-  'kadm5_destroy' => 
+  'kadm5_destroy' =>
   array (
     'ext' => 'pecl_kadm5',
     'init' => '4-dev',
   ),
-  'kadm5_flush' => 
+  'kadm5_flush' =>
   array (
     'ext' => 'pecl_kadm5',
     'init' => '4-dev',
   ),
-  'kadm5_get_policies' => 
+  'kadm5_get_policies' =>
   array (
     'ext' => 'pecl_kadm5',
     'init' => '4-dev',
   ),
-  'kadm5_get_principal' => 
+  'kadm5_get_principal' =>
   array (
     'ext' => 'pecl_kadm5',
     'init' => '4-dev',
   ),
-  'kadm5_get_principals' => 
+  'kadm5_get_principals' =>
   array (
     'ext' => 'pecl_kadm5',
     'init' => '4-dev',
   ),
-  'kadm5_init_with_password' => 
+  'kadm5_init_with_password' =>
   array (
     'ext' => 'pecl_kadm5',
     'init' => '4-dev',
   ),
-  'kadm5_modify_principal' => 
+  'kadm5_modify_principal' =>
   array (
     'ext' => 'pecl_kadm5',
     'init' => '4-dev',
   ),
-  'kakasi' => 
+  'kakasi' =>
   array (
     'ext' => 'pecl_kakasi',
     'init' => '4-dev',
   ),
-  'kakasi_arsort' => 
+  'kakasi_arsort' =>
   array (
     'ext' => 'pecl_kakasi',
     'init' => '4-dev',
   ),
-  'kakasi_arsorti' => 
+  'kakasi_arsorti' =>
   array (
     'ext' => 'pecl_kakasi',
     'init' => '4-dev',
   ),
-  'kakasi_asort' => 
+  'kakasi_asort' =>
   array (
     'ext' => 'pecl_kakasi',
     'init' => '4-dev',
   ),
-  'kakasi_asorti' => 
+  'kakasi_asorti' =>
   array (
     'ext' => 'pecl_kakasi',
     'init' => '4-dev',
   ),
-  'kakasi_split' => 
+  'kakasi_split' =>
   array (
     'ext' => 'pecl_kakasi',
     'init' => '4-dev',
   ),
-  'exif_data_get_entry' => 
+  'exif_data_get_entry' =>
   array (
     'ext' => 'pecl_libexif',
     'init' => '4-dev',
   ),
-  'exif_data_new_from_file' => 
+  'exif_data_new_from_file' =>
   array (
     'ext' => 'pecl_libexif',
     'init' => '4-dev',
   ),
-  'exif_entry_get_value' => 
+  'exif_entry_get_value' =>
   array (
     'ext' => 'pecl_libexif',
     'init' => '4-dev',
   ),
-  'exif_format_get_name' => 
+  'exif_format_get_name' =>
   array (
     'ext' => 'pecl_libexif',
     'init' => '4-dev',
   ),
-  'exif_format_get_size' => 
+  'exif_format_get_size' =>
   array (
     'ext' => 'pecl_libexif',
     'init' => '4-dev',
   ),
-  'exif_tag_get_description' => 
+  'exif_tag_get_description' =>
   array (
     'ext' => 'pecl_libexif',
     'init' => '4-dev',
   ),
-  'exif_tag_get_name' => 
+  'exif_tag_get_name' =>
   array (
     'ext' => 'pecl_libexif',
     'init' => '4-dev',
   ),
-  'exif_tag_get_title' => 
+  'exif_tag_get_title' =>
   array (
     'ext' => 'pecl_libexif',
     'init' => '4-dev',
   ),
-  'lzf_compress' => 
+  'lzf_compress' =>
   array (
     'ext' => 'pecl_lzf',
     'init' => '4-dev',
   ),
-  'lzf_decompress' => 
+  'lzf_decompress' =>
   array (
     'ext' => 'pecl_lzf',
     'init' => '4-dev',
   ),
-  'lzf_optimized_for' => 
+  'lzf_optimized_for' =>
   array (
     'ext' => 'pecl_lzf',
     'init' => '4-dev',
   ),
-  'mdb_close' => 
+  'mdb_close' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_fetch_assoc' => 
+  'mdb_fetch_assoc' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_fetch_row' => 
+  'mdb_fetch_row' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_num_fields' => 
+  'mdb_num_fields' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_num_rows' => 
+  'mdb_num_rows' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_open' => 
+  'mdb_open' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_rewind' => 
+  'mdb_rewind' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_table_close' => 
+  'mdb_table_close' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_table_fields' => 
+  'mdb_table_fields' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_table_indexes' => 
+  'mdb_table_indexes' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_table_open' => 
+  'mdb_table_open' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_tables' => 
+  'mdb_tables' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_type_name' => 
+  'mdb_type_name' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'mdb_version' => 
+  'mdb_version' =>
   array (
     'ext' => 'pecl_mdbtools',
     'init' => '4-dev',
   ),
-  'memcache_add' => 
+  'memcache_add' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_close' => 
+  'memcache_close' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_connect' => 
+  'memcache_connect' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_debug' => 
+  'memcache_debug' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_decrement' => 
+  'memcache_decrement' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_delete' => 
+  'memcache_delete' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_flush' => 
+  'memcache_flush' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_get' => 
+  'memcache_get' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_get_stats' => 
+  'memcache_get_stats' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_get_version' => 
+  'memcache_get_version' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_increment' => 
+  'memcache_increment' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_pconnect' => 
+  'memcache_pconnect' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_replace' => 
+  'memcache_replace' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'memcache_set' => 
+  'memcache_set' =>
   array (
     'ext' => 'pecl_memcache',
     'init' => '4-dev',
   ),
-  'mqseries_back' => 
+  'mqseries_back' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'mqseries_begin' => 
+  'mqseries_begin' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'mqseries_close' => 
+  'mqseries_close' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'mqseries_cmit' => 
+  'mqseries_cmit' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'mqseries_conn' => 
+  'mqseries_conn' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'mqseries_disc' => 
+  'mqseries_disc' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'mqseries_error' => 
+  'mqseries_error' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'mqseries_get' => 
+  'mqseries_get' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'mqseries_open' => 
+  'mqseries_open' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'mqseries_put' => 
+  'mqseries_put' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'mqseries_strerror' => 
+  'mqseries_strerror' =>
   array (
     'ext' => 'pecl_mqseries',
     'init' => '4-dev',
   ),
-  'nmz_close' => 
+  'nmz_close' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_codeconv_query' => 
+  'nmz_codeconv_query' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_fetch_date' => 
+  'nmz_fetch_date' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_fetch_field' => 
+  'nmz_fetch_field' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_fetch_score' => 
+  'nmz_fetch_score' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_free_result' => 
+  'nmz_free_result' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_get_idx_hitnumlist' => 
+  'nmz_get_idx_hitnumlist' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_get_idx_totalhitnum' => 
+  'nmz_get_idx_totalhitnum' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_get_idxname' => 
+  'nmz_get_idxname' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_get_idxnum' => 
+  'nmz_get_idxnum' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_get_lang' => 
+  'nmz_get_lang' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_get_lang_ctype' => 
+  'nmz_get_lang_ctype' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_get_maxhit' => 
+  'nmz_get_maxhit' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_get_maxmatch' => 
+  'nmz_get_maxmatch' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_get_querytoken' => 
+  'nmz_get_querytoken' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_info' => 
+  'nmz_info' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_is_lang_ja' => 
+  'nmz_is_lang_ja' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_num_hits' => 
+  'nmz_num_hits' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_open' => 
+  'nmz_open' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_result_date' => 
+  'nmz_result_date' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_result_field' => 
+  'nmz_result_field' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_result_score' => 
+  'nmz_result_score' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_search' => 
+  'nmz_search' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_set_debugmode' => 
+  'nmz_set_debugmode' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_set_lang' => 
+  'nmz_set_lang' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_set_loggingmode' => 
+  'nmz_set_loggingmode' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_set_maxhit' => 
+  'nmz_set_maxhit' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_set_maxmatch' => 
+  'nmz_set_maxmatch' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_set_sortmethod' => 
+  'nmz_set_sortmethod' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'nmz_set_sortorder' => 
+  'nmz_set_sortorder' =>
   array (
     'ext' => 'pecl_namazu',
     'init' => '4-dev',
   ),
-  'netools_device_enum' => 
+  'netools_device_enum' =>
   array (
     'ext' => 'pecl_netools',
     'init' => '4-dev',
   ),
-  'netools_hostname_to_mac' => 
+  'netools_hostname_to_mac' =>
   array (
     'ext' => 'pecl_netools',
     'init' => '4-dev',
   ),
-  'netools_ip_to_mac' => 
+  'netools_ip_to_mac' =>
   array (
     'ext' => 'pecl_netools',
     'init' => '4-dev',
   ),
-  'newt_bell' => 
+  'newt_bell' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_button' => 
+  'newt_button' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_button_bar' => 
+  'newt_button_bar' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_button_barv' => 
+  'newt_button_barv' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_centered_window' => 
+  'newt_centered_window' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox' => 
+  'newt_checkbox' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_get_value' => 
+  'newt_checkbox_get_value' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_set_flags' => 
+  'newt_checkbox_set_flags' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_set_value' => 
+  'newt_checkbox_set_value' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree' => 
+  'newt_checkbox_tree' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_add_array' => 
+  'newt_checkbox_tree_add_array' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_add_item' => 
+  'newt_checkbox_tree_add_item' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_find_item' => 
+  'newt_checkbox_tree_find_item' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_get_current' => 
+  'newt_checkbox_tree_get_current' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_get_entry_value' => 
+  'newt_checkbox_tree_get_entry_value' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_get_multi_selection' => 
+  'newt_checkbox_tree_get_multi_selection' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_get_selection' => 
+  'newt_checkbox_tree_get_selection' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_multi' => 
+  'newt_checkbox_tree_multi' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_set_current' => 
+  'newt_checkbox_tree_set_current' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_set_entry' => 
+  'newt_checkbox_tree_set_entry' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_set_entry_value' => 
+  'newt_checkbox_tree_set_entry_value' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_checkbox_tree_set_width' => 
+  'newt_checkbox_tree_set_width' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_clear_key_buffer' => 
+  'newt_clear_key_buffer' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_cls' => 
+  'newt_cls' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_compact_button' => 
+  'newt_compact_button' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_component_add_callback' => 
+  'newt_component_add_callback' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_component_takes_focus' => 
+  'newt_component_takes_focus' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_create_grid' => 
+  'newt_create_grid' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_cursor_off' => 
+  'newt_cursor_off' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_cursor_on' => 
+  'newt_cursor_on' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_delay' => 
+  'newt_delay' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_draw_form' => 
+  'newt_draw_form' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_draw_root_text' => 
+  'newt_draw_root_text' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_entry' => 
+  'newt_entry' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_entry_get_value' => 
+  'newt_entry_get_value' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_entry_set' => 
+  'newt_entry_set' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_entry_set_filter' => 
+  'newt_entry_set_filter' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_entry_set_flags' => 
+  'newt_entry_set_flags' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_finished' => 
+  'newt_finished' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form' => 
+  'newt_form' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_add_component' => 
+  'newt_form_add_component' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_add_components' => 
+  'newt_form_add_components' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_add_hot_key' => 
+  'newt_form_add_hot_key' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_destroy' => 
+  'newt_form_destroy' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_get_current' => 
+  'newt_form_get_current' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_run' => 
+  'newt_form_run' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_set_background' => 
+  'newt_form_set_background' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_set_current' => 
+  'newt_form_set_current' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_set_height' => 
+  'newt_form_set_height' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_set_size' => 
+  'newt_form_set_size' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_set_timer' => 
+  'newt_form_set_timer' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_set_width' => 
+  'newt_form_set_width' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_form_watch_fd' => 
+  'newt_form_watch_fd' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_get_screen_size' => 
+  'newt_get_screen_size' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_add_components_to_form' => 
+  'newt_grid_add_components_to_form' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_basic_window' => 
+  'newt_grid_basic_window' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_destroy' => 
+  'newt_grid_destroy' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_free' => 
+  'newt_grid_free' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_get_size' => 
+  'newt_grid_get_size' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_h_close_stacked' => 
+  'newt_grid_h_close_stacked' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_h_stacked' => 
+  'newt_grid_h_stacked' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_place' => 
+  'newt_grid_place' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_set_field' => 
+  'newt_grid_set_field' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_simple_window' => 
+  'newt_grid_simple_window' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_v_close_stacked' => 
+  'newt_grid_v_close_stacked' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_v_stacked' => 
+  'newt_grid_v_stacked' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_wrapped_window' => 
+  'newt_grid_wrapped_window' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_grid_wrapped_window_at' => 
+  'newt_grid_wrapped_window_at' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_init' => 
+  'newt_init' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_label' => 
+  'newt_label' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_label_set_text' => 
+  'newt_label_set_text' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox' => 
+  'newt_listbox' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_add_entry' => 
+  'newt_listbox_add_entry' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_append_entry' => 
+  'newt_listbox_append_entry' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_clear' => 
+  'newt_listbox_clear' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_clear_selection' => 
+  'newt_listbox_clear_selection' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_delete_entry' => 
+  'newt_listbox_delete_entry' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_get_current' => 
+  'newt_listbox_get_current' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_get_entry' => 
+  'newt_listbox_get_entry' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_get_selection' => 
+  'newt_listbox_get_selection' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_insert_entry' => 
+  'newt_listbox_insert_entry' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_item_count' => 
+  'newt_listbox_item_count' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_select_item' => 
+  'newt_listbox_select_item' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_set_current' => 
+  'newt_listbox_set_current' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_set_current_by_key' => 
+  'newt_listbox_set_current_by_key' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_set_data' => 
+  'newt_listbox_set_data' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_set_entry' => 
+  'newt_listbox_set_entry' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listbox_set_width' => 
+  'newt_listbox_set_width' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listitem' => 
+  'newt_listitem' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listitem_get_data' => 
+  'newt_listitem_get_data' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_listitem_set' => 
+  'newt_listitem_set' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_open_window' => 
+  'newt_open_window' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_pop_help_line' => 
+  'newt_pop_help_line' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_pop_window' => 
+  'newt_pop_window' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_push_help_line' => 
+  'newt_push_help_line' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_radio_get_current' => 
+  'newt_radio_get_current' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_radiobutton' => 
+  'newt_radiobutton' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_redraw_help_line' => 
+  'newt_redraw_help_line' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_reflow_text' => 
+  'newt_reflow_text' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_refresh' => 
+  'newt_refresh' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_resize_screen' => 
+  'newt_resize_screen' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_resume' => 
+  'newt_resume' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_run_form' => 
+  'newt_run_form' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_scale' => 
+  'newt_scale' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_scale_set' => 
+  'newt_scale_set' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_scrollbar_set' => 
+  'newt_scrollbar_set' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_set_colors' => 
+  'newt_set_colors' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_set_help_callback' => 
+  'newt_set_help_callback' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_set_suspend_callback' => 
+  'newt_set_suspend_callback' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_suspend' => 
+  'newt_suspend' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_textbox' => 
+  'newt_textbox' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_textbox_get_num_lines' => 
+  'newt_textbox_get_num_lines' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_textbox_reflowed' => 
+  'newt_textbox_reflowed' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_textbox_set_height' => 
+  'newt_textbox_set_height' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_textbox_set_text' => 
+  'newt_textbox_set_text' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_vertical_scrollbar' => 
+  'newt_vertical_scrollbar' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_wait_for_key' => 
+  'newt_wait_for_key' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_win_choice' => 
+  'newt_win_choice' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_win_entries' => 
+  'newt_win_entries' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_win_menu' => 
+  'newt_win_menu' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_win_message' => 
+  'newt_win_message' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_win_messagev' => 
+  'newt_win_messagev' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'newt_win_ternary' => 
+  'newt_win_ternary' =>
   array (
     'ext' => 'pecl_newt',
     'init' => '4-dev',
   ),
-  'ntuser_getdomaincontroller' => 
+  'ntuser_getdomaincontroller' =>
   array (
     'ext' => 'pecl_ntuser',
     'init' => '4-dev',
   ),
-  'ntuser_getusergroups' => 
+  'ntuser_getusergroups' =>
   array (
     'ext' => 'pecl_ntuser',
     'init' => '4-dev',
   ),
-  'ntuser_getuserinfo' => 
+  'ntuser_getuserinfo' =>
   array (
     'ext' => 'pecl_ntuser',
     'init' => '4-dev',
   ),
-  'ntuser_getuserlist' => 
+  'ntuser_getuserlist' =>
   array (
     'ext' => 'pecl_ntuser',
     'init' => '4-dev',
   ),
-  'openal_buffer_create' => 
+  'openal_buffer_create' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_buffer_data' => 
+  'openal_buffer_data' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_buffer_destroy' => 
+  'openal_buffer_destroy' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_buffer_get' => 
+  'openal_buffer_get' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_buffer_loadwav' => 
+  'openal_buffer_loadwav' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_context_create' => 
+  'openal_context_create' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_context_current' => 
+  'openal_context_current' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_context_destroy' => 
+  'openal_context_destroy' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_context_process' => 
+  'openal_context_process' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_context_suspend' => 
+  'openal_context_suspend' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_device_close' => 
+  'openal_device_close' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_device_open' => 
+  'openal_device_open' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_listener_get' => 
+  'openal_listener_get' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_listener_set' => 
+  'openal_listener_set' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_source_create' => 
+  'openal_source_create' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_source_destroy' => 
+  'openal_source_destroy' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_source_get' => 
+  'openal_source_get' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_source_pause' => 
+  'openal_source_pause' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_source_play' => 
+  'openal_source_play' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_source_rewind' => 
+  'openal_source_rewind' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_source_set' => 
+  'openal_source_set' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_source_stop' => 
+  'openal_source_stop' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'openal_stream' => 
+  'openal_stream' =>
   array (
     'ext' => 'pecl_openal',
     'init' => '4-dev',
   ),
-  'ds_add_attribute' => 
+  'ds_add_attribute' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_add_attribute_value' => 
+  'ds_add_attribute_value' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_add_child_pid_to_reference' => 
+  'ds_add_child_pid_to_reference' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_close_dir_node' => 
+  'ds_close_dir_node' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_close_dir_service' => 
+  'ds_close_dir_service' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_close_record' => 
+  'ds_close_record' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_continue_data' => 
+  'ds_continue_data' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_create_record' => 
+  'ds_create_record' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_create_record_and_open' => 
+  'ds_create_record_and_open' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_data_buffer_alloc' => 
+  'ds_data_buffer_alloc' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_data_buffer_dealloc' => 
+  'ds_data_buffer_dealloc' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_delete_record' => 
+  'ds_delete_record' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_dir_errstr' => 
+  'ds_dir_errstr' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_dir_status' => 
+  'ds_dir_status' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_do_attribute_value_search' => 
+  'ds_do_attribute_value_search' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_do_dir_node_auth' => 
+  'ds_do_dir_node_auth' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_find_dir_nodes' => 
+  'ds_find_dir_nodes' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_flush_record' => 
+  'ds_flush_record' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_get_dir_node_count' => 
+  'ds_get_dir_node_count' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_get_dir_node_info' => 
+  'ds_get_dir_node_info' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_get_dir_node_list' => 
+  'ds_get_dir_node_list' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_get_record_attr_value_by_id' => 
+  'ds_get_record_attr_value_by_id' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_get_record_attr_value_by_index' => 
+  'ds_get_record_attr_value_by_index' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_get_record_attribute_info' => 
+  'ds_get_record_attribute_info' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_get_record_list' => 
+  'ds_get_record_list' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_get_record_reference_info' => 
+  'ds_get_record_reference_info' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_get_separator' => 
+  'ds_get_separator' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_is_dir_service_running' => 
+  'ds_is_dir_service_running' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_open_dir_node' => 
+  'ds_open_dir_node' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_open_dir_service' => 
+  'ds_open_dir_service' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_open_dir_service_proxy' => 
+  'ds_open_dir_service_proxy' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_open_record' => 
+  'ds_open_record' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_release_continue_data' => 
+  'ds_release_continue_data' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_remove_attribute' => 
+  'ds_remove_attribute' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_remove_attribute_value' => 
+  'ds_remove_attribute_value' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_set_record_name' => 
+  'ds_set_record_name' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_set_record_type' => 
+  'ds_set_record_type' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_set_separator' => 
+  'ds_set_separator' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'ds_verify_dir_ref_num' => 
+  'ds_verify_dir_ref_num' =>
   array (
     'ext' => 'pecl_opendirectory',
     'init' => '4-dev',
   ),
-  'optimizer_debug_compile' => 
+  'optimizer_debug_compile' =>
   array (
     'ext' => 'pecl_optimizer',
     'init' => '4-dev',
   ),
-  'px_close' => 
+  'px_close' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_create_fp' => 
+  'px_create_fp' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_delete' => 
+  'px_delete' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_get_field' => 
+  'px_get_field' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_get_info' => 
+  'px_get_info' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_get_parameter' => 
+  'px_get_parameter' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_get_record' => 
+  'px_get_record' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_get_schema' => 
+  'px_get_schema' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_get_value' => 
+  'px_get_value' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_new' => 
+  'px_new' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_numfields' => 
+  'px_numfields' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_numrecords' => 
+  'px_numrecords' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_open_fp' => 
+  'px_open_fp' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_put_record' => 
+  'px_put_record' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_set_blob_file' => 
+  'px_set_blob_file' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_set_parameter' => 
+  'px_set_parameter' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_set_tablename' => 
+  'px_set_tablename' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_set_targetencoding' => 
+  'px_set_targetencoding' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_set_value' => 
+  'px_set_value' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'px_timestamp2string' => 
+  'px_timestamp2string' =>
   array (
     'ext' => 'pecl_paradox',
     'init' => '4-dev',
   ),
-  'parsekit_compile_file' => 
+  'parsekit_compile_file' =>
   array (
     'ext' => 'pecl_parsekit',
     'init' => '4-dev',
   ),
-  'parsekit_compile_string' => 
+  'parsekit_compile_string' =>
   array (
     'ext' => 'pecl_parsekit',
     'init' => '4-dev',
   ),
-  'parsekit_func_arginfo' => 
+  'parsekit_func_arginfo' =>
   array (
     'ext' => 'pecl_parsekit',
     'init' => '4-dev',
   ),
-  'parsekit_opcode_flags' => 
+  'parsekit_opcode_flags' =>
   array (
     'ext' => 'pecl_parsekit',
     'init' => '4-dev',
   ),
-  'parsekit_opcode_name' => 
+  'parsekit_opcode_name' =>
   array (
     'ext' => 'pecl_parsekit',
     'init' => '4-dev',
   ),
-  'pdf_activate_item' => 
+  'pdf_activate_item' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_add_nameddest' => 
+  'pdf_add_nameddest' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_begin_document' => 
+  'pdf_begin_document' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_begin_font' => 
+  'pdf_begin_font' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_begin_glyph' => 
+  'pdf_begin_glyph' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_begin_item' => 
+  'pdf_begin_item' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_begin_layer' => 
+  'pdf_begin_layer' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_begin_page_ext' => 
+  'pdf_begin_page_ext' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_create_action' => 
+  'pdf_create_action' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_create_annotation' => 
+  'pdf_create_annotation' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_create_bookmark' => 
+  'pdf_create_bookmark' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_create_field' => 
+  'pdf_create_field' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_create_fieldgroup' => 
+  'pdf_create_fieldgroup' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_create_gstate' => 
+  'pdf_create_gstate' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_create_pvf' => 
+  'pdf_create_pvf' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_create_textflow' => 
+  'pdf_create_textflow' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_define_layer' => 
+  'pdf_define_layer' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_delete_pvf' => 
+  'pdf_delete_pvf' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_delete_textflow' => 
+  'pdf_delete_textflow' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_encoding_set_char' => 
+  'pdf_encoding_set_char' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_end_document' => 
+  'pdf_end_document' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_end_font' => 
+  'pdf_end_font' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_end_glyph' => 
+  'pdf_end_glyph' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_end_item' => 
+  'pdf_end_item' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_end_layer' => 
+  'pdf_end_layer' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_end_page_ext' => 
+  'pdf_end_page_ext' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_fill_imageblock' => 
+  'pdf_fill_imageblock' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_fill_pdfblock' => 
+  'pdf_fill_pdfblock' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_fill_textblock' => 
+  'pdf_fill_textblock' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_fit_image' => 
+  'pdf_fit_image' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_fit_pdi_page' => 
+  'pdf_fit_pdi_page' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_fit_textflow' => 
+  'pdf_fit_textflow' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_fit_textline' => 
+  'pdf_fit_textline' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_get_apiname' => 
+  'pdf_get_apiname' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_get_errmsg' => 
+  'pdf_get_errmsg' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_get_errnum' => 
+  'pdf_get_errnum' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_info_textflow' => 
+  'pdf_info_textflow' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_load_font' => 
+  'pdf_load_font' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_load_iccprofile' => 
+  'pdf_load_iccprofile' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_load_image' => 
+  'pdf_load_image' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_process_pdi' => 
+  'pdf_process_pdi' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_resume_page' => 
+  'pdf_resume_page' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_set_gstate' => 
+  'pdf_set_gstate' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_set_layer_dependency' => 
+  'pdf_set_layer_dependency' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_setdashpattern' => 
+  'pdf_setdashpattern' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_shading' => 
+  'pdf_shading' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_shading_pattern' => 
+  'pdf_shading_pattern' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_shfill' => 
+  'pdf_shfill' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_suspend_page' => 
+  'pdf_suspend_page' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_utf16_to_utf8' => 
+  'pdf_utf16_to_utf8' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'pdf_utf8_to_utf16' => 
+  'pdf_utf8_to_utf16' =>
   array (
     'ext' => 'pecl_pdf',
     'init' => '4-dev',
   ),
-  'philter_encode' => 
+  'philter_encode' =>
   array (
     'ext' => 'pecl_philter',
     'init' => '4-dev',
   ),
-  'confirm_phpdoc_compiled' => 
+  'confirm_phpdoc_compiled' =>
   array (
     'ext' => 'pecl_phpdoc',
     'init' => '4-dev',
   ),
-  'phpdoc_xml_from_string' => 
+  'phpdoc_xml_from_string' =>
   array (
     'ext' => 'pecl_phpdoc',
     'init' => '4-dev',
   ),
-  'delete_taghkey' => 
+  'delete_taghkey' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'delete_timestamp_struct' => 
+  'delete_timestamp_struct' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'new_taghkey' => 
+  'new_taghkey' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'new_timestamp_struct' => 
+  'new_timestamp_struct' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'regclosekey' => 
+  'regclosekey' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'regopenkeyex' => 
+  'regopenkeyex' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'regqueryvalueex' => 
+  'regqueryvalueex' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlallocconnect' => 
+  'sqlallocconnect' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlallocenv' => 
+  'sqlallocenv' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlallocstmt' => 
+  'sqlallocstmt' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlbindcol' => 
+  'sqlbindcol' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlbindparameter' => 
+  'sqlbindparameter' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlbrowseconnect' => 
+  'sqlbrowseconnect' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlcancel' => 
+  'sqlcancel' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlcolattributes' => 
+  'sqlcolattributes' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlcolumnprivileges' => 
+  'sqlcolumnprivileges' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlcolumns' => 
+  'sqlcolumns' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqldatasources' => 
+  'sqldatasources' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqldescribecol' => 
+  'sqldescribecol' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqldescribeparam' => 
+  'sqldescribeparam' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqldriverconnect' => 
+  'sqldriverconnect' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqldrivers' => 
+  'sqldrivers' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlerror' => 
+  'sqlerror' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlexecute' => 
+  'sqlexecute' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlextendedfetch' => 
+  'sqlextendedfetch' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlforeignkeys' => 
+  'sqlforeignkeys' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlfreeconnect' => 
+  'sqlfreeconnect' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlfreeenv' => 
+  'sqlfreeenv' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlfreestmt' => 
+  'sqlfreestmt' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlgetconnectoption' => 
+  'sqlgetconnectoption' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlgetcursorname' => 
+  'sqlgetcursorname' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlgetfunctions' => 
+  'sqlgetfunctions' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlgetinfo' => 
+  'sqlgetinfo' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlgetstmtoption' => 
+  'sqlgetstmtoption' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlgettypeinfo' => 
+  'sqlgettypeinfo' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlmoreresults' => 
+  'sqlmoreresults' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlnativesql' => 
+  'sqlnativesql' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlnumparams' => 
+  'sqlnumparams' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlnumresultcols' => 
+  'sqlnumresultcols' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlparamdata' => 
+  'sqlparamdata' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlparamoptions' => 
+  'sqlparamoptions' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlprepare' => 
+  'sqlprepare' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlprimarykeys' => 
+  'sqlprimarykeys' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlprocedurecolumns' => 
+  'sqlprocedurecolumns' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlprocedures' => 
+  'sqlprocedures' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlputdata' => 
+  'sqlputdata' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlsetconnectoption' => 
+  'sqlsetconnectoption' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlsetcursorname' => 
+  'sqlsetcursorname' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlsetparam' => 
+  'sqlsetparam' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlsetpos' => 
+  'sqlsetpos' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlsetscrolloptions' => 
+  'sqlsetscrolloptions' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlsetstmtoption' => 
+  'sqlsetstmtoption' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlspecialcolumns' => 
+  'sqlspecialcolumns' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqlstatistics' => 
+  'sqlstatistics' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqltableprivileges' => 
+  'sqltableprivileges' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqltables' => 
+  'sqltables' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'sqltransact' => 
+  'sqltransact' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'taghkey_fp_get' => 
+  'taghkey_fp_get' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'taghkey_fp_set' => 
+  'taghkey_fp_set' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'taghkey_sec_get' => 
+  'taghkey_sec_get' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'taghkey_sec_set' => 
+  'taghkey_sec_set' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_day_get' => 
+  'timestamp_struct_day_get' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_day_set' => 
+  'timestamp_struct_day_set' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_fraction_get' => 
+  'timestamp_struct_fraction_get' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_fraction_set' => 
+  'timestamp_struct_fraction_set' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_hour_get' => 
+  'timestamp_struct_hour_get' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_hour_set' => 
+  'timestamp_struct_hour_set' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_minute_get' => 
+  'timestamp_struct_minute_get' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_minute_set' => 
+  'timestamp_struct_minute_set' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_month_get' => 
+  'timestamp_struct_month_get' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_month_set' => 
+  'timestamp_struct_month_set' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_second_get' => 
+  'timestamp_struct_second_get' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_second_set' => 
+  'timestamp_struct_second_set' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_year_get' => 
+  'timestamp_struct_year_get' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'timestamp_struct_year_set' => 
+  'timestamp_struct_year_set' =>
   array (
     'ext' => 'pecl_picosql',
     'init' => '4-dev',
   ),
-  'pop3_close' => 
+  'pop3_close' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'pop3_delete_message' => 
+  'pop3_delete_message' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'pop3_get_account_size' => 
+  'pop3_get_account_size' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'pop3_get_message' => 
+  'pop3_get_message' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'pop3_get_message_count' => 
+  'pop3_get_message_count' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'pop3_get_message_header' => 
+  'pop3_get_message_header' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'pop3_get_message_ids' => 
+  'pop3_get_message_ids' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'pop3_get_message_size' => 
+  'pop3_get_message_size' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'pop3_get_message_sizes' => 
+  'pop3_get_message_sizes' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'pop3_open' => 
+  'pop3_open' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'pop3_undelete' => 
+  'pop3_undelete' =>
   array (
     'ext' => 'pecl_pop3',
     'init' => '4-dev',
   ),
-  'printer_abort' => 
+  'printer_abort' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_close' => 
+  'printer_close' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_create_brush' => 
+  'printer_create_brush' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_create_dc' => 
+  'printer_create_dc' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_create_font' => 
+  'printer_create_font' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_create_pen' => 
+  'printer_create_pen' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_delete_brush' => 
+  'printer_delete_brush' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_delete_dc' => 
+  'printer_delete_dc' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_delete_font' => 
+  'printer_delete_font' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_delete_pen' => 
+  'printer_delete_pen' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_draw_bmp' => 
+  'printer_draw_bmp' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_draw_chord' => 
+  'printer_draw_chord' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_draw_elipse' => 
+  'printer_draw_elipse' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_draw_line' => 
+  'printer_draw_line' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_draw_pie' => 
+  'printer_draw_pie' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_draw_rectangle' => 
+  'printer_draw_rectangle' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_draw_roundrect' => 
+  'printer_draw_roundrect' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_draw_text' => 
+  'printer_draw_text' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_end_doc' => 
+  'printer_end_doc' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_end_page' => 
+  'printer_end_page' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_get_option' => 
+  'printer_get_option' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_list' => 
+  'printer_list' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_logical_fontheight' => 
+  'printer_logical_fontheight' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_open' => 
+  'printer_open' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_select_brush' => 
+  'printer_select_brush' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_select_font' => 
+  'printer_select_font' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_select_pen' => 
+  'printer_select_pen' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_set_option' => 
+  'printer_set_option' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_start_doc' => 
+  'printer_start_doc' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_start_page' => 
+  'printer_start_page' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'printer_write' => 
+  'printer_write' =>
   array (
     'ext' => 'pecl_printer',
     'init' => '4-dev',
   ),
-  'ps_add_bookmark' => 
+  'ps_add_bookmark' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_add_launchlink' => 
+  'ps_add_launchlink' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_add_locallink' => 
+  'ps_add_locallink' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_add_note' => 
+  'ps_add_note' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_add_pdflink' => 
+  'ps_add_pdflink' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_add_weblink' => 
+  'ps_add_weblink' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_arc' => 
+  'ps_arc' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_begin_page' => 
+  'ps_begin_page' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_begin_pattern' => 
+  'ps_begin_pattern' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_begin_template' => 
+  'ps_begin_template' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_circle' => 
+  'ps_circle' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_clip' => 
+  'ps_clip' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_close' => 
+  'ps_close' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_close_image' => 
+  'ps_close_image' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_closepath' => 
+  'ps_closepath' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_closepath_stroke' => 
+  'ps_closepath_stroke' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_continue_text' => 
+  'ps_continue_text' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_curveto' => 
+  'ps_curveto' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_delete' => 
+  'ps_delete' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_end_page' => 
+  'ps_end_page' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_end_pattern' => 
+  'ps_end_pattern' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_end_template' => 
+  'ps_end_template' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_fill' => 
+  'ps_fill' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_fill_stroke' => 
+  'ps_fill_stroke' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_findfont' => 
+  'ps_findfont' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_get_buffer' => 
+  'ps_get_buffer' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_get_parameter' => 
+  'ps_get_parameter' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_get_value' => 
+  'ps_get_value' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_hyphenate' => 
+  'ps_hyphenate' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_lineto' => 
+  'ps_lineto' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_makespotcolor' => 
+  'ps_makespotcolor' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_moveto' => 
+  'ps_moveto' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_new' => 
+  'ps_new' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_open_file' => 
+  'ps_open_file' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_open_image' => 
+  'ps_open_image' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_open_image_file' => 
+  'ps_open_image_file' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_open_memory_image' => 
+  'ps_open_memory_image' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_place_image' => 
+  'ps_place_image' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_rect' => 
+  'ps_rect' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_restore' => 
+  'ps_restore' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_rotate' => 
+  'ps_rotate' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_save' => 
+  'ps_save' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_scale' => 
+  'ps_scale' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_set_border_color' => 
+  'ps_set_border_color' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_set_border_dash' => 
+  'ps_set_border_dash' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_set_border_style' => 
+  'ps_set_border_style' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_set_info' => 
+  'ps_set_info' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_set_parameter' => 
+  'ps_set_parameter' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_set_text_pos' => 
+  'ps_set_text_pos' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_set_value' => 
+  'ps_set_value' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_setcolor' => 
+  'ps_setcolor' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_setdash' => 
+  'ps_setdash' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_setflat' => 
+  'ps_setflat' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_setfont' => 
+  'ps_setfont' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_setlinecap' => 
+  'ps_setlinecap' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_setlinejoin' => 
+  'ps_setlinejoin' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_setlinewidth' => 
+  'ps_setlinewidth' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_setmiterlimit' => 
+  'ps_setmiterlimit' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_setoverprintmode' => 
+  'ps_setoverprintmode' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_setpolydash' => 
+  'ps_setpolydash' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_shading' => 
+  'ps_shading' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_shading_pattern' => 
+  'ps_shading_pattern' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_shfill' => 
+  'ps_shfill' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_show' => 
+  'ps_show' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_show2' => 
+  'ps_show2' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_show_boxed' => 
+  'ps_show_boxed' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_show_xy' => 
+  'ps_show_xy' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_show_xy2' => 
+  'ps_show_xy2' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_string_geometry' => 
+  'ps_string_geometry' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_stringwidth' => 
+  'ps_stringwidth' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_stroke' => 
+  'ps_stroke' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_symbol' => 
+  'ps_symbol' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_symbol_name' => 
+  'ps_symbol_name' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_symbol_width' => 
+  'ps_symbol_width' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'ps_translate' => 
+  'ps_translate' =>
   array (
     'ext' => 'pecl_ps',
     'init' => '4-dev',
   ),
-  'py_call' => 
+  'py_call' =>
   array (
     'ext' => 'pecl_python',
     'init' => '4-dev',
   ),
-  'py_eval' => 
+  'py_eval' =>
   array (
     'ext' => 'pecl_python',
     'init' => '4-dev',
   ),
-  'py_import' => 
+  'py_import' =>
   array (
     'ext' => 'pecl_python',
     'init' => '4-dev',
   ),
-  'py_path' => 
+  'py_path' =>
   array (
     'ext' => 'pecl_python',
     'init' => '4-dev',
   ),
-  'py_path_append' => 
+  'py_path_append' =>
   array (
     'ext' => 'pecl_python',
     'init' => '4-dev',
   ),
-  'py_path_prepend' => 
+  'py_path_prepend' =>
   array (
     'ext' => 'pecl_python',
     'init' => '4-dev',
   ),
-  'radius_acct_open' => 
+  'radius_acct_open' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_add_server' => 
+  'radius_add_server' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_auth_open' => 
+  'radius_auth_open' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_close' => 
+  'radius_close' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_config' => 
+  'radius_config' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_create_request' => 
+  'radius_create_request' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_cvt_addr' => 
+  'radius_cvt_addr' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_cvt_int' => 
+  'radius_cvt_int' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_cvt_string' => 
+  'radius_cvt_string' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_demangle' => 
+  'radius_demangle' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_demangle_mppe_key' => 
+  'radius_demangle_mppe_key' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_get_attr' => 
+  'radius_get_attr' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_get_vendor_attr' => 
+  'radius_get_vendor_attr' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_put_addr' => 
+  'radius_put_addr' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_put_attr' => 
+  'radius_put_attr' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_put_int' => 
+  'radius_put_int' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_put_string' => 
+  'radius_put_string' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_put_vendor_addr' => 
+  'radius_put_vendor_addr' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_put_vendor_attr' => 
+  'radius_put_vendor_attr' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_put_vendor_int' => 
+  'radius_put_vendor_int' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_put_vendor_string' => 
+  'radius_put_vendor_string' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_request_authenticator' => 
+  'radius_request_authenticator' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_send_request' => 
+  'radius_send_request' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_server_secret' => 
+  'radius_server_secret' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'radius_strerror' => 
+  'radius_strerror' =>
   array (
     'ext' => 'pecl_radius',
     'init' => '4-dev',
   ),
-  'rar_close' => 
+  'rar_close' =>
   array (
     'ext' => 'pecl_rar',
     'init' => '4-dev',
   ),
-  'rar_entry_get' => 
+  'rar_entry_get' =>
   array (
     'ext' => 'pecl_rar',
     'init' => '4-dev',
   ),
-  'rar_list' => 
+  'rar_list' =>
   array (
     'ext' => 'pecl_rar',
     'init' => '4-dev',
   ),
-  'rar_open' => 
+  'rar_open' =>
   array (
     'ext' => 'pecl_rar',
     'init' => '4-dev',
   ),
-  'sasl_checkpass' => 
+  'sasl_checkpass' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_client_init' => 
+  'sasl_client_init' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_client_new' => 
+  'sasl_client_new' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_client_start' => 
+  'sasl_client_start' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_client_step' => 
+  'sasl_client_step' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_decode' => 
+  'sasl_decode' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_encode' => 
+  'sasl_encode' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_errdetail' => 
+  'sasl_errdetail' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_errstring' => 
+  'sasl_errstring' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_listmech' => 
+  'sasl_listmech' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_server_init' => 
+  'sasl_server_init' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_server_new' => 
+  'sasl_server_new' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_server_start' => 
+  'sasl_server_start' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_server_step' => 
+  'sasl_server_step' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'sasl_version' => 
+  'sasl_version' =>
   array (
     'ext' => 'pecl_sasl',
     'init' => '4-dev',
   ),
-  'session_pgsql_add_error' => 
+  'session_pgsql_add_error' =>
   array (
     'ext' => 'pecl_session_pgsql',
     'init' => '4-dev',
   ),
-  'session_pgsql_get_error' => 
+  'session_pgsql_get_error' =>
   array (
     'ext' => 'pecl_session_pgsql',
     'init' => '4-dev',
   ),
-  'session_pgsql_get_field' => 
+  'session_pgsql_get_field' =>
   array (
     'ext' => 'pecl_session_pgsql',
     'init' => '4-dev',
   ),
-  'session_pgsql_info' => 
+  'session_pgsql_info' =>
   array (
     'ext' => 'pecl_session_pgsql',
     'init' => '4-dev',
   ),
-  'session_pgsql_reset' => 
+  'session_pgsql_reset' =>
   array (
     'ext' => 'pecl_session_pgsql',
     'init' => '4-dev',
   ),
-  'session_pgsql_set_field' => 
+  'session_pgsql_set_field' =>
   array (
     'ext' => 'pecl_session_pgsql',
     'init' => '4-dev',
   ),
-  'session_pgsql_status' => 
+  'session_pgsql_status' =>
   array (
     'ext' => 'pecl_session_pgsql',
     'init' => '4-dev',
   ),
-  'scvs_checkout' => 
+  'scvs_checkout' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_commit' => 
+  'scvs_commit' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_diff' => 
+  'scvs_diff' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_get_auth_method' => 
+  'scvs_get_auth_method' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_get_compression_level' => 
+  'scvs_get_compression_level' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_get_cvsroot' => 
+  'scvs_get_cvsroot' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_get_host' => 
+  'scvs_get_host' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_get_module_name' => 
+  'scvs_get_module_name' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_get_username' => 
+  'scvs_get_username' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_get_working_dir' => 
+  'scvs_get_working_dir' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_login' => 
+  'scvs_login' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_set_auth_method' => 
+  'scvs_set_auth_method' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_set_compression_level' => 
+  'scvs_set_compression_level' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_set_cvsroot' => 
+  'scvs_set_cvsroot' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_set_host' => 
+  'scvs_set_host' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_set_module_name' => 
+  'scvs_set_module_name' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_set_username' => 
+  'scvs_set_username' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_set_working_dir' => 
+  'scvs_set_working_dir' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_status' => 
+  'scvs_status' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'scvs_update' => 
+  'scvs_update' =>
   array (
     'ext' => 'pecl_simple_cvs',
     'init' => '4-dev',
   ),
-  'smbc_close' => 
+  'smbc_close' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_closedir' => 
+  'smbc_closedir' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_create' => 
+  'smbc_create' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_lseek' => 
+  'smbc_lseek' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_mkdir' => 
+  'smbc_mkdir' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_open' => 
+  'smbc_open' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_opendir' => 
+  'smbc_opendir' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_read' => 
+  'smbc_read' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_readdir' => 
+  'smbc_readdir' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_rename' => 
+  'smbc_rename' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_rewinddir' => 
+  'smbc_rewinddir' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_rmdir' => 
+  'smbc_rmdir' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_set_auth' => 
+  'smbc_set_auth' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_unlink' => 
+  'smbc_unlink' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smbc_write' => 
+  'smbc_write' =>
   array (
     'ext' => 'pecl_smbc',
     'init' => '4-dev',
   ),
-  'smtp_close' => 
+  'smtp_close' =>
   array (
     'ext' => 'pecl_smtp',
     'init' => '4-dev',
   ),
-  'smtp_cmd_data' => 
+  'smtp_cmd_data' =>
   array (
     'ext' => 'pecl_smtp',
     'init' => '4-dev',
   ),
-  'smtp_cmd_mail' => 
+  'smtp_cmd_mail' =>
   array (
     'ext' => 'pecl_smtp',
     'init' => '4-dev',
   ),
-  'smtp_cmd_rcpt' => 
+  'smtp_cmd_rcpt' =>
   array (
     'ext' => 'pecl_smtp',
     'init' => '4-dev',
   ),
-  'smtp_connect' => 
+  'smtp_connect' =>
   array (
     'ext' => 'pecl_smtp',
     'init' => '4-dev',
   ),
-  'sndfile_buffer_create' => 
+  'sndfile_buffer_create' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_buffer_free' => 
+  'sndfile_buffer_free' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_buffer_get_pcm_at' => 
+  'sndfile_buffer_get_pcm_at' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_buffer_set_pcm_at' => 
+  'sndfile_buffer_set_pcm_at' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_buffer_size' => 
+  'sndfile_buffer_size' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_buffer_type' => 
+  'sndfile_buffer_type' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_close' => 
+  'sndfile_close' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_command' => 
+  'sndfile_command' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_convert_array2buffer' => 
+  'sndfile_convert_array2buffer' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_convert_buffer2array' => 
+  'sndfile_convert_buffer2array' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_eof' => 
+  'sndfile_eof' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_error_code' => 
+  'sndfile_error_code' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_error_str' => 
+  'sndfile_error_str' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_format_check' => 
+  'sndfile_format_check' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_get_info' => 
+  'sndfile_get_info' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_get_string' => 
+  'sndfile_get_string' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_open' => 
+  'sndfile_open' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_read_double' => 
+  'sndfile_read_double' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_read_int' => 
+  'sndfile_read_int' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_readf_double' => 
+  'sndfile_readf_double' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_readf_int' => 
+  'sndfile_readf_int' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_rewind' => 
+  'sndfile_rewind' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_seek' => 
+  'sndfile_seek' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_set_string' => 
+  'sndfile_set_string' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_write_double' => 
+  'sndfile_write_double' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_write_int' => 
+  'sndfile_write_int' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_writef_double' => 
+  'sndfile_writef_double' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'sndfile_writef_int' => 
+  'sndfile_writef_int' =>
   array (
     'ext' => 'pecl_sndfile',
     'init' => '4-dev',
   ),
-  'calcul_hmac' => 
+  'calcul_hmac' =>
   array (
     'ext' => 'pecl_spplus',
     'init' => '4-dev',
   ),
-  'calculhmac' => 
+  'calculhmac' =>
   array (
     'ext' => 'pecl_spplus',
     'init' => '4-dev',
   ),
-  'nthmac' => 
+  'nthmac' =>
   array (
     'ext' => 'pecl_spplus',
     'init' => '4-dev',
   ),
-  'signeurlpaiement' => 
+  'signeurlpaiement' =>
   array (
     'ext' => 'pecl_spplus',
     'init' => '4-dev',
   ),
-  'spread_close' => 
+  'spread_close' =>
   array (
     'ext' => 'pecl_spread',
     'init' => '4-dev',
   ),
-  'spread_connect' => 
+  'spread_connect' =>
   array (
     'ext' => 'pecl_spread',
     'init' => '4-dev',
   ),
-  'spread_error' => 
+  'spread_error' =>
   array (
     'ext' => 'pecl_spread',
     'init' => '4-dev',
   ),
-  'spread_join' => 
+  'spread_join' =>
   array (
     'ext' => 'pecl_spread',
     'init' => '4-dev',
   ),
-  'spread_multicast' => 
+  'spread_multicast' =>
   array (
     'ext' => 'pecl_spread',
     'init' => '4-dev',
   ),
-  'spread_receive' => 
+  'spread_receive' =>
   array (
     'ext' => 'pecl_spread',
     'init' => '4-dev',
   ),
-  'ssh2_auth_hostbased_file' => 
+  'ssh2_auth_hostbased_file' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_auth_none' => 
+  'ssh2_auth_none' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_auth_password' => 
+  'ssh2_auth_password' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_auth_pubkey_file' => 
+  'ssh2_auth_pubkey_file' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_connect' => 
+  'ssh2_connect' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_exec' => 
+  'ssh2_exec' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_fetch_stream' => 
+  'ssh2_fetch_stream' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_fingerprint' => 
+  'ssh2_fingerprint' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_forward_accept' => 
+  'ssh2_forward_accept' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_forward_listen' => 
+  'ssh2_forward_listen' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_methods_negotiated' => 
+  'ssh2_methods_negotiated' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_scp_recv' => 
+  'ssh2_scp_recv' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_scp_send' => 
+  'ssh2_scp_send' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_sftp' => 
+  'ssh2_sftp' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_sftp_lstat' => 
+  'ssh2_sftp_lstat' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_sftp_mkdir' => 
+  'ssh2_sftp_mkdir' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_sftp_readlink' => 
+  'ssh2_sftp_readlink' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_sftp_realpath' => 
+  'ssh2_sftp_realpath' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_sftp_rename' => 
+  'ssh2_sftp_rename' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_sftp_rmdir' => 
+  'ssh2_sftp_rmdir' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_sftp_stat' => 
+  'ssh2_sftp_stat' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_sftp_symlink' => 
+  'ssh2_sftp_symlink' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_sftp_unlink' => 
+  'ssh2_sftp_unlink' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_shell' => 
+  'ssh2_shell' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'ssh2_tunnel' => 
+  'ssh2_tunnel' =>
   array (
     'ext' => 'pecl_ssh2',
     'init' => '4-dev',
   ),
-  'sg_cpu_diff' => 
+  'sg_cpu_diff' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_cpu_percent_usage' => 
+  'sg_cpu_percent_usage' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_cpu_totals' => 
+  'sg_cpu_totals' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_diskio_stats' => 
+  'sg_diskio_stats' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_diskio_stats_diff' => 
+  'sg_diskio_stats_diff' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_general_stats' => 
+  'sg_general_stats' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_load_stats' => 
+  'sg_load_stats' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_memory_stats' => 
+  'sg_memory_stats' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_network_iface_stats' => 
+  'sg_network_iface_stats' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_network_stats' => 
+  'sg_network_stats' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_network_stats_diff' => 
+  'sg_network_stats_diff' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_page_stats' => 
+  'sg_page_stats' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_page_stats_diff' => 
+  'sg_page_stats_diff' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_process_count' => 
+  'sg_process_count' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_process_stats' => 
+  'sg_process_stats' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_swap_stats' => 
+  'sg_swap_stats' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'sg_user_stats' => 
+  'sg_user_stats' =>
   array (
     'ext' => 'pecl_statgrab',
     'init' => '4-dev',
   ),
-  'stats_cdf_beta' => 
+  'stats_cdf_beta' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_binomial' => 
+  'stats_cdf_binomial' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_cauchy' => 
+  'stats_cdf_cauchy' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_chisquare' => 
+  'stats_cdf_chisquare' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_exponential' => 
+  'stats_cdf_exponential' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_f' => 
+  'stats_cdf_f' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_gamma' => 
+  'stats_cdf_gamma' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_laplace' => 
+  'stats_cdf_laplace' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_logistic' => 
+  'stats_cdf_logistic' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_negative_binomial' => 
+  'stats_cdf_negative_binomial' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_noncentral_chisquare' => 
+  'stats_cdf_noncentral_chisquare' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_noncentral_f' => 
+  'stats_cdf_noncentral_f' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_noncentral_t' => 
+  'stats_cdf_noncentral_t' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_normal' => 
+  'stats_cdf_normal' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_poisson' => 
+  'stats_cdf_poisson' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_t' => 
+  'stats_cdf_t' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_uniform' => 
+  'stats_cdf_uniform' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_cdf_weibull' => 
+  'stats_cdf_weibull' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_beta' => 
+  'stats_dens_beta' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_cauchy' => 
+  'stats_dens_cauchy' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_chisquare' => 
+  'stats_dens_chisquare' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_exponential' => 
+  'stats_dens_exponential' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_f' => 
+  'stats_dens_f' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_gamma' => 
+  'stats_dens_gamma' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_laplace' => 
+  'stats_dens_laplace' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_logistic' => 
+  'stats_dens_logistic' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_normal' => 
+  'stats_dens_normal' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_pmf_binomial' => 
+  'stats_dens_pmf_binomial' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_pmf_hypergeometric' => 
+  'stats_dens_pmf_hypergeometric' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_pmf_negative_binomial' => 
+  'stats_dens_pmf_negative_binomial' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_pmf_poisson' => 
+  'stats_dens_pmf_poisson' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_t' => 
+  'stats_dens_t' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_uniform' => 
+  'stats_dens_uniform' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_dens_weibull' => 
+  'stats_dens_weibull' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_beta' => 
+  'stats_rand_gen_beta' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_chisquare' => 
+  'stats_rand_gen_chisquare' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_exponential' => 
+  'stats_rand_gen_exponential' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_f' => 
+  'stats_rand_gen_f' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_funiform' => 
+  'stats_rand_gen_funiform' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_gamma' => 
+  'stats_rand_gen_gamma' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_ipoisson' => 
+  'stats_rand_gen_ipoisson' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_iuniform' => 
+  'stats_rand_gen_iuniform' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_noncenral_f' => 
+  'stats_rand_gen_noncenral_f' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_noncentral_chisquare' => 
+  'stats_rand_gen_noncentral_chisquare' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_noncentral_t' => 
+  'stats_rand_gen_noncentral_t' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_normal' => 
+  'stats_rand_gen_normal' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_gen_t' => 
+  'stats_rand_gen_t' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_getsd' => 
+  'stats_rand_getsd' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_ibinomial' => 
+  'stats_rand_ibinomial' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_ibinomial_negative' => 
+  'stats_rand_ibinomial_negative' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_ignlgi' => 
+  'stats_rand_ignlgi' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_phrase_to_seeds' => 
+  'stats_rand_phrase_to_seeds' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_ranf' => 
+  'stats_rand_ranf' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_rand_setall' => 
+  'stats_rand_setall' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_stat_binomial_coef' => 
+  'stats_stat_binomial_coef' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_stat_correlation' => 
+  'stats_stat_correlation' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_stat_factorial' => 
+  'stats_stat_factorial' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_stat_independent_t' => 
+  'stats_stat_independent_t' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_stat_innerproduct' => 
+  'stats_stat_innerproduct' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_stat_paired_t' => 
+  'stats_stat_paired_t' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_stat_percentile' => 
+  'stats_stat_percentile' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'stats_stat_powersum' => 
+  'stats_stat_powersum' =>
   array (
     'ext' => 'pecl_stats',
     'init' => '4-dev',
   ),
-  'tclink_getversion' => 
+  'tclink_getversion' =>
   array (
     'ext' => 'pecl_tclink',
     'init' => '4-dev',
   ),
-  'tclink_send' => 
+  'tclink_send' =>
   array (
     'ext' => 'pecl_tclink',
     'init' => '4-dev',
   ),
-  'tcpwrap_check' => 
+  'tcpwrap_check' =>
   array (
     'ext' => 'pecl_tcpwrap',
     'init' => '4-dev',
   ),
-  'thread_get' => 
+  'thread_get' =>
   array (
     'ext' => 'pecl_threads',
     'init' => '4-dev',
   ),
-  'thread_include' => 
+  'thread_include' =>
   array (
     'ext' => 'pecl_threads',
     'init' => '4-dev',
   ),
-  'thread_lock' => 
+  'thread_lock' =>
   array (
     'ext' => 'pecl_threads',
     'init' => '4-dev',
   ),
-  'thread_lock_try' => 
+  'thread_lock_try' =>
   array (
     'ext' => 'pecl_threads',
     'init' => '4-dev',
   ),
-  'thread_mutex_destroy' => 
+  'thread_mutex_destroy' =>
   array (
     'ext' => 'pecl_threads',
     'init' => '4-dev',
   ),
-  'thread_mutex_init' => 
+  'thread_mutex_init' =>
   array (
     'ext' => 'pecl_threads',
     'init' => '4-dev',
   ),
-  'thread_set' => 
+  'thread_set' =>
   array (
     'ext' => 'pecl_threads',
     'init' => '4-dev',
   ),
-  'thread_start' => 
+  'thread_start' =>
   array (
     'ext' => 'pecl_threads',
     'init' => '4-dev',
   ),
-  'thread_unlock' => 
+  'thread_unlock' =>
   array (
     'ext' => 'pecl_threads',
     'init' => '4-dev',
   ),
-  'transliterate' => 
+  'transliterate' =>
   array (
     'ext' => 'pecl_translit',
     'init' => '4-dev',
   ),
-  'transliterate_filters_get' => 
+  'transliterate_filters_get' =>
   array (
     'ext' => 'pecl_translit',
     'init' => '4-dev',
   ),
-  'uuid_compare' => 
+  'uuid_compare' =>
   array (
     'ext' => 'pecl_uuid',
     'init' => '4-dev',
   ),
-  'uuid_create' => 
+  'uuid_create' =>
   array (
     'ext' => 'pecl_uuid',
     'init' => '4-dev',
   ),
-  'uuid_is_null' => 
+  'uuid_is_null' =>
   array (
     'ext' => 'pecl_uuid',
     'init' => '4-dev',
   ),
-  'uuid_is_valid' => 
+  'uuid_is_valid' =>
   array (
     'ext' => 'pecl_uuid',
     'init' => '4-dev',
   ),
-  'uuid_mac' => 
+  'uuid_mac' =>
   array (
     'ext' => 'pecl_uuid',
     'init' => '4-dev',
   ),
-  'uuid_time' => 
+  'uuid_time' =>
   array (
     'ext' => 'pecl_uuid',
     'init' => '4-dev',
   ),
-  'uuid_type' => 
+  'uuid_type' =>
   array (
     'ext' => 'pecl_uuid',
     'init' => '4-dev',
   ),
-  'uuid_variant' => 
+  'uuid_variant' =>
   array (
     'ext' => 'pecl_uuid',
     'init' => '4-dev',
   ),
-  'valkyrie_reload_config' => 
+  'valkyrie_reload_config' =>
   array (
     'ext' => 'pecl_valkyrie',
     'init' => '4-dev',
   ),
-  'valkyrie_validate' => 
+  'valkyrie_validate' =>
   array (
     'ext' => 'pecl_valkyrie',
     'init' => '4-dev',
   ),
-  'win32_scheduler_delete_task' => 
+  'win32_scheduler_delete_task' =>
   array (
     'ext' => 'pecl_win32scheduler',
     'init' => '4-dev',
   ),
-  'win32_scheduler_enum_tasks' => 
+  'win32_scheduler_enum_tasks' =>
   array (
     'ext' => 'pecl_win32scheduler',
     'init' => '4-dev',
   ),
-  'win32_scheduler_get_task_info' => 
+  'win32_scheduler_get_task_info' =>
   array (
     'ext' => 'pecl_win32scheduler',
     'init' => '4-dev',
   ),
-  'win32_scheduler_run' => 
+  'win32_scheduler_run' =>
   array (
     'ext' => 'pecl_win32scheduler',
     'init' => '4-dev',
   ),
-  'win32_scheduler_set_task_info' => 
+  'win32_scheduler_set_task_info' =>
   array (
     'ext' => 'pecl_win32scheduler',
     'init' => '4-dev',
   ),
-  'win32_create_service' => 
+  'win32_create_service' =>
   array (
     'ext' => 'pecl_win32service',
     'init' => '4-dev',
   ),
-  'win32_delete_service' => 
+  'win32_delete_service' =>
   array (
     'ext' => 'pecl_win32service',
     'init' => '4-dev',
   ),
-  'win32_get_last_control_message' => 
+  'win32_get_last_control_message' =>
   array (
     'ext' => 'pecl_win32service',
     'init' => '4-dev',
   ),
-  'win32_set_service_status' => 
+  'win32_set_service_status' =>
   array (
     'ext' => 'pecl_win32service',
     'init' => '4-dev',
   ),
-  'win32_start_service_ctrl_dispatcher' => 
+  'win32_start_service_ctrl_dispatcher' =>
   array (
     'ext' => 'pecl_win32service',
     'init' => '4-dev',
   ),
-  'reg_close_key' => 
+  'reg_close_key' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'reg_create_key' => 
+  'reg_create_key' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'reg_enum_key' => 
+  'reg_enum_key' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'reg_enum_value' => 
+  'reg_enum_value' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'reg_get_value' => 
+  'reg_get_value' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'reg_open_key' => 
+  'reg_open_key' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'reg_set_value' => 
+  'reg_set_value' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'res_close' => 
+  'res_close' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'res_get' => 
+  'res_get' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'res_list' => 
+  'res_list' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'res_list_type' => 
+  'res_list_type' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'res_open' => 
+  'res_open' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'res_set' => 
+  'res_set' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'win_beep' => 
+  'win_beep' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'win_browse_file' => 
+  'win_browse_file' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'win_browse_folder' => 
+  'win_browse_folder' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'win_create_link' => 
+  'win_create_link' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'win_message_box' => 
+  'win_message_box' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'win_play_wav' => 
+  'win_play_wav' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'win_shell_execute' => 
+  'win_shell_execute' =>
   array (
     'ext' => 'pecl_win32std',
     'init' => '4-dev',
   ),
-  'xattr_get' => 
+  'xattr_get' =>
   array (
     'ext' => 'pecl_xattr',
     'init' => '4-dev',
   ),
-  'xattr_list' => 
+  'xattr_list' =>
   array (
     'ext' => 'pecl_xattr',
     'init' => '4-dev',
   ),
-  'xattr_remove' => 
+  'xattr_remove' =>
   array (
     'ext' => 'pecl_xattr',
     'init' => '4-dev',
   ),
-  'xattr_set' => 
+  'xattr_set' =>
   array (
     'ext' => 'pecl_xattr',
     'init' => '4-dev',
   ),
-  'xattr_supported' => 
+  'xattr_supported' =>
   array (
     'ext' => 'pecl_xattr',
     'init' => '4-dev',
   ),
-  'xdiff_file_diff' => 
+  'xdiff_file_diff' =>
   array (
     'ext' => 'pecl_xdiff',
     'init' => '4-dev',
   ),
-  'xdiff_file_diff_binary' => 
+  'xdiff_file_diff_binary' =>
   array (
     'ext' => 'pecl_xdiff',
     'init' => '4-dev',
   ),
-  'xdiff_file_merge3' => 
+  'xdiff_file_merge3' =>
   array (
     'ext' => 'pecl_xdiff',
     'init' => '4-dev',
   ),
-  'xdiff_file_patch' => 
+  'xdiff_file_patch' =>
   array (
     'ext' => 'pecl_xdiff',
     'init' => '4-dev',
   ),
-  'xdiff_file_patch_binary' => 
+  'xdiff_file_patch_binary' =>
   array (
     'ext' => 'pecl_xdiff',
     'init' => '4-dev',
   ),
-  'xdiff_string_diff' => 
+  'xdiff_string_diff' =>
   array (
     'ext' => 'pecl_xdiff',
     'init' => '4-dev',
   ),
-  'xdiff_string_diff_binary' => 
+  'xdiff_string_diff_binary' =>
   array (
     'ext' => 'pecl_xdiff',
     'init' => '4-dev',
   ),
-  'xdiff_string_merge3' => 
+  'xdiff_string_merge3' =>
   array (
     'ext' => 'pecl_xdiff',
     'init' => '4-dev',
   ),
-  'xdiff_string_patch' => 
+  'xdiff_string_patch' =>
   array (
     'ext' => 'pecl_xdiff',
     'init' => '4-dev',
   ),
-  'xdiff_string_patch_binary' => 
+  'xdiff_string_patch_binary' =>
   array (
     'ext' => 'pecl_xdiff',
     'init' => '4-dev',
   ),
-  'xmgrace_close' => 
+  'xmgrace_close' =>
   array (
     'ext' => 'pecl_xmgrace',
     'init' => '4-dev',
   ),
-  'xmgrace_command' => 
+  'xmgrace_command' =>
   array (
     'ext' => 'pecl_xmgrace',
     'init' => '4-dev',
   ),
-  'xmgrace_flush' => 
+  'xmgrace_flush' =>
   array (
     'ext' => 'pecl_xmgrace',
     'init' => '4-dev',
   ),
-  'xmgrace_is_open' => 
+  'xmgrace_is_open' =>
   array (
     'ext' => 'pecl_xmgrace',
     'init' => '4-dev',
   ),
-  'xmgrace_open' => 
+  'xmgrace_open' =>
   array (
     'ext' => 'pecl_xmgrace',
     'init' => '4-dev',
   ),
-  'xmlwriter_end_attribute' => 
+  'xmlwriter_end_attribute' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_end_cdata' => 
+  'xmlwriter_end_cdata' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_end_comment' => 
+  'xmlwriter_end_comment' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_end_document' => 
+  'xmlwriter_end_document' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_end_dtd' => 
+  'xmlwriter_end_dtd' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_end_dtd_element' => 
+  'xmlwriter_end_dtd_element' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_end_element' => 
+  'xmlwriter_end_element' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_end_pi' => 
+  'xmlwriter_end_pi' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_flush' => 
+  'xmlwriter_flush' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_open_memory' => 
+  'xmlwriter_open_memory' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_open_uri' => 
+  'xmlwriter_open_uri' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_output_memory' => 
+  'xmlwriter_output_memory' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_set_indent' => 
+  'xmlwriter_set_indent' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_set_indent_string' => 
+  'xmlwriter_set_indent_string' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_start_attribute' => 
+  'xmlwriter_start_attribute' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_start_attribute_ns' => 
+  'xmlwriter_start_attribute_ns' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_start_cdata' => 
+  'xmlwriter_start_cdata' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_start_comment' => 
+  'xmlwriter_start_comment' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_start_document' => 
+  'xmlwriter_start_document' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_start_dtd' => 
+  'xmlwriter_start_dtd' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_start_dtd_element' => 
+  'xmlwriter_start_dtd_element' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_start_element' => 
+  'xmlwriter_start_element' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_start_element_ns' => 
+  'xmlwriter_start_element_ns' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_start_pi' => 
+  'xmlwriter_start_pi' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_text' => 
+  'xmlwriter_text' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_write_attribute' => 
+  'xmlwriter_write_attribute' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_write_cdata' => 
+  'xmlwriter_write_cdata' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_write_comment' => 
+  'xmlwriter_write_comment' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_write_dtd' => 
+  'xmlwriter_write_dtd' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_write_element' => 
+  'xmlwriter_write_element' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_write_element_ns' => 
+  'xmlwriter_write_element_ns' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmlwriter_write_pi' => 
+  'xmlwriter_write_pi' =>
   array (
     'ext' => 'pecl_xmlwriter',
     'init' => '4-dev',
   ),
-  'xmms_add' => 
+  'xmms_add' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_clear' => 
+  'xmms_clear' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_current' => 
+  'xmms_current' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_delete' => 
+  'xmms_delete' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_eq_win' => 
+  'xmms_eq_win' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_is_repeat' => 
+  'xmms_is_repeat' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_is_running' => 
+  'xmms_is_running' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_is_shuffle' => 
+  'xmms_is_shuffle' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_main_win' => 
+  'xmms_main_win' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_next' => 
+  'xmms_next' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_pause' => 
+  'xmms_pause' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_pl_win' => 
+  'xmms_pl_win' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_play' => 
+  'xmms_play' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_playlist' => 
+  'xmms_playlist' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_playlist_length' => 
+  'xmms_playlist_length' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_playlist_pos' => 
+  'xmms_playlist_pos' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_prev' => 
+  'xmms_prev' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_quit' => 
+  'xmms_quit' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_repeat' => 
+  'xmms_repeat' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_shuffle' => 
+  'xmms_shuffle' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_skin' => 
+  'xmms_skin' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_start' => 
+  'xmms_start' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_status' => 
+  'xmms_status' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_stop' => 
+  'xmms_stop' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_time' => 
+  'xmms_time' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_url' => 
+  'xmms_url' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_version' => 
+  'xmms_version' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'xmms_volume' => 
+  'xmms_volume' =>
   array (
     'ext' => 'pecl_xmms',
     'init' => '4-dev',
   ),
-  'yaz_es' => 
+  'yaz_es' =>
   array (
     'ext' => 'pecl_yaz',
     'init' => '4-dev',
   ),
-  'yaz_get_option' => 
+  'yaz_get_option' =>
   array (
     'ext' => 'pecl_yaz',
     'init' => '4-dev',
   ),
-  'yaz_set_option' => 
+  'yaz_set_option' =>
   array (
     'ext' => 'pecl_yaz',
     'init' => '4-dev',
   ),
-  'zeroconf_browse_service' => 
+  'zeroconf_browse_service' =>
   array (
     'ext' => 'pecl_zeroconf',
     'init' => '4-dev',
   ),
-  'zeroconf_browse_session_create' => 
+  'zeroconf_browse_session_create' =>
   array (
     'ext' => 'pecl_zeroconf',
     'init' => '4-dev',
   ),
-  'zeroconf_browse_session_process' => 
+  'zeroconf_browse_session_process' =>
   array (
     'ext' => 'pecl_zeroconf',
     'init' => '4-dev',
   ),
-  'zeroconf_get_all_services' => 
+  'zeroconf_get_all_services' =>
   array (
     'ext' => 'pecl_zeroconf',
     'init' => '4-dev',
   ),
-  'zeroconf_register_service' => 
+  'zeroconf_register_service' =>
   array (
     'ext' => 'pecl_zeroconf',
     'init' => '4-dev',
   ),
-  'spl_object_hash' => 
+  'spl_object_hash' =>
   array (
     'init' => '5.2.0',
   ),
-  'sqlite_create_function' => 
+  'sqlite_create_function' =>
   array (
     'ext' => 'ext_sqlite',
     'init' => '5-dev',
