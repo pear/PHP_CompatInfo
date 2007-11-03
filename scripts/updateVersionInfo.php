@@ -6,17 +6,23 @@
  * - http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.21&view=markup
  * - http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35&view=markup
  *
- * @version    $Id$
- * @author     Davey Shafik <davey@php.net>
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @package    PHP_CompatInfo
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Davey Shafik <davey@php.net>
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version  CVS: $Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
  * @ignore
  */
 
 $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array();
 $funcs =& $GLOBALS['_PHP_COMPATINFO_FUNCS'];
 
-@include_once 'C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php';
+$funcArray = 'C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php';
+if (file_exists($funcArray)) {
+    include_once $funcArray;
+}
 
 $xml = simplexml_load_file('C:\php\pear\PHP_CompatInfo\scripts\version.xml');
 
@@ -156,10 +162,15 @@ file_put_contents('C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php',
 /**
  * This file was generated for PHP_CompatInfo 1.1.1 or better
  *
- * @version    \$Id$
- * @author     Davey Shafik <davey@php.net>
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @package    PHP_CompatInfo
+ * PHP versions 4 and 5
+ *
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Davey Shafik <davey@php.net>
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version  CVS: \$Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
  * @ignore
  */
 
