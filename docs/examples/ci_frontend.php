@@ -2,8 +2,14 @@
 /**
  * PEAR::CompatInfo Web frontend
  *
- * @version   $Id$
- * @author    Laurent Laville <pear@laurent-laville.org>
+ * PHP versions 4 and 5
+ *
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version  CVS: $Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
  * @ignore
  */
 
@@ -88,8 +94,7 @@ $form->addElement('header', 'cife_hdr', 'CompatInfo :: Web frontend');
 // ignore functions
 $ams1 =& $form->addElement('advmultiselect', 'ignore_functions', null,
     $ignore_functions,
-    array('size' => 5, 'style' => 'width:250px;', 'class' => 'pool')
-    );
+    array('size' => 5, 'style' => 'width:250px;', 'class' => 'pool'));
 $ams1->setLabel(array('PHP functions:', 'available', 'ignore'));
 
 // packages installed
@@ -125,8 +130,7 @@ if (isset($safe['filelist'])) {
 
 $ams2 =& $form->addElement('advmultiselect', 'ignore_files', null,
     $ignore_files,
-    array('size' => 5, 'style' => 'width:300px;', 'class' => 'pool')
-    );
+    array('size' => 5, 'style' => 'width:300px;', 'class' => 'pool'));
 $ams2->setLabel(array('Package files (role=php):', 'available', 'ignore'));
 
 // dump options
