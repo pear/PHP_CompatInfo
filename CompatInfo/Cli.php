@@ -35,7 +35,7 @@ require_once 'Console/Table.php';
  * ?>
  * </code>
  *
- * @example docs/examples/Cli.php Example of using PHP_CompatInfo_Cli
+ * @example docs/examples/cliCustom.php Example of using PHP_CompatInfo_Cli
  *
  * @category  PHP
  * @package   PHP_CompatInfo

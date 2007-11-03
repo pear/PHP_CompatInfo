@@ -43,7 +43,7 @@ require_once 'PHP/CompatInfo/const_array.php';
  *          Example on using using parseArray() to parse a script
  * @example docs/examples/parseString.php
  *          Example on how to parse a string
- * @example docs/examples/Cli.php
+ * @example docs/examples/cliCustom.php
  *          Example of using PHP_CompatInfo_Cli
  *
  * @category  PHP
