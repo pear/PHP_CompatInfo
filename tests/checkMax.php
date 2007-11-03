@@ -2,11 +2,14 @@
 /**
  * Request #6056 Add support for reporting max PHP version
  *
- * @link       http://pear.php.net/bugs/bug.php?id=6056
- * @version    $Id$
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @package    PHP_CompatInfo
- * @access     public
+ * PHP versions 4 and 5
+ *
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version  CVS: $Id$
+ * @link     http://pear.php.net/bugs/bug.php?id=6056
  * @ignore
  */
 require_once 'PHP/CompatInfo.php';
@@ -28,7 +31,8 @@ if ($res['max_version'] != '') {
         $min = $res[$file]['version'];
         $max = $res[$file]['max_version'];
         if (($max != '') && (version_compare($min, $max) === 1)) {
-            echo 'ATTENTION file "'.$file.'" cannot run : PHP version Min > Max '."\n";
+            echo 'ATTENTION file "'.$file.
+                '" cannot run : PHP version Min > Max '."\n";
         }
     }
 }
