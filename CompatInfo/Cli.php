@@ -10,14 +10,14 @@
  * the PHP License and are unable to obtain it through the web, please
  * send a note to license@php.net so we can mail you a copy immediately.
  *
- * @category   PHP
- * @package    PHP_CompatInfo
- * @author     Davey Shafik <davey@php.net>
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
- * @version    CVS: $Id$
- * @link       http://pear.php.net/package/PHP_CompatInfo
- * @since      File available since Release 0.8.0
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Davey Shafik <davey@php.net>
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version  CVS: $Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
+ * @since    File available since Release 0.8.0
  */
 
 require_once 'PHP/CompatInfo.php';
@@ -37,15 +37,15 @@ require_once 'Console/Table.php';
  *
  * @example docs/examples/Cli.php Example of using PHP_CompatInfo_Cli
  *
- * @category   PHP
- * @package    PHP_CompatInfo
- * @author     Davey Shafik <davey@php.net>
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @copyright  Copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
- * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
- * @version    Release: @package_version@
- * @link       http://pear.php.net/package/PHP_CompatInfo
- * @since      Class available since Release 0.8.0
+ * @category  PHP
+ * @package   PHP_CompatInfo
+ * @author    Davey Shafik <davey@php.net>
+ * @author    Laurent Laville <pear@laurent-laville.org>
+ * @copyright 2003 Davey Shafik and Synaptic Media. All Rights Reserved.
+ * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version   Release: @package_version@
+ * @link      http://pear.php.net/package/PHP_CompatInfo
+ * @since     Class available since Release 0.8.0
  */
 
 class PHP_CompatInfo_Cli extends PHP_CompatInfo
@@ -100,6 +100,12 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
     /**
      * ZE2 Constructor
+     *
+     * @param int    $split Limit where to split filename before glue char
+     *                      Default is 32 char.
+     * @param string $glue  Char. to indicate a filename split.
+     *                      Default is (+)
+     *
      * @since  0.8.0
      */
     function __construct($split = null, $glue = null)
@@ -305,6 +311,12 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
     /**
      * ZE1 PHP4 Compatible Constructor
+     *
+     * @param int    $split Limit where to split filename before glue char
+     *                      Default is 32 char.
+     * @param string $glue  Char. to indicate a filename split.
+     *                      Default is (+)
+     *
      * @since  0.8.0
      */
     function PHP_CompatInfo_Cli($split = null, $glue = null)
@@ -394,7 +406,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             $opts = $this->args->getValues();
             if (is_array($opts)) {
-                foreach($opts as $key => $raw) {
+                foreach ($opts as $key => $raw) {
                     if (is_array($raw)) {
                         $raw = implode(', ', $raw);
                     }
@@ -415,7 +427,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             $opts = $this->options;
             if (is_array($opts)) {
-                foreach($opts as $key => $raw) {
+                foreach ($opts as $key => $raw) {
                     if ($key == 'debug' || $key == 'recurse_dir') {
                         $raw = ($raw === true) ? 'TRUE' : 'FALSE';
                     }
@@ -473,7 +485,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             $opts = $this->args->getValues();
             if (is_array($opts)) {
-                foreach($opts as $key => $raw) {
+                foreach ($opts as $key => $raw) {
                     if (is_array($raw)) {
                         $raw = implode(', ', $raw);
                     }
@@ -494,7 +506,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             $opts = $this->options;
             if (is_array($opts)) {
-                foreach($opts as $key => $raw) {
+                foreach ($opts as $key => $raw) {
                     if ($key == 'debug' || $key == 'recurse_dir') {
                         $raw = ($raw === true) ? 'TRUE' : 'FALSE';
                     }
@@ -536,7 +548,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     /**
      * The Console_Table filter callback limits output to 80 columns.
      *
-     * @param  string $data  content of filename column (0)
+     * @param string $data Content of filename column (0)
+     *
      * @return string
      * @access private
      * @since  1.3.0
@@ -557,14 +570,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $str = str_replace($dir, '[...]', dirname($data)) . $sep;
 
             if (strlen($str) + strlen($base) > $this->split) {
-                 $str = str_pad($str, $padding) . $this->glue . "\r\n";
-                 if (strlen($base) > $this->split) {
-                     $str .= '[*]' . substr($base, (3 - $this->split)) ;
-                 } else {
-                     $str .= substr($base, -1 * $padding) ;
-                 }
+                $str = str_pad($str, $padding) . $this->glue . "\r\n";
+                if (strlen($base) > $this->split) {
+                    $str .= '[*]' . substr($base, (3 - $this->split));
+                } else {
+                    $str .= substr($base, -1 * $padding);
+                }
             } else {
-                 $str .= $base;
+                $str .= $base;
             }
         }
         return $str;
@@ -572,6 +585,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
     /**
      * Show full help information
+     *
+     * @param string $footer (optional) page footer content
      *
      * @return void
      * @access private
