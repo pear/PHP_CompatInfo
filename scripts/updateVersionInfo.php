@@ -6,6 +6,8 @@
  * - http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.21&view=markup
  * - http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35&view=markup
  *
+ * PHP versions 4 and 5
+ *
  * @category PHP
  * @package  PHP_CompatInfo
  * @author   Davey Shafik <davey@php.net>
@@ -17,6 +19,7 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array();
+
 $funcs =& $GLOBALS['_PHP_COMPATINFO_FUNCS'];
 
 $funcArray = 'C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php';
@@ -56,7 +59,8 @@ foreach ($xml->function as $function) {
          * Match string like :
          *  "4.0.2 - 4.0.6 only"    for accept_connect
          */
-    } elseif (preg_match('/('.$version_pattern.') - ('.$version_pattern.') only/', $from, $matches)) {
+    } elseif (preg_match('/('.$version_pattern.') - ('.$version_pattern.') only/',
+        $from, $matches)) {
         $funcs[$name]['init'] = $matches[1];
         $funcs[$name]['end']  = $matches[2];
         continue;
@@ -102,7 +106,8 @@ while ($i < $limit) {
         if (strpos(strtolower($txt[$i]), 'zend') !== false) {
             $module = 'zend';
         } else {
-            $found = preg_match('@# php-src/(ext|sapi)/(.*?)/.*@', $txt[$i], $matches);
+            $found = preg_match('@# php-src/(ext|sapi)/(.*?)/.*@',
+                $txt[$i], $matches);
             if ($found) {
                 $module = $matches[1] .'_'. $matches[2];
             } else {
@@ -114,7 +119,7 @@ while ($i < $limit) {
                 }
             }
         }
-        $i += 1;
+        $i   += 1;
         $skip = false;
         while ($i < $limit) {
             if (strpos($txt[$i], '#') === false) {
@@ -127,8 +132,11 @@ while ($i < $limit) {
                         $funcs[$name]['ext'] = $module;
                     }
                 } else {
-                    // removed only extension methods
-                    // and not basic functions of standard extension (like 'reset' on array)
+                    /**
+                     * removed only extension methods
+                     * and not basic functions of standard extension
+                     * (like 'reset' on array)
+                     */
                     if (version_compare($funcs[$name]['init'], '5.0.0', 'ge')) {
                         unset($funcs[$name]);
                     }
