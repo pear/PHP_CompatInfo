@@ -99,7 +99,7 @@ class PHP_CompatInfo
     function parseFile($file, $options = array())
     {
         $options = array_merge(array('debug' => false), $options);
-        $tokens = $this->_tokenize($file);
+        $tokens  = $this->_tokenize($file);
         if (is_array($tokens) && count($tokens) > 0) {
             return $this->_parseTokens($tokens, $options);
         }
@@ -129,7 +129,7 @@ class PHP_CompatInfo
     function parseString($string, $options = array())
     {
         $options = array_merge(array('debug' => false), $options);
-        $tokens = $this->_tokenize($string, true);
+        $tokens  = $this->_tokenize($string, true);
         if (is_array($tokens) && count($tokens) > 0) {
             return $this->_parseTokens($tokens, $options);
         }
@@ -166,29 +166,33 @@ class PHP_CompatInfo
      */
     function parseDir($dir, $options = array())
     {
-        $files_valid = 0;
-        $files_parsed = array();
-        $latest_version = $this->latest_version;
+        $files_valid      = 0;
+        $files_parsed     = array();
+        $latest_version   = $this->latest_version;
         $earliest_version = $this->earliest_version;
-        $extensions = array();
-        $constants = array();
-        $ignored = array();
-        $default_options = array(
+        $extensions       = array();
+        $constants        = array();
+        $ignored          = array();
+        $default_options  = array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
             'recurse_dir' => true,
             'debug' => false,
             'ignore_files' => array(),
             'ignore_dirs' => array()
             );
+
         $options = array_merge($default_options, $options);
 
         if (is_dir($dir) && is_readable($dir)) {
             if ($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
                 $dir = substr($dir, 0, -1);
             }
-            $options['file_ext'] = array_map('strtolower', $options['file_ext']);
-            $options['ignore_files'] = array_map('strtolower', $options['ignore_files']);
-            $options['ignore_dirs'] = array_map('strtolower', $options['ignore_dirs']);
+            $options['file_ext']
+                = array_map('strtolower', $options['file_ext']);
+            $options['ignore_files']
+                = array_map('strtolower', $options['ignore_files']);
+            $options['ignore_dirs']
+                = array_map('strtolower', $options['ignore_dirs']);
             $files_raw = $this->_fileList($dir, $options);
             foreach ($files_raw as $file) {
                 if (in_array(strtolower($file), $options['ignore_files'])) {
@@ -197,10 +201,12 @@ class PHP_CompatInfo
                 }
                 $file_info = pathinfo($file);
                 if (isset($file_info['extension']) &&
-                    in_array(strtolower($file_info['extension']), $options['file_ext'])) {
+                    in_array(strtolower($file_info['extension']),
+                        $options['file_ext'])) {
                     $tokens = $this->_tokenize($file);
                     if (is_array($tokens) && count($tokens) > 0) {
-                        $files_parsed[$file] = $this->_parseTokens($tokens, $options);
+                        $files_parsed[$file]
+                            = $this->_parseTokens($tokens, $options);
                         $files_valid++;
                     } else {
                         $files_parsed[$file] = false;
@@ -237,11 +243,12 @@ class PHP_CompatInfo
                 return false;
             }
 
-            $files_parsed['constants'] = $constants;
-            $files_parsed['extensions'] = $extensions;
-            $files_parsed['version'] = $latest_version;
-            $files_parsed['max_version'] = $earliest_version;
+            $files_parsed['constants']     = $constants;
+            $files_parsed['extensions']    = $extensions;
+            $files_parsed['version']       = $latest_version;
+            $files_parsed['max_version']   = $earliest_version;
             $files_parsed['ignored_files'] = $ignored;
+
             $files_parsed = array_reverse($files_parsed);
             return $files_parsed;
         } else {
@@ -296,17 +303,19 @@ class PHP_CompatInfo
      */
     function parseArray($files, $options = array())
     {
-        $files_parsed = array();
-        $latest_version = $this->latest_version;
+        $files_parsed     = array();
+        $latest_version   = $this->latest_version;
         $earliest_version = $this->earliest_version;
-        $extensions = array();
-        $constants = array();
+        $extensions       = array();
+        $constants        = array();
+
         $options = array_merge(array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
             'is_string' => false,
             'debug' => false,
             'ignore_files' => array()
             ), $options);
+
         $options['ignore_files'] = array_map('strtolower', $options['ignore_files']);
         foreach ($files as $file) {
             if ($options['is_string'] === false) {
@@ -315,7 +324,8 @@ class PHP_CompatInfo
                      in_array($pathinfo['extension'], $options['file_ext'])) {
                     $tokens = $this->_tokenize($file, $options['is_string']);
                     if (is_array($tokens) && count($tokens) > 0) {
-                        $files_parsed[$file] = $this->_parseTokens($tokens, $options);
+                        $files_parsed[$file]
+                            = $this->_parseTokens($tokens, $options);
                     } else {
                         $files_parsed[$file] = false;
                     }
@@ -358,11 +368,12 @@ class PHP_CompatInfo
             }
         }
 
-        $files_parsed['constants'] = $constants;
-        $files_parsed['extensions'] = $extensions;
-        $files_parsed['version'] = $latest_version;
-        $files_parsed['max_version'] = $earliest_version;
+        $files_parsed['constants']     = $constants;
+        $files_parsed['extensions']    = $extensions;
+        $files_parsed['version']       = $latest_version;
+        $files_parsed['max_version']   = $earliest_version;
         $files_parsed['ignored_files'] =  isset($ignored) ? $ignored : array();
+
         $files_parsed = array_reverse($files_parsed);
         return $files_parsed;
     }
@@ -417,22 +428,24 @@ class PHP_CompatInfo
     {
         static $akeys;
 
-        $functions = array();
+        $functions         = array();
         $functions_version = array();
-        $latest_version = $this->latest_version;
-        $earliest_version = $this->earliest_version;
-        $extensions = array();
-        $constants = array();
-        $constant_names = array();
-        $udf = array();
+        $latest_version    = $this->latest_version;
+        $earliest_version  = $this->earliest_version;
+        $extensions        = array();
+        $constants         = array();
+        $constant_names    = array();
+        $udf               = array();
 
         if (isset($options['ignore_constants'])) {
-            $options['ignore_constants'] = array_map('strtoupper', $options['ignore_constants']);
+            $options['ignore_constants']
+                = array_map('strtoupper', $options['ignore_constants']);
         } else {
             $options['ignore_constants'] = array();
         }
         if (isset($options['ignore_extensions'])) {
-            $options['ignore_extensions'] = array_map('strtolower', $options['ignore_extensions']);
+            $options['ignore_extensions']
+                = array_map('strtolower', $options['ignore_extensions']);
         } else {
             $options['ignore_extensions'] = array();
         }
@@ -448,20 +461,23 @@ class PHP_CompatInfo
         }
 
         $token_count = sizeof($tokens);
-        $i = 0;
+        $i           = 0;
         while ($i < $token_count) {
             $found_func = true;
-            if (is_array($tokens[$i]) && (token_name($tokens[$i][0]) == 'T_FUNCTION')) {
+            if (is_array($tokens[$i]) &&
+                (token_name($tokens[$i][0]) == 'T_FUNCTION')) {
                 $found_func = false;
             }
             while ($found_func == false) {
                 $i += 1;
-                if (is_array($tokens[$i]) && (token_name($tokens[$i][0]) == 'T_STRING')) {
+                if (is_array($tokens[$i]) &&
+                    (token_name($tokens[$i][0]) == 'T_STRING')) {
                     $found_func = true;
-                    $udf[] = $tokens[$i][1];
+                    $udf[]      = $tokens[$i][1];
                 }
             }
-            if (is_array($tokens[$i]) && (token_name($tokens[$i][0]) == 'T_STRING')) {
+            if (is_array($tokens[$i]) &&
+                (token_name($tokens[$i][0]) == 'T_STRING')) {
                 if (isset($tokens[$i + 1]) && ($tokens[$i + 1][0] == '(')) {
                     if ((is_array($tokens[$i - 1])) &&
                        (token_name($tokens[$i - 1][0]) != 'T_DOUBLE_COLON') &&
@@ -480,13 +496,14 @@ class PHP_CompatInfo
                 $const = strtoupper($tokens[$i][1]);
                 $found = array_search($const, $akeys);
                 if ($found !== false) {
-                    if (is_string($tokens[$i-1]) || (token_name($tokens[$i-1][0]) == 'T_ENCAPSED_AND_WHITESPACE')) {
+                    if (is_string($tokens[$i-1]) || (token_name($tokens[$i-1][0])
+                        == 'T_ENCAPSED_AND_WHITESPACE')) {
                         // PHP 5 constant tokens found into a string
                     } else {
                         if (!in_array($const, $options['ignore_constants'])) {
                             if (!PHP_CompatInfo::_ignore($GLOBALS['_PHP_COMPATINFO_CONST'][$const]['init'],
                                 $min_ver, $max_ver)) {
-                                $constants[] = $const;
+                                $constants[]    = $const;
                                 $latest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$const]['init'];
                             }
                         }
@@ -498,7 +515,8 @@ class PHP_CompatInfo
 
         $functions = array_unique($functions);
         if (isset($options['ignore_functions'])) {
-            $options['ignore_functions'] = array_map('strtolower', $options['ignore_functions']);
+            $options['ignore_functions']
+                = array_map('strtolower', $options['ignore_functions']);
         } else {
             $options['ignore_functions'] = array();
         }
@@ -511,7 +529,8 @@ class PHP_CompatInfo
             if ((isset($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'])) &&
                 ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'ext_standard') &&
                 ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'zend')) {
-                $extension = substr($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'], 4);
+                $extension
+                    = substr($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'], 4);
                 if ($extension{0} == '_') {
                     $extension = substr($extension, 1);
                 }
@@ -522,7 +541,8 @@ class PHP_CompatInfo
             if ((!in_array($name, $udf))
                 && (!in_array($name, $options['ignore_functions']))) {
 
-                if ($extension && in_array($extension, $options['ignore_extensions'])) {
+                if ($extension &&
+                    in_array($extension, $options['ignore_extensions'])) {
                     continue;  // skip this extension function
                 }
 
@@ -537,14 +557,19 @@ class PHP_CompatInfo
                         'extension' => $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext']
                         );
                 }
-                $cmp = version_compare($latest_version, $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['init']);
+                $cmp = version_compare($latest_version,
+                    $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['init']);
                 if ($cmp === -1) {
-                    $latest_version = $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['init'];
+                    $latest_version
+                        = $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['init'];
                 }
-                if (array_key_exists('end', $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name])) {
-                    $cmp = version_compare($earliest_version, $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['end']);
+                if (array_key_exists('end',
+                    $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name])) {
+                    $cmp = version_compare($earliest_version,
+                        $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['end']);
                     if ($earliest_version == '' || $cmp === 1) {
-                        $earliest_version = $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['end'];
+                        $earliest_version
+                            = $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['end'];
                     }
                 }
 
@@ -561,27 +586,35 @@ class PHP_CompatInfo
                 continue;  // skip this constant version
             }
 
-            $cmp = version_compare($latest_version, $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['init']);
+            $cmp = version_compare($latest_version,
+                $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['init']);
             if ($cmp === -1) {
-                $latest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['init'];
+                $latest_version
+                    = $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['init'];
             }
-            if (array_key_exists('end', $GLOBALS['_PHP_COMPATINFO_CONST'][$constant])) {
-                $cmp = version_compare($earliest_version, $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['end']);
+            if (array_key_exists('end',
+                $GLOBALS['_PHP_COMPATINFO_CONST'][$constant])) {
+                $cmp = version_compare($earliest_version,
+                    $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['end']);
                 if ($earliest_version == '' || $cmp === 1) {
-                    $earliest_version = $GLOBALS['_PHP_COMPATINFO_CONST'][$name]['end'];
+                    $earliest_version
+                        = $GLOBALS['_PHP_COMPATINFO_CONST'][$name]['end'];
                 }
             }
-            if (!in_array($GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['name'], $constant_names)) {
-                $constant_names[] = $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['name'];
+            if (!in_array($GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['name'],
+                $constant_names)) {
+                $constant_names[]
+                    = $GLOBALS['_PHP_COMPATINFO_CONST'][$constant]['name'];
             }
         }
 
         ksort($functions_version);
 
-        $functions_version['constants'] = $constant_names;
-        $functions_version['extensions'] = $extensions;
-        $functions_version['version'] = $latest_version;
+        $functions_version['constants']   = $constant_names;
+        $functions_version['extensions']  = $extensions;
+        $functions_version['version']     = $latest_version;
         $functions_version['max_version'] = $earliest_version;
+
         $functions_version = array_reverse($functions_version);
         return $functions_version;
     }
@@ -655,7 +688,7 @@ class PHP_CompatInfo
         if (@is_dir($directory) &&
             (!in_array(strtolower($directory), $options['ignore_dirs']))) {
             $ret = array();
-            $d = @dir($directory);
+            $d   = @dir($directory);
             while ($d && $entry = $d->read()) {
                 if ($entry{0} != '.') {
                     if (is_file($directory . DIRECTORY_SEPARATOR . $entry)) {
@@ -663,7 +696,8 @@ class PHP_CompatInfo
                     }
                     if (is_dir($directory . DIRECTORY_SEPARATOR . $entry) &&
                         ($options['recurse_dir'] != false)) {
-                        $tmp = $this->_fileList($directory . DIRECTORY_SEPARATOR . $entry, $options);
+                        $tmp = $this->_fileList($directory
+                            . DIRECTORY_SEPARATOR . $entry, $options);
                         if (is_array($tmp)) {
                             foreach ($tmp as $ent) {
                                 $ret[] = $ent;
