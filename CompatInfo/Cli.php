@@ -228,7 +228,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $if = $this->args->getValue('if');
         if (isset($if)) {
             if (file_exists($if)) {
-                $options = file($if);
+                $options                       = file($if);
                 $this->options['ignore_files'] = array_map('rtrim', $options);
             } else {
                 $this->error = 'Failed opening file "' . $if
@@ -242,7 +242,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $id = $this->args->getValue('id');
         if (isset($id)) {
             if (file_exists($id)) {
-                $options = file($id);
+                $options                      = file($id);
                 $this->options['ignore_dirs'] = array_map('rtrim', $options);
             } else {
                 $this->error = 'Failed opening file "' . $id
@@ -256,7 +256,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $in = $this->args->getValue('in');
         if (isset($in)) {
             if (file_exists($in)) {
-                $options = file($in);
+                $options                           = file($in);
                 $this->options['ignore_functions'] = array_map('rtrim', $options);
             } else {
                 $this->error = 'Failed opening file "' . $in
@@ -270,7 +270,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $ic = $this->args->getValue('ic');
         if (isset($ic)) {
             if (file_exists($ic)) {
-                $options = file($ic);
+                $options                           = file($ic);
                 $this->options['ignore_constants'] = array_map('rtrim', $options);
             } else {
                 $this->error = 'Failed opening file "' . $ic
@@ -284,7 +284,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $ie = $this->args->getValue('ie');
         if (isset($ie)) {
             if (file_exists($ie)) {
-                $options = file($ie);
+                $options                            = file($ie);
                 $this->options['ignore_extensions'] = array_map('rtrim', $options);
             } else {
                 $this->error = 'Failed opening file "' . $ie
@@ -305,7 +305,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
         // file or directory options are minimum required to work
         if (!$this->args->isDefined('f') && !$this->args->isDefined('d')) {
-            $this->error = 'ERROR: You must supply at least one file or directory to process';
+            $this->error = 'ERROR: You must supply at least '
+                . 'one file or directory to process';
         }
     }
 
@@ -361,7 +362,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             return;
         }
         $table = new Console_Table();
-        $table->setHeaders(array('Path', 'Version', 'Extensions', 'Constants/Tokens'));
+        $table->setHeaders(array(
+            'Path', 'Version', 'Extensions', 'Constants/Tokens'));
         $filter = array(&$this, '_splitFilename');
         $table->addFilter(0, $filter);
 
@@ -369,7 +371,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $const = implode("\r\n", $info['constants']);
 
         $dir = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $this->dir);
-        $table->addRow(array($dir . DIRECTORY_SEPARATOR . '*', $info['version'], $ext, $const));
+        $table->addRow(array($dir . DIRECTORY_SEPARATOR . '*',
+            $info['version'], $ext, $const));
 
         unset($info['max_version']);
         unset($info['version']);
@@ -462,7 +465,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             return;
         }
         $table = new Console_Table();
-        $table->setHeaders(array('File', 'Version', 'Extensions', 'Constants/Tokens'));
+        $table->setHeaders(array(
+            'File', 'Version', 'Extensions', 'Constants/Tokens'));
         $filter = array(&$this, '_splitFilename');
         $table->addFilter(0, $filter);
 
@@ -535,7 +539,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             foreach ($info as $version => $functions) {
                 foreach ($functions as $func) {
-                    $table->addRow(array($version, $func['function'], $func['extension']));
+                    $table->addRow(array(
+                        $version, $func['function'], $func['extension']));
                 }
             }
 
@@ -558,8 +563,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     {
         $str = '';
         if (strlen($data) > 0) {
-            $sep = DIRECTORY_SEPARATOR;
-            $base = basename($data);
+            $sep     = DIRECTORY_SEPARATOR;
+            $base    = basename($data);
             $padding = $this->split - strlen($this->glue);
 
             if (isset($this->dir)) {
@@ -594,8 +599,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _printUsage($footer = '')
     {
-        $header = 'Usage: ' . basename($_SERVER['SCRIPT_NAME']) . " [options]\n\n";
-        echo Console_Getargs::getHelp($this->opts, $header, "\n$footer\n", 78, 2)."\n";
+        $header = 'Usage: '
+            . basename($_SERVER['SCRIPT_NAME']) . " [options]\n\n";
+        echo Console_Getargs::getHelp($this->opts, $header,
+            "\n$footer\n", 78, 2)."\n";
     }
 }
 ?>
