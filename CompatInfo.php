@@ -529,10 +529,14 @@ class PHP_CompatInfo
             if ((isset($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'])) &&
                 ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'ext_standard') &&
                 ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'] != 'zend')) {
-                $extension
-                    = substr($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'], 4);
-                if ($extension{0} == '_') {
-                    $extension = substr($extension, 1);
+                if ($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['pecl'] === false) {
+                    $extension
+                        = substr($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'], 4);
+                    if ($extension{0} == '_') {
+                        $extension = substr($extension, 1);
+                    }
+                } else {
+                    $extension = $GLOBALS['_PHP_COMPATINFO_FUNCS'][$name]['ext'];
                 }
             } else {
                 $extension = false;
