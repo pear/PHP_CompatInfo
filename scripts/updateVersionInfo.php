@@ -3,8 +3,8 @@
  * The functions array script generator.
  *
  * Sources come from :
- * - http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.21&view=markup
- * - http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35&view=markup
+ * - http://cvs.php.net/viewcvs.cgi/phpdoc/phpbook/phpbook-xsl/version.xml?revision=1.8
+ * - http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.39
  *
  * PHP versions 4 and 5
  *
@@ -37,23 +37,58 @@ foreach ($xml->function as $function) {
 
     /**
      * Match strings like :
-     *  "PHP 3 &gt;= 3.0.7, PHP 4, PHP 5"       for _
-     *  "PHP 5 &gt;= 5.1.0RC1"                  for date_modify
-     *  "PHP 3 &gt;= 3.0.7, PHP 4 &lt;= 4.2.3"  for aspell_check
+     *  "PHP 3 &gt;= 3.0.7, PHP 4, PHP 5"          for _
+     *  "PHP 5 &gt;= 5.1.0RC1"                     for date_modify
+     *  "PHP 3 &gt;= 3.0.7, PHP 4 &lt;= 4.2.3"     for aspell_check
+     *  "PHP 5 &gt;= 5.2.0, PECL zip:1.1.0-1.9.0"  for addfile
      */
     if (preg_match('/>= ('.$version_pattern.')/', $from, $matches)) {
         $funcs[$name]['init'] = $matches[1];
         if (preg_match('/<= ('.$version_pattern.')/', $from, $matches)) {
             $funcs[$name]['end'] = $matches[1];
         }
+        if (preg_match('/(\.*)PECL ([a-zA-Z_]+):('.$version_pattern.')-('.
+            $version_pattern.')/', $from, $matches)) {
+
+            $funcs[$name]['ext']  = $matches[2];
+            $funcs[$name]['pecl'] = true;
+            $funcs[$name]['init'] = $matches[3];
+            $funcs[$name]['end']  = $matches[4];
+
+        } elseif (preg_match('/(\.*)PECL ([a-zA-Z_]+):('.$version_pattern.')/',
+            $from, $matches)) {
+
+            $funcs[$name]['ext']  = $matches[2];
+            $funcs[$name]['pecl'] = true;
+            $funcs[$name]['init'] = $funcs[$name]['end'] = $matches[3];
+        }
         continue;
 
         /**
          * Match string like :
-         *  "PHP 5 &lt;= 5.0.4"    for php_check_syntax
+         *  "PHP 5 &lt;= 5.0.4"                       for php_check_syntax
+         *  "PHP 4 &lt;= 4.2.3, PECL cybercash:1.18"  for cybercash_base64_decode
          */
     } elseif (preg_match('/<= ('.$version_pattern.')/', $from, $matches)) {
         $funcs[$name]['end'] = $matches[1];
+
+        if (preg_match('/(\.*)PECL ([a-zA-Z_]+):('.$version_pattern.')-('.
+            $version_pattern.')/', $from, $matches)) {
+
+            $funcs[$name]['ext']  = $matches[2];
+            $funcs[$name]['pecl'] = true;
+            $funcs[$name]['init'] = $matches[3];
+            $funcs[$name]['end']  = $matches[4];
+            continue;
+
+        } elseif (preg_match('/(\.*)PECL ([a-zA-Z_]+):('.$version_pattern.')/',
+            $from, $matches)) {
+
+            $funcs[$name]['ext']  = $matches[2];
+            $funcs[$name]['pecl'] = true;
+            $funcs[$name]['init'] = $funcs[$name]['end'] = $matches[3];
+            continue;
+        }
 
         /**
          * Match string like :
@@ -67,12 +102,39 @@ foreach ($xml->function as $function) {
 
         /**
          * Match string like :
-         *  "PHP 33.0.5 only"    for PHP3_UODBC_FIELD_NUM
-         *  "PHP 44.0.6 only"    for ocifreecoll
+         *  "PHP 3.0.5 only"    for PHP3_UODBC_FIELD_NUM
+         *  "PHP 4.0.6 only"    for ocifreecoll
          */
-    } elseif (preg_match('/PHP (\d)('.$version_pattern.') only/', $from, $matches)) {
+    } elseif (preg_match('/PHP (\d)('.$version_pattern.') only/',
+        $from, $matches)) {
+
         $funcs[$name]['init'] = $matches[1] .'.0.0';
         $funcs[$name]['end']  = $matches[2];
+        continue;
+
+        /**
+         * Match string like :
+         *  "PHP 5, PECL oci8:1.1-1.2.4"   for oci_error
+         */
+    } elseif (preg_match('/(\.*)PECL ([a-zA-Z_]+):('.$version_pattern.')-('.
+        $version_pattern.')/', $from, $matches)) {
+
+        $funcs[$name]['ext']  = $matches[2];
+        $funcs[$name]['pecl'] = true;
+        $funcs[$name]['init'] = $matches[3];
+        $funcs[$name]['end']  = $matches[4];
+        continue;
+
+        /**
+         * Match string like :
+         *  "PHP 4, PHP 5, PECL mysql:1.0"  for mysql_connect
+         */
+    } elseif (preg_match('/(\.*)PECL ([a-zA-Z_]+):('.$version_pattern.')/',
+        $from, $matches)) {
+
+        $funcs[$name]['ext']  = $matches[2];
+        $funcs[$name]['pecl'] = true;
+        $funcs[$name]['init'] = $funcs[$name]['end'] = $matches[3];
         continue;
     }
 
@@ -129,7 +191,8 @@ while ($i < $limit) {
                 }
                 if ($skip === false) {
                     if (!isset($funcs[$name]['ext'])) {
-                        $funcs[$name]['ext'] = $module;
+                        $funcs[$name]['ext']  = $module;
+                        $funcs[$name]['pecl'] = false;
                     }
                 } else {
                     /**
