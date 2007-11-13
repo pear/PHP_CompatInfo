@@ -35,7 +35,7 @@ $options = array('filelistgenerator' => 'cvs',
     'simpleoutput' => true,
     'clearcontents' => false,
     'changelogoldtonew' => false,
-    'ignore' => array('package.php', 'index.htm', 'compatinfo.bat'
+    'ignore' => array('package.php', 'index.htm',
         'funclist.txt', 'updateVersionInfo.php', 'version.xml')
     );
 
@@ -54,15 +54,23 @@ $p2->setAPIStability('stable');
 $p2->setNotes('* changes
 - windows script, renamed from compatinfo.bat to pci.bat (following naming
 convention of PHP_CodeSniffer example
+- require now at least PEAR installer 1.5.4 rather than 1.4.3
+(security vulnerability fixes)
+
+* news
+- version 1.5.0 or greater WILL NOT support PHP3 detection
+- if you still have PHP3 script, please use version 1.4.3 instead
 
 * bugs
 - fixe #12350 (windows only) file in current directory is not found
 
 * QA
+- Coding Standard fixes (following PHP_CodeSniffer recommandations)
 - this release include also The Definitive Guide in version 1.5.0
 that cover all versions
   see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
 ');
+$p2->setPearinstallerDep('1.5.4');
 
 if (isset($_GET['make']) ||
     (isset($_SERVER['argv']) && @$_SERVER['argv'][1] == 'make')) {

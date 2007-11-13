@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.5.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.6.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>PHP_CompatInfo</name>
  <channel>pear.php.net</channel>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
@@ -18,11 +18,11 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2007-04-03</date>
- <time>08:03:24</time>
+ <date>2007-11-13</date>
+ <time>23:00:38</time>
  <version>
-  <release>1.4.3</release>
-  <api>1.4.0</api>
+  <release>1.5.0</release>
+  <api>1.5.0</api>
  </version>
  <stability>
   <release>stable</release>
@@ -30,11 +30,22 @@ which shows which functions require which version and CLI output script</descrip
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
  <notes>* changes
-- fully fix for wrong PHP5 constants detection when tokens used inside strings. (see bug #10100)
+- windows script, renamed from compatinfo.bat to pci.bat (following naming
+convention of PHP_CodeSniffer example
+- require now at least PEAR installer 1.5.4 rather than 1.4.3
+(security vulnerability fixes)
+
+* news
+- version 1.5.0 or greater WILL NOT support PHP3 detection
+- if you still have PHP3 script, please use version 1.4.3 instead
+
+* bugs
+- fixe #12350 (windows only) file in current directory is not found
 
 * QA
-- this release include also The Definitive Guide in version 1.4.1 that cover all versions
-until 1.4.3
+- Coding Standard fixes (following PHP_CodeSniffer recommandations)
+- this release include also The Definitive Guide in version 1.5.0
+that cover all versions
   see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
  </notes>
  <contents>
@@ -122,7 +133,7 @@ until 1.4.3
     <min>4.3.0</min>
    </php>
    <pearinstaller>
-    <min>1.4.3</min>
+    <min>1.5.4</min>
    </pearinstaller>
    <extension>
     <name>tokenizer</name>
@@ -148,7 +159,7 @@ until 1.4.3
    </os>
   </installconditions>
   <filelist>
-   <install as="compatinfo.bat" name="scripts/compatinfo.bat" />
+   <install as="pci.bat" name="scripts/compatinfo.bat" />
   </filelist>
  </phprelease>
  <phprelease>
@@ -157,6 +168,37 @@ until 1.4.3
   </filelist>
  </phprelease>
  <changelog>
+  <release>
+   <version>
+    <release>1.5.0</release>
+    <api>1.5.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2007-11-13</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>* changes
+- windows script, renamed from compatinfo.bat to pci.bat (following naming
+convention of PHP_CodeSniffer example
+- require now at least PEAR installer 1.5.4 rather than 1.4.3
+(security vulnerability fixes)
+
+* news
+- version 1.5.0 or greater WILL NOT support PHP3 detection
+- if you still have PHP3 script, please use version 1.4.3 instead
+
+* bugs
+- fixe #12350 (windows only) file in current directory is not found
+
+* QA
+- Coding Standard fixes (following PHP_CodeSniffer recommandations)
+- this release include also The Definitive Guide in version 1.5.0
+that cover all versions
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+   </notes>
+  </release>
   <release>
    <version>
     <release>1.4.3</release>
@@ -174,8 +216,7 @@ until 1.4.3
 * QA
 - this release include also The Definitive Guide in version 1.4.1 that cover all versions
 until 1.4.3
-  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
-   </notes>
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.</notes>
   </release>
   <release>
    <version>
