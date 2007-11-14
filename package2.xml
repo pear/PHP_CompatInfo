@@ -18,8 +18,8 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2007-11-13</date>
- <time>23:00:38</time>
+ <date>2007-11-15</date>
+ <time>00:26:12</time>
  <version>
   <release>1.5.0</release>
   <api>1.5.0</api>
@@ -30,8 +30,10 @@ which shows which functions require which version and CLI output script</descrip
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
  <notes>* changes
-- windows script, renamed from compatinfo.bat to pci.bat (following naming
+- Windows script (launcher), renamed from compatinfo.bat to pci.bat (following naming
 convention of PHP_CodeSniffer example
+- *Nix script user pcicmd was renamed to pci and is located
+now into PHP_PEAR_INSTALL_DIR (even on Windows platform)
 - require now at least PEAR installer 1.5.4 rather than 1.4.3
 (security vulnerability fixes)
 
@@ -56,7 +58,6 @@ that cover all versions
     </file>
     <file name="const_array.php" role="php" />
     <file name="func_array.php" role="php" />
-    <file name="pcicmd.php" role="php" />
    </dir> <!-- /CompatInfo -->
    <dir name="docs">
     <dir name="examples">
@@ -116,6 +117,10 @@ that cover all versions
      <tasks:windowseol />
      <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+     <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    </file>
+    <file baseinstalldir="" name="pci.php" role="script">
+     <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
     </file>
    </dir> <!-- /scripts -->
    <dir name="tests">
@@ -160,10 +165,12 @@ that cover all versions
   </installconditions>
   <filelist>
    <install as="pci.bat" name="scripts/compatinfo.bat" />
+   <install as="pci.php" name="scripts/pci.php" />
   </filelist>
  </phprelease>
  <phprelease>
   <filelist>
+   <install as="pci.php" name="scripts/pci.php" />
    <ignore name="scripts/compatinfo.bat" />
   </filelist>
  </phprelease>
@@ -177,11 +184,13 @@ that cover all versions
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2007-11-13</date>
+   <date>2007-11-15</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
    <notes>* changes
-- windows script, renamed from compatinfo.bat to pci.bat (following naming
+- Windows script (launcher), renamed from compatinfo.bat to pci.bat (following naming
 convention of PHP_CodeSniffer example
+- *Nix script user pcicmd was renamed to pci and is located
+now into PHP_PEAR_INSTALL_DIR (even on Windows platform)
 - require now at least PEAR installer 1.5.4 rather than 1.4.3
 (security vulnerability fixes)
 
