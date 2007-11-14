@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>
-      Chapter&nbsp;7.&nbsp;CLI - The pcicmd console command
+      Chapter&nbsp;7.&nbsp;CLI - The pci console command
     </title>
     <link rel="stylesheet" href="book.css" type="text/css" />
     <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
@@ -13,20 +13,20 @@
     <link rel="up" href="pt03.html" title=
     "Part&nbsp;III.&nbsp;Reference Guide" />
     <link rel="prev" href="ch06s02.html" title="Parser options " />
-<style type="text/css">
+    <style type="text/css">
 /*<![CDATA[*/
- body {
-  background-color: white;
-  color: black;
- }
- :link { color: #0000FF }
- :visited { color: #840084 }
- :active { color: #0000FF }
- div.c3 {margin-left: 0.5in; margin-right: 0.5in;}
- h2.c2 {clear: both}
- p.c1 {font-weight: bold}
-/*]]>*/
-</style>
+    body {
+    background-color: white;
+    color: black;
+    }
+    :link { color: #0000FF }
+    :visited { color: #840084 }
+    :active { color: #0000FF }
+    div.c3 {margin-left: 0.5in; margin-right: 0.5in;}
+    h2.c2 {clear: both}
+    p.c1 {font-weight: bold}
+    /*]]>*/
+    </style>
   </head>
   <body>
     <table class="pciHeader">
@@ -40,7 +40,7 @@
             <table width="100%" summary="Navigation header">
               <tr>
                 <th colspan="3" align="center">
-                  Chapter&nbsp;7.&nbsp;CLI - The pcicmd console command
+                  Chapter&nbsp;7.&nbsp;CLI - The pci console command
                 </th>
               </tr>
               <tr>
@@ -55,8 +55,7 @@
                 </td>
               </tr>
             </table>
-          </div><br />
-          <br />
+          </div>
         </td>
       </tr>
     </table>
@@ -64,7 +63,7 @@
       <div class="titlepage">
         <h2 class="title">
           <a name="reference.cli" id=
-          "reference.cli"></a>Chapter&nbsp;7.&nbsp;CLI - The pcicmd console
+          "reference.cli"></a>Chapter&nbsp;7.&nbsp;CLI - The pci console
           command
         </h2>
       </div>
@@ -81,11 +80,11 @@
             <dl>
               <dt>
                 <span class="sect2"><a href=
-                "ch07.html#id4787205">Overview</a></span>
+                "ch07.html#id4786552">Overview</a></span>
               </dt>
               <dt>
                 <span class="sect2"><a href=
-                "ch07.html#id4787855">Reference</a></span>
+                "ch07.html#id4787201">Reference</a></span>
               </dt>
             </dl>
           </dd>
@@ -93,9 +92,8 @@
       </div>
       <p>
         The <span class="bold"><strong>PHP_CompatInfo_Cli</strong></span>
-        class, also known under its wrapper name "pcicmd", get the
-        compatibility info from PHP Command Line Interpreter, on existing
-        script or folder.
+        class, also known under its wrapper name "pci", get the compatibility
+        info from PHP Command Line Interpreter, on existing script or folder.
       </p>
       <div class="sect1" lang="en" xml:lang="en">
         <div class="titlepage">
@@ -108,26 +106,26 @@
           <dl>
             <dt>
               <span class="sect2"><a href=
-              "ch07.html#id4787205">Overview</a></span>
+              "ch07.html#id4786552">Overview</a></span>
             </dt>
             <dt>
               <span class="sect2"><a href=
-              "ch07.html#id4787855">Reference</a></span>
+              "ch07.html#id4787201">Reference</a></span>
             </dt>
           </dl>
         </div>
         <div class="sect2" lang="en" xml:lang="en">
           <div class="titlepage">
             <h3 class="title">
-              <a name="id4787205" id="id4787205"></a>Overview
+              <a name="id4786552" id="id4786552"></a>Overview
             </h3>
           </div>
           <pre class="synopsis">
-pcicmd [options]  -f FILE | -d DIR
+pci [options]  -f FILE | -d DIR
      
 </pre>
           <p>
-            Usage is to run pcicmd with at least the <em class=
+            Usage is to run pci with at least the <em class=
             "parameter"><code>-f</code></em> (--file) or <em class=
             "parameter"><code>-d</code></em> (--dir) switch and perharps some
             additional and optional options.
@@ -136,7 +134,7 @@ pcicmd [options]  -f FILE | -d DIR
         <div class="sect2" lang="en" xml:lang="en">
           <div class="titlepage">
             <h3 class="title">
-              <a name="id4787855" id="id4787855"></a>Reference
+              <a name="id4787201" id="id4787201"></a>Reference
             </h3>
           </div>
           <div class="variablelist">
@@ -181,7 +179,7 @@ pcicmd [options]  -f FILE | -d DIR
                   (full extra details).
                 </p>
                 <p>
-                  In level 0, pcicmd give only results related to -d or -f. See
+                  In level 0, pci give only results related to -d or -f. See
                   first line of the console table. If there are more than one
                   line, next ones are details for each file of a
                   directory/branch.
@@ -201,11 +199,11 @@ pcicmd [options]  -f FILE | -d DIR
          
 </pre>
                 <p>
-                  In level 1, pcicmd give results of level 0 plus a resume of
+                  In level 1, pci give results of level 0 plus a resume of
                   command line arguments. For example
                 </p>
                 <pre class="synopsis">
-pcicmd -v 1 -d \wamp\www\pci
+pci -v 1 -d \wamp\www\pci
          
 </pre>
                 <p>
@@ -223,12 +221,12 @@ Command Line resume :
          
 </pre>
                 <p>
-                  In level 2, pcicmd give results of level 0 plus the list of
+                  In level 2, pci give results of level 0 plus the list of
                   options PHP_CompatInfo used to parse file or directory. For
                   example
                 </p>
                 <pre class="synopsis">
-pcicmd -d \wamp\www\pci -v 2
+pci -d \wamp\www\pci -v 2
          
 </pre>
                 <p>
@@ -263,11 +261,10 @@ Parser options :
                   </table>
                 </div>
                 <p>
-                  In level 3, pcicmd give results of level 0, 1 and 2. For
-                  example
+                  In level 3, pci give results of level 0, 1 and 2. For example
                 </p>
                 <pre class="synopsis">
-pcicmd -d \wamp\www\pci -n -v 3
+pci -d \wamp\www\pci -n -v 3
          
 </pre>
                 <p>
@@ -295,12 +292,12 @@ Parser options :
 </pre>
                 <p>
                   In level 4, useless when using <em class=
-                  "parameter"><code>--dir</code></em>, pcicmd give results of
+                  "parameter"><code>--dir</code></em>, pci give results of
                   level 0 plus a list of functions implemented with their
                   versions. For example
                 </p>
                 <pre class="synopsis">
-pcicmd -f \wamp\www\pci\math.php -v4
+pci -f \wamp\www\pci\math.php -v4
          
 </pre>
                 <p>
@@ -419,8 +416,8 @@ Debug:
                         For example: ignore all PHP 5 functions (minor releases
                         0 thru 2), or only PHP 5.0.0 functions.
                         <pre class="synopsis">
-pcicmd -f FILE | -d DIR  -iv 5.0.0 5.2.0
-pcicmd -f FILE | -d DIR  -iv 5.0.0
+pci -f FILE | -d DIR  -iv 5.0.0 5.2.0
+pci -f FILE | -d DIR  -iv 5.0.0
          
 </pre>
                       </td>
@@ -448,7 +445,7 @@ pcicmd -f FILE | -d DIR  -iv 5.0.0
           PHP_CompatInfo : The Definitive Guide
         </td>
         <td align="right">
-          v 1.4.1 : February 12, 2007
+          v 1.5.0 : November 15, 2007
         </td>
       </tr>
     </table>

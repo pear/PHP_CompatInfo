@@ -11,18 +11,19 @@
     <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
     <link rel="start" href="index.html" title="PHP_CompatInfo Manual" />
     <link rel="next" href="pr01.html" title="Preface" />
-<style type="text/css">
+    <style type="text/css">
 /*<![CDATA[*/
- body {
-  background-color: white;
-  color: black;
- }
- :link { color: #0000FF }
- :visited { color: #840084 }
- :active { color: #0000FF }
- p.c1 {font-weight: bold}
-/*]]>*/
-</style>
+    body {
+    background-color: white;
+    color: black;
+    }
+    :link { color: #0000FF }
+    :visited { color: #840084 }
+    :active { color: #0000FF }
+    p.c2 {font-weight: bold}
+    th.c1 {font-weight: bold}
+    /*]]>*/
+    </style>
   </head>
   <body>
     <table class="pciHeader">
@@ -51,8 +52,7 @@
                 </td>
               </tr>
             </table>
-          </div><br />
-          <br />
+          </div>
         </td>
       </tr>
     </table>
@@ -96,9 +96,45 @@
           <div class="revhistory">
             <table border="1" width="100%" summary="Revision history">
               <tr>
-                <th align="left" valign="top" colspan="2">
-                  <b>Revision History</b>
+                <th class="c1" align="left" valign="top" colspan="2">
+                  Revision History
                 </th>
+              </tr>
+              <tr>
+                <td align="left">
+                  Revision 1.5.0
+                </td>
+                <td align="left">
+                  November 15, 2007
+                </td>
+              </tr>
+              <tr>
+                <td align="left" colspan="2">
+                  <div class="itemizedlist">
+                    <ul type="disc">
+                      <li>Split API note section with related since data,
+                      display now release number and date.
+                      </li>
+                      <li>Version 1.5.0 marked drop down support of PHP3 script
+                      detection. If you still used PHP3 scripts, you need to
+                      install version 1.4.3 of PHP_CompatInfo.
+                      </li>
+                      <li>
+                        <p>
+                          Important reference changes:
+                        </p>
+                        <p>
+                          Windows script user "compatinfo.bat" was renamed to
+                          "pci.bat"
+                        </p>
+                        <p>
+                          *Nix script user "pcicmd" was renamed to "pci" and is
+                          located now into PHP_PEAR_INSTALL_DIR
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td align="left">
@@ -141,7 +177,7 @@
         <hr />
       </div>
       <div class="toc">
-        <p class="c1">
+        <p class="c2">
           Table of Contents
         </p>
         <dl>
@@ -207,7 +243,7 @@
                 Programming Interface</a></span>
               </dt>
               <dt>
-                <span class="chapter"><a href="ch07.html">7. CLI - The pcicmd
+                <span class="chapter"><a href="ch07.html">7. CLI - The pci
                 console command</a></span>
               </dt>
             </dl>
@@ -221,7 +257,7 @@
           PHP_CompatInfo : The Definitive Guide
         </td>
         <td align="right">
-          v 1.4.1 : February 12, 2007
+          v 1.5.0 : November 15, 2007
         </td>
       </tr>
     </table>
