@@ -35,7 +35,7 @@ $options = array('filelistgenerator' => 'cvs',
     'simpleoutput' => true,
     'clearcontents' => false,
     'changelogoldtonew' => false,
-    'ignore' => array('package.php', 'index.htm',
+    'ignore' => array('package.php', 'index.htm', 'pcicmd.php',
         'funclist.txt', 'updateVersionInfo.php', 'version.xml')
     );
 
@@ -45,15 +45,20 @@ $p2->generateContents();
 $p2->addRelease();
 $p2->setOSInstallCondition('windows');
 $p2->addInstallAs('scripts/compatinfo.bat', 'pci.bat');
+$p2->addInstallAs('scripts/pci.php', 'pci.php');
 $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
+$p2->addInstallAs('scripts/pci.php', 'pci.php');
+//$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
 $p2->setReleaseVersion('1.5.0');
 $p2->setAPIVersion('1.5.0');
 $p2->setReleaseStability('stable');
 $p2->setAPIStability('stable');
 $p2->setNotes('* changes
-- windows script, renamed from compatinfo.bat to pci.bat (following naming
+- Windows script (launcher), renamed from compatinfo.bat to pci.bat (following naming
 convention of PHP_CodeSniffer example
+- *Nix script user pcicmd was renamed to pci and is located
+now into PHP_PEAR_INSTALL_DIR (even on Windows platform)
 - require now at least PEAR installer 1.5.4 rather than 1.4.3
 (security vulnerability fixes)
 
