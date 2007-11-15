@@ -98,6 +98,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     var $options = array();
 
+
     /**
      * ZE2 Constructor
      *

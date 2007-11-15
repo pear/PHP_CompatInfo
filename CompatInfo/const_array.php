@@ -102,4 +102,5 @@ $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
     'name' => 'implements',
   ),
 );
+
 ?>
