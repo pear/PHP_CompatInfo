@@ -713,10 +713,7 @@ class PHP_CompatInfo
             if ($d) {
                 $d->close();
             }
-        } else {
-            return false;
         }
-
         return $ret;
     }
 }
