@@ -714,6 +714,7 @@ class PHP_CompatInfo
                 $d->close();
             }
         }
+
         return $ret;
     }
 }
