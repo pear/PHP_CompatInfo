@@ -19,4 +19,5 @@ $info = new PHP_CompatInfo();
 
 $res = $info->parseString('<?php $file = file_get_contents(__FILE__); $tokens = token_get_all($file); ?>');
 var_dump($res);
+
 ?>

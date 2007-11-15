@@ -17,4 +17,5 @@ require_once 'PHP/CompatInfo/Cli.php';
 // split filename to 30 char. max and continuation char. is +
 $cli = new PHP_CompatInfo_Cli(30, '+');
 $cli->run();
+
 ?>

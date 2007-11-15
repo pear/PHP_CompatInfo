@@ -28,4 +28,5 @@ $info = new PHP_CompatInfo();
 $file = __FILE__;
 
 var_dump($info->parseFile($file));
+
 ?>

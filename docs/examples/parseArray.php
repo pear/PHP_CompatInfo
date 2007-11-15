@@ -26,4 +26,5 @@ $options = array(
     );
 
 var_dump($info->parseArray($files, $options));
+
 ?>

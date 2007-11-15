@@ -26,4 +26,5 @@ $options = array(
 
 $res = $info->parseFolder($dir, $options);
 var_dump($res);
+
 ?>

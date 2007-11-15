@@ -32,4 +32,5 @@ class Request6056
         $diff = array_diff_key($array1, $array2);
     }
 }
+
 ?>

@@ -110,4 +110,5 @@ $file    = __FILE__;
 $options = array('debug' => true);
 
 var_dump($info->parseFile($file, $options));
+
 ?>
