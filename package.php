@@ -50,32 +50,19 @@ $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
 $p2->addInstallAs('scripts/pci.php', 'pci.php');
 //$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
-$p2->setReleaseVersion('1.5.0');
+$p2->setReleaseVersion('1.5.1');
 $p2->setAPIVersion('1.5.0');
 $p2->setReleaseStability('stable');
 $p2->setAPIStability('stable');
-$p2->setNotes('* changes
-- Windows script (launcher), renamed from compatinfo.bat to pci.bat (following naming
-convention of PHP_CodeSniffer example
-- *Nix script user pcicmd was renamed to pci and is located
-now into PHP_PEAR_INSTALL_DIR (even on Windows platform)
-- require now at least PEAR installer 1.5.4 rather than 1.4.3
-(security vulnerability fixes)
-
-* news
-- version 1.5.0 or greater WILL NOT support PHP3 detection
-- if you still have PHP3 script, please use version 1.4.3 instead
-
-* bugs
-- fixe #12350 (windows only) file in current directory is not found
+$p2->setNotes('* bugs
+- #12451 : DOS CRLFs in every single file
 
 * QA
-- Coding Standard fixes (following PHP_CodeSniffer recommandations)
 - this release include also The Definitive Guide in version 1.5.0
 that cover all versions
   see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
 ');
-$p2->setPearinstallerDep('1.5.4');
+//$p2->setPearinstallerDep('1.5.4');
 
 if (isset($_GET['make']) ||
     (isset($_SERVER['argv']) && @$_SERVER['argv'][1] == 'make')) {
