@@ -531,7 +531,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $output .= "\nDebug:\n\n";
 
             $table = new Console_Table();
-            $table->setHeaders(array('Version', 'Function', 'Extension'));
+            $table->setHeaders(array('Version', 'Function', 'Extension', 'PECL'));
 
             unset($info['max_version']);
             unset($info['version']);
@@ -540,8 +540,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             foreach ($info as $version => $functions) {
                 foreach ($functions as $func) {
-                    $table->addRow(array(
-                        $version, $func['function'], $func['extension']));
+                    $table->addRow(array($version,
+                        $func['function'], $func['extension'],
+                        (($func['pecl'] === true) ? 'yes' : 'no')));
                 }
             }
 
