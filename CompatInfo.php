@@ -557,7 +557,9 @@ class PHP_CompatInfo
                 if ($options['debug'] == true) {
                     $functions_version[$func['init']][] = array(
                         'function' => $name,
-                        'extension' => $func['ext']
+                        'extension' => substr($func['ext'], 0, 4) == 'ext_'
+                            ? $extension : $func['ext'],
+                        'pecl' => $func['pecl']
                         );
                 }
                 $cmp = version_compare($latest_version, $func['init']);
@@ -572,7 +574,8 @@ class PHP_CompatInfo
                 }
 
                 if ($extension && !in_array($extension, $extensions)) {
-                    $extensions[] = $extension;
+                    $extensions[] = substr($func['ext'], 0, 4) == 'ext_'
+                        ? $extension : $func['ext'];
                 }
             }
         }
