@@ -3,8 +3,10 @@
  * The functions array script generator.
  *
  * Sources come from :
- * - http://cvs.php.net/viewcvs.cgi/phpdoc/phpbook/phpbook-xsl/version.xml?revision=1.8
- * - http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.39
+ * - http://cvs.php.net/viewcvs.cgi/phpdoc/phpbook/phpbook-xsl/version.xml
+ *   revision 1.8
+ * - http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt
+ *   revision 1.39
  *
  * PHP versions 4 and 5
  *
@@ -248,4 +250,3 @@ file_put_contents('C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php',
 \$GLOBALS['_PHP_COMPATINFO_FUNCS'] = " .var_export($funcs, true). "
 ?>");
 ?>
-
