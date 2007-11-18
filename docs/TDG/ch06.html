@@ -5,16 +5,17 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>
-      Chapter&nbsp;6.&nbsp;API - Application Programming Interface
+      Chapter&nbsp;6.&nbsp;Advanced detection
     </title>
     <link rel="stylesheet" href="book.css" type="text/css" />
     <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
     <link rel="start" href="index.html" title="PHP_CompatInfo Manual" />
-    <link rel="up" href="pt03.html" title=
-    "Part&nbsp;III.&nbsp;Reference Guide" />
-    <link rel="prev" href="pt03.html" title=
-    "Part&nbsp;III.&nbsp;Reference Guide" />
-    <link rel="next" href="re01.html" title="PHP_CompatInfo::parseArray" />
+    <link rel="up" href="pt02.html" title=
+    "Part&nbsp;II.&nbsp;Getting Started" />
+    <link rel="prev" href="ch05s02.html" title=
+    "Detection of files into a directory" />
+    <link rel="next" href="ch06s02.html" title=
+    "Detection of files into a directory" />
     <style type="text/css">
 /*<![CDATA[*/
     body {
@@ -24,6 +25,8 @@
     :link { color: #0000FF }
     :visited { color: #840084 }
     :active { color: #0000FF }
+    div.c4 {margin-left: 0.5in; margin-right: 0.5in;}
+    div.c3 {font-family: monospace;}
     h2.c2 {clear: both}
     p.c1 {font-weight: bold}
     /*]]>*/
@@ -41,18 +44,18 @@
             <table width="100%" summary="Navigation header">
               <tr>
                 <th colspan="3" align="center">
-                  Chapter&nbsp;6.&nbsp;API - Application Programming Interface
+                  Chapter&nbsp;6.&nbsp;Advanced detection
                 </th>
               </tr>
               <tr>
                 <td width="20%" align="left">
-                  <a accesskey="p" href="pt03.html">Prev</a>&nbsp;
+                  <a accesskey="p" href="ch05s02.html">Prev</a>&nbsp;
                 </td>
                 <th width="60%" align="center">
-                  Part&nbsp;III.&nbsp;Reference Guide
+                  Part&nbsp;II.&nbsp;Getting Started
                 </th>
                 <td width="20%" align="right">
-                  &nbsp;<a accesskey="n" href="re01.html">Next</a>
+                  &nbsp;<a accesskey="n" href="ch06s02.html">Next</a>
                 </td>
               </tr>
             </table>
@@ -63,9 +66,8 @@
     <div class="chapter" lang="en" xml:lang="en">
       <div class="titlepage">
         <h2 class="title">
-          <a name="reference.api" id=
-          "reference.api"></a>Chapter&nbsp;6.&nbsp;API - Application
-          Programming Interface
+          <a name="developers.advanced" id=
+          "developers.advanced"></a>Chapter&nbsp;6.&nbsp;Advanced detection
         </h2>
       </div>
       <div class="toc">
@@ -74,82 +76,287 @@
         </p>
         <dl>
           <dt>
-            <span class="sect1"><a href="ch06.html#reference.api.parse">Parsing
-            data sources</a></span>
+            <span class="sect1"><a href=
+            "ch06.html#developers.advanced.file">Detection of a single
+            file</a></span>
           </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="sect2"><a href="ch06.html#id4782378">Usage with
+                SAPI</a></span>
+              </dt>
+              <dt>
+                <span class="sect2"><a href="ch06.html#id4782462">Usage with
+                CLI</a></span>
+              </dt>
+            </dl>
+          </dd>
           <dt>
-            <span class="sect1"><a href="ch06s02.html">Parser
-            options</a></span>
+            <span class="sect1"><a href="ch06s02.html">Detection of files into
+            a directory</a></span>
           </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="sect2"><a href="ch06s02.html#id4782535">Usage with
+                SAPI</a></span>
+              </dt>
+              <dt>
+                <span class="sect2"><a href="ch06s02.html#id4782794">Usage with
+                CLI</a></span>
+              </dt>
+            </dl>
+          </dd>
         </dl>
       </div>
       <div class="sect1" lang="en" xml:lang="en">
         <div class="titlepage">
           <h2 class="title c2">
-            <a name="reference.api.parse" id="reference.api.parse"></a>Parsing
-            data sources
+            <a name="developers.advanced.file" id=
+            "developers.advanced.file"></a>Detection of a single file
           </h2>
         </div>
         <div class="toc">
           <dl>
             <dt>
-              <span class="refentrytitle"><a href="re01.html"><code class=
-              "function">PHP_CompatInfo::parseArray</code></a></span>
-              <span class="refpurpose">- Parse an Array of Files</span>
+              <span class="sect2"><a href="ch06.html#id4782378">Usage with
+              SAPI</a></span>
             </dt>
             <dt>
-              <span class="refentrytitle"><a href="re02.html"><code class=
-              "function">PHP_CompatInfo::parseDir</code></a></span>
-              <span class="refpurpose">- Parse a directory recursively for its
-              Compatibility info</span>
-            </dt>
-            <dt>
-              <span class="refentrytitle"><a href="re03.html"><code class=
-              "function">PHP_CompatInfo::parseFolder</code></a></span>
-              <span class="refpurpose">- Alias of parseDir</span>
-            </dt>
-            <dt>
-              <span class="refentrytitle"><a href="re04.html"><code class=
-              "function">PHP_CompatInfo::parseFile</code></a></span>
-              <span class="refpurpose">- Parse a file for its Compatibility
-              info</span>
-            </dt>
-            <dt>
-              <span class="refentrytitle"><a href="re05.html"><code class=
-              "function">PHP_CompatInfo::parseString</code></a></span>
-              <span class="refpurpose">- Parse a string for its Compatibility
-              info</span>
+              <span class="sect2"><a href="ch06.html#id4782462">Usage with
+              CLI</a></span>
             </dt>
           </dl>
         </div>
         <p>
-          Handle data sources are so easy. Call one of these five functions,
-          with or without options, and you will retrieve an array of
-          information with keys:
+          If your file implement code condition that is optional and don't
+          break main goal, such as, for example : if <code class=
+          "methodname">function_exists</code> then i do something, else i do
+          something else.
         </p>
-        <div class="itemizedlist">
-          <ul type="disc">
-            <li>
-              <span class="bold"><strong>constants</strong></span>, PHP
-              constants found in source code.
-            </li>
-            <li>
-              <span class="bold"><strong>extensions</strong></span>, PHP
-              modules/extensions functions found in source code.
-            </li>
-            <li>
-              <span class="bold"><strong>version</strong></span>, minimum PHP
-              version to run source code.
-            </li>
-            <li>
-              <span class="bold"><strong>max_version</strong></span>, maximum
-              PHP version to run source code.
-            </li>
-            <li>
-              <span class="bold"><strong>ignore_files</strong></span>, files
-              list that were ignored during source code parsing.
-            </li>
-          </ul>
+        <p>
+          Solution is very easy: You have to specify what function required
+          should be considered as optional.
+        </p>
+        <div class="sect2" lang="en" xml:lang="en">
+          <div class="titlepage">
+            <h3 class="title">
+              <a name="id4782378" id="id4782378"></a>Usage with SAPI
+            </h3>
+          </div>
+          <p>
+            Suppose we have to detect which PHP version we need to run this
+            chunk of script named "errorHandler.php". With standard behavior,
+            PHP_CompatInfo returns PHP 4.3.0 (because <code class=
+            "methodname">debug_backtrace</code> came with version 4.3.0). So,
+            if we ignore function <code class=
+            "methodname">debug_backtrace</code> to find out the minimum
+            version, we will get the real and true result.
+          </p>
+          <div class="php c3">
+            <ol>
+              <li class="li1">
+                <div class="de1">
+                  <span class="kw2">&lt;?php</span>
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="co1">// ...</span>
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="kw1">if</span> <span class=
+                  "br0">(</span><span class=
+                  "kw3">function_exists</span><span class=
+                  "br0">(</span><span class=
+                  "st0">'debug_backtrace'</span><span class=
+                  "br0">)</span><span class="br0">)</span> <span class=
+                  "br0">{</span>
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  &nbsp; &nbsp; <span class="re0">$backtrace</span> =
+                  <span class="kw3">debug_backtrace</span><span class=
+                  "br0">(</span><span class="br0">)</span>;
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="br0">}</span> <span class="kw1">else</span>
+                  <span class="br0">{</span>
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  &nbsp; &nbsp; <span class="re0">$backtrace</span> =
+                  <span class="kw2">false</span>;
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="br0">}</span>
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="co1">// ...</span>
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="kw2">?&gt;</span>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <p>
+            We will use another very simple detection script. Have a look on
+            options array given as second parameter (here is the magic).
+          </p>
+          <div class="php c3">
+            <ol>
+              <li class="li1">
+                <div class="de1">
+                  <span class="kw2">&lt;?php</span>
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="kw1">require_once</span> <span class=
+                  "st0">'PHP/CompatInfo.php'</span>;
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  &nbsp;
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="re0">$info</span> = <span class="kw2">new</span>
+                  PHP_CompatInfo<span class="br0">(</span><span class=
+                  "br0">)</span>;
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="re0">$path_to_file</span> = <span class=
+                  "kw3">dirname</span><span class="br0">(</span><span class=
+                  "kw2">__FILE__</span><span class="br0">)</span> .
+                  DIRECTORY_SEPARATOR . <span class=
+                  "st0">'errorHandler.php'</span>;
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="re0">$options</span> = <span class=
+                  "kw3">array</span><span class="br0">(</span><span class=
+                  "st0">'ignore_functions'</span> =&gt; <span class=
+                  "kw3">array</span><span class="br0">(</span><span class=
+                  "st0">'debug_backtrace'</span><span class=
+                  "br0">)</span><span class="br0">)</span>;
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="re0">$res</span> = <span class=
+                  "re0">$info</span>-&gt;<span class=
+                  "me1">parseFile</span><span class="br0">(</span><span class=
+                  "re0">$path_to_file</span>, <span class=
+                  "re0">$options</span><span class="br0">)</span>;
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  &nbsp;
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="kw3">echo</span> <span class=
+                  "st0">'&lt;pre&gt;'</span>; <span class=
+                  "kw3">var_dump</span><span class="br0">(</span><span class=
+                  "re0">$res</span><span class="br0">)</span>; <span class=
+                  "kw3">echo</span> <span class="st0">'&lt;/pre&gt;'</span>;
+                </div>
+              </li>
+              <li class="li1">
+                <div class="de1">
+                  <span class="kw2">?&gt;</span>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <p>
+            And the raw results are :
+          </p>
+          <pre class="screen">
+array(4) {
+  ["max_version"]=&gt;
+  string(0) ""
+  ["version"]=&gt;
+  string(5) "3.0.7"
+  ["extensions"]=&gt;
+  array(0) {
+  }
+  ["constants"]=&gt;
+  array(0) {
+  }
+}
+     
+</pre>
+        </div>
+        <div class="sect2" lang="en" xml:lang="en">
+          <div class="titlepage">
+            <h3 class="title">
+              <a name="id4782462" id="id4782462"></a>Usage with CLI
+            </h3>
+          </div>
+          <p>
+            pci command used files to specify list of values on <em class=
+            "parameter"><code>--ignore-</code></em> switchs.
+          </p>
+          <pre class="synopsis">
+pci -f \wamp\www\pci\errorHandler.php -in \wamp\www\pci\functions.txt
+     
+</pre>
+          <div class="note c4">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top" width="48">
+                  <img alt="[Note]" src="img/admons/note.png" />
+                </td>
+                <th align="left">
+                  Note
+                </th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  functions.txt is a simple text file with one line by PHP
+                  function that should be ignore. In our example, content is
+                  one line with value :
+                  <p>
+                    debug_backtrace
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>
+            And result give:
+          </p>
+          <pre class="screen">
++------------------------+---------+------------+------------------+
+| File                   | Version | Extensions | Constants/Tokens |
++------------------------+---------+------------+------------------+
+| [...]\errorHandler.php | 3.0.7   |            |                  |
++------------------------+---------+------------+------------------+
+     
+</pre>
         </div>
       </div>
     </div>
@@ -159,7 +366,7 @@
           PHP_CompatInfo : The Definitive Guide
         </td>
         <td align="right">
-          v 1.5.0 : November 15, 2007
+          v 1.5.1 : November 19, 2007
         </td>
       </tr>
     </table>
@@ -168,24 +375,24 @@
       <table width="100%" summary="Navigation footer">
         <tr>
           <td width="40%" align="left">
-            <a accesskey="p" href="pt03.html">Prev</a>&nbsp;
+            <a accesskey="p" href="ch05s02.html">Prev</a>&nbsp;
           </td>
           <td width="20%" align="center">
-            <a accesskey="u" href="pt03.html">Up</a>
+            <a accesskey="u" href="pt02.html">Up</a>
           </td>
           <td width="40%" align="right">
-            &nbsp;<a accesskey="n" href="re01.html">Next</a>
+            &nbsp;<a accesskey="n" href="ch06s02.html">Next</a>
           </td>
         </tr>
         <tr>
           <td width="40%" align="left" valign="top">
-            Part&nbsp;III.&nbsp;Reference Guide&nbsp;
+            Detection of files into a directory&nbsp;
           </td>
           <td width="20%" align="center">
             <a accesskey="h" href="index.html">Home</a>
           </td>
           <td width="40%" align="right" valign="top">
-            &nbsp;<code class="function">PHP_CompatInfo::parseArray</code>
+            &nbsp;Detection of files into a directory
           </td>
         </tr>
       </table>

@@ -11,11 +11,11 @@
     <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
     <link rel="start" href="index.html" title="PHP_CompatInfo Manual" />
     <link rel="up" href="ch05.html" title=
-    "Chapter&nbsp;5.&nbsp;Advanced detection" />
+    "Chapter&nbsp;5.&nbsp;Basic detection" />
     <link rel="prev" href="ch05.html" title=
-    "Chapter&nbsp;5.&nbsp;Advanced detection" />
-    <link rel="next" href="pt03.html" title=
-    "Part&nbsp;III.&nbsp;Reference Guide" />
+    "Chapter&nbsp;5.&nbsp;Basic detection" />
+    <link rel="next" href="ch06.html" title=
+    "Chapter&nbsp;6.&nbsp;Advanced detection" />
     <style type="text/css">
 /*<![CDATA[*/
     body {
@@ -51,10 +51,10 @@
                   <a accesskey="p" href="ch05.html">Prev</a>&nbsp;
                 </td>
                 <th width="60%" align="center">
-                  Chapter&nbsp;5.&nbsp;Advanced detection
+                  Chapter&nbsp;5.&nbsp;Basic detection
                 </th>
                 <td width="20%" align="right">
-                  &nbsp;<a accesskey="n" href="pt03.html">Next</a>
+                  &nbsp;<a accesskey="n" href="ch06.html">Next</a>
                 </td>
               </tr>
             </table>
@@ -65,18 +65,18 @@
     <div class="sect1" lang="en" xml:lang="en">
       <div class="titlepage">
         <h2 class="title c1">
-          <a name="developers.advanced.dir" id=
-          "developers.advanced.dir"></a>Detection of files into a directory
+          <a name="developers.basic.dir" id=
+          "developers.basic.dir"></a>Detection of files into a directory
         </h2>
       </div>
       <div class="toc">
         <dl>
           <dt>
-            <span class="sect2"><a href="ch05s02.html#id4781349">Usage with
+            <span class="sect2"><a href="ch05s02.html#id4781733">Usage with
             SAPI</a></span>
           </dt>
           <dt>
-            <span class="sect2"><a href="ch05s02.html#id4781608">Usage with
+            <span class="sect2"><a href="ch05s02.html#id4781850">Usage with
             CLI</a></span>
           </dt>
         </dl>
@@ -84,234 +84,21 @@
       <div class="sect2" lang="en" xml:lang="en">
         <div class="titlepage">
           <h3 class="title">
-            <a name="id4781349" id="id4781349"></a>Usage with SAPI
+            <a name="id4781733" id="id4781733"></a>Usage with SAPI
           </h3>
         </div>
         <p>
-          If you read analogous <a href="ch04s02.html" title=
-          "Detection of files into a directory">Basic detection</a> chapter,
-          you have certainly noticed that detection of HTML_AJAX 0.5.0
-          distribution directories gave result PHP 5.0.0. We expect to have PHP
-          minimum 4.2.1
+          Parsing a full directory, recursively or not, is no more difficult
+          than detect PHP version of a single file.
         </p>
         <p>
-          Why such version. If we have a look on basic raw result (array) we
-          could found two files with version 5.0.0 : The first one is
+          This new example is based on auto detection of HTML_AJAX 0.5.0
+          distribution. As we will see, basic detection is not accurate as it
+          should be. But with some options we can get the real result (PHP min
+          = 4.2.1).
         </p>
-        <pre class="screen">
-["c:\pear\html\HTML_Ajax-0.5.0\examples\support\xml.class.php"]=&gt;
-  array(4) {
-    ["max_version"]=&gt;
-    string(0) ""
-    ["version"]=&gt;
-    string(5) "5.0.0"
-    ["extensions"]=&gt;
-    array(1) {
-      [0]=&gt;
-      string(6) "domxml"
-    }
-    ["constants"]=&gt;
-    array(0) {
-    }
-  }
-     
-</pre>
         <p>
-          If you have a cursory source review, you will see that this file is
-          an alternative to PHP 4 Dom XML extension with new native PHP 5 class
-          DOMDocument.
-        </p>
-        <div class="tip c3">
-          <table border="0" summary="Tip">
-            <tr>
-              <td rowspan="2" align="center" valign="top" width="48">
-                <img alt="[Tip]" src="img/admons/tip.png" />
-              </td>
-              <th align="left">
-                Tip
-              </th>
-            </tr>
-            <tr>
-              <td align="left" valign="top">
-                To solve this situation, you can ignore this optional (example)
-                file, or simply ignore conditional function call to
-                <code class="methodname">file_put_contents</code> (came with
-                PHP 4.3.0)
-                <div class="php c2">
-                  <ol>
-                    <li class="li1">
-                      <div class="de1">
-                        <span class="kw2">&lt;?php</span>
-                      </div>
-                    </li>
-                    <li class="li1">
-                      <div class="de1">
-                        <span class="re0">$options</span> = <span class=
-                        "kw3">array</span><span class=
-                        "br0">(</span><span class="st0">'ignore_files'</span>
-                        =&gt;
-                      </div>
-                    </li>
-                    <li class="li1">
-                      <div class="de1">
-                        &nbsp; <span class="kw3">array</span><span class=
-                        "br0">(</span><span class=
-                        "st0">'C:/PEAR/HTML/HTML_AJAX-0.5.0/examples/support/xml.class.php'</span><span class="br0">)</span>
-                      </div>
-                    </li>
-                    <li class="li1">
-                      <div class="de1">
-                        &nbsp; <span class="br0">)</span>;
-                      </div>
-                    </li>
-                    <li class="li1">
-                      <div class="de1">
-                        <span class="kw2">?&gt;</span>
-                      </div>
-                    </li>
-                  </ol>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <p>
-          The second file is :
-        </p>
-        <pre class="screen">
- ["c:\pear\html\HTML_Ajax-0.5.0\AJAX.php"]=&gt;
-  array(4) {
-    ["max_version"]=&gt;
-    string(0) ""
-    ["version"]=&gt;
-    string(5) "5.0.0"
-    ["extensions"]=&gt;
-    array(3) {
-      [0]=&gt;
-      string(4) "pcre"
-      [1]=&gt;
-      string(4) "curl"
-      [2]=&gt;
-      string(7) "sockets"
-    }
-    ["constants"]=&gt;
-    array(0) {
-    }
-  }
-     
-</pre>
-        <p>
-          If you have a cursory source review, you will find easily condition
-          code switch around PHP 5 native functions <code class=
-          "methodname">set_exception_handler</code>, and <code class=
-          "methodname">restore_exception_handler</code>.
-        </p>
-        <div class="tip c3">
-          <table border="0" summary="Tip">
-            <tr>
-              <td rowspan="2" align="center" valign="top" width="48">
-                <img alt="[Tip]" src="img/admons/tip.png" />
-              </td>
-              <th align="left">
-                Tip
-              </th>
-            </tr>
-            <tr>
-              <td align="left" valign="top">
-                To solve this situation, you only need to ignore these
-                functions with :
-                <div class="php c2">
-                  <ol>
-                    <li class="li1">
-                      <div class="de1">
-                        <span class="kw2">&lt;?php</span>
-                      </div>
-                    </li>
-                    <li class="li1">
-                      <div class="de1">
-                        <span class="re0">$options</span> = <span class=
-                        "kw3">array</span><span class=
-                        "br0">(</span><span class="st0">'ignore_functions'</span>
-                        =&gt; <span class="kw3">array</span><span class=
-                        "br0">(</span>
-                      </div>
-                    </li>
-                    <li class="li1">
-                      <div class="de1">
-                        &nbsp; <span class=
-                        "st0">'set_exception_handler'</span>, <span class=
-                        "st0">'restore_exception_handler'</span>
-                      </div>
-                    </li>
-                    <li class="li1">
-                      <div class="de1">
-                        &nbsp; <span class="br0">)</span><span class=
-                        "br0">)</span>;
-                      </div>
-                    </li>
-                    <li class="li1">
-                      <div class="de1">
-                        <span class="kw2">?&gt;</span>
-                      </div>
-                    </li>
-                  </ol>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <p>
-          Even with these two fixes, PHP_CompatInfo still give wrong results.
-          If we continue to check files list, we will find an example script
-          "C:\PEAR\HTML\HTML_AJAX-0.5.0\examples\support\xml.class.php" with
-          native <code class="methodname">file_get_contents</code> (came with
-          PHP version 4.3.0).
-        </p>
-        <div class="tip c3">
-          <table border="0" summary="Tip">
-            <tr>
-              <td rowspan="2" align="center" valign="top" width="48">
-                <img alt="[Tip]" src="img/admons/tip.png" />
-              </td>
-              <th align="left">
-                Tip
-              </th>
-            </tr>
-            <tr>
-              <td align="left" valign="top">
-                Ignore all optional files such as example scripts.
-              </td>
-            </tr>
-          </table>
-        </div>
-        <p>
-          and the main class file (AJAX.php) with two native PHP 4.3.0
-          functions <code class="methodname">file_get_contents</code>, and
-          <code class="methodname">stream_context_create</code>. But to run
-          this chunk of code you need at least PHP 5.0.0, see if-condition few
-          lines backward with <code class="methodname">version_compare</code>.
-        </p>
-        <div class="tip c3">
-          <table border="0" summary="Tip">
-            <tr>
-              <td rowspan="2" align="center" valign="top" width="48">
-                <img alt="[Tip]" src="img/admons/tip.png" />
-              </td>
-              <th align="left">
-                Tip
-              </th>
-            </tr>
-            <tr>
-              <td align="left" valign="top">
-                Ignore both functions <code class=
-                "methodname">file_get_contents</code>, and <code class=
-                "methodname">stream_context_create</code>.
-              </td>
-            </tr>
-          </table>
-        </div>
-        <p>
-          Here is now the full detection script.
+          Here is now the simple detection script.
         </p>
         <div class="php c2">
           <ol>
@@ -346,55 +133,10 @@
             </li>
             <li class="li1">
               <div class="de1">
-                <span class="re0">$options</span> = <span class=
-                "kw3">array</span><span class="br0">(</span><span class=
-                "st0">'ignore_functions'</span> =&gt; <span class=
-                "kw3">array</span><span class="br0">(</span>
-              </div>
-            </li>
-            <li class="li1">
-              <div class="de1">
-                &nbsp; &nbsp; &nbsp; <span class=
-                "st0">'set_exception_handler'</span>, <span class=
-                "st0">'restore_exception_handler'</span>,
-              </div>
-            </li>
-            <li class="li1">
-              <div class="de1">
-                &nbsp; &nbsp; &nbsp; <span class=
-                "st0">'file_get_contents'</span>, <span class=
-                "st0">'stream_context_create'</span>
-              </div>
-            </li>
-            <li class="li1">
-              <div class="de1">
-                &nbsp; &nbsp; &nbsp; <span class="br0">)</span>,
-              </div>
-            </li>
-            <li class="li1">
-              <div class="de1">
-                &nbsp; <span class="st0">'ignore_files'</span> =&gt;
-                <span class="kw3">array</span><span class="br0">(</span>
-              </div>
-            </li>
-            <li class="li1">
-              <div class="de1">
-                &nbsp; &nbsp; &nbsp; <span class=
-                "st0">'C:/PEAR/HTML/HTML_AJAX-0.5.0/examples/support/xml.class.php'</span>
-              </div>
-            </li>
-            <li class="li1">
-              <div class="de1">
-                &nbsp; <span class="br0">)</span><span class="br0">)</span>;
-              </div>
-            </li>
-            <li class="li1">
-              <div class="de1">
                 <span class="re0">$res</span> = <span class=
                 "re0">$info</span>-&gt;<span class=
                 "me1">parseDir</span><span class="br0">(</span><span class=
-                "re0">$path_to_dir</span>, <span class=
-                "re0">$options</span><span class="br0">)</span>;
+                "re0">$path_to_dir</span><span class="br0">)</span>;
               </div>
             </li>
             <li class="li1">
@@ -422,16 +164,14 @@
           And a chunk of raw results we got :
         </p>
         <pre class="screen">
-array(60) {
+array(61) {
   ["ignored_files"]=&gt;
-  array(1) {
-    [0]=&gt;
-    string(59) "c:\pear\html\HTML_Ajax-0.5.0\examples\support\xml.class.php"
+  array(0) {
   }
   ["max_version"]=&gt;
   string(0) ""
   ["version"]=&gt;
-  string(5) "4.2.1"
+  string(5) "5.0.0"
   ["extensions"]=&gt;
   array(6) {
     [0]=&gt;
@@ -452,6 +192,19 @@ array(60) {
     [0]=&gt;
     string(8) "__FILE__"
   }
+  ["c:\pear\html\HTML_Ajax-0.5.0\examples\xml_usage.php"]=&gt;
+  array(4) {
+    ["max_version"]=&gt;
+    string(0) ""
+    ["version"]=&gt;
+    string(5) "3.0.0"
+    ["extensions"]=&gt;
+    array(0) {
+    }
+    ["constants"]=&gt;
+    array(0) {
+    }
+  }
 
   [... more ...]
 
@@ -459,15 +212,37 @@ array(60) {
      
 </pre>
         <p>
-          It means that we need at least PHP 4.2.1 to run HTML_Ajax 0.5.0 with
+          It means that we need at least PHP 5.0.0 to run HTML_Ajax 0.5.0 with
           PHP extensions <span class="simplelist">mbstring, pcre, domxml, curl,
-          sockets, session</span> loaded.
+          sockets, session</span> loaded. Of course this is not the REAL and
+          TRUE result. We will see later how to fix it and improve accuracy
+          detection.
         </p>
+        <div class="tip c3">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top" width="48">
+                <img alt="[Tip]" src="img/admons/tip.png" />
+              </td>
+              <th align="left">
+                Tip
+              </th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                In raw output, you get for each script parsed the same results
+                as if you run <code class=
+                "methodname">PHP_CompatInfo::parseFile()</code> for all these
+                files.
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <div class="titlepage">
           <h3 class="title">
-            <a name="id4781608" id="id4781608"></a>Usage with CLI
+            <a name="id4781850" id="id4781850"></a>Usage with CLI
           </h3>
         </div>
         <p>
@@ -476,7 +251,38 @@ array(60) {
         </p>
         <pre class="synopsis">
 pci -d c:\pear\html\HTML_Ajax-0.5.0
-    -in \wamp\www\pci\functions.txt
+     
+</pre>
+        <p>
+          And chunk of results give:
+        </p>
+        <pre class="screen">
++----------------------------------+---------+------------+------------------+
+| Path                             | Version | Extensions | Constants/Tokens |
++----------------------------------+---------+------------+------------------+
+| [...]\*                          | 5.0.0   | mbstring   | __FILE__         |
+|                                  |         | pcre       |                  |
+|                                  |         | domxml     |                  |
+|                                  |         | curl       |                  |
+|                                  |         | sockets    |                  |
+|                                  |         | session    |                  |
++----------------------------------+---------+------------+------------------+
+| [...]\examples\xml_usage.php     | 3.0.0   |            |                  |
++----------------------------------+---------+------------+------------------+
+| [...]\examples\xmlserver.php     | 3.0.0   |            |                  |
++----------------------------------+---------+------------+------------------+
+| [...]\examples\tests\        (+) | 3.0.0   |            |                  |
+| test_speed.php                   |         |            |                  |
++----------------------------------+---------+------------+------------------+
+| [...]\examples\tests\        (+) | 3.0.0   |            |                  |
+| test_priority.php                |         |            |                  |
++----------------------------------+---------+------------+------------------+
+
+[... more ...]
+
++----------------------------------+---------+------------+------------------+
+| [...]\AJAX\Action.php            | 4.0.4   |            |                  |
++----------------------------------+---------+------------+------------------+
      
 </pre>
         <div class="note c3">
@@ -491,43 +297,14 @@ pci -d c:\pear\html\HTML_Ajax-0.5.0
             </tr>
             <tr>
               <td align="left" valign="top">
-                File "functions.txt" contains 5 lines, one for each function to
-                ignore: <span class="simplelist">set_exception_handler,
-                restore_exception_handler, file_get_contents,
-                file_put_contents, stream_context_create</span>
+                [...] replace the full path to directory given by <em class=
+                "parameter"><code>-d</code></em> option, while (+) indicates
+                that path to a file has been splitted (to limit output to 80
+                columns).
               </td>
             </tr>
           </table>
         </div>
-        <p>
-          And chunk of results give:
-        </p>
-        <pre class="screen">
-+----------------------------------+---------+------------+------------------+
-| Path                             | Version | Extensions | Constants/Tokens |
-+----------------------------------+---------+------------+------------------+
-| [...]\*                          | 4.2.1   | mbstring   | __FILE__         |
-|                                  |         | pcre       |                  |
-|                                  |         | domxml     |                  |
-|                                  |         | curl       |                  |
-|                                  |         | sockets    |                  |
-|                                  |         | session    |                  |
-+----------------------------------+---------+------------+------------------+
-| [...]\examples\xml_usage.php     | 3.0.0   |            |                  |
-+----------------------------------+---------+------------+------------------+
-| [...]\examples\xmlserver.php     | 3.0.0   |            |                  |
-+----------------------------------+---------+------------+------------------+
-| [...]\examples\tests\        (+) | 3.0.0   |            |                  |
-| test_speed.php                   |         |            |                  |
-+----------------------------------+---------+------------+------------------+
-
-[... more ...]
-
-+----------------------------------+---------+------------+------------------+
-| [...]\AJAX\Action.php            | 4.0.4   |            |                  |
-+----------------------------------+---------+------------+------------------+
-     
-</pre>
       </div>
     </div>
     <table class="pciFooter">
@@ -536,7 +313,7 @@ pci -d c:\pear\html\HTML_Ajax-0.5.0
           PHP_CompatInfo : The Definitive Guide
         </td>
         <td align="right">
-          v 1.5.0 : November 15, 2007
+          v 1.5.1 : November 19, 2007
         </td>
       </tr>
     </table>
@@ -551,18 +328,18 @@ pci -d c:\pear\html\HTML_Ajax-0.5.0
             <a accesskey="u" href="ch05.html">Up</a>
           </td>
           <td width="40%" align="right">
-            &nbsp;<a accesskey="n" href="pt03.html">Next</a>
+            &nbsp;<a accesskey="n" href="ch06.html">Next</a>
           </td>
         </tr>
         <tr>
           <td width="40%" align="left" valign="top">
-            Chapter&nbsp;5.&nbsp;Advanced detection&nbsp;
+            Chapter&nbsp;5.&nbsp;Basic detection&nbsp;
           </td>
           <td width="20%" align="center">
             <a accesskey="h" href="index.html">Home</a>
           </td>
           <td width="40%" align="right" valign="top">
-            &nbsp;Part&nbsp;III.&nbsp;Reference Guide
+            &nbsp;Chapter&nbsp;6.&nbsp;Advanced detection
           </td>
         </tr>
       </table>

@@ -5,14 +5,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>
-      Chapter&nbsp;7.&nbsp;CLI - The pci console command
+      Chapter&nbsp;7.&nbsp;API - Application Programming Interface
     </title>
     <link rel="stylesheet" href="book.css" type="text/css" />
     <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
     <link rel="start" href="index.html" title="PHP_CompatInfo Manual" />
     <link rel="up" href="pt03.html" title=
     "Part&nbsp;III.&nbsp;Reference Guide" />
-    <link rel="prev" href="ch06s02.html" title="Parser options " />
+    <link rel="prev" href="pt03.html" title=
+    "Part&nbsp;III.&nbsp;Reference Guide" />
+    <link rel="next" href="re01.html" title="PHP_CompatInfo::parseArray" />
     <style type="text/css">
 /*<![CDATA[*/
     body {
@@ -22,7 +24,6 @@
     :link { color: #0000FF }
     :visited { color: #840084 }
     :active { color: #0000FF }
-    div.c3 {margin-left: 0.5in; margin-right: 0.5in;}
     h2.c2 {clear: both}
     p.c1 {font-weight: bold}
     /*]]>*/
@@ -40,18 +41,18 @@
             <table width="100%" summary="Navigation header">
               <tr>
                 <th colspan="3" align="center">
-                  Chapter&nbsp;7.&nbsp;CLI - The pci console command
+                  Chapter&nbsp;7.&nbsp;API - Application Programming Interface
                 </th>
               </tr>
               <tr>
                 <td width="20%" align="left">
-                  <a accesskey="p" href="ch06s02.html">Prev</a>&nbsp;
+                  <a accesskey="p" href="pt03.html">Prev</a>&nbsp;
                 </td>
                 <th width="60%" align="center">
                   Part&nbsp;III.&nbsp;Reference Guide
                 </th>
                 <td width="20%" align="right">
-                  &nbsp;
+                  &nbsp;<a accesskey="n" href="re01.html">Next</a>
                 </td>
               </tr>
             </table>
@@ -62,9 +63,9 @@
     <div class="chapter" lang="en" xml:lang="en">
       <div class="titlepage">
         <h2 class="title">
-          <a name="reference.cli" id=
-          "reference.cli"></a>Chapter&nbsp;7.&nbsp;CLI - The pci console
-          command
+          <a name="reference.api" id=
+          "reference.api"></a>Chapter&nbsp;7.&nbsp;API - Application
+          Programming Interface
         </h2>
       </div>
       <div class="toc">
@@ -73,369 +74,82 @@
         </p>
         <dl>
           <dt>
-            <span class="sect1"><a href=
-            "ch07.html#reference.cli.pcicmd.switch">Switchs</a></span>
+            <span class="sect1"><a href="ch07.html#reference.api.parse">Parsing
+            data sources</a></span>
           </dt>
-          <dd>
-            <dl>
-              <dt>
-                <span class="sect2"><a href=
-                "ch07.html#id4786552">Overview</a></span>
-              </dt>
-              <dt>
-                <span class="sect2"><a href=
-                "ch07.html#id4787201">Reference</a></span>
-              </dt>
-            </dl>
-          </dd>
+          <dt>
+            <span class="sect1"><a href="ch07s02.html">Parser
+            options</a></span>
+          </dt>
         </dl>
       </div>
-      <p>
-        The <span class="bold"><strong>PHP_CompatInfo_Cli</strong></span>
-        class, also known under its wrapper name "pci", get the compatibility
-        info from PHP Command Line Interpreter, on existing script or folder.
-      </p>
       <div class="sect1" lang="en" xml:lang="en">
         <div class="titlepage">
           <h2 class="title c2">
-            <a name="reference.cli.pcicmd.switch" id=
-            "reference.cli.pcicmd.switch"></a>Switchs
+            <a name="reference.api.parse" id="reference.api.parse"></a>Parsing
+            data sources
           </h2>
         </div>
         <div class="toc">
           <dl>
             <dt>
-              <span class="sect2"><a href=
-              "ch07.html#id4786552">Overview</a></span>
+              <span class="refentrytitle"><a href="re01.html"><code class=
+              "function">PHP_CompatInfo::parseArray</code></a></span>
+              <span class="refpurpose">- Parse an Array of Files</span>
             </dt>
             <dt>
-              <span class="sect2"><a href=
-              "ch07.html#id4787201">Reference</a></span>
+              <span class="refentrytitle"><a href="re02.html"><code class=
+              "function">PHP_CompatInfo::parseDir</code></a></span>
+              <span class="refpurpose">- Parse a directory recursively for its
+              Compatibility info</span>
+            </dt>
+            <dt>
+              <span class="refentrytitle"><a href="re03.html"><code class=
+              "function">PHP_CompatInfo::parseFolder</code></a></span>
+              <span class="refpurpose">- Alias of parseDir</span>
+            </dt>
+            <dt>
+              <span class="refentrytitle"><a href="re04.html"><code class=
+              "function">PHP_CompatInfo::parseFile</code></a></span>
+              <span class="refpurpose">- Parse a file for its Compatibility
+              info</span>
+            </dt>
+            <dt>
+              <span class="refentrytitle"><a href="re05.html"><code class=
+              "function">PHP_CompatInfo::parseString</code></a></span>
+              <span class="refpurpose">- Parse a string for its Compatibility
+              info</span>
             </dt>
           </dl>
         </div>
-        <div class="sect2" lang="en" xml:lang="en">
-          <div class="titlepage">
-            <h3 class="title">
-              <a name="id4786552" id="id4786552"></a>Overview
-            </h3>
-          </div>
-          <pre class="synopsis">
-pci [options]  -f FILE | -d DIR
-     
-</pre>
-          <p>
-            Usage is to run pci with at least the <em class=
-            "parameter"><code>-f</code></em> (--file) or <em class=
-            "parameter"><code>-d</code></em> (--dir) switch and perharps some
-            additional and optional options.
-          </p>
-        </div>
-        <div class="sect2" lang="en" xml:lang="en">
-          <div class="titlepage">
-            <h3 class="title">
-              <a name="id4787201" id="id4787201"></a>Reference
-            </h3>
-          </div>
-          <div class="variablelist">
-            <dl>
-              <dt>
-                <span class="term"><em class="parameter"><code>-d</code></em> |
-                <em class="parameter"><code>--dir</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Identify the directory to parse to get compatibility info of
-                  its files contents.
-                </p>
-              </dd>
-              <dt>
-                <span class="term"><em class="parameter"><code>-f</code></em> |
-                <em class="parameter"><code>--file</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Identify the file name (path) to parse to get compatibility
-                  info.
-                </p>
-              </dd>
-              <dt>
-                <span class="term"><em class="parameter"><code>-n</code></em> |
-                <em class="parameter"><code>--no-recurse</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Do not recursively parse files into subdirectories when using
-                  <em class="parameter"><code>--dir</code></em>.
-                </p>
-              </dd>
-              <dt>
-                <span class="term"><em class="parameter"><code>-v</code></em> |
-                <em class="parameter"><code>--verbose</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Set the verbose level. From 0 (no extra information) to 7
-                  (full extra details).
-                </p>
-                <p>
-                  In level 0, pci give only results related to -d or -f. See
-                  first line of the console table. If there are more than one
-                  line, next ones are details for each file of a
-                  directory/branch.
-                </p>
-                <pre class="screen">
-+------------------------+---------+------------+------------------+
-| Path                   | Version | Extensions | Constants/Tokens |
-+------------------------+---------+------------+------------------+
-| [...]\*                | 4.3.0   | bcmath     | __FILE__         |
-|                        |         | pcre       |                  |
-+------------------------+---------+------------+------------------+
-| [...]\math.php         | 3.0.9   | bcmath     |                  |
-|                        |         | pcre       |                  |
-+------------------------+---------+------------+------------------+
-| [...]\errorHandler.php | 4.3.0   |            |                  |
-+------------------------+---------+------------+------------------+
-         
-</pre>
-                <p>
-                  In level 1, pci give results of level 0 plus a resume of
-                  command line arguments. For example
-                </p>
-                <pre class="synopsis">
-pci -v 1 -d \wamp\www\pci
-         
-</pre>
-                <p>
-                  give table of level 0 (see previous), plus :
-                </p>
-                <pre class="screen">
-Command Line resume :
-
-+---------+---------------+
-| Option  | Value         |
-+---------+---------------+
-| dir     | \wamp\www\pci |
-| verbose | 1             |
-+---------+---------------+
-         
-</pre>
-                <p>
-                  In level 2, pci give results of level 0 plus the list of
-                  options PHP_CompatInfo used to parse file or directory. For
-                  example
-                </p>
-                <pre class="synopsis">
-pci -d \wamp\www\pci -v 2
-         
-</pre>
-                <p>
-                  give table of level 0 (see previous), plus :
-                </p>
-                <pre class="screen">
-Parser options :
-
-+--------+-------+
-| Option | Value |
-+--------+-------+
-|        |       |
-+--------+-------+
-         
-</pre>
-                <div class="note c3">
-                  <table border="0" summary="Note">
-                    <tr>
-                      <td rowspan="2" align="center" valign="top" width="48">
-                        <img alt="[Note]" src="img/admons/note.png" />
-                      </td>
-                      <th align="left">
-                        Note
-                      </th>
-                    </tr>
-                    <tr>
-                      <td align="left" valign="top">
-                        Even when none option are used, the resume table is
-                        displayed.
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <p>
-                  In level 3, pci give results of level 0, 1 and 2. For example
-                </p>
-                <pre class="synopsis">
-pci -d \wamp\www\pci -n -v 3
-         
-</pre>
-                <p>
-                  give table of level 0 (see previous), plus :
-                </p>
-                <pre class="screen">
-Command Line resume :
-
-+------------+---------------+
-| Option     | Value         |
-+------------+---------------+
-| dir        | \wamp\www\pci |
-| no-recurse | 1             |
-| verbose    | 3             |
-+------------+---------------+
-
-Parser options :
-
-+-------------+-------+
-| Option      | Value |
-+-------------+-------+
-| recurse_dir | FALSE |
-+-------------+-------+
-         
-</pre>
-                <p>
-                  In level 4, useless when using <em class=
-                  "parameter"><code>--dir</code></em>, pci give results of
-                  level 0 plus a list of functions implemented with their
-                  versions. For example
-                </p>
-                <pre class="synopsis">
-pci -f \wamp\www\pci\math.php -v4
-         
-</pre>
-                <p>
-                  give :
-                </p>
-                <pre class="screen">
-+----------------+---------+------------+------------------+
-| File           | Version | Extensions | Constants/Tokens |
-+----------------+---------+------------+------------------+
-| [...]\math.php | 3.0.9   | bcmath     |                  |
-|                |         | pcre       |                  |
-+----------------+---------+------------+------------------+
-
-Debug:
-
-+---------+------------+------------+
-| Version | Function   | Extension  |
-+---------+------------+------------+
-| 3.0.9   | preg_match | ext_pcre   |
-| 3.0.0   | bcsub      | ext_bcmath |
-+---------+------------+------------+
-         
-</pre>
-                <p>
-                  Level 5 is equivalent to level 4 + level 1.
-                </p>
-                <p>
-                  Level 6 is equivalent to level 4 + level 2.
-                </p>
-                <p>
-                  And finally, level 7 is equivalent to level 4 + level 2 +
-                  level 1.
-                </p>
-              </dd>
-              <dt>
-                <span class="term"><em class="parameter"><code>-if</code></em>
-                | <em class="parameter"><code>--ignore-files</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Identify the file name (path) to a text file that contains on
-                  each line the name of each file to ignore when parsing a
-                  directory/branch.
-                </p>
-              </dd>
-              <dt>
-                <span class="term"><em class="parameter"><code>-id</code></em>
-                | <em class="parameter"><code>--ignore-dirs</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Identify the file name (path) to a text file that contains on
-                  each line the name of each sub-directory to ignore when
-                  parsing a directory/branch.
-                </p>
-              </dd>
-              <dt>
-                <span class="term"><em class="parameter"><code>-in</code></em>
-                | <em class=
-                "parameter"><code>--ignore-functions</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Identify the file name (path) to a text file that contains on
-                  each line the name of each PHP function to ignore when
-                  parsing a directory or a single file.
-                </p>
-              </dd>
-              <dt>
-                <span class="term"><em class="parameter"><code>-ic</code></em>
-                | <em class=
-                "parameter"><code>--ignore-constants</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Identify the file name (path) to a text file that contains on
-                  each line the name of each PHP constant to ignore when
-                  parsing a directory or a single file.
-                </p>
-              </dd>
-              <dt>
-                <span class="term"><em class="parameter"><code>-ie</code></em>
-                | <em class=
-                "parameter"><code>--ignore-extensions</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Identify the file name (path) to a text file that contains on
-                  each line the name of each PHP extension to ignore (all
-                  extension.functions) when parsing a directory or a single
-                  file.
-                </p>
-              </dd>
-              <dt>
-                <span class="term"><em class="parameter"><code>-iv</code></em>
-                | <em class=
-                "parameter"><code>--ignore-versions</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Expect one or two values that identify which PHP version (and
-                  all its related functions) to ignore.
-                </p>
-                <div class="tip c3">
-                  <table border="0" summary="Tip">
-                    <tr>
-                      <td rowspan="2" align="center" valign="top" width="48">
-                        <img alt="[Tip]" src="img/admons/tip.png" />
-                      </td>
-                      <th align="left">
-                        Tip
-                      </th>
-                    </tr>
-                    <tr>
-                      <td align="left" valign="top">
-                        For example: ignore all PHP 5 functions (minor releases
-                        0 thru 2), or only PHP 5.0.0 functions.
-                        <pre class="synopsis">
-pci -f FILE | -d DIR  -iv 5.0.0 5.2.0
-pci -f FILE | -d DIR  -iv 5.0.0
-         
-</pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </dd>
-              <dt>
-                <span class="term"><em class="parameter"><code>-h</code></em> |
-                <em class="parameter"><code>--help</code></em></span>
-              </dt>
-              <dd>
-                <p>
-                  Show full help usage with all switchs explained.
-                </p>
-              </dd>
-            </dl>
-          </div>
+        <p>
+          Handle data sources are so easy. Call one of these five functions,
+          with or without options, and you will retrieve an array of
+          information with keys:
+        </p>
+        <div class="itemizedlist">
+          <ul type="disc">
+            <li>
+              <span class="bold"><strong>constants</strong></span>, PHP
+              constants found in source code.
+            </li>
+            <li>
+              <span class="bold"><strong>extensions</strong></span>, PHP
+              modules/extensions functions found in source code.
+            </li>
+            <li>
+              <span class="bold"><strong>version</strong></span>, minimum PHP
+              version to run source code.
+            </li>
+            <li>
+              <span class="bold"><strong>max_version</strong></span>, maximum
+              PHP version to run source code.
+            </li>
+            <li>
+              <span class="bold"><strong>ignore_files</strong></span>, files
+              list that were ignored during source code parsing.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -445,7 +159,7 @@ pci -f FILE | -d DIR  -iv 5.0.0
           PHP_CompatInfo : The Definitive Guide
         </td>
         <td align="right">
-          v 1.5.0 : November 15, 2007
+          v 1.5.1 : November 19, 2007
         </td>
       </tr>
     </table>
@@ -454,24 +168,24 @@ pci -f FILE | -d DIR  -iv 5.0.0
       <table width="100%" summary="Navigation footer">
         <tr>
           <td width="40%" align="left">
-            <a accesskey="p" href="ch06s02.html">Prev</a>&nbsp;
+            <a accesskey="p" href="pt03.html">Prev</a>&nbsp;
           </td>
           <td width="20%" align="center">
             <a accesskey="u" href="pt03.html">Up</a>
           </td>
           <td width="40%" align="right">
-            &nbsp;
+            &nbsp;<a accesskey="n" href="re01.html">Next</a>
           </td>
         </tr>
         <tr>
           <td width="40%" align="left" valign="top">
-            Parser options &nbsp;
+            Part&nbsp;III.&nbsp;Reference Guide&nbsp;
           </td>
           <td width="20%" align="center">
             <a accesskey="h" href="index.html">Home</a>
           </td>
           <td width="40%" align="right" valign="top">
-            &nbsp;
+            &nbsp;<code class="function">PHP_CompatInfo::parseArray</code>
           </td>
         </tr>
       </table>

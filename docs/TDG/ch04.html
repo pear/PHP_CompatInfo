@@ -5,16 +5,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>
-      Chapter&nbsp;4.&nbsp;Basic detection
+      Chapter&nbsp;4.&nbsp;Overview
     </title>
     <link rel="stylesheet" href="book.css" type="text/css" />
     <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
     <link rel="start" href="index.html" title="PHP_CompatInfo Manual" />
     <link rel="up" href="pt02.html" title=
     "Part&nbsp;II.&nbsp;Getting Started" />
-    <link rel="prev" href="ch03s02.html" title="Accuracy of detection" />
-    <link rel="next" href="ch04s02.html" title=
-    "Detection of files into a directory" />
+    <link rel="prev" href="pt02.html" title=
+    "Part&nbsp;II.&nbsp;Getting Started" />
+    <link rel="next" href="ch04s02.html" title="Accuracy of detection" />
     <style type="text/css">
 /*<![CDATA[*/
     body {
@@ -24,8 +24,6 @@
     :link { color: #0000FF }
     :visited { color: #840084 }
     :active { color: #0000FF }
-    div.c4 {margin-left: 0.5in; margin-right: 0.5in;}
-    div.c3 {font-family: monospace;}
     h2.c2 {clear: both}
     p.c1 {font-weight: bold}
     /*]]>*/
@@ -43,12 +41,12 @@
             <table width="100%" summary="Navigation header">
               <tr>
                 <th colspan="3" align="center">
-                  Chapter&nbsp;4.&nbsp;Basic detection
+                  Chapter&nbsp;4.&nbsp;Overview
                 </th>
               </tr>
               <tr>
                 <td width="20%" align="left">
-                  <a accesskey="p" href="ch03s02.html">Prev</a>&nbsp;
+                  <a accesskey="p" href="pt02.html">Prev</a>&nbsp;
                 </td>
                 <th width="60%" align="center">
                   Part&nbsp;II.&nbsp;Getting Started
@@ -65,8 +63,8 @@
     <div class="chapter" lang="en" xml:lang="en">
       <div class="titlepage">
         <h2 class="title">
-          <a name="developers.basic" id=
-          "developers.basic"></a>Chapter&nbsp;4.&nbsp;Basic detection
+          <a name="developers.intro" id=
+          "developers.intro"></a>Chapter&nbsp;4.&nbsp;Overview
         </h2>
       </div>
       <div class="toc">
@@ -75,268 +73,35 @@
         </p>
         <dl>
           <dt>
-            <span class="sect1"><a href=
-            "ch04.html#developers.basic.file">Detection of a single
-            file</a></span>
+            <span class="sect1"><a href="ch04.html#developers.intro.purpose">In
+            brief</a></span>
           </dt>
-          <dd>
-            <dl>
-              <dt>
-                <span class="sect2"><a href="ch04.html#id4780389">Usage with
-                SAPI</a></span>
-              </dt>
-              <dt>
-                <span class="sect2"><a href="ch04.html#id4780470">Usage with
-                CLI</a></span>
-              </dt>
-            </dl>
-          </dd>
           <dt>
-            <span class="sect1"><a href="ch04s02.html">Detection of files into
-            a directory</a></span>
+            <span class="sect1"><a href="ch04s02.html">Accuracy of
+            detection</a></span>
           </dt>
-          <dd>
-            <dl>
-              <dt>
-                <span class="sect2"><a href="ch04s02.html#id4780548">Usage with
-                SAPI</a></span>
-              </dt>
-              <dt>
-                <span class="sect2"><a href="ch04s02.html#id4780665">Usage with
-                CLI</a></span>
-              </dt>
-            </dl>
-          </dd>
         </dl>
       </div>
+      <p>
+        The purpose of this tutorial is to give the new users of PHP_CompatInfo
+        an overview of its features and usage patterns.
+      </p>
       <div class="sect1" lang="en" xml:lang="en">
         <div class="titlepage">
           <h2 class="title c2">
-            <a name="developers.basic.file" id=
-            "developers.basic.file"></a>Detection of a single file
+            <a name="developers.intro.purpose" id=
+            "developers.intro.purpose"></a>In brief
           </h2>
         </div>
-        <div class="toc">
-          <dl>
-            <dt>
-              <span class="sect2"><a href="ch04.html#id4780389">Usage with
-              SAPI</a></span>
-            </dt>
-            <dt>
-              <span class="sect2"><a href="ch04.html#id4780470">Usage with
-              CLI</a></span>
-            </dt>
-          </dl>
-        </div>
         <p>
-          In most case, the basic detection is enough. But sometimes, we will
-          need to adjust accuracy of parser to give the best result. This
-          ability is possible with <em class=
-          "parameter"><code>$option</code></em>, the second parameter of each
-          <a href="ch06.html" title=
-          "Chapter&nbsp;6.&nbsp;API - Application Programming Interface">PHP_CompatInfo
-          API</a>. See <a href="ch06s02.html" title="Parser options ">parser
-          options</a> list for details.
+          There are two types of interface to run a PHP_CompatInfo script
+          dectection: Server API, and CLI. All PHP_CompatInfo features (since
+          1.4.0) are available on both interface.
         </p>
-        <div class="sect2" lang="en" xml:lang="en">
-          <div class="titlepage">
-            <h3 class="title">
-              <a name="id4780389" id="id4780389"></a>Usage with SAPI
-            </h3>
-          </div>
-          <p>
-            Suppose we have to detect which PHP version we need to run this
-            script named "math.php"
-          </p>
-          <div class="php c3">
-            <ol>
-              <li class="li1">
-                <div class="de1">
-                  <span class="kw2">&lt;?php</span>
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="re0">$nb</span> = <span class=
-                  "kw3">bcsub</span><span class="br0">(</span><span class=
-                  "nu0">1.234</span>, <span class="nu0">5</span>, <span class=
-                  "nu0">4</span><span class="br0">)</span>;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="kw1">if</span> <span class=
-                  "br0">(</span><span class="kw3">preg_match</span><span class=
-                  "br0">(</span><span class="st0">'/^-/'</span>, <span class=
-                  "re0">$nb</span><span class="br0">)</span><span class=
-                  "br0">)</span> <span class="br0">{</span>
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  &nbsp; &nbsp; <span class="kw3">echo</span> <span class=
-                  "st0">'minus'</span>;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="br0">}</span>
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="kw2">?&gt;</span>
-                </div>
-              </li>
-            </ol>
-          </div>
-          <p>
-            We will use this very simple detection script.
-          </p>
-          <div class="php c3">
-            <ol>
-              <li class="li1">
-                <div class="de1">
-                  <span class="kw2">&lt;?php</span>
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="kw1">require_once</span> <span class=
-                  "st0">'PHP/CompatInfo.php'</span>;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  &nbsp;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="re0">$info</span> = <span class="kw2">new</span>
-                  PHP_CompatInfo<span class="br0">(</span><span class=
-                  "br0">)</span>;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="re0">$path_to_file</span> = <span class=
-                  "kw3">dirname</span><span class="br0">(</span><span class=
-                  "kw2">__FILE__</span><span class="br0">)</span> .
-                  DIRECTORY_SEPARATOR . <span class="st0">'math.php'</span>;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="re0">$res</span> = <span class=
-                  "re0">$info</span>-&gt;<span class=
-                  "me1">parseFile</span><span class="br0">(</span><span class=
-                  "re0">$path_to_file</span><span class="br0">)</span>;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  &nbsp;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="kw3">echo</span> <span class=
-                  "st0">'&lt;pre&gt;'</span>; <span class=
-                  "kw3">var_dump</span><span class="br0">(</span><span class=
-                  "re0">$res</span><span class="br0">)</span>; <span class=
-                  "kw3">echo</span> <span class="st0">'&lt;/pre&gt;'</span>;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="kw2">?&gt;</span>
-                </div>
-              </li>
-            </ol>
-          </div>
-          <p>
-            Here are the raw results we got :
-          </p>
-          <pre class="screen">
-array(4) {
-  ["max_version"]=&gt;
-  string(0) ""
-  ["version"]=&gt;
-  string(5) "3.0.9"
-  ["extensions"]=&gt;
-  array(2) {
-    [0]=&gt;
-    string(6) "bcmath"
-    [1]=&gt;
-    string(4) "pcre"
-  }
-  ["constants"]=&gt;
-  array(0) {
-  }
-}
-     
-</pre>
-          <p>
-            It means that we need at least PHP 3.0.9 to run the "math.php"
-            script with PHP extensions <span class="simplelist">bcmath,
-            pcre</span> loaded.
-          </p>
-        </div>
-        <div class="sect2" lang="en" xml:lang="en">
-          <div class="titlepage">
-            <h3 class="title">
-              <a name="id4780470" id="id4780470"></a>Usage with CLI
-            </h3>
-          </div>
-          <p>
-            Windows users have a command line script named "pci.bat", while
-            other users called directly "pci.php". To simplify, we will suppose
-            that all users called CLI on same way (pci).
-          </p>
-          <pre class="synopsis">
-pci [options] [-d DIR] | [-f FILE]
-     
-</pre>
-          <p>
-            If we try again to detect the same "math.php" script, the command
-            to run will be:
-          </p>
-          <pre class="synopsis">
-pci -f path_to_file\math.php
-     
-</pre>
-          <p>
-            And result give:
-          </p>
-          <pre class="screen">
-+----------------+---------+------------+------------------+
-| File           | Version | Extensions | Constants/Tokens |
-+----------------+---------+------------+------------------+
-| [...]\math.php | 3.0.9   | bcmath     |                  |
-|                |         | pcre       |                  |
-+----------------+---------+------------+------------------+
-     
-</pre>
-          <div class="note c4">
-            <table border="0" summary="Note">
-              <tr>
-                <td rowspan="2" align="center" valign="top" width="48">
-                  <img alt="[Note]" src="img/admons/note.png" />
-                </td>
-                <th align="left">
-                  Note
-                </th>
-              </tr>
-              <tr>
-                <td align="left" valign="top">
-                  [...] replace the full path to file given by <em class=
-                  "parameter"><code>-f</code></em> option.
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
+        <p>
+          Examples that follow, will be explain with SAPI and CLI interface.
+          It's up to you to choose what is the best usage for you.
+        </p>
       </div>
     </div>
     <table class="pciFooter">
@@ -345,7 +110,7 @@ pci -f path_to_file\math.php
           PHP_CompatInfo : The Definitive Guide
         </td>
         <td align="right">
-          v 1.5.0 : November 15, 2007
+          v 1.5.1 : November 19, 2007
         </td>
       </tr>
     </table>
@@ -354,7 +119,7 @@ pci -f path_to_file\math.php
       <table width="100%" summary="Navigation footer">
         <tr>
           <td width="40%" align="left">
-            <a accesskey="p" href="ch03s02.html">Prev</a>&nbsp;
+            <a accesskey="p" href="pt02.html">Prev</a>&nbsp;
           </td>
           <td width="20%" align="center">
             <a accesskey="u" href="pt02.html">Up</a>
@@ -365,13 +130,13 @@ pci -f path_to_file\math.php
         </tr>
         <tr>
           <td width="40%" align="left" valign="top">
-            Accuracy of detection&nbsp;
+            Part&nbsp;II.&nbsp;Getting Started&nbsp;
           </td>
           <td width="20%" align="center">
             <a accesskey="h" href="index.html">Home</a>
           </td>
           <td width="40%" align="right" valign="top">
-            &nbsp;Detection of files into a directory
+            &nbsp;Accuracy of detection
           </td>
         </tr>
       </table>

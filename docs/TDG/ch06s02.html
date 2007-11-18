@@ -5,16 +5,17 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>
-      Parser options
+      Detection of files into a directory
     </title>
     <link rel="stylesheet" href="book.css" type="text/css" />
     <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
     <link rel="start" href="index.html" title="PHP_CompatInfo Manual" />
     <link rel="up" href="ch06.html" title=
-    "Chapter&nbsp;6.&nbsp;API - Application Programming Interface" />
-    <link rel="prev" href="re05.html" title="PHP_CompatInfo::parseString" />
-    <link rel="next" href="ch07.html" title=
-    "Chapter&nbsp;7.&nbsp;CLI - The pci console command " />
+    "Chapter&nbsp;6.&nbsp;Advanced detection" />
+    <link rel="prev" href="ch06.html" title=
+    "Chapter&nbsp;6.&nbsp;Advanced detection" />
+    <link rel="next" href="pt03.html" title=
+    "Part&nbsp;III.&nbsp;Reference Guide" />
     <style type="text/css">
 /*<![CDATA[*/
     body {
@@ -24,7 +25,8 @@
     :link { color: #0000FF }
     :visited { color: #840084 }
     :active { color: #0000FF }
-    p.c2 {font-weight: bold}
+    div.c3 {margin-left: 0.5in; margin-right: 0.5in;}
+    div.c2 {font-family: monospace;}
     h2.c1 {clear: both}
     /*]]>*/
     </style>
@@ -41,18 +43,18 @@
             <table width="100%" summary="Navigation header">
               <tr>
                 <th colspan="3" align="center">
-                  Parser options
+                  Detection of files into a directory
                 </th>
               </tr>
               <tr>
                 <td width="20%" align="left">
-                  <a accesskey="p" href="re05.html">Prev</a>&nbsp;
+                  <a accesskey="p" href="ch06.html">Prev</a>&nbsp;
                 </td>
                 <th width="60%" align="center">
-                  Chapter&nbsp;6.&nbsp;API - Application Programming Interface
+                  Chapter&nbsp;6.&nbsp;Advanced detection
                 </th>
                 <td width="20%" align="right">
-                  &nbsp;<a accesskey="n" href="ch07.html">Next</a>
+                  &nbsp;<a accesskey="n" href="pt03.html">Next</a>
                 </td>
               </tr>
             </table>
@@ -63,138 +65,469 @@
     <div class="sect1" lang="en" xml:lang="en">
       <div class="titlepage">
         <h2 class="title c1">
-          <a name="reference.api.options" id="reference.api.options"></a>Parser
-          options
+          <a name="developers.advanced.dir" id=
+          "developers.advanced.dir"></a>Detection of files into a directory
         </h2>
       </div>
-      <p>
-        Each of five parsing functions support common and specifics options :
-      </p>
-      <div class="variablelist">
-        <p class="title c2">
-          Common options
-        </p>
+      <div class="toc">
         <dl>
           <dt>
-            <span class="term"><em class=
-            "parameter"><code>debug</code></em></span>
+            <span class="sect2"><a href="ch06s02.html#id4782535">Usage with
+            SAPI</a></span>
           </dt>
-          <dd>
-            <p>
-              Contains a boolean to control whether extra ouput is shown.
-            </p>
-          </dd>
           <dt>
-            <span class="term"><em class=
-            "parameter"><code>ignore_functions</code></em></span>
+            <span class="sect2"><a href="ch06s02.html#id4782794">Usage with
+            CLI</a></span>
           </dt>
-          <dd>
-            <p>
-              Contains an array of functions to ignore when calculating the
-              version needed.
-            </p>
-          </dd>
-          <dt>
-            <span class="term"><em class=
-            "parameter"><code>ignore_constants</code></em></span>
-          </dt>
-          <dd>
-            <p>
-              Contains an array of constants to ignore when calculating the
-              version needed.
-            </p>
-          </dd>
-          <dt>
-            <span class="term"><em class=
-            "parameter"><code>ignore_extensions</code></em></span>
-          </dt>
-          <dd>
-            <p>
-              Contains an array of php extensions to ignore when calculating
-              the version needed.
-            </p>
-          </dd>
-          <dt>
-            <span class="term"><em class=
-            "parameter"><code>ignore_versions</code></em></span>
-          </dt>
-          <dd>
-            <p>
-              Contains an array of php versions to ignore when calculating the
-              version needed.
-            </p>
-          </dd>
         </dl>
       </div>
-      <div class="variablelist">
-        <p class="title c2">
-          parseArray, parseDir|parseFolder, specific options
+      <div class="sect2" lang="en" xml:lang="en">
+        <div class="titlepage">
+          <h3 class="title">
+            <a name="id4782535" id="id4782535"></a>Usage with SAPI
+          </h3>
+        </div>
+        <p>
+          If you read analogous <a href="ch05s02.html" title=
+          "Detection of files into a directory">Basic detection</a> chapter,
+          you have certainly noticed that detection of HTML_AJAX 0.5.0
+          distribution directories gave result PHP 5.0.0. We expect to have PHP
+          minimum 4.2.1
         </p>
-        <dl>
-          <dt>
-            <span class="term"><em class=
-            "parameter"><code>file_ext</code></em></span>
-          </dt>
-          <dd>
-            <p>
-              Contains an array of file extensions to parse for PHP code.
-              Default: php, php4, inc, phtml
-            </p>
-          </dd>
-          <dt>
-            <span class="term"><em class=
-            "parameter"><code>ignore_files</code></em></span>
-          </dt>
-          <dd>
-            <p>
-              Contains an array of files to ignore. File names are case
-              insensitive.
-            </p>
-          </dd>
-        </dl>
+        <p>
+          Why such version. If we have a look on basic raw result (array) we
+          could found two files with version 5.0.0 : The first one is
+        </p>
+        <pre class="screen">
+["c:\pear\html\HTML_Ajax-0.5.0\examples\support\xml.class.php"]=&gt;
+  array(4) {
+    ["max_version"]=&gt;
+    string(0) ""
+    ["version"]=&gt;
+    string(5) "5.0.0"
+    ["extensions"]=&gt;
+    array(1) {
+      [0]=&gt;
+      string(6) "domxml"
+    }
+    ["constants"]=&gt;
+    array(0) {
+    }
+  }
+     
+</pre>
+        <p>
+          If you have a cursory source review, you will see that this file is
+          an alternative to PHP 4 Dom XML extension with new native PHP 5 class
+          DOMDocument.
+        </p>
+        <div class="tip c3">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top" width="48">
+                <img alt="[Tip]" src="img/admons/tip.png" />
+              </td>
+              <th align="left">
+                Tip
+              </th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                To solve this situation, you can ignore this optional (example)
+                file, or simply ignore conditional function call to
+                <code class="methodname">file_put_contents</code> (came with
+                PHP 4.3.0)
+                <div class="php c2">
+                  <ol>
+                    <li class="li1">
+                      <div class="de1">
+                        <span class="kw2">&lt;?php</span>
+                      </div>
+                    </li>
+                    <li class="li1">
+                      <div class="de1">
+                        <span class="re0">$options</span> = <span class=
+                        "kw3">array</span><span class=
+                        "br0">(</span><span class="st0">'ignore_files'</span>
+                        =&gt;
+                      </div>
+                    </li>
+                    <li class="li1">
+                      <div class="de1">
+                        &nbsp; <span class="kw3">array</span><span class=
+                        "br0">(</span><span class=
+                        "st0">'C:/PEAR/HTML/HTML_AJAX-0.5.0/examples/support/xml.class.php'</span><span class="br0">)</span>
+                      </div>
+                    </li>
+                    <li class="li1">
+                      <div class="de1">
+                        &nbsp; <span class="br0">)</span>;
+                      </div>
+                    </li>
+                    <li class="li1">
+                      <div class="de1">
+                        <span class="kw2">?&gt;</span>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          The second file is :
+        </p>
+        <pre class="screen">
+ ["c:\pear\html\HTML_Ajax-0.5.0\AJAX.php"]=&gt;
+  array(4) {
+    ["max_version"]=&gt;
+    string(0) ""
+    ["version"]=&gt;
+    string(5) "5.0.0"
+    ["extensions"]=&gt;
+    array(3) {
+      [0]=&gt;
+      string(4) "pcre"
+      [1]=&gt;
+      string(4) "curl"
+      [2]=&gt;
+      string(7) "sockets"
+    }
+    ["constants"]=&gt;
+    array(0) {
+    }
+  }
+     
+</pre>
+        <p>
+          If you have a cursory source review, you will find easily condition
+          code switch around PHP 5 native functions <code class=
+          "methodname">set_exception_handler</code>, and <code class=
+          "methodname">restore_exception_handler</code>.
+        </p>
+        <div class="tip c3">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top" width="48">
+                <img alt="[Tip]" src="img/admons/tip.png" />
+              </td>
+              <th align="left">
+                Tip
+              </th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                To solve this situation, you only need to ignore these
+                functions with :
+                <div class="php c2">
+                  <ol>
+                    <li class="li1">
+                      <div class="de1">
+                        <span class="kw2">&lt;?php</span>
+                      </div>
+                    </li>
+                    <li class="li1">
+                      <div class="de1">
+                        <span class="re0">$options</span> = <span class=
+                        "kw3">array</span><span class=
+                        "br0">(</span><span class="st0">'ignore_functions'</span>
+                        =&gt; <span class="kw3">array</span><span class=
+                        "br0">(</span>
+                      </div>
+                    </li>
+                    <li class="li1">
+                      <div class="de1">
+                        &nbsp; <span class=
+                        "st0">'set_exception_handler'</span>, <span class=
+                        "st0">'restore_exception_handler'</span>
+                      </div>
+                    </li>
+                    <li class="li1">
+                      <div class="de1">
+                        &nbsp; <span class="br0">)</span><span class=
+                        "br0">)</span>;
+                      </div>
+                    </li>
+                    <li class="li1">
+                      <div class="de1">
+                        <span class="kw2">?&gt;</span>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          Even with these two fixes, PHP_CompatInfo still give wrong results.
+          If we continue to check files list, we will find an example script
+          "C:\PEAR\HTML\HTML_AJAX-0.5.0\examples\support\xml.class.php" with
+          native <code class="methodname">file_get_contents</code> (came with
+          PHP version 4.3.0).
+        </p>
+        <div class="tip c3">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top" width="48">
+                <img alt="[Tip]" src="img/admons/tip.png" />
+              </td>
+              <th align="left">
+                Tip
+              </th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                Ignore all optional files such as example scripts.
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          and the main class file (AJAX.php) with two native PHP 4.3.0
+          functions <code class="methodname">file_get_contents</code>, and
+          <code class="methodname">stream_context_create</code>. But to run
+          this chunk of code you need at least PHP 5.0.0, see if-condition few
+          lines backward with <code class="methodname">version_compare</code>.
+        </p>
+        <div class="tip c3">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top" width="48">
+                <img alt="[Tip]" src="img/admons/tip.png" />
+              </td>
+              <th align="left">
+                Tip
+              </th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                Ignore both functions <code class=
+                "methodname">file_get_contents</code>, and <code class=
+                "methodname">stream_context_create</code>.
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          Here is now the full detection script.
+        </p>
+        <div class="php c2">
+          <ol>
+            <li class="li1">
+              <div class="de1">
+                <span class="kw2">&lt;?php</span>
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="kw1">require_once</span> <span class=
+                "st0">'PHP/CompatInfo.php'</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                &nbsp;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="re0">$info</span> = <span class="kw2">new</span>
+                PHP_CompatInfo<span class="br0">(</span><span class=
+                "br0">)</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="re0">$path_to_dir</span> = <span class=
+                "st0">'c:/pear/html/HTML_Ajax-0.5.0'</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="re0">$options</span> = <span class=
+                "kw3">array</span><span class="br0">(</span><span class=
+                "st0">'ignore_functions'</span> =&gt; <span class=
+                "kw3">array</span><span class="br0">(</span>
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                &nbsp; &nbsp; &nbsp; <span class=
+                "st0">'set_exception_handler'</span>, <span class=
+                "st0">'restore_exception_handler'</span>,
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                &nbsp; &nbsp; &nbsp; <span class=
+                "st0">'file_get_contents'</span>, <span class=
+                "st0">'stream_context_create'</span>
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                &nbsp; &nbsp; &nbsp; <span class="br0">)</span>,
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                &nbsp; <span class="st0">'ignore_files'</span> =&gt;
+                <span class="kw3">array</span><span class="br0">(</span>
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                &nbsp; &nbsp; &nbsp; <span class=
+                "st0">'C:/PEAR/HTML/HTML_AJAX-0.5.0/examples/support/xml.class.php'</span>
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                &nbsp; <span class="br0">)</span><span class="br0">)</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="re0">$res</span> = <span class=
+                "re0">$info</span>-&gt;<span class=
+                "me1">parseDir</span><span class="br0">(</span><span class=
+                "re0">$path_to_dir</span>, <span class=
+                "re0">$options</span><span class="br0">)</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                &nbsp;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="kw3">echo</span> <span class=
+                "st0">'&lt;pre&gt;'</span>; <span class=
+                "kw3">var_dump</span><span class="br0">(</span><span class=
+                "re0">$res</span><span class="br0">)</span>; <span class=
+                "kw3">echo</span> <span class="st0">'&lt;/pre&gt;'</span>;
+              </div>
+            </li>
+            <li class="li1">
+              <div class="de1">
+                <span class="kw2">?&gt;</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <p>
+          And a chunk of raw results we got :
+        </p>
+        <pre class="screen">
+array(60) {
+  ["ignored_files"]=&gt;
+  array(1) {
+    [0]=&gt;
+    string(59) "c:\pear\html\HTML_Ajax-0.5.0\examples\support\xml.class.php"
+  }
+  ["max_version"]=&gt;
+  string(0) ""
+  ["version"]=&gt;
+  string(5) "4.2.1"
+  ["extensions"]=&gt;
+  array(6) {
+    [0]=&gt;
+    string(8) "mbstring"
+    [1]=&gt;
+    string(4) "pcre"
+    [2]=&gt;
+    string(6) "domxml"
+    [3]=&gt;
+    string(4) "curl"
+    [4]=&gt;
+    string(7) "sockets"
+    [5]=&gt;
+    string(7) "session"
+  }
+  ["constants"]=&gt;
+  array(1) {
+    [0]=&gt;
+    string(8) "__FILE__"
+  }
+
+  [... more ...]
+
+}
+     
+</pre>
+        <p>
+          It means that we need at least PHP 4.2.1 to run HTML_Ajax 0.5.0 with
+          PHP extensions <span class="simplelist">mbstring, pcre, domxml, curl,
+          sockets, session</span> loaded.
+        </p>
       </div>
-      <div class="variablelist">
-        <p class="title c2">
-          parseArray specific options
+      <div class="sect2" lang="en" xml:lang="en">
+        <div class="titlepage">
+          <h3 class="title">
+            <a name="id4782794" id="id4782794"></a>Usage with CLI
+          </h3>
+        </div>
+        <p>
+          If we try again to detect the same distribution untar directory, the
+          command to run will be:
         </p>
-        <dl>
-          <dt>
-            <span class="term"><em class=
-            "parameter"><code>is_string</code></em></span>
-          </dt>
-          <dd>
-            <p>
-              Contains a boolean which says if the array values are strings or
-              file names.
-            </p>
-          </dd>
-        </dl>
-      </div>
-      <div class="variablelist">
-        <p class="title c2">
-          parseDir|parseFolder specific options
+        <pre class="synopsis">
+pci -d c:\pear\html\HTML_Ajax-0.5.0
+    -in \wamp\www\pci\functions.txt
+     
+</pre>
+        <div class="note c3">
+          <table border="0" summary="Note">
+            <tr>
+              <td rowspan="2" align="center" valign="top" width="48">
+                <img alt="[Note]" src="img/admons/note.png" />
+              </td>
+              <th align="left">
+                Note
+              </th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                File "functions.txt" contains 5 lines, one for each function to
+                ignore: <span class="simplelist">set_exception_handler,
+                restore_exception_handler, file_get_contents,
+                file_put_contents, stream_context_create</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          And chunk of results give:
         </p>
-        <dl>
-          <dt>
-            <span class="term"><em class=
-            "parameter"><code>recurse_dir</code></em></span>
-          </dt>
-          <dd>
-            <p>
-              Boolean on whether to recursively find files.
-            </p>
-          </dd>
-          <dt>
-            <span class="term"><em class=
-            "parameter"><code>ignore_dirs</code></em></span>
-          </dt>
-          <dd>
-            <p>
-              Contains an array of directories to ignore. Directory names are
-              case insensitive.
-            </p>
-          </dd>
-        </dl>
+        <pre class="screen">
++----------------------------------+---------+------------+------------------+
+| Path                             | Version | Extensions | Constants/Tokens |
++----------------------------------+---------+------------+------------------+
+| [...]\*                          | 4.2.1   | mbstring   | __FILE__         |
+|                                  |         | pcre       |                  |
+|                                  |         | domxml     |                  |
+|                                  |         | curl       |                  |
+|                                  |         | sockets    |                  |
+|                                  |         | session    |                  |
++----------------------------------+---------+------------+------------------+
+| [...]\examples\xml_usage.php     | 3.0.0   |            |                  |
++----------------------------------+---------+------------+------------------+
+| [...]\examples\xmlserver.php     | 3.0.0   |            |                  |
++----------------------------------+---------+------------+------------------+
+| [...]\examples\tests\        (+) | 3.0.0   |            |                  |
+| test_speed.php                   |         |            |                  |
++----------------------------------+---------+------------+------------------+
+
+[... more ...]
+
++----------------------------------+---------+------------+------------------+
+| [...]\AJAX\Action.php            | 4.0.4   |            |                  |
++----------------------------------+---------+------------+------------------+
+     
+</pre>
       </div>
     </div>
     <table class="pciFooter">
@@ -203,7 +536,7 @@
           PHP_CompatInfo : The Definitive Guide
         </td>
         <td align="right">
-          v 1.5.0 : November 15, 2007
+          v 1.5.1 : November 19, 2007
         </td>
       </tr>
     </table>
@@ -212,24 +545,24 @@
       <table width="100%" summary="Navigation footer">
         <tr>
           <td width="40%" align="left">
-            <a accesskey="p" href="re05.html">Prev</a>&nbsp;
+            <a accesskey="p" href="ch06.html">Prev</a>&nbsp;
           </td>
           <td width="20%" align="center">
             <a accesskey="u" href="ch06.html">Up</a>
           </td>
           <td width="40%" align="right">
-            &nbsp;<a accesskey="n" href="ch07.html">Next</a>
+            &nbsp;<a accesskey="n" href="pt03.html">Next</a>
           </td>
         </tr>
         <tr>
           <td width="40%" align="left" valign="top">
-            <code class="function">PHP_CompatInfo::parseString</code>&nbsp;
+            Chapter&nbsp;6.&nbsp;Advanced detection&nbsp;
           </td>
           <td width="20%" align="center">
             <a accesskey="h" href="index.html">Home</a>
           </td>
           <td width="40%" align="right" valign="top">
-            &nbsp;Chapter&nbsp;7.&nbsp;CLI - The pci console command
+            &nbsp;Part&nbsp;III.&nbsp;Reference Guide
           </td>
         </tr>
       </table>

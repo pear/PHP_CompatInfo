@@ -5,15 +5,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>
-      Chapter&nbsp;5.&nbsp;Advanced detection
+      Chapter&nbsp;5.&nbsp;Basic detection
     </title>
     <link rel="stylesheet" href="book.css" type="text/css" />
     <meta name="generator" content="DocBook XSL Stylesheets V1.69.1" />
     <link rel="start" href="index.html" title="PHP_CompatInfo Manual" />
     <link rel="up" href="pt02.html" title=
     "Part&nbsp;II.&nbsp;Getting Started" />
-    <link rel="prev" href="ch04s02.html" title=
-    "Detection of files into a directory" />
+    <link rel="prev" href="ch04s02.html" title="Accuracy of detection" />
     <link rel="next" href="ch05s02.html" title=
     "Detection of files into a directory" />
     <style type="text/css">
@@ -44,7 +43,7 @@
             <table width="100%" summary="Navigation header">
               <tr>
                 <th colspan="3" align="center">
-                  Chapter&nbsp;5.&nbsp;Advanced detection
+                  Chapter&nbsp;5.&nbsp;Basic detection
                 </th>
               </tr>
               <tr>
@@ -66,8 +65,8 @@
     <div class="chapter" lang="en" xml:lang="en">
       <div class="titlepage">
         <h2 class="title">
-          <a name="developers.advanced" id=
-          "developers.advanced"></a>Chapter&nbsp;5.&nbsp;Advanced detection
+          <a name="developers.basic" id=
+          "developers.basic"></a>Chapter&nbsp;5.&nbsp;Basic detection
         </h2>
       </div>
       <div class="toc">
@@ -77,17 +76,17 @@
         <dl>
           <dt>
             <span class="sect1"><a href=
-            "ch05.html#developers.advanced.file">Detection of a single
+            "ch05.html#developers.basic.file">Detection of a single
             file</a></span>
           </dt>
           <dd>
             <dl>
               <dt>
-                <span class="sect2"><a href="ch05.html#id4781194">Usage with
+                <span class="sect2"><a href="ch05.html#id4781575">Usage with
                 SAPI</a></span>
               </dt>
               <dt>
-                <span class="sect2"><a href="ch05.html#id4781277">Usage with
+                <span class="sect2"><a href="ch05.html#id4781656">Usage with
                 CLI</a></span>
               </dt>
             </dl>
@@ -99,11 +98,11 @@
           <dd>
             <dl>
               <dt>
-                <span class="sect2"><a href="ch05s02.html#id4781349">Usage with
+                <span class="sect2"><a href="ch05s02.html#id4781733">Usage with
                 SAPI</a></span>
               </dt>
               <dt>
-                <span class="sect2"><a href="ch05s02.html#id4781608">Usage with
+                <span class="sect2"><a href="ch05s02.html#id4781850">Usage with
                 CLI</a></span>
               </dt>
             </dl>
@@ -113,46 +112,41 @@
       <div class="sect1" lang="en" xml:lang="en">
         <div class="titlepage">
           <h2 class="title c2">
-            <a name="developers.advanced.file" id=
-            "developers.advanced.file"></a>Detection of a single file
+            <a name="developers.basic.file" id=
+            "developers.basic.file"></a>Detection of a single file
           </h2>
         </div>
         <div class="toc">
           <dl>
             <dt>
-              <span class="sect2"><a href="ch05.html#id4781194">Usage with
+              <span class="sect2"><a href="ch05.html#id4781575">Usage with
               SAPI</a></span>
             </dt>
             <dt>
-              <span class="sect2"><a href="ch05.html#id4781277">Usage with
+              <span class="sect2"><a href="ch05.html#id4781656">Usage with
               CLI</a></span>
             </dt>
           </dl>
         </div>
         <p>
-          If your file implement code condition that is optional and don't
-          break main goal, such as, for example : if <code class=
-          "methodname">function_exists</code> then i do something, else i do
-          something else.
-        </p>
-        <p>
-          Solution is very easy: You have to specify what function required
-          should be considered as optional.
+          In most case, the basic detection is enough. But sometimes, we will
+          need to adjust accuracy of parser to give the best result. This
+          ability is possible with <em class=
+          "parameter"><code>$option</code></em>, the second parameter of each
+          <a href="ch07.html" title=
+          "Chapter&nbsp;7.&nbsp;API - Application Programming Interface">PHP_CompatInfo
+          API</a>. See <a href="ch07s02.html" title="Parser options ">parser
+          options</a> list for details.
         </p>
         <div class="sect2" lang="en" xml:lang="en">
           <div class="titlepage">
             <h3 class="title">
-              <a name="id4781194" id="id4781194"></a>Usage with SAPI
+              <a name="id4781575" id="id4781575"></a>Usage with SAPI
             </h3>
           </div>
           <p>
             Suppose we have to detect which PHP version we need to run this
-            chunk of script named "errorHandler.php". With standard behavior,
-            PHP_CompatInfo returns PHP 4.3.0 (because <code class=
-            "methodname">debug_backtrace</code> came with version 4.3.0). So,
-            if we ignore function <code class=
-            "methodname">debug_backtrace</code> to find out the minimum
-            version, we will get the real and true result.
+            script named "math.php"
           </p>
           <div class="php c3">
             <ol>
@@ -163,47 +157,30 @@
               </li>
               <li class="li1">
                 <div class="de1">
-                  <span class="co1">// ...</span>
+                  <span class="re0">$nb</span> = <span class=
+                  "kw3">bcsub</span><span class="br0">(</span><span class=
+                  "nu0">1.234</span>, <span class="nu0">5</span>, <span class=
+                  "nu0">4</span><span class="br0">)</span>;
                 </div>
               </li>
               <li class="li1">
                 <div class="de1">
                   <span class="kw1">if</span> <span class=
-                  "br0">(</span><span class=
-                  "kw3">function_exists</span><span class=
-                  "br0">(</span><span class=
-                  "st0">'debug_backtrace'</span><span class=
-                  "br0">)</span><span class="br0">)</span> <span class=
-                  "br0">{</span>
+                  "br0">(</span><span class="kw3">preg_match</span><span class=
+                  "br0">(</span><span class="st0">'/^-/'</span>, <span class=
+                  "re0">$nb</span><span class="br0">)</span><span class=
+                  "br0">)</span> <span class="br0">{</span>
                 </div>
               </li>
               <li class="li1">
                 <div class="de1">
-                  &nbsp; &nbsp; <span class="re0">$backtrace</span> =
-                  <span class="kw3">debug_backtrace</span><span class=
-                  "br0">(</span><span class="br0">)</span>;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="br0">}</span> <span class="kw1">else</span>
-                  <span class="br0">{</span>
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  &nbsp; &nbsp; <span class="re0">$backtrace</span> =
-                  <span class="kw2">false</span>;
+                  &nbsp; &nbsp; <span class="kw3">echo</span> <span class=
+                  "st0">'minus'</span>;
                 </div>
               </li>
               <li class="li1">
                 <div class="de1">
                   <span class="br0">}</span>
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="co1">// ...</span>
                 </div>
               </li>
               <li class="li1">
@@ -214,8 +191,7 @@
             </ol>
           </div>
           <p>
-            We will use another very simple detection script. Have a look on
-            options array given as second parameter (here is the magic).
+            We will use this very simple detection script.
           </p>
           <div class="php c3">
             <ol>
@@ -247,18 +223,7 @@
                   <span class="re0">$path_to_file</span> = <span class=
                   "kw3">dirname</span><span class="br0">(</span><span class=
                   "kw2">__FILE__</span><span class="br0">)</span> .
-                  DIRECTORY_SEPARATOR . <span class=
-                  "st0">'errorHandler.php'</span>;
-                </div>
-              </li>
-              <li class="li1">
-                <div class="de1">
-                  <span class="re0">$options</span> = <span class=
-                  "kw3">array</span><span class="br0">(</span><span class=
-                  "st0">'ignore_functions'</span> =&gt; <span class=
-                  "kw3">array</span><span class="br0">(</span><span class=
-                  "st0">'debug_backtrace'</span><span class=
-                  "br0">)</span><span class="br0">)</span>;
+                  DIRECTORY_SEPARATOR . <span class="st0">'math.php'</span>;
                 </div>
               </li>
               <li class="li1">
@@ -266,8 +231,7 @@
                   <span class="re0">$res</span> = <span class=
                   "re0">$info</span>-&gt;<span class=
                   "me1">parseFile</span><span class="br0">(</span><span class=
-                  "re0">$path_to_file</span>, <span class=
-                  "re0">$options</span><span class="br0">)</span>;
+                  "re0">$path_to_file</span><span class="br0">)</span>;
                 </div>
               </li>
               <li class="li1">
@@ -292,16 +256,20 @@
             </ol>
           </div>
           <p>
-            And the raw results are :
+            Here are the raw results we got :
           </p>
           <pre class="screen">
 array(4) {
   ["max_version"]=&gt;
   string(0) ""
   ["version"]=&gt;
-  string(5) "3.0.7"
+  string(5) "3.0.9"
   ["extensions"]=&gt;
-  array(0) {
+  array(2) {
+    [0]=&gt;
+    string(6) "bcmath"
+    [1]=&gt;
+    string(4) "pcre"
   }
   ["constants"]=&gt;
   array(0) {
@@ -309,19 +277,45 @@ array(4) {
 }
      
 </pre>
+          <p>
+            It means that we need at least PHP 3.0.9 to run the "math.php"
+            script with PHP extensions <span class="simplelist">bcmath,
+            pcre</span> loaded.
+          </p>
         </div>
         <div class="sect2" lang="en" xml:lang="en">
           <div class="titlepage">
             <h3 class="title">
-              <a name="id4781277" id="id4781277"></a>Usage with CLI
+              <a name="id4781656" id="id4781656"></a>Usage with CLI
             </h3>
           </div>
           <p>
-            pci command used files to specify list of values on <em class=
-            "parameter"><code>--ignore-</code></em> switchs.
+            Windows users have a command line script named "pci.bat", while
+            other users called directly "pci.php". To simplify, we will suppose
+            that all users called CLI on same way (pci).
           </p>
           <pre class="synopsis">
-pci -f \wamp\www\pci\errorHandler.php -in \wamp\www\pci\functions.txt
+pci [options] [-d DIR] | [-f FILE]
+     
+</pre>
+          <p>
+            If we try again to detect the same "math.php" script, the command
+            to run will be:
+          </p>
+          <pre class="synopsis">
+pci -f path_to_file\math.php
+     
+</pre>
+          <p>
+            And result give:
+          </p>
+          <pre class="screen">
++----------------+---------+------------+------------------+
+| File           | Version | Extensions | Constants/Tokens |
++----------------+---------+------------+------------------+
+| [...]\math.php | 3.0.9   | bcmath     |                  |
+|                |         | pcre       |                  |
++----------------+---------+------------+------------------+
      
 </pre>
           <div class="note c4">
@@ -336,27 +330,12 @@ pci -f \wamp\www\pci\errorHandler.php -in \wamp\www\pci\functions.txt
               </tr>
               <tr>
                 <td align="left" valign="top">
-                  functions.txt is a simple text file with one line by PHP
-                  function that should be ignore. In our example, content is
-                  one line with value :
-                  <p>
-                    debug_backtrace
-                  </p>
+                  [...] replace the full path to file given by <em class=
+                  "parameter"><code>-f</code></em> option.
                 </td>
               </tr>
             </table>
           </div>
-          <p>
-            And result give:
-          </p>
-          <pre class="screen">
-+------------------------+---------+------------+------------------+
-| File                   | Version | Extensions | Constants/Tokens |
-+------------------------+---------+------------+------------------+
-| [...]\errorHandler.php | 3.0.7   |            |                  |
-+------------------------+---------+------------+------------------+
-     
-</pre>
         </div>
       </div>
     </div>
@@ -366,7 +345,7 @@ pci -f \wamp\www\pci\errorHandler.php -in \wamp\www\pci\functions.txt
           PHP_CompatInfo : The Definitive Guide
         </td>
         <td align="right">
-          v 1.5.0 : November 15, 2007
+          v 1.5.1 : November 19, 2007
         </td>
       </tr>
     </table>
@@ -386,7 +365,7 @@ pci -f \wamp\www\pci\errorHandler.php -in \wamp\www\pci\functions.txt
         </tr>
         <tr>
           <td width="40%" align="left" valign="top">
-            Detection of files into a directory&nbsp;
+            Accuracy of detection&nbsp;
           </td>
           <td width="20%" align="center">
             <a accesskey="h" href="index.html">Home</a>
