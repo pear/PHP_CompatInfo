@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.6.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.6.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>PHP_CompatInfo</name>
  <channel>pear.php.net</channel>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
@@ -18,8 +18,8 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2007-11-15</date>
- <time>19:35:20</time>
+ <date>2007-11-19</date>
+ <time>17:44:47</time>
  <version>
   <release>1.5.1</release>
   <api>1.5.0</api>
@@ -33,7 +33,7 @@ which shows which functions require which version and CLI output script</descrip
 - #12451 : DOS CRLFs in every single file
 
 * QA
-- this release include also The Definitive Guide in version 1.5.0
+- this release include also The Definitive Guide in version 1.5.1
 that cover all versions
   see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
  </notes>
@@ -49,6 +49,7 @@ that cover all versions
    <dir name="docs">
     <dir name="examples">
      <file name="checkConstants.php" role="doc" />
+     <file name="checkExtensions.php" role="doc" />
      <file name="checkPHP5.php" role="doc" />
      <file name="ci_frontend.php" role="doc" />
      <file name="cliCustom.php" role="doc" />
@@ -77,6 +78,13 @@ that cover all versions
      <file name="ch01s02.html" role="doc" />
      <file name="ch01s03.html" role="doc" />
      <file name="ch02.html" role="doc" />
+     <file name="ch02s02.html" role="doc" />
+     <file name="ch02s03.html" role="doc" />
+     <file name="ch02s04.html" role="doc" />
+     <file name="ch02s05.html" role="doc" />
+     <file name="ch02s06.html" role="doc" />
+     <file name="ch02s07.html" role="doc" />
+     <file name="ch02s08.html" role="doc" />
      <file name="ch03.html" role="doc" />
      <file name="ch03s02.html" role="doc" />
      <file name="ch04.html" role="doc" />
@@ -86,6 +94,8 @@ that cover all versions
      <file name="ch06.html" role="doc" />
      <file name="ch06s02.html" role="doc" />
      <file name="ch07.html" role="doc" />
+     <file name="ch07s02.html" role="doc" />
+     <file name="ch08.html" role="doc" />
      <file name="index.html" role="doc" />
      <file name="pr01.html" role="doc" />
      <file name="pr01s02.html" role="doc" />
@@ -171,13 +181,13 @@ that cover all versions
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2007-11-15</date>
+   <date>2007-11-19</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
    <notes>* bugs
 - #12451 : DOS CRLFs in every single file
 
 * QA
-- this release include also The Definitive Guide in version 1.5.0
+- this release include also The Definitive Guide in version 1.5.1
 that cover all versions
   see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
    </notes>
