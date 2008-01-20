@@ -98,6 +98,10 @@ class PHP_CompatInfo
      */
     function parseFile($file, $options = array())
     {
+        if (is_string($file) && !file_exists($file)) {
+            // filter invalid input
+            return false;
+        }
         $options = array_merge(array('debug' => false), $options);
         $tokens  = $this->_tokenize($file);
         if (is_array($tokens) && count($tokens) > 0) {
@@ -655,7 +659,7 @@ class PHP_CompatInfo
     function _tokenize($input, $is_string = false)
     {
         if ($is_string === false) {
-            $input = @file_get_contents($input, true);
+            $input = file_get_contents($input, true);
             if (is_string($input)) {
                 return token_get_all($input);
             }
