@@ -154,6 +154,38 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'constants' => array());
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests parsing an invalid input
+     *
+     * @return void
+     */
+    public function testParseInvalidString()
+    {
+        $in  = array();
+        $r   = $this->pci->parseString($in);
+        $this->assertFalse($r);
+    }
+
+    /**
+     * Tests parsing a string
+     *
+     * @return void
+     */
+    public function testParseNotEmptyString()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'sample_req6056.php';
+        $str = file_get_contents($fn);
+        $r   = $this->pci->parseString($str);
+        $this->assertType('array', $r);
+
+        $exp = array('max_version' => '5.0.4',
+                     'version' => '5.1.0',
+                     'extensions' => array(),
+                     'constants' => array());
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
