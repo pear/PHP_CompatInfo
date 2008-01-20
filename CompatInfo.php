@@ -665,8 +665,12 @@ class PHP_CompatInfo
         if ($debug === true) {
             $r = array();
             foreach ($tokens as $token) {
-                $token[] = token_name($token[0]);
-                $r[]     = $token;
+                if (is_array($token)) {
+                    $token[] = token_name($token[0]);
+                } else {
+                    $token = $token[0];
+                }
+                $r[] = $token;
             }
         } else {
             $r = $tokens;
