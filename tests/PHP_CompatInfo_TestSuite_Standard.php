@@ -339,6 +339,99 @@ echo "$nl RSS     = " . DATE_RSS;
                      'constants' => array('DATE_RFC3339', 'DATE_RSS'));
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests parsing a directory that does not exists
+     *
+     * @return void
+     */
+    public function testParseInvalidDirectory()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds . 'nothere';
+
+        $r = $this->pci->parseFolder($dir);
+        $this->assertFalse($r);
+    }
+
+    /**
+     * Tests parsing a directory without recursive 'recurse_dir' option
+     *
+     * @return void
+     */
+    public function testParseNoRecursiveDirectory()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir';
+        $opt = array('recurse_dir' => false);
+
+        $r   = $this->pci->parseDir($dir, $opt);
+        $exp = array('ignored_files' => array(),
+                     'max_version' => '',
+                     'version' => '4.0.0',
+                     'extensions' => array(),
+                     'constants' => array(),
+                     $dir . $ds . 'phpinfo.php' =>
+                         array('max_version' => '',
+                               'version' => '4.0.0',
+                               'extensions' => array(),
+                               'constants' => array()));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory with 'recurse_dir' option active
+     * and filter files by extension with 'file_ext' option
+     *
+     * @return void
+     */
+    public function testParseRecursiveDirectory()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('recurse_dir' => true,
+                     'file_ext' => array('php', 'php5'));
+
+        $r   = $this->pci->parseDir($dir, $opt);
+        $exp = array('ignored_files' => array(),
+                     'max_version' => '',
+                     'version' => '5.0.0',
+                     'extensions' => array(),
+                     'constants' => array(0 => 'abstract',
+                                          1 => 'protected',
+                                          2 => 'interface',
+                                          3 => 'public',
+                                          4 => 'implements',
+                                          5 => 'private',
+                                          6 => 'clone',
+                                          7 => 'instanceof',
+                                          8 => 'try',
+                                          9 => 'throw',
+                                          10 => 'catch',
+                                          11 => 'final'),
+                     $dir . 'phpinfo.php' =>
+                         array('max_version' => '',
+                               'version' => '4.0.0',
+                               'extensions' => array(),
+                               'constants' => array()),
+                     $dir . 'PHP5' . $ds . 'tokens.php5' =>
+                         array('max_version' => '',
+                               'version' => '5.0.0',
+                               'extensions' => array(),
+                               'constants' => array(0 => 'abstract',
+                                                    1 => 'protected',
+                                                    2 => 'interface',
+                                                    3 => 'public',
+                                                    4 => 'implements',
+                                                    5 => 'private',
+                                                    6 => 'clone',
+                                                    7 => 'instanceof',
+                                                    8 => 'try',
+                                                    9 => 'throw',
+                                                    10 => 'catch',
+                                                    11 => 'final')));
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
