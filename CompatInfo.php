@@ -162,12 +162,17 @@ class PHP_CompatInfo
      *                       when calculating the version needed.
      *
      * @access public
-     * @return array
+     * @return array|false
      * @since  0.8.0
      * @see PHP_CompatInfo::_fileList()
      */
     function parseDir($dir, $options = array())
     {
+        if (!is_dir($dir) || !is_readable($dir)) {
+            // filter invalid input
+            return false;
+        }
+
         $files_valid      = 0;
         $files_parsed     = array();
         $latest_version   = $this->latest_version;
@@ -185,77 +190,73 @@ class PHP_CompatInfo
 
         $options = array_merge($default_options, $options);
 
-        if (is_dir($dir) && is_readable($dir)) {
-            if ($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
-                $dir = substr($dir, 0, -1);
+        if ($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
+            $dir = substr($dir, 0, -1);
+        }
+        $options['file_ext']
+            = array_map('strtolower', $options['file_ext']);
+        $options['ignore_files']
+            = array_map('strtolower', $options['ignore_files']);
+        $options['ignore_dirs']
+            = array_map('strtolower', $options['ignore_dirs']);
+        $files_raw = $this->_fileList($dir, $options);
+        foreach ($files_raw as $file) {
+            if (in_array(strtolower($file), $options['ignore_files'])) {
+                $ignored[] = $file;
+                continue;
             }
-            $options['file_ext']
-                = array_map('strtolower', $options['file_ext']);
-            $options['ignore_files']
-                = array_map('strtolower', $options['ignore_files']);
-            $options['ignore_dirs']
-                = array_map('strtolower', $options['ignore_dirs']);
-            $files_raw = $this->_fileList($dir, $options);
-            foreach ($files_raw as $file) {
-                if (in_array(strtolower($file), $options['ignore_files'])) {
-                    $ignored[] = $file;
-                    continue;
-                }
-                $file_info = pathinfo($file);
-                if (isset($file_info['extension'])
-                    && in_array(strtolower($file_info['extension']),
-                        $options['file_ext'])) {
-                    $tokens = $this->_tokenize($file);
-                    if (is_array($tokens) && count($tokens) > 0) {
-                        $files_parsed[$file]
-                            = $this->_parseTokens($tokens, $options);
-                        $files_valid++;
-                    } else {
-                        $files_parsed[$file] = false;
-                    }
+            $file_info = pathinfo($file);
+            if (isset($file_info['extension'])
+                && in_array(strtolower($file_info['extension']),
+                    $options['file_ext'])) {
+                $tokens = $this->_tokenize($file);
+                if (is_array($tokens) && count($tokens) > 0) {
+                    $files_parsed[$file]
+                        = $this->_parseTokens($tokens, $options);
+                    $files_valid++;
+                } else {
+                    $files_parsed[$file] = false;
                 }
             }
-            foreach ($files_parsed as $file) {
-                if ($file === false) {
-                    continue;  // skip this file
-                }
-                $cmp = version_compare($latest_version, $file['version']);
-                if ($cmp === -1) {
-                    $latest_version = $file['version'];
-                }
-                if ($file['max_version'] != '') {
-                    $cmp = version_compare($earliest_version, $file['max_version']);
-                    if ($earliest_version == '' || $cmp === 1) {
-                        $earliest_version = $file['max_version'];
-                    }
-                }
-                foreach ($file['extensions'] as $ext) {
-                    if (!in_array($ext, $extensions)) {
-                        $extensions[] = $ext;
-                    }
-                }
-                foreach ($file['constants'] as $const) {
-                    if (!in_array($const, $constants)) {
-                        $constants[] = $const;
-                    }
+        }
+        foreach ($files_parsed as $file) {
+            if ($file === false) {
+                continue;  // skip this file
+            }
+            $cmp = version_compare($latest_version, $file['version']);
+            if ($cmp === -1) {
+                $latest_version = $file['version'];
+            }
+            if ($file['max_version'] != '') {
+                $cmp = version_compare($earliest_version, $file['max_version']);
+                if ($earliest_version == '' || $cmp === 1) {
+                    $earliest_version = $file['max_version'];
                 }
             }
+            foreach ($file['extensions'] as $ext) {
+                if (!in_array($ext, $extensions)) {
+                    $extensions[] = $ext;
+                }
+            }
+            foreach ($file['constants'] as $const) {
+                if (!in_array($const, $constants)) {
+                    $constants[] = $const;
+                }
+            }
+        }
 
-            if (count($files_parsed) == 0 || $files_valid == 0) {
-                return false;
-            }
-
-            $files_parsed['constants']     = $constants;
-            $files_parsed['extensions']    = $extensions;
-            $files_parsed['version']       = $latest_version;
-            $files_parsed['max_version']   = $earliest_version;
-            $files_parsed['ignored_files'] = $ignored;
-
-            $files_parsed = array_reverse($files_parsed);
-            return $files_parsed;
-        } else {
+        if (count($files_parsed) == 0 || $files_valid == 0) {
             return false;
         }
+
+        $files_parsed['constants']     = $constants;
+        $files_parsed['extensions']    = $extensions;
+        $files_parsed['version']       = $latest_version;
+        $files_parsed['max_version']   = $earliest_version;
+        $files_parsed['ignored_files'] = $ignored;
+
+        $files_parsed = array_reverse($files_parsed);
+        return $files_parsed;
     }
 
     /**
