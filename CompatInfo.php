@@ -209,14 +209,9 @@ class PHP_CompatInfo
             if (isset($file_info['extension'])
                 && in_array(strtolower($file_info['extension']),
                     $options['file_ext'])) {
-                $tokens = $this->_tokenize($file);
-                if (is_array($tokens) && count($tokens) > 0) {
-                    $files_parsed[$file]
-                        = $this->_parseTokens($tokens, $options);
-                    $files_valid++;
-                } else {
-                    $files_parsed[$file] = false;
-                }
+                $tokens              = $this->_tokenize($file);
+                $files_parsed[$file] = $this->_parseTokens($tokens, $options);
+                $files_valid++;
             }
         }
         foreach ($files_parsed as $file) {
