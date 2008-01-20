@@ -55,168 +55,168 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.0',
   ),
-  '$dbdo->__call' =>
+  'dbdo->__call' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->__sleep' =>
+  'dbdo->__sleep' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->count' =>
+  'dbdo->count' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->delete' =>
+  'dbdo->delete' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->fetch' =>
+  'dbdo->fetch' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->fetchall' =>
+  'dbdo->fetchall' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->get' =>
+  'dbdo->get' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->groupby' =>
+  'dbdo->groupby' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->having' =>
+  'dbdo->having' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->info' =>
+  'dbdo->info' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->insert' =>
+  'dbdo->insert' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->key' =>
+  'dbdo->key' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->limit' =>
+  'dbdo->limit' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->orderby' =>
+  'dbdo->orderby' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->query' =>
+  'dbdo->query' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->quoted' =>
+  'dbdo->quoted' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->reproduce' =>
+  'dbdo->reproduce' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->schema' =>
+  'dbdo->schema' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->selectadd' =>
+  'dbdo->selectadd' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->update' =>
+  'dbdo->update' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->valueset' =>
+  'dbdo->valueset' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$dbdo->whereadd' =>
+  'dbdo->whereadd' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$do->assignfrom' =>
+  'do->assignfrom' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
     'end' => '0.1.0',
     'init' => '0.1.0',
   ),
-  '$do->toarray' =>
+  'do->toarray' =>
   array (
     'ext' => 'dbdo',
     'pecl' => true,
@@ -228,104 +228,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.0',
     'ext' => 'ext_gettext',
     'pecl' => false,
-  ),
-  '__construct' =>
-  array (
-    'ext' => 'ffi',
-    'pecl' => true,
-    'init' => '0.2',
-    'end' => '0.3',
-  ),
-  '_free_rpmreader' =>
-  array (
-    'ext' => 'rpmreader',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.3',
-  ),
-  '_mqseries_bytes' =>
-  array (
-    'ext' => 'mqseries',
-    'pecl' => true,
-    'init' => '0.10.0',
-    'end' => '0.9.0',
-  ),
-  '_mqseries_close' =>
-  array (
-    'ext' => 'mqseries',
-    'pecl' => true,
-    'init' => '0.10.0',
-    'end' => '0.9.0',
-  ),
-  '_mqseries_disc' =>
-  array (
-    'ext' => 'mqseries',
-    'pecl' => true,
-    'init' => '0.10.0',
-    'end' => '0.9.0',
-  ),
-  '_php_free_rpm_index' =>
-  array (
-    'ext' => 'rpmreader',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.3',
-  ),
-  '_php_rpm_fetch_header' =>
-  array (
-    'ext' => 'rpmreader',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.3',
-  ),
-  '_php_rpm_fetch_index' =>
-  array (
-    'ext' => 'rpmreader',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.3',
-  ),
-  '_php_rpm_fetch_store' =>
-  array (
-    'ext' => 'rpmreader',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.3',
-  ),
-  '_php_rpm_find_header' =>
-  array (
-    'ext' => 'rpmreader',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.3',
-  ),
-  '_php_rpm_find_signature' =>
-  array (
-    'ext' => 'rpmreader',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.3',
-  ),
-  '_php_rpm_import_indices' =>
-  array (
-    'ext' => 'rpmreader',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.3',
-  ),
-  '_php_rpm_seek_header' =>
-  array (
-    'ext' => 'rpmreader',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.3',
-  ),
-  '_php_rpm_validity' =>
-  array (
-    'ext' => 'rpmreader',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.3',
   ),
   'abs' =>
   array (
@@ -5224,52 +5126,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '5.0.0',
   ),
-  'confirm_coin_acceptor_compiled' =>
-  array (
-    'ext' => 'coin_acceptor',
-    'pecl' => true,
-    'init' => '0.1',
-    'end' => '0.2',
-  ),
-  'confirm_ctype_compiled' =>
-  array (
-    'init' => '4.0.4',
-  ),
-  'confirm_cybermut_compiled' =>
-  array (
-    'init' => '4.0.5',
-  ),
-  'confirm_extname_compiled' =>
-  array (
-    'init' => '4.0.1',
-    'ext' => 'ext_skeleton',
-    'pecl' => false,
-  ),
-  'confirm_intercept_compiled' =>
-  array (
-    'ext' => 'intercept',
-    'pecl' => true,
-    'end' => '0.1',
-    'init' => '0.1',
-  ),
-  'confirm_ncurses_compiled' =>
-  array (
-    'init' => '4.0.7',
-  ),
-  'confirm_pdo_ibm_compiled' =>
-  array (
-    'ext' => 'pdo_ibm',
-    'pecl' => true,
-    'init' => '0.9.0',
-    'end' => '1.2.1',
-  ),
-  'confirm_pdo_informix_compiled' =>
-  array (
-    'ext' => 'pdo_informix',
-    'pecl' => true,
-    'init' => '0.2.1',
-    'end' => '1.1.0',
-  ),
   'connection_aborted' =>
   array (
     'init' => '4.0.0',
@@ -7499,13 +7355,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
     'pecl' => false,
-  ),
-  'delete' =>
-  array (
-    'ext' => 'zip',
-    'pecl' => true,
-    'init' => '1.1.0',
-    'end' => '1.4.1',
   ),
   'delete_iovec' =>
   array (
@@ -10043,13 +9892,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
     'pecl' => false,
-  ),
-  'expand' =>
-  array (
-    'init' => '0.2',
-    'ext' => 'xmlreader',
-    'pecl' => true,
-    'end' => '1.0.1',
   ),
   'expect_expectl' =>
   array (
@@ -12658,45 +12500,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'ext' => 'sapi_aolserver',
     'pecl' => false,
   ),
-  'getarchivecomment' =>
-  array (
-    'init' => '1.4.0',
-    'ext' => 'zip',
-    'pecl' => true,
-    'end' => '1.9.0',
-  ),
-  'getattribute' =>
-  array (
-    'init' => '5.1.0',
-  ),
-  'getattributeno' =>
-  array (
-    'init' => '0.1',
-    'ext' => 'xmlreader',
-    'pecl' => true,
-    'end' => '1.0.1',
-  ),
-  'getattributens' =>
-  array (
-    'init' => '0.1',
-    'ext' => 'xmlreader',
-    'pecl' => true,
-    'end' => '1.0.1',
-  ),
-  'getcommentindex' =>
-  array (
-    'init' => '1.4.0',
-    'ext' => 'zip',
-    'pecl' => true,
-    'end' => '1.9.0',
-  ),
-  'getcommentname' =>
-  array (
-    'init' => '1.4.0',
-    'ext' => 'zip',
-    'pecl' => true,
-    'end' => '1.9.0',
-  ),
   'getcwd' =>
   array (
     'init' => '4.0.0',
@@ -12714,27 +12517,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
     'pecl' => false,
-  ),
-  'geterror' =>
-  array (
-    'ext' => 'gnupg',
-    'pecl' => true,
-    'init' => '1.3',
-    'end' => '1.3.1',
-  ),
-  'getfromindex' =>
-  array (
-    'init' => '1.4.0',
-    'ext' => 'zip',
-    'pecl' => true,
-    'end' => '1.9.0',
-  ),
-  'getfromname' =>
-  array (
-    'init' => '1.3.0',
-    'ext' => 'zip',
-    'pecl' => true,
-    'end' => '1.9.0',
   ),
   'gethostbyaddr' =>
   array (
@@ -28663,1371 +28445,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '5.0.0',
   ),
-  'obj->activate' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->add' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->addtag' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->bbox' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->bell' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->bind' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->bindtags' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->blank' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->canvasx' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->canvasy' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->cget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->clipboardappend' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->clipboardclear' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->clipboardget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->clone' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->compare' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->configure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->coords' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->copy' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->count' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->create' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->curselection' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->data' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->dchars' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->debug' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->delete' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->delta' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->deselect' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->destroy' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->dlineinfo' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->dtag' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->dump' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->editmodified' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->editredo' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->editreset' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->editseparator' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->editundo' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->entrycget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->entryconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->find' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->flash' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->focus' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->forget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->fraction' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->get' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->getid' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gettags' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->grab' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->grabcurrent' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->grabrelease' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->grabset' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->grabstatut' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->grid' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridanchor' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridbbox' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridcolumnconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridforget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridinfo' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridlocation' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridpropagate' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridremove' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridrowconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridsize' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->gridslaves' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->icursor' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->identify' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->imagecget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->imageconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->imagecreate' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->imagenames' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->index' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->insert' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->invoke' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->itemcget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->itemconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->lower' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->markgravity' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->marknames' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->marknext' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->markprevious' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->markset' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->markunset' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->move' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->nearest' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->pack' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->packconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->packforget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->packinfo' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->packpropagate' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->packslaves' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->panecget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->paneconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->panes' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->place' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->placeconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->placeforget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->placeinfo' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->placeslaves' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->post' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->postcascade' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->postscript' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->proxy' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->proxycoord' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->proxyforget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->proxyplace' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->put' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->raise' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->read' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->redither' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->replace' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->sash' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->sashcoord' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->sashmark' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->sashplace' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->scale' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->scandragto' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->scanmark' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->search' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->see' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectadjust' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectclear' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectfrom' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectionadjust' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectionanchor' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectionclear' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectionelement' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectionfrom' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectionincludes' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectionpresent' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectionrange' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectionset' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectionto' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectitem' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->selectto' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->set' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->size' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagadd' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagbind' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagcget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagdelete' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->taglower' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagnames' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagnextrange' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagprevrange' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagraise' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagranges' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->tagremove' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->toggle' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->transparencyget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->transparencyset' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->type' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->unpost' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->validate' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->windowcget' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->windowconfigure' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->windowcreate' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->windownames' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmaspect' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmattributes' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmclient' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmcolormapwindows' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmcommand' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmdeiconify' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmfocusmodel' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmframe' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmgeometry' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmgrid' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmgroup' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmiconbitmap' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmiconify' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmiconmask' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmiconname' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmiconposition' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmiconwindow' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmmaxsize' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmminsize' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmoverrideredirect' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmpositionfrom' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmprotocol' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmresizable' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmsizefrom' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmstackorder' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmstate' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmtitle' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmtransient' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->wmwithdraw' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->xview' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->xviewmoveto' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->xviewscroll' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->yposition' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->yview' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->yviewmoveto' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
-  'obj->yviewscroll' =>
-  array (
-    'ext' => 'tk',
-    'pecl' => true,
-    'end' => '0.1.1',
-    'init' => '0.1.1',
-  ),
   'oci_bind_array_by_name' =>
   array (
     'init' => '5.1.2',
@@ -31707,21 +30124,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'pecl' => true,
     'init' => '1.1.1',
     'end' => '1.1.4',
-  ),
-  'onclose' =>
-  array (
-    'init' => '5.0.0',
-  ),
-  'oncreate' =>
-  array (
-    'init' => '5.0.0',
-  ),
-  'open' =>
-  array (
-    'init' => '0.1',
-    'ext' => 'xmlreader',
-    'pecl' => true,
-    'end' => '1.0.1',
   ),
   'open_listen_sock' =>
   array (
@@ -37644,13 +36046,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '4.0.0',
     'ext' => 'ext_standard',
     'pecl' => false,
-  ),
-  'read' =>
-  array (
-    'init' => '0.1',
-    'ext' => 'xmlreader',
-    'pecl' => true,
-    'end' => '1.0.1',
   ),
   'read_exif_data' =>
   array (
@@ -47714,13 +46109,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'init' => '0.2',
     'end' => '1.4',
   ),
-  'xml' =>
-  array (
-    'init' => '0.1',
-    'ext' => 'xmlreader',
-    'pecl' => true,
-    'end' => '1.0.1',
-  ),
   'xml_error_string' =>
   array (
     'init' => '4.0.0',
@@ -49439,6 +47827,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'openssl_get_md_methods' =>
   array (
     'ext' => 'ext_openssl',
+    'pecl' => false,
+    'init' => '5-dev',
+  ),
+  'confirm_extname_compiled' =>
+  array (
+    'ext' => 'ext_skeleton',
     'pecl' => false,
     'init' => '5-dev',
   ),
