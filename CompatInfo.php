@@ -124,17 +124,18 @@ class PHP_CompatInfo
      *                       when calculating the version needed.
      *
      * @access public
-     * @return array
+     * @return array|false
      * @since  0.7.0
      */
     function parseString($string, $options = array())
     {
+        if (!is_string($string)) {
+            // filter invalid input
+            return false;
+        }
         $options = array_merge(array('debug' => false), $options);
         $tokens  = $this->_tokenize($string, true);
-        if (is_array($tokens) && count($tokens) > 0) {
-            return $this->_parseTokens($tokens, $options);
-        }
-        return false;
+        return $this->_parseTokens($tokens, $options);
     }
 
     /**
@@ -665,7 +666,7 @@ class PHP_CompatInfo
             $r = array();
             foreach ($tokens as $token) {
                 $token[] = token_name($token[0]);
-                $r[] = $token;
+                $r[]     = $token;
             }
         } else {
             $r = $tokens;
