@@ -220,6 +220,28 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Tests parsing a single file with 'ignore_versions' option
+     * Ignored all PHP functions between 4.3.10 and 4.4.8
+     *
+     * @return void
+     */
+    public function testParseFileWithIgnoreVersions()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
+        $opt = array('ignore_versions' =>
+                   array('4.3.10', '4.4.8'));
+        $r   = $this->pci->parseFile($fn, $opt);
+        $this->assertType('array', $r);
+
+        $exp = array('max_version' => '',
+                     'version' => '5.0.0',
+                     'extensions' => array('simplexml'),
+                     'constants' => array());
+        $this->assertSame($exp, $r);
+    }
+
+    /**
      * Tests parsing an invalid input
      *
      * @return void
