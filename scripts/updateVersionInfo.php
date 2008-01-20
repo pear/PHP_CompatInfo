@@ -4,11 +4,11 @@
  *
  * Sources come from :
  * - http://cvs.php.net/viewcvs.cgi/phpdoc/phpbook/phpbook-xsl/version.xml
- *   revision 1.8
+ *   revision 1.9
  * - http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt
  *   revision 1.39
  *
- * PHP versions 4 and 5
+ * PHP version 5
  *
  * @category PHP
  * @package  PHP_CompatInfo
