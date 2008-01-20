@@ -198,6 +198,28 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Tests parsing a single file with 'ignore_extensions' option
+     *
+     * @return void
+     * @link   http://www.php.net/zip
+     */
+    public function testParseFileWithIgnoreExtensions()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'zip.php';
+        $opt = array('ignore_extensions' =>
+                   array('zip'));
+        $r   = $this->pci->parseFile($fn, $opt);
+        $this->assertType('array', $r);
+
+        $exp = array('max_version' => '',
+                     'version' => '3.0.0',
+                     'extensions' => array(),
+                     'constants' => array());
+        $this->assertSame($exp, $r);
+    }
+
+    /**
      * Tests parsing an invalid input
      *
      * @return void
