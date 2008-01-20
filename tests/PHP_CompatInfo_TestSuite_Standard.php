@@ -156,6 +156,27 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Tests parsing a single file with 'ignore_functions' option
+     *
+     * @return void
+     */
+    public function testParseFileWithIgnoreFunctions()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
+        $opt = array('ignore_functions' =>
+                   array('simplexml_load_file'));
+        $r   = $this->pci->parseFile($fn, $opt);
+        $this->assertType('array', $r);
+
+        $exp = array('max_version' => '',
+                     'version' => '4.3.0',
+                     'extensions' => array(),
+                     'constants' => array());
+        $this->assertSame($exp, $r);
+    }
+
+    /**
      * Tests parsing an invalid input
      *
      * @return void
