@@ -93,7 +93,7 @@ class PHP_CompatInfo
      *                       when calculating the version needed.
      *
      * @access public
-     * @return Array
+     * @return array
      * @since  0.7.0
      */
     function parseFile($file, $options = array())
@@ -104,10 +104,7 @@ class PHP_CompatInfo
         }
         $options = array_merge(array('debug' => false), $options);
         $tokens  = $this->_tokenize($file);
-        if (is_array($tokens) && count($tokens) > 0) {
-            return $this->_parseTokens($tokens, $options);
-        }
-        return false;
+        return $this->_parseTokens($tokens, $options);
     }
 
     /**
@@ -127,7 +124,7 @@ class PHP_CompatInfo
      *                       when calculating the version needed.
      *
      * @access public
-     * @return Array
+     * @return array
      * @since  0.7.0
      */
     function parseString($string, $options = array())
@@ -651,22 +648,29 @@ class PHP_CompatInfo
      *
      * @param string  $input     Filename or PHP code
      * @param boolean $is_string Whether or note the input is a string
+     * @param boolean $debug     add token names for human read
      *
      * @access private
-     * @return array|false
+     * @return array
      * @since  0.7.0
      */
-    function _tokenize($input, $is_string = false)
+    function _tokenize($input, $is_string = false, $debug = false)
     {
         if ($is_string === false) {
             $input = file_get_contents($input, true);
-            if (is_string($input)) {
-                return token_get_all($input);
-            }
-            return false;
-        } else {
-            return token_get_all($input);
         }
+        $tokens = token_get_all($input);
+
+        if ($debug === true) {
+            $r = array();
+            foreach ($tokens as $token) {
+                $token[] = token_name($token[0]);
+                $r[] = $token;
+            }
+        } else {
+            $r = $tokens;
+        }
+        return $r;
     }
 
     /**
