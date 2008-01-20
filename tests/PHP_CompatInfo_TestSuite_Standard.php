@@ -170,8 +170,29 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $this->assertType('array', $r);
 
         $exp = array('max_version' => '',
-                     'version' => '4.3.0',
+                     'version' => '4.3.10',
                      'extensions' => array(),
+                     'constants' => array('PHP_EOL'));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a single file with 'ignore_constants' option
+     *
+     * @return void
+     */
+    public function testParseFileWithIgnoreConstants()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
+        $opt = array('ignore_constants' =>
+                   array('PHP_EOL'));
+        $r   = $this->pci->parseFile($fn, $opt);
+        $this->assertType('array', $r);
+
+        $exp = array('max_version' => '',
+                     'version' => '5.0.0',
+                     'extensions' => array('simplexml'),
                      'constants' => array());
         $this->assertSame($exp, $r);
     }
@@ -205,6 +226,64 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'version' => '5.1.0',
                      'extensions' => array(),
                      'constants' => array());
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing string DATE constants
+     *
+     * @return void
+     * @link   http://php.net/manual/en/ref.datetime.php Predefined Date Constants
+     */
+    public function testParseDate511String()
+    {
+        $str = '<?php
+$nl = "\n";
+echo "$nl Atom    = " . DATE_ATOM;
+echo "$nl Cookie  = " . DATE_COOKIE;
+echo "$nl Iso8601 = " . DATE_ISO8601;
+echo "$nl Rfc822  = " . DATE_RFC822;
+echo "$nl Rfc850  = " . DATE_RFC850;
+echo "$nl Rfc1036 = " . DATE_RFC1036;
+echo "$nl Rfc1123 = " . DATE_RFC1123;
+echo "$nl Rfc2822 = " . DATE_RFC2822;
+echo "$nl RSS     = " . DATE_RSS;
+echo "$nl W3C     = " . DATE_W3C;
+?>';
+        $r   = $this->pci->parseString($str);
+        $this->assertType('array', $r);
+
+        $exp = array('max_version' => '',
+                     'version' => '5.1.1',
+                     'extensions' => array(),
+                     'constants' => array('DATE_ATOM', 'DATE_COOKIE',
+                         'DATE_ISO8601', 'DATE_RFC822', 'DATE_RFC850',
+                         'DATE_RFC1036', 'DATE_RFC1123', 'DATE_RFC2822',
+                         'DATE_RSS', 'DATE_W3C'
+                         ));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing string DATE constants
+     *
+     * @return void
+     * @link   http://php.net/manual/en/ref.datetime.php Predefined Date Constants
+     */
+    public function testParseDate513String()
+    {
+        $str = '<?php
+$nl = "\n";
+echo "$nl Rfc3339 = " . DATE_RFC3339;
+echo "$nl RSS     = " . DATE_RSS;
+?>';
+        $r   = $this->pci->parseString($str);
+        $this->assertType('array', $r);
+
+        $exp = array('max_version' => '',
+                     'version' => '5.1.3',
+                     'extensions' => array(),
+                     'constants' => array('DATE_RFC3339', 'DATE_RSS'));
         $this->assertSame($exp, $r);
     }
 }
