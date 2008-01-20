@@ -82,10 +82,10 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testTokenizerWithEmptyFile()
     {
-        $ds  = DIRECTORY_SEPARATOR;
-        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'empty.php';
+        $ds = DIRECTORY_SEPARATOR;
+        $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'empty.php';
 
-        $r   = $this->pci->_tokenize($fn, false);
+        $r     = $this->pci->_tokenize($fn, false);
         $empty = array(0 =>
                    array (
                    0 => 311,
@@ -94,7 +94,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                    2 => 1));
         $this->assertSame($empty, $r);
 
-        $r   = $this->pci->_tokenize($fn, false, true);
+        $r     = $this->pci->_tokenize($fn, false, true);
         $empty = array(0 =>
                    array (
                    0 => 311,
@@ -112,9 +112,10 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testParseInvalidFile()
     {
-        $ds  = DIRECTORY_SEPARATOR;
-        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'nothere.php';
-        $r   = $this->pci->parseFile($fn);
+        $ds = DIRECTORY_SEPARATOR;
+        $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'nothere.php';
+
+        $r = $this->pci->parseFile($fn);
         $this->assertFalse($r);
     }
 
@@ -125,10 +126,10 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testParseEmptyFile()
     {
-        $ds  = DIRECTORY_SEPARATOR;
-        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'empty.php';
-        $r   = $this->pci->parseFile($fn);
+        $ds = DIRECTORY_SEPARATOR;
+        $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'empty.php';
 
+        $r   = $this->pci->parseFile($fn);
         $exp = array('max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
@@ -143,9 +144,10 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testParseNotEmptyFile()
     {
-        $ds  = DIRECTORY_SEPARATOR;
-        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'math.php';
-        $r   = $this->pci->parseFile($fn);
+        $ds = DIRECTORY_SEPARATOR;
+        $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'math.php';
+
+        $r = $this->pci->parseFile($fn);
         $this->assertType('array', $r);
 
         $exp = array('max_version' => '',
@@ -166,7 +168,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
         $opt = array('ignore_functions' =>
                    array('simplexml_load_file'));
-        $r   = $this->pci->parseFile($fn, $opt);
+
+        $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
         $exp = array('max_version' => '',
@@ -187,7 +190,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
         $opt = array('ignore_constants' =>
                    array('PHP_EOL'));
-        $r   = $this->pci->parseFile($fn, $opt);
+
+        $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
         $exp = array('max_version' => '',
@@ -209,7 +213,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'zip.php';
         $opt = array('ignore_extensions' =>
                    array('zip'));
-        $r   = $this->pci->parseFile($fn, $opt);
+
+        $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
         $exp = array('max_version' => '',
@@ -231,7 +236,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
         $opt = array('ignore_versions' =>
                    array('4.3.10', '4.4.8'));
-        $r   = $this->pci->parseFile($fn, $opt);
+
+        $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
         $exp = array('max_version' => '',
@@ -248,8 +254,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testParseInvalidString()
     {
-        $in  = array();
-        $r   = $this->pci->parseString($in);
+        $in = array();
+        $r  = $this->pci->parseString($in);
         $this->assertFalse($r);
     }
 
@@ -263,7 +269,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'sample_req6056.php';
         $str = file_get_contents($fn);
-        $r   = $this->pci->parseString($str);
+
+        $r = $this->pci->parseString($str);
         $this->assertType('array', $r);
 
         $exp = array('max_version' => '5.0.4',
@@ -294,7 +301,8 @@ echo "$nl Rfc2822 = " . DATE_RFC2822;
 echo "$nl RSS     = " . DATE_RSS;
 echo "$nl W3C     = " . DATE_W3C;
 ?>';
-        $r   = $this->pci->parseString($str);
+
+        $r = $this->pci->parseString($str);
         $this->assertType('array', $r);
 
         $exp = array('max_version' => '',
@@ -321,7 +329,8 @@ $nl = "\n";
 echo "$nl Rfc3339 = " . DATE_RFC3339;
 echo "$nl RSS     = " . DATE_RSS;
 ?>';
-        $r   = $this->pci->parseString($str);
+
+        $r = $this->pci->parseString($str);
         $this->assertType('array', $r);
 
         $exp = array('max_version' => '',
