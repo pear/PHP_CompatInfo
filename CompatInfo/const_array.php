@@ -15,6 +15,13 @@
  * @ignore
  */
 
+/**
+ * @link http://www.php.net/manual/en/reserved.constants.php
+ *       Core Predefined Constants
+ * @link http://www.php.net/manual/en/ref.datetime.php
+ *       Date Predefined Constants
+ */
+
 $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
   '__FILE__' =>
   array (
@@ -101,6 +108,65 @@ $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
     'init' => '5.0.0',
     'name' => 'implements',
   ),
+  'DATE_ATOM' =>
+  array (
+    'init' => '5.1.1',
+    'name' => 'DATE_ATOM',
+  ),
+  'DATE_COOKIE' =>
+  array (
+    'init' => '5.1.1',
+    'name' => 'DATE_COOKIE',
+  ),
+  'DATE_ISO8601' =>
+  array (
+    'init' => '5.1.1',
+    'name' => 'DATE_ISO8601',
+  ),
+  'DATE_RFC822' =>
+  array (
+    'init' => '5.1.1',
+    'name' => 'DATE_RFC822',
+  ),
+  'DATE_RFC850' =>
+  array (
+    'init' => '5.1.1',
+    'name' => 'DATE_RFC850',
+  ),
+  'DATE_RFC1036' =>
+  array (
+    'init' => '5.1.1',
+    'name' => 'DATE_RFC1036',
+  ),
+  'DATE_RFC1123' =>
+  array (
+    'init' => '5.1.1',
+    'name' => 'DATE_RFC1123',
+  ),
+  'DATE_RFC2822' =>
+  array (
+    'init' => '5.1.1',
+    'name' => 'DATE_RFC2822',
+  ),
+  'DATE_RFC3339' =>
+  array (
+    'init' => '5.1.3',
+    'name' => 'DATE_RFC3339',
+  ),
+  'DATE_RSS' =>
+  array (
+    'init' => '5.1.1',
+    'name' => 'DATE_RSS',
+  ),
+  'DATE_W3C' =>
+  array (
+    'init' => '5.1.1',
+    'name' => 'DATE_W3C',
+  ),
+  'PHP_EOL' =>
+  array (
+    'init' => '4.3.10',
+    'name' => 'PHP_EOL',
+  ),
 );
-
 ?>
