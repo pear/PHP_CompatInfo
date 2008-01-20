@@ -4,8 +4,8 @@
 // PHP 4.0.7 : version compare
 // PHP 4.3.0 : ob_get_clean
 // PHP 4.3.0 : debug_backtrace
+// PHP 4.3.10 and 5.0.2 : PHP_EOL
 // PHP 5.0.0 : simplexml_load_file
-// PHP 5.0.2 : PHP_EOL
 
 if (function_exists('debug_backtrace')) {
     $backtrace = debug_backtrace();
