@@ -560,7 +560,8 @@ class PHP_CompatInfo
                         'pecl' => $func['pecl']
                         );
                 }
-                if ($extension === false) {
+                if ($extension === false
+                    || (isset($func['pecl']) && $func['pecl'] === false) ) {
                     $cmp = version_compare($latest_version, $func['init']);
                     if ($cmp === -1) {
                         $latest_version = $func['init'];
