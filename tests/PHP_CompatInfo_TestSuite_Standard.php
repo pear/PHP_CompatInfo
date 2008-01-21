@@ -368,13 +368,20 @@ echo "$nl RSS     = " . DATE_RSS;
         $r   = $this->pci->parseDir($dir, $opt);
         $exp = array('ignored_files' => array(),
                      'max_version' => '',
-                     'version' => '4.0.0',
-                     'extensions' => array(),
+                     'version' => '4.3.2',
+                     'extensions' => array('xdebug', 'gd',
+                                           'sapi_apache', 'sapi_cgi'),
                      'constants' => array(),
                      $dir . $ds . 'phpinfo.php' =>
                          array('max_version' => '',
                                'version' => '4.0.0',
                                'extensions' => array(),
+                               'constants' => array()),
+                     $dir . $ds . 'extensions.php' =>
+                         array('max_version' => '',
+                               'version' => '4.3.2',
+                               'extensions' => array('xdebug', 'gd',
+                                                     'sapi_apache', 'sapi_cgi'),
                                'constants' => array()));
         $this->assertSame($exp, $r);
     }
@@ -396,7 +403,8 @@ echo "$nl RSS     = " . DATE_RSS;
         $exp = array('ignored_files' => array(),
                      'max_version' => '',
                      'version' => '5.0.0',
-                     'extensions' => array(),
+                     'extensions' => array('xdebug', 'gd',
+                                           'sapi_apache', 'sapi_cgi'),
                      'constants' => array(0 => 'abstract',
                                           1 => 'protected',
                                           2 => 'interface',
@@ -429,7 +437,43 @@ echo "$nl RSS     = " . DATE_RSS;
                                                     8 => 'try',
                                                     9 => 'throw',
                                                     10 => 'catch',
-                                                    11 => 'final')));
+                                                    11 => 'final')),
+                     $dir . 'extensions.php' =>
+                         array('max_version' => '',
+                               'version' => '4.3.2',
+                               'extensions' => array('xdebug', 'gd',
+                                                     'sapi_apache', 'sapi_cgi'),
+                               'constants' => array()));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory with 'recurse_dir' option active
+     * with 'ignore_files' options
+     *
+     * @return void
+     */
+    public function testParseRecursiveDirectoryWithIgnoreFiles()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('recurse_dir' => true,
+                     'ignore_files' => array($dir . 'phpinfo.php'),
+                     'file_ext' => array('php'));
+
+        $r   = $this->pci->parseDir($dir, $opt);
+        $exp = array('ignored_files' => array($dir . 'phpinfo.php'),
+                     'max_version' => '',
+                     'version' => '4.3.2',
+                     'extensions' => array('xdebug', 'gd',
+                                           'sapi_apache', 'sapi_cgi'),
+                     'constants' => array(),
+                     $dir . 'extensions.php' =>
+                         array('max_version' => '',
+                               'version' => '4.3.2',
+                               'extensions' => array('xdebug', 'gd',
+                                                     'sapi_apache', 'sapi_cgi'),
+                               'constants' => array()));
         $this->assertSame($exp, $r);
     }
 }
