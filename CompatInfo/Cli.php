@@ -542,7 +542,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 foreach ($functions as $func) {
                     $table->addRow(array($version,
                         $func['function'], $func['extension'],
-                        (($func['pecl'] === true) ? 'yes' : 'no')));
+                        (isset($func['pecl']) ?
+                        (($func['pecl'] === true) ? 'yes' : 'no') : '')));
                 }
             }
 
