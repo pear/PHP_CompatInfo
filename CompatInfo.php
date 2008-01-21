@@ -560,14 +560,16 @@ class PHP_CompatInfo
                         'pecl' => $func['pecl']
                         );
                 }
-                $cmp = version_compare($latest_version, $func['init']);
-                if ($cmp === -1) {
-                    $latest_version = $func['init'];
-                }
-                if (array_key_exists('end', $func)) {
-                    $cmp = version_compare($earliest_version, $func['end']);
-                    if ($earliest_version == '' || $cmp === 1) {
-                        $earliest_version = $func['end'];
+                if ($extension === false) {
+                    $cmp = version_compare($latest_version, $func['init']);
+                    if ($cmp === -1) {
+                        $latest_version = $func['init'];
+                    }
+                    if (array_key_exists('end', $func)) {
+                        $cmp = version_compare($earliest_version, $func['end']);
+                        if ($earliest_version == '' || $cmp === 1) {
+                            $earliest_version = $func['end'];
+                        }
                     }
                 }
 
