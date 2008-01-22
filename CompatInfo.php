@@ -634,7 +634,7 @@ class PHP_CompatInfo
      *
      * @access private
      * @return boolean True to ignore function/constant, false otherwise
-     * @since  1.4.0
+     * @since  version 1.4.0 (2006-09-27)
      * @static
      */
     function _ignore($init, $min_ver, $max_ver)
