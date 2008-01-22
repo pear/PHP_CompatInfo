@@ -77,7 +77,9 @@ class PHP_CompatInfo
     var $recurse_dir = true;
 
     /**
-     * Parse a file for its Compatibility info
+     * Parse a single file
+     *
+     * Parse a file for its compatibility info
      *
      * @param string $file    Path of File to parse
      * @param array  $options An array of options where:
@@ -94,7 +96,7 @@ class PHP_CompatInfo
      *
      * @access public
      * @return array
-     * @since  0.7.0
+     * @since  version 0.7.0 (2004-03-09)
      */
     function parseFile($file, $options = array())
     {
@@ -108,7 +110,9 @@ class PHP_CompatInfo
     }
 
     /**
-     * Parse a string for its Compatibility info
+     * Parse a string
+     *
+     * Parse a string for its compatibility info
      *
      * @param string $string  PHP Code to parses
      * @param array  $options An array of options where:
@@ -125,7 +129,7 @@ class PHP_CompatInfo
      *
      * @access public
      * @return array|false
-     * @since  0.7.0
+     * @since  version 0.7.0 (2004-03-09)
      */
     function parseString($string, $options = array())
     {
@@ -139,7 +143,9 @@ class PHP_CompatInfo
     }
 
     /**
-     * Parse a directory recursively for its Compatibility info
+     * Parse a directory
+     *
+     * Parse a directory recursively for its compatibility info
      *
      * @param string $dir     Path of folder to parse
      * @param array  $options An array of options where:
@@ -163,7 +169,7 @@ class PHP_CompatInfo
      *
      * @access public
      * @return array|false
-     * @since  0.8.0
+     * @since  version 0.8.0 (2004-04-22)
      * @see PHP_CompatInfo::_fileList()
      */
     function parseDir($dir, $options = array())
@@ -257,13 +263,15 @@ class PHP_CompatInfo
     /**
      * Alias of parseDir
      *
+     * Alias of parseDir function
+     *
      * @param string $folder  Path of folder to parse
      * @param array  $options An array of options
      *
      * @uses   PHP_CompatInfo::parseDir()
      * @access public
      * @return array
-     * @since  0.7.0
+     * @since  version 0.7.0 (2004-03-09)
      */
     function parseFolder($folder, $options = array())
     {
@@ -297,7 +305,7 @@ class PHP_CompatInfo
      *
      * @access public
      * @return array|false
-     * @since  0.7.0
+     * @since  version 0.7.0 (2004-03-09)
      */
     function parseArray($files, $options = array())
     {
@@ -377,6 +385,8 @@ class PHP_CompatInfo
     }
 
     /**
+     * Load components list
+     *
      * Load components list for a PHP version or subset
      *
      * @param string         $min PHP minimal version
@@ -385,7 +395,7 @@ class PHP_CompatInfo
      * @return array            An array of php function names to ignore
      * @access public
      * @static
-     * @since  1.2.0
+     * @since  version 1.2.0 (2006-08-23)
      */
     function loadVersion($min, $max = false)
     {
@@ -420,7 +430,7 @@ class PHP_CompatInfo
      *
      * @access private
      * @return array
-     * @since  0.7.0
+     * @since  version 0.7.0 (2004-03-09)
      */
     function _parseTokens($tokens, $options)
     {
@@ -652,7 +662,7 @@ class PHP_CompatInfo
      *
      * @access private
      * @return array
-     * @since  0.7.0
+     * @since  version 0.7.0 (2004-03-09)
      */
     function _tokenize($input, $is_string = false, $debug = false)
     {
@@ -686,7 +696,7 @@ class PHP_CompatInfo
      *
      * @access private
      * @return array list of files in a directory
-     * @since  0.7.0
+     * @since  version 0.7.0 (2004-03-09)
      */
     function _fileList($directory, $options)
     {
