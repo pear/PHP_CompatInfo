@@ -358,6 +358,10 @@ class PHP_CompatInfo
             }
         }
 
+        if (count($files_parsed) == 0) {
+            return false;
+        }
+
         $files_parsed['constants']     = $constants;
         $files_parsed['extensions']    = $extensions;
         $files_parsed['version']       = $latest_version;
