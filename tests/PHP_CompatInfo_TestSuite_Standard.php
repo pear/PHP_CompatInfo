@@ -478,11 +478,11 @@ echo "$nl RSS     = " . DATE_RSS;
     }
 
     /**
-     * Tests parsing multiple data sources reference
+     * Tests parsing multiple file data sources reference
      *
      * @return void
      */
-    public function testParseArray()
+    public function testParseArrayFile()
     {
         $ds    = DIRECTORY_SEPARATOR;
         $files = get_included_files();
@@ -517,6 +517,45 @@ echo "$nl RSS     = " . DATE_RSS;
                                'version' => '4.3.0',
                                'extensions' => array('sapi_cgi'),
                                'constants' => array()));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing multiple strings (chunk of code)
+     *
+     * @return void
+     */
+    public function testParseArrayString()
+    {
+        $code1 = "<?php
+php_check_syntax('somefile.php');
+?>";
+        $code2 = "<?php
+\$array1 = array('blue'  => 1, 'red'  => 2, 'green'  => 3, 'purple' => 4);
+\$array2 = array('green' => 5, 'blue' => 6, 'yellow' => 7, 'cyan'   => 8);
+
+\$diff = array_diff_key(\$array1, \$array2);
+?>";
+        $data  = array($code1, $code2);
+        $opt   = array('is_string' => true);
+
+        $r   = $this->pci->parseArray($data, $opt);
+        $exp = array('ignored_files' => array(),
+                     'max_version' => '5.0.4',
+                     'version' => '5.1.0',
+                     'extensions' => array(),
+                     'constants' => array(),
+                     0 => array(
+                          'max_version' => '',
+                          'version' => '5.1.0',
+                          'extensions' => array(),
+                          'constants' => array()),
+                     1 => array(
+                          'max_version' => '5.0.4',
+                          'version' => '5.0.0',
+                          'extensions' => array(),
+                          'constants' => array())
+                     );
         $this->assertSame($exp, $r);
     }
 
