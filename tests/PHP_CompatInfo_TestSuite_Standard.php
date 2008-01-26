@@ -18,6 +18,7 @@ if (!defined("PHPUnit_MAIN_METHOD")) {
 
 require_once "PHPUnit/Framework/TestCase.php";
 require_once "PHPUnit/Framework/TestSuite.php";
+require_once "PHPUnit/Util/Fileloader.php";
 
 require_once 'PHP/CompatInfo.php';
 
@@ -513,6 +514,43 @@ echo "$nl RSS     = " . DATE_RSS;
                                'extensions' => array('tokenizer'),
                                'constants' => array()),
                      $base[0] . $ds . 'PEAR.php' =>
+                         array('max_version' => '',
+                               'version' => '4.3.0',
+                               'extensions' => array('sapi_cgi'),
+                               'constants' => array()));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing multiple file data sources reference
+     * with option 'ignore_files'
+     *
+     * @return void
+     */
+    public function testParseArrayFileWithIgnoreFiles()
+    {
+        $ds    = DIRECTORY_SEPARATOR;
+        $files = get_included_files();
+        $incl  = array();
+        $excl  = array();
+
+        foreach ($files as $file) {
+            if (basename($file) == 'PEAR.php') {
+                $incl[] = $file;
+                $base   = dirname($file);
+            } else {
+                $excl[] = $file;
+            }
+        }
+        $opt = array('ignore_files' => $excl);
+
+        $r   = $this->pci->parseArray($files, $opt);
+        $exp = array('ignored_files' => $excl,
+                     'max_version' => '',
+                     'version' => '4.3.0',
+                     'extensions' => array('sapi_cgi'),
+                     'constants' => array(),
+                     $base . $ds . 'PEAR.php' =>
                          array('max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('sapi_cgi'),
