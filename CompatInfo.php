@@ -221,9 +221,6 @@ class PHP_CompatInfo
             }
         }
         foreach ($files_parsed as $file) {
-            if ($file === false) {
-                continue;  // skip this file
-            }
             $cmp = version_compare($latest_version, $file['version']);
             if ($cmp === -1) {
                 $latest_version = $file['version'];
@@ -341,9 +338,6 @@ class PHP_CompatInfo
         }
 
         foreach ($files_parsed as $file) {
-            if ($file === false) {
-                continue;  // skip this file
-            }
             $cmp = version_compare($latest_version, $file['version']);
             if ($cmp === -1) {
                 $latest_version = $file['version'];
