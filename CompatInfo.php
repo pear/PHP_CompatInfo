@@ -179,7 +179,6 @@ class PHP_CompatInfo
             return false;
         }
 
-        $files_valid      = 0;
         $files_parsed     = array();
         $latest_version   = $this->latest_version;
         $earliest_version = $this->earliest_version;
@@ -217,7 +216,6 @@ class PHP_CompatInfo
                     $options['file_ext'])) {
                 $tokens              = $this->_tokenize($file);
                 $files_parsed[$file] = $this->_parseTokens($tokens, $options);
-                $files_valid++;
             }
         }
         foreach ($files_parsed as $file) {
@@ -243,7 +241,7 @@ class PHP_CompatInfo
             }
         }
 
-        if (count($files_parsed) == 0 || $files_valid == 0) {
+        if (count($files_parsed) == 0) {
             return false;
         }
 
