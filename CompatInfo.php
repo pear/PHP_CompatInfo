@@ -329,22 +329,14 @@ class PHP_CompatInfo
                 if (!in_array(strtolower($file), $options['ignore_files'])
                     && in_array($pathinfo['extension'], $options['file_ext'])) {
                     $tokens = $this->_tokenize($file, $options['is_string']);
-                    if (is_array($tokens) && count($tokens) > 0) {
-                        $files_parsed[$file]
+                    $files_parsed[$file]
                             = $this->_parseTokens($tokens, $options);
-                    } else {
-                        $files_parsed[$file] = false;
-                    }
                 } else {
                     $ignored[] = $file;
                 }
             } else {
-                $tokens = $this->_tokenize($file, $options['is_string']);
-                if (is_array($tokens) && count($tokens) > 0) {
-                    $files_parsed[] = $this->_parseTokens($tokens, $options);
-                } else {
-                    $files_parsed[] = false;
-                }
+                $tokens         = $this->_tokenize($file, $options['is_string']);
+                $files_parsed[] = $this->_parseTokens($tokens, $options);
             }
         }
 
