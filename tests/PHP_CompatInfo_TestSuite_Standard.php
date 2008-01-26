@@ -478,6 +478,49 @@ echo "$nl RSS     = " . DATE_RSS;
     }
 
     /**
+     * Tests parsing multiple data sources reference
+     *
+     * @return void
+     */
+    public function testParseArray()
+    {
+        $ds    = DIRECTORY_SEPARATOR;
+        $files = get_included_files();
+        $rsrc  = array();
+        $base  = array();
+        foreach ($files as $file) {
+            if (basename($file) == 'PEAR.php') {
+                $rsrc[] = $file;
+                $base[] = dirname($file);
+                continue;
+            }
+            if (basename($file) == 'CompatInfo.php') {
+                $rsrc[] = $file;
+                $base[] = dirname($file);
+                continue;
+            }
+        }
+
+        $r   = $this->pci->parseArray($rsrc);
+        $exp = array('ignored_files' => array(),
+                     'max_version' => '',
+                     'version' => '4.3.0',
+                     'extensions' => array('sapi_cgi', 'tokenizer'),
+                     'constants' => array(),
+                     $base[1] . $ds . 'CompatInfo.php' =>
+                         array('max_version' => '',
+                               'version' => '4.3.0',
+                               'extensions' => array('tokenizer'),
+                               'constants' => array()),
+                     $base[0] . $ds . 'PEAR.php' =>
+                         array('max_version' => '',
+                               'version' => '4.3.0',
+                               'extensions' => array('sapi_cgi'),
+                               'constants' => array()));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
      * Tests loading functions list for a PHP version
      *
      * @return void
