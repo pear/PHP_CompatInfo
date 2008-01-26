@@ -401,7 +401,9 @@ class PHP_CompatInfo
     {
         $keys = array();
         foreach ($GLOBALS['_PHP_COMPATINFO_FUNCS'] as $func => $arr) {
-            $keep = false;
+            if (isset($arr['pecl']) && $arr['pecl'] === true) {
+                continue;
+            }
             if (version_compare($arr['init'], $min) < 0) {
                 continue;
             }
