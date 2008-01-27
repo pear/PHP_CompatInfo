@@ -18,7 +18,6 @@ if (!defined("PHPUnit_MAIN_METHOD")) {
 
 require_once "PHPUnit/Framework/TestCase.php";
 require_once "PHPUnit/Framework/TestSuite.php";
-require_once "PHPUnit/Util/Fileloader.php";
 
 require_once 'PHP/CompatInfo.php';
 
@@ -176,7 +175,9 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $exp = array('max_version' => '',
                      'version' => '4.3.10',
                      'extensions' => array(),
-                     'constants' => array('PHP_EOL'));
+                     'constants' => array('PHP_EOL',
+                                          'DIRECTORY_SEPARATOR',
+                                          '__FILE__'));
         $this->assertSame($exp, $r);
     }
 
@@ -198,7 +199,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $exp = array('max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array('simplexml'),
-                     'constants' => array());
+                     'constants' => array('DIRECTORY_SEPARATOR',
+                                          '__FILE__'));
         $this->assertSame($exp, $r);
     }
 
@@ -244,7 +246,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $exp = array('max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array('simplexml'),
-                     'constants' => array());
+                     'constants' => array('DIRECTORY_SEPARATOR',
+                                          '__FILE__'));
         $this->assertSame($exp, $r);
     }
 
@@ -507,12 +510,12 @@ echo "$nl RSS     = " . DATE_RSS;
                      'max_version' => '',
                      'version' => '4.3.0',
                      'extensions' => array('sapi_cgi', 'tokenizer'),
-                     'constants' => array(),
+                     'constants' => array('DIRECTORY_SEPARATOR'),
                      $base[1] . $ds . 'CompatInfo.php' =>
                          array('max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('tokenizer'),
-                               'constants' => array()),
+                               'constants' => array('DIRECTORY_SEPARATOR')),
                      $base[0] . $ds . 'PEAR.php' =>
                          array('max_version' => '',
                                'version' => '4.3.0',
