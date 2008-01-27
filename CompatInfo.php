@@ -531,7 +531,7 @@ class PHP_CompatInfo
                 if ($func['pecl'] === false) {
                     $extension = substr($func['ext'], 4);
                     if ($extension{0} == '_') {
-                        $extension = substr($extension, 1);
+                        $extension = $func['ext'];
                     }
                 } else {
                     $extension = $func['ext'];
