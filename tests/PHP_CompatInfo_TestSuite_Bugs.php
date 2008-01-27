@@ -76,6 +76,48 @@ class PHP_CompatInfo_TestSuite_Bugs extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Regression test for bug #1626
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=1626
+     *         Class calls are seen wrong
+     */
+    public function testBug1626()
+    {
+        $str = '<?php
+include("File.php");
+File::write("test", "test");
+?>';
+        $r   = $this->pci->parseString($str);
+        $exp = array('max_version' => '',
+                     'version' => '3.0.0',
+                     'extensions' => array(),
+                     'constants' => array());
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Regression test for bug #2771
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=2771
+     *         Substr($var,4) not working for SAPI_ extensions
+     */
+    public function testBug2771()
+    {
+        $str = '<?php
+apache_request_headers();
+apache_response_headers();
+?>';
+        $r   = $this->pci->parseString($str);
+        $exp = array('max_version' => '',
+                     'version' => '4.3.0',
+                     'extensions' => array('sapi_apache'),
+                     'constants' => array());
+        $this->assertSame($exp, $r);
+    }
+
+    /**
      * Regression test for bug #10100
      *
      * @return void
