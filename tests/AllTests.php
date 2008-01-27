@@ -23,6 +23,7 @@ require_once 'PHPUnit/TextUI/TestRunner.php';
 chdir(dirname(__FILE__));
 
 require_once 'PHP_CompatInfo_TestSuite_Standard.php';
+require_once 'PHP_CompatInfo_TestSuite_Bugs.php';
 
 /**
  * Class for running all test suites for PHP_CompatInfo package.
@@ -57,6 +58,7 @@ class PHP_CompatInfo_AllTests
     {
         $suite = new PHPUnit_Framework_TestSuite('PHP_CompatInfo Test Suite');
         $suite->addTestSuite('PHP_CompatInfo_TestSuite_Standard');
+        $suite->addTestSuite('PHP_CompatInfo_TestSuite_Bugs');
         return $suite;
     }
 }
