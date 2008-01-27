@@ -168,5 +168,15 @@ $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
     'init' => '4.3.10',
     'name' => 'PHP_EOL',
   ),
+  'DIRECTORY_SEPARATOR' =>
+  array (
+    'init' => '4.0.6',
+    'name' => 'DIRECTORY_SEPARATOR',
+  ),
+  'E_STRICT' =>
+  array (
+    'init' => '5.0.0',
+    'name' => 'E_STRICT',
+  ),
 );
 ?>
