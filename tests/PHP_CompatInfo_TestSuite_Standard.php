@@ -601,6 +601,20 @@ php_check_syntax('somefile.php');
     }
 
     /**
+     * Tests parsing nothing (all files are excluded from scope)
+     *
+     * @return void
+     */
+    public function testParseArrayWithNoFiles()
+    {
+        $files = get_included_files();
+        $opt   = array('ignore_files' => $files);
+
+        $r = $this->pci->parseArray($files, $opt);
+        $this->assertFalse($r);
+    }
+
+    /**
      * Tests loading functions list for a PHP version
      *
      * @return void
