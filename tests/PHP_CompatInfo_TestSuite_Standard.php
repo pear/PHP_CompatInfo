@@ -50,7 +50,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         include_once "PHPUnit/TextUI/TestRunner.php";
 
         $suite  = new PHPUnit_Framework_TestSuite('PHP_CompatInfo Standard Tests');
-        $result = PHPUnit_TextUI_TestRunner::run($suite);
+        PHPUnit_TextUI_TestRunner::run($suite);
     }
 
     /**
