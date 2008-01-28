@@ -118,6 +118,20 @@ apache_response_headers();
     }
 
     /**
+     * Regression test for bug #8559
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=8559
+     *         PHP_CompatInfo fails to scan if it finds empty file in path
+     */
+    public function testBug8559()
+    {
+        $dir = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'emptyDir';
+        $r   = $this->pci->parseDir($dir);
+        $this->assertFalse($r);
+    }
+
+    /**
      * Regression test for bug #10100
      *
      * @return void
