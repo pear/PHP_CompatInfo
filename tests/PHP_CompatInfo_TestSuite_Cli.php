@@ -192,6 +192,30 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
         $args   = '-d ' . $dn;
         $this->assertPhpExec($args, $exp);
     }
+
+    /**
+     * Regression test for bug #12350
+     *
+     * Be sure ( chdir() ) to check
+     * if file (checkMax.php) is in current directory ( dirname(__FILE__) )
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=12350
+     *         file in current directory is not found
+     */
+    public function testBug12350()
+    {
+        $exp = array('+--------------------+---------+------------+---------------------+',
+                     '| File               | Version | Extensions | Constants/Tokens    |',
+                     '+--------------------+---------+------------+---------------------+',
+                     '| [...]\checkMax.php | 4.0.7   |            | __FILE__            |',
+                     '|                    |         |            | DIRECTORY_SEPARATOR |',
+                     '+--------------------+---------+------------+---------------------+');
+
+        chdir(dirname(__FILE__));
+        $args   = '-f checkMax.php';
+        $this->assertPhpExec($args, $exp);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Cli::main() if file is executed directly.
