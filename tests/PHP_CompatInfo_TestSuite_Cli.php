@@ -90,10 +90,6 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
                  . '-d include_path=.' . $ps . '@php_dir@ '
                  . '-f @bin_dir@/pci.php -- ';
 
-        $command = 'C:\wamp\php\php.exe '
-                 . '-d include_path=.;C:\wamp\php\includes;C:\wamp\php\pear '
-                 . '-f C:\wamp\php/pci.php -- ';
-
         $output = array();
         $return = 0;
         exec("$command $args", $output, $return);
