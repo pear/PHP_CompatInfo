@@ -118,6 +118,183 @@ apache_response_headers();
     }
 
     /**
+     * Regression test for bug #7813
+     *
+     * Parse source file of PEAR_PackageUpdate 0.5.0
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=7813
+     *         wrong PHP minimum version detection
+     */
+    public function testBug7813()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'PackageUpdate.php';
+        $opt = array('debug' => true,
+                     'ignore_functions' => array('debug_backtrace'));
+        $r   = $this->pci->parseFile($fn, $opt);
+        $exp = array('max_version' => '',
+                     'version' => '4.3.0',
+                     'extensions' => array(),
+                     'constants' => array('DIRECTORY_SEPARATOR'),
+                     '4.3.0' =>
+                     array (
+                       0 =>
+                       array (
+                         'function' => 'get_include_path',
+                         'extension' => false,
+                         'pecl' => false,
+                       ),
+                       1 =>
+                       array (
+                         'function' => 'file_get_contents',
+                         'extension' => false,
+                         'pecl' => false
+                       )
+                     ),
+                     '4.0.7' =>
+                     array (
+                       0 =>
+                       array (
+                         'function' => 'version_compare',
+                         'extension' => false,
+                         'pecl' => false
+                       )
+                     ),
+                     '4.0.0' =>
+                     array (
+                       0 =>
+                       array (
+                         'function' => 'define',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       1 =>
+                       array (
+                         'function' => 'get_class',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       2 =>
+                       array (
+                         'function' => 'function_exists',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       3 =>
+                       array (
+                         'function' => 'count',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       4 =>
+                       array (
+                         'function' => 'class_exists',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       5 =>
+                       array (
+                         'function' => 'explode',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       6 =>
+                       array (
+                         'function' => 'file_exists',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       7 =>
+                       array (
+                         'function' => 'is_readable',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       8 =>
+                       array (
+                         'function' => 'unserialize',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       9 =>
+                       array (
+                         'function' => 'strlen',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       10 =>
+                       array (
+                         'function' => 'getenv',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       11 =>
+                       array (
+                         'function' => 'reset',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       12 =>
+                       array (
+                         'function' => 'array_keys',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       13 =>
+                       array (
+                         'function' => 'fopen',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       14 =>
+                       array (
+                         'function' => 'serialize',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       15 =>
+                       array (
+                         'function' => 'fwrite',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       16 =>
+                       array (
+                         'function' => 'fclose',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       17 =>
+                       array (
+                         'function' => 'settype',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       18 =>
+                       array (
+                         'function' => 'is_int',
+                         'extension' => false,
+                         'pecl' => false
+                       ),
+                       19 =>
+                       array (
+                         'function' => 'is_array',
+                         'extension' => false,
+                         'pecl' => false,
+                       ),
+                       20 =>
+                       array (
+                         'function' => 'array_shift',
+                         'extension' => false,
+                         'pecl' => false
+                       )
+                     ));
+
+        $this->assertSame($exp, $r);
+    }
+
+    /**
      * Regression test for bug #8559
      *
      * @return void
