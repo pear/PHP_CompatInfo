@@ -18,42 +18,62 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'array' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'die' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'echo' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'empty' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'eval' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'exit' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'isset' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'list' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'print' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'unset' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbdo->__call' =>
   array (
@@ -238,6 +258,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'accept_connect' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'acos' =>
   array (
@@ -261,6 +283,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'add_iovec' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'addcslashes' =>
   array (
@@ -326,34 +350,50 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'aggregate' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'aggregate_methods' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'aggregate_methods_by_list' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'aggregate_methods_by_regexp' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'aggregate_properties' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'aggregate_properties_by_list' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'aggregate_properties_by_regexp' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'aggregation_info' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'amf_decode' =>
   array (
@@ -478,18 +518,26 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'apache_request_auth_name' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_auth_type' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_discard_request_body' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_err_headers_out' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_headers' =>
   array (
@@ -500,70 +548,104 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'apache_request_headers_in' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_headers_out' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_is_initial_req' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_log_error' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_meets_conditions' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_remote_host' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_run' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_satisfies' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_server_port' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_set_etag' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_set_last_modified' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_some_auth_required' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_sub_req_lookup_file' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_sub_req_lookup_uri' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_sub_req_method_uri' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_request_update_mtime' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_reset_timeout' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apache_response_headers' =>
   array (
@@ -580,126 +662,188 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'apache_sub_req' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::allowed' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::args' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::assbackwards' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::boundary' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::bytes_sent' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::chunked' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::content_encoding' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::content_length' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::content_type' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::filename' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::handler' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::header_only' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::hostname' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::method' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::method_number' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::mtime' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::no_cache' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::no_local_copy' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::path_info' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::proto_num' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::protocol' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::proxyreq' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::read_body' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::remaining' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::request_time' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::status' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::status_line' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::the_request' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::unparsed_uri' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apacherequest::uri' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'apc_add' =>
   array (
@@ -879,30 +1023,44 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'appenditerator::__construct' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'appenditerator::append' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'appenditerator::getarrayiterator' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'appenditerator::getiteratorindex' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'appenditerator::next' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'appenditerator::rewind' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'appenditerator::valid' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ares_cancel' =>
   array (
@@ -1364,102 +1522,152 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'arrayiterator::current' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayiterator::key' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayiterator::next' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayiterator::rewind' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayiterator::seek' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayiterator::valid' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::append' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::asort' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::count' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::exchangearray' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::getflags' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::getiterator' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::getiteratorclass' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::ksort' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::natcasesort' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::natsort' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::offsetexists' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::offsetget' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::offsetset' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::offsetunset' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::setflags' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::setiteratorclass' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::uasort' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arrayobject::uksort' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'arsort' =>
   array (
@@ -1489,21 +1697,29 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'aspell_check_raw' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'aspell_new' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'aspell_suggest' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'assert' =>
   array (
@@ -2314,6 +2530,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'bind' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'bind_textdomain_codeset' =>
   array (
@@ -2534,6 +2752,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'build_iovec' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'button' =>
   array (
@@ -2689,68 +2909,100 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'cachingiterator::__construct' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::__tostring' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::count' =>
   array (
     'init' => '5.2.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::getcache' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::getflags' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::hasnext' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::next' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::offsetexists' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::offsetget' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::offsetset' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::offsetunset' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::rewind' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::setflags' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingiterator::valid' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingrecursiveiterator::getchildren' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cachingrecursiveiterator::haschildren' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cairo_append_path' =>
   array (
@@ -4065,10 +4317,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'call_user_method' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'call_user_method_array' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'canvas' =>
   array (
@@ -4080,66 +4336,98 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ccvs_add' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_auth' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_command' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_count' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_delete' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_done' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_init' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_lookup' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_new' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_report' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_return' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_reverse' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_sale' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_status' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_textvalue' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ccvs_void' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ceil' =>
   array (
@@ -4181,6 +4469,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'child_terminate' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'chmod' =>
   array (
@@ -4221,6 +4511,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'class_exists' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'class_implements' =>
   array (
@@ -5011,6 +5303,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'com_addref' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'com_create_guid' =>
   array (
@@ -5027,6 +5321,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'com_get' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'com_get_active_object' =>
   array (
@@ -5037,18 +5333,26 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'com_invoke' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'com_invoke_ex' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'com_isenum' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'com_load' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'com_load_typelib' =>
   array (
@@ -5071,22 +5375,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'com_propget' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'com_propput' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'com_propset' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'com_release' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'com_set' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'compact' =>
   array (
@@ -5097,34 +5411,50 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'compersisthelper::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'compersisthelper::getcurfile' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'compersisthelper::getmaxstreamsize' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'compersisthelper::initnew' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'compersisthelper::loadfromfile' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'compersisthelper::loadfromstream' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'compersisthelper::savetofile' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'compersisthelper::savetostream' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'connection_aborted' =>
   array (
@@ -5142,6 +5472,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.0.4',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'constant' =>
   array (
@@ -5236,361 +5568,505 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_add_outline' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_arc' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_begin_text' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_circle' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_clip' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_close' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_closepath' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_closepath_fill_stroke' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_closepath_stroke' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_continue_text' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_curveto' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_end_text' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_fill' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_fill_stroke' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_finalize' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_finalize_page' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_global_set_document_limits' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_import_jpeg' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_lineto' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_moveto' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_newpath' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_open' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_output_buffer' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_page_init' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_place_inline_image' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_rect' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_restore' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_rlineto' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_rmoveto' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_rotate' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_rotate_text' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_save' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_save_to_file' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_scale' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_action_url' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_char_spacing' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_creator' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_current_page' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_font' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_font_directories' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_font_map_file' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_horiz_scaling' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_keywords' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_leading' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_page_animation' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_subject' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_text_matrix' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_text_pos' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_text_rendering' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_text_rise' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_title' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_viewer_preferences' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_set_word_spacing' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setdash' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setflat' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setgray' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setgray_fill' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setgray_stroke' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setlinecap' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setlinejoin' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setlinewidth' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setmiterlimit' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setrgbcolor' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setrgbcolor_fill' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_setrgbcolor_stroke' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_show' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_show_xy' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_stringwidth' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_stroke' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_text' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cpdf_translate' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'crack_check' =>
   array (
@@ -5623,6 +6099,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'crash' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'crc32' =>
   array (
@@ -5633,6 +6111,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'create_function' =>
   array (
     'init' => '4.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'createemptydir' =>
   array (
@@ -5830,66 +6310,98 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'cv_add' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_auth' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_command' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_count' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_delete' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_done' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_init' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_lookup' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_new' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_report' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_return' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_reverse' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_sale' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_status' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_textvalue' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cv_void' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'cvsclient_connect' =>
   array (
@@ -6495,6 +7007,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.0.4',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dazuko_exclude_path' =>
   array (
@@ -6646,6 +7160,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'db_id_list' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dba_close' =>
   array (
@@ -6840,42 +7356,62 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'dblist' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbmclose' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbmdelete' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbmexists' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbmfetch' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbmfirstkey' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbminsert' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbmnextkey' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbmopen' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbmreplace' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbplus_add' =>
   array (
@@ -7216,10 +7752,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'dbx_cmp_asc' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbx_cmp_desc' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbx_compare' =>
   array (
@@ -7245,6 +7785,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'dbx_esc' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dbx_escape_string' =>
   array (
@@ -7289,14 +7831,20 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'deaggregate' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'debug_backtrace' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'debug_print_backtrace' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'debug_zval_dump' =>
   array (
@@ -7339,6 +7887,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'define' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'define_syslog_variables' =>
   array (
@@ -7349,6 +7899,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'defined' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'deg2rad' =>
   array (
@@ -7359,6 +7911,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'delete_iovec' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'deleteindex' =>
   array (
@@ -7391,46 +7945,64 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.2.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dio_fcntl' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dio_open' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dio_read' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dio_seek' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dio_stat' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dio_tcsetattr' =>
   array (
     'init' => '4.3.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dio_truncate' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dio_write' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dir' =>
   array (
@@ -7441,167 +8013,241 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'directoryiterator::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::current' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::fileatime' =>
   array (
     'end' => '5.0.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::filectime' =>
   array (
     'end' => '5.0.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::filegroup' =>
   array (
     'end' => '5.0.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::fileinode' =>
   array (
     'end' => '5.0.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::filemtime' =>
   array (
     'end' => '5.0.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::fileowner' =>
   array (
     'end' => '5.0.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::fileperms' =>
   array (
     'end' => '5.0.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::filesize' =>
   array (
     'end' => '5.0.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::filetype' =>
   array (
     'end' => '5.0.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getatime' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getbasename' =>
   array (
     'init' => '5.2.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getchildren' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getctime' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getfilename' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getgroup' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getinode' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getmtime' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getowner' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getpath' =>
   array (
     'end' => '5.1.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getpathname' =>
   array (
     'end' => '5.1.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getperms' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::getsize' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::gettype' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::isdir' =>
   array (
     'end' => '5.1.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::isdot' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::isexecutable' =>
   array (
     'end' => '5.1.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::isfile' =>
   array (
     'end' => '5.1.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::islink' =>
   array (
     'end' => '5.1.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::isreadable' =>
   array (
     'end' => '5.1.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::iswritable' =>
   array (
     'end' => '5.1.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::key' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::next' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::openfile' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::rewind' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'directoryiterator::valid' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dirname' =>
   array (
@@ -7637,6 +8283,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'display_disabled_function' =>
   array (
     'init' => '4.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dl' =>
   array (
@@ -7685,270 +8333,404 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'dom_attr_is_id' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_characterdata_append_data' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_characterdata_delete_data' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_characterdata_insert_data' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_characterdata_replace_data' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_characterdata_substring_data' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_adopt_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_create_attribute' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_create_attribute_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_create_cdatasection' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_create_comment' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_create_document_fragment' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_create_element' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_create_element_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_create_entity_reference' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_create_processing_instruction' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_create_text_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_get_element_by_id' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_get_elements_by_tag_name' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_get_elements_by_tag_name_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_import_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_load' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_load_html' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_load_html_file' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_loadxml' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_normalize_document' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_relaxng_validate_file' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_relaxng_validate_xml' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_rename_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_save' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_save_html' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_save_html_file' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_savexml' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_schema_validate' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_schema_validate_file' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_validate' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_document_xinclude' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domconfiguration_can_set_parameter' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domconfiguration_get_parameter' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domconfiguration_set_parameter' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domerrorhandler_handle_error' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domimplementation_create_document' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domimplementation_create_document_type' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domimplementation_get_feature' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domimplementation_has_feature' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domimplementationlist_item' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domimplementationsource_get_domimplementation' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domimplementationsource_get_domimplementations' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_domstringlist_item' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_get_attribute' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_get_attribute_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_get_attribute_node_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_get_attribute_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_get_elements_by_tag_name' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_get_elements_by_tag_name_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_has_attribute' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_has_attribute_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_remove_attribute' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_remove_attribute_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_remove_attribute_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_set_attribute' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_set_attribute_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_set_attribute_node_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_set_attribute_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_set_id_attribute' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_set_id_attribute_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_element_set_id_attribute_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_import_simplexml' =>
   array (
@@ -7959,738 +8741,1104 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'dom_namednodemap_get_named_item' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_namednodemap_get_named_item_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_namednodemap_item' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_namednodemap_remove_named_item' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_namednodemap_remove_named_item_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_namednodemap_set_named_item' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_namednodemap_set_named_item_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_namelist_get_name' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_namelist_get_namespace_uri' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_append_child' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_clone_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_compare_document_position' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_get_feature' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_get_user_data' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_has_attributes' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_has_child_nodes' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_insert_before' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_is_default_namespace' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_is_equal_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_is_same_node' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_is_supported' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_lookup_namespace_uri' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_lookup_prefix' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_normalize' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_remove_child' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_replace_child' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_node_set_user_data' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_nodelist_item' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_string_extend_find_offset16' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_string_extend_find_offset32' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_text_is_whitespace_in_element_content' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_text_replace_whole_text' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_text_split_text' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_userdatahandler_handle' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_xpath_evaluate' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_xpath_query' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'dom_xpath_register_ns' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domattr::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domcdatasection::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domcomment::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domdocument::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domdocument::registernodeclass' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domdocumentfragment::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domdocumentfragment::appendxml' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domelement::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domentityreference::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domnode::c14n' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domnode::c14nfile' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domnode::getnodepath' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domprocessinginstruction::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domtext::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_add_root' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_attr_name' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_attr_set_value' =>
   array (
     'init' => '4.3.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_attr_specified' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_attr_value' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_attributes' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_attrname' =>
   array (
     'end' => '4.0.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_cdata_length' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_children' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_clone_node' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_add_root' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_create_attribute' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_create_cdata_section' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_create_comment' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_create_element' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_create_element_ns' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_create_entity_reference' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_create_processing_instruction' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_create_text_node' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_doctype' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_document_element' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_free_doc' =>
   array (
     'init' => '4.3.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_get_element_by_id' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_get_elements_by_tagname' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_get_root' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_ids' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_implementation' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_imported_node' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_set_root' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_validate' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doc_xinclude' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doctype_entities' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doctype_name' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doctype_notations' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doctype_public_id' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_doctype_system_id' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_dtd' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_dump_mem' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_dump_mem_file' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_dump_node' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_dumpmem' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_elem_get_attribute' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_elem_get_attribute_node' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_elem_get_element_by_tagname' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_elem_get_elements_by_tagname' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_elem_has_attribute' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_elem_remove_attribute' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_elem_set_attribute' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_elem_set_attribute_node' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_elem_tagname' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_element' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_get_attribute' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_getattr' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_html_dump_mem' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_is_blank_node' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_last_child' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_lastchild' =>
   array (
     'end' => '4.0.4',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_new_child' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_new_doc' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_new_xmldoc' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_add_child' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_add_namespace' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_append_child' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_append_sibling' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_attributes' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_children' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_first_child' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_get_content' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_has_attributes' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_has_child_nodes' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_insert_before' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_last_child' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_name' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_namespace_uri' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_new_child' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_next_sibling' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_owner_document' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_parent' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_prefix' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_previous_sibling' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_remove_child' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_replace_child' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_replace_node' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_set_content' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_set_name' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_set_namespace' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_text_concat' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_type' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_unlink_node' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_node_value' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_notation_public_id' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_notation_system_id' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_open_file' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_open_mem' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parent' =>
   array (
     'end' => '4.0.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_add_chunk' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_cdata_section' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_characters' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_comment' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_end' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_end_document' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_end_element' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_entity_reference' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_get_document' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_namespace_decl' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_processing_instruction' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_set_keep_blanks' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_start_document' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_parser_start_element' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_pi_data' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_pi_target' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_root' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_rootnew' =>
   array (
     'end' => '4.0.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_set_attribute' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_set_content' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_set_root' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_setattr' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_substitute_entities_default' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_test' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_unlink_node' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_version' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_xmltree' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_xslt_process' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_xslt_result_dump_file' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_xslt_result_dump_mem' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_xslt_stylesheet' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_xslt_stylesheet_doc' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_xslt_stylesheet_file' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxml_xslt_version' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'domxpath::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'doubleval' =>
   array (
@@ -8981,6 +10129,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'each' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'easter_date' =>
   array (
@@ -9081,22 +10231,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'emptyiterator::current' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'emptyiterator::key' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'emptyiterator::next' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'emptyiterator::rewind' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'emptyiterator::valid' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'enchant_broker_describe' =>
   array (
@@ -9325,10 +10485,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'error_reporting' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'errorexception::getseverity' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'escapeshellarg' =>
   array (
@@ -9828,34 +10992,50 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'exception::__clone' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'exception::__tostring' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'exception::getcode' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'exception::getfile' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'exception::getline' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'exception::getmessage' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'exception::gettrace' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'exception::gettraceasstring' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'exec' =>
   array (
@@ -9929,6 +11109,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'extension_loaded' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'extract' =>
   array (
@@ -9967,51 +11149,71 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fam_close' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fam_monitor_collection' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fam_monitor_directory' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fam_monitor_file' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fam_next_event' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fam_open' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fam_pending' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fam_resume_monitor' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fam_suspend_monitor' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fann_create' =>
   array (
@@ -10481,6 +11683,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fbsql_change_user' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fbsql_clob_size' =>
   array (
@@ -10623,6 +11827,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fbsql_field_lene' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fbsql_field_name' =>
   array (
@@ -10657,6 +11863,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fbsql_generate_warnings' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fbsql_get_autostart_info' =>
   array (
@@ -10835,26 +12043,38 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fd_alloc' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fd_clear' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fd_dealloc' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fd_isset' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fd_set' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fd_zero' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fdf_add_doc_javascript' =>
   array (
@@ -10937,6 +12157,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fdf_get_option' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fdf_get_status' =>
   array (
@@ -11079,6 +12301,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fetch_iovec' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fflush' =>
   array (
@@ -11187,36 +12411,50 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.1.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filepro_fieldcount' =>
   array (
     'end' => '5.1.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filepro_fieldname' =>
   array (
     'end' => '5.1.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filepro_fieldtype' =>
   array (
     'end' => '5.1.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filepro_fieldwidth' =>
   array (
     'end' => '5.1.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filepro_retrieve' =>
   array (
     'end' => '5.1.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filepro_rowcount' =>
   array (
     'end' => '5.1.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filesize' =>
   array (
@@ -11295,30 +12533,44 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'filteriterator::__construct' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filteriterator::current' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filteriterator::getinneriterator' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filteriterator::key' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filteriterator::next' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filteriterator::rewind' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'filteriterator::valid' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'finfo_buffer' =>
   array (
@@ -11435,6 +12687,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'fopenstream' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fpassthru' =>
   array (
@@ -11476,6 +12730,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'free_iovec' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'freeimage_appendpage' =>
   array (
@@ -12173,18 +13429,26 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'func_get_arg' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'func_get_args' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'func_num_args' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'function_exists' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'fwrite' =>
   array (
@@ -12362,6 +13626,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'get_all_headers' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_browser' =>
   array (
@@ -12392,14 +13658,20 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'get_class' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_class_methods' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_class_vars' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_current_user' =>
   array (
@@ -12410,26 +13682,38 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'get_declared_classes' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_declared_interfaces' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_defined_constants' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_defined_functions' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_defined_vars' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_extension_funcs' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_headers' =>
   array (
@@ -12452,18 +13736,26 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'get_included_files' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_loaded_extensions' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_magic_quotes_gpc' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_magic_quotes_runtime' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_meta_tags' =>
   array (
@@ -12474,6 +13766,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'get_object_vars' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_parent' =>
   array (
@@ -12485,14 +13779,20 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'get_parent_class' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_required_files' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'get_resource_type' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'getallheaders' =>
   array (
@@ -12601,6 +13901,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'getpeername' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'getprotobyname' =>
   array (
@@ -12648,10 +13950,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'getsockname' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'getsockopt' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'getstatusstring' =>
   array (
@@ -14514,6 +15820,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'haschildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hash' =>
   array (
@@ -14636,10 +15944,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'html_doc' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'html_doc_file' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'html_entity_decode' =>
   array (
@@ -16887,294 +18199,440 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'hw_array2objrec' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_changeobject' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_children' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_childrenobj' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_close' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_connect' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_connection_info' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_cp' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_deleteobject' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_docbyanchor' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_docbyanchorobj' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_document_attributes' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_document_bodytag' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_document_content' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_document_setcontent' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_document_size' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_documentattributes' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_documentbodytag' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_documentsize' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_dummy' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_edittext' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_error' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_errormsg' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_free_document' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getanchors' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getanchorsobj' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getandlock' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getcgi' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getchildcoll' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getchildcollobj' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getchilddoccoll' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getchilddoccollobj' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getobject' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getobjectbyftquery' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getobjectbyftquerycoll' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getobjectbyftquerycollobj' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getobjectbyftqueryobj' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getobjectbyquery' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getobjectbyquerycoll' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getobjectbyquerycollobj' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getobjectbyqueryobj' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getparents' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getparentsobj' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getrellink' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getremote' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getremotechildren' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getsrcbydestobj' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_gettext' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_getusername' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_identify' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_incollections' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_info' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_inscoll' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_insdoc' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_insertanchors' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_insertdocument' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_insertobject' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_mapid' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_modifyobject' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_mv' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_new_document' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_new_document_from_file' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_objrec2array' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_output_document' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_outputdocument' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_pconnect' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_pipecgi' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_pipedocument' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_root' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_setlinkroot' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_stat' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_unlock' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hw_who' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'hypot' =>
   array (
@@ -17185,34 +18643,50 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'i18n_convert' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'i18n_discover_encoding' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'i18n_http_input' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'i18n_http_output' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'i18n_internal_encoding' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'i18n_ja_jp_hantozen' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'i18n_mime_header_decode' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'i18n_mime_header_encode' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ibase_add_user' =>
   array (
@@ -17499,6 +18973,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ibase_timefmt' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ibase_trans' =>
   array (
@@ -17516,80 +18992,112 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_create_calendar' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_delete_calendar' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_delete_event' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_expunge' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_fetch_event' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_list_alarms' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_list_events' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_open' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_popen' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_rename' =>
   array (
     'end' => '4.0.0',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_rename_calendar' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_reopen' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_snooze' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'icap_store_event' =>
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'iconv' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'iconv_get_encoding' =>
   array (
@@ -19265,6 +20773,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.0.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'imap_get_quota' =>
   array (
@@ -19414,6 +20924,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.2.3',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'imap_qprint' =>
   array (
@@ -19649,18 +21161,26 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'inet_ntop' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'inet_pton' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'infiniteiterator::__construct' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'infiniteiterator::next' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ingres_autocommit' =>
   array (
@@ -19926,6 +21446,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'interface_exists' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'intval' =>
   array (
@@ -19955,165 +21477,231 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_disconnect' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_eval_ecmascript_params' =>
   array (
     'init' => '4.3.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_fetch_error_msg' =>
   array (
     'init' => '4.0.7',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_get_username' =>
   array (
     'init' => '4.0.7',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_html_encode' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_ignore_add' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_ignore_del' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_invite' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_is_conn_alive' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_join' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_kick' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_list' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_lookup_format_messages' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_lusers' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_msg' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_names' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_nick' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_nickname_escape' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_nickname_unescape' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_notice' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_oper' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_part' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_pconnect' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_register_format_messages' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_set_current' =>
   array (
     'init' => '4.0.4',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_set_file' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_set_on_die' =>
   array (
     'init' => '4.2.0',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_set_on_read_data' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_topic' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_who' =>
   array (
     'init' => '4.3.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ircg_whois' =>
   array (
     'init' => '4.0.5',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'is_a' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'is_array' =>
   array (
@@ -20276,6 +21864,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'is_subclass_of' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'is_uploaded_file' =>
   array (
@@ -20298,14 +21888,20 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'isalnum' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'isalpha' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'iscntrl' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'isconnected' =>
   array (
@@ -20317,30 +21913,44 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'isdigit' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'isgraph' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'islower' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'isprint' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ispunct' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'isspace' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'isupper' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'isvalid' =>
   array (
@@ -20352,6 +21962,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'isxdigit' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'iterator_apply' =>
   array (
@@ -20374,14 +21986,20 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'iteratoriterator::__construct' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'java_last_exception_clear' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'java_last_exception_get' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'jddayofweek' =>
   array (
@@ -20815,6 +22433,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'leak' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'levenshtein' =>
   array (
@@ -20855,22 +22475,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'limititerator::getposition' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'limititerator::next' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'limititerator::rewind' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'limititerator::seek' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'limititerator::valid' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'link' =>
   array (
@@ -20894,6 +22524,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'listen' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'listsignatures' =>
   array (
@@ -21555,6 +23187,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'magic_quotes_runtime' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mail' =>
   array (
@@ -22449,50 +24083,74 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'mb_ereg' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_ereg_match' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_ereg_replace' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_ereg_search' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_ereg_search_getpos' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_ereg_search_getregs' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_ereg_search_init' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_ereg_search_pos' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_ereg_search_regs' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_ereg_search_setpos' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_eregi' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_eregi_replace' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_get_info' =>
   array (
@@ -22563,10 +24221,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'mb_regex_encoding' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_regex_set_options' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_send_mail' =>
   array (
@@ -22577,6 +24239,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'mb_split' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mb_strcut' =>
   array (
@@ -22683,243 +24347,363 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'mbereg' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbereg_match' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbereg_replace' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbereg_search' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbereg_search_getpos' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbereg_search_getregs' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbereg_search_init' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbereg_search_pos' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbereg_search_regs' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbereg_search_setpos' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mberegi' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mberegi_replace' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbregex_encoding' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbsplit' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbstrcut' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbstrlen' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbstrpos' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbstrrpos' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mbsubstr' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_append_event' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_close' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_create_calendar' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_date_compare' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_date_valid' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_day_of_week' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_day_of_year' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_days_in_month' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_delete_calendar' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_delete_event' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_add_attribute' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_init' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_alarm' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_category' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_class' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_description' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_end' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_recur_daily' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_recur_monthly_mday' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_recur_monthly_wday' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_recur_none' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_recur_weekly' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_recur_yearly' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_start' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_event_set_title' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_expunge' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_fetch_current_stream_event' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_fetch_event' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_is_leap_year' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_list_alarms' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_list_events' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_next_recurrence' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_open' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_popen' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_rename' =>
   array (
     'end' => '4.0.0',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_rename_calendar' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_reopen' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_snooze' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_store_event' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_time_valid' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcal_week_of_year' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcrypt_cbc' =>
   array (
@@ -23033,6 +24817,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.2',
     'end' => '5.1.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mcrypt_generic_init' =>
   array (
@@ -23961,6 +25747,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'method_exists' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mhash' =>
   array (
@@ -24242,130 +26030,182 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_connect' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_count' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_create' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_ctl' =>
   array (
     'init' => '4.3.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_destroy' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_disconnect' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_exec' =>
   array (
     'end' => '5.1.2',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_find' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_get' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_get_array' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_get_data' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_inc' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_list' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_listvar' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_lock' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_ping' =>
   array (
     'end' => '5.1.2',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_plugin' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_randstr' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_set' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_set_array' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_set_data' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_stat' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_timeout' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_uniq' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msession_unlock' =>
   array (
     'init' => '4.2.0',
     'end' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'msg_get_queue' =>
   array (
@@ -24947,22 +26787,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'muscat_close' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'muscat_get' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'muscat_give' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'muscat_setup' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'muscat_setup_net' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mysql' =>
   array (
@@ -25524,6 +27374,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mysqli_embedded_server_end' =>
   array (
@@ -25865,11 +27717,15 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mysqli_server_init' =>
   array (
     'end' => '5.0.5',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'mysqli_set_charset' =>
   array (
@@ -27277,30 +29133,44 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'netsnmp_session_gen_auth_key' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'netsnmp_session_gen_sec_key' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'netsnmp_session_set_auth_protocol' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'netsnmp_session_set_sec_level' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'netsnmp_session_set_sec_name' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'netsnmp_session_set_sec_protocol' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'new_xmldoc' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'newt_bell' =>
   array (
@@ -28191,103 +30061,153 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.0.0',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'node_attributes' =>
   array (
     'end' => '4.3.2',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'node_children' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'node_namespace' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'norewinditerator::__construct' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'norewinditerator::current' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'norewinditerator::key' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'norewinditerator::next' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'norewinditerator::rewind' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'norewinditerator::valid' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_body' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_copy_db' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_create_db' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_create_note' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_drop_db' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_find_note' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_header_info' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_list' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_list_msgs' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_mark_read' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_mark_unread' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_nav_create' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_search' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_unread' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'notes_version' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'nsapi_request_headers' =>
   array (
@@ -28404,6 +30324,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ob_gzhandler' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ob_httpetaghandler' =>
   array (
@@ -28415,6 +30337,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ob_iconv_handler' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ob_implicit_flush' =>
   array (
@@ -28444,6 +30368,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ob_tidyhandler' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'oci_bind_array_by_name' =>
   array (
@@ -28658,6 +30584,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'oci_lob_close' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'oci_lob_copy' =>
   array (
@@ -28758,6 +30686,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'oci_lob_write_temporary' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'oci_new_collection' =>
   array (
@@ -28858,6 +30788,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ocicloselob' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ocicollappend' =>
   array (
@@ -28868,6 +30800,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ocicollassign' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ocicollassignelem' =>
   array (
@@ -28951,6 +30885,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.0.0',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ocidefinebyname' =>
   array (
@@ -28991,6 +30927,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ocifreecoll' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ocifreecollection' =>
   array (
@@ -29157,6 +31095,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'ociwritetemporarylob' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'octdec' =>
   array (
@@ -29432,6 +31372,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.0.0',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'odbc_tables' =>
   array (
@@ -30128,6 +32070,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'open_listen_sock' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'openal_buffer_create' =>
   array (
@@ -30353,6 +32297,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'openssl_free_x509' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'openssl_get_privatekey' =>
   array (
@@ -30483,10 +32429,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'openssl_read_publickey' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'openssl_read_x509' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'openssl_seal' =>
   array (
@@ -30552,116 +32502,162 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_close' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_columnname' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_columnsize' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_columntype' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_commit' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_commitoff' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_commiton' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_do' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_error' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_errorcode' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_exec' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_fetch' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_fetch_into' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_getcolumn' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_logoff' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_logon' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_numcols' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_numrows' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_open' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_parse' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_plogon' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ora_rollback' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'oraclecalendar::__construct' =>
   array (
@@ -30911,22 +32907,32 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'orbit_caught_exception' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'orbit_exception_id' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'orbit_exception_value' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'orbit_get_repository_id' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'orbit_load_idl' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ord' =>
   array (
@@ -30949,6 +32955,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'overload' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'override_function' =>
   array (
@@ -30961,120 +32969,168 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_close' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_close_all' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_commit' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_connect' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_cursor' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_do' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_exec' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_execute' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_fetch_into' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_fetch_row' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_field_len' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_field_name' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_field_num' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_field_type' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_free_result' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_longreadlen' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_num_fields' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_num_rows' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_prepare' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_result' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_result_all' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_rollback' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ovrimos_setoption' =>
   array (
     'init' => '4.0.3',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'pack' =>
   array (
@@ -31491,24 +33547,34 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'parentiterator::__construct' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'parentiterator::getchildren' =>
   array (
     'end' => '5.2.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'parentiterator::haschildren' =>
   array (
     'end' => '5.2.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'parentiterator::next' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'parentiterator::rewind' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'parse_ini_file' =>
   array (
@@ -32712,6 +34778,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.0.4',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'pdf_set_text_pos' =>
   array (
@@ -33291,26 +35359,36 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.2',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'pfpro_init' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'pfpro_process' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'pfpro_process_raw' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'pfpro_version' =>
   array (
     'init' => '4.0.2',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'pfsockopen' =>
   array (
@@ -33490,6 +35568,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.0.0',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'pg_field_is_null' =>
   array (
@@ -34312,6 +36392,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.0.4',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'php_egg_logo_guid' =>
   array (
@@ -34359,6 +36441,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'php_snmpv3' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'php_strip_whitespace' =>
   array (
@@ -34735,6 +36819,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'property_exists' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'ps_add_annotation' =>
   array (
@@ -35818,10 +37904,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'qdom_error' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'qdom_tree' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'quoted_printable_decode' =>
   array (
@@ -36158,6 +38248,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'readv' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'realpath' =>
   array (
@@ -36193,739 +38285,1101 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'recursivearrayiterator::getchildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivearrayiterator::haschildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivecachingiterator::__construct' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivecachingiterator::getchildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivecachingiterator::haschildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivedirectoryiterator::__construct' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivedirectoryiterator::current' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivedirectoryiterator::getsubpath' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivedirectoryiterator::getsubpathinfo' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivedirectoryiterator::getsubpathname' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivedirectoryiterator::haschildren' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivedirectoryiterator::key' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivedirectoryiterator::next' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivedirectoryiterator::rewind' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivefilteriterator::__construct' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivefilteriterator::getchildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursivefilteriterator::haschildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::__construct' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::beginchildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::beginiteration' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::callgetchildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::callhaschildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::current' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::endchildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::enditeration' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::getdepth' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::getinneriterator' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::getmaxdepth' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::getsubiterator' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::key' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::next' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::nextelement' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::rewind' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::setmaxdepth' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveiteratoriterator::valid' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveregexiterator::__construct' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recursiveregexiterator::getchildren' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recv' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recvfrom' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'recvmsg' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection::export' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection::getmodifiernames' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_class::getconstructor' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_class::getextension' =>
   array (
     'end' => '5.0.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_class::getinterfaces' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_class::getmethod' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_class::getmethods' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_class::getparentclass' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_class::getproperties' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_class::getproperty' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_extension::getfunctions' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_function::getparameters' =>
   array (
     'end' => '5.1.1',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_method::getdeclaringclass' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_parameter::getclass' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflection_property::getdeclaringclass' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::__tostring' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::export' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getconstant' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getconstants' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getconstructor' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getdefaultproperties' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getdoccomment' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getendline' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getextension' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getextensionname' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getfilename' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getinterfacenames' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getinterfaces' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getmethod' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getmethods' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getmodifiers' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getname' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getparentclass' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getproperties' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getproperty' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getstartline' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getstaticproperties' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::getstaticpropertyvalue' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::hasconstant' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::hasmethod' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::hasproperty' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::implementsinterface' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::isabstract' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::isfinal' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::isinstance' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::isinstantiable' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::isinterface' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::isinternal' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::isiterateable' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::issubclassof' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::isuserdefined' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::newinstance' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::newinstanceargs' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionclass::setstaticpropertyvalue' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::__tostring' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::export' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::getclasses' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::getclassnames' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::getconstants' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::getdependencies' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::getfunctions' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::getinientries' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::getname' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::getversion' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionextension::info' =>
   array (
     'init' => '5.2.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::__tostring' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::export' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getdoccomment' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getendline' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getextension' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getextensionname' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getfilename' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getname' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getnumberofparameters' =>
   array (
     'init' => '5.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getnumberofrequiredparameters' =>
   array (
     'init' => '5.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getparameters' =>
   array (
     'init' => '5.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getstartline' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::getstaticvariables' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::invoke' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::invokeargs' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::isdeprecated' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::isdisabled' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::isinternal' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::isuserdefined' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionfunction::returnsreference' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::__tostring' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::export' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::getdeclaringclass' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::getmodifiers' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::getprototype' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::invoke' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::invokeargs' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::isabstract' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::isconstructor' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::isdestructor' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::isfinal' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::isprivate' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::isprotected' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::ispublic' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionmethod::isstatic' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionobject::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionobject::export' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::__tostring' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::allowsnull' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::export' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::getclass' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::getdeclaringclass' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::getdeclaringfunction' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::getdefaultvalue' =>
   array (
     'init' => '5.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::getname' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::getposition' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::isarray' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::isdefaultvalueavailable' =>
   array (
     'init' => '5.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::isoptional' =>
   array (
     'init' => '5.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionparameter::ispassedbyreference' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::__tostring' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::export' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::getdeclaringclass' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::getdoccomment' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::getmodifiers' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::getname' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::getvalue' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::isdefault' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::isprivate' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::isprotected' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::ispublic' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::isstatic' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'reflectionproperty::setvalue' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'regexiterator::__construct' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'regexiterator::accept' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'regexiterator::getflags' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'regexiterator::getmode' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'regexiterator::setflags' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'regexiterator::setmode' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'regexiterator::setpregflags' =>
   array (
     'init' => '5.2.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'register_shutdown_function' =>
   array (
@@ -36983,10 +39437,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'restore_error_handler' =>
   array (
     'init' => '4.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'restore_exception_handler' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'restore_include_path' =>
   array (
@@ -37355,6 +39813,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'sapi_module_name' =>
   array (
     'init' => '4.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'sasl_checkpass' =>
   array (
@@ -37464,26 +39924,38 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'satellite_caught_exception' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'satellite_exception_id' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'satellite_exception_value' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'satellite_get_repository_id' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'satellite_load_idl' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'satellite_object_to_string' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'scale' =>
   array (
@@ -37508,6 +39980,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'select' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'sem_acquire' =>
   array (
@@ -37543,10 +40017,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'sendmsg' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'sendto' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'serialize' =>
   array (
@@ -37605,6 +40083,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'session_is_registered' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'session_module_name' =>
   array (
@@ -37627,6 +40107,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'session_register' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'session_save_path' =>
   array (
@@ -37655,6 +40137,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'session_unregister' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'session_unset' =>
   array (
@@ -37671,14 +40155,20 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'set_content' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'set_error_handler' =>
   array (
     'init' => '4.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'set_exception_handler' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'set_file_buffer' =>
   array (
@@ -37695,10 +40185,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'set_iovec' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'set_magic_quotes_runtime' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'set_msg_desc_from_array' =>
   array (
@@ -37710,11 +40204,15 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'set_nonblock' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'set_socket_blocking' =>
   array (
     'end' => '5.1.6',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'set_time_limit' =>
   array (
@@ -37726,6 +40224,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '4.0.0',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'setarchivecomment' =>
   array (
@@ -37811,6 +40311,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'setsockopt' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'settype' =>
   array (
@@ -37821,10 +40323,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'setup_muscat' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'setup_muscat_net' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'sg_cpu_diff' =>
   array (
@@ -37988,10 +40494,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'shm_close' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'shm_delete' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'shm_detach' =>
   array (
@@ -38008,6 +40518,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'shm_open' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'shm_put_var' =>
   array (
@@ -38018,6 +40530,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'shm_read' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'shm_remove' =>
   array (
@@ -38034,10 +40548,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'shm_size' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'shm_write' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'shmop_close' =>
   array (
@@ -38167,6 +40685,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'shutdown' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'sign' =>
   array (
@@ -38178,6 +40698,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'signal' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'signerurlpaiement' =>
   array (
@@ -38220,74 +40742,110 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'simplexmlelement::addattribute' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmlelement::addchild' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmlelement::asxml' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmlelement::attributes' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmlelement::children' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmlelement::getdocnamespaces' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmlelement::getname' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmlelement::getnamespaces' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmlelement::registerxpathnamespace' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmlelement::xpath' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmliterator::count' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmliterator::current' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmliterator::getchildren' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmliterator::haschildren' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmliterator::key' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmliterator::next' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmliterator::rewind' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'simplexmliterator::valid' =>
   array (
     'init' => '5.1.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'sin' =>
   array (
@@ -38858,107 +41416,159 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.1.6',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soap_encode_to_zval' =>
   array (
     'end' => '5.1.6',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__call' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__dorequest' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__getfunctions' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__getlastrequest' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__getlastrequestheaders' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__getlastresponse' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__getlastresponseheaders' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__gettypes' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__setcookie' =>
   array (
     'init' => '5.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__setlocation' =>
   array (
     'init' => '5.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::__setsoapheaders' =>
   array (
     'init' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapclient::soapclient' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapfault::soapfault' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapheader::soapheader' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapparam::soapparam' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapserver::addfunction' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapserver::getfunctions' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapserver::handle' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapserver::setclass' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapserver::setobject' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapserver::setpersistence' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapserver::soapserver' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'soapvar::soapvar' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_accept' =>
   array (
@@ -39011,30 +41621,44 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'socket_fd_alloc' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_fd_clear' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_fd_dealloc' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_fd_free' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_fd_isset' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_fd_set' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_fd_zero' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_get_option' =>
   array (
@@ -39069,26 +41693,38 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'socket_iovec_add' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_iovec_alloc' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_iovec_delete' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_iovec_fetch' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_iovec_free' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_iovec_set' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_last_error' =>
   array (
@@ -39111,6 +41747,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'socket_readv' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_recv' =>
   array (
@@ -39127,6 +41765,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'socket_recvmsg' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_select' =>
   array (
@@ -39143,6 +41783,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'socket_sendmsg' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socket_sendto' =>
   array (
@@ -39207,14 +41849,20 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'socket_writev' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'socketpair' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'solid_fetch_prev' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'sort' =>
   array (
@@ -39293,230 +41941,344 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'splfileinfo::__construct' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getatime' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getbasename' =>
   array (
     'init' => '5.2.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getctime' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getfileinfo' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getfilename' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getgroup' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getinode' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getlinktarget' =>
   array (
     'init' => '5.2.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getmtime' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getowner' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getpath' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getpathinfo' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getpathname' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getperms' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getrealpath' =>
   array (
     'init' => '5.2.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::getsize' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::gettype' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::isdir' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::isexecutable' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::isfile' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::islink' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::isreadable' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::iswritable' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::openfile' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::setfileclass' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileinfo::setinfoclass' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::__construct' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::current' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::eof' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::fflush' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::fgetc' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::fgetcsv' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::fgets' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::fgetss' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::flock' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::fpassthru' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::fscanf' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::fseek' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::fstat' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::ftell' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::ftruncate' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::fwrite' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::getchildren' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::getcsvcontrol' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::getfilename' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::getflags' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::getmaxlinelen' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::haschildren' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::key' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::next' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::rewind' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::seek' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::setcsvcontrol' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::setflags' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::setmaxlinelen' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splfileobject::valid' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'split' =>
   array (
@@ -39533,50 +42295,74 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'splobjectstorage::attach' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splobjectstorage::contains' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splobjectstorage::count' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splobjectstorage::current' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splobjectstorage::detach' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splobjectstorage::key' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splobjectstorage::next' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splobjectstorage::rewind' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splobjectstorage::serialize' =>
   array (
     'init' => '5.2.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splobjectstorage::unserialize' =>
   array (
     'init' => '5.2.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'splobjectstorage::valid' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'spltempfileobject::__construct' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'spltype::__construct' =>
   array (
@@ -39785,6 +42571,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'sqlite_key' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'sqlite_last_error' =>
   array (
@@ -40791,6 +43579,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'strcasecmp' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'strchr' =>
   array (
@@ -40801,6 +43591,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'strcmp' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'strcoll' =>
   array (
@@ -41045,6 +43837,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'strerror' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'strftime' =>
   array (
@@ -41085,6 +43879,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'strlen' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'strnatcasecmp' =>
   array (
@@ -41101,10 +43897,14 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'strncasecmp' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'strncmp' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'strpbrk' =>
   array (
@@ -41531,1174 +44331,1760 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'swf_actiongeturl' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_actiongotoframe' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_actiongotolabel' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_actionnextframe' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_actionplay' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_actionprevframe' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_actionsettarget' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_actionstop' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_actiontogglequality' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_actionwaitforframe' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_addbuttonrecord' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_addcolor' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_closefile' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_definebitmap' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_definefont' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_defineline' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_definepoly' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_definerect' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_definetext' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_endbutton' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_enddoaction' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_endshape' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_endsymbol' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_fontsize' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_fontslant' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_fonttracking' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_getbitmapinfo' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_getfontinfo' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_getframe' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_labelframe' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_lookat' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_modifyobject' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_mulcolor' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_nextid' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_oncondition' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_openfile' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_ortho' =>
   array (
     'init' => '4.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_ortho2' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_perspective' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_placeobject' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_polarview' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_popmatrix' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_posround' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_pushmatrix' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_removeobject' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_rotate' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_scale' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_setfont' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_setframe' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_shapearc' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_shapecurveto' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_shapecurveto3' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_shapefillbitmapclip' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_shapefillbitmaptile' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_shapefilloff' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_shapefillsolid' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_shapelinesolid' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_shapelineto' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_shapemoveto' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_showframe' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_startbutton' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_startdoaction' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_startshape' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_startsymbol' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_textwidth' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_translate' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swf_viewport' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfaction::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfaction_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbitmap::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbitmap::getheight' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbitmap::getwidth' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbitmap_getheight' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbitmap_getwidth' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbitmap_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton::addaction' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton::addasound' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton::addshape' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton::setaction' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton::setdown' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton::sethit' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton::setmenu' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton::setover' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton::setup' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton_addaction' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton_addshape' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton_keypress' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton_setaction' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton_setdown' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton_sethit' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton_setover' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfbutton_setup' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::addaction' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::addcolor' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::endmask' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::move' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::moveto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::multcolor' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::rotate' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::rotateto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::scale' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::scaleto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::setdepth' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::setmasklevel' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::setmatrix' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::setname' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::setratio' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::skewx' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::skewxto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::skewy' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem::skewyto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_addaction' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_addcolor' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_move' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_moveto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_multcolor' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_rotate' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_rotateto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_scale' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_scaleto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_setdepth' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_setmatrix' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_setname' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_setratio' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_skewx' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_skewxto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_skewy' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfdisplayitem_skewyto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill::moveto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill::rotateto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill::scaleto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill::skewxto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill::skewyto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill_moveto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill_rotateto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill_scaleto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill_skewxto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffill_skewyto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont::addchars' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont::getascent' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont::getdescent' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont::getleading' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont::getshape' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont::getutf8width' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont::getwidewidth' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont::getwidth' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont_getascent' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont_getdescent' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont_getleading' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont_getwidth' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffont_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffontcha::raddchars' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swffontchar::addchars' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfgradient::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfgradient::addentry' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfgradient_addentry' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfgradient_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmorph::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmorph::getshape1' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmorph::getshape2' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmorph_getshape1' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmorph_getshape2' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmorph_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::add' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::labelframe' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::namedanchor' =>
   array (
     'init' => '5.2.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::nextframe' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::output' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::protect' =>
   array (
     'init' => '5.2.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::remove' =>
   array (
     'init' => '5.2.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::save' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::savetofile' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::setbackground' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::setdimension' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::setframes' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::setrate' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie::streammp3' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_add' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_init' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_labelframe' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_nextframe' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_output' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_save' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_savetofile' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_setbackground' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_setdimension' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_setframes' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_setrate' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfmovie_streammp3' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfprebuiltclip_init' =>
   array (
     'init' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::addfill' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::drawarc' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::drawcircle' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::drawcubic' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::drawcurve' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::drawcurveto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::drawglyph' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::drawline' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::drawlineto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::movepen' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::movepento' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::setleftfill' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape::setline' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_addfill' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_drawarc' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_drawcircle' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_drawcubic' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_drawcurve' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_drawcurveto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_drawglyph' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_drawline' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_drawlineto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_movepen' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_movepento' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_setleftfill' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_setline' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfshape_setrightfill' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsound::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite::add' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite::labelframe' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite::nextframe' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite::remove' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite::setframes' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite_add' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite_labelframe' =>
   array (
     'init' => '4.3.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite_nextframe' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite_remove' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfsprite_setframes' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::addstring' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::addutf8string' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::addwidestring' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::getascent' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::getdescent' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::getleading' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::getutf8width' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::getwidewidth' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::getwidth' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::moveto' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::setcolor' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::setfont' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::setheight' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext::setspacing' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_addstring' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_getascent' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_getdescent' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_getleading' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_getwidth' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_moveto' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_setcolor' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_setfont' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_setheight' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftext_setspacing' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::__construct' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::addchars' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::addstring' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::align' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setbounds' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setcolor' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setfont' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setheight' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setindentation' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setleftmargin' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setlinespacing' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setmargins' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setname' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setpadding' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield::setrightmargin' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_addstring' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_align' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_init' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_setbounds' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_setcolor' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_setfont' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_setheight' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_setindentation' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_setleftmargin' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_setlinespacing' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_setmargins' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_setname' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swftextfield_setrightmargin' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swfvideostream_init' =>
   array (
     'init' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'swish::__construct' =>
   array (
@@ -43460,11 +46846,15 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidy_node::hassiblings' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidy_node::is_asp' =>
   array (
@@ -43526,41 +46916,57 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidy_node::iscomment' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidy_node::ishtml' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidy_node::isjste' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidy_node::isphp' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidy_node::istext' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidy_node::isxhtml' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidy_node::isxml' =>
   array (
     'end' => '5.0.0',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidy_node::next' =>
   array (
@@ -43649,46 +47055,68 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'tidynode::getparent' =>
   array (
     'init' => '5.2.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidynode::haschildren' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidynode::hassiblings' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidynode::isasp' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidynode::iscomment' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidynode::ishtml' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidynode::isjste' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidynode::isphp' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidynode::istext' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidynode::isxhtml' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'tidynode::isxml' =>
   array (
     'init' => '5.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'time' =>
   array (
@@ -43747,6 +47175,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'timezone_transistions_get' =>
   array (
     'init' => '5.1.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'timezone_transitions_get' =>
   array (
@@ -44082,6 +47512,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'trigger_error' =>
   array (
     'init' => '4.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'trim' =>
   array (
@@ -44159,6 +47591,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'udm_check_stored' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'udm_clear_search_limits' =>
   array (
@@ -44170,6 +47604,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'udm_close_stored' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'udm_crc32' =>
   array (
@@ -44279,6 +47715,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'udm_open_stored' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'udm_parse_query_string' =>
   array (
@@ -44426,6 +47864,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'user_error' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'usleep' =>
   array (
@@ -44455,11 +47895,15 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'end' => '5.1.6',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'uuencode' =>
   array (
     'end' => '5.1.6',
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'uuid_compare' =>
   array (
@@ -44930,34 +48374,50 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'w32api_deftype' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'w32api_init_dtype' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'w32api_invoke_function' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'w32api_register_function' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'w32api_set_call_method' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'wattroff' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'wattron' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'wattrset' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'wb_call_function' =>
   array (
@@ -45732,18 +49192,26 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'write' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'writev' =>
   array (
     'init' => '4.0.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'wstandend' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'wstandout' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xattr_get' =>
   array (
@@ -46244,110 +49712,164 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xmldoc' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmldocfile' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::close' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::expand' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::getattribute' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::getattributeno' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::getattributens' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::getparserproperty' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::isvalid' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::lookupnamespace' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::movetoattribute' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::movetoattributeno' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::movetoattributens' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::movetoelement' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::movetofirstattribute' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::movetonextattribute' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::next' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::open' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::read' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::readinnerxml' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::readouterxml' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::readstring' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::setparserproperty' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::setrelaxngschema' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::setrelaxngschemasource' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::setschema' =>
   array (
     'init' => '5.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlreader::xml' =>
   array (
     'init' => '5.1.2',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlrpc_decode' =>
   array (
@@ -46436,6 +49958,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xmltree' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xmlwriter_end_attribute' =>
   array (
@@ -46937,174 +50461,260 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'xpath_eval' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xpath_eval_expression' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xpath_init' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xpath_new_context' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xpath_register_ns' =>
   array (
     'init' => '4.2.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xptr_eval' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xptr_new_context' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xsl_xsltprocessor_get_parameter' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xsl_xsltprocessor_has_exslt_support' =>
   array (
     'init' => '5.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xsl_xsltprocessor_import_stylesheet' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xsl_xsltprocessor_register_php_functions' =>
   array (
     'init' => '5.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xsl_xsltprocessor_remove_parameter' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xsl_xsltprocessor_set_parameter' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xsl_xsltprocessor_transform_to_doc' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xsl_xsltprocessor_transform_to_uri' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xsl_xsltprocessor_transform_to_xml' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_backend_info' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_backend_name' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_backend_version' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_closelog' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_create' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_errno' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_error' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_fetch_result' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_free' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_getopt' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_openlog' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_output_begintransform' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_output_endtranform' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_output_endtransform' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_process' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_run' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_set_base' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_set_encoding' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_set_error_handler' =>
   array (
     'init' => '4.0.4',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_set_log' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_set_object' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_set_sax_handler' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_set_sax_handlers' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_set_scheme_handler' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_set_scheme_handlers' =>
   array (
     'init' => '4.0.6',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_setopt' =>
   array (
     'init' => '4.3.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'xslt_transform' =>
   array (
     'init' => '4.0.3',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'yami_agent_create' =>
   array (
@@ -47488,51 +51098,71 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   array (
     'init' => '4.0.6',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'yp_cat' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'yp_err_string' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'yp_errno' =>
   array (
     'init' => '4.0.6',
     'end' => '5.0.5',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'yp_first' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'yp_get_default_domain' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'yp_master' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'yp_match' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'yp_next' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'yp_order' =>
   array (
     'end' => '5.0.5',
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'zend_logo_guid' =>
   array (
@@ -47543,14 +51173,20 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'zend_test_func' =>
   array (
     'init' => '4.0.1',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'zend_thread_id' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'zend_version' =>
   array (
     'init' => '4.0.0',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'zeroconf_browse' =>
   array (
@@ -47632,6 +51268,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'zip_closedir' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'zip_entry_close' =>
   array (
@@ -47692,6 +51330,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'zip_opendir' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'zip_read' =>
   array (
@@ -47703,6 +51343,8 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'zip_readdir' =>
   array (
     'init' => '4.0.7',
+    'ext' => 'ext_standard',
+    'pecl' => false,
   ),
   'zlib_get_coding_type' =>
   array (

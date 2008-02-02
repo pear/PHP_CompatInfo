@@ -226,6 +226,13 @@ foreach ($funcs as $key => $function) {
             $funcs[$key]['init'] = '5-dev';
         }
     }
+
+    if (array_key_exists('ext', $function) === false) {
+        $funcs[$key]['ext']  = 'ext_standard';
+    }
+    if (array_key_exists('pecl', $function) === false) {
+        $funcs[$key]['pecl']  = false;
+    }
 }
 
 unset($funcs[""]);
