@@ -76,6 +76,80 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Assert results of php exec returns
+     *
+     * @param string $args Arguments list that will be pass to the 'pci' command
+     * @param array  $exp  PCI output results expected
+     *
+     * @return void
+     */
+    private function assertPhpExec($args, $exp)
+    {
+        $ps      = PATH_SEPARATOR;
+        $command = '@php_bin@ '
+                 . '-d include_path=.' . $ps . '@php_dir@ '
+                 . '-f @bin_dir@/pci.php -- ';
+
+        $command = 'C:\wamp\php\php.exe '
+                 . '-d include_path=.;C:\wamp\php\includes;C:\wamp\php\pear '
+                 . '-f C:\wamp\php/pci.php -- ';
+
+        $output = array();
+        $return = 0;
+        exec("$command $args", $output, $return);
+        if ($return == 0) {
+            $this->assertEquals($exp, $output);
+        } else {
+            $this->assertTrue($return);
+        }
+    }
+
+    /**
+     * Regression test for bug #3657
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=3657
+     *         php5 clone constant/token in all sources
+     */
+    public function testBug3657()
+    {
+        $exp = array('+---------------------------+---------+------------+------------------+',
+                     '| File                      | Version | Extensions | Constants/Tokens |',
+                     '+---------------------------+---------+------------+------------------+',
+                     '| [...]\phpweb-entities.php | 4.0.0   |            | __FILE__         |',
+                     '+---------------------------+---------+------------+------------------+');
+
+        $ds = DIRECTORY_SEPARATOR;
+        $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'phpweb-entities.php';
+
+        $args   = '-f ' . $fn;
+        $this->assertPhpExec($args, $exp);
+    }
+
+    /**
+     * Regression test for bug #6581
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=6581
+     *         Functions missing in func_array.php
+     */
+    public function testBug6581()
+    {
+        $exp = array('+----------------+---------+------------+------------------+',
+                     '| File           | Version | Extensions | Constants/Tokens |',
+                     '+----------------+---------+------------+------------------+',
+                     '| [...]\math.php | 4.0.0   | bcmath     |                  |',
+                     '|                |         | pcre       |                  |',
+                     '+----------------+---------+------------+------------------+');
+
+        $ds = DIRECTORY_SEPARATOR;
+        $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'math.php';
+
+        $args   = '-f ' . $fn;
+        $this->assertPhpExec($args, $exp);
+    }
+
+    /**
      * Tests parsing an empty directory
      *
      * Regression test for bug #8559
@@ -85,13 +159,43 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      *         PHP_CompatInfo fails to scan if it finds empty file in path
      * @see    PHP_CompatInfo_TestSuite_Bugs::testBug8559()
      */
-    public function testParseDirEmpty()
+    public function testBug8559()
     {
-        $dn = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'emptyDir';
-        $r  = $this->pci->parseDir($dn);
-        $this->assertFalse($r);
-    }
+        $ds = DIRECTORY_SEPARATOR;
+        $dn = dirname(__FILE__) . $ds . 'emptyDir';
 
+        $exp = array('Usage: pci.php [options]',
+                     '',
+                     '  -d  --dir (optional)value                Parse DIR to get its compatibility',
+                     '                                           info ()',
+                     '  -f  --file (optional)value               Parse FILE to get its compatibility',
+                     '                                           info ()',
+                     '  -v  --verbose (optional)value            Set the verbose level (1)',
+                     '  -n  --no-recurse                         Do not recursively parse files when',
+                     '                                           using --dir',
+                     '  -if --ignore-files (optional)value       Data file name which contains a list',
+                     '                                           of file to ignore (files.txt)',
+                     '  -id --ignore-dirs (optional)value        Data file name which contains a list',
+                     '                                           of directory to ignore (dirs.txt)',
+                     '  -in --ignore-functions (optional)value   Data file name which contains a list',
+                     '                                           of php function to ignore',
+                     '                                           (functions.txt)',
+                     '  -ic --ignore-constants (optional)value   Data file name which contains a list',
+                     '                                           of php constant to ignore',
+                     '                                           (constants.txt)',
+                     '  -ie --ignore-extensions (optional)value  Data file name which contains a list',
+                     '                                           of php extension to ignore',
+                     '                                           (extensions.txt)',
+                     '  -iv --ignore-versions values(optional)   PHP versions - functions to exclude',
+                     '                                           when parsing source code (5.0.0)',
+                     '  -h  --help                               Show this help',
+                     '',
+                     'No valid files into directory "'. str_replace($ds, '/', $dn) . '". Please check your spelling and try again.',
+                     '');
+
+        $args   = '-d ' . $dn;
+        $this->assertPhpExec($args, $exp);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Cli::main() if file is executed directly.
