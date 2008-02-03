@@ -22,6 +22,8 @@
  *       Date Predefined Constants
  * @link http://www.php.net/features.commandline
  *       Using PHP from the command line: CLI specific Constants
+ * @link http://www.php.net/features.file-upload.errors
+ *       File Upload Error specific Constants
  */
 
 $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
@@ -199,6 +201,46 @@ $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
   array (
     'init' => '4.3.0',
     'name' => 'STDERR',
+  ),
+  'UPLOAD_ERR_OK' =>
+  array (
+    'init' => '4.3.0',
+    'name' => 'UPLOAD_ERR_OK',
+  ),
+  'UPLOAD_ERR_INI_SIZE' =>
+  array (
+    'init' => '4.3.0',
+    'name' => 'UPLOAD_ERR_INI_SIZE',
+  ),
+  'UPLOAD_ERR_FORM_SIZE' =>
+  array (
+    'init' => '4.3.0',
+    'name' => 'UPLOAD_ERR_FORM_SIZE',
+  ),
+  'UPLOAD_ERR_PARTIAL' =>
+  array (
+    'init' => '4.3.0',
+    'name' => 'UPLOAD_ERR_PARTIAL',
+  ),
+  'UPLOAD_ERR_NO_FILE' =>
+  array (
+    'init' => '4.3.0',
+    'name' => 'UPLOAD_ERR_NO_FILE',
+  ),
+  'UPLOAD_ERR_NO_TMP_DIR' =>
+  array (
+    'init' => '4.3.10',
+    'name' => 'UPLOAD_ERR_NO_TMP_DIR',
+  ),
+  'UPLOAD_ERR_CANT_WRITE' =>
+  array (
+    'init' => '5.1.0',
+    'name' => 'UPLOAD_ERR_CANT_WRITE',
+  ),
+  'UPLOAD_ERR_EXTENSION' =>
+  array (
+    'init' => '5.2.0',
+    'name' => 'UPLOAD_ERR_EXTENSION',
   ),
 );
 ?>
