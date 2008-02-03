@@ -136,7 +136,7 @@ apache_response_headers();
         $exp = array('max_version' => '',
                      'version' => '4.3.0',
                      'extensions' => array(),
-                     'constants' => array('DIRECTORY_SEPARATOR'),
+                     'constants' => array('PATH_SEPARATOR', 'DIRECTORY_SEPARATOR'),
                      '4.3.0' =>
                      array (
                        0 =>
