@@ -20,6 +20,8 @@
  *       Core Predefined Constants
  * @link http://www.php.net/manual/en/ref.datetime.php
  *       Date Predefined Constants
+ * @link http://www.php.net/features.commandline
+ *       Using PHP from the command line: CLI specific Constants
  */
 
 $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
@@ -177,6 +179,26 @@ $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
   array (
     'init' => '5.0.0',
     'name' => 'E_STRICT',
+  ),
+  'PATH_SEPARATOR' =>
+  array (
+    'init' => '4.3.0',
+    'name' => 'PATH_SEPARATOR',
+  ),
+  'STDIN' =>
+  array (
+    'init' => '4.3.0',
+    'name' => 'STDIN',
+  ),
+  'STDOUT' =>
+  array (
+    'init' => '4.3.0',
+    'name' => 'STDOUT',
+  ),
+  'STDERR' =>
+  array (
+    'init' => '4.3.0',
+    'name' => 'STDERR',
   ),
 );
 ?>
