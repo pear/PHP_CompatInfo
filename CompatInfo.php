@@ -377,15 +377,17 @@ class PHP_CompatInfo
      *
      * Load components list for a PHP version or subset
      *
-     * @param string         $min PHP minimal version
-     * @param string|boolean $max (optional) PHP maximal version
+     * @param string         $min           PHP minimal version
+     * @param string|boolean $max           (optional) PHP maximal version
+     * @param boolean        $include_const (optional) include constants list
+     *                                                 in final result
      *
-     * @return array            An array of php function names to ignore
+     * @return array         An array of php function/constant names to ignore
      * @access public
      * @static
      * @since  version 1.2.0 (2006-08-23)
      */
-    function loadVersion($min, $max = false)
+    function loadVersion($min, $max = false, $include_const = false)
     {
         $keys = array();
         foreach ($GLOBALS['_PHP_COMPATINFO_FUNCS'] as $func => $arr) {
@@ -403,6 +405,24 @@ class PHP_CompatInfo
                 }
             } else {
                 $keys[] = $func;
+            }
+        }
+
+        if ($include_const === true) {
+            $keys = array('functions' => $keys, 'constants' => array());
+            foreach ($GLOBALS['_PHP_COMPATINFO_CONST'] as $const => $arr) {
+                if (version_compare($arr['init'], $min) < 0) {
+                    continue;
+                }
+                if ($max) {
+                    $end = (isset($arr['end'])) ? $arr['end'] : $arr['init'];
+
+                    if (version_compare($end, $max) < 1) {
+                        $keys['constants'][] = $arr['name'];
+                    }
+                } else {
+                    $keys['constants'][] = $arr['name'];
+                }
             }
         }
         return $keys;
