@@ -849,6 +849,60 @@ php_check_syntax('somefile.php');
                      'xmlreader::setschema');
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests loading function+constant list for a single PHP version
+     *
+     * What's new with version 4.3.10 : 0 functions and 2 new constants
+     *
+     * @return void
+     */
+    public function testLoadVersionRangeWithConstant()
+    {
+        $r   = $this->pci->loadVersion('4.3.10', '4.3.10', true);
+        $exp = array('functions' => array(),
+                     'constants' => array('PHP_EOL',
+                                          'UPLOAD_ERR_NO_TMP_DIR'));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests loading function+constant list for a PHP version range
+     *
+     * What's new with since version 5.2.1 : 24 new functions and 0 constant
+     *
+     * @return void
+     */
+    public function testLoadVersionWithConstant()
+    {
+        $r   = $this->pci->loadVersion('5.2.1', false, true);
+        $exp = array('functions' => array('cachingiterator::count',
+                                          'directoryiterator::getbasename',
+                                          'imagegrabscreen',
+                                          'imagegrabwindow',
+                                          'ming_setswfcompression',
+                                          'mysql_set_charset',
+                                          'openssl_pkcs12_export',
+                                          'openssl_pkcs12_export_to_file',
+                                          'openssl_pkcs12_read',
+                                          'php_ini_loaded_file',
+                                          'reflectionextension::info',
+                                          'regexiterator::setpregflags',
+                                          'splfileinfo::getbasename',
+                                          'splfileinfo::getlinktarget',
+                                          'splfileinfo::getrealpath',
+                                          'splobjectstorage::serialize',
+                                          'splobjectstorage::unserialize',
+                                          'stream_is_local',
+                                          'stream_socket_shutdown',
+                                          'swfmovie::namedanchor',
+                                          'swfmovie::protect',
+                                          'swfmovie::remove',
+                                          'sys_get_temp_dir',
+                                          'tidynode::getparent'),
+                     'constants' => array());
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
