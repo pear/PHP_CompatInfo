@@ -495,6 +495,24 @@ class PHP_CompatInfo
                 }
             }
             if (is_array($tokens[$i])
+                && (token_name($tokens[$i][0]) == 'T_VARIABLE')
+                && (is_array($tokens[$i+1]))
+                && (token_name($tokens[$i+1][0]) == 'T_OBJECT_OPERATOR')
+                && (token_name($tokens[$i+2][0]) == 'T_STRING')
+                && (is_array($tokens[$i+3]) === false)
+                && ($tokens[$i+3] == '(')) {
+
+                $i += 3;
+                $php5_method_chaining = false;
+                while ((!is_array($tokens[$i]) && $tokens[$i] == ';') === false) {
+                    $i += 1;
+                    if (is_array($tokens[$i]) === false && $tokens[$i] == ')'
+                        && (is_array($tokens[$i+1]) && token_name($tokens[$i+1][0]) == 'T_OBJECT_OPERATOR')) {
+                        $php5_method_chaining = true;
+                    }
+                }
+            }
+            if (is_array($tokens[$i])
                 && (token_name($tokens[$i][0]) == 'T_STRING')
                 && (isset($tokens[$i + 1]))
                 && ($tokens[$i + 1][0] == '(')) {
@@ -621,6 +639,12 @@ class PHP_CompatInfo
             if (!in_array($const['name'], $constant_names)) {
                 $constant_names[] = $const['name'];
             }
+        }
+
+        if ($php5_method_chaining === true
+            && version_compare($latest_version, '5.0.0') < 0) {
+            // when PHP Method chaining is detected, only available for PHP 5
+            $latest_version = '5.0.0';
         }
 
         ksort($functions_version);
