@@ -499,6 +499,7 @@ class PHP_CompatInfo
                 && (token_name($tokens[$i][0]) == 'T_VARIABLE')
                 && (is_array($tokens[$i+1]))
                 && (token_name($tokens[$i+1][0]) == 'T_OBJECT_OPERATOR')
+                && (is_array($tokens[$i+2]))
                 && (token_name($tokens[$i+2][0]) == 'T_STRING')
                 && (is_array($tokens[$i+3]) === false)
                 && ($tokens[$i+3] == '(')) {
