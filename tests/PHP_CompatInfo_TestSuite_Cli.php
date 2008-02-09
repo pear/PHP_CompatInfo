@@ -166,6 +166,8 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
                      '                                           info ()',
                      '  -f  --file (optional)value               Parse FILE to get its compatibility',
                      '                                           info ()',
+                     '  -s  --string (optional)value             Parse STRING to get its compatibility',
+                     '                                           info ()',
                      '  -v  --verbose (optional)value            Set the verbose level (1)',
                      '  -n  --no-recurse                         Do not recursively parse files when',
                      '                                           using --dir',
@@ -214,6 +216,25 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
 
         chdir(dirname(__FILE__));
         $args   = '-f checkMax.php';
+        $this->assertPhpExec($args, $exp);
+    }
+
+    /**
+     * Parsing string with -s | --string parameter
+     *
+     * @return void
+     */
+    public function testParseString()
+    {
+        $exp = array('+---------+------------+------------------+',
+                     '| Version | Extensions | Constants/Tokens |',
+                     '+---------+------------+------------------+',
+                     '| 5.1.1   |            | DATE_RSS         |',
+                     '+---------+------------+------------------+');
+
+        $str = "\"echo DATE_RSS;\"";
+
+        $args = '-s ' . $str;
         $this->assertPhpExec($args, $exp);
     }
 }
