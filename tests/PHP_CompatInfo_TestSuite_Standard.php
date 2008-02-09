@@ -906,15 +906,36 @@ php_check_syntax('somefile.php');
 
     /**
      * Tests the PHP Method chaining feature introduced with PHP5
+     * Sample #1
      *
      * @link http://cowburn.info/php/php5-method-chaining/
      * @return void
      */
-    public function testPHP5MethodChaining()
+    public function testPHP5MethodChainingSamp1()
     {
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseFile' .
                $ds . 'php5_method_chaining.php';
+
+        $r   = $this->pci->parseFile($fn);
+        $exp = array('max_version' => '',
+                     'version' => '5.0.0',
+                     'extensions' => array(),
+                     'constants' => array());
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests the PHP Method chaining feature introduced with PHP5.
+     * Sample #2
+     *
+     * @return void
+     */
+    public function testPHP5MethodChainingSamp2()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' .
+               $ds . 'php5_method_chaining_samp2.php';
 
         $r   = $this->pci->parseFile($fn);
         $exp = array('max_version' => '',
