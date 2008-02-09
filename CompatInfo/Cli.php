@@ -63,6 +63,12 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     var $error;
 
     /**
+     * @var    string   String to be Processed
+     * @since  1.6.0
+     */
+    var $string;
+
+    /**
      * @var    string   File to be Processed
      * @since  0.8.0
      */
@@ -123,6 +129,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             'file' =>
                 array('short' => 'f',
                       'desc' => 'Parse FILE to get its compatibility info',
+                      'default' => '',
+                      'min'   => 0 , 'max' => 1),
+            'string' =>
+                array('short' => 's',
+                      'desc' => 'Parse STRING to get its compatibility info',
                       'default' => '',
                       'min'   => 0 , 'max' => 1),
             'verbose' =>
@@ -225,6 +236,18 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             }
         }
 
+        // string
+        if ($this->args->isDefined('s')) {
+            $s = $this->args->getValue('s');
+            if (!empty($s)) {
+                $this->string = sprintf("<?php %s ?>", $s);
+            } else {
+                $this->error = 'Failed opening string "' . $s
+                     . '". Please check your spelling and try again.';
+                return;
+            }
+        }
+
         // ignore-files
         $if = $this->args->getValue('if');
         if (isset($if)) {
@@ -305,9 +328,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         }
 
         // file or directory options are minimum required to work
-        if (!$this->args->isDefined('f') && !$this->args->isDefined('d')) {
+        if (!$this->args->isDefined('f')
+            && !$this->args->isDefined('d')
+            && !$this->args->isDefined('s')) {
             $this->error = 'ERROR: You must supply at least '
-                . 'one file or directory to process';
+                . 'one string, file or directory to process';
         }
     }
 
@@ -342,6 +367,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 $this->_parseDir();
             } elseif (isset($this->file)) {
                 $this->_parseFile();
+            } elseif (isset($this->string)) {
+                $this->_parseString();
             }
         }
     }
@@ -513,6 +540,107 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             if (is_array($opts)) {
                 foreach ($opts as $key => $raw) {
                     if ($key == 'debug' || $key == 'recurse_dir') {
+                        $raw = ($raw === true) ? 'TRUE' : 'FALSE';
+                    }
+                    if (is_array($raw)) {
+                        $raw = implode("\r\n", $raw);
+                    }
+                    $contents = array($key, $raw);
+                    $table->addRow($contents);
+                }
+            }
+
+            $output .= $table->getTable();
+        }
+
+        // extra information
+        if ($v & 4) {
+            $output .= "\nDebug:\n\n";
+
+            $table = new Console_Table();
+            $table->setHeaders(array('Version', 'Function', 'Extension', 'PECL'));
+
+            unset($info['max_version']);
+            unset($info['version']);
+            unset($info['constants']);
+            unset($info['extensions']);
+
+            foreach ($info as $version => $functions) {
+                foreach ($functions as $func) {
+                    $table->addRow(array($version,
+                        $func['function'], $func['extension'],
+                        (isset($func['pecl']) ?
+                        (($func['pecl'] === true) ? 'yes' : 'no') : '')));
+                }
+            }
+
+            $output .= $table->getTable();
+        }
+
+        echo $output;
+    }
+
+    /**
+     * Parse String Input
+     *
+     * @return void
+     * @access private
+     * @since  1.6.0
+     */
+    function _parseString()
+    {
+        $info = $this->parseString($this->string, $this->options);
+        if ($info === false) {
+            $err = 'Failed opening string "' . $this->string
+               . '". Please check your spelling and try again.';
+            $this->_printUsage($err);
+            return;
+        }
+        $table = new Console_Table();
+        $table->setHeaders(array('Version', 'Extensions', 'Constants/Tokens'));
+
+        $ext   = implode("\r\n", $info['extensions']);
+        $const = implode("\r\n", $info['constants']);
+
+        $table->addRow(array($info['version'], $ext, $const));
+
+        $output = $table->getTable();
+
+        // verbose level
+        $v = $this->args->getValue('v');
+
+        // command line resume
+        if ($v & 1) {
+            $output .= "\nCommand Line resume :\n\n";
+
+            $table = new Console_Table();
+            $table->setHeaders(array('Option', 'Value'));
+
+            $opts = $this->args->getValues();
+            if (is_array($opts)) {
+                foreach ($opts as $key => $raw) {
+                    if (is_array($raw)) {
+                        $raw = implode(', ', $raw);
+                    }
+                    $contents = array($key, $raw);
+                    $table->addRow($contents);
+                }
+            }
+
+            $output .= $table->getTable();
+        }
+
+        // parser options resume
+        if ($v & 2) {
+            $output .= "\nParser options :\n\n";
+
+            $table = new Console_Table();
+            $table->setHeaders(array('Option', 'Value'));
+
+            $opts = $this->options;
+            if (is_array($opts)) {
+                foreach ($opts as $key => $raw) {
+                    if ($key == 'debug') {
                         $raw = ($raw === true) ? 'TRUE' : 'FALSE';
                     }
                     if (is_array($raw)) {
