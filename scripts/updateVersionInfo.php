@@ -228,10 +228,10 @@ foreach ($funcs as $key => $function) {
     }
 
     if (array_key_exists('ext', $function) === false) {
-        $funcs[$key]['ext']  = 'ext_standard';
+        $funcs[$key]['ext'] = 'ext_standard';
     }
     if (array_key_exists('pecl', $function) === false) {
-        $funcs[$key]['pecl']  = false;
+        $funcs[$key]['pecl'] = false;
     }
 }
 
