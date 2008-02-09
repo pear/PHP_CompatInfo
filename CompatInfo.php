@@ -494,6 +494,7 @@ class PHP_CompatInfo
                     $udf[]      = $tokens[$i][1];
                 }
             }
+            // Try to detect PHP method chaining implementation
             if (is_array($tokens[$i])
                 && (token_name($tokens[$i][0]) == 'T_VARIABLE')
                 && (is_array($tokens[$i+1]))
@@ -506,7 +507,8 @@ class PHP_CompatInfo
                 $php5_method_chaining = false;
                 while ((!is_array($tokens[$i]) && $tokens[$i] == ';') === false) {
                     $i += 1;
-                    if (is_array($tokens[$i]) === false && $tokens[$i] == ')'
+                    if (((is_array($tokens[$i]) === false && $tokens[$i] == ')')
+                        || (is_array($tokens[$i]) && token_name($tokens[$i][0]) == 'T_WHITESPACE'))
                         && (is_array($tokens[$i+1]) && token_name($tokens[$i+1][0]) == 'T_OBJECT_OPERATOR')) {
                         $php5_method_chaining = true;
                     }
