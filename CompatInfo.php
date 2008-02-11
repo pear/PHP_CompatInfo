@@ -504,13 +504,15 @@ class PHP_CompatInfo
                 && (is_array($tokens[$i+3]) === false)
                 && ($tokens[$i+3] == '(')) {
 
-                $i += 3;
+                $i                   += 3;
                 $php5_method_chaining = false;
                 while ((!is_array($tokens[$i]) && $tokens[$i] == ';') === false) {
                     $i += 1;
                     if (((is_array($tokens[$i]) === false && $tokens[$i] == ')')
-                        || (is_array($tokens[$i]) && token_name($tokens[$i][0]) == 'T_WHITESPACE'))
-                        && (is_array($tokens[$i+1]) && token_name($tokens[$i+1][0]) == 'T_OBJECT_OPERATOR')) {
+                        || (is_array($tokens[$i])
+                        && token_name($tokens[$i][0]) == 'T_WHITESPACE'))
+                        && is_array($tokens[$i+1])
+                        && token_name($tokens[$i+1][0]) == 'T_OBJECT_OPERATOR') {
                         $php5_method_chaining = true;
                     }
                 }
