@@ -81,18 +81,6 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     var $dir;
 
     /**
-     * @var    int      filename column size (max length)
-     * @since  1.3.1
-     */
-    var $split;
-
-    /**
-     * @var    string   string to indicate that filename continue on next line
-     * @since  1.3.1
-     */
-    var $glue;
-
-    /**
      * @var    object   Console_Getargs instance
      * @since  1.4.0
      */
@@ -108,18 +96,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     /**
      * ZE2 Constructor
      *
-     * @param int    $split Limit where to split filename before glue char
-     *                      Default is 32 char.
-     * @param string $glue  Char. to indicate a filename split.
-     *                      Default is (+)
-     *
      * @since  0.8.0
      */
-    function __construct($split = null, $glue = null)
+    function __construct()
     {
-        $this->split = (isset($split) && is_int($split)) ? $split : 32;
-        $this->glue  = (isset($glue) && is_string($glue)) ? $glue : '(+)';
-
         $this->opts = array(
             'dir' =>
                 array('short' => 'd',
@@ -185,6 +165,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 array('short' => 'h',
                       'desc'  => 'Show this help',
                       'max'   => 0),
+            'report' =>
+                array('short' => 'r',
+                      'desc' => 'Print either "xml" or "cli" report',
+                      'default' => 'cli',
+                      'min'   => 0 , 'max' => 1),
         );
         $this->args = & Console_Getargs::factory($this->opts);
         if (PEAR::isError($this->args)) {
@@ -339,16 +324,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     /**
      * ZE1 PHP4 Compatible Constructor
      *
-     * @param int    $split Limit where to split filename before glue char
-     *                      Default is 32 char.
-     * @param string $glue  Char. to indicate a filename split.
-     *                      Default is (+)
-     *
      * @since  0.8.0
      */
-    function PHP_CompatInfo_Cli($split = null, $glue = null)
+    function PHP_CompatInfo_Cli()
     {
-        $this->__construct($split, $glue);
+        $this->__construct();
     }
 
     /**
@@ -389,6 +369,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $this->_printUsage($err);
             return;
         }
+        if ($this->args->isDefined('r')) {
+            $r = $this->args->getValue('r');
+            if ($r == 'xml') {
+                $this->_printXMLReport($info);
+                return;
+            }
+        }
+
         $table = new Console_Table();
         $table->setHeaders(array(
             'Path', 'Version', 'Extensions', 'Constants/Tokens'));
@@ -492,6 +480,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $this->_printUsage($err);
             return;
         }
+        if ($this->args->isDefined('r')) {
+            $r = $this->args->getValue('r');
+            if ($r == 'xml') {
+                $this->_printXMLReport($info);
+                return;
+            }
+        }
+
         $table = new Console_Table();
         $table->setHeaders(array(
             'File', 'Version', 'Extensions', 'Constants/Tokens'));
@@ -692,29 +688,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _splitFilename($data)
     {
-        $str = '';
-        if (strlen($data) > 0) {
-            $sep     = DIRECTORY_SEPARATOR;
-            $base    = basename($data);
-            $padding = $this->split - strlen($this->glue);
-
-            if (isset($this->dir)) {
-                $dir = str_replace(array('\\', '/'), $sep, $this->dir);
-            } else {
-                $dir = str_replace(array('\\', '/'), $sep, dirname($data));
-            }
-            $str = str_replace($dir, '[...]', dirname($data)) . $sep;
-
-            if (strlen($str) + strlen($base) > $this->split) {
-                $str = str_pad($str, $padding) . $this->glue . "\r\n";
-                if (strlen($base) > $this->split) {
-                    $str .= '[*]' . substr($base, (3 - $this->split));
-                } else {
-                    $str .= substr($base, -1 * $padding);
-                }
-            } else {
-                $str .= $base;
-            }
+        if (strlen($data) <= 27) {
+            $str = $data;
+        } else {
+            $str = '...'.substr($data, (strlen($data) - 27));
         }
         return $str;
     }
@@ -734,6 +711,109 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             . basename($_SERVER['SCRIPT_NAME']) . " [options]\n\n";
         echo Console_Getargs::getHelp($this->opts, $header,
             "\n$footer\n", 78, 2)."\n";
+    }
+
+    /**
+     * Show full help information
+     *
+     * @param array $info File or directory parsing data
+     *
+     * @return void
+     * @access private
+     * @since  1.6.0
+     */
+    function _printXMLReport($info)
+    {
+        include_once 'XML/Util.php';
+
+        echo XML_Util::getXMLDeclaration("1.0", "UTF-8");
+        echo PHP_EOL;
+
+        if (isset($this->dir)) {
+            unset($info['max_version']);
+            unset($info['version']);
+            unset($info['extensions']);
+            unset($info['constants']);
+            unset($info['ignored_files']);
+        } else {
+            $info = array($this->file => $info);
+        }
+
+        foreach ($info as $file => $info) {
+
+            echo XML_Util::createStartElement('file', array('name' => $file));
+            echo PHP_EOL;
+
+            $tag = array('qname' => 'version',
+                         'content' => $info['version']);
+            echo XML_Util::createTagFromArray($tag);
+            echo PHP_EOL;
+
+            $c = count($info['extensions']);
+            if ($c > 0) {
+                $tag = array('qname' => 'extension',
+                             'attributes' => array('count' => $c),
+                             'content' => implode(', ', $info['extensions']));
+                echo XML_Util::createTagFromArray($tag);
+                echo PHP_EOL;
+            }
+            $c = count($info['constants']);
+            if ($c > 0) {
+                $constants = $tokens = array();
+                foreach ($info['constants'] as $tok) {
+                    if ($tok == strtolower($tok)) {
+                        $tokens[] = $tok;
+                    } else {
+                        $constants[] = $tok;
+                    }
+                }
+                $c = count($tokens);
+                if ($c > 0) {
+                    $tag = array('qname' => 'token',
+                                 'attributes' => array('count' => $c),
+                                 'content' => implode(', ', $tokens));
+                    echo XML_Util::createTagFromArray($tag);
+                    echo PHP_EOL;
+                }
+                $c = count($constants);
+                if ($c > 0) {
+                    $tag = array('qname' => 'constant',
+                                 'attributes' => array('count' => $c),
+                                 'content' => implode(', ', $constants));
+                    echo XML_Util::createTagFromArray($tag);
+                    echo PHP_EOL;
+                }
+            }
+
+            // verbose level
+            $v = $this->args->getValue('v');
+
+            // extra information
+            if ($v & 4) {
+                unset($info['max_version']);
+                unset($info['version']);
+                unset($info['constants']);
+                unset($info['extensions']);
+
+                foreach ($info as $version => $functions) {
+                    foreach ($functions as $func) {
+                        $attr = array('version' => $version);
+                        if (!empty($func['extension'])) {
+                            $attr['extension'] = $func['extension'];
+                            $attr['pecl']      = $func['pecl'] === true ?
+                                                    'true' : 'false';
+                        }
+                        $tag = array('qname' => 'function',
+                                     'attributes' => $attr,
+                                     'content' => $func['function']);
+                        echo XML_Util::createTagFromArray($tag);
+                        echo PHP_EOL;
+                    }
+                }
+            }
+            echo XML_Util::createEndElement('file');
+            echo PHP_EOL;
+        }
     }
 }
 ?>
