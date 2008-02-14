@@ -109,11 +109,11 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      */
     public function testBug3657()
     {
-        $exp = array('+---------------------------+---------+------------+------------------+',
-                     '| File                      | Version | Extensions | Constants/Tokens |',
-                     '+---------------------------+---------+------------+------------------+',
-                     '| [...]\phpweb-entities.php | 4.0.0   |            | __FILE__         |',
-                     '+---------------------------+---------+------------+------------------+');
+        $exp = array('+--------------------------------+---------+------------+------------------+',
+                     '| File                           | Version | Extensions | Constants/Tokens |',
+                     '+--------------------------------+---------+------------+------------------+',
+                     '| ...rseFile\phpweb-entities.php | 4.0.0   |            | __FILE__         |',
+                     '+--------------------------------+---------+------------+------------------+');
 
         $ds = DIRECTORY_SEPARATOR;
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'phpweb-entities.php';
@@ -131,12 +131,12 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      */
     public function testBug6581()
     {
-        $exp = array('+----------------+---------+------------+------------------+',
-                     '| File           | Version | Extensions | Constants/Tokens |',
-                     '+----------------+---------+------------+------------------+',
-                     '| [...]\math.php | 4.0.0   | bcmath     |                  |',
-                     '|                |         | pcre       |                  |',
-                     '+----------------+---------+------------+------------------+');
+        $exp = array('+--------------------------------+---------+------------+------------------+',
+                     '| File                           | Version | Extensions | Constants/Tokens |',
+                     '+--------------------------------+---------+------------+------------------+',
+                     '| ...fo\tests\parseFile\math.php | 4.0.0   | bcmath     |                  |',
+                     '|                                |         | pcre       |                  |',
+                     '+--------------------------------+---------+------------+------------------+');
 
         $ds = DIRECTORY_SEPARATOR;
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'math.php';
@@ -187,6 +187,8 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
                      '  -iv --ignore-versions values(optional)   PHP versions - functions to exclude',
                      '                                           when parsing source code (5.0.0)',
                      '  -h  --help                               Show this help',
+                     '  -r  --report (optional)value             Print either "xml" or "cli" report',
+                     '                                           (cli)',
                      '',
                      'No valid files into directory "'. str_replace($ds, '/', $dn) . '". Please check your spelling and try again.',
                      '');
@@ -207,12 +209,12 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      */
     public function testBug12350()
     {
-        $exp = array('+--------------------+---------+------------+---------------------+',
-                     '| File               | Version | Extensions | Constants/Tokens    |',
-                     '+--------------------+---------+------------+---------------------+',
-                     '| [...]\checkMax.php | 4.0.7   |            | __FILE__            |',
-                     '|                    |         |            | DIRECTORY_SEPARATOR |',
-                     '+--------------------+---------+------------+---------------------+');
+        $exp = array('+--------------+---------+------------+---------------------+',
+                     '| File         | Version | Extensions | Constants/Tokens    |',
+                     '+--------------+---------+------------+---------------------+',
+                     '| checkMax.php | 4.0.7   |            | __FILE__            |',
+                     '|              |         |            | DIRECTORY_SEPARATOR |',
+                     '+--------------+---------+------------+---------------------+');
 
         chdir(dirname(__FILE__));
         $args   = '-f checkMax.php';
