@@ -209,12 +209,12 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      */
     public function testBug12350()
     {
-        $exp = array('+--------------+---------+------------+---------------------+',
-                     '| File         | Version | Extensions | Constants/Tokens    |',
-                     '+--------------+---------+------------+---------------------+',
-                     '| checkMax.php | 4.0.7   |            | __FILE__            |',
-                     '|              |         |            | DIRECTORY_SEPARATOR |',
-                     '+--------------+---------+------------+---------------------+');
+        $exp = array('+-----------------------------+---------+------------+---------------------+',
+                     '| File                        | Version | Extensions | Constants/Tokens    |',
+                     '+-----------------------------+---------+------------+---------------------+',
+                     '| checkMax.php                | 4.0.7   |            | __FILE__            |',
+                     '|                             |         |            | DIRECTORY_SEPARATOR |',
+                     '+-----------------------------+---------+------------+---------------------+');
 
         chdir(dirname(__FILE__));
         $args   = '-f checkMax.php';
