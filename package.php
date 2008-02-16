@@ -50,35 +50,17 @@ $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
 $p2->addInstallAs('scripts/pci.php', 'pci.php');
 //$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
-$p2->setReleaseVersion('1.6.0');
+$p2->setReleaseVersion('1.6.1');
 $p2->setAPIVersion('1.6.0');
 $p2->setReleaseStability('stable');
 $p2->setAPIStability('stable');
-$p2->setNotes('* news
-- request #13094 : PHP5 method chaining
-- improve detection of PHP constants ( DATE_*, STD*, UPLOAD_ERR_*,
-  PHP_EOL, DIRECTORY_SEPARATOR, PATH_SEPARATOR, E_STRICT )
-- loadVersion() may return both function or function+constant list
-  (BC is kept: default is to return only function list $include_const = FALSE)
-- Added -s | --string parameter to CLI;
-  Allow to parse a string without using script tags <?php ... ?>
-- Added -r | --report parameter to CLI;
-  Allow to print either an "xml" or "cli" (default) report
-
-* changes
-- split and glue parameters of CLI class constructor were removed; the limit
-  to 80 columns is now fixed otherwise
-- PHP requirement is now set to 4.3.10 minimum (due to usage of PHP_EOL constant)
-
-* QA
-- User Guide (HTML version) included in previous versions was removed, since
-its now part of PEAR manual
-- API is near 95% unit tested with PHPUnit 3.x (see main suite: tests/AllTests.php)
+$p2->setNotes('* bugs
+- bug #13131 : Undefined variable: php5_method_chaining
 ');
 //$p2->setPearinstallerDep('1.5.4');
-$p2->setPhpDep('4.3.10');
-$p2->addPackageDepWithChannel('optional', 'PHPUnit', 'pear.phpunit.de', '3.2.0');
-$p2->addPackageDepWithChannel('optional', 'XML_Util', 'pear.php.net', '1.1.4');
+//$p2->setPhpDep('4.3.10');
+//$p2->addPackageDepWithChannel('optional', 'PHPUnit', 'pear.phpunit.de', '3.2.0');
+//$p2->addPackageDepWithChannel('optional', 'XML_Util', 'pear.php.net', '1.1.4');
 
 if (isset($_GET['make']) ||
     (isset($_SERVER['argv']) && @$_SERVER['argv'][1] == 'make')) {
