@@ -19,7 +19,7 @@ which shows which functions require which version and CLI output script</descrip
   <active>no</active>
  </lead>
  <date>2008-02-16</date>
- <time>11:54:11</time>
+ <time>13:41:11</time>
  <version>
   <release>1.6.0</release>
   <api>1.6.0</api>
@@ -107,17 +107,20 @@ its now part of PEAR manual
      <file name="zip.php" role="test" />
     </dir> <!-- /tests/parseFile -->
     <file name="AllTests.php" role="test" />
-    <file name="checkMax.php" role="doc" />
+    <file name="checkMax.php" role="test" />
     <file name="PHP_CompatInfo_TestSuite_Bugs.php" role="test">
      <tasks:replace from="@package_version@" to="version" type="package-info" />
     </file>
     <file name="PHP_CompatInfo_TestSuite_Cli.php" role="test">
      <tasks:replace from="@package_version@" to="version" type="package-info" />
+     <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+     <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+     <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
     </file>
     <file name="PHP_CompatInfo_TestSuite_Standard.php" role="test">
      <tasks:replace from="@package_version@" to="version" type="package-info" />
     </file>
-    <file name="sample_req6056.php" role="doc" />
+    <file name="sample_req6056.php" role="test" />
    </dir> <!-- /tests -->
    <file name="CompatInfo.php" role="php">
     <tasks:replace from="@package_version@" to="version" type="package-info" />
