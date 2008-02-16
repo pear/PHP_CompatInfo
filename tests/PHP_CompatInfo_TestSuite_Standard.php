@@ -89,8 +89,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $empty = array(0 =>
                    array (
                    0 => 311,
-                   1 => '
-',
+                   1 => "\n",
                    2 => 1));
         $this->assertSame($empty, $r);
 
@@ -98,8 +97,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $empty = array(0 =>
                    array (
                    0 => 311,
-                   1 => '
-',
+                   1 => "\n",
                    2 => 1,
                    3 => 'T_INLINE_HTML'));
         $this->assertSame($empty, $r);
