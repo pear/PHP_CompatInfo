@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.6.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.7.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>PHP_CompatInfo</name>
  <channel>pear.php.net</channel>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
@@ -18,24 +18,37 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2007-11-19</date>
- <time>17:44:47</time>
+ <date>2008-02-16</date>
+ <time>11:54:11</time>
  <version>
-  <release>1.5.1</release>
-  <api>1.5.0</api>
+  <release>1.6.0</release>
+  <api>1.6.0</api>
  </version>
  <stability>
   <release>stable</release>
   <api>stable</api>
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
- <notes>* bugs
-- #12451 : DOS CRLFs in every single file
+ <notes>* news
+- request #13094 : PHP5 method chaining
+- improve detection of PHP constants ( DATE_*, STD*, UPLOAD_ERR_*,
+  PHP_EOL, DIRECTORY_SEPARATOR, PATH_SEPARATOR, E_STRICT )
+- loadVersion() may return both function or function+constant list
+  (BC is kept: default is to return only function list $include_const = FALSE)
+- Added -s | --string parameter to CLI;
+  Allow to parse a string without using script tags &lt;?php ... ?&gt;
+- Added -r | --report parameter to CLI;
+  Allow to print either an &quot;xml&quot; or &quot;cli&quot; (default) report
+
+* changes
+- split and glue parameters of CLI class constructor were removed; the limit
+  to 80 columns is now fixed otherwise
+- PHP requirement is now set to 4.3.10 minimum (due to usage of PHP_EOL constant)
 
 * QA
-- this release include also The Definitive Guide in version 1.5.1
-that cover all versions
-  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+- User Guide (HTML version) included in previous versions was removed, since
+its now part of PEAR manual
+- API is near 95% unit tested with PHPUnit 3.x (see main suite: tests/AllTests.php)
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -60,54 +73,6 @@ that cover all versions
      <file name="parseFile.php" role="doc" />
      <file name="parseString.php" role="doc" />
     </dir> <!-- /docs/examples -->
-    <dir name="TDG">
-     <dir name="img">
-      <dir name="admons">
-       <file name="caution.png" role="doc" />
-       <file name="important.png" role="doc" />
-       <file name="note.png" role="doc" />
-       <file name="tip.png" role="doc" />
-       <file name="warning.png" role="doc" />
-      </dir> <!-- /docs/TDG/img/admons -->
-      <file name="created-with-docbook.png" role="doc" />
-      <file name="external-link.gif" role="doc" />
-      <file name="pearsmall.gif" role="doc" />
-     </dir> <!-- /docs/TDG/img -->
-     <file name="book.css" role="doc" />
-     <file name="ch01.html" role="doc" />
-     <file name="ch01s02.html" role="doc" />
-     <file name="ch01s03.html" role="doc" />
-     <file name="ch02.html" role="doc" />
-     <file name="ch02s02.html" role="doc" />
-     <file name="ch02s03.html" role="doc" />
-     <file name="ch02s04.html" role="doc" />
-     <file name="ch02s05.html" role="doc" />
-     <file name="ch02s06.html" role="doc" />
-     <file name="ch02s07.html" role="doc" />
-     <file name="ch02s08.html" role="doc" />
-     <file name="ch03.html" role="doc" />
-     <file name="ch03s02.html" role="doc" />
-     <file name="ch04.html" role="doc" />
-     <file name="ch04s02.html" role="doc" />
-     <file name="ch05.html" role="doc" />
-     <file name="ch05s02.html" role="doc" />
-     <file name="ch06.html" role="doc" />
-     <file name="ch06s02.html" role="doc" />
-     <file name="ch07.html" role="doc" />
-     <file name="ch07s02.html" role="doc" />
-     <file name="ch08.html" role="doc" />
-     <file name="index.html" role="doc" />
-     <file name="pr01.html" role="doc" />
-     <file name="pr01s02.html" role="doc" />
-     <file name="pt01.html" role="doc" />
-     <file name="pt02.html" role="doc" />
-     <file name="pt03.html" role="doc" />
-     <file name="re01.html" role="doc" />
-     <file name="re02.html" role="doc" />
-     <file name="re03.html" role="doc" />
-     <file name="re04.html" role="doc" />
-     <file name="re05.html" role="doc" />
-    </dir> <!-- /docs/TDG -->
    </dir> <!-- /docs -->
    <dir name="scripts">
     <file baseinstalldir="" name="compatinfo.bat" role="script">
@@ -121,7 +86,37 @@ that cover all versions
     </file>
    </dir> <!-- /scripts -->
    <dir name="tests">
+    <dir name="emptyDir">
+     <file name="empty_dir.txt" role="test" />
+    </dir> <!-- /tests/emptyDir -->
+    <dir name="parseDir">
+     <dir name="PHP5">
+      <file name="tokens.php5" role="test" />
+     </dir> <!-- /tests/parseDir/PHP5 -->
+     <file name="extensions.php" role="test" />
+     <file name="phpinfo.php" role="test" />
+    </dir> <!-- /tests/parseDir -->
+    <dir name="parseFile">
+     <file name="conditional.php" role="test" />
+     <file name="empty.php" role="test" />
+     <file name="math.php" role="test" />
+     <file name="PackageUpdate.php" role="test" />
+     <file name="php5_method_chaining.php" role="test" />
+     <file name="php5_method_chaining_samp2.php" role="test" />
+     <file name="phpweb-entities.php" role="test" />
+     <file name="zip.php" role="test" />
+    </dir> <!-- /tests/parseFile -->
+    <file name="AllTests.php" role="test" />
     <file name="checkMax.php" role="doc" />
+    <file name="PHP_CompatInfo_TestSuite_Bugs.php" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file name="PHP_CompatInfo_TestSuite_Cli.php" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file name="PHP_CompatInfo_TestSuite_Standard.php" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
     <file name="sample_req6056.php" role="doc" />
    </dir> <!-- /tests -->
    <file name="CompatInfo.php" role="php">
@@ -132,7 +127,7 @@ that cover all versions
  <dependencies>
   <required>
    <php>
-    <min>4.3.0</min>
+    <min>4.3.10</min>
    </php>
    <pearinstaller>
     <min>1.5.4</min>
@@ -151,6 +146,16 @@ that cover all versions
     <name>Console_GetArgs</name>
     <channel>pear.php.net</channel>
     <min>1.3.3</min>
+   </package>
+   <package>
+    <name>PHPUnit</name>
+    <channel>pear.phpunit.de</channel>
+    <min>3.2.0</min>
+   </package>
+   <package>
+    <name>XML_Util</name>
+    <channel>pear.php.net</channel>
+    <min>1.1.4</min>
    </package>
   </optional>
  </dependencies>
@@ -174,6 +179,39 @@ that cover all versions
  <changelog>
   <release>
    <version>
+    <release>1.6.0</release>
+    <api>1.6.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-02-16</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>* news
+- request #13094 : PHP5 method chaining
+- improve detection of PHP constants ( DATE_*, STD*, UPLOAD_ERR_*,
+  PHP_EOL, DIRECTORY_SEPARATOR, PATH_SEPARATOR, E_STRICT )
+- loadVersion() may return both function or function+constant list
+  (BC is kept: default is to return only function list $include_const = FALSE)
+- Added -s | --string parameter to CLI;
+  Allow to parse a string without using script tags &lt;?php ... ?&gt;
+- Added -r | --report parameter to CLI;
+  Allow to print either an &quot;xml&quot; or &quot;cli&quot; (default) report
+
+* changes
+- split and glue parameters of CLI class constructor were removed; the limit
+  to 80 columns is now fixed otherwise
+- PHP requirement is now set to 4.3.10 minimum (due to usage of PHP_EOL constant)
+
+* QA
+- User Guide (HTML version) included in previous versions was removed, since
+its now part of PEAR manual
+- API is near 95% unit tested with PHPUnit 3.x (see main suite: tests/AllTests.php)
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.5.1</release>
     <api>1.5.0</api>
    </version>
@@ -181,16 +219,15 @@ that cover all versions
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2007-11-19</date>
+   <date>2007-11-15</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
    <notes>* bugs
 - #12451 : DOS CRLFs in every single file
 
 * QA
-- this release include also The Definitive Guide in version 1.5.1
+- this release include also The Definitive Guide in version 1.5.0
 that cover all versions
-  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
-   </notes>
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.</notes>
   </release>
   <release>
    <version>
