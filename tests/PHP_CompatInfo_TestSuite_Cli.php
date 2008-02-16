@@ -112,11 +112,12 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
         $exp = array('+--------------------------------+---------+------------+------------------+',
                      '| File                           | Version | Extensions | Constants/Tokens |',
                      '+--------------------------------+---------+------------+------------------+',
-                     '| ...rseFile\phpweb-entities.php | 4.0.0   |            | __FILE__         |',
+                     '| ...rseFile{ds}phpweb-entities.php | 4.0.0   |            | __FILE__         |',
                      '+--------------------------------+---------+------------+------------------+');
 
         $ds = DIRECTORY_SEPARATOR;
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'phpweb-entities.php';
+        array_walk($exp, create_function('&$elem, $key, $ds', '$elem = str_replace("{ds}", $ds, $elem);'), $ds);
 
         $args   = '-f ' . $fn;
         $this->assertPhpExec($args, $exp);
@@ -134,12 +135,13 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
         $exp = array('+--------------------------------+---------+------------+------------------+',
                      '| File                           | Version | Extensions | Constants/Tokens |',
                      '+--------------------------------+---------+------------+------------------+',
-                     '| ...fo\tests\parseFile\math.php | 4.0.0   | bcmath     |                  |',
+                     '| ...fo{ds}tests{ds}parseFile{ds}math.php | 4.0.0   | bcmath     |                  |',
                      '|                                |         | pcre       |                  |',
                      '+--------------------------------+---------+------------+------------------+');
 
         $ds = DIRECTORY_SEPARATOR;
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'math.php';
+        array_walk($exp, create_function('&$elem, $key, $ds', '$elem = str_replace("{ds}", $ds, $elem);'), $ds);
 
         $args   = '-f ' . $fn;
         $this->assertPhpExec($args, $exp);
