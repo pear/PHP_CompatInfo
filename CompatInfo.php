@@ -646,7 +646,8 @@ class PHP_CompatInfo
             }
         }
 
-        if ($php5_method_chaining === true
+        if (isset($php5_method_chaining)
+            && $php5_method_chaining === true
             && version_compare($latest_version, '5.0.0') < 0) {
             // when PHP Method chaining is detected, only available for PHP 5
             $latest_version = '5.0.0';
