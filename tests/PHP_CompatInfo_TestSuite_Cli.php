@@ -85,6 +85,9 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      */
     private function assertPhpExec($args, $exp)
     {
+        $ds = DIRECTORY_SEPARATOR;
+        array_walk($exp, create_function('&$elem, $key, $ds', '$elem = str_replace("{ds}", $ds, $elem);'), $ds);
+
         $ps      = PATH_SEPARATOR;
         $command = '@php_bin@ '
                  . '-d include_path=.' . $ps . '@php_dir@ '
@@ -117,7 +120,6 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
 
         $ds = DIRECTORY_SEPARATOR;
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'phpweb-entities.php';
-        array_walk($exp, create_function('&$elem, $key, $ds', '$elem = str_replace("{ds}", $ds, $elem);'), $ds);
 
         $args   = '-f ' . $fn;
         $this->assertPhpExec($args, $exp);
@@ -141,7 +143,6 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
 
         $ds = DIRECTORY_SEPARATOR;
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'math.php';
-        array_walk($exp, create_function('&$elem, $key, $ds', '$elem = str_replace("{ds}", $ds, $elem);'), $ds);
 
         $args   = '-f ' . $fn;
         $this->assertPhpExec($args, $exp);
