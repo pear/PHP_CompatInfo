@@ -689,7 +689,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     function _splitFilename($data)
     {
         if (strlen($data) <= 27) {
-            $str = $data;
+            $str = str_pad($data, 27);
         } else {
             $str = '...'.substr($data, (strlen($data) - 27));
         }
