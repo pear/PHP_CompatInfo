@@ -192,8 +192,13 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
                      '  -h  --help                               Show this help',
                      '  -r  --report (optional)value             Print either "xml" or "cli" report',
                      '                                           (cli)',
+                     '  -fe --file-ext (optional)value           A comma separated list of file',
+                     '                                           extensions to parse (only valid if',
+                     '                                           parsing a directory) (php, php4, inc,',
+                     '                                           phtml)',
                      '',
-                     'No valid files into directory "'. str_replace($ds, '/', $dn) . '". Please check your spelling and try again.',
+                     'No valid files into directory "'. str_replace($ds, '/', $dn) .
+                     '". Please check your spelling and try again.',
                      '');
 
         $args   = '-d ' . $dn;
@@ -240,6 +245,60 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
         $str = "\"echo DATE_RSS;\"";
 
         $args = '-s ' . $str;
+        $this->assertPhpExec($args, $exp);
+    }
+
+    /**
+     * Regression test for request#13147
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=13147
+     *         CLI: add filter file extension option on parsing directory
+     */
+    public function testRequest13147()
+    {
+        $exp = array('+--------------------------------+---------+-------------+------------------+',
+                     '| Path                           | Version | Extensions  | Constants/Tokens |',
+                     '+--------------------------------+---------+-------------+------------------+',
+                     '| ...CompatInfo{ds}tests{ds}parseDir{ds}* | 5.0.0   | xdebug      | abstract         |',
+                     '|                                |         | gd          | protected        |',
+                     '|                                |         | sapi_apache | interface        |',
+                     '|                                |         | sapi_cgi    | public           |',
+                     '|                                |         |             | implements       |',
+                     '|                                |         |             | private          |',
+                     '|                                |         |             | clone            |',
+                     '|                                |         |             | instanceof       |',
+                     '|                                |         |             | try              |',
+                     '|                                |         |             | throw            |',
+                     '|                                |         |             | catch            |',
+                     '|                                |         |             | final            |',
+                     '+--------------------------------+---------+-------------+------------------+',
+                     '| ...sts{ds}parseDir{ds}extensions.php | 4.3.2   | xdebug      |                  |',
+                     '|                                |         | gd          |                  |',
+                     '|                                |         | sapi_apache |                  |',
+                     '|                                |         | sapi_cgi    |                  |',
+                     '+--------------------------------+---------+-------------+------------------+',
+                     '| ...s{ds}parseDir{ds}PHP5{ds}tokens.php5 | 5.0.0   |             | abstract         |',
+                     '|                                |         |             | protected        |',
+                     '|                                |         |             | interface        |',
+                     '|                                |         |             | public           |',
+                     '|                                |         |             | implements       |',
+                     '|                                |         |             | private          |',
+                     '|                                |         |             | clone            |',
+                     '|                                |         |             | instanceof       |',
+                     '|                                |         |             | try              |',
+                     '|                                |         |             | throw            |',
+                     '|                                |         |             | catch            |',
+                     '|                                |         |             | final            |',
+                     '+--------------------------------+---------+-------------+------------------+',
+                     '| ...{ds}tests{ds}parseDir{ds}phpinfo.php | 4.0.0   |             |                  |',
+                     '+--------------------------------+---------+-------------+------------------+');
+
+        $ds = DIRECTORY_SEPARATOR;
+        $dn = dirname(__FILE__) . $ds . 'parseDir';
+        $fe = 'php,php5';
+
+        $args   = '-fe '. $fe . ' -d '. $dn;
         $this->assertPhpExec($args, $exp);
     }
 }
