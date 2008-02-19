@@ -170,6 +170,12 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                       'desc' => 'Print either "xml" or "cli" report',
                       'default' => 'cli',
                       'min'   => 0 , 'max' => 1),
+            'file-ext' =>
+                array('short'   => 'fe',
+                      'desc'    => 'A comma separated list of file extensions '
+                                 . 'to parse (only valid if parsing a directory)',
+                      'default' => 'php, php4, inc, phtml',
+                      'min'     => 0 , 'max' => 1),
         );
         $this->args = & Console_Getargs::factory($this->opts);
         if (PEAR::isError($this->args)) {
@@ -310,6 +316,18 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 $iv = array($iv);
             }
             $this->options['ignore_versions'] = $iv;
+        }
+
+        // file-ext
+        if ($this->args->isDefined('d') && $this->args->isDefined('fe')) {
+            $fe = $this->args->getValue('fe');
+            if (is_string($fe)) {
+                $this->options['file_ext'] = explode(',', $fe);
+            } else {
+                $this->error = 'No valid file extensions provided "'
+                     . '". Please check your spelling and try again.';
+                return;
+            }
         }
 
         // file or directory options are minimum required to work
@@ -739,6 +757,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $info = array($this->file => $info);
         }
 
+        echo XML_Util::createStartElement('pci', array('version' => '@package_version@'));
+        echo PHP_EOL;
+
         foreach ($info as $file => $info) {
 
             echo XML_Util::createStartElement('file', array('name' => $file));
@@ -814,6 +835,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             echo XML_Util::createEndElement('file');
             echo PHP_EOL;
         }
+        echo XML_Util::createEndElement('pci');
+        echo PHP_EOL;
     }
 }
 ?>
