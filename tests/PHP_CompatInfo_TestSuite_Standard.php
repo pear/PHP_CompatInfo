@@ -19,6 +19,7 @@ if (!defined("PHPUnit_MAIN_METHOD")) {
 require_once "PHPUnit/Framework/TestCase.php";
 require_once "PHPUnit/Framework/TestSuite.php";
 
+require_once 'PEAR.php';
 require_once 'PHP/CompatInfo.php';
 
 /**
@@ -420,16 +421,16 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'extensions' => array('xdebug', 'gd',
                                            'sapi_apache', 'sapi_cgi'),
                      'constants' => array(),
-                     $dir . $ds . 'phpinfo.php' =>
-                         array('max_version' => '',
-                               'version' => '4.0.0',
-                               'extensions' => array(),
-                               'constants' => array()),
                      $dir . $ds . 'extensions.php' =>
                          array('max_version' => '',
                                'version' => '4.3.2',
                                'extensions' => array('xdebug', 'gd',
                                                      'sapi_apache', 'sapi_cgi'),
+                               'constants' => array()),
+                     $dir . $ds . 'phpinfo.php' =>
+                         array('max_version' => '',
+                               'version' => '4.0.0',
+                               'extensions' => array(),
                                'constants' => array()));
         $this->assertSame($exp, $r);
     }
@@ -465,10 +466,11 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           9 => 'throw',
                                           10 => 'catch',
                                           11 => 'final'),
-                     $dir . 'phpinfo.php' =>
+                     $dir . 'extensions.php' =>
                          array('max_version' => '',
-                               'version' => '4.0.0',
-                               'extensions' => array(),
+                               'version' => '4.3.2',
+                               'extensions' => array('xdebug', 'gd',
+                                                     'sapi_apache', 'sapi_cgi'),
                                'constants' => array()),
                      $dir . 'PHP5' . $ds . 'tokens.php5' =>
                          array('max_version' => '',
@@ -486,11 +488,10 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                                     9 => 'throw',
                                                     10 => 'catch',
                                                     11 => 'final')),
-                     $dir . 'extensions.php' =>
+                     $dir . 'phpinfo.php' =>
                          array('max_version' => '',
-                               'version' => '4.3.2',
-                               'extensions' => array('xdebug', 'gd',
-                                                     'sapi_apache', 'sapi_cgi'),
+                               'version' => '4.0.0',
+                               'extensions' => array(),
                                'constants' => array()));
         $this->assertSame($exp, $r);
     }

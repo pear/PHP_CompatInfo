@@ -245,13 +245,13 @@ class PHP_CompatInfo
             return false;
         }
 
-        $files_parsed['constants']     = $constants;
-        $files_parsed['extensions']    = $extensions;
-        $files_parsed['version']       = $latest_version;
-        $files_parsed['max_version']   = $earliest_version;
-        $files_parsed['ignored_files'] = $ignored;
+        $main_info = array('ignored_files' => $ignored,
+                           'max_version'   => $earliest_version,
+                           'version'       => $latest_version,
+                           'extensions'    => $extensions,
+                           'constants'     => $constants);
 
-        $files_parsed = array_reverse($files_parsed);
+        $files_parsed = array_merge($main_info, $files_parsed);
         return $files_parsed;
     }
 
@@ -655,12 +655,12 @@ class PHP_CompatInfo
 
         ksort($functions_version);
 
-        $functions_version['constants']   = $constant_names;
-        $functions_version['extensions']  = $extensions;
-        $functions_version['version']     = $latest_version;
-        $functions_version['max_version'] = $earliest_version;
+        $main_info = array('max_version' => $earliest_version,
+                           'version'     => $latest_version,
+                           'extensions'  => $extensions,
+                           'constants'   => $constant_names);
 
-        $functions_version = array_reverse($functions_version);
+        $functions_version = array_merge($main_info, $functions_version);
         return $functions_version;
     }
 

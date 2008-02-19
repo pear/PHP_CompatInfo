@@ -137,30 +137,6 @@ apache_response_headers();
                      'version' => '4.3.0',
                      'extensions' => array(),
                      'constants' => array('PATH_SEPARATOR', 'DIRECTORY_SEPARATOR'),
-                     '4.3.0' =>
-                     array (
-                       0 =>
-                       array (
-                         'function' => 'get_include_path',
-                         'extension' => false,
-                         'pecl' => false,
-                       ),
-                       1 =>
-                       array (
-                         'function' => 'file_get_contents',
-                         'extension' => false,
-                         'pecl' => false
-                       )
-                     ),
-                     '4.0.7' =>
-                     array (
-                       0 =>
-                       array (
-                         'function' => 'version_compare',
-                         'extension' => false,
-                         'pecl' => false
-                       )
-                     ),
                      '4.0.0' =>
                      array (
                        0 =>
@@ -286,6 +262,30 @@ apache_response_headers();
                        20 =>
                        array (
                          'function' => 'array_shift',
+                         'extension' => false,
+                         'pecl' => false
+                       )
+                     ),
+                     '4.0.7' =>
+                     array (
+                       0 =>
+                       array (
+                         'function' => 'version_compare',
+                         'extension' => false,
+                         'pecl' => false
+                       )
+                     ),
+                     '4.3.0' =>
+                     array (
+                       0 =>
+                       array (
+                         'function' => 'get_include_path',
+                         'extension' => false,
+                         'pecl' => false,
+                       ),
+                       1 =>
+                       array (
+                         'function' => 'file_get_contents',
                          'extension' => false,
                          'pecl' => false
                        )
