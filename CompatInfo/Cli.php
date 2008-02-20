@@ -427,7 +427,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 continue;  // skip this (invalid) file
             }
             $ext   = implode("\r\n", $info['extensions']);
-            $const = implode("\r\n", $info['constants']);
+            $const = implode("\r\n", array_merge($info['constants'], $info['tokens']));
 
             $file = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $file);
             $table->addSeparator();
