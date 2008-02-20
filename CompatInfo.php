@@ -316,6 +316,8 @@ class PHP_CompatInfo
         $earliest_version = $this->earliest_version;
         $extensions       = array();
         $constants        = array();
+        $ignored          = array();
+        $tokens           = array();
 
         $options = array_merge(array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
@@ -330,15 +332,15 @@ class PHP_CompatInfo
                 $pathinfo = pathinfo($file);
                 if (!in_array(strtolower($file), $options['ignore_files'])
                     && in_array($pathinfo['extension'], $options['file_ext'])) {
-                    $tokens = $this->_tokenize($file, $options['is_string']);
+                    $tokens_list = $this->_tokenize($file, $options['is_string']);
                     $files_parsed[$file]
-                            = $this->_parseTokens($tokens, $options);
+                            = $this->_parseTokens($tokens_list, $options);
                 } else {
                     $ignored[] = $file;
                 }
             } else {
-                $tokens         = $this->_tokenize($file, $options['is_string']);
-                $files_parsed[] = $this->_parseTokens($tokens, $options);
+                $token_list     = $this->_tokenize($file, $options['is_string']);
+                $files_parsed[] = $this->_parseTokens($token_list, $options);
             }
         }
 
@@ -363,19 +365,25 @@ class PHP_CompatInfo
                     $constants[] = $const;
                 }
             }
+            foreach ($file['tokens'] as $token) {
+                if (!in_array($token, $tokens)) {
+                    $tokens[] = $token;
+                }
+            }
         }
 
         if (count($files_parsed) == 0) {
             return false;
         }
 
-        $files_parsed['constants']     = $constants;
-        $files_parsed['extensions']    = $extensions;
-        $files_parsed['version']       = $latest_version;
-        $files_parsed['max_version']   = $earliest_version;
-        $files_parsed['ignored_files'] =  isset($ignored) ? $ignored : array();
+        $main_info = array('ignored_files' => $ignored,
+                           'max_version'   => $earliest_version,
+                           'version'       => $latest_version,
+                           'extensions'    => $extensions,
+                           'constants'     => $constants,
+                           'tokens'        => $tokens);
 
-        $files_parsed = array_reverse($files_parsed);
+        $files_parsed = array_merge($main_info, $files_parsed);
         return $files_parsed;
     }
 
