@@ -470,6 +470,8 @@ class PHP_CompatInfo
         $constant_names    = array();
         $token_names       = array();
         $udf               = array();
+        $ignore_functions  = array();
+        $ignored_functions = array();
 
         if (isset($options['ignore_constants'])) {
             $options['ignore_constants']
@@ -492,6 +494,12 @@ class PHP_CompatInfo
             $max_ver = $options['ignore_versions'][1];
         } else {
             $max_ver = false;
+        }
+
+        if (isset($options['ignore_functions_match'])) {
+            list($ifm_compare, $ifm_patterns) = $options['ignore_functions_match'];
+        } else {
+            $ifm_compare = false;
         }
 
         $token_count = sizeof($tokens);
@@ -533,6 +541,35 @@ class PHP_CompatInfo
                     }
                 }
             }
+
+            // Compare "ignore_functions_match" pre-condition
+            if (is_string($ifm_compare)) {
+                if (strcasecmp('preg_match', $ifm_compare) != 0) {
+                    // Try to catch function_exists() condition
+                    if (is_array($tokens[$i])
+                        && (token_name($tokens[$i][0]) == 'T_STRING')
+                        && (strcasecmp($tokens[$i][1], $ifm_compare) == 0)) {
+
+                        while ((is_array($tokens[$i])
+                                && token_name($tokens[$i][0])
+                                    == 'T_CONSTANT_ENCAPSED_STRING') === false) {
+                            $i += 1;
+                        }
+                        $func = trim($tokens[$i][1], "'");
+
+                        /**
+                         * try if function_exists()
+                         * match one or more pattern condition
+                         */
+                        foreach ($ifm_patterns as $pattern) {
+                            if (preg_match($pattern, $func) === 1) {
+                                $ignore_functions[] = $func;
+                            }
+                        }
+                    }
+                }
+            }
+
             if (is_array($tokens[$i])
                 && (token_name($tokens[$i][0]) == 'T_STRING')
                 && (isset($tokens[$i + 1]))
@@ -577,6 +614,14 @@ class PHP_CompatInfo
         } else {
             $options['ignore_functions'] = array();
         }
+        if (count($ignore_functions) > 0) {
+            $ignore_functions = array_map('strtolower', $ignore_functions);
+            $options['ignore_functions']
+                = array_merge($options['ignore_functions'], $ignore_functions);
+            $options['ignore_functions']
+                = array_unique($options['ignore_functions']);
+        }
+
         foreach ($functions as $name) {
             if (!isset($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name])) {
                 continue;  // skip this unknown function
@@ -599,8 +644,26 @@ class PHP_CompatInfo
                 $extension = false;
             }
 
+            // Compare "ignore_functions_match" free condition
+            $ifm_preg_match = false;
+            if (is_string($ifm_compare)) {
+                if (strcasecmp('preg_match', $ifm_compare) == 0) {
+                    /**
+                     * try if preg_match()
+                     * match one or more pattern condition
+                     */
+                    foreach ($ifm_patterns as $pattern) {
+                        if (preg_match($pattern, $name) === 1) {
+                            $ifm_preg_match = true;
+                            break;
+                        }
+                    }
+                }
+            }
+
             if ((!in_array($name, $udf))
-                && (!in_array($name, $options['ignore_functions']))) {
+                && (!in_array($name, $options['ignore_functions']))
+                && ($ifm_preg_match === false)) {
 
                 if ($extension
                     && in_array($extension, $options['ignore_extensions'])) {
@@ -637,6 +700,9 @@ class PHP_CompatInfo
                     $extensions[] = substr($func['ext'], 0, 4) == 'ext_'
                         ? $extension : $func['ext'];
                 }
+            } else {
+                // function is ignored
+                $ignored_functions[] = $name;
             }
         }
 
@@ -676,7 +742,8 @@ class PHP_CompatInfo
 
         ksort($functions_version);
 
-        $main_info = array('max_version' => $earliest_version,
+        $main_info = array('ignored_functions' => $ignored_functions,
+                           'max_version' => $earliest_version,
                            'version'     => $latest_version,
                            'extensions'  => $extensions,
                            'constants'   => $constant_names,
