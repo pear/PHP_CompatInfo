@@ -427,7 +427,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 continue;  // skip this (invalid) file
             }
             $ext   = implode("\r\n", $info['extensions']);
-            $const = implode("\r\n", array_merge($info['constants'], $info['tokens']));
+            $const = implode("\r\n", array_merge($info['constants'],
+                                                 $info['tokens']));
 
             $file = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $file);
             $table->addSeparator();
@@ -824,7 +825,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $info = array($this->file => $info);
         }
 
-        echo XML_Util::createStartElement('pci', array('version' => '@package_version@'));
+        echo XML_Util::createStartElement('pci',
+                           array('version' => '@package_version@'));
         echo PHP_EOL;
 
         foreach ($info as $file => $info) {
