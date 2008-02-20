@@ -184,6 +184,7 @@ class PHP_CompatInfo
         $earliest_version = $this->earliest_version;
         $extensions       = array();
         $constants        = array();
+        $tokens           = array();
         $ignored          = array();
         $default_options  = array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
@@ -214,8 +215,8 @@ class PHP_CompatInfo
             if (isset($file_info['extension'])
                 && in_array(strtolower($file_info['extension']),
                     $options['file_ext'])) {
-                $tokens              = $this->_tokenize($file);
-                $files_parsed[$file] = $this->_parseTokens($tokens, $options);
+                $tokens_list         = $this->_tokenize($file);
+                $files_parsed[$file] = $this->_parseTokens($tokens_list, $options);
             }
         }
         foreach ($files_parsed as $file) {
@@ -239,6 +240,11 @@ class PHP_CompatInfo
                     $constants[] = $const;
                 }
             }
+            foreach ($file['tokens'] as $token) {
+                if (!in_array($token, $tokens)) {
+                    $tokens[] = $token;
+                }
+            }
         }
 
         if (count($files_parsed) == 0) {
@@ -249,7 +255,8 @@ class PHP_CompatInfo
                            'max_version'   => $earliest_version,
                            'version'       => $latest_version,
                            'extensions'    => $extensions,
-                           'constants'     => $constants);
+                           'constants'     => $constants,
+                           'tokens'        => $tokens);
 
         $files_parsed = array_merge($main_info, $files_parsed);
         return $files_parsed;
@@ -453,6 +460,7 @@ class PHP_CompatInfo
         $extensions        = array();
         $constants         = array();
         $constant_names    = array();
+        $token_names       = array();
         $udf               = array();
 
         if (isset($options['ignore_constants'])) {
@@ -642,7 +650,12 @@ class PHP_CompatInfo
                 }
             }
             if (!in_array($const['name'], $constant_names)) {
-                $constant_names[] = $const['name'];
+                // split PHP5 tokens and pure PHP constants
+                if ($const['name'] == strtolower($const['name'])) {
+                    $token_names[] = $const['name'];
+                } else {
+                    $constant_names[] = $const['name'];
+                }
             }
         }
 
@@ -658,7 +671,8 @@ class PHP_CompatInfo
         $main_info = array('max_version' => $earliest_version,
                            'version'     => $latest_version,
                            'extensions'  => $extensions,
-                           'constants'   => $constant_names);
+                           'constants'   => $constant_names,
+                           'tokens'      => $token_names);
 
         $functions_version = array_merge($main_info, $functions_version);
         return $functions_version;
