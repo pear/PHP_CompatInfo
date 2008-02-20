@@ -92,7 +92,8 @@ File::write("test", "test");
         $exp = array('max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
-                     'constants' => array());
+                     'constants' => array(),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -113,7 +114,8 @@ apache_response_headers();
         $exp = array('max_version' => '',
                      'version' => '4.3.0',
                      'extensions' => array('sapi_apache'),
-                     'constants' => array());
+                     'constants' => array(),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -137,6 +139,7 @@ apache_response_headers();
                      'version' => '4.3.0',
                      'extensions' => array(),
                      'constants' => array('PATH_SEPARATOR', 'DIRECTORY_SEPARATOR'),
+                     'tokens' => array(),
                      '4.0.0' =>
                      array (
                        0 =>
@@ -324,7 +327,8 @@ $test = "public$link";
         $exp = array('max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
-                     'constants' => array());
+                     'constants' => array(),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 }

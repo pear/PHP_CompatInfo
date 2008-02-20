@@ -132,7 +132,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $exp = array('max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
-                     'constants' => array());
+                     'constants' => array(),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -152,7 +153,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $exp = array('max_version' => '',
                      'version' => '4.0.0',
                      'extensions' => array('bcmath', 'pcre'),
-                     'constants' => array());
+                     'constants' => array(),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -176,7 +178,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'extensions' => array(),
                      'constants' => array('PHP_EOL',
                                           'DIRECTORY_SEPARATOR',
-                                          '__FILE__'));
+                                          '__FILE__'),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -199,7 +202,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'version' => '5.0.0',
                      'extensions' => array('simplexml'),
                      'constants' => array('DIRECTORY_SEPARATOR',
-                                          '__FILE__'));
+                                          '__FILE__'),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -222,7 +226,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $exp = array('max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
-                     'constants' => array());
+                     'constants' => array(),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -246,7 +251,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'version' => '5.0.0',
                      'extensions' => array('simplexml'),
                      'constants' => array('DIRECTORY_SEPARATOR',
-                                          '__FILE__'));
+                                          '__FILE__'),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -279,7 +285,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $exp = array('max_version' => '5.0.4',
                      'version' => '5.1.0',
                      'extensions' => array(),
-                     'constants' => array());
+                     'constants' => array(),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -315,7 +322,8 @@ echo "$nl W3C     = " . DATE_W3C;
                          'DATE_ISO8601', 'DATE_RFC822', 'DATE_RFC850',
                          'DATE_RFC1036', 'DATE_RFC1123', 'DATE_RFC2822',
                          'DATE_RSS', 'DATE_W3C'
-                         ));
+                         ),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -339,7 +347,8 @@ echo "$nl RSS     = " . DATE_RSS;
         $exp = array('max_version' => '',
                      'version' => '5.1.3',
                      'extensions' => array(),
-                     'constants' => array('DATE_RFC3339', 'DATE_RSS'));
+                     'constants' => array('DATE_RFC3339', 'DATE_RSS'),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -384,8 +393,8 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'UPLOAD_ERR_NO_TMP_DIR',
                                           'UPLOAD_ERR_CANT_WRITE',
                                           'UPLOAD_ERR_EXTENSION',
-                                          'UPLOAD_ERR_OK',
-                                          'throw'));
+                                          'UPLOAD_ERR_OK'),
+                     'tokens' => array('throw'));
         $this->assertSame($exp, $r);
     }
 
@@ -421,17 +430,20 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'extensions' => array('xdebug', 'gd',
                                            'sapi_apache', 'sapi_cgi'),
                      'constants' => array(),
+                     'tokens' => array(),
                      $dir . $ds . 'extensions.php' =>
                          array('max_version' => '',
                                'version' => '4.3.2',
                                'extensions' => array('xdebug', 'gd',
                                                      'sapi_apache', 'sapi_cgi'),
-                               'constants' => array()),
+                               'constants' => array(),
+                               'tokens' => array()),
                      $dir . $ds . 'phpinfo.php' =>
                          array('max_version' => '',
                                'version' => '4.0.0',
                                'extensions' => array(),
-                               'constants' => array()));
+                               'constants' => array(),
+                               'tokens' => array()));
         $this->assertSame($exp, $r);
     }
 
@@ -451,10 +463,18 @@ if ($errorCode !== UPLOAD_ERR_OK) {
         $r   = $this->pci->parseDir($dir, $opt);
         $exp = array('ignored_files' => array(),
                      'max_version' => '',
-                     'version' => '5.0.0',
+                     'version' => '5.2.0',
                      'extensions' => array('xdebug', 'gd',
                                            'sapi_apache', 'sapi_cgi'),
-                     'constants' => array(0 => 'abstract',
+                     'constants' => array('UPLOAD_ERR_INI_SIZE',
+                                          'UPLOAD_ERR_FORM_SIZE',
+                                          'UPLOAD_ERR_PARTIAL',
+                                          'UPLOAD_ERR_NO_FILE',
+                                          'UPLOAD_ERR_NO_TMP_DIR',
+                                          'UPLOAD_ERR_CANT_WRITE',
+                                          'UPLOAD_ERR_EXTENSION',
+                                          'UPLOAD_ERR_OK'),
+                     'tokens' => array(0 => 'abstract',
                                           1 => 'protected',
                                           2 => 'interface',
                                           3 => 'public',
@@ -471,12 +491,14 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                'version' => '4.3.2',
                                'extensions' => array('xdebug', 'gd',
                                                      'sapi_apache', 'sapi_cgi'),
-                               'constants' => array()),
+                               'constants' => array(),
+                               'tokens' => array()),
                      $dir . 'PHP5' . $ds . 'tokens.php5' =>
                          array('max_version' => '',
                                'version' => '5.0.0',
                                'extensions' => array(),
-                               'constants' => array(0 => 'abstract',
+                               'constants' => array(),
+                               'tokens' => array(0 => 'abstract',
                                                     1 => 'protected',
                                                     2 => 'interface',
                                                     3 => 'public',
@@ -488,11 +510,25 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                                     9 => 'throw',
                                                     10 => 'catch',
                                                     11 => 'final')),
+                     $dir . 'PHP5' . $ds . 'upload_error.php' =>
+                         array('max_version' => '',
+                               'version' => '5.2.0',
+                               'extensions' => array(),
+                               'constants' => array('UPLOAD_ERR_INI_SIZE',
+                                                    'UPLOAD_ERR_FORM_SIZE',
+                                                    'UPLOAD_ERR_PARTIAL',
+                                                    'UPLOAD_ERR_NO_FILE',
+                                                    'UPLOAD_ERR_NO_TMP_DIR',
+                                                    'UPLOAD_ERR_CANT_WRITE',
+                                                    'UPLOAD_ERR_EXTENSION',
+                                                    'UPLOAD_ERR_OK'),
+                               'tokens' => array('throw')),
                      $dir . 'phpinfo.php' =>
                          array('max_version' => '',
                                'version' => '4.0.0',
                                'extensions' => array(),
-                               'constants' => array()));
+                               'constants' => array(),
+                               'tokens' => array()));
         $this->assertSame($exp, $r);
     }
 
@@ -513,16 +549,38 @@ if ($errorCode !== UPLOAD_ERR_OK) {
         $r   = $this->pci->parseDir($dir, $opt);
         $exp = array('ignored_files' => array($dir . 'phpinfo.php'),
                      'max_version' => '',
-                     'version' => '4.3.2',
+                     'version' => '5.2.0',
                      'extensions' => array('xdebug', 'gd',
                                            'sapi_apache', 'sapi_cgi'),
-                     'constants' => array(),
+                     'constants' => array('UPLOAD_ERR_INI_SIZE',
+                                          'UPLOAD_ERR_FORM_SIZE',
+                                          'UPLOAD_ERR_PARTIAL',
+                                          'UPLOAD_ERR_NO_FILE',
+                                          'UPLOAD_ERR_NO_TMP_DIR',
+                                          'UPLOAD_ERR_CANT_WRITE',
+                                          'UPLOAD_ERR_EXTENSION',
+                                          'UPLOAD_ERR_OK'),
+                     'tokens' => array('throw'),
                      $dir . 'extensions.php' =>
                          array('max_version' => '',
                                'version' => '4.3.2',
                                'extensions' => array('xdebug', 'gd',
                                                      'sapi_apache', 'sapi_cgi'),
-                               'constants' => array()));
+                               'constants' => array(),
+                               'tokens' => array()),
+                     $dir . 'PHP5' . $ds . 'upload_error.php' =>
+                         array('max_version' => '',
+                               'version' => '5.2.0',
+                               'extensions' => array(),
+                               'constants' => array('UPLOAD_ERR_INI_SIZE',
+                                                    'UPLOAD_ERR_FORM_SIZE',
+                                                    'UPLOAD_ERR_PARTIAL',
+                                                    'UPLOAD_ERR_NO_FILE',
+                                                    'UPLOAD_ERR_NO_TMP_DIR',
+                                                    'UPLOAD_ERR_CANT_WRITE',
+                                                    'UPLOAD_ERR_EXTENSION',
+                                                    'UPLOAD_ERR_OK'),
+                               'tokens' => array('throw')));
         $this->assertSame($exp, $r);
     }
 
@@ -556,16 +614,19 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'version' => '4.3.0',
                      'extensions' => array('sapi_cgi', 'tokenizer'),
                      'constants' => array('DIRECTORY_SEPARATOR'),
+                     'tokens' => array(),
                      $base[1] . $ds . 'CompatInfo.php' =>
                          array('max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('tokenizer'),
-                               'constants' => array('DIRECTORY_SEPARATOR')),
+                               'constants' => array('DIRECTORY_SEPARATOR'),
+                               'tokens' => array()),
                      $base[0] . $ds . 'PEAR.php' =>
                          array('max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('sapi_cgi'),
-                               'constants' => array()));
+                               'constants' => array(),
+                               'tokens' => array()));
         $this->assertSame($exp, $r);
     }
 
@@ -598,11 +659,13 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'version' => '4.3.0',
                      'extensions' => array('sapi_cgi'),
                      'constants' => array(),
+                     'tokens' => array(),
                      $base . $ds . 'PEAR.php' =>
                          array('max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('sapi_cgi'),
-                               'constants' => array()));
+                               'constants' => array(),
+                               'tokens' => array()));
         $this->assertSame($exp, $r);
     }
 
@@ -631,16 +694,19 @@ php_check_syntax('somefile.php');
                      'version' => '5.1.0',
                      'extensions' => array(),
                      'constants' => array(),
+                     'tokens' => array(),
                      0 => array(
                           'max_version' => '',
                           'version' => '5.1.0',
                           'extensions' => array(),
-                          'constants' => array()),
+                          'constants' => array(),
+                          'tokens' => array()),
                      1 => array(
                           'max_version' => '5.0.4',
                           'version' => '5.0.0',
                           'extensions' => array(),
-                          'constants' => array())
+                          'constants' => array(),
+                          'tokens' => array()),
                      );
         $this->assertSame($exp, $r);
     }
@@ -920,7 +986,8 @@ php_check_syntax('somefile.php');
         $exp = array('max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array(),
-                     'constants' => array());
+                     'constants' => array(),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 
@@ -940,7 +1007,8 @@ php_check_syntax('somefile.php');
         $exp = array('max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array(),
-                     'constants' => array());
+                     'constants' => array(),
+                     'tokens' => array());
         $this->assertSame($exp, $r);
     }
 }
