@@ -15,4 +15,6 @@ if (function_exists('debug_backtrace')) {
 } else {
     $backtrace = false;
 }
+
+debug_print_backtrace();
 ?>
