@@ -615,17 +615,17 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'extensions' => array('sapi_cgi', 'tokenizer'),
                      'constants' => array('DIRECTORY_SEPARATOR'),
                      'tokens' => array(),
-                     $base[1] . $ds . 'CompatInfo.php' =>
-                         array('max_version' => '',
-                               'version' => '4.3.0',
-                               'extensions' => array('tokenizer'),
-                               'constants' => array('DIRECTORY_SEPARATOR'),
-                               'tokens' => array()),
                      $base[0] . $ds . 'PEAR.php' =>
                          array('max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('sapi_cgi'),
                                'constants' => array(),
+                               'tokens' => array()),
+                     $base[1] . $ds . 'CompatInfo.php' =>
+                         array('max_version' => '',
+                               'version' => '4.3.0',
+                               'extensions' => array('tokenizer'),
+                               'constants' => array('DIRECTORY_SEPARATOR'),
                                'tokens' => array()));
         $this->assertSame($exp, $r);
     }
@@ -696,17 +696,17 @@ php_check_syntax('somefile.php');
                      'constants' => array(),
                      'tokens' => array(),
                      0 => array(
-                          'max_version' => '',
-                          'version' => '5.1.0',
-                          'extensions' => array(),
-                          'constants' => array(),
-                          'tokens' => array()),
-                     1 => array(
                           'max_version' => '5.0.4',
                           'version' => '5.0.0',
                           'extensions' => array(),
                           'constants' => array(),
                           'tokens' => array()),
+                     1 => array(
+                          'max_version' => '',
+                          'version' => '5.1.0',
+                          'extensions' => array(),
+                          'constants' => array(),
+                          'tokens' => array())
                      );
         $this->assertSame($exp, $r);
     }
