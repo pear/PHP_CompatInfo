@@ -406,7 +406,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $table->addFilter(3, $filter3);
 
         $ext   = implode("\r\n", $info['extensions']);
-        $const = implode("\r\n", $info['constants']);
+        $const = implode("\r\n", array_merge($info['constants'], $info['tokens']) );
 
         $dir = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $this->dir);
         $table->addRow(array($dir . DIRECTORY_SEPARATOR . '*',
@@ -416,6 +416,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         unset($info['version']);
         unset($info['extensions']);
         unset($info['constants']);
+        unset($info['tokens']);
 
         $ignored = $info['ignored_files'];
 
@@ -521,7 +522,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $table->addFilter(3, $filter3);
 
         $ext   = implode("\r\n", $info['extensions']);
-        $const = implode("\r\n", $info['constants']);
+        $const = implode("\r\n", array_merge($info['constants'], $info['tokens']) );
 
         $table->addRow(array($this->file, $info['version'], $ext, $const));
 
@@ -814,6 +815,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             unset($info['version']);
             unset($info['extensions']);
             unset($info['constants']);
+            unset($info['tokens']);
             unset($info['ignored_files']);
         } else {
             $info = array($this->file => $info);
@@ -842,30 +844,19 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             }
             $c = count($info['constants']);
             if ($c > 0) {
-                $constants = $tokens = array();
-                foreach ($info['constants'] as $tok) {
-                    if ($tok == strtolower($tok)) {
-                        $tokens[] = $tok;
-                    } else {
-                        $constants[] = $tok;
-                    }
-                }
-                $c = count($tokens);
-                if ($c > 0) {
-                    $tag = array('qname' => 'token',
-                                 'attributes' => array('count' => $c),
-                                 'content' => implode(', ', $tokens));
-                    echo XML_Util::createTagFromArray($tag);
-                    echo PHP_EOL;
-                }
-                $c = count($constants);
-                if ($c > 0) {
-                    $tag = array('qname' => 'constant',
-                                 'attributes' => array('count' => $c),
-                                 'content' => implode(', ', $constants));
-                    echo XML_Util::createTagFromArray($tag);
-                    echo PHP_EOL;
-                }
+                $tag = array('qname' => 'constant',
+                             'attributes' => array('count' => $c),
+                             'content' => implode(', ', $info['constants']));
+                echo XML_Util::createTagFromArray($tag);
+                echo PHP_EOL;
+            }
+            $c = count($info['tokens']);
+            if ($c > 0) {
+                $tag = array('qname' => 'token',
+                             'attributes' => array('count' => $c),
+                             'content' => implode(', ', $info['tokens']));
+                echo XML_Util::createTagFromArray($tag);
+                echo PHP_EOL;
             }
 
             // verbose level
