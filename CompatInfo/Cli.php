@@ -398,8 +398,12 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $table = new Console_Table();
         $table->setHeaders(array(
             'Path', 'Version', 'Extensions', 'Constants/Tokens'));
-        $filter = array(&$this, '_splitFilename');
-        $table->addFilter(0, $filter);
+        $filter0 = array(&$this, '_splitFilename');
+        $table->addFilter(0, $filter0);
+        $filter2 = array(&$this, '_splitExtname');
+        $table->addFilter(2, $filter2);
+        $filter3 = array(&$this, '_splitConstant');
+        $table->addFilter(3, $filter3);
 
         $ext   = implode("\r\n", $info['extensions']);
         $const = implode("\r\n", $info['constants']);
@@ -509,8 +513,12 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $table = new Console_Table();
         $table->setHeaders(array(
             'File', 'Version', 'Extensions', 'Constants/Tokens'));
-        $filter = array(&$this, '_splitFilename');
-        $table->addFilter(0, $filter);
+        $filter0 = array(&$this, '_splitFilename');
+        $table->addFilter(0, $filter0);
+        $filter2 = array(&$this, '_splitExtname');
+        $table->addFilter(2, $filter2);
+        $filter3 = array(&$this, '_splitConstant');
+        $table->addFilter(3, $filter3);
 
         $ext   = implode("\r\n", $info['extensions']);
         $const = implode("\r\n", $info['constants']);
@@ -696,7 +704,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     }
 
     /**
-     * The Console_Table filter callback limits output to 80 columns.
+     * The Console_Table filter callback limits table output to 80 columns,
+     * and Path column to 29 characters
+     * (27 + 1 blank margin left + 1 blank margin right).
      *
      * @param string $data Content of filename column (0)
      *
@@ -709,7 +719,59 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         if (strlen($data) <= 27) {
             $str = str_pad($data, 27);
         } else {
-            $str = '...'.substr($data, (strlen($data) - 27));
+            $str = '...' . substr($data, (strlen($data) - 24));
+        }
+        return $str;
+    }
+
+    /**
+     * The Console_Table filter callback limits table output to 80 columns,
+     * and Extensions column to 13 characters
+     * (11 + 1 blank margin left + 1 blank margin right).
+     *
+     * @param string $data Content of extensions column (2)
+     *
+     * @return string
+     * @access private
+     * @since  1.7.0
+     */
+    function _splitExtname($data)
+    {
+        $extArr = explode("\r\n", $data);
+        $str    = '';
+        foreach($extArr as $ext) {
+            if (strlen($ext) <= 11) {
+                $str .= str_pad($ext, 11);
+            } else {
+                $str .= '...' . substr($ext, (strlen($ext) - 8));
+            }
+            $str .= "\r\n";
+        }
+        return $str;
+    }
+
+    /**
+     * The Console_Table filter callback limits table output to 80 columns,
+     * and Constants/Tokens column to 23 characters
+     * (21 + 1 blank margin left + 1 blank margin right)
+     *
+     * @param string $data Content of constants/tokens column (3)
+     *
+     * @return string
+     * @access private
+     * @since  1.7.0
+     */
+    function _splitConstant($data)
+    {
+        $cstArr = explode("\r\n", $data);
+        $str    = '';
+        foreach($cstArr as $cst) {
+            if (strlen($cst) <= 21) {
+                $str .= str_pad($cst, 21);
+            } else {
+                $str .= '...' . substr($cst, (strlen($cst) - 18));
+            }
+            $str .= "\r\n";
         }
         return $str;
     }
