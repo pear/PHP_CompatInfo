@@ -586,6 +586,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             unset($info['max_version']);
             unset($info['version']);
             unset($info['constants']);
+            unset($info['tokens']);
             unset($info['extensions']);
 
             foreach ($info as $version => $functions) {
@@ -869,6 +870,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 unset($info['max_version']);
                 unset($info['version']);
                 unset($info['constants']);
+                unset($info['tokens']);
                 unset($info['extensions']);
 
                 foreach ($info as $version => $functions) {
