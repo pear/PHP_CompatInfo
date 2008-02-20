@@ -406,7 +406,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $table->addFilter(3, $filter3);
 
         $ext   = implode("\r\n", $info['extensions']);
-        $const = implode("\r\n", array_merge($info['constants'], $info['tokens']) );
+        $const = implode("\r\n", array_merge($info['constants'], $info['tokens']));
 
         $dir = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $this->dir);
         $table->addRow(array($dir . DIRECTORY_SEPARATOR . '*',
@@ -522,7 +522,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $table->addFilter(3, $filter3);
 
         $ext   = implode("\r\n", $info['extensions']);
-        $const = implode("\r\n", array_merge($info['constants'], $info['tokens']) );
+        $const = implode("\r\n", array_merge($info['constants'], $info['tokens']));
 
         $table->addRow(array($this->file, $info['version'], $ext, $const));
 
@@ -740,7 +740,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     {
         $extArr = explode("\r\n", $data);
         $str    = '';
-        foreach($extArr as $ext) {
+        foreach ($extArr as $ext) {
             if (strlen($ext) <= 11) {
                 $str .= str_pad($ext, 11);
             } else {
@@ -748,6 +748,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             }
             $str .= "\r\n";
         }
+        $str = rtrim($str, "\r\n");
         return $str;
     }
 
@@ -766,7 +767,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     {
         $cstArr = explode("\r\n", $data);
         $str    = '';
-        foreach($cstArr as $cst) {
+        foreach ($cstArr as $cst) {
             if (strlen($cst) <= 21) {
                 $str .= str_pad($cst, 21);
             } else {
@@ -774,6 +775,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             }
             $str .= "\r\n";
         }
+        $str = rtrim($str, "\r\n");
         return $str;
     }
 
