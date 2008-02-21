@@ -18,19 +18,26 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-02-16</date>
- <time>15:47:51</time>
+ <date>2008-02-21</date>
+ <time>18:28:29</time>
  <version>
-  <release>1.6.1</release>
-  <api>1.6.0</api>
+  <release>1.7.0a1</release>
+  <api>1.7.0</api>
  </version>
  <stability>
-  <release>stable</release>
+  <release>alpha</release>
   <api>stable</api>
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
  <notes>* bugs
-- bug #13131 : Undefined variable: php5_method_chaining
+- bug #13137 : Standard test suite failed under *nix
+
+* news
+- req #12857 : Add the option to locally mask exceptions
+  see new api 1.7.0 options:
+  ignore_functions_match, ignore_extensions_match, ignore_constants_match.
+- req #13138 : separate constants and tokens in results
+- req #13147 : CLI: add filter file extension option on parsing directory
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -74,6 +81,7 @@ which shows which functions require which version and CLI output script</descrip
     <dir name="parseDir">
      <dir name="PHP5">
       <file name="tokens.php5" role="test" />
+      <file name="upload_error.php" role="test" />
      </dir> <!-- /tests/parseDir/PHP5 -->
      <file name="extensions.php" role="test" />
      <file name="phpinfo.php" role="test" />
@@ -81,6 +89,7 @@ which shows which functions require which version and CLI output script</descrip
     <dir name="parseFile">
      <file name="conditional.php" role="test" />
      <file name="empty.php" role="test" />
+     <file name="ignore_functions_match.php" role="test" />
      <file name="math.php" role="test" />
      <file name="PackageUpdate.php" role="test" />
      <file name="php5_method_chaining.php" role="test" />
@@ -164,6 +173,28 @@ which shows which functions require which version and CLI output script</descrip
  <changelog>
   <release>
    <version>
+    <release>1.7.0a1</release>
+    <api>1.7.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-02-21</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>* bugs
+- bug #13137 : Standard test suite failed under *nix
+
+* news
+- req #12857 : Add the option to locally mask exceptions
+  see new api 1.7.0 options:
+  ignore_functions_match, ignore_extensions_match, ignore_constants_match.
+- req #13138 : separate constants and tokens in results
+- req #13147 : CLI: add filter file extension option on parsing directory
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.6.1</release>
     <api>1.6.0</api>
    </version>
@@ -174,8 +205,7 @@ which shows which functions require which version and CLI output script</descrip
    <date>2008-02-16</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
    <notes>* bugs
-- bug #13131 : Undefined variable: php5_method_chaining
-   </notes>
+- bug #13131 : Undefined variable: php5_method_chaining</notes>
   </release>
   <release>
    <version>

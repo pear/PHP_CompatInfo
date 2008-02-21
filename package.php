@@ -50,12 +50,19 @@ $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
 $p2->addInstallAs('scripts/pci.php', 'pci.php');
 //$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
-$p2->setReleaseVersion('1.6.1');
-$p2->setAPIVersion('1.6.0');
-$p2->setReleaseStability('stable');
+$p2->setReleaseVersion('1.7.0a1');
+$p2->setAPIVersion('1.7.0');
+$p2->setReleaseStability('alpha');
 $p2->setAPIStability('stable');
 $p2->setNotes('* bugs
-- bug #13131 : Undefined variable: php5_method_chaining
+- bug #13137 : Standard test suite failed under *nix
+
+* news
+- req #12857 : Add the option to locally mask exceptions
+  see new api 1.7.0 options:
+  ignore_functions_match, ignore_extensions_match, ignore_constants_match.
+- req #13138 : separate constants and tokens in results
+- req #13147 : CLI: add filter file extension option on parsing directory
 ');
 //$p2->setPearinstallerDep('1.5.4');
 //$p2->setPhpDep('4.3.10');
