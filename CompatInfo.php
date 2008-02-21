@@ -179,14 +179,15 @@ class PHP_CompatInfo
             return false;
         }
 
-        $files_parsed     = array();
-        $latest_version   = $this->latest_version;
-        $earliest_version = $this->earliest_version;
-        $extensions       = array();
-        $constants        = array();
-        $tokens           = array();
-        $ignored          = array();
-        $default_options  = array(
+        $files_parsed      = array();
+        $latest_version    = $this->latest_version;
+        $earliest_version  = $this->earliest_version;
+        $extensions        = array();
+        $constants         = array();
+        $tokens            = array();
+        $ignored           = array();
+        $ignored_functions = array();
+        $default_options   = array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
             'recurse_dir' => true,
             'debug' => false,
@@ -245,6 +246,11 @@ class PHP_CompatInfo
                     $tokens[] = $token;
                 }
             }
+            foreach ($file['ignored_functions'] as $if) {
+                if (!in_array($if, $ignored_functions)) {
+                    $ignored_functions[] = $if;
+                }
+            }
         }
 
         if (count($files_parsed) == 0) {
@@ -252,6 +258,7 @@ class PHP_CompatInfo
         }
 
         $main_info = array('ignored_files' => $ignored,
+                           'ignored_functions' => $ignored_functions,
                            'max_version'   => $earliest_version,
                            'version'       => $latest_version,
                            'extensions'    => $extensions,
@@ -311,13 +318,14 @@ class PHP_CompatInfo
      */
     function parseArray($files, $options = array())
     {
-        $files_parsed     = array();
-        $latest_version   = $this->latest_version;
-        $earliest_version = $this->earliest_version;
-        $extensions       = array();
-        $constants        = array();
-        $ignored          = array();
-        $tokens           = array();
+        $files_parsed      = array();
+        $latest_version    = $this->latest_version;
+        $earliest_version  = $this->earliest_version;
+        $extensions        = array();
+        $constants         = array();
+        $tokens            = array();
+        $ignored           = array();
+        $ignored_functions = array();
 
         $options = array_merge(array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
@@ -370,6 +378,11 @@ class PHP_CompatInfo
                     $tokens[] = $token;
                 }
             }
+            foreach ($file['ignored_functions'] as $if) {
+                if (!in_array($if, $ignored_functions)) {
+                    $ignored_functions[] = $if;
+                }
+            }
         }
 
         if (count($files_parsed) == 0) {
@@ -377,6 +390,7 @@ class PHP_CompatInfo
         }
 
         $main_info = array('ignored_files' => $ignored,
+                           'ignored_functions' => $ignored_functions,
                            'max_version'   => $earliest_version,
                            'version'       => $latest_version,
                            'extensions'    => $extensions,
