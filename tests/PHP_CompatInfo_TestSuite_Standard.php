@@ -1283,6 +1283,40 @@ php_check_syntax('somefile.php');
                      'tokens' => array());
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests parsing a single file with 'ignore_constants_match' option
+     * Sample #1
+     *
+     * Exclude all constants that are referenced by php defined(),
+     * and match regular expressions
+     *
+     * @return void
+     * @since  version 1.7.0
+     */
+    public function testParseFileWithIgnoreConstantsMatchSamp1()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
+        $opt = array('ignore_constants_match' =>
+                   array('defined', array('/^directory/i')));
+
+        $r = $this->pci->parseFile($fn, $opt);
+        $this->assertType('array', $r);
+
+        $exp = array('ignored_functions' => array(),
+                     'ignored_extensions' => array(),
+                     'ignored_constants' => array('DIRECTORY_SEPARATOR'),
+                     'max_version' => '',
+                     'version' => '5.1.1',
+                     'extensions' => array('simplexml', 'date'),
+                     'constants' => array('PHP_EOL',
+                                          'DIRECTORY_SEPARATOR',
+                                          '__FILE__',
+                                          'DATE_W3C'),
+                     'tokens' => array());
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
