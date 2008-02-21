@@ -89,7 +89,8 @@ include("File.php");
 File::write("test", "test");
 ?>';
         $r   = $this->pci->parseString($str);
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
                      'constants' => array(),
@@ -111,7 +112,8 @@ apache_request_headers();
 apache_response_headers();
 ?>';
         $r   = $this->pci->parseString($str);
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '4.3.0',
                      'extensions' => array('sapi_apache'),
                      'constants' => array(),
@@ -135,7 +137,8 @@ apache_response_headers();
         $opt = array('debug' => true,
                      'ignore_functions' => array('debug_backtrace'));
         $r   = $this->pci->parseFile($fn, $opt);
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array('debug_backtrace'),
+                     'max_version' => '',
                      'version' => '4.3.0',
                      'extensions' => array(),
                      'constants' => array('PATH_SEPARATOR', 'DIRECTORY_SEPARATOR'),
@@ -324,7 +327,8 @@ apache_response_headers();
 $test = "public$link";
 ?>';
         $r   = $this->pci->parseString($str);
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
                      'constants' => array(),

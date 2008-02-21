@@ -129,7 +129,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'empty.php';
 
         $r   = $this->pci->parseFile($fn);
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
                      'constants' => array(),
@@ -150,7 +151,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $r = $this->pci->parseFile($fn);
         $this->assertType('array', $r);
 
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '4.0.0',
                      'extensions' => array('bcmath', 'pcre'),
                      'constants' => array(),
@@ -173,7 +175,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array('simplexml_load_file'),
+                     'max_version' => '',
                      'version' => '4.3.10',
                      'extensions' => array(),
                      'constants' => array('PHP_EOL',
@@ -198,7 +201,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array('simplexml'),
                      'constants' => array('DIRECTORY_SEPARATOR',
@@ -223,7 +227,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
                      'constants' => array(),
@@ -247,7 +252,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array('simplexml'),
                      'constants' => array('DIRECTORY_SEPARATOR',
@@ -282,7 +288,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $r = $this->pci->parseString($str);
         $this->assertType('array', $r);
 
-        $exp = array('max_version' => '5.0.4',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '5.0.4',
                      'version' => '5.1.0',
                      'extensions' => array(),
                      'constants' => array(),
@@ -315,7 +322,8 @@ echo "$nl W3C     = " . DATE_W3C;
         $r = $this->pci->parseString($str);
         $this->assertType('array', $r);
 
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '5.1.1',
                      'extensions' => array(),
                      'constants' => array('DATE_ATOM', 'DATE_COOKIE',
@@ -344,7 +352,8 @@ echo "$nl RSS     = " . DATE_RSS;
         $r = $this->pci->parseString($str);
         $this->assertType('array', $r);
 
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '5.1.3',
                      'extensions' => array(),
                      'constants' => array('DATE_RFC3339', 'DATE_RSS'),
@@ -383,7 +392,8 @@ if ($errorCode !== UPLOAD_ERR_OK) {
 }
 ?>';
         $r   = $this->pci->parseString($str);
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '5.2.0',
                      'extensions' => array(),
                      'constants' => array('UPLOAD_ERR_INI_SIZE',
@@ -425,6 +435,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
 
         $r   = $this->pci->parseDir($dir, $opt);
         $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
                      'max_version' => '',
                      'version' => '4.3.2',
                      'extensions' => array('xdebug', 'gd',
@@ -432,14 +443,16 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'constants' => array(),
                      'tokens' => array(),
                      $dir . $ds . 'extensions.php' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '4.3.2',
                                'extensions' => array('xdebug', 'gd',
                                                      'sapi_apache', 'sapi_cgi'),
                                'constants' => array(),
                                'tokens' => array()),
                      $dir . $ds . 'phpinfo.php' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '4.0.0',
                                'extensions' => array(),
                                'constants' => array(),
@@ -462,6 +475,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
 
         $r   = $this->pci->parseDir($dir, $opt);
         $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
                      'max_version' => '',
                      'version' => '5.2.0',
                      'extensions' => array('xdebug', 'gd',
@@ -487,14 +501,16 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           10 => 'catch',
                                           11 => 'final'),
                      $dir . 'extensions.php' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '4.3.2',
                                'extensions' => array('xdebug', 'gd',
                                                      'sapi_apache', 'sapi_cgi'),
                                'constants' => array(),
                                'tokens' => array()),
                      $dir . 'PHP5' . $ds . 'tokens.php5' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '5.0.0',
                                'extensions' => array(),
                                'constants' => array(),
@@ -511,7 +527,8 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                                     10 => 'catch',
                                                     11 => 'final')),
                      $dir . 'PHP5' . $ds . 'upload_error.php' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '5.2.0',
                                'extensions' => array(),
                                'constants' => array('UPLOAD_ERR_INI_SIZE',
@@ -524,7 +541,8 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                                     'UPLOAD_ERR_OK'),
                                'tokens' => array('throw')),
                      $dir . 'phpinfo.php' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '4.0.0',
                                'extensions' => array(),
                                'constants' => array(),
@@ -548,6 +566,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
 
         $r   = $this->pci->parseDir($dir, $opt);
         $exp = array('ignored_files' => array($dir . 'phpinfo.php'),
+                     'ignored_functions' => array(),
                      'max_version' => '',
                      'version' => '5.2.0',
                      'extensions' => array('xdebug', 'gd',
@@ -562,14 +581,16 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'UPLOAD_ERR_OK'),
                      'tokens' => array('throw'),
                      $dir . 'extensions.php' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '4.3.2',
                                'extensions' => array('xdebug', 'gd',
                                                      'sapi_apache', 'sapi_cgi'),
                                'constants' => array(),
                                'tokens' => array()),
                      $dir . 'PHP5' . $ds . 'upload_error.php' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '5.2.0',
                                'extensions' => array(),
                                'constants' => array('UPLOAD_ERR_INI_SIZE',
@@ -610,21 +631,24 @@ if ($errorCode !== UPLOAD_ERR_OK) {
 
         $r   = $this->pci->parseArray($rsrc);
         $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
                      'max_version' => '',
                      'version' => '4.3.0',
-                     'extensions' => array('sapi_cgi', 'tokenizer'),
+                     'extensions' => array('sapi_cgi', 'tokenizer', 'pcre'),
                      'constants' => array('DIRECTORY_SEPARATOR'),
                      'tokens' => array(),
                      $base[0] . $ds . 'PEAR.php' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('sapi_cgi'),
                                'constants' => array(),
                                'tokens' => array()),
                      $base[1] . $ds . 'CompatInfo.php' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '4.3.0',
-                               'extensions' => array('tokenizer'),
+                               'extensions' => array('tokenizer', 'pcre'),
                                'constants' => array('DIRECTORY_SEPARATOR'),
                                'tokens' => array()));
         $this->assertSame($exp, $r);
@@ -655,13 +679,15 @@ if ($errorCode !== UPLOAD_ERR_OK) {
 
         $r   = $this->pci->parseArray($files, $opt);
         $exp = array('ignored_files' => $excl,
+                     'ignored_functions' => array(),
                      'max_version' => '',
                      'version' => '4.3.0',
                      'extensions' => array('sapi_cgi'),
                      'constants' => array(),
                      'tokens' => array(),
                      $base . $ds . 'PEAR.php' =>
-                         array('max_version' => '',
+                         array('ignored_functions' => array(),
+                               'max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('sapi_cgi'),
                                'constants' => array(),
@@ -690,18 +716,21 @@ php_check_syntax('somefile.php');
 
         $r   = $this->pci->parseArray($data, $opt);
         $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
                      'max_version' => '5.0.4',
                      'version' => '5.1.0',
                      'extensions' => array(),
                      'constants' => array(),
                      'tokens' => array(),
                      0 => array(
+                          'ignored_functions' => array(),
                           'max_version' => '5.0.4',
                           'version' => '5.0.0',
                           'extensions' => array(),
                           'constants' => array(),
                           'tokens' => array()),
                      1 => array(
+                          'ignored_functions' => array(),
                           'max_version' => '',
                           'version' => '5.1.0',
                           'extensions' => array(),
@@ -983,7 +1012,8 @@ php_check_syntax('somefile.php');
                $ds . 'php5_method_chaining.php';
 
         $r   = $this->pci->parseFile($fn);
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array(),
                      'constants' => array(),
@@ -1004,7 +1034,40 @@ php_check_syntax('somefile.php');
                $ds . 'php5_method_chaining_samp2.php';
 
         $r   = $this->pci->parseFile($fn);
-        $exp = array('max_version' => '',
+        $exp = array('ignored_functions' => array(),
+                     'max_version' => '',
+                     'version' => '5.0.0',
+                     'extensions' => array(),
+                     'constants' => array(),
+                     'tokens' => array());
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a single file with 'ignore_functions_match' option
+     * Sample #1
+     *
+     * Exclude all functions that are referenced by php function_exists(),
+     * and match regular expressions :
+     * - word file_put_contents (case insensitive)
+     * - beginning with debug (case sensitive)
+     *
+     * @return void
+     * @since  version 1.7.0
+     */
+    public function testParseFileWithIgnoreFunctionsMatchSamp1()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'ignore_functions_match.php';
+        $opt = array('ignore_functions_match' =>
+                   array('function_exists', array('/^File_put_contents$/i',
+                                                  '/^debug/')));
+
+        $r = $this->pci->parseFile($fn, $opt);
+        $this->assertType('array', $r);
+
+        $exp = array('ignored_functions' => array('file_put_contents', 'debug_backtrace'),
+                     'max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array(),
                      'constants' => array(),
