@@ -423,6 +423,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         unset($info['ignored_files']);
         unset($info['ignored_functions']);
         unset($info['ignored_extensions']);
+        unset($info['ignored_constants']);
 
         foreach ($info as $file => $info) {
             if ($info === false) {
@@ -593,6 +594,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             unset($info['extensions']);
             unset($info['ignored_functions']);
             unset($info['ignored_extensions']);
+            unset($info['ignored_constants']);
 
             foreach ($info as $version => $functions) {
                 foreach ($functions as $func) {
@@ -696,6 +698,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             unset($info['extensions']);
             unset($info['ignored_functions']);
             unset($info['ignored_extensions']);
+            unset($info['ignored_constants']);
 
             foreach ($info as $version => $functions) {
                 foreach ($functions as $func) {
