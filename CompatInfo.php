@@ -738,8 +738,27 @@ class PHP_CompatInfo
                     $extensions[] = substr($func['ext'], 0, 4) == 'ext_'
                         ? $extension : $func['ext'];
                 }
+
+                // Compare "ignore_extensions_match" free condition
+                $iem_preg_match = false;
+                if (is_string($iem_compare)) {
+                    if (strcasecmp('preg_match', $iem_compare) == 0) {
+                        /**
+                         * try if preg_match()
+                         * match one or more pattern condition
+                         */
+                        foreach ($iem_patterns as $pattern) {
+                            if (preg_match($pattern, $extension) === 1) {
+                                $iem_preg_match = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+
                 if ($extension
-                    && in_array($extension, $options['ignore_extensions'])) {
+                    && (in_array($extension, $options['ignore_extensions'])
+                        || $iem_preg_match)) {
                     if (!in_array($extension, $ignored_extensions)) {
                         // extension is ignored (only once)
                         $ignored_extensions[] = $extension;
