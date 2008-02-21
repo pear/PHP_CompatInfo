@@ -231,7 +231,13 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
-        $exp = array('ignored_functions' => array(),
+        $exp = array('ignored_functions' => array('zip_open',
+                                                  'zip_read',
+                                                  'zip_entry_name',
+                                                  'zip_entry_filesize',
+                                                  'zip_entry_compressedsize',
+                                                  'zip_entry_compressionmethod',
+                                                  'zip_close'),
                      'ignored_extensions' => array('zip'),
                      'max_version' => '',
                      'version' => '3.0.0',
@@ -1193,7 +1199,7 @@ php_check_syntax('somefile.php');
         $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
-        $exp = array('ignored_functions' => array(),
+        $exp = array('ignored_functions' => array('sqlite_libversion'),
                      'ignored_extensions' => array('sqlite'),
                      'max_version' => '',
                      'version' => '4.3.2',

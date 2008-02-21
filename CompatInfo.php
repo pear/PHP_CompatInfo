@@ -744,6 +744,8 @@ class PHP_CompatInfo
                         // extension is ignored (only once)
                         $ignored_extensions[] = $extension;
                     }
+                    // all extension functions are also ignored
+                    $ignored_functions[] = $name;
                     continue;  // skip this extension function
                 }
 
