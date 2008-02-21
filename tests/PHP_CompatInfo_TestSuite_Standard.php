@@ -1210,6 +1210,39 @@ php_check_syntax('somefile.php');
                      'tokens' => array());
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests parsing a single file with 'ignore_extensions_match' option
+     * Sample #2
+     *
+     * Exclude all extensions (and their functions) that are referenced freely by
+     * preg_match clause, and match regular expression:
+     * - beginning with 'sapi' (case sensitive)
+     *
+     * @return void
+     * @since  version 1.7.0
+     */
+    public function testParseFileWithIgnoreExtensionsMatchSamp2()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseDir' . $ds . 'extensions.php';
+        $opt = array('ignore_extensions_match' =>
+                   array('preg_match', array('/^sapi/')));
+
+        $r = $this->pci->parseFile($fn, $opt);
+        $this->assertType('array', $r);
+
+        $exp = array('ignored_functions' => array('apache_get_modules', 'dl'),
+                     'ignored_extensions' => array('sapi_apache', 'sapi_cgi'),
+                     'max_version' => '',
+                     'version' => '4.3.2',
+                     'extensions' => array('xdebug', 'gd',
+                                           'sapi_apache', 'sapi_cgi',
+                                           'sqlite'),
+                     'constants' => array(),
+                     'tokens' => array());
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
