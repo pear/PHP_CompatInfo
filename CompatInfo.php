@@ -188,6 +188,7 @@ class PHP_CompatInfo
         $ignored            = array();
         $ignored_functions  = array();
         $ignored_extensions = array();
+        $ignored_constants  = array();
         $default_options    = array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
             'recurse_dir' => true,
@@ -257,6 +258,11 @@ class PHP_CompatInfo
                     $ignored_extensions[] = $ie;
                 }
             }
+            foreach ($file['ignored_constants'] as $ic) {
+                if (!in_array($ic, $ignored_constants)) {
+                    $ignored_constants[] = $ic;
+                }
+            }
         }
 
         if (count($files_parsed) == 0) {
@@ -266,6 +272,7 @@ class PHP_CompatInfo
         $main_info = array('ignored_files'      => $ignored,
                            'ignored_functions'  => $ignored_functions,
                            'ignored_extensions' => $ignored_extensions,
+                           'ignored_constants'  => $ignored_constants,
                            'max_version'   => $earliest_version,
                            'version'       => $latest_version,
                            'extensions'    => $extensions,
@@ -334,6 +341,7 @@ class PHP_CompatInfo
         $ignored            = array();
         $ignored_functions  = array();
         $ignored_extensions = array();
+        $ignored_constants  = array();
 
         $options = array_merge(array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
@@ -396,6 +404,11 @@ class PHP_CompatInfo
                     $ignored_extensions[] = $ie;
                 }
             }
+            foreach ($file['ignored_constants'] as $ic) {
+                if (!in_array($ic, $ignored_constants)) {
+                    $ignored_constants[] = $ic;
+                }
+            }
         }
 
         if (count($files_parsed) == 0) {
@@ -405,6 +418,7 @@ class PHP_CompatInfo
         $main_info = array('ignored_files'      => $ignored,
                            'ignored_functions'  => $ignored_functions,
                            'ignored_extensions' => $ignored_extensions,
+                           'ignored_constants'  => $ignored_constants,
                            'max_version'   => $earliest_version,
                            'version'       => $latest_version,
                            'extensions'    => $extensions,
@@ -502,6 +516,8 @@ class PHP_CompatInfo
         $ignored_functions  = array();
         $ignore_extensions  = array();
         $ignored_extensions = array();
+        $ignore_constants   = array();
+        $ignored_constants  = array();
 
         if (isset($options['ignore_constants'])) {
             $options['ignore_constants']
@@ -535,6 +551,11 @@ class PHP_CompatInfo
             list($iem_compare, $iem_patterns) = $options['ignore_extensions_match'];
         } else {
             $iem_compare = false;
+        }
+        if (isset($options['ignore_constants_match'])) {
+            list($icm_compare, $icm_patterns) = $options['ignore_constants_match'];
+        } else {
+            $icm_compare = false;
         }
 
         $token_count = sizeof($tokens);
@@ -631,6 +652,33 @@ class PHP_CompatInfo
                     }
                 }
             }
+            // Compare "ignore_constants_match" pre-condition
+            if (is_string($icm_compare)) {
+                if (strcasecmp('preg_match', $icm_compare) != 0) {
+                    // Try to catch defined() condition
+                    if (is_array($tokens[$i])
+                        && (token_name($tokens[$i][0]) == 'T_STRING')
+                        && (strcasecmp($tokens[$i][1], $icm_compare) == 0)) {
+
+                        while ((is_array($tokens[$i])
+                                && token_name($tokens[$i][0])
+                                    == 'T_CONSTANT_ENCAPSED_STRING') === false) {
+                            $i += 1;
+                        }
+                        $cst = trim($tokens[$i][1], "'");
+
+                        /**
+                         * try if defined()
+                         * match one or more pattern condition
+                         */
+                        foreach ($icm_patterns as $pattern) {
+                            if (preg_match($pattern, $cst) === 1) {
+                                $ignore_constants[] = $cst;
+                            }
+                        }
+                    }
+                }
+            }
 
             if (is_array($tokens[$i])
                 && (token_name($tokens[$i][0]) == 'T_STRING')
@@ -657,11 +705,14 @@ class PHP_CompatInfo
                         // PHP 5 constant tokens found into a string
                     } else {
                         $init = $GLOBALS['_PHP_COMPATINFO_CONST'][$const]['init'];
-                        if (!in_array($const, $options['ignore_constants'])
-                            && (!PHP_CompatInfo::_ignore($init,
-                                $min_ver, $max_ver))) {
-                            $constants[]    = $const;
-                            $latest_version = $init;
+                        if (!PHP_CompatInfo::_ignore($init, $min_ver, $max_ver)) {
+                            $constants[] = $const;
+                            if (in_array($const, $ignore_constants)
+                                || in_array($const, $options['ignore_constants'])) {
+                                $ignored_constants[] = $const;
+                            } else {
+                                $latest_version = $init;
+                            }
                         }
                     }
                 }
@@ -800,21 +851,23 @@ class PHP_CompatInfo
             }
         }
 
-        $constants = array_unique($constants);
+        $ignored_constants = array_unique($ignored_constants);
+        $constants         = array_unique($constants);
         foreach ($constants as $constant) {
             $const = $GLOBALS['_PHP_COMPATINFO_CONST'][$constant];
             if (PHP_CompatInfo::_ignore($const['init'], $min_ver, $max_ver)) {
                 continue;  // skip this constant version
             }
-
-            $cmp = version_compare($latest_version, $const['init']);
-            if ($cmp === -1) {
-                $latest_version = $const['init'];
-            }
-            if (array_key_exists('end', $const)) {
-                $cmp = version_compare($earliest_version, $const['end']);
-                if ($earliest_version == '' || $cmp === 1) {
-                    $earliest_version = $const['end'];
+            if (!in_array($constant, $ignored_constants)) {
+                $cmp = version_compare($latest_version, $const['init']);
+                if ($cmp === -1) {
+                    $latest_version = $const['init'];
+                }
+                if (array_key_exists('end', $const)) {
+                    $cmp = version_compare($earliest_version, $const['end']);
+                    if ($earliest_version == '' || $cmp === 1) {
+                        $earliest_version = $const['end'];
+                    }
                 }
             }
             if (!in_array($const['name'], $constant_names)) {
@@ -838,6 +891,7 @@ class PHP_CompatInfo
 
         $main_info = array('ignored_functions'  => $ignored_functions,
                            'ignored_extensions' => $ignored_extensions,
+                           'ignored_constants'  => $ignored_constants,
                            'max_version' => $earliest_version,
                            'version'     => $latest_version,
                            'extensions'  => $extensions,
