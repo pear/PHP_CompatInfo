@@ -704,11 +704,29 @@ class PHP_CompatInfo
                         == 'T_ENCAPSED_AND_WHITESPACE') {
                         // PHP 5 constant tokens found into a string
                     } else {
+                        // Compare "ignore_constants_match" free condition
+                        $icm_preg_match = false;
+                        if (is_string($icm_compare)) {
+                            if (strcasecmp('preg_match', $icm_compare) == 0) {
+                                /**
+                                 * try if preg_match()
+                                 * match one or more pattern condition
+                                 */
+                                foreach ($icm_patterns as $pattern) {
+                                    if (preg_match($pattern, $const) === 1) {
+                                        $icm_preg_match = true;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+
                         $init = $GLOBALS['_PHP_COMPATINFO_CONST'][$const]['init'];
                         if (!PHP_CompatInfo::_ignore($init, $min_ver, $max_ver)) {
                             $constants[] = $const;
                             if (in_array($const, $ignore_constants)
-                                || in_array($const, $options['ignore_constants'])) {
+                                || in_array($const, $options['ignore_constants'])
+                                || $icm_preg_match) {
                                 $ignored_constants[] = $const;
                             } else {
                                 $latest_version = $init;
