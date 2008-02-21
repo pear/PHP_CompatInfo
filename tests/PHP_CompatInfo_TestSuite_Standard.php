@@ -1104,6 +1104,34 @@ php_check_syntax('somefile.php');
                      'tokens' => array());
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests parsing a single file with 'ignore_functions_match' option
+     * Sample #3
+     *
+     * When I don't know the script to parse (most case), I would really
+     * exclude from scope all functions that are conditionned by function_exists().
+     *
+     * @return void
+     * @since  version 1.7.0
+     */
+    public function testParseFileWithIgnoreFunctionsMatchSamp3()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'ignore_functions_match.php';
+        $opt = array('ignore_functions_match' => array('function_exists', array('/.*/')));
+
+        $r = $this->pci->parseFile($fn, $opt);
+        $this->assertType('array', $r);
+
+        $exp = array('ignored_functions' => array('file_put_contents', 'debug_backtrace'),
+                     'max_version' => '',
+                     'version' => '5.0.0',
+                     'extensions' => array(),
+                     'constants' => array(),
+                     'tokens' => array());
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
