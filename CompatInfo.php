@@ -179,15 +179,16 @@ class PHP_CompatInfo
             return false;
         }
 
-        $files_parsed      = array();
-        $latest_version    = $this->latest_version;
-        $earliest_version  = $this->earliest_version;
-        $extensions        = array();
-        $constants         = array();
-        $tokens            = array();
-        $ignored           = array();
-        $ignored_functions = array();
-        $default_options   = array(
+        $files_parsed       = array();
+        $latest_version     = $this->latest_version;
+        $earliest_version   = $this->earliest_version;
+        $extensions         = array();
+        $constants          = array();
+        $tokens             = array();
+        $ignored            = array();
+        $ignored_functions  = array();
+        $ignored_extensions = array();
+        $default_options    = array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
             'recurse_dir' => true,
             'debug' => false,
@@ -251,14 +252,20 @@ class PHP_CompatInfo
                     $ignored_functions[] = $if;
                 }
             }
+            foreach ($file['ignored_extensions'] as $ie) {
+                if (!in_array($ie, $ignored_extensions)) {
+                    $ignored_extensions[] = $ie;
+                }
+            }
         }
 
         if (count($files_parsed) == 0) {
             return false;
         }
 
-        $main_info = array('ignored_files' => $ignored,
-                           'ignored_functions' => $ignored_functions,
+        $main_info = array('ignored_files'      => $ignored,
+                           'ignored_functions'  => $ignored_functions,
+                           'ignored_extensions' => $ignored_extensions,
                            'max_version'   => $earliest_version,
                            'version'       => $latest_version,
                            'extensions'    => $extensions,
@@ -318,14 +325,15 @@ class PHP_CompatInfo
      */
     function parseArray($files, $options = array())
     {
-        $files_parsed      = array();
-        $latest_version    = $this->latest_version;
-        $earliest_version  = $this->earliest_version;
-        $extensions        = array();
-        $constants         = array();
-        $tokens            = array();
-        $ignored           = array();
-        $ignored_functions = array();
+        $files_parsed       = array();
+        $latest_version     = $this->latest_version;
+        $earliest_version   = $this->earliest_version;
+        $extensions         = array();
+        $constants          = array();
+        $tokens             = array();
+        $ignored            = array();
+        $ignored_functions  = array();
+        $ignored_extensions = array();
 
         $options = array_merge(array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
@@ -383,14 +391,20 @@ class PHP_CompatInfo
                     $ignored_functions[] = $if;
                 }
             }
+            foreach ($file['ignored_extensions'] as $ie) {
+                if (!in_array($ie, $ignored_extensions)) {
+                    $ignored_extensions[] = $ie;
+                }
+            }
         }
 
         if (count($files_parsed) == 0) {
             return false;
         }
 
-        $main_info = array('ignored_files' => $ignored,
-                           'ignored_functions' => $ignored_functions,
+        $main_info = array('ignored_files'      => $ignored,
+                           'ignored_functions'  => $ignored_functions,
+                           'ignored_extensions' => $ignored_extensions,
                            'max_version'   => $earliest_version,
                            'version'       => $latest_version,
                            'extensions'    => $extensions,
@@ -475,17 +489,19 @@ class PHP_CompatInfo
     {
         static $akeys;
 
-        $functions         = array();
-        $functions_version = array();
-        $latest_version    = $this->latest_version;
-        $earliest_version  = $this->earliest_version;
-        $extensions        = array();
-        $constants         = array();
-        $constant_names    = array();
-        $token_names       = array();
-        $udf               = array();
-        $ignore_functions  = array();
-        $ignored_functions = array();
+        $functions          = array();
+        $functions_version  = array();
+        $latest_version     = $this->latest_version;
+        $earliest_version   = $this->earliest_version;
+        $extensions         = array();
+        $constants          = array();
+        $constant_names     = array();
+        $token_names        = array();
+        $udf                = array();
+        $ignore_functions   = array();
+        $ignored_functions  = array();
+        $ignore_extensions  = array();
+        $ignored_extensions = array();
 
         if (isset($options['ignore_constants'])) {
             $options['ignore_constants']
@@ -514,6 +530,11 @@ class PHP_CompatInfo
             list($ifm_compare, $ifm_patterns) = $options['ignore_functions_match'];
         } else {
             $ifm_compare = false;
+        }
+        if (isset($options['ignore_extensions_match'])) {
+            list($iem_compare, $iem_patterns) = $options['ignore_extensions_match'];
+        } else {
+            $iem_compare = false;
         }
 
         $token_count = sizeof($tokens);
@@ -583,6 +604,33 @@ class PHP_CompatInfo
                     }
                 }
             }
+            // Compare "ignore_extensions_match" pre-condition
+            if (is_string($iem_compare)) {
+                if (strcasecmp('preg_match', $iem_compare) != 0) {
+                    // Try to catch extension_loaded() condition
+                    if (is_array($tokens[$i])
+                        && (token_name($tokens[$i][0]) == 'T_STRING')
+                        && (strcasecmp($tokens[$i][1], $iem_compare) == 0)) {
+
+                        while ((is_array($tokens[$i])
+                                && token_name($tokens[$i][0])
+                                    == 'T_CONSTANT_ENCAPSED_STRING') === false) {
+                            $i += 1;
+                        }
+                        $ext = trim($tokens[$i][1], "'");
+
+                        /**
+                         * try if extension_loaded()
+                         * match one or more pattern condition
+                         */
+                        foreach ($iem_patterns as $pattern) {
+                            if (preg_match($pattern, $ext) === 1) {
+                                $ignore_extensions[] = $ext;
+                            }
+                        }
+                    }
+                }
+            }
 
             if (is_array($tokens[$i])
                 && (token_name($tokens[$i][0]) == 'T_STRING')
@@ -635,6 +683,13 @@ class PHP_CompatInfo
             $options['ignore_functions']
                 = array_unique($options['ignore_functions']);
         }
+        if (count($ignore_extensions) > 0) {
+            $ignore_extensions = array_map('strtolower', $ignore_extensions);
+            $options['ignore_extensions']
+                = array_merge($options['ignore_extensions'], $ignore_extensions);
+            $options['ignore_extensions']
+                = array_unique($options['ignore_extensions']);
+        }
 
         foreach ($functions as $name) {
             if (!isset($GLOBALS['_PHP_COMPATINFO_FUNCS'][$name])) {
@@ -679,8 +734,16 @@ class PHP_CompatInfo
                 && (!in_array($name, $options['ignore_functions']))
                 && ($ifm_preg_match === false)) {
 
+                if ($extension && !in_array($extension, $extensions)) {
+                    $extensions[] = substr($func['ext'], 0, 4) == 'ext_'
+                        ? $extension : $func['ext'];
+                }
                 if ($extension
                     && in_array($extension, $options['ignore_extensions'])) {
+                    if (!in_array($extension, $ignored_extensions)) {
+                        // extension is ignored (only once)
+                        $ignored_extensions[] = $extension;
+                    }
                     continue;  // skip this extension function
                 }
 
@@ -710,10 +773,6 @@ class PHP_CompatInfo
                     }
                 }
 
-                if ($extension && !in_array($extension, $extensions)) {
-                    $extensions[] = substr($func['ext'], 0, 4) == 'ext_'
-                        ? $extension : $func['ext'];
-                }
             } else {
                 // function is ignored
                 $ignored_functions[] = $name;
@@ -756,7 +815,8 @@ class PHP_CompatInfo
 
         ksort($functions_version);
 
-        $main_info = array('ignored_functions' => $ignored_functions,
+        $main_info = array('ignored_functions'  => $ignored_functions,
+                           'ignored_extensions' => $ignored_extensions,
                            'max_version' => $earliest_version,
                            'version'     => $latest_version,
                            'extensions'  => $extensions,
