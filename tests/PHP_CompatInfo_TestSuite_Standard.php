@@ -1074,6 +1074,36 @@ php_check_syntax('somefile.php');
                      'tokens' => array());
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests parsing a single file with 'ignore_functions_match' option
+     * Sample #2
+     *
+     * Exclude (from scope) all functions that are 'debug' prefixed (case sensitive).
+     *
+     * If you want a case-insensitive search add an "i" after the pattern delimiter,
+     * like that:  '/^debug/i'
+     *
+     * @return void
+     * @since  version 1.7.0
+     */
+    public function testParseFileWithIgnoreFunctionsMatchSamp2()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'ignore_functions_match.php';
+        $opt = array('ignore_functions_match' => array('preg_match', array('/^debug/')));
+
+        $r = $this->pci->parseFile($fn, $opt);
+        $this->assertType('array', $r);
+
+        $exp = array('ignored_functions' => array('debug_backtrace', 'debug_print_backtrace'),
+                     'max_version' => '',
+                     'version' => '5.0.0',
+                     'extensions' => array(),
+                     'constants' => array(),
+                     'tokens' => array());
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
