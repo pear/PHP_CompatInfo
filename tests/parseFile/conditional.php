@@ -7,6 +7,12 @@
 // PHP 4.3.10 and 5.0.2 : PHP_EOL
 // PHP 5.0.0 : simplexml_load_file
 
+if (!defined('DIRECTORY_SEPARATOR')) {
+    define('DIRECTORY_SEPARATOR',
+        strtoupper(substr(PHP_OS, 0, 3) == 'WIN') ? '\\' : '/'
+    );
+}
+
 if (function_exists('debug_backtrace')) {
     $backtrace = debug_backtrace();
 } else {
@@ -27,6 +33,6 @@ echo "Hello World" . PHP_EOL;
 
 $ds  = DIRECTORY_SEPARATOR;
 $fn  = dirname(__FILE__) . $ds . basename(__FILE__);
-echo "You have run file : $fn" . PHP_EOL;
+echo "You have run file : $fn at " . date(DATE_W3C) . PHP_EOL;
 
 ?>
