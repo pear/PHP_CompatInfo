@@ -131,6 +131,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $r   = $this->pci->parseFile($fn);
         $exp = array('ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
@@ -154,6 +155,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
 
         $exp = array('ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.0.0',
                      'extensions' => array('bcmath', 'pcre'),
@@ -179,12 +181,14 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
 
         $exp = array('ignored_functions' => array('simplexml_load_file'),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
-                     'version' => '4.3.10',
-                     'extensions' => array(),
+                     'version' => '5.1.1',
+                     'extensions' => array('date'),
                      'constants' => array('PHP_EOL',
                                           'DIRECTORY_SEPARATOR',
-                                          '__FILE__'),
+                                          '__FILE__',
+                                          'DATE_W3C'),
                      'tokens' => array());
         $this->assertSame($exp, $r);
     }
@@ -206,11 +210,14 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
 
         $exp = array('ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array('PHP_EOL'),
                      'max_version' => '',
-                     'version' => '5.0.0',
-                     'extensions' => array('simplexml'),
-                     'constants' => array('DIRECTORY_SEPARATOR',
-                                          '__FILE__'),
+                     'version' => '5.1.1',
+                     'extensions' => array('simplexml', 'date'),
+                     'constants' => array('PHP_EOL',
+                                          'DIRECTORY_SEPARATOR',
+                                          '__FILE__',
+                                          'DATE_W3C'),
                      'tokens' => array());
         $this->assertSame($exp, $r);
     }
@@ -239,6 +246,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                                                   'zip_entry_compressionmethod',
                                                   'zip_close'),
                      'ignored_extensions' => array('zip'),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array('zip'),
@@ -265,11 +273,13 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
 
         $exp = array('ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
-                     'version' => '5.0.0',
-                     'extensions' => array('simplexml'),
+                     'version' => '5.1.1',
+                     'extensions' => array('simplexml', 'date'),
                      'constants' => array('DIRECTORY_SEPARATOR',
-                                          '__FILE__'),
+                                          '__FILE__',
+                                          'DATE_W3C'),
                      'tokens' => array());
         $this->assertSame($exp, $r);
     }
@@ -302,6 +312,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
 
         $exp = array('ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '5.0.4',
                      'version' => '5.1.0',
                      'extensions' => array(),
@@ -337,6 +348,7 @@ echo "$nl W3C     = " . DATE_W3C;
 
         $exp = array('ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.1.1',
                      'extensions' => array(),
@@ -368,6 +380,7 @@ echo "$nl RSS     = " . DATE_RSS;
 
         $exp = array('ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.1.3',
                      'extensions' => array(),
@@ -409,6 +422,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
         $r   = $this->pci->parseString($str);
         $exp = array('ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.2.0',
                      'extensions' => array(),
@@ -453,6 +467,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.3.2',
                      'extensions' => array('xdebug', 'gd',
@@ -463,6 +478,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $dir . $ds . 'extensions.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '4.3.2',
                                'extensions' => array('xdebug', 'gd',
@@ -473,6 +489,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $dir . $ds . 'phpinfo.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '4.0.0',
                                'extensions' => array(),
@@ -498,6 +515,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.2.0',
                      'extensions' => array('xdebug', 'gd',
@@ -526,6 +544,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $dir . 'extensions.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '4.3.2',
                                'extensions' => array('xdebug', 'gd',
@@ -536,6 +555,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $dir . 'PHP5' . $ds . 'tokens.php5' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '5.0.0',
                                'extensions' => array(),
@@ -555,6 +575,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $dir . 'PHP5' . $ds . 'upload_error.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '5.2.0',
                                'extensions' => array(),
@@ -570,6 +591,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $dir . 'phpinfo.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '4.0.0',
                                'extensions' => array(),
@@ -596,6 +618,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
         $exp = array('ignored_files' => array($dir . 'phpinfo.php'),
                      'ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.2.0',
                      'extensions' => array('xdebug', 'gd',
@@ -613,6 +636,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $dir . 'extensions.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '4.3.2',
                                'extensions' => array('xdebug', 'gd',
@@ -623,6 +647,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $dir . 'PHP5' . $ds . 'upload_error.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '5.2.0',
                                'extensions' => array(),
@@ -666,6 +691,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.3.0',
                      'extensions' => array('sapi_cgi', 'tokenizer', 'pcre'),
@@ -674,6 +700,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $base[0] . $ds . 'PEAR.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('sapi_cgi'),
@@ -682,6 +709,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $base[1] . $ds . 'CompatInfo.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('tokenizer', 'pcre'),
@@ -717,6 +745,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
         $exp = array('ignored_files' => $excl,
                      'ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.3.0',
                      'extensions' => array('sapi_cgi'),
@@ -725,6 +754,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      $base . $ds . 'PEAR.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
+                               'ignored_constants' => array(),
                                'max_version' => '',
                                'version' => '4.3.0',
                                'extensions' => array('sapi_cgi'),
@@ -756,6 +786,7 @@ php_check_syntax('somefile.php');
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '5.0.4',
                      'version' => '5.1.0',
                      'extensions' => array(),
@@ -764,6 +795,7 @@ php_check_syntax('somefile.php');
                      0 => array(
                           'ignored_functions' => array(),
                           'ignored_extensions' => array(),
+                          'ignored_constants' => array(),
                           'max_version' => '5.0.4',
                           'version' => '5.0.0',
                           'extensions' => array(),
@@ -772,6 +804,7 @@ php_check_syntax('somefile.php');
                      1 => array(
                           'ignored_functions' => array(),
                           'ignored_extensions' => array(),
+                          'ignored_constants' => array(),
                           'max_version' => '',
                           'version' => '5.1.0',
                           'extensions' => array(),
@@ -1055,6 +1088,7 @@ php_check_syntax('somefile.php');
         $r   = $this->pci->parseFile($fn);
         $exp = array('ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array(),
@@ -1078,6 +1112,7 @@ php_check_syntax('somefile.php');
         $r   = $this->pci->parseFile($fn);
         $exp = array('ignored_functions' => array(),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array(),
@@ -1111,6 +1146,7 @@ php_check_syntax('somefile.php');
 
         $exp = array('ignored_functions' => array('file_put_contents', 'debug_backtrace'),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array(),
@@ -1142,6 +1178,7 @@ php_check_syntax('somefile.php');
 
         $exp = array('ignored_functions' => array('debug_backtrace', 'debug_print_backtrace'),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array(),
@@ -1171,6 +1208,7 @@ php_check_syntax('somefile.php');
 
         $exp = array('ignored_functions' => array('file_put_contents', 'debug_backtrace'),
                      'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.0.0',
                      'extensions' => array(),
@@ -1201,6 +1239,7 @@ php_check_syntax('somefile.php');
 
         $exp = array('ignored_functions' => array('sqlite_libversion'),
                      'ignored_extensions' => array('sqlite'),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.3.2',
                      'extensions' => array('xdebug', 'gd',
@@ -1234,6 +1273,7 @@ php_check_syntax('somefile.php');
 
         $exp = array('ignored_functions' => array('apache_get_modules', 'dl'),
                      'ignored_extensions' => array('sapi_apache', 'sapi_cgi'),
+                     'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.3.2',
                      'extensions' => array('xdebug', 'gd',
