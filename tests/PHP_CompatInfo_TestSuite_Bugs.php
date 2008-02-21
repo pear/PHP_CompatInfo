@@ -90,6 +90,7 @@ File::write("test", "test");
 ?>';
         $r   = $this->pci->parseString($str);
         $exp = array('ignored_functions' => array(),
+                     'ignored_extensions' => array(),
                      'max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
@@ -113,6 +114,7 @@ apache_response_headers();
 ?>';
         $r   = $this->pci->parseString($str);
         $exp = array('ignored_functions' => array(),
+                     'ignored_extensions' => array(),
                      'max_version' => '',
                      'version' => '4.3.0',
                      'extensions' => array('sapi_apache'),
@@ -138,6 +140,7 @@ apache_response_headers();
                      'ignore_functions' => array('debug_backtrace'));
         $r   = $this->pci->parseFile($fn, $opt);
         $exp = array('ignored_functions' => array('debug_backtrace'),
+                     'ignored_extensions' => array(),
                      'max_version' => '',
                      'version' => '4.3.0',
                      'extensions' => array(),
@@ -328,6 +331,7 @@ $test = "public$link";
 ?>';
         $r   = $this->pci->parseString($str);
         $exp = array('ignored_functions' => array(),
+                     'ignored_extensions' => array(),
                      'max_version' => '',
                      'version' => '3.0.0',
                      'extensions' => array(),
