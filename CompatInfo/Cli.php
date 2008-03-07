@@ -450,6 +450,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $table = new Console_Table();
             $table->setHeaders(array('Option', 'Value'));
 
+            $filter0 = array(&$this, '_splitOption');
+            $table->addFilter(0, $filter0);
+            $filter1 = array(&$this, '_splitValue');
+            $table->addFilter(1, $filter1);
+
             $opts = $this->args->getValues();
             if (is_array($opts)) {
                 foreach ($opts as $key => $raw) {
@@ -470,6 +475,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             $table = new Console_Table();
             $table->setHeaders(array('Option', 'Value'));
+
+            $filter0 = array(&$this, '_splitOption');
+            $table->addFilter(0, $filter0);
+            $filter1 = array(&$this, '_splitValue');
+            $table->addFilter(1, $filter1);
 
             $opts = $this->options;
             if (is_array($opts)) {
@@ -542,6 +552,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $table = new Console_Table();
             $table->setHeaders(array('Option', 'Value'));
 
+            $filter0 = array(&$this, '_splitOption');
+            $table->addFilter(0, $filter0);
+            $filter1 = array(&$this, '_splitValue');
+            $table->addFilter(1, $filter1);
+
             $opts = $this->args->getValues();
             if (is_array($opts)) {
                 foreach ($opts as $key => $raw) {
@@ -562,6 +577,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             $table = new Console_Table();
             $table->setHeaders(array('Option', 'Value'));
+
+            $filter0 = array(&$this, '_splitOption');
+            $table->addFilter(0, $filter0);
+            $filter1 = array(&$this, '_splitValue');
+            $table->addFilter(1, $filter1);
 
             $opts = $this->options;
             if (is_array($opts)) {
@@ -647,6 +667,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $table = new Console_Table();
             $table->setHeaders(array('Option', 'Value'));
 
+            $filter0 = array(&$this, '_splitOption');
+            $table->addFilter(0, $filter0);
+            $filter1 = array(&$this, '_splitValue');
+            $table->addFilter(1, $filter1);
+
             $opts = $this->args->getValues();
             if (is_array($opts)) {
                 foreach ($opts as $key => $raw) {
@@ -667,6 +692,11 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             $table = new Console_Table();
             $table->setHeaders(array('Option', 'Value'));
+
+            $filter0 = array(&$this, '_splitOption');
+            $table->addFilter(0, $filter0);
+            $filter1 = array(&$this, '_splitValue');
+            $table->addFilter(1, $filter1);
 
             $opts = $this->options;
             if (is_array($opts)) {
@@ -783,6 +813,54 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 $str .= str_pad($cst, 21);
             } else {
                 $str .= '...' . substr($cst, (strlen($cst) - 18));
+            }
+            $str .= "\r\n";
+        }
+        $str = rtrim($str, "\r\n");
+        return $str;
+    }
+
+    /**
+     * The Console_Table filter callback limits table output to 80 columns,
+     * and Command line Option column to 25 characters
+     * (23 + 1 blank margin left + 1 blank margin right).
+     *
+     * @param string $data Content of option column (0)
+     *
+     * @return string
+     * @access private
+     * @since  1.7.0
+     */
+    function _splitOption($data)
+    {
+        if (strlen($data) <= 23) {
+            $str = str_pad($data, 23);
+        } else {
+            $str = '...' . substr($data, (strlen($data) - 20));
+        }
+        return $str;
+    }
+
+    /**
+     * The Console_Table filter callback limits table output to 80 columns,
+     * and Command line Value column to 51 characters
+     * (49 + 1 blank margin left + 1 blank margin right)
+     *
+     * @param string $data Content of value column (1)
+     *
+     * @return string
+     * @access private
+     * @since  1.7.0
+     */
+    function _splitValue($data)
+    {
+        $cstArr = explode("\r\n", $data);
+        $str    = '';
+        foreach ($cstArr as $cst) {
+            if (strlen($cst) <= 49) {
+                $str .= str_pad($cst, 49);
+            } else {
+                $str .= '...' . substr($cst, (strlen($cst) - 46));
             }
             $str .= "\r\n";
         }
