@@ -403,11 +403,6 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 } elseif (count($patterns['reg']) > 0) {
                     $this->options['ignore_functions_match']
                         = array('preg_match', $patterns['reg']);
-                } else {
-                    $this->error = 'File "' . $inm . '"'
-                         . ' does not contains any valid pattern. '
-                         . 'Please check your spelling and try again.';
-                    return;
                 }
             } else {
                 $this->error = 'Failed opening file "' . $inm
@@ -451,11 +446,6 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 } elseif (count($patterns['reg']) > 0) {
                     $this->options['ignore_extensions_match']
                         = array('preg_match', $patterns['reg']);
-                } else {
-                    $this->error = 'File "' . $iem . '"'
-                         . ' does not contains any valid pattern. '
-                         . 'Please check your spelling and try again.';
-                    return;
                 }
             } else {
                 $this->error = 'Failed opening file "' . $iem
@@ -499,11 +489,6 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 } elseif (count($patterns['reg']) > 0) {
                     $this->options['ignore_constants_match']
                         = array('preg_match', $patterns['reg']);
-                } else {
-                    $this->error = 'File "' . $icm . '"'
-                         . ' does not contains any valid pattern. '
-                         . 'Please check your spelling and try again.';
-                    return;
                 }
             } else {
                 $this->error = 'Failed opening file "' . $icm
