@@ -161,6 +161,24 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                                  . 'when parsing source code',
                       'default' => '5.0.0',
                       'min'     => 0 , 'max' => 2),
+            'ignore-functions-match' =>
+                array('short'   => 'inm',
+                      'desc'    => 'Data file name which contains a list of '
+                                 . 'php function pattern to ignore',
+                      'default' => 'functions-match.txt',
+                      'min'     => 0 , 'max' => 1),
+            'ignore-extensions-match' =>
+                array('short'   => 'iem',
+                      'desc'    => 'Data file name which contains a list of '
+                                 . 'php extension pattern to ignore',
+                      'default' => 'extensions-match.txt',
+                      'min'     => 0 , 'max' => 1),
+            'ignore-constants-match' =>
+                array('short'   => 'icm',
+                      'desc'    => 'Data file name which contains a list of '
+                                 . 'php constant pattern to ignore',
+                      'default' => 'constants-match.txt',
+                      'min'     => 0 , 'max' => 1),
             'help' =>
                 array('short' => 'h',
                       'desc'  => 'Show this help',
@@ -316,6 +334,150 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 $iv = array($iv);
             }
             $this->options['ignore_versions'] = $iv;
+        }
+
+        // ignore-functions-match
+        $inm = $this->args->getValue('inm');
+        if (isset($inm)) {
+            if (file_exists($inm)) {
+                $lines    = file($inm);
+                $patterns = array('std' => array(), 'reg' => array());
+                foreach ($lines as $line) {
+                    $line = rtrim($line);  // remove line ending
+                    if (strlen($line) == 0) {
+                        continue;  // skip empty lines
+                    }
+                    if ($line{0} == ';') {
+                        continue;  // skip this pattern: consider as comment line
+                    }
+                    if ($line{0} == '=') {
+                        list($p, $s) = explode('=', $line);
+                        $patterns['reg'][] = '/'.$s.'/';
+                    } else {
+                        $patterns['std'][] = '/'.$line.'/';
+                    }
+                }
+                if (count($patterns['std']) > 0
+                    && count($patterns['reg']) > 0) {
+                    $this->error = 'Mixed "function_exists" and '
+                         . '"preg_match" conditions are not allowed. '
+                         . 'Please check your spelling and try again.';
+                    return;
+
+                } elseif (count($patterns['std']) > 0) {
+                    $this->options['ignore_functions_match']
+                        = array('function_exists', $patterns['std']);
+                } elseif (count($patterns['reg']) > 0) {
+                    $this->options['ignore_functions_match']
+                        = array('preg_match', $patterns['reg']);
+                } else {
+                    $this->error = 'File "' . $inm . '"'
+                         . ' does not contains any valid pattern. '
+                         . 'Please check your spelling and try again.';
+                    return;
+                }
+            } else {
+                $this->error = 'Failed opening file "' . $inm
+                     . '" (ignore-functions-match option). '
+                     . 'Please check your spelling and try again.';
+                return;
+            }
+        }
+
+        // ignore-extensions-match
+        $iem = $this->args->getValue('iem');
+        if (isset($iem)) {
+            if (file_exists($iem)) {
+                $lines    = file($iem);
+                $patterns = array('std' => array(), 'reg' => array());
+                foreach ($lines as $line) {
+                    $line = rtrim($line);  // remove line ending
+                    if (strlen($line) == 0) {
+                        continue;  // skip empty lines
+                    }
+                    if ($line{0} == ';') {
+                        continue;  // skip this pattern: consider as comment line
+                    }
+                    if ($line{0} == '=') {
+                        list($p, $s) = explode('=', $line);
+                        $patterns['reg'][] = '/'.$s.'/';
+                    } else {
+                        $patterns['std'][] = '/'.$line.'/';
+                    }
+                }
+                if (count($patterns['std']) > 0
+                    && count($patterns['reg']) > 0) {
+                    $this->error = 'Mixed "extension_loaded" and '
+                         . '"preg_match" conditions are not allowed. '
+                         . 'Please check your spelling and try again.';
+                    return;
+
+                } elseif (count($patterns['std']) > 0) {
+                    $this->options['ignore_extensions_match']
+                        = array('extension_loaded', $patterns['std']);
+                } elseif (count($patterns['reg']) > 0) {
+                    $this->options['ignore_extensions_match']
+                        = array('preg_match', $patterns['reg']);
+                } else {
+                    $this->error = 'File "' . $iem . '"'
+                         . ' does not contains any valid pattern. '
+                         . 'Please check your spelling and try again.';
+                    return;
+                }
+            } else {
+                $this->error = 'Failed opening file "' . $iem
+                     . '" (ignore-extensions-match option). '
+                     . 'Please check your spelling and try again.';
+                return;
+            }
+        }
+
+        // ignore-constants-match
+        $icm = $this->args->getValue('icm');
+        if (isset($icm)) {
+            if (file_exists($icm)) {
+                $lines    = file($icm);
+                $patterns = array('std' => array(), 'reg' => array());
+                foreach ($lines as $line) {
+                    $line = rtrim($line);  // remove line ending
+                    if (strlen($line) == 0) {
+                        continue;  // skip empty lines
+                    }
+                    if ($line{0} == ';') {
+                        continue;  // skip this pattern: consider as comment line
+                    }
+                    if ($line{0} == '=') {
+                        list($p, $s) = explode('=', $line);
+                        $patterns['reg'][] = '/'.$s.'/';
+                    } else {
+                        $patterns['std'][] = '/'.$line.'/';
+                    }
+                }
+                if (count($patterns['std']) > 0
+                    && count($patterns['reg']) > 0) {
+                    $this->error = 'Mixed "defined" and '
+                         . '"preg_match" conditions are not allowed. '
+                         . 'Please check your spelling and try again.';
+                    return;
+
+                } elseif (count($patterns['std']) > 0) {
+                    $this->options['ignore_constants_match']
+                        = array('defined', $patterns['std']);
+                } elseif (count($patterns['reg']) > 0) {
+                    $this->options['ignore_constants_match']
+                        = array('preg_match', $patterns['reg']);
+                } else {
+                    $this->error = 'File "' . $icm . '"'
+                         . ' does not contains any valid pattern. '
+                         . 'Please check your spelling and try again.';
+                    return;
+                }
+            } else {
+                $this->error = 'Failed opening file "' . $icm
+                     . '" (ignore-constants-match option). '
+                     . 'Please check your spelling and try again.';
+                return;
+            }
         }
 
         // file-ext
@@ -487,8 +649,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                     if ($key == 'debug' || $key == 'recurse_dir') {
                         $raw = ($raw === true) ? 'TRUE' : 'FALSE';
                     }
-                    if (is_array($raw)) {
-                        $raw = implode("\r\n", $raw);
+                    if (substr($key, -6) == '_match') {
+                        $val = array_values($raw[1]);
+                        array_unshift($val, $raw[0]);
+                        $raw = implode("\r\n", $val);
+                    } else {
+                        if (is_array($raw)) {
+                            $raw = implode("\r\n", $raw);
+                        }
                     }
                     $contents = array($key, $raw);
                     $table->addRow($contents);
@@ -589,8 +757,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                     if ($key == 'debug' || $key == 'recurse_dir') {
                         $raw = ($raw === true) ? 'TRUE' : 'FALSE';
                     }
-                    if (is_array($raw)) {
-                        $raw = implode("\r\n", $raw);
+                    if (substr($key, -6) == '_match') {
+                        $val = array_values($raw[1]);
+                        array_unshift($val, $raw[0]);
+                        $raw = implode("\r\n", $val);
+                    } else {
+                        if (is_array($raw)) {
+                            $raw = implode("\r\n", $raw);
+                        }
                     }
                     $contents = array($key, $raw);
                     $table->addRow($contents);
@@ -704,8 +878,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                     if ($key == 'debug') {
                         $raw = ($raw === true) ? 'TRUE' : 'FALSE';
                     }
-                    if (is_array($raw)) {
-                        $raw = implode("\r\n", $raw);
+                    if (substr($key, -6) == '_match') {
+                        $val = array_values($raw[1]);
+                        array_unshift($val, $raw[0]);
+                        $raw = implode("\r\n", $val);
+                    } else {
+                        if (is_array($raw)) {
+                            $raw = implode("\r\n", $raw);
+                        }
                     }
                     $contents = array($key, $raw);
                     $table->addRow($contents);
