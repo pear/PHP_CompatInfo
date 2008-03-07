@@ -289,8 +289,19 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $in = $this->args->getValue('in');
         if (isset($in)) {
             if (file_exists($in)) {
-                $options                           = file($in);
-                $this->options['ignore_functions'] = array_map('rtrim', $options);
+                $lines   = file($in);
+                $options = array();
+                foreach ($lines as $line) {
+                    $line = rtrim($line);  // remove line ending
+                    if (strlen($line) == 0) {
+                        continue;  // skip empty lines
+                    }
+                    if ($line{0} == ';') {
+                        continue;  // skip this entry: consider as comment
+                    }
+                    $options[] = $line;
+                }
+                $this->options['ignore_functions'] = $options;
             } else {
                 $this->error = 'Failed opening file "' . $in
                      . '" (ignore-functions option). '
@@ -303,8 +314,19 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $ic = $this->args->getValue('ic');
         if (isset($ic)) {
             if (file_exists($ic)) {
-                $options                           = file($ic);
-                $this->options['ignore_constants'] = array_map('rtrim', $options);
+                $lines   = file($ic);
+                $options = array();
+                foreach ($lines as $line) {
+                    $line = rtrim($line);  // remove line ending
+                    if (strlen($line) == 0) {
+                        continue;  // skip empty lines
+                    }
+                    if ($line{0} == ';') {
+                        continue;  // skip this entry: consider as comment
+                    }
+                    $options[] = $line;
+                }
+                $this->options['ignore_constants'] = $options;
             } else {
                 $this->error = 'Failed opening file "' . $ic
                      . '" (ignore-constants option). '
@@ -317,8 +339,19 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $ie = $this->args->getValue('ie');
         if (isset($ie)) {
             if (file_exists($ie)) {
-                $options                            = file($ie);
-                $this->options['ignore_extensions'] = array_map('rtrim', $options);
+                $lines   = file($ie);
+                $options = array();
+                foreach ($lines as $line) {
+                    $line = rtrim($line);  // remove line ending
+                    if (strlen($line) == 0) {
+                        continue;  // skip empty lines
+                    }
+                    if ($line{0} == ';') {
+                        continue;  // skip this entry: consider as comment
+                    }
+                    $options[] = $line;
+                }
+                $this->options['ignore_extensions'] = $options;
             } else {
                 $this->error = 'Failed opening file "' . $ie
                      . '" (ignore-extensions option). '
