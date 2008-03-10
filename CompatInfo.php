@@ -83,16 +83,22 @@ class PHP_CompatInfo
      *
      * @param string $file    Path of File to parse
      * @param array  $options An array of options where:
-     *  - 'debug'            Contains a boolean to control whether
-     *                       extra ouput is shown.
-     *  - 'ignore_functions' Contains an array of functions to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_constants' Contains an array of constants to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_extensions' Contains an array of php extensions to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_versions'  Contains an array of php versions to ignore
-     *                       when calculating the version needed.
+     *  - 'debug'                   Contains a boolean to control whether
+     *                              extra ouput is shown.
+     *  - 'ignore_functions'        Contains an array of functions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_constants'        Contains an array of constants to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_extensions'       Contains an array of php extensions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_versions'         Contains an array of php versions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_functions_match'  Contains an array of function patterns to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_extensions_match' Contains an array of extension patterns to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_constants_match'  Contains an array of constant patterns to ignore
+     *                              when calculating the version needed.
      *
      * @access public
      * @return array
@@ -116,16 +122,22 @@ class PHP_CompatInfo
      *
      * @param string $string  PHP Code to parses
      * @param array  $options An array of options where:
-     *  - 'debug'            Contains a boolean to control whether
-     *                       extra ouput is shown.
-     *  - 'ignore_functions' Contains an array of functions to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_constants' Contains an array of constants to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_extensions' Contains an array of php extensions to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_versions'  Contains an array of php versions to ignore
-     *                       when calculating the version needed.
+     *  - 'debug'                   Contains a boolean to control whether
+     *                              extra ouput is shown.
+     *  - 'ignore_functions'        Contains an array of functions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_constants'        Contains an array of constants to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_extensions'       Contains an array of php extensions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_versions'         Contains an array of php versions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_functions_match'  Contains an array of function patterns to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_extensions_match' Contains an array of extension patterns to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_constants_match'  Contains an array of constant patterns to ignore
+     *                              when calculating the version needed.
      *
      * @access public
      * @return array|false
@@ -149,23 +161,29 @@ class PHP_CompatInfo
      *
      * @param string $dir     Path of folder to parse
      * @param array  $options An array of options where:
-     *  - 'file_ext'         Contains an array of file extensions to parse
-     *                       for PHP code. Default: php, php4, inc, phtml
-     *  - 'recurse_dir'      Boolean on whether to recursively find files
-     *  - 'debug'            Contains a boolean to control whether
-     *                       extra ouput is shown.
-     *  - 'ignore_functions' Contains an array of functions to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_constants' Contains an array of constants to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_files'     Contains an array of files to ignore.
-     *                       File names are case insensitive.
-     *  - 'ignore_dirs'      Contains an array of directories to ignore.
-     *                       Directory names are case insensitive.
-     *  - 'ignore_extensions' Contains an array of php extensions to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_versions'  Contains an array of php versions to ignore
-     *                       when calculating the version needed.
+     *  - 'file_ext'                Contains an array of file extensions to parse
+     *                              for PHP code. Default: php, php4, inc, phtml
+     *  - 'recurse_dir'             Boolean on whether to recursively find files
+     *  - 'debug'                   Contains a boolean to control whether
+     *                              extra ouput is shown.
+     *  - 'ignore_functions'        Contains an array of functions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_constants'        Contains an array of constants to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_files'            Contains an array of files to ignore.
+     *                              File names are case insensitive.
+     *  - 'ignore_dirs'             Contains an array of directories to ignore.
+     *                              Directory names are case insensitive.
+     *  - 'ignore_extensions'       Contains an array of php extensions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_versions'         Contains an array of php versions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_functions_match'  Contains an array of function patterns to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_extensions_match' Contains an array of extension patterns to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_constants_match'  Contains an array of constant patterns to ignore
+     *                              when calculating the version needed.
      *
      * @access public
      * @return array|false
@@ -309,22 +327,28 @@ class PHP_CompatInfo
      *
      * @param array $files   Array of file names or code strings
      * @param array $options An array of options where:
-     *  - 'file_ext'         Contains an array of file extensions to parse
-     *                       for PHP code. Default: php, php4, inc, phtml
-     *  - 'debug'            Contains a boolean to control whether
-     *                       extra ouput is shown.
-     *  - 'ignore_functions' Contains an array of functions to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_constants' Contains an array of constants to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_files'     Contains an array of files to ignore.
-     *                       File names are case insensitive.
-     *  - 'is_string'        Contains a boolean which says if the array values
-     *                       are strings or file names.
-     *  - 'ignore_extensions' Contains an array of php extensions to ignore
-     *                       when calculating the version needed.
-     *  - 'ignore_versions'  Contains an array of php versions to ignore
-     *                       when calculating the version needed.
+     *  - 'file_ext'                Contains an array of file extensions to parse
+     *                              for PHP code. Default: php, php4, inc, phtml
+     *  - 'debug'                   Contains a boolean to control whether
+     *                              extra ouput is shown.
+     *  - 'ignore_functions'        Contains an array of functions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_constants'        Contains an array of constants to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_files'            Contains an array of files to ignore.
+     *                              File names are case insensitive.
+     *  - 'is_string'               Contains a boolean which says if the array values
+     *                              are strings or file names.
+     *  - 'ignore_extensions'       Contains an array of php extensions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_versions'         Contains an array of php versions to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_functions_match'  Contains an array of function patterns to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_extensions_match' Contains an array of extension patterns to ignore
+     *                              when calculating the version needed.
+     *  - 'ignore_constants_match'  Contains an array of constant patterns to ignore
+     *                              when calculating the version needed.
      *
      * @access public
      * @return array|false
