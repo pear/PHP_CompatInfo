@@ -384,7 +384,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                         continue;  // skip this pattern: consider as comment line
                     }
                     if ($line{0} == '=') {
-                        list($p, $s) = explode('=', $line);
+                        list($p, $s)       = explode('=', $line);
                         $patterns['reg'][] = '/'.$s.'/';
                     } else {
                         $patterns['std'][] = '/'.$line.'/';
@@ -427,7 +427,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                         continue;  // skip this pattern: consider as comment line
                     }
                     if ($line{0} == '=') {
-                        list($p, $s) = explode('=', $line);
+                        list($p, $s)       = explode('=', $line);
                         $patterns['reg'][] = '/'.$s.'/';
                     } else {
                         $patterns['std'][] = '/'.$line.'/';
@@ -470,7 +470,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                         continue;  // skip this pattern: consider as comment line
                     }
                     if ($line{0} == '=') {
-                        list($p, $s) = explode('=', $line);
+                        list($p, $s)       = explode('=', $line);
                         $patterns['reg'][] = '/'.$s.'/';
                     } else {
                         $patterns['std'][] = '/'.$line.'/';
