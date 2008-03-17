@@ -50,11 +50,32 @@ $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
 $p2->addInstallAs('scripts/pci.php', 'pci.php');
 //$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
-$p2->setReleaseVersion('1.7.0a1');
+$p2->setReleaseVersion('1.7.0b1');
 $p2->setAPIVersion('1.7.0');
-$p2->setReleaseStability('alpha');
+$p2->setReleaseStability('beta');
 $p2->setAPIStability('stable');
-$p2->setNotes('* bugs
+$p2->setNotes('Changes since 1.7.0a1 (2008-02-21)
+
+* changes
+- fix CLI output render to 80 columns, on main table :
+  29 characters for File/Path column (1)
+   9 characters for Version column (2)
+  13 characters for Extensions column (3)
+  23 characters for Constants/Tokens column (4)
+- fix CLI output render to 80 columns, on additionnal tables :
+  25 characters for Option column (1)
+  51 characters for Value column (2)
+- On CLI, the XML report generation is now xml compliant with a root tag (pci)
+- On CLI, implement options:
+  ignore_functions_match  with -inm switch,
+  ignore_extensions_match with -iem switch,
+  ignore_constants_match  with -icm switch
+- On CLI options files (see -in, -ie, -ic, -inm, -iem, -icm)
+  allow to put line in comment with ; character (as in php.ini)
+
+Changes since stable version 1.6.1 (2008-02-16)
+
+* bugs
 - bug #13137 : Standard test suite failed under *nix
 
 * news

@@ -18,18 +18,39 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-02-21</date>
- <time>18:28:29</time>
+ <date>2008-03-17</date>
+ <time>21:42:33</time>
  <version>
-  <release>1.7.0a1</release>
+  <release>1.7.0b1</release>
   <api>1.7.0</api>
  </version>
  <stability>
-  <release>alpha</release>
+  <release>beta</release>
   <api>stable</api>
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
- <notes>* bugs
+ <notes>Changes since 1.7.0a1 (2008-02-21)
+
+* changes
+- fix CLI output render to 80 columns, on main table :
+  29 characters for File/Path column (1)
+   9 characters for Version column (2)
+  13 characters for Extensions column (3)
+  23 characters for Constants/Tokens column (4)
+- fix CLI output render to 80 columns, on additionnal tables :
+  25 characters for Option column (1)
+  51 characters for Value column (2)
+- On CLI, the XML report generation is now xml compliant with a root tag (pci)
+- On CLI, implement options:
+  ignore_functions_match  with -inm switch,
+  ignore_extensions_match with -iem switch,
+  ignore_constants_match  with -icm switch
+- On CLI options files (see -in, -ie, -ic, -inm, -iem, -icm)
+  allow to put line in comment with ; character (as in php.ini)
+
+Changes since stable version 1.6.1 (2008-02-16)
+
+* bugs
 - bug #13137 : Standard test suite failed under *nix
 
 * news
@@ -71,6 +92,7 @@ which shows which functions require which version and CLI output script</descrip
      <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
     </file>
     <file baseinstalldir="" name="pci.php" role="script">
+     <tasks:unixeol />
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
     </file>
    </dir> <!-- /scripts -->
@@ -173,6 +195,49 @@ which shows which functions require which version and CLI output script</descrip
  <changelog>
   <release>
    <version>
+    <release>1.7.0b1</release>
+    <api>1.7.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-03-17</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>Changes since 1.7.0a1 (2008-02-21)
+
+* changes
+- fix CLI output render to 80 columns, on main table :
+  29 characters for File/Path column (1)
+   9 characters for Version column (2)
+  13 characters for Extensions column (3)
+  23 characters for Constants/Tokens column (4)
+- fix CLI output render to 80 columns, on additionnal tables :
+  25 characters for Option column (1)
+  51 characters for Value column (2)
+- On CLI, the XML report generation is now xml compliant with a root tag (pci)
+- On CLI, implement options:
+  ignore_functions_match  with -inm switch,
+  ignore_extensions_match with -iem switch,
+  ignore_constants_match  with -icm switch
+- On CLI options files (see -in, -ie, -ic, -inm, -iem, -icm)
+  allow to put line in comment with ; character (as in php.ini)
+
+Changes since stable version 1.6.1 (2008-02-16)
+
+* bugs
+- bug #13137 : Standard test suite failed under *nix
+
+* news
+- req #12857 : Add the option to locally mask exceptions
+  see new api 1.7.0 options:
+  ignore_functions_match, ignore_extensions_match, ignore_constants_match.
+- req #13138 : separate constants and tokens in results
+- req #13147 : CLI: add filter file extension option on parsing directory
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.7.0a1</release>
     <api>1.7.0</api>
    </version>
@@ -190,8 +255,7 @@ which shows which functions require which version and CLI output script</descrip
   see new api 1.7.0 options:
   ignore_functions_match, ignore_extensions_match, ignore_constants_match.
 - req #13138 : separate constants and tokens in results
-- req #13147 : CLI: add filter file extension option on parsing directory
-   </notes>
+- req #13147 : CLI: add filter file extension option on parsing directory</notes>
   </release>
   <release>
    <version>
