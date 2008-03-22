@@ -1084,7 +1084,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     }
 
     /**
-     * Show full help information
+     * Print XML report
      *
      * @param array $info File or directory parsing data
      *
