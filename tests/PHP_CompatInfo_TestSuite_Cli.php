@@ -160,7 +160,7 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
         $ds = DIRECTORY_SEPARATOR;
         $dn = dirname(__FILE__) . $ds . 'emptyDir';
 
-        $exp = array('Usage: pci.php [options]',
+        $exp = array('Usage: pci [options]',
                      '',
                      '  -d   --dir (optional)value                      Parse DIR to get its',
                      '                                                  compatibility info ()',
