@@ -62,6 +62,11 @@ $p2->setNotes('Changes since version 1.7.0b1 (2008-03-17)
 * bugs
 - bug #13417 : Parser ignore class-method that are named as standard php functions
 
+* QA
+- dependencies related to CLI (Console_Table, Console_GetArgs, XML_Util)
+  are defined as required and no more optional. CLI is a standard feature and should
+  not be considered as optional.
+
 Changes since version 1.7.0a1 (2008-02-21)
 
 - fix CLI output render to 80 columns, on main table :
