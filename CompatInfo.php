@@ -542,6 +542,7 @@ class PHP_CompatInfo
         $ignored_extensions = array();
         $ignore_constants   = array();
         $ignored_constants  = array();
+        $function_exists    = array();
 
         if (isset($options['ignore_constants'])) {
             $options['ignore_constants']
@@ -584,6 +585,7 @@ class PHP_CompatInfo
 
         $token_count = sizeof($tokens);
         $i           = 0;
+        $found_class = false;
         while ($i < $token_count) {
             $found_func = true;
             if (is_array($tokens[$i])
@@ -595,9 +597,14 @@ class PHP_CompatInfo
                 if (is_array($tokens[$i])
                     && (token_name($tokens[$i][0]) == 'T_STRING')) {
                     $found_func = true;
-                    $udf[]      = $tokens[$i][1];
+                    $func       = $tokens[$i][1];
+                    if ($found_class === false
+                        || in_array($func, $function_exists)) {
+                        $udf[] = $func;
+                    }
                 }
             }
+
             // Try to detect PHP method chaining implementation
             if (is_array($tokens[$i])
                 && (token_name($tokens[$i][0]) == 'T_VARIABLE')
@@ -649,6 +656,7 @@ class PHP_CompatInfo
                     }
                 }
             }
+
             // Compare "ignore_extensions_match" pre-condition
             if (is_string($iem_compare)) {
                 if (strcasecmp('preg_match', $iem_compare) != 0) {
@@ -676,6 +684,7 @@ class PHP_CompatInfo
                     }
                 }
             }
+
             // Compare "ignore_constants_match" pre-condition
             if (is_string($icm_compare)) {
                 if (strcasecmp('preg_match', $icm_compare) != 0) {
@@ -716,6 +725,27 @@ class PHP_CompatInfo
                     $functions[] = strtolower($tokens[$i][1]);
                 }
             }
+
+            // try to detect condition function_exists()
+            if (is_array($tokens[$i])
+                && (token_name($tokens[$i][0]) == 'T_STRING')
+                && (strcasecmp($tokens[$i][1], 'function_exists') == 0)) {
+
+                $j = $i;
+                while ((is_array($tokens[$j])
+                        && token_name($tokens[$j][0])
+                            == 'T_CONSTANT_ENCAPSED_STRING') === false) {
+                    $j++;
+                }
+                $function_exists[] = trim($tokens[$j][1], "'");
+            }
+
+            // try to detect beginning of a class
+            if (is_array($tokens[$i])
+                && (token_name($tokens[$i][0]) == 'T_CLASS')) {
+                $found_class = true;
+            }
+
             if (is_array($tokens[$i])) {
                 if (!isset($akeys)) {
                     // build contents one time only (static variable)
