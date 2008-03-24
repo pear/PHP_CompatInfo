@@ -35,7 +35,7 @@ $options = array('filelistgenerator' => 'cvs',
     'simpleoutput' => true,
     'clearcontents' => false,
     'changelogoldtonew' => false,
-    'ignore' => array(__FILE__, 'pcicmd.php',
+    'ignore' => array(__FILE__,
         'funclist.txt', 'updateVersionInfo.php', 'version.xml')
     );
 
@@ -45,18 +45,25 @@ $p2->generateContents();
 $p2->addRelease();
 $p2->setOSInstallCondition('windows');
 $p2->addInstallAs('scripts/compatinfo.bat', 'pci.bat');
-$p2->addInstallAs('scripts/pci.php', 'pci.php');
+$p2->addInstallAs('scripts/pci.php', 'pci');
 $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
-$p2->addInstallAs('scripts/pci.php', 'pci.php');
+$p2->addInstallAs('scripts/pci.php', 'pci');
 //$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
-$p2->setReleaseVersion('1.7.0b1');
+$p2->setReleaseVersion('1.7.0b2');
 $p2->setAPIVersion('1.7.0');
 $p2->setReleaseStability('beta');
 $p2->setAPIStability('stable');
-$p2->setNotes('Changes since 1.7.0a1 (2008-02-21)
+$p2->setNotes('Changes since version 1.7.0b1 (2008-03-17)
 
-* changes
+- pci.php file was rename to pci (without extension) to match unix command syntax
+- CLI may print (-V | --version) version number of PHP_CompatInfo package used
+
+* bugs
+- bug #13417 : Parser ignore class-method that are named as standard php functions
+
+Changes since version 1.7.0a1 (2008-02-21)
+
 - fix CLI output render to 80 columns, on main table :
   29 characters for File/Path column (1)
    9 characters for Version column (2)
