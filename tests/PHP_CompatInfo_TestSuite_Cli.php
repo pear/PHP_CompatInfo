@@ -88,7 +88,7 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
         $ps      = PATH_SEPARATOR;
         $command = '@php_bin@ '
                  . '-d include_path=.' . $ps . '@php_dir@ '
-                 . '-f @bin_dir@/pci.php -- ';
+                 . '-f @bin_dir@/pci -- ';
 
         $output = array();
         $return = 0;
@@ -201,13 +201,14 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
                      '                                                  a list of php constant pattern',
                      '                                                  to ignore',
                      '                                                  (constants-match.txt)',
-                     '  -h   --help                                     Show this help',
                      '  -r   --report (optional)value                   Print either "xml" or "cli"',
                      '                                                  report (cli)',
                      '  -fe  --file-ext (optional)value                 A comma separated list of file',
                      '                                                  extensions to parse (only',
                      '                                                  valid if parsing a directory)',
                      '                                                  (php, php4, inc, phtml)',
+                     '  -V   --version                                  Print version information',
+                     '  -h   --help                                     Show this help',
                      '',
                      'No valid files into directory "'. str_replace($ds, '/', $dn) .
                      '". Please check your spelling and try again.',
