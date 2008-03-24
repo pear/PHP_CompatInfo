@@ -179,10 +179,6 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                                  . 'php constant pattern to ignore',
                       'default' => 'constants-match.txt',
                       'min'     => 0 , 'max' => 1),
-            'help' =>
-                array('short' => 'h',
-                      'desc'  => 'Show this help',
-                      'max'   => 0),
             'report' =>
                 array('short' => 'r',
                       'desc' => 'Print either "xml" or "cli" report',
@@ -194,6 +190,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                                  . 'to parse (only valid if parsing a directory)',
                       'default' => 'php, php4, inc, phtml',
                       'min'     => 0 , 'max' => 1),
+            'version' =>
+                array('short' => 'V',
+                      'desc'  => 'Print version information',
+                      'max'   => 0),
+            'help' =>
+                array('short' => 'h',
+                      'desc'  => 'Show this help',
+                      'max'   => 0),
         );
         $this->args = & Console_Getargs::factory($this->opts);
         if (PEAR::isError($this->args)) {
@@ -202,6 +206,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             } else {
                 $this->error = $this->args->getMessage();
             }
+            return;
+        }
+
+        // version
+        $V = $this->args->getValue('V');
+        if (isset($V)) {
+            $this->error = 'PHP_CompatInfo (cli) version @package_version@'
+                         . ' (http://pear.php.net/package/PHP_CompatInfo)';
             return;
         }
 
@@ -539,7 +551,12 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     function run()
     {
         if (isset($this->error)) {
-            $this->_printUsage($this->error);
+            if (strpos($this->error, 'PHP_CompatInfo') === false) {
+                $this->_printUsage($this->error);
+            } else {
+                // when Version asked, do not print help usage
+                echo $this->error;
+            }
         } else {
             if (isset($this->dir)) {
                 $this->_parseDir();
