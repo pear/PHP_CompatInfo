@@ -50,11 +50,20 @@ $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
 $p2->addInstallAs('scripts/pci.php', 'pci');
 //$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
-$p2->setReleaseVersion('1.7.0b2');
+$p2->setReleaseVersion('1.7.0b3');
 $p2->setAPIVersion('1.7.0');
 $p2->setReleaseStability('beta');
 $p2->setAPIStability('stable');
-$p2->setNotes('Changes since version 1.7.0b1 (2008-03-17)
+$p2->setNotes('Changes since version 1.7.0b2 (2008-03-24)
+
+* bugs
+- notice errors on XML report output when parsing a directory with CLI
+- add summary in XML report when parsing a directory with CLI
+
+* news
+- implement request #13493: customize CLI data output
+
+Changes since version 1.7.0b1 (2008-03-17)
 
 - pci.php file was rename to pci (without extension) to match unix command syntax
 - CLI may print (-V | --version) version number of PHP_CompatInfo package used
