@@ -92,6 +92,12 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     var $options = array();
 
+    /**
+     * @var    integer  Output level detail
+     * @since  1.7.0b3
+     */
+    var $_output_level;
+
 
     /**
      * ZE2 Constructor
@@ -179,17 +185,22 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                                  . 'php constant pattern to ignore',
                       'default' => 'constants-match.txt',
                       'min'     => 0 , 'max' => 1),
-            'report' =>
-                array('short' => 'r',
-                      'desc' => 'Print either "xml" or "cli" report',
-                      'default' => 'cli',
-                      'min'   => 0 , 'max' => 1),
             'file-ext' =>
                 array('short'   => 'fe',
                       'desc'    => 'A comma separated list of file extensions '
                                  . 'to parse (only valid if parsing a directory)',
                       'default' => 'php, php4, inc, phtml',
                       'min'     => 0 , 'max' => 1),
+            'report' =>
+                array('short' => 'r',
+                      'desc' => 'Print either "xml" or "cli" report',
+                      'default' => 'cli',
+                      'min'   => 0 , 'max' => 1),
+            'output-level' =>
+                array('short' => 'o',
+                      'desc' => 'Print Path/File + Version with additional data',
+                      'default' => 6,
+                      'min'   => 0 , 'max' => 1),
             'version' =>
                 array('short' => 'V',
                       'desc'  => 'Print version information',
@@ -522,6 +533,13 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             }
         }
 
+        // output-level
+        if ($this->args->isDefined('o')) {
+            $this->_output_level = $this->args->getValue('o');
+        } else {
+            $this->_output_level = 6; // default = full detail
+        }
+
         // file or directory options are minimum required to work
         if (!$this->args->isDefined('f')
             && !$this->args->isDefined('d')
@@ -584,6 +602,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $this->_printUsage($err);
             return;
         }
+        $o = $this->_output_level;
         if ($this->args->isDefined('r')) {
             $r = $this->args->getValue('r');
             if ($r == 'xml') {
@@ -593,21 +612,51 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         }
 
         $table = new Console_Table();
-        $table->setHeaders(array(
-            'Path', 'Version', 'Extensions', 'Constants/Tokens'));
+        $hdr   = array('Path', 'Version');
+        if ($o == 2 || $o == 6) {
+            $hdr[]   = 'Extensions';
+            $filter2 = array(&$this, '_splitExtname');
+            $table->addFilter(2, $filter2);
+        }
+        if ($o == 3) {
+            $hdr[] = 'Constants';
+            $f     = 2;
+        } elseif ($o == 4) {
+            $hdr[] = 'Tokens';
+            $f     = 2;
+        } elseif ($o > 4) {
+            $hdr[] = 'Constants/Tokens';
+            $f     = ($o == 6 ? 3 : 2);
+        }
+        $table->setHeaders($hdr);
         $filter0 = array(&$this, '_splitFilename');
         $table->addFilter(0, $filter0);
-        $filter2 = array(&$this, '_splitExtname');
-        $table->addFilter(2, $filter2);
-        $filter3 = array(&$this, '_splitConstant');
-        $table->addFilter(3, $filter3);
+        if ($o > 2) {
+            $filter3 = array(&$this, '_splitConstant');
+            $table->addFilter($f, $filter3);
+        }
 
         $ext   = implode("\r\n", $info['extensions']);
         $const = implode("\r\n", array_merge($info['constants'], $info['tokens']));
+        $ds    = DIRECTORY_SEPARATOR;
+        $dir   = str_replace(array('\\', '/'), $ds, $this->dir);
 
-        $dir = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $this->dir);
-        $table->addRow(array($dir . DIRECTORY_SEPARATOR . '*',
-            $info['version'], $ext, $const));
+        $data = array($dir . $ds . '*' , $info['version']);
+        if ($o == 1) {
+            // no more additional info to add
+        } elseif ($o == 2) {
+            $data[] = $ext;
+        } elseif ($o == 3) {
+            $data[] = implode("\r\n", $info['constants']);
+        } elseif ($o == 4) {
+            $data[] = implode("\r\n", $info['tokens']);
+        } elseif ($o == 5) {
+            $data[] = $const;
+        } else {
+            $data[] = $ext;
+            $data[] = $const;
+        }
+        $table->addRow($data);
 
         unset($info['max_version']);
         unset($info['version']);
@@ -630,9 +679,25 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $const = implode("\r\n", array_merge($info['constants'],
                                                  $info['tokens']));
 
-            $file = str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $file);
+            $file = str_replace(array('\\', '/'), $ds, $file);
             $table->addSeparator();
-            $table->addRow(array($file, $info['version'], $ext, $const));
+
+            $data = array($file, $info['version']);
+            if ($o == 1) {
+                // no more additional info to add
+            } elseif ($o == 2) {
+                $data[] = $ext;
+            } elseif ($o == 3) {
+                $data[] = implode("\r\n", $info['constants']);
+            } elseif ($o == 4) {
+                $data[] = implode("\r\n", $info['tokens']);
+            } elseif ($o == 5) {
+                $data[] = $const;
+            } else {
+                $data[] = $ext;
+                $data[] = $const;
+            }
+            $table->addRow($data);
         }
 
         $output = $table->getTable();
@@ -720,6 +785,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $this->_printUsage($err);
             return;
         }
+        $o = $this->_output_level;
         if ($this->args->isDefined('r')) {
             $r = $this->args->getValue('r');
             if ($r == 'xml') {
@@ -729,19 +795,49 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         }
 
         $table = new Console_Table();
-        $table->setHeaders(array(
-            'File', 'Version', 'Extensions', 'Constants/Tokens'));
+        $hdr   = array('File', 'Version');
+        if ($o == 2 || $o == 6) {
+            $hdr[]   = 'Extensions';
+            $filter2 = array(&$this, '_splitExtname');
+            $table->addFilter(2, $filter2);
+        }
+        if ($o == 3) {
+            $hdr[] = 'Constants';
+            $f     = 2;
+        } elseif ($o == 4) {
+            $hdr[] = 'Tokens';
+            $f     = 2;
+        } elseif ($o > 4) {
+            $hdr[] = 'Constants/Tokens';
+            $f     = ($o == 6 ? 3 : 2);
+        }
+        $table->setHeaders($hdr);
         $filter0 = array(&$this, '_splitFilename');
         $table->addFilter(0, $filter0);
-        $filter2 = array(&$this, '_splitExtname');
-        $table->addFilter(2, $filter2);
-        $filter3 = array(&$this, '_splitConstant');
-        $table->addFilter(3, $filter3);
+        if ($o > 2) {
+            $filter3 = array(&$this, '_splitConstant');
+            $table->addFilter($f, $filter3);
+        }
 
         $ext   = implode("\r\n", $info['extensions']);
         $const = implode("\r\n", array_merge($info['constants'], $info['tokens']));
 
-        $table->addRow(array($this->file, $info['version'], $ext, $const));
+        $data = array($this->file, $info['version']);
+        if ($o == 1) {
+            // no more additional info to add
+        } elseif ($o == 2) {
+            $data[] = $ext;
+        } elseif ($o == 3) {
+            $data[] = implode("\r\n", $info['constants']);
+        } elseif ($o == 4) {
+            $data[] = implode("\r\n", $info['tokens']);
+        } elseif ($o == 5) {
+            $data[] = $const;
+        } else {
+            $data[] = $ext;
+            $data[] = $const;
+        }
+        $table->addRow($data);
 
         $output = $table->getTable();
 
@@ -994,13 +1090,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _splitExtname($data)
     {
+        $szlim  = $this->_output_level == 6 ? 11 : 35;
         $extArr = explode("\r\n", $data);
         $str    = '';
         foreach ($extArr as $ext) {
-            if (strlen($ext) <= 11) {
-                $str .= str_pad($ext, 11);
+            if (strlen($ext) <= $szlim) {
+                $str .= str_pad($ext, $szlim);
             } else {
-                $str .= '...' . substr($ext, (strlen($ext) - 8));
+                $str .= '...' . substr($ext, (strlen($ext) - ($szlim - 3)));
             }
             $str .= "\r\n";
         }
@@ -1021,13 +1118,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _splitConstant($data)
     {
+        $szlim  = $this->_output_level == 6 ? 21 : 35;
         $cstArr = explode("\r\n", $data);
         $str    = '';
         foreach ($cstArr as $cst) {
-            if (strlen($cst) <= 21) {
-                $str .= str_pad($cst, 21);
+            if (strlen($cst) <= $szlim) {
+                $str .= str_pad($cst, $szlim);
             } else {
-                $str .= '...' . substr($cst, (strlen($cst) - 18));
+                $str .= '...' . substr($cst, (strlen($cst) - ($szlim - 3)));
             }
             $str .= "\r\n";
         }
@@ -1117,10 +1215,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         echo PHP_EOL;
 
         if (isset($this->dir)) {
-            $sum = array('version' => $info['version'],
-                         'extensions' => $info['extensions'],
-                         'constants' => $info['constants'],
-                         'tokens' => $info['tokens']);
+            $sum  = array('version' => $info['version'],
+                          'extensions' => $info['extensions'],
+                          'constants' => $info['constants'],
+                          'tokens' => $info['tokens']);
             $info = array($this->dir . '/*' => $sum) + $info;
             unset($info['ignored_files']);
             unset($info['ignored_functions']);
