@@ -1117,12 +1117,15 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         echo PHP_EOL;
 
         if (isset($this->dir)) {
+            unset($info['ignored_files']);
+            unset($info['ignored_functions']);
+            unset($info['ignored_extensions']);
+            unset($info['ignored_constants']);
             unset($info['max_version']);
             unset($info['version']);
             unset($info['extensions']);
             unset($info['constants']);
             unset($info['tokens']);
-            unset($info['ignored_files']);
         } else {
             $info = array($this->file => $info);
         }
