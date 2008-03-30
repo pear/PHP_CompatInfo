@@ -284,8 +284,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $if = $this->args->getValue('if');
         if (isset($if)) {
             if (file_exists($if)) {
-                $options                       = file($if);
-                $this->options['ignore_files'] = array_map('rtrim', $options);
+                $options                       = $this->_parseParamFile($if);
+                $this->options['ignore_files'] = $options['std'];
             } else {
                 $this->error = 'Failed opening file "' . $if
                      . '" (ignore-files option). '
@@ -298,8 +298,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $id = $this->args->getValue('id');
         if (isset($id)) {
             if (file_exists($id)) {
-                $options                      = file($id);
-                $this->options['ignore_dirs'] = array_map('rtrim', $options);
+                $options                      = $this->_parseParamFile($id);
+                $this->options['ignore_dirs'] = $options['std'];
             } else {
                 $this->error = 'Failed opening file "' . $id
                      . '" (ignore-dirs option). '
@@ -312,19 +312,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $in = $this->args->getValue('in');
         if (isset($in)) {
             if (file_exists($in)) {
-                $lines   = file($in);
-                $options = array();
-                foreach ($lines as $line) {
-                    $line = rtrim($line);  // remove line ending
-                    if (strlen($line) == 0) {
-                        continue;  // skip empty lines
-                    }
-                    if ($line{0} == ';') {
-                        continue;  // skip this entry: consider as comment
-                    }
-                    $options[] = $line;
-                }
-                $this->options['ignore_functions'] = $options;
+                $options                           = $this->_parseParamFile($in);
+                $this->options['ignore_functions'] = $options['std'];
             } else {
                 $this->error = 'Failed opening file "' . $in
                      . '" (ignore-functions option). '
@@ -337,19 +326,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $ic = $this->args->getValue('ic');
         if (isset($ic)) {
             if (file_exists($ic)) {
-                $lines   = file($ic);
-                $options = array();
-                foreach ($lines as $line) {
-                    $line = rtrim($line);  // remove line ending
-                    if (strlen($line) == 0) {
-                        continue;  // skip empty lines
-                    }
-                    if ($line{0} == ';') {
-                        continue;  // skip this entry: consider as comment
-                    }
-                    $options[] = $line;
-                }
-                $this->options['ignore_constants'] = $options;
+                $options                           = $this->_parseParamFile($ic);
+                $this->options['ignore_constants'] = $options['std'];
             } else {
                 $this->error = 'Failed opening file "' . $ic
                      . '" (ignore-constants option). '
@@ -362,19 +340,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $ie = $this->args->getValue('ie');
         if (isset($ie)) {
             if (file_exists($ie)) {
-                $lines   = file($ie);
-                $options = array();
-                foreach ($lines as $line) {
-                    $line = rtrim($line);  // remove line ending
-                    if (strlen($line) == 0) {
-                        continue;  // skip empty lines
-                    }
-                    if ($line{0} == ';') {
-                        continue;  // skip this entry: consider as comment
-                    }
-                    $options[] = $line;
-                }
-                $this->options['ignore_extensions'] = $options;
+                $options                            = $this->_parseParamFile($ie);
+                $this->options['ignore_extensions'] = $options['std'];
             } else {
                 $this->error = 'Failed opening file "' . $ie
                      . '" (ignore-extensions option). '
@@ -396,23 +363,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $inm = $this->args->getValue('inm');
         if (isset($inm)) {
             if (file_exists($inm)) {
-                $lines    = file($inm);
-                $patterns = array('std' => array(), 'reg' => array());
-                foreach ($lines as $line) {
-                    $line = rtrim($line);  // remove line ending
-                    if (strlen($line) == 0) {
-                        continue;  // skip empty lines
-                    }
-                    if ($line{0} == ';') {
-                        continue;  // skip this pattern: consider as comment line
-                    }
-                    if ($line{0} == '=') {
-                        list($p, $s)       = explode('=', $line);
-                        $patterns['reg'][] = '/'.$s.'/';
-                    } else {
-                        $patterns['std'][] = '/'.$line.'/';
-                    }
-                }
+                $patterns = $this->_parseParamFile($inm, true);
                 if (count($patterns['std']) > 0
                     && count($patterns['reg']) > 0) {
                     $this->error = 'Mixed "function_exists" and '
@@ -439,23 +390,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $iem = $this->args->getValue('iem');
         if (isset($iem)) {
             if (file_exists($iem)) {
-                $lines    = file($iem);
-                $patterns = array('std' => array(), 'reg' => array());
-                foreach ($lines as $line) {
-                    $line = rtrim($line);  // remove line ending
-                    if (strlen($line) == 0) {
-                        continue;  // skip empty lines
-                    }
-                    if ($line{0} == ';') {
-                        continue;  // skip this pattern: consider as comment line
-                    }
-                    if ($line{0} == '=') {
-                        list($p, $s)       = explode('=', $line);
-                        $patterns['reg'][] = '/'.$s.'/';
-                    } else {
-                        $patterns['std'][] = '/'.$line.'/';
-                    }
-                }
+                $patterns = $this->_parseParamFile($iem, true);
                 if (count($patterns['std']) > 0
                     && count($patterns['reg']) > 0) {
                     $this->error = 'Mixed "extension_loaded" and '
@@ -482,23 +417,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $icm = $this->args->getValue('icm');
         if (isset($icm)) {
             if (file_exists($icm)) {
-                $lines    = file($icm);
-                $patterns = array('std' => array(), 'reg' => array());
-                foreach ($lines as $line) {
-                    $line = rtrim($line);  // remove line ending
-                    if (strlen($line) == 0) {
-                        continue;  // skip empty lines
-                    }
-                    if ($line{0} == ';') {
-                        continue;  // skip this pattern: consider as comment line
-                    }
-                    if ($line{0} == '=') {
-                        list($p, $s)       = explode('=', $line);
-                        $patterns['reg'][] = '/'.$s.'/';
-                    } else {
-                        $patterns['std'][] = '/'.$line.'/';
-                    }
-                }
+                $patterns = $this->_parseParamFile($icm, true);
                 if (count($patterns['std']) > 0
                     && count($patterns['reg']) > 0) {
                     $this->error = 'Mixed "defined" and '
@@ -584,6 +503,54 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 $this->_parseString();
             }
         }
+    }
+
+    /**
+     * Parse content of parameter files
+     *
+     * Parse content of parameter files used by switches
+     * <ul>
+     * <li>ignore-files
+     * <li>ignore-dirs
+     * <li>ignore-functions
+     * <li>ignore-constants
+     * <li>ignore-extensions
+     * <li>ignore-functions-match
+     * <li>ignore-extensions-match
+     * <li>ignore-constants-match
+     * </ul>
+     *
+     * @param string $fn          Parameter file name
+     * @param bool   $withPattern TRUE if the file may contain regular expression
+     *
+     * @return array
+     * @access private
+     * @since  1.7.0b4
+     */
+    function _parseParamFile($fn, $withPattern = false)
+    {
+        $lines    = file($fn);
+        $patterns = array('std' => array(), 'reg' => array());
+        foreach ($lines as $line) {
+            $line = rtrim($line);  // remove line ending
+            if (strlen($line) == 0) {
+                continue;  // skip empty lines
+            }
+            if ($line{0} == ';') {
+                continue;  // skip this pattern: consider as comment line
+            }
+            if ($line{0} == '=') {
+                list($p, $s)       = explode('=', $line);
+                $patterns['reg'][] = '/'.$s.'/';
+            } else {
+                if ($withPattern === true) {
+                    $patterns['std'][] = '/'.$line.'/';
+                } else {
+                    $patterns['std'][] = $line;
+                }
+            }
+        }
+        return $patterns;
     }
 
     /**
