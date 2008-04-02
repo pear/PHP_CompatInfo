@@ -1178,15 +1178,57 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
     {
         include_once 'XML/Util.php';
 
+        ob_start();
+
         echo XML_Util::getXMLDeclaration("1.0", "UTF-8");
+        echo PHP_EOL;
+        echo XML_Util::createStartElement('pci',
+                                          array('version' => '@package_version@'));
         echo PHP_EOL;
 
         if (isset($this->dir)) {
-            $sum  = array('version' => $info['version'],
-                          'extensions' => $info['extensions'],
-                          'constants' => $info['constants'],
-                          'tokens' => $info['tokens']);
-            $info = array($this->dir . '/*' => $sum) + $info;
+            // parsing a directory
+
+            // print <dir> tag
+            $tag = array('qname' => 'dir',
+                         'content' => $this->dir);
+            echo XML_Util::createTagFromArray($tag);
+            echo PHP_EOL;
+
+            // print global <version> tag
+            if (empty($info['max_version'])) {
+                $attr = array();
+            } else {
+                $attr = array('max' => $info['max_version']);
+            }
+            $tag = array('qname' => 'version',
+                         'attributes' => $attr,
+                         'content' => $info['version']);
+            echo XML_Util::createTagFromArray($tag);
+            echo PHP_EOL;
+
+            // print global <extensions> tag group
+            $this->_printTagList($info['extensions'], 'extension');
+            // print global <constants> tag group
+            $this->_printTagList($info['constants'], 'constant');
+            // print global <tokens> tag group
+            $this->_printTagList($info['tokens'], 'token');
+
+            // print global <ignored> tag group
+            echo XML_Util::createStartElement('ignored');
+            echo PHP_EOL;
+            // with children groups <files>, <functions>, <extensions>, <constants>
+            $ignored = array('file' => $info['ignored_files'],
+                             'function' => $info['ignored_functions'],
+                             'extension' => $info['ignored_extensions'],
+                             'constant' => $info['ignored_constants']);
+            foreach ($ignored as $tag => $data) {
+                $this->_printTagList($data, $tag);
+            }
+            echo XML_Util::createEndElement('ignored');
+            echo PHP_EOL;
+
+            // remove summary data
             unset($info['ignored_files']);
             unset($info['ignored_functions']);
             unset($info['ignored_extensions']);
@@ -1196,81 +1238,170 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             unset($info['extensions']);
             unset($info['constants']);
             unset($info['tokens']);
+
+            $files = $info;
         } else {
-            $info = array($this->file => $info);
+            // parsing a single file
+            $files = array($this->file => $info);
         }
 
-        echo XML_Util::createStartElement('pci',
-                           array('version' => '@package_version@'));
+        // print <files> tag group
+        echo XML_Util::createStartElement('files', array('count' => count($files)));
         echo PHP_EOL;
 
-        foreach ($info as $file => $info) {
-
+        foreach ($files as $file => $info) {
+            // print local <file> tag
             echo XML_Util::createStartElement('file', array('name' => $file));
             echo PHP_EOL;
 
+            // print local <version> tag
+            if (empty($info['max_version'])) {
+                $attr = array();
+            } else {
+                $attr = array('max' => $info['max_version']);
+            }
             $tag = array('qname' => 'version',
+                         'attributes' => $attr,
                          'content' => $info['version']);
             echo XML_Util::createTagFromArray($tag);
             echo PHP_EOL;
 
-            $c = count($info['extensions']);
-            if ($c > 0) {
-                $tag = array('qname' => 'extension',
-                             'attributes' => array('count' => $c),
-                             'content' => implode(', ', $info['extensions']));
-                echo XML_Util::createTagFromArray($tag);
-                echo PHP_EOL;
+            // print local <extensions> tag group
+            $this->_printTagList($info['extensions'], 'extension');
+            // print local <constants> tag group
+            $this->_printTagList($info['constants'], 'constant');
+            // print local <tokens> tag group
+            $this->_printTagList($info['tokens'], 'token');
+
+            // print local <ignored> tag group
+            echo XML_Util::createStartElement('ignored');
+            echo PHP_EOL;
+            // with children groups <functions>, <extensions>, <constants>
+            $ignored = array('function' => $info['ignored_functions'],
+                             'extension' => $info['ignored_extensions'],
+                             'constant' => $info['ignored_constants']);
+            foreach ($ignored as $tag => $data) {
+                $this->_printTagList($data, $tag);
             }
-            $c = count($info['constants']);
-            if ($c > 0) {
-                $tag = array('qname' => 'constant',
-                             'attributes' => array('count' => $c),
-                             'content' => implode(', ', $info['constants']));
-                echo XML_Util::createTagFromArray($tag);
-                echo PHP_EOL;
-            }
-            $c = count($info['tokens']);
-            if ($c > 0) {
-                $tag = array('qname' => 'token',
-                             'attributes' => array('count' => $c),
-                             'content' => implode(', ', $info['tokens']));
-                echo XML_Util::createTagFromArray($tag);
-                echo PHP_EOL;
-            }
+            echo XML_Util::createEndElement('ignored');
+            echo PHP_EOL;
 
             // verbose level
             $v = $this->args->getValue('v');
 
-            // extra information
+            // extra information only if verbose mode >= 4
             if ($v & 4) {
+                unset($info['ignored_files']);
+                unset($info['ignored_functions']);
+                unset($info['ignored_extensions']);
+                unset($info['ignored_constants']);
                 unset($info['max_version']);
                 unset($info['version']);
                 unset($info['constants']);
                 unset($info['tokens']);
                 unset($info['extensions']);
 
-                foreach ($info as $version => $functions) {
-                    foreach ($functions as $func) {
-                        $attr = array('version' => $version);
-                        if (!empty($func['extension'])) {
-                            $attr['extension'] = $func['extension'];
-                            $attr['pecl']      = $func['pecl'] === true ?
-                                                    'true' : 'false';
-                        }
-                        $tag = array('qname' => 'function',
-                                     'attributes' => $attr,
-                                     'content' => $func['function']);
-                        echo XML_Util::createTagFromArray($tag);
-                        echo PHP_EOL;
-                    }
-                }
+                // print local <functions> tag group
+                $this->_printTagList($info, 'function');
             }
+
             echo XML_Util::createEndElement('file');
             echo PHP_EOL;
         }
+        echo XML_Util::createEndElement('files');
+        echo PHP_EOL;
         echo XML_Util::createEndElement('pci');
         echo PHP_EOL;
+
+        $result = ob_get_clean();
+
+        // try to see if we can improve XML render
+        $beautifier = 'XML/Beautifier.php';
+        if (PHP_CompatInfo_Cli::isIncludable($beautifier)) {
+            include_once $beautifier;
+            $options = array('indent' => ' ');
+            $fmt = new XML_Beautifier($options);
+            $result = $fmt->formatString($result);
+        }
+        echo $result;
+    }
+
+    /**
+     * Print a group of same tag in the XML report.
+     *
+     * Groups list are : extension(s), constant(s), token(s)
+     *
+     * @param array  $dataSrc Data source
+     * @param string $tagName Name of the XML tag
+     *
+     * @return void
+     * @access private
+     * @since  1.7.0b4
+     */
+    function _printTagList($dataSrc, $tagName)
+    {
+        if ($tagName == 'function') {
+            $c = 0;
+            foreach ($dataSrc as $version => $functions) {
+                $c += count($functions);
+            }
+        } else {
+            $c = count($dataSrc);
+        }
+
+        echo XML_Util::createStartElement($tagName.'s', array('count' => $c));
+        echo PHP_EOL;
+
+        if ($tagName == 'function') {
+            foreach ($dataSrc as $version => $functions) {
+                foreach ($functions as $data) {
+                    $attr = array('version' => $version);
+                    if (!empty($data['extension'])) {
+                        $attr['extension'] = $data['extension'];
+                        $attr['pecl']      = $data['pecl'] === true ?
+                                                'true' : 'false';
+                    }
+                    $tag = array('qname' => $tagName,
+                                 'attributes' => $attr,
+                                 'content' => $data['function']);
+                    echo XML_Util::createTagFromArray($tag);
+                    echo PHP_EOL;
+                }
+            }
+        } else {
+            foreach ($dataSrc as $data) {
+                $tag = array('qname' => $tagName,
+                             'attributes' => array(),
+                             'content' => $data);
+                echo XML_Util::createTagFromArray($tag);
+                echo PHP_EOL;
+            }
+        }
+
+        echo XML_Util::createEndElement($tagName.'s');
+        echo PHP_EOL;
+    }
+
+    /**
+     * Returns whether or not a file is in the include path.
+     *
+     * @param string $file Path to filename to check if includable
+     *
+     * @static
+     * @access public
+     * @return boolean TRUE if the file is in the include path, FALSE otherwise
+     * @since  version 1.7.0b4 (2008-03-30)
+     */
+    function isIncludable($file)
+    {
+        foreach (explode(PATH_SEPARATOR, get_include_path()) as $ip) {
+            if (file_exists($ip . DIRECTORY_SEPARATOR . $file)
+                && is_readable($ip . DIRECTORY_SEPARATOR . $file)
+                ) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 ?>
