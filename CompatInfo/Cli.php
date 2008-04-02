@@ -525,7 +525,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      *
      * @return array
      * @access private
-     * @since  1.7.0b4
+     * @since  version 1.7.0b4 (2008-04-03)
      */
     function _parseParamFile($fn, $withPattern = false)
     {
@@ -1336,7 +1336,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      *
      * @return void
      * @access private
-     * @since  1.7.0b4
+     * @since  version 1.7.0b4 (2008-04-03)
      */
     function _printTagList($dataSrc, $tagName)
     {
@@ -1390,7 +1390,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      * @static
      * @access public
      * @return boolean TRUE if the file is in the include path, FALSE otherwise
-     * @since  version 1.7.0b4 (2008-03-30)
+     * @since  version 1.7.0b4 (2008-04-03)
      */
     function isIncludable($file)
     {
