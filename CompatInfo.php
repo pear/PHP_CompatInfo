@@ -20,6 +20,8 @@
  * @since    File available since Release 0.7.0
  */
 
+require_once 'File/Find.php';
+
 /**
  * An array of function init versions and extension
  */
@@ -218,20 +220,79 @@ class PHP_CompatInfo
         $options = array_merge($default_options, $options);
 
         if ($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
-            $dir = substr($dir, 0, -1);
+            $path = $dir;
+            $dir  = substr($dir, 0, -1);
+        } else {
+            $path = $dir . '/';
         }
+        $path = str_replace("\\", '/', $dir);
+
         $options['file_ext']
             = array_map('strtolower', $options['file_ext']);
-        $options['ignore_files']
-            = array_map('strtolower', $options['ignore_files']);
-        $options['ignore_dirs']
-            = array_map('strtolower', $options['ignore_dirs']);
-        $files_raw = $this->_fileList($dir, $options);
-        foreach ($files_raw as $file) {
-            if (in_array(strtolower($file), $options['ignore_files'])) {
-                $ignored[] = $file;
-                continue;
+
+        // get directory list that should be ignored from scope
+        $ignore_dirs = array();
+        if (count($options['ignore_dirs']) > 0) {
+            foreach ($options['ignore_dirs'] as $cond) {
+                $dirs = File_Find::search('`'.$cond.'`', $dir, 'perl',
+                                          true, 'directories');
+                foreach ($dirs as $i => $d) {
+                    $dirs[$i] = str_replace("\\", '/', $d);
+                }
+                $ignore_dirs = array_merge($ignore_dirs, $dirs);
             }
+        }
+
+        // get file list that should be ignored from scope
+        $ignore_files = array();
+        if (count($options['ignore_files']) > 0) {
+            foreach ($options['ignore_files'] as $cond) {
+                $files = File_Find::search('`'.$cond.'`', $dir, 'perl',
+                                           true, 'files');
+                foreach ($files as $i => $f) {
+                    $files[$i] = str_replace("\\", '/', $f);
+                }
+                $ignore_files = array_merge($ignore_files, $files);
+            }
+        }
+
+        $files_filter = array();
+
+        if ($options['recurse_dir'] === false) {
+            $files = File_Find::glob('`.*`', $dir, 'perl');
+
+            foreach ($files as $f) {
+                $file_info = pathinfo($f);
+                $entry = $path . $file_info['basename'];
+                if (is_dir($entry)) {
+                    continue;
+                } else {
+                    if (in_array($entry, $ignore_files)) {
+                        $ignored[] = $entry;
+                        continue;
+                    }
+                }
+                $files_filter[] = $entry;
+            }
+        } else {
+            list($directories, $files) = File_Find::maptree($dir);
+
+            foreach ($files as $f) {
+                $entry     = str_replace("\\", '/', $f);
+                $file_info = pathinfo($f);
+                if (in_array($file_info['dirname'], $ignore_dirs)) {
+                    $ignored[] = $entry;
+                    continue;
+                }
+                if (in_array($entry, $ignore_files)) {
+                    $ignored[] = $entry;
+                    continue;
+                }
+                $files_filter[] = $entry;
+            }
+        }
+
+        foreach ($files_filter as $file) {
             $file_info = pathinfo($file);
             if (isset($file_info['extension'])
                 && in_array(strtolower($file_info['extension']),
@@ -1026,49 +1087,6 @@ class PHP_CompatInfo
             $r = $tokens;
         }
         return $r;
-    }
-
-    /**
-     * Retrieve a listing of every file in $directory and
-     * all subdirectories. Taken from PEAR_PackageFileManager_File
-     *
-     * @param string $directory full path to the directory you want the list of
-     * @param array  $options   array of public config. options
-     *
-     * @access private
-     * @return array list of files in a directory
-     * @since  version 0.7.0 (2004-03-09)
-     */
-    function _fileList($directory, $options)
-    {
-        $ret = false;
-        if (@is_dir($directory)
-            && (!in_array(strtolower($directory), $options['ignore_dirs']))) {
-            $ret = array();
-            $d   = @dir($directory);
-            while ($d && $entry = $d->read()) {
-                if ($entry{0} != '.') {
-                    if (is_file($directory . DIRECTORY_SEPARATOR . $entry)) {
-                        $ret[] = $directory . DIRECTORY_SEPARATOR . $entry;
-                    }
-                    if (is_dir($directory . DIRECTORY_SEPARATOR . $entry)
-                        && ($options['recurse_dir'] != false)) {
-                        $tmp = $this->_fileList($directory
-                            . DIRECTORY_SEPARATOR . $entry, $options);
-                        if (is_array($tmp)) {
-                            foreach ($tmp as $ent) {
-                                $ret[] = $ent;
-                            }
-                        }
-                    }
-                }
-            }
-            if ($d) {
-                $d->close();
-            }
-        }
-
-        return $ret;
     }
 
     /**
