@@ -587,15 +587,14 @@ class PHP_CompatInfo
         $i           = 0;
         $found_class = false;
         while ($i < $token_count) {
-            $found_func = true;
-            if (is_array($tokens[$i])
-                && (token_name($tokens[$i][0]) == 'T_FUNCTION')) {
+            if ($this->_isToken($tokens[$i], 'T_FUNCTION')) {
                 $found_func = false;
+            } else {
+                $found_func = true;
             }
             while ($found_func == false) {
                 $i += 1;
-                if (is_array($tokens[$i])
-                    && (token_name($tokens[$i][0]) == 'T_STRING')) {
+                if ($this->_isToken($tokens[$i], 'T_STRING')) {
                     $found_func = true;
                     $func       = $tokens[$i][1];
                     if ($found_class === false
@@ -606,24 +605,19 @@ class PHP_CompatInfo
             }
 
             // Try to detect PHP method chaining implementation
-            if (is_array($tokens[$i])
-                && (token_name($tokens[$i][0]) == 'T_VARIABLE')
-                && (is_array($tokens[$i+1]))
-                && (token_name($tokens[$i+1][0]) == 'T_OBJECT_OPERATOR')
-                && (is_array($tokens[$i+2]))
-                && (token_name($tokens[$i+2][0]) == 'T_STRING')
-                && (is_array($tokens[$i+3]) === false)
-                && ($tokens[$i+3] == '(')) {
+            if ($this->_isToken($tokens[$i], 'T_VARIABLE')
+                && $this->_isToken($tokens[$i+1], 'T_OBJECT_OPERATOR')
+                && $this->_isToken($tokens[$i+2], 'T_STRING')
+                && $this->_isToken($tokens[$i+3], '(')) {
 
                 $i                   += 3;
                 $php5_method_chaining = false;
                 while ((!is_array($tokens[$i]) && $tokens[$i] == ';') === false) {
                     $i += 1;
-                    if (((is_array($tokens[$i]) === false && $tokens[$i] == ')')
-                        || (is_array($tokens[$i])
-                        && token_name($tokens[$i][0]) == 'T_WHITESPACE'))
-                        && is_array($tokens[$i+1])
-                        && token_name($tokens[$i+1][0]) == 'T_OBJECT_OPERATOR') {
+                    if ((($this->_isToken($tokens[$i], ')'))
+                        || ($this->_isToken($tokens[$i], 'T_WHITESPACE')))
+                        && $this->_isToken($tokens[$i+1], 'T_OBJECT_OPERATOR')) {
+
                         $php5_method_chaining = true;
                     }
                 }
@@ -633,13 +627,11 @@ class PHP_CompatInfo
             if (is_string($ifm_compare)) {
                 if (strcasecmp('preg_match', $ifm_compare) != 0) {
                     // Try to catch function_exists() condition
-                    if (is_array($tokens[$i])
-                        && (token_name($tokens[$i][0]) == 'T_STRING')
+                    if ($this->_isToken($tokens[$i], 'T_STRING')
                         && (strcasecmp($tokens[$i][1], $ifm_compare) == 0)) {
 
-                        while ((is_array($tokens[$i])
-                                && token_name($tokens[$i][0])
-                                    == 'T_CONSTANT_ENCAPSED_STRING') === false) {
+                        while ((!$this->_isToken($tokens[$i],
+                                                 'T_CONSTANT_ENCAPSED_STRING'))) {
                             $i += 1;
                         }
                         $func = trim($tokens[$i][1], "'");
@@ -661,13 +653,11 @@ class PHP_CompatInfo
             if (is_string($iem_compare)) {
                 if (strcasecmp('preg_match', $iem_compare) != 0) {
                     // Try to catch extension_loaded() condition
-                    if (is_array($tokens[$i])
-                        && (token_name($tokens[$i][0]) == 'T_STRING')
+                    if ($this->_isToken($tokens[$i], 'T_STRING')
                         && (strcasecmp($tokens[$i][1], $iem_compare) == 0)) {
 
-                        while ((is_array($tokens[$i])
-                                && token_name($tokens[$i][0])
-                                    == 'T_CONSTANT_ENCAPSED_STRING') === false) {
+                        while ((!$this->_isToken($tokens[$i],
+                                                 'T_CONSTANT_ENCAPSED_STRING'))) {
                             $i += 1;
                         }
                         $ext = trim($tokens[$i][1], "'");
@@ -689,13 +679,11 @@ class PHP_CompatInfo
             if (is_string($icm_compare)) {
                 if (strcasecmp('preg_match', $icm_compare) != 0) {
                     // Try to catch defined() condition
-                    if (is_array($tokens[$i])
-                        && (token_name($tokens[$i][0]) == 'T_STRING')
+                    if ($this->_isToken($tokens[$i], 'T_STRING')
                         && (strcasecmp($tokens[$i][1], $icm_compare) == 0)) {
 
-                        while ((is_array($tokens[$i])
-                                && token_name($tokens[$i][0])
-                                    == 'T_CONSTANT_ENCAPSED_STRING') === false) {
+                        while ((!$this->_isToken($tokens[$i],
+                                                 'T_CONSTANT_ENCAPSED_STRING'))) {
                             $i += 1;
                         }
                         $cst = trim($tokens[$i][1], "'");
@@ -713,36 +701,37 @@ class PHP_CompatInfo
                 }
             }
 
-            if (is_array($tokens[$i])
-                && (token_name($tokens[$i][0]) == 'T_STRING')
-                && (isset($tokens[$i + 1]))
-                && ($tokens[$i + 1][0] == '(')) {
-                if ((is_array($tokens[$i - 1]))
-                    && (token_name($tokens[$i - 1][0]) != 'T_DOUBLE_COLON')
-                    && (token_name($tokens[$i - 1][0]) != 'T_OBJECT_OPERATOR')) {
-                    $functions[] = strtolower($tokens[$i][1]);
-                } elseif (!is_array($tokens[$i - 1])) {
+            if ($this->_isToken($tokens[$i], 'T_STRING')
+                && (isset($tokens[$i+1]))
+                && $this->_isToken($tokens[$i+1], '(')) {
+
+                $is_function = false;
+
+                if (isset($tokens[$i-1])
+                    && !$this->_isToken($tokens[$i-1], 'T_DOUBLE_COLON')
+                    && !$this->_isToken($tokens[$i-1], 'T_OBJECT_OPERATOR')) {
+
+                    $is_function = true;
+                }
+                if ($is_function == true || !is_array($tokens[$i-1])) {
                     $functions[] = strtolower($tokens[$i][1]);
                 }
             }
 
             // try to detect condition function_exists()
-            if (is_array($tokens[$i])
-                && (token_name($tokens[$i][0]) == 'T_STRING')
+            if ($this->_isToken($tokens[$i], 'T_STRING')
                 && (strcasecmp($tokens[$i][1], 'function_exists') == 0)) {
 
                 $j = $i;
-                while ((is_array($tokens[$j])
-                        && token_name($tokens[$j][0])
-                            == 'T_CONSTANT_ENCAPSED_STRING') === false) {
+                while ((!$this->_isToken($tokens[$j],
+                                         'T_CONSTANT_ENCAPSED_STRING'))) {
                     $j++;
                 }
                 $function_exists[] = trim($tokens[$j][1], "'");
             }
 
             // try to detect beginning of a class
-            if (is_array($tokens[$i])
-                && (token_name($tokens[$i][0]) == 'T_CLASS')) {
+            if ($this->_isToken($tokens[$i], 'T_CLASS')) {
                 $found_class = true;
             }
 
@@ -754,8 +743,7 @@ class PHP_CompatInfo
                 $const = strtoupper($tokens[$i][1]);
                 $found = array_search($const, $akeys);
                 if ($found !== false) {
-                    if (token_name($tokens[$i][0])
-                        == 'T_ENCAPSED_AND_WHITESPACE') {
+                    if ($this->_isToken($tokens[$i], 'T_ENCAPSED_AND_WHITESPACE')) {
                         // PHP 5 constant tokens found into a string
                     } else {
                         // Compare "ignore_constants_match" free condition
@@ -1078,6 +1066,26 @@ class PHP_CompatInfo
         }
 
         return $ret;
+    }
+
+    /**
+     * Checks if the given token is of this symbolic name
+     *
+     * @param mixed  $token    Single PHP token to test
+     * @param string $symbolic Symbolic name of the given token
+     *
+     * @access private
+     * @return bool
+     * @since  version 1.7.0b4 (2008-04-03)
+     */
+    function _isToken($token, $symbolic)
+    {
+        if (is_array($token)) {
+            $t = token_name($token[0]);
+        } else {
+            $t = $token;
+        }
+        return ($t == $symbolic);
     }
 }
 ?>
