@@ -711,7 +711,10 @@ class PHP_CompatInfo
                     && !$this->_isToken($tokens[$i-1], 'T_DOUBLE_COLON')
                     && !$this->_isToken($tokens[$i-1], 'T_OBJECT_OPERATOR')) {
 
-                    $is_function = true;
+                    if (isset($tokens[$i-2])
+                        && !$this->_isToken($tokens[$i-2], 'T_FUNCTION')) {
+                        $is_function = true;
+                    }
                 }
                 if ($is_function == true || !is_array($tokens[$i-1])) {
                     $functions[] = strtolower($tokens[$i][1]);
