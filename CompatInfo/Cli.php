@@ -600,7 +600,6 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 $f++;
             }
         }
-
         $table->setHeaders($hdr);
         $filter0 = array(&$this, '_splitFilename');
         $table->addFilter(0, $filter0);
@@ -771,25 +770,30 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
         $table = new Console_Table();
         $hdr   = array('File', 'Version');
-        if ($o == 2 || $o == 6) {
+        $f     = 1;
+        if ($o & 2) {
             $hdr[]   = 'Extensions';
             $filter2 = array(&$this, '_splitExtname');
             $table->addFilter(2, $filter2);
+            $f++;
         }
-        if ($o == 3) {
-            $hdr[] = 'Constants';
-            $f     = 2;
-        } elseif ($o == 4) {
-            $hdr[] = 'Tokens';
-            $f     = 2;
-        } elseif ($o > 4) {
-            $hdr[] = 'Constants/Tokens';
-            $f     = ($o == 6 ? 3 : 2);
+        if ($o & 4) {
+            if ($o & 8) {
+                $hdr[] = 'Constants/Tokens';
+            } else {
+                $hdr[] = 'Constants';
+            }
+            $f++;
+        } else {
+            if ($o & 8) {
+                $hdr[] = 'Tokens';
+                $f++;
+            }
         }
         $table->setHeaders($hdr);
         $filter0 = array(&$this, '_splitFilename');
         $table->addFilter(0, $filter0);
-        if ($o > 2) {
+        if ($o > 3) {
             $filter3 = array(&$this, '_splitConstant');
             $table->addFilter($f, $filter3);
         }
@@ -798,20 +802,21 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $const = implode("\r\n", array_merge($info['constants'], $info['tokens']));
 
         $data = array($this->file, $info['version']);
-        if ($o == 1) {
-            // no more additional info to add
-        } elseif ($o == 2) {
+        if ($o & 2) {
             $data[] = $ext;
-        } elseif ($o == 3) {
-            $data[] = implode("\r\n", $info['constants']);
-        } elseif ($o == 4) {
-            $data[] = implode("\r\n", $info['tokens']);
-        } elseif ($o == 5) {
-            $data[] = $const;
-        } else {
-            $data[] = $ext;
-            $data[] = $const;
         }
+        if ($o & 4) {
+            if ($o & 8) {
+                $data[] = $const;
+            } else {
+                $data[] = implode("\r\n", $info['constants']);
+            }
+        } else {
+            if ($o & 8) {
+                $data[] = implode("\r\n", $info['tokens']);
+            }
+        }
+
         $table->addRow($data);
 
         $output = $table->getTable();
@@ -1328,8 +1333,8 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         if (PHP_CompatInfo_Cli::isIncludable($beautifier)) {
             include_once $beautifier;
             $options = array('indent' => ' ');
-            $fmt = new XML_Beautifier($options);
-            $result = $fmt->formatString($result);
+            $fmt     = new XML_Beautifier($options);
+            $result  = $fmt->formatString($result);
         }
         echo $result;
     }
