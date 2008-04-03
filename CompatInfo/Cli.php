@@ -199,7 +199,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             'output-level' =>
                 array('short' => 'o',
                       'desc' => 'Print Path/File + Version with additional data',
-                      'default' => 6,
+                      'default' => 15,
                       'min'   => 0 , 'max' => 1),
             'version' =>
                 array('short' => 'V',
@@ -456,7 +456,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         if ($this->args->isDefined('o')) {
             $this->_output_level = $this->args->getValue('o');
         } else {
-            $this->_output_level = 6; // default = full detail
+            $this->_output_level = 15; // default = full detail
         }
 
         // file or directory options are minimum required to work
@@ -580,25 +580,31 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
         $table = new Console_Table();
         $hdr   = array('Path', 'Version');
-        if ($o == 2 || $o == 6) {
+        $f     = 1;
+        if ($o & 2) {
             $hdr[]   = 'Extensions';
             $filter2 = array(&$this, '_splitExtname');
             $table->addFilter(2, $filter2);
+            $f++;
         }
-        if ($o == 3) {
-            $hdr[] = 'Constants';
-            $f     = 2;
-        } elseif ($o == 4) {
-            $hdr[] = 'Tokens';
-            $f     = 2;
-        } elseif ($o > 4) {
-            $hdr[] = 'Constants/Tokens';
-            $f     = ($o == 6 ? 3 : 2);
+        if ($o & 4) {
+            if ($o & 8) {
+                $hdr[] = 'Constants/Tokens';
+            } else {
+                $hdr[] = 'Constants';
+            }
+            $f++;
+        } else {
+            if ($o & 8) {
+                $hdr[] = 'Tokens';
+                $f++;
+            }
         }
+
         $table->setHeaders($hdr);
         $filter0 = array(&$this, '_splitFilename');
         $table->addFilter(0, $filter0);
-        if ($o > 2) {
+        if ($o > 3) {
             $filter3 = array(&$this, '_splitConstant');
             $table->addFilter($f, $filter3);
         }
@@ -609,20 +615,21 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $dir   = str_replace(array('\\', '/'), $ds, $this->dir);
 
         $data = array($dir . $ds . '*' , $info['version']);
-        if ($o == 1) {
-            // no more additional info to add
-        } elseif ($o == 2) {
+        if ($o & 2) {
             $data[] = $ext;
-        } elseif ($o == 3) {
-            $data[] = implode("\r\n", $info['constants']);
-        } elseif ($o == 4) {
-            $data[] = implode("\r\n", $info['tokens']);
-        } elseif ($o == 5) {
-            $data[] = $const;
-        } else {
-            $data[] = $ext;
-            $data[] = $const;
         }
+        if ($o & 4) {
+            if ($o & 8) {
+                $data[] = $const;
+            } else {
+                $data[] = implode("\r\n", $info['constants']);
+            }
+        } else {
+            if ($o & 8) {
+                $data[] = implode("\r\n", $info['tokens']);
+            }
+        }
+
         $table->addRow($data);
 
         unset($info['max_version']);
@@ -650,20 +657,21 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $table->addSeparator();
 
             $data = array($file, $info['version']);
-            if ($o == 1) {
-                // no more additional info to add
-            } elseif ($o == 2) {
+            if ($o & 2) {
                 $data[] = $ext;
-            } elseif ($o == 3) {
-                $data[] = implode("\r\n", $info['constants']);
-            } elseif ($o == 4) {
-                $data[] = implode("\r\n", $info['tokens']);
-            } elseif ($o == 5) {
-                $data[] = $const;
-            } else {
-                $data[] = $ext;
-                $data[] = $const;
             }
+            if ($o & 4) {
+                if ($o & 8) {
+                    $data[] = $const;
+                } else {
+                    $data[] = implode("\r\n", $info['constants']);
+                }
+            } else {
+                if ($o & 8) {
+                    $data[] = implode("\r\n", $info['tokens']);
+                }
+            }
+
             $table->addRow($data);
         }
 
@@ -1057,7 +1065,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _splitExtname($data)
     {
-        $szlim  = $this->_output_level == 6 ? 11 : 35;
+        $szlim  = ($this->_output_level & 12) ? 11 : 35;
         $extArr = explode("\r\n", $data);
         $str    = '';
         foreach ($extArr as $ext) {
@@ -1085,7 +1093,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _splitConstant($data)
     {
-        $szlim  = $this->_output_level == 6 ? 21 : 35;
+        $szlim  = ($this->_output_level & 2) ? 21 : 35;
         $cstArr = explode("\r\n", $data);
         $str    = '';
         foreach ($cstArr as $cst) {
