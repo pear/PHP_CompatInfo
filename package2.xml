@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-03-28</date>
- <time>21:00:09</time>
+ <date>2008-04-04</date>
+ <time>00:22:41</time>
  <version>
-  <release>1.7.0b3</release>
+  <release>1.7.0b4</release>
   <api>1.7.0</api>
  </version>
  <stability>
@@ -29,7 +29,30 @@ which shows which functions require which version and CLI output script</descrip
   <api>stable</api>
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
- <notes>Changes since version 1.7.0b2 (2008-03-24)
+ <notes>LAST BETA before FINAL STABLE release.
+PLEASE TEST IT as much as possible !
+
+TODO : Need to fix Regression Tests Suite
+
+Changes since version 1.7.0b3 (2008-03-28)
+
+* news
+- Use PEAR::File_Find package 1.3.0 or greater to manage &quot;ignore_dirs&quot; and
+  &quot;ignore_files&quot; easily (with ability to filter by regular expression).
+- XML report structure change.
+  Render is improve if PEAR::XML_Beautifier is available.
+- XML report may now be filtered with help of --output-level switch.
+- Values change for --output-level switch. Use now binary value (more easy to remember)
+  2-&gt;Extension, 4-&gt;Constant, 8-&gt;Tokens, with always 1-&gt;Path-File + Version
+  (Thanks to Stephan Wentz for his request)
+- Add new switch --summarize to limit output to first line (summary)
+  when parsing directory
+  (Thanks to Stephan Wentz for his request)
+
+* bugs
+- fix #13568 : User functions are not ignored
+
+Changes since version 1.7.0b2 (2008-03-24)
 
 * bugs
 - notice errors on XML report output when parsing a directory with CLI
@@ -184,6 +207,11 @@ Changes since stable version 1.6.1 (2008-02-16)
     <channel>pear.php.net</channel>
     <min>1.1.4</min>
    </package>
+   <package>
+    <name>File_Find</name>
+    <channel>pear.php.net</channel>
+    <min>1.3.0</min>
+   </package>
    <extension>
     <name>tokenizer</name>
    </extension>
@@ -193,6 +221,11 @@ Changes since stable version 1.6.1 (2008-02-16)
     <name>PHPUnit</name>
     <channel>pear.phpunit.de</channel>
     <min>3.2.0</min>
+   </package>
+   <package>
+    <name>XML_Beautifier</name>
+    <channel>pear.php.net</channel>
+    <min>1.1</min>
    </package>
   </optional>
  </dependencies>
@@ -214,6 +247,93 @@ Changes since stable version 1.6.1 (2008-02-16)
   </filelist>
  </phprelease>
  <changelog>
+  <release>
+   <version>
+    <release>1.7.0b4</release>
+    <api>1.7.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-04-04</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>LAST BETA before FINAL STABLE release.
+PLEASE TEST IT as much as possible !
+
+TODO : Need to fix Regression Tests Suite
+
+Changes since version 1.7.0b3 (2008-03-28)
+
+* news
+- Use PEAR::File_Find package 1.3.0 or greater to manage &quot;ignore_dirs&quot; and
+  &quot;ignore_files&quot; easily (with ability to filter by regular expression).
+- XML report structure change.
+  Render is improve if PEAR::XML_Beautifier is available.
+- XML report may now be filtered with help of --output-level switch.
+- Values change for --output-level switch. Use now binary value (more easy to remember)
+  2-&gt;Extension, 4-&gt;Constant, 8-&gt;Tokens, with always 1-&gt;Path-File + Version
+  (Thanks to Stephan Wentz for his request)
+- Add new switch --summarize to limit output to first line (summary)
+  when parsing directory
+  (Thanks to Stephan Wentz for his request)
+
+* bugs
+- fix #13568 : User functions are not ignored
+
+Changes since version 1.7.0b2 (2008-03-24)
+
+* bugs
+- notice errors on XML report output when parsing a directory with CLI
+- add summary in XML report when parsing a directory with CLI
+
+* news
+- implement request #13493: customize CLI data output
+
+Changes since version 1.7.0b1 (2008-03-17)
+
+- pci.php file was rename to pci (without extension) to match unix command syntax
+- CLI may print (-V | --version) version number of PHP_CompatInfo package used
+
+* bugs
+- bug #13417 : Parser ignore class-method that are named as standard php functions
+
+* QA
+- dependencies related to CLI (Console_Table, Console_GetArgs, XML_Util)
+  are defined as required and no more optional. CLI is a standard feature and should
+  not be considered as optional.
+
+Changes since version 1.7.0a1 (2008-02-21)
+
+- fix CLI output render to 80 columns, on main table :
+  29 characters for File/Path column (1)
+   9 characters for Version column (2)
+  13 characters for Extensions column (3)
+  23 characters for Constants/Tokens column (4)
+- fix CLI output render to 80 columns, on additionnal tables :
+  25 characters for Option column (1)
+  51 characters for Value column (2)
+- On CLI, the XML report generation is now xml compliant with a root tag (pci)
+- On CLI, implement options:
+  ignore_functions_match  with -inm switch,
+  ignore_extensions_match with -iem switch,
+  ignore_constants_match  with -icm switch
+- On CLI options files (see -in, -ie, -ic, -inm, -iem, -icm)
+  allow to put line in comment with ; character (as in php.ini)
+
+Changes since stable version 1.6.1 (2008-02-16)
+
+* bugs
+- bug #13137 : Standard test suite failed under *nix
+
+* news
+- req #12857 : Add the option to locally mask exceptions
+  see new api 1.7.0 options:
+  ignore_functions_match, ignore_extensions_match, ignore_constants_match.
+- req #13138 : separate constants and tokens in results
+- req #13147 : CLI: add filter file extension option on parsing directory
+   </notes>
+  </release>
   <release>
    <version>
     <release>1.7.0b3</release>
@@ -275,8 +395,7 @@ Changes since stable version 1.6.1 (2008-02-16)
   see new api 1.7.0 options:
   ignore_functions_match, ignore_extensions_match, ignore_constants_match.
 - req #13138 : separate constants and tokens in results
-- req #13147 : CLI: add filter file extension option on parsing directory
-   </notes>
+- req #13147 : CLI: add filter file extension option on parsing directory</notes>
   </release>
   <release>
    <version>

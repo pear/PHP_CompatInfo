@@ -50,11 +50,34 @@ $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
 $p2->addInstallAs('scripts/pci.php', 'pci');
 //$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
-$p2->setReleaseVersion('1.7.0b3');
+$p2->setReleaseVersion('1.7.0b4');
 $p2->setAPIVersion('1.7.0');
 $p2->setReleaseStability('beta');
 $p2->setAPIStability('stable');
-$p2->setNotes('Changes since version 1.7.0b2 (2008-03-24)
+$p2->setNotes('LAST BETA before FINAL STABLE release.
+PLEASE TEST IT as much as possible !
+
+TODO : Need to fix Regression Tests Suite
+
+Changes since version 1.7.0b3 (2008-03-28)
+
+* news
+- Use PEAR::File_Find package 1.3.0 or greater to manage "ignore_dirs" and
+  "ignore_files" easily (with ability to filter by regular expression).
+- XML report structure change.
+  Render is improve if PEAR::XML_Beautifier is available.
+- XML report may now be filtered with help of --output-level switch.
+- Values change for --output-level switch. Use now binary value (more easy to remember)
+  2->Extension, 4->Constant, 8->Tokens, with always 1->Path-File + Version
+  (Thanks to Stephan Wentz for his request)
+- Add new switch --summarize to limit output to first line (summary)
+  when parsing directory
+  (Thanks to Stephan Wentz for his request)
+
+* bugs
+- fix #13568 : User functions are not ignored
+
+Changes since version 1.7.0b2 (2008-03-24)
 
 * bugs
 - notice errors on XML report output when parsing a directory with CLI
@@ -110,6 +133,8 @@ Changes since stable version 1.6.1 (2008-02-16)
 //$p2->setPhpDep('4.3.10');
 //$p2->addPackageDepWithChannel('optional', 'PHPUnit', 'pear.phpunit.de', '3.2.0');
 //$p2->addPackageDepWithChannel('optional', 'XML_Util', 'pear.php.net', '1.1.4');
+$p2->addPackageDepWithChannel('required', 'File_Find', 'pear.php.net', '1.3.0');
+$p2->addPackageDepWithChannel('optional', 'XML_Beautifier', 'pear.php.net', '1.1');
 
 if (isset($_GET['make']) ||
     (isset($_SERVER['argv']) && @$_SERVER['argv'][1] == 'make')) {
