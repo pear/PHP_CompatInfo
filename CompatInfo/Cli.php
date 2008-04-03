@@ -201,6 +201,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                       'desc' => 'Print Path/File + Version with additional data',
                       'default' => 15,
                       'min'   => 0 , 'max' => 1),
+            'summarize' =>
+                array('short' => 'S',
+                      'desc' => 'Print only summary when parsing directory',
+                      'max'   => 0),
             'version' =>
                 array('short' => 'V',
                       'desc'  => 'Print version information',
@@ -631,49 +635,52 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
         $table->addRow($data);
 
-        unset($info['max_version']);
-        unset($info['version']);
-        unset($info['extensions']);
-        unset($info['constants']);
-        unset($info['tokens']);
+        // summarize : print only summary for directory without files details
+        if ($this->args->isDefined('S') === false) {
 
-        $ignored = $info['ignored_files'];
+            unset($info['max_version']);
+            unset($info['version']);
+            unset($info['extensions']);
+            unset($info['constants']);
+            unset($info['tokens']);
 
-        unset($info['ignored_files']);
-        unset($info['ignored_functions']);
-        unset($info['ignored_extensions']);
-        unset($info['ignored_constants']);
+            $ignored = $info['ignored_files'];
 
-        foreach ($info as $file => $info) {
-            if ($info === false) {
-                continue;  // skip this (invalid) file
-            }
-            $ext   = implode("\r\n", $info['extensions']);
-            $const = implode("\r\n", array_merge($info['constants'],
-                                                 $info['tokens']));
+            unset($info['ignored_files']);
+            unset($info['ignored_functions']);
+            unset($info['ignored_extensions']);
+            unset($info['ignored_constants']);
 
-            $file = str_replace(array('\\', '/'), $ds, $file);
-            $table->addSeparator();
+            foreach ($info as $file => $info) {
+                if ($info === false) {
+                    continue;  // skip this (invalid) file
+                }
+                $ext   = implode("\r\n", $info['extensions']);
+                $const = implode("\r\n", array_merge($info['constants'],
+                                                     $info['tokens']));
 
-            $data = array($file, $info['version']);
-            if ($o & 2) {
-                $data[] = $ext;
-            }
-            if ($o & 4) {
-                if ($o & 8) {
-                    $data[] = $const;
+                $file = str_replace(array('\\', '/'), $ds, $file);
+                $table->addSeparator();
+
+                $data = array($file, $info['version']);
+                if ($o & 2) {
+                    $data[] = $ext;
+                }
+                if ($o & 4) {
+                    if ($o & 8) {
+                        $data[] = $const;
+                    } else {
+                        $data[] = implode("\r\n", $info['constants']);
+                    }
                 } else {
-                    $data[] = implode("\r\n", $info['constants']);
+                    if ($o & 8) {
+                        $data[] = implode("\r\n", $info['tokens']);
+                    }
                 }
-            } else {
-                if ($o & 8) {
-                    $data[] = implode("\r\n", $info['tokens']);
-                }
+
+                $table->addRow($data);
             }
-
-            $table->addRow($data);
         }
-
         $output = $table->getTable();
 
         // verbose level
