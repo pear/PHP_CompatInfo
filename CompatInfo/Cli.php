@@ -1198,6 +1198,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         echo XML_Util::createStartElement('pci',
                                           array('version' => '@package_version@'));
         echo PHP_EOL;
+        $o = $this->_output_level;
 
         if (isset($this->dir)) {
             // parsing a directory
@@ -1221,11 +1222,17 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             echo PHP_EOL;
 
             // print global <extensions> tag group
-            $this->_printTagList($info['extensions'], 'extension');
+            if ($o & 2) {
+                $this->_printTagList($info['extensions'], 'extension');
+            }
             // print global <constants> tag group
-            $this->_printTagList($info['constants'], 'constant');
+            if ($o & 4) {
+                $this->_printTagList($info['constants'], 'constant');
+            }
             // print global <tokens> tag group
-            $this->_printTagList($info['tokens'], 'token');
+            if ($o & 8) {
+                $this->_printTagList($info['tokens'], 'token');
+            }
 
             // print global <ignored> tag group
             echo XML_Util::createStartElement('ignored');
@@ -1280,11 +1287,17 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             echo PHP_EOL;
 
             // print local <extensions> tag group
-            $this->_printTagList($info['extensions'], 'extension');
+            if ($o & 2) {
+                $this->_printTagList($info['extensions'], 'extension');
+            }
             // print local <constants> tag group
-            $this->_printTagList($info['constants'], 'constant');
+            if ($o & 4) {
+                $this->_printTagList($info['constants'], 'constant');
+            }
             // print local <tokens> tag group
-            $this->_printTagList($info['tokens'], 'token');
+            if ($o & 8) {
+                $this->_printTagList($info['tokens'], 'token');
+            }
 
             // print local <ignored> tag group
             echo XML_Util::createStartElement('ignored');
