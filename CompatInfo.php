@@ -263,7 +263,7 @@ class PHP_CompatInfo
 
             foreach ($files as $f) {
                 $file_info = pathinfo($f);
-                $entry = $path . $file_info['basename'];
+                $entry     = $path . $file_info['basename'];
                 if (is_dir($entry)) {
                     continue;
                 } else {
@@ -773,7 +773,9 @@ class PHP_CompatInfo
                     && !$this->_isToken($tokens[$i-1], 'T_OBJECT_OPERATOR')) {
 
                     if (isset($tokens[$i-2])
-                        && !$this->_isToken($tokens[$i-2], 'T_FUNCTION')) {
+                        && $this->_isToken($tokens[$i-2], 'T_FUNCTION')) {
+                        // its a function declaration
+                    } else {
                         $is_function = true;
                     }
                 }
