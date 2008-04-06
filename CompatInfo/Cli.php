@@ -617,7 +617,13 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $ds    = DIRECTORY_SEPARATOR;
         $dir   = str_replace(array('\\', '/'), $ds, $this->dir);
 
-        $data = array($dir . $ds . '*' , $info['version']);
+        $data = array($dir . $ds . '*');
+        if (empty($info['max_version'])) {
+            $data[] = $info['version'];
+        } else {
+            $data[] = implode("\r\n", array($info['version'], $info['max_version']));
+        }
+
         if ($o & 2) {
             $data[] = $ext;
         }
@@ -662,7 +668,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 $file = str_replace(array('\\', '/'), $ds, $file);
                 $table->addSeparator();
 
-                $data = array($file, $info['version']);
+                $data = array($file);
+                if (empty($info['max_version'])) {
+                    $data[] = $info['version'];
+                } else {
+                    $data[] = implode("\r\n",
+                                      array($info['version'], $info['max_version']));
+                }
+
                 if ($o & 2) {
                     $data[] = $ext;
                 }
@@ -807,8 +820,13 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
         $ext   = implode("\r\n", $info['extensions']);
         $const = implode("\r\n", array_merge($info['constants'], $info['tokens']));
+        $data  = array($this->file);
+        if (empty($info['max_version'])) {
+            $data[] = $info['version'];
+        } else {
+            $data[] = implode("\r\n", array($info['version'], $info['max_version']));
+        }
 
-        $data = array($this->file, $info['version']);
         if ($o & 2) {
             $data[] = $ext;
         }
@@ -944,8 +962,16 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
         $ext   = implode("\r\n", $info['extensions']);
         $const = implode("\r\n", $info['constants']);
+        $data  = array();
+        if (empty($info['max_version'])) {
+            $data[] = $info['version'];
+        } else {
+            $data[] = implode("\r\n", array($info['version'], $info['max_version']));
+        }
+        $data[] = $ext;
+        $data[] = $const;
 
-        $table->addRow(array($info['version'], $ext, $const));
+        $table->addRow($data);
 
         $output = $table->getTable();
 
