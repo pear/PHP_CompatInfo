@@ -585,10 +585,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $table = new Console_Table();
         $hdr   = array('Path', 'Version');
         $f     = 1;
+        if ($o & 1) {
+            $hdr[] = 'C';
+            $f++;
+        }
         if ($o & 2) {
             $hdr[]   = 'Extensions';
             $filter2 = array(&$this, '_splitExtname');
-            $table->addFilter(2, $filter2);
+            $table->addFilter($f+1, $filter2);
             $f++;
         }
         if ($o & 4) {
@@ -624,6 +628,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $data[] = implode("\r\n", array($info['version'], $info['max_version']));
         }
 
+        if ($o & 1) {
+            $data[] = $info['cond_code'][0];
+        }
         if ($o & 2) {
             $data[] = $ext;
         }
@@ -649,6 +656,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             unset($info['extensions']);
             unset($info['constants']);
             unset($info['tokens']);
+            unset($info['cond_code']);
 
             $ignored = $info['ignored_files'];
 
@@ -676,6 +684,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                                       array($info['version'], $info['max_version']));
                 }
 
+                if ($o & 1) {
+                    $data[] = $info['cond_code'][0];
+                }
                 if ($o & 2) {
                     $data[] = $ext;
                 }
@@ -791,10 +802,14 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         $table = new Console_Table();
         $hdr   = array('File', 'Version');
         $f     = 1;
+        if ($o & 1) {
+            $hdr[] = 'C';
+            $f++;
+        }
         if ($o & 2) {
             $hdr[]   = 'Extensions';
             $filter2 = array(&$this, '_splitExtname');
-            $table->addFilter(2, $filter2);
+            $table->addFilter($f+1, $filter2);
             $f++;
         }
         if ($o & 4) {
@@ -827,6 +842,9 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $data[] = implode("\r\n", array($info['version'], $info['max_version']));
         }
 
+        if ($o & 1) {
+            $data[] = $info['cond_code'][0];
+        }
         if ($o & 2) {
             $data[] = $ext;
         }
@@ -919,9 +937,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             unset($info['max_version']);
             unset($info['version']);
+            unset($info['extensions']);
             unset($info['constants']);
             unset($info['tokens']);
-            unset($info['extensions']);
+            unset($info['cond_code']);
             unset($info['ignored_functions']);
             unset($info['ignored_extensions']);
             unset($info['ignored_constants']);
@@ -1048,8 +1067,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
             unset($info['max_version']);
             unset($info['version']);
-            unset($info['constants']);
             unset($info['extensions']);
+            unset($info['constants']);
+            unset($info['tokens']);
+            unset($info['cond_code']);
             unset($info['ignored_functions']);
             unset($info['ignored_extensions']);
             unset($info['ignored_constants']);
@@ -1103,7 +1124,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _splitExtname($data)
     {
-        $szlim  = ($this->_output_level & 12) ? 11 : 35;
+        $szlim  = ($this->_output_level & 12) ? 10 : 35;
         $extArr = explode("\r\n", $data);
         $str    = '';
         foreach ($extArr as $ext) {
@@ -1131,7 +1152,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _splitConstant($data)
     {
-        $szlim  = ($this->_output_level & 2) ? 21 : 35;
+        $szlim  = ($this->_output_level & 2) ? 18 : 35;
         $cstArr = explode("\r\n", $data);
         $str    = '';
         foreach ($cstArr as $cst) {
