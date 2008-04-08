@@ -830,9 +830,9 @@ class PHP_CompatInfo
                                          'T_CONSTANT_ENCAPSED_STRING'))) {
                     $j++;
                 }
-                $t_string = $tokens[$j][1];
-                $t_string = trim($t_string, "'");
-                $t_string = trim($t_string, '"');
+                $t_string          = $tokens[$j][1];
+                $t_string          = trim($t_string, "'");
+                $t_string          = trim($t_string, '"');
                 $function_exists[] = $t_string;
             }
             // try to detect condition extension_loaded()
@@ -844,9 +844,9 @@ class PHP_CompatInfo
                                          'T_CONSTANT_ENCAPSED_STRING'))) {
                     $j++;
                 }
-                $t_string = $tokens[$j][1];
-                $t_string = trim($t_string, "'");
-                $t_string = trim($t_string, '"');
+                $t_string           = $tokens[$j][1];
+                $t_string           = trim($t_string, "'");
+                $t_string           = trim($t_string, '"');
                 $extension_loaded[] = $t_string;
             }
             // try to detect condition defined()
@@ -858,9 +858,9 @@ class PHP_CompatInfo
                                          'T_CONSTANT_ENCAPSED_STRING'))) {
                     $j++;
                 }
-                $t_string = $tokens[$j][1];
-                $t_string = trim($t_string, "'");
-                $t_string = trim($t_string, '"');
+                $t_string  = $tokens[$j][1];
+                $t_string  = trim($t_string, "'");
+                $t_string  = trim($t_string, '"');
                 $defined[] = $t_string;
             }
 
