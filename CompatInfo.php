@@ -114,7 +114,11 @@ class PHP_CompatInfo
         }
         $options = array_merge(array('debug' => false), $options);
         $tokens  = $this->_tokenize($file);
-        return $this->_parseTokens($tokens, $options);
+        $results = $this->_parseTokens($tokens, $options);
+        if ($options['debug'] === false) {
+            $result['cond_code'][1] = array();
+        }
+        return $results;
     }
 
     /**
@@ -209,6 +213,10 @@ class PHP_CompatInfo
         $ignored_functions  = array();
         $ignored_extensions = array();
         $ignored_constants  = array();
+        $function_exists    = array();
+        $extension_loaded   = array();
+        $defined            = array();
+        $cond_code          = 0;
         $default_options    = array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
             'recurse_dir' => true,
@@ -225,7 +233,7 @@ class PHP_CompatInfo
         } else {
             $path = $dir . '/';
         }
-        $path = str_replace("\\", '/', $dir);
+        $path = str_replace("\\", '/', $path);
 
         $options['file_ext']
             = array_map('strtolower', $options['file_ext']);
@@ -342,10 +350,35 @@ class PHP_CompatInfo
                     $ignored_constants[] = $ic;
                 }
             }
+
+            $function_exists
+                = array_merge($function_exists, $file['cond_code'][1][0]);
+            $extension_loaded
+                = array_merge($extension_loaded, $file['cond_code'][1][1]);
+            $defined
+                = array_merge($defined, $file['cond_code'][1][2]);
         }
 
         if (count($files_parsed) == 0) {
             return false;
+        }
+
+        if (count($function_exists) > 0) {
+            $cond_code += 1;
+        }
+        if (count($extension_loaded) > 0) {
+            $cond_code += 2;
+        }
+        if (count($defined) > 0) {
+            $cond_code += 4;
+        }
+        $cond_code = array($cond_code, array());
+        if ($options['debug'] === true) {
+            $function_exists  = array_unique($function_exists);
+            $extension_loaded = array_unique($extension_loaded);
+            $defined          = array_unique($defined);
+
+            $cond_code[1] = array($function_exists, $extension_loaded, $defined);
         }
 
         $main_info = array('ignored_files'      => $ignored,
@@ -356,7 +389,8 @@ class PHP_CompatInfo
                            'version'       => $latest_version,
                            'extensions'    => $extensions,
                            'constants'     => $constants,
-                           'tokens'        => $tokens);
+                           'tokens'        => $tokens,
+                           'cond_code'     => $cond_code);
 
         $files_parsed = array_merge($main_info, $files_parsed);
         return $files_parsed;
@@ -604,6 +638,9 @@ class PHP_CompatInfo
         $ignore_constants   = array();
         $ignored_constants  = array();
         $function_exists    = array();
+        $extension_loaded   = array();
+        $defined            = array();
+        $cond_code          = 0;
 
         if (isset($options['ignore_constants'])) {
             $options['ignore_constants']
@@ -793,7 +830,38 @@ class PHP_CompatInfo
                                          'T_CONSTANT_ENCAPSED_STRING'))) {
                     $j++;
                 }
-                $function_exists[] = trim($tokens[$j][1], "'");
+                $t_string = $tokens[$j][1];
+                $t_string = trim($t_string, "'");
+                $t_string = trim($t_string, '"');
+                $function_exists[] = $t_string;
+            }
+            // try to detect condition extension_loaded()
+            if ($this->_isToken($tokens[$i], 'T_STRING')
+                && (strcasecmp($tokens[$i][1], 'extension_loaded') == 0)) {
+
+                $j = $i;
+                while ((!$this->_isToken($tokens[$j],
+                                         'T_CONSTANT_ENCAPSED_STRING'))) {
+                    $j++;
+                }
+                $t_string = $tokens[$j][1];
+                $t_string = trim($t_string, "'");
+                $t_string = trim($t_string, '"');
+                $extension_loaded[] = $t_string;
+            }
+            // try to detect condition defined()
+            if ($this->_isToken($tokens[$i], 'T_STRING')
+                && (strcasecmp($tokens[$i][1], 'defined') == 0)) {
+
+                $j = $i;
+                while ((!$this->_isToken($tokens[$j],
+                                         'T_CONSTANT_ENCAPSED_STRING'))) {
+                    $j++;
+                }
+                $t_string = $tokens[$j][1];
+                $t_string = trim($t_string, "'");
+                $t_string = trim($t_string, '"');
+                $defined[] = $t_string;
             }
 
             // try to detect beginning of a class
@@ -1015,6 +1083,18 @@ class PHP_CompatInfo
 
         ksort($functions_version);
 
+        if (count($function_exists) > 0) {
+            $cond_code += 1;
+        }
+        if (count($extension_loaded) > 0) {
+            $cond_code += 2;
+        }
+        if (count($defined) > 0) {
+            $cond_code += 4;
+        }
+        $cond_code = array($cond_code,
+                           array($function_exists, $extension_loaded, $defined));
+
         $main_info = array('ignored_functions'  => $ignored_functions,
                            'ignored_extensions' => $ignored_extensions,
                            'ignored_constants'  => $ignored_constants,
@@ -1022,7 +1102,8 @@ class PHP_CompatInfo
                            'version'     => $latest_version,
                            'extensions'  => $extensions,
                            'constants'   => $constant_names,
-                           'tokens'      => $token_names);
+                           'tokens'      => $token_names,
+                           'cond_code'   => $cond_code);
 
         $functions_version = array_merge($main_info, $functions_version);
         return $functions_version;
