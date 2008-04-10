@@ -1113,10 +1113,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
     /**
      * The Console_Table filter callback limits table output to 80 columns,
-     * and Extensions column to 13 characters
-     * (11 + 1 blank margin left + 1 blank margin right).
+     * and Extensions column to 12 characters
+     * (10 + 1 blank margin left + 1 blank margin right).
      *
-     * @param string $data Content of extensions column (2)
+     * @param string $data Content of extensions column
      *
      * @return string
      * @access private
@@ -1124,7 +1124,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _splitExtname($data)
     {
-        $szlim  = ($this->_output_level & 12) ? 10 : 35;
+        $szlim = ($this->_output_level & 12) ? 10 : 35;
+        if ($this->_output_level & 1) {
+            $szlim = $szlim - 4;
+        }
         $extArr = explode("\r\n", $data);
         $str    = '';
         foreach ($extArr as $ext) {
@@ -1141,10 +1144,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
 
     /**
      * The Console_Table filter callback limits table output to 80 columns,
-     * and Constants/Tokens column to 23 characters
-     * (21 + 1 blank margin left + 1 blank margin right)
+     * and Constants/Tokens column to 20 characters
+     * (18 + 1 blank margin left + 1 blank margin right)
      *
-     * @param string $data Content of constants/tokens column (3)
+     * @param string $data Content of constants/tokens column
      *
      * @return string
      * @access private
@@ -1152,7 +1155,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     function _splitConstant($data)
     {
-        $szlim  = ($this->_output_level & 2) ? 18 : 35;
+        $szlim = ($this->_output_level & 2) ? 22 : 35;
+        if ($this->_output_level & 1) {
+            $szlim = $szlim - 4;
+        }
         $cstArr = explode("\r\n", $data);
         $str    = '';
         foreach ($cstArr as $cst) {
