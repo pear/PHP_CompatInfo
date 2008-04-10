@@ -233,6 +233,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
         }
 
         // debug
+        $this->options['debug'] = false;
         if ($this->args->isDefined('v')) {
             $v = $this->args->getValue('v');
             if ($v > 3) {
@@ -1281,6 +1282,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             echo XML_Util::createTagFromArray($tag);
             echo PHP_EOL;
 
+            // print global <conditions> tag group
+            if ($o & 1) {
+                $this->_printTagList($info['cond_code'], 'condition');
+            }
             // print global <extensions> tag group
             if ($o & 2) {
                 $this->_printTagList($info['extensions'], 'extension');
@@ -1318,6 +1323,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             unset($info['extensions']);
             unset($info['constants']);
             unset($info['tokens']);
+            unset($info['cond_code']);
 
             $files = $info;
         } else {
@@ -1346,6 +1352,10 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             echo XML_Util::createTagFromArray($tag);
             echo PHP_EOL;
 
+            // print local <conditions> tag group
+            if ($o & 1) {
+                $this->_printTagList($info['cond_code'], 'condition');
+            }
             // print local <extensions> tag group
             if ($o & 2) {
                 $this->_printTagList($info['extensions'], 'extension');
@@ -1386,6 +1396,7 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                 unset($info['constants']);
                 unset($info['tokens']);
                 unset($info['extensions']);
+                unset($info['cond_code']);
 
                 // print local <functions> tag group
                 $this->_printTagList($info, 'function');
@@ -1431,11 +1442,22 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             foreach ($dataSrc as $version => $functions) {
                 $c += count($functions);
             }
+            $attributes = array('count' => $c);
+        } elseif ($tagName == 'condition') {
+            if ($this->options['debug'] === true) {
+                $c = 0;
+                foreach ($dataSrc[1] as $cond => $elements) {
+                    $c += count($elements);
+                }
+                $attributes = array('count' => $c, 'level' => $dataSrc[0]);
+            } else {
+                $attributes = array('level' => $dataSrc[0]);
+            }
         } else {
-            $c = count($dataSrc);
+            $attributes = array('count' => count($dataSrc));
         }
 
-        echo XML_Util::createStartElement($tagName.'s', array('count' => $c));
+        echo XML_Util::createStartElement($tagName.'s', $attributes);
         echo PHP_EOL;
 
         if ($tagName == 'function') {
@@ -1452,6 +1474,19 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
                                  'content' => $data['function']);
                     echo XML_Util::createTagFromArray($tag);
                     echo PHP_EOL;
+                }
+            }
+        } elseif ($tagName == 'condition') {
+            if ($this->options['debug'] == true) {
+                foreach ($dataSrc[1] as $cond => $elements) {
+                    $cond = ($cond == 0) ? 1 : ($cond * 2);
+                    foreach ($elements as $data) {
+                        $tag = array('qname' => $tagName,
+                                     'attributes' => array('level' => $cond),
+                                     'content' => $data);
+                        echo XML_Util::createTagFromArray($tag);
+                        echo PHP_EOL;
+                    }
                 }
             }
         } else {
