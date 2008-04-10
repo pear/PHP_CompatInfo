@@ -309,7 +309,7 @@ class PHP_CompatInfo
                 $files_parsed[$file] = $this->_parseTokens($tokens_list, $options);
             }
         }
-        foreach ($files_parsed as $file) {
+        foreach ($files_parsed as $fn => $file) {
             $cmp = version_compare($latest_version, $file['version']);
             if ($cmp === -1) {
                 $latest_version = $file['version'];
@@ -350,13 +350,26 @@ class PHP_CompatInfo
                     $ignored_constants[] = $ic;
                 }
             }
-
-            $function_exists
-                = array_merge($function_exists, $file['cond_code'][1][0]);
-            $extension_loaded
-                = array_merge($extension_loaded, $file['cond_code'][1][1]);
-            $defined
-                = array_merge($defined, $file['cond_code'][1][2]);
+            foreach ($file['cond_code'][1][0] as $ccf) {
+                if (!in_array($ccf, $function_exists)) {
+                    $function_exists[] = $ccf;
+                }
+            }
+            foreach ($file['cond_code'][1][1] as $cce) {
+                if (!in_array($cce, $extension_loaded)) {
+                    $extension_loaded[] = $cce;
+                }
+            }
+            foreach ($file['cond_code'][1][2] as $ccc) {
+                if (!in_array($ccc, $defined)) {
+                    $defined[] = $ccc;
+                }
+            }
+            if ($options['debug'] === false) {
+                $files_parsed[$fn]['cond_code'][1][0] = array();
+                $files_parsed[$fn]['cond_code'][1][1] = array();
+                $files_parsed[$fn]['cond_code'][1][2] = array();
+            }
         }
 
         if (count($files_parsed) == 0) {
@@ -372,14 +385,13 @@ class PHP_CompatInfo
         if (count($defined) > 0) {
             $cond_code += 4;
         }
-        $cond_code = array($cond_code, array());
-        if ($options['debug'] === true) {
-            $function_exists  = array_unique($function_exists);
-            $extension_loaded = array_unique($extension_loaded);
-            $defined          = array_unique($defined);
-
-            $cond_code[1] = array($function_exists, $extension_loaded, $defined);
+        if ($options['debug'] === false) {
+            $function_exists  = array();
+            $extension_loaded = array();
+            $defined          = array();
         }
+        $cond_code = array($cond_code,
+                           array($function_exists, $extension_loaded, $defined));
 
         $main_info = array('ignored_files'      => $ignored,
                            'ignored_functions'  => $ignored_functions,
