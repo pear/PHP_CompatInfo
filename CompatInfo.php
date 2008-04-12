@@ -157,7 +157,11 @@ class PHP_CompatInfo
         }
         $options = array_merge(array('debug' => false), $options);
         $tokens  = $this->_tokenize($string, true);
-        return $this->_parseTokens($tokens, $options);
+        $results = $this->_parseTokens($tokens, $options);
+        if ($options['debug'] === false) {
+            $results['cond_code'][1] = array();
+        }
+        return $results;
     }
 
     /**
