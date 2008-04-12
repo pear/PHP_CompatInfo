@@ -116,7 +116,7 @@ class PHP_CompatInfo
         $tokens  = $this->_tokenize($file);
         $results = $this->_parseTokens($tokens, $options);
         if ($options['debug'] === false) {
-            $result['cond_code'][1] = array();
+            $results['cond_code'][1] = array();
         }
         return $results;
     }
