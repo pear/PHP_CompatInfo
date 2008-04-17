@@ -235,22 +235,23 @@ class PHP_CompatInfo
             $path = $dir;
             $dir  = substr($dir, 0, -1);
         } else {
-            $path = $dir . '/';
+            $path = $dir . DIRECTORY_SEPARATOR;
         }
-        $path = str_replace("\\", '/', $path);
 
         $options['file_ext']
             = array_map('strtolower', $options['file_ext']);
+
+        // use system directory separator rather than forward slash by default
+        $ff         = new File_Find();
+        $ff->dirsep = DIRECTORY_SEPARATOR;
 
         // get directory list that should be ignored from scope
         $ignore_dirs = array();
         if (count($options['ignore_dirs']) > 0) {
             foreach ($options['ignore_dirs'] as $cond) {
-                $dirs = File_Find::search('`'.$cond.'`', $dir, 'perl',
-                                          true, 'directories');
-                foreach ($dirs as $i => $d) {
-                    $dirs[$i] = str_replace("\\", '/', $d);
-                }
+                $cond        = str_replace('\\', "\\\\", $cond);
+                $dirs        = $ff->search('`'.$cond.'`', $dir, 'perl',
+                                           true, 'directories');
                 $ignore_dirs = array_merge($ignore_dirs, $dirs);
             }
         }
@@ -259,11 +260,9 @@ class PHP_CompatInfo
         $ignore_files = array();
         if (count($options['ignore_files']) > 0) {
             foreach ($options['ignore_files'] as $cond) {
-                $files = File_Find::search('`'.$cond.'`', $dir, 'perl',
-                                           true, 'files');
-                foreach ($files as $i => $f) {
-                    $files[$i] = str_replace("\\", '/', $f);
-                }
+                $cond         = str_replace('\\', "\\\\", $cond);
+                $files        = $ff->search('`'.$cond.'`', $dir, 'perl',
+                                            true, 'files');
                 $ignore_files = array_merge($ignore_files, $files);
             }
         }
@@ -287,11 +286,10 @@ class PHP_CompatInfo
                 $files_filter[] = $entry;
             }
         } else {
-            list($directories, $files) = File_Find::maptree($dir);
+            list($directories, $files) = $ff->maptree($dir);
 
-            foreach ($files as $f) {
-                $entry     = str_replace("\\", '/', $f);
-                $file_info = pathinfo($f);
+            foreach ($files as $entry) {
+                $file_info = pathinfo($entry);
                 if (in_array($file_info['dirname'], $ignore_dirs)) {
                     $ignored[] = $entry;
                     continue;
