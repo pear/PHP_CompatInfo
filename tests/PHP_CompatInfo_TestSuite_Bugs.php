@@ -49,7 +49,7 @@ class PHP_CompatInfo_TestSuite_Bugs extends PHPUnit_Framework_TestCase
     {
         include_once "PHPUnit/TextUI/TestRunner.php";
 
-        $suite  = new PHPUnit_Framework_TestSuite('PHP_CompatInfo Bugs Tests');
+        $suite = new PHPUnit_Framework_TestSuite('PHP_CompatInfo Bugs Tests');
         PHPUnit_TextUI_TestRunner::run($suite);
     }
 
@@ -96,7 +96,8 @@ File::write("test", "test");
                      'version' => '3.0.0',
                      'extensions' => array(),
                      'constants' => array(),
-                     'tokens' => array());
+                     'tokens' => array(),
+                     'cond_code' => array(0, array()));
         $this->assertSame($exp, $r);
     }
 
@@ -121,7 +122,8 @@ apache_response_headers();
                      'version' => '4.3.0',
                      'extensions' => array('sapi_apache'),
                      'constants' => array(),
-                     'tokens' => array());
+                     'tokens' => array(),
+                     'cond_code' => array(0, array()));
         $this->assertSame($exp, $r);
     }
 
@@ -149,6 +151,9 @@ apache_response_headers();
                      'extensions' => array(),
                      'constants' => array('PATH_SEPARATOR', 'DIRECTORY_SEPARATOR'),
                      'tokens' => array(),
+                     'cond_code' => array(1, array(array('debug_backtrace'),
+                                                   array(),
+                                                   array())),
                      '4.0.0' =>
                      array (
                        0 =>
@@ -340,7 +345,8 @@ $test = "public$link";
                      'version' => '3.0.0',
                      'extensions' => array(),
                      'constants' => array(),
-                     'tokens' => array());
+                     'tokens' => array(),
+                     'cond_code' => array(0, array()));
         $this->assertSame($exp, $r);
     }
 }
