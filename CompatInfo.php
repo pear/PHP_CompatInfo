@@ -65,7 +65,7 @@ class PHP_CompatInfo
      * @var string Earliest version of PHP to use
      * @since  0.7.0
      */
-    var $latest_version = '3.0.0';
+    var $latest_version = '4.0.0';
 
     /**
      * @var string Last version of PHP to use
