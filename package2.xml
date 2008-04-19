@@ -177,7 +177,7 @@ Changes since version 1.7.0b4 (2008-04-03)
    <package>
     <name>Console_Table</name>
     <channel>pear.php.net</channel>
-    <min>1.0.5</min>
+    <min>1.1.1</min>
    </package>
    <package>
     <name>Console_GetArgs</name>
