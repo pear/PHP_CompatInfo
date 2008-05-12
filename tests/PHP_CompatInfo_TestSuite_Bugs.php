@@ -355,7 +355,8 @@ $test = "public$link";
      *
      * @return void
      * @link   http://pear.php.net/bugs/bug.php?id=13873
-     *         PHP_CompatInfo fails to scan if it finds other than encapsed string
+     *         PHP_CompatInfo fails to scan conditional code
+     *         if it finds other than encapsed string
      */
     public function testBug13873()
     {
