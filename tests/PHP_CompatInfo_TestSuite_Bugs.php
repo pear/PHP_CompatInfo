@@ -93,7 +93,7 @@ File::write("test", "test");
                      'ignored_extensions' => array(),
                      'ignored_constants' => array(),
                      'max_version' => '',
-                     'version' => '3.0.0',
+                     'version' => '4.0.0',
                      'extensions' => array(),
                      'constants' => array(),
                      'tokens' => array(),
@@ -342,11 +342,115 @@ $test = "public$link";
                      'ignored_extensions' => array(),
                      'ignored_constants' => array(),
                      'max_version' => '',
-                     'version' => '3.0.0',
+                     'version' => '4.0.0',
                      'extensions' => array(),
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0, array()));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Regression test for bug #13873
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=13873
+     *         PHP_CompatInfo fails to scan if it finds other than encapsed string
+     */
+    public function testBug13873()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'beehiveforum082' . $ds . 'forum';
+        $r   = $this->pci->parseFolder($dir);
+        $exp = array (
+          'ignored_files' =>
+          array (
+          ),
+          'ignored_functions' =>
+          array (
+          ),
+          'ignored_extensions' =>
+          array (
+          ),
+          'ignored_constants' =>
+          array (
+          ),
+          'max_version' => '',
+          'version' => '4.0.6',
+          'extensions' =>
+          array (
+            0 => 'pcre',
+            1 => 'date',
+            2 => 'hash',
+          ),
+          'constants' =>
+          array (
+            0 => '__FILE__',
+          ),
+          'tokens' =>
+          array (
+          ),
+          'cond_code' =>
+          array (
+            0 => 4,
+            1 =>
+            array (
+              0 =>
+              array (
+              ),
+              1 =>
+              array (
+              ),
+              2 =>
+              array (
+              ),
+            ),
+          ),
+        $dir . $ds . 'include' . $ds . 'forum.inc.php' =>
+        array (
+          'ignored_functions' =>
+          array (
+          ),
+          'ignored_extensions' =>
+          array (
+          ),
+          'ignored_constants' =>
+          array (
+          ),
+          'max_version' => '',
+          'version' => '4.0.6',
+          'extensions' =>
+          array (
+            0 => 'pcre',
+            1 => 'date',
+            2 => 'hash',
+          ),
+          'constants' =>
+          array (
+            0 => '__FILE__',
+          ),
+          'tokens' =>
+          array (
+          ),
+          'cond_code' =>
+          array (
+            0 => 4,
+            1 =>
+            array (
+              0 =>
+              array (
+              ),
+              1 =>
+              array (
+              ),
+              2 =>
+              array (
+              ),
+            ),
+          ),
+        ),
+
+        );
         $this->assertSame($exp, $r);
     }
 }
