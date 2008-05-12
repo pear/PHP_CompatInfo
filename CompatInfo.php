@@ -882,14 +882,15 @@ class PHP_CompatInfo
                 && (strcasecmp($tokens[$i][1], 'function_exists') == 0)) {
 
                 $j = $i;
-                while ((!$this->_isToken($tokens[$j],
-                                         'T_CONSTANT_ENCAPSED_STRING'))) {
+                while ((!$this->_isToken($tokens[$j], ')'))) {
+                    if ($this->_isToken($tokens[$j], 'T_CONSTANT_ENCAPSED_STRING')) {
+                        $t_string          = $tokens[$j][1];
+                        $t_string          = trim($t_string, "'");
+                        $t_string          = trim($t_string, '"');
+                        $function_exists[] = $t_string;
+                    }
                     $j++;
                 }
-                $t_string          = $tokens[$j][1];
-                $t_string          = trim($t_string, "'");
-                $t_string          = trim($t_string, '"');
-                $function_exists[] = $t_string;
             }
             // try to detect condition extension_loaded()
             if ($this->_isToken($tokens[$i], 'T_STRING')
