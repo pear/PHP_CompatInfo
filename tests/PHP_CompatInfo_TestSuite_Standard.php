@@ -133,7 +133,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'ignored_extensions' => array(),
                      'ignored_constants' => array(),
                      'max_version' => '',
-                     'version' => '3.0.0',
+                     'version' => '4.0.0',
                      'extensions' => array(),
                      'constants' => array(),
                      'tokens' => array(),
@@ -252,7 +252,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'ignored_extensions' => array('zip'),
                      'ignored_constants' => array(),
                      'max_version' => '',
-                     'version' => '3.0.0',
+                     'version' => '4.0.0',
                      'extensions' => array('zip'),
                      'constants' => array(),
                      'tokens' => array(),
@@ -726,7 +726,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'extensions' => array('sapi_cgi', 'pcre', 'tokenizer'),
                      'constants' => array('DIRECTORY_SEPARATOR'),
                      'tokens' => array(),
-                     'cond_code' => array(7, array(array(), array(), array())),
+                     'cond_code' => array(5, array(array(), array(), array())),
                      $base[0] . $ds . 'PEAR.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
@@ -736,7 +736,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                'extensions' => array('sapi_cgi'),
                                'constants' => array(),
                                'tokens' => array(),
-                               'cond_code' => array(7, array(array(), array(), array()))),
+                               'cond_code' => array(5, array(array(), array(), array()))),
                      $base[1] . $ds . 'CompatInfo.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
@@ -783,7 +783,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'extensions' => array('sapi_cgi'),
                      'constants' => array(),
                      'tokens' => array(),
-                     'cond_code' => array(7, array(array(), array(), array())),
+                     'cond_code' => array(5, array(array(), array(), array())),
                      $base . $ds . 'PEAR.php' =>
                          array('ignored_functions' => array(),
                                'ignored_extensions' => array(),
@@ -793,7 +793,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                'extensions' => array('sapi_cgi'),
                                'constants' => array(),
                                'tokens' => array(),
-                               'cond_code' => array(7, array(array(), array(), array()))));
+                               'cond_code' => array(5, array(array(), array(), array()))));
         $this->assertSame($exp, $r);
     }
 
