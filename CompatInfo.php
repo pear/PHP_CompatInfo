@@ -1143,12 +1143,15 @@ class PHP_CompatInfo
         ksort($functions_version);
 
         if (count($function_exists) > 0) {
-            $cond_code += 1;
+            $function_exists = array_unique($function_exists);
+            $cond_code      += 1;
         }
         if (count($extension_loaded) > 0) {
-            $cond_code += 2;
+            $extension_loaded = array_unique($extension_loaded);
+            $cond_code       += 2;
         }
         if (count($defined) > 0) {
+            $defined    = array_unique($defined);
             $cond_code += 4;
         }
         $cond_code = array($cond_code,
