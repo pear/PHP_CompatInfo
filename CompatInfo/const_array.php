@@ -182,6 +182,11 @@ $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
     'init' => '5.0.0',
     'name' => 'E_STRICT',
   ),
+  'E_RECOVERABLE_ERROR' =>
+  array (
+    'init' => '5.2.0',
+    'name' => 'E_RECOVERABLE_ERROR',
+  ),
   'PATH_SEPARATOR' =>
   array (
     'init' => '4.3.0',
