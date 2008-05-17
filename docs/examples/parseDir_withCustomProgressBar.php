@@ -34,7 +34,7 @@ if (php_sapi_name() == 'cli') {
 } else {
     include_once 'PHP/CompatInfo.php';
 
-    $info = new PHP_CompatInfo($pbar);
+    $info = new PHP_CompatInfo();
 
     $dir  = 'C:\php\pear\HTML_Progress2';
     var_dump($info->parseDir($dir));
