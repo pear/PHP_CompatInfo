@@ -98,13 +98,21 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
      */
     var $_output_level;
 
+    /**
+     * @var    mixed    Progress bar render options
+     * @since  1.8.0RC1
+     */
+    var $_pbar;
+
 
     /**
      * ZE2 Constructor
      *
+     * @param mixed $pbar (optional) The progress bar render options
+     *
      * @since  0.8.0
      */
-    function __construct()
+    function __construct($pbar = false)
     {
         $this->opts = array(
             'dir' =>
@@ -471,16 +479,43 @@ class PHP_CompatInfo_Cli extends PHP_CompatInfo
             $this->error = 'ERROR: You must supply at least '
                 . 'one string, file or directory to process';
         }
+
+        // Display a progress bar (if available) when parsing directory
+        if ($this->args->isDefined('d')) {
+            $progressBar = 'Console/ProgressBar.php';
+            if (PHP_CompatInfo_Cli::isIncludable($progressBar)
+                && php_sapi_name() == 'cli') {
+                include_once $progressBar;
+
+                // default progress bar render options
+                $default = array('formatString' => '- %fraction% files' .
+                                                   ' [%bar%] %percent%' .
+                                                   ' Elapsed Time: %elapsed%',
+                                 'barfill' => '=>',
+                                 'prefill' => '-',
+                                 'options' => array());
+
+                if (!is_array($pbar)) {
+                    $pbar = array();
+                }
+                $this->_pbar = array_merge($default, $pbar);
+            } else {
+                // no progress bar available
+                $this->_pbar = false;
+            }
+        }
     }
 
     /**
      * ZE1 PHP4 Compatible Constructor
      *
+     * @param mixed $pbar (optional) The progress bar render options
+     *
      * @since  0.8.0
      */
-    function PHP_CompatInfo_Cli()
+    function PHP_CompatInfo_Cli($pbar = false)
     {
-        $this->__construct();
+        $this->__construct($pbar);
     }
 
     /**

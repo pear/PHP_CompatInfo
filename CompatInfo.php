@@ -79,6 +79,12 @@ class PHP_CompatInfo
     var $recurse_dir = true;
 
     /**
+     * @var    mixed    Progress bar render options (available only on CLI sapi)
+     * @since  1.8.0RC1
+     */
+    var $_pbar = false;
+
+    /**
      * Parse a single file
      *
      * Parse a file for its compatibility info
@@ -302,7 +308,21 @@ class PHP_CompatInfo
             }
         }
 
+        if ($this->_pbar) {
+            $bar = new Console_ProgressBar($this->_pbar['formatString'],
+                                           $this->_pbar['barfill'],
+                                           $this->_pbar['prefill'],
+                                           78,
+                                           count($files_filter),
+                                           $this->_pbar['options']);
+        }
+        $fp = 0;
         foreach ($files_filter as $file) {
+            if ($this->_pbar) {
+                // update the progress bar
+                $bar->update($fp);
+                $fp++;
+            }
             $file_info = pathinfo($file);
             if (isset($file_info['extension'])
                 && in_array(strtolower($file_info['extension']),
@@ -311,6 +331,7 @@ class PHP_CompatInfo
                 $files_parsed[$file] = $this->_parseTokens($tokens_list, $options);
             }
         }
+
         foreach ($files_parsed as $fn => $file) {
             $cmp = version_compare($latest_version, $file['version']);
             if ($cmp === -1) {
@@ -372,6 +393,10 @@ class PHP_CompatInfo
                 $files_parsed[$fn]['cond_code'][1][1] = array();
                 $files_parsed[$fn]['cond_code'][1][2] = array();
             }
+        }
+        if ($this->_pbar) {
+            // remove the progress bar
+            $bar->erase();
         }
 
         if (count($files_parsed) == 0) {
