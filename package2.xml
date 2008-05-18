@@ -19,9 +19,9 @@ which shows which functions require which version and CLI output script</descrip
   <active>no</active>
  </lead>
  <date>2008-05-18</date>
- <time>09:24:48</time>
+ <time>15:22:41</time>
  <version>
-  <release>1.8.0RC1</release>
+  <release>1.8.0b1</release>
   <api>1.8.0</api>
  </version>
  <stability>
@@ -198,7 +198,7 @@ function_exists(), extension_loaded(), and defined().
  <changelog>
   <release>
    <version>
-    <release>1.8.0RC1</release>
+    <release>1.8.0b1</release>
     <api>1.8.0</api>
    </version>
    <stability>

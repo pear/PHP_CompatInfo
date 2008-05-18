@@ -50,7 +50,7 @@ $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
 $p2->addInstallAs('scripts/pci.php', 'pci');
 //$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
-$p2->setReleaseVersion('1.8.0RC1');
+$p2->setReleaseVersion('1.8.0b1');
 $p2->setAPIVersion('1.8.0');
 $p2->setReleaseStability('beta');
 $p2->setAPIStability('stable');
