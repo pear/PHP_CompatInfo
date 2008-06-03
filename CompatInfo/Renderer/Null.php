@@ -44,7 +44,7 @@ class PHP_CompatInfo_Renderer_Null extends PHP_CompatInfo_Renderer
      */
     function PHP_CompatInfo_Renderer_Null(&$parser, $conf)
     {
-        $this->_construct($parser, $conf);
+        $this->__construct($parser, $conf);
     }
 
     /**

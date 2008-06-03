@@ -63,7 +63,7 @@ class PHP_CompatInfo_Renderer_Array extends PHP_CompatInfo_Renderer
      */
     function PHP_CompatInfo_Renderer_Array(&$parser, $conf)
     {
-        $this->_construct($parser, $conf);
+        $this->__construct($parser, $conf);
     }
 
     /**

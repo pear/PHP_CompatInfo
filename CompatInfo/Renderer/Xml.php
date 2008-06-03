@@ -64,7 +64,7 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
      */
     function PHP_CompatInfo_Renderer_Xml(&$parser, $conf)
     {
-        $this->_construct($parser, $conf);
+        $this->__construct($parser, $conf);
     }
 
     /**
