@@ -19,7 +19,7 @@ which shows which functions require which version and CLI output script</descrip
   <active>no</active>
  </lead>
  <date>2008-06-03</date>
- <time>22:25:15</time>
+ <time>22:29:17</time>
  <version>
   <release>1.8.0b2</release>
   <api>1.8.0</api>
@@ -72,9 +72,6 @@ Beta 3 that will come shortly will include 2 new more renderers :
      <file name="Null.php" role="php" />
      <file name="Xml.php" role="php" />
     </dir> <!-- /CompatInfo/Renderer -->
-    <file name="Cli.php" role="php">
-     <tasks:replace from="@package_version@" to="version" type="package-info" />
-    </file>
     <file name="const_array.php" role="php" />
     <file name="func_array.php" role="php" />
     <file name="Parser.php" role="php" />
@@ -171,23 +168,7 @@ Beta 3 that will come shortly will include 2 new more renderers :
    </package>
   </optional>
  </dependencies>
- <phprelease>
-  <installconditions>
-   <os>
-    <name>windows</name>
-   </os>
-  </installconditions>
-  <filelist>
-   <install as="pci.bat" name="scripts/compatinfo.bat" />
-   <install as="pci" name="scripts/pci.php" />
-  </filelist>
- </phprelease>
- <phprelease>
-  <filelist>
-   <install as="pci" name="scripts/pci.php" />
-   <ignore name="scripts/compatinfo.bat" />
-  </filelist>
- </phprelease>
+ <phprelease />
  <changelog>
   <release>
    <version>
