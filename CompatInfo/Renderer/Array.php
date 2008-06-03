@@ -140,6 +140,7 @@ class PHP_CompatInfo_Renderer_Array extends PHP_CompatInfo_Renderer
                                       $notifyInfo['fileindex']);
             break;
         case PHP_COMPATINFO_EVENT_FILEFINISHED :
+        case PHP_COMPATINFO_EVENT_CODEFINISHED :
             $this->parseData = $notifyInfo;
             break;
         }
