@@ -10,7 +10,7 @@
  * @package  PHP_CompatInfo
  * @author   Laurent Laville <pear@laurent-laville.org>
  * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
- * @version  CVS: $Id:
+ * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @since    version 1.8.0b2 (2008-06-03)
  * @ignore
