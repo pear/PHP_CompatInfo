@@ -80,6 +80,26 @@ class PHP_CompatInfo
     }
 
     /**
+     * Load components list
+     *
+     * Load components list for a PHP version or subset
+     *
+     * @param string         $min           PHP minimal version
+     * @param string|boolean $max           (optional) PHP maximal version
+     * @param boolean        $include_const (optional) include constants list
+     *                                                 in final result
+     *
+     * @return array         An array of php function/constant names to ignore
+     * @access public
+     * @static
+     * @since  version 1.2.0 (2006-08-23)
+     */
+    function loadVersion($min, $max = false, $include_const = false)
+    {
+        return $this->parser->loadVersion($min, $max, $include_const);
+    }
+
+    /**
      * Parse a data source
      *
      * Parse a data source with auto detect ability. This data source, may be
