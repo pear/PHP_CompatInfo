@@ -40,7 +40,7 @@ $driverType = 'xml';
    Default behavior is:  silent = true (no wait system)
    Use (progress => text) if you don't want a progress bar but only text messages
  */
-$driverOptions = array('silent' => false, 'progress' => 'text');
+$driverOptions = array('silent' => false, 'progress' => 'bar');
 
 $compatInfo = new PHP_CompatInfo($driverType, $driverOptions);
 
