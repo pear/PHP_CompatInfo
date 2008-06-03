@@ -1,0 +1,312 @@
+<?php
+/**
+ * An abstract base class for CompatInfo renderers
+ *
+ * PHP versions 4 and 5
+ *
+ * LICENSE: This source file is subject to version 3.01 of the PHP license
+ * that is available through the world-wide-web at the following URI:
+ * http://www.php.net/license/3_01.txt.  If you did not receive a copy of
+ * the PHP License and are unable to obtain it through the web, please
+ * send a note to license@php.net so we can mail you a copy immediately.
+ *
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version  CVS: $Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
+ * @since    File available since Release 1.8.0b2
+ */
+
+/**
+ * Base class used by all renderers
+ *
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version  Release: @package_version@
+ * @link     http://pear.php.net/package/PHP_CompatInfo
+ * @since    Class available since Release 1.8.0b2
+ * @abstract
+ */
+class PHP_CompatInfo_Renderer
+{
+    /**
+     * Subclass of PHP_CompatInfo_Parser being decorated
+     *
+     * @var    object
+     * @access private
+     */
+    var $_parser;
+
+    /**
+     * @var    mixed    Progress bar render options (available only on CLI sapi)
+     * @since  1.8.0b1
+     * @access private
+     */
+    var $_pbar;
+
+    /**
+     * @var    string   End of line string (depending of server API)
+     * @access public
+     */
+    var $eol;
+
+    /**
+     * Silent mode. Display or not extra info messages.
+     *
+     * @var    boolean
+     * @access public
+     */
+    var $silent;
+
+    /**
+     * Base Renderer Class constructor (ZE1) for PHP4
+     *
+     * @param object &$parser Instance of the parser (model of MVC pattern)
+     * @param array  $conf    A hash containing any additional configuration
+     *
+     * @access public
+     * @since  version 1.8.0b2 (2008-06-03)
+     */
+    function PHP_CompatInfo_Renderer(&$parser, $conf)
+    {
+        PHP_CompatInfo_Renderer::__construct($parser, $conf);
+    }
+
+    /**
+     * Base Renderer Class constructor (ZE2) for PHP5+
+     *
+     * @param object &$parser Instance of the parser (model of MVC pattern)
+     * @param array  $conf    A hash containing any additional configuration
+     *
+     * @access public
+     * @since  version 1.8.0b2 (2008-06-03)
+     */
+    function __construct(&$parser, $conf)
+    {
+        $this->_parser = $parser;
+
+        if (php_sapi_name() == 'cli') {
+            $this->eol = PHP_EOL;
+        } else {
+            $this->eol = '<br/>'. PHP_EOL;
+        }
+
+        // activate (or not) the silent mode
+        if (!isset($conf['silent'])) {
+            $this->silent = true;  // default behavior
+        } else {
+            $this->silent = (bool) $conf['silent'];
+        }
+
+        if (isset($conf['progress']) && $conf['progress'] == 'bar') {
+            // wait style = progress bar prefered (if available)
+            $progressBar = 'Console/ProgressBar.php';
+            if (php_sapi_name() == 'cli'
+                && PHP_CompatInfo_Renderer::isIncludable($progressBar)) {
+
+                include_once $progressBar;
+
+                // default progress bar render options
+                $default = array('formatString' => '- %fraction% files' .
+                                                   ' [%bar%] %percent%' .
+                                                   ' Elapsed Time: %elapsed%',
+                                 'barfill' => '=>',
+                                 'prefill' => '-',
+                                 'options' => array());
+
+                // apply custom render options if given
+                if (isset($conf['progressbar'])) {
+                    $pbar = $conf['progressbar'];
+                } else {
+                    $pbar = array();
+                }
+                $this->_pbar = array_merge($default, $pbar);
+            } else {
+                // no progress bar available
+                $this->_pbar = false;
+            }
+        } else {
+            // wait style = text prefered
+            $this->_pbar = false;
+        }
+
+        // register the compatInfo view as observer
+        $parser->addListener(array(&$this, 'update'));
+    }
+
+    /**
+     * Create required instance of the Output 'driver'.
+     *
+     * @param object &$parser A concrete instance of the parser
+     * @param string $type    (optional) Type of instance required, lowercase.
+     * @param array  $conf    (optional) A hash containing any additional
+     *                        configuration information that a subclass might need.
+     *
+     * @return object PHP_CompatInfo_Renderer A concrete PHP_CompatInfo_Renderer
+     *                                        instance, or null on error.
+     * @access public
+     * @since  version 1.8.0b2 (2008-06-03)
+     */
+    function &factory(&$parser, $type = 'array', $conf = array())
+    {
+        $class = 'PHP_CompatInfo_Renderer_' . ucfirst(strtolower($type));
+        $file  = str_replace('_', '/', $class) . '.php';
+
+        /**
+         * Attempt to include our version of the named class, but don't treat
+         * a failure as fatal.  The caller may have already included their own
+         * version of the named class.
+         */
+        if (!PHP_CompatInfo_Renderer::_classExists($class)) {
+            include_once $file;
+        }
+
+        // If the class exists, return a new instance of it.
+        if (PHP_CompatInfo_Renderer::_classExists($class)) {
+            $instance =& new $class($parser, $conf);
+        } else {
+            $instance = null;
+        }
+
+        return $instance;
+    }
+
+    /**
+     * Interface to update the view with current information
+     *
+     * Listen events produced by Event_Dispatcher and the PHP_CompatInfo_Parser
+     *
+     * @abstract
+     * @return void
+     * @access public
+     * @since  version 1.8.0b2 (2008-06-03)
+     */
+    function update()
+    {
+    }
+
+    /**
+     * Initialize the wait process
+     *
+     * Initialize the wait process, with a simple message or a progress bar.
+     *
+     * @param integer $maxEntries Number of source to parse
+     *
+     * @return void
+     * @access public
+     * @since  version 1.8.0b2 (2008-06-03)
+     */
+    function startWaitProgress($maxEntries)
+    {
+        if ($this->silent == false) {
+            // obey at silent mode protocol
+            if ($this->_pbar) {
+                $this->_pbar = new Console_ProgressBar($this->_pbar['formatString'],
+                                               $this->_pbar['barfill'],
+                                               $this->_pbar['prefill'],
+                                               78,
+                                               $maxEntries,
+                                               $this->_pbar['options']);
+            } else {
+                echo 'Wait while parsing data source ...'
+                   . $this->eol;
+            }
+        }
+    }
+
+    /**
+     * Update the wait message
+     *
+     * Update the wait message, or status of the progress bar
+     *
+     * @param string $filename  File currently parsing
+     * @param string $fileindex Position of the $filename in the data source list
+     *                          to parse
+     *
+     * @return void
+     * @access public
+     * @since  version 1.8.0b2 (2008-06-03)
+     */
+    function stillWaitProgress($filename, $fileindex)
+    {
+        if ($this->silent == false) {
+            // obey at silent mode protocol
+            if ($this->_pbar) {
+                // update the progress bar
+                $this->_pbar->update($fileindex);
+            } else {
+                echo 'Wait while parsing file "' . $filename . '"'
+                   . $this->eol;
+            }
+        }
+    }
+
+    /**
+     * Finish waiting process
+     *
+     * Finish waiting process, by erasing the progress bar
+     *
+     * @return void
+     * @access public
+     * @since  version 1.8.0b2 (2008-06-03)
+     */
+    function endWaitProgress()
+    {
+        if ($this->silent == false) {
+            // obey at silent mode protocol
+            if ($this->_pbar) {
+                // remove the progress bar
+                $this->_pbar->erase(true);
+            }
+        }
+    }
+
+    /**
+     * Returns whether or not a file is in the include path
+     *
+     * @param string $file Path to filename to check if includable
+     *
+     * @static
+     * @access public
+     * @return boolean True if the file is in the include path, false otherwise
+     * @since  version 1.7.0b4 (2008-04-03)
+     */
+    function isIncludable($file)
+    {
+        foreach (explode(PATH_SEPARATOR, get_include_path()) as $ip) {
+            if (file_exists($ip . DIRECTORY_SEPARATOR . $file)
+                && is_readable($ip . DIRECTORY_SEPARATOR . $file)
+                ) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Utility function which wraps PHP's class_exists() function to ensure
+     * consistent behavior between PHP versions 4 and 5. Autoloading behavior
+     * is always disabled.
+     *
+     * @param string $class The name of the class whose existence should be tested.
+     *
+     * @return bool         True if the class exists, false otherwiser.
+     *
+     * @static
+     * @access private
+     * @since  version 1.8.0b2 (2008-06-03)
+     */
+    function _classExists($class)
+    {
+        if (version_compare(PHP_VERSION, '5.0.0', 'ge')) {
+            return class_exists($class, false);
+        }
+
+        return class_exists($class);
+    }
+}
+?>
