@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-05-18</date>
- <time>15:22:41</time>
+ <date>2008-06-03</date>
+ <time>22:25:15</time>
  <version>
-  <release>1.8.0b1</release>
+  <release>1.8.0b2</release>
   <api>1.8.0</api>
  </version>
  <stability>
@@ -29,25 +29,56 @@ which shows which functions require which version and CLI output script</descrip
   <api>stable</api>
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
- <notes>Consider this version as a high bug fix release.
-Especially if you want to parse files/dirs with conditional code such as
-function_exists(), extension_loaded(), and defined().
-
-* bugs
-- #13873: Undefined Offset Error for function_exists detection
+ <notes>CREDITS
+Thanks to John Parise and Ken Guest, for their agreement to reuse code and idea
+from their packages. Idea about connecting a driver (see PEAR_Size) and
+how to build/check an instance of a custom renderer (see Log) if class
+is available loaded somewhere.
 
 * news
-- support of error_reporting constant E_RECOVERABLE_ERROR introduced with PHP 5.2.0
-- show a progress bar when parsing directories from CLI
+API 1.8.0 since beta 2 was almost full rewrite following the MVC design pattern.
+This version, that DO NOT break Backward Compatibility, introduces at least two big
+features :
+1. Event-Driven capability (see PEAR::Event_Dispatcher),
+2. Customizable and extendable Renderers
+
+Do not forget to have a look on 3 news examples pci180_parse* that demonstrates
+the new API.
+
+Beta 2 include 3 renderers :
+- &quot;Null&quot; that consumes all output. Usefull for batch mode
+- &quot;Array&quot; the default. That dump results as a PHP array (like previous versions)
+  but allow also to print improved array with help of PEAR::Var_Dump if available.
+- &quot;Xml&quot; that produces XML results with PEAR::XML_Util and improve its render
+  with PEAR::XML_Beautifier if available.
+
+  WARNING: if you use benefit of XML_Beautifier with the Xml renderer and see
+            the XML prolog/declaration be removed, DO NOT add a new bug report
+            it is the old Bug #5450 !
+
+Beta 3 that will come shortly will include 2 new more renderers :
+- Html, for web page content
+- Text, for command line interface (that will come back again live)
+
+* QA
+- Do no search Unit tests in this release, it is not yet ready, so I have removed
+  them until beta3
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
    <dir name="CompatInfo">
+    <dir name="Renderer">
+     <file name="Array.php" role="php" />
+     <file name="Null.php" role="php" />
+     <file name="Xml.php" role="php" />
+    </dir> <!-- /CompatInfo/Renderer -->
     <file name="Cli.php" role="php">
      <tasks:replace from="@package_version@" to="version" type="package-info" />
     </file>
     <file name="const_array.php" role="php" />
     <file name="func_array.php" role="php" />
+    <file name="Parser.php" role="php" />
+    <file name="Renderer.php" role="php" />
    </dir> <!-- /CompatInfo -->
    <dir name="docs">
     <dir name="examples">
@@ -63,6 +94,9 @@ function_exists(), extension_loaded(), and defined().
      <file name="parseDir_withCustomProgressBar.php" role="doc" />
      <file name="parseFile.php" role="doc" />
      <file name="parseString.php" role="doc" />
+     <file name="pci180_parsefile.php" role="doc" />
+     <file name="pci180_parsefolder.php" role="doc" />
+     <file name="pci180_parsestring.php" role="doc" />
     </dir> <!-- /docs/examples -->
    </dir> <!-- /docs -->
    <dir name="scripts">
@@ -77,52 +111,6 @@ function_exists(), extension_loaded(), and defined().
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
     </file>
    </dir> <!-- /scripts -->
-   <dir name="tests">
-    <dir name="beehiveforum082">
-     <dir name="forum">
-      <dir name="include">
-       <file name="forum.inc.php" role="test" />
-      </dir> <!-- /tests/beehiveforum082/forum/include -->
-     </dir> <!-- /tests/beehiveforum082/forum -->
-    </dir> <!-- /tests/beehiveforum082 -->
-    <dir name="emptyDir">
-     <file name="empty_dir.txt" role="test" />
-    </dir> <!-- /tests/emptyDir -->
-    <dir name="parseDir">
-     <dir name="PHP5">
-      <file name="tokens.php5" role="test" />
-      <file name="upload_error.php" role="test" />
-     </dir> <!-- /tests/parseDir/PHP5 -->
-     <file name="extensions.php" role="test" />
-     <file name="phpinfo.php" role="test" />
-    </dir> <!-- /tests/parseDir -->
-    <dir name="parseFile">
-     <file name="conditional.php" role="test" />
-     <file name="empty.php" role="test" />
-     <file name="ignore_functions_match.php" role="test" />
-     <file name="math.php" role="test" />
-     <file name="PackageUpdate.php" role="test" />
-     <file name="php5_method_chaining.php" role="test" />
-     <file name="php5_method_chaining_samp2.php" role="test" />
-     <file name="phpweb-entities.php" role="test" />
-     <file name="zip.php" role="test" />
-    </dir> <!-- /tests/parseFile -->
-    <file name="AllTests.php" role="test" />
-    <file name="checkMax.php" role="test" />
-    <file name="PHP_CompatInfo_TestSuite_Bugs.php" role="test">
-     <tasks:replace from="@package_version@" to="version" type="package-info" />
-    </file>
-    <file name="PHP_CompatInfo_TestSuite_Cli.php" role="test">
-     <tasks:replace from="@package_version@" to="version" type="package-info" />
-     <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
-     <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
-     <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
-    </file>
-    <file name="PHP_CompatInfo_TestSuite_Standard.php" role="test">
-     <tasks:replace from="@package_version@" to="version" type="package-info" />
-    </file>
-    <file name="sample_req6056.php" role="test" />
-   </dir> <!-- /tests -->
    <file name="CompatInfo.php" role="php">
     <tasks:replace from="@package_version@" to="version" type="package-info" />
    </file>
@@ -155,6 +143,11 @@ function_exists(), extension_loaded(), and defined().
     <name>File_Find</name>
     <channel>pear.php.net</channel>
     <min>1.3.0</min>
+   </package>
+   <package>
+    <name>Event_Dispatcher</name>
+    <channel>pear.php.net</channel>
+    <min>1.0.0</min>
    </package>
    <extension>
     <name>tokenizer</name>
@@ -198,6 +191,53 @@ function_exists(), extension_loaded(), and defined().
  <changelog>
   <release>
    <version>
+    <release>1.8.0b2</release>
+    <api>1.8.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-06-03</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>CREDITS
+Thanks to John Parise and Ken Guest, for their agreement to reuse code and idea
+from their packages. Idea about connecting a driver (see PEAR_Size) and
+how to build/check an instance of a custom renderer (see Log) if class
+is available loaded somewhere.
+
+* news
+API 1.8.0 since beta 2 was almost full rewrite following the MVC design pattern.
+This version, that DO NOT break Backward Compatibility, introduces at least two big
+features :
+1. Event-Driven capability (see PEAR::Event_Dispatcher),
+2. Customizable and extendable Renderers
+
+Do not forget to have a look on 3 news examples pci180_parse* that demonstrates
+the new API.
+
+Beta 2 include 3 renderers :
+- &quot;Null&quot; that consumes all output. Usefull for batch mode
+- &quot;Array&quot; the default. That dump results as a PHP array (like previous versions)
+  but allow also to print improved array with help of PEAR::Var_Dump if available.
+- &quot;Xml&quot; that produces XML results with PEAR::XML_Util and improve its render
+  with PEAR::XML_Beautifier if available.
+
+  WARNING: if you use benefit of XML_Beautifier with the Xml renderer and see
+            the XML prolog/declaration be removed, DO NOT add a new bug report
+            it is the old Bug #5450 !
+
+Beta 3 that will come shortly will include 2 new more renderers :
+- Html, for web page content
+- Text, for command line interface (that will come back again live)
+
+* QA
+- Do no search Unit tests in this release, it is not yet ready, so I have removed
+  them until beta3
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.8.0b1</release>
     <api>1.8.0</api>
    </version>
@@ -216,8 +256,7 @@ function_exists(), extension_loaded(), and defined().
 
 * news
 - support of error_reporting constant E_RECOVERABLE_ERROR introduced with PHP 5.2.0
-- show a progress bar when parsing directories from CLI
-   </notes>
+- show a progress bar when parsing directories from CLI</notes>
   </release>
   <release>
    <version>
