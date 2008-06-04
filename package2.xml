@@ -30,7 +30,7 @@ which shows which functions require which version and CLI output script</descrip
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
  <notes>CREDITS
-Thanks to John Parise and Ken Guest, for their agreement to reuse code and idea
+Thanks to Jon Parise and Ken Guest, for their agreement to reuse code and idea
 from their packages. Idea about connecting a driver (see PEAR_Size) and
 how to build/check an instance of a custom renderer (see Log) if class
 is available loaded somewhere.
@@ -182,7 +182,7 @@ Beta 3 that will come shortly will include 2 new more renderers :
    <date>2008-06-03</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
    <notes>CREDITS
-Thanks to John Parise and Ken Guest, for their agreement to reuse code and idea
+Thanks to Jon Parise and Ken Guest, for their agreement to reuse code and idea
 from their packages. Idea about connecting a driver (see PEAR_Size) and
 how to build/check an instance of a custom renderer (see Log) if class
 is available loaded somewhere.
