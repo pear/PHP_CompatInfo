@@ -37,14 +37,6 @@ require_once 'XML/Util.php';
 class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
 {
     /**
-     * Data source parsed final results
-     *
-     * @var    array
-     * @access public
-     */
-    var $parseData;
-
-    /**
      * A hash containing any additional configuration
      * (Options to improve render with help of XML_Beutifier)
      *
@@ -83,39 +75,6 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
     }
 
     /**
-     * Updates view with current informations
-     *
-     * @param object &$auditEvent Instance of Event_Dispatcher
-     *
-     * @access public
-     * @return void
-     * @since  version 1.8.0b2 (2008-06-03)
-     */
-    function update(&$auditEvent)
-    {
-        $notifyName = $auditEvent->getNotificationName();
-        $notifyInfo = $auditEvent->getNotificationInfo();
-
-        switch ($notifyName) {
-        case PHP_COMPATINFO_EVENT_AUDITSTARTED :
-            parent::startWaitProgress($notifyInfo['dataCount']);
-            break;
-        case PHP_COMPATINFO_EVENT_AUDITFINISHED :
-            parent::endWaitProgress();
-            $this->display();
-            break;
-        case PHP_COMPATINFO_EVENT_FILESTARTED :
-            parent::stillWaitProgress($notifyInfo['filename'],
-                                      $notifyInfo['fileindex']);
-            break;
-        case PHP_COMPATINFO_EVENT_FILEFINISHED :
-        case PHP_COMPATINFO_EVENT_CODEFINISHED :
-            $this->parseData = $notifyInfo;
-            break;
-        }
-    }
-
-    /**
      * Display final results
      *
      * Display final results, when data source parsing is over.
@@ -147,8 +106,8 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             // parsing a directory
 
             // print <dir> tag
-            $tag = array('qname' => 'dir',
-                         'content' => $dataSource);
+            $tag  = array('qname' => 'dir',
+                          'content' => $dataSource);
             $msg .= XML_Util::createTagFromArray($tag);
             $msg .= PHP_EOL;
 
@@ -158,27 +117,31 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             } else {
                 $attr = array('max' => $this->parseData['max_version']);
             }
-            $tag = array('qname' => 'version',
-                         'attributes' => $attr,
-                         'content' => $this->parseData['version']);
+            $tag  = array('qname' => 'version',
+                          'attributes' => $attr,
+                          'content' => $this->parseData['version']);
             $msg .= XML_Util::createTagFromArray($tag);
             $msg .= PHP_EOL;
 
             // print global <conditions> tag group
             if ($o & 1) {
-                $msg .= $this->_printTagList($this->parseData['cond_code'], 'condition');
+                $msg .= $this->_printTagList($this->parseData['cond_code'],
+                                             'condition');
             }
             // print global <extensions> tag group
             if ($o & 2) {
-                $msg .= $this->_printTagList($this->parseData['extensions'], 'extension');
+                $msg .= $this->_printTagList($this->parseData['extensions'],
+                                             'extension');
             }
             // print global <constants> tag group
             if ($o & 4) {
-                $msg .= $this->_printTagList($this->parseData['constants'], 'constant');
+                $msg .= $this->_printTagList($this->parseData['constants'],
+                                             'constant');
             }
             // print global <tokens> tag group
             if ($o & 8) {
-                $msg .= $this->_printTagList($this->parseData['tokens'], 'token');
+                $msg .= $this->_printTagList($this->parseData['tokens'],
+                                             'token');
             }
 
             // print global <ignored> tag group
@@ -212,6 +175,23 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
         } elseif ($dataType == 'file') {
             // parsing a single file
             $files = array($dataSource => $this->parseData);
+        } elseif ($dataType == 'array') {
+            // parsing a list of files, or chunk of code (strings)
+
+            // remove summary data
+            unset($this->parseData['ignored_files']);
+            unset($this->parseData['ignored_functions']);
+            unset($this->parseData['ignored_extensions']);
+            unset($this->parseData['ignored_constants']);
+            unset($this->parseData['max_version']);
+            unset($this->parseData['version']);
+            unset($this->parseData['functions']);
+            unset($this->parseData['extensions']);
+            unset($this->parseData['constants']);
+            unset($this->parseData['tokens']);
+            unset($this->parseData['cond_code']);
+
+            $files = $this->parseData;
         } else {
             // ... or a chunk of code (string)
             $files = array($this->parseData);
@@ -239,27 +219,31 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             } else {
                 $attr = array('max' => $this->parseData['max_version']);
             }
-            $tag = array('qname' => 'version',
-                         'attributes' => $attr,
-                         'content' => $this->parseData['version']);
+            $tag  = array('qname' => 'version',
+                          'attributes' => $attr,
+                          'content' => $this->parseData['version']);
             $msg .= XML_Util::createTagFromArray($tag);
             $msg .= PHP_EOL;
 
             // print local <conditions> tag group
             if ($o & 1) {
-                $msg .= $this->_printTagList($this->parseData['cond_code'], 'condition');
+                $msg .= $this->_printTagList($this->parseData['cond_code'],
+                                             'condition');
             }
             // print local <extensions> tag group
             if ($o & 2) {
-                $msg .= $this->_printTagList($this->parseData['extensions'], 'extension');
+                $msg .= $this->_printTagList($this->parseData['extensions'],
+                                             'extension');
             }
             // print local <constants> tag group
             if ($o & 4) {
-                $msg .= $this->_printTagList($this->parseData['constants'], 'constant');
+                $msg .= $this->_printTagList($this->parseData['constants'],
+                                             'constant');
             }
             // print local <tokens> tag group
             if ($o & 8) {
-                $msg .= $this->_printTagList($this->parseData['tokens'], 'token');
+                $msg .= $this->_printTagList($this->parseData['tokens'],
+                                             'token');
             }
 
             // print local <ignored> tag group
@@ -372,9 +356,9 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
                         $attr['pecl']      = $data['pecl'] === true ?
                                                 'true' : 'false';
                     }
-                    $tag = array('qname' => $tagName,
-                                 'attributes' => $attr,
-                                 'content' => $data['function']);
+                    $tag  = array('qname' => $tagName,
+                                  'attributes' => $attr,
+                                  'content' => $data['function']);
                     $msg .= XML_Util::createTagFromArray($tag);
                     $msg .= PHP_EOL;
                 }
@@ -384,9 +368,9 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
                 foreach ($dataSrc[1] as $cond => $elements) {
                     $cond = ($cond == 0) ? 1 : ($cond * 2);
                     foreach ($elements as $data) {
-                        $tag = array('qname' => $tagName,
-                                     'attributes' => array('level' => $cond),
-                                     'content' => $data);
+                        $tag  = array('qname' => $tagName,
+                                      'attributes' => array('level' => $cond),
+                                      'content' => $data);
                         $msg .= XML_Util::createTagFromArray($tag);
                         $msg .= PHP_EOL;
                     }
@@ -394,9 +378,9 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             }
         } else {
             foreach ($dataSrc as $data) {
-                $tag = array('qname' => $tagName,
-                             'attributes' => array(),
-                             'content' => $data);
+                $tag  = array('qname' => $tagName,
+                              'attributes' => array(),
+                              'content' => $data);
                 $msg .= XML_Util::createTagFromArray($tag);
                 $msg .= PHP_EOL;
             }
