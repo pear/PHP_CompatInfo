@@ -80,6 +80,40 @@ class PHP_CompatInfo
     }
 
     /**
+     * Registers a new listener
+     *
+     * Registers a new listener with the given criteria.
+     *
+     * @param mixed  $callback A PHP callback
+     * @param string $nName    (optional) Expected notification name
+     *
+     * @access public
+     * @return void
+     * @since  version 1.8.0b3 (2008-06-07)
+     */
+    function addListener($callback, $nName = EVENT_DISPATCHER_GLOBAL)
+    {
+        $this->parser->addListener($callback, $nName);
+    }
+
+    /**
+     * Removes a registered listener
+     *
+     * Removes a registered listener that correspond to the given criteria.
+     *
+     * @param mixed  $callback A PHP callback
+     * @param string $nName    (optional) Expected notification name
+     *
+     * @access public
+     * @return bool  True if listener was removed, false otherwise.
+     * @since  version 1.8.0b3 (2008-06-07)
+     */
+    function removeListener($callback, $nName = EVENT_DISPATCHER_GLOBAL)
+    {
+        return $this->parser->removeListener($callback, $nName);
+    }
+
+    /**
      * Load components list
      *
      * Load components list for a PHP version or subset
