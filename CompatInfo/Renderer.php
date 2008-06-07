@@ -98,6 +98,13 @@ class PHP_CompatInfo_Renderer
         $this->_parser = $parser;
 
         if (php_sapi_name() == 'cli') {
+            // when running the CLI version, take arguments from console
+            if (isset($conf['args'])) {
+                if (isset($conf['args']['progress'])) {
+                    $conf['progress'] = $conf['args']['progress'];
+                    $conf['silent']   = false;
+                }
+            }
             $this->eol = PHP_EOL;
         } else {
             $this->eol = '<br/>'. PHP_EOL;
