@@ -490,23 +490,28 @@ class PHP_CompatInfo_Parser
             } elseif (is_file($dataSource)) {
                 $dataType   = 'file';
                 $dataSource = array($dataSource);
-            } else {
+            } elseif (substr($dataSource, 0, 5) == '<?php') {
                 //$dataType = 'string';
                 $this->options = array_merge($this->options,
                                              array('is_string' => true));
                 $dataSource    = array($dataSource);
+            } else {
+                //$dataType = 'string';
+                // directory or file are misspelled
             }
-            $dataSource = $this->_validateDataSource($dataSource, $this->options);
+            if (is_array($dataSource)) {
+                $dataSource = $this->_validateDataSource($dataSource,
+                                                         $this->options);
+                $dataCount  = count($dataSource);
+            }
         }
 
-        $dataCount = count($dataSource);
         if ($dataCount == 0) {
             // - when array source with mixed content incompatible
             // - if all directories are not readable
             // - if data source invalid type: other than file, directory, string
-            $dataType = 'invalid';
-        } elseif ($dataCount == 1) {
-            // when parsing a single directory, a single file, or a single string
+        } elseif ($dataCount == 1 && $dataType == 'file') {
+            // when parsing a single file
             $dataSource = $dataSource[0];
         }
 
@@ -520,22 +525,23 @@ class PHP_CompatInfo_Parser
         // notify all observers that parsing data source begin
         $this->notifyListeners(PHP_COMPATINFO_EVENT_AUDITSTARTED, $eventInfo);
 
-        switch ($dataType) {
-        case 'array' :
-            $parseData = $this->_parseArray($dataSource, $this->options);
-            break;
-        case 'string' :
-            $parseData = $this->_parseString($dataSource, $this->options);
-            break;
-        case 'file' :
-            $parseData = $this->_parseFile($dataSource, $this->options);
-            break;
-        case 'directory' :
-            $parseData = $this->_parseDir($dataSource, $this->options);
-            break;
-        case 'invalid' :
+        if ($dataCount == 0) {
             $parseData = false;
-            break;
+        } else {
+            switch ($dataType) {
+            case 'array' :
+                $parseData = $this->_parseArray($dataSource, $this->options);
+                break;
+            case 'string' :
+                $parseData = $this->_parseString($dataSource, $this->options);
+                break;
+            case 'file' :
+                $parseData = $this->_parseFile($dataSource, $this->options);
+                break;
+            case 'directory' :
+                $parseData = $this->_parseDir($dataSource, $this->options);
+                break;
+            }
         }
 
         // notify all observers that parsing data source is over
@@ -676,8 +682,8 @@ class PHP_CompatInfo_Parser
      *
      * Parse a directory recursively for its compatibility info
      *
-     * @param string $files   Files list of folder to parse
-     * @param array  $options Parser options (see parseData() method for details)
+     * @param array $files   Files list of folder to parse
+     * @param array $options Parser options (see parseData() method for details)
      *
      * @access private
      * @return array or false on error
