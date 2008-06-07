@@ -35,14 +35,6 @@
 class PHP_CompatInfo_Renderer_Array extends PHP_CompatInfo_Renderer
 {
     /**
-     * Data source parsed final results
-     *
-     * @var    array
-     * @access public
-     */
-    var $parseData;
-
-    /**
      * Driver to display results array.
      *
      * Default is PHP::var_export, but you can use PEAR::Var_Dump if available
@@ -110,39 +102,6 @@ class PHP_CompatInfo_Renderer_Array extends PHP_CompatInfo_Renderer
         if (!isset($this->driver)) {
             // if optional driver not defined, then use default PHP::var_export
             $this->driver = 'PHP';
-        }
-    }
-
-    /**
-     * Updates view with current informations
-     *
-     * @param object &$auditEvent Instance of Event_Dispatcher
-     *
-     * @access public
-     * @return void
-     * @since  version 1.8.0b2 (2008-06-03)
-     */
-    function update(&$auditEvent)
-    {
-        $notifyName = $auditEvent->getNotificationName();
-        $notifyInfo = $auditEvent->getNotificationInfo();
-
-        switch ($notifyName) {
-        case PHP_COMPATINFO_EVENT_AUDITSTARTED :
-            parent::startWaitProgress($notifyInfo['dataCount']);
-            break;
-        case PHP_COMPATINFO_EVENT_AUDITFINISHED :
-            parent::endWaitProgress();
-            $this->display();
-            break;
-        case PHP_COMPATINFO_EVENT_FILESTARTED :
-            parent::stillWaitProgress($notifyInfo['filename'],
-                                      $notifyInfo['fileindex']);
-            break;
-        case PHP_COMPATINFO_EVENT_FILEFINISHED :
-        case PHP_COMPATINFO_EVENT_CODEFINISHED :
-            $this->parseData = $notifyInfo;
-            break;
         }
     }
 
