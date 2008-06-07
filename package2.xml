@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.7.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>PHP_CompatInfo</name>
  <channel>pear.php.net</channel>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-06-03</date>
- <time>22:29:17</time>
+ <date>2008-06-07</date>
+ <time>21:58:21</time>
  <version>
-  <release>1.8.0b2</release>
+  <release>1.8.0b3</release>
   <api>1.8.0</api>
  </version>
  <stability>
@@ -29,53 +29,56 @@ which shows which functions require which version and CLI output script</descrip
   <api>stable</api>
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
- <notes>CREDITS
-Thanks to Jon Parise and Ken Guest, for their agreement to reuse code and idea
-from their packages. Idea about connecting a driver (see PEAR_Size) and
-how to build/check an instance of a custom renderer (see Log) if class
-is available loaded somewhere.
+ <notes>* changes
+- parseArray() method was missing in beta2 is back
+- add or remove observers is now possible with public method of the controller
+  PHP_CompatInfo (main class)
 
 * news
-API 1.8.0 since beta 2 was almost full rewrite following the MVC design pattern.
-This version, that DO NOT break Backward Compatibility, introduces at least two big
-features :
-1. Event-Driven capability (see PEAR::Event_Dispatcher),
-2. Customizable and extendable Renderers
+- CLI is back alive with the new Text Renderer
+  a new switch -p | --progress was added to display a wait message or a progress bar
+  (if PEAR::Console_ProgressBar is installed)
 
-Do not forget to have a look on 3 news examples pci180_parse* that demonstrates
+Do not forget to have a look on all examples pci180_parse* that demonstrates
 the new API.
 
-Beta 2 include 3 renderers :
-- &quot;Null&quot; that consumes all output. Usefull for batch mode
-- &quot;Array&quot; the default. That dump results as a PHP array (like previous versions)
-  but allow also to print improved array with help of PEAR::Var_Dump if available.
-- &quot;Xml&quot; that produces XML results with PEAR::XML_Util and improve its render
-  with PEAR::XML_Beautifier if available.
-
-  WARNING: if you use benefit of XML_Beautifier with the Xml renderer and see
-            the XML prolog/declaration be removed, DO NOT add a new bug report
-            it is the old Bug #5450 !
-
-Beta 3 that will come shortly will include 2 new more renderers :
+Beta 4, the last beta before RC, that is planned for june 18th will include
+2 new more renderers :
 - Html, for web page content
-- Text, for command line interface (that will come back again live)
+- Csv, for a plain text content
 
 * QA
 - Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until beta3
+  them until beta4
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
    <dir name="CompatInfo">
     <dir name="Renderer">
-     <file name="Array.php" role="php" />
-     <file name="Null.php" role="php" />
-     <file name="Xml.php" role="php" />
+     <file name="Array.php" role="php">
+      <tasks:replace from="@package_version@" to="version" type="package-info" />
+     </file>
+     <file name="Null.php" role="php">
+      <tasks:replace from="@package_version@" to="version" type="package-info" />
+     </file>
+     <file name="Text.php" role="php">
+      <tasks:replace from="@package_version@" to="version" type="package-info" />
+     </file>
+     <file name="Xml.php" role="php">
+      <tasks:replace from="@package_version@" to="version" type="package-info" />
+     </file>
     </dir> <!-- /CompatInfo/Renderer -->
+    <file name="Cli.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
     <file name="const_array.php" role="php" />
     <file name="func_array.php" role="php" />
-    <file name="Parser.php" role="php" />
-    <file name="Renderer.php" role="php" />
+    <file name="Parser.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file name="Renderer.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
    </dir> <!-- /CompatInfo -->
    <dir name="docs">
     <dir name="examples">
@@ -91,6 +94,8 @@ Beta 3 that will come shortly will include 2 new more renderers :
      <file name="parseDir_withCustomProgressBar.php" role="doc" />
      <file name="parseFile.php" role="doc" />
      <file name="parseString.php" role="doc" />
+     <file name="pci180_parsearray_files.php" role="doc" />
+     <file name="pci180_parsearray_strings.php" role="doc" />
      <file name="pci180_parsefile.php" role="doc" />
      <file name="pci180_parsefolder.php" role="doc" />
      <file name="pci180_parsestring.php" role="doc" />
@@ -168,8 +173,58 @@ Beta 3 that will come shortly will include 2 new more renderers :
    </package>
   </optional>
  </dependencies>
- <phprelease />
+ <phprelease>
+  <installconditions>
+   <os>
+    <name>windows</name>
+   </os>
+  </installconditions>
+  <filelist>
+   <install as="pci.bat" name="scripts/compatinfo.bat" />
+   <install as="pci" name="scripts/pci.php" />
+  </filelist>
+ </phprelease>
+ <phprelease>
+  <filelist>
+   <install as="pci" name="scripts/pci.php" />
+   <ignore name="scripts/compatinfo.bat" />
+  </filelist>
+ </phprelease>
  <changelog>
+  <release>
+   <version>
+    <release>1.8.0b3</release>
+    <api>1.8.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-06-07</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>* changes
+- parseArray() method was missing in beta2 is back
+- add or remove observers is now possible with public method of the controller
+  PHP_CompatInfo (main class)
+
+* news
+- CLI is back alive with the new Text Renderer
+  a new switch -p | --progress was added to display a wait message or a progress bar
+  (if PEAR::Console_ProgressBar is installed)
+
+Do not forget to have a look on all examples pci180_parse* that demonstrates
+the new API.
+
+Beta 4, the last beta before RC, that is planned for june 18th will include
+2 new more renderers :
+- Html, for web page content
+- Csv, for a plain text content
+
+* QA
+- Do no search Unit tests in this release, it is not yet ready, so I have removed
+  them until beta4
+   </notes>
+  </release>
   <release>
    <version>
     <release>1.8.0b2</release>
@@ -214,8 +269,7 @@ Beta 3 that will come shortly will include 2 new more renderers :
 
 * QA
 - Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until beta3
-   </notes>
+  them until beta3</notes>
   </release>
   <release>
    <version>

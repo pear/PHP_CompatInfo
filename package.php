@@ -35,70 +35,62 @@ $options = array('filelistgenerator' => 'cvs',
     'simpleoutput' => true,
     'clearcontents' => false,
     'changelogoldtonew' => false,
-    'ignore' => array(__FILE__, 'tests/', 'Cli.php',
-        'funclist.txt', 'updateVersionInfo.php', 'version.xml')
+    'ignore' => array(__FILE__, 'tests/',
+       'funclist.txt', 'updateVersionInfo.php', 'version.xml')
     );
 
 $p2 = &PEAR_PackageFileManager2::importOptions($packagefile, $options);
 $p2->setPackageType('php');
 $p2->generateContents();
 $p2->addRelease();
-/*
 $p2->setOSInstallCondition('windows');
 $p2->addInstallAs('scripts/compatinfo.bat', 'pci.bat');
 $p2->addInstallAs('scripts/pci.php', 'pci');
 $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
 $p2->addInstallAs('scripts/pci.php', 'pci');
-*/
 //$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
-$p2->setReleaseVersion('1.8.0b2');
+$p2->addReplacement('CompatInfo/Parser.php', 'package-info', '@package_version@', 'version');
+$p2->addReplacement('CompatInfo/Renderer.php', 'package-info', '@package_version@', 'version');
+$p2->addReplacement('CompatInfo/Renderer/Array.php', 'package-info', '@package_version@', 'version');
+$p2->addReplacement('CompatInfo/Renderer/Null.php', 'package-info', '@package_version@', 'version');
+$p2->addReplacement('CompatInfo/Renderer/Text.php', 'package-info', '@package_version@', 'version');
+$p2->addReplacement('CompatInfo/Renderer/Xml.php', 'package-info', '@package_version@', 'version');
+$p2->setReleaseVersion('1.8.0b3');
 $p2->setAPIVersion('1.8.0');
 $p2->setReleaseStability('beta');
 $p2->setAPIStability('stable');
-$p2->setNotes('CREDITS
-Thanks to John Parise and Ken Guest, for their agreement to reuse code and idea
-from their packages. Idea about connecting a driver (see PEAR_Size) and
-how to build/check an instance of a custom renderer (see Log) if class
-is available loaded somewhere.
+$p2->setNotes('* changes
+- parseArray() method was missing in beta2 is back
+- add or remove observers is now possible with public method of the controller
+  PHP_CompatInfo (main class)
 
 * news
-API 1.8.0 since beta 2 was almost full rewrite following the MVC design pattern.
-This version, that DO NOT break Backward Compatibility, introduces at least two big
-features :
-1. Event-Driven capability (see PEAR::Event_Dispatcher),
-2. Customizable and extendable Renderers
+- CLI is back alive with the new Text Renderer
+  a new switch -p | --progress was added to display a wait message or a progress bar
+  (if PEAR::Console_ProgressBar is installed)
 
-Do not forget to have a look on 3 news examples pci180_parse* that demonstrates
+Do not forget to have a look on all examples pci180_parse* that demonstrates
 the new API.
 
-Beta 2 include 3 renderers :
-- "Null" that consumes all output. Usefull for batch mode
-- "Array" the default. That dump results as a PHP array (like previous versions)
-  but allow also to print improved array with help of PEAR::Var_Dump if available.
-- "Xml" that produces XML results with PEAR::XML_Util and improve its render
-  with PEAR::XML_Beautifier if available.
-
-  WARNING: if you use benefit of XML_Beautifier with the Xml renderer and see
-            the XML prolog/declaration be removed, DO NOT add a new bug report
-            it is the old Bug #5450 !
-
-Beta 3 that will come shortly will include 2 new more renderers :
+Beta 4, the last beta before RC, that is planned for june 18th will include
+2 new more renderers :
 - Html, for web page content
-- Text, for command line interface (that will come back again live)
+- Csv, for a plain text content
 
 * QA
 - Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until beta3
+  them until beta4
 ');
 //$p2->setPearinstallerDep('1.5.4');
 //$p2->setPhpDep('4.3.10');
-$p2->addPackageDepWithChannel('required', 'Event_Dispatcher', 'pear.php.net', '1.0.0');
+//$p2->addPackageDepWithChannel('required', 'Event_Dispatcher', 'pear.php.net', '1.0.0');
 //$p2->addPackageDepWithChannel('optional', 'PHPUnit', 'pear.phpunit.de', '3.2.0');
 //$p2->addPackageDepWithChannel('optional', 'XML_Util', 'pear.php.net', '1.1.4');
 //$p2->addPackageDepWithChannel('required', 'File_Find', 'pear.php.net', '1.3.0');
 //$p2->addPackageDepWithChannel('optional', 'XML_Beautifier', 'pear.php.net', '1.1');
 //$p2->addPackageDepWithChannel('optional', 'Console_ProgressBar', 'pear.php.net', '0.5.2beta');
+//$p2->addPackageDepWithChannel('optional', 'Var_Dump', 'pear.php.net', '1.0.3');
 
 if (isset($_GET['make']) ||
     (isset($_SERVER['argv']) && @$_SERVER['argv'][1] == 'make')) {
