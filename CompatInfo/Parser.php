@@ -141,7 +141,7 @@ class PHP_CompatInfo_Parser
      * @since  1.8.0b2
      * @see    getIgnoredFiles()
      */
-    var $ignored_files;
+    var $ignored_files = array();
 
     /**
      * Class constructor (ZE1) for PHP4
@@ -484,24 +484,30 @@ class PHP_CompatInfo_Parser
         if ($dataType == 'string' || $dataType == 'array') {
             if (is_array($dataSource)) {
                 //$dataType = 'array';
-                $dataCount = count($dataSource);
             } elseif (is_dir($dataSource)) {
-                if (is_readable($dataSource)) {
-                    $dataType  = 'directory';
-                    $files     = $this->getFilelist($dataSource, $this->options);
-                    $dataCount = count($files);
-                } else {
-                    $dataType = 'invalid';
-                }
+                $dataType   = 'directory';
+                $dataSource = array($dataSource);
             } elseif (is_file($dataSource)) {
-                $dataType  = 'file';
-                $dataCount = 1;
+                $dataType   = 'file';
+                $dataSource = array($dataSource);
             } else {
                 //$dataType = 'string';
-                $dataCount = 1;
+                $this->options = array_merge($this->options,
+                                             array('is_string' => true));
+                $dataSource    = array($dataSource);
             }
-        } else {
+            $dataSource = $this->_validateDataSource($dataSource, $this->options);
+        }
+
+        $dataCount = count($dataSource);
+        if ($dataCount == 0) {
+            // - when array source with mixed content incompatible
+            // - if all directories are not readable
+            // - if data source invalid type: other than file, directory, string
             $dataType = 'invalid';
+        } elseif ($dataCount == 1) {
+            // when parsing a single directory, a single file, or a single string
+            $dataSource = $dataSource[0];
         }
 
         $this->dataSource = array('dataSource' => $dataSource,
@@ -515,6 +521,9 @@ class PHP_CompatInfo_Parser
         $this->notifyListeners(PHP_COMPATINFO_EVENT_AUDITSTARTED, $eventInfo);
 
         switch ($dataType) {
+        case 'array' :
+            $parseData = $this->_parseArray($dataSource, $this->options);
+            break;
         case 'string' :
             $parseData = $this->_parseString($dataSource, $this->options);
             break;
@@ -522,7 +531,7 @@ class PHP_CompatInfo_Parser
             $parseData = $this->_parseFile($dataSource, $this->options);
             break;
         case 'directory' :
-            $parseData = $this->_parseDir($files, $this->options);
+            $parseData = $this->_parseDir($dataSource, $this->options);
             break;
         case 'invalid' :
             $parseData = false;
@@ -536,30 +545,101 @@ class PHP_CompatInfo_Parser
     }
 
     /**
-     * Parse a string
+     * Validate content of data source
      *
-     * Parse a string for its compatibility info.
+     * Validate content of data source list, before parsing each source
      *
-     * @param string $string  PHP Code to parse
-     * @param array  $options Parser options (see parseData() method for details)
+     * @param mixed $dataSource The data source (may be file, dir, or string)
+     * @param array $options    Parser options (see parseData() method for details)
+     *
+     * @access private
+     * @return array   empty array on error
+     * @since  version 1.8.0b3 (2008-06-07)
+     */
+    function _validateDataSource($dataSource, $options = array())
+    {
+        /**
+         * Array by default expect to contains list of files and/or directories.
+         * If you want a list of chunk of code (strings), 'is_string' option
+         * must be set to true.
+         */
+        $options = array_merge(array('is_string' => false), $options);
+        $list    = array();
+
+        foreach ($dataSource as $source) {
+            if ($options['is_string'] === true) {
+                if (is_string($source)) {
+                    $list[] = $source;
+                } else {
+                    /**
+                     * One of items is not a string (chunk of code). All
+                     * data sources parsing are stopped and considered as invalid.
+                     */
+                    $list = array();
+                    break;
+                }
+            } else {
+                if (is_dir($source) && is_readable($source)) {
+                    $files = $this->getFilelist($source, $options);
+                    $list  = array_merge($list, $files);
+                } elseif (is_file($source)) {
+                    $list[] = $source;
+                } else {
+                    /**
+                     * One of items is not a valid file or directory. All
+                     * data sources parsing are stopped and considered as invalid.
+                     */
+                    $list = array();
+                    break;
+                }
+            }
+        }
+
+        return $list;
+    }
+
+    /**
+     * Parse an Array of Files
+     *
+     * You can parse an array of Files or Strings, to parse
+     * strings, $options['is_string'] must be set to true
+     *
+     * @param array $dataSource Array of file &| directory names or code strings
+     * @param array $options    Parser options (see parseData() method for details)
      *
      * @access private
      * @return array or false on error
      * @since  version 0.7.0 (2004-03-09)
      * @see    parseData()
      */
-    function _parseString($string, $options = array())
+    function _parseArray($dataSource, $options = array())
     {
-        $eventInfo = array('string' => $string);
-        $this->notifyListeners(PHP_COMPATINFO_EVENT_CODESTARTED, $eventInfo);
-
-        $tokens  = $this->_tokenize($string, true);
-        $results = $this->_parseTokens($tokens, $options);
-        if ($options['debug'] === false) {
-            $results['cond_code'][1] = array();
+        // Each data source have been checked before (see _validateDataSource() )
+        if (is_file($dataSource[0])) {
+            $parseData = $this->_parseDir($dataSource, $options);
+        } else {
+            $parseData = $this->_parseString($dataSource, $options);
         }
 
-        $this->notifyListeners(PHP_COMPATINFO_EVENT_CODEFINISHED, $results);
+        return $parseData;
+    }
+
+    /**
+     * Parse a string
+     *
+     * Parse a string for its compatibility info.
+     *
+     * @param array $strings PHP Code to parse
+     * @param array $options Parser options (see parseData() method for details)
+     *
+     * @access private
+     * @return array or false on error
+     * @since  version 0.7.0 (2004-03-09)
+     * @see    parseData()
+     */
+    function _parseString($strings, $options = array())
+    {
+        $results = $this->_parseElements($strings, $options);
         return $results;
     }
 
@@ -606,6 +686,25 @@ class PHP_CompatInfo_Parser
      */
     function _parseDir($files, $options = array())
     {
+        $results = $this->_parseElements($files, $options);
+        return $results;
+    }
+
+    /**
+     * Parse a list of elements
+     *
+     * Parse a list of directory|file elements, or chunk of code (strings)
+     *
+     * @param array $elements Array of file &| directory names or code strings
+     * @param array $options  Parser options (see parseData() method for details)
+     *
+     * @access private
+     * @return array
+     * @since  version 1.8.0b3 (2008-06-07)
+     * @see    _parseString(), _parseDir()
+     */
+    function _parseElements($elements, $options = array())
+    {
         $files_parsed       = array();
         $latest_version     = $this->latest_version;
         $earliest_version   = $this->earliest_version;
@@ -621,14 +720,29 @@ class PHP_CompatInfo_Parser
         $defined            = array();
         $cond_code          = 0;
 
-        foreach ($files as $fp => $file) {
-            $eventInfo = array('filename' => $file, 'fileindex' => $fp + 1);
-            $this->notifyListeners(PHP_COMPATINFO_EVENT_FILESTARTED, $eventInfo);
+        foreach ($elements as $p => $element) {
+            $index = $p + 1;
+            if (is_file($element)) {
+                $eventInfo
+                    = array('filename' => $element, 'fileindex' => $index);
+                $this->notifyListeners(PHP_COMPATINFO_EVENT_FILESTARTED, $eventInfo);
 
-            $tokens_list         = $this->_tokenize($file);
-            $files_parsed[$file] = $this->_parseTokens($tokens_list, $options);
+                $tokens_list          = $this->_tokenize($element);
+                $kfile                = $element;
+                $files_parsed[$kfile] = $this->_parseTokens($tokens_list, $options);
 
-            $this->notifyListeners(PHP_COMPATINFO_EVENT_FILEFINISHED);
+                $this->notifyListeners(PHP_COMPATINFO_EVENT_FILEFINISHED);
+            } else {
+                $eventInfo
+                    = array('stringdata' => $element, 'stringindex' => $index);
+                $this->notifyListeners(PHP_COMPATINFO_EVENT_CODESTARTED, $eventInfo);
+
+                $tokens_list          = $this->_tokenize($element, true);
+                $kfile                = 'string_' . $index;
+                $files_parsed[$kfile] = $this->_parseTokens($tokens_list, $options);
+
+                $this->notifyListeners(PHP_COMPATINFO_EVENT_CODEFINISHED);
+            }
         }
 
         foreach ($files_parsed as $fn => $file) {
