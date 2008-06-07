@@ -63,6 +63,14 @@ class PHP_CompatInfo_Renderer
     var $silent;
 
     /**
+     * Data source parsed final results
+     *
+     * @var    array
+     * @access public
+     */
+    var $parseData;
+
+    /**
      * Base Renderer Class constructor (ZE1) for PHP4
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
@@ -180,13 +188,38 @@ class PHP_CompatInfo_Renderer
      *
      * Listen events produced by Event_Dispatcher and the PHP_CompatInfo_Parser
      *
-     * @abstract
+     * @param object &$auditEvent Instance of Event_Dispatcher
+     *
      * @return void
      * @access public
      * @since  version 1.8.0b2 (2008-06-03)
      */
-    function update()
+    function update(&$auditEvent)
     {
+        $notifyName = $auditEvent->getNotificationName();
+        $notifyInfo = $auditEvent->getNotificationInfo();
+
+        switch ($notifyName) {
+        case PHP_COMPATINFO_EVENT_AUDITSTARTED :
+            $this->startWaitProgress($notifyInfo['dataCount']);
+            break;
+        case PHP_COMPATINFO_EVENT_AUDITFINISHED :
+            $this->endWaitProgress();
+            $this->display();
+            break;
+        case PHP_COMPATINFO_EVENT_FILESTARTED :
+            $this->stillWaitProgress($notifyInfo['filename'],
+                                     $notifyInfo['fileindex']);
+            break;
+        case PHP_COMPATINFO_EVENT_CODESTARTED :
+            $this->stillWaitProgress($notifyInfo['stringdata'],
+                                     $notifyInfo['stringindex']);
+            break;
+        case PHP_COMPATINFO_EVENT_FILEFINISHED :
+        case PHP_COMPATINFO_EVENT_CODEFINISHED :
+            $this->parseData = $notifyInfo;
+            break;
+        }
     }
 
     /**
@@ -223,24 +256,29 @@ class PHP_CompatInfo_Renderer
      *
      * Update the wait message, or status of the progress bar
      *
-     * @param string $filename  File currently parsing
-     * @param string $fileindex Position of the $filename in the data source list
-     *                          to parse
+     * @param string $source Source (file, string) currently parsing
+     * @param string $index  Position of the $source in the data source list
+     *                       to parse
      *
      * @return void
      * @access public
      * @since  version 1.8.0b2 (2008-06-03)
      */
-    function stillWaitProgress($filename, $fileindex)
+    function stillWaitProgress($source, $index)
     {
         if ($this->silent == false) {
             // obey at silent mode protocol
             if ($this->_pbar) {
                 // update the progress bar
-                $this->_pbar->update($fileindex);
+                $this->_pbar->update($index);
             } else {
-                echo 'Wait while parsing file "' . $filename . '"'
-                   . $this->eol;
+                if (is_file($source)) {
+                    echo 'Wait while parsing file "' . $source . '"'
+                       . $this->eol;
+                } else {
+                    echo 'Wait while parsing string "' . $index . '"'
+                       . $this->eol;
+                }
             }
         }
     }
