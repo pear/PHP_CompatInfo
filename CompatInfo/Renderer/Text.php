@@ -100,8 +100,12 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
         }
 
         $table = new Console_Table();
-        $hdr   = array($hdr_col1, 'Version');
-        $f     = 1;
+        $hdr   = array($hdr_col1);
+        $f     = 0;
+        if ($o & 16) {
+            $hdr[] = 'Version';
+            $f++;
+        }
         if ($o & 1) {
             $hdr[] = 'C';
             $f++;
@@ -145,12 +149,14 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
             $data = array('<?php ... ?>');
         }
 
-        if (empty($info['max_version'])) {
-            $data[] = $info['version'];
-        } else {
-            $data[] = implode("\r\n", array($info['version'], $info['max_version']));
+        if ($o & 16) {
+            if (empty($info['max_version'])) {
+                $data[] = $info['version'];
+            } else {
+                $data[] = implode("\r\n", array($info['version'],
+                                                $info['max_version']));
+            }
         }
-
         if ($o & 1) {
             $data[] = $info['cond_code'][0];
         }
@@ -201,13 +207,14 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
                 $table->addSeparator();
 
                 $data = array($file);
-                if (empty($info['max_version'])) {
-                    $data[] = $info['version'];
-                } else {
-                    $data[] = implode("\r\n",
-                                      array($info['version'], $info['max_version']));
+                if ($o & 16) {
+                    if (empty($info['max_version'])) {
+                        $data[] = $info['version'];
+                    } else {
+                        $data[] = implode("\r\n", array($info['version'],
+                                                        $info['max_version']));
+                    }
                 }
-
                 if ($o & 1) {
                     $data[] = $info['cond_code'][0];
                 }

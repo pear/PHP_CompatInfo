@@ -180,7 +180,7 @@ class PHP_CompatInfo_Cli
             'output-level' =>
                 array('short' => 'o',
                       'desc' => 'Print Path/File + Version with additional data',
-                      'default' => 15,
+                      'default' => 31,
                       'min'   => 0 , 'max' => 1),
             'progress' =>
                 array('short' => 'p',
@@ -483,7 +483,7 @@ class PHP_CompatInfo_Cli
 
             // output-level
             if (!$this->args->isDefined('o')) {
-                $args['output-level'] = 15; // default = full detail
+                $args['output-level'] = 31; // default = full detail
             }
 
             $compatInfo = new PHP_CompatInfo('text', array('args' => $args));
