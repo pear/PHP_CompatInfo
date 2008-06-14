@@ -19,7 +19,7 @@
  * @since    File available since Release 1.8.0b4
  */
 
-require_once 'Html/Table.php';
+require_once 'HTML/Table.php';
 
 /**
  * The PHP_CompatInfo_Renderer_Html class is a concrete implementation
