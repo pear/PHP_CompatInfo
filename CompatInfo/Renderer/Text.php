@@ -71,7 +71,12 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
     {
         parent::PHP_CompatInfo_Renderer($parser, $conf);
 
-        $this->args = $conf['args'];
+        $args = array('summarize' => false, 'output-level' => 31);
+        if (isset($conf['args']) && is_array($conf['args'])) {
+            $this->args = array_merge($args, $conf['args']);
+        } else {
+            $this->args = $args;
+        }
     }
 
     /**
@@ -178,7 +183,7 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
         $table->addRow($data);
 
         // summarize : print only summary for directory without files details
-        if (isset($this->args['summarize']) === false && isset($dir)) {
+        if ($this->args['summarize'] === false && isset($dir)) {
 
             unset($info['max_version']);
             unset($info['version']);
