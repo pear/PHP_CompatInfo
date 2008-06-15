@@ -198,10 +198,9 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
             unset($info['tokens']);
             unset($info['cond_code']);
 
-            if (isset($dir)) {
-                $ignored = $info['ignored_files'];
-                unset($info['ignored_files']);
-            }
+            $ignored = $info['ignored_files'];
+
+            unset($info['ignored_files']);
             unset($info['ignored_functions']);
             unset($info['ignored_extensions']);
             unset($info['ignored_constants']);
