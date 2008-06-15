@@ -20,6 +20,7 @@
  */
 
 require_once 'HTML/Table.php';
+require_once 'HTML/CSS.php';
 
 /**
  * The PHP_CompatInfo_Renderer_Html class is a concrete implementation
@@ -36,6 +37,15 @@ require_once 'HTML/Table.php';
  */
 class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
 {
+    /**
+     * Style sheet for the custom layout
+     *
+     * @var    string
+     * @access public
+     * @since  1.8.0b4
+     */
+    var $css;
+
     /**
      * All console arguments that have been parsed and recognized
      *
@@ -220,13 +230,14 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
                                                    'colspan' => count($hdr)));
 
                 $data = array(basename($file));
-                if (empty($info['max_version'])) {
-                    $data[] = $info['version'];
-                } else {
-                    $data[] = implode("<br/>",
-                                      array($info['version'], $info['max_version']));
+                if ($o & 16) {
+                    if (empty($info['max_version'])) {
+                        $data[] = $info['version'];
+                    } else {
+                        $data[] = implode("<br/>", array($info['version'],
+                                                         $info['max_version']));
+                    }
                 }
-
                 if ($o & 1) {
                     $data[] = $info['cond_code'][0];
                 }
@@ -283,6 +294,49 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
     }
 
     /**
+     * Returns the custom style sheet to use for layout
+     *
+     * @param bool $content (optional) Either return css filename or string contents
+     *
+     * @return string
+     * @access public
+     * @since  version 1.8.0b4 (2008-06-18)
+     */
+    function getStyleSheet($content = true)
+    {
+        if ($content) {
+            $styles = file_get_contents($this->css);
+        } else {
+            $styles = $this->css;
+        }
+        return $styles;
+    }
+
+    /**
+     * Set the custom style sheet to use your own styles
+     *
+     * @param string $css (optional) File to read user-defined styles from
+     *
+     * @return bool    True if custom styles, false if default styles applied
+     * @access public
+     * @since  version 1.8.0b4 (2008-06-18)
+     */
+    function setStyleSheet($css = null)
+    {
+        // default stylesheet is into package data directory
+        if (!isset($css)) {
+            $this->css = '@data_dir@' . DIRECTORY_SEPARATOR
+                 . '@package_name@' . DIRECTORY_SEPARATOR
+        }
+
+        $res = isset($css) && file_exists($css);
+        if ($res) {
+            $this->css = $css;
+        }
+        return $res;
+    }
+
+    /**
      * Returns HTML code of parsing result
      *
      * @param object $obj instance of HTML_Table
@@ -293,61 +347,41 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
      */
     function toHtml($obj)
     {
-        $styles = '
-.outer {
-  position:relative;
-  padding:4em 0 7em 0;
-  width:750px;
-  background:#eee;
-  margin:0 auto 3em auto;
-  border: 1px solid #666;
-}
-.inner {
-  overflow:auto;
-  width:750px;
-  height:20em;
-  background:#eee;
-}
-.outer thead td, .outer thead th {
-  background:#666;
-  color: #fff;
-}
-.outer thead tr {
-  position:absolute;
-  left:0;
-  top:1.5em;
-  height:1.5em;
-}
-.outer thead td {
-  text-align:center;
-  font-weight:bold;
-}
-.outer tfoot tr {
-  position:absolute;
-  width:730px;
-  border:0;
-  bottom:0;
-  left:0;
-}
-.outer tfoot td {
-  text-align:left;
-  background:#666;
-  color:#fff;
-}
-.outer th, .outer td {
-  text-align:left;
-  font-family:Arial,Verdana;
-}
-.outer .even {
-  background-color:#fff;
-}
-.outer td.dirname { width: 44em; color:#666; }
-.outer th, .outer td { width: 18em; }
-.outer th+th, .outer td+td { width: 4em; }
-.outer th+th+th, .outer td+td+td { width: 2em; }
-.outer th+th+th+th, .outer td+td+td+td { width: 7em; }
-.outer th+th+th+th+th, .outer td+td+td+td+td { width: 13em; }
-';
+        if (!isset($this->css)) {
+            // when no user-styles defined, used the default values
+            $this->setStyleSheet();
+        }
+        $styles = $this->getStyleSheet();
+
+        $css = new HTML_CSS();
+        $css->parseString($styles);
+
+        $em = 44;
+        $td = 'td';
+        $o  = $this->args['output-level'];
+        if ($o & 16) {
+            $td .= '+td';
+            $css->setStyle('.outer '.$td, 'width', '4em');
+            $em = $em - 4;
+        }
+        if ($o & 1) {
+            $td .= '+td';
+            $css->setStyle('.outer '.$td, 'width', '2em');
+            $em = $em - 2;
+        }
+        if ($o & 2) {
+            $td .= '+td';
+            $css->setStyle('.outer '.$td, 'width', '7em');
+            $em = $em - 7;
+        }
+        if ($o & 12) {
+            $td .= '+td';
+            $css->setStyle('.outer '.$td, 'width', '13em');
+            $em = $em - 13;
+        }
+        $css->setStyle('.outer td', 'width', $em .'em');
+
+        $styles = $css->toString();
 
         $body = $obj->toHtml();
 
