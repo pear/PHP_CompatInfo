@@ -327,6 +327,7 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
         if (!isset($css)) {
             $this->css = '@data_dir@' . DIRECTORY_SEPARATOR
                  . '@package_name@' . DIRECTORY_SEPARATOR
+                 . 'pci.css';
         }
 
         $res = isset($css) && file_exists($css);
