@@ -45,7 +45,7 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
     var $args;
 
     /**
-     * Text Renderer Class constructor (ZE1) for PHP4
+     * Html Renderer Class constructor (ZE1) for PHP4
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
      * @param array  $conf    A hash containing any additional configuration
@@ -59,7 +59,7 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
     }
 
     /**
-     * Text Renderer Class constructor (ZE2) for PHP5+
+     * Html Renderer Class constructor (ZE2) for PHP5+
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
      * @param array  $conf    A hash containing any additional configuration
