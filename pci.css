@@ -25,7 +25,7 @@
   height:20em;
   background:#eee;
 }
-.outer thead td, .outer thead th {
+.outer thead td {
   background:#666;
   color: #fff;
 }
@@ -51,7 +51,7 @@
   background:#666;
   color:#fff;
 }
-.outer th, .outer td {
+.outer td {
   text-align:left;
   font-family:Arial,Verdana;
 }
