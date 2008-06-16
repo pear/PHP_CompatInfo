@@ -81,7 +81,8 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
     {
         parent::PHP_CompatInfo_Renderer($parser, $conf);
 
-        $args = array('summarize' => false, 'output-level' => 31);
+        $args = array('summarize' => false, 'output-level' => 31,
+                      'tdwidth' => array(18, 4, 2, 7, 13));
         if (isset($conf['args']) && is_array($conf['args'])) {
             $this->args = array_merge($args, $conf['args']);
         } else {
@@ -296,18 +297,63 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
     /**
      * Returns the custom style sheet to use for layout
      *
-     * @param bool $content (optional) Either return css filename or string contents
+     * @param int   $destination (optional) Destination of css content
+     * @param mixed $extra       (optional) Additional data depending of destination
      *
-     * @return string
+     * @return mixed
      * @access public
      * @since  version 1.8.0b4 (2008-06-18)
      */
-    function getStyleSheet($content = true)
+    function getStyleSheet($destination = 1, $extra = null)
     {
-        if ($content) {
-            $styles = file_get_contents($this->css);
-        } else {
-            $styles = $this->css;
+        $css = new HTML_CSS();
+        $css->parseFile($this->css);
+
+        $tdw = $this->args['tdwidth'];
+        $em  = array_sum($tdw);
+        $td  = 'td';
+        $o   = $this->args['output-level'];
+
+        $css->setStyle('.outer td.dirname', 'width', $em.'em');
+        if ($o & 16) {
+            $td .= '+td';
+            $css->setStyle('.outer '.$td, 'width', $tdw[1].'em');
+            $em = $em - $tdw[1];
+        }
+        if ($o & 1) {
+            $td .= '+td';
+            $css->setStyle('.outer '.$td, 'width', $tdw[2].'em');
+            $em = $em - $tdw[2];
+        }
+        if ($o & 2) {
+            $td .= '+td';
+            $css->setStyle('.outer '.$td, 'width', $tdw[3].'em');
+            $em = $em - $tdw[3];
+        }
+        if ($o & 12) {
+            $td .= '+td';
+            $css->setStyle('.outer '.$td, 'width', $tdw[4].'em');
+            $em = $em - $tdw[4];
+        }
+        $css->setStyle('.outer td', 'width', $em .'em');
+
+        $styles = '';
+
+        switch ($destination) {
+        case 1:  // embedded styles
+            $styles = $css->toString();
+            break;
+        case 2:  // save only to file
+            $css->toFile($extra);
+            $styles = $extra;
+            break;
+        case 3:  // apply a user function
+            if (is_callable($extra)) {
+                $styles = call_user_func_array($extra, array($css));
+            }
+            break;
+        default:
+            break;
         }
         return $styles;
     }
@@ -325,7 +371,7 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
     {
         // default stylesheet is into package data directory
         if (!isset($css)) {
-            $this->css = '@data_dir@' . DIRECTORY_SEPARATOR
+            $css = '@data_dir@' . DIRECTORY_SEPARATOR
                  . '@package_name@' . DIRECTORY_SEPARATOR
                  . 'pci.css';
         }
@@ -353,36 +399,6 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
             $this->setStyleSheet();
         }
         $styles = $this->getStyleSheet();
-
-        $css = new HTML_CSS();
-        $css->parseString($styles);
-
-        $em = 44;
-        $td = 'td';
-        $o  = $this->args['output-level'];
-        if ($o & 16) {
-            $td .= '+td';
-            $css->setStyle('.outer '.$td, 'width', '4em');
-            $em = $em - 4;
-        }
-        if ($o & 1) {
-            $td .= '+td';
-            $css->setStyle('.outer '.$td, 'width', '2em');
-            $em = $em - 2;
-        }
-        if ($o & 2) {
-            $td .= '+td';
-            $css->setStyle('.outer '.$td, 'width', '7em');
-            $em = $em - 7;
-        }
-        if ($o & 12) {
-            $td .= '+td';
-            $css->setStyle('.outer '.$td, 'width', '13em');
-            $em = $em - 13;
-        }
-        $css->setStyle('.outer td', 'width', $em .'em');
-
-        $styles = $css->toString();
 
         $body = $obj->toHtml();
 
