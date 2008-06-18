@@ -58,6 +58,8 @@ $p2->addReplacement('CompatInfo/Renderer/Text.php', 'package-info', '@package_ve
 $p2->addReplacement('CompatInfo/Renderer/Xml.php', 'package-info', '@package_version@', 'version');
 $p2->addReplacement('CompatInfo/Renderer/Csv.php', 'package-info', '@package_version@', 'version');
 $p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_version@', 'version');
+$p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_name@', 'name');
+$p2->addReplacement('CompatInfo/Renderer/Html.php', 'pear-config', '@data_dir@', 'data_dir');
 $p2->setReleaseVersion('1.8.0b4');
 $p2->setAPIVersion('1.8.0');
 $p2->setReleaseStability('beta');
@@ -98,7 +100,7 @@ Please give it a good testing !
 //$p2->addPackageDepWithChannel('required', 'File_Find', 'pear.php.net', '1.3.0');
 //$p2->addPackageDepWithChannel('optional', 'XML_Beautifier', 'pear.php.net', '1.1');
 //$p2->addPackageDepWithChannel('optional', 'Console_ProgressBar', 'pear.php.net', '0.5.2beta');
-//$p2->addPackageDepWithChannel('optional', 'Var_Dump', 'pear.php.net', '1.0.3');
+$p2->addPackageDepWithChannel('optional', 'Var_Dump', 'pear.php.net', '1.0.3');
 
 if (isset($_GET['make']) ||
     (isset($_SERVER['argv']) && @$_SERVER['argv'][1] == 'make')) {
