@@ -46,6 +46,14 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
     var $conf;
 
     /**
+     * All console arguments that have been parsed and recognized
+     *
+     * @var   array
+     * @since 1.8.0b4
+     */
+    var $args;
+
+    /**
      * Xml Renderer Class constructor (ZE1) for PHP4
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
@@ -71,6 +79,14 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
     function __construct(&$parser, $conf)
     {
         parent::PHP_CompatInfo_Renderer($parser, $conf);
+
+        $args = array('summarize' => false, 'output-level' => 31, 'verbose' => 1);
+        if (isset($conf['args']) && is_array($conf['args'])) {
+            $this->args = array_merge($args, $conf['args']);
+            unset($conf['args']);
+        } else {
+            $this->args = $args;
+        }
         $this->conf = $conf;
     }
 
@@ -97,10 +113,11 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
         $msg .= XML_Util::createStartElement('pci',
                                        array('version' => '@package_version@'));
 
-        $o = 15; //$this->_output_level;
+        $o = $this->args['output-level'];
 
         $dataSource = $this->_parser->dataSource['dataSource'];
         $dataType   = $this->_parser->dataSource['dataType'];
+        $options    = $this->_parser->options;
 
         if ($dataType == 'directory') {
             // parsing a directory
@@ -197,7 +214,7 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             $files = array($this->parseData);
         }
 
-        if ($dataType != 'string') {
+        if ($options['is_string'] == false) {
             // print <files> tag group
             $msg .= XML_Util::createStartElement('files',
                                                  array('count' => count($files)));
@@ -205,7 +222,7 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
         }
 
         foreach ($files as $file => $this->parseData) {
-            if ($dataType == 'string') {
+            if ($options['is_string'] == true) {
                 $msg .= XML_Util::createStartElement('string');
             } else {
                 // print local <file> tag
@@ -260,10 +277,10 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             $msg .= PHP_EOL;
 
             // verbose level
-            $v = 1; //$this->args->getValue('v');
+            $v = $this->args['verbose'];
 
             // extra information only if verbose mode >= 4
-            if ($v & 4) {
+            if ($v & 4 || $options['debug'] == true) {
                 unset($this->parseData['ignored_files']);
                 unset($this->parseData['ignored_functions']);
                 unset($this->parseData['ignored_extensions']);
@@ -280,14 +297,14 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
                 $msg .= $this->_printTagList($this->parseData, 'function');
             }
 
-            if ($dataType == 'string') {
+            if ($options['is_string'] == true) {
                 $msg .= XML_Util::createEndElement('string');
             } else {
                 $msg .= XML_Util::createEndElement('file');
             }
             $msg .= PHP_EOL;
         }
-        if ($dataType != 'string') {
+        if ($options['is_string'] == false) {
             $msg .= XML_Util::createEndElement('files');
             $msg .= PHP_EOL;
         }
