@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-06-07</date>
- <time>21:58:21</time>
+ <date>2008-06-18</date>
+ <time>22:54:54</time>
  <version>
-  <release>1.8.0b3</release>
+  <release>1.8.0b4</release>
   <api>1.8.0</api>
  </version>
  <stability>
@@ -30,32 +30,44 @@ which shows which functions require which version and CLI output script</descrip
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
  <notes>* changes
-- parseArray() method was missing in beta2 is back
-- add or remove observers is now possible with public method of the controller
-  PHP_CompatInfo (main class)
+- Text Renderer: support output-level 16 (display filter on version)
+- Xml  Renderer: support all output-level, verbose 4+ or debug mode
+- CLI: default output-level is now 31 (still all details, as before with 15)
+       since version may be hide (level 16)
 
 * news
-- CLI is back alive with the new Text Renderer
-  a new switch -p | --progress was added to display a wait message or a progress bar
-  (if PEAR::Console_ProgressBar is installed)
+- 2 more renderers: Html and Csv
+- 3 more examples:
+  pci180_parsedir_tohtml
+    = how to use your own html renderer (site web layout integration)
+  pci180_parsefolder_tohtml
+    = parse a huge folder and wait result with a progress bar
+  pci180_parsestring_toxml
+    = parse an array of string and debug it with an observer
 
 Do not forget to have a look on all examples pci180_parse* that demonstrates
 the new API.
 
-Beta 4, the last beta before RC, that is planned for june 18th will include
-2 new more renderers :
-- Html, for web page content
-- Csv, for a plain text content
+* Milestones
+- Release Candidate 1: July 1st (with unit test suite, and first draft of user-doc)
+- Stable: August 1st
+Please give it a good testing !
 
 * QA
 - Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until beta4
+  them until RC1
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
    <dir name="CompatInfo">
     <dir name="Renderer">
      <file name="Array.php" role="php">
+      <tasks:replace from="@package_version@" to="version" type="package-info" />
+     </file>
+     <file name="Csv.php" role="php">
+      <tasks:replace from="@package_version@" to="version" type="package-info" />
+     </file>
+     <file name="Html.php" role="php">
       <tasks:replace from="@package_version@" to="version" type="package-info" />
      </file>
      <file name="Null.php" role="php">
@@ -96,9 +108,13 @@ Beta 4, the last beta before RC, that is planned for june 18th will include
      <file name="parseString.php" role="doc" />
      <file name="pci180_parsearray_files.php" role="doc" />
      <file name="pci180_parsearray_strings.php" role="doc" />
+     <file name="pci180_parsedir_tohtml.php" role="doc" />
      <file name="pci180_parsefile.php" role="doc" />
      <file name="pci180_parsefolder.php" role="doc" />
+     <file name="pci180_parsefolder_tohtml.php" role="doc" />
      <file name="pci180_parsestring.php" role="doc" />
+     <file name="pci180_parsestring_toxml.php" role="doc" />
+     <file name="yoursite.css" role="doc" />
     </dir> <!-- /docs/examples -->
    </dir> <!-- /docs -->
    <dir name="scripts">
@@ -116,6 +132,7 @@ Beta 4, the last beta before RC, that is planned for june 18th will include
    <file name="CompatInfo.php" role="php">
     <tasks:replace from="@package_version@" to="version" type="package-info" />
    </file>
+   <file name="pci.css" role="data" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -193,6 +210,46 @@ Beta 4, the last beta before RC, that is planned for june 18th will include
  <changelog>
   <release>
    <version>
+    <release>1.8.0b4</release>
+    <api>1.8.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-06-18</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>* changes
+- Text Renderer: support output-level 16 (display filter on version)
+- Xml  Renderer: support all output-level, verbose 4+ or debug mode
+- CLI: default output-level is now 31 (still all details, as before with 15)
+       since version may be hide (level 16)
+
+* news
+- 2 more renderers: Html and Csv
+- 3 more examples:
+  pci180_parsedir_tohtml
+    = how to use your own html renderer (site web layout integration)
+  pci180_parsefolder_tohtml
+    = parse a huge folder and wait result with a progress bar
+  pci180_parsestring_toxml
+    = parse an array of string and debug it with an observer
+
+Do not forget to have a look on all examples pci180_parse* that demonstrates
+the new API.
+
+* Milestones
+- Release Candidate 1: July 1st (with unit test suite, and first draft of user-doc)
+- Stable: August 1st
+Please give it a good testing !
+
+* QA
+- Do no search Unit tests in this release, it is not yet ready, so I have removed
+  them until RC1
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.8.0b3</release>
     <api>1.8.0</api>
    </version>
@@ -222,8 +279,7 @@ Beta 4, the last beta before RC, that is planned for june 18th will include
 
 * QA
 - Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until beta4
-   </notes>
+  them until beta4</notes>
   </release>
   <release>
    <version>

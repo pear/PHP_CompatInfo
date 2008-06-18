@@ -56,31 +56,39 @@ $p2->addReplacement('CompatInfo/Renderer/Array.php', 'package-info', '@package_v
 $p2->addReplacement('CompatInfo/Renderer/Null.php', 'package-info', '@package_version@', 'version');
 $p2->addReplacement('CompatInfo/Renderer/Text.php', 'package-info', '@package_version@', 'version');
 $p2->addReplacement('CompatInfo/Renderer/Xml.php', 'package-info', '@package_version@', 'version');
-$p2->setReleaseVersion('1.8.0b3');
+$p2->addReplacement('CompatInfo/Renderer/Csv.php', 'package-info', '@package_version@', 'version');
+$p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_version@', 'version');
+$p2->setReleaseVersion('1.8.0b4');
 $p2->setAPIVersion('1.8.0');
 $p2->setReleaseStability('beta');
 $p2->setAPIStability('stable');
 $p2->setNotes('* changes
-- parseArray() method was missing in beta2 is back
-- add or remove observers is now possible with public method of the controller
-  PHP_CompatInfo (main class)
+- Text Renderer: support output-level 16 (display filter on version)
+- Xml  Renderer: support all output-level, verbose 4+ or debug mode
+- CLI: default output-level is now 31 (still all details, as before with 15)
+       since version may be hide (level 16)
 
 * news
-- CLI is back alive with the new Text Renderer
-  a new switch -p | --progress was added to display a wait message or a progress bar
-  (if PEAR::Console_ProgressBar is installed)
+- 2 more renderers: Html and Csv
+- 3 more examples:
+  pci180_parsedir_tohtml
+    = how to use your own html renderer (site web layout integration)
+  pci180_parsefolder_tohtml
+    = parse a huge folder and wait result with a progress bar
+  pci180_parsestring_toxml
+    = parse an array of string and debug it with an observer
 
 Do not forget to have a look on all examples pci180_parse* that demonstrates
 the new API.
 
-Beta 4, the last beta before RC, that is planned for june 18th will include
-2 new more renderers :
-- Html, for web page content
-- Csv, for a plain text content
+* Milestones
+- Release Candidate 1: July 1st (with unit test suite, and first draft of user-doc)
+- Stable: August 1st
+Please give it a good testing !
 
 * QA
 - Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until beta4
+  them until RC1
 ');
 //$p2->setPearinstallerDep('1.5.4');
 //$p2->setPhpDep('4.3.10');
