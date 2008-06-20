@@ -34,7 +34,7 @@
 class PHP_CompatInfo_Renderer
 {
     /**
-     * Subclass of PHP_CompatInfo_Parser being decorated
+     * PHP_CompatInfo_Parser instance
      *
      * @var    object
      * @access private
@@ -71,6 +71,24 @@ class PHP_CompatInfo_Renderer
     var $parseData;
 
     /**
+     * All console arguments that have been parsed and recognized
+     *
+     * @var   array
+     * @since 1.8.0RC1
+     * @access public
+     */
+    var $args;
+
+    /**
+     * A hash containing any additional configuration of specific driver
+     *
+     * @var    array
+     * @since  1.8.0RC1
+     * @access public
+     */
+    var $conf;
+
+    /**
      * Base Renderer Class constructor (ZE1) for PHP4
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
@@ -97,13 +115,24 @@ class PHP_CompatInfo_Renderer
     {
         $this->_parser = $parser;
 
+        $args = array(
+            'summarize' => false,
+            'output-level' => 31,
+            'verbose' => 1
+            );
+        if (isset($conf['args']) && is_array($conf['args'])) {
+            $this->args = array_merge($args, $conf['args']);
+            unset($conf['args']);
+        } else {
+            $this->args = $args;
+        }
+        $this->conf = $conf;
+
         if (php_sapi_name() == 'cli') {
             // when running the CLI version, take arguments from console
-            if (isset($conf['args'])) {
-                if (isset($conf['args']['progress'])) {
-                    $conf['progress'] = $conf['args']['progress'];
-                    $conf['silent']   = false;
-                }
+            if (isset($this->args['progress'])) {
+                $conf['progress'] = $this->args['progress'];
+                $conf['silent']   = false;
             }
             $this->eol = PHP_EOL;
         } else {
