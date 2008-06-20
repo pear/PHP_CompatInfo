@@ -58,18 +58,17 @@ class PHP_CompatInfo_Renderer_Null extends PHP_CompatInfo_Renderer
      */
     function __construct(&$parser, $conf)
     {
+        parent::PHP_CompatInfo_Renderer($parser, $conf);
     }
 
     /**
      * Consumes output events
      *
-     * @param object &$auditEvent Instance of Event_Dispatcher
-     *
      * @access public
      * @return void
-     * @since  version 1.8.0b2 (2008-06-03)
+     * @since  version 1.8.0RC1 (2008-07-01)
      */
-    function update(&$auditEvent)
+    function display()
     {
     }
 }
