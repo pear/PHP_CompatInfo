@@ -210,6 +210,16 @@ class PHP_CompatInfo_Cli
             return;
         }
 
+        // default parser options
+        $this->options = array(
+            'file_ext' => array('php', 'php4', 'inc', 'phtml'),
+            'recurse_dir' => true,
+            'debug' => false,
+            'is_string' => false,
+            'ignore_files' => array(),
+            'ignore_dirs' => array()
+            );
+
         // version
         $V = $this->args->getValue('V');
         if (isset($V)) {
@@ -219,7 +229,6 @@ class PHP_CompatInfo_Cli
         }
 
         // debug
-        $this->options['debug'] = false;
         if ($this->args->isDefined('v')) {
             $v = $this->args->getValue('v');
             if ($v > 3) {
@@ -263,7 +272,8 @@ class PHP_CompatInfo_Cli
         if ($this->args->isDefined('s')) {
             $s = $this->args->getValue('s');
             if (!empty($s)) {
-                $this->dataSource = sprintf("<?php %s ?>", $s);
+                $this->dataSource           = sprintf("<?php %s ?>", $s);
+                $this->options['is_string'] = true;
             } else {
                 $this->error = 'Failed opening string "' . $s
                      . '". Please check your spelling and try again.';
@@ -486,7 +496,13 @@ class PHP_CompatInfo_Cli
                 $args['output-level'] = 31; // default = full detail
             }
 
-            $compatInfo = new PHP_CompatInfo('text', array('args' => $args));
+            if ($this->args->isDefined('r')) {
+                $report = $args['report'];
+            } else {
+                $report = 'text';
+            }
+
+            $compatInfo = new PHP_CompatInfo($report, array('args' => $args));
             $compatInfo->parseData($this->dataSource, $this->options);
         }
     }
