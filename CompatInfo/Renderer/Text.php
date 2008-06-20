@@ -37,14 +37,6 @@ require_once 'Console/Table.php';
 class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
 {
     /**
-     * All console arguments that have been parsed and recognized
-     *
-     * @var   array
-     * @since 1.8.0b3
-     */
-    var $args;
-
-    /**
      * Text Renderer Class constructor (ZE1) for PHP4
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
@@ -70,13 +62,6 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
     function __construct(&$parser, $conf)
     {
         parent::PHP_CompatInfo_Renderer($parser, $conf);
-
-        $args = array('summarize' => false, 'output-level' => 31);
-        if (isset($conf['args']) && is_array($conf['args'])) {
-            $this->args = array_merge($args, $conf['args']);
-        } else {
-            $this->args = $args;
-        }
     }
 
     /**
