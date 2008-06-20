@@ -174,8 +174,8 @@ class PHP_CompatInfo_Cli
                       'min'     => 0 , 'max' => 1),
             'report' =>
                 array('short' => 'r',
-                      'desc' => 'Print either "xml" or "cli" report',
-                      'default' => 'cli',
+                      'desc' => 'Print either "xml" or "csv" report',
+                      'default' => 'text',
                       'min'   => 0 , 'max' => 1),
             'output-level' =>
                 array('short' => 'o',
