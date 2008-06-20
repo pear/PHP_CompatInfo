@@ -47,14 +47,6 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
     var $css;
 
     /**
-     * All console arguments that have been parsed and recognized
-     *
-     * @var   array
-     * @since 1.8.0b4
-     */
-    var $args;
-
-    /**
      * Html Renderer Class constructor (ZE1) for PHP4
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
@@ -79,15 +71,11 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
      */
     function __construct(&$parser, $conf)
     {
+        $defaults = array('tdwidth' => array(18, 4, 2, 7, 13));
+        $conf     = array_merge($defaults, $conf);
+
         parent::PHP_CompatInfo_Renderer($parser, $conf);
 
-        $args = array('summarize' => false, 'output-level' => 31,
-                      'tdwidth' => array(18, 4, 2, 7, 13));
-        if (isset($conf['args']) && is_array($conf['args'])) {
-            $this->args = array_merge($args, $conf['args']);
-        } else {
-            $this->args = $args;
-        }
     }
 
     /**

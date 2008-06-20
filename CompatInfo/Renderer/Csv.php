@@ -35,14 +35,6 @@
 class PHP_CompatInfo_Renderer_Csv extends PHP_CompatInfo_Renderer
 {
     /**
-     * All console arguments that have been parsed and recognized
-     *
-     * @var   array
-     * @since 1.8.0b4
-     */
-    var $args;
-
-    /**
      * Csv Renderer Class constructor (ZE1) for PHP4
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
@@ -67,18 +59,13 @@ class PHP_CompatInfo_Renderer_Csv extends PHP_CompatInfo_Renderer
      */
     function __construct(&$parser, $conf)
     {
-        parent::PHP_CompatInfo_Renderer($parser, $conf);
+        $defaults = array('fields-values-separated-by' => ',',
+                          'fields-terminated-by' => ';',
+                          'fields-enclosed-by' => '"',
+                          'lines-terminated-by' => PHP_EOL);
+        $conf     = array_merge($defaults, $conf);
 
-        $args = array('summarize' => false, 'output-level' => 31,
-                      'fields-values-separated-by' => ',',
-                      'fields-terminated-by' => ';',
-                      'fields-enclosed-by' => '"',
-                      'lines-terminated-by' => PHP_EOL);
-        if (isset($conf['args']) && is_array($conf['args'])) {
-            $this->args = array_merge($args, $conf['args']);
-        } else {
-            $this->args = $args;
-        }
+        parent::PHP_CompatInfo_Renderer($parser, $conf);
     }
 
     /**
@@ -92,7 +79,7 @@ class PHP_CompatInfo_Renderer_Csv extends PHP_CompatInfo_Renderer
      */
     function display()
     {
-        $fvsb = $this->args['fields-values-separated-by'];
+        $fvsb = $this->conf['fields-values-separated-by'];
         $o    = $this->args['output-level'];
         $info = $this->parseData;
         $hdr  = array();
@@ -260,12 +247,12 @@ class PHP_CompatInfo_Renderer_Csv extends PHP_CompatInfo_Renderer
 
         foreach ($data as $i => $d) {
             if ($i > 0) {
-                $string .= $this->args['fields-terminated-by'];
+                $string .= $this->conf['fields-terminated-by'];
             }
-            $string .= $this->args['fields-enclosed-by'] . $d .
-                       $this->args['fields-enclosed-by'];
+            $string .= $this->conf['fields-enclosed-by'] . $d .
+                       $this->conf['fields-enclosed-by'];
         }
-        $string .= $this->args['lines-terminated-by'];
+        $string .= $this->conf['lines-terminated-by'];
 
         echo $string;
     }
