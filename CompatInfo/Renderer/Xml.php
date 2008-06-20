@@ -37,23 +37,6 @@ require_once 'XML/Util.php';
 class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
 {
     /**
-     * A hash containing any additional configuration
-     * (Options to improve render with help of XML_Beutifier)
-     *
-     * @var    array
-     * @access public
-     */
-    var $conf;
-
-    /**
-     * All console arguments that have been parsed and recognized
-     *
-     * @var   array
-     * @since 1.8.0b4
-     */
-    var $args;
-
-    /**
      * Xml Renderer Class constructor (ZE1) for PHP4
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
@@ -79,15 +62,6 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
     function __construct(&$parser, $conf)
     {
         parent::PHP_CompatInfo_Renderer($parser, $conf);
-
-        $args = array('summarize' => false, 'output-level' => 31, 'verbose' => 1);
-        if (isset($conf['args']) && is_array($conf['args'])) {
-            $this->args = array_merge($args, $conf['args']);
-            unset($conf['args']);
-        } else {
-            $this->args = $args;
-        }
-        $this->conf = $conf;
     }
 
     /**
@@ -124,21 +98,23 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
 
             // print <dir> tag
             $tag  = array('qname' => 'dir',
-                          'content' => $dataSource);
+                          'content' => dirname($dataSource[0]));
             $msg .= XML_Util::createTagFromArray($tag);
             $msg .= PHP_EOL;
 
             // print global <version> tag
-            if (empty($this->parseData['max_version'])) {
-                $attr = array();
-            } else {
-                $attr = array('max' => $this->parseData['max_version']);
+            if ($o & 16) {
+                if (empty($this->parseData['max_version'])) {
+                    $attr = array();
+                } else {
+                    $attr = array('max' => $this->parseData['max_version']);
+                }
+                $tag  = array('qname' => 'version',
+                              'attributes' => $attr,
+                              'content' => $this->parseData['version']);
+                $msg .= XML_Util::createTagFromArray($tag);
+                $msg .= PHP_EOL;
             }
-            $tag  = array('qname' => 'version',
-                          'attributes' => $attr,
-                          'content' => $this->parseData['version']);
-            $msg .= XML_Util::createTagFromArray($tag);
-            $msg .= PHP_EOL;
 
             // print global <conditions> tag group
             if ($o & 1) {
@@ -231,16 +207,18 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             $msg .= PHP_EOL;
 
             // print local <version> tag
-            if (empty($this->parseData['max_version'])) {
-                $attr = array();
-            } else {
-                $attr = array('max' => $this->parseData['max_version']);
+            if ($o & 16) {
+                if (empty($this->parseData['max_version'])) {
+                    $attr = array();
+                } else {
+                    $attr = array('max' => $this->parseData['max_version']);
+                }
+                $tag  = array('qname' => 'version',
+                              'attributes' => $attr,
+                              'content' => $this->parseData['version']);
+                $msg .= XML_Util::createTagFromArray($tag);
+                $msg .= PHP_EOL;
             }
-            $tag  = array('qname' => 'version',
-                          'attributes' => $attr,
-                          'content' => $this->parseData['version']);
-            $msg .= XML_Util::createTagFromArray($tag);
-            $msg .= PHP_EOL;
 
             // print local <conditions> tag group
             if ($o & 1) {
