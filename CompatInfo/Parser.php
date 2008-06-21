@@ -162,7 +162,7 @@ class PHP_CompatInfo_Parser
      */
     function __construct()
     {
-        $this->options = array('debug' => false);
+        $this->options = array('debug' => false, 'is_string' => false);
     }
 
     /**
@@ -569,8 +569,7 @@ class PHP_CompatInfo_Parser
          * If you want a list of chunk of code (strings), 'is_string' option
          * must be set to true.
          */
-        $options = array_merge(array('is_string' => false), $options);
-        $list    = array();
+        $list = array();
 
         foreach ($dataSource as $source) {
             if ($options['is_string'] === true) {
