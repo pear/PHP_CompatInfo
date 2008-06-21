@@ -85,6 +85,13 @@ class PHP_CompatInfo_Renderer_Csv extends PHP_CompatInfo_Renderer
         $hdr  = array();
         $src  = $this->_parser->dataSource;
 
+        if ($info === false) {
+            // invalid data source
+            return;
+        }
+
+        $options = $this->_parser->options;
+
         if (isset($this->args['dir'])) {
             $dir   = $this->args['dir'];
             $hdr[] = 'Files';
@@ -101,8 +108,13 @@ class PHP_CompatInfo_Renderer_Csv extends PHP_CompatInfo_Renderer
             $file  = $src['dataSource'];
             $hdr[] = 'File';
         } else {
-            $string = $src['dataSource'];
-            $hdr[]  = 'Source code';
+            if ($options['is_string'] == true) {
+                $string = $src['dataSource'];
+                $hdr[]  = 'Source code';
+            } else {
+                $dir   = $src['dataSource'];
+                $hdr[] = 'Files';
+            }
         }
 
         if ($o & 16) {
