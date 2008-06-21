@@ -92,6 +92,12 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
         $o    = $this->args['output-level'];
         $info = $this->parseData;
 
+        if ($info == false) {
+            // protect against invalid data source
+            print 'Invalid data source';
+            return;
+        }
+
         $src = $this->_parser->dataSource;
         if ($src['dataType'] == 'directory') {
             $dir      = $src['dataSource'];
