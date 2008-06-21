@@ -77,20 +77,30 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
     {
         $o    = $this->args['output-level'];
         $info = $this->parseData;
+        $hdr  = array();
+        $src  = $this->_parser->dataSource;
 
         if (isset($this->args['dir'])) {
-            $dir      = $this->args['dir'];
-            $hdr_col1 = 'Path';
+            $dir   = $this->args['dir'];
+            $hdr[] = 'Files';
         } elseif (isset($this->args['file'])) {
-            $file     = $this->args['file'];
-            $hdr_col1 = 'File';
+            $file  = $this->args['file'];
+            $hdr[] = 'File';
+        } elseif (isset($this->args['string'])) {
+            $string = $this->args['string'];
+            $hdr[]  = 'Source code';
+        } elseif ($src['dataType'] == 'directory') {
+            $dir   = $src['dataSource'];
+            $hdr[] = 'Files';
+        } elseif ($src['dataType'] == 'file') {
+            $file  = $src['dataSource'];
+            $hdr[] = 'File';
         } else {
-            $string   = $this->args['string'];
-            $hdr_col1 = 'Source code';
+            $string = $src['dataSource'];
+            $hdr[]  = 'Source code';
         }
 
         $table = new Console_Table();
-        $hdr   = array($hdr_col1);
         $f     = 0;
         if ($o & 16) {
             $hdr[] = 'Version';
