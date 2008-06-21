@@ -119,17 +119,36 @@ class PHP_CompatInfo_Renderer_Array extends PHP_CompatInfo_Renderer
         $o    = $this->args['output-level'];
         $v    = $this->args['verbose'];
         $data = $this->parseData;
+        $src  = $this->_parser->dataSource;
 
-        $dataSource = $this->_parser->dataSource['dataSource'];
-        $options    = $this->_parser->options;
+        if ($data === false) {
+            // invalid data source
+            if ($this->driver == 'PHP') {
+                var_export($data);
+            } else {
+                Var_Dump::display($data);
+            }
+            return;
+        }
+
+        $options = $this->_parser->options;
+
+        if (isset($this->args['dir'])) {
+            $files = $this->_parser->getFilelist($this->args['dir'], $options);
+        } elseif (isset($this->args['file'])) {
+            $files = array($this->args['file']);
+        } elseif ($src['dataType'] == 'directory') {
+            $files = $src['dataSource'];
+        } elseif ($src['dataType'] == 'file') {
+            $files = array($src['dataSource']);
+        } else {
+            $files = $src['dataSource'];
+        }
 
         if ($options['is_string'] == true) {
-            $files = array();
-            foreach ($dataSource as $k => $str) {
-                $files[] = 'string_' . ($k+1);
+            foreach ($files as $k => $str) {
+                $files[$k] = 'string_' . ($k+1);
             }
-        } else {
-            $files = $dataSource;
         }
 
         if ($o & 16) {
@@ -168,41 +187,47 @@ class PHP_CompatInfo_Renderer_Array extends PHP_CompatInfo_Renderer
             unset($data['functions']);
         }
 
-        foreach ($files as $file) {
-            if ($o & 16) {
-                // display Version
-            } else {
-                unset($data[$file]['version'], $data[$file]['max_version']);
+        if ($this->args['summarize'] === true) {
+            foreach ($files as $file) {
+                unset($data[$file]);
             }
-            if ($o & 1) {
-                // display Conditions
-            } else {
-                unset($data[$file]['cond_code']);
-            }
-            if ($o & 2) {
-                // display Extensions
-            } else {
-                unset($data[$file]['extensions']);
-            }
-            if ($o & 4) {
-                if ($o & 8) {
-                    // display Constants/Tokens
+        } else {
+            foreach ($files as $file) {
+                if ($o & 16) {
+                    // display Version
                 } else {
-                    // display Constants
-                    unset($data[$file]['tokens']);
+                    unset($data[$file]['version'], $data[$file]['max_version']);
                 }
-            } else {
-                unset($data[$file]['constants']);
-                if ($o & 8) {
-                    // display Tokens
+                if ($o & 1) {
+                    // display Conditions
                 } else {
-                    unset($data[$file]['tokens']);
+                    unset($data[$file]['cond_code']);
                 }
-            }
-            if ($v & 4 || $options['debug'] == true) {
-                // display Functions
-            } else {
-                unset($data[$file]['functions']);
+                if ($o & 2) {
+                    // display Extensions
+                } else {
+                    unset($data[$file]['extensions']);
+                }
+                if ($o & 4) {
+                    if ($o & 8) {
+                        // display Constants/Tokens
+                    } else {
+                        // display Constants
+                        unset($data[$file]['tokens']);
+                    }
+                } else {
+                    unset($data[$file]['constants']);
+                    if ($o & 8) {
+                        // display Tokens
+                    } else {
+                        unset($data[$file]['tokens']);
+                    }
+                }
+                if ($v & 4 || $options['debug'] == true) {
+                    // display Functions
+                } else {
+                    unset($data[$file]['functions']);
+                }
             }
         }
 
