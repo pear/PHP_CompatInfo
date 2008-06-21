@@ -297,7 +297,7 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
         $css = new HTML_CSS();
         $css->parseFile($this->css);
 
-        $tdw = $this->args['tdwidth'];
+        $tdw = $this->conf['tdwidth'];
         $em  = array_sum($tdw);
         $td  = 'td';
         $o   = $this->args['output-level'];
