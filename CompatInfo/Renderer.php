@@ -118,7 +118,7 @@ class PHP_CompatInfo_Renderer
         $args = array(
             'summarize' => false,
             'output-level' => 31,
-            'verbose' => 1
+            'verbose' => 0
             );
         if (isset($conf['args']) && is_array($conf['args'])) {
             $this->args = array_merge($args, $conf['args']);
