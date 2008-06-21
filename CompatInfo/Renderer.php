@@ -240,6 +240,10 @@ class PHP_CompatInfo_Renderer
             $this->startWaitProgress($notifyInfo['dataCount']);
             break;
         case PHP_COMPATINFO_EVENT_AUDITFINISHED :
+            if (!isset($this->parseData)) {
+                // invalid data source
+                $this->parseData = false;
+            }
             $this->endWaitProgress();
             $this->display();
             break;
@@ -273,6 +277,10 @@ class PHP_CompatInfo_Renderer
     {
         if ($this->silent == false) {
             // obey at silent mode protocol
+            if ($maxEntries == 0) {
+                // protect against invalid data source
+                $this->_pbar = false;
+            }
             if ($this->_pbar) {
                 $this->_pbar = new Console_ProgressBar($this->_pbar['formatString'],
                                                $this->_pbar['barfill'],
