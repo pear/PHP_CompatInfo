@@ -248,7 +248,7 @@ class PHP_CompatInfo_Cli
                 if ($d{strlen($d)-1} == '/' || $d{strlen($d)-1} == '\\') {
                     $d = substr($d, 0, -1);
                 }
-                $this->dataSource = str_replace('\\', '/', realpath($d));
+                $this->dataSource = realpath($d);
             } else {
                 $this->error = 'Failed opening directory "' . $d
                      . '". Please check your spelling and try again.';
