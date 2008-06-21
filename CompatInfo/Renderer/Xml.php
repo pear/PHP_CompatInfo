@@ -75,6 +75,11 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
      */
     function display()
     {
+        if ($this->parseData === false) {
+            // invalid data source
+            return;
+        }
+
         $version    = isset($this->conf['xml']['version'])
                     ? $this->conf['xml']['version'] : '1.0';
         $encoding   = isset($this->conf['xml']['encoding'])
@@ -93,14 +98,16 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
         $dataType   = $this->_parser->dataSource['dataType'];
         $options    = $this->_parser->options;
 
-        if ($dataType == 'directory') {
-            // parsing a directory
+        if ($dataType == 'directory' || $dataType == 'array') {
+            // parsing a directory or a list of files, chunks of code
 
-            // print <dir> tag
-            $tag  = array('qname' => 'dir',
-                          'content' => dirname($dataSource[0]));
-            $msg .= XML_Util::createTagFromArray($tag);
-            $msg .= PHP_EOL;
+            if ($options['is_string'] == false) {
+                // print <dir> tag
+                $tag  = array('qname' => 'dir',
+                              'content' => dirname($dataSource[0]));
+                $msg .= XML_Util::createTagFromArray($tag);
+                $msg .= PHP_EOL;
+            }
 
             // print global <version> tag
             if ($o & 16) {
@@ -168,123 +175,112 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
         } elseif ($dataType == 'file') {
             // parsing a single file
             $files = array($dataSource => $this->parseData);
-        } elseif ($dataType == 'array') {
-            // parsing a list of files, or chunk of code (strings)
-
-            // remove summary data
-            unset($this->parseData['ignored_files']);
-            unset($this->parseData['ignored_functions']);
-            unset($this->parseData['ignored_extensions']);
-            unset($this->parseData['ignored_constants']);
-            unset($this->parseData['max_version']);
-            unset($this->parseData['version']);
-            unset($this->parseData['functions']);
-            unset($this->parseData['extensions']);
-            unset($this->parseData['constants']);
-            unset($this->parseData['tokens']);
-            unset($this->parseData['cond_code']);
-
-            $files = $this->parseData;
         } else {
             // ... or a chunk of code (string)
             $files = array($this->parseData);
         }
 
-        if ($options['is_string'] == false) {
-            // print <files> tag group
-            $msg .= XML_Util::createStartElement('files',
-                                                 array('count' => count($files)));
-            $msg .= PHP_EOL;
-        }
+        if ($this->args['summarize'] === false) {
 
-        foreach ($files as $file => $this->parseData) {
-            if ($options['is_string'] == true) {
-                $msg .= XML_Util::createStartElement('string');
-            } else {
-                // print local <file> tag
-                $msg .= XML_Util::createStartElement('file', array('name' => $file));
-            }
-            $msg .= PHP_EOL;
-
-            // print local <version> tag
-            if ($o & 16) {
-                if (empty($this->parseData['max_version'])) {
-                    $attr = array();
-                } else {
-                    $attr = array('max' => $this->parseData['max_version']);
-                }
-                $tag  = array('qname' => 'version',
-                              'attributes' => $attr,
-                              'content' => $this->parseData['version']);
-                $msg .= XML_Util::createTagFromArray($tag);
+            if ($options['is_string'] == false) {
+                // print <files> tag group
+                $msg .= XML_Util::createStartElement('files',
+                                               array('count' => count($files)));
                 $msg .= PHP_EOL;
             }
 
-            // print local <conditions> tag group
-            if ($o & 1) {
-                $msg .= $this->_printTagList($this->parseData['cond_code'],
-                                             'condition');
-            }
-            // print local <extensions> tag group
-            if ($o & 2) {
-                $msg .= $this->_printTagList($this->parseData['extensions'],
-                                             'extension');
-            }
-            // print local <constants> tag group
-            if ($o & 4) {
-                $msg .= $this->_printTagList($this->parseData['constants'],
-                                             'constant');
-            }
-            // print local <tokens> tag group
-            if ($o & 8) {
-                $msg .= $this->_printTagList($this->parseData['tokens'],
-                                             'token');
-            }
+            foreach ($files as $file => $this->parseData) {
+                if ($options['is_string'] == true) {
+                    $msg .= XML_Util::createStartElement('string');
+                } else {
+                    // print local <file> tag
+                    $msg .= XML_Util::createStartElement('file',
+                                                   array('name' => $file));
+                }
+                $msg .= PHP_EOL;
 
-            // print local <ignored> tag group
-            $msg .= XML_Util::createStartElement('ignored');
-            $msg .= PHP_EOL;
-            // with children groups <functions>, <extensions>, <constants>
-            $ignored = array('function' => $this->parseData['ignored_functions'],
-                             'extension' => $this->parseData['ignored_extensions'],
-                             'constant' => $this->parseData['ignored_constants']);
-            foreach ($ignored as $tag => $data) {
-                $msg .= $this->_printTagList($data, $tag);
+                // print local <version> tag
+                if ($o & 16) {
+                    if (empty($this->parseData['max_version'])) {
+                        $attr = array();
+                    } else {
+                        $attr = array('max' => $this->parseData['max_version']);
+                    }
+                    $tag  = array('qname' => 'version',
+                                  'attributes' => $attr,
+                                  'content' => $this->parseData['version']);
+                    $msg .= XML_Util::createTagFromArray($tag);
+                    $msg .= PHP_EOL;
+                }
+
+                // print local <conditions> tag group
+                if ($o & 1) {
+                    $msg .= $this->_printTagList($this->parseData['cond_code'],
+                                                 'condition');
+                }
+                // print local <extensions> tag group
+                if ($o & 2) {
+                    $msg .= $this->_printTagList($this->parseData['extensions'],
+                                                 'extension');
+                }
+                // print local <constants> tag group
+                if ($o & 4) {
+                    $msg .= $this->_printTagList($this->parseData['constants'],
+                                                 'constant');
+                }
+                // print local <tokens> tag group
+                if ($o & 8) {
+                    $msg .= $this->_printTagList($this->parseData['tokens'],
+                                                 'token');
+                }
+
+                // print local <ignored> tag group
+                $msg .= XML_Util::createStartElement('ignored');
+                $msg .= PHP_EOL;
+                // with children groups <functions>, <extensions>, <constants>
+                $ignored = array(
+                    'function' => $this->parseData['ignored_functions'],
+                    'extension' => $this->parseData['ignored_extensions'],
+                    'constant' => $this->parseData['ignored_constants']
+                    );
+                foreach ($ignored as $tag => $data) {
+                    $msg .= $this->_printTagList($data, $tag);
+                }
+                $msg .= XML_Util::createEndElement('ignored');
+                $msg .= PHP_EOL;
+
+                // verbose level
+                $v = $this->args['verbose'];
+
+                // extra information only if verbose mode >= 4
+                if ($v & 4 || $options['debug'] == true) {
+                    unset($this->parseData['ignored_files']);
+                    unset($this->parseData['ignored_functions']);
+                    unset($this->parseData['ignored_extensions']);
+                    unset($this->parseData['ignored_constants']);
+                    unset($this->parseData['max_version']);
+                    unset($this->parseData['version']);
+                    unset($this->parseData['functions']);
+                    unset($this->parseData['extensions']);
+                    unset($this->parseData['constants']);
+                    unset($this->parseData['tokens']);
+                    unset($this->parseData['cond_code']);
+
+                    // print local <functions> tag group
+                    $msg .= $this->_printTagList($this->parseData, 'function');
+                }
+
+                if ($options['is_string'] == true) {
+                    $msg .= XML_Util::createEndElement('string');
+                } else {
+                    $msg .= XML_Util::createEndElement('file');
+                }
+                $msg .= PHP_EOL;
             }
-            $msg .= XML_Util::createEndElement('ignored');
-            $msg .= PHP_EOL;
-
-            // verbose level
-            $v = $this->args['verbose'];
-
-            // extra information only if verbose mode >= 4
-            if ($v & 4 || $options['debug'] == true) {
-                unset($this->parseData['ignored_files']);
-                unset($this->parseData['ignored_functions']);
-                unset($this->parseData['ignored_extensions']);
-                unset($this->parseData['ignored_constants']);
-                unset($this->parseData['max_version']);
-                unset($this->parseData['version']);
-                unset($this->parseData['functions']);
-                unset($this->parseData['extensions']);
-                unset($this->parseData['constants']);
-                unset($this->parseData['tokens']);
-                unset($this->parseData['cond_code']);
-
-                // print local <functions> tag group
-                $msg .= $this->_printTagList($this->parseData, 'function');
+            if ($options['is_string'] == false) {
+                $msg .= XML_Util::createEndElement('files');
+                $msg .= PHP_EOL;
             }
-
-            if ($options['is_string'] == true) {
-                $msg .= XML_Util::createEndElement('string');
-            } else {
-                $msg .= XML_Util::createEndElement('file');
-            }
-            $msg .= PHP_EOL;
-        }
-        if ($options['is_string'] == false) {
-            $msg .= XML_Util::createEndElement('files');
-            $msg .= PHP_EOL;
         }
         $msg .= XML_Util::createEndElement('pci');
         $msg .= PHP_EOL;
