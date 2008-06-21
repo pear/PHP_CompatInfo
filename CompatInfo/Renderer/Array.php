@@ -116,10 +116,100 @@ class PHP_CompatInfo_Renderer_Array extends PHP_CompatInfo_Renderer
      */
     function display()
     {
-        if ($this->driver == 'PHP') {
-            var_export($this->parseData);
+        $o    = $this->args['output-level'];
+        $v    = $this->args['verbose'];
+        $data = $this->parseData;
+
+        $dataSource = $this->_parser->dataSource['dataSource'];
+        $options    = $this->_parser->options;
+
+        if ($options['is_string'] == true) {
+            $files = array();
+            foreach ($dataSource as $k => $str) {
+                $files[] = 'string_' . ($k+1);
+            }
         } else {
-            Var_Dump::display($this->parseData);
+            $files = $dataSource;
+        }
+
+        if ($o & 16) {
+            // display Version
+        } else {
+            unset($data['version'], $data['max_version']);
+        }
+        if ($o & 1) {
+            // display Conditions
+        } else {
+            unset($data['cond_code']);
+        }
+        if ($o & 2) {
+            // display Extensions
+        } else {
+            unset($data['extensions']);
+        }
+        if ($o & 4) {
+            if ($o & 8) {
+                // display Constants/Tokens
+            } else {
+                // display Constants
+                unset($data['tokens']);
+            }
+        } else {
+            unset($data['constants']);
+            if ($o & 8) {
+                // display Tokens
+            } else {
+                unset($data['tokens']);
+            }
+        }
+        if ($v & 4 || $options['debug'] == true) {
+            // display Functions
+        } else {
+            unset($data['functions']);
+        }
+
+        foreach ($files as $file) {
+            if ($o & 16) {
+                // display Version
+            } else {
+                unset($data[$file]['version'], $data[$file]['max_version']);
+            }
+            if ($o & 1) {
+                // display Conditions
+            } else {
+                unset($data[$file]['cond_code']);
+            }
+            if ($o & 2) {
+                // display Extensions
+            } else {
+                unset($data[$file]['extensions']);
+            }
+            if ($o & 4) {
+                if ($o & 8) {
+                    // display Constants/Tokens
+                } else {
+                    // display Constants
+                    unset($data[$file]['tokens']);
+                }
+            } else {
+                unset($data[$file]['constants']);
+                if ($o & 8) {
+                    // display Tokens
+                } else {
+                    unset($data[$file]['tokens']);
+                }
+            }
+            if ($v & 4 || $options['debug'] == true) {
+                // display Functions
+            } else {
+                unset($data[$file]['functions']);
+            }
+        }
+
+        if ($this->driver == 'PHP') {
+            var_export($data);
+        } else {
+            Var_Dump::display($data);
         }
     }
 }
