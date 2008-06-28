@@ -281,7 +281,9 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
             $opts = $this->_parser->options;
             if (is_array($opts)) {
                 foreach ($opts as $key => $raw) {
-                    if ($key == 'debug' || $key == 'recurse_dir') {
+                    if ($key == 'debug'
+                        || $key == 'recurse_dir'
+                        || $key == 'is_string') {
                         $raw = ($raw === true) ? 'TRUE' : 'FALSE';
                     }
                     if (substr($key, -6) == '_match') {
