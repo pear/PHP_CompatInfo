@@ -41,6 +41,13 @@ class PHP_CompatInfo_TestSuite_Bugs extends PHPUnit_Framework_TestCase
     protected $pci;
 
     /**
+     * Filename where to write results of debug pci events notification
+     * @var   string
+     * @since 1.8.0RC1
+     */
+    private $destLogFile;
+
+    /**
      * Runs the test methods of this class.
      *
      * @return void
@@ -61,7 +68,11 @@ class PHP_CompatInfo_TestSuite_Bugs extends PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        $this->pci = new PHP_CompatInfo();
+        $this->destLogFile = dirname(__FILE__) . DIRECTORY_SEPARATOR .
+                             __CLASS__ . '.log';
+
+        $this->pci = new PHP_CompatInfo('null');
+        $this->pci->addListener(array(&$this, 'debugNotify'));
     }
 
     /**
@@ -76,11 +87,61 @@ class PHP_CompatInfo_TestSuite_Bugs extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * PCI Events notification observer for debug purpose only
+     *
+     * @param object &$auditEvent Instance of Event_Notification object
+     *
+     * @return void
+     */
+    public function debugNotify(&$auditEvent)
+    {
+        $notifyName = $auditEvent->getNotificationName();
+        $notifyInfo = $auditEvent->getNotificationInfo();
+
+        if ($notifyName == PHP_COMPATINFO_EVENT_AUDITSTARTED) {
+            $dbt = debug_backtrace();
+            error_log('backtrace: '. $dbt[7]['function'] . PHP_EOL,
+                      3, $this->destLogFile);
+            error_log($notifyName.':'. PHP_EOL .
+                      var_export($notifyInfo, true) . PHP_EOL,
+                      3, $this->destLogFile);
+
+        } elseif ($notifyName == PHP_COMPATINFO_EVENT_AUDITFINISHED) {
+            error_log($notifyName.':'. PHP_EOL .
+                      var_export($notifyInfo, true) . PHP_EOL,
+                      3, $this->destLogFile);
+        }
+    }
+
+    /**
+     * Retrieve files list to be ignore by parsing process
+     *
+     * @param string $dir     Directory to parse
+     * @param array  $options Parser options
+     *
+     * @return array
+     * @since  version 1.8.0RC1
+     */
+    private function getIgnoredFileList($dir, $options)
+    {
+        $files = $this->pci->parser->getFileList($dir, $options);
+
+        $ff               = new File_Find();
+        $ff->dirsep       = DIRECTORY_SEPARATOR;
+        list(, $allfiles) = $ff->maptree($dir);
+
+        $ignored_files = PHP_CompatInfo_Parser::_arrayDiff($allfiles, $files);
+        return $ignored_files;
+    }
+
+    /**
      * Regression test for bug #1626
      *
      * @return void
      * @link   http://pear.php.net/bugs/bug.php?id=1626
      *         Class calls are seen wrong
+     * @covers PHP_CompatInfo::parseString
+     * @group  parseString
      */
     public function testBug1626()
     {
@@ -89,15 +150,17 @@ include("File.php");
 File::write("test", "test");
 ?>';
         $r   = $this->pci->parseString($str);
-        $exp = array('ignored_functions' => array(),
+        $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
                      'ignored_extensions' => array(),
                      'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.0.0',
+                     'functions' => array(),
                      'extensions' => array(),
                      'constants' => array(),
                      'tokens' => array(),
-                     'cond_code' => array(0, array()));
+                     'cond_code' => array(0));
         $this->assertSame($exp, $r);
     }
 
@@ -107,6 +170,8 @@ File::write("test", "test");
      * @return void
      * @link   http://pear.php.net/bugs/bug.php?id=2771
      *         Substr($var,4) not working for SAPI_ extensions
+     * @covers PHP_CompatInfo::parseString
+     * @group  parseString
      */
     public function testBug2771()
     {
@@ -115,15 +180,18 @@ apache_request_headers();
 apache_response_headers();
 ?>';
         $r   = $this->pci->parseString($str);
-        $exp = array('ignored_functions' => array(),
+        $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
                      'ignored_extensions' => array(),
                      'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.3.0',
+                     'functions' => array('apache_request_headers',
+                                          'apache_response_headers'),
                      'extensions' => array('sapi_apache'),
                      'constants' => array(),
                      'tokens' => array(),
-                     'cond_code' => array(0, array()));
+                     'cond_code' => array(0));
         $this->assertSame($exp, $r);
     }
 
@@ -135,6 +203,8 @@ apache_response_headers();
      * @return void
      * @link   http://pear.php.net/bugs/bug.php?id=7813
      *         wrong PHP minimum version detection
+     * @covers PHP_CompatInfo::parseFile
+     * @group  parseFile
      */
     public function testBug7813()
     {
@@ -143,21 +213,50 @@ apache_response_headers();
         $opt = array('debug' => true,
                      'ignore_functions' => array('debug_backtrace'));
         $r   = $this->pci->parseFile($fn, $opt);
-        $exp = array('ignored_functions' => array('debug_backtrace'),
+        $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array('debug_backtrace'),
                      'ignored_extensions' => array(),
                      'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.3.0',
+                     'functions' => array('array_keys',
+                                          'array_shift',
+                                          'class_exists',
+                                          'count',
+                                          'debug_backtrace',
+                                          'define',
+                                          'explode',
+                                          'factory',
+                                          'fclose',
+                                          'file_exists',
+                                          'file_get_contents',
+                                          'fopen',
+                                          'function_exists',
+                                          'fwrite',
+                                          'get_class',
+                                          'get_include_path',
+                                          'getenv',
+                                          'is_array',
+                                          'is_int',
+                                          'is_readable',
+                                          'pear_config',
+                                          'reset',
+                                          'serialize',
+                                          'settype',
+                                          'strlen',
+                                          'unserialize',
+                                          'version_compare'),
                      'extensions' => array(),
-                     'constants' => array('PATH_SEPARATOR', 'DIRECTORY_SEPARATOR'),
+                     'constants' => array('DIRECTORY_SEPARATOR',
+                                          'PATH_SEPARATOR'),
                      'tokens' => array(),
                      'cond_code' => array(1, array(array('debug_backtrace'),
                                                    array(),
                                                    array())),
                      '4.0.0' =>
-                     array (
+                     array(
                        0 =>
-                       array (
+                       array(
                          'function' => 'define',
                          'extension' => false,
                          'pecl' => false
@@ -317,6 +416,8 @@ apache_response_headers();
      * @return void
      * @link   http://pear.php.net/bugs/bug.php?id=8559
      *         PHP_CompatInfo fails to scan if it finds empty file in path
+     * @covers PHP_CompatInfo::parseDir
+     * @group  parseDir
      */
     public function testBug8559()
     {
@@ -331,6 +432,8 @@ apache_response_headers();
      * @return void
      * @link   http://pear.php.net/bugs/bug.php?id=10100
      *         Wrong parsing of possible attributes in strings
+     * @covers PHP_CompatInfo::parseString
+     * @group  parseString
      */
     public function testBug10100()
     {
@@ -338,15 +441,17 @@ apache_response_headers();
 $test = "public$link";
 ?>';
         $r   = $this->pci->parseString($str);
-        $exp = array('ignored_functions' => array(),
+        $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
                      'ignored_extensions' => array(),
                      'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.0.0',
+                     'functions' => array(),
                      'extensions' => array(),
                      'constants' => array(),
                      'tokens' => array(),
-                     'cond_code' => array(0, array()));
+                     'cond_code' => array(0));
         $this->assertSame($exp, $r);
     }
 
@@ -357,101 +462,114 @@ $test = "public$link";
      * @link   http://pear.php.net/bugs/bug.php?id=13873
      *         PHP_CompatInfo fails to scan conditional code
      *         if it finds other than encapsed string
+     * @covers PHP_CompatInfo::parseFolder
+     * @group  parseDir
      */
     public function testBug13873()
     {
         $ds  = DIRECTORY_SEPARATOR;
         $dir = dirname(__FILE__) . $ds . 'beehiveforum082' . $ds . 'forum';
-        $r   = $this->pci->parseFolder($dir);
-        $exp = array (
-          'ignored_files' =>
-          array (
-          ),
-          'ignored_functions' =>
-          array (
-          ),
-          'ignored_extensions' =>
-          array (
-          ),
-          'ignored_constants' =>
-          array (
-          ),
-          'max_version' => '',
-          'version' => '4.0.6',
-          'extensions' =>
-          array (
-            0 => 'pcre',
-            1 => 'date',
-            2 => 'hash',
-          ),
-          'constants' =>
-          array (
-            0 => '__FILE__',
-          ),
-          'tokens' =>
-          array (
-          ),
-          'cond_code' =>
-          array (
-            0 => 4,
-            1 =>
-            array (
-              0 =>
-              array (
-              ),
-              1 =>
-              array (
-              ),
-              2 =>
-              array (
-              ),
-            ),
-          ),
-        $dir . $ds . 'include' . $ds . 'forum.inc.php' =>
-        array (
-          'ignored_functions' =>
-          array (
-          ),
-          'ignored_extensions' =>
-          array (
-          ),
-          'ignored_constants' =>
-          array (
-          ),
-          'max_version' => '',
-          'version' => '4.0.6',
-          'extensions' =>
-          array (
-            0 => 'pcre',
-            1 => 'date',
-            2 => 'hash',
-          ),
-          'constants' =>
-          array (
-            0 => '__FILE__',
-          ),
-          'tokens' =>
-          array (
-          ),
-          'cond_code' =>
-          array (
-            0 => 4,
-            1 =>
-            array (
-              0 =>
-              array (
-              ),
-              1 =>
-              array (
-              ),
-              2 =>
-              array (
-              ),
-            ),
-          ),
-        ),
-
-        );
+        $opt = array();
+        $r   = $this->pci->parseFolder($dir, $opt);
+        $exp = array('ignored_files' => $this->getIgnoredFileList($dir, $opt),
+                     'ignored_functions' => array(),
+                     'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
+                     'max_version' => '',
+                     'version' => '4.0.6',
+                     'functions' => array('_htmlentities',
+                                          '_stripslashes',
+                                          'array_map',
+                                          'array_merge',
+                                          'basename',
+                                          'bh_session_check_perm',
+                                          'bh_session_get_value',
+                                          'bh_setcookie',
+                                          'db_affected_rows',
+                                          'db_connect',
+                                          'db_escape_string',
+                                          'db_fetch_array',
+                                          'db_insert_id',
+                                          'db_num_rows',
+                                          'db_query',
+                                          'db_trigger_error',
+                                          'defined',
+                                          'delete_attachment_by_aid',
+                                          'explode',
+                                          'fclose',
+                                          'file_exists',
+                                          'filesize',
+                                          'fix_html',
+                                          'floor',
+                                          'folder_get_available_by_forum',
+                                          'fopen',
+                                          'form_checkbox',
+                                          'form_input_hidden',
+                                          'form_input_password',
+                                          'form_submit',
+                                          'forum_apply_user_permissions',
+                                          'forum_check_global_setting_name',
+                                          'forum_check_password',
+                                          'forum_check_setting_name',
+                                          'forum_closed_message',
+                                          'forum_delete',
+                                          'forum_delete_tables',
+                                          'forum_get_all_prefixes',
+                                          'forum_get_global_settings',
+                                          'forum_get_password',
+                                          'forum_get_saved_password',
+                                          'forum_get_setting',
+                                          'forum_get_settings_by_fid',
+                                          'forum_process_unread_cutoff',
+                                          'forum_restricted_message',
+                                          'forum_search',
+                                          'forum_start_page_get_html',
+                                          'fread',
+                                          'function_exists',
+                                          'fwrite',
+                                          'get_forum_data',
+                                          'get_request_uri',
+                                          'get_table_prefix',
+                                          'get_webtag',
+                                          'header',
+                                          'html_display_error_msg',
+                                          'html_display_warning_msg',
+                                          'html_draw_bottom',
+                                          'html_draw_top',
+                                          'html_get_top_frame_name',
+                                          'implode',
+                                          'in_array',
+                                          'install_get_table_conflicts',
+                                          'intval',
+                                          'is_array',
+                                          'is_dir',
+                                          'is_md5',
+                                          'is_null',
+                                          'is_numeric',
+                                          'load_language_file',
+                                          'md5',
+                                          'mkdir',
+                                          'mt_rand',
+                                          'ob_end_clean',
+                                          'ob_get_contents',
+                                          'ob_start',
+                                          'perm_group_get_users',
+                                          'preg_match',
+                                          'sizeof',
+                                          'sprintf',
+                                          'str_replace',
+                                          'stristr',
+                                          'strlen',
+                                          'strtoupper',
+                                          'time',
+                                          'trim',
+                                          'user_get_logon',
+                                          'word_filter_rem_ob_tags'),
+                     'extensions' => array('date', 'hash', 'pcre'),
+                     'constants' => array('__FILE__'),
+                     'tokens' => array(),
+                     'cond_code' => array(4)
+                    );
         $this->assertSame($exp, $r);
     }
 }
