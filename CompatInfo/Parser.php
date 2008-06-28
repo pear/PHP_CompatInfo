@@ -162,7 +162,14 @@ class PHP_CompatInfo_Parser
      */
     function __construct()
     {
-        $this->options = array('debug' => false, 'is_string' => false);
+        $this->options = array(
+            'file_ext' => array('php', 'php4', 'inc', 'phtml'),
+            'recurse_dir' => true,
+            'debug' => false,
+            'is_string' => false,
+            'ignore_files' => array(),
+            'ignore_dirs' => array()
+            );
     }
 
     /**
@@ -338,6 +345,7 @@ class PHP_CompatInfo_Parser
      */
     function getFilelist($dir, $options)
     {
+        $skipped         = array();
         $ignored         = array();
         $default_options = array(
             'file_ext' => array('php', 'php4', 'inc', 'phtml'),
@@ -386,6 +394,11 @@ class PHP_CompatInfo_Parser
         foreach ($files as $file) {
 
             $file_info = pathinfo($file);
+            if ($options['recurse_dir'] == false
+                && $file_info['dirname'] != $dir) {
+                $skipped[] = $file;
+                continue;
+            }
             if (in_array($file_info['dirname'], $ignore_dirs)) {
                 $ignored[] = $file;
 
@@ -402,7 +415,8 @@ class PHP_CompatInfo_Parser
             }
         }
 
-        $files = PHP_CompatInfo_Parser::_arrayDiff($files, $ignored);
+        $files = PHP_CompatInfo_Parser::_arrayDiff($files,
+                                                   array_merge($ignored, $skipped));
         $this->directories
                = PHP_CompatInfo_Parser::_arrayDiff($directories, $ignore_dirs);
         $this->ignored_files
@@ -480,6 +494,9 @@ class PHP_CompatInfo_Parser
 
         $dataType  = gettype($dataSource);
         $dataCount = 0;
+        // - when array source with mixed content incompatible
+        // - if all directories are not readable
+        // - if data source invalid type: other than file, directory, string
 
         if ($dataType == 'string' || $dataType == 'array') {
             if (is_array($dataSource)) {
@@ -504,15 +521,6 @@ class PHP_CompatInfo_Parser
                                                          $this->options);
                 $dataCount  = count($dataSource);
             }
-        }
-
-        if ($dataCount == 0) {
-            // - when array source with mixed content incompatible
-            // - if all directories are not readable
-            // - if data source invalid type: other than file, directory, string
-        } elseif ($dataCount == 1 && $dataType == 'file') {
-            // when parsing a single file
-            $dataSource = $dataSource[0];
         }
 
         $this->dataSource = array('dataSource' => $dataSource,
@@ -545,7 +553,7 @@ class PHP_CompatInfo_Parser
         }
 
         // notify all observers that parsing data source is over
-        $this->notifyListeners(PHP_COMPATINFO_EVENT_AUDITFINISHED);
+        $this->notifyListeners(PHP_COMPATINFO_EVENT_AUDITFINISHED, $parseData);
 
         return $parseData;
     }
@@ -663,16 +671,7 @@ class PHP_CompatInfo_Parser
      */
     function _parseFile($file, $options = array())
     {
-        $eventInfo = array('filename' => $file, 'fileindex' => 1);
-        $this->notifyListeners(PHP_COMPATINFO_EVENT_FILESTARTED, $eventInfo);
-
-        $tokens  = $this->_tokenize($file);
-        $results = $this->_parseTokens($tokens, $options);
-        if ($options['debug'] === false) {
-            $results['cond_code'][1] = array();
-        }
-
-        $this->notifyListeners(PHP_COMPATINFO_EVENT_FILEFINISHED, $results);
+        $results = $this->_parseElements($file, $options);
         return $results;
     }
 
@@ -728,6 +727,10 @@ class PHP_CompatInfo_Parser
         foreach ($elements as $p => $element) {
             $index = $p + 1;
             if (is_file($element)) {
+                if (in_array($element, $options['ignore_files'])) {
+                    $this->ignored_files[] = $element;
+                    continue;
+                }
                 $eventInfo
                     = array('filename' => $element, 'fileindex' => $index);
                 $this->notifyListeners(PHP_COMPATINFO_EVENT_FILESTARTED, $eventInfo);
@@ -812,9 +815,7 @@ class PHP_CompatInfo_Parser
                 }
             }
             if ($options['debug'] === false) {
-                $files_parsed[$fn]['cond_code'][1][0] = array();
-                $files_parsed[$fn]['cond_code'][1][1] = array();
-                $files_parsed[$fn]['cond_code'][1][2] = array();
+                unset($files_parsed[$fn]['cond_code'][1]);
             }
         }
 
@@ -832,13 +833,16 @@ class PHP_CompatInfo_Parser
             $cond_code += 4;
         }
         if ($options['debug'] === false) {
-            $function_exists  = array();
-            $extension_loaded = array();
-            $defined          = array();
+            $cond_code = array($cond_code);
+        } else {
+            $cond_code = array($cond_code, array($function_exists,
+                                                 $extension_loaded,
+                                                 $defined));
         }
-        $cond_code = array($cond_code,
-                           array($function_exists, $extension_loaded, $defined));
 
+        sort($ignored_functions);
+        sort($ignored_extensions);
+        sort($ignored_constants);
         sort($functions);
         sort($extensions);
         sort($constants);
@@ -855,7 +859,16 @@ class PHP_CompatInfo_Parser
                            'tokens'        => $tokens,
                            'cond_code'     => $cond_code);
 
-        $parseData = array_merge($main_info, $files_parsed);
+        if (count($files_parsed) == 1) {
+            if ($options['debug'] === false) {
+                $parseData = $main_info;
+            } else {
+                $main_info = array('ignored_files' => $this->getIgnoredFiles());
+                $parseData = array_merge($main_info, $files_parsed[$kfile]);
+            }
+        } else {
+            $parseData = array_merge($main_info, $files_parsed);
+        }
 
         $this->notifyListeners(PHP_COMPATINFO_EVENT_FILEFINISHED, $parseData);
         return $parseData;
@@ -1390,13 +1403,17 @@ class PHP_CompatInfo_Parser
             $defined    = array_unique($defined);
             $cond_code += 4;
         }
-        $cond_code = array($cond_code,
-                           array($function_exists, $extension_loaded, $defined));
+        $cond_code = array($cond_code, array($function_exists,
+                                             $extension_loaded,
+                                             $defined));
 
+        sort($ignored_functions);
+        sort($ignored_extensions);
+        sort($ignored_constants);
         sort($functions);
         sort($extensions);
-        sort($constants);
-        sort($tokens);
+        sort($constant_names);
+        sort($token_names);
         $main_info = array('ignored_functions'  => $ignored_functions,
                            'ignored_extensions' => $ignored_extensions,
                            'ignored_constants'  => $ignored_constants,
