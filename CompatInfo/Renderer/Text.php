@@ -255,6 +255,9 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
 
             if (is_array($this->args)) {
                 foreach ($this->args as $key => $raw) {
+                    if ($key == 'summarize') {
+                        $raw = ($raw === true) ? 'TRUE' : 'FALSE';
+                    }
                     if (is_array($raw)) {
                         $raw = implode(', ', $raw);
                     }
