@@ -234,6 +234,11 @@ are full compatible with API 1.8.0
     <channel>pear.php.net</channel>
     <min>1.0.3</min>
    </package>
+   <package>
+    <name>HTML_Table</name>
+    <channel>pear.php.net</channel>
+    <min>1.8.2</min>
+   </package>
   </optional>
  </dependencies>
  <phprelease>
