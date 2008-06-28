@@ -54,24 +54,12 @@ class PHP_CompatInfo_Cli
     var $opts = array();
 
     /**
-     * @var    string   error message
-     * @since  0.8.0
-     */
-    var $error;
-
-    /**
      * Unified data source reference
      *
      * @var    string   Directory, File or String to be processed
      * @since  1.8.0b3
      */
     var $dataSource;
-
-    /**
-     * @var    object   Console_Getargs instance
-     * @since  1.4.0
-     */
-    var $args;
 
     /**
      * @var    array    Current parser options
@@ -200,266 +188,6 @@ class PHP_CompatInfo_Cli
                       'desc'  => 'Show this help',
                       'max'   => 0),
         );
-        $this->args = & Console_Getargs::factory($this->opts);
-        if (PEAR::isError($this->args)) {
-            if ($this->args->getCode() === CONSOLE_GETARGS_HELP) {
-                $this->error = '';
-            } else {
-                $this->error = $this->args->getMessage();
-            }
-            return;
-        }
-
-        // default parser options
-        $this->options = array(
-            'file_ext' => array('php', 'php4', 'inc', 'phtml'),
-            'recurse_dir' => true,
-            'debug' => false,
-            'is_string' => false,
-            'ignore_files' => array(),
-            'ignore_dirs' => array()
-            );
-
-        // version
-        $V = $this->args->getValue('V');
-        if (isset($V)) {
-            $this->error = 'PHP_CompatInfo (cli) version @package_version@'
-                         . ' (http://pear.php.net/package/PHP_CompatInfo)';
-            return;
-        }
-
-        // debug
-        if ($this->args->isDefined('v')) {
-            $v = $this->args->getValue('v');
-            if ($v > 3) {
-                $this->options['debug'] = true;
-            }
-        }
-
-        // no-recurse
-        if ($this->args->isDefined('n')) {
-            $this->options['recurse_dir'] = false;
-        }
-
-        // dir
-        if ($this->args->isDefined('d')) {
-            $d = $this->args->getValue('d');
-            if (file_exists($d)) {
-                if ($d{strlen($d)-1} == '/' || $d{strlen($d)-1} == '\\') {
-                    $d = substr($d, 0, -1);
-                }
-                $this->dataSource = realpath($d);
-            } else {
-                $this->error = 'Failed opening directory "' . $d
-                     . '". Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // file
-        if ($this->args->isDefined('f')) {
-            $f = $this->args->getValue('f');
-            if (file_exists($f)) {
-                $this->dataSource = $f;
-            } else {
-                $this->error = 'Failed opening file "' . $f
-                     . '". Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // string
-        if ($this->args->isDefined('s')) {
-            $s = $this->args->getValue('s');
-            if (!empty($s)) {
-                $this->dataSource           = sprintf("<?php %s ?>", $s);
-                $this->options['is_string'] = true;
-            } else {
-                $this->error = 'Failed opening string "' . $s
-                     . '". Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // ignore-files
-        $if = $this->args->getValue('if');
-        if (isset($if)) {
-            if (file_exists($if)) {
-                $options                       = $this->_parseParamFile($if);
-                $this->options['ignore_files'] = $options['std'];
-            } else {
-                $this->error = 'Failed opening file "' . $if
-                     . '" (ignore-files option). '
-                     . 'Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // ignore-dirs
-        $id = $this->args->getValue('id');
-        if (isset($id)) {
-            if (file_exists($id)) {
-                $options                      = $this->_parseParamFile($id);
-                $this->options['ignore_dirs'] = $options['std'];
-            } else {
-                $this->error = 'Failed opening file "' . $id
-                     . '" (ignore-dirs option). '
-                     . 'Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // ignore-functions
-        $in = $this->args->getValue('in');
-        if (isset($in)) {
-            if (file_exists($in)) {
-                $options                           = $this->_parseParamFile($in);
-                $this->options['ignore_functions'] = $options['std'];
-            } else {
-                $this->error = 'Failed opening file "' . $in
-                     . '" (ignore-functions option). '
-                     . 'Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // ignore-constants
-        $ic = $this->args->getValue('ic');
-        if (isset($ic)) {
-            if (file_exists($ic)) {
-                $options                           = $this->_parseParamFile($ic);
-                $this->options['ignore_constants'] = $options['std'];
-            } else {
-                $this->error = 'Failed opening file "' . $ic
-                     . '" (ignore-constants option). '
-                     . 'Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // ignore-extensions
-        $ie = $this->args->getValue('ie');
-        if (isset($ie)) {
-            if (file_exists($ie)) {
-                $options                            = $this->_parseParamFile($ie);
-                $this->options['ignore_extensions'] = $options['std'];
-            } else {
-                $this->error = 'Failed opening file "' . $ie
-                     . '" (ignore-extensions option). '
-                     . 'Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // ignore-versions
-        $iv = $this->args->getValue('iv');
-        if (isset($iv)) {
-            if (!is_array($iv)) {
-                $iv = array($iv);
-            }
-            $this->options['ignore_versions'] = $iv;
-        }
-
-        // ignore-functions-match
-        $inm = $this->args->getValue('inm');
-        if (isset($inm)) {
-            if (file_exists($inm)) {
-                $patterns = $this->_parseParamFile($inm, true);
-                if (count($patterns['std']) > 0
-                    && count($patterns['reg']) > 0) {
-                    $this->error = 'Mixed "function_exists" and '
-                         . '"preg_match" conditions are not allowed. '
-                         . 'Please check your spelling and try again.';
-                    return;
-
-                } elseif (count($patterns['std']) > 0) {
-                    $this->options['ignore_functions_match']
-                        = array('function_exists', $patterns['std']);
-                } elseif (count($patterns['reg']) > 0) {
-                    $this->options['ignore_functions_match']
-                        = array('preg_match', $patterns['reg']);
-                }
-            } else {
-                $this->error = 'Failed opening file "' . $inm
-                     . '" (ignore-functions-match option). '
-                     . 'Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // ignore-extensions-match
-        $iem = $this->args->getValue('iem');
-        if (isset($iem)) {
-            if (file_exists($iem)) {
-                $patterns = $this->_parseParamFile($iem, true);
-                if (count($patterns['std']) > 0
-                    && count($patterns['reg']) > 0) {
-                    $this->error = 'Mixed "extension_loaded" and '
-                         . '"preg_match" conditions are not allowed. '
-                         . 'Please check your spelling and try again.';
-                    return;
-
-                } elseif (count($patterns['std']) > 0) {
-                    $this->options['ignore_extensions_match']
-                        = array('extension_loaded', $patterns['std']);
-                } elseif (count($patterns['reg']) > 0) {
-                    $this->options['ignore_extensions_match']
-                        = array('preg_match', $patterns['reg']);
-                }
-            } else {
-                $this->error = 'Failed opening file "' . $iem
-                     . '" (ignore-extensions-match option). '
-                     . 'Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // ignore-constants-match
-        $icm = $this->args->getValue('icm');
-        if (isset($icm)) {
-            if (file_exists($icm)) {
-                $patterns = $this->_parseParamFile($icm, true);
-                if (count($patterns['std']) > 0
-                    && count($patterns['reg']) > 0) {
-                    $this->error = 'Mixed "defined" and '
-                         . '"preg_match" conditions are not allowed. '
-                         . 'Please check your spelling and try again.';
-                    return;
-
-                } elseif (count($patterns['std']) > 0) {
-                    $this->options['ignore_constants_match']
-                        = array('defined', $patterns['std']);
-                } elseif (count($patterns['reg']) > 0) {
-                    $this->options['ignore_constants_match']
-                        = array('preg_match', $patterns['reg']);
-                }
-            } else {
-                $this->error = 'Failed opening file "' . $icm
-                     . '" (ignore-constants-match option). '
-                     . 'Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // file-ext
-        if ($this->args->isDefined('d') && $this->args->isDefined('fe')) {
-            $fe = $this->args->getValue('fe');
-            if (is_string($fe)) {
-                $this->options['file_ext'] = explode(',', $fe);
-            } else {
-                $this->error = 'No valid file extensions provided "'
-                     . '". Please check your spelling and try again.';
-                return;
-            }
-        }
-
-        // file or directory options are minimum required to work
-        if (!$this->args->isDefined('f')
-            && !$this->args->isDefined('d')
-            && !$this->args->isDefined('s')) {
-            $this->error = 'ERROR: You must supply at least '
-                . 'one string, file or directory to process';
-        }
     }
 
     /**
@@ -481,30 +209,306 @@ class PHP_CompatInfo_Cli
      */
     function run()
     {
-        if (isset($this->error)) {
-            if (strpos($this->error, 'PHP_CompatInfo') === false) {
-                $this->_printUsage($this->error);
+        $args = & Console_Getargs::factory($this->opts);
+        if (PEAR::isError($args)) {
+            if ($args->getCode() === CONSOLE_GETARGS_HELP) {
+                $error = '';
             } else {
-                // when Version asked, do not print help usage
-                echo $this->error;
+                $error = $args->getMessage();
             }
-        } else {
-            $args = $this->args->getValues();
-
-            // output-level
-            if (!$this->args->isDefined('o')) {
-                $args['output-level'] = 31; // default = full detail
-            }
-
-            if ($this->args->isDefined('r')) {
-                $report = $args['report'];
-            } else {
-                $report = 'text';
-            }
-
-            $compatInfo = new PHP_CompatInfo($report, array('args' => $args));
-            $compatInfo->parseData($this->dataSource, $this->options);
+            $this->_printUsage($error);
+            return;
         }
+
+        // default parser options
+        $this->options = array(
+            'file_ext' => array('php', 'php4', 'inc', 'phtml'),
+            'recurse_dir' => true,
+            'debug' => false,
+            'is_string' => false,
+            'ignore_files' => array(),
+            'ignore_dirs' => array()
+            );
+
+        // version
+        $V = $args->getValue('V');
+        if (isset($V)) {
+            $error = 'PHP_CompatInfo (cli) version @package_version@'
+                   . ' (http://pear.php.net/package/PHP_CompatInfo)';
+            echo $error;
+            return;
+        }
+
+        // debug
+        if ($args->isDefined('v')) {
+            $v = $args->getValue('v');
+            if ($v > 3) {
+                $this->options['debug'] = true;
+            }
+        }
+
+        // no-recurse
+        if ($args->isDefined('n')) {
+            $this->options['recurse_dir'] = false;
+        }
+
+        // dir
+        if ($args->isDefined('d')) {
+            $d = $args->getValue('d');
+            if (file_exists($d)) {
+                if ($d{strlen($d)-1} == '/' || $d{strlen($d)-1} == '\\') {
+                    $d = substr($d, 0, -1);
+                }
+                $this->dataSource = realpath($d);
+            } else {
+                $error = 'Failed opening directory "' . $d
+                       . '". Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // file
+        if ($args->isDefined('f')) {
+            $f = $args->getValue('f');
+            if (file_exists($f)) {
+                $this->dataSource = $f;
+            } else {
+                $error = 'Failed opening file "' . $f
+                       . '". Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // string
+        if ($args->isDefined('s')) {
+            $s = $args->getValue('s');
+            if (!empty($s)) {
+                $this->dataSource           = sprintf("<?php %s ?>", $s);
+                $this->options['is_string'] = true;
+            } else {
+                $error = 'Failed opening string "' . $s
+                       . '". Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // ignore-files
+        $if = $args->getValue('if');
+        if (isset($if)) {
+            if (file_exists($if)) {
+                $options                       = $this->_parseParamFile($if);
+                $this->options['ignore_files'] = $options['std'];
+            } else {
+                $error = 'Failed opening file "' . $if
+                       . '" (ignore-files option). '
+                       . 'Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // ignore-dirs
+        $id = $args->getValue('id');
+        if (isset($id)) {
+            if (file_exists($id)) {
+                $options                      = $this->_parseParamFile($id);
+                $this->options['ignore_dirs'] = $options['std'];
+            } else {
+                $error = 'Failed opening file "' . $id
+                       . '" (ignore-dirs option). '
+                       . 'Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // ignore-functions
+        $in = $args->getValue('in');
+        if (isset($in)) {
+            if (file_exists($in)) {
+                $options                           = $this->_parseParamFile($in);
+                $this->options['ignore_functions'] = $options['std'];
+            } else {
+                $error = 'Failed opening file "' . $in
+                       . '" (ignore-functions option). '
+                       . 'Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // ignore-constants
+        $ic = $args->getValue('ic');
+        if (isset($ic)) {
+            if (file_exists($ic)) {
+                $options                           = $this->_parseParamFile($ic);
+                $this->options['ignore_constants'] = $options['std'];
+            } else {
+                $error = 'Failed opening file "' . $ic
+                       . '" (ignore-constants option). '
+                       . 'Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // ignore-extensions
+        $ie = $args->getValue('ie');
+        if (isset($ie)) {
+            if (file_exists($ie)) {
+                $options                            = $this->_parseParamFile($ie);
+                $this->options['ignore_extensions'] = $options['std'];
+            } else {
+                $error = 'Failed opening file "' . $ie
+                       . '" (ignore-extensions option). '
+                       . 'Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // ignore-versions
+        $iv = $args->getValue('iv');
+        if (isset($iv)) {
+            if (!is_array($iv)) {
+                $iv = array($iv);
+            }
+            $this->options['ignore_versions'] = $iv;
+        }
+
+        // ignore-functions-match
+        $inm = $args->getValue('inm');
+        if (isset($inm)) {
+            if (file_exists($inm)) {
+                $patterns = $this->_parseParamFile($inm, true);
+                if (count($patterns['std']) > 0
+                    && count($patterns['reg']) > 0) {
+                    $error = 'Mixed "function_exists" and '
+                           . '"preg_match" conditions are not allowed. '
+                           . 'Please check your spelling and try again.';
+                    $this->_printUsage($error);
+                    return;
+
+                } elseif (count($patterns['std']) > 0) {
+                    $this->options['ignore_functions_match']
+                        = array('function_exists', $patterns['std']);
+                } elseif (count($patterns['reg']) > 0) {
+                    $this->options['ignore_functions_match']
+                        = array('preg_match', $patterns['reg']);
+                }
+            } else {
+                $error = 'Failed opening file "' . $inm
+                       . '" (ignore-functions-match option). '
+                       . 'Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // ignore-extensions-match
+        $iem = $args->getValue('iem');
+        if (isset($iem)) {
+            if (file_exists($iem)) {
+                $patterns = $this->_parseParamFile($iem, true);
+                if (count($patterns['std']) > 0
+                    && count($patterns['reg']) > 0) {
+                    $error = 'Mixed "extension_loaded" and '
+                           . '"preg_match" conditions are not allowed. '
+                           . 'Please check your spelling and try again.';
+                    $this->_printUsage($error);
+                    return;
+
+                } elseif (count($patterns['std']) > 0) {
+                    $this->options['ignore_extensions_match']
+                        = array('extension_loaded', $patterns['std']);
+                } elseif (count($patterns['reg']) > 0) {
+                    $this->options['ignore_extensions_match']
+                        = array('preg_match', $patterns['reg']);
+                }
+            } else {
+                $error = 'Failed opening file "' . $iem
+                       . '" (ignore-extensions-match option). '
+                       . 'Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // ignore-constants-match
+        $icm = $args->getValue('icm');
+        if (isset($icm)) {
+            if (file_exists($icm)) {
+                $patterns = $this->_parseParamFile($icm, true);
+                if (count($patterns['std']) > 0
+                    && count($patterns['reg']) > 0) {
+                    $error = 'Mixed "defined" and '
+                           . '"preg_match" conditions are not allowed. '
+                           . 'Please check your spelling and try again.';
+                    $this->_printUsage($error);
+                    return;
+
+                } elseif (count($patterns['std']) > 0) {
+                    $this->options['ignore_constants_match']
+                        = array('defined', $patterns['std']);
+                } elseif (count($patterns['reg']) > 0) {
+                    $this->options['ignore_constants_match']
+                        = array('preg_match', $patterns['reg']);
+                }
+            } else {
+                $error = 'Failed opening file "' . $icm
+                       . '" (ignore-constants-match option). '
+                       . 'Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // file-ext
+        if ($args->isDefined('d') && $args->isDefined('fe')) {
+            $fe = $args->getValue('fe');
+            if (is_string($fe)) {
+                $this->options['file_ext'] = explode(',', $fe);
+            } else {
+                $error = 'No valid file extensions provided "'
+                       . '". Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+
+        // file or directory options are minimum required to work
+        if (!$args->isDefined('f')
+            && !$args->isDefined('d')
+            && !$args->isDefined('s')) {
+            $error = 'ERROR: You must supply at least '
+                   . 'one string, file or directory to process';
+            $this->_printUsage($error);
+            return;
+        }
+
+        if ($args->isDefined('r')) {
+            $report = $args['report'];
+        } else {
+            $report = 'text';
+        }
+
+        $compatInfo = new PHP_CompatInfo($report,
+                                         array('args' => $args->getValues()));
+        // dir
+        if ($args->isDefined('d')) {
+            $d     = $args->getValue('d');
+            $files = $compatInfo->parser->getFilelist($d, $this->options);
+            if (count($files) == 0) {
+                $error = 'No valid files into directory "'. $d
+                       . '". Please check your spelling and try again.';
+                $this->_printUsage($error);
+                return;
+            }
+        }
+        $compatInfo->parseData($this->dataSource, $this->options);
     }
 
     /**
