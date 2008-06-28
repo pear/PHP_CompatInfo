@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-06-18</date>
- <time>23:17:03</time>
+ <date>2008-06-28</date>
+ <time>15:50:16</time>
  <version>
-  <release>1.8.0b4</release>
+  <release>1.8.0RC1</release>
   <api>1.8.0</api>
  </version>
  <stability>
@@ -29,33 +29,27 @@ which shows which functions require which version and CLI output script</descrip
   <api>stable</api>
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
- <notes>* changes
-- Text Renderer: support output-level 16 (display filter on version)
-- Xml  Renderer: support all output-level, verbose 4+ or debug mode
-- CLI: default output-level is now 31 (still all details, as before with 15)
-       since version may be hide (level 16)
+ <notes>Probably the last release before final version planned for August 1st.
+Please give it a good testing !
 
-* news
-- 2 more renderers: Html and Csv
-- 3 more examples:
-  pci180_parsedir_tohtml
-    = how to use your own html renderer (site web layout integration)
-  pci180_parsefolder_tohtml
-    = parse a huge folder and wait result with a progress bar
-  pci180_parsestring_toxml
-    = parse an array of string and debug it with an observer
+* bugs
+- #14187 : cli -r switch does not work in 1.8.0.b4
+- getFileList() obey now to &quot;recurse_dir&quot; option (when set to false)
+- parse functions obey now to &quot;ignore_files&quot; option
+
+* changes
+- Result values are now sorted in alphabetic order for a better human reading
+Thats include 6 following entries:
+&quot;ignore_functions&quot;, &quot;ignore_extensions&quot;, &quot;ignore_constants&quot;
+&quot;functions&quot; &quot;extensions&quot; &quot;constants&quot;
+- Event &quot;AuditFinised&quot; give now the result of parsing
 
 Do not forget to have a look on all examples pci180_parse* that demonstrates
 the new API.
 
-* Milestones
-- Release Candidate 1: July 1st (with unit test suite, and first draft of user-doc)
-- Stable: August 1st
-Please give it a good testing !
-
 * QA
-- Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until RC1
+- Test Suites (Standard, Bugs, Cli) included in this first release candidate
+are full compatible with API 1.8.0
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -122,7 +116,6 @@ Please give it a good testing !
    <dir name="scripts">
     <file baseinstalldir="" name="compatinfo.bat" role="script">
      <tasks:windowseol />
-     <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
      <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
     </file>
@@ -131,6 +124,52 @@ Please give it a good testing !
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
     </file>
    </dir> <!-- /scripts -->
+   <dir name="tests">
+    <dir name="beehiveforum082">
+     <dir name="forum">
+      <dir name="include">
+       <file name="forum.inc.php" role="test" />
+      </dir> <!-- /tests/beehiveforum082/forum/include -->
+     </dir> <!-- /tests/beehiveforum082/forum -->
+    </dir> <!-- /tests/beehiveforum082 -->
+    <dir name="emptyDir">
+     <file name="empty_dir.txt" role="test" />
+    </dir> <!-- /tests/emptyDir -->
+    <dir name="parseDir">
+     <dir name="PHP5">
+      <file name="tokens.php5" role="test" />
+      <file name="upload_error.php" role="test" />
+     </dir> <!-- /tests/parseDir/PHP5 -->
+     <file name="extensions.php" role="test" />
+     <file name="phpinfo.php" role="test" />
+    </dir> <!-- /tests/parseDir -->
+    <dir name="parseFile">
+     <file name="conditional.php" role="test" />
+     <file name="empty.php" role="test" />
+     <file name="File_Find-1.3.0__Find.php" role="test" />
+     <file name="ignore_functions_match.php" role="test" />
+     <file name="math.php" role="test" />
+     <file name="PackageUpdate.php" role="test" />
+     <file name="php5_method_chaining.php" role="test" />
+     <file name="php5_method_chaining_samp2.php" role="test" />
+     <file name="phpweb-entities.php" role="test" />
+     <file name="zip.php" role="test" />
+    </dir> <!-- /tests/parseFile -->
+    <file name="AllTests.php" role="test" />
+    <file name="checkMax.php" role="test" />
+    <file name="PHP_CompatInfo_TestSuite_Bugs.php" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file name="PHP_CompatInfo_TestSuite_Cli.php" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+     <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+     <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    </file>
+    <file name="PHP_CompatInfo_TestSuite_Standard.php" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file name="sample_req6056.php" role="test" />
+   </dir> <!-- /tests -->
    <file name="CompatInfo.php" role="php">
     <tasks:replace from="@package_version@" to="version" type="package-info" />
    </file>
@@ -217,6 +256,40 @@ Please give it a good testing !
  <changelog>
   <release>
    <version>
+    <release>1.8.0RC1</release>
+    <api>1.8.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-06-28</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>Probably the last release before final version planned for August 1st.
+Please give it a good testing !
+
+* bugs
+- #14187 : cli -r switch does not work in 1.8.0.b4
+- getFileList() obey now to &quot;recurse_dir&quot; option (when set to false)
+- parse functions obey now to &quot;ignore_files&quot; option
+
+* changes
+- Result values are now sorted in alphabetic order for a better human reading
+Thats include 6 following entries:
+&quot;ignore_functions&quot;, &quot;ignore_extensions&quot;, &quot;ignore_constants&quot;
+&quot;functions&quot; &quot;extensions&quot; &quot;constants&quot;
+- Event &quot;AuditFinised&quot; give now the result of parsing
+
+Do not forget to have a look on all examples pci180_parse* that demonstrates
+the new API.
+
+* QA
+- Test Suites (Standard, Bugs, Cli) included in this first release candidate
+are full compatible with API 1.8.0
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.8.0b4</release>
     <api>1.8.0</api>
    </version>
@@ -252,8 +325,7 @@ Please give it a good testing !
 
 * QA
 - Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until RC1
-   </notes>
+  them until RC1</notes>
   </release>
   <release>
    <version>

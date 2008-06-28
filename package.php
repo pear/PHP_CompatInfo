@@ -35,7 +35,7 @@ $options = array('filelistgenerator' => 'cvs',
     'simpleoutput' => true,
     'clearcontents' => false,
     'changelogoldtonew' => false,
-    'ignore' => array(__FILE__, 'tests/',
+    'ignore' => array(__FILE__,
        'funclist.txt', 'updateVersionInfo.php', 'version.xml')
     );
 
@@ -50,6 +50,7 @@ $p2->addRelease();
 $p2->addIgnoreToRelease('scripts/compatinfo.bat');
 $p2->addInstallAs('scripts/pci.php', 'pci');
 //$p2->addReplacement('scripts/pci.php', 'pear-config', '@php_bin@', 'php_bin');
+/*
 $p2->addReplacement('CompatInfo/Parser.php', 'package-info', '@package_version@', 'version');
 $p2->addReplacement('CompatInfo/Renderer.php', 'package-info', '@package_version@', 'version');
 $p2->addReplacement('CompatInfo/Renderer/Array.php', 'package-info', '@package_version@', 'version');
@@ -60,37 +61,32 @@ $p2->addReplacement('CompatInfo/Renderer/Csv.php', 'package-info', '@package_ver
 $p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_version@', 'version');
 $p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_name@', 'name');
 $p2->addReplacement('CompatInfo/Renderer/Html.php', 'pear-config', '@data_dir@', 'data_dir');
-$p2->setReleaseVersion('1.8.0b4');
+*/
+$p2->setReleaseVersion('1.8.0RC1');
 $p2->setAPIVersion('1.8.0');
 $p2->setReleaseStability('beta');
 $p2->setAPIStability('stable');
-$p2->setNotes('* changes
-- Text Renderer: support output-level 16 (display filter on version)
-- Xml  Renderer: support all output-level, verbose 4+ or debug mode
-- CLI: default output-level is now 31 (still all details, as before with 15)
-       since version may be hide (level 16)
+$p2->setNotes('Probably the last release before final version planned for August 1st.
+Please give it a good testing !
 
-* news
-- 2 more renderers: Html and Csv
-- 3 more examples:
-  pci180_parsedir_tohtml
-    = how to use your own html renderer (site web layout integration)
-  pci180_parsefolder_tohtml
-    = parse a huge folder and wait result with a progress bar
-  pci180_parsestring_toxml
-    = parse an array of string and debug it with an observer
+* bugs
+- #14187 : cli -r switch does not work in 1.8.0.b4
+- getFileList() obey now to "recurse_dir" option (when set to false)
+- parse functions obey now to "ignore_files" option
+
+* changes
+- Result values are now sorted in alphabetic order for a better human reading
+Thats include 6 following entries:
+"ignore_functions", "ignore_extensions", "ignore_constants"
+"functions" "extensions" "constants"
+- Event "AuditFinised" give now the result of parsing
 
 Do not forget to have a look on all examples pci180_parse* that demonstrates
 the new API.
 
-* Milestones
-- Release Candidate 1: July 1st (with unit test suite, and first draft of user-doc)
-- Stable: August 1st
-Please give it a good testing !
-
 * QA
-- Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until RC1
+- Test Suites (Standard, Bugs, Cli) included in this first release candidate
+are full compatible with API 1.8.0
 ');
 //$p2->setPearinstallerDep('1.5.4');
 //$p2->setPhpDep('4.3.10');
