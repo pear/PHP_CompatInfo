@@ -122,15 +122,18 @@ class PHP_CompatInfo
      * @param string|boolean $max           (optional) PHP maximal version
      * @param boolean        $include_const (optional) include constants list
      *                                                 in final result
+     * @param boolean        $groupby_vers  (optional) give initial php version
+     *                                                 of function or constant
      *
      * @return array         An array of php function/constant names to ignore
      * @access public
      * @static
      * @since  version 1.2.0 (2006-08-23)
      */
-    function loadVersion($min, $max = false, $include_const = false)
+    function loadVersion($min, $max = false,
+                         $include_const = false, $groupby_vers = false)
     {
-        return $this->parser->loadVersion($min, $max, $include_const);
+        return $this->parser->loadVersion($min, $max, $include_const, $groupby_vers);
     }
 
     /**

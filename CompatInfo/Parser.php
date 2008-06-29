@@ -263,49 +263,72 @@ class PHP_CompatInfo_Parser
      * @param string|boolean $max           (optional) PHP maximal version
      * @param boolean        $include_const (optional) include constants list
      *                                                 in final result
+     * @param boolean        $groupby_vers  (optional) give initial php version
+     *                                                 of function or constant
      *
      * @return array         An array of php function/constant names to ignore
      * @access public
      * @static
      * @since  version 1.2.0 (2006-08-23)
      */
-    function loadVersion($min, $max = false, $include_const = false)
+    function loadVersion($min, $max = false,
+                         $include_const = false, $groupby_vers = false)
     {
         $keys = array();
         foreach ($GLOBALS['_PHP_COMPATINFO_FUNCS'] as $func => $arr) {
             if (isset($arr['pecl']) && $arr['pecl'] === true) {
                 continue;
             }
-            if (version_compare($arr['init'], $min) < 0) {
+            $vmin = $arr['init'];
+            if (version_compare($vmin, $min) < 0) {
                 continue;
             }
             if ($max) {
-                $end = (isset($arr['end'])) ? $arr['end'] : $arr['init'];
+                $end = (isset($arr['end'])) ? $arr['end'] : $vmin;
 
                 if (version_compare($end, $max) < 1) {
-                    $keys[] = $func;
+                    if ($groupby_vers === true) {
+                        $keys[$vmin][] = $func;
+                    } else {
+                        $keys[] = $func;
+                    }
                 }
             } else {
-                $keys[] = $func;
+                if ($groupby_vers === true) {
+                    $keys[$vmin][] = $func;
+                } else {
+                    $keys[] = $func;
+                }
             }
         }
+        ksort($keys);
 
         if ($include_const === true) {
             $keys = array('functions' => $keys, 'constants' => array());
             foreach ($GLOBALS['_PHP_COMPATINFO_CONST'] as $const => $arr) {
-                if (version_compare($arr['init'], $min) < 0) {
+                $vmin = $arr['init'];
+                if (version_compare($vmin, $min) < 0) {
                     continue;
                 }
                 if ($max) {
-                    $end = (isset($arr['end'])) ? $arr['end'] : $arr['init'];
+                    $end = (isset($arr['end'])) ? $arr['end'] : $vmin;
 
                     if (version_compare($end, $max) < 1) {
-                        $keys['constants'][] = $arr['name'];
+                        if ($groupby_vers === true) {
+                            $keys['constants'][$vmin][] = $arr['name'];
+                        } else {
+                            $keys['constants'][] = $arr['name'];
+                        }
                     }
                 } else {
-                    $keys['constants'][] = $arr['name'];
+                    if ($groupby_vers === true) {
+                        $keys['constants'][$vmin][] = $arr['name'];
+                    } else {
+                        $keys['constants'][] = $arr['name'];
+                    }
                 }
             }
+            ksort($keys['constants']);
         }
         return $keys;
     }
