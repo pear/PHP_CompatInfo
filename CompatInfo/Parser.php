@@ -345,18 +345,10 @@ class PHP_CompatInfo_Parser
      */
     function getFilelist($dir, $options)
     {
-        $skipped         = array();
-        $ignored         = array();
-        $default_options = array(
-            'file_ext' => array('php', 'php4', 'inc', 'phtml'),
-            'recurse_dir' => true,
-            'debug' => false,
-            'ignore_files' => array(),
-            'ignore_dirs' => array()
-            );
+        $skipped = array();
+        $ignored = array();
 
-        $options = array_merge($default_options, $options);
-
+        $options             = array_merge($this->options, $options);
         $options['file_ext'] = array_map('strtolower', $options['file_ext']);
 
         if ($dir{strlen($dir)-1} == '/' || $dir{strlen($dir)-1} == '\\') {
