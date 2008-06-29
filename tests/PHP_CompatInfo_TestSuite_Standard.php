@@ -1308,6 +1308,70 @@ php_check_syntax('somefile.php');
     }
 
     /**
+     * Tests loading function list for a range of PHP version,
+     * group by version number
+     *
+     * What's new with versions 4.3.2 to 4.4.0 : 13 + 30 + 5 functions
+     *
+     * @return void
+     * @covers PHP_CompatInfo::loadVersion
+     * @group  loadVersion
+     */
+    public function testLoadVersionRangeGroupByVersion()
+    {
+        $r   = $this->pci->loadVersion('4.3.2', '4.4.0', false, true);
+        $exp = array('4.3.2' => array('apache_get_modules',
+                                      'apache_get_version',
+                                      'domxml_attr_set_value',
+                                      'domxml_doc_free_doc',
+                                      'imageantialias',
+                                      'imagecolorallocatealpha',
+                                      'imageistruecolor',
+                                      'imagesavealpha',
+                                      'memory_get_usage',
+                                      'ocipasswordchange',
+                                      'session_regenerate_id',
+                                      'stream_wrapper_register',
+                                      'zlib_get_coding_type'),
+                     '4.3.3' => array('bzclose',
+                                      'bzcompress',
+                                      'bzdecompress',
+                                      'bzerrno',
+                                      'bzerror',
+                                      'bzerrstr',
+                                      'bzflush',
+                                      'bzopen',
+                                      'bzread',
+                                      'bzwrite',
+                                      'imap_timeout',
+                                      'nsapi_request_headers',
+                                      'nsapi_response_headers',
+                                      'nsapi_virtual',
+                                      'snmp_get_valueretrieval',
+                                      'snmp_set_valueretrieval',
+                                      'solid_fetch_prev',
+                                      'swfmovie_add',
+                                      'swfmovie_init',
+                                      'swfmovie_labelframe',
+                                      'swfmovie_nextframe',
+                                      'swfmovie_output',
+                                      'swfmovie_save',
+                                      'swfmovie_savetofile',
+                                      'swfmovie_setbackground',
+                                      'swfmovie_setdimension',
+                                      'swfmovie_setframes',
+                                      'swfmovie_setrate',
+                                      'swfmovie_streammp3',
+                                      'swfsprite_labelframe'),
+                     '4.4.0' => array('session_commit',
+                                      'snmp2_get',
+                                      'snmp2_real_walk',
+                                      'snmp2_set',
+                                      'snmp2_walk'));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
      * Tests loading function+constant list for a single PHP version
      *
      * What's new with version 4.3.10 : 0 functions and 2 new constants
@@ -1322,6 +1386,75 @@ php_check_syntax('somefile.php');
         $exp = array('functions' => array(),
                      'constants' => array('PHP_EOL',
                                           'UPLOAD_ERR_NO_TMP_DIR'));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests loading function list for a range of PHP version,
+     * group by version number
+     *
+     * What's new with versions 4.3.2 to 4.4.0 : 13 + 30 + 5 functions
+     *
+     * @return void
+     * @covers PHP_CompatInfo::loadVersion
+     * @group  loadVersion
+     */
+    public function testLoadVersionRangeWithConstantGroupByVersion()
+    {
+        $r   = $this->pci->loadVersion('4.3.2', '4.4.0', true, true);
+        $exp = array('functions' => array(
+                     '4.3.2' => array('apache_get_modules',
+                                      'apache_get_version',
+                                      'domxml_attr_set_value',
+                                      'domxml_doc_free_doc',
+                                      'imageantialias',
+                                      'imagecolorallocatealpha',
+                                      'imageistruecolor',
+                                      'imagesavealpha',
+                                      'memory_get_usage',
+                                      'ocipasswordchange',
+                                      'session_regenerate_id',
+                                      'stream_wrapper_register',
+                                      'zlib_get_coding_type'),
+                     '4.3.3' => array('bzclose',
+                                      'bzcompress',
+                                      'bzdecompress',
+                                      'bzerrno',
+                                      'bzerror',
+                                      'bzerrstr',
+                                      'bzflush',
+                                      'bzopen',
+                                      'bzread',
+                                      'bzwrite',
+                                      'imap_timeout',
+                                      'nsapi_request_headers',
+                                      'nsapi_response_headers',
+                                      'nsapi_virtual',
+                                      'snmp_get_valueretrieval',
+                                      'snmp_set_valueretrieval',
+                                      'solid_fetch_prev',
+                                      'swfmovie_add',
+                                      'swfmovie_init',
+                                      'swfmovie_labelframe',
+                                      'swfmovie_nextframe',
+                                      'swfmovie_output',
+                                      'swfmovie_save',
+                                      'swfmovie_savetofile',
+                                      'swfmovie_setbackground',
+                                      'swfmovie_setdimension',
+                                      'swfmovie_setframes',
+                                      'swfmovie_setrate',
+                                      'swfmovie_streammp3',
+                                      'swfsprite_labelframe'),
+                     '4.4.0' => array('session_commit',
+                                      'snmp2_get',
+                                      'snmp2_real_walk',
+                                      'snmp2_set',
+                                      'snmp2_walk')),
+                     'constants' => array(
+                     '4.3.10' => array('PHP_EOL',
+                                       'UPLOAD_ERR_NO_TMP_DIR')
+                                       ));
         $this->assertSame($exp, $r);
     }
 
