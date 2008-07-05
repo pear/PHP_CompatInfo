@@ -187,46 +187,48 @@ class PHP_CompatInfo_Renderer_Array extends PHP_CompatInfo_Renderer
             unset($data['functions']);
         }
 
-        if ($this->args['summarize'] === true) {
-            foreach ($files as $file) {
-                unset($data[$file]);
-            }
-        } else {
-            foreach ($files as $file) {
-                if ($o & 16) {
-                    // display Version
-                } else {
-                    unset($data[$file]['version'], $data[$file]['max_version']);
+        if (count($files) > 1) {
+            if ($this->args['summarize'] === true) {
+                foreach ($files as $file) {
+                    unset($data[$file]);
                 }
-                if ($o & 1) {
-                    // display Conditions
-                } else {
-                    unset($data[$file]['cond_code']);
-                }
-                if ($o & 2) {
-                    // display Extensions
-                } else {
-                    unset($data[$file]['extensions']);
-                }
-                if ($o & 4) {
-                    if ($o & 8) {
-                        // display Constants/Tokens
+            } else {
+                foreach ($files as $file) {
+                    if ($o & 16) {
+                        // display Version
                     } else {
-                        // display Constants
-                        unset($data[$file]['tokens']);
+                        unset($data[$file]['version'], $data[$file]['max_version']);
                     }
-                } else {
-                    unset($data[$file]['constants']);
-                    if ($o & 8) {
-                        // display Tokens
+                    if ($o & 1) {
+                        // display Conditions
                     } else {
-                        unset($data[$file]['tokens']);
+                        unset($data[$file]['cond_code']);
                     }
-                }
-                if ($v & 4 || $options['debug'] == true) {
-                    // display Functions
-                } else {
-                    unset($data[$file]['functions']);
+                    if ($o & 2) {
+                        // display Extensions
+                    } else {
+                        unset($data[$file]['extensions']);
+                    }
+                    if ($o & 4) {
+                        if ($o & 8) {
+                            // display Constants/Tokens
+                        } else {
+                            // display Constants
+                            unset($data[$file]['tokens']);
+                        }
+                    } else {
+                        unset($data[$file]['constants']);
+                        if ($o & 8) {
+                            // display Tokens
+                        } else {
+                            unset($data[$file]['tokens']);
+                        }
+                    }
+                    if ($v & 4 || $options['debug'] == true) {
+                        // display Functions
+                    } else {
+                        unset($data[$file]['functions']);
+                    }
                 }
             }
         }
