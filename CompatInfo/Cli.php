@@ -490,7 +490,7 @@ class PHP_CompatInfo_Cli
         }
 
         if ($args->isDefined('r')) {
-            $report = $args['report'];
+            $report = $args->getValue('r');;
         } else {
             $report = 'text';
         }
