@@ -89,6 +89,8 @@ class PHP_CompatInfo_Renderer
     var $conf;
 
     /**
+     * Base Renderer Class constructor
+     *
      * Base Renderer Class constructor (ZE1) for PHP4
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
@@ -103,6 +105,8 @@ class PHP_CompatInfo_Renderer
     }
 
     /**
+     * Base Renderer Class constructor
+     *
      * Base Renderer Class constructor (ZE2) for PHP5+
      *
      * @param object &$parser Instance of the parser (model of MVC pattern)
@@ -185,8 +189,10 @@ class PHP_CompatInfo_Renderer
     /**
      * Create required instance of the Output 'driver'.
      *
+     * Creates a concrete instance of the renderer depending of $type
+     *
      * @param object &$parser A concrete instance of the parser
-     * @param string $type    (optional) Type of instance required, lowercase.
+     * @param string $type    (optional) Type of instance required, case insensitive
      * @param array  $conf    (optional) A hash containing any additional
      *                        configuration information that a subclass might need.
      *
@@ -220,8 +226,9 @@ class PHP_CompatInfo_Renderer
     }
 
     /**
-     * Interface to update the view with current information
+     * Update the current view
      *
+     * Interface to update the view with current information.
      * Listen events produced by Event_Dispatcher and the PHP_CompatInfo_Parser
      *
      * @param object &$auditEvent Instance of Event_Dispatcher
@@ -328,9 +335,9 @@ class PHP_CompatInfo_Renderer
     }
 
     /**
-     * Finish waiting process
+     * Finish the wait process
      *
-     * Finish waiting process, by erasing the progress bar
+     * Finish the wait process, by erasing the progress bar
      *
      * @return void
      * @access public
@@ -348,6 +355,8 @@ class PHP_CompatInfo_Renderer
     }
 
     /**
+     * Checks if in the include path
+     *
      * Returns whether or not a file is in the include path
      *
      * @param string $file Path to filename to check if includable
