@@ -11,7 +11,6 @@
  * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
- * @global   array $GLOBALS['_PHP_COMPATINFO_CONST']
  * @ignore
  */
 
@@ -24,6 +23,7 @@
  *       Using PHP from the command line: CLI specific Constants
  * @link http://www.php.net/features.file-upload.errors
  *       File Upload Error specific Constants
+ * @global   array $GLOBALS['_PHP_COMPATINFO_CONST']
  */
 
 $GLOBALS['_PHP_COMPATINFO_CONST'] = array (
