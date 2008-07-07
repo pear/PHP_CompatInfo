@@ -266,7 +266,7 @@ class PHP_CompatInfo_Parser
      * @param boolean        $groupby_vers  (optional) give initial php version
      *                                                 of function or constant
      *
-     * @return array         An array of php function/constant names to ignore
+     * @return array         An array of php function/constant names history
      * @access public
      * @static
      * @since  version 1.2.0 (2006-08-23)
@@ -342,7 +342,7 @@ class PHP_CompatInfo_Parser
      * @param array $options An array of parser options. See parseData() method.
      *
      * @access public
-     * @return array
+     * @return array   list of directories that should be parsed
      * @since  version 1.8.0b2 (2008-06-03)
      */
     function getDirlist($dir, $options)
@@ -363,7 +363,7 @@ class PHP_CompatInfo_Parser
      * @param array $options An array of parser options. See parseData() method.
      *
      * @access public
-     * @return array
+     * @return array   list of files that should be parsed
      * @since  version 1.8.0b2 (2008-06-03)
      */
     function getFilelist($dir, $options)

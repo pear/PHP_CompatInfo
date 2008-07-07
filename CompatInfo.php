@@ -125,7 +125,7 @@ class PHP_CompatInfo
      * @param boolean        $groupby_vers  (optional) give initial php version
      *                                                 of function or constant
      *
-     * @return array         An array of php function/constant names to ignore
+     * @return array         An array of php function/constant names history
      * @access public
      * @static
      * @since  version 1.2.0 (2006-08-23)
