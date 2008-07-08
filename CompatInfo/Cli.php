@@ -69,7 +69,9 @@ class PHP_CompatInfo_Cli
 
 
     /**
-     * ZE2 Constructor
+     * Command-Line Class constructor
+     *
+     * Command-Line Class constructor (ZE2) for PHP5+
      *
      * @since  version 0.8.0 (2004-04-22)
      */
@@ -191,7 +193,9 @@ class PHP_CompatInfo_Cli
     }
 
     /**
-     * ZE1 PHP4 Compatible Constructor
+     * Command-Line Class constructor
+     *
+     * Command-Line Class constructor (ZE1) for PHP4
      *
      * @since  version 0.8.0 (2004-04-22)
      */
@@ -201,7 +205,9 @@ class PHP_CompatInfo_Cli
     }
 
     /**
-     * Run the CLI Script
+     * Run the CLI version
+     *
+     * Run the CLI version of PHP_CompatInfo
      *
      * @return void
      * @access public
