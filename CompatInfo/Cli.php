@@ -71,7 +71,7 @@ class PHP_CompatInfo_Cli
     /**
      * ZE2 Constructor
      *
-     * @since  0.8.0
+     * @since  version 0.8.0 (2004-04-22)
      */
     function __construct()
     {
@@ -193,7 +193,7 @@ class PHP_CompatInfo_Cli
     /**
      * ZE1 PHP4 Compatible Constructor
      *
-     * @since  0.8.0
+     * @since  version 0.8.0 (2004-04-22)
      */
     function PHP_CompatInfo_Cli()
     {
@@ -205,7 +205,7 @@ class PHP_CompatInfo_Cli
      *
      * @return void
      * @access public
-     * @since  0.8.0
+     * @since  version 0.8.0 (2004-04-22)
      */
     function run()
     {
@@ -566,7 +566,7 @@ class PHP_CompatInfo_Cli
      *
      * @return void
      * @access private
-     * @since  0.8.0
+     * @since  version 0.8.0 (2004-04-22)
      */
     function _printUsage($footer = '')
     {
