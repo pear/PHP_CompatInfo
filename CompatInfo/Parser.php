@@ -243,7 +243,7 @@ class PHP_CompatInfo_Parser
      * @param string $event Name of the notification handler
      * @param array  $info  (optional) Additional information about the notification
      *
-     * @access private
+     * @access public
      * @return void
      * @since  version 1.8.0b2 (2008-06-03)
      */
