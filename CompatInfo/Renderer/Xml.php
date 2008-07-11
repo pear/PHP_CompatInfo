@@ -61,6 +61,9 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
      */
     function __construct(&$parser, $conf)
     {
+        $defaults = array('use-beautifier' => 'auto');
+        $conf     = array_merge($defaults, $conf);
+
         parent::PHP_CompatInfo_Renderer($parser, $conf);
     }
 
@@ -285,15 +288,17 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
         $msg .= XML_Util::createEndElement('pci');
         $msg .= PHP_EOL;
 
-        // try to see if we can improve XML render
-        $beautifier = 'XML/Beautifier.php';
-        if (PHP_CompatInfo_Renderer::isIncludable($beautifier)) {
-            include_once $beautifier;
-            $def = array();
-            $opt = isset($this->conf['beautifier'])
-                 ? $this->conf['beautifier'] : $def;
-            $fmt = new XML_Beautifier($opt);
-            $msg = $fmt->formatString($msg);
+        if (strtolower($this->conf['use-beautifier']) != 'no') {
+            // try to see if we can improve XML render
+            $beautifier = 'XML/Beautifier.php';
+            if (PHP_CompatInfo_Renderer::isIncludable($beautifier)) {
+                include_once $beautifier;
+                $def = array();
+                $opt = isset($this->conf['beautifier'])
+                     ? $this->conf['beautifier'] : $def;
+                $fmt = new XML_Beautifier($opt);
+                $msg = $fmt->formatString($msg);
+            }
         }
 
         echo $msg;
