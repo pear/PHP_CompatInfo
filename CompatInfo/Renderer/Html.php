@@ -289,6 +289,8 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
     }
 
     /**
+     * Returns the custom style sheet
+     *
      * Returns the custom style sheet to use for layout
      *
      * @param int   $destination (optional) Destination of css content
@@ -353,7 +355,9 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
     }
 
     /**
-     * Set the custom style sheet to use your own styles
+     * Set a custom style sheet
+     *
+     * Set a custom style sheet to use your own styles
      *
      * @param string $css (optional) File to read user-defined styles from
      *
@@ -378,6 +382,8 @@ class PHP_CompatInfo_Renderer_Html extends PHP_CompatInfo_Renderer
     }
 
     /**
+     * Returns HTML code
+     *
      * Returns HTML code of parsing result
      *
      * @param object $obj instance of HTML_Table
