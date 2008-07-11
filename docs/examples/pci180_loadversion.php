@@ -13,7 +13,7 @@
  * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
- * @since    version 1.8.0 (2008-08-01)
+ * @since    version 1.8.0RC2 (2008-07-18)
  * @ignore
  */
 
