@@ -172,6 +172,11 @@ class PHP_CompatInfo_Cli
                       'desc' => 'Print Path/File + Version with additional data',
                       'default' => 31,
                       'min'   => 0 , 'max' => 1),
+            'tab' =>
+                array('short' => 't',
+                      'desc'  => 'Columns width',
+                      'default' => '29,12,20',
+                      'min'   => 0 , 'max' => 1),
             'progress' =>
                 array('short' => 'p',
                       'desc' => 'Show a wait message [text] or a progress bar [bar]',
@@ -501,8 +506,29 @@ class PHP_CompatInfo_Cli
             $report = 'text';
         }
 
-        $compatInfo = new PHP_CompatInfo($report,
-                                         array('args' => $args->getValues()));
+        if ($args->isDefined('t')) {
+            $defs = array('f' => 29, 'e' => 12, 'c' => 20);
+            $tabs = $args->getValue('t');
+            $tabs = explode(',', $tabs);
+            for ($t = 0; $t < 3; $t++) {
+                if (isset($tabs[$t])) {
+                    if ($t == 0) {
+                        $defs['f'] = (int)$tabs[$t];
+                    } elseif ($t == 1) {
+                        $defs['e'] = (int)$tabs[$t];
+                    } else {
+                        $defs['c'] = (int)$tabs[$t];
+                    }
+                }
+            }
+            $conf = array('colwidth' => $defs);
+        } else {
+            $conf = array();
+        }
+        $conf = array_merge($conf, array('args' => $args->getValues()));
+
+        $compatInfo = new PHP_CompatInfo($report, $conf);
+
         // dir
         if ($args->isDefined('d')) {
             $d     = $args->getValue('d');
