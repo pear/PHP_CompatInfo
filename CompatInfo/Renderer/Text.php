@@ -61,6 +61,9 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
      */
     function __construct(&$parser, $conf)
     {
+        $defaults = array('colwidth' => array('f' => 29, 'e' => 12, 'c' => 20));
+        $conf     = array_merge($defaults, $conf);
+
         parent::PHP_CompatInfo_Renderer($parser, $conf);
     }
 
@@ -132,7 +135,7 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
         $table->setHeaders($hdr);
         $filter0 = array(&$this, '_splitFilename');
         $table->addFilter(0, $filter0);
-        if ($o > 3) {
+        if ($o > 3 && $o < 16 || $o > 19) {
             $filter3 = array(&$this, '_splitConstant');
             $table->addFilter($f, $filter3);
         }
@@ -352,10 +355,12 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
      */
     function _splitFilename($data)
     {
-        if (strlen($data) <= 27) {
-            $str = str_pad($data, 27);
+        $w = $this->conf['colwidth']['f'] - 2;
+
+        if (strlen($data) <= $w) {
+            $str = str_pad($data, $w);
         } else {
-            $str = '...' . substr($data, (strlen($data) - 24));
+            $str = '...' . substr($data, (strlen($data) - ($w - 3)));
         }
         return $str;
     }
@@ -373,10 +378,7 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
      */
     function _splitExtname($data)
     {
-        $szlim = ($this->args['output-level'] & 12) ? 10 : 35;
-        if ($this->args['output-level'] & 1) {
-            $szlim = $szlim - 4;
-        }
+        $szlim  = $this->conf['colwidth']['e'] - 2;
         $extArr = explode("\r\n", $data);
         $str    = '';
         foreach ($extArr as $ext) {
@@ -404,10 +406,7 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
      */
     function _splitConstant($data)
     {
-        $szlim = ($this->args['output-level'] & 2) ? 22 : 35;
-        if ($this->args['output-level'] & 1) {
-            $szlim = $szlim - 4;
-        }
+        $szlim  = $this->conf['colwidth']['c'] - 2;
         $cstArr = explode("\r\n", $data);
         $str    = '';
         foreach ($cstArr as $cst) {
