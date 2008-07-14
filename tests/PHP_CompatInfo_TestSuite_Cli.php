@@ -110,11 +110,11 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
     public function testBug3657()
     {
         $ds  = DIRECTORY_SEPARATOR;
-        $exp = array('+-----------------------------+---------+------------+------------------------+',
-                     '| File                        | Version | Extensions | Constants/Tokens       |',
-                     '+-----------------------------+---------+------------+------------------------+',
-                     '| ...File'.$ds.'phpweb-entities.php | 4.0.0   |            | __FILE__               |',
-                     '+-----------------------------+---------+------------+------------------------+');
+        $exp = array('+-----------------------------+---------+------------+--------------------+',
+                     '| File                        | Version | Extensions | Constants/Tokens   |',
+                     '+-----------------------------+---------+------------+--------------------+',
+                     '| ...File'.$ds.'phpweb-entities.php | 4.0.0   |            | __FILE__           |',
+                     '+-----------------------------+---------+------------+--------------------+');
 
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'phpweb-entities.php';
 
@@ -134,12 +134,12 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
     public function testBug6581()
     {
         $ds  = DIRECTORY_SEPARATOR;
-        $exp = array('+-----------------------------+---------+------------+------------------------+',
-                     '| File                        | Version | Extensions | Constants/Tokens       |',
-                     '+-----------------------------+---------+------------+------------------------+',
-                     '| ...tests'.$ds.'parseFile'.$ds.'math.php | 4.0.0   | bcmath     |                        |',
-                     '|                             |         | pcre       |                        |',
-                     '+-----------------------------+---------+------------+------------------------+');
+        $exp = array('+-----------------------------+---------+------------+--------------------+',
+                     '| File                        | Version | Extensions | Constants/Tokens   |',
+                     '+-----------------------------+---------+------------+--------------------+',
+                     '| ...tests'.$ds.'parseFile'.$ds.'math.php | 4.0.0   | bcmath     |                    |',
+                     '|                             |         | pcre       |                    |',
+                     '+-----------------------------+---------+------------+--------------------+');
 
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'math.php';
 
@@ -213,6 +213,7 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
                      '                                                  report (text)',
                      '  -o   --output-level (optional)value             Print Path/File + Version with',
                      '                                                  additional data (31)',
+                     '  -t   --tab (optional)value                      Columns width (29,12,20)',
                      '  -p   --progress (optional)value                 Show a wait message [text] or',
                      '                                                  a progress bar [bar] (bar)',
                      '  -S   --summarize                                Print only summary when',
@@ -242,12 +243,12 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      */
     public function testBug12350()
     {
-        $exp = array('+-----------------------------+---------+------------+------------------------+',
-                     '| File                        | Version | Extensions | Constants/Tokens       |',
-                     '+-----------------------------+---------+------------+------------------------+',
-                     '| checkMax.php                | 4.0.7   |            | DIRECTORY_SEPARATOR    |',
-                     '|                             |         |            | __FILE__               |',
-                     '+-----------------------------+---------+------------+------------------------+');
+        $exp = array('+-----------------------------+---------+------------+--------------------+',
+                     '| File                        | Version | Extensions | Constants/Tokens   |',
+                     '+-----------------------------+---------+------------+--------------------+',
+                     '| checkMax.php                | 4.0.7   |            | ...CTORY_SEPARATOR |',
+                     '|                             |         |            | __FILE__           |',
+                     '+-----------------------------+---------+------------+--------------------+');
 
         chdir(dirname(__FILE__));
         $args = '-o 30 -f checkMax.php';
@@ -287,61 +288,61 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
     public function testRequest13147()
     {
         $ds  = DIRECTORY_SEPARATOR;
-        $exp = array('+-----------------------------+---------+------------+------------------------+',
-                     '| Files                       | Version | Extensions | Constants/Tokens       |',
-                     '+-----------------------------+---------+------------+------------------------+',
-                     '| ...patInfo'.$ds.'tests'.$ds.'parseDir'.$ds.'* | 5.2.0   | gd         | UPLOAD_ERR_CANT_WRITE  |',
-                     '|                             |         | ..._apache | UPLOAD_ERR_EXTENSION   |',
-                     '|                             |         | sapi_cgi   | UPLOAD_ERR_FORM_SIZE   |',
-                     '|                             |         | sqlite     | UPLOAD_ERR_INI_SIZE    |',
-                     '|                             |         | xdebug     | UPLOAD_ERR_NO_FILE     |',
-                     '|                             |         |            | UPLOAD_ERR_NO_TMP_DIR  |',
-                     '|                             |         |            | UPLOAD_ERR_OK          |',
-                     '|                             |         |            | UPLOAD_ERR_PARTIAL     |',
-                     '|                             |         |            | abstract               |',
-                     '|                             |         |            | catch                  |',
-                     '|                             |         |            | clone                  |',
-                     '|                             |         |            | final                  |',
-                     '|                             |         |            | implements             |',
-                     '|                             |         |            | instanceof             |',
-                     '|                             |         |            | interface              |',
-                     '|                             |         |            | private                |',
-                     '|                             |         |            | protected              |',
-                     '|                             |         |            | public                 |',
-                     '|                             |         |            | throw                  |',
-                     '|                             |         |            | try                    |',
-                     '+-----------------------------+---------+------------+------------------------+',
-                     '| ...'.$ds.'parseDir'.$ds.'extensions.php | 4.3.2   | gd         |                        |',
-                     '|                             |         | ..._apache |                        |',
-                     '|                             |         | sapi_cgi   |                        |',
-                     '|                             |         | sqlite     |                        |',
-                     '|                             |         | xdebug     |                        |',
-                     '+-----------------------------+---------+------------+------------------------+',
-                     '| ...sts'.$ds.'parseDir'.$ds.'phpinfo.php | 4.0.0   |            |                        |',
-                     '+-----------------------------+---------+------------+------------------------+',
-                     '| ...arseDir'.$ds.'PHP5'.$ds.'tokens.php5 | 5.0.0   |            | abstract               |',
-                     '|                             |         |            | catch                  |',
-                     '|                             |         |            | clone                  |',
-                     '|                             |         |            | final                  |',
-                     '|                             |         |            | implements             |',
-                     '|                             |         |            | instanceof             |',
-                     '|                             |         |            | interface              |',
-                     '|                             |         |            | private                |',
-                     '|                             |         |            | protected              |',
-                     '|                             |         |            | public                 |',
-                     '|                             |         |            | throw                  |',
-                     '|                             |         |            | try                    |',
-                     '+-----------------------------+---------+------------+------------------------+',
-                     '| ...ir'.$ds.'PHP5'.$ds.'upload_error.php | 5.2.0   |            | UPLOAD_ERR_CANT_WRITE  |',
-                     '|                             |         |            | UPLOAD_ERR_EXTENSION   |',
-                     '|                             |         |            | UPLOAD_ERR_FORM_SIZE   |',
-                     '|                             |         |            | UPLOAD_ERR_INI_SIZE    |',
-                     '|                             |         |            | UPLOAD_ERR_NO_FILE     |',
-                     '|                             |         |            | UPLOAD_ERR_NO_TMP_DIR  |',
-                     '|                             |         |            | UPLOAD_ERR_OK          |',
-                     '|                             |         |            | UPLOAD_ERR_PARTIAL     |',
-                     '|                             |         |            | throw                  |',
-                     '+-----------------------------+---------+------------+------------------------+');
+        $exp = array('+-----------------------------+---------+------------+--------------------+',
+                     '| Files                       | Version | Extensions | Constants/Tokens   |',
+                     '+-----------------------------+---------+------------+--------------------+',
+                     '| ...patInfo'.$ds.'tests'.$ds.'parseDir'.$ds.'* | 5.2.0   | gd         | ..._ERR_CANT_WRITE |',
+                     '|                             |         | ..._apache | ...D_ERR_EXTENSION |',
+                     '|                             |         | sapi_cgi   | ...D_ERR_FORM_SIZE |',
+                     '|                             |         | sqlite     | ...AD_ERR_INI_SIZE |',
+                     '|                             |         | xdebug     | UPLOAD_ERR_NO_FILE |',
+                     '|                             |         |            | ..._ERR_NO_TMP_DIR |',
+                     '|                             |         |            | UPLOAD_ERR_OK      |',
+                     '|                             |         |            | UPLOAD_ERR_PARTIAL |',
+                     '|                             |         |            | abstract           |',
+                     '|                             |         |            | catch              |',
+                     '|                             |         |            | clone              |',
+                     '|                             |         |            | final              |',
+                     '|                             |         |            | implements         |',
+                     '|                             |         |            | instanceof         |',
+                     '|                             |         |            | interface          |',
+                     '|                             |         |            | private            |',
+                     '|                             |         |            | protected          |',
+                     '|                             |         |            | public             |',
+                     '|                             |         |            | throw              |',
+                     '|                             |         |            | try                |',
+                     '+-----------------------------+---------+------------+--------------------+',
+                     '| ...'.$ds.'parseDir'.$ds.'extensions.php | 4.3.2   | gd         |                    |',
+                     '|                             |         | ..._apache |                    |',
+                     '|                             |         | sapi_cgi   |                    |',
+                     '|                             |         | sqlite     |                    |',
+                     '|                             |         | xdebug     |                    |',
+                     '+-----------------------------+---------+------------+--------------------+',
+                     '| ...sts'.$ds.'parseDir'.$ds.'phpinfo.php | 4.0.0   |            |                    |',
+                     '+-----------------------------+---------+------------+--------------------+',
+                     '| ...arseDir'.$ds.'PHP5'.$ds.'tokens.php5 | 5.0.0   |            | abstract           |',
+                     '|                             |         |            | catch              |',
+                     '|                             |         |            | clone              |',
+                     '|                             |         |            | final              |',
+                     '|                             |         |            | implements         |',
+                     '|                             |         |            | instanceof         |',
+                     '|                             |         |            | interface          |',
+                     '|                             |         |            | private            |',
+                     '|                             |         |            | protected          |',
+                     '|                             |         |            | public             |',
+                     '|                             |         |            | throw              |',
+                     '|                             |         |            | try                |',
+                     '+-----------------------------+---------+------------+--------------------+',
+                     '| ...ir'.$ds.'PHP5'.$ds.'upload_error.php | 5.2.0   |            | ..._ERR_CANT_WRITE |',
+                     '|                             |         |            | ...D_ERR_EXTENSION |',
+                     '|                             |         |            | ...D_ERR_FORM_SIZE |',
+                     '|                             |         |            | ...AD_ERR_INI_SIZE |',
+                     '|                             |         |            | UPLOAD_ERR_NO_FILE |',
+                     '|                             |         |            | ..._ERR_NO_TMP_DIR |',
+                     '|                             |         |            | UPLOAD_ERR_OK      |',
+                     '|                             |         |            | UPLOAD_ERR_PARTIAL |',
+                     '|                             |         |            | throw              |',
+                     '+-----------------------------+---------+------------+--------------------+');
 
         $dn = dirname(__FILE__) . $ds . 'parseDir';
         $fe = 'php,php5';
