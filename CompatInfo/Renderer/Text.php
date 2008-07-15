@@ -180,25 +180,31 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
 
         $table->addRow($data);
 
+        unset($info['max_version']);
+        unset($info['version']);
+        unset($info['functions']);
+        unset($info['extensions']);
+        unset($info['constants']);
+        unset($info['tokens']);
+        unset($info['cond_code']);
+
+        $ignored       = $info['ignored_files'];
+        $all_functions = array();
+
+        unset($info['ignored_files']);
+        unset($info['ignored_functions']);
+        unset($info['ignored_extensions']);
+        unset($info['ignored_constants']);
+
         // summarize : print only summary for directory without files details
         if ($this->args['summarize'] === false && isset($dir)) {
 
-            unset($info['max_version']);
-            unset($info['version']);
-            unset($info['functions']);
-            unset($info['extensions']);
-            unset($info['constants']);
-            unset($info['tokens']);
-            unset($info['cond_code']);
-
-            $ignored = $info['ignored_files'];
-
-            unset($info['ignored_files']);
-            unset($info['ignored_functions']);
-            unset($info['ignored_extensions']);
-            unset($info['ignored_constants']);
-
             foreach ($info as $file => $info) {
+                if (is_numeric($file{0})) {
+                    // extra information available only when debug mode is on
+                    $all_functions[$file] = $info;
+                    continue;
+                }
                 if ($info === false) {
                     continue;  // skip this (invalid) file
                 }
@@ -238,7 +244,10 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
 
                 $table->addRow($data);
             }
+        } else {
+            $all_functions = $info;
         }
+
         $output = $table->getTable();
 
         // verbose level
@@ -310,24 +319,13 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
         }
 
         // extra information
-        if (($v & 4) && isset($file)) {
+        if ($v & 4) {
             $output .= "\nDebug:\n\n";
 
             $table = new Console_Table();
             $table->setHeaders(array('Version', 'Function', 'Extension', 'PECL'));
 
-            unset($info['ignored_functions']);
-            unset($info['ignored_extensions']);
-            unset($info['ignored_constants']);
-            unset($info['max_version']);
-            unset($info['version']);
-            unset($info['functions']);
-            unset($info['extensions']);
-            unset($info['constants']);
-            unset($info['tokens']);
-            unset($info['cond_code']);
-
-            foreach ($info as $version => $functions) {
+            foreach ($all_functions as $version => $functions) {
                 foreach ($functions as $func) {
                     $table->addRow(array($version,
                         $func['function'], $func['extension'],
@@ -338,7 +336,6 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
 
             $output .= $table->getTable();
         }
-
         echo $output;
     }
 
