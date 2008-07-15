@@ -727,6 +727,7 @@ class PHP_CompatInfo_Parser
         $files_parsed       = array();
         $latest_version     = $this->latest_version;
         $earliest_version   = $this->earliest_version;
+        $all_functions      = array();
         $functions          = array();
         $extensions         = array();
         $constants          = array();
@@ -831,6 +832,31 @@ class PHP_CompatInfo_Parser
             }
             if ($options['debug'] === false) {
                 unset($files_parsed[$fn]['cond_code'][1]);
+            } else {
+                unset($file['ignored_functions']);
+                unset($file['ignored_extensions']);
+                unset($file['ignored_constants']);
+                unset($file['max_version']);
+                unset($file['version']);
+                unset($file['functions']);
+                unset($file['extensions']);
+                unset($file['constants']);
+                unset($file['tokens']);
+                unset($file['cond_code']);
+
+                foreach ($file as $version => $functions) {
+                    // extra information available only when debug mode is on
+                    if (isset($all_functions[$version])) {
+                        foreach ($functions as $func) {
+                            $k = array_search($func, $all_functions[$version]);
+                            if ($k === false) {
+                                $all_functions[$version][] = $func;
+                            }
+                        }
+                    } else {
+                        $all_functions[$version] = $functions;
+                    }
+                }
             }
         }
 
@@ -879,10 +905,15 @@ class PHP_CompatInfo_Parser
                 $parseData = $main_info;
             } else {
                 $main_info = array('ignored_files' => $this->getIgnoredFiles());
-                $parseData = array_merge($main_info, $files_parsed[$kfile]);
+                $parseData = array_merge($main_info,
+                                         $files_parsed[$kfile], $all_functions);
             }
         } else {
-            $parseData = array_merge($main_info, $files_parsed);
+            if ($options['debug'] === false) {
+                $parseData = array_merge($main_info, $files_parsed);
+            } else {
+                $parseData = array_merge($main_info, $all_functions, $files_parsed);
+            }
         }
 
         $this->notifyListeners(PHP_COMPATINFO_EVENT_FILEFINISHED, $parseData);
