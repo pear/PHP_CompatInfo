@@ -62,31 +62,35 @@ $p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_ve
 $p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_name@', 'name');
 $p2->addReplacement('CompatInfo/Renderer/Html.php', 'pear-config', '@data_dir@', 'data_dir');
 */
-$p2->setReleaseVersion('1.8.0RC1');
+$p2->setReleaseVersion('1.8.0RC2');
 $p2->setAPIVersion('1.8.0');
 $p2->setReleaseStability('beta');
 $p2->setAPIStability('stable');
-$p2->setNotes('Probably the last release before final version planned for August 1st.
-Please give it a good testing !
+$p2->setNotes('14 days left before final stable version. Please give it a good testing !
+
+* news
+- Command-Line Interface:
+  new -t | --tab switch to set columns width (see also Text Renderer)
 
 * bugs
-- #14187 : cli -r switch does not work in 1.8.0.b4
-- getFileList() obey now to "recurse_dir" option (when set to false)
-- parse functions obey now to "ignore_files" option
+- final fix #14187: cli -r switch does not work in 1.8.0.b4
+- doc #14095: about missing information from C column in CLI result
+- fixed a PHP warning with Array renderer when parsing a single file
 
 * changes
-- Result values are now sorted in alphabetic order for a better human reading
-Thats include 6 following entries:
-"ignore_functions", "ignore_extensions", "ignore_constants"
-"functions" "extensions" "constants"
-- Event "AuditFinised" give now the result of parsing
-
-Do not forget to have a look on all examples pci180_parse* that demonstrates
-the new API.
-
-* QA
-- Test Suites (Standard, Bugs, Cli) included in this first release candidate
-are full compatible with API 1.8.0
+- Parser give now in summary, when debug mode is on,
+  the list of functions implemented by version
+- XML Renderer:
+  . Even if XML_Beautifier is available we can now avoid to use it. You are free
+    to manage the raw data.
+    -> Reason: old bug #5450 that strip the XML declaration
+    See: docs\examples\pci180_parsedata_toxml.php
+  . adds attribute "name" to string tag (for a better identification and search)
+- Text Renderer:
+  . You have now ability to set column width with config option "colwidth". Only
+    for Files, Extensions, Constants/Tokens. Version and C have always fixed width.
+  . Extra information given by debug mode (verbose level 4) is available both
+    for a single file or a directory
 ');
 //$p2->setPearinstallerDep('1.5.4');
 //$p2->setPhpDep('4.3.10');
@@ -96,7 +100,7 @@ are full compatible with API 1.8.0
 //$p2->addPackageDepWithChannel('required', 'File_Find', 'pear.php.net', '1.3.0');
 //$p2->addPackageDepWithChannel('optional', 'XML_Beautifier', 'pear.php.net', '1.1');
 //$p2->addPackageDepWithChannel('optional', 'Console_ProgressBar', 'pear.php.net', '0.5.2beta');
-$p2->addPackageDepWithChannel('optional', 'Var_Dump', 'pear.php.net', '1.0.3');
+//$p2->addPackageDepWithChannel('optional', 'Var_Dump', 'pear.php.net', '1.0.3');
 
 if (isset($_GET['make']) ||
     (isset($_SERVER['argv']) && @$_SERVER['argv'][1] == 'make')) {

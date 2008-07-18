@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-06-28</date>
- <time>15:50:16</time>
+ <date>2008-07-18</date>
+ <time>10:49:16</time>
  <version>
-  <release>1.8.0RC1</release>
+  <release>1.8.0RC2</release>
   <api>1.8.0</api>
  </version>
  <stability>
@@ -29,27 +29,31 @@ which shows which functions require which version and CLI output script</descrip
   <api>stable</api>
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
- <notes>Probably the last release before final version planned for August 1st.
-Please give it a good testing !
+ <notes>14 days left before final stable version. Please give it a good testing !
+
+* news
+- Command-Line Interface:
+  new -t | --tab switch to set columns width (see also Text Renderer)
 
 * bugs
-- #14187 : cli -r switch does not work in 1.8.0.b4
-- getFileList() obey now to &quot;recurse_dir&quot; option (when set to false)
-- parse functions obey now to &quot;ignore_files&quot; option
+- final fix #14187: cli -r switch does not work in 1.8.0.b4
+- doc #14095: about missing information from C column in CLI result
+- fixed a PHP warning with Array renderer when parsing a single file
 
 * changes
-- Result values are now sorted in alphabetic order for a better human reading
-Thats include 6 following entries:
-&quot;ignore_functions&quot;, &quot;ignore_extensions&quot;, &quot;ignore_constants&quot;
-&quot;functions&quot; &quot;extensions&quot; &quot;constants&quot;
-- Event &quot;AuditFinised&quot; give now the result of parsing
-
-Do not forget to have a look on all examples pci180_parse* that demonstrates
-the new API.
-
-* QA
-- Test Suites (Standard, Bugs, Cli) included in this first release candidate
-are full compatible with API 1.8.0
+- Parser give now in summary, when debug mode is on,
+  the list of functions implemented by version
+- XML Renderer:
+  . Even if XML_Beautifier is available we can now avoid to use it. You are free
+    to manage the raw data.
+    -&gt; Reason: old bug #5450 that strip the XML declaration
+    See: docs\examples\pci180_parsedata_toxml.php
+  . adds attribute &quot;name&quot; to string tag (for a better identification and search)
+- Text Renderer:
+  . You have now ability to set column width with config option &quot;colwidth&quot;. Only
+    for Files, Extensions, Constants/Tokens. Version and C have always fixed width.
+  . Extra information given by debug mode (verbose level 4) is available both
+    for a single file or a directory
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -102,8 +106,10 @@ are full compatible with API 1.8.0
      <file name="parseDir_withCustomProgressBar.php" role="doc" />
      <file name="parseFile.php" role="doc" />
      <file name="parseString.php" role="doc" />
+     <file name="pci180_loadversion.php" role="doc" />
      <file name="pci180_parsearray_files.php" role="doc" />
      <file name="pci180_parsearray_strings.php" role="doc" />
+     <file name="pci180_parsedata_toxml.php" role="doc" />
      <file name="pci180_parsedir_tohtml.php" role="doc" />
      <file name="pci180_parsefile.php" role="doc" />
      <file name="pci180_parsefolder.php" role="doc" />
@@ -259,6 +265,44 @@ are full compatible with API 1.8.0
   </filelist>
  </phprelease>
  <changelog>
+  <release>
+   <version>
+    <release>1.8.0RC2</release>
+    <api>1.8.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-07-18</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>14 days left before final stable version. Please give it a good testing !
+
+* news
+- Command-Line Interface:
+  new -t | --tab switch to set columns width (see also Text Renderer)
+
+* bugs
+- final fix #14187: cli -r switch does not work in 1.8.0.b4
+- doc #14095: about missing information from C column in CLI result
+- fixed a PHP warning with Array renderer when parsing a single file
+
+* changes
+- Parser give now in summary, when debug mode is on,
+  the list of functions implemented by version
+- XML Renderer:
+  . Even if XML_Beautifier is available we can now avoid to use it. You are free
+    to manage the raw data.
+    -&gt; Reason: old bug #5450 that strip the XML declaration
+    See: docs\examples\pci180_parsedata_toxml.php
+  . adds attribute &quot;name&quot; to string tag (for a better identification and search)
+- Text Renderer:
+  . You have now ability to set column width with config option &quot;colwidth&quot;. Only
+    for Files, Extensions, Constants/Tokens. Version and C have always fixed width.
+  . Extra information given by debug mode (verbose level 4) is available both
+    for a single file or a directory
+   </notes>
+  </release>
   <release>
    <version>
     <release>1.8.0RC1</release>
