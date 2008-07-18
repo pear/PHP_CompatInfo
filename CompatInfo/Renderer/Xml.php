@@ -174,7 +174,17 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             unset($this->parseData['tokens']);
             unset($this->parseData['cond_code']);
 
+            if ($options['debug'] == true) {
+                $entries = array_keys($this->parseData);
+                foreach ($entries as $k) {
+                    if (is_numeric($k{0})) {
+                        unset($this->parseData[$k]);
+                    }
+                }
+            }
+
             $files = $this->parseData;
+
         } elseif ($dataType == 'file') {
             // parsing a single file
             $files = array($dataSource => $this->parseData);
@@ -183,7 +193,8 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             $files = array($this->parseData);
         }
 
-        if ($this->args['summarize'] === false) {
+        if ($this->args['summarize'] === false
+            && count($files) > 1) {
 
             if ($options['is_string'] == false) {
                 // print <files> tag group
@@ -194,7 +205,8 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
 
             foreach ($files as $file => $this->parseData) {
                 if ($options['is_string'] == true) {
-                    $msg .= XML_Util::createStartElement('string');
+                    $msg .= XML_Util::createStartElement('string',
+                                                   array('name' => $file));
                 } else {
                     // print local <file> tag
                     $msg .= XML_Util::createStartElement('file',
