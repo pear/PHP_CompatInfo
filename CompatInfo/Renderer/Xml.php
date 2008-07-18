@@ -101,7 +101,9 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
         $dataType   = $this->_parser->dataSource['dataType'];
         $options    = $this->_parser->options;
 
-        if ($dataType == 'directory' || $dataType == 'array') {
+        if ($dataType == 'directory'
+            || $dataType == 'array'
+            || $dataType == 'file') {
             // parsing a directory or a list of files, chunks of code
 
             if ($options['is_string'] == false) {
@@ -183,11 +185,12 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
                 }
             }
 
-            $files = $this->parseData;
-
-        } elseif ($dataType == 'file') {
-            // parsing a single file
-            $files = array($dataSource => $this->parseData);
+            if ($dataType == 'file') {
+                // parsing a single file
+                $files = array($dataSource[0] => $this->parseData);
+            } else {
+                $files = $this->parseData;
+            }
         } else {
             // ... or a chunk of code (string)
             $files = array($this->parseData);
