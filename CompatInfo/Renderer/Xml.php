@@ -96,6 +96,7 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
                                        array('version' => '@package_version@'));
 
         $o = $this->args['output-level'];
+        $v = $this->args['verbose'];
 
         $dataSource = $this->_parser->dataSource['dataSource'];
         $dataType   = $this->_parser->dataSource['dataType'];
@@ -107,9 +108,15 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             // parsing a directory or a list of files, chunks of code
 
             if ($options['is_string'] == false) {
-                // print <dir> tag
-                $tag  = array('qname' => 'dir',
-                              'content' => dirname($dataSource[0]));
+                if ($dataType == 'directory') {
+                    // print <dir> tag
+                    $tag = array('qname' => 'dir',
+                                 'content' => dirname($dataSource[0]));
+                } else {
+                    // print <file> tag
+                    $tag = array('qname' => 'file',
+                                 'content' => $dataSource[0]);
+                }
                 $msg .= XML_Util::createTagFromArray($tag);
                 $msg .= PHP_EOL;
             }
@@ -176,7 +183,10 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             unset($this->parseData['tokens']);
             unset($this->parseData['cond_code']);
 
-            if ($options['debug'] == true) {
+            if ($v & 4 || $options['debug'] == true) {
+                // print local <functions> tag group
+                $msg .= $this->_printTagList($this->parseData, 'function');
+
                 $entries = array_keys($this->parseData);
                 foreach ($entries as $k) {
                     if (is_numeric($k{0})) {
@@ -266,9 +276,6 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
                 }
                 $msg .= XML_Util::createEndElement('ignored');
                 $msg .= PHP_EOL;
-
-                // verbose level
-                $v = $this->args['verbose'];
 
                 // extra information only if verbose mode >= 4
                 if ($v & 4 || $options['debug'] == true) {
