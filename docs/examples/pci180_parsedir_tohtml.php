@@ -12,7 +12,7 @@
  * @category PHP
  * @package  PHP_CompatInfo
  * @author   Laurent Laville <pear@laurent-laville.org>
- * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @since    version 1.8.0b4 (2008-06-18)
