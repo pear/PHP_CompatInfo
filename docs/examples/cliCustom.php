@@ -11,11 +11,11 @@
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @ignore
+ * @deprecated since version 1.8.0b2
  */
 require_once 'PHP/CompatInfo/Cli.php';
 
 // split filename to 30 char. max and continuation char. is +
 $cli = new PHP_CompatInfo_Cli(30, '+');
 $cli->run();
-
 ?>
