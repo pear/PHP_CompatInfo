@@ -109,6 +109,10 @@ $info = new PHP_CompatInfo();
 $file    = __FILE__;
 $options = array('debug' => true);
 
-var_dump($info->parseFile($file, $options));
-
+$r = $info->parseFile($file, $options);
+/*
+   To keep backward compatibility, result is also return (here in $r)
+   but you don't need to print it, it's the default behavior of API 1.8.0
+ */
+//var_export($r);
 ?>

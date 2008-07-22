@@ -27,6 +27,10 @@ $info = new PHP_CompatInfo();
 
 $file = __FILE__;
 
-var_dump($info->parseFile($file));
-
+$r = $info->parseFile($file);
+/*
+   To keep backward compatibility, result is also return (here in $r)
+   but you don't need to print it, it's the default behavior of API 1.8.0
+ */
+//var_export($r);
 ?>

@@ -25,6 +25,10 @@ $options = array(
     'ignore_functions' => array('debug_backtrace')
     );
 
-var_dump($info->parseArray($files, $options));
-
+$r = $info->parseArray($files, $options);
+/*
+   To keep backward compatibility, result is also return (here in $r)
+   but you don't need to print it, it's the default behavior of API 1.8.0
+ */
+//var_export($r);
 ?>

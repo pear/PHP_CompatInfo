@@ -17,7 +17,10 @@ require_once 'PHP/CompatInfo.php';
 
 $info = new PHP_CompatInfo();
 
-$res = $info->parseString('<?php $file = file_get_contents(__FILE__); $tokens = token_get_all($file); ?>');
-var_dump($res);
-
+$r = $info->parseString('<?php $file = file_get_contents(__FILE__); $tokens = token_get_all($file); ?>');
+/*
+   To keep backward compatibility, result is also return (here in $r)
+   but you don't need to print it, it's the default behavior of API 1.8.0
+ */
+//var_export($r);
 ?>

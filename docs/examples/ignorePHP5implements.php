@@ -24,7 +24,10 @@ $options = array(
     'ignore_constants' => array('clone', 'public')
     );
 
-$res = $info->parseFolder($dir, $options);
-var_dump($res);
-
+$r = $info->parseFolder($dir, $options);
+/*
+   To keep backward compatibility, result is also return (here in $r)
+   but you don't need to print it, it's the default behavior of API 1.8.0
+ */
+//var_export($r);
 ?>
