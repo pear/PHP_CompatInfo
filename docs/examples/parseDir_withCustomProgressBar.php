@@ -4,7 +4,7 @@
  * Do not display any progress bar from other SAPI
  *
  * To run on Windows platform, do:
- * (path to PHP cli)\php.exe -f (this script) -- -d (the dir you want to parse)
+ * (path to PHP cli)\php.exe -f (this script)
  *
  * PHP versions 4 and 5
  *
@@ -16,8 +16,9 @@
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @ignore
  */
+require_once 'PHP/CompatInfo.php';
+
 if (php_sapi_name() == 'cli') {
-    include_once 'PHP/CompatInfo/Cli.php';
     /*
       Display a progress bar like this one:
 
@@ -29,14 +30,21 @@ if (php_sapi_name() == 'cli') {
                   'prefill' => ' ',
                   'options' => array('percent_precision' => 0));
 
-    $cli = new PHP_CompatInfo_Cli($pbar);
-    $cli->run();
+    $driverType    = 'text';
+    $driverOptions = array('silent' => false, 'progress' => 'bar',
+                                              'progressbar' => $pbar);
+
 } else {
-    include_once 'PHP/CompatInfo.php';
-
-    $info = new PHP_CompatInfo();
-
-    $dir  = 'C:\php\pear\HTML_Progress2';
-    var_dump($info->parseDir($dir));
+    $driverType    = 'array';
+    $driverOptions = array();
 }
+
+$info = new PHP_CompatInfo($driverType, $driverOptions);
+$dir  = 'C:\php\pear\HTML_Progress2';
+$r    = $info->parseDir($dir);
+/*
+   To keep backward compatibility, result is also return (here in $r)
+   but you don't need to print it, it's the default behavior of API 1.8.0
+ */
+//var_export($r);
 ?>
