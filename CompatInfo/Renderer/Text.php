@@ -268,7 +268,12 @@ class PHP_CompatInfo_Renderer_Text extends PHP_CompatInfo_Renderer
                 $table->addRow($data);
             }
         } else {
-            $all_functions = $info;
+            foreach ($info as $file => $info) {
+                if (is_numeric($file{0})) {
+                    // extra information available only when debug mode is on
+                    $all_functions[$file] = $info;
+                }
+            }
         }
 
         $output = $table->getTable();
