@@ -7,16 +7,10 @@
  *
  * PHP versions 4 and 5
  *
- * LICENSE: This source file is subject to version 3.01 of the PHP license
- * that is available through the world-wide-web at the following URI:
- * http://www.php.net/license/3_01.txt.  If you did not receive a copy of
- * the PHP License and are unable to obtain it through the web, please
- * send a note to license@php.net so we can mail you a copy immediately.
- *
  * @category PHP
  * @package  PHP_CompatInfo
  * @author   Laurent Laville <pear@laurent-laville.org>
- * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @since    File available since Release 1.4.1
@@ -62,36 +56,23 @@ $p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_ve
 $p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_name@', 'name');
 $p2->addReplacement('CompatInfo/Renderer/Html.php', 'pear-config', '@data_dir@', 'data_dir');
 */
-$p2->setReleaseVersion('1.8.0RC2');
+$p2->setReleaseVersion('1.8.0');
 $p2->setAPIVersion('1.8.0');
-$p2->setReleaseStability('beta');
+$p2->setReleaseStability('stable');
 $p2->setAPIStability('stable');
-$p2->setNotes('14 days left before final stable version. Please give it a good testing !
-
-* news
-- Command-Line Interface:
-  new -t | --tab switch to set columns width (see also Text Renderer)
-
+$p2->setNotes('
 * bugs
-- final fix #14187: cli -r switch does not work in 1.8.0.b4
-- doc #14095: about missing information from C column in CLI result
-- fixed a PHP warning with Array renderer when parsing a single file
+- XML Renderer:
+  . identify a data source file with the right tag <file> rather than <dir>
+  . list of function in verbose / debug mode is back
+- Text Renderer:
+  --summarize and --verbose level 4 produced PHP notice errors
 
 * changes
-- Parser give now in summary, when debug mode is on,
-  the list of functions implemented by version
-- XML Renderer:
-  . Even if XML_Beautifier is available we can now avoid to use it. You are free
-    to manage the raw data.
-    -> Reason: old bug #5450 that strip the XML declaration
-    See: docs\examples\pci180_parsedata_toxml.php
-  . adds attribute "name" to string tag (for a better identification and search)
-- Text Renderer:
-  . You have now ability to set column width with config option "colwidth". Only
-    for Files, Extensions, Constants/Tokens. Version and C have always fixed width.
-  . Extra information given by debug mode (verbose level 4) is available both
-    for a single file or a directory
+- With agreement of original package author (Davey Shafik), change license
+  from PHP 3.01 to New BSD
 ');
+$p2->setLicense('BSD', 'http://www.opensource.org/licenses/bsd-license.php');
 //$p2->setPearinstallerDep('1.5.4');
 //$p2->setPhpDep('4.3.10');
 //$p2->addPackageDepWithChannel('required', 'Event_Dispatcher', 'pear.php.net', '1.0.0');

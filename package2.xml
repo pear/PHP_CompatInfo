@@ -18,42 +18,28 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-07-18</date>
- <time>11:22:44</time>
+ <date>2008-08-01</date>
+ <time>16:53:42</time>
  <version>
-  <release>1.8.0RC2</release>
+  <release>1.8.0</release>
   <api>1.8.0</api>
  </version>
  <stability>
-  <release>beta</release>
+  <release>stable</release>
   <api>stable</api>
  </stability>
- <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
- <notes>14 days left before final stable version. Please give it a good testing !
-
-* news
-- Command-Line Interface:
-  new -t | --tab switch to set columns width (see also Text Renderer)
-
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+ <notes>
 * bugs
-- final fix #14187: cli -r switch does not work in 1.8.0.b4
-- doc #14095: about missing information from C column in CLI result
-- fixed a PHP warning with Array renderer when parsing a single file
+- XML Renderer:
+  . identify a data source file with the right tag &lt;file&gt; rather than &lt;dir&gt;
+  . list of function in verbose / debug mode is back
+- Text Renderer:
+  --summarize and --verbose level 4 produced PHP notice errors
 
 * changes
-- Parser give now in summary, when debug mode is on,
-  the list of functions implemented by version
-- XML Renderer:
-  . Even if XML_Beautifier is available we can now avoid to use it. You are free
-    to manage the raw data.
-    -&gt; Reason: old bug #5450 that strip the XML declaration
-    See: docs\examples\pci180_parsedata_toxml.php
-  . adds attribute &quot;name&quot; to string tag (for a better identification and search)
-- Text Renderer:
-  . You have now ability to set column width with config option &quot;colwidth&quot;. Only
-    for Files, Extensions, Constants/Tokens. Version and C have always fixed width.
-  . Extra information given by debug mode (verbose level 4) is available both
-    for a single file or a directory
+- With agreement of original package author (Davey Shafik), change license
+  from PHP 3.01 to New BSD
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -265,6 +251,30 @@ which shows which functions require which version and CLI output script</descrip
   </filelist>
  </phprelease>
  <changelog>
+  <release>
+   <version>
+    <release>1.8.0</release>
+    <api>1.8.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-08-01</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+* bugs
+- XML Renderer:
+  . identify a data source file with the right tag &lt;file&gt; rather than &lt;dir&gt;
+  . list of function in verbose / debug mode is back
+- Text Renderer:
+  --summarize and --verbose level 4 produced PHP notice errors
+
+* changes
+- With agreement of original package author (Davey Shafik), change license
+  from PHP 3.01 to New BSD
+   </notes>
+  </release>
   <release>
    <version>
     <release>1.8.0RC2</release>
