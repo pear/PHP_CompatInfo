@@ -56,23 +56,18 @@ $p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_ve
 $p2->addReplacement('CompatInfo/Renderer/Html.php', 'package-info', '@package_name@', 'name');
 $p2->addReplacement('CompatInfo/Renderer/Html.php', 'pear-config', '@data_dir@', 'data_dir');
 */
-$p2->setReleaseVersion('1.8.0');
+$p2->setReleaseVersion('1.8.1');
 $p2->setAPIVersion('1.8.0');
 $p2->setReleaseStability('stable');
 $p2->setAPIStability('stable');
 $p2->setNotes('
 * bugs
-- XML Renderer:
-  . identify a data source file with the right tag <file> rather than <dir>
-  . list of function in verbose / debug mode is back
-- Text Renderer:
-  --summarize and --verbose level 4 produced PHP notice errors
+- 14696 : PHP_CompatInfo fails to scan code line when not ended with ;
 
 * changes
-- With agreement of original package author (Davey Shafik), change license
-  from PHP 3.01 to New BSD
+- getallheaders() is detected as sapi_apache rather than sapi_aolserver
 ');
-$p2->setLicense('BSD', 'http://www.opensource.org/licenses/bsd-license.php');
+//$p2->setLicense('BSD', 'http://www.opensource.org/licenses/bsd-license.php');
 //$p2->setPearinstallerDep('1.5.4');
 //$p2->setPhpDep('4.3.10');
 //$p2->addPackageDepWithChannel('required', 'Event_Dispatcher', 'pear.php.net', '1.0.0');
