@@ -2882,7 +2882,7 @@ zlib_get_coding_type
 
 # php-src/sapi/aolserver/aolserver.c
 # static zend_function_entry aolserver_functions[] = {
-getallheaders
+#getallheaders
 
 # php-src/sapi/apache/php_apache.c
 # zend_function_entry apache_functions[] = {

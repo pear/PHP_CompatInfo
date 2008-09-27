@@ -13797,7 +13797,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'getallheaders' =>
   array (
     'init' => '4.0.0',
-    'ext' => 'sapi_aolserver',
+    'ext' => 'sapi_apache',
     'pecl' => false,
   ),
   'getcwd' =>
@@ -51496,12 +51496,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
     'pecl' => false,
     'init' => '5-dev',
   ),
-  'stat' =>
-  array (
-    'ext' => 'ext_standard',
-    'pecl' => false,
-    'init' => '5-dev',
-  ),
   'str_getcsv' =>
   array (
     'ext' => 'ext_standard',
@@ -51967,6 +51961,12 @@ $GLOBALS['_PHP_COMPATINFO_FUNCS'] = array (
   'zlib_encode' =>
   array (
     'ext' => 'ext_zlib',
+    'pecl' => false,
+    'init' => '5-dev',
+  ),
+  'stat' =>
+  array (
+    'ext' => 'ext_standard',
     'pecl' => false,
     'init' => '5-dev',
   ),

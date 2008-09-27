@@ -254,6 +254,6 @@ file_put_contents('C:\php\pear\PHP_CompatInfo\CompatInfo\func_array.php',
  * @ignore
  */
 
-\$GLOBALS['_PHP_COMPATINFO_FUNCS'] = " .var_export($funcs, true). "
+\$GLOBALS['_PHP_COMPATINFO_FUNCS'] = " .var_export($funcs, true). ";
 ?>");
 ?>
