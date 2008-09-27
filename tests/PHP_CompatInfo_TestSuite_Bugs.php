@@ -572,6 +572,39 @@ $test = "public$link";
                     );
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Regression test for bug #14696
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=14696
+     *         PHP_CompatInfo fails to scan code line when not ended with ;
+     * @covers PHP_CompatInfo::parseFile
+     * @group  parseFile
+     */
+    public function testBug14696()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'kohana22'
+                                 . $ds . 'modules' . $ds . 'gmaps'
+                                 . $ds . 'javascript.php';
+
+        $r   = $this->pci->parseFile($fn);
+        $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
+                     'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
+                     'max_version' => '',
+                     'version' => '4.0.0',
+                     'functions' => array('substr'),
+                     'extensions' => array(),
+                     'constants' => array(),
+                     'tokens' => array(),
+                     'cond_code' => array(0)
+                     );
+
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Bugs::main() if file is executed directly.
