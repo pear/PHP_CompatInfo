@@ -1081,7 +1081,9 @@ class PHP_CompatInfo_Parser
 
                 $i                   += 3;
                 $php5_method_chaining = false;
-                while ((!is_array($tokens[$i]) && $tokens[$i] == ';') === false) {
+                while (((!is_array($tokens[$i]) && $tokens[$i] == ';') === false)
+                    && (!$this->_isToken($tokens[$i], 'T_CLOSE_TAG'))
+                    ) {
                     $i += 1;
                     if ((($this->_isToken($tokens[$i], ')'))
                         || ($this->_isToken($tokens[$i], 'T_WHITESPACE')))
