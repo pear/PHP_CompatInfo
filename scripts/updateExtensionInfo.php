@@ -71,7 +71,7 @@ foreach($extensions as $extension) {
 
 "<?php
 /**
- * $extName extension Constant dictionnary for PHP_CompatInfo 1.9.0a1 or better
+ * $extName extension Constant dictionary for PHP_CompatInfo 1.9.0a1 or better
  *
  * PHP versions 4 and 5
  *
@@ -113,7 +113,7 @@ foreach($extensions as $extension) {
 
 "<?php
 /**
- * $extName extension Class dictionnary for PHP_CompatInfo 1.9.0a1 or better
+ * $extName extension Class dictionary for PHP_CompatInfo 1.9.0a1 or better
  *
  * PHP versions 4 and 5
  *
@@ -150,7 +150,7 @@ file_put_contents($target_directory . 'const_array.php',
 
 "<?php
 /**
- * Constant dictionnary for PHP_CompatInfo 1.1.1 or better
+ * Constant dictionary for PHP_CompatInfo 1.1.1 or better
  *
  * PHP versions 4 and 5
  *
@@ -196,7 +196,7 @@ file_put_contents($target_directory . 'class_array.php',
 
 "<?php
 /**
- * Class dictionnary for PHP_CompatInfo 1.9.0a1 or better
+ * Class dictionary for PHP_CompatInfo 1.9.0a1 or better
  *
  * PHP versions 4 and 5
  *
