@@ -18,23 +18,34 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-09-27</date>
- <time>15:43:26</time>
+ <date>2008-11-23</date>
+ <time>16:38:53</time>
  <version>
-  <release>1.8.1</release>
-  <api>1.8.0</api>
+  <release>1.9.0a1</release>
+  <api>1.9.0</api>
  </version>
  <stability>
-  <release>stable</release>
-  <api>stable</api>
+  <release>alpha</release>
+  <api>beta</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
  <notes>
 * bugs
-- 14696 : PHP_CompatInfo fails to scan code line when not ended with ;
+- 15011 : XSL extension not detected
 
-* changes
-- getallheaders() is detected as sapi_apache rather than sapi_aolserver
+* news
+- API 1.9.0 marked as beta, and first release is alpha due to change of
+classes/constants detection of PHP extensions.
+
+You are welcome to read my presentation about the new API at
+http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
+
+Do not hesitate to give me your feedback. More we test it, more stable will be
+the final release.
+
+* roadmap
+- 2008-11-23 first alpha version
+- 2008-12-19 stable release 1.9.0
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -61,10 +72,13 @@ which shows which functions require which version and CLI output script</descrip
       <tasks:replace from="@package_version@" to="version" type="package-info" />
      </file>
     </dir> <!-- /CompatInfo/Renderer -->
+    <file name="class_array.php" role="php" />
     <file name="Cli.php" role="php">
      <tasks:replace from="@package_version@" to="version" type="package-info" />
     </file>
     <file name="const_array.php" role="php" />
+    <file name="date_class_array.php" role="php" />
+    <file name="date_const_array.php" role="php" />
     <file name="func_array.php" role="php" />
     <file name="Parser.php" role="php">
      <tasks:replace from="@package_version@" to="version" type="package-info" />
@@ -72,6 +86,8 @@ which shows which functions require which version and CLI output script</descrip
     <file name="Renderer.php" role="php">
      <tasks:replace from="@package_version@" to="version" type="package-info" />
     </file>
+    <file name="standard_class_array.php" role="php" />
+    <file name="standard_const_array.php" role="php" />
    </dir> <!-- /CompatInfo -->
    <dir name="docs">
     <dir name="examples">
@@ -101,15 +117,18 @@ which shows which functions require which version and CLI output script</descrip
     </dir> <!-- /docs/examples -->
    </dir> <!-- /docs -->
    <dir name="scripts">
+    <file name="class_exceptions.php" role="script" />
     <file baseinstalldir="" name="compatinfo.bat" role="script">
      <tasks:windowseol />
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
      <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
     </file>
+    <file name="constant_exceptions.php" role="script" />
     <file baseinstalldir="" name="pci.php" role="script">
      <tasks:unixeol />
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
     </file>
+    <file name="updateExtensionInfo.php" role="script" />
    </dir> <!-- /scripts -->
    <dir name="tests">
     <dir name="beehiveforum082">
@@ -253,6 +272,36 @@ which shows which functions require which version and CLI output script</descrip
   </filelist>
  </phprelease>
  <changelog>
+  <release>
+   <version>
+    <release>1.9.0a1</release>
+    <api>1.9.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-11-23</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+* bugs
+- 15011 : XSL extension not detected
+
+* news
+- API 1.9.0 marked as beta, and first release is alpha due to change of
+classes/constants detection of PHP extensions.
+
+You are welcome to read my presentation about the new API at
+http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
+
+Do not hesitate to give me your feedback. More we test it, more stable will be
+the final release.
+
+* roadmap
+- 2008-11-23 first alpha version
+- 2008-12-19 stable release 1.9.0
+   </notes>
+  </release>
   <release>
    <version>
     <release>1.8.1</release>
