@@ -46,6 +46,11 @@ require_once 'Event/Dispatcher.php';
 require_once 'File/Find.php';
 
 /**
+ * An array of class init versions and extension
+ */
+require_once 'PHP/CompatInfo/class_array.php';
+
+/**
  * An array of function init versions and extension
  */
 require_once 'PHP/CompatInfo/func_array.php';
@@ -750,6 +755,7 @@ class PHP_CompatInfo_Parser
         $latest_version     = $this->latest_version;
         $earliest_version   = $this->earliest_version;
         $all_functions      = array();
+        $classes            = array();
         $functions          = array();
         $extensions         = array();
         $constants          = array();
@@ -800,6 +806,11 @@ class PHP_CompatInfo_Parser
                 $cmp = version_compare($earliest_version, $file['max_version']);
                 if ($earliest_version == '' || $cmp === 1) {
                     $earliest_version = $file['max_version'];
+                }
+            }
+            foreach ($file['classes'] as $class) {
+                if (!in_array($class, $classes)) {
+                    $classes[] = $class;
                 }
             }
             foreach ($file['functions'] as $func) {
@@ -860,6 +871,7 @@ class PHP_CompatInfo_Parser
                 unset($file['ignored_constants']);
                 unset($file['max_version']);
                 unset($file['version']);
+                unset($file['classes']);
                 unset($file['functions']);
                 unset($file['extensions']);
                 unset($file['constants']);
@@ -906,6 +918,7 @@ class PHP_CompatInfo_Parser
         sort($ignored_functions);
         sort($ignored_extensions);
         sort($ignored_constants);
+        sort($classes);
         sort($functions);
         sort($extensions);
         sort($constants);
@@ -916,6 +929,7 @@ class PHP_CompatInfo_Parser
                            'ignored_constants'  => $ignored_constants,
                            'max_version'   => $earliest_version,
                            'version'       => $latest_version,
+                           'classes'       => $classes,
                            'functions'     => $functions,
                            'extensions'    => $extensions,
                            'constants'     => $constants,
@@ -993,6 +1007,7 @@ class PHP_CompatInfo_Parser
     {
         static $akeys;
 
+        $classes            = array();
         $functions          = array();
         $functions_version  = array();
         $latest_version     = $this->latest_version;
@@ -1172,7 +1187,19 @@ class PHP_CompatInfo_Parser
                 }
             }
 
+            // try to detect class instantiation
             if ($this->_isToken($tokens[$i], 'T_STRING')
+                && (isset($tokens[$i-2]))
+                && $this->_isToken($tokens[$i-2], 'T_NEW')) {
+
+                $is_class = true;
+                $classes[] = $tokens[$i][1];
+            } else {
+                $is_class = false;
+            }
+
+            if ($this->_isToken($tokens[$i], 'T_STRING')
+                && $is_class == false
                 && (isset($tokens[$i+1]))
                 && $this->_isToken($tokens[$i+1], '(')) {
 
@@ -1291,6 +1318,7 @@ class PHP_CompatInfo_Parser
             $i += 1;
         }
 
+        $classes   = array_unique($classes);
         $functions = array_unique($functions);
         if (isset($options['ignore_functions'])) {
             $options['ignore_functions']
@@ -1311,6 +1339,32 @@ class PHP_CompatInfo_Parser
                 = array_merge($options['ignore_extensions'], $ignore_extensions);
             $options['ignore_extensions']
                 = array_unique($options['ignore_extensions']);
+        }
+
+        foreach ($classes as $name) {
+            if (!isset($GLOBALS['_PHP_COMPATINFO_CLASS'][$name])) {
+                continue;  // skip this unknown class
+            }
+            $class = $GLOBALS['_PHP_COMPATINFO_CLASS'][$name];
+            if (PHP_CompatInfo_Parser::_ignore($class['init'], $min_ver, $max_ver)) {
+                continue;  // skip this class version
+            }
+
+            $cmp = version_compare($latest_version, $class['init']);
+            if ($cmp === -1) {
+                $latest_version = $class['init'];
+            }
+            if (array_key_exists('end', $class)) {
+                $cmp = version_compare($earliest_version, $class['end']);
+                if ($earliest_version == '' || $cmp === 1) {
+                    $earliest_version = $class['end'];
+                }
+            }
+
+            if (array_key_exists('ext', $class)) {
+                // this class depends of an extension
+                $extensions[] = $class['ext'];
+            }
         }
 
         foreach ($functions as $name) {
@@ -1480,6 +1534,7 @@ class PHP_CompatInfo_Parser
         sort($ignored_functions);
         sort($ignored_extensions);
         sort($ignored_constants);
+        sort($classes);
         sort($functions);
         sort($extensions);
         sort($constant_names);
@@ -1489,6 +1544,7 @@ class PHP_CompatInfo_Parser
                            'ignored_constants'  => $ignored_constants,
                            'max_version' => $earliest_version,
                            'version'     => $latest_version,
+                           'classes'     => $classes,
                            'functions'   => $functions,
                            'extensions'  => $extensions,
                            'constants'   => $constant_names,
