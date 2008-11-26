@@ -73,6 +73,16 @@ $constant_exceptions = array (
     ),
   ),
   'standard' => array(
+    '__FILE__' =>
+    array (
+      'init' => '4.0.0',
+      'name' => '__FILE__',
+    ),
+    '__LINE__' =>
+    array (
+      'init' => '4.0.0',
+      'name' => '__LINE__',
+    ),
     '__FUNCTION__' =>
     array (
       'init' => '4.3.0',
