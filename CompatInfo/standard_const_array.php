@@ -1,6 +1,6 @@
 <?php
 /**
- * standard extension Constant dictionnary for PHP_CompatInfo 1.9.0a1 or better
+ * standard extension Constant dictionary for PHP_CompatInfo 1.9.0a1 or better
  *
  * PHP versions 4 and 5
  *
@@ -1266,10 +1266,20 @@ $GLOBALS['_PHP_COMPATINFO_CONST_STANDARD'] = array (
     'init' => '4.3.0',
     'name' => '__CLASS__',
   ),
+  '__FILE__' =>
+  array (
+    'init' => '4.0.0',
+    'name' => '__FILE__',
+  ),
   '__FUNCTION__' =>
   array (
     'init' => '4.3.0',
     'name' => '__FUNCTION__',
+  ),
+  '__LINE__' =>
+  array (
+    'init' => '4.0.0',
+    'name' => '__LINE__',
   ),
   '__METHOD__' =>
   array (
