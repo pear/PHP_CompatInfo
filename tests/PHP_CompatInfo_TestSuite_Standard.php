@@ -138,6 +138,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * Tests tokenizer with a single file and empty contents
      *
      * @return void
+     * @group  standard
      */
     public function testTokenizerWithEmptyFile()
     {
@@ -168,6 +169,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * @return void
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseInvalidFile()
     {
@@ -184,6 +186,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * @return void
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseEmptyFile()
     {
@@ -211,6 +214,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * @return void
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseNotEmptyFile()
     {
@@ -240,6 +244,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * @return void
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreFunctions()
     {
@@ -284,6 +289,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * @return void
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreConstants()
     {
@@ -329,6 +335,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * @link   http://www.php.net/zip
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreExtensions()
     {
@@ -372,6 +379,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * @return void
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreVersions()
     {
@@ -415,6 +423,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * @return void
      * @covers PHP_CompatInfo::parseString
      * @group  parseString
+     * @group  standard
      */
     public function testParseInvalidString()
     {
@@ -429,6 +438,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * @return void
      * @covers PHP_CompatInfo::parseString
      * @group  parseString
+     * @group  standard
      */
     public function testParseNotEmptyString()
     {
@@ -461,6 +471,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      * @link   http://php.net/manual/en/ref.datetime.php Predefined Date Constants
      * @covers PHP_CompatInfo::parseString
      * @group  parseString
+     * @group  standard
      */
     public function testParseDate511String()
     {
@@ -507,6 +518,7 @@ echo "$nl W3C     = " . DATE_W3C;
      * @link   http://php.net/manual/en/ref.datetime.php Predefined Date Constants
      * @covers PHP_CompatInfo::parseString
      * @group  parseString
+     * @group  standard
      */
     public function testParseDate513String()
     {
@@ -541,6 +553,7 @@ echo "$nl RSS     = " . DATE_RSS;
      *         File Upload Error specific Constants
      * @covers PHP_CompatInfo::parseString
      * @group  parseString
+     * @group  standard
      */
     public function testParseUploadErrString()
     {
@@ -593,6 +606,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      * @return void
      * @covers PHP_CompatInfo::parseFolder
      * @group  parseDir
+     * @group  standard
      */
     public function testParseInvalidDirectory()
     {
@@ -609,6 +623,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      * @return void
      * @covers PHP_CompatInfo::parseDir
      * @group  parseDir
+     * @group  standard
      */
     public function testParseNoRecursiveDirectory()
     {
@@ -683,6 +698,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      * @return void
      * @covers PHP_CompatInfo::parseDir
      * @group  parseDir
+     * @group  standard
      */
     public function testParseRecursiveDirectory()
     {
@@ -818,6 +834,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      * @return void
      * @covers PHP_CompatInfo::parseDir
      * @group  parseDir
+     * @group  standard
      */
     public function testParseRecursiveDirectoryWithIgnoreFiles()
     {
@@ -907,6 +924,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      * @return void
      * @covers PHP_CompatInfo::parseArray
      * @group  parseArray
+     * @group  standard
      */
     public function testParseArrayFile()
     {
@@ -971,6 +989,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      * @return void
      * @covers PHP_CompatInfo::parseArray
      * @group  parseArray
+     * @group  standard
      */
     public function testParseArrayFileWithIgnoreFiles()
     {
@@ -1044,6 +1063,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      * @return void
      * @covers PHP_CompatInfo::parseArray
      * @group  parseArray
+     * @group  standard
      */
     public function testParseArrayString()
     {
@@ -1103,6 +1123,7 @@ php_check_syntax('somefile.php');
      * @return void
      * @covers PHP_CompatInfo::parseArray
      * @group  parseArray
+     * @group  standard
      */
     public function testParseArrayWithNoFiles()
     {
@@ -1119,6 +1140,7 @@ php_check_syntax('somefile.php');
      * @return void
      * @covers PHP_CompatInfo::loadVersion
      * @group  loadVersion
+     * @group  standard
      */
     public function testLoadVersion()
     {
@@ -1218,6 +1240,7 @@ php_check_syntax('somefile.php');
      * @return void
      * @covers PHP_CompatInfo::loadVersion
      * @group  loadVersion
+     * @group  standard
      */
     public function testLoadVersionRange()
     {
@@ -1316,6 +1339,7 @@ php_check_syntax('somefile.php');
      * @return void
      * @covers PHP_CompatInfo::loadVersion
      * @group  loadVersion
+     * @group  standard
      */
     public function testLoadVersionRangeGroupByVersion()
     {
@@ -1379,6 +1403,7 @@ php_check_syntax('somefile.php');
      * @return void
      * @covers PHP_CompatInfo::loadVersion
      * @group  loadVersion
+     * @group  standard
      */
     public function testLoadVersionRangeWithConstant()
     {
@@ -1398,6 +1423,7 @@ php_check_syntax('somefile.php');
      * @return void
      * @covers PHP_CompatInfo::loadVersion
      * @group  loadVersion
+     * @group  standard
      */
     public function testLoadVersionRangeWithConstantGroupByVersion()
     {
@@ -1466,6 +1492,7 @@ php_check_syntax('somefile.php');
      * @return void
      * @covers PHP_CompatInfo::loadVersion
      * @group  loadVersion
+     * @group  standard
      */
     public function testLoadVersionWithConstant()
     {
@@ -1506,6 +1533,7 @@ php_check_syntax('somefile.php');
      * @return void
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testPHP5MethodChainingSamp1()
     {
@@ -1534,6 +1562,7 @@ php_check_syntax('somefile.php');
      * @return void
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testPHP5MethodChainingSamp2()
     {
@@ -1568,6 +1597,7 @@ php_check_syntax('somefile.php');
      * @since  version 1.7.0
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreFunctionsMatchSamp1()
     {
@@ -1613,6 +1643,7 @@ php_check_syntax('somefile.php');
      * @since  version 1.7.0
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreFunctionsMatchSamp2()
     {
@@ -1654,6 +1685,7 @@ php_check_syntax('somefile.php');
      * @since  version 1.7.0
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreFunctionsMatchSamp3()
     {
@@ -1694,6 +1726,7 @@ php_check_syntax('somefile.php');
      * @since  version 1.7.0
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreExtensionsMatchSamp1()
     {
@@ -1741,6 +1774,7 @@ php_check_syntax('somefile.php');
      * @since  version 1.7.0
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreExtensionsMatchSamp2()
     {
@@ -1788,6 +1822,7 @@ php_check_syntax('somefile.php');
      * @since  version 1.7.0
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreConstantsMatchSamp1()
     {
@@ -1836,6 +1871,7 @@ php_check_syntax('somefile.php');
      * @since  version 1.7.0
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  standard
      */
     public function testParseFileWithIgnoreConstantsMatchSamp2()
     {

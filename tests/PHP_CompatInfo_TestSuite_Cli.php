@@ -240,6 +240,7 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      *         file in current directory is not found
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  cli
      */
     public function testBug12350()
     {
@@ -261,6 +262,7 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      * @return void
      * @covers PHP_CompatInfo::parseString
      * @group  parseString
+     * @group  cli
      */
     public function testParseString()
     {
@@ -284,6 +286,7 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      *         CLI: add filter file extension option on parsing directory
      * @covers PHP_CompatInfo::parseDir
      * @group  parseDir
+     * @group  cli
      */
     public function testRequest13147()
     {
@@ -361,6 +364,7 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      *         CLI: add filter file extension option on parsing directory
      * @covers PHP_CompatInfo::parseDir
      * @group  parseDir
+     * @group  cli
      */
     public function testReq13147ImproveRender()
     {

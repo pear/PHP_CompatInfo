@@ -434,6 +434,7 @@ apache_response_headers();
      *         Wrong parsing of possible attributes in strings
      * @covers PHP_CompatInfo::parseString
      * @group  parseString
+     * @group  bugs
      */
     public function testBug10100()
     {
@@ -464,6 +465,7 @@ $test = "public$link";
      *         if it finds other than encapsed string
      * @covers PHP_CompatInfo::parseFolder
      * @group  parseDir
+     * @group  bugs
      */
     public function testBug13873()
     {
@@ -581,6 +583,7 @@ $test = "public$link";
      *         PHP_CompatInfo fails to scan code line when not ended with ;
      * @covers PHP_CompatInfo::parseFile
      * @group  parseFile
+     * @group  bugs
      */
     public function testBug14696()
     {
