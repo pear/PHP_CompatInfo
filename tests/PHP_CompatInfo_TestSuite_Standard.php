@@ -1942,6 +1942,367 @@ php_check_syntax('somefile.php');
                      'cond_code' => array(5));
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests parsing multiple strings (chunk of code)
+     * and return minimum PHP version required
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getVersion
+     * @group  getVersion
+     * @group  standard
+     */
+    public function testGetVersion()
+    {
+        $code1 = "<?php
+php_check_syntax('somefile.php');
+?>";
+        $code2 = "<?php
+\$array1 = array('blue'  => 1, 'red'  => 2, 'green'  => 3, 'purple' => 4);
+\$array2 = array('green' => 5, 'blue' => 6, 'yellow' => 7, 'cyan'   => 8);
+
+\$diff = array_diff_key(\$array1, \$array2);
+?>";
+        $data  = array($code1, $code2);
+        $opt   = array('is_string' => true);
+
+        $this->pci->parseArray($data, $opt);
+        $r   = $this->pci->getVersion();
+        $exp = '5.1.0';
+        $this->assertEquals($exp, $r);
+    }
+
+    /**
+     * Tests parsing multiple strings (chunk of code)
+     * and return maximum PHP version
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getVersion
+     * @group  getVersion
+     * @group  standard
+     */
+    public function testGetVersionWithMax()
+    {
+        $code1 = "<?php
+php_check_syntax('somefile.php');
+?>";
+        $code2 = "<?php
+\$array1 = array('blue'  => 1, 'red'  => 2, 'green'  => 3, 'purple' => 4);
+\$array2 = array('green' => 5, 'blue' => 6, 'yellow' => 7, 'cyan'   => 8);
+
+\$diff = array_diff_key(\$array1, \$array2);
+?>";
+        $data  = array($code1, $code2);
+        $opt   = array('is_string' => true);
+
+        $this->pci->parseArray($data, $opt);
+        $r   = $this->pci->getVersion(false, true);
+        $exp = '5.0.4';
+        $this->assertEquals($exp, $r);
+    }
+
+    /**
+     * Tests parsing a file and get classes declared (end-user defined)
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getClasses
+     * @group  getClasses
+     * @group  standard
+     */
+    public function testGetClasses()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds
+             . 'php5_method_chaining.php';
+        $this->pci->parseFile($fn);
+
+        $r   = $this->pci->getClasses();
+        $exp = array('Person');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and get classes declared (internal)
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getClasses
+     * @group  getClasses
+     * @group  standard
+     */
+    public function testGetClassesInternal()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('recurse_dir' => true,
+                     'file_ext' => array('php', 'php5'));
+        $this->pci->parseDir($dir, $opt);
+
+        $f   = $dir . 'PHP5' . $ds . 'tokens.php5';
+        $r   = $this->pci->getClasses($f);
+        $exp = array('Exception');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a file and get functions declared
+     * (internal and end-user defined)
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getFunctions
+     * @group  getFunctions
+     * @group  standard
+     */
+    public function testGetFunctions()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseFile';
+        $src = $dir . $ds . 'File_Find-1.3.0__Find.php';
+        $this->pci->parseFile($src);
+
+        $r   = $this->pci->getFunctions();
+        $exp = array('_file_find_match_shell_get_pattern',
+                     'addcslashes',
+                     'array_merge',
+                     'array_pop',
+                     'array_push',
+                     'basename',
+                     'closedir',
+                     'count',
+                     'define',
+                     'defined',
+                     'each',
+                     'explode',
+                     'glob',
+                     'implode',
+                     'is_a',
+                     'is_array',
+                     'is_dir',
+                     'is_readable',
+                     'maptree',
+                     'maptreemultiple',
+                     'opendir',
+                     'preg_match',
+                     'preg_replace',
+                     'preg_split',
+                     'print_r',
+                     'readdir',
+                     'reset',
+                     'search',
+                     'sizeof',
+                     'str_replace',
+                     'strcasecmp',
+                     'strlen',
+                     'strpos',
+                     'substr',
+                     'substr_count');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and get functions declared
+     * (internal and end-user defined) for a specific file
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getFunctions
+     * @group  getFunctions
+     * @group  standard
+     */
+    public function testGetFunctionsByFile()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('recurse_dir' => true,
+                     'file_ext' => array('php', 'php5'));
+        $this->pci->parseDir($dir, $opt);
+
+        $f   = $dir . 'extensions.php';
+        $r   = $this->pci->getFunctions($f);
+        $exp = array('apache_get_modules',
+                     'dl',
+                     'extension_loaded',
+                     'imageantialias',
+                     'imagecreate',
+                     'print_r',
+                     'sqlite_libversion',
+                     'xdebug_start_trace',
+                     'xdebug_stop_trace');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a file and get constants declared
+     * (internal and end-user defined)
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getConstants
+     * @group  getConstants
+     * @group  standard
+     */
+    public function testGetConstants()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $src = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
+        $this->pci->parseFile($src);
+
+        $r   = $this->pci->getConstants();
+        $exp = array('DATE_W3C',
+                     'DIRECTORY_SEPARATOR',
+                     'PHP_EOL',
+                     '__FILE__');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and get constants declared
+     * (internal and end-user defined) for a specific file
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getConstants
+     * @group  getConstants
+     * @group  standard
+     */
+    public function testGetConstantsByFile()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('recurse_dir' => true,
+                     'file_ext' => array('php', 'php5'));
+        $this->pci->parseDir($dir, $opt);
+
+        $f   = $dir . 'PHP5' . $ds . 'upload_error.php';
+        $r   = $this->pci->getConstants($f);
+        $exp = array('UPLOAD_ERR_CANT_WRITE',
+                     'UPLOAD_ERR_EXTENSION',
+                     'UPLOAD_ERR_FORM_SIZE',
+                     'UPLOAD_ERR_INI_SIZE',
+                     'UPLOAD_ERR_NO_FILE',
+                     'UPLOAD_ERR_NO_TMP_DIR',
+                     'UPLOAD_ERR_OK',
+                     'UPLOAD_ERR_PARTIAL');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a file and get tokens declared
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getTokens
+     * @group  getTokens
+     * @group  standard
+     */
+    public function testGetTokens()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $src = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
+        $this->pci->parseFile($src);
+
+        $r   = $this->pci->getTokens();
+        $exp = array();
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and get tokens declared
+     * for a specific file
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getTokens
+     * @group  getTokens
+     * @group  standard
+     */
+    public function testGetTokensByFile()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('recurse_dir' => true,
+                     'file_ext' => array('php', 'php5'));
+        $this->pci->parseDir($dir, $opt);
+
+        $f   = $dir . 'PHP5' . $ds . 'tokens.php5';
+        $r   = $this->pci->getTokens($f);
+        $exp = array('abstract',
+                     'catch',
+                     'clone',
+                     'final',
+                     'implements',
+                     'instanceof',
+                     'interface',
+                     'private',
+                     'protected',
+                     'public',
+                     'throw',
+                     'try');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and retrieve the Code Condition level
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getConditions
+     * @group  getConditions
+     * @group  standard
+     */
+    public function testGetConditionsWithoutContext()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('debug' => true,
+                     'recurse_dir' => true,
+                     'file_ext' => array('php', 'php5'));
+
+        $this->pci->parseDir($dir, $opt);
+        $r   = $this->pci->getConditions(false, true);
+        $exp = 2; // extension condition code level
+        $this->assertEquals($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and retrieve the Code Condition
+     * contextual data
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getConditions
+     * @group  getConditions
+     * @group  standard
+     */
+    public function testGetConditionsWithContext()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('debug' => true,
+                     'recurse_dir' => true,
+                     'file_ext' => array('php', 'php5'));
+
+        $this->pci->parseDir($dir, $opt);
+        $r   = $this->pci->getConditions();
+        $exp = array(2, array(array(), array('sqlite'), array()));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and retrieve the Code Condition
+     * of a specific file
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getConditions
+     * @group  getConditions
+     * @group  standard
+     */
+    public function testGetConditionsByFile()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('debug' => false,
+                     'recurse_dir' => true,
+                     'file_ext' => array('php', 'php5'));
+
+        $this->pci->parseDir($dir, $opt);
+        $f   = $dir . 'phpinfo.php';
+        $r   = $this->pci->getConditions($f);
+        $exp = array(0); // no condition code
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
