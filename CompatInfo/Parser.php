@@ -171,6 +171,13 @@ class PHP_CompatInfo_Parser
     var $ignored_files = array();
 
     /**
+     * @var array Result of the latest data source parsing
+     * @since  1.9.0b1
+     * @see    parseData()
+     */
+    var $latest_parse = null;
+
+    /**
      * Class constructor (ZE1) for PHP4
      *
      * @access public
@@ -482,6 +489,178 @@ class PHP_CompatInfo_Parser
     }
 
     /**
+     * Returns the latest parse data source version
+     *
+     * Returns the latest parse data source version, minimum and/or maximum
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     * @param bool  $max  (optional) Level with or without contextual data
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getVersion($file = false, $max = false)
+    {
+        $key = ($max === true) ? 'max_version' : 'version';
+
+        if (!is_array($this->latest_parse)) {
+            // no code analysis found
+            $version = null;
+        } elseif ($file === false) {
+            $version = $this->latest_parse[$key];
+        } elseif (isset($this->latest_parse[$file])) {
+            $version = $this->latest_parse[$file][$key];
+        } else {
+            $version = null;
+        }
+
+        return $version;
+    }
+
+    /**
+     * Returns the latest parse data source classes declared
+     *
+     * Returns the latest parse data source classes declared (internal or
+     * end-user defined)
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getClasses($file = false)
+    {
+        if (!is_array($this->latest_parse)) {
+            // no code analysis found
+            $classes = null;
+        } elseif ($file === false) {
+            $classes = $this->latest_parse['classes'];
+        } elseif (isset($this->latest_parse[$file])) {
+            $classes = $this->latest_parse[$file]['classes'];
+        } else {
+            $classes = null;
+        }
+
+        return $classes;
+    }
+
+    /**
+     * Returns the latest parse data source functions declared
+     *
+     * Returns the latest parse data source functions declared (internal or
+     * end-user defined)
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getFunctions($file = false)
+    {
+        if (!is_array($this->latest_parse)) {
+            // no code analysis found
+            $functions = null;
+        } elseif ($file === false) {
+            $functions = $this->latest_parse['functions'];
+        } elseif (isset($this->latest_parse[$file])) {
+            $functions = $this->latest_parse[$file]['functions'];
+        } else {
+            $functions = null;
+        }
+
+        return $functions;
+    }
+
+    /**
+     * Returns the latest parse data source constants declared
+     *
+     * Returns the latest parse data source constants declared (internal or
+     * end-user defined)
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getConstants($file = false)
+    {
+        if (!is_array($this->latest_parse)) {
+            // no code analysis found
+            $constants = null;
+        } elseif ($file === false) {
+            $constants = $this->latest_parse['constants'];
+        } elseif (isset($this->latest_parse[$file])) {
+            $constants = $this->latest_parse[$file]['constants'];
+        } else {
+            $constants = null;
+        }
+
+        return $constants;
+    }
+
+    /**
+     * Returns the latest parse data source tokens declared
+     *
+     * Returns the latest parse data source PHP5+ tokens declared
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getTokens($file = false)
+    {
+        if (!is_array($this->latest_parse)) {
+            // no code analysis found
+        } elseif ($file === false) {
+            $tokens = $this->latest_parse['tokens'];
+        } elseif (isset($this->latest_parse[$file])) {
+            $tokens = $this->latest_parse[$file]['tokens'];
+        } else {
+            $tokens = null;
+        }
+
+        return $tokens;
+    }
+
+    /**
+     * Returns the latest parse data source conditions
+     *
+     * Returns the latest parse data source conditions, with or without
+     * contextual data
+     *
+     * @param mixed $file      (optional) A specific filename or not (false)
+     * @param bool  $levelOnly (optional) Level with or without contextual data
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getConditions($file = false, $levelOnly = false)
+    {
+        if (!is_array($this->latest_parse)) {
+            // no code analysis found
+            $conditions = null;
+        } elseif ($file === false) {
+            $conditions = $this->latest_parse['cond_code'];
+        } elseif (isset($this->latest_parse[$file])) {
+            $conditions = $this->latest_parse[$file]['cond_code'];
+        } else {
+            $conditions = null;
+        }
+
+        if (is_array($conditions) && $levelOnly === true) {
+            $conditions = $conditions[0];
+        }
+        return $conditions;
+    }
+
+    /**
      * Parse a data source
      *
      * Parse a data source with auto detect ability. This data source, may be
@@ -597,6 +776,7 @@ class PHP_CompatInfo_Parser
         // notify all observers that parsing data source is over
         $this->notifyListeners(PHP_COMPATINFO_EVENT_AUDITFINISHED, $parseData);
 
+        $this->latest_parse = $parseData;
         return $parseData;
     }
 

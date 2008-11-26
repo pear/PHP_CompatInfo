@@ -306,5 +306,107 @@ class PHP_CompatInfo
     {
         return $this->parser->parseData($folder, $options);
     }
+
+    /**
+     * Returns the latest parse data source version
+     *
+     * Returns the latest parse data source version, minimum and/or maximum
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     * @param bool  $max  (optional) Level with or without contextual data
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getVersion($file = false, $max = false)
+    {
+        return $this->parser->getVersion($file, $max);
+    }
+
+    /**
+     * Returns the latest parse data source classes declared
+     *
+     * Returns the latest parse data source classes declared (internal or
+     * end-user defined)
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getClasses($file = false)
+    {
+        return $this->parser->getClasses($file);
+    }
+
+    /**
+     * Returns the latest parse data source functions declared
+     *
+     * Returns the latest parse data source functions declared (internal or
+     * end-user defined)
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getFunctions($file = false)
+    {
+        return $this->parser->getFunctions($file);
+    }
+
+    /**
+     * Returns the latest parse data source constants declared
+     *
+     * Returns the latest parse data source constants declared (internal or
+     * end-user defined)
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getConstants($file = false)
+    {
+        return $this->parser->getConstants($file);
+    }
+
+    /**
+     * Returns the latest parse data source tokens declared
+     *
+     * Returns the latest parse data source PHP5+ tokens declared
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getTokens($file = false)
+    {
+        return $this->parser->getTokens($file);
+    }
+
+    /**
+     * Returns the latest parse data source conditions
+     *
+     * Returns the latest parse data source conditions, with or without
+     * contextual data
+     *
+     * @param mixed $file      (optional) A specific filename or not (false)
+     * @param bool  $levelOnly (optional) Level with or without contextual data
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getConditions($file = false, $levelOnly = false)
+    {
+        return $this->parser->getConditions($file, $levelOnly);
+    }
 }
 ?>
