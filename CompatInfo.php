@@ -359,6 +359,22 @@ class PHP_CompatInfo
     }
 
     /**
+     * Returns the latest parse data source extensions used
+     *
+     * Returns the latest parse data source extensions used
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b1 (2008-11-30)
+     */
+    function getExtensions($file = false)
+    {
+        return $this->parser->getExtensions($file);
+    }
+
+    /**
      * Returns the latest parse data source constants declared
      *
      * Returns the latest parse data source constants declared (internal or
