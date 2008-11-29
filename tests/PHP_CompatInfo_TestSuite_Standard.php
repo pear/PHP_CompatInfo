@@ -2303,6 +2303,51 @@ php_check_syntax('somefile.php');
         $exp = array(0); // no condition code
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests parsing a file and get extensions used
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getExtensions
+     * @group  getExtensions
+     * @group  standard
+     */
+    public function testGetExtensions()
+    {
+        $ds = DIRECTORY_SEPARATOR;
+        $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
+        $this->pci->parseFile($fn);
+
+        $r   = $this->pci->getExtensions();
+        $exp = array('date', 'simplexml');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and get extensions used
+     * for a specific file
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getExtensions
+     * @group  getExtensions
+     * @group  standard
+     */
+    public function testGetExtensionsByFile()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('recurse_dir' => true,
+                     'file_ext' => array('php', 'php5'));
+        $this->pci->parseDir($dir, $opt);
+
+        $f   = $dir . 'extensions.php';
+        $r   = $this->pci->getExtensions($f);
+        $exp = array('gd',
+                     'sapi_apache', 'sapi_cgi',
+                     'sqlite',
+                     'xdebug');
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
