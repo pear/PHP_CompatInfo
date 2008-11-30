@@ -1,3 +1,4 @@
+#!@php_bin@
 <?php
 /**
  * The Predefined Classes/Constants array script generator.
@@ -14,6 +15,8 @@
  */
 
 require_once 'Console/Getargs.php';
+
+$ds = DIRECTORY_SEPARATOR;
 
 $opts = array('enable' =>
                   array('short'   => 'e',
@@ -85,8 +88,8 @@ if ($args->isDefined('o')) {
         /* Directory where to write
            all "*_const_array.php" and "*_class_array.php" files
            Must ended with a trailing directory separator */
-        if (substr($o, -1, 1) !== DIRECTORY_SEPARATOR) {
-            $o .= DIRECTORY_SEPARATOR;
+        if (substr($o, -1, 1) !== $ds) {
+            $o .= $ds;
         }
         $target_directory = $o;
     } else {
@@ -94,7 +97,7 @@ if ($args->isDefined('o')) {
         exit(1);
     }
 } else {
-    $target_directory = dirname(__FILE__) . DIRECTORY_SEPARATOR;
+    $target_directory = dirname(__FILE__) . $ds;
 }
 
 // enable
@@ -124,7 +127,7 @@ if ($args->isDefined('x')) {
         exit(1);
     }
 } else {
-    include_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'exceptions.conf.php';
+    include_once dirname(__FILE__) . $ds . 'scripts' . $ds . 'exceptions.conf.php';
 }
 
 $const_glob_list = array();
