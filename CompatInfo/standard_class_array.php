@@ -1,6 +1,6 @@
 <?php
 /**
- * standard extension Class dictionnary for PHP_CompatInfo 1.9.0a1 or better
+ * standard extension Class dictionary for PHP_CompatInfo 1.9.0a1 or better
  *
  * PHP versions 4 and 5
  *

@@ -1,6 +1,6 @@
 <?php
 /**
- * date extension Constant dictionnary for PHP_CompatInfo 1.9.0a1 or better
+ * date extension Constant dictionary for PHP_CompatInfo 1.9.0a1 or better
  *
  * PHP versions 4 and 5
  *
