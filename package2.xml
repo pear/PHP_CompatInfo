@@ -18,24 +18,23 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-11-23</date>
- <time>16:38:53</time>
+ <date>2008-11-30</date>
+ <time>21:58:19</time>
  <version>
-  <release>1.9.0a1</release>
+  <release>1.9.0b1</release>
   <api>1.9.0</api>
  </version>
  <stability>
-  <release>alpha</release>
+  <release>beta</release>
   <api>beta</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
  <notes>
 * bugs
-- 15011 : XSL extension not detected
+- __FILE__ and __LINE__ constants were not detected with 1.9.0a1
 
 * news
-- API 1.9.0 marked as beta, and first release is alpha due to change of
-classes/constants detection of PHP extensions.
+- With first beta release, API 1.9.0 is marked as complete and will not change until stable.
 
 You are welcome to read my presentation about the new API at
 http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
@@ -45,6 +44,7 @@ the final release.
 
 * roadmap
 - 2008-11-23 first alpha version
+- 2008-11-30 first beta version
 - 2008-12-19 stable release 1.9.0
  </notes>
  <contents>
@@ -117,18 +117,27 @@ the final release.
     </dir> <!-- /docs/examples -->
    </dir> <!-- /docs -->
    <dir name="scripts">
-    <file name="class_exceptions.php" role="script" />
+    <file baseinstalldir="" name="exceptions.conf.php" role="script" />
+    <file baseinstalldir="" name="class_exceptions.php" role="script" />
     <file baseinstalldir="" name="compatinfo.bat" role="script">
      <tasks:windowseol />
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
      <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
     </file>
-    <file name="constant_exceptions.php" role="script" />
+    <file baseinstalldir="" name="constant_exceptions.php" role="script" />
     <file baseinstalldir="" name="pci.php" role="script">
      <tasks:unixeol />
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
     </file>
-    <file name="updateExtensionInfo.php" role="script" />
+    <file baseinstalldir="" name="pciconf.bat" role="script">
+     <tasks:windowseol />
+     <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+     <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    </file>
+    <file baseinstalldir="" name="configure.php" role="script">
+     <tasks:unixeol />
+     <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    </file>
    </dir> <!-- /scripts -->
    <dir name="tests">
     <dir name="beehiveforum082">
@@ -262,16 +271,50 @@ the final release.
   </installconditions>
   <filelist>
    <install as="pci.bat" name="scripts/compatinfo.bat" />
+   <install as="pciconf.bat" name="scripts/pciconf.bat" />
    <install as="pci" name="scripts/pci.php" />
+   <install as="pciconf" name="scripts/configure.php" />
   </filelist>
  </phprelease>
  <phprelease>
   <filelist>
    <install as="pci" name="scripts/pci.php" />
+   <install as="pciconf" name="scripts/configure.php" />
    <ignore name="scripts/compatinfo.bat" />
+   <ignore name="scripts/pciconf.bat" />
   </filelist>
  </phprelease>
  <changelog>
+  <release>
+   <version>
+    <release>1.9.0b1</release>
+    <api>1.9.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-11-30</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+* bugs
+- __FILE__ and __LINE__ constants were not detected with 1.9.0a1
+
+* news
+- With first beta release, API 1.9.0 is marked as complete and will not change until stable.
+
+You are welcome to read my presentation about the new API at
+http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
+
+Do not hesitate to give me your feedback. More we test it, more stable will be
+the final release.
+
+* roadmap
+- 2008-11-23 first alpha version
+- 2008-11-26 first beta version
+- 2008-12-19 stable release 1.9.0
+   </notes>
+  </release>
   <release>
    <version>
     <release>1.9.0a1</release>
