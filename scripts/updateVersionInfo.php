@@ -3,9 +3,9 @@
  * The functions array script generator.
  *
  * Sources come from :
- * - http://cvs.php.net/viewcvs.cgi/phpdoc/phpbook/phpbook-xsl/version.xml
+ * - http://cvs.php.net/viewvc.cgi/phpdoc/phpbook/phpbook-xsl/version.xml
  *   revision 1.9
- * - http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt
+ * - http://cvs.php.net/viewvc.cgi/phpdoc/funclist.txt
  *   revision 1.39
  *
  * PHP version 5
