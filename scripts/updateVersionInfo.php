@@ -4,7 +4,7 @@
  *
  * Sources come from :
  * - http://cvs.php.net/viewvc.cgi/phpdoc/phpbook/phpbook-xsl/version.xml
- *   revision 1.10
+ *   revision 1.11
  * - http://cvs.php.net/viewvc.cgi/phpdoc/funclist.txt
  *   revision 1.39
  *
