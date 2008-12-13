@@ -322,7 +322,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                                           'strtoupper',
                                           'substr',
                                           'version_compare'),
-                     'extensions' => array('date', 'simplexml'),
+                     'extensions' => array('date', 'SimpleXML'),
                      'constants' => array('DATE_W3C',
                                           'DIRECTORY_SEPARATOR',
                                           'PHP_EOL',
@@ -414,7 +414,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                                           'strtoupper',
                                           'substr',
                                           'version_compare'),
-                     'extensions' => array('date', 'simplexml'),
+                     'extensions' => array('date', 'SimpleXML'),
                      'constants' => array('DATE_W3C',
                                           'DIRECTORY_SEPARATOR',
                                           '__FILE__'),
@@ -660,7 +660,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'xdebug_start_trace',
                                           'xdebug_stop_trace'),
                      'extensions' => array('gd',
-                                           'sqlite',
+                                           'SQLite',
                                            'xdebug'),
                      'constants' => array(),
                      'tokens' => array(),
@@ -682,7 +682,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                                     'xdebug_start_trace',
                                                     'xdebug_stop_trace'),
                                'extensions' => array('gd',
-                                                     'sqlite',
+                                                     'SQLite',
                                                      'xdebug'),
                                'constants' => array(),
                                'tokens' => array(),
@@ -738,7 +738,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'xdebug_start_trace',
                                           'xdebug_stop_trace'),
                      'extensions' => array('gd',
-                                           'sqlite',
+                                           'SQLite',
                                            'xdebug'),
                      'constants' => array('UPLOAD_ERR_CANT_WRITE',
                                           'UPLOAD_ERR_EXTENSION',
@@ -778,7 +778,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                                     'xdebug_start_trace',
                                                     'xdebug_stop_trace'),
                                'extensions' => array('gd',
-                                                     'sqlite',
+                                                     'SQLite',
                                                      'xdebug'),
                                'constants' => array(),
                                'tokens' => array(),
@@ -875,7 +875,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'xdebug_start_trace',
                                           'xdebug_stop_trace'),
                      'extensions' => array('gd',
-                                           'sqlite',
+                                           'SQLite',
                                            'xdebug'),
                      'constants' => array('UPLOAD_ERR_CANT_WRITE',
                                           'UPLOAD_ERR_EXTENSION',
@@ -904,7 +904,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                                     'xdebug_start_trace',
                                                     'xdebug_stop_trace'),
                                'extensions' => array('gd',
-                                                     'sqlite',
+                                                     'SQLite',
                                                      'xdebug'),
                                'constants' => array(),
                                'tokens' => array(),
@@ -1636,14 +1636,14 @@ php_check_syntax('somefile.php');
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseDir' . $ds . 'extensions.php';
         $opt = array('ignore_extensions_match' =>
-                   array('extension_loaded', array('/^sqlite$/')));
+                   array('extension_loaded', array('/^SQLite$/')));
 
         $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array('sqlite_libversion'),
-                     'ignored_extensions' => array('sqlite'),
+                     'ignored_extensions' => array('SQLite'),
                      'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.3.2',
@@ -1657,7 +1657,7 @@ php_check_syntax('somefile.php');
                                           'xdebug_start_trace',
                                           'xdebug_stop_trace'),
                      'extensions' => array('gd',
-                                           'sqlite',
+                                           'SQLite',
                                            'xdebug'),
                      'constants' => array(),
                      'tokens' => array(),
@@ -1706,7 +1706,7 @@ php_check_syntax('somefile.php');
                                           'xdebug_start_trace',
                                           'xdebug_stop_trace'),
                      'extensions' => array('gd',
-                                           'sqlite',
+                                           'SQLite',
                                            'xdebug'),
                      'constants' => array(),
                      'tokens' => array(),
@@ -1755,7 +1755,7 @@ php_check_syntax('somefile.php');
                                           'strtoupper',
                                           'substr',
                                           'version_compare'),
-                     'extensions' => array( 'date', 'simplexml'),
+                     'extensions' => array( 'date', 'SimpleXML'),
                      'constants' => array('DATE_W3C',
                                           'DIRECTORY_SEPARATOR',
                                           'PHP_EOL',
@@ -1807,7 +1807,7 @@ php_check_syntax('somefile.php');
                                           'strtoupper',
                                           'substr',
                                           'version_compare'),
-                     'extensions' => array('date', 'simplexml'),
+                     'extensions' => array('date', 'SimpleXML'),
                      'constants' => array('DATE_W3C',
                                           'DIRECTORY_SEPARATOR',
                                           'PHP_EOL',
@@ -2150,7 +2150,7 @@ php_check_syntax('somefile.php');
 
         $this->pci->parseDir($dir, $opt);
         $r   = $this->pci->getConditions();
-        $exp = array(2, array(array(), array('sqlite'), array()));
+        $exp = array(2, array(array(), array('SQLite'), array()));
         $this->assertSame($exp, $r);
     }
 
@@ -2193,7 +2193,7 @@ php_check_syntax('somefile.php');
         $this->pci->parseFile($fn);
 
         $r   = $this->pci->getExtensions();
-        $exp = array('date', 'simplexml');
+        $exp = array('date', 'SimpleXML');
         $this->assertSame($exp, $r);
     }
 
@@ -2217,7 +2217,7 @@ php_check_syntax('somefile.php');
         $f   = $dir . 'extensions.php';
         $r   = $this->pci->getExtensions($f);
         $exp = array('gd',
-                     'sqlite',
+                     'SQLite',
                      'xdebug');
         $this->assertSame($exp, $r);
     }
