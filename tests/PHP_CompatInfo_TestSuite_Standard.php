@@ -135,6 +135,34 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test if a dictionary for an Extension is available or not
+     *
+     * @param array  $resources   List of Extension dictionaries
+     *                            that should be present to perform a unit test
+     * @param array &$testSkipped Reasons of tests skipped
+     *
+     * @return bool
+     * @since  version 1.9.0b2
+     */
+    private function isResourceAvailable($resources, &$testSkipped)
+    {
+        $dict = array();
+        foreach ($resources as $ext) {
+            if (!isset($GLOBALS['_PHP_COMPATINFO_FUNC_'.strtoupper($ext)])) {
+                $dict[] = $ext;
+            }
+        }
+        if (count($dict) == 1) {
+            $testSkipped[] = 'The '. $dict[0] .
+                             ' function dictionary is not available.';
+        } elseif (count($dict) > 1) {
+            $testSkipped[] = 'The '. implode(',', $dict) .
+                             ' function dictionaries are not available.';
+        }
+        return (count($testSkipped) == 0);
+    }
+
+    /**
      * Tests tokenizer with a single file and empty contents
      *
      * @return void
@@ -219,6 +247,14 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testParseNotEmptyFile()
     {
+        $resources   = array('bcmath', 'pcre');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds = DIRECTORY_SEPARATOR;
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'math.php';
 
@@ -250,6 +286,14 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testParseFileWithIgnoreFunctions()
     {
+        $resources   = array('date');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
         $opt = array('ignore_functions' => array('simplexml_load_file'));
@@ -296,6 +340,14 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testParseFileWithIgnoreConstants()
     {
+        $resources   = array('date', 'SimpleXML');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
         $opt = array('ignore_constants' => array('PHP_EOL'));
@@ -343,6 +395,14 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testParseFileWithIgnoreExtensions()
     {
+        $resources   = array('zip');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'zip.php';
         $opt = array('ignore_extensions' => array('zip'));
@@ -388,6 +448,14 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testParseFileWithIgnoreVersions()
     {
+        $resources   = array('date', 'SimpleXML');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
         $opt = array('ignore_versions' => array('4.3.10', '4.4.8'));
@@ -637,6 +705,14 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      */
     public function testParseNoRecursiveDirectory()
     {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $dir = dirname(__FILE__) . $ds . 'parseDir';
         $opt = array('recurse_dir' => false);
@@ -713,6 +789,14 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      */
     public function testParseRecursiveDirectory()
     {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
         $opt = array('recurse_dir' => true,
@@ -851,6 +935,14 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      */
     public function testParseRecursiveDirectoryWithIgnoreFiles()
     {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
         $opt = array('recurse_dir' => true,
@@ -941,6 +1033,14 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      */
     public function testParseArrayFile()
     {
+        $resources   = array('pcre');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $dir = dirname(__FILE__) . $ds . 'parseFile';
         $src = array($dir . $ds . 'File_Find-1.3.0__Find.php');
@@ -1007,6 +1107,14 @@ if ($errorCode !== UPLOAD_ERR_OK) {
      */
     public function testParseArrayFileWithIgnoreFiles()
     {
+        $resources   = array('pcre');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds   = DIRECTORY_SEPARATOR;
         $inc  = get_included_files();
         $dir  = dirname(__FILE__) . $ds . 'parseFile';
@@ -1162,6 +1270,16 @@ php_check_syntax('somefile.php');
      */
     public function testLoadVersion()
     {
+        $resources   = array('date', 'filter', 'gd', 'gmp', 'mbstring', 'ming',
+                             'mysql', 'openssl', 'pgsql',
+                             'posix', 'snmp', 'spl');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $r   = $this->pci->loadVersion('5.2.0');
         $exp = array('array_fill_keys',
                      'error_get_last',
@@ -1216,6 +1334,16 @@ php_check_syntax('somefile.php');
      */
     public function testLoadVersionRange()
     {
+        $resources   = array('date', 'filter', 'gd', 'gmp', 'mbstring', 'ming',
+                             'openssl', 'pgsql',
+                             'posix', 'snmp', 'spl');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $r   = $this->pci->loadVersion('5.2.0', '5.2.2');
         $exp = array('array_fill_keys',
                      'error_get_last',
@@ -1270,6 +1398,14 @@ php_check_syntax('somefile.php');
      */
     public function testLoadVersionRangeGroupByVersion()
     {
+        $resources   = array('bz2', 'gd', 'imap', 'oci8', 'snmp', 'zlib');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $r   = $this->pci->loadVersion('4.3.2', '4.4.0', false, true);
         $exp = array('4.3.2' => array('apache_get_modules',
                                       'apache_get_version',
@@ -1354,6 +1490,14 @@ php_check_syntax('somefile.php');
      */
     public function testLoadVersionRangeWithConstantGroupByVersion()
     {
+        $resources   = array('bz2', 'gd', 'imap', 'oci8', 'snmp', 'zlib');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $r   = $this->pci->loadVersion('4.3.2', '4.4.0', true, true);
         $exp = array('functions' => array(
                      '4.3.2' => array('apache_get_modules',
@@ -1423,6 +1567,14 @@ php_check_syntax('somefile.php');
      */
     public function testLoadVersionWithConstant()
     {
+        $resources   = array('gd', 'ming', 'openssl');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $r   = $this->pci->loadVersion('5.2.1', false, true);
         $exp = array('functions' => array('imagegrabscreen',
                                           'imagegrabwindow',
@@ -1650,6 +1802,14 @@ php_check_syntax('somefile.php');
      */
     public function testParseFileWithIgnoreExtensionsMatchSamp1()
     {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseDir' . $ds . 'extensions.php';
         $opt = array('ignore_extensions_match' =>
@@ -1698,6 +1858,14 @@ php_check_syntax('somefile.php');
      */
     public function testParseFileWithIgnoreExtensionsMatchSamp2()
     {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseDir' . $ds . 'extensions.php';
         $opt = array('ignore_extensions_match' =>
@@ -1747,6 +1915,14 @@ php_check_syntax('somefile.php');
      */
     public function testParseFileWithIgnoreConstantsMatchSamp1()
     {
+        $resources   = array('date', 'SimpleXML');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
         $opt = array('ignore_constants_match' =>
@@ -1797,6 +1973,14 @@ php_check_syntax('somefile.php');
      */
     public function testParseFileWithIgnoreConstantsMatchSamp2()
     {
+        $resources   = array('date', 'SimpleXML');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
         $opt = array('ignore_constants_match' =>
@@ -2206,6 +2390,14 @@ php_check_syntax('somefile.php');
      */
     public function testGetExtensions()
     {
+        $resources   = array('date', 'SimpleXML');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds = DIRECTORY_SEPARATOR;
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
         $this->pci->parseFile($fn);
@@ -2226,6 +2418,14 @@ php_check_syntax('somefile.php');
      */
     public function testGetExtensionsByFile()
     {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
         $opt = array('recurse_dir' => true,
