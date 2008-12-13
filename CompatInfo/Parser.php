@@ -335,7 +335,14 @@ class PHP_CompatInfo_Parser
                 }
             }
         }
-        ksort($keys);
+        if ($groupby_vers === true) {
+            foreach ($keys as $vmin => $func) {
+                sort($keys[$vmin]);
+            }
+            ksort($keys);
+        } else {
+            sort($keys);
+        }
 
         if ($include_const === true) {
             $keys = array('functions' => $keys, 'constants' => array());
@@ -1127,7 +1134,7 @@ class PHP_CompatInfo_Parser
         sort($ignored_constants);
         sort($classes);
         sort($functions);
-        sort($extensions);
+        natcasesort($extensions);
         sort($constants);
         sort($tokens);
         $main_info = array('ignored_files'      => $this->getIgnoredFiles(),
@@ -1138,7 +1145,7 @@ class PHP_CompatInfo_Parser
                            'version'       => $latest_version,
                            'classes'       => $classes,
                            'functions'     => $functions,
-                           'extensions'    => $extensions,
+                           'extensions'    => array_values($extensions),
                            'constants'     => $constants,
                            'tokens'        => $tokens,
                            'cond_code'     => $cond_code);
@@ -1399,7 +1406,7 @@ class PHP_CompatInfo_Parser
                 && (isset($tokens[$i-2]))
                 && $this->_isToken($tokens[$i-2], 'T_NEW')) {
 
-                $is_class = true;
+                $is_class  = true;
                 $classes[] = $tokens[$i][1];
             } else {
                 $is_class = false;
@@ -1541,7 +1548,6 @@ class PHP_CompatInfo_Parser
                 = array_unique($options['ignore_functions']);
         }
         if (count($ignore_extensions) > 0) {
-            $ignore_extensions = array_map('strtolower', $ignore_extensions);
             $options['ignore_extensions']
                 = array_merge($options['ignore_extensions'], $ignore_extensions);
             $options['ignore_extensions']
@@ -1582,16 +1588,9 @@ class PHP_CompatInfo_Parser
 
             // retrieve if available the extension name
             if ((isset($func['ext']))
-                && ($func['ext'] != 'ext_standard')
+                && ($func['ext'] != 'standard')
                 && ($func['ext'] != 'zend')) {
-                if ($func['pecl'] === false) {
-                    $extension = substr($func['ext'], 4);
-                    if ($extension{0} == '_') {
-                        $extension = $func['ext'];
-                    }
-                } else {
-                    $extension = $func['ext'];
-                }
+                $extension = $func['ext'];
             } else {
                 $extension = false;
             }
@@ -1618,8 +1617,7 @@ class PHP_CompatInfo_Parser
                 && ($ifm_preg_match === false)) {
 
                 if ($extension && !in_array($extension, $extensions)) {
-                    $extensions[] = substr($func['ext'], 0, 4) == 'ext_'
-                        ? $extension : $func['ext'];
+                    $extensions[] = $extension;
                 }
 
                 // Compare "ignore_extensions_match" free condition
@@ -1659,8 +1657,7 @@ class PHP_CompatInfo_Parser
                 if ($options['debug'] == true) {
                     $functions_version[$func['init']][] = array(
                         'function' => $name,
-                        'extension' => substr($func['ext'], 0, 4) == 'ext_'
-                            ? $extension : $func['ext'],
+                        'extension' => $extension,
                         'pecl' => $func['pecl']
                         );
                 }
@@ -1743,7 +1740,7 @@ class PHP_CompatInfo_Parser
         sort($ignored_constants);
         sort($classes);
         sort($functions);
-        sort($extensions);
+        natcasesort($extensions);
         sort($constant_names);
         sort($token_names);
         $main_info = array('ignored_functions'  => $ignored_functions,
@@ -1753,7 +1750,7 @@ class PHP_CompatInfo_Parser
                            'version'     => $latest_version,
                            'classes'     => $classes,
                            'functions'   => $functions,
-                           'extensions'  => $extensions,
+                           'extensions'  => array_values($extensions),
                            'constants'   => $constant_names,
                            'tokens'      => $token_names,
                            'cond_code'   => $cond_code);
