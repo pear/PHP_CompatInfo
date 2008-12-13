@@ -989,7 +989,8 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'substr',
                                           'substr_count'),
                      'extensions' => array('pcre'),
-                     'constants' => array(),
+                     'constants' => array('PREG_SPLIT_DELIM_CAPTURE',
+                                          'PREG_SPLIT_NO_EMPTY'),
                      'tokens' => array(),
                      'cond_code' => array(4));
         $this->assertSame($exp, $r);
@@ -1064,7 +1065,8 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'substr',
                                           'substr_count'),
                      'extensions' => array('pcre'),
-                     'constants' => array(),
+                     'constants' => array('PREG_SPLIT_DELIM_CAPTURE',
+                                          'PREG_SPLIT_NO_EMPTY'),
                      'tokens' => array(),
                      'cond_code' => array(4));
         $this->assertSame($exp, $r);
@@ -1419,7 +1421,8 @@ php_check_syntax('somefile.php');
                                           'stream_is_local',
                                           'stream_socket_shutdown',
                                           'sys_get_temp_dir'),
-                     'constants' => array());
+                     'constants' => array('PCRE_VERSION',
+                                          'PREG_BAD_UTF8_OFFSET_ERROR'));
         $this->assertSame($exp, $r);
     }
 
