@@ -135,6 +135,34 @@ class PHP_CompatInfo_TestSuite_Bugs extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test if a dictionary for an Extension is available or not
+     *
+     * @param array  $resources   List of Extension dictionaries
+     *                            that should be present to perform a unit test
+     * @param array &$testSkipped Reasons of tests skipped
+     *
+     * @return bool
+     * @since  version 1.9.0b2
+     */
+    private function isResourceAvailable($resources, &$testSkipped)
+    {
+        $dict = array();
+        foreach ($resources as $ext) {
+            if (!isset($GLOBALS['_PHP_COMPATINFO_FUNC_'.strtoupper($ext)])) {
+                $dict[] = $ext;
+            }
+        }
+        if (count($dict) == 1) {
+            $testSkipped[] = 'The '. $dict[0] .
+                             ' function dictionary is not available.';
+        } elseif (count($dict) > 1) {
+            $testSkipped[] = 'The '. implode(',', $dict) .
+                             ' function dictionaries are not available.';
+        }
+        return (count($testSkipped) == 0);
+    }
+
+    /**
      * Regression test for bug #1626
      *
      * @return void
@@ -190,7 +218,7 @@ apache_response_headers();
                      'classes' => array(),
                      'functions' => array('apache_request_headers',
                                           'apache_response_headers'),
-                     'extensions' => array('sapi_apache'),
+                     'extensions' => array(),
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
@@ -472,6 +500,14 @@ $test = "public$link";
      */
     public function testBug13873()
     {
+        $resources   = array('date', 'pcre');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $dir = dirname(__FILE__) . $ds . 'beehiveforum082' . $ds . 'forum';
         $opt = array();
@@ -571,7 +607,7 @@ $test = "public$link";
                                           'trim',
                                           'user_get_logon',
                                           'word_filter_rem_ob_tags'),
-                     'extensions' => array('date', 'hash', 'pcre'),
+                     'extensions' => array('date', 'pcre'),
                      'constants' => array('__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(4)
