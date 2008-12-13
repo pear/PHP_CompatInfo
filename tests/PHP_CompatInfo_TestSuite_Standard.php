@@ -1688,7 +1688,7 @@ php_check_syntax('somefile.php');
      *
      * Exclude all extensions (and their functions) that are referenced freely by
      * preg_match clause, and match regular expression:
-     * - beginning with 'sapi' (case sensitive)
+     * - beginning with 'xdebug' (case sensitive)
      *
      * @return void
      * @since  version 1.7.0
@@ -1701,14 +1701,15 @@ php_check_syntax('somefile.php');
         $ds  = DIRECTORY_SEPARATOR;
         $fn  = dirname(__FILE__) . $ds . 'parseDir' . $ds . 'extensions.php';
         $opt = array('ignore_extensions_match' =>
-                   array('preg_match', array('/^sapi/')));
+                   array('preg_match', array('/^xdebug/')));
 
         $r = $this->pci->parseFile($fn, $opt);
         $this->assertType('array', $r);
 
         $exp = array('ignored_files' => array(),
-                     'ignored_functions' => array('apache_get_modules', 'dl'),
-                     'ignored_extensions' => array('sapi_apache', 'sapi_cgi'),
+                     'ignored_functions' => array('xdebug_start_trace',
+                                                  'xdebug_stop_trace'),
+                     'ignored_extensions' => array('xdebug'),
                      'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '4.3.2',
