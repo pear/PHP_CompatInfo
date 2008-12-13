@@ -11,197 +11,197 @@
  * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
- * @since    version 1.9.0b2 (2008-12-11)
+ * @since    version 1.9.0b2 (2008-12-19)
  */
 
 $GLOBALS['_PHP_COMPATINFO_FUNC_COM_DOTNET'] = array (
-  'com_create_guid' => 
+  'com_create_guid' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'com_event_sink' => 
+  'com_event_sink' =>
   array (
     'init' => '4.2.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'com_get_active_object' => 
+  'com_get_active_object' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'com_load_typelib' => 
+  'com_load_typelib' =>
   array (
     'init' => '4.0.7',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'com_message_pump' => 
+  'com_message_pump' =>
   array (
     'init' => '4.2.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'com_print_typeinfo' => 
+  'com_print_typeinfo' =>
   array (
     'init' => '4.2.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_abs' => 
+  'variant_abs' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_add' => 
+  'variant_add' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_and' => 
+  'variant_and' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_cast' => 
+  'variant_cast' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_cat' => 
+  'variant_cat' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_cmp' => 
+  'variant_cmp' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_date_from_timestamp' => 
+  'variant_date_from_timestamp' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_date_to_timestamp' => 
+  'variant_date_to_timestamp' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_div' => 
+  'variant_div' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_eqv' => 
+  'variant_eqv' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_fix' => 
+  'variant_fix' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_get_type' => 
+  'variant_get_type' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_idiv' => 
+  'variant_idiv' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_imp' => 
+  'variant_imp' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_int' => 
+  'variant_int' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_mod' => 
+  'variant_mod' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_mul' => 
+  'variant_mul' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_neg' => 
+  'variant_neg' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_not' => 
+  'variant_not' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_or' => 
+  'variant_or' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_pow' => 
+  'variant_pow' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_round' => 
+  'variant_round' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_set' => 
+  'variant_set' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_set_type' => 
+  'variant_set_type' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_sub' => 
+  'variant_sub' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
     'pecl' => false,
   ),
-  'variant_xor' => 
+  'variant_xor' =>
   array (
     'init' => '5.0.0',
     'ext' => 'com_dotnet',
