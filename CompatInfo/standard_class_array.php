@@ -12,33 +12,32 @@
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @since    version 1.9.0a1 (2008-11-23)
- * @ignore
  */
 
 $GLOBALS['_PHP_COMPATINFO_CLASS_STANDARD'] = array (
-  'Directory' =>
+  'Directory' => 
   array (
     'init' => '4.0.0',
     'name' => 'Directory',
     'ext' => 'standard',
     'pecl' => false,
   ),
-  'Exception' =>
+  'Exception' => 
   array (
     'init' => '5.0.0',
   ),
-  '__PHP_Incomplete_Class' =>
+  '__PHP_Incomplete_Class' => 
   array (
     'init' => '4.0.0',
     'name' => '__PHP_Incomplete_Class',
     'ext' => 'standard',
     'pecl' => false,
   ),
-  'php_user_filter' =>
+  'php_user_filter' => 
   array (
     'init' => '5.0.0',
   ),
-  'stdClass' =>
+  'stdClass' => 
   array (
     'init' => '4.0.0',
   ),
