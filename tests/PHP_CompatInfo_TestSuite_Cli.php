@@ -76,6 +76,34 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test if a dictionary for an Extension is available or not
+     *
+     * @param array  $resources   List of Extension dictionaries
+     *                            that should be present to perform a unit test
+     * @param array &$testSkipped Reasons of tests skipped
+     *
+     * @return bool
+     * @since  version 1.9.0b2
+     */
+    private function isResourceAvailable($resources, &$testSkipped)
+    {
+        $dict = array();
+        foreach ($resources as $ext) {
+            if (!isset($GLOBALS['_PHP_COMPATINFO_FUNC_'.strtoupper($ext)])) {
+                $dict[] = $ext;
+            }
+        }
+        if (count($dict) == 1) {
+            $testSkipped[] = 'The '. $dict[0] .
+                             ' function dictionary is not available.';
+        } elseif (count($dict) > 1) {
+            $testSkipped[] = 'The '. implode(',', $dict) .
+                             ' function dictionaries are not available.';
+        }
+        return (count($testSkipped) == 0);
+    }
+
+    /**
      * Assert results of php exec returns
      *
      * @param string $args Arguments list that will be pass to the 'pci' command
@@ -133,6 +161,14 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      */
     public function testBug6581()
     {
+        $resources   = array('bcmath', 'pcre');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $exp = array('+-----------------------------+---------+------------+--------------------+',
                      '| File                        | Version | Extensions | Constants/Tokens   |',
@@ -290,6 +326,14 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      */
     public function testRequest13147()
     {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $exp = array('+-----------------------------+---------+------------+--------------------+',
                      '| Files                       | Version | Extensions | Constants/Tokens   |',
@@ -366,6 +410,14 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      */
     public function testReq13147ImproveRender()
     {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
         $ds  = DIRECTORY_SEPARATOR;
         $exp = array('+-----------------------------+---------+-------------+-----------------------+',
                      '| Files                       | Version | Extensions  | Constants/Tokens      |',
