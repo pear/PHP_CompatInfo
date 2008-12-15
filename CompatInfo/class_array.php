@@ -1,6 +1,6 @@
 <?php
 /**
- * Class dictionnary for PHP_CompatInfo 1.9.0a1 or better
+ * Class dictionary for PHP_CompatInfo 1.9.0a1 or better
  *
  * PHP versions 4 and 5
  *
@@ -12,11 +12,18 @@
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @since    version 1.9.0a1 (2008-11-23)
- * @ignore
  */
 
+require_once 'PHP/CompatInfo/com_dotnet_class_array.php';
 require_once 'PHP/CompatInfo/date_class_array.php';
+require_once 'PHP/CompatInfo/dom_class_array.php';
+require_once 'PHP/CompatInfo/libxml_class_array.php';
+require_once 'PHP/CompatInfo/Reflection_class_array.php';
+require_once 'PHP/CompatInfo/SimpleXML_class_array.php';
+require_once 'PHP/CompatInfo/SPL_class_array.php';
 require_once 'PHP/CompatInfo/standard_class_array.php';
+require_once 'PHP/CompatInfo/xmlreader_class_array.php';
+require_once 'PHP/CompatInfo/xmlwriter_class_array.php';
 
 /**
  * Predefined Classes
@@ -42,7 +49,15 @@ require_once 'PHP/CompatInfo/standard_class_array.php';
  */
 
 $GLOBALS['_PHP_COMPATINFO_CLASS'] = array_merge(
-    $GLOBALS['_PHP_COMPATINFO_CLASS_DATE'],
-    $GLOBALS['_PHP_COMPATINFO_CLASS_STANDARD']
+    $GLOBALS['_PHP_COMPATINFO_CLASS_COM_DOTNET'], 
+    $GLOBALS['_PHP_COMPATINFO_CLASS_DATE'], 
+    $GLOBALS['_PHP_COMPATINFO_CLASS_DOM'], 
+    $GLOBALS['_PHP_COMPATINFO_CLASS_LIBXML'], 
+    $GLOBALS['_PHP_COMPATINFO_CLASS_REFLECTION'], 
+    $GLOBALS['_PHP_COMPATINFO_CLASS_SIMPLEXML'], 
+    $GLOBALS['_PHP_COMPATINFO_CLASS_SPL'], 
+    $GLOBALS['_PHP_COMPATINFO_CLASS_STANDARD'], 
+    $GLOBALS['_PHP_COMPATINFO_CLASS_XMLREADER'], 
+    $GLOBALS['_PHP_COMPATINFO_CLASS_XMLWRITER']
     );
 ?>
