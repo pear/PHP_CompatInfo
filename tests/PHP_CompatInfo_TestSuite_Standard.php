@@ -2439,6 +2439,172 @@ php_check_syntax('somefile.php');
                      'xdebug');
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests parsing a single file and get list of ignored functions
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getIgnoredFunctions
+     * @group  getIgnoredFunctions
+     * @group  standard
+     */
+    public function testGetIgnoredFunctions()
+    {
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'ignore_functions_match.php';
+        $opt = array('ignore_functions_match' => array('preg_match', array('/^debug/')));
+        $this->pci->parseFile($fn, $opt);
+
+        $r   = $this->pci->getIgnoredFunctions();
+        $exp = array('debug_backtrace', 'debug_print_backtrace');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and get list of ignored functions
+     * for a specific file
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getIgnoredFunctions
+     * @group  getIgnoredFunctions
+     * @group  standard
+     */
+    public function testGetIgnoredFunctionsByFile()
+    {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('ignore_functions_match' => array('preg_match', array('/debug/')));
+        $this->pci->parseDir($dir, $opt);
+
+        $f   = $dir . 'extensions.php';
+        $r   = $this->pci->getIgnoredFunctions($f);
+        $exp = array('xdebug_start_trace', 'xdebug_stop_trace');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a single file and get list of ignored extensions
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getIgnoredExtensions
+     * @group  getIgnoredExtensions
+     * @group  standard
+     */
+    public function testGetIgnoredExtensions()
+    {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseDir' . $ds . 'extensions.php';
+        $opt = array('ignore_extensions_match' => array('preg_match', array('/SQL/')));
+        $this->pci->parseFile($fn, $opt);
+
+        $r   = $this->pci->getIgnoredExtensions();
+        $exp = array('SQLite');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and get list of ignored extensions
+     * for a specific file
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getIgnoredExtensions
+     * @group  getIgnoredExtensions
+     * @group  standard
+     */
+    public function testGetIgnoredExtensionsByFile()
+    {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('ignore_extensions' => array('gd'));
+        $this->pci->parseDir($dir, $opt);
+
+        $f   = $dir . 'extensions.php';
+        $r   = $this->pci->getIgnoredExtensions($f);
+        $exp = array('gd');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a single file and get list of ignored constants
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getIgnoredConstants
+     * @group  getIgnoredConstants
+     * @group  standard
+     */
+    public function testGetIgnoredConstants()
+    {
+        $resources   = array('date', 'SimpleXML');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
+        $ds  = DIRECTORY_SEPARATOR;
+        $fn  = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'conditional.php';
+        $opt = array('ignore_constants' => array('PHP_EOL', '__LINE__'));
+        $this->pci->parseFile($fn, $opt);
+
+        $r   = $this->pci->getIgnoredConstants();
+        $exp = array('PHP_EOL');
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing a directory and get list of ignored constants
+     * for a specific file
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getIgnoredConstants
+     * @group  getIgnoredConstants
+     * @group  standard
+     */
+    public function testGetIgnoredConstantsByFile()
+    {
+        $resources   = array('bcmath', 'date', 'pcre', 'SimpleXML');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseFile' . $ds;
+        $opt = array('ignore_constants' => array('PHP_EOL', '__LINE__'));
+        $this->pci->parseDir($dir, $opt);
+
+        $f   = $dir . 'conditional.php';
+        $r   = $this->pci->getIgnoredConstants($f);
+        $exp = array('PHP_EOL');
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
