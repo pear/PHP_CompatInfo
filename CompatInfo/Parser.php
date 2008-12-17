@@ -496,6 +496,87 @@ class PHP_CompatInfo_Parser
     }
 
     /**
+     * Returns the latest parse data source ignored functions
+     *
+     * Returns the latest parse data source ignored functions list
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b2 (2008-12-19)
+     */
+    function getIgnoredFunctions($file = false)
+    {
+        if (!is_array($this->latest_parse)) {
+            // no code analysis found
+            $functions = null;
+        } elseif ($file === false) {
+            $functions = $this->latest_parse['ignored_functions'];
+        } elseif (isset($this->latest_parse[$file])) {
+            $functions = $this->latest_parse[$file]['ignored_functions'];
+        } else {
+            $functions = null;
+        }
+
+        return $functions;
+    }
+
+    /**
+     * Returns the latest parse data source ignored extensions
+     *
+     * Returns the latest parse data source ignored extensions list
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b2 (2008-12-19)
+     */
+    function getIgnoredExtensions($file = false)
+    {
+        if (!is_array($this->latest_parse)) {
+            // no code analysis found
+            $extensions = null;
+        } elseif ($file === false) {
+            $extensions = $this->latest_parse['ignored_extensions'];
+        } elseif (isset($this->latest_parse[$file])) {
+            $extensions = $this->latest_parse[$file]['ignored_extensions'];
+        } else {
+            $extensions = null;
+        }
+
+        return $extensions;
+    }
+
+    /**
+     * Returns the latest parse data source ignored constants
+     *
+     * Returns the latest parse data source ignored constants list
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b2 (2008-12-19)
+     */
+    function getIgnoredConstants($file = false)
+    {
+        if (!is_array($this->latest_parse)) {
+            // no code analysis found
+            $constants = null;
+        } elseif ($file === false) {
+            $constants = $this->latest_parse['ignored_constants'];
+        } elseif (isset($this->latest_parse[$file])) {
+            $constants = $this->latest_parse[$file]['ignored_constants'];
+        } else {
+            $constants = null;
+        }
+
+        return $constants;
+    }
+
+    /**
      * Returns the latest parse data source version
      *
      * Returns the latest parse data source version, minimum and/or maximum
