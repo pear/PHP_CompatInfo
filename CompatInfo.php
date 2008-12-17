@@ -308,6 +308,68 @@ class PHP_CompatInfo
     }
 
     /**
+     * Returns list of files ignored
+     *
+     * Returns list of files ignored while parsing directories
+     *
+     * @access public
+     * @return array or false on error
+     * @since  version 1.9.0b2 (2008-12-19)
+     */
+    function getIgnoredFiles()
+    {
+        return $this->parser->getIgnoredFiles();
+    }
+
+    /**
+     * Returns the latest parse data source ignored functions
+     *
+     * Returns the latest parse data source ignored functions list
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b2 (2008-12-19)
+     */
+    function getIgnoredFunctions($file = false)
+    {
+        return $this->parser->getIgnoredFunctions($file);
+    }
+
+    /**
+     * Returns the latest parse data source ignored extensions
+     *
+     * Returns the latest parse data source ignored extensions list
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b2 (2008-12-19)
+     */
+    function getIgnoredExtensions($file = false)
+    {
+        return $this->parser->getIgnoredExtensions($file);
+    }
+
+    /**
+     * Returns the latest parse data source ignored constants
+     *
+     * Returns the latest parse data source ignored constants list
+     *
+     * @param mixed $file (optional) A specific filename or not (false)
+     *
+     * @access public
+     * @return mixed Null on error or if there were no previous data parsing
+     * @since  version 1.9.0b2 (2008-12-19)
+     */
+    function getIgnoredConstants($file = false)
+    {
+        return $this->parser->getIgnoredConstants($file);
+    }
+
+    /**
      * Returns the latest parse data source version
      *
      * Returns the latest parse data source version, minimum and/or maximum
