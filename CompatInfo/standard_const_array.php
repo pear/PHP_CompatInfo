@@ -225,6 +225,11 @@ $GLOBALS['_PHP_COMPATINFO_CONST_STANDARD'] = array (
     'init' => '4.0.0',
     'name' => 'FILE_APPEND',
   ),
+  'FILE_BINARY' =>
+  array (
+    'init' => '5.2.7',
+    'name' => 'FILE_BINARY',
+  ),
   'FILE_IGNORE_NEW_LINES' =>
   array (
     'init' => '4.0.0',
@@ -239,6 +244,11 @@ $GLOBALS['_PHP_COMPATINFO_CONST_STANDARD'] = array (
   array (
     'init' => '4.0.0',
     'name' => 'FILE_SKIP_EMPTY_LINES',
+  ),
+  'FILE_TEXT' =>
+  array (
+    'init' => '5.2.7',
+    'name' => 'FILE_TEXT',
   ),
   'FILE_USE_INCLUDE_PATH' =>
   array (
