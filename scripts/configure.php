@@ -30,6 +30,12 @@ $opts = array('enable' =>
                                    . 'you want to disable',
                         'default' => '',
                         'min'     => 0 , 'max' => 1),
+              'sapi' =>
+                  array('short'   => 's',
+                        'desc'    => 'A comma separated list of SAPI '
+                                   . 'you want only',
+                        'default' => 'apache2handler,cgi,cli',
+                        'min'     => 0 , 'max' => 1),
               'exceptions' =>
                   array('short'   => 'x',
                         'desc'    => 'File that provides exceptions results',
@@ -113,6 +119,13 @@ if ($args->isDefined('d')) {
     $extensions = array_diff($extensions, $d);
 }
 
+// sapi
+if ($args->isDefined('s')) {
+    $sapis = explode(',', $args->getValue('s'));
+} else {
+    $sapis = array('apache2handler', 'cgi', 'cli');
+}
+
 // exceptions
 if ($args->isDefined('x')) {
     $x = $args->getValue('x');
@@ -132,6 +145,54 @@ if ($args->isDefined('x')) {
 
 $const_glob_list = array();
 $class_glob_list = array();
+$func_glob_list  = array();
+
+// PHP Core constants
+$extName           = 'internal';
+$extConstants      = get_defined_constants(true);
+$const_glob_list[] = $extName;
+
+// default version to apply to each internal constant
+$ver = getExceptions($extName, 'version');
+if ($ver === false) {
+    $ver = '4.0.0';
+}
+
+$constants = array();
+foreach ($extConstants[$extName] as $cst => $val) {
+    $constants[$cst]['init'] = $ver;
+    $constants[$cst]['name'] = $cst;
+}
+
+$exceptions = getExceptions($extName, 'constant');
+if ($exceptions === false) {
+    // no constant exceptions for this extension
+} else {
+    // apply exceptions to give final constant results
+    $constants = array_merge($constants, $exceptions);
+}
+ksort($constants);
+
+file_put_contents($target_directory . $extName . '_const_array.php',
+                  "<?php
+/**
+ * Internal Constant dictionary for PHP_CompatInfo 1.9.0a1 or better
+ *
+ * PHP versions 4 and 5
+ *
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Davey Shafik <davey@php.net>
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
+ * @version  CVS: \$Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
+ * @since    version 1.9.0b2 (2008-12-19)
+ */
+
+\$GLOBALS['_PHP_COMPATINFO_CONST_" . strtoupper($extName) . "'] = " .
+        var_export($constants, true) . ";
+?>");
 
 foreach ($extensions as $extension) {
 
@@ -158,7 +219,7 @@ foreach ($extensions as $extension) {
     // default version to apply to each constant and class predefined
     $ver = getExceptions($extName, 'version');
     if ($ver === false) {
-        $ver = '5.0.0';
+        $ver = '4.0.0';
     }
 
     // constants described by the Extension interface
@@ -196,7 +257,6 @@ foreach ($extensions as $extension) {
  * @version  CVS: \$Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @since    version 1.9.0a1 (2008-11-23)
- * @ignore
  */
 
 \$GLOBALS['_PHP_COMPATINFO_CONST_" . strtoupper($extName) . "'] = " .
@@ -242,7 +302,6 @@ foreach ($extensions as $extension) {
  * @version  CVS: \$Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @since    version 1.9.0a1 (2008-11-23)
- * @ignore
  */
 
 \$GLOBALS['_PHP_COMPATINFO_CLASS_" . strtoupper($extName) . "'] = " .
@@ -250,10 +309,96 @@ foreach ($extensions as $extension) {
 ?>");
 
     }
+
+    // functions described by the Extension interface
+    $extFunctions = $ext->getFunctions();
+    if (count($extFunctions) > 0) {
+        $func_glob_list[] = $extName;
+
+        $functions = array();
+        foreach ($extFunctions as $oFunction) {
+            $func                     = $oFunction->getName();
+            $functions[$func]['init'] = $ver;
+            $functions[$func]['name'] = $func;
+            $functions[$func]['ext']  = $extName;
+            $functions[$func]['pecl'] = false;
+        }
+
+        $exceptions = getExceptions($extName, 'function');
+        if ($exceptions === false) {
+            // no class exceptions for this extension
+        } else {
+            // apply exceptions to give final function results
+            $functions = array_merge($functions, $exceptions);
+        }
+        ksort($functions);
+
+        file_put_contents($target_directory . $extName . '_func_array.php',
+                          "<?php
+/**
+ * $extName extension Function dictionary for PHP_CompatInfo 1.9.0b2 or better
+ *
+ * PHP versions 4 and 5
+ *
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Davey Shafik <davey@php.net>
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
+ * @version  CVS: \$Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
+ * @since    version 1.9.0b2 (2008-12-11)
+ */
+
+\$GLOBALS['_PHP_COMPATINFO_FUNC_" . strtoupper($extName) . "'] = " .
+        var_export($functions, true) . ";
+?>");
+
+    }
+}
+
+$sapi_glob_list  = array();
+
+foreach ($sapis as $sapi) {
+
+    $functions = getExceptions($sapi, 'function');
+    if ($functions === false) {
+        // no sapi functions
+        continue;
+    }
+
+    if ($verbose > 0) {
+        print 'Found SAPI '. $sapi . PHP_EOL;
+    }
+
+    $sapi_glob_list[] = $sapi;
+    ksort($functions);
+
+    file_put_contents($target_directory . $sapi . '_sapi_array.php',
+                      "<?php
+/**
+ * $sapi SAPI Function dictionary for PHP_CompatInfo 1.9.0b2 or better
+ *
+ * PHP versions 4 and 5
+ *
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Davey Shafik <davey@php.net>
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
+ * @version  CVS: \$Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
+ * @since    version 1.9.0b2 (2008-12-11)
+ */
+
+\$GLOBALS['_PHP_COMPATINFO_SAPI_" . strtoupper($sapi) . "'] = " .
+        var_export($functions, true) . ";
+?>");
+
 }
 
 $const_glob_list = array_unique($const_glob_list);
-sort($const_glob_list);
+natcasesort($const_glob_list);
 
 $requires = '';
 $globals  = '';
@@ -282,7 +427,6 @@ file_put_contents($target_directory . 'const_array.php',
  * @version  CVS: \$Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @since    version 1.1.1 (2006-07-27)
- * @ignore
  */
 
 ". $requires .
@@ -301,7 +445,7 @@ file_put_contents($target_directory . 'const_array.php',
 
 
 $class_glob_list = array_unique($class_glob_list);
-sort($class_glob_list);
+natcasesort($class_glob_list);
 
 $requires = '';
 $globals  = '';
@@ -330,7 +474,6 @@ file_put_contents($target_directory . 'class_array.php',
  * @version  CVS: \$Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
  * @since    version 1.9.0a1 (2008-11-23)
- * @ignore
  */
 
 ". $requires .
@@ -359,6 +502,52 @@ file_put_contents($target_directory . 'class_array.php',
  */
 
 \$GLOBALS['_PHP_COMPATINFO_CLASS'] = array_merge(
+". $globals .
+"    );
+?>");
+
+
+$func_glob_list = array_unique($func_glob_list);
+natcasesort($func_glob_list);
+
+$requires = '';
+$globals  = '';
+foreach ($func_glob_list as $funcExt) {
+    $requires .= "require_once 'PHP/CompatInfo/" . $funcExt . "_func_array.php';"
+              . PHP_EOL;
+    $globals  .= "    \$GLOBALS['_PHP_COMPATINFO_FUNC_" . strtoupper($funcExt)
+              . "'], " . PHP_EOL;
+}
+$globals  = rtrim($globals, ", ".PHP_EOL);
+$globals .= PHP_EOL;
+
+file_put_contents($target_directory . 'func_array.php',
+
+"<?php
+/**
+ * Function dictionary for PHP_CompatInfo 1.9.0a1 or better
+ *
+ * PHP versions 4 and 5
+ *
+ * @category PHP
+ * @package  PHP_CompatInfo
+ * @author   Davey Shafik <davey@php.net>
+ * @author   Laurent Laville <pear@laurent-laville.org>
+ * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
+ * @version  CVS: \$Id$
+ * @link     http://pear.php.net/package/PHP_CompatInfo
+ * @since    version 1.9.0a1 (2008-11-23)
+ */
+
+". $requires .
+"
+/**
+ * Predefined Functions
+ *
+ * @global array \$GLOBALS['_PHP_COMPATINFO_FUNCS']
+ */
+
+\$GLOBALS['_PHP_COMPATINFO_FUNCS'] = array_merge(
 ". $globals .
 "    );
 ?>");
