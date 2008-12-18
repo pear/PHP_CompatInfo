@@ -1,6 +1,6 @@
 <?php
 /**
- * Exceptions definition for Classes and Constants official version known
+ * Exceptions definition for Versions, Functions, Classes and Constants
  *
  * PHP versions 5
  *
@@ -14,14 +14,34 @@
  */
 
 /* default version for each extension
-   if not defined, then suppose its 5.0.0 */
-$version_exceptions = array('standard' => '4.0.0');
+   if not defined, then suppose its 4.0.0 */
+$version_exceptions = array('bz2' => '4.0.3',
+                            'com_dotnet' => '5.0.0',
+                            'curl' => '4.0.2',
+                            'exif' => '4.2.0',
+                            'fileinfo' => '5.3.0',
+                            'filter' => '5.2.0',
+                            'gmp' => '4.0.4',
+                            'json' => '5.2.0',
+                            'openssl' => '4.0.4',
+                            'pcre' => '4.0.0',
+                            'phar' => '5.3.0',
+                            'pspell' => '4.0.2',
+                            'Reflection' => '5.0.0',
+                            'shmop' => '4.0.3',
+                            'sockets' => '4.0.2',
+                            'spl' => '5.0.0',
+                            'standard' => '4.0.0'
+                            );
 /* if default version is not 4.0.0, then we can fix the right
    constant initial version here */
 require_once 'constant_exceptions.php';
 /* if default version is not 4.0.0, then we can fix the right
    predefined class initial version here */
 require_once 'class_exceptions.php';
+/* if default is not from PHP core version 4.0.0, then we can fix the right
+   function data here */
+require_once 'function_exceptions.php';
 
 /**
  * Function that provides to return exceptions results
@@ -33,7 +53,7 @@ require_once 'class_exceptions.php';
  */
 function getExceptions($extension, $type)
 {
-    global $version_exceptions, $class_exceptions, $constant_exceptions;
+    global $version_exceptions, $class_exceptions, $function_exceptions, $constant_exceptions;
 
     $exceptions = false;
 
@@ -46,6 +66,19 @@ function getExceptions($extension, $type)
     case 'class' :
         if (isset($class_exceptions[$extension])) {
             $exceptions = $class_exceptions[$extension];
+        }
+        break;
+    case 'function' :
+        if (isset($function_exceptions[strtolower($extension)])) {
+            $exceptions = $function_exceptions[strtolower($extension)];
+            // Extension name is case sensitive since PCI version 1.9.0b2
+            foreach($exceptions as $name => $data) {
+                if (isset($exceptions[$name]['sapi'])) {
+                    $exceptions[$name]['ext'] = 'standard';
+                } else {
+                    $exceptions[$name]['ext'] = $extension;
+                }
+            }
         }
         break;
     case 'constant' :
