@@ -608,7 +608,9 @@ $test = "public$link";
                                           'user_get_logon',
                                           'word_filter_rem_ob_tags'),
                      'extensions' => array('date', 'pcre'),
-                     'constants' => array('__FILE__'),
+                     'constants' => array('FALSE',
+                                          'TRUE',
+                                          '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(4)
                     );
