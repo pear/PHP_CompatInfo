@@ -11,7 +11,6 @@
  * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
- * @ignore
  */
 
 $class_exceptions = array (
