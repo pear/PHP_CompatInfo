@@ -327,7 +327,9 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'extensions' => array('date'),
                      'constants' => array('DATE_W3C',
                                           'DIRECTORY_SEPARATOR',
+                                          'FALSE',
                                           'PHP_EOL',
+                                          'PHP_OS',
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(5));
@@ -381,7 +383,9 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'extensions' => array('date', 'SimpleXML'),
                      'constants' => array('DATE_W3C',
                                           'DIRECTORY_SEPARATOR',
+                                          'FALSE',
                                           'PHP_EOL',
+                                          'PHP_OS',
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(5));
@@ -489,6 +493,8 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'extensions' => array('date', 'SimpleXML'),
                      'constants' => array('DATE_W3C',
                                           'DIRECTORY_SEPARATOR',
+                                          'FALSE',
+                                          'PHP_OS',
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(5));
@@ -742,7 +748,8 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'extensions' => array('gd',
                                            'SQLite',
                                            'xdebug'),
-                     'constants' => array(),
+                     'constants' => array('PHP_SHLIB_SUFFIX',
+                                          'TRUE'),
                      'tokens' => array(),
                      'cond_code' => array(2),
                      $dir . $ds . 'extensions.php' =>
@@ -764,7 +771,8 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                'extensions' => array('gd',
                                                      'SQLite',
                                                      'xdebug'),
-                               'constants' => array(),
+                               'constants' => array('PHP_SHLIB_SUFFIX',
+                                                    'TRUE'),
                                'tokens' => array(),
                                'cond_code' => array(2)),
                      $dir . $ds . 'phpinfo.php' =>
@@ -828,7 +836,9 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'extensions' => array('gd',
                                            'SQLite',
                                            'xdebug'),
-                     'constants' => array('UPLOAD_ERR_CANT_WRITE',
+                     'constants' => array('PHP_SHLIB_SUFFIX',
+                                          'TRUE',
+                                          'UPLOAD_ERR_CANT_WRITE',
                                           'UPLOAD_ERR_EXTENSION',
                                           'UPLOAD_ERR_FORM_SIZE',
                                           'UPLOAD_ERR_INI_SIZE',
@@ -868,7 +878,8 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                'extensions' => array('gd',
                                                      'SQLite',
                                                      'xdebug'),
-                               'constants' => array(),
+                               'constants' => array('PHP_SHLIB_SUFFIX',
+                                                    'TRUE'),
                                'tokens' => array(),
                                'cond_code' => array(2)),
                      $dir . 'phpinfo.php' =>
@@ -973,7 +984,9 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                      'extensions' => array('gd',
                                            'SQLite',
                                            'xdebug'),
-                     'constants' => array('UPLOAD_ERR_CANT_WRITE',
+                     'constants' => array('PHP_SHLIB_SUFFIX',
+                                          'TRUE',
+                                          'UPLOAD_ERR_CANT_WRITE',
                                           'UPLOAD_ERR_EXTENSION',
                                           'UPLOAD_ERR_FORM_SIZE',
                                           'UPLOAD_ERR_INI_SIZE',
@@ -1002,7 +1015,8 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                'extensions' => array('gd',
                                                      'SQLite',
                                                      'xdebug'),
-                               'constants' => array(),
+                               'constants' => array('PHP_SHLIB_SUFFIX',
+                                                    'TRUE'),
                                'tokens' => array(),
                                'cond_code' => array(2)),
                      $dir . 'PHP5' . $ds . 'upload_error.php' =>
@@ -1093,8 +1107,11 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'substr',
                                           'substr_count'),
                      'extensions' => array('pcre'),
-                     'constants' => array('PREG_SPLIT_DELIM_CAPTURE',
-                                          'PREG_SPLIT_NO_EMPTY'),
+                     'constants' => array('FALSE',
+                                          'NULL',
+                                          'PREG_SPLIT_DELIM_CAPTURE',
+                                          'PREG_SPLIT_NO_EMPTY',
+                                          'TRUE'),
                      'tokens' => array(),
                      'cond_code' => array(4));
         $this->assertSame($exp, $r);
@@ -1177,8 +1194,11 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'substr',
                                           'substr_count'),
                      'extensions' => array('pcre'),
-                     'constants' => array('PREG_SPLIT_DELIM_CAPTURE',
-                                          'PREG_SPLIT_NO_EMPTY'),
+                     'constants' => array('FALSE',
+                                          'NULL',
+                                          'PREG_SPLIT_DELIM_CAPTURE',
+                                          'PREG_SPLIT_NO_EMPTY',
+                                          'TRUE'),
                      'tokens' => array(),
                      'cond_code' => array(4));
         $this->assertSame($exp, $r);
@@ -1698,7 +1718,7 @@ php_check_syntax('somefile.php');
                                           'fopen',
                                           'fwrite'),
                      'extensions' => array(),
-                     'constants' => array(),
+                     'constants' => array('FALSE'),
                      'tokens' => array(),
                      'cond_code' => array(0));
         $this->assertSame($exp, $r);
@@ -1743,7 +1763,7 @@ php_check_syntax('somefile.php');
                                           'function_exists',
                                           'fwrite'),
                      'extensions' => array(),
-                     'constants' => array(),
+                     'constants' => array('FALSE'),
                      'tokens' => array(),
                      'cond_code' => array(1));
         $this->assertSame($exp, $r);
@@ -1785,7 +1805,7 @@ php_check_syntax('somefile.php');
                                           'fopen',
                                           'fwrite'),
                      'extensions' => array(),
-                     'constants' => array(),
+                     'constants' => array('FALSE'),
                      'tokens' => array(),
                      'cond_code' => array(0));
         $this->assertSame($exp, $r);
@@ -1840,7 +1860,8 @@ php_check_syntax('somefile.php');
                      'extensions' => array('gd',
                                            'SQLite',
                                            'xdebug'),
-                     'constants' => array(),
+                     'constants' => array('PHP_SHLIB_SUFFIX',
+                                          'TRUE'),
                      'tokens' => array(),
                      'cond_code' => array(0));
         $this->assertSame($exp, $r);
@@ -1898,7 +1919,8 @@ php_check_syntax('somefile.php');
                      'extensions' => array('gd',
                                            'SQLite',
                                            'xdebug'),
-                     'constants' => array(),
+                     'constants' => array('PHP_SHLIB_SUFFIX',
+                                          'TRUE'),
                      'tokens' => array(),
                      'cond_code' => array(2));
         $this->assertSame($exp, $r);
@@ -1956,7 +1978,9 @@ php_check_syntax('somefile.php');
                      'extensions' => array( 'date', 'SimpleXML'),
                      'constants' => array('DATE_W3C',
                                           'DIRECTORY_SEPARATOR',
+                                          'FALSE',
                                           'PHP_EOL',
+                                          'PHP_OS',
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(1));
@@ -2016,7 +2040,9 @@ php_check_syntax('somefile.php');
                      'extensions' => array('date', 'SimpleXML'),
                      'constants' => array('DATE_W3C',
                                           'DIRECTORY_SEPARATOR',
+                                          'FALSE',
                                           'PHP_EOL',
+                                          'PHP_OS',
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(5));
@@ -2227,7 +2253,9 @@ php_check_syntax('somefile.php');
         $r   = $this->pci->getConstants();
         $exp = array('DATE_W3C',
                      'DIRECTORY_SEPARATOR',
+                     'FALSE',
                      'PHP_EOL',
+                     'PHP_OS',
                      '__FILE__');
         $this->assertSame($exp, $r);
     }
