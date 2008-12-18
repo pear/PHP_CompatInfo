@@ -141,7 +141,8 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
         $exp = array('+-----------------------------+---------+------------+--------------------+',
                      '| File                        | Version | Extensions | Constants/Tokens   |',
                      '+-----------------------------+---------+------------+--------------------+',
-                     '| ...File'.$ds.'phpweb-entities.php | 4.0.0   |            | __FILE__           |',
+                     '| ...File'.$ds.'phpweb-entities.php | 4.0.0   |            | FALSE              |',
+                     '|                             |         |            | __FILE__           |',
                      '+-----------------------------+---------+------------+--------------------+');
 
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'phpweb-entities.php';
