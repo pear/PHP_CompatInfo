@@ -170,6 +170,10 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
      */
     public function testTokenizerWithEmptyFile()
     {
+        if (token_name(311) !== 'T_INLINE_HTML') {
+            $this->markTestSkipped('Tokens values of Tokenizer have changed');
+        }
+
         $ds = DIRECTORY_SEPARATOR;
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'empty.php';
 
