@@ -212,6 +212,7 @@ class PHP_CompatInfo_Renderer_Csv extends PHP_CompatInfo_Renderer
 
             unset($info['max_version']);
             unset($info['version']);
+            unset($info['classes']);
             unset($info['functions']);
             unset($info['extensions']);
             unset($info['constants']);
