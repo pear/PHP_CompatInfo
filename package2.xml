@@ -324,6 +324,9 @@ the final version.
     <min>1.0.0</min>
    </package>
    <extension>
+    <name>pcre</name>
+   </extension>
+   <extension>
     <name>tokenizer</name>
    </extension>
   </required>
