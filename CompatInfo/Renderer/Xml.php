@@ -200,6 +200,7 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
             unset($this->parseData['ignored_constants']);
             unset($this->parseData['max_version']);
             unset($this->parseData['version']);
+            unset($this->parseData['classes']);
             unset($this->parseData['functions']);
             unset($this->parseData['extensions']);
             unset($this->parseData['constants']);
@@ -308,6 +309,7 @@ class PHP_CompatInfo_Renderer_Xml extends PHP_CompatInfo_Renderer
                     unset($this->parseData['ignored_constants']);
                     unset($this->parseData['max_version']);
                     unset($this->parseData['version']);
+                    unset($this->parseData['classes']);
                     unset($this->parseData['functions']);
                     unset($this->parseData['extensions']);
                     unset($this->parseData['constants']);
