@@ -71,7 +71,7 @@ $opts = array('enable' =>
 $args = Console_Getargs::factory($opts);
 
 if (PEAR::isError($args)) {
-    $header = "PHP_CompatInfo build system \n".
+    $header = "PHP_CompatInfo Extensions Support List build system \n".
               'Usage: '.basename($_SERVER['SCRIPT_NAME'])." [options]\n\n";
     if ($args->getCode() === CONSOLE_GETARGS_ERROR_USER) {
         echo Console_Getargs::getHelp($opts, $header, $args->getMessage())."\n";
@@ -83,7 +83,7 @@ if (PEAR::isError($args)) {
 
 // version
 if ($args->isDefined('V')) {
-    echo 'PHP_CompatInfo build system version 1.9.0b1';
+    echo 'PHP_CompatInfo Extensions Support List build system version @package_version@';
     exit(0);
 }
 
