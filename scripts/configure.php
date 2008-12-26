@@ -357,7 +357,7 @@ foreach ($extensions as $extension) {
  * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
  * @version  CVS: \$Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
- * @since    version 1.9.0b2 (2008-12-11)
+ * @since    version 1.9.0b2 (2008-12-19)
  */
 
 \$GLOBALS['_PHP_COMPATINFO_FUNC_" . strtoupper($extName) . "'] = " .
@@ -398,7 +398,7 @@ foreach ($sapis as $sapi) {
  * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
  * @version  CVS: \$Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
- * @since    version 1.9.0b2 (2008-12-11)
+ * @since    version 1.9.0b2 (2008-12-19)
  */
 
 \$GLOBALS['_PHP_COMPATINFO_SAPI_" . strtoupper($sapi) . "'] = " .
