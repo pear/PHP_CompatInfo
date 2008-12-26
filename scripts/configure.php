@@ -97,7 +97,7 @@ if ($args->isDefined('v')) {
 // output
 if ($args->isDefined('o')) {
     $o = $args->getValue('o');
-    if (strpos($o, '{php_dir}')) {
+    if (strpos($o, '@'.'php_dir@')) {
         $o = str_replace('@'.'php_dir@', '@php_dir@', $o);
     }
     if (is_dir($o) && (is_writable($o))) {
@@ -113,7 +113,7 @@ if ($args->isDefined('o')) {
         exit(1);
     }
 } else {
-    $target_directory = '@'.'php_dir@' . $ds . 'PHP' .$ds . 'CompatInfo' . $ds;
+    $target_directory = '@php_dir@' . $ds . 'PHP' .$ds . 'CompatInfo' . $ds;
 }
 
 // enable
