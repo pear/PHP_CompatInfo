@@ -51,7 +51,7 @@ $opts = array('enable' =>
               'output' =>
                   array('short'   => 'o',
                         'desc'    => 'Target directory where to write results',
-                        'default' => './',
+                        'default' => '@'.'php_dir@/PHP/CompatInfo',
                         'min'     => 0 , 'max' => 1),
               'verbose' =>
                   array('short'   => 'v',
@@ -97,6 +97,9 @@ if ($args->isDefined('v')) {
 // output
 if ($args->isDefined('o')) {
     $o = $args->getValue('o');
+    if (strpos($o, '{php_dir}')) {
+        $o = str_replace('@'.'php_dir@', '@php_dir@', $o);
+    }
     if (is_dir($o) && (is_writable($o))) {
         /* Directory where to write
            all "*_const_array.php" and "*_class_array.php" files
@@ -110,7 +113,7 @@ if ($args->isDefined('o')) {
         exit(1);
     }
 } else {
-    $target_directory = dirname(__FILE__) . $ds;
+    $target_directory = '@'.'php_dir@' . $ds . 'PHP' .$ds . 'CompatInfo' . $ds;
 }
 
 // enable
