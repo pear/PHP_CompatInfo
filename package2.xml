@@ -220,6 +220,7 @@ the final version.
     <file baseinstalldir="" name="configure.php" role="script">
      <tasks:unixeol />
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+     <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
     </file>
     <file baseinstalldir="" name="constant_exceptions.php" role="script" />
     <file baseinstalldir="" name="exceptions.conf.php" role="script" />
