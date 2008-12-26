@@ -14,6 +14,13 @@
  * @since    File available since Release 1.9.0b1
  */
 
+if (version_compare(PHP_VERSION, '5.0.0') < 0) {
+    print basename(__FILE__) . " require PHP5 or better to run. "
+        . "Your current PHP version is " . PHP_VERSION
+        . PHP_EOL;
+    exit(1);
+}
+
 require_once 'Console/Getargs.php';
 
 $ds = DIRECTORY_SEPARATOR;
