@@ -15,7 +15,7 @@
 
 /* default version for each extension
    if not defined, then suppose its 4.0.0 */
-$version_exceptions = array('bz2' => '4.0.3',
+$version_exceptions = array('bz2' => '4.0.4',
                             'com_dotnet' => '5.0.0',
                             'curl' => '4.0.2',
                             'exif' => '4.2.0',
@@ -30,7 +30,7 @@ $version_exceptions = array('bz2' => '4.0.3',
                             'Reflection' => '5.0.0',
                             'shmop' => '4.0.3',
                             'sockets' => '4.0.2',
-                            'spl' => '5.0.0',
+                            'SPL' => '5.0.0',
                             'standard' => '4.0.0'
                             );
 /* if default version is not 4.0.0, then we can fix the right
@@ -69,16 +69,8 @@ function getExceptions($extension, $type)
         }
         break;
     case 'function' :
-        if (isset($function_exceptions[strtolower($extension)])) {
-            $exceptions = $function_exceptions[strtolower($extension)];
-            // Extension name is case sensitive since PCI version 1.9.0b2
-            foreach($exceptions as $name => $data) {
-                if (isset($exceptions[$name]['sapi'])) {
-                    $exceptions[$name]['ext'] = 'standard';
-                } else {
-                    $exceptions[$name]['ext'] = $extension;
-                }
-            }
+        if (isset($function_exceptions[$extension])) {
+            $exceptions = $function_exceptions[$extension];
         }
         break;
     case 'constant' :
