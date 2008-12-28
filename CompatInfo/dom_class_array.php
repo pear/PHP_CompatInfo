@@ -15,219 +15,219 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_CLASS_DOM'] = array (
-  'DOMAttr' => 
+  'DOMAttr' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMAttr',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMCdataSection' => 
+  'DOMCdataSection' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMCdataSection',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMCharacterData' => 
+  'DOMCharacterData' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMCharacterData',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMComment' => 
+  'DOMComment' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMComment',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMConfiguration' => 
+  'DOMConfiguration' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMConfiguration',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMDocument' => 
+  'DOMDocument' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMDocument',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMDocumentFragment' => 
+  'DOMDocumentFragment' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMDocumentFragment',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMDocumentType' => 
+  'DOMDocumentType' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMDocumentType',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMDomError' => 
+  'DOMDomError' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMDomError',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMElement' => 
+  'DOMElement' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMElement',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMEntity' => 
+  'DOMEntity' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMEntity',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMEntityReference' => 
+  'DOMEntityReference' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMEntityReference',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMErrorHandler' => 
+  'DOMErrorHandler' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMErrorHandler',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMException' => 
+  'DOMException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMException',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMImplementation' => 
+  'DOMImplementation' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMImplementation',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMImplementationList' => 
+  'DOMImplementationList' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMImplementationList',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMImplementationSource' => 
+  'DOMImplementationSource' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMImplementationSource',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMLocator' => 
+  'DOMLocator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMLocator',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMNameList' => 
+  'DOMNameList' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMNameList',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMNameSpaceNode' => 
+  'DOMNameSpaceNode' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMNameSpaceNode',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMNamedNodeMap' => 
+  'DOMNamedNodeMap' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMNamedNodeMap',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMNode' => 
+  'DOMNode' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMNode',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMNodeList' => 
+  'DOMNodeList' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMNodeList',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMNotation' => 
+  'DOMNotation' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMNotation',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMProcessingInstruction' => 
+  'DOMProcessingInstruction' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMProcessingInstruction',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMStringExtend' => 
+  'DOMStringExtend' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMStringExtend',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMStringList' => 
+  'DOMStringList' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMStringList',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMText' => 
+  'DOMText' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMText',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMTypeinfo' => 
+  'DOMTypeinfo' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMTypeinfo',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMUserDataHandler' => 
+  'DOMUserDataHandler' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMUserDataHandler',
     'ext' => 'dom',
     'pecl' => false,
   ),
-  'DOMXPath' => 
+  'DOMXPath' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DOMXPath',
     'ext' => 'dom',
     'pecl' => false,
