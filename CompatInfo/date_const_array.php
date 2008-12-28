@@ -11,6 +11,7 @@
  * @license  http://www.opensource.org/licenses/bsd-license.php  BSD
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/PHP_CompatInfo
+ * @link     http://www.php.net/manual/en/datetime.constants.php
  * @since    version 1.9.0a1 (2008-11-23)
  */
 
@@ -72,17 +73,17 @@ $GLOBALS['_PHP_COMPATINFO_CONST_DATE'] = array (
   ),
   'SUNFUNCS_RET_DOUBLE' =>
   array (
-    'init' => '5.0.0',
+    'init' => '5.1.2',
     'name' => 'SUNFUNCS_RET_DOUBLE',
   ),
   'SUNFUNCS_RET_STRING' =>
   array (
-    'init' => '5.0.0',
+    'init' => '5.1.2',
     'name' => 'SUNFUNCS_RET_STRING',
   ),
   'SUNFUNCS_RET_TIMESTAMP' =>
   array (
-    'init' => '5.0.0',
+    'init' => '5.1.2',
     'name' => 'SUNFUNCS_RET_TIMESTAMP',
   ),
 );
