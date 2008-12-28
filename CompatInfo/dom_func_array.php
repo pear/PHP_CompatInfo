@@ -15,7 +15,67 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_FUNC_DOM'] = array (
+  'dom_domconfigurationcansetparameter' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'dom',
+    'pecl' => false,
+  ),
+  'dom_domconfigurationgetparameter' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'dom',
+    'pecl' => false,
+  ),
+  'dom_domconfigurationsetparameter' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'dom',
+    'pecl' => false,
+  ),
+  'dom_domerrorhandlerhandleerror' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'dom',
+    'pecl' => false,
+  ),
+  'dom_domstringlistitem' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'dom',
+    'pecl' => false,
+  ),
   'dom_import_simplexml' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'dom',
+    'pecl' => false,
+  ),
+  'dom_namelistgetname' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'dom',
+    'pecl' => false,
+  ),
+  'dom_namelistgetnamespaceuri' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'dom',
+    'pecl' => false,
+  ),
+  'dom_string_extend_find_offset16' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'dom',
+    'pecl' => false,
+  ),
+  'dom_string_extend_find_offset32' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'dom',
+    'pecl' => false,
+  ),
+  'dom_userdatahandler_handle' =>
   array (
     'init' => '5.0.0',
     'ext' => 'dom',
