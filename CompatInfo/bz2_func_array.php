@@ -17,61 +17,61 @@
 $GLOBALS['_PHP_COMPATINFO_FUNC_BZ2'] = array (
   'bzclose' =>
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.4',
     'ext' => 'bz2',
     'pecl' => false,
   ),
   'bzcompress' =>
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.4',
     'ext' => 'bz2',
     'pecl' => false,
   ),
   'bzdecompress' =>
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.4',
     'ext' => 'bz2',
     'pecl' => false,
   ),
   'bzerrno' =>
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.4',
     'ext' => 'bz2',
     'pecl' => false,
   ),
   'bzerror' =>
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.4',
     'ext' => 'bz2',
     'pecl' => false,
   ),
   'bzerrstr' =>
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.4',
     'ext' => 'bz2',
     'pecl' => false,
   ),
   'bzflush' =>
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.4',
     'ext' => 'bz2',
     'pecl' => false,
   ),
   'bzopen' =>
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.4',
     'ext' => 'bz2',
     'pecl' => false,
   ),
   'bzread' =>
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.4',
     'ext' => 'bz2',
     'pecl' => false,
   ),
   'bzwrite' =>
   array (
-    'init' => '4.3.3',
+    'init' => '4.0.4',
     'ext' => 'bz2',
     'pecl' => false,
   ),
