@@ -17,14 +17,14 @@
 $GLOBALS['_PHP_COMPATINFO_CLASS_DATE'] = array (
   'DateTime' =>
   array (
-    'init' => '5.0.0',
+    'init' => '5.2.0',
     'name' => 'DateTime',
     'ext' => 'date',
     'pecl' => false,
   ),
   'DateTimeZone' =>
   array (
-    'init' => '5.0.0',
+    'init' => '5.2.0',
     'name' => 'DateTimeZone',
     'ext' => 'date',
     'pecl' => false,
