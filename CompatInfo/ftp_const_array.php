@@ -15,52 +15,52 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_CONST_FTP'] = array (
-  'FTP_ASCII' => 
+  'FTP_ASCII' =>
   array (
     'init' => '4.0.0',
     'name' => 'FTP_ASCII',
   ),
-  'FTP_AUTORESUME' => 
+  'FTP_AUTORESUME' =>
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'FTP_AUTORESUME',
   ),
-  'FTP_AUTOSEEK' => 
+  'FTP_AUTOSEEK' =>
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'FTP_AUTOSEEK',
   ),
-  'FTP_BINARY' => 
+  'FTP_BINARY' =>
   array (
     'init' => '4.0.0',
     'name' => 'FTP_BINARY',
   ),
-  'FTP_FAILED' => 
+  'FTP_FAILED' =>
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'FTP_FAILED',
   ),
-  'FTP_FINISHED' => 
+  'FTP_FINISHED' =>
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'FTP_FINISHED',
   ),
-  'FTP_IMAGE' => 
+  'FTP_IMAGE' =>
   array (
     'init' => '4.0.0',
     'name' => 'FTP_IMAGE',
   ),
-  'FTP_MOREDATA' => 
+  'FTP_MOREDATA' =>
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'FTP_MOREDATA',
   ),
-  'FTP_TEXT' => 
+  'FTP_TEXT' =>
   array (
     'init' => '4.0.0',
     'name' => 'FTP_TEXT',
   ),
-  'FTP_TIMEOUT_SEC' => 
+  'FTP_TIMEOUT_SEC' =>
   array (
     'init' => '4.0.0',
     'name' => 'FTP_TIMEOUT_SEC',
