@@ -21,9 +21,27 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_GD'] = array (
     'ext' => 'gd',
     'pecl' => false,
   ),
+  'getimagesize' =>
+  array (
+    'init' => '4.0.0',
+    'ext' => 'gd',
+    'pecl' => false,
+  ),
   'image2wbmp' =>
   array (
     'init' => '4.0.5',
+    'ext' => 'gd',
+    'pecl' => false,
+  ),
+  'image_type_to_extension' =>
+  array (
+    'init' => '5.0.0',
+    'ext' => 'gd',
+    'pecl' => false,
+  ),
+  'image_type_to_mime_type' =>
+  array (
+    'init' => '4.3.0',
     'ext' => 'gd',
     'pecl' => false,
   ),
@@ -588,6 +606,18 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_GD'] = array (
   'imagexbm' =>
   array (
     'init' => '5.0.0',
+    'ext' => 'gd',
+    'pecl' => false,
+  ),
+  'iptcembed' =>
+  array (
+    'init' => '4.0.0',
+    'ext' => 'gd',
+    'pecl' => false,
+  ),
+  'iptcparse' =>
+  array (
+    'init' => '4.0.0',
     'ext' => 'gd',
     'pecl' => false,
   ),
