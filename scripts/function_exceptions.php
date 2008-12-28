@@ -11,6 +11,7 @@
  * 1.2       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/bzip2/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/com/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/ctype/versions.xml
+ * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/datetime/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/dom/versions.xml
  * 1.2       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/filter/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/ftp/versions.xml
@@ -55,10 +56,11 @@ $ds = DIRECTORY_SEPARATOR;
 $version_pattern = '\d+(?:\.\d+)*(?:[a-zA-Z]+\d*)?';
 $ext_pattern     = '(.*)\\'.$ds.'phpdocref\\'.$ds.'(.*)\\'.$ds.'versions.xml';
 
-$data_dir = '@data_dir@'.$ds.'@package_name@'.$ds.'phpdocref'.$ds;
+$data_dir = '@data_dir@'.$ds.'@package_name@'.$ds.'data'.$ds.'phpdocref'.$ds;
 
 $aliases = array('bc' => 'bcmath',
                  'bzip2' => 'bz2',
+                 'datetime' => 'date',
                  'image' => 'gd',
                  'pdo' => 'PDO',
                  'simplexml' => 'SimpleXML',

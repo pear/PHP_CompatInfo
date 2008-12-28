@@ -13,20 +13,5 @@
  * @link     http://pear.php.net/package/PHP_CompatInfo
  */
 
-$class_exceptions = array (
-  'standard' => array(
-    'Exception' =>
-    array (
-      'init' => '5.0.0',
-    ),
-    'php_user_filter' =>
-    array (
-      'init' => '5.0.0',
-    ),
-    'stdClass' =>
-    array (
-      'init' => '4.0.0',
-    ),
-  ),
-);
+$class_exceptions = array();
 ?>
