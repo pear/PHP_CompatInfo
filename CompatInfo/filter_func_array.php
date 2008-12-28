@@ -57,40 +57,5 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_FILTER'] = array (
     'ext' => 'filter',
     'pecl' => false,
   ),
-  'input_filters_list' =>
-  array (
-    'init' => '0.10.0',
-    'end' => '0.9.4',
-    'ext' => 'filter',
-    'pecl' => true,
-  ),
-  'input_get' =>
-  array (
-    'init' => '0.10.0',
-    'end' => '0.9.4',
-    'ext' => 'filter',
-    'pecl' => true,
-  ),
-  'input_get_args' =>
-  array (
-    'init' => '0.10.0',
-    'end' => '0.10.0',
-    'ext' => 'filter',
-    'pecl' => true,
-  ),
-  'input_has_variable' =>
-  array (
-    'init' => '0.10.0',
-    'end' => '0.9.4',
-    'ext' => 'filter',
-    'pecl' => true,
-  ),
-  'input_name_to_filter' =>
-  array (
-    'init' => '0.10.0',
-    'end' => '0.9.4',
-    'ext' => 'filter',
-    'pecl' => true,
-  ),
 );
 ?>
