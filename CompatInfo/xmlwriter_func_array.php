@@ -17,297 +17,255 @@
 $GLOBALS['_PHP_COMPATINFO_FUNC_XMLWRITER'] = array (
   'xmlwriter_end_attribute' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_end_cdata' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_end_comment' =>
   array (
-    'init' => '1.0',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_end_document' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_end_dtd' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_end_dtd_attlist' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_end_dtd_element' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_end_dtd_entity' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.2.1',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_end_element' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_end_pi' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_flush' =>
   array (
-    'init' => '1.0',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_full_end_element' =>
   array (
-    'init' => '2.0.4',
-    'end' => '2.0.4',
+    'init' => '5.2.0',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_open_memory' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_open_uri' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_output_memory' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_set_indent' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_set_indent_string' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_attribute' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_attribute_ns' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_cdata' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_comment' =>
   array (
-    'init' => '1.0',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_document' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_dtd' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_dtd_attlist' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_dtd_element' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_dtd_entity' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.2.1',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_element' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_element_ns' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_start_pi' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_text' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_attribute' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_attribute_ns' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_cdata' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_comment' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_dtd' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_dtd_attlist' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_dtd_element' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_dtd_entity' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.2.1',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_element' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_element_ns' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_pi' =>
   array (
-    'init' => '0.1',
-    'end' => '2.0.4',
+    'init' => '5.1.2',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'xmlwriter_write_raw' =>
   array (
-    'init' => '2.0.4',
-    'end' => '2.0.4',
+    'init' => '5.2.0',
     'ext' => 'xmlwriter',
-    'pecl' => true,
+    'pecl' => false,
   ),
 );
 ?>

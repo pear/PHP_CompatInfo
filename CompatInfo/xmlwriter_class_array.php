@@ -15,9 +15,9 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_CLASS_XMLWRITER'] = array (
-  'XMLWriter' => 
+  'XMLWriter' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.2',
     'name' => 'XMLWriter',
     'ext' => 'xmlwriter',
     'pecl' => false,
