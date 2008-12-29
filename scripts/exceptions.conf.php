@@ -42,6 +42,7 @@ require_once 'date_const_exceptions.php';
 require_once 'ftp_const_exceptions.php';
 require_once 'gd_const_exceptions.php';
 require_once 'gmp_const_exceptions.php';
+require_once 'iconv_const_exceptions.php';
 require_once 'pcre_const_exceptions.php';
 require_once 'standard_const_exceptions.php';
 
