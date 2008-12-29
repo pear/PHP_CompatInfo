@@ -15,24 +15,24 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_CONST_GMP'] = array (
-  'GMP_ROUND_MINUSINF' => 
+  'GMP_ROUND_MINUSINF' =>
   array (
     'init' => '4.0.4',
     'name' => 'GMP_ROUND_MINUSINF',
   ),
-  'GMP_ROUND_PLUSINF' => 
+  'GMP_ROUND_PLUSINF' =>
   array (
     'init' => '4.0.4',
     'name' => 'GMP_ROUND_PLUSINF',
   ),
-  'GMP_ROUND_ZERO' => 
+  'GMP_ROUND_ZERO' =>
   array (
     'init' => '4.0.4',
     'name' => 'GMP_ROUND_ZERO',
   ),
-  'GMP_VERSION' => 
+  'GMP_VERSION' =>
   array (
-    'init' => '4.0.4',
+    'init' => '5.2.2',
     'name' => 'GMP_VERSION',
   ),
 );
