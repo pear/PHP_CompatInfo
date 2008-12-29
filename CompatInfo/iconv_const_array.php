@@ -17,22 +17,22 @@
 $GLOBALS['_PHP_COMPATINFO_CONST_ICONV'] = array (
   'ICONV_IMPL' => 
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'ICONV_IMPL',
   ),
   'ICONV_MIME_DECODE_CONTINUE_ON_ERROR' => 
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'ICONV_MIME_DECODE_CONTINUE_ON_ERROR',
   ),
   'ICONV_MIME_DECODE_STRICT' => 
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'ICONV_MIME_DECODE_STRICT',
   ),
   'ICONV_VERSION' => 
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'ICONV_VERSION',
   ),
 );
