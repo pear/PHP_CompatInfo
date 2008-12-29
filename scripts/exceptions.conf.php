@@ -66,6 +66,7 @@ require_once 'function_exceptions.php';
 require_once 'calendar_func_exceptions.php';
 require_once 'date_func_exceptions.php';
 require_once 'gd_func_exceptions.php';
+require_once 'gettext_func_exceptions.php';
 require_once 'hash_func_exceptions.php';
 require_once 'iconv_func_exceptions.php';
 require_once 'libxml_func_exceptions.php';
