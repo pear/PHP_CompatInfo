@@ -131,8 +131,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_ZLIB'] = array (
   ),
   'ob_gzhandler' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'ob_gzhandler',
+    'init' => '4.0.4',
     'ext' => 'zlib',
     'pecl' => false,
   ),
