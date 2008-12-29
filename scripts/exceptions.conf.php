@@ -24,6 +24,7 @@ $version_exceptions = array('bz2' => '4.0.4',
                             'filter' => '5.2.0',
                             'gmp' => '4.0.4',
                             'json' => '5.2.0',
+                            'libxml' => '5.1.0',
                             'openssl' => '4.0.4',
                             'pcre' => '4.0.0',
                             'PDO' => '5.1.0',
@@ -67,6 +68,7 @@ require_once 'date_func_exceptions.php';
 require_once 'gd_func_exceptions.php';
 require_once 'hash_func_exceptions.php';
 require_once 'iconv_func_exceptions.php';
+require_once 'libxml_func_exceptions.php';
 require_once 'spl_func_exceptions.php';
 require_once 'xmlwriter_func_exceptions.php';
 require_once 'zlib_func_exceptions.php';
