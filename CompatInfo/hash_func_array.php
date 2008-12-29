@@ -17,101 +17,87 @@
 $GLOBALS['_PHP_COMPATINFO_FUNC_HASH'] = array (
   'hash' =>
   array (
-    'init' => '1.1',
-    'end' => '1.5',
+    'init' => '5.1.2',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'hash_algos' =>
   array (
-    'init' => '1.1',
-    'end' => '1.5',
+    'init' => '5.1.2',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'hash_file' =>
   array (
-    'init' => '1.1',
-    'end' => '1.5',
+    'init' => '5.1.2',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'hash_final' =>
   array (
-    'init' => '1.1',
-    'end' => '1.5',
+    'init' => '5.1.2',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'hash_hmac' =>
   array (
-    'init' => '1.1',
-    'end' => '1.5',
+    'init' => '5.1.2',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'hash_hmac_file' =>
   array (
-    'init' => '1.1',
-    'end' => '1.5',
+    'init' => '5.1.2',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'hash_init' =>
   array (
-    'init' => '1.1',
-    'end' => '1.5',
+    'init' => '5.1.2',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'hash_update' =>
   array (
-    'init' => '1.1',
-    'end' => '1.5',
+    'init' => '5.1.2',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'hash_update_file' =>
   array (
-    'init' => '1.1',
-    'end' => '1.5',
+    'init' => '5.1.2',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'hash_update_stream' =>
   array (
-    'init' => '1.1',
-    'end' => '1.5',
+    'init' => '5.1.2',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'md5' =>
   array (
-    'init' => '1.1',
-    'end' => '1.3',
+    'init' => '4.0.0',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'md5_file' =>
   array (
-    'init' => '1.1',
-    'end' => '1.3',
+    'init' => '4.2.0',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'sha1' =>
   array (
-    'init' => '1.1',
-    'end' => '1.3',
+    'init' => '4.3.0',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
   'sha1_file' =>
   array (
-    'init' => '1.1',
-    'end' => '1.3',
+    'init' => '4.3.0',
     'ext' => 'hash',
-    'pecl' => true,
+    'pecl' => false,
   ),
 );
 ?>
