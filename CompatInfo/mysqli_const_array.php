@@ -87,8 +87,13 @@ $GLOBALS['_PHP_COMPATINFO_CONST_MYSQLI'] = array (
   ),
   'MYSQLI_DATA_TRUNCATED' => 
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'MYSQLI_DATA_TRUNCATED',
+  ),
+  'MYSQLI_ENUM_FLAG' => 
+  array (
+    'init' => '5.3.0',
+    'name' => 'MYSQLI_ENUM_FLAG',
   ),
   'MYSQLI_GROUP_FLAG' => 
   array (

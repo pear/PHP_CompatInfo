@@ -15,661 +15,682 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_FUNC_MYSQLI'] = array (
-  'mysqli_affected_rows' =>
+  'mysqli_affected_rows' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_autocommit' =>
+  'mysqli_autocommit' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_bind_param' =>
+  'mysqli_bind_param' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_bind_result' =>
+  'mysqli_bind_result' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_change_user' =>
+  'mysqli_change_user' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_character_set_name' =>
+  'mysqli_character_set_name' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_client_encoding' =>
+  'mysqli_client_encoding' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_close' =>
+  'mysqli_close' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_commit' =>
+  'mysqli_commit' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_connect' =>
+  'mysqli_connect' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_connect_errno' =>
+  'mysqli_connect_errno' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_connect_error' =>
+  'mysqli_connect_error' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_data_seek' =>
+  'mysqli_data_seek' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_debug' =>
+  'mysqli_debug' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_disable_reads_from_master' =>
+  'mysqli_disable_reads_from_master' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_disable_rpl_parse' =>
+  'mysqli_disable_rpl_parse' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_dump_debug_info' =>
+  'mysqli_dump_debug_info' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_embedded_server_end' =>
+  'mysqli_embedded_connect' => 
   array (
-    'init' => '5.1.0',
+    'end' => '5.0.5',
     'ext' => 'mysqli',
     'pecl' => false,
-  ),
-  'mysqli_embedded_server_start' =>
-  array (
-    'init' => '5.1.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_enable_reads_from_master' =>
-  array (
     'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
   ),
-  'mysqli_enable_rpl_parse' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_errno' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_error' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_escape_string' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_execute' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_fetch' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_fetch_array' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_fetch_assoc' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_fetch_field' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_fetch_field_direct' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_fetch_fields' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_fetch_lengths' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_fetch_object' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_fetch_row' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_field_count' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_field_seek' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_field_tell' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_free_result' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_get_charset' =>
+  'mysqli_embedded_server_end' => 
   array (
     'init' => '5.1.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_get_client_info' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_get_client_version' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_get_host_info' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_get_metadata' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_get_proto_info' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_get_server_info' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_get_server_version' =>
-  array (
-    'init' => '5.0.0',
-    'ext' => 'mysqli',
-    'pecl' => false,
-  ),
-  'mysqli_get_warnings' =>
+  'mysqli_embedded_server_start' => 
   array (
     'init' => '5.1.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_info' =>
+  'mysqli_enable_reads_from_master' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_init' =>
+  'mysqli_enable_rpl_parse' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_insert_id' =>
+  'mysqli_errno' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_kill' =>
+  'mysqli_error' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_master_query' =>
+  'mysqli_escape_string' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_more_results' =>
+  'mysqli_execute' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_multi_query' =>
+  'mysqli_fetch' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_next_result' =>
+  'mysqli_fetch_array' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_num_fields' =>
+  'mysqli_fetch_assoc' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_num_rows' =>
+  'mysqli_fetch_field' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_options' =>
+  'mysqli_fetch_field_direct' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_param_count' =>
+  'mysqli_fetch_fields' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_ping' =>
+  'mysqli_fetch_lengths' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_prepare' =>
+  'mysqli_fetch_object' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_query' =>
+  'mysqli_fetch_row' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_real_connect' =>
+  'mysqli_field_count' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_real_escape_string' =>
+  'mysqli_field_seek' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_real_query' =>
+  'mysqli_field_tell' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_report' =>
+  'mysqli_free_result' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_rollback' =>
+  'mysqli_get_charset' => 
+  array (
+    'init' => '5.1.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_get_client_info' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_rpl_parse_enabled' =>
+  'mysqli_get_client_version' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_rpl_probe' =>
+  'mysqli_get_host_info' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_rpl_query_type' =>
+  'mysqli_get_metadata' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_select_db' =>
+  'mysqli_get_proto_info' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_send_long_data' =>
+  'mysqli_get_server_info' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_send_query' =>
+  'mysqli_get_server_version' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_set_charset' =>
+  'mysqli_get_warnings' => 
+  array (
+    'init' => '5.1.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_info' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_init' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_insert_id' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_kill' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_master_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_more_results' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_multi_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_next_result' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_num_fields' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_num_rows' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_options' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_param_count' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_ping' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_prepare' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_real_connect' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_real_escape_string' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_real_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_report' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_rollback' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_rpl_parse_enabled' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_rpl_probe' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_rpl_query_type' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_select_db' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_send_long_data' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_send_query' => 
+  array (
+    'init' => '5.0.0',
+    'ext' => 'mysqli',
+    'pecl' => false,
+  ),
+  'mysqli_server_end' => 
+  array (
+    'end' => '5.0.5',
+    'ext' => 'mysqli',
+    'pecl' => false,
+    'init' => '5.0.0',
+  ),
+  'mysqli_server_init' => 
+  array (
+    'end' => '5.0.5',
+    'ext' => 'mysqli',
+    'pecl' => false,
+    'init' => '5.0.0',
+  ),
+  'mysqli_set_charset' => 
   array (
     'init' => '5.0.5',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_set_local_infile_default' =>
+  'mysqli_set_local_infile_default' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_set_local_infile_handler' =>
+  'mysqli_set_local_infile_handler' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_set_opt' =>
+  'mysqli_set_opt' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_slave_query' =>
+  'mysqli_slave_query' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_sqlstate' =>
+  'mysqli_sqlstate' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_ssl_set' =>
+  'mysqli_ssl_set' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stat' =>
+  'mysqli_stat' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_affected_rows' =>
+  'mysqli_stmt_affected_rows' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_attr_get' =>
+  'mysqli_stmt_attr_get' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_attr_set' =>
+  'mysqli_stmt_attr_set' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_bind_param' =>
+  'mysqli_stmt_bind_param' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_bind_result' =>
+  'mysqli_stmt_bind_result' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_close' =>
+  'mysqli_stmt_close' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_data_seek' =>
+  'mysqli_stmt_data_seek' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_errno' =>
+  'mysqli_stmt_errno' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_error' =>
+  'mysqli_stmt_error' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_execute' =>
+  'mysqli_stmt_execute' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_fetch' =>
+  'mysqli_stmt_fetch' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_field_count' =>
+  'mysqli_stmt_field_count' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_free_result' =>
+  'mysqli_stmt_free_result' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_get_warnings' =>
+  'mysqli_stmt_get_warnings' => 
   array (
     'init' => '5.1.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_init' =>
+  'mysqli_stmt_init' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_insert_id' =>
+  'mysqli_stmt_insert_id' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_num_rows' =>
+  'mysqli_stmt_num_rows' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_param_count' =>
+  'mysqli_stmt_param_count' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_prepare' =>
+  'mysqli_stmt_prepare' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_reset' =>
+  'mysqli_stmt_reset' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_result_metadata' =>
+  'mysqli_stmt_result_metadata' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_send_long_data' =>
+  'mysqli_stmt_send_long_data' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_sqlstate' =>
+  'mysqli_stmt_sqlstate' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_stmt_store_result' =>
+  'mysqli_stmt_store_result' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_store_result' =>
+  'mysqli_store_result' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_thread_id' =>
+  'mysqli_thread_id' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_thread_safe' =>
+  'mysqli_thread_safe' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_use_result' =>
+  'mysqli_use_result' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
     'pecl' => false,
   ),
-  'mysqli_warning_count' =>
+  'mysqli_warning_count' => 
   array (
     'init' => '5.0.0',
     'ext' => 'mysqli',
