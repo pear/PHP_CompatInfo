@@ -15,30 +15,30 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_CLASS_PDO'] = array (
-  'PDO' => 
+  'PDO' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'PDO',
     'ext' => 'PDO',
     'pecl' => false,
   ),
-  'PDOException' => 
+  'PDOException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'PDOException',
     'ext' => 'PDO',
     'pecl' => false,
   ),
-  'PDORow' => 
+  'PDORow' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'PDORow',
     'ext' => 'PDO',
     'pecl' => false,
   ),
-  'PDOStatement' => 
+  'PDOStatement' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'PDOStatement',
     'ext' => 'PDO',
     'pecl' => false,

@@ -15,12 +15,11 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_FUNC_PDO'] = array (
-  'pdo_drivers' =>
+  'pdo_drivers' => 
   array (
-    'init' => '0.9',
-    'end' => '1.0.3',
+    'init' => '5.1.0',
     'ext' => 'PDO',
-    'pecl' => true,
+    'pecl' => false,
   ),
 );
 ?>
