@@ -15,11 +15,11 @@
  * @since    version 1.9.0 (2009-01-19)
  */
 
-if (!isset($function_exceptions['spl'])) {
-    $function_exceptions['spl'] = array();
+if (!isset($function_exceptions['SPL'])) {
+    $function_exceptions['SPL'] = array();
 }
 
-$function_exceptions['spl'] = array_merge($function_exceptions['spl'], array(
+$function_exceptions['SPL'] = array_merge($function_exceptions['SPL'], array(
   'class_implements' =>
   array (
     'init' => '5.0.0',
