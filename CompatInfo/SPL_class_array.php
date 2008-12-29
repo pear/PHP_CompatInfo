@@ -15,303 +15,303 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_CLASS_SPL'] = array (
-  'AppendIterator' => 
+  'AppendIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'AppendIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'ArrayIterator' => 
+  'ArrayIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'ArrayIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'ArrayObject' => 
+  'ArrayObject' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'ArrayObject',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'BadFunctionCallException' => 
+  'BadFunctionCallException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'BadFunctionCallException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'BadMethodCallException' => 
+  'BadMethodCallException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'BadMethodCallException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'CachingIterator' => 
+  'CachingIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'CachingIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'Countable' => 
+  'Countable' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'Countable',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'DirectoryIterator' => 
+  'DirectoryIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DirectoryIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'DomainException' => 
+  'DomainException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'DomainException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'EmptyIterator' => 
+  'EmptyIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'EmptyIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'FilterIterator' => 
+  'FilterIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'FilterIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'InfiniteIterator' => 
+  'InfiniteIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'InfiniteIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'InvalidArgumentException' => 
+  'InvalidArgumentException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'InvalidArgumentException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'IteratorIterator' => 
+  'IteratorIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'IteratorIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'LengthException' => 
+  'LengthException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'LengthException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'LimitIterator' => 
+  'LimitIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'LimitIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'LogicException' => 
+  'LogicException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'LogicException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'NoRewindIterator' => 
+  'NoRewindIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'NoRewindIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'OutOfBoundsException' => 
+  'OutOfBoundsException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'OutOfBoundsException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'OutOfRangeException' => 
+  'OutOfRangeException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'OutOfRangeException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'OuterIterator' => 
+  'OuterIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'OuterIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'OverflowException' => 
+  'OverflowException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'OverflowException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'ParentIterator' => 
+  'ParentIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'ParentIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'RangeException' => 
+  'RangeException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'RangeException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'RecursiveArrayIterator' => 
+  'RecursiveArrayIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'RecursiveArrayIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'RecursiveCachingIterator' => 
+  'RecursiveCachingIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'RecursiveCachingIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'RecursiveDirectoryIterator' => 
+  'RecursiveDirectoryIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'RecursiveDirectoryIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'RecursiveFilterIterator' => 
+  'RecursiveFilterIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'RecursiveFilterIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'RecursiveIterator' => 
+  'RecursiveIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'RecursiveIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'RecursiveIteratorIterator' => 
+  'RecursiveIteratorIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'RecursiveIteratorIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'RecursiveRegexIterator' => 
+  'RecursiveRegexIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'RecursiveRegexIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'RegexIterator' => 
+  'RegexIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'RegexIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'RuntimeException' => 
+  'RuntimeException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'RuntimeException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'SeekableIterator' => 
+  'SeekableIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'SeekableIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'SimpleXMLIterator' => 
+  'SimpleXMLIterator' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'SimpleXMLIterator',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'SplFileInfo' => 
+  'SplFileInfo' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'SplFileInfo',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'SplFileObject' => 
+  'SplFileObject' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'SplFileObject',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'SplObjectStorage' => 
+  'SplObjectStorage' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'SplObjectStorage',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'SplObserver' => 
+  'SplObserver' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'SplObserver',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'SplSubject' => 
+  'SplSubject' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'SplSubject',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'SplTempFileObject' => 
+  'SplTempFileObject' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'SplTempFileObject',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'UnderflowException' => 
+  'UnderflowException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'UnderflowException',
     'ext' => 'SPL',
     'pecl' => false,
   ),
-  'UnexpectedValueException' => 
+  'UnexpectedValueException' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'UnexpectedValueException',
     'ext' => 'SPL',
     'pecl' => false,

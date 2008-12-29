@@ -15,9 +15,9 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_CLASS_SIMPLEXML'] = array (
-  'SimpleXMLElement' => 
+  'SimpleXMLElement' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.0.0',
     'name' => 'SimpleXMLElement',
     'ext' => 'SimpleXML',
     'pecl' => false,
