@@ -83,85 +83,73 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_MBSTRING'] = array (
   ),
   'mb_ereg' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_ereg',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_ereg_match' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_ereg_match',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_ereg_replace' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_ereg_replace',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_ereg_search' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_ereg_search',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_ereg_search_getpos' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_ereg_search_getpos',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_ereg_search_getregs' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_ereg_search_getregs',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_ereg_search_init' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_ereg_search_init',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_ereg_search_pos' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_ereg_search_pos',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_ereg_search_regs' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_ereg_search_regs',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_ereg_search_setpos' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_ereg_search_setpos',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_eregi' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_eregi',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_eregi_replace' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_eregi_replace',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
@@ -233,15 +221,13 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_MBSTRING'] = array (
   ),
   'mb_regex_encoding' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_regex_encoding',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mb_regex_set_options' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_regex_set_options',
+    'init' => '4.3.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
@@ -253,8 +239,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_MBSTRING'] = array (
   ),
   'mb_split' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mb_split',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
@@ -362,99 +347,115 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_MBSTRING'] = array (
   ),
   'mbereg' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbereg',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbereg_match' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbereg_match',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbereg_replace' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbereg_replace',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbereg_search' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbereg_search',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbereg_search_getpos' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbereg_search_getpos',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbereg_search_getregs' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbereg_search_getregs',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbereg_search_init' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbereg_search_init',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbereg_search_pos' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbereg_search_pos',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbereg_search_regs' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbereg_search_regs',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbereg_search_setpos' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbereg_search_setpos',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mberegi' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mberegi',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mberegi_replace' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mberegi_replace',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbregex_encoding' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbregex_encoding',
+    'init' => '4.2.0',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
   'mbsplit' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'mbsplit',
+    'init' => '4.2.0',
+    'ext' => 'mbstring',
+    'pecl' => false,
+  ),
+  'mbstrcut' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'mbstring',
+    'pecl' => false,
+  ),
+  'mbstrlen' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'mbstring',
+    'pecl' => false,
+  ),
+  'mbstrpos' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'mbstring',
+    'pecl' => false,
+  ),
+  'mbstrrpos' =>
+  array (
+    'init' => '4.0.6',
+    'ext' => 'mbstring',
+    'pecl' => false,
+  ),
+  'mbsubstr' =>
+  array (
+    'init' => '4.0.6',
     'ext' => 'mbstring',
     'pecl' => false,
   ),
