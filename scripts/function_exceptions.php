@@ -15,6 +15,7 @@
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/dom/versions.xml
  * 1.2       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/filter/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/ftp/versions.xml
+ * 1.2       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/gmp/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/hash/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/iconv/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/image/versions.xml
