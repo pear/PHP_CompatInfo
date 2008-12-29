@@ -15,459 +15,398 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_FUNC_MYSQL'] = array (
-  'mysql' =>
+  'mysql' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_affected_rows' =>
+  'mysql_affected_rows' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_client_encoding' =>
+  'mysql_client_encoding' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.3.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_close' =>
+  'mysql_close' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_connect' =>
+  'mysql_connect' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_create_db' =>
+  'mysql_create_db' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_createdb' =>
+  'mysql_createdb' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'end' => '5.1.6',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
+    'init' => '4.0.0',
   ),
-  'mysql_data_seek' =>
+  'mysql_data_seek' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_db_name' =>
+  'mysql_db_name' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_db_query' =>
+  'mysql_db_query' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_dbname' =>
+  'mysql_dbname' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_drop_db' =>
+  'mysql_drop_db' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_dropdb' =>
+  'mysql_dropdb' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'end' => '5.1.6',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
+    'init' => '4.0.0',
   ),
-  'mysql_errno' =>
+  'mysql_errno' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_error' =>
+  'mysql_error' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_escape_string' =>
+  'mysql_escape_string' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.3',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fetch_array' =>
+  'mysql_fetch_array' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fetch_assoc' =>
+  'mysql_fetch_assoc' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.3',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fetch_field' =>
+  'mysql_fetch_field' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fetch_lengths' =>
+  'mysql_fetch_lengths' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fetch_object' =>
+  'mysql_fetch_object' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fetch_row' =>
+  'mysql_fetch_row' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_field_flags' =>
+  'mysql_field_flags' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_field_len' =>
+  'mysql_field_len' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_field_name' =>
+  'mysql_field_name' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_field_seek' =>
+  'mysql_field_seek' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_field_table' =>
+  'mysql_field_table' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_field_type' =>
+  'mysql_field_type' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fieldflags' =>
+  'mysql_fieldflags' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fieldlen' =>
+  'mysql_fieldlen' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fieldname' =>
+  'mysql_fieldname' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fieldtable' =>
+  'mysql_fieldtable' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_fieldtype' =>
+  'mysql_fieldtype' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_free_result' =>
+  'mysql_free_result' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_freeresult' =>
+  'mysql_freeresult' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_get_client_info' =>
+  'mysql_get_client_info' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.5',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_get_host_info' =>
+  'mysql_get_host_info' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.5',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_get_proto_info' =>
+  'mysql_get_proto_info' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.5',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_get_server_info' =>
+  'mysql_get_server_info' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.5',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_info' =>
+  'mysql_info' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.3.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_insert_id' =>
+  'mysql_insert_id' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_list_dbs' =>
+  'mysql_list_dbs' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_list_fields' =>
+  'mysql_list_fields' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_list_processes' =>
+  'mysql_list_processes' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.3.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_list_tables' =>
+  'mysql_list_tables' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_listdbs' =>
+  'mysql_listdbs' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_listfields' =>
+  'mysql_listfields' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_listtables' =>
+  'mysql_listtables' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'end' => '5.1.6',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
+    'init' => '4.0.0',
   ),
-  'mysql_num_fields' =>
+  'mysql_num_fields' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_num_rows' =>
+  'mysql_num_rows' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_numfields' =>
+  'mysql_numfields' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_numrows' =>
+  'mysql_numrows' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_pconnect' =>
+  'mysql_pconnect' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_ping' =>
+  'mysql_ping' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.3.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_query' =>
+  'mysql_query' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_real_escape_string' =>
+  'mysql_real_escape_string' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.3.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_result' =>
+  'mysql_result' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_select_db' =>
+  'mysql_select_db' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_selectdb' =>
+  'mysql_selectdb' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_set_charset' =>
+  'mysql_set_charset' => 
   array (
     'init' => '5.2.3',
     'ext' => 'mysql',
     'pecl' => false,
   ),
-  'mysql_stat' =>
+  'mysql_stat' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.3.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_table_name' =>
+  'mysql_table_name' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.3.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_tablename' =>
+  'mysql_tablename' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_thread_id' =>
+  'mysql_thread_id' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.3.0',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'mysql_unbuffered_query' =>
+  'mysql_unbuffered_query' => 
   array (
-    'init' => '1.0',
-    'end' => '1.0',
+    'init' => '4.0.6',
     'ext' => 'mysql',
-    'pecl' => true,
+    'pecl' => false,
   ),
 );
 ?>
