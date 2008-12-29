@@ -66,7 +66,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_SESSION'] = array (
   'session_is_registered' =>
   array (
     'init' => '4.0.0',
-    'name' => 'session_is_registered',
     'ext' => 'session',
     'pecl' => false,
   ),
@@ -91,7 +90,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_SESSION'] = array (
   'session_register' =>
   array (
     'init' => '4.0.0',
-    'name' => 'session_register',
     'ext' => 'session',
     'pecl' => false,
   ),
@@ -122,7 +120,6 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_SESSION'] = array (
   'session_unregister' =>
   array (
     'init' => '4.0.0',
-    'name' => 'session_unregister',
     'ext' => 'session',
     'pecl' => false,
   ),
