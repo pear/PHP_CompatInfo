@@ -18,10 +18,10 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-12-19</date>
- <time>01:31:37</time>
+ <date>2008-12-29</date>
+ <time>18:52:52</time>
  <version>
-  <release>1.9.0b2</release>
+  <release>1.9.0b3</release>
   <api>1.9.0</api>
  </version>
  <stability>
@@ -40,25 +40,17 @@ which shows which functions require which version and CLI output script</descrip
 - A more comprehensive guide will be available for final stable release, ready for
   PhD system and new PEAR Manual.
 
-* news
-- pciconf: the extension support list build system for PHP5 users only
-  use now a new exception handler for functions, and allow to make SAPI dictionaries
-- improve again constant detection by adding a new dictionaries for internal
-  (php core) constants.
-- 3 new methods: getIgnoredFunctions, getIgnoredExtensions, getIgnoredConstants
-- 1 old method open to public: getIgnoredFiles
+* changes since beta2
+- pciconf script did not used anymore the monolithic versions.xml and funclist.txt
+data sources. Version information about extensions came from specific extension version.xml
+file that are installed into PEAR/data/PHP_CompatInfo/phpdocref
+
+* bugs fixed since beta2
+- CSV, HTML and XML renderers did not provided expected result
+  due to new classes result-key entry
 
 You are welcome to read my presentation about the new API at
 http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
-
-Do not hesitate to give me your feedback. More we test it, more stable will be
-the final version.
-
-* roadmap
-- 2008-11-23 first alpha version
-- 2008-11-26 first beta version
-- 2008-12-19 second beta release
-- 2009-01-19 final stable release
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -183,6 +175,115 @@ the final version.
     <file name="zlib_const_array.php" role="php" />
     <file name="zlib_func_array.php" role="php" />
    </dir> <!-- /CompatInfo -->
+   <dir name="data">
+    <dir name="phpdocref">
+     <dir name="apache">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/apache -->
+     <dir name="apc">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/apc -->
+     <dir name="apd">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/apd -->
+     <dir name="bcmath">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/bcmath -->
+     <dir name="bzip2">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/bzip2 -->
+     <dir name="com">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/com -->
+     <dir name="ctype">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/ctype -->
+     <dir name="datetime">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/datetime -->
+     <dir name="dom">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/dom -->
+     <dir name="filter">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/filter -->
+     <dir name="ftp">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/ftp -->
+     <dir name="gmp">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/gmp -->
+     <dir name="hash">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/hash -->
+     <dir name="iconv">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/iconv -->
+     <dir name="image">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/image -->
+     <dir name="json">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/json -->
+     <dir name="mbstring">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/mbstring -->
+     <dir name="mysql">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/mysql -->
+     <dir name="mysqli">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/mysqli -->
+     <dir name="openssl">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/openssl -->
+     <dir name="pcre">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/pcre -->
+     <dir name="pdo">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/pdo -->
+     <dir name="posix">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/posix -->
+     <dir name="session">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/session -->
+     <dir name="simplexml">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/simplexml -->
+     <dir name="spl">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/spl -->
+     <dir name="ssh2">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/ssh2 -->
+     <dir name="tidy">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/tidy -->
+     <dir name="wddx">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/wddx -->
+     <dir name="xml">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/xml -->
+     <dir name="xmlreader">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/xmlreader -->
+     <dir name="xmlwriter">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/xmlwriter -->
+     <dir name="xslt">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/xslt -->
+     <dir name="zip">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/zip -->
+     <dir name="zlib">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/zlib -->
+    </dir> <!-- /data/phpdocref -->
+   </dir> <!-- /data -->
    <dir name="docs">
     <dir name="examples">
      <file name="checkConstants.php" role="doc" />
@@ -211,6 +312,8 @@ the final version.
     </dir> <!-- /docs/examples -->
    </dir> <!-- /docs -->
    <dir name="scripts">
+    <file baseinstalldir="" name="calendar_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="calendar_func_exceptions.php" role="script" />
     <file baseinstalldir="" name="class_exceptions.php" role="script" />
     <file baseinstalldir="" name="compatinfo.bat" role="script">
      <tasks:windowseol />
@@ -224,9 +327,27 @@ the final version.
      <tasks:replace from="@package_version@" to="version" type="package-info" />
     </file>
     <file baseinstalldir="" name="constant_exceptions.php" role="script" />
+    <file baseinstalldir="" name="date_class_exceptions.php" role="script" />
+    <file baseinstalldir="" name="date_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="date_func_exceptions.php" role="script" />
     <file baseinstalldir="" name="exceptions.conf.php" role="script" />
-    <file baseinstalldir="" name="funclist.txt" role="script" />
-    <file baseinstalldir="" name="function_exceptions.php" role="script" />
+    <file baseinstalldir="" name="ftp_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="function_exceptions.php" role="script">
+     <tasks:replace from="@data_dir@" to="data_dir" type="pear-config" />
+     <tasks:replace from="@package_name@" to="name" type="package-info" />
+    </file>
+    <file baseinstalldir="" name="gd_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="gd_func_exceptions.php" role="script" />
+    <file baseinstalldir="" name="gettext_func_exceptions.php" role="script" />
+    <file baseinstalldir="" name="gmp_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="hash_func_exceptions.php" role="script" />
+    <file baseinstalldir="" name="iconv_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="iconv_func_exceptions.php" role="script" />
+    <file baseinstalldir="" name="internal_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="libxml_func_exceptions.php" role="script" />
+    <file baseinstalldir="" name="mysqli_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="mysql_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="openssl_const_exceptions.php" role="script" />
     <file baseinstalldir="" name="pci.php" role="script">
      <tasks:unixeol />
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
@@ -236,7 +357,12 @@ the final version.
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
      <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
     </file>
-    <file baseinstalldir="" name="version.xml" role="script" />
+    <file baseinstalldir="" name="pcre_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="spl_func_exceptions.php" role="script" />
+    <file baseinstalldir="" name="standard_class_exceptions.php" role="script" />
+    <file baseinstalldir="" name="standard_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="xmlwriter_func_exceptions.php" role="script" />
+    <file baseinstalldir="" name="zlib_func_exceptions.php" role="script" />
    </dir> <!-- /scripts -->
    <dir name="tests">
     <dir name="beehiveforum082">
@@ -389,6 +515,41 @@ the final version.
  <changelog>
   <release>
    <version>
+    <release>1.9.0b3</release>
+    <api>1.9.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-12-29</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+* IMPORTANT
+- if you are PHP5 user only:
+  use the pciconf script to build your own extension support list
+- if you are PHP4 user only:
+  pciconf script required at least PHP5 to run, so to build your own support list,
+  do it by hand. All major extensions and their PCI dictionaries are available
+  on PEAR CVS [http://cvs.php.net/viewvc.cgi/pear/PHP_CompatInfo/CompatInfo/]
+- A more comprehensive guide will be available for final stable release, ready for
+  PhD system and new PEAR Manual.
+
+* changes since beta2
+- pciconf script did not used anymore the monolithic versions.xml and funclist.txt
+data sources. Version information about extensions came from specific extension version.xml
+file that are installed into PEAR/data/PHP_CompatInfo/phpdocref
+
+* bugs fixed since beta2
+- CSV, HTML and XML renderers did not provided expected result
+  due to new classes result-key entry
+
+You are welcome to read my presentation about the new API at
+http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.9.0b2</release>
     <api>1.9.0</api>
    </version>
@@ -398,8 +559,7 @@ the final version.
    </stability>
    <date>2008-12-19</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>
-* IMPORTANT
+   <notes>* IMPORTANT
 - if you are PHP5 user only:
   use the pciconf script to build your own extension support list
 - if you are PHP4 user only:
@@ -427,8 +587,7 @@ the final version.
 - 2008-11-23 first alpha version
 - 2008-11-26 first beta version
 - 2008-12-19 second beta release
-- 2009-01-19 final stable release
-   </notes>
+- 2009-01-19 final stable release</notes>
   </release>
   <release>
    <version>
