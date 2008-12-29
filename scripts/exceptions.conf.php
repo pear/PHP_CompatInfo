@@ -64,6 +64,7 @@ require_once 'calendar_func_exceptions.php';
 require_once 'date_func_exceptions.php';
 require_once 'gd_func_exceptions.php';
 require_once 'hash_func_exceptions.php';
+require_once 'spl_func_exceptions.php';
 
 /**
  * Function that provides to return exceptions results
