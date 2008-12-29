@@ -34,7 +34,8 @@ $version_exceptions = array('bz2' => '4.0.4',
                             'sockets' => '4.0.2',
                             'SimpleXML' => '5.0.0',
                             'SPL' => '5.0.0',
-                            'standard' => '4.0.0'
+                            'standard' => '4.0.0',
+                            'xmlreader' => '5.1.0',
                             );
 /* if default version is not 4.0.0, then we can fix the right
    constant initial version here */
