@@ -15,19 +15,23 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_FUNC_JSON'] = array (
-  'json_decode' =>
+  'json_decode' => 
   array (
-    'init' => '1.2.0',
-    'end' => '1.2.1',
+    'init' => '5.2.0',
     'ext' => 'json',
-    'pecl' => true,
+    'pecl' => false,
   ),
-  'json_encode' =>
+  'json_encode' => 
   array (
-    'init' => '1.2.0',
-    'end' => '1.2.1',
+    'init' => '5.2.0',
     'ext' => 'json',
-    'pecl' => true,
+    'pecl' => false,
+  ),
+  'json_last_error' => 
+  array (
+    'init' => '5.3.0',
+    'ext' => 'json',
+    'pecl' => false,
   ),
 );
 ?>
