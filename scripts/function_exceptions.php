@@ -23,6 +23,7 @@
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/mbstring/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/mysql/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/mysqli/versions.xml
+ * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/openssl/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/pcre/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/pdo/versions.xml
  * 1.1       http://cvs.php.net/viewvc.cgi/phpdoc/en/reference/posix/versions.xml
