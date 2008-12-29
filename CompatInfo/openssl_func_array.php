@@ -15,235 +15,253 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_FUNC_OPENSSL'] = array (
-  'openssl_csr_export' =>
+  'openssl_csr_export' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_csr_export_to_file' =>
+  'openssl_csr_export_to_file' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_csr_get_public_key' =>
+  'openssl_csr_get_public_key' => 
   array (
     'init' => '5.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_csr_get_subject' =>
+  'openssl_csr_get_subject' => 
   array (
     'init' => '5.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_csr_new' =>
+  'openssl_csr_new' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_csr_sign' =>
+  'openssl_csr_sign' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_error_string' =>
+  'openssl_error_string' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_free_key' =>
+  'openssl_free_key' => 
   array (
     'init' => '4.0.4',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_get_privatekey' =>
+  'openssl_free_x509' => 
   array (
     'init' => '4.0.4',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_get_publickey' =>
+  'openssl_get_privatekey' => 
   array (
     'init' => '4.0.4',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_open' =>
+  'openssl_get_publickey' => 
   array (
     'init' => '4.0.4',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkcs12_export' =>
+  'openssl_open' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'openssl',
+    'pecl' => false,
+  ),
+  'openssl_pkcs12_export' => 
   array (
     'init' => '5.2.2',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkcs12_export_to_file' =>
+  'openssl_pkcs12_export_to_file' => 
   array (
     'init' => '5.2.2',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkcs12_read' =>
+  'openssl_pkcs12_read' => 
   array (
     'init' => '5.2.2',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkcs7_decrypt' =>
+  'openssl_pkcs7_decrypt' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkcs7_encrypt' =>
+  'openssl_pkcs7_encrypt' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkcs7_sign' =>
+  'openssl_pkcs7_sign' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkcs7_verify' =>
+  'openssl_pkcs7_verify' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkey_export' =>
+  'openssl_pkey_export' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkey_export_to_file' =>
+  'openssl_pkey_export_to_file' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkey_free' =>
+  'openssl_pkey_free' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkey_get_details' =>
+  'openssl_pkey_get_details' => 
   array (
     'init' => '5.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkey_get_private' =>
+  'openssl_pkey_get_private' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkey_get_public' =>
+  'openssl_pkey_get_public' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_pkey_new' =>
+  'openssl_pkey_new' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_private_decrypt' =>
+  'openssl_private_decrypt' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_private_encrypt' =>
+  'openssl_private_encrypt' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_public_decrypt' =>
+  'openssl_public_decrypt' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_public_encrypt' =>
+  'openssl_public_encrypt' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_seal' =>
+  'openssl_read_publickey' => 
   array (
     'init' => '4.0.4',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_sign' =>
+  'openssl_read_x509' => 
   array (
     'init' => '4.0.4',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_verify' =>
+  'openssl_seal' => 
   array (
     'init' => '4.0.4',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_x509_check_private_key' =>
+  'openssl_sign' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'openssl',
+    'pecl' => false,
+  ),
+  'openssl_verify' => 
+  array (
+    'init' => '4.0.4',
+    'ext' => 'openssl',
+    'pecl' => false,
+  ),
+  'openssl_x509_check_private_key' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_x509_checkpurpose' =>
+  'openssl_x509_checkpurpose' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_x509_export' =>
+  'openssl_x509_export' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_x509_export_to_file' =>
+  'openssl_x509_export_to_file' => 
   array (
     'init' => '4.2.0',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_x509_free' =>
+  'openssl_x509_free' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_x509_parse' =>
+  'openssl_x509_parse' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
     'pecl' => false,
   ),
-  'openssl_x509_read' =>
+  'openssl_x509_read' => 
   array (
     'init' => '4.0.6',
     'ext' => 'openssl',
