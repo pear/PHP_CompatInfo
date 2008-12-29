@@ -15,104 +15,104 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_CONST_LIBXML'] = array (
-  'LIBXML_COMPACT' => 
+  'LIBXML_COMPACT' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_COMPACT',
   ),
-  'LIBXML_DOTTED_VERSION' => 
+  'LIBXML_DOTTED_VERSION' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_DOTTED_VERSION',
   ),
-  'LIBXML_DTDATTR' => 
+  'LIBXML_DTDATTR' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_DTDATTR',
   ),
-  'LIBXML_DTDLOAD' => 
+  'LIBXML_DTDLOAD' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_DTDLOAD',
   ),
-  'LIBXML_DTDVALID' => 
+  'LIBXML_DTDVALID' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_DTDVALID',
   ),
-  'LIBXML_ERR_ERROR' => 
+  'LIBXML_ERR_ERROR' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_ERR_ERROR',
   ),
-  'LIBXML_ERR_FATAL' => 
+  'LIBXML_ERR_FATAL' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_ERR_FATAL',
   ),
-  'LIBXML_ERR_NONE' => 
+  'LIBXML_ERR_NONE' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_ERR_NONE',
   ),
-  'LIBXML_ERR_WARNING' => 
+  'LIBXML_ERR_WARNING' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_ERR_WARNING',
   ),
-  'LIBXML_NOBLANKS' => 
+  'LIBXML_NOBLANKS' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_NOBLANKS',
   ),
-  'LIBXML_NOCDATA' => 
+  'LIBXML_NOCDATA' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_NOCDATA',
   ),
-  'LIBXML_NOEMPTYTAG' => 
+  'LIBXML_NOEMPTYTAG' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_NOEMPTYTAG',
   ),
-  'LIBXML_NOENT' => 
+  'LIBXML_NOENT' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_NOENT',
   ),
-  'LIBXML_NOERROR' => 
+  'LIBXML_NOERROR' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_NOERROR',
   ),
-  'LIBXML_NONET' => 
+  'LIBXML_NONET' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_NONET',
   ),
-  'LIBXML_NOWARNING' => 
+  'LIBXML_NOWARNING' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_NOWARNING',
   ),
-  'LIBXML_NOXMLDECL' => 
+  'LIBXML_NOXMLDECL' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_NOXMLDECL',
   ),
-  'LIBXML_NSCLEAN' => 
+  'LIBXML_NSCLEAN' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_NSCLEAN',
   ),
-  'LIBXML_VERSION' => 
+  'LIBXML_VERSION' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_VERSION',
   ),
-  'LIBXML_XINCLUDE' => 
+  'LIBXML_XINCLUDE' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LIBXML_XINCLUDE',
   ),
 );

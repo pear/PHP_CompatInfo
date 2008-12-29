@@ -15,9 +15,9 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_CLASS_LIBXML'] = array (
-  'LibXMLError' => 
+  'LibXMLError' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'LibXMLError',
     'ext' => 'libxml',
     'pecl' => false,
