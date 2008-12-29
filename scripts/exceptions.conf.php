@@ -36,6 +36,7 @@ $version_exceptions = array('bz2' => '4.0.4',
                             'SPL' => '5.0.0',
                             'standard' => '4.0.0',
                             'xmlreader' => '5.1.0',
+                            'xmlwriter' => '5.1.2',
                             );
 /* if default version is not 4.0.0, then we can fix the right
    constant initial version here */
@@ -66,6 +67,7 @@ require_once 'date_func_exceptions.php';
 require_once 'gd_func_exceptions.php';
 require_once 'hash_func_exceptions.php';
 require_once 'spl_func_exceptions.php';
+require_once 'xmlwriter_func_exceptions.php';
 
 /**
  * Function that provides to return exceptions results
