@@ -17,7 +17,7 @@
 $GLOBALS['_PHP_COMPATINFO_FUNC_ICONV'] = array (
   'iconv' =>
   array (
-    'init' => '4.0.0',
+    'init' => '4.0.5',
     'name' => 'iconv',
     'ext' => 'iconv',
     'pecl' => false,
@@ -78,8 +78,7 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_ICONV'] = array (
   ),
   'ob_iconv_handler' =>
   array (
-    'init' => '4.0.0',
-    'name' => 'ob_iconv_handler',
+    'init' => '4.0.5',
     'ext' => 'iconv',
     'pecl' => false,
   ),
