@@ -45,6 +45,7 @@ require_once 'gmp_const_exceptions.php';
 require_once 'iconv_const_exceptions.php';
 require_once 'mysql_const_exceptions.php';
 require_once 'mysqli_const_exceptions.php';
+require_once 'openssl_const_exceptions.php';
 require_once 'pcre_const_exceptions.php';
 require_once 'standard_const_exceptions.php';
 
