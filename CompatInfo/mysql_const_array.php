@@ -27,22 +27,22 @@ $GLOBALS['_PHP_COMPATINFO_CONST_MYSQL'] = array (
   ),
   'MYSQL_CLIENT_COMPRESS' => 
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'MYSQL_CLIENT_COMPRESS',
   ),
   'MYSQL_CLIENT_IGNORE_SPACE' => 
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'MYSQL_CLIENT_IGNORE_SPACE',
   ),
   'MYSQL_CLIENT_INTERACTIVE' => 
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'MYSQL_CLIENT_INTERACTIVE',
   ),
   'MYSQL_CLIENT_SSL' => 
   array (
-    'init' => '4.0.0',
+    'init' => '4.3.0',
     'name' => 'MYSQL_CLIENT_SSL',
   ),
   'MYSQL_NUM' => 
