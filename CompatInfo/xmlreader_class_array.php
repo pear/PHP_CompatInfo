@@ -15,9 +15,9 @@
  */
 
 $GLOBALS['_PHP_COMPATINFO_CLASS_XMLREADER'] = array (
-  'XMLReader' => 
+  'XMLReader' =>
   array (
-    'init' => '4.0.0',
+    'init' => '5.1.0',
     'name' => 'XMLReader',
     'ext' => 'xmlreader',
     'pecl' => false,
