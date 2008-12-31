@@ -18,15 +18,15 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-12-29</date>
- <time>18:52:52</time>
+ <date>2008-12-31</date>
+ <time>15:57:09</time>
  <version>
-  <release>1.9.0b3</release>
+  <release>1.9.0</release>
   <api>1.9.0</api>
  </version>
  <stability>
-  <release>beta</release>
-  <api>beta</api>
+  <release>stable</release>
+  <api>stable</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
  <notes>
@@ -48,6 +48,12 @@ file that are installed into PEAR/data/PHP_CompatInfo/phpdocref
 * bugs fixed since beta2
 - CSV, HTML and XML renderers did not provided expected result
   due to new classes result-key entry
+- lost partial functions list information when parsing multiple data sources
+with debug mode
+
+* news since beta2
+- add function getSummary() to print only summary when parsing a directory
+or multiple data sources at once
 
 You are welcome to read my presentation about the new API at
 http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
@@ -361,6 +367,7 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
     <file baseinstalldir="" name="spl_func_exceptions.php" role="script" />
     <file baseinstalldir="" name="standard_class_exceptions.php" role="script" />
     <file baseinstalldir="" name="standard_const_exceptions.php" role="script" />
+    <file baseinstalldir="" name="standard_func_exceptions.php" role="script" />
     <file baseinstalldir="" name="xmlwriter_func_exceptions.php" role="script" />
     <file baseinstalldir="" name="zlib_func_exceptions.php" role="script" />
    </dir> <!-- /scripts -->
@@ -515,14 +522,14 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
  <changelog>
   <release>
    <version>
-    <release>1.9.0b3</release>
+    <release>1.9.0</release>
     <api>1.9.0</api>
    </version>
    <stability>
-    <release>beta</release>
+    <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2008-12-29</date>
+   <date>2008-12-31</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
    <notes>
 * IMPORTANT
@@ -543,6 +550,12 @@ file that are installed into PEAR/data/PHP_CompatInfo/phpdocref
 * bugs fixed since beta2
 - CSV, HTML and XML renderers did not provided expected result
   due to new classes result-key entry
+- lost partial functions list information when parsing multiple data sources
+with debug mode
+
+* news since beta2
+- add function getSummary() to print only summary when parsing a directory
+or multiple data sources at once
 
 You are welcome to read my presentation about the new API at
 http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
