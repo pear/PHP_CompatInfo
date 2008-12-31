@@ -1173,17 +1173,17 @@ class PHP_CompatInfo_Parser
                 unset($file['tokens']);
                 unset($file['cond_code']);
 
-                foreach ($file as $version => $functions) {
+                foreach ($file as $version => $file_functions) {
                     // extra information available only when debug mode is on
                     if (isset($all_functions[$version])) {
-                        foreach ($functions as $func) {
+                        foreach ($file_functions as $func) {
                             $k = array_search($func, $all_functions[$version]);
                             if ($k === false) {
                                 $all_functions[$version][] = $func;
                             }
                         }
                     } else {
-                        $all_functions[$version] = $functions;
+                        $all_functions[$version] = $file_functions;
                     }
                 }
             }
