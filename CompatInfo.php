@@ -486,5 +486,35 @@ class PHP_CompatInfo
     {
         return $this->parser->getConditions($file, $levelOnly);
     }
+
+    /**
+     * Returns the summary of parsing info
+     *
+     * Returns only summary when parsing a directory or multiple data sources
+     *
+     * @access public
+     * @return array
+     * @since  version 1.9.0 (2009-01-19)
+     */
+    function getSummary()
+    {
+        $summary = array('ignored_files'      => $this->getIgnoredFiles(),
+                         'ignored_functions'  => $this->getIgnoredFunctions(),
+                         'ignored_extensions' => $this->getIgnoredExtensions(),
+                         'ignored_constants'  => $this->getIgnoredConstants(),
+                         'max_version'        => $this->getVersion(false, true),
+                         'version'            => $this->getVersion(),
+                         'classes'            => $this->getClasses(),
+                         'functions'          => $this->getFunctions(),
+                         'extensions'         => $this->getExtensions(),
+                         'constants'          => $this->getConstants(),
+                         'tokens'             => $this->getTokens(),
+                         'cond_code'          => $this->getConditions()
+                         );
+        if ($this->parser->options['debug'] == false) {
+            unset($summary['functions']);
+        }
+        return $summary;
+    }
 }
 ?>
