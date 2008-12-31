@@ -1205,7 +1205,10 @@ class PHP_CompatInfo_Parser
         if ($options['debug'] === false) {
             $cond_code = array($cond_code);
         } else {
-            $cond_code = array($cond_code, array($function_exists,
+             sort($function_exists);
+             sort($extension_loaded);
+             sort($defined);
+             $cond_code = array($cond_code, array($function_exists,
                                                  $extension_loaded,
                                                  $defined));
         }
