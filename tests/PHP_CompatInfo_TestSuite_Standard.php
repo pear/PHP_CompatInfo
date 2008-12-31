@@ -2637,6 +2637,219 @@ php_check_syntax('somefile.php');
         $exp = array('PHP_EOL');
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Tests parsing multiple data sources and get only the summary result
+     * without the function list returns only by debug mode
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getSummary
+     * @group  getSummary
+     * @group  standard
+     */
+    public function testGetSummaryWithoutFunctionsForArrayFile()
+    {
+        $resources   = array('date', 'pcre', 'SimpleXML');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseFile';
+        $fn1 = $dir . $ds . 'File_Find-1.3.0__Find.php';
+        $fn2 = $dir . $ds . 'conditional.php';
+        $opt = array('debug' => false);
+        $this->pci->parseData(array($fn1, $fn2), $opt);
+
+        $r   = $this->pci->getSummary();
+        $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
+                     'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
+                     'max_version' => '',
+                     'version' => '5.1.1',
+                     'classes' => array('File_Find'),
+                     'extensions' => array('date', 'pcre', 'SimpleXML'),
+                     'constants' => array('DATE_W3C',
+                                          'DIRECTORY_SEPARATOR',
+                                          'FALSE',
+                                          'NULL',
+                                          'PHP_EOL',
+                                          'PHP_OS',
+                                          'PREG_SPLIT_DELIM_CAPTURE',
+                                          'PREG_SPLIT_NO_EMPTY',
+                                          'TRUE',
+                                          '__FILE__'),
+                     'tokens' => array(),
+                     'cond_code' => array(5));
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing multiple data sources and get only the summary result
+     * including the function list returns by debug mode
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getSummary
+     * @group  getSummary
+     * @group  standard
+     */
+    public function testGetSummaryWithFunctionsForArrayFile()
+    {
+        $resources   = array('date', 'pcre', 'SimpleXML');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseFile';
+        $fn1 = $dir . $ds . 'File_Find-1.3.0__Find.php';
+        $fn2 = $dir . $ds . 'conditional.php';
+        $opt = array('debug' => true);
+        $this->pci->parseData(array($fn1, $fn2), $opt);
+
+        $r   = $this->pci->getSummary();
+        $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
+                     'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
+                     'max_version' => '',
+                     'version' => '5.1.1',
+                     'classes' => array('File_Find'),
+                     'functions' => array('_file_find_match_shell_get_pattern',
+                                          'addcslashes',
+                                          'array_merge',
+                                          'array_pop',
+                                          'array_push',
+                                          'basename',
+                                          'closedir',
+                                          'count',
+                                          'date',
+                                          'debug_backtrace',
+                                          'define',
+                                          'defined',
+                                          'dirname',
+                                          'each',
+                                          'explode',
+                                          'function_exists',
+                                          'glob',
+                                          'implode',
+                                          'is_a',
+                                          'is_array',
+                                          'is_dir',
+                                          'is_readable',
+                                          'maptree',
+                                          'maptreemultiple',
+                                          'opendir',
+                                          'phpversion',
+                                          'preg_match',
+                                          'preg_replace',
+                                          'preg_split',
+                                          'print_r',
+                                          'readdir',
+                                          'reset',
+                                          'search',
+                                          'simplexml_load_file',
+                                          'sizeof',
+                                          'str_replace',
+                                          'strcasecmp',
+                                          'strlen',
+                                          'strpos',
+                                          'strtoupper',
+                                          'substr',
+                                          'substr_count',
+                                          'version_compare'),
+                     'extensions' => array('date', 'pcre', 'SimpleXML'),
+                     'constants' => array('DATE_W3C',
+                                          'DIRECTORY_SEPARATOR',
+                                          'FALSE',
+                                          'NULL',
+                                          'PHP_EOL',
+                                          'PHP_OS',
+                                          'PREG_SPLIT_DELIM_CAPTURE',
+                                          'PREG_SPLIT_NO_EMPTY',
+                                          'TRUE',
+                                          '__FILE__'),
+                     'tokens' => array(),
+                     'cond_code' => array(5,
+                                          array(
+                                            array('debug_backtrace',
+                                                  'simplexml_load_file'),
+                                            array(),
+                                            array('DIRECTORY_SEPARATOR',
+                                                  'FILE_FIND_DEBUG'),
+                                          ))
+                     );
+        $this->assertSame($exp, $r);
+    }
+
+    /**
+     * Tests parsing directory and get only the summary result
+     * without the function list returns only by debug mode
+     *
+     * @return void
+     * @covers PHP_CompatInfo::getSummary
+     * @group  getSummary
+     * @group  standard
+     */
+    public function testGetSummaryForDirectory()
+    {
+        $resources   = array('gd', 'SQLite', 'xdebug');
+        $testSkipped = array();
+        if (!$this->isResourceAvailable($resources, $testSkipped)) {
+            foreach ($testSkipped as $reason) {
+                $this->markTestSkipped($reason);
+            }
+        }
+
+        $ds  = DIRECTORY_SEPARATOR;
+        $dir = dirname(__FILE__) . $ds . 'parseDir' . $ds;
+        $opt = array('recurse_dir' => true,
+                     'file_ext' => array('php', 'php5'));
+        $this->pci->parseData($dir, $opt);
+
+        $r   = $this->pci->getSummary();
+        $exp = array('ignored_files' => $this->getIgnoredFileList($dir, $opt),
+                     'ignored_functions' => array(),
+                     'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
+                     'max_version' => '',
+                     'version' => '5.2.0',
+                     'classes' => array('Exception'),
+                     'extensions' => array('gd',
+                                           'SQLite',
+                                           'xdebug'),
+                     'constants' => array('PHP_SHLIB_SUFFIX',
+                                          'TRUE',
+                                          'UPLOAD_ERR_CANT_WRITE',
+                                          'UPLOAD_ERR_EXTENSION',
+                                          'UPLOAD_ERR_FORM_SIZE',
+                                          'UPLOAD_ERR_INI_SIZE',
+                                          'UPLOAD_ERR_NO_FILE',
+                                          'UPLOAD_ERR_NO_TMP_DIR',
+                                          'UPLOAD_ERR_OK',
+                                          'UPLOAD_ERR_PARTIAL'),
+                     'tokens' => array('abstract',
+                                       'catch',
+                                       'clone',
+                                       'final',
+                                       'implements',
+                                       'instanceof',
+                                       'interface',
+                                       'private',
+                                       'protected',
+                                       'public',
+                                       'throw',
+                                       'try'),
+                     'cond_code' => array(2));
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Standard::main() if file is executed directly.
