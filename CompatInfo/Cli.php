@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2004-2008, Davey Shafik <davey@php.net>
+ * Copyright (c) 2004-2009, Davey Shafik <davey@php.net>
  *                          Laurent Laville <pear@laurent-laville.org>
  *
  * All rights reserved.

@@ -1,7 +1,7 @@
 <?php
 /**
- * Copyright (c) 2008, Davey Shafik <davey@php.net>
- *                     Laurent Laville <pear@laurent-laville.org>
+ * Copyright (c) 2008-2009, Davey Shafik <davey@php.net>
+ *                          Laurent Laville <pear@laurent-laville.org>
  *
  * All rights reserved.
  *

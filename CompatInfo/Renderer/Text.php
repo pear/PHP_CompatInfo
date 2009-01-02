@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2008, Laurent Laville <pear@laurent-laville.org>
+ * Copyright (c) 2008-2009, Laurent Laville <pear@laurent-laville.org>
  *
  * All rights reserved.
  *
