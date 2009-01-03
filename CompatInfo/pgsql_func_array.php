@@ -183,6 +183,13 @@ $GLOBALS['_PHP_COMPATINFO_FUNC_PGSQL'] = array (
     'ext' => 'pgsql',
     'pecl' => false,
   ),
+  'pg_fetchrow' =>
+  array (
+    'end' => '4.0.0',
+    'ext' => 'pgsql',
+    'pecl' => false,
+    'init' => '4.0.0',
+  ),
   'pg_field_is_null' =>
   array (
     'init' => '4.2.0',
