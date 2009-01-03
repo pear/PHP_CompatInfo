@@ -36,6 +36,7 @@ $version_exceptions = array('bz2' => '4.0.4',
                             'SimpleXML' => '5.0.0',
                             'SPL' => '5.0.0',
                             'standard' => '4.0.0',
+                            'xsl' => '5.0.0',
                             'xmlreader' => '5.1.0',
                             'xmlwriter' => '5.1.2',
                             );
@@ -53,6 +54,7 @@ require_once 'mysqli_const_exceptions.php';
 require_once 'openssl_const_exceptions.php';
 require_once 'pcre_const_exceptions.php';
 require_once 'standard_const_exceptions.php';
+require_once 'xsl_const_exceptions.php';
 
 /* if default version is not 4.0.0, then we can fix the right
    predefined class initial version here */
