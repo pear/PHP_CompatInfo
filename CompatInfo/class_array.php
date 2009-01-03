@@ -14,16 +14,17 @@
  * @since    version 1.9.0a1 (2008-11-23)
  */
 
-require_once 'PHP/CompatInfo/com_dotnet_class_array.php';
 require_once 'PHP/CompatInfo/date_class_array.php';
 require_once 'PHP/CompatInfo/dom_class_array.php';
 require_once 'PHP/CompatInfo/libxml_class_array.php';
-require_once 'PHP/CompatInfo/Reflection_class_array.php';
+require_once 'PHP/CompatInfo/mysqli_class_array.php';
 require_once 'PHP/CompatInfo/SimpleXML_class_array.php';
 require_once 'PHP/CompatInfo/SPL_class_array.php';
+require_once 'PHP/CompatInfo/SQLite_class_array.php';
 require_once 'PHP/CompatInfo/standard_class_array.php';
 require_once 'PHP/CompatInfo/xmlreader_class_array.php';
 require_once 'PHP/CompatInfo/xmlwriter_class_array.php';
+require_once 'PHP/CompatInfo/xsl_class_array.php';
 
 /**
  * Predefined Classes
@@ -49,15 +50,16 @@ require_once 'PHP/CompatInfo/xmlwriter_class_array.php';
  */
 
 $GLOBALS['_PHP_COMPATINFO_CLASS'] = array_merge(
-    $GLOBALS['_PHP_COMPATINFO_CLASS_COM_DOTNET'], 
-    $GLOBALS['_PHP_COMPATINFO_CLASS_DATE'], 
-    $GLOBALS['_PHP_COMPATINFO_CLASS_DOM'], 
-    $GLOBALS['_PHP_COMPATINFO_CLASS_LIBXML'], 
-    $GLOBALS['_PHP_COMPATINFO_CLASS_REFLECTION'], 
-    $GLOBALS['_PHP_COMPATINFO_CLASS_SIMPLEXML'], 
-    $GLOBALS['_PHP_COMPATINFO_CLASS_SPL'], 
-    $GLOBALS['_PHP_COMPATINFO_CLASS_STANDARD'], 
-    $GLOBALS['_PHP_COMPATINFO_CLASS_XMLREADER'], 
-    $GLOBALS['_PHP_COMPATINFO_CLASS_XMLWRITER']
+    $GLOBALS['_PHP_COMPATINFO_CLASS_DATE'],
+    $GLOBALS['_PHP_COMPATINFO_CLASS_DOM'],
+    $GLOBALS['_PHP_COMPATINFO_CLASS_LIBXML'],
+    $GLOBALS['_PHP_COMPATINFO_CLASS_MYSQLI'],
+    $GLOBALS['_PHP_COMPATINFO_CLASS_SIMPLEXML'],
+    $GLOBALS['_PHP_COMPATINFO_CLASS_SPL'],
+    $GLOBALS['_PHP_COMPATINFO_CLASS_SQLITE'],
+    $GLOBALS['_PHP_COMPATINFO_CLASS_STANDARD'],
+    $GLOBALS['_PHP_COMPATINFO_CLASS_XMLREADER'],
+    $GLOBALS['_PHP_COMPATINFO_CLASS_XMLWRITER'],
+    $GLOBALS['_PHP_COMPATINFO_CLASS_XSL']
     );
 ?>
