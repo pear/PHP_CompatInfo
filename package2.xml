@@ -18,14 +18,14 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2008-12-31</date>
- <time>15:57:09</time>
+ <date>2009-01-03</date>
+ <time>12:25:18</time>
  <version>
-  <release>1.9.0</release>
+  <release>1.9.0RC1</release>
   <api>1.9.0</api>
  </version>
  <stability>
-  <release>stable</release>
+  <release>beta</release>
   <api>stable</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
@@ -112,6 +112,7 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
     <file name="func_array.php" role="php" />
     <file name="gd_const_array.php" role="php" />
     <file name="gd_func_array.php" role="php" />
+    <file name="gettext_func_array.php" role="php" />
     <file name="gmp_const_array.php" role="php" />
     <file name="gmp_func_array.php" role="php" />
     <file name="hash_const_array.php" role="php" />
@@ -176,6 +177,8 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
     <file name="xmlwriter_func_array.php" role="php" />
     <file name="xml_const_array.php" role="php" />
     <file name="xml_func_array.php" role="php" />
+    <file name="xsl_class_array.php" role="php" />
+    <file name="xsl_const_array.php" role="php" />
     <file name="zip_class_array.php" role="php" />
     <file name="zip_func_array.php" role="php" />
     <file name="zlib_const_array.php" role="php" />
@@ -249,6 +252,9 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
      <dir name="pdo">
       <file name="versions.xml" role="data" />
      </dir> <!-- /data/phpdocref/pdo -->
+     <dir name="pgsql">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/pgsql -->
      <dir name="posix">
       <file name="versions.xml" role="data" />
      </dir> <!-- /data/phpdocref/posix -->
@@ -279,6 +285,9 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
      <dir name="xmlwriter">
       <file name="versions.xml" role="data" />
      </dir> <!-- /data/phpdocref/xmlwriter -->
+     <dir name="xsl">
+      <file name="versions.xml" role="data" />
+     </dir> <!-- /data/phpdocref/xsl -->
      <dir name="xslt">
       <file name="versions.xml" role="data" />
      </dir> <!-- /data/phpdocref/xslt -->
@@ -369,6 +378,7 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
     <file baseinstalldir="" name="standard_const_exceptions.php" role="script" />
     <file baseinstalldir="" name="standard_func_exceptions.php" role="script" />
     <file baseinstalldir="" name="xmlwriter_func_exceptions.php" role="script" />
+    <file baseinstalldir="" name="xsl_const_exceptions.php" role="script" />
     <file baseinstalldir="" name="zlib_func_exceptions.php" role="script" />
    </dir> <!-- /scripts -->
    <dir name="tests">
@@ -522,14 +532,14 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
  <changelog>
   <release>
    <version>
-    <release>1.9.0</release>
+    <release>1.9.0RC1</release>
     <api>1.9.0</api>
    </version>
    <stability>
-    <release>stable</release>
+    <release>beta</release>
     <api>stable</api>
    </stability>
-   <date>2008-12-31</date>
+   <date>2009-01-03</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
    <notes>
 * IMPORTANT
