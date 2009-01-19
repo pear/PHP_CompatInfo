@@ -18,45 +18,19 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2009-01-03</date>
- <time>12:25:18</time>
+ <date>2009-01-19</date>
+ <time>11:07:29</time>
  <version>
-  <release>1.9.0RC1</release>
+  <release>1.9.0</release>
   <api>1.9.0</api>
  </version>
  <stability>
-  <release>beta</release>
+  <release>stable</release>
   <api>stable</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
  <notes>
-* IMPORTANT
-- if you are PHP5 user only:
-  use the pciconf script to build your own extension support list
-- if you are PHP4 user only:
-  pciconf script required at least PHP5 to run, so to build your own support list,
-  do it by hand. All major extensions and their PCI dictionaries are available
-  on PEAR CVS [http://cvs.php.net/viewvc.cgi/pear/PHP_CompatInfo/CompatInfo/]
-- A more comprehensive guide will be available for final stable release, ready for
-  PhD system and new PEAR Manual.
-
-* changes since beta2
-- pciconf script did not used anymore the monolithic versions.xml and funclist.txt
-data sources. Version information about extensions came from specific extension version.xml
-file that are installed into PEAR/data/PHP_CompatInfo/phpdocref
-
-* bugs fixed since beta2
-- CSV, HTML and XML renderers did not provided expected result
-  due to new classes result-key entry
-- lost partial functions list information when parsing multiple data sources
-with debug mode
-
-* news since beta2
-- add function getSummary() to print only summary when parsing a directory
-or multiple data sources at once
-
-You are welcome to read my presentation about the new API at
-http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
+No change since version 1.9.0RC1
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
@@ -530,6 +504,21 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
   </filelist>
  </phprelease>
  <changelog>
+  <release>
+   <version>
+    <release>1.9.0</release>
+    <api>1.9.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-01-19</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+No change since version 1.9.0RC1
+   </notes>
+  </release>
   <release>
    <version>
     <release>1.9.0RC1</release>
