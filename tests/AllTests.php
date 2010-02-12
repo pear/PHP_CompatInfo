@@ -17,10 +17,7 @@ if (!defined('PHPUnit_MAIN_METHOD')) {
     define('PHPUnit_MAIN_METHOD', 'PHP_CompatInfo_AllTests::main');
 }
 
-require_once 'PHPUnit/Framework/TestSuite.php';
 require_once 'PHPUnit/TextUI/TestRunner.php';
-
-chdir(dirname(__FILE__));
 
 require_once 'PEAR/Config.php';
 require_once 'PHP_CompatInfo_TestSuite_Standard.php';
