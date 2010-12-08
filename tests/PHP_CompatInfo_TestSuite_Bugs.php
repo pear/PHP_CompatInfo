@@ -665,6 +665,34 @@ $test = "public$link";
 
         $this->assertSame($exp, $r);
     }
+
+    /**
+     * Regression test for bug #16302
+     *
+     * @return void
+     * @link   http://pear.php.net/bugs/bug.php?id=16302
+     *         Exception class is detected as 4.0.0 code
+     * @covers PHP_PHP_CompatInfo_Parser::_parseTokens
+     * @group  _parseTokens
+     */
+    public function testBug16302()
+    {
+        $str = '<?php Foo_Exception extends Exception {}';
+        $r   = $this->pci->parseString($str);
+        $exp = array('ignored_files' => array(),
+                     'ignored_functions' => array(),
+                     'ignored_extensions' => array(),
+                     'ignored_constants' => array(),
+                     'max_version' => '',
+                     'version' => '5.0.0',
+                     'classes' => array('Exception'),
+                     'functions' => array(),
+                     'extensions' => array(),
+                     'constants' => array(),
+                     'tokens' => array(),
+                     'cond_code' => array(0));
+        $this->assertSame($exp, $r);
+    }
 }
 
 // Call PHP_CompatInfo_TestSuite_Bugs::main() if file is executed directly.

@@ -1485,10 +1485,11 @@ class PHP_CompatInfo_Parser
                 }
             }
 
-            // try to detect class instantiation
+            // try to detect class instantiation and inheritance
             if ($this->_isToken($tokens[$i], 'T_STRING')
                 && (isset($tokens[$i-2]))
-                && $this->_isToken($tokens[$i-2], 'T_NEW')) {
+                && ($this->_isToken($tokens[$i-2], 'T_NEW')
+                || $this->_isToken($tokens[$i-2], 'T_EXTENDS'))) {
 
                 $is_class  = true;
                 $classes[] = $tokens[$i][1];
