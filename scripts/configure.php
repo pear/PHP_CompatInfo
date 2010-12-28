@@ -158,7 +158,7 @@ $class_glob_list = array();
 $func_glob_list  = array();
 
 // PHP Core constants
-$extName           = 'internal';
+$extName           = version_compare(PHP_VERSION, '5.3.0', '<') ? 'internal' : 'Core';
 $extConstants      = get_defined_constants(true);
 $const_glob_list[] = $extName;
 
