@@ -17,11 +17,11 @@ if (!defined('PHPUnit_MAIN_METHOD')) {
     define('PHPUnit_MAIN_METHOD', 'PHP_CompatInfo_AllTests::main');
 }
 
-require_once 'PHPUnit/TextUI/TestRunner.php';
+require_once 'PHPUnit/Autoload.php';
 
 require_once 'PEAR/Config.php';
-require_once 'PHP_CompatInfo_TestSuite_Standard.php';
-require_once 'PHP_CompatInfo_TestSuite_Bugs.php';
+require_once dirname(__FILE__) . '/PHP_CompatInfo_TestSuite_Standard.php';
+require_once dirname(__FILE__) . '/PHP_CompatInfo_TestSuite_Bugs.php';
 
 /**
  * Class for running all test suites for PHP_CompatInfo package.
@@ -65,7 +65,7 @@ class PHP_CompatInfo_AllTests
                - Console_GetArgs 1.3.3 or better
                - Console_Table   1.0.5 or better
              */
-            include_once 'PHP_CompatInfo_TestSuite_Cli.php';
+            include_once dirname(__FILE__) . '/PHP_CompatInfo_TestSuite_Cli.php';
 
             $suite->addTestSuite('PHP_CompatInfo_TestSuite_Cli');
         }
