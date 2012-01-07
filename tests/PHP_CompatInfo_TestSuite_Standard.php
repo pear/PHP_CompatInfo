@@ -1668,7 +1668,7 @@ php_check_syntax('somefile.php');
                      'ignored_constants' => array(),
                      'max_version' => '',
                      'version' => '5.0.0',
-                     'classes' => array(),
+                     'classes' => array('PHPUnit_Extensions_Story_TestCase'),
                      'functions' => array(),
                      'extensions' => array(),
                      'constants' => array(),
