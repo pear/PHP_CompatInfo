@@ -411,6 +411,7 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
      <tasks:replace from="@package_version@" to="version" type="package-info" />
      <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
      <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+     <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
     </file>
     <file name="PHP_CompatInfo_TestSuite_Standard.php" role="test">
      <tasks:replace from="@package_version@" to="version" type="package-info" />

@@ -113,8 +113,22 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
      */
     private function assertPhpExec($args, $exp)
     {
-        $command = '@php_bin@ '
-                 . '-f @bin_dir@' . DIRECTORY_SEPARATOR . 'pci -- ';
+        $ds = DIRECTORY_SEPARATOR;
+        if ('@php_dir@' == '@'.'php_dir'.'@') {
+            // Run from source code checkout.
+            $php_dir = dirname(dirname(__FILE__));
+            $bin = 'php';
+            $script = "$php_dir{$ds}scripts{$ds}pci.php";
+        } else {
+            // Run from installation.
+            $php_dir = '@php_dir@';
+            $bin = '@php_bin@';
+            $script = "@bin_dir@{$ds}pci";
+        }
+        $include_path = "'$php_dir'" . PATH_SEPARATOR . get_include_path();
+
+        $command = "'$bin' -d error_reporting=" . error_reporting()
+            . " -d include_path=$include_path -f '$script' -- ";
 
         $output = array();
         $return = 0;
@@ -201,7 +215,15 @@ class PHP_CompatInfo_TestSuite_Cli extends PHPUnit_Framework_TestCase
         $ds = DIRECTORY_SEPARATOR;
         $dn = dirname(__FILE__) . $ds . 'emptyDir';
 
-        $exp = array('Usage: pci [options]',
+        if ('@php_dir@' == '@'.'php_dir'.'@') {
+            // Run from source code checkout.
+            $script = 'pci.php';
+        } else {
+            // Run from installation.
+            $script = 'pci';
+        }
+
+        $exp = array("Usage: $script [options]",
                      '',
                      '  -d   --dir (optional)value                      Parse DIR to get its',
                      '                                                  compatibility info ()',
