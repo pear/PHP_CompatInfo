@@ -190,7 +190,7 @@ File::write("test", "test");
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -222,7 +222,7 @@ apache_response_headers();
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -451,7 +451,7 @@ apache_response_headers();
                        )
                      ));
 
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -498,7 +498,7 @@ $test = "public$link";
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -628,7 +628,7 @@ $test = "public$link";
                      'tokens' => array(),
                      'cond_code' => array(4)
                     );
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -663,7 +663,7 @@ $test = "public$link";
                      'cond_code' => array(0)
                      );
 
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -691,7 +691,7 @@ $test = "public$link";
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 }
 

@@ -183,7 +183,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                    0 => 311,
                    1 => "\n",
                    2 => 1));
-        $this->assertSame($empty, $r);
+        $this->assertEquals($empty, $r);
 
         $r     = $this->pci->parser->_tokenize($fn, false, true);
         $empty = array(0 =>
@@ -192,7 +192,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                    1 => "\n",
                    2 => 1,
                    3 => 'T_INLINE_HTML'));
-        $this->assertSame($empty, $r);
+        $this->assertEquals($empty, $r);
     }
 
     /**
@@ -238,7 +238,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -277,7 +277,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -333,7 +333,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(5));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -389,7 +389,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(5));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -442,7 +442,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -498,7 +498,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(5));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -546,7 +546,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -594,7 +594,7 @@ echo "$nl W3C     = " . DATE_W3C;
                                           'DATE_RSS', 'DATE_W3C'),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -629,7 +629,7 @@ echo "$nl RSS     = " . DATE_RSS;
                      'constants' => array('DATE_RFC3339', 'DATE_RSS'),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -685,7 +685,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'UPLOAD_ERR_PARTIAL'),
                      'tokens' => array('throw'),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -787,7 +787,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                'constants' => array(),
                                'tokens' => array(),
                                'cond_code' => array(0)));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -936,7 +936,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                                     'UPLOAD_ERR_PARTIAL'),
                                'tokens' => array('throw'),
                                'cond_code' => array(0)));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1038,7 +1038,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                                     'UPLOAD_ERR_PARTIAL'),
                                'tokens' => array('throw'),
                                'cond_code' => array(0)));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1114,7 +1114,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'TRUE'),
                      'tokens' => array(),
                      'cond_code' => array(4));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1201,7 +1201,7 @@ if ($errorCode !== UPLOAD_ERR_OK) {
                                           'TRUE'),
                      'tokens' => array(),
                      'cond_code' => array(4));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1264,7 +1264,7 @@ php_check_syntax('somefile.php');
                           'tokens' => array(),
                           'cond_code' => array(0))
                      );
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1345,7 +1345,7 @@ php_check_syntax('somefile.php');
                      'stream_socket_shutdown',
                      'sys_get_temp_dir',
                      'timezone_transitions_get');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1406,7 +1406,7 @@ php_check_syntax('somefile.php');
                      'stream_socket_shutdown',
                      'sys_get_temp_dir',
                      'timezone_transitions_get');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1479,7 +1479,7 @@ php_check_syntax('somefile.php');
                                       'snmp2_real_walk',
                                       'snmp2_set',
                                       'snmp2_walk'));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1498,7 +1498,7 @@ php_check_syntax('somefile.php');
         $exp = array('functions' => array(),
                      'constants' => array('PHP_EOL',
                                           'UPLOAD_ERR_NO_TMP_DIR'));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1576,7 +1576,7 @@ php_check_syntax('somefile.php');
                      '4.3.10' => array('PHP_EOL',
                                        'UPLOAD_ERR_NO_TMP_DIR')
                                        ));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1613,7 +1613,7 @@ php_check_syntax('somefile.php');
                                           'sys_get_temp_dir'),
                      'constants' => array('PCRE_VERSION',
                                           'PREG_BAD_UTF8_OFFSET_ERROR'));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1644,7 +1644,7 @@ php_check_syntax('somefile.php');
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1674,7 +1674,7 @@ php_check_syntax('somefile.php');
                      'constants' => array(),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1721,7 +1721,7 @@ php_check_syntax('somefile.php');
                      'constants' => array('FALSE'),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1766,7 +1766,7 @@ php_check_syntax('somefile.php');
                      'constants' => array('FALSE'),
                      'tokens' => array(),
                      'cond_code' => array(1));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1808,7 +1808,7 @@ php_check_syntax('somefile.php');
                      'constants' => array('FALSE'),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1864,7 +1864,7 @@ php_check_syntax('somefile.php');
                                           'TRUE'),
                      'tokens' => array(),
                      'cond_code' => array(0));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1923,7 +1923,7 @@ php_check_syntax('somefile.php');
                                           'TRUE'),
                      'tokens' => array(),
                      'cond_code' => array(2));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -1984,7 +1984,7 @@ php_check_syntax('somefile.php');
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(1));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2046,7 +2046,7 @@ php_check_syntax('somefile.php');
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(5));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2124,7 +2124,7 @@ php_check_syntax('somefile.php');
 
         $r   = $this->pci->getClasses();
         $exp = array('Person');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2146,7 +2146,7 @@ php_check_syntax('somefile.php');
         $f   = $dir . 'PHP5' . $ds . 'tokens.php5';
         $r   = $this->pci->getClasses($f);
         $exp = array('Exception');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2201,7 +2201,7 @@ php_check_syntax('somefile.php');
                      'strpos',
                      'substr',
                      'substr_count');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2232,7 +2232,7 @@ php_check_syntax('somefile.php');
                      'sqlite_libversion',
                      'xdebug_start_trace',
                      'xdebug_stop_trace');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2257,7 +2257,7 @@ php_check_syntax('somefile.php');
                      'PHP_EOL',
                      'PHP_OS',
                      '__FILE__');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2287,7 +2287,7 @@ php_check_syntax('somefile.php');
                      'UPLOAD_ERR_NO_TMP_DIR',
                      'UPLOAD_ERR_OK',
                      'UPLOAD_ERR_PARTIAL');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2306,7 +2306,7 @@ php_check_syntax('somefile.php');
 
         $r   = $this->pci->getTokens();
         $exp = array();
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2340,7 +2340,7 @@ php_check_syntax('somefile.php');
                      'public',
                      'throw',
                      'try');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2385,7 +2385,7 @@ php_check_syntax('somefile.php');
         $this->pci->parseDir($dir, $opt);
         $r   = $this->pci->getConditions();
         $exp = array(2, array(array(), array('SQLite'), array()));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2409,7 +2409,7 @@ php_check_syntax('somefile.php');
         $f   = $dir . 'phpinfo.php';
         $r   = $this->pci->getConditions($f);
         $exp = array(0); // no condition code
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2436,7 +2436,7 @@ php_check_syntax('somefile.php');
 
         $r   = $this->pci->getExtensions();
         $exp = array('date', 'SimpleXML');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2469,7 +2469,7 @@ php_check_syntax('somefile.php');
         $exp = array('gd',
                      'SQLite',
                      'xdebug');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2489,7 +2489,7 @@ php_check_syntax('somefile.php');
 
         $r   = $this->pci->getIgnoredFunctions();
         $exp = array('debug_backtrace', 'debug_print_backtrace');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2519,7 +2519,7 @@ php_check_syntax('somefile.php');
         $f   = $dir . 'extensions.php';
         $r   = $this->pci->getIgnoredFunctions($f);
         $exp = array('xdebug_start_trace', 'xdebug_stop_trace');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2547,7 +2547,7 @@ php_check_syntax('somefile.php');
 
         $r   = $this->pci->getIgnoredExtensions();
         $exp = array('SQLite');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2577,7 +2577,7 @@ php_check_syntax('somefile.php');
         $f   = $dir . 'extensions.php';
         $r   = $this->pci->getIgnoredExtensions($f);
         $exp = array('gd');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2605,7 +2605,7 @@ php_check_syntax('somefile.php');
 
         $r   = $this->pci->getIgnoredConstants();
         $exp = array('PHP_EOL');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2635,7 +2635,7 @@ php_check_syntax('somefile.php');
         $f   = $dir . 'conditional.php';
         $r   = $this->pci->getIgnoredConstants($f);
         $exp = array('PHP_EOL');
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2685,7 +2685,7 @@ php_check_syntax('somefile.php');
                                           '__FILE__'),
                      'tokens' => array(),
                      'cond_code' => array(5));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2786,7 +2786,7 @@ php_check_syntax('somefile.php');
                                                   'FILE_FIND_DEBUG'),
                                           ))
                      );
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 
     /**
@@ -2848,7 +2848,7 @@ php_check_syntax('somefile.php');
                                        'throw',
                                        'try'),
                      'cond_code' => array(2));
-        $this->assertSame($exp, $r);
+        $this->assertEquals($exp, $r);
     }
 }
 
