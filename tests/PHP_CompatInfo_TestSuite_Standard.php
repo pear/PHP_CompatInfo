@@ -263,7 +263,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $fn = dirname(__FILE__) . $ds . 'parseFile' . $ds . 'math.php';
 
         $r = $this->pci->parseFile($fn);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
@@ -303,7 +303,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $opt = array('ignore_functions' => array('simplexml_load_file'));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array('simplexml_load_file'),
@@ -359,7 +359,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $opt = array('ignore_constants' => array('PHP_EOL'));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
@@ -416,7 +416,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $opt = array('ignore_extensions' => array('zip'));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array('zip_close',
@@ -469,7 +469,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $opt = array('ignore_versions' => array('4.3.10', '4.4.8'));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
@@ -531,7 +531,7 @@ class PHP_CompatInfo_TestSuite_Standard extends PHPUnit_Framework_TestCase
         $str = file_get_contents($fn);
 
         $r = $this->pci->parseString($str);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
@@ -575,7 +575,7 @@ echo "$nl W3C     = " . DATE_W3C;
 ?>';
 
         $r = $this->pci->parseString($str);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
@@ -615,7 +615,7 @@ echo "$nl RSS     = " . DATE_RSS;
 ?>';
 
         $r = $this->pci->parseString($str);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
@@ -1702,7 +1702,7 @@ php_check_syntax('somefile.php');
                                                   '/^debug/')));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array('debug_backtrace', 'file_put_contents'),
@@ -1746,7 +1746,7 @@ php_check_syntax('somefile.php');
         $opt = array('ignore_functions_match' => array('preg_match', array('/^debug/')));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array('debug_backtrace', 'debug_print_backtrace'),
@@ -1789,7 +1789,7 @@ php_check_syntax('somefile.php');
         $opt = array('ignore_functions_match' => array('function_exists', array('/.*/')));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array('debug_backtrace', 'file_put_contents'),
@@ -1840,7 +1840,7 @@ php_check_syntax('somefile.php');
                    array('extension_loaded', array('/^SQLite$/')));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array('sqlite_libversion'),
@@ -1897,7 +1897,7 @@ php_check_syntax('somefile.php');
                    array('preg_match', array('/^xdebug/')));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array('xdebug_start_trace',
@@ -1955,7 +1955,7 @@ php_check_syntax('somefile.php');
                    array('defined', array('/^directory/i')));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
@@ -2015,7 +2015,7 @@ php_check_syntax('somefile.php');
                    array('preg_match', array('/^dir/i', '/^DATE_W3C$/')));
 
         $r = $this->pci->parseFile($fn, $opt);
-        $this->assertType('array', $r);
+        $this->assertInternalType('array', $r);
 
         $exp = array('ignored_files' => array(),
                      'ignored_functions' => array(),
