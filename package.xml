@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>PHP_CompatInfo</name>
  <channel>pear.php.net</channel>
  <summary>Find out the minimum version and the extensions required for a piece of code to run</summary>
@@ -18,146 +18,48 @@ which shows which functions require which version and CLI output script</descrip
   <email>davey@php.net</email>
   <active>no</active>
  </lead>
- <date>2009-01-19</date>
- <time>11:07:29</time>
+ <date>2012-01-06</date>
+ <time>21:38:58</time>
  <version>
-  <release>1.9.0</release>
+  <release>1.9.0RC1</release>
   <api>1.9.0</api>
  </version>
  <stability>
-  <release>stable</release>
+  <release>beta</release>
   <api>stable</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
  <notes>
-No change since version 1.9.0RC1
+* IMPORTANT
+- if you are PHP5 user only:
+  use the pciconf script to build your own extension support list
+- if you are PHP4 user only:
+  pciconf script required at least PHP5 to run, so to build your own support list,
+  do it by hand. All major extensions and their PCI dictionaries are available
+  on PEAR CVS [http://cvs.php.net/viewvc.cgi/pear/PHP_CompatInfo/CompatInfo/]
+- A more comprehensive guide will be available for final stable release, ready for
+  PhD system and new PEAR Manual.
+
+* changes since beta2
+- pciconf script did not used anymore the monolithic versions.xml and funclist.txt
+data sources. Version information about extensions came from specific extension version.xml
+file that are installed into PEAR/data/PHP_CompatInfo/phpdocref
+
+* bugs fixed since beta2
+- CSV, HTML and XML renderers did not provided expected result
+  due to new classes result-key entry
+- lost partial functions list information when parsing multiple data sources
+with debug mode
+
+* news since beta2
+- add function getSummary() to print only summary when parsing a directory
+or multiple data sources at once
+
+You are welcome to read my presentation about the new API at
+http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
  </notes>
  <contents>
   <dir baseinstalldir="PHP" name="/">
-   <dir name="CompatInfo">
-    <dir name="Renderer">
-     <file name="Array.php" role="php">
-      <tasks:replace from="@package_version@" to="version" type="package-info" />
-     </file>
-     <file name="Csv.php" role="php">
-      <tasks:replace from="@package_version@" to="version" type="package-info" />
-     </file>
-     <file name="Html.php" role="php">
-      <tasks:replace from="@package_version@" to="version" type="package-info" />
-      <tasks:replace from="@package_name@" to="name" type="package-info" />
-      <tasks:replace from="@data_dir@" to="data_dir" type="pear-config" />
-     </file>
-     <file name="Null.php" role="php">
-      <tasks:replace from="@package_version@" to="version" type="package-info" />
-     </file>
-     <file name="Text.php" role="php">
-      <tasks:replace from="@package_version@" to="version" type="package-info" />
-     </file>
-     <file name="Xml.php" role="php">
-      <tasks:replace from="@package_version@" to="version" type="package-info" />
-     </file>
-    </dir> <!-- /CompatInfo/Renderer -->
-    <file name="apache2handler_sapi_array.php" role="php" />
-    <file name="bcmath_func_array.php" role="php" />
-    <file name="bz2_func_array.php" role="php" />
-    <file name="calendar_const_array.php" role="php" />
-    <file name="calendar_func_array.php" role="php" />
-    <file name="cgi_sapi_array.php" role="php" />
-    <file name="class_array.php" role="php" />
-    <file name="Cli.php" role="php">
-     <tasks:replace from="@package_version@" to="version" type="package-info" />
-    </file>
-    <file name="cli_sapi_array.php" role="php" />
-    <file name="com_dotnet_class_array.php" role="php" />
-    <file name="com_dotnet_const_array.php" role="php" />
-    <file name="com_dotnet_func_array.php" role="php" />
-    <file name="const_array.php" role="php" />
-    <file name="ctype_func_array.php" role="php" />
-    <file name="date_class_array.php" role="php" />
-    <file name="date_const_array.php" role="php" />
-    <file name="date_func_array.php" role="php" />
-    <file name="dom_class_array.php" role="php" />
-    <file name="dom_const_array.php" role="php" />
-    <file name="dom_func_array.php" role="php" />
-    <file name="filter_const_array.php" role="php" />
-    <file name="filter_func_array.php" role="php" />
-    <file name="ftp_const_array.php" role="php" />
-    <file name="ftp_func_array.php" role="php" />
-    <file name="func_array.php" role="php" />
-    <file name="gd_const_array.php" role="php" />
-    <file name="gd_func_array.php" role="php" />
-    <file name="gettext_func_array.php" role="php" />
-    <file name="gmp_const_array.php" role="php" />
-    <file name="gmp_func_array.php" role="php" />
-    <file name="hash_const_array.php" role="php" />
-    <file name="hash_func_array.php" role="php" />
-    <file name="iconv_const_array.php" role="php" />
-    <file name="iconv_func_array.php" role="php" />
-    <file name="imap_const_array.php" role="php" />
-    <file name="imap_func_array.php" role="php" />
-    <file name="internal_const_array.php" role="php" />
-    <file name="json_func_array.php" role="php" />
-    <file name="libxml_class_array.php" role="php" />
-    <file name="libxml_const_array.php" role="php" />
-    <file name="libxml_func_array.php" role="php" />
-    <file name="mbstring_const_array.php" role="php" />
-    <file name="mbstring_func_array.php" role="php" />
-    <file name="ming_class_array.php" role="php" />
-    <file name="ming_const_array.php" role="php" />
-    <file name="ming_func_array.php" role="php" />
-    <file name="mysqli_class_array.php" role="php" />
-    <file name="mysqli_const_array.php" role="php" />
-    <file name="mysqli_func_array.php" role="php" />
-    <file name="mysql_const_array.php" role="php" />
-    <file name="mysql_func_array.php" role="php" />
-    <file name="odbc_const_array.php" role="php" />
-    <file name="odbc_func_array.php" role="php" />
-    <file name="openssl_const_array.php" role="php" />
-    <file name="openssl_func_array.php" role="php" />
-    <file name="Parser.php" role="php">
-     <tasks:replace from="@package_version@" to="version" type="package-info" />
-    </file>
-    <file name="pcre_const_array.php" role="php" />
-    <file name="pcre_func_array.php" role="php" />
-    <file name="PDO_class_array.php" role="php" />
-    <file name="PDO_func_array.php" role="php" />
-    <file name="pgsql_const_array.php" role="php" />
-    <file name="pgsql_func_array.php" role="php" />
-    <file name="Reflection_class_array.php" role="php" />
-    <file name="Renderer.php" role="php">
-     <tasks:replace from="@package_version@" to="version" type="package-info" />
-    </file>
-    <file name="sapi_array.php" role="php" />
-    <file name="session_func_array.php" role="php" />
-    <file name="SimpleXML_class_array.php" role="php" />
-    <file name="SimpleXML_func_array.php" role="php" />
-    <file name="snmp_const_array.php" role="php" />
-    <file name="snmp_func_array.php" role="php" />
-    <file name="SPL_class_array.php" role="php" />
-    <file name="SPL_func_array.php" role="php" />
-    <file name="SQLite_class_array.php" role="php" />
-    <file name="SQLite_const_array.php" role="php" />
-    <file name="SQLite_func_array.php" role="php" />
-    <file name="standard_class_array.php" role="php" />
-    <file name="standard_const_array.php" role="php" />
-    <file name="standard_func_array.php" role="php" />
-    <file name="tokenizer_const_array.php" role="php" />
-    <file name="tokenizer_func_array.php" role="php" />
-    <file name="wddx_func_array.php" role="php" />
-    <file name="xdebug_const_array.php" role="php" />
-    <file name="xdebug_func_array.php" role="php" />
-    <file name="xmlreader_class_array.php" role="php" />
-    <file name="xmlwriter_class_array.php" role="php" />
-    <file name="xmlwriter_func_array.php" role="php" />
-    <file name="xml_const_array.php" role="php" />
-    <file name="xml_func_array.php" role="php" />
-    <file name="xsl_class_array.php" role="php" />
-    <file name="xsl_const_array.php" role="php" />
-    <file name="zip_class_array.php" role="php" />
-    <file name="zip_func_array.php" role="php" />
-    <file name="zlib_const_array.php" role="php" />
-    <file name="zlib_func_array.php" role="php" />
-   </dir> <!-- /CompatInfo -->
    <dir name="data">
     <dir name="phpdocref">
      <dir name="apache">
@@ -300,6 +202,113 @@ No change since version 1.9.0RC1
      <file name="yoursite.css" role="doc" />
     </dir> <!-- /docs/examples -->
    </dir> <!-- /docs -->
+   <dir name="PHP">
+    <dir name="CompatInfo">
+     <dir name="Renderer">
+      <file name="Array.php" role="php" />
+      <file name="Csv.php" role="php" />
+      <file name="Html.php" role="php" />
+      <file name="Null.php" role="php" />
+      <file name="Text.php" role="php" />
+      <file name="Xml.php" role="php" />
+     </dir> <!-- /PHP/CompatInfo/Renderer -->
+     <file name="apache2handler_sapi_array.php" role="php" />
+     <file name="bcmath_func_array.php" role="php" />
+     <file name="bz2_func_array.php" role="php" />
+     <file name="calendar_const_array.php" role="php" />
+     <file name="calendar_func_array.php" role="php" />
+     <file name="cgi_sapi_array.php" role="php" />
+     <file name="class_array.php" role="php" />
+     <file name="Cli.php" role="php" />
+     <file name="cli_sapi_array.php" role="php" />
+     <file name="com_dotnet_class_array.php" role="php" />
+     <file name="com_dotnet_const_array.php" role="php" />
+     <file name="com_dotnet_func_array.php" role="php" />
+     <file name="const_array.php" role="php" />
+     <file name="ctype_func_array.php" role="php" />
+     <file name="date_class_array.php" role="php" />
+     <file name="date_const_array.php" role="php" />
+     <file name="date_func_array.php" role="php" />
+     <file name="dom_class_array.php" role="php" />
+     <file name="dom_const_array.php" role="php" />
+     <file name="dom_func_array.php" role="php" />
+     <file name="filter_const_array.php" role="php" />
+     <file name="filter_func_array.php" role="php" />
+     <file name="ftp_const_array.php" role="php" />
+     <file name="ftp_func_array.php" role="php" />
+     <file name="func_array.php" role="php" />
+     <file name="gd_const_array.php" role="php" />
+     <file name="gd_func_array.php" role="php" />
+     <file name="gettext_func_array.php" role="php" />
+     <file name="gmp_const_array.php" role="php" />
+     <file name="gmp_func_array.php" role="php" />
+     <file name="hash_const_array.php" role="php" />
+     <file name="hash_func_array.php" role="php" />
+     <file name="iconv_const_array.php" role="php" />
+     <file name="iconv_func_array.php" role="php" />
+     <file name="imap_const_array.php" role="php" />
+     <file name="imap_func_array.php" role="php" />
+     <file name="internal_const_array.php" role="php" />
+     <file name="json_func_array.php" role="php" />
+     <file name="libxml_class_array.php" role="php" />
+     <file name="libxml_const_array.php" role="php" />
+     <file name="libxml_func_array.php" role="php" />
+     <file name="mbstring_const_array.php" role="php" />
+     <file name="mbstring_func_array.php" role="php" />
+     <file name="ming_class_array.php" role="php" />
+     <file name="ming_const_array.php" role="php" />
+     <file name="ming_func_array.php" role="php" />
+     <file name="mysqli_class_array.php" role="php" />
+     <file name="mysqli_const_array.php" role="php" />
+     <file name="mysqli_func_array.php" role="php" />
+     <file name="mysql_const_array.php" role="php" />
+     <file name="mysql_func_array.php" role="php" />
+     <file name="odbc_const_array.php" role="php" />
+     <file name="odbc_func_array.php" role="php" />
+     <file name="openssl_const_array.php" role="php" />
+     <file name="openssl_func_array.php" role="php" />
+     <file name="Parser.php" role="php" />
+     <file name="pcre_const_array.php" role="php" />
+     <file name="pcre_func_array.php" role="php" />
+     <file name="PDO_class_array.php" role="php" />
+     <file name="PDO_func_array.php" role="php" />
+     <file name="pgsql_const_array.php" role="php" />
+     <file name="pgsql_func_array.php" role="php" />
+     <file name="Reflection_class_array.php" role="php" />
+     <file name="Renderer.php" role="php" />
+     <file name="sapi_array.php" role="php" />
+     <file name="session_func_array.php" role="php" />
+     <file name="SimpleXML_class_array.php" role="php" />
+     <file name="SimpleXML_func_array.php" role="php" />
+     <file name="snmp_const_array.php" role="php" />
+     <file name="snmp_func_array.php" role="php" />
+     <file name="SPL_class_array.php" role="php" />
+     <file name="SPL_func_array.php" role="php" />
+     <file name="SQLite_class_array.php" role="php" />
+     <file name="SQLite_const_array.php" role="php" />
+     <file name="SQLite_func_array.php" role="php" />
+     <file name="standard_class_array.php" role="php" />
+     <file name="standard_const_array.php" role="php" />
+     <file name="standard_func_array.php" role="php" />
+     <file name="tokenizer_const_array.php" role="php" />
+     <file name="tokenizer_func_array.php" role="php" />
+     <file name="wddx_func_array.php" role="php" />
+     <file name="xdebug_const_array.php" role="php" />
+     <file name="xdebug_func_array.php" role="php" />
+     <file name="xmlreader_class_array.php" role="php" />
+     <file name="xmlwriter_class_array.php" role="php" />
+     <file name="xmlwriter_func_array.php" role="php" />
+     <file name="xml_const_array.php" role="php" />
+     <file name="xml_func_array.php" role="php" />
+     <file name="xsl_class_array.php" role="php" />
+     <file name="xsl_const_array.php" role="php" />
+     <file name="zip_class_array.php" role="php" />
+     <file name="zip_func_array.php" role="php" />
+     <file name="zlib_const_array.php" role="php" />
+     <file name="zlib_func_array.php" role="php" />
+    </dir> <!-- /PHP/CompatInfo -->
+    <file name="CompatInfo.php" role="php" />
+   </dir> <!-- /PHP -->
    <dir name="scripts">
     <file baseinstalldir="" name="calendar_const_exceptions.php" role="script" />
     <file baseinstalldir="" name="calendar_func_exceptions.php" role="script" />
@@ -408,9 +417,6 @@ No change since version 1.9.0RC1
     </file>
     <file name="sample_req6056.php" role="test" />
    </dir> <!-- /tests -->
-   <file name="CompatInfo.php" role="php">
-    <tasks:replace from="@package_version@" to="version" type="package-info" />
-   </file>
    <file name="pci.css" role="data" />
   </dir> <!-- / -->
  </contents>
@@ -506,21 +512,6 @@ No change since version 1.9.0RC1
  <changelog>
   <release>
    <version>
-    <release>1.9.0</release>
-    <api>1.9.0</api>
-   </version>
-   <stability>
-    <release>stable</release>
-    <api>stable</api>
-   </stability>
-   <date>2009-01-19</date>
-   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>
-No change since version 1.9.0RC1
-   </notes>
-  </release>
-  <release>
-   <version>
     <release>1.9.0RC1</release>
     <api>1.9.0</api>
    </version>
@@ -528,7 +519,7 @@ No change since version 1.9.0RC1
     <release>beta</release>
     <api>stable</api>
    </stability>
-   <date>2009-01-03</date>
+   <date>2012-01-06</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
    <notes>
 * IMPORTANT
@@ -562,6 +553,21 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
   </release>
   <release>
    <version>
+    <release>1.9.0</release>
+    <api>1.9.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-01-19</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+No change since version 1.9.0RC1
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>1.9.0b2</release>
     <api>1.9.0</api>
    </version>
@@ -571,7 +577,8 @@ http://pear.laurent-laville.org/pepr/PHP_CompatInfo/api190/
    </stability>
    <date>2008-12-19</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>* IMPORTANT
+   <notes>
+* IMPORTANT
 - if you are PHP5 user only:
   use the pciconf script to build your own extension support list
 - if you are PHP4 user only:
@@ -599,7 +606,8 @@ the final version.
 - 2008-11-23 first alpha version
 - 2008-11-26 first beta version
 - 2008-12-19 second beta release
-- 2009-01-19 final stable release</notes>
+- 2009-01-19 final stable release
+   </notes>
   </release>
   <release>
    <version>
@@ -612,7 +620,8 @@ the final version.
    </stability>
    <date>2008-11-30</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>* bugs
+   <notes>
+* bugs
 - __FILE__ and __LINE__ constants were not detected with 1.9.0a1
 
 * news
@@ -627,7 +636,8 @@ the final release.
 * roadmap
 - 2008-11-23 first alpha version
 - 2008-11-26 first beta version
-- 2008-12-19 stable release 1.9.0</notes>
+- 2008-12-19 stable release 1.9.0
+   </notes>
   </release>
   <release>
    <version>
@@ -640,7 +650,8 @@ the final release.
    </stability>
    <date>2008-11-23</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>* bugs
+   <notes>
+* bugs
 - 15011 : XSL extension not detected
 
 * news
@@ -655,7 +666,8 @@ the final release.
 
 * roadmap
 - 2008-11-23 first alpha version
-- 2008-12-19 stable release 1.9.0</notes>
+- 2008-12-19 stable release 1.9.0
+   </notes>
   </release>
   <release>
    <version>
@@ -668,11 +680,13 @@ the final release.
    </stability>
    <date>2008-09-27</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>* bugs
+   <notes>
+* bugs
 - 14696 : PHP_CompatInfo fails to scan code line when not ended with ;
 
 * changes
-- getallheaders() is detected as sapi_apache rather than sapi_aolserver</notes>
+- getallheaders() is detected as sapi_apache rather than sapi_aolserver
+   </notes>
   </release>
   <release>
    <version>
@@ -685,7 +699,8 @@ the final release.
    </stability>
    <date>2008-08-01</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>* bugs
+   <notes>
+* bugs
 - XML Renderer:
   . identify a data source file with the right tag &lt;file&gt; rather than &lt;dir&gt;
   . list of function in verbose / debug mode is back
@@ -694,7 +709,8 @@ the final release.
 
 * changes
 - With agreement of original package author (Davey Shafik), change license
-  from PHP 3.01 to New BSD</notes>
+  from PHP 3.01 to New BSD
+   </notes>
   </release>
   <release>
    <version>
@@ -707,7 +723,8 @@ the final release.
    </stability>
    <date>2008-07-18</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>14 days left before final stable version. Please give it a good testing !
+   <notes>
+14 days left before final stable version. Please give it a good testing !
 
 * news
 - Command-Line Interface:
@@ -731,7 +748,8 @@ the final release.
   . You have now ability to set column width with config option &quot;colwidth&quot;. Only
     for Files, Extensions, Constants/Tokens. Version and C have always fixed width.
   . Extra information given by debug mode (verbose level 4) is available both
-    for a single file or a directory</notes>
+    for a single file or a directory
+   </notes>
   </release>
   <release>
    <version>
@@ -744,7 +762,8 @@ the final release.
    </stability>
    <date>2008-06-28</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>Probably the last release before final version planned for August 1st.
+   <notes>
+Probably the last release before final version planned for August 1st.
 Please give it a good testing !
 
 * bugs
@@ -764,7 +783,8 @@ the new API.
 
 * QA
 - Test Suites (Standard, Bugs, Cli) included in this first release candidate
-are full compatible with API 1.8.0</notes>
+are full compatible with API 1.8.0
+   </notes>
   </release>
   <release>
    <version>
@@ -777,7 +797,8 @@ are full compatible with API 1.8.0</notes>
    </stability>
    <date>2008-06-18</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>* changes
+   <notes>
+* changes
 - Text Renderer: support output-level 16 (display filter on version)
 - Xml  Renderer: support all output-level, verbose 4+ or debug mode
 - CLI: default output-level is now 31 (still all details, as before with 15)
@@ -803,7 +824,8 @@ Please give it a good testing !
 
 * QA
 - Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until RC1</notes>
+  them until RC1
+   </notes>
   </release>
   <release>
    <version>
@@ -816,7 +838,8 @@ Please give it a good testing !
    </stability>
    <date>2008-06-07</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>* changes
+   <notes>
+* changes
 - parseArray() method was missing in beta2 is back
 - add or remove observers is now possible with public method of the controller
   PHP_CompatInfo (main class)
@@ -836,7 +859,8 @@ Beta 4, the last beta before RC, that is planned for june 18th will include
 
 * QA
 - Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until beta4</notes>
+  them until beta4
+   </notes>
   </release>
   <release>
    <version>
@@ -849,7 +873,8 @@ Beta 4, the last beta before RC, that is planned for june 18th will include
    </stability>
    <date>2008-06-03</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>CREDITS
+   <notes>
+CREDITS
 Thanks to Jon Parise and Ken Guest, for their agreement to reuse code and idea
 from their packages. Idea about connecting a driver (see PEAR_Size) and
 how to build/check an instance of a custom renderer (see Log) if class
@@ -882,7 +907,8 @@ Beta 3 that will come shortly will include 2 new more renderers :
 
 * QA
 - Do no search Unit tests in this release, it is not yet ready, so I have removed
-  them until beta3</notes>
+  them until beta3
+   </notes>
   </release>
   <release>
    <version>
@@ -895,7 +921,8 @@ Beta 3 that will come shortly will include 2 new more renderers :
    </stability>
    <date>2008-05-18</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>Consider this version as a high bug fix release.
+   <notes>
+Consider this version as a high bug fix release.
 Especially if you want to parse files/dirs with conditional code such as
 function_exists(), extension_loaded(), and defined().
 
@@ -904,7 +931,8 @@ function_exists(), extension_loaded(), and defined().
 
 * news
 - support of error_reporting constant E_RECOVERABLE_ERROR introduced with PHP 5.2.0
-- show a progress bar when parsing directories from CLI</notes>
+- show a progress bar when parsing directories from CLI
+   </notes>
   </release>
   <release>
    <version>
@@ -917,7 +945,8 @@ function_exists(), extension_loaded(), and defined().
    </stability>
    <date>2008-04-17</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>After 1 alpha and 4 beta releases, I am pleased to announce the
+   <notes>
+After 1 alpha and 4 beta releases, I am pleased to announce the
 release of final stable version. This new API 1.7.0 introduce many new features.
 Here are a summary of all changes since API 1.6.0.
 
@@ -972,7 +1001,8 @@ Changes since version 1.7.0b4 (2008-04-03)
   key-info &quot;cond_code&quot;.
 - Add new column C to indicate a level of conditional code used.
 - CLI text report support version max information in main table results.
-- Regression Tests Suite was fixed.</notes>
+- Regression Tests Suite was fixed.
+   </notes>
   </release>
   <release>
    <version>
@@ -985,7 +1015,8 @@ Changes since version 1.7.0b4 (2008-04-03)
    </stability>
    <date>2008-04-04</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>LAST BETA before FINAL STABLE release.
+   <notes>
+LAST BETA before FINAL STABLE release.
 PLEASE TEST IT as much as possible !
 
 TODO : Need to fix Regression Tests Suite
@@ -1058,7 +1089,8 @@ Changes since stable version 1.6.1 (2008-02-16)
   see new api 1.7.0 options:
   ignore_functions_match, ignore_extensions_match, ignore_constants_match.
 - req #13138 : separate constants and tokens in results
-- req #13147 : CLI: add filter file extension option on parsing directory</notes>
+- req #13147 : CLI: add filter file extension option on parsing directory
+   </notes>
   </release>
   <release>
    <version>
@@ -1071,7 +1103,8 @@ Changes since stable version 1.6.1 (2008-02-16)
    </stability>
    <date>2008-03-28</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>Changes since version 1.7.0b2 (2008-03-24)
+   <notes>
+Changes since version 1.7.0b2 (2008-03-24)
 
 * bugs
 - notice errors on XML report output when parsing a directory with CLI
@@ -1121,7 +1154,8 @@ Changes since stable version 1.6.1 (2008-02-16)
   see new api 1.7.0 options:
   ignore_functions_match, ignore_extensions_match, ignore_constants_match.
 - req #13138 : separate constants and tokens in results
-- req #13147 : CLI: add filter file extension option on parsing directory</notes>
+- req #13147 : CLI: add filter file extension option on parsing directory
+   </notes>
   </release>
   <release>
    <version>
@@ -1134,7 +1168,8 @@ Changes since stable version 1.6.1 (2008-02-16)
    </stability>
    <date>2008-03-24</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>Changes since version 1.7.0b1 (2008-03-17)
+   <notes>
+Changes since version 1.7.0b1 (2008-03-17)
 
 - pci.php file was rename to pci (without extension) to match unix command syntax
 - CLI may print (-V | --version) version number of PHP_CompatInfo package used
@@ -1175,7 +1210,8 @@ Changes since stable version 1.6.1 (2008-02-16)
   see new api 1.7.0 options:
   ignore_functions_match, ignore_extensions_match, ignore_constants_match.
 - req #13138 : separate constants and tokens in results
-- req #13147 : CLI: add filter file extension option on parsing directory</notes>
+- req #13147 : CLI: add filter file extension option on parsing directory
+   </notes>
   </release>
   <release>
    <version>
@@ -1188,7 +1224,8 @@ Changes since stable version 1.6.1 (2008-02-16)
    </stability>
    <date>2008-03-17</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>Changes since 1.7.0a1 (2008-02-21)
+   <notes>
+Changes since 1.7.0a1 (2008-02-21)
 
 * changes
 - fix CLI output render to 80 columns, on main table :
@@ -1217,7 +1254,8 @@ Changes since stable version 1.6.1 (2008-02-16)
   see new api 1.7.0 options:
   ignore_functions_match, ignore_extensions_match, ignore_constants_match.
 - req #13138 : separate constants and tokens in results
-- req #13147 : CLI: add filter file extension option on parsing directory</notes>
+- req #13147 : CLI: add filter file extension option on parsing directory
+   </notes>
   </release>
   <release>
    <version>
@@ -1230,7 +1268,8 @@ Changes since stable version 1.6.1 (2008-02-16)
    </stability>
    <date>2008-02-21</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>* bugs
+   <notes>
+* bugs
 - bug #13137 : Standard test suite failed under *nix
 
 * news
@@ -1238,7 +1277,8 @@ Changes since stable version 1.6.1 (2008-02-16)
   see new api 1.7.0 options:
   ignore_functions_match, ignore_extensions_match, ignore_constants_match.
 - req #13138 : separate constants and tokens in results
-- req #13147 : CLI: add filter file extension option on parsing directory</notes>
+- req #13147 : CLI: add filter file extension option on parsing directory
+   </notes>
   </release>
   <release>
    <version>
@@ -1251,8 +1291,10 @@ Changes since stable version 1.6.1 (2008-02-16)
    </stability>
    <date>2008-02-16</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>* bugs
-- bug #13131 : Undefined variable: php5_method_chaining</notes>
+   <notes>
+* bugs
+- bug #13131 : Undefined variable: php5_method_chaining
+   </notes>
   </release>
   <release>
    <version>
@@ -1265,7 +1307,8 @@ Changes since stable version 1.6.1 (2008-02-16)
    </stability>
    <date>2008-02-16</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>* news
+   <notes>
+* news
 - request #13094 : PHP5 method chaining
 - improve detection of PHP constants ( DATE_*, STD*, UPLOAD_ERR_*,
   PHP_EOL, DIRECTORY_SEPARATOR, PATH_SEPARATOR, E_STRICT )
@@ -1284,7 +1327,8 @@ Changes since stable version 1.6.1 (2008-02-16)
 * QA
 - User Guide (HTML version) included in previous versions was removed, since
 its now part of PEAR manual
-- API is near 95% unit tested with PHPUnit 3.x (see main suite: tests/AllTests.php)</notes>
+- API is near 95% unit tested with PHPUnit 3.x (see main suite: tests/AllTests.php)
+   </notes>
   </release>
   <release>
    <version>
@@ -1297,13 +1341,15 @@ its now part of PEAR manual
    </stability>
    <date>2007-11-15</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>* bugs
+   <notes>
+* bugs
 - #12451 : DOS CRLFs in every single file
 
 * QA
 - this release include also The Definitive Guide in version 1.5.0
 that cover all versions
-  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.</notes>
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+   </notes>
   </release>
   <release>
    <version>
@@ -1316,7 +1362,8 @@ that cover all versions
    </stability>
    <date>2007-11-15</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>* changes
+   <notes>
+* changes
 - Windows script (launcher), renamed from compatinfo.bat to pci.bat (following naming
 convention of PHP_CodeSniffer example
 - *Nix script user pcicmd was renamed to pci and is located
@@ -1335,7 +1382,8 @@ now into PHP_PEAR_INSTALL_DIR (even on Windows platform)
 - Coding Standard fixes (following PHP_CodeSniffer recommandations)
 - this release include also The Definitive Guide in version 1.5.0
 that cover all versions
-  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.</notes>
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+   </notes>
   </release>
   <release>
    <version>
@@ -1348,13 +1396,15 @@ that cover all versions
    </stability>
    <date>2007-04-03</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>* changes
+   <notes>
+* changes
 - fully fix for wrong PHP5 constants detection when tokens used inside strings. (see bug #10100)
 
 * QA
 - this release include also The Definitive Guide in version 1.4.1 that cover all versions
 until 1.4.3
-  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.</notes>
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+   </notes>
   </release>
   <release>
    <version>
@@ -1367,13 +1417,15 @@ until 1.4.3
    </stability>
    <date>2007-04-02</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>* changes
+   <notes>
+* changes
 - fixed wrong PHP5 constants detection when tokens used inside strings. (see bug #10100)
 
 * QA
 - this release include also The Definitive Guide in version 1.4.1 that cover all versions
 until 1.4.2
-  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.</notes>
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+   </notes>
   </release>
   <release>
    <version>
@@ -1386,7 +1438,8 @@ until 1.4.2
    </stability>
    <date>2007-02-12</date>
    <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
-   <notes>* changes
+   <notes>
+* changes
 - upgrade license from PHP 3.0 to 3.01
 - fixed wrong implementation of Console_Getargs feature fixed in version 1.33 (see bug #9252)
 - set Console_GetArgs minimum dependency to version 1.3.3
@@ -1396,7 +1449,8 @@ until 1.4.2
 * QA
 - Improve readability (hilighted source code) of User Guide 1.4.1 included in this release
 that cover all versions 1.4.x
-  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.</notes>
+  see http://pear.laurent-laville.org/PHP_CompatInfo for more format to download.
+   </notes>
   </release>
   <release>
    <version>
@@ -1409,7 +1463,8 @@ that cover all versions 1.4.x
    </stability>
    <date>2006-09-27</date>
    <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
-   <notes>* news
+   <notes>
+* news
 - This version is features completed. The last options added since 1.3.2 are ability to ignore php modules/extensions functions list (&quot;ignore_extensions&quot;) and also to ignore versions php functions list (&quot;ignore_versions&quot;).
 
 - This package was initiated by Davey Shafik and is now only actively maintained by Laurent Laville.
@@ -1417,7 +1472,8 @@ that cover all versions 1.4.x
 - pcicmd console command was improved by using Console_Getargs package rather than Console_Getopt. SAPI and CLI version have same features now.
 
 * quality assurance
-fix dependencies (PHP and package)</notes>
+fix dependencies (PHP and package)
+   </notes>
   </release>
   <release>
    <version>
@@ -1430,11 +1486,13 @@ fix dependencies (PHP and package)</notes>
    </stability>
    <date>2006-09-09</date>
    <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
-   <notes>* bugs
+   <notes>
+* bugs
 fixed &quot;_splitfilename&quot; console_table filter callback to works fine (limit to 80 cols) both with dir and only one file to parse.
 
 * news
-stop using/generating package.xml 1.0 (that means you should have at least PEAR 1.4.0)</notes>
+stop using/generating package.xml 1.0 (that means you should have at least PEAR 1.4.0)
+   </notes>
   </release>
   <release>
    <version>
@@ -1447,7 +1505,8 @@ stop using/generating package.xml 1.0 (that means you should have at least PEAR 
    </stability>
    <date>2006-09-02</date>
    <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
-   <notes>* bugs
+   <notes>
+* bugs
 - fixed bug #8604 : notice undefined property (with CLI version)
 
 * news
@@ -1458,7 +1517,8 @@ stop using/generating package.xml 1.0 (that means you should have at least PEAR 
     (any string length and char is allow)
 
 * improvements
-- windows script launcher for CLI version is now protected for blanks into  directory name. Something like &quot;C:\Program Files\&quot;</notes>
+- windows script launcher for CLI version is now protected for blanks into  directory name. Something like &quot;C:\Program Files\&quot;
+   </notes>
   </release>
   <release>
    <version>
@@ -1471,7 +1531,8 @@ stop using/generating package.xml 1.0 (that means you should have at least PEAR 
    </stability>
    <date>2006-08-30</date>
    <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
-   <notes>* bugs
+   <notes>
+* bugs
 - fixed bug #8559 : fails to scan if finds empty file in path
 - CLI version of PHP_CompatInfo won&apos;t print help usage more than once now
 - CLI version of PHP_CompatInfo is now compatible with Console_Table separator and multi-line cells support (requires version 1.0.4 or better)
@@ -1480,7 +1541,8 @@ stop using/generating package.xml 1.0 (that means you should have at least PEAR 
 - a launcher for windows user (compatinfo.bat) to run the CLI version of PHP_CompatInfo.
 
 * improvements
-- better render of PHP_CompatInfo_CLI output by using Console_Table separator.</notes>
+- better render of PHP_CompatInfo_CLI output by using Console_Table separator.
+   </notes>
   </release>
   <release>
    <version>
@@ -1493,13 +1555,15 @@ stop using/generating package.xml 1.0 (that means you should have at least PEAR 
    </stability>
    <date>2006-08-23</date>
    <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
-   <notes>* news
+   <notes>
+* news
 - add &quot;ignore_constants&quot; option to ignore an array of contants when calculating the version needed.
 - add loadVersion() method to retrieve easily the functions list of a PHP version (or subset)
 See also script &quot;docs\examples\ignorePHP5implements.php&quot; that demonstrates this new feature.
 
 * Quality Assurance
-- more PEAR CS with code indentation, and phpdoc tag comment</notes>
+- more PEAR CS with code indentation, and phpdoc tag comment
+   </notes>
   </release>
   <release>
    <version>
@@ -1512,11 +1576,13 @@ See also script &quot;docs\examples\ignorePHP5implements.php&quot; that demonstr
    </stability>
    <date>2006-08-06</date>
    <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
-   <notes>* bugs
+   <notes>
+* bugs
 fixed bug notice to me by Markus Zapke-Gruendemann (thanks to him)
 related to script case sensitive problem.
 
-Now all scripts and extensions code used may be write in lowercase, uppercase, or mixed.</notes>
+Now all scripts and extensions code used may be write in lowercase, uppercase, or mixed.
+   </notes>
   </release>
   <release>
    <version>
@@ -1529,7 +1595,8 @@ Now all scripts and extensions code used may be write in lowercase, uppercase, o
    </stability>
    <date>2006-07-27</date>
    <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
-   <notes>* bugs
+   <notes>
+* bugs
 - old Bug #2771 that was back alive : substr($var,4) not working for sapi_ extensions
 
 * improvements
@@ -1540,7 +1607,8 @@ Now all scripts and extensions code used may be write in lowercase, uppercase, o
   methods were removed from &apos;func_array.php&apos; file
 
 * Quality Assurance
-- &apos;func_array.php&apos; and &apos;const_array.php&apos; files have now header comment block</notes>
+- &apos;func_array.php&apos; and &apos;const_array.php&apos; files have now header comment block
+   </notes>
   </release>
   <release>
    <version>
@@ -1553,7 +1621,8 @@ Now all scripts and extensions code used may be write in lowercase, uppercase, o
    </stability>
    <date>2006-06-28</date>
    <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
-   <notes>* bug fixes
+   <notes>
+* bug fixes
 - Bug #8058 : php 5 T_* constants undefined when running on php 4
 
 * news
@@ -1562,7 +1631,8 @@ Now all scripts and extensions code used may be write in lowercase, uppercase, o
   Array result have now a new entry key &apos;max_version&apos; that will give
   the max PHP version you should have to run script(s) parsed.
 
-  Don&apos;t forget to have a look on usage example (tests/checkMax.php)</notes>
+  Don&apos;t forget to have a look on usage example (tests/checkMax.php)
+   </notes>
   </release>
   <release>
    <version>
@@ -1575,14 +1645,16 @@ Now all scripts and extensions code used may be write in lowercase, uppercase, o
    </stability>
    <date>2006-06-16</date>
    <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
-   <notes>* bug fixes
+   <notes>
+* bug fixes
 - Bug #6581 : Functions missing in func_array.php
 
 * improvements
 - PHP 3 functions are now supported
 - functions and extensions bases were refreshed with latest versions of
   . http://cvs.php.net/viewcvs.cgi/phpdoc/xsl/version.xml?revision=1.19
-  . http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35</notes>
+  . http://cvs.php.net/viewcvs.cgi/phpdoc/funclist.txt?revision=1.35
+   </notes>
   </release>
   <release>
    <version>
@@ -1595,7 +1667,8 @@ Now all scripts and extensions code used may be write in lowercase, uppercase, o
    </stability>
    <date>2006-06-12</date>
    <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
-   <notes>* bug fixes
+   <notes>
+* bug fixes
 - bug #4789 : error in packaged file structure
 - bug #4942 : fixing my own bug (my == techtonik)
 - bug #7813 : wrong PHP minimum version detection
@@ -1608,7 +1681,8 @@ to check their PEAR packages installation.
 
 * improvements
 - PHP minimum is set to 4.2.0 (4.3.0 required by release 1.0.0 is not necessary)
-- PEAR installer is set up to 1.4.3 due to a serious vulnerability found on Nov 4, 2005.</notes>
+- PEAR installer is set up to 1.4.3 due to a serious vulnerability found on Nov 4, 2005.
+   </notes>
   </release>
   <release>
    <version>
@@ -1621,10 +1695,12 @@ to check their PEAR packages installation.
    </stability>
    <date>2005-03-14</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Fixed Bug #3657
+   <notes>
+Fixed Bug #3657
 - Now unsets all constants that are PHP5 only. This means
 that PHP5 detection on PHP4 is now highly unlikely but that PHP4
-detection should be much better.</notes>
+detection should be much better.
+   </notes>
   </release>
   <release>
    <version>
@@ -1637,8 +1713,10 @@ detection should be much better.</notes>
    </stability>
    <date>2005-03-05</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Added Request #3656
-Fixed Bug #3657</notes>
+   <notes>
+Added Request #3656
+Fixed Bug #3657
+   </notes>
   </release>
   <release>
    <version>
@@ -1651,7 +1729,9 @@ Fixed Bug #3657</notes>
    </stability>
    <date>2005-02-21</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Updated the versioning info for better PHP5 support. Be aware that detection of PHP5 scripts on PHP4 is not supposed to work - though it often does work.</notes>
+   <notes>
+Updated the versioning info for better PHP5 support. Be aware that detection of PHP5 scripts on PHP4 is not supposed to work - though it often does work.
+   </notes>
   </release>
   <release>
    <version>
@@ -1664,7 +1744,9 @@ Fixed Bug #3657</notes>
    </stability>
    <date>2005-01-11</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Fixed bug #2771</notes>
+   <notes>
+Fixed bug #2771
+   </notes>
   </release>
   <release>
    <version>
@@ -1677,8 +1759,10 @@ Fixed Bug #3657</notes>
    </stability>
    <date>2004-08-04</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
-PHP5 functions no longer marked as &apos;-dev&apos;.</notes>
+   <notes>
+Now detects PHP5 features (like exceptions, __clone, interfaces, abstract classes).
+PHP5 functions no longer marked as &apos;-dev&apos;.
+   </notes>
   </release>
   <release>
    <version>
@@ -1691,8 +1775,10 @@ PHP5 functions no longer marked as &apos;-dev&apos;.</notes>
    </stability>
    <date>2004-06-12</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Now doesn&apos;t detect foo::bar() or $foo-&gt;bar() as a function call.
-State moved to beta, first RC.</notes>
+   <notes>
+Now doesn&apos;t detect foo::bar() or $foo-&gt;bar() as a function call.
+State moved to beta, first RC.
+   </notes>
   </release>
   <release>
    <version>
@@ -1705,7 +1791,9 @@ State moved to beta, first RC.</notes>
    </stability>
    <date>2004-05-06</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Fixed more bugs. Thanks to techtonik.</notes>
+   <notes>
+Fixed more bugs. Thanks to techtonik.
+   </notes>
   </release>
   <release>
    <version>
@@ -1718,9 +1806,11 @@ State moved to beta, first RC.</notes>
    </stability>
    <date>2004-04-26</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>* Some PHP5 compatibility work done.
+   <notes>
+* Some PHP5 compatibility work done.
 * Other small things fixed for integration into PEAR_PackageFileManager.
-* Added file_ext option to parseArray</notes>
+* Added file_ext option to parseArray
+   </notes>
   </release>
   <release>
    <version>
@@ -1733,9 +1823,11 @@ State moved to beta, first RC.</notes>
    </stability>
    <date>2004-04-24</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Bugs fixed from 0.8.1 (thanks to Jan Schneider again)
+   <notes>
+Bugs fixed from 0.8.1 (thanks to Jan Schneider again)
 * Removed Sockets dependency
-* Fixed some more version data</notes>
+* Fixed some more version data
+   </notes>
   </release>
   <release>
    <version>
@@ -1748,12 +1840,14 @@ State moved to beta, first RC.</notes>
    </stability>
    <date>2004-04-22</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Bugs fixed from 0.8.0 (thanks to Jan Schneider)
+   <notes>
+Bugs fixed from 0.8.0 (thanks to Jan Schneider)
 * Added Console_Getopt optional dependency.
 * Fixed Console_Getopt require in CLI.php
 * Fixed some version data
 * Made it possible to use -f=FILE, -fFILE and -f FILE, same with -d in CLI script
-* Added whitespace after the CLI help output</notes>
+* Added whitespace after the CLI help output
+   </notes>
   </release>
   <release>
    <version>
@@ -1766,9 +1860,11 @@ State moved to beta, first RC.</notes>
    </stability>
    <date>2004-04-22</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Added a CLI Output script. An example of using it
+   <notes>
+Added a CLI Output script. An example of using it
 can be found in the examples dir. Moved parseFolder() to parseDir().
-parseFolder() has been aliased to parseDir().</notes>
+parseFolder() has been aliased to parseDir().
+   </notes>
   </release>
   <release>
    <version>
@@ -1781,10 +1877,12 @@ parseFolder() has been aliased to parseDir().</notes>
    </stability>
    <date>2004-03-09</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>* First release on PEAR-web.
+   <notes>
+* First release on PEAR-web.
 * Added the ability to ignore files
 in parseFolder() and parseArray(), and the ability to ignore folders
-in parseFolder(). Added the ability to ignore functions in all public methods.</notes>
+in parseFolder(). Added the ability to ignore functions in all public methods.
+   </notes>
   </release>
   <release>
    <version>
@@ -1797,8 +1895,10 @@ in parseFolder(). Added the ability to ignore functions in all public methods.</
    </stability>
    <date>2004-03-05</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Ninth package for PEPr, just removed the old PHP_Compatibility docs, no
-change at all to the code.</notes>
+   <notes>
+Ninth package for PEPr, just removed the old PHP_Compatibility docs, no
+change at all to the code.
+   </notes>
   </release>
   <release>
    <version>
@@ -1811,8 +1911,10 @@ change at all to the code.</notes>
    </stability>
    <date>2004-03-05</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Eighth package for PEPr - Unified the public method APIs to
-parse*($input,$options); - this is a BC break.</notes>
+   <notes>
+Eighth package for PEPr - Unified the public method APIs to
+parse*($input,$options); - this is a BC break.
+   </notes>
   </release>
   <release>
    <version>
@@ -1825,10 +1927,12 @@ parse*($input,$options); - this is a BC break.</notes>
    </stability>
    <date>2004-03-03</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Seventh Package, for PEPr - Fixed a bug where User Defined Functions
+   <notes>
+Seventh Package, for PEPr - Fixed a bug where User Defined Functions
 were checked against base functions, e.g. Math_ComplexOp::add() found
 Mings SWFMovie::add() and caused it to report that the ming extension
-was needed.</notes>
+was needed.
+   </notes>
   </release>
   <release>
    <version>
@@ -1841,8 +1945,10 @@ was needed.</notes>
    </stability>
    <date>2004-03-01</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Sixth Package, for PEPr - Name changed from PHP_Compatibility to
-PHP_Requires</notes>
+   <notes>
+Sixth Package, for PEPr - Name changed from PHP_Compatibility to
+PHP_Requires
+   </notes>
   </release>
   <release>
    <version>
@@ -1855,8 +1961,10 @@ PHP_Requires</notes>
    </stability>
    <date>2004-02-27</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Fifth Package, for PEPr - $debug now outputs an array for each function
-that contains the name and extension needed.</notes>
+   <notes>
+Fifth Package, for PEPr - $debug now outputs an array for each function
+that contains the name and extension needed.
+   </notes>
   </release>
   <release>
    <version>
@@ -1869,9 +1977,11 @@ that contains the name and extension needed.</notes>
    </stability>
    <date>2004-02-27</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Fourth Package, for PEPr - Added parseArray() and the $debug param to
+   <notes>
+Fourth Package, for PEPr - Added parseArray() and the $debug param to
 all public functions, which creates additional return data like
-$return[$version][] = $function_name.</notes>
+$return[$version][] = $function_name.
+   </notes>
   </release>
   <release>
    <version>
@@ -1884,7 +1994,9 @@ $return[$version][] = $function_name.</notes>
    </stability>
    <date>2004-02-26</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Third Package, for PEPr - Checks constants like __FILE__ also;</notes>
+   <notes>
+Third Package, for PEPr - Checks constants like __FILE__ also;
+   </notes>
   </release>
   <release>
    <version>
@@ -1897,7 +2009,9 @@ $return[$version][] = $function_name.</notes>
    </stability>
    <date>2004-02-26</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Second Package, for PEPr - includes parseScript()</notes>
+   <notes>
+Second Package, for PEPr - includes parseScript()
+   </notes>
   </release>
   <release>
    <version>
@@ -1910,7 +2024,9 @@ $return[$version][] = $function_name.</notes>
    </stability>
    <date>2004-02-20</date>
    <license uri="http://www.php.net/license">PHP License</license>
-   <notes>Initial Package, for PEPr</notes>
+   <notes>
+Initial Package, for PEPr
+   </notes>
   </release>
  </changelog>
 </package>
